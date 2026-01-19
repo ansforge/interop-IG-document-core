@@ -22,7 +22,7 @@
   fhir:name [ fhir:v "FRCompositionDocumentCRBIO"] ; # 
   fhir:title [ fhir:v "FR Composition Document CR BIO"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-01-16T14:35:31+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-01-19T14:02:43+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -12241,6 +12241,15 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
+       ] [
+         fhir:key [ fhir:v "comp-4" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "Une section ne peut pas contenir à la fois des entrées et des sous-sections." ] ;
+         fhir:expression [ fhir:v "not(exists(f:entry) and exists(f:section))" ] ;
+         fhir:source [
+           fhir:v "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-composition-document"^^xsd:anyURI ;
+           fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-composition-document>
+         ]
        ] ) ;
        fhir:mustSupport [ fhir:v true ] ;
        fhir:isModifier [ fhir:v false ] ;
@@ -12980,6 +12989,15 @@
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] [
+         fhir:key [ fhir:v "comp-4" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "Une section ne peut pas contenir à la fois des entrées et des sous-sections." ] ;
+         fhir:expression [ fhir:v "not(exists(f:entry) and exists(f:section))" ] ;
+         fhir:source [
+           fhir:v "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-composition-document"^^xsd:anyURI ;
+           fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-composition-document>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v true ] ;
@@ -13724,6 +13742,15 @@
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] [
+         fhir:key [ fhir:v "comp-4" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "Une section ne peut pas contenir à la fois des entrées et des sous-sections." ] ;
+         fhir:expression [ fhir:v "not(exists(f:entry) and exists(f:section))" ] ;
+         fhir:source [
+           fhir:v "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-composition-document"^^xsd:anyURI ;
+           fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-composition-document>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v true ] ;
@@ -15099,6 +15126,15 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
+       ] [
+         fhir:key [ fhir:v "comp-4" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "Une section ne peut pas contenir à la fois des entrées et des sous-sections." ] ;
+         fhir:expression [ fhir:v "not(exists(f:entry) and exists(f:section))" ] ;
+         fhir:source [
+           fhir:v "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-composition-document"^^xsd:anyURI ;
+           fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-composition-document>
+         ]
        ] ) ;
        fhir:mustSupport [ fhir:v true ] ;
        fhir:isModifier [ fhir:v false ] ;
@@ -15845,6 +15881,15 @@
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] [
+         fhir:key [ fhir:v "comp-4" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "Une section ne peut pas contenir à la fois des entrées et des sous-sections." ] ;
+         fhir:expression [ fhir:v "not(exists(f:entry) and exists(f:section))" ] ;
+         fhir:source [
+           fhir:v "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-composition-document"^^xsd:anyURI ;
+           fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-composition-document>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v true ] ;
@@ -16690,6 +16735,15 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
+       ] [
+         fhir:key [ fhir:v "comp-4" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "Une section ne peut pas contenir à la fois des entrées et des sous-sections." ] ;
+         fhir:expression [ fhir:v "not(exists(f:entry) and exists(f:section))" ] ;
+         fhir:source [
+           fhir:v "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-composition-document"^^xsd:anyURI ;
+           fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-composition-document>
+         ]
        ] ) ;
        fhir:mustSupport [ fhir:v true ] ;
        fhir:isModifier [ fhir:v false ] ;
@@ -17436,6 +17490,15 @@
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] [
+         fhir:key [ fhir:v "comp-4" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "Une section ne peut pas contenir à la fois des entrées et des sous-sections." ] ;
+         fhir:expression [ fhir:v "not(exists(f:entry) and exists(f:section))" ] ;
+         fhir:source [
+           fhir:v "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-composition-document"^^xsd:anyURI ;
+           fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-composition-document>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v true ] ;
@@ -18280,6 +18343,15 @@
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] [
+         fhir:key [ fhir:v "comp-4" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "Une section ne peut pas contenir à la fois des entrées et des sous-sections." ] ;
+         fhir:expression [ fhir:v "not(exists(f:entry) and exists(f:section))" ] ;
+         fhir:source [
+           fhir:v "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-composition-document"^^xsd:anyURI ;
+           fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-composition-document>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v true ] ;

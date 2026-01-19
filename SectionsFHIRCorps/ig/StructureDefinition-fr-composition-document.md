@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-composition-document | *Version*:0.1.0 |
-| Draft as of 2026-01-16 | *Computable Name*:FRCompositionDocument |
+| Draft as of 2026-01-19 | *Computable Name*:FRCompositionDocument |
 
  
 Ce profil est utilisé pour représenter un document médical. 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-composition-docum
   "name" : "FRCompositionDocument",
   "title" : "FR Composition Document",
   "status" : "draft",
-  "date" : "2026-01-16T14:35:31+00:00",
+  "date" : "2026-01-19T14:02:43+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -723,6 +723,19 @@ Other representations of profile: [CSV](StructureDefinition-fr-composition-docum
         "id" : "Composition.event:principalEvent.period",
         "path" : "Composition.event.period",
         "min" : 1
+      },
+      {
+        "id" : "Composition.section",
+        "path" : "Composition.section",
+        "constraint" : [
+          {
+            "key" : "comp-4",
+            "severity" : "error",
+            "human" : "Une section ne peut pas contenir à la fois des entrées et des sous-sections.",
+            "expression" : "not(exists(f:entry) and exists(f:section))",
+            "source" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-composition-document"
+          }
+        ]
       },
       {
         "id" : "Composition.section.code",

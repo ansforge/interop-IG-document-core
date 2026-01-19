@@ -10,7 +10,7 @@
   "name" : "FRCompositionDocumentCRBIO",
   "title" : "FR Composition Document CR BIO",
   "status" : "draft",
-  "date" : "2026-01-16T14:35:31+00:00",
+  "date" : "2026-01-19T14:02:43+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -9847,6 +9847,13 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "comp-4",
+        "severity" : "error",
+        "human" : "Une section ne peut pas contenir à la fois des entrées et des sous-sections.",
+        "expression" : "not(exists(f:entry) and exists(f:section))",
+        "source" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-composition-document"
       }],
       "mustSupport" : true,
       "isModifier" : false,
@@ -10464,6 +10471,13 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "comp-4",
+        "severity" : "error",
+        "human" : "Une section ne peut pas contenir à la fois des entrées et des sous-sections.",
+        "expression" : "not(exists(f:entry) and exists(f:section))",
+        "source" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-composition-document"
       }],
       "mustSupport" : true,
       "isModifier" : false,
@@ -11082,6 +11096,13 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "comp-4",
+        "severity" : "error",
+        "human" : "Une section ne peut pas contenir à la fois des entrées et des sous-sections.",
+        "expression" : "not(exists(f:entry) and exists(f:section))",
+        "source" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-composition-document"
       }],
       "mustSupport" : true,
       "isModifier" : false,
@@ -12221,6 +12242,13 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "comp-4",
+        "severity" : "error",
+        "human" : "Une section ne peut pas contenir à la fois des entrées et des sous-sections.",
+        "expression" : "not(exists(f:entry) and exists(f:section))",
+        "source" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-composition-document"
       }],
       "mustSupport" : true,
       "isModifier" : false,
@@ -12844,6 +12872,13 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "comp-4",
+        "severity" : "error",
+        "human" : "Une section ne peut pas contenir à la fois des entrées et des sous-sections.",
+        "expression" : "not(exists(f:entry) and exists(f:section))",
+        "source" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-composition-document"
       }],
       "mustSupport" : true,
       "isModifier" : false,
@@ -13550,6 +13585,13 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "comp-4",
+        "severity" : "error",
+        "human" : "Une section ne peut pas contenir à la fois des entrées et des sous-sections.",
+        "expression" : "not(exists(f:entry) and exists(f:section))",
+        "source" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-composition-document"
       }],
       "mustSupport" : true,
       "isModifier" : false,
@@ -14173,6 +14215,13 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "comp-4",
+        "severity" : "error",
+        "human" : "Une section ne peut pas contenir à la fois des entrées et des sous-sections.",
+        "expression" : "not(exists(f:entry) and exists(f:section))",
+        "source" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-composition-document"
       }],
       "mustSupport" : true,
       "isModifier" : false,
@@ -14879,6 +14928,13 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "comp-4",
+        "severity" : "error",
+        "human" : "Une section ne peut pas contenir à la fois des entrées et des sous-sections.",
+        "expression" : "not(exists(f:entry) and exists(f:section))",
+        "source" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-composition-document"
       }],
       "mustSupport" : true,
       "isModifier" : false,

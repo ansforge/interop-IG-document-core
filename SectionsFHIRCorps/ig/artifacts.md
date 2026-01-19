@@ -474,6 +474,14 @@ Si aucun code approprié n’est disponible, l’acte peut être décrit en text
 | [ValueSet – FR ValueSet Liste des sections](ValueSet-fr-vs-liste-sections.md) | ValueSet de toutes les sections dans un document |
 | [ValueSet – FR ValueSet Type d'évaluation](ValueSet-fr-vs-evaluation-type.md) | Codes autorisés pour indiquer le type d’évaluation. Inclut LOINC, ICF, et permet d’autres systèmes si aucun code approprié n’est trouvé. |
 
+### Terminology: Concept Maps 
+
+These define transformations to convert between codes by systems conforming with this implementation guide.
+
+| | |
+| :--- | :--- |
+| [Mapping FRLMTraitementDispense → FRCDATraitementDispense → FRMedicationDispenseDocument](ConceptMap-FRMedicationDispenseLMCDAFHIR.md) | Mapping des éléments du modèle métier FRLMTraitementDispense vers le profil CDA FRCDATraitementDispense, puis vers le profil FHIR FRMedicationDispenseDocument. |
+
 ### Example: Example Instances 
 
 These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.

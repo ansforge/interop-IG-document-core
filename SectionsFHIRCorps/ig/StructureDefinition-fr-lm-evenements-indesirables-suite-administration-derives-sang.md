@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-evenements-indesirables-suite-administration-derives-sang | *Version*:0.1.0 |
-| Draft as of 2026-01-16 | *Computable Name*:FRLMEvenementsIndesirablesSuiteAdministrationDerivesSang |
+| Draft as of 2026-01-19 | *Computable Name*:FRLMEvenementsIndesirablesSuiteAdministrationDerivesSang |
 
  
 Evènements indésirables suite à l’administration de dérivés du sang 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-evenements-ind
   "name" : "FRLMEvenementsIndesirablesSuiteAdministrationDerivesSang",
   "title" : "Modèle logique métier - FR LM Evènements indésirables suite à l'administration de dérivés du sang",
   "status" : "draft",
-  "date" : "2026-01-16T14:35:31+00:00",
+  "date" : "2026-01-19T14:02:43+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

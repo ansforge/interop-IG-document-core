@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-facteurs-de-risque-professionnels-non-code | *Version*:0.1.0 |
-| Draft as of 2026-01-16 | *Computable Name*:FRLMFacteursDeRisqueProfessionnelsNonCode |
+| Draft as of 2026-01-19 | *Computable Name*:FRLMFacteursDeRisqueProfessionnelsNonCode |
 
  
 Section Facteurs de risque professionnels non code 
@@ -51,7 +51,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-facteurs-de-ri
   "name" : "FRLMFacteursDeRisqueProfessionnelsNonCode",
   "title" : "Modèle logique métier - FR LM Facteurs de risque professionnels non code",
   "status" : "draft",
-  "date" : "2026-01-16T14:35:31+00:00",
+  "date" : "2026-01-19T14:02:43+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

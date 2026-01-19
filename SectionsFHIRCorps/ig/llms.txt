@@ -383,6 +383,7 @@
 * [Mapping Métier/CDA/FHIR : "Types des résultats classés par type d’examens (BIO, IMG, etc…)"](ConceptMap-FRDiagnosticReportLMCDAFHIR.md)
 * [Mapping Métier/CDA/FHIR : "Document Referencé"](ConceptMap-FRDocumentReferenceLMCDAFHIR.md)
 * [Mapping Métier/CDA/FHIR : "Encounter"](ConceptMap-FREncounterLMCDAFHIR.md)
+* [Mapping Métier/CDA/FHIR : "Traitement dispensé"](ConceptMap-FRMedicationDispenseLMCDAFHIR.md)
 * [Mapping Métier/CDA/FHIR : "Auteur"](ConceptMap-mappingAuteurCDAFHIR.md)
 * [Mapping Métier/CDA/FHIR : "Consentement"](ConceptMap-mappingConsentementCDAFHIR.md)
 * [Mapping Métier/CDA/FHIR : "Destinataire prévu"](ConceptMap-mappingDestinatairePrevuCDAFHIR.md)

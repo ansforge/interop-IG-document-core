@@ -66,6 +66,12 @@
     "version" : "0.1.0"
   },
   {
+    "id" : "FRMedicationDispenseLMCDAFHIR",
+    "type" : "ConceptMap",
+    "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRMedicationDispenseLMCDAFHIR",
+    "version" : "0.1.0"
+  },
+  {
     "id" : "mappingAuteurCDAFHIR",
     "type" : "ConceptMap",
     "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/mappingAuteurCDAFHIR",

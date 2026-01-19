@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-related-document | *Version*:0.1.0 |
-| Draft as of 2026-01-16 | *Computable Name*:FRCDARelatedDocument |
+| Draft as of 2026-01-19 | *Computable Name*:FRCDARelatedDocument |
 
  
 L’élément de l’en-tête du CDA relatedDocument permet de référencer un document existant (à remplacer ou transformé). 
@@ -70,7 +70,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-related-docum
   "name" : "FRCDARelatedDocument",
   "title" : "CDA - relatedDocument",
   "status" : "draft",
-  "date" : "2026-01-16T14:35:31+00:00",
+  "date" : "2026-01-19T14:02:43+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

@@ -125,6 +125,19 @@ Liste des ConceptMap détaillant le mapping entre les éléments du modèle mét
 | FRLMReferenceItemPlanTraitement.traitementPrescrit | FRCDAReferenceItemPlanTraitement.entryRelationship:frItemPlanTraitement | FRCarePlanDocument.activity.reference:FRMedicationRequestDocument |
 | FRLMReferenceItemPlanTraitement.reference | FRCDAReferenceItemPlanTraitement.reference | FRCarePlanDocument.activity.reference:FRMedicationRequestDocument |
 | FRLMReferenceItemPlanTraitement.reference. externalDocument.identifiant | FRCDAReferenceItemPlanTraitement.reference. externalDocument.id | FRCarePlanDocument.activity.reference:FRMedicationRequestDocument.identifier |
+| **FRLMTraitementDispense** | **FRCDATraitementDispense** |  |
+| FRLMTraitementDispense.identifiant | FRCDATraitementDispense.id |  |
+| FRLMTraitementDispense.code | FRCDATraitementDispense.code |  |
+| FRLMTraitementDispense.description | FRCDATraitementDispense.text |  |
+| FRLMTraitementDispense.quantite | FRCDATraitementDispense.quantity |  |
+| FRLMTraitementDispense.medicamentDelivre | FRCDATraitementDispense.product:frProduitDeSante |  |
+| FRLMTraitementDispense.referencePrescription | FRCDATraitementDispense.entryRelationship:frReferenceItemPrescription |  |
+| FRLMTraitementDispense. | FRCDATraitementDispense. |  |
+| FRLMTraitementDispense. | FRCDATraitementDispense. |  |
+| FRLMTraitementDispense. | FRCDATraitementDispense. |  |
+| FRLMTraitementDispense. | FRCDATraitementDispense. |  |
+| FRLMTraitementDispense. | FRCDATraitementDispense. |  |
+| FRLMTraitementDispense. | FRCDATraitementDispense. |  |
 | **FRLMResultatsEntry** | **FRCDAResultats** | **FRDiagnosticReportDocument** |
 | FRLMResultatsEntry.identifiant | FRCDAResultats.id | FRDiagnosticReportDocument.identifier |
 | FRLMResultatsEntry.code | FRCDAResultats.code | FRDiagnosticReportDocument.code |

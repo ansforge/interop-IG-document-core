@@ -89,7 +89,7 @@
   <name value="FRCompositionDocumentCRBIO"/>
   <title value="FR Composition Document CR BIO"/>
   <status value="draft"/>
-  <date value="2026-01-16T14:35:31+00:00"/>
+  <date value="2026-01-19T14:02:43+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -9594,6 +9594,13 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <constraint>
+        <key value="comp-4"/>
+        <severity value="error"/>
+        <human value="Une section ne peut pas contenir à la fois des entrées et des sous-sections."/>
+        <expression value="not(exists(f:entry) and exists(f:section))"/>
+        <source value="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-composition-document"/>
+      </constraint>
       <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
@@ -10191,6 +10198,13 @@
         <expression value="hasValue() or (children().count() &gt; id.count())"/>
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="comp-4"/>
+        <severity value="error"/>
+        <human value="Une section ne peut pas contenir à la fois des entrées et des sous-sections."/>
+        <expression value="not(exists(f:entry) and exists(f:section))"/>
+        <source value="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-composition-document"/>
       </constraint>
       <mustSupport value="true"/>
       <isModifier value="false"/>
@@ -10790,6 +10804,13 @@
         <expression value="hasValue() or (children().count() &gt; id.count())"/>
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="comp-4"/>
+        <severity value="error"/>
+        <human value="Une section ne peut pas contenir à la fois des entrées et des sous-sections."/>
+        <expression value="not(exists(f:entry) and exists(f:section))"/>
+        <source value="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-composition-document"/>
       </constraint>
       <mustSupport value="true"/>
       <isModifier value="false"/>
@@ -11893,6 +11914,13 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <constraint>
+        <key value="comp-4"/>
+        <severity value="error"/>
+        <human value="Une section ne peut pas contenir à la fois des entrées et des sous-sections."/>
+        <expression value="not(exists(f:entry) and exists(f:section))"/>
+        <source value="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-composition-document"/>
+      </constraint>
       <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
@@ -12496,6 +12524,13 @@
         <expression value="hasValue() or (children().count() &gt; id.count())"/>
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="comp-4"/>
+        <severity value="error"/>
+        <human value="Une section ne peut pas contenir à la fois des entrées et des sous-sections."/>
+        <expression value="not(exists(f:entry) and exists(f:section))"/>
+        <source value="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-composition-document"/>
       </constraint>
       <mustSupport value="true"/>
       <isModifier value="false"/>
@@ -13182,6 +13217,13 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <constraint>
+        <key value="comp-4"/>
+        <severity value="error"/>
+        <human value="Une section ne peut pas contenir à la fois des entrées et des sous-sections."/>
+        <expression value="not(exists(f:entry) and exists(f:section))"/>
+        <source value="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-composition-document"/>
+      </constraint>
       <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
@@ -13785,6 +13827,13 @@
         <expression value="hasValue() or (children().count() &gt; id.count())"/>
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="comp-4"/>
+        <severity value="error"/>
+        <human value="Une section ne peut pas contenir à la fois des entrées et des sous-sections."/>
+        <expression value="not(exists(f:entry) and exists(f:section))"/>
+        <source value="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-composition-document"/>
       </constraint>
       <mustSupport value="true"/>
       <isModifier value="false"/>
@@ -14470,6 +14519,13 @@
         <expression value="hasValue() or (children().count() &gt; id.count())"/>
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="comp-4"/>
+        <severity value="error"/>
+        <human value="Une section ne peut pas contenir à la fois des entrées et des sous-sections."/>
+        <expression value="not(exists(f:entry) and exists(f:section))"/>
+        <source value="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-composition-document"/>
       </constraint>
       <mustSupport value="true"/>
       <isModifier value="false"/>
