@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-identification-de-micro-organismes-multiresistants | *Version*:0.1.0 |
-| Draft as of 2026-01-16 | *Computable Name*:FRLMIdentificationDeMicroOrganismesMultiresistants |
+| Draft as of 2026-01-19 | *Computable Name*:FRLMIdentificationDeMicroOrganismesMultiresistants |
 
  
 Identification de micro-organismes multirésistants 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-identification
   "name" : "FRLMIdentificationDeMicroOrganismesMultiresistants",
   "title" : "Modèle logique métier - FR LM Identification de micro-organismes multirésistants",
   "status" : "draft",
-  "date" : "2026-01-16T13:49:34+00:00",
+  "date" : "2026-01-19T11:08:31+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

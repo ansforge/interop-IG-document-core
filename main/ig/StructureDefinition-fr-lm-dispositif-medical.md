@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dispositif-medical | *Version*:0.1.0 |
-| Draft as of 2026-01-16 | *Computable Name*:FRLMDispositifMedical |
+| Draft as of 2026-01-19 | *Computable Name*:FRLMDispositifMedical |
 
  
 Dispositif médical 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-dispositif-med
   "name" : "FRLMDispositifMedical",
   "title" : "Modèle logique métier - Dispositif médical",
   "status" : "draft",
-  "date" : "2026-01-16T13:49:34+00:00",
+  "date" : "2026-01-19T11:08:31+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

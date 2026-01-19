@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-evolution-effet-indesirable | *Version*:0.1.0 |
-| Draft as of 2026-01-16 | *Computable Name*:FRLMEvolutionEffetIndesirable |
+| Draft as of 2026-01-19 | *Computable Name*:FRLMEvolutionEffetIndesirable |
 
  
 Evolution effet indesirable 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-evolution-effe
   "name" : "FRLMEvolutionEffetIndesirable",
   "title" : "Modèle logique métier - FR LM Evolution effet indesirable",
   "status" : "draft",
-  "date" : "2026-01-16T13:49:34+00:00",
+  "date" : "2026-01-19T11:08:31+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

@@ -3,7 +3,7 @@ FRDocumentCore : Validation Results
 
 err = 510, warn = 3756, info = 1105
 IG Publisher Version: 2.0.29
-Generated Fri Jan 16 14:05:07 UTC 2026. FHIR version 4.0.1 for ans.document.fr.core#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/document/core)
+Generated Mon Jan 19 11:25:38 UTC 2026. FHIR version 4.0.1 for ans.document.fr.core#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/document/core)
  Build Errors : 10 / 4 / 0
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRActLMCDAFHIR : 0 / 8 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRAdvanceDirectiveLMCDAFHIR : 0 / 8 / 1
@@ -4599,8 +4599,8 @@ WARNING: ValueSet/fr-vs-evaluation-type: ValueSet: Published value sets SHOULD c
 == fsh-generated/resources/ValueSet-fr-vs-medication-translation-document.json ==
 WARNING: ValueSet/fr-vs-medication-translation-document: ValueSet.compose.include[1].system: No definition could be found for URL value 'https://smt.esante.gouv.fr/terminologie-cip_ucd'
 WARNING: ValueSet/fr-vs-medication-translation-document: ValueSet.compose.include[3].system: No definition could be found for URL value 'https://smt.esante.gouv.fr/terminologie-medicabase'
-ERROR: ValueSet.where(id = 'fr-vs-medication-translation-document'): Error from https://smt.esante.gouv.fr/fhir: Error: [22dd088c-c680-4a87-8704-ed54a1b61f89]: Could not find the code system https://smt.esante.gouv.fr/terminologie-cip_ucd|2026-01
-Information: X-Request-Id: a40d73c8-3c5b-4ab3-9340-e321b95c40d6
+ERROR: ValueSet.where(id = 'fr-vs-medication-translation-document'): Error from https://smt.esante.gouv.fr/fhir: Error: [9fa9ef56-ad4f-42fe-a0b1-fc2ba5829427]: Could not find the code system https://smt.esante.gouv.fr/terminologie-cip_ucd|2026-01
+Information: X-Request-Id: 7e48f9ed-5e1c-4d14-be12-b2cf0f93cdce
 == fsh-generated/resources/ValueSet-fr-vs-procedure-code.json ==
 WARNING: ValueSet/fr-vs-procedure-code: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 ERROR: ValueSet.where(id = 'fr-vs-procedure-code'): Error from https://tx.fhir.org/r4: A definition for CodeSystem 'https://smt.esante.gouv.fr/terminologie-ccam' could not be found, so the value set cannot be expanded
