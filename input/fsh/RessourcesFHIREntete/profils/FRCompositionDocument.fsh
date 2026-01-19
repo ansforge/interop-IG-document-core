@@ -146,6 +146,7 @@ Description: "Ce profil est utilisé pour représenter un document médical."
 * section.text 1..1
 * section.entry 0..*   // entrée libre, sera profilée dans les volets spécifiques
 * section.section 0..* // sous-section libre, sera profilée dans les volets spécifiques
+* section obeys comp-4
 
 /// INVARIANTS
 Invariant:  comp-1
