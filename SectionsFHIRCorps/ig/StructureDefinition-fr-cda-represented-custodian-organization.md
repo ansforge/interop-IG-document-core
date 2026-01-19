@@ -70,7 +70,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-represented-c
   "name" : "FRCDARepresentedCustodianOrganization",
   "title" : "CDA - representedCustodianOrganization",
   "status" : "draft",
-  "date" : "2026-01-19T14:02:43+00:00",
+  "date" : "2026-01-19T14:05:23+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

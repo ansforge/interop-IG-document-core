@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-evenements-ind
   "name" : "FRLMEvenementsIndesirablesSuiteAdministrationDerivesSang",
   "title" : "Modèle logique métier - FR LM Evènements indésirables suite à l'administration de dérivés du sang",
   "status" : "draft",
-  "date" : "2026-01-19T14:02:43+00:00",
+  "date" : "2026-01-19T14:05:23+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

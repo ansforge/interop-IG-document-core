@@ -26,7 +26,7 @@ Mapping des éléments du modèle métier FRLMDispositifMedicalEntree vers le pr
   "version" : "0.1.0",
   "title" : "Mapping Métier/CDA/FHIR : \"Prescription de dispositif médical\"",
   "status" : "draft",
-  "date" : "2026-01-19T14:02:43+00:00",
+  "date" : "2026-01-19T14:05:23+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

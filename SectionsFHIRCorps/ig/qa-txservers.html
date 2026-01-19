@@ -12,7 +12,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Terminology Server Report for FRDocumentCore</h1>
- <p>Generated Mon Jan 19 14:18:25 UTC 2026, FHIR version 4.0.1 for ans.document.fr.core#0.1.0 (canonical = <a href="https://interop.esante.gouv.fr/ig/document/core">https://interop.esante.gouv.fr/ig/document/core</a> (<a href="https://interop.esante.gouv.fr/ig/document/core/history.html">history</a>))</p>
+ <p>Generated Mon Jan 19 14:29:12 UTC 2026, FHIR version 4.0.1 for ans.document.fr.core#0.1.0 (canonical = <a href="https://interop.esante.gouv.fr/ig/document/core">https://interop.esante.gouv.fr/ig/document/core</a> (<a href="https://interop.esante.gouv.fr/ig/document/core/history.html">history</a>))</p>
 <p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
 <h2>Terminology Parameters</h2>
 <ul>
@@ -5384,7 +5384,7 @@
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
-    <td>urn:uuid:05da5fd7-c2a4-4079-8778-ac9181d7425b</td>
+    <td>urn:uuid:8f7d26ab-3639-4079-a4c0-bd6d5fb5eb33</td>
     <td>urn:ietf:bcp:47</td>
     <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4|https://tx-nordics.fhir.org/fhir/r4</td>
   </tr>
@@ -6635,18 +6635,11 @@
     <td>auth = , candidates=</td>
   </tr>
   <tr>
-    <td>System not handled by any servers. Using primary server</td>
+    <td>Found candidate server https://tx.fhir.org/r4</td>
     <td>https://tx.fhir.org/r4</td>
     <td>null</td>
     <td>https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-allergie-ou-hypersensibilite</td>
-    <td>auth = , candidates=</td>
-  </tr>
-  <tr>
-    <td>Fallback: primary server</td>
-    <td>https://tx.fhir.org/r4</td>
-    <td>null</td>
-    <td>https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-allergie-ou-hypersensibilite</td>
-    <td>auth = , candidates=</td>
+    <td>auth = , candidates=https://tx.fhir.org/r4</td>
   </tr>
   <tr>
     <td>System not handled by any servers. Using primary server</td>
@@ -10819,6 +10812,25 @@
     <td></td>
     <td>urn:iso:std:iso:3166:-2</td>
     <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|http://tx.hl7europe.eu/r4|https://tx.hl7chile.cl/r4|https://tx-nordics.fhir.org/fhir/r4</td>
+  </tr>
+</table>
+<p>
+  <b>Errors</b>
+</p>
+<table class="grid">
+  <tr>
+    <td>
+      <b>URL</b>
+    </td>
+    <td>
+      <b>Message</b>
+    </td>
+  </tr>
+  <tr>
+    <td>https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-allergie-ou-hypersensibilite</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;url=https%3A%2F%2Finterop.esante.gouv.fr%2Fig%2Fdocument%2Fcore%2FStructureDefinition%2Ffr-cda-allergie-ou-hypersensibilite&amp;usage=publication">Error resolving system https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-allergie-ou-hypersensibilite: Connect timed out</span>
+    </td>
   </tr>
 </table>
 <h2>Primary Server: https://tx.fhir.org/r4</h2>
