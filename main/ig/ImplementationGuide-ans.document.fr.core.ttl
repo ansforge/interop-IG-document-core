@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "FRDocumentCore"] ; # 
   fhir:title [ fhir:v "ANS IG document core"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-01-19T11:08:31+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-01-19T13:54:24+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -1432,7 +1432,7 @@
        fhir:id [ fhir:v "Modèles logiques métier des sections d'un document" ] ;
        fhir:name [ fhir:v "Modèles logiques métier des sections d'un document" ]
      ] [
-       fhir:id [ fhir:v "Modèles logiques métiers des composants élémentaires" ] ;
+       fhir:id [ fhir:v "Modèles logiques métier des composants élémentaires" ] ;
        fhir:name [ fhir:v "Modèles logiques métier des composants élémentaires" ] ;
        fhir:description [ fhir:v "Modèles de données métier représentant les concepts élémentaires, modélisés indépendamment de la syntaxe et de façon plus accessible pour le métier que les éléments techniques CDA et FHIR." ]
      ] [
@@ -3579,6 +3579,50 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRFamilyMemberHistoryLMCDAFHIR> ;
+         fhir:reference [ fhir:v "ConceptMap/FRFamilyMemberHistoryLMCDAFHIR" ]
+       ] ;
+       fhir:name [ fhir:v "Mapping FRLMAntecedentFamilialObserve → FRCDAAntecedentFamilialObserve → FRFamilyMemberHistoryDocument" ] ;
+       fhir:description [ fhir:v "Mapping des éléments du modèle métier FRLMAntecedentFamilialObserve vers le profil CDA FRCDAAntecedentFamilialObserve, puis vers le profil FHIR FRFamilyMemberHistoryDocument." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR corps" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ConceptMap"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRFamilyMemberHistoriesLMCDAFHIR> ;
+         fhir:reference [ fhir:v "ConceptMap/FRFamilyMemberHistoriesLMCDAFHIR" ]
+       ] ;
+       fhir:name [ fhir:v "Mapping FRLMAntecedentsFamiliauxEntree → FRCDAAntecedentsFamiliaux → FRFamilyMemberHistoryDocument" ] ;
+       fhir:description [ fhir:v "Mapping des éléments du modèle métier FRLMAntecedentsFamiliauxEntree vers le profil CDA FRCDAAntecedentsFamiliaux, puis vers le profil FHIR FRFamilyMemberHistoryDocument." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR corps" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ConceptMap"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRConditionLMCDAFHIR> ;
          fhir:reference [ fhir:v "ConceptMap/FRConditionLMCDAFHIR" ]
        ] ;
@@ -3689,6 +3733,50 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRImagingStudyLMCDAFHIR> ;
+         fhir:reference [ fhir:v "ConceptMap/FRImagingStudyLMCDAFHIR" ]
+       ] ;
+       fhir:name [ fhir:v "Mapping FRLMExamenImagerie → FRCDADICOMExamenImagerie → FRImagingStudyDocument" ] ;
+       fhir:description [ fhir:v "Mapping des éléments du modèle métier FRLMExamenImagerie vers le profil CDA FRCDADICOMExamenImagerie, puis vers le profil FHIR FRImagingStudyDocument." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR corps" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ConceptMap"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRMediaLMCDAFHIR> ;
+         fhir:reference [ fhir:v "ConceptMap/FRMediaLMCDAFHIR" ]
+       ] ;
+       fhir:name [ fhir:v "Mapping FRLMImageIllustrative → FRCDAImageIllustrative → FRMediaDocument" ] ;
+       fhir:description [ fhir:v "Mapping des éléments du modèle métier FRLMImageIllustrative vers le profil CDA FRCDAImageIllustrative, puis vers le profil FHIR FRMediaDocument." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR corps" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ConceptMap"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRDeviceRequestLMCDAFHIR> ;
          fhir:reference [ fhir:v "ConceptMap/FRDeviceRequestLMCDAFHIR" ]
        ] ;
@@ -3760,6 +3848,72 @@
        ] ;
        fhir:name [ fhir:v "Mapping FRLMResultatsEntry → FRCDAResultats → FRDiagnosticReportDocument" ] ;
        fhir:description [ fhir:v "Mapping des éléments du modèle métier FRLMResultatsEntry vers le profil CDA FRCDAResultats, puis vers le profil FHIR FRDiagnosticReportDocument." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR corps" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ConceptMap"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRMedicationAdministrationLMCDAFHIR> ;
+         fhir:reference [ fhir:v "ConceptMap/FRMedicationAdministrationLMCDAFHIR" ]
+       ] ;
+       fhir:name [ fhir:v "Mapping FRLMTraitement → FRCDATraitement → FRMedicationAdministrationDocument" ] ;
+       fhir:description [ fhir:v "Mapping des éléments du modèle métier FRLMTraitement vers le profil CDA FRCDATraitement, puis vers le profil FHIR FRMedicationAdministrationDocument." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR corps" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ConceptMap"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRImmunizationLMCDAFHIR> ;
+         fhir:reference [ fhir:v "ConceptMap/FRImmunizationLMCDAFHIR" ]
+       ] ;
+       fhir:name [ fhir:v "Mapping FRLMVaccination → FRCDAVaccination → FRImmunizationDocument" ] ;
+       fhir:description [ fhir:v "Mapping des éléments du modèle métier FRLMVaccination vers le profil CDA FRCDAVaccination, puis vers le profil FHIR FRImmunizationDocument." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR corps" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ConceptMap"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRImmunizationRecommendationLMCDAFHIR> ;
+         fhir:reference [ fhir:v "ConceptMap/FRImmunizationRecommendationLMCDAFHIR" ]
+       ] ;
+       fhir:name [ fhir:v "Mapping FRLMVaccinRecommande → FRCDAVaccinRecommande → FRImmunizationRecommendationDocument" ] ;
+       fhir:description [ fhir:v "Mapping des éléments du modèle métier FRLMVaccinRecommande vers le profil CDA FRCDAVaccinRecommande, puis vers le profil FHIR FRImmunizationRecommendationDocument." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -4358,7 +4512,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -4380,7 +4534,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -4402,7 +4556,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -4446,7 +4600,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -4490,7 +4644,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -4512,7 +4666,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -4534,7 +4688,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -4578,7 +4732,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -4600,7 +4754,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -4710,7 +4864,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -4732,7 +4886,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -4754,7 +4908,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -4776,7 +4930,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -4798,7 +4952,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -4842,7 +4996,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -5018,7 +5172,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -5062,7 +5216,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -5106,7 +5260,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -5172,7 +5326,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -5216,7 +5370,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -5304,7 +5458,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -5348,7 +5502,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -5392,7 +5546,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -5414,7 +5568,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -5436,7 +5590,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -5480,7 +5634,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -5502,7 +5656,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -5524,7 +5678,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -5546,7 +5700,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -5568,7 +5722,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -5590,7 +5744,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -5612,7 +5766,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -5700,7 +5854,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -5722,7 +5876,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -5766,7 +5920,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -5788,7 +5942,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -5810,7 +5964,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -5832,7 +5986,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -5854,7 +6008,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -5876,7 +6030,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -5898,7 +6052,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -5964,7 +6118,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -5986,7 +6140,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -6008,7 +6162,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -6030,7 +6184,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -6052,7 +6206,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -6074,7 +6228,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -6096,7 +6250,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -6118,7 +6272,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -6140,7 +6294,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -6162,7 +6316,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -6206,7 +6360,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -6228,7 +6382,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -6272,7 +6426,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -6316,7 +6470,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -6338,7 +6492,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -6382,7 +6536,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -6492,7 +6646,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -6602,7 +6756,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -6646,7 +6800,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -6668,7 +6822,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -6690,7 +6844,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -6712,7 +6866,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -6734,7 +6888,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -6800,7 +6954,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -6822,7 +6976,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -6844,7 +6998,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -6888,7 +7042,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -6910,7 +7064,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -6932,7 +7086,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -6954,7 +7108,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -6976,7 +7130,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -6998,7 +7152,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -7020,7 +7174,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -7196,7 +7350,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -7218,7 +7372,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -7240,7 +7394,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -7284,7 +7438,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -7328,7 +7482,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -7350,7 +7504,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -7372,7 +7526,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -7416,7 +7570,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -7482,7 +7636,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -7504,7 +7658,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -7526,7 +7680,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -7570,7 +7724,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -7592,7 +7746,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -7614,7 +7768,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métier des sections d'un document" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -7636,7 +7790,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -7658,7 +7812,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -7680,7 +7834,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -7702,7 +7856,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -7724,7 +7878,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des sections d'un document" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -7790,7 +7944,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -7812,7 +7966,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -7834,7 +7988,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -7856,7 +8010,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -7922,7 +8076,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métiers des composants élémentaires" ]
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [

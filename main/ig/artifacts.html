@@ -924,11 +924,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-traitement.html"
-                  title="StructureDefinition/fr-lm-traitement">Modèle logique métier - FR LM Traitement</a>
+               <a href="StructureDefinition-fr-lm-traitements.html"
+                  title="StructureDefinition/fr-lm-traitements">Modèle logique métier - FR LM Traitements</a>
             </td>
             <td>
-<p>Traitement</p>
+<p>Section Traitements</p>
 </td>
          </tr>
          <tr>
@@ -1751,6 +1751,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-traitement.html"
+                  title="StructureDefinition/fr-lm-traitement">Modèle logique métier - FR LM Traitement</a>
+            </td>
+            <td>
+<p>Traitement</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-fr-lm-traitement-dispense.html"
                   title="StructureDefinition/fr-lm-traitement-dispense">Modèle logique métier - FR LM Traitement dispensé</a>
             </td>
@@ -1783,15 +1792,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Traitement subordonné</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-traitements.html"
-                  title="StructureDefinition/fr-lm-traitements">Modèle logique métier - FR LM Traitements</a>
-            </td>
-            <td>
-<p>Section Traitements</p>
 </td>
          </tr>
          <tr>
@@ -3229,6 +3229,24 @@ acte d’imagerie, localisation anatomique / latéralité / topographie, d’aut
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="ConceptMap-FRFamilyMemberHistoryLMCDAFHIR.html"
+                  title="ConceptMap/FRFamilyMemberHistoryLMCDAFHIR">Mapping FRLMAntecedentFamilialObserve → FRCDAAntecedentFamilialObserve → FRFamilyMemberHistoryDocument</a>
+            </td>
+            <td>
+<p>Mapping des éléments du modèle métier FRLMAntecedentFamilialObserve vers le profil CDA FRCDAAntecedentFamilialObserve, puis vers le profil FHIR FRFamilyMemberHistoryDocument.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ConceptMap-FRFamilyMemberHistoriesLMCDAFHIR.html"
+                  title="ConceptMap/FRFamilyMemberHistoriesLMCDAFHIR">Mapping FRLMAntecedentsFamiliauxEntree → FRCDAAntecedentsFamiliaux → FRFamilyMemberHistoryDocument</a>
+            </td>
+            <td>
+<p>Mapping des éléments du modèle métier FRLMAntecedentsFamiliauxEntree vers le profil CDA FRCDAAntecedentsFamiliaux, puis vers le profil FHIR FRFamilyMemberHistoryDocument.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="ConceptMap-FRConditionLMCDAFHIR.html"
                   title="ConceptMap/FRConditionLMCDAFHIR">Mapping FRLMCondition → FRCDACondition → FRConditionDocument</a>
             </td>
@@ -3275,6 +3293,24 @@ profil CDA FRCDADispositifMedical, puis vers le profil FHIR FRDeviceUseStatement
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="ConceptMap-FRImagingStudyLMCDAFHIR.html"
+                  title="ConceptMap/FRImagingStudyLMCDAFHIR">Mapping FRLMExamenImagerie → FRCDADICOMExamenImagerie → FRImagingStudyDocument</a>
+            </td>
+            <td>
+<p>Mapping des éléments du modèle métier FRLMExamenImagerie vers le profil CDA FRCDADICOMExamenImagerie, puis vers le profil FHIR FRImagingStudyDocument.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ConceptMap-FRMediaLMCDAFHIR.html"
+                  title="ConceptMap/FRMediaLMCDAFHIR">Mapping FRLMImageIllustrative → FRCDAImageIllustrative → FRMediaDocument</a>
+            </td>
+            <td>
+<p>Mapping des éléments du modèle métier FRLMImageIllustrative vers le profil CDA FRCDAImageIllustrative, puis vers le profil FHIR FRMediaDocument.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="ConceptMap-FRDeviceRequestLMCDAFHIR.html"
                   title="ConceptMap/FRDeviceRequestLMCDAFHIR">Mapping FRLMOrdreDispositifMedical → FRCDAOrdreDispositifMedical → FRDeviceRequestDocument</a>
             </td>
@@ -3307,6 +3343,33 @@ profil CDA FRCDADispositifMedical, puis vers le profil FHIR FRDeviceUseStatement
             </td>
             <td>
 <p>Mapping des éléments du modèle métier FRLMResultatsEntry vers le profil CDA FRCDAResultats, puis vers le profil FHIR FRDiagnosticReportDocument.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ConceptMap-FRMedicationAdministrationLMCDAFHIR.html"
+                  title="ConceptMap/FRMedicationAdministrationLMCDAFHIR">Mapping FRLMTraitement → FRCDATraitement → FRMedicationAdministrationDocument</a>
+            </td>
+            <td>
+<p>Mapping des éléments du modèle métier FRLMTraitement vers le profil CDA FRCDATraitement, puis vers le profil FHIR FRMedicationAdministrationDocument.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ConceptMap-FRImmunizationLMCDAFHIR.html"
+                  title="ConceptMap/FRImmunizationLMCDAFHIR">Mapping FRLMVaccination → FRCDAVaccination → FRImmunizationDocument</a>
+            </td>
+            <td>
+<p>Mapping des éléments du modèle métier FRLMVaccination vers le profil CDA FRCDAVaccination, puis vers le profil FHIR FRImmunizationDocument.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ConceptMap-FRImmunizationRecommendationLMCDAFHIR.html"
+                  title="ConceptMap/FRImmunizationRecommendationLMCDAFHIR">Mapping FRLMVaccinRecommande → FRCDAVaccinRecommande → FRImmunizationRecommendationDocument</a>
+            </td>
+            <td>
+<p>Mapping des éléments du modèle métier FRLMVaccinRecommande vers le profil CDA FRCDAVaccinRecommande, puis vers le profil FHIR FRImmunizationRecommendationDocument.</p>
 </td>
          </tr>
       </tbody>
@@ -3564,7 +3627,7 @@ Inclut LOINC, ICF, et permet d’autres systèmes si aucun code approprié n’e
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.document.fr.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jan 19, 2026 11:08+0000">2026-01-19</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.document.fr.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jan 19, 2026 13:54+0000">2026-01-19</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |

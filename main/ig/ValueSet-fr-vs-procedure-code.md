@@ -57,7 +57,7 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "name" : "FRValueSetProcedureCodeDocument",
   "title" : "ValueSet – FR ValueSet Codes d’actes",
   "status" : "draft",
-  "date" : "2026-01-19T11:08:31+00:00",
+  "date" : "2026-01-19T13:54:24+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
