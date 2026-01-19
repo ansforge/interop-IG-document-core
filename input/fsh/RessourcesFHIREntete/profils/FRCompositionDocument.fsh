@@ -149,10 +149,10 @@ Description: "Ce profil est utilisé pour représenter un document médical."
 * section obeys comp-4
 
 /// INVARIANTS
-Invariant:  comp-1
+Invariant: comp-1
 Description: "La valeur de l'extension versionNumber doit être un entier."
-Expression:  "value.matches('^[0-9]+$')" 
-Severity:    #error
+Expression: "value.matches('^[0-9]+$')" 
+Severity: #error
 
 Invariant: comp-3
 Description: "La valeur du PractitionerRole.code dans l'extension[party]' doit être 'PROV' ou 'AGNT'."
