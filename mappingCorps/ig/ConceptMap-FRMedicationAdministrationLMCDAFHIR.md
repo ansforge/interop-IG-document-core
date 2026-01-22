@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRMedicationAdministrationLMCDAFHIR | *Version*:0.1.0 |
-| Draft as of 2026-01-16 | *Computable Name*: |
+| Draft as of 2026-01-22 | *Computable Name*: |
 
  
 Mapping des éléments du modèle métier FRLMTraitement vers le profil CDA FRCDATraitement, puis vers le profil FHIR FRMedicationAdministrationDocument. 
@@ -24,9 +24,9 @@ Mapping des éléments du modèle métier FRLMTraitement vers le profil CDA FRCD
   "id" : "FRMedicationAdministrationLMCDAFHIR",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRMedicationAdministrationLMCDAFHIR",
   "version" : "0.1.0",
-  "title" : "Mapping Métier/CDA/FHIR : \"Traitement\"",
+  "title" : "Mapping Métier/CDA/FHIR : \"Traitement déjà administré\"",
   "status" : "draft",
-  "date" : "2026-01-16T14:59:20+00:00",
+  "date" : "2026-01-22T09:24:45+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -232,6 +232,15 @@ Mapping des éléments du modèle métier FRLMTraitement vers le profil CDA FRCD
       "source" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-traitement",
       "target" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-administration-document",
       "element" : [
+        {
+          "code" : "FRCDATraitement",
+          "target" : [
+            {
+              "code" : "FRMedicationAdministrationDocument",
+              "equivalence" : "equivalent"
+            }
+          ]
+        },
         {
           "code" : "FRCDATraitement.id",
           "target" : [

@@ -20,7 +20,7 @@ Liste des ConceptMap détaillant le mapping entre les éléments du modèle mét
 | FRLMActe.titre |  |  |
 | FRLMActe.statut | FRCDAActe.statusCode | FRProcedureActDocument.status |
 | FRLMActe.date | FRCDAActe.effectiveTime | FRProcedureActDocument.performed[x] |
-| FRLMActe.priorite | FRCDAActe.priorityCode |  |
+| FRLMActe.priorite | FRCDAActe.priorityCode | FRProcedureActDocument.extension:priority |
 | FRLMActe.localisationAnatomique | FRCDAActe.targetSiteCode | FRProcedureActDocument.bodySite.TargetSiteCode |
 | FRLMActe.voieDAbord | FRCDAActe.approachSiteCode | FRProcedureActDocument.bodySite.ApproachSiteCode |
 | FRLMActe.perfomer | FRCDAActe.performer | FRProcedureActDocument.performer.actor.extension:Intervenant |
@@ -32,6 +32,14 @@ Liste des ConceptMap détaillant le mapping entre les éléments du modèle mét
 | FRLMActe.dispositifMedical | FRCDAActe.entryRelationship:frReferenceInterneDM | FRProcedureActDocument.usedReference |
 | FRLMActe.difficulte | FRCDAActe.entryRelationship:frSimpleObservationDifficulte | FRProcedureActDocument.extension:difficulte |
 | FRLMActe.scores | FRCDAActe.entryRelationship:frSimpleObservationScores | FRProcedureActDocument.partOf |
+| **FRLMAdministrationDeDerivesDuSang** | **FRCDAAdministrationDeDerivesDuSang** | **FRObservationAdministrationBloodDerivativesDocument** |
+| FRLMAdministrationDeDerivesDuSang.identifiant | FRCDAAdministrationDeDerivesDuSang.id | FRObservationAdministrationBloodDerivativesDocument.identifier |
+| FRLMAdministrationDeDerivesDuSang.code | FRCDAAdministrationDeDerivesDuSang.code | FRObservationAdministrationBloodDerivativesDocument.code |
+| FRLMAdministrationDeDerivesDuSang.description | FRCDAAdministrationDeDerivesDuSang.text | FRObservationAdministrationBloodDerivativesDocument.code.text |
+| FRLMAdministrationDeDerivesDuSang.statut | FRCDAAdministrationDeDerivesDuSang.statusCode | FRObservationAdministrationBloodDerivativesDocument.status |
+| FRLMAdministrationDeDerivesDuSang.date | FRCDAAdministrationDeDerivesDuSang.effectiveTime | FRObservationAdministrationBloodDerivativesDocument.effective[x] |
+| FRLMAdministrationDeDerivesDuSang.valeur | FRCDAAdministrationDeDerivesDuSang.value | FRObservationAdministrationBloodDerivativesDocument.valueBoolean |
+| FRLMAdministrationDeDerivesDuSang.auteur | FRCDAAdministrationDeDerivesDuSang.author | FRObservationAdministrationBloodDerivativesDocument.performer.extension:author |
 | **FRLMAllergieOuHypersensibilite** | **FRCDAAllergieOuHypersensibilite** | **FRAllergyIntoleranceDocument** |
 | FRLMAllergieOuHypersensibilite.identifiant | FRCDAAllergieOuHypersensibilite.id | FRAllergyIntoleranceDocument.identifier |
 | FRLMAllergieOuHypersensibilite.description | FRCDAAllergieOuHypersensibilite.text | FRAllergyIntoleranceDocument.code.Text |
@@ -56,7 +64,7 @@ Liste des ConceptMap détaillant le mapping entre les éléments du modèle mét
 | FRLMAntecedentFamilialObserve.auteur | FRCDAAntecedentFamilialObserve.author | FRFamilyMemberHistoryDocument.condition.extension:FRActorExtension |
 | **FRLMAntecedentsFamiliauxEntree** | **FRCDAAntecedentsFamiliaux** | **FRFamilyMemberHistoryDocument** |
 | FRLMAntecedentsFamiliauxEntree.statut | FRCDAAntecedentsFamiliaux.statusCode | FRFamilyMemberHistoryDocument.status |
-| FRLMAntecedentsFamiliauxEntree.identificationParent | FRCDAAntecedentsFamiliaux.subject |  |
+| FRLMAntecedentsFamiliauxEntree.identificationParent | FRCDAAntecedentsFamiliaux.subject | FRFamilyMemberHistoryDocument.relationship |
 | FRLMAntecedentsFamiliauxEntree.participant | FRCDAAntecedentsFamiliaux.participant | FRFamilyMemberHistoryDocument.relationship |
 | FRLMAntecedentsFamiliauxEntree.antecedentFamilialObserve | FRCDAAntecedentsFamiliaux.component:frAntecedentFamilialObserve | FRFamilyMemberHistoryDocument.condition |
 | **FRLMDirectiveAnticipee** | **FRCDADirectiveAnticipee** | **FRAdvanceDirectiveDocument** |
@@ -65,11 +73,11 @@ Liste des ConceptMap détaillant le mapping entre les éléments du modèle mét
 | FRLMDirectiveAnticipee.description | FRCDADirectiveAnticipee.text | FRAdvanceDirectiveDocument.provision.code.text |
 | FRLMDirectiveAnticipee.statut | FRCDADirectiveAnticipee.statusCode | FRAdvanceDirectiveDocument.status |
 | FRLMDirectiveAnticipee.date | FRCDADirectiveAnticipee.effectiveTime | FRAdvanceDirectiveDocument.dateTime |
-| FRLMDirectiveAnticipee.valeurDirectiveIdentifiee | FRCDADirectiveAnticipee.valueBoolean |  |
+| FRLMDirectiveAnticipee.valeurDirectiveIdentifiee | FRCDADirectiveAnticipee.valueBoolean | FRAdvanceDirectiveDocument.provision.type |
 | FRLMDirectiveAnticipee.reference | FRCDADirectiveAnticipee.reference. externalDocument.text.reference | FRAdvanceDirectiveDocument.sourceReference |
 | FRLMDirectiveAnticipee.documentEncapsule | FRCDADirectiveAnticipee.entryRelationship | FRAdvanceDirectiveDocument.sourceAttachment |
 | FRLMDirectiveAnticipee.documentEncapsule.observationMedia | FRCDADirectiveAnticipee.entryRelationship.observationMedia | FRAdvanceDirectiveDocument.sourceAttachment |
-| FRLMDirectiveAnticipee.documentEncapsule. observationMedia.identifiant | FRCDADirectiveAnticipee.entryRelationship. observationMedia.id |  |
+| FRLMDirectiveAnticipee.documentEncapsule. observationMedia.identifiant | FRCDADirectiveAnticipee.entryRelationship. observationMedia.id | FRAdvanceDirectiveDocument.sourceAttachment.id |
 | FRLMDirectiveAnticipee.documentEncapsule. observationMedia.documentEncapsuleEncode | FRCDADirectiveAnticipee.entryRelationship. observationMedia.value | FRAdvanceDirectiveDocument.sourceAttachment.data |
 | FRLMDirectiveAnticipee.documentEncapsule. observationMedia.documentEncapsuleEncode | FRCDADirectiveAnticipee.entryRelationship. observationMedia.value | FRAdvanceDirectiveDocument.sourceAttachment.url |
 | **FRLMDocumentAttache** | **FRCDADocumentAttache** | **FRDocumentReferenceDocument** |
@@ -85,7 +93,8 @@ Liste des ConceptMap détaillant le mapping entre les éléments du modèle mét
 | FRLMEffetIndesirable.identifiant | FRCDAEffetIndesirable.id | FRAdverseEventDocument.identifier |
 | FRLMEffetIndesirable.typeEffetIndesirable | FRCDAEffetIndesirable.code | FRAdverseEventDocument.category |
 | FRLMEffetIndesirable.description | FRCDAEffetIndesirable.text | FRAdverseEventDocument.category.text |
-| FRLMEffetIndesirable.dateDebutFin | FRCDAEffetIndesirable.effectiveTime |  |
+| FRLMEffetIndesirable.dateDebut | FRCDAEffetIndesirable.effectiveTime.low | FRAdverseEventDocument.date |
+| FRLMEffetIndesirable.dateFin | FRCDAEffetIndesirable.effectiveTime.high | FRAdverseEventDocument.detected |
 | FRLMEffetIndesirable.valeur | FRCDAEffetIndesirable.value |  |
 | FRLMEffetIndesirable.traitement | FRCDAEffetIndesirable.entryRelationship:frTraitement | FRAdverseEventDocument.suspectEntity.instance |
 | FRLMEffetIndesirable.probleme | FRCDAEffetIndesirable.entryRelationship:frProbleme | FRAdverseEventDocument.resultingCondition |
@@ -108,25 +117,25 @@ Liste des ConceptMap détaillant le mapping entre les éléments du modèle mét
 | **FRLMExamenImagerie** | **FRCDADICOMExamenImagerie** | **FRImagingStudyDocument** |
 | FRLMExamenImagerie.uuidInstanceExamen | FRCDADICOMExamenImagerie.id | FRImagingStudyDocument.identifier:studyInstanceUid |
 | FRLMExamenImagerie.codeActe | FRCDADICOMExamenImagerie.code |  |
-| FRLMExamenImagerie.description | FRCDADICOMExamenImagerie.text |  |
+| FRLMExamenImagerie.description | FRCDADICOMExamenImagerie.text | FRImagingStudyDocument.description |
 | FRLMExamenImagerie.dateActe | FRCDADICOMExamenImagerie.effectiveTime | FRImagingStudyDocument.started |
 | FRLMExamenImagerie.serieImagerie | FRCDADICOMExamenImagerie.entryRelationship:frDICOMSerieImagerie | FRImagingStudyDocument.series |
 | FRLMExamenImagerie.objectifsReferences | FRCDADICOMExamenImagerie.entryRelationship:frDICOMSerieImagerie. entryRelationship:frDICOMSOPInstanceObservvation.entryRelationship:frDICOMObjectifsDeReference | FRImagingStudyDocument.reasonCode |
 | **FRLMImageIllustrative** | **FRCDAImageIllustrative** |  |
-| FRLMImageIllustrative.identifiant | FRCDAImageIllustrative.id |  |
-| FRLMImageIllustrative.langue | FRCDAImageIllustrative.languageCode |  |
-| FRLMImageIllustrative.imageEncodee | FRCDAImageIllustrative.value |  |
-| FRLMImageIllustrative.mediaType | FRCDAImageIllustrative.value.mediaType |  |
+| FRLMImageIllustrative.identifiant | FRCDAImageIllustrative.id | FRMediaDocument.identifier |
+| FRLMImageIllustrative.langue | FRCDAImageIllustrative.languageCode | FRMediaDocument.content.language |
+| FRLMImageIllustrative.imageEncodee | FRCDAImageIllustrative.value | FRMediaDocument.content.data |
+| FRLMImageIllustrative.mediaType | FRCDAImageIllustrative.value.mediaType | FRMediaDocument.content.contentType |
 | FRLMImageIllustrative.representation | FRCDAImageIllustrative.value.representation |  |
-| FRLMImageIllustrative.subject | FRCDAImageIllustrative.subject |  |
-| FRLMImageIllustrative.specimen | FRCDAImageIllustrative.specimen |  |
-| FRLMImageIllustrative.performer | FRCDAImageIllustrative.performer |  |
-| FRLMImageIllustrative.auteur | FRCDAImageIllustrative.author |  |
-| FRLMImageIllustrative.informant | FRCDAImageIllustrative.informant |  |
-| FRLMImageIllustrative.participant | FRCDAImageIllustrative.participant |  |
-| FRLMImageIllustrative.entryRelationship | FRCDAImageIllustrative.entryRelationship |  |
-| FRLMImageIllustrative.reference | FRCDAImageIllustrative.reference |  |
-| FRLMImageIllustrative.precondition | FRCDAImageIllustrative.precondition |  |
+| FRLMImageIllustrative.subject | FRCDAImageIllustrative.subject | FRMediaDocument.subject:Patient |
+| FRLMImageIllustrative.specimen | FRCDAImageIllustrative.specimen | FRMediaDocument.subject:Specimen |
+| FRLMImageIllustrative.performer | FRCDAImageIllustrative.performer | FRMediaDocument.operator.extension:performer |
+| FRLMImageIllustrative.auteur | FRCDAImageIllustrative.author | FRMediaDocument.operator.extension:author |
+| FRLMImageIllustrative.informant | FRCDAImageIllustrative.informant | FRMediaDocument.operator.extension:informant |
+| FRLMImageIllustrative.participant | FRCDAImageIllustrative.participant | FRMediaDocument.operator.extension:participant |
+| FRLMImageIllustrative.entryRelationship | FRCDAImageIllustrative.entryRelationship | FRMediaDocument.basedOn |
+| FRLMImageIllustrative.reference | FRCDAImageIllustrative.reference | FRMediaDocument.partOf |
+| FRLMImageIllustrative.precondition | FRCDAImageIllustrative.precondition | FRMediaDocument.reasonCode |
 | **FRLMDispositifMedicalEntree** | **FRCDADispositifMedical** | **FRDeviceRequestDocument** |
 | FRLMDispositifMedicalEntree.identifiant | FRCDADispositifMedical.id | FRDeviceRequestDocument.identifier |
 | FRLMDispositifMedicalEntree.description | FRCDADispositifMedical.text | FRDeviceRequestDocument.note |
@@ -145,16 +154,28 @@ Liste des ConceptMap détaillant le mapping entre les éléments du modèle mét
 | FRLMProbleme.type | FRCDAProbleme.code | FRConditionDocument.category |
 | FRLMProbleme.description | FRCDAProbleme.text | FRConditionDocument.category.text |
 | FRLMProbleme.problemeObserve | FRCDAProbleme.value | FRConditionDocument.code |
-| FRLMProbleme.statut | FRCDAProbleme.statusCode |  |
-| FRLMProbleme.dateProbleme | FRCDAProbleme.effectiveTime |  |
+| FRLMProbleme.statut | FRCDAProbleme.statusCode | FRConditionDocument.clinicalStatus |
+| FRLMProbleme.dateDebutProbleme | FRCDAProbleme.effectiveTime.low | FRConditionDocument.onsetDateTime |
+| FRLMProbleme.dateFinProbleme | FRCDAProbleme.effectiveTime.high | FRConditionDocument.abatementDateTime |
 | FRLMProbleme.statutProbleme | FRCDAProbleme.entryRelationship:frStatutDuProbleme | FRConditionDocument.clinicalStatus |
 | FRLMProbleme.severite | FRCDAProbleme.entryRelationship:frSeverite | FRConditionDocument.severity |
 | FRLMProbleme.certitude | FRCDAProbleme.entryRelationship:frCertitude | FRConditionDocument.verificationStatus |
 | FRLMProbleme.statutClinique | FRCDAProbleme.entryRelationship:frStatutCliniqueDuPatient | FRConditionDocument.stage.summary |
 | FRLMProbleme.reference | FRCDAProbleme.reference | FRConditionDocument.evidence.detail |
-| FRLMProbleme.reference. externalDocument.identifiant | FRCDAProbleme.reference. externalDocument.id |  |
-| FRLMProbleme.reference. externalDocument.text.reference | FRCDAProbleme.reference. externalDocument.text.reference |  |
+| FRLMProbleme.reference. externalDocument.identifiant | FRCDAProbleme.reference. externalDocument.id | FRConditionDocument.evidence.detail:FRDocumentReferenceDocument.identifier |
+| FRLMProbleme.reference. externalDocument.text.reference | FRCDAProbleme.reference. externalDocument.text.reference | FRConditionDocument.evidence.detail:FRDocumentReferenceDocument.content.attachment.url |
 | FRLMProbleme.commentaire | FRCDAProbleme.entryRelationship:frCommentaireER | FRConditionDocument.note |
+| **FRLMProduitSante** | **FRCDAProduitDeSante** | **FRMedicationDocument** |
+| FRLMProduitSante.medicament | FRCDAProduitDeSante.manufacturedProduct.manufacturedMaterial |  |
+| FRLMProduitSante.medicament.code | FRCDAProduitDeSante.manufacturedProduct. manufacturedMaterial.code | FRMedicationDocument.code |
+| FRLMProduitSante.medicament. code.autreCodification | FRCDAProduitDeSante.manufacturedProduct. manufacturedMaterial.code.translation | FRMedicationDocument.code.coding |
+| FRLMProduitSante.nomProduit | FRCDAProduitDeSante.manufacturedProduct. manufacturedMaterial.name | FRMedicationDocument.extension:ihe-ext-medication-productname |
+| FRLMProduitSante.formeGalenique | FRCDAProduitDeSante.manufacturedProduct. manufacturedMaterial.pharm:formCode | FRMedicationDocument.form |
+| FRLMProduitSante.numeroLot | FRCDAProduitDeSante.manufacturedProduct. manufacturedMaterial.lotNumberText | FRMedicationDocument.batch.lotNumber |
+| FRLMProduitSante.dateExpiration | FRCDAProduitDeSante.pharm:expirationTime | FRMedicationDocument.batch.expirationDate |
+| FRLMProduitSante.conditionnement | FRCDAProduitDeSante.pharm:asContent | FRMedicationDocument.extension:ihe-ext-medication-characteristic |
+| FRLMProduitSante.equivalentGenerique | FRCDAProduitDeSante.pharm:asSpecializedKind | FRMedicationDocument.extension:ihe-ext-medication-classification |
+| FRLMProduitSante.substanceActive | FRCDAProduitDeSante.pharm:ingredient | FRMedicationDocument.ingredient:substanceActive |
 | **FRLMReferenceItemPlanTraitement** | **FRCDAReferenceItemPlanTraitement** | **FRCarePlanDocument** |
 | FRLMReferenceItemPlanTraitement.identifiant | FRCDAReferenceItemPlanTraitement.id | FRCarePlanDocument.identifier |
 | FRLMReferenceItemPlanTraitement.code | FRCDAReferenceItemPlanTraitement.code | FRCarePlanDocument.category |
@@ -164,6 +185,35 @@ Liste des ConceptMap détaillant le mapping entre les éléments du modèle mét
 | FRLMReferenceItemPlanTraitement.reference | FRCDAReferenceItemPlanTraitement.reference | FRCarePlanDocument.activity.reference:FRMedicationRequestDocument |
 | FRLMReferenceItemPlanTraitement.reference. externalDocument.identifiant | FRCDAReferenceItemPlanTraitement.reference. externalDocument.id | FRCarePlanDocument.activity.reference:FRMedicationRequestDocument.identifier |
 | **FRLMTraitement** | **FRCDATraitement** |  |
+| FRLMTraitement.identifiant | FRCDATraitement.id | FRMedicationStatementDocument.identifier |
+| FRLMTraitement.code | FRCDATraitement.code | FRMedicationStatementDocument.category |
+| FRLMTraitement.note | FRCDATraitement.text | FRMedicationStatementDocument.category.text |
+| FRLMTraitement.status | FRCDATraitement.statusCode | FRMedicationStatementDocument.status |
+| FRLMTraitement.occurancePeriod | FRCDATraitement.effectiveTime[not(@operator='A')] | FRMedicationStatementDocument.effectivePeriod |
+| FRLMTraitement.occuranceDateTim | FRCDATraitement.effectiveTime[@operator='A'] | FRMedicationStatementDocument.dosage.timing |
+| FRLMTraitement.dosage.route | FRCDATraitement.routeCode | FRMedicationStatementDocument.dosage.route |
+| FRLMTraitement.dosage.site | FRCDATraitement.approachSiteCode | FRMedicationStatementDocument.dosage.site |
+| FRLMTraitement.dosage.dose | FRCDATraitement.doseQuantity | FRMedicationStatementDocument.dosage.doseAndRate.doseQuantity |
+| FRLMTraitement.dosage.rate[x] | FRCDATraitement.rateQuantity | FRMedicationStatementDocument.dosage.doseAndRate.rateQuantity |
+| FRLMTraitement.dosage.doseMaximale | FRCDATraitement.maxDoseQuantity | FRMedicationStatementDocument.dosage.maxDosePerPeriod |
+| FRLMTraitement.medicament | FRCDATraitement.consumable | FRMedicationStatementDocument.medication:FRMedicationDocument |
+| FRLMTraitement.reason | FRCDATraitement.entryRelationship:frReferenceInterne | FRMedicationStatementDocument.reasonReference |
+| FRLMTraitement.prescription | FRCDATraitement.entryRelationship:frPrescription | FRMedicationStatementDocument.basedOn:FRMedicationRequestDocument |
+| FRLMTraitement.subordinateTreatment | FRCDATraitement.entryRelationship:frTraitementSubordonne |  |
+| FRLMTraitement.instructionsPatient | FRCDATraitement.entryRelationship:frInstructionsAuPatient | FRMedicationStatementDocument.dosage.additionalInstruction |
+| FRLMTraitement.precondition | FRCDATraitement.precondition | FRMedicationStatementDocument.note |
+| **FRLMTraitementDispense** | **FRCDATraitementDispense** | **FRMedicationDispenseDocument** |
+| FRLMTraitementDispense.identifiant | FRCDATraitementDispense.id | FRMedicationDispenseDocument.identifier |
+| FRLMTraitementDispense.code | FRCDATraitementDispense.code | FRMedicationDispenseDocument.type |
+| FRLMTraitementDispense.description | FRCDATraitementDispense.text | FRMedicationDispenseDocument.type.text |
+| FRLMTraitementDispense.quantite | FRCDATraitementDispense.quantity | FRMedicationDispenseDocument.quantity |
+| FRLMTraitementDispense.medicamentDelivre | FRCDATraitementDispense.product:frProduitDeSante | FRMedicationDispenseDocument.medication[x] |
+| FRLMTraitementDispense.referencePrescription | FRCDATraitementDispense.entryRelationship:frReferenceItemPrescription | FRMedicationDispenseDocument.authorizingPrescription |
+| FRLMTraitementDispense.traitement | FRCDATraitementDispense.entryRelationship:frTraitement | FRMedicationDispenseDocument.supportingInformation |
+| FRLMTraitementDispense.instructionsPatient | FRCDATraitementDispense.entryRelationship.frInstructionsAuPatient |  |
+| FRLMTraitementDispense.notesDispensateur | FRCDATraitementDispense.entryRelationship.frNotesDuDispensateur |  |
+| FRLMTraitementDispense.substitution | FRCDATraitementDispense.entryRelationship.frActeSubstitution |  |
+| **FRLMTraitement** | **FRCDATraitement** | **FRMedicationAdministrationDocument** |
 | FRLMTraitement.identifiant | FRCDATraitement.id | FRMedicationAdministrationDocument.identifier |
 | FRLMTraitement.code | FRCDATraitement.code | FRMedicationAdministrationDocument.category |
 | FRLMTraitement.note | FRCDATraitement.text | FRMedicationAdministrationDocument.category.text |
@@ -185,7 +235,7 @@ Liste des ConceptMap détaillant le mapping entre les éléments du modèle mét
 | **FRLMResultatsEntry** | **FRCDAResultats** | **FRDiagnosticReportDocument** |
 | FRLMResultatsEntry.identifiant | FRCDAResultats.id | FRDiagnosticReportDocument.identifier |
 | FRLMResultatsEntry.code | FRCDAResultats.code | FRDiagnosticReportDocument.code |
-| FRLMResultatsEntry.statut | FRCDAResultats.statusCode |  |
+| FRLMResultatsEntry.statut | FRCDAResultats.statusCode | FRDiagnosticReportDocument.status |
 | FRLMResultatsEntry.date | FRCDAResultats.effectiveTime | FRDiagnosticReportDocument.effective[x] |
 | FRLMResultatsEntry.executant | FRCDAResultats.performer | FRDiagnosticReportDocument.performer.extension:performerFunction |
 | FRLMResultatsEntry.auteur | FRCDAResultats.author | FRDiagnosticReportDocument.resultsInterpreter.extension:performerFunction |
@@ -204,8 +254,8 @@ Liste des ConceptMap détaillant le mapping entre les éléments du modèle mét
 | FRLMVaccinRecommande.descriptionNarrativeVaccinRecommande | FRCDAVaccinRecommande.text | FRImmunizationRecommendationDocument.recommendation.vaccineCode.text |
 | FRLMVaccinRecommande.statutVaccinRecommande | FRCDAVaccinRecommande.statusCode | FRImmunizationRecommendationDocument.recommendation.forecastStatus |
 | FRLMVaccinRecommande.periodeVaccination | FRCDAVaccinRecommande.effectiveTime | FRImmunizationRecommendationDocument.recommendation.dateCriterion.value |
-| FRLMVaccinRecommande.voieAdministration | FRCDAVaccinRecommande.routeCode |  |
-| FRLMVaccinRecommande.regionAnatomique | FRCDAVaccinRecommande.approachSiteCode |  |
+| FRLMVaccinRecommande.voieAdministration | FRCDAVaccinRecommande.routeCode | FRImmunizationRecommendationDocument.supportingImmunization:FRImmunizationDocument.route |
+| FRLMVaccinRecommande.regionAnatomique | FRCDAVaccinRecommande.approachSiteCode | FRImmunizationRecommendationDocument.supportingImmunization:FRImmunizationDocument.site |
 | FRLMVaccinRecommande.doseAdministree | FRCDAVaccinRecommande.doseQuantity |  |
 | FRLMVaccinRecommande.vaccin | FRCDAVaccinRecommande.consumable.FRCDAProduitDeSante | FRImmunizationRecommendationDocument.recommendation.vaccineCode |
 | FRLMVaccinRecommande.prescription | FRCDAVaccinRecommande.entryRelationship:frPrescription | FRImmunizationRecommendationDocument.recommendation.supportingPatientInformation |
@@ -219,11 +269,69 @@ Liste des ConceptMap détaillant le mapping entre les éléments du modèle mét
 | FRLMVaccination.dateVaccination | FRCDAVaccination.effectiveTime | FRImmunizationDocument.occurrence[x] |
 | FRLMVaccination.voieAadministration | FRCDAVaccination.routeCode | FRImmunizationDocument.route |
 | FRLMVaccination.regionAnatomique | FRCDAVaccination.approachSiteCode | FRImmunizationDocument.site |
-| FRLMVaccination.doseVaccination | FRCDAVaccination.doseQuantity |  |
-| FRLMVaccination.vaccin | FRCDAVaccination.consumable.FRCDAProduitDeSante |  |
+| FRLMVaccination.doseVaccination | FRCDAVaccination.doseQuantity | FRImmunizationDocument.doseQuantity |
+| FRLMVaccination.vaccin | FRCDAVaccination.consumable:FRCDAProduitDeSante | FRImmunizationDocument.vaccineCode |
 | FRLMVaccination.prescription | FRCDAVaccination.entryRelationship:frPrescription | FRImmunizationDocument.extension:immunization-basedOn-r5 |
 | FRLMVaccination.rangVaccination | FRCDAVaccination.entryRelationship:frRangDeLaVaccination | FRImmunizationDocument.protocolApplied.doseNumberPositiveInt |
 | FRLMVaccination.reaction | FRCDAVaccination.entryRelationship:frProbleme | FRImmunizationDocument.reasonReference |
 | FRLMVaccination.commentaire | FRCDAVaccination.entryRelationship:frCommentaireER | FRImmunizationDocument.note |
 | FRLMVaccination.DoseAntigene | FRCDAVaccination.entryRelationship:frDoseAntigene | FRImmunizationDocument.extension:immunization-administeredProduct-r5 |
+| **FRLMNaissance** | **FRCDANaissance** |  |
+| FRLMNaissance.identifiant | FRCDANaissance.id | FRObservationBirthEventDocument.identifier |
+| FRLMNaissance.Code | FRCDANaissance.code | FRObservationBirthEventDocument.code |
+| FRLMNaissance.statut | FRCDANaissance.status | FRObservationBirthEventDocument.status |
+| FRLMNaissance.periode | FRCDANaissance.effectiveTime | FRObservationBirthEventDocument.effectiveDateTime |
+| FRLMNaissance.identificationNouveauNe | FRCDANaissance.subject | FRObservationBirthEventDocument.focus:RelatedPerson |
+| FRLMNaissance.observationNaissance | FRCDANaissance.component:frObservationSurLaGrossesse | FRObservationBirthEventDocument.hasMember:FRObservationPregnancyDocument |
+| **FRLMTraitementPrescrit** | **FRCDATraitementPrescrit** | **FRMedicationRequestDocument** |
+| FRLMTraitementPrescrit.identifiant | FRCDATraitementPrescrit.id | FRMedicationRequestDocument.identifier |
+| FRLMTraitementPrescrit.code | FRCDATraitementPrescrit.code |  |
+| FRLMTraitementPrescrit.description | FRCDATraitementPrescrit.text | FRMedicationRequestDocument.note |
+| FRLMTraitementPrescrit.status | FRCDATraitementPrescrit.statusCode | FRMedicationRequestDocument.status |
+| FRLMTraitementPrescrit.dureeTraitement | FRCDATraitementPrescrit.effectiveTime[not(@operator='A')] | FRMedicationRequestDocument.dosageInstruction.timing.repeat.boundsPeriod |
+| FRLMTraitementPrescrit.frequenceAdministration | FRCDATraitementPrescrit.effectiveTime[@operator='A'] | FRMedicationRequestDocument.dosageInstruction.timing.repeat.frequency |
+| FRLMTraitementPrescrit.nombreRenouvellement | FRCDATraitementPrescrit.repeatNumber | FRMedicationRequestDocument.dispenseRequest.numberOfRepeatsAllowed |
+| FRLMTraitementPrescrit.voieAdministration | FRCDATraitementPrescrit.routeCode | FRMedicationRequestDocument.dosageInstruction.route |
+| FRLMTraitementPrescrit.regionAnatomique | FRCDATraitementPrescrit.approachSiteCode | FRMedicationRequestDocument.dosageInstruction.site |
+| FRLMTraitementPrescrit.dose | FRCDATraitementPrescrit.doseQuantity | FRMedicationRequestDocument.dosageInstruction.doseAndRate.doseRange |
+| FRLMTraitementPrescrit.rythmeAdministration | FRCDATraitementPrescrit.rateQuantity | FRMedicationRequestDocument.dosageInstruction.doseAndRate.rateRange |
+| FRLMTraitementPrescrit.doseMaximale | FRCDATraitementPrescrit.maxDoseQuantity | FRMedicationRequestDocument.dosageInstruction.maxDosePerPeriod |
+| FRLMTraitementPrescrit.produitSante | FRCDATraitementPrescrit.consumable | FRMedicationRequestDocument.medication:FRMedicationDocument |
+| FRLMTraitementPrescrit.prescripteur | FRCDATraitementPrescrit.author | FRMedicationRequestDocument.extension:FRActorExtension |
+| FRLMTraitementPrescrit.prescripteur | FRCDATraitementPrescrit.author | FRMedicationRequestDocument.requester |
+| FRLMTraitementPrescrit.auteur | FRCDATraitementPrescrit.author | FRMedicationRequestDocument.extension:FRActorExtension |
+| FRLMTraitementPrescrit.auteur | FRCDATraitementPrescrit.author | FRMedicationRequestDocument.requester |
+| FRLMTraitementPrescrit.motifTraitement | FRCDATraitementPrescrit.entryRelationship:frReferenceInterne | FRMedicationRequestDocument.reasonReference |
+| FRLMTraitementPrescrit.traitementPrescritSubordonnee | FRCDATraitementPrescrit.entryRelationship:frTraitementPrescritSubordonnee | FRMedicationRequestDocument.medication:FRMedicationsCombinaisonDocument |
+| FRLMTraitementPrescrit.referenceItemPlanTraitement | FRCDATraitementPrescrit.entryRelationship:frReferenceItemPlanTraitement | **basedOn:FRMedicationRequestDocument** |
+| FRLMTraitementPrescrit.instructionsPatient | FRCDATraitementPrescrit.entryRelationship:frInstructionsAuPatient | FRMedicationRequestDocument.dosageInstruction.additionalInstruction:instructionsPatient |
+| FRLMTraitementPrescrit.instructionsDispensateur | FRCDATraitementPrescrit.entryRelationship:frInstructionsAuDispensateur | FRMedicationRequestDocument.dispenseRequest.extension:medicationRequest-dispenseRequest-dispenserInstruction-r5 |
+| FRLMTraitementPrescrit.quantiteProduit | FRCDATraitementPrescrit.entryRelationship:frQuantiteDeProduit | FRMedicationRequestDocument.dispenseRequest.quantity |
+| FRLMTraitementPrescrit.autorisationSubstitution | FRCDATraitementPrescrit.entryRelationship:frAutorisationSubstitution | FRMedicationRequestDocument.substitution.allowedCodeableConcept |
+| FRLMTraitementPrescrit.periodeRenouvellement | FRCDATraitementPrescrit.entryRelationship:frPeriodeDeRenouvellement | FRMedicationRequestDocument.dispenseRequest.validityPeriod |
+| FRLMTraitementPrescrit.enRapportAvecALD | FRCDATraitementPrescrit.entryRelationship:frEnRapportAvecALD | FRMedicationRequestDocument.reasonReference:ald |
+| FRLMTraitementPrescrit.enRapportAvecAccidentTravail | FRCDATraitementPrescrit.entryRelationship:frEnRapportAvecAccidentTravail | FRMedicationRequestDocument.reasonReference:accidentTravail |
+| FRLMTraitementPrescrit.enRapportAvecPrevention | FRCDATraitementPrescrit.entryRelationship:frEnRapportAvecPrevention | FRMedicationRequestDocument.reasonReference:prevention |
+| FRLMTraitementPrescrit.nonRemboursable | FRCDATraitementPrescrit.entryRelationship:frNonRemboursable | FRMedicationRequestDocument.extension:FRNotCoveredExtension |
+| FRLMTraitementPrescrit.horsAMM | FRCDATraitementPrescrit.entryRelationship:frHorsAMM | FRMedicationRequestDocument.extension:FRMedicationRequestOutOfNomenclatureExtension |
+| FRLMTraitementPrescrit.referencePrescription | FRCDATraitementPrescrit.frReferenceInterne.externalDocument | FRMedicationRequestDocument.instantiatesUri |
+| FRLMTraitementPrescrit.precondition | FRCDATraitementPrescrit.precondition | FRMedicationRequestDocument.dosageInstruction.additionalInstruction:precondition |
+| **FRLMTraitementPrescritSubordonne** | **FRCDATraitementPrescritSubordonne** |  |
+| FRLMTraitementPrescritSubordonne.identifiant | FRCDATraitementPrescritSubordonne.id | FRMedicationsCombinaisonDocument.identifier |
+| FRLMTraitementPrescritSubordonne.description | FRCDATraitementPrescritSubordonne.text | FRMedicationsCombinaisonDocument.code.text |
+| FRLMTraitementPrescritSubordonne.status | FRCDATraitementPrescritSubordonne.statusCode | FRMedicationsCombinaisonDocument.status |
+| FRLMTraitementPrescritSubordonne.frequenceAdministration | FRCDATraitementPrescritSubordonne.effectiveTime |  |
+| FRLMTraitementPrescritSubordonne.dose | FRCDATraitementPrescritSubordonne.doseQuantity |  |
+| FRLMTraitementPrescritSubordonne.rythmeAdministration | FRCDATraitementPrescritSubordonne.rateQuantity |  |
+| FRLMTraitementPrescritSubordonne.produitSante | FRCDAProduitDeSante.consumable |  |
+| FRLMTraitementPrescritSubordonne.precondition | FRCDATraitementPrescritSubordonne.precondition |  |
+| **FRLMTraitementSubordonne** | **FRCDATraitementSubordonne** |  |
+| FRLMTraitementSubordonne.identifiantTraitement | FRCDATraitementSubordonne.id | FRMedicationsCombinaisonDocument.identifier |
+| FRLMTraitementSubordonne.descriptionTraitement | FRCDATraitementSubordonne.text | FRMedicationsCombinaisonDocument.code.text |
+| FRLMTraitementSubordonne.statutTraitement | FRCDATraitementSubordonne.statusCode | FRMedicationsCombinaisonDocument.status |
+| FRLMTraitementSubordonne.frequenceAdministration | FRCDATraitementSubordonne.effectiveTime |  |
+| FRLMTraitementSubordonne.doseAadministrer | FRCDATraitementSubordonne.doseQuantity |  |
+| FRLMTraitementSubordonne.rythmeAdministration | FRCDATraitementSubordonne.rateQuantity |  |
+| FRLMTraitementSubordonne.medicamentTraitement | FRCDAProduitDeSante.consumable |  |
+| FRLMTraitementSubordonne.preconditionTraitement | FRCDATraitementSubordonne.precondition |  |
 

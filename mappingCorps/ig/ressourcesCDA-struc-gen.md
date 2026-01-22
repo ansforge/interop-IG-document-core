@@ -279,11 +279,11 @@ La structure générale d’une section est la suivante :
 
 ```
 
-**①Déclaration(s) de conformité de la section**.
+**① Déclaration(s) de conformité de la section**.
 
 Une section comporte une ou plusieurs déclarations de conformité obligatoires, chacune se présentant sous la forme d’un élément templateId dont l’attribut root contient l’OID du modèle concerné.
 
-**②Identifiant unique de la section (optionnel)**.
+**② Identifiant unique de la section (optionnel)**.
 
 Dans un certain nombre de cas, un numéro unique d’identifiant, attaché à une section ou à une entrée, est requis. Cet élément est un UID attribué par l’application LPS.
 
@@ -306,7 +306,7 @@ Il s’agit :
 
 Cet identifiant unique peut être utilisé comme référence dans une entrée FR-reference-interne.
 
-**⑤Bloc narratif de la section**
+**⑤ Bloc narratif de la section**
 
 Le bloc narratif est obligatoire dans les sections atomiques.
 
@@ -314,13 +314,13 @@ Ce bloc narratif contient le texte destiné au lecteur. Il a valeur de référen
 
 La mise en forme du bloc narratif (contraintes de présentation) n’est pas spécifiée dans le présent volet. Ces contraintes de présentation sont, le cas échéant, précisées par les volets de contenus métiers.
 
-**⑥Entrée(s) de la section lorsque la section n’est pas de type narratif pur**.
+**⑥ Entrée(s) de la section lorsque la section n’est pas de type narratif pur**.
 
 Chaque entrée contient les données codées destinées au SIS consommateur.
 
 Chaque entrée se conforme à un modèle dont l’OID est cité dans l’élément ⑥ templateId de l’entrée.
 
-**⑦Sous-sections**
+**⑦ Sous-sections**
 
 Une section composite peut contenir un certain nombre d’autres sections.
 

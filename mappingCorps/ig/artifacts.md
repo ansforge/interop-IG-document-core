@@ -427,6 +427,7 @@ Modèles de données métier représentant les concepts élémentaires, modélis
 | | |
 | :--- | :--- |
 | [Mapping FRLMActe → FRCDAActe → FRProcedureActDocument](ConceptMap-FRActLMCDAFHIR.md) | Mapping des éléments du modèle métier FRLMActe vers le profil CDA FRCDAActe, puis vers le profil FHIR FRProcedureActDocument. |
+| [Mapping FRLMAdministrationDeDerivesDuSang → FRCDAAdministrationDeDerivesDuSang → FRObservationAdministrationBloodDerivativesDocument](ConceptMap-FRObservationAdministrationBloodDerivativesLMCDAFHIR.md) | Mapping des éléments du modèle métier FRLMAdministrationDeDerivesDuSang vers le profil CDA FRCDAAdministrationDeDerivesDuSang, puis vers le profil FHIR FRObservationAdministrationBloodDerivativesDocument. |
 | [Mapping FRLMAllergieOuHypersensibilite / FRCDAAllergieOuHypersensibilite -> FRAllergyIntoleranceDocument](ConceptMap-FRAllergyIntoleranceLMCDAFHIR.md) | Mapping des éléments du modèle métier FRLMAllergieOuHypersensibilite vers le profil CDA FRCDAAllergieOuHypersensibilite,puis vers le profil FHIR FRAllergyIntoleranceDocument. |
 | [Mapping FRLMAntecedentFamilialObserve → FRCDAAntecedentFamilialObserve → FRFamilyMemberHistoryDocument](ConceptMap-FRFamilyMemberHistoryLMCDAFHIR.md) | Mapping des éléments du modèle métier FRLMAntecedentFamilialObserve vers le profil CDA FRCDAAntecedentFamilialObserve, puis vers le profil FHIR FRFamilyMemberHistoryDocument. |
 | [Mapping FRLMAntecedentsFamiliauxEntree → FRCDAAntecedentsFamiliaux → FRFamilyMemberHistoryDocument](ConceptMap-FRFamilyMemberHistoriesLMCDAFHIR.md) | Mapping des éléments du modèle métier FRLMAntecedentsFamiliauxEntree vers le profil CDA FRCDAAntecedentsFamiliaux, puis vers le profil FHIR FRFamilyMemberHistoryDocument. |
@@ -438,10 +439,16 @@ Modèles de données métier représentant les concepts élémentaires, modélis
 | [Mapping FRLMExamenImagerie → FRCDADICOMExamenImagerie → FRImagingStudyDocument](ConceptMap-FRImagingStudyLMCDAFHIR.md) | Mapping des éléments du modèle métier FRLMExamenImagerie vers le profil CDA FRCDADICOMExamenImagerie, puis vers le profil FHIR FRImagingStudyDocument. |
 | [Mapping FRLMImageIllustrative → FRCDAImageIllustrative → FRMediaDocument](ConceptMap-FRMediaLMCDAFHIR.md) | Mapping des éléments du modèle métier FRLMImageIllustrative vers le profil CDA FRCDAImageIllustrative, puis vers le profil FHIR FRMediaDocument. |
 | [Mapping FRLMOrdreDispositifMedical → FRCDAOrdreDispositifMedical → FRDeviceRequestDocument](ConceptMap-FRDeviceRequestLMCDAFHIR.md) | Mapping des éléments du modèle métier FRLMDispositifMedicalEntree vers le profil CDA FRCDADispositifMedical, puis vers le profil FHIR FRDeviceRequestDocument. |
+| [Mapping FRLMProduitSante → FRCDAProduitDeSante → FRMedicationDocument](ConceptMap-FRMedicationLMCDAFHIR.md) | Mapping des éléments du modèle métier FRLMProduitSante vers le profil CDA FRCDAProduitDeSante, puis vers le profil FHIR FRMedicationDocument. |
 | [Mapping FRLMReferenceItemPlanTraitement → FRCDAReferenceItemPlanTraitement → FRCarePlanDocument](ConceptMap-FRCarePlanLMCDAFHIR.md) | Mapping des éléments du modèle métier FRLMReferenceItemPlanTraitement vers le profil CDA FRCDAReferenceItemPlanTraitement, puis vers le profil FHIR FRCarePlanDocument. |
 | [Mapping FRLMRencontre → FRCDARencontre → FREncounterDocument](ConceptMap-FREncounterLMCDAFHIR.md) | Mapping des éléments du modèle métier FRLMRencontre vers le profil CDA FRCDARencontre, puis vers le profil FHIR FREncounterDocument. |
 | [Mapping FRLMResultatsEntry → FRCDAResultats → FRDiagnosticReportDocument](ConceptMap-FRDiagnosticReportLMCDAFHIR.md) | Mapping des éléments du modèle métier FRLMResultatsEntry vers le profil CDA FRCDAResultats, puis vers le profil FHIR FRDiagnosticReportDocument. |
 | [Mapping FRLMTraitement → FRCDATraitement → FRMedicationAdministrationDocument](ConceptMap-FRMedicationAdministrationLMCDAFHIR.md) | Mapping des éléments du modèle métier FRLMTraitement vers le profil CDA FRCDATraitement, puis vers le profil FHIR FRMedicationAdministrationDocument. |
+| [Mapping FRLMTraitement → FRCDATraitement → FRMedicationStatementDocument](ConceptMap-FRMedicationStatementLMCDAFHIR.md) | Mapping des éléments du modèle métier FRLMTraitement vers la sous-entrée CDA FRCDATraitement puis vers le profil FHIR FRMedicationStatementDocument. |
+| [Mapping FRLMTraitementDispense → FRCDATraitementDispense → FRMedicationDispenseDocument](ConceptMap-FRMedicationDispenseLMCDAFHIR.md) | Mapping des éléments du modèle métier FRLMTraitementDispense vers le profil CDA FRCDATraitementDispense, puis vers le profil FHIR FRMedicationDispenseDocument. |
+| [Mapping FRLMTraitementPrescrit → FRCDATraitementPrescrit → FRMedicationRequestDocument](ConceptMap-FRMedicationRequestLMCDAFHIR.md) | Mapping des éléments du modèle métier FRLMTraitementPrescrit vers l’entrée CDA FRCDATraitementPrescrit, puis vers le profil FHIR FRMedicationRequestDocument. |
+| [Mapping FRLMTraitementPrescritSubordonne → FRCDATraitementPrescritSubordonne → FRMedicationsCombinaisonDocument](ConceptMap-FRMedicationsCombinaisonRequestLMCDAFHIR.md) | Mapping des éléments du modèle métier FRLMTraitementPrescritSubordonne vers la sous-entrée CDA FRCDATraitementSubordonne puis vers le profil FHIR FRMedicationsCombinaisonDocument. |
+| [Mapping FRLMTraitementSubordonne → FRCDATraitementSubordonne → FRMedicationsCombinaisonDocument](ConceptMap-FRMedicationsCombinaisonLMCDAFHIR.md) | Mapping des éléments du modèle métier FRLMTraitementSubordonne vers la sous-entrée CDA FRCDATraitementSubordonne puis vers le profil FHIR FRMedicationsCombinaisonDocument. |
 | [Mapping FRLMVaccination → FRCDAVaccination → FRImmunizationDocument](ConceptMap-FRImmunizationLMCDAFHIR.md) | Mapping des éléments du modèle métier FRLMVaccination vers le profil CDA FRCDAVaccination, puis vers le profil FHIR FRImmunizationDocument. |
 | [Mapping FRLMVaccinRecommande → FRCDAVaccinRecommande → FRImmunizationRecommendationDocument](ConceptMap-FRImmunizationRecommendationLMCDAFHIR.md) | Mapping des éléments du modèle métier FRLMVaccinRecommande vers le profil CDA FRCDAVaccinRecommande, puis vers le profil FHIR FRImmunizationRecommendationDocument. |
 
@@ -478,6 +485,14 @@ These define sets of codes used by systems conforming to this implementation gui
 * CISIS jdv-absent-or-unknown-procedure-cisis pour actes chirurgicaux inconnus ou absents.
 Si aucun code approprié n’est disponible, l’acte peut être décrit en texte libre. |
 | [ValueSet – FR ValueSet Type d'évaluation](ValueSet-fr-vs-evaluation-type.md) | Codes autorisés pour indiquer le type d’évaluation. Inclut LOINC, ICF, et permet d’autres systèmes si aucun code approprié n’est trouvé. |
+
+### Terminology: Concept Maps 
+
+These define transformations to convert between codes by systems conforming with this implementation guide.
+
+| | |
+| :--- | :--- |
+| [Mapping FRLMNaissance → FRCDANaissance → FRObservationBirthEventDocument](ConceptMap-FRObservationBirthEventLMCDAFHIR.md) | Mapping des éléments du modèle métier FRLMNaissance vers le profil CDA FRCDANaissance, puis vers le profil FHIR FRObservationBirthEventDocument. |
 
 ### Example: Example Instances 
 

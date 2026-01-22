@@ -9,8 +9,6 @@
 ","Statut de l'entrée","Statut de l'entrée","","","","","","","","","",,,,,"",,,,"fr-lm-naissance.statut",1,1,"",""
 "fr-lm-naissance.periode","fr-lm-naissance.periode","","","",1,1,"","","","dateTime {[]} {[]}
 ","Période des observations","Période des observations","","","","","","","","","",,,,,"",,,,"fr-lm-naissance.periode",1,1,"",""
-"fr-lm-naissance.resultat","fr-lm-naissance.resultat","","","",1,1,"","","","CodeableConcept {[]} {[]}
-","Résultat de l’observation effectuée","Résultat de l’observation effectuée","","","","","","","","","",,,,,"",,,,"fr-lm-naissance.resultat",1,1,"",""
 "fr-lm-naissance.identificationNouveauNe","fr-lm-naissance.identificationNouveauNe","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-sujet {[]} {[]}
 ","Identification du nouveau né","Identification du nouveau né","","","","","","","","","",,,,,"",,,,"fr-lm-naissance.identificationNouveauNe",1,1,"",""
 "fr-lm-naissance.observationNaissance","fr-lm-naissance.observationNaissance","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation-grossesse {[]} {[]}

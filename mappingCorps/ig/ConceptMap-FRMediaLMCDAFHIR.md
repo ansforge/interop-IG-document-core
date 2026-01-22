@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRMediaLMCDAFHIR | *Version*:0.1.0 |
-| Draft as of 2026-01-16 | *Computable Name*: |
+| Draft as of 2026-01-22 | *Computable Name*: |
 
  
 Mapping des éléments du modèle métier FRLMImageIllustrative vers le profil CDA FRCDAImageIllustrative, puis vers le profil FHIR FRMediaDocument. 
@@ -26,7 +26,7 @@ Mapping des éléments du modèle métier FRLMImageIllustrative vers le profil C
   "version" : "0.1.0",
   "title" : "Mapping Métier/CDA/FHIR : \"Image illustrative\"",
   "status" : "draft",
-  "date" : "2026-01-16T14:59:20+00:00",
+  "date" : "2026-01-22T09:24:45+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -198,43 +198,43 @@ Mapping des éléments du modèle métier FRLMImageIllustrative vers le profil C
       "target" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-media-document",
       "element" : [
         {
-          "code" : "FRLMImageIllustrative.id",
+          "code" : "FRCDAImageIllustrative.id",
           "target" : [
             {
-              "code" : "FRCDAImageIllustrative.identifier",
+              "code" : "FRMediaDocument.identifier",
               "equivalence" : "equivalent"
             }
           ]
         },
         {
-          "code" : "FRLMImageIllustrative.languageCode",
+          "code" : "FRCDAImageIllustrative.languageCode",
           "target" : [
             {
-              "code" : "FRCDAImageIllustrative.content.language",
+              "code" : "FRMediaDocument.content.language",
               "equivalence" : "equivalent"
             }
           ]
         },
         {
-          "code" : "FRLMImageIllustrative.value",
+          "code" : "FRCDAImageIllustrative.value",
           "target" : [
             {
-              "code" : "FRCDAImageIllustrative.content.data",
+              "code" : "FRMediaDocument.content.data",
               "equivalence" : "equivalent"
             }
           ]
         },
         {
-          "code" : "FRLMImageIllustrative.value.mediaType",
+          "code" : "FRCDAImageIllustrative.value.mediaType",
           "target" : [
             {
-              "code" : "FRCDAImageIllustrative.content.contentType",
+              "code" : "FRMediaDocument.content.contentType",
               "equivalence" : "equivalent"
             }
           ]
         },
         {
-          "code" : "FRLMImageIllustrative.value.representation",
+          "code" : "FRCDAImageIllustrative.value.representation",
           "target" : [
             {
               "equivalence" : "unmatched"
@@ -242,82 +242,82 @@ Mapping des éléments du modèle métier FRLMImageIllustrative vers le profil C
           ]
         },
         {
-          "code" : "FRLMImageIllustrative.subject",
+          "code" : "FRCDAImageIllustrative.subject",
           "target" : [
             {
-              "code" : "FRCDAImageIllustrative.subject:Patient",
+              "code" : "FRMediaDocument.subject:Patient",
               "equivalence" : "equivalent"
             }
           ]
         },
         {
-          "code" : "FRLMImageIllustrative.specimen",
+          "code" : "FRCDAImageIllustrative.specimen",
           "target" : [
             {
-              "code" : "FRCDAImageIllustrative.subject:Specimen",
+              "code" : "FRMediaDocument.subject:Specimen",
               "equivalence" : "equivalent"
             }
           ]
         },
         {
-          "code" : "FRLMImageIllustrative.performer",
+          "code" : "FRCDAImageIllustrative.performer",
           "target" : [
             {
-              "code" : "FRCDAImageIllustrative.operator.extension:performer",
+              "code" : "FRMediaDocument.operator.extension:performer",
               "equivalence" : "equivalent"
             }
           ]
         },
         {
-          "code" : "FRLMImageIllustrative.author",
+          "code" : "FRCDAImageIllustrative.author",
           "target" : [
             {
-              "code" : "FRCDAImageIllustrative.operator.extension:author",
+              "code" : "FRMediaDocument.operator.extension:author",
               "equivalence" : "equivalent"
             }
           ]
         },
         {
-          "code" : "FRLMImageIllustrative.informant",
+          "code" : "FRCDAImageIllustrative.informant",
           "target" : [
             {
-              "code" : "FRCDAImageIllustrative.operator.extension:informant",
+              "code" : "FRMediaDocument.operator.extension:informant",
               "equivalence" : "equivalent"
             }
           ]
         },
         {
-          "code" : "FRLMImageIllustrative.participant",
+          "code" : "FRCDAImageIllustrative.participant",
           "target" : [
             {
-              "code" : "FRCDAImageIllustrative.operator.extension:participant",
+              "code" : "FRMediaDocument.operator.extension:participant",
               "equivalence" : "equivalent"
             }
           ]
         },
         {
-          "code" : "FRLMImageIllustrative.entryRelationship",
+          "code" : "FRCDAImageIllustrative.entryRelationship",
           "target" : [
             {
-              "code" : "FRCDAImageIllustrative.basedOn",
+              "code" : "FRMediaDocument.basedOn",
               "equivalence" : "equivalent"
             }
           ]
         },
         {
-          "code" : "FRLMImageIllustrative.reference",
+          "code" : "FRCDAImageIllustrative.reference",
           "target" : [
             {
-              "code" : "FRCDAImageIllustrative.partOf",
+              "code" : "FRMediaDocument.partOf",
               "equivalence" : "equivalent"
             }
           ]
         },
         {
-          "code" : "FRLMImageIllustrative.precondition",
+          "code" : "FRCDAImageIllustrative.precondition",
           "target" : [
             {
-              "code" : "FRCDAImageIllustrative.reasonCode",
+              "code" : "FRMediaDocument.reasonCode",
               "equivalence" : "equivalent"
             }
           ]

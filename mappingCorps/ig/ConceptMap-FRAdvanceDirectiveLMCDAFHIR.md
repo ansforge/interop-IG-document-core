@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRAdvanceDirectiveLMCDAFHIR | *Version*:0.1.0 |
-| Draft as of 2026-01-16 | *Computable Name*: |
+| Draft as of 2026-01-22 | *Computable Name*: |
 
  
 Mapping des éléments du modèle métier FRLMDirectiveAnticipee vers le profil CDA FRCDADirectiveAnticipee, puis vers le profil FHIR FRAdvanceDirectiveDocument. 
@@ -26,7 +26,7 @@ Mapping des éléments du modèle métier FRLMDirectiveAnticipee vers le profil 
   "version" : "0.1.0",
   "title" : "Mapping Métier/CDA/FHIR : \"Directive Anticipee\"",
   "status" : "draft",
-  "date" : "2026-01-16T14:59:20+00:00",
+  "date" : "2026-01-22T09:24:45+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -226,7 +226,7 @@ Mapping des éléments du modèle métier FRLMDirectiveAnticipee vers le profil 
           ]
         },
         {
-          "code" : "FRCDADirectiveAnticipee.value",
+          "code" : "FRCDADirectiveAnticipee.valueBoolean",
           "target" : [
             {
               "code" : "FRAdvanceDirectiveDocument.provision.type",
@@ -257,6 +257,15 @@ Mapping des éléments du modèle métier FRLMDirectiveAnticipee vers le profil 
           "target" : [
             {
               "code" : "FRAdvanceDirectiveDocument.sourceAttachment",
+              "equivalence" : "equivalent"
+            }
+          ]
+        },
+        {
+          "code" : "FRCDADirectiveAnticipee.entryRelationship.observationMedia.id",
+          "target" : [
+            {
+              "code" : "FRAdvanceDirectiveDocument.sourceAttachment.id",
               "equivalence" : "equivalent"
             }
           ]

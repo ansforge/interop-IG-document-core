@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-effet-indesirable | *Version*:0.1.0 |
-| Draft as of 2026-01-16 | *Computable Name*:FRLMEffetIndesirable |
+| Draft as of 2026-01-22 | *Computable Name*:FRLMEffetIndesirable |
 
  
 Effet indesirable 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-effet-indesira
   "name" : "FRLMEffetIndesirable",
   "title" : "Modèle logique métier - FR LM Effet indesirable",
   "status" : "draft",
-  "date" : "2026-01-16T14:59:20+00:00",
+  "date" : "2026-01-22T09:24:45+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -139,10 +139,23 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-effet-indesira
         ]
       },
       {
-        "id" : "fr-lm-effet-indesirable.dateDebutFin",
-        "path" : "fr-lm-effet-indesirable.dateDebutFin",
-        "short" : "Date de début et de fin de l'effet indésirable",
-        "definition" : "Date de début et de fin de l'effet indésirable",
+        "id" : "fr-lm-effet-indesirable.dateDebut",
+        "path" : "fr-lm-effet-indesirable.dateDebut",
+        "short" : "Date de début de l'effet indésirable",
+        "definition" : "Date de début de l'effet indésirable",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "dateTime"
+          }
+        ]
+      },
+      {
+        "id" : "fr-lm-effet-indesirable.dateFin",
+        "path" : "fr-lm-effet-indesirable.dateFin",
+        "short" : "Date de fin de l'effet indésirable",
+        "definition" : "Date de fin de l'effet indésirable",
         "min" : 0,
         "max" : "1",
         "type" : [

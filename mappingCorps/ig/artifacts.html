@@ -298,10 +298,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#13">Terminology: Value Sets</a>
       </li>
       <li>
-         <a href="#14">Example: Example Instances</a>
+         <a href="#14">Terminology: Concept Maps</a>
       </li>
       <li>
-         <a href="#15">Other</a>
+         <a href="#15">Example: Example Instances</a>
+      </li>
+      <li>
+         <a href="#16">Other</a>
       </li>
    </ul>
 </div>
@@ -3220,6 +3223,15 @@ acte d’imagerie, localisation anatomique / latéralité / topographie, d’aut
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="ConceptMap-FRObservationAdministrationBloodDerivativesLMCDAFHIR.html"
+                  title="ConceptMap/FRObservationAdministrationBloodDerivativesLMCDAFHIR">Mapping FRLMAdministrationDeDerivesDuSang → FRCDAAdministrationDeDerivesDuSang → FRObservationAdministrationBloodDerivativesDocument</a>
+            </td>
+            <td>
+<p>Mapping des éléments du modèle métier FRLMAdministrationDeDerivesDuSang vers le profil CDA FRCDAAdministrationDeDerivesDuSang, puis vers le profil FHIR FRObservationAdministrationBloodDerivativesDocument.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="ConceptMap-FRAllergyIntoleranceLMCDAFHIR.html"
                   title="ConceptMap/FRAllergyIntoleranceLMCDAFHIR">Mapping FRLMAllergieOuHypersensibilite / FRCDAAllergieOuHypersensibilite -&gt; FRAllergyIntoleranceDocument</a>
             </td>
@@ -3320,6 +3332,15 @@ profil CDA FRCDADispositifMedical, puis vers le profil FHIR FRDeviceUseStatement
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="ConceptMap-FRMedicationLMCDAFHIR.html"
+                  title="ConceptMap/FRMedicationLMCDAFHIR">Mapping FRLMProduitSante → FRCDAProduitDeSante → FRMedicationDocument</a>
+            </td>
+            <td>
+<p>Mapping des éléments du modèle métier FRLMProduitSante vers le profil CDA FRCDAProduitDeSante, puis vers le profil FHIR FRMedicationDocument.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="ConceptMap-FRCarePlanLMCDAFHIR.html"
                   title="ConceptMap/FRCarePlanLMCDAFHIR">Mapping FRLMReferenceItemPlanTraitement → FRCDAReferenceItemPlanTraitement → FRCarePlanDocument</a>
             </td>
@@ -3352,6 +3373,51 @@ profil CDA FRCDADispositifMedical, puis vers le profil FHIR FRDeviceUseStatement
             </td>
             <td>
 <p>Mapping des éléments du modèle métier FRLMTraitement vers le profil CDA FRCDATraitement, puis vers le profil FHIR FRMedicationAdministrationDocument.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ConceptMap-FRMedicationStatementLMCDAFHIR.html"
+                  title="ConceptMap/FRMedicationStatementLMCDAFHIR">Mapping FRLMTraitement → FRCDATraitement → FRMedicationStatementDocument</a>
+            </td>
+            <td>
+<p>Mapping des éléments du modèle métier FRLMTraitement vers la sous-entrée CDA FRCDATraitement puis vers le profil FHIR FRMedicationStatementDocument.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ConceptMap-FRMedicationDispenseLMCDAFHIR.html"
+                  title="ConceptMap/FRMedicationDispenseLMCDAFHIR">Mapping FRLMTraitementDispense → FRCDATraitementDispense → FRMedicationDispenseDocument</a>
+            </td>
+            <td>
+<p>Mapping des éléments du modèle métier FRLMTraitementDispense vers le profil CDA FRCDATraitementDispense, puis vers le profil FHIR FRMedicationDispenseDocument.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ConceptMap-FRMedicationRequestLMCDAFHIR.html"
+                  title="ConceptMap/FRMedicationRequestLMCDAFHIR">Mapping FRLMTraitementPrescrit → FRCDATraitementPrescrit → FRMedicationRequestDocument</a>
+            </td>
+            <td>
+<p>Mapping des éléments du modèle métier FRLMTraitementPrescrit vers l’entrée CDA FRCDATraitementPrescrit, puis vers le profil FHIR FRMedicationRequestDocument.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ConceptMap-FRMedicationsCombinaisonRequestLMCDAFHIR.html"
+                  title="ConceptMap/FRMedicationsCombinaisonRequestLMCDAFHIR">Mapping FRLMTraitementPrescritSubordonne → FRCDATraitementPrescritSubordonne → FRMedicationsCombinaisonDocument</a>
+            </td>
+            <td>
+<p>Mapping des éléments du modèle métier FRLMTraitementPrescritSubordonne vers la sous-entrée CDA FRCDATraitementSubordonne puis vers le profil FHIR FRMedicationsCombinaisonDocument.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ConceptMap-FRMedicationsCombinaisonLMCDAFHIR.html"
+                  title="ConceptMap/FRMedicationsCombinaisonLMCDAFHIR">Mapping FRLMTraitementSubordonne → FRCDATraitementSubordonne → FRMedicationsCombinaisonDocument</a>
+            </td>
+            <td>
+<p>Mapping des éléments du modèle métier FRLMTraitementSubordonne vers la sous-entrée CDA FRCDATraitementSubordonne puis vers le profil FHIR FRMedicationsCombinaisonDocument.</p>
 </td>
          </tr>
          <tr>
@@ -3515,6 +3581,23 @@ Inclut LOINC, ICF, et permet d’autres systèmes si aucun code approprié n’e
       </tbody>
    </table>
    <a name="14"> </a>
+   <h3>Terminology: Concept Maps </h3>
+    <p>These define transformations to convert between codes by systems conforming with this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ConceptMap-FRObservationBirthEventLMCDAFHIR.html"
+                  title="ConceptMap/FRObservationBirthEventLMCDAFHIR">Mapping FRLMNaissance → FRCDANaissance → FRObservationBirthEventDocument</a>
+            </td>
+            <td>
+<p>Mapping des éléments du modèle métier FRLMNaissance vers le profil CDA FRCDANaissance, puis vers le profil FHIR FRObservationBirthEventDocument.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="15"> </a>
    <h3>Example: Example Instances </h3>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
 <table class="grid">
@@ -3573,7 +3656,7 @@ Inclut LOINC, ICF, et permet d’autres systèmes si aucun code approprié n’e
          </tr>
       </tbody>
    </table>
-   <a name="15"> </a>
+   <a name="16"> </a>
    <h3>Other </h3>
     <p>These are resources that are used within this implementation guide that do not fit into one of the other categories.</p>
 <table class="grid">
@@ -3627,7 +3710,7 @@ Inclut LOINC, ICF, et permet d’autres systèmes si aucun code approprié n’e
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.document.fr.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jan 16, 2026 14:59+0000">2026-01-16</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.document.fr.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jan 22, 2026 09:24+0000">2026-01-22</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
