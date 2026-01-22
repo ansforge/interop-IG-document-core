@@ -1,9 +1,9 @@
 FRDocumentCore : Validation Results
 =========================================
 
-err = 524, warn = 3880, info = 1105
+err = 524, warn = 3880, info = 1107
 IG Publisher Version: 2.0.30
-Generated Thu Jan 22 09:57:19 UTC 2026. FHIR version 4.0.1 for ans.document.fr.core#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/document/core)
+Generated Thu Jan 22 13:49:05 UTC 2026. FHIR version 4.0.1 for ans.document.fr.core#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/document/core)
  Build Errors : 10 / 4 / 0
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRActLMCDAFHIR : 0 / 8 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRAdvanceDirectiveLMCDAFHIR : 0 / 8 / 1
@@ -54,7 +54,7 @@ Generated Thu Jan 22 09:57:19 UTC 2026. FHIR version 4.0.1 for ans.document.fr.c
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-Observation-vital-signs-panel-document : 0 / 1 / 2
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-accession-number-identifier-document : 0 / 1 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-actor-extension : 0 / 1 / 1
- /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-advance-directive-document : 0 / 2 / 1
+ /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-advance-directive-document : 0 / 2 / 3
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-adverse-event-document : 1 / 1 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-allergie-intolerance-document : 0 / 1 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-author-time-extension : 0 / 1 / 1
@@ -1077,7 +1077,9 @@ WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/docu
 == fsh-generated/resources/StructureDefinition-fr-actor-extension.json ==
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-fr-advance-directive-document.json ==
-WARNING: StructureDefinition/fr-advance-directive-document: StructureDefinition.snapshot.element[69].binding.valueSet: There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-PurposeOfUse'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '3.1.0', found versions: 2.0.0 (from hl7.terminology#5.2.0), 3.0.0 (from hl7.terminology.r4#5.5.0), 3.1.0 (from hl7.terminology.r4#7.0.1). Suggested fix: change the canonical reference from 'http://terminology.hl7.org/ValueSet/v3-PurposeOfUse' to 'http://terminology.hl7.org/ValueSet/v3-PurposeOfUse|3.1.0'
+WARNING: StructureDefinition/fr-advance-directive-document: StructureDefinition.snapshot.element[70].binding.valueSet: There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-PurposeOfUse'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '3.1.0', found versions: 2.0.0 (from hl7.terminology#5.2.0), 3.0.0 (from hl7.terminology.r4#5.5.0), 3.1.0 (from hl7.terminology.r4#7.0.1). Suggested fix: change the canonical reference from 'http://terminology.hl7.org/ValueSet/v3-PurposeOfUse' to 'http://terminology.hl7.org/ValueSet/v3-PurposeOfUse|3.1.0'
+INFORMATION: StructureDefinition/fr-advance-directive-document: StructureDefinition.differential.element[1].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/fr-advance-directive-document: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-advance-directive-document'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-fr-adverse-event-document.json ==
 ERROR: AdverseEvent - FR adverse event Document.AdverseEvent.outcome: Binding https://smt.esante.gouv.fr/fhir/ValueSet/jdv-evolution-cisis is not a subset of binding http://hl7.org/fhir/ValueSet/adverse-event-outcome|4.0.1 because The codes '1352007006,1339036001,405535005,MED-1281,1335890004,261665006,1336140009,MED-1282' are not in the base valueset
@@ -4767,8 +4769,8 @@ WARNING: ValueSet/fr-vs-evaluation-type: ValueSet: Published value sets SHOULD c
 == fsh-generated/resources/ValueSet-fr-vs-medication-translation-document.json ==
 WARNING: ValueSet/fr-vs-medication-translation-document: ValueSet.compose.include[1].system: No definition could be found for URL value 'https://smt.esante.gouv.fr/terminologie-cip_ucd'
 WARNING: ValueSet/fr-vs-medication-translation-document: ValueSet.compose.include[3].system: No definition could be found for URL value 'https://smt.esante.gouv.fr/terminologie-medicabase'
-ERROR: ValueSet.where(id = 'fr-vs-medication-translation-document'): Error from https://smt.esante.gouv.fr/fhir: Error: [9fa9ef56-ad4f-42fe-a0b1-fc2ba5829427]: Could not find the code system https://smt.esante.gouv.fr/terminologie-cip_ucd|2026-01
-Information: X-Request-Id: bb926668-ce2d-459a-85ca-669424465ed4
+ERROR: ValueSet.where(id = 'fr-vs-medication-translation-document'): Error from https://smt.esante.gouv.fr/fhir: Error: [1f09ba32-de6f-45e1-9fc8-99f268d36f2f]: Could not find the code system https://smt.esante.gouv.fr/terminologie-cip_ucd|2026-01
+Information: X-Request-Id: f530bd60-b2b1-4936-9c0c-2b5c3d0220b1
 == fsh-generated/resources/ValueSet-fr-vs-procedure-code.json ==
 WARNING: ValueSet/fr-vs-procedure-code: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 ERROR: ValueSet.where(id = 'fr-vs-procedure-code'): Error from https://tx.fhir.org/r4: A definition for CodeSystem 'https://smt.esante.gouv.fr/terminologie-ccam' could not be found, so the value set cannot be expanded

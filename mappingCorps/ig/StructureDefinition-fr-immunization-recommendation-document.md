@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-immunization-reco
   "name" : "FRImmunizationRecommendationDocument",
   "title" : "ImmunizationRecommendation - FR Immunization Recommendation Document",
   "status" : "draft",
-  "date" : "2026-01-22T09:24:45+00:00",
+  "date" : "2026-01-22T13:29:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

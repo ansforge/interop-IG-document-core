@@ -35,7 +35,8 @@ package IG #DDDDDD{
 
         class FRAdvanceDirectiveDocument{
 
-             Consent.identifier => [None..None]
+             Consent.identifier => [1..None]
+             Consent.identifier:mainIdentifier => [1..1]
              Consent.status => [None..None]
              Consent.scope => [None..None]
              Consent.scope.coding.system => [None..None]

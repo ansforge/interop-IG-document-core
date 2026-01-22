@@ -26,7 +26,7 @@ Mapping des éléments du modèle métier FRLMResultatsEntry vers le profil CDA 
   "version" : "0.1.0",
   "title" : "Mapping Métier/CDA/FHIR : \"Types des résultats classés par type d’examens (BIO, IMG, etc…)\"",
   "status" : "draft",
-  "date" : "2026-01-22T09:24:45+00:00",
+  "date" : "2026-01-22T13:29:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

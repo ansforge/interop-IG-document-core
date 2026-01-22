@@ -55,7 +55,7 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "title" : "ValueSet - FR ValueSet Medication Translation Document",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-01-22T09:24:45+00:00",
+  "date" : "2026-01-22T13:29:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
