@@ -6,7 +6,6 @@ Description: "Mapping des éléments du modèle métier FRLMTraitement vers le p
 * title = "Mapping Métier/CDA/FHIR : \"Traitement déjà administré\""
 * status = #draft
 
-
 // Groupe Mapping 1 : modèle métier → CDA
 * group[+].source = "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-traitement"
 * group[=].target = "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-traitement"
