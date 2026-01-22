@@ -46,7 +46,7 @@ Description: "Mapping des éléments du modèle métier FRLMVaccination vers le 
 * group[=].element[=].target.equivalence = #equivalent
 // Vaccin
 * group[=].element[+].code = #FRLMVaccination.vaccin    
-* group[=].element[=].target.code = #FRCDAVaccination.consumable.FRCDAProduitDeSante
+* group[=].element[=].target.code = #FRCDAVaccination.consumable:FRCDAProduitDeSante
 * group[=].element[=].target.equivalence = #equivalent
 // Référence de la prescription
 * group[=].element[+].code = #FRLMVaccination.prescription
@@ -102,6 +102,10 @@ Description: "Mapping des éléments du modèle métier FRLMVaccination vers le 
 // Voie d’administration
 * group[=].element[+].code = #FRCDAVaccination.routeCode
 * group[=].element[=].target.code = #FRImmunizationDocument.route
+* group[=].element[=].target.equivalence = #equivalent
+// Dose administrée
+* group[=].element[+].code = #FRCDAVaccination.doseQuantity
+* group[=].element[=].target.code = #FRImmunizationDocument.doseQuantity
 * group[=].element[=].target.equivalence = #equivalent
 // Vaccin administré
 * group[=].element[+].code = #FRCDAVaccination.consumable:FRCDAProduitDeSante

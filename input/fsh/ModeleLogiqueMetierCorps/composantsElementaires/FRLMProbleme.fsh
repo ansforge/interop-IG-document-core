@@ -16,7 +16,8 @@ Characteristics: #can-be-target
 // Absent du modèle EHDS / Pas d’équivalent FHIR
 * statut 1..1 code "Statut de l'entrée"
 //onsetDate
-* dateProbleme 1..1 dateTime "Date de début du problème"
+* dateDebutProbleme 1..1 dateTime "Date de début du problème"
+* dateFinProbleme 0..1 dateTime "Date de fin du problème"
 //clinicalStatus : CodeableConcept
 * statutProbleme 0..1 FRLMStatutProbleme "Statut du problème"
 //severity

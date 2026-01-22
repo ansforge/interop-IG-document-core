@@ -87,6 +87,14 @@ Description: "Mapping des éléments du modèle métier FRLMVaccinRecommande ver
 * group[=].element[+].code = #FRCDAVaccinRecommande.effectiveTime
 * group[=].element[=].target.code = #FRImmunizationRecommendationDocument.recommendation.dateCriterion.value
 * group[=].element[=].target.equivalence = #equivalent  
+// Voie d’administration
+* group[=].element[+].code = #FRCDAVaccinRecommande.routeCode
+* group[=].element[=].target.code = #FRImmunizationRecommendationDocument.supportingImmunization:FRImmunizationDocument.route
+* group[=].element[=].target.equivalence = #equivalent
+// Région anatomique d'administration
+* group[=].element[+].code = #FRCDAVaccinRecommande.approachSiteCode
+* group[=].element[=].target.code = #FRImmunizationRecommendationDocument.supportingImmunization:FRImmunizationDocument.site
+* group[=].element[=].target.equivalence = #equivalent
 // Vaccin
 * group[=].element[+].code = #FRCDAVaccinRecommande.consumable.FRCDAProduitDeSante
 * group[=].element[=].target.code = #FRImmunizationRecommendationDocument.recommendation.vaccineCode

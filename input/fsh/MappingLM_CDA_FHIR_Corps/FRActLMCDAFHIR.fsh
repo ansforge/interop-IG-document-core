@@ -176,7 +176,7 @@ Description: "Mapping des éléments du modèle métier FRLMActe vers le profil 
 * group[=].element[=].target.comment = "author CDA → recorder FHIR."
 
 /* Priorité */
-* group[=].element[+].code = #priorityCode
+* group[=].element[+].code = #FRCDAActe.priorityCode
 * group[=].element[=].target.code = #FRProcedureActDocument.extension:priority
 * group[=].element[=].target.equivalence = #equivalent
 
