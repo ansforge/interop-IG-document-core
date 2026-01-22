@@ -464,6 +464,13 @@ groups:
       - FRImmunizationRecommendationLMCDAFHIR
       - FRMediaLMCDAFHIR
       - FRMedicationAdministrationLMCDAFHIR
+      - FRMedicationDispenseLMCDAFHIR
+      - FRMedicationLMCDAFHIR
+      - FRMedicationRequestLMCDAFHIR
+      - FRMedicationsCombinaisonRequestLMCDAFHIR
+      - FRMedicationsCombinaisonLMCDAFHIR
+      - FRMedicationStatementLMCDAFHIR
+      - FRObservationAdministrationBloodDerivativesLMCDAFHIR
  
 resources: 
   Binary/BIO-CR-BIO-2024.01-Microbiologie-V1:

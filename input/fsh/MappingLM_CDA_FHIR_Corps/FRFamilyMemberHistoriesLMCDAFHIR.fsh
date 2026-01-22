@@ -41,8 +41,8 @@ Description: "Mapping des éléments du modèle métier FRLMAntecedentsFamiliaux
 * group[=].element[=].target.code = #FRFamilyMemberHistoryDocument.status
 * group[=].element[=].target.equivalence = #equivalent
 // Identification du parent
-* group[=].element[+].code = #FRCDAAntecedentsFamiliaux.subject.relatedSubject.code
-* group[=].element[=].target.code = #FRFamilyMemberHistoryDocument.relationship.coding
+* group[=].element[+].code = #FRCDAAntecedentsFamiliaux.subject
+* group[=].element[=].target.code = #FRFamilyMemberHistoryDocument.relationship
 * group[=].element[=].target.equivalence = #equivalent
 // Sexe du sujet
 * group[=].element[+].code = #FRCDAAntecedentsFamiliaux.subject.relatedSubject.subject.administrativeGenderCode

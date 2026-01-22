@@ -58,6 +58,10 @@ Description: "Mapping des éléments du modèle métier FRLMResultatsEntry vers 
 * group[=].element[+].code = #FRCDAResultats.code
 * group[=].element[=].target.code = #FRDiagnosticReportDocument.code
 * group[=].element[=].target.equivalence = #equivalent
+// Statut de l'entrée
+* group[=].element[+].code = #FRCDAResultats.statusCode
+* group[=].element[=].target.code = #FRDiagnosticReportDocument.status
+* group[=].element[=].target.equivalence = #equivalent
 // Date de l'entrée
 * group[=].element[+].code = #FRCDAResultats.effectiveTime
 * group[=].element[=].target.code = #FRDiagnosticReportDocument.effective[x]

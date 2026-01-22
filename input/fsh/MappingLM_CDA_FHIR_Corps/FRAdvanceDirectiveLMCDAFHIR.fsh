@@ -115,7 +115,7 @@ Description: "Mapping des éléments du modèle métier FRLMDirectiveAnticipee v
 * group[=].element[=].target.equivalence = #equivalent
 
 /* Valeur booléenne */
-* group[=].element[+].code = #FRCDADirectiveAnticipee.value
+* group[=].element[+].code = #FRCDADirectiveAnticipee.valueBoolean
 * group[=].element[=].target.code = #FRAdvanceDirectiveDocument.provision.type
 * group[=].element[=].target.equivalence = #equivalent
 
@@ -132,6 +132,11 @@ Description: "Mapping des éléments du modèle métier FRLMDirectiveAnticipee v
 /* Observation média */
 * group[=].element[+].code = #FRCDADirectiveAnticipee.entryRelationship.observationMedia
 * group[=].element[=].target.code = #FRAdvanceDirectiveDocument.sourceAttachment
+* group[=].element[=].target.equivalence = #equivalent
+
+/* Identifiant observation média */
+* group[=].element[+].code = #FRCDADirectiveAnticipee.entryRelationship.observationMedia.id
+* group[=].element[=].target.code = #FRAdvanceDirectiveDocument.sourceAttachment.id
 * group[=].element[=].target.equivalence = #equivalent
 
 /* Document encapsulé encodée en Base64 */

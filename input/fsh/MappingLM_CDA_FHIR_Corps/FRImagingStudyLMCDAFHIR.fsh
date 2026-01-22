@@ -56,7 +56,7 @@ Description: "Mapping des éléments du modèle métier FRLMExamenImagerie vers 
 * group[=].element[=].target.comment = "FRImagingStudyDocument ne possède pas d'élément 'code' pour mapper cette donnée."
 
 // Description narrative de l'examen
-* group[=].element[+].code = #FRCDADICOMExamenImagerie.description
+* group[=].element[+].code = #FRCDADICOMExamenImagerie.text
 * group[=].element[=].target.code = #FRImagingStudyDocument.description
 * group[=].element[=].target.equivalence = #equivalent
 // Date de l'examen
