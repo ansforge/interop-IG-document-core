@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-statement-document | *Version*:0.1.0 |
-| Draft as of 2026-01-19 | *Computable Name*:FRMedicationStatementDocument |
+| Draft as of 2026-01-23 | *Computable Name*:FRMedicationStatementDocument |
 
  
 * FRMedicationStatementDocument permet de décrire les modalités d’administration d’un médicament au patient.
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-medication-statem
   "name" : "FRMedicationStatementDocument",
   "title" : "MedicationStatement - FR Medication Statement Document",
   "status" : "draft",
-  "date" : "2026-01-19T13:54:24+00:00",
+  "date" : "2026-01-23T08:28:04+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -253,6 +253,40 @@ Other representations of profile: [CSV](StructureDefinition-fr-medication-statem
         }
       },
       {
+        "id" : "MedicationStatement.dosage.doseAndRate",
+        "path" : "MedicationStatement.dosage.doseAndRate",
+        "mustSupport" : true
+      },
+      {
+        "id" : "MedicationStatement.dosage.doseAndRate.dose[x]",
+        "path" : "MedicationStatement.dosage.doseAndRate.dose[x]",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "type",
+              "path" : "$this"
+            }
+          ],
+          "ordered" : false,
+          "rules" : "open"
+        }
+      },
+      {
+        "id" : "MedicationStatement.dosage.doseAndRate.dose[x]:doseQuantity",
+        "path" : "MedicationStatement.dosage.doseAndRate.dose[x]",
+        "sliceName" : "doseQuantity",
+        "short" : "Dose déclarée",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Quantity",
+            "profile" : ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"]
+          }
+        ],
+        "mustSupport" : true
+      },
+      {
         "id" : "MedicationStatement.dosage.doseAndRate.rate[x]",
         "path" : "MedicationStatement.dosage.doseAndRate.rate[x]",
         "slicing" : {
@@ -264,22 +298,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-medication-statem
           ],
           "ordered" : false,
           "rules" : "open"
-        },
-        "mustSupport" : true
-      },
-      {
-        "id" : "MedicationStatement.dosage.doseAndRate.rate[x]:rateRatio",
-        "path" : "MedicationStatement.dosage.doseAndRate.rate[x]",
-        "sliceName" : "rateRatio",
-        "short" : "doseMaximale",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Ratio"
-          }
-        ],
-        "mustSupport" : true
+        }
       },
       {
         "id" : "MedicationStatement.dosage.doseAndRate.rate[x]:rateQuantity",
@@ -294,6 +313,12 @@ Other representations of profile: [CSV](StructureDefinition-fr-medication-statem
             "profile" : ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"]
           }
         ],
+        "mustSupport" : true
+      },
+      {
+        "id" : "MedicationStatement.dosage.maxDosePerPeriod",
+        "path" : "MedicationStatement.dosage.maxDosePerPeriod",
+        "short" : "dose maximale",
         "mustSupport" : true
       }
     ]

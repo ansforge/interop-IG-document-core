@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-advance-directive-document | *Version*:0.1.0 |
-| Draft as of 2026-01-19 | *Computable Name*:FRAdvanceDirectiveDocument |
+| Draft as of 2026-01-23 | *Computable Name*:FRAdvanceDirectiveDocument |
 
  
 FRAdvanceDirectiveDocument permet d’indiquer si les directives anticipées du patient. Article L1111-11 du Code de la Santé Publique : « Toute personne majeure peut rédiger des directives anticipées pour le cas où elle serait un jour hors d’état d’exprimer sa volonté. Ces directives anticipées expriment la volonté de la personne relative à sa fin de vie en ce qui concerne les conditions de la poursuite, de la limitation, de l’arrêt ou du refus de traitement ou d’acte médicaux.» 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-advance-directive
   "name" : "FRAdvanceDirectiveDocument",
   "title" : "Consent - FR Advance directive Document",
   "status" : "draft",
-  "date" : "2026-01-19T13:54:24+00:00",
+  "date" : "2026-01-23T08:28:04+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -99,6 +99,30 @@ Other representations of profile: [CSV](StructureDefinition-fr-advance-directive
       {
         "id" : "Consent",
         "path" : "Consent"
+      },
+      {
+        "id" : "Consent.identifier",
+        "path" : "Consent.identifier",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "pattern",
+              "path" : "system"
+            }
+          ],
+          "rules" : "open"
+        },
+        "min" : 1,
+        "mustSupport" : true
+      },
+      {
+        "id" : "Consent.identifier:mainIdentifier",
+        "path" : "Consent.identifier",
+        "sliceName" : "mainIdentifier",
+        "short" : "Identifiant de la directive anticipée",
+        "min" : 1,
+        "max" : "1",
+        "mustSupport" : true
       },
       {
         "id" : "Consent.status",

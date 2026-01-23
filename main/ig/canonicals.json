@@ -108,6 +108,54 @@
     "version" : "0.1.0"
   },
   {
+    "id" : "FRMedicationDispenseLMCDAFHIR",
+    "type" : "ConceptMap",
+    "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRMedicationDispenseLMCDAFHIR",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "FRMedicationLMCDAFHIR",
+    "type" : "ConceptMap",
+    "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRMedicationLMCDAFHIR",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "FRMedicationRequestLMCDAFHIR",
+    "type" : "ConceptMap",
+    "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRMedicationRequestLMCDAFHIR",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "FRMedicationStatementLMCDAFHIR",
+    "type" : "ConceptMap",
+    "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRMedicationStatementLMCDAFHIR",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "FRMedicationsCombinaisonLMCDAFHIR",
+    "type" : "ConceptMap",
+    "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRMedicationsCombinaisonLMCDAFHIR",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "FRMedicationsCombinaisonRequestLMCDAFHIR",
+    "type" : "ConceptMap",
+    "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRMedicationsCombinaisonRequestLMCDAFHIR",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "FRObservationAdministrationBloodDerivativesLMCDAFHIR",
+    "type" : "ConceptMap",
+    "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRObservationAdministrationBloodDerivativesLMCDAFHIR",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "FRObservationBirthEventLMCDAFHIR",
+    "type" : "ConceptMap",
+    "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRObservationBirthEventLMCDAFHIR",
+    "version" : "0.1.0"
+  },
+  {
     "id" : "mappingAuteurCDAFHIR",
     "type" : "ConceptMap",
     "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/mappingAuteurCDAFHIR",

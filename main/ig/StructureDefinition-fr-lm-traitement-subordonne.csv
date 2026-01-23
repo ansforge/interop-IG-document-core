@@ -7,6 +7,8 @@
 ","Partie narrative de l’entrée","Partie narrative de l’entrée","","","","","","","","","",,,,,"",,,,"fr-lm-traitement-subordonne.descriptionTraitement",1,1,"",""
 "fr-lm-traitement-subordonne.statutTraitement","fr-lm-traitement-subordonne.statutTraitement","","","",1,1,"","","","code {[]} {[]}
 ","Statut de l’entrée","Statut de l’entrée","","","","","","","","","",,,,,"",,,,"fr-lm-traitement-subordonne.statutTraitement",1,1,"",""
+"fr-lm-traitement-subordonne.frequenceAdministration","fr-lm-traitement-subordonne.frequenceAdministration","","","",0,1,"","","","dateTime {[]} {[]}
+","Fréquence d'administration","Fréquence d'administration","","","","","","","","","",,,,,"",,,,"fr-lm-traitement-subordonne.frequenceAdministration",0,1,"",""
 "fr-lm-traitement-subordonne.doseAadministrer","fr-lm-traitement-subordonne.doseAadministrer","","","",0,1,"","","","Quantity {[]} {[]}
 ","Dose à administrer","Dose à administrer","","","","","","","","","",,,,,"",,,,"fr-lm-traitement-subordonne.doseAadministrer",0,1,"",""
 "fr-lm-traitement-subordonne.rythmeAdministration","fr-lm-traitement-subordonne.rythmeAdministration","","","",0,1,"","","","Quantity {[]} {[]}

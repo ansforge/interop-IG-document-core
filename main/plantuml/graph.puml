@@ -35,6 +35,8 @@ package IG #DDDDDD{
 
         class FRAdvanceDirectiveDocument{
 
+             Consent.identifier => [1..None]
+             Consent.identifier:mainIdentifier => [1..1]
              Consent.status => [None..None]
              Consent.scope => [None..None]
              Consent.scope.coding.system => [None..None]
@@ -1626,7 +1628,8 @@ package IG #DDDDDD{
              fr-lm-effet-indesirable.typeEffetIndesirable => [1..1]
              fr-lm-effet-indesirable.description => [1..1]
              fr-lm-effet-indesirable.statut => [1..1]
-             fr-lm-effet-indesirable.dateDebutFin => [0..1]
+             fr-lm-effet-indesirable.dateDebut => [0..1]
+             fr-lm-effet-indesirable.dateFin => [0..1]
              fr-lm-effet-indesirable.valeur => [1..1]
              fr-lm-effet-indesirable.traitement => [1..1]
              fr-lm-effet-indesirable.probleme => [0..*]
@@ -2075,7 +2078,6 @@ package IG #DDDDDD{
              fr-lm-naissance.code => [1..1]
              fr-lm-naissance.statut => [1..1]
              fr-lm-naissance.periode => [1..1]
-             fr-lm-naissance.resultat => [1..1]
              fr-lm-naissance.identificationNouveauNe => [1..1]
              fr-lm-naissance.observationNaissance => [1..*]
         } 
@@ -2392,7 +2394,8 @@ package IG #DDDDDD{
              fr-lm-probleme.description => [1..1]
              fr-lm-probleme.problemeObserve => [1..1]
              fr-lm-probleme.statut => [1..1]
-             fr-lm-probleme.dateProbleme => [1..1]
+             fr-lm-probleme.dateDebutProbleme => [1..1]
+             fr-lm-probleme.dateFinProbleme => [0..1]
              fr-lm-probleme.statutProbleme => [0..1]
              fr-lm-probleme.severite => [0..1]
              fr-lm-probleme.certitude => [0..1]
@@ -2963,6 +2966,7 @@ package IG #DDDDDD{
              fr-lm-traitement-subordonne.identifiantTraitement => [1..*]
              fr-lm-traitement-subordonne.descriptionTraitement => [1..1]
              fr-lm-traitement-subordonne.statutTraitement => [1..1]
+             fr-lm-traitement-subordonne.frequenceAdministration => [0..1]
              fr-lm-traitement-subordonne.doseAadministrer => [0..1]
              fr-lm-traitement-subordonne.rythmeAdministration => [0..1]
              fr-lm-traitement-subordonne.medicamentTraitement => [1..1]
@@ -3272,9 +3276,12 @@ package IG #DDDDDD{
              MedicationStatement.dosage.asNeeded[x] => [None..None]
              MedicationStatement.dosage.site => [None..None]
              MedicationStatement.dosage.route => [None..None]
+             MedicationStatement.dosage.doseAndRate => [None..None]
+             MedicationStatement.dosage.doseAndRate.dose[x] => [None..None]
+             MedicationStatement.dosage.doseAndRate.dose[x]:doseQuantity => [0..1]
              MedicationStatement.dosage.doseAndRate.rate[x] => [None..None]
-             MedicationStatement.dosage.doseAndRate.rate[x]:rateRatio => [0..1]
              MedicationStatement.dosage.doseAndRate.rate[x]:rateQuantity => [0..1]
+             MedicationStatement.dosage.maxDosePerPeriod => [None..None]
         } 
 
         class FRMedicationsCombinaisonDocument{

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRImmunizationLMCDAFHIR | *Version*:0.1.0 |
-| Draft as of 2026-01-19 | *Computable Name*: |
+| Draft as of 2026-01-23 | *Computable Name*: |
 
  
 Mapping des éléments du modèle métier FRLMVaccination vers le profil CDA FRCDAVaccination, puis vers le profil FHIR FRImmunizationDocument. 
@@ -26,7 +26,7 @@ Mapping des éléments du modèle métier FRLMVaccination vers le profil CDA FRC
   "version" : "0.1.0",
   "title" : "Mapping Métier/CDA/FHIR : \"Vaccination\"",
   "status" : "draft",
-  "date" : "2026-01-19T13:54:24+00:00",
+  "date" : "2026-01-23T08:28:04+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -141,7 +141,7 @@ Mapping des éléments du modèle métier FRLMVaccination vers le profil CDA FRC
           "code" : "FRLMVaccination.vaccin",
           "target" : [
             {
-              "code" : "FRCDAVaccination.consumable.FRCDAProduitDeSante",
+              "code" : "FRCDAVaccination.consumable:FRCDAProduitDeSante",
               "equivalence" : "equivalent"
             }
           ]
@@ -265,6 +265,15 @@ Mapping des éléments du modèle métier FRLMVaccination vers le profil CDA FRC
           "target" : [
             {
               "code" : "FRImmunizationDocument.route",
+              "equivalence" : "equivalent"
+            }
+          ]
+        },
+        {
+          "code" : "FRCDAVaccination.doseQuantity",
+          "target" : [
+            {
+              "code" : "FRImmunizationDocument.doseQuantity",
               "equivalence" : "equivalent"
             }
           ]

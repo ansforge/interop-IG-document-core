@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-performer | *Version*:0.1.0 |
-| Draft as of 2026-01-19 | *Computable Name*:FRCDAPerformer |
+| Draft as of 2026-01-23 | *Computable Name*:FRCDAPerformer |
 
  
 L’élément de l’en-tête du CDA performer permet de représenter l’exécutant de l’évènement documenté. Il est obligatoire et son attribut nullFlavor interdit pour l’évènement documenté principal. 
@@ -70,7 +70,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-performer.csv
   "name" : "FRCDAPerformer",
   "title" : "CDA - performer",
   "status" : "draft",
-  "date" : "2026-01-19T13:54:24+00:00",
+  "date" : "2026-01-23T08:28:04+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

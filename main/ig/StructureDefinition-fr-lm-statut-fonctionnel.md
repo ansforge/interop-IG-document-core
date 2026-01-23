@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-statut-fonctionnel | *Version*:0.1.0 |
-| Draft as of 2026-01-19 | *Computable Name*:FRLMStatutFonctionnel |
+| Draft as of 2026-01-23 | *Computable Name*:FRLMStatutFonctionnel |
 
  
 Section Statut fonctionnel 
@@ -51,7 +51,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-statut-fonctio
   "name" : "FRLMStatutFonctionnel",
   "title" : "Modèle logique métier - FR LM Statut fonctionnel",
   "status" : "draft",
-  "date" : "2026-01-19T13:54:24+00:00",
+  "date" : "2026-01-23T08:28:04+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

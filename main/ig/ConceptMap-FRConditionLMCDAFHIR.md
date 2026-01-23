@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRConditionLMCDAFHIR | *Version*:0.1.0 |
-| Draft as of 2026-01-19 | *Computable Name*: |
+| Draft as of 2026-01-23 | *Computable Name*: |
 
  
 Mapping des éléments du modèle métier FRLMProbleme vers le profil CDA FRCDAProbleme, puis vers le profil FHIR FRConditionDocument. 
@@ -26,7 +26,7 @@ Mapping des éléments du modèle métier FRLMProbleme vers le profil CDA FRCDAP
   "version" : "0.1.0",
   "title" : "Mapping Métier/CDA/FHIR : \"Problème\"",
   "status" : "draft",
-  "date" : "2026-01-19T13:54:24+00:00",
+  "date" : "2026-01-23T08:28:04+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -111,10 +111,19 @@ Mapping des éléments du modèle métier FRLMProbleme vers le profil CDA FRCDAP
           ]
         },
         {
-          "code" : "FRLMProbleme.dateProbleme",
+          "code" : "FRLMProbleme.dateDebutProbleme",
           "target" : [
             {
-              "code" : "FRCDAProbleme.effectiveTime",
+              "code" : "FRCDAProbleme.effectiveTime.low",
+              "equivalence" : "equivalent"
+            }
+          ]
+        },
+        {
+          "code" : "FRLMProbleme.dateFinProbleme",
+          "target" : [
+            {
+              "code" : "FRCDAProbleme.effectiveTime.high",
               "equivalence" : "equivalent"
             }
           ]
@@ -246,7 +255,8 @@ Mapping des éléments du modèle métier FRLMProbleme vers le profil CDA FRCDAP
           "code" : "FRCDAProbleme.statusCode",
           "target" : [
             {
-              "equivalence" : "unmatched"
+              "code" : "FRConditionDocument.clinicalStatus",
+              "equivalence" : "equivalent"
             }
           ]
         },
@@ -309,6 +319,24 @@ Mapping des éléments du modèle métier FRLMProbleme vers le profil CDA FRCDAP
           "target" : [
             {
               "code" : "FRConditionDocument.evidence.detail",
+              "equivalence" : "equivalent"
+            }
+          ]
+        },
+        {
+          "code" : "FRCDAProbleme.reference.externalDocument.id",
+          "target" : [
+            {
+              "code" : "FRConditionDocument.evidence.detail:FRDocumentReferenceDocument.identifier",
+              "equivalence" : "equivalent"
+            }
+          ]
+        },
+        {
+          "code" : "FRCDAProbleme.reference.externalDocument.text.reference",
+          "target" : [
+            {
+              "code" : "FRConditionDocument.evidence.detail:FRDocumentReferenceDocument.content.attachment.url",
               "equivalence" : "equivalent"
             }
           ]

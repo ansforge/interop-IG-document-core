@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-condition-document | *Version*:0.1.0 |
-| Draft as of 2026-01-19 | *Computable Name*:FRConditionDocument |
+| Draft as of 2026-01-23 | *Computable Name*:FRConditionDocument |
 
  
 FRConditionDocument est un profil utilisé pour décrire un problème du patient (une pathologie par exemple). 
 
 **Utilisations:**
 
-* Référer à ce Profil: [AdverseEvent - FR adverse event Document](StructureDefinition-fr-adverse-event-document.md), [DeviceRequest - FR Device request Document](StructureDefinition-fr-device-request-document.md), [DeviceUseStatement - FR Device Use Statement Document](StructureDefinition-fr-device-use-statement-document.md), [Immunization - FR Immunization Document](StructureDefinition-fr-immunization-document.md)...Show 5 more,[MedicationAdministration - FR Medication Administration Document](StructureDefinition-fr-medication-administration-document.md),[MedicationRequest - FR Medication Request Document](StructureDefinition-fr-medication-request-document.md),[MedicationStatement - FR Medication Statement Document](StructureDefinition-fr-medication-statement-document.md),[FR Patient History Extension](StructureDefinition-fr-patient-history-extension.md)and[Procedure - FR Procedure Act Document](StructureDefinition-fr-procedure-act-document.md)
+* Référer à ce Profil: [AdverseEvent - FR adverse event Document](StructureDefinition-fr-adverse-event-document.md), [DeviceRequest - FR Device request Document](StructureDefinition-fr-device-request-document.md), [DeviceUseStatement - FR Device Use Statement Document](StructureDefinition-fr-device-use-statement-document.md), [Immunization - FR Immunization Document](StructureDefinition-fr-immunization-document.md)... Show 5 more, [MedicationAdministration - FR Medication Administration Document](StructureDefinition-fr-medication-administration-document.md), [MedicationRequest - FR Medication Request Document](StructureDefinition-fr-medication-request-document.md), [MedicationStatement - FR Medication Statement Document](StructureDefinition-fr-medication-statement-document.md), [FR Patient History Extension](StructureDefinition-fr-patient-history-extension.md) and [Procedure - FR Procedure Act Document](StructureDefinition-fr-procedure-act-document.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-condition-document)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-condition-documen
   "name" : "FRConditionDocument",
   "title" : "Condition - FR Condition Document",
   "status" : "draft",
-  "date" : "2026-01-19T13:54:24+00:00",
+  "date" : "2026-01-23T08:28:04+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

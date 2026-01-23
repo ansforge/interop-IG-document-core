@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRImagingStudyLMCDAFHIR | *Version*:0.1.0 |
-| Draft as of 2026-01-19 | *Computable Name*: |
+| Draft as of 2026-01-23 | *Computable Name*: |
 
  
 Mapping des éléments du modèle métier FRLMExamenImagerie vers le profil CDA FRCDADICOMExamenImagerie, puis vers le profil FHIR FRImagingStudyDocument. 
@@ -26,7 +26,7 @@ Mapping des éléments du modèle métier FRLMExamenImagerie vers le profil CDA 
   "version" : "0.1.0",
   "title" : "Mapping Métier/CDA/FHIR : \"Examen d'imagerie\"",
   "status" : "draft",
-  "date" : "2026-01-19T13:54:24+00:00",
+  "date" : "2026-01-23T08:28:04+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -153,7 +153,7 @@ Mapping des éléments du modèle métier FRLMExamenImagerie vers le profil CDA 
           ]
         },
         {
-          "code" : "FRCDADICOMExamenImagerie.description",
+          "code" : "FRCDADICOMExamenImagerie.text",
           "target" : [
             {
               "code" : "FRImagingStudyDocument.description",

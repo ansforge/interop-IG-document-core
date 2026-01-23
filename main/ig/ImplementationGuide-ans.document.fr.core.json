@@ -10,7 +10,7 @@
   "name" : "FRDocumentCore",
   "title" : "ANS IG document core",
   "status" : "draft",
-  "date" : "2026-01-19T13:54:24+00:00",
+  "date" : "2026-01-23T08:28:04+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -1955,6 +1955,19 @@
         "valueString" : "ConceptMap"
       }],
       "reference" : {
+        "reference" : "ConceptMap/FRObservationAdministrationBloodDerivativesLMCDAFHIR"
+      },
+      "name" : "Mapping FRLMAdministrationDeDerivesDuSang → FRCDAAdministrationDeDerivesDuSang → FRObservationAdministrationBloodDerivativesDocument",
+      "description" : "Mapping des éléments du modèle métier FRLMAdministrationDeDerivesDuSang vers le profil CDA FRCDAAdministrationDeDerivesDuSang, puis vers le profil FHIR FRObservationAdministrationBloodDerivativesDocument.",
+      "exampleBoolean" : false,
+      "groupingId" : "Mapping ML-CDA-FHIR corps"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ConceptMap"
+      }],
+      "reference" : {
         "reference" : "ConceptMap/FRAllergyIntoleranceLMCDAFHIR"
       },
       "name" : "Mapping FRLMAllergieOuHypersensibilite / FRCDAAllergieOuHypersensibilite -> FRAllergyIntoleranceDocument",
@@ -2085,10 +2098,35 @@
         "valueString" : "ConceptMap"
       }],
       "reference" : {
+        "reference" : "ConceptMap/FRObservationBirthEventLMCDAFHIR"
+      },
+      "name" : "Mapping FRLMNaissance → FRCDANaissance → FRObservationBirthEventDocument",
+      "description" : "Mapping des éléments du modèle métier FRLMNaissance vers le profil CDA FRCDANaissance, puis vers le profil FHIR FRObservationBirthEventDocument.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ConceptMap"
+      }],
+      "reference" : {
         "reference" : "ConceptMap/FRDeviceRequestLMCDAFHIR"
       },
       "name" : "Mapping FRLMOrdreDispositifMedical → FRCDAOrdreDispositifMedical → FRDeviceRequestDocument",
       "description" : "Mapping des éléments du modèle métier FRLMDispositifMedicalEntree vers le profil CDA FRCDADispositifMedical, puis vers le profil FHIR FRDeviceRequestDocument.",
+      "exampleBoolean" : false,
+      "groupingId" : "Mapping ML-CDA-FHIR corps"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ConceptMap"
+      }],
+      "reference" : {
+        "reference" : "ConceptMap/FRMedicationLMCDAFHIR"
+      },
+      "name" : "Mapping FRLMProduitSante → FRCDAProduitDeSante → FRMedicationDocument",
+      "description" : "Mapping des éléments du modèle métier FRLMProduitSante vers le profil CDA FRCDAProduitDeSante, puis vers le profil FHIR FRMedicationDocument.",
       "exampleBoolean" : false,
       "groupingId" : "Mapping ML-CDA-FHIR corps"
     },
@@ -2141,6 +2179,71 @@
       },
       "name" : "Mapping FRLMTraitement → FRCDATraitement → FRMedicationAdministrationDocument",
       "description" : "Mapping des éléments du modèle métier FRLMTraitement vers le profil CDA FRCDATraitement, puis vers le profil FHIR FRMedicationAdministrationDocument.",
+      "exampleBoolean" : false,
+      "groupingId" : "Mapping ML-CDA-FHIR corps"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ConceptMap"
+      }],
+      "reference" : {
+        "reference" : "ConceptMap/FRMedicationStatementLMCDAFHIR"
+      },
+      "name" : "Mapping FRLMTraitement → FRCDATraitement → FRMedicationStatementDocument",
+      "description" : "Mapping des éléments du modèle métier FRLMTraitement vers la sous-entrée CDA FRCDATraitement puis vers le profil FHIR FRMedicationStatementDocument.",
+      "exampleBoolean" : false,
+      "groupingId" : "Mapping ML-CDA-FHIR corps"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ConceptMap"
+      }],
+      "reference" : {
+        "reference" : "ConceptMap/FRMedicationDispenseLMCDAFHIR"
+      },
+      "name" : "Mapping FRLMTraitementDispense → FRCDATraitementDispense → FRMedicationDispenseDocument",
+      "description" : "Mapping des éléments du modèle métier FRLMTraitementDispense vers le profil CDA FRCDATraitementDispense, puis vers le profil FHIR FRMedicationDispenseDocument.",
+      "exampleBoolean" : false,
+      "groupingId" : "Mapping ML-CDA-FHIR corps"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ConceptMap"
+      }],
+      "reference" : {
+        "reference" : "ConceptMap/FRMedicationRequestLMCDAFHIR"
+      },
+      "name" : "Mapping FRLMTraitementPrescrit → FRCDATraitementPrescrit → FRMedicationRequestDocument",
+      "description" : "Mapping des éléments du modèle métier FRLMTraitementPrescrit vers l'entrée CDA FRCDATraitementPrescrit, puis vers le profil FHIR FRMedicationRequestDocument.",
+      "exampleBoolean" : false,
+      "groupingId" : "Mapping ML-CDA-FHIR corps"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ConceptMap"
+      }],
+      "reference" : {
+        "reference" : "ConceptMap/FRMedicationsCombinaisonRequestLMCDAFHIR"
+      },
+      "name" : "Mapping FRLMTraitementPrescritSubordonne → FRCDATraitementPrescritSubordonne → FRMedicationsCombinaisonDocument",
+      "description" : "Mapping des éléments du modèle métier FRLMTraitementPrescritSubordonne vers la sous-entrée CDA FRCDATraitementSubordonne puis vers le profil FHIR FRMedicationsCombinaisonDocument.",
+      "exampleBoolean" : false,
+      "groupingId" : "Mapping ML-CDA-FHIR corps"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ConceptMap"
+      }],
+      "reference" : {
+        "reference" : "ConceptMap/FRMedicationsCombinaisonLMCDAFHIR"
+      },
+      "name" : "Mapping FRLMTraitementSubordonne → FRCDATraitementSubordonne → FRMedicationsCombinaisonDocument",
+      "description" : "Mapping des éléments du modèle métier FRLMTraitementSubordonne vers la sous-entrée CDA FRCDATraitementSubordonne puis vers le profil FHIR FRMedicationsCombinaisonDocument.",
       "exampleBoolean" : false,
       "groupingId" : "Mapping ML-CDA-FHIR corps"
     },

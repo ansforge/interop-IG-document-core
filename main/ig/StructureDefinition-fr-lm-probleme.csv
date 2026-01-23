@@ -11,8 +11,10 @@
 ","Problème observé","Problème observé","","","","","","","","","",,,,,"",,,,"fr-lm-probleme.problemeObserve",1,1,"",""
 "fr-lm-probleme.statut","fr-lm-probleme.statut","","","",1,1,"","","","code {[]} {[]}
 ","Statut de l'entrée","Statut de l'entrée","","","","","","","","","",,,,,"",,,,"fr-lm-probleme.statut",1,1,"",""
-"fr-lm-probleme.dateProbleme","fr-lm-probleme.dateProbleme","","","",1,1,"","","","dateTime {[]} {[]}
-","Date de début du problème","Date de début du problème","","","","","","","","","",,,,,"",,,,"fr-lm-probleme.dateProbleme",1,1,"",""
+"fr-lm-probleme.dateDebutProbleme","fr-lm-probleme.dateDebutProbleme","","","",1,1,"","","","dateTime {[]} {[]}
+","Date de début du problème","Date de début du problème","","","","","","","","","",,,,,"",,,,"fr-lm-probleme.dateDebutProbleme",1,1,"",""
+"fr-lm-probleme.dateFinProbleme","fr-lm-probleme.dateFinProbleme","","","",0,1,"","","","dateTime {[]} {[]}
+","Date de fin du problème","Date de fin du problème","","","","","","","","","",,,,,"",,,,"fr-lm-probleme.dateFinProbleme",0,1,"",""
 "fr-lm-probleme.statutProbleme","fr-lm-probleme.statutProbleme","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-statut-probleme {[]} {[]}
 ","Statut du problème","Statut du problème","","","","","","","","","",,,,,"",,,,"fr-lm-probleme.statutProbleme",0,1,"",""
 "fr-lm-probleme.severite","fr-lm-probleme.severite","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-severite {[]} {[]}
