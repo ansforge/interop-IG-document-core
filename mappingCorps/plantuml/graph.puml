@@ -2022,7 +2022,7 @@ package IG #DDDDDD{
              fr-lm-isolat-microbiologique.identifiant => [0..1]
              fr-lm-isolat-microbiologique.codeIsolat => [0..1]
              fr-lm-isolat-microbiologique.statut => [1..1]
-             fr-lm-isolat-microbiologique.dateateResultat => [0..1]
+             fr-lm-isolat-microbiologique.dateResultat => [0..1]
              fr-lm-isolat-microbiologique.choice[x] => [0..1]
              fr-lm-isolat-microbiologique.isolatMicrobiologique => [1..1]
              fr-lm-isolat-microbiologique.isolatMicrobiologique.isolat => [1..1]
@@ -3490,6 +3490,26 @@ package IG #DDDDDD{
              Observation.method => [None..None]
         } 
 
+        class FRObservationMultiresistantMicroorganismsIdentificationDocument{
+
+             Observation.identifier => [1..1]
+             Observation.status => [None..None]
+             Observation.code => [None..None]
+             Observation.subject => [1..None]
+             Observation.encounter => [None..None]
+             Observation.effective[x] => [1..None]
+             Observation.performer => [None..None]
+             Observation.performer.extension:author => <&plus>[0..*]
+             Observation.performer.extension:author.extension:type => <&plus>[None..None]
+             Observation.performer.extension:author.extension:type.value[x] => <&plus>[None..None]
+             Observation.performer.extension:author.extension:actor => <&plus>[None..None]
+             Observation.performer.extension:author.extension:actor.value[x] => <&plus>[None..None]
+             Observation.value[x] => [1..None]
+             Observation.interpretation => [None..1]
+             Observation.note => [None..None]
+             Observation.method => [None..None]
+        } 
+
         class FRObservationPainScoreDocument{
 
              Observation.identifier => [1..1]
@@ -3974,6 +3994,7 @@ package IG #DDDDDD{
      FRObservationLaboratoryReportResultsDocument -[#black,dashed,thickness=2]-> FRActorExtension
      FRObservationMedicalSummaryDocument -[#black,dashed,thickness=2]-> FRActorExtension
      FRObservationMicroorganismDetectionDocument -[#black,dashed,thickness=2]-> FRActorExtension
+     FRObservationMultiresistantMicroorganismsIdentificationDocument -[#black,dashed,thickness=2]-> FRActorExtension
      FRObservationPregnancyDocument -[#black,dashed,thickness=2]-> FRActorExtension
      FRObservationResultDocument -[#black,dashed,thickness=2]-> FRActorExtension
      FRObservationSurveyDocument -[#black,dashed,thickness=2]-> FRStatusReasonExtension
@@ -5140,6 +5161,10 @@ package "Ressources de base" #palegreen {
  class "Observation" as  classc680d437163cc6bab4f9bdb35c3073d0 
 
     classc680d437163cc6bab4f9bdb35c3073d0 --> FRObservationMicroorganismDetectionDocument
+
+ class "Observation" as  classc680d437163cc6bab4f9bdb35c3073d0 
+
+    classc680d437163cc6bab4f9bdb35c3073d0 --> FRObservationMultiresistantMicroorganismsIdentificationDocument
 
  class "Observation" as  classc680d437163cc6bab4f9bdb35c3073d0 
 

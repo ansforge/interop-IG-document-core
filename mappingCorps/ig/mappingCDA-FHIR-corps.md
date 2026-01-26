@@ -67,6 +67,22 @@ Liste des ConceptMap détaillant le mapping entre les éléments du modèle mét
 | FRLMAntecedentsFamiliauxEntree.identificationParent | FRCDAAntecedentsFamiliaux.subject | FRFamilyMemberHistoryDocument.relationship |
 | FRLMAntecedentsFamiliauxEntree.participant | FRCDAAntecedentsFamiliaux.participant | FRFamilyMemberHistoryDocument.relationship |
 | FRLMAntecedentsFamiliauxEntree.antecedentFamilialObserve | FRCDAAntecedentsFamiliaux.component:frAntecedentFamilialObserve | FRFamilyMemberHistoryDocument.condition |
+| **FRLMBatterieExamensBiologieMedicale** | **FRCDABatterieExamensDeBiologieMedicale** | **FRObservationLaboratoryReportResultsDocument** |
+| FRLMBatterieExamensBiologieMedicale.identifiant | FRCDABatterieExamensDeBiologieMedicale.id | FRObservationLaboratoryReportResultsDocument.identifier |
+| FRLMBatterieExamensBiologieMedicale.codeBatterieExamen | FRCDABatterieExamensDeBiologieMedicale.code | FRObservationLaboratoryReportResultsDocument.code |
+| FRLMBatterieExamensBiologieMedicale.statut | FRCDABatterieExamensDeBiologieMedicale.statusCode | FRObservationLaboratoryReportResultsDocument.status |
+| FRLMBatterieExamensBiologieMedicale.dateExamen | FRCDABatterieExamensDeBiologieMedicale.effectiveTime | FRObservationLaboratoryReportResultsDocument.effectivePeriod |
+| FRLMBatterieExamensBiologieMedicale.choice:FRLMSujetNonHumain | FRCDABatterieExamensDeBiologieMedicale.subject | FRObservationLaboratoryReportResultsDocument.subject |
+| FRLMBatterieExamensBiologieMedicale.choice:FRLMPatientSujetNonHumain | FRCDABatterieExamensDeBiologieMedicale.subject | FRObservationLaboratoryReportResultsDocument.subject |
+| FRLMBatterieExamensBiologieMedicale.laboratoireExecutant | FRCDABatterieExamensDeBiologieMedicale.performer | FRObservationLaboratoryReportResultsDocument.performer.extension:laboratoireExecutant |
+| FRLMBatterieExamensBiologieMedicale.auteur | FRCDABatterieExamensDeBiologieMedicale.author | FRObservationLaboratoryReportResultsDocument.author |
+| FRLMBatterieExamensBiologieMedicale.participant | FRCDABatterieExamensDeBiologieMedicale.participant | FRObservationLaboratoryReportResultsDocument.performer.extension:dispositifAuto |
+| FRLMBatterieExamensBiologieMedicale.participant | FRCDABatterieExamensDeBiologieMedicale.participant | FRObservationLaboratoryReportResultsDocument.performer.extension:responsableExamen |
+| FRLMBatterieExamensBiologieMedicale.participant | FRCDABatterieExamensDeBiologieMedicale.participant | FRObservationLaboratoryReportResultsDocument.performer.extension:validateurResultat |
+| FRLMBatterieExamensBiologieMedicale.prelevement | FRCDABatterieExamensDeBiologieMedicale.component:frPrelevement | FRObservationLaboratoryReportResultsDocument.specimen |
+| FRLMBatterieExamensBiologieMedicale.resultatElementCliniquePertinent | FRCDABatterieExamensDeBiologieMedicale.component:frResultatExamensDeBiologieElementCliniquePertinent | FRObservationLaboratoryReportResultsDocument.hasMember:FRObservationLaboratoryReportResultsDocument |
+| FRLMBatterieExamensBiologieMedicale.imageIllustrative | FRCDABatterieExamensDeBiologieMedicale.component:frImageIllustrative | FRObservationLaboratoryReportResultsDocument.derivedFrom:FRMediaDocument |
+| FRLMBatterieExamensBiologieMedicale.commentaire | FRCDABatterieExamensDeBiologieMedicale.component:frCommentaireER | FRObservationLaboratoryReportResultsDocument.note |
 | **FRLMDirectiveAnticipee** | **FRCDADirectiveAnticipee** | **FRAdvanceDirectiveDocument** |
 | FRLMDirectiveAnticipee.identifiant | FRCDADirectiveAnticipee.id |  |
 | FRLMDirectiveAnticipee.code | FRCDADirectiveAnticipee.code | FRAdvanceDirectiveDocument.provision.code |
@@ -121,7 +137,14 @@ Liste des ConceptMap détaillant le mapping entre les éléments du modèle mét
 | FRLMExamenImagerie.dateActe | FRCDADICOMExamenImagerie.effectiveTime | FRImagingStudyDocument.started |
 | FRLMExamenImagerie.serieImagerie | FRCDADICOMExamenImagerie.entryRelationship:frDICOMSerieImagerie | FRImagingStudyDocument.series |
 | FRLMExamenImagerie.objectifsReferences | FRCDADICOMExamenImagerie.entryRelationship:frDICOMSerieImagerie. entryRelationship:frDICOMSOPInstanceObservvation.entryRelationship:frDICOMObjectifsDeReference | FRImagingStudyDocument.reasonCode |
-| **FRLMImageIllustrative** | **FRCDAImageIllustrative** |  |
+| **FRLMHistoriqueGrossesse** | **FRCDAHistoriqueDeLaGrossesse** |  |
+| FRLMHistoriqueGrossesse.identifiant | FRCDAHistoriqueDeLaGrossesse.id | FRObservationPregnancyHistoryDocument.identifier |
+| FRLMHistoriqueGrossesse.code | FRCDAHistoriqueDeLaGrossesse.code | FRObservationPregnancyHistoryDocument.code |
+| FRLMHistoriqueGrossesse.statut | FRCDAHistoriqueDeLaGrossesse.statusCode | FRObservationPregnancyHistoryDocument.status |
+| FRLMHistoriqueGrossesse.periodeGrossesse | FRCDAHistoriqueDeLaGrossesse.effectiveTime | FRObservationPregnancyHistoryDocument.effectivePeriod |
+| FRLMHistoriqueGrossesse.choice:FRLMNaissance | FRCDAHistoriqueDeLaGrossesse.entryRelationship:frNaissance | FRObservationPregnancyHistoryDocument.hasMember:FRObservationBirthEventDocument |
+| FRLMHistoriqueGrossesse.choice:FRLMObservationGrossesse | FRCDAHistoriqueDeLaGrossesse.entryRelationship:frObservationSurLaGrossesse | FRObservationPregnancyHistoryDocument.hasMember:FRObservationPregnancyDocument |
+| **FRLMImageIllustrative** | **FRCDAImageIllustrative** | **FRMediaDocument** |
 | FRLMImageIllustrative.identifiant | FRCDAImageIllustrative.id | FRMediaDocument.identifier |
 | FRLMImageIllustrative.langue | FRCDAImageIllustrative.languageCode | FRMediaDocument.content.language |
 | FRLMImageIllustrative.imageEncodee | FRCDAImageIllustrative.value | FRMediaDocument.content.data |
@@ -136,6 +159,40 @@ Liste des ConceptMap détaillant le mapping entre les éléments du modèle mét
 | FRLMImageIllustrative.entryRelationship | FRCDAImageIllustrative.entryRelationship | FRMediaDocument.basedOn |
 | FRLMImageIllustrative.reference | FRCDAImageIllustrative.reference | FRMediaDocument.partOf |
 | FRLMImageIllustrative.precondition | FRCDAImageIllustrative.precondition | FRMediaDocument.reasonCode |
+| **FRLMIsolatMicrobiologique** | **FRCDAIsolatMicrobiologique** | **FRObservationLaboratoryReportResultsDocument** |
+| FRLMIsolatMicrobiologique.identifiant | FRCDAIsolatMicrobiologique.id | FRObservationLaboratoryReportResultsDocument.identifier |
+| FRLMIsolatMicrobiologique.codeIsolat | FRCDAIsolatMicrobiologique.code | FRObservationLaboratoryReportResultsDocument.code |
+| FRLMIsolatMicrobiologique.statut | FRCDAIsolatMicrobiologique.statusCode | FRObservationLaboratoryReportResultsDocument.status |
+| FRLMIsolatMicrobiologique.dateResultat | FRCDAIsolatMicrobiologique.effectiveTime | FRObservationLaboratoryReportResultsDocument.effectivePeriod |
+| FRLMIsolatMicrobiologique.choice:SujetNonHumain | FRCDAIsolatMicrobiologique.subject | FRObservationLaboratoryReportResultsDocument.subject |
+| FRLMIsolatMicrobiologique.choice:PatientSujetNonHumain | FRCDAIsolatMicrobiologique.subject | FRObservationLaboratoryReportResultsDocument.subject |
+| FRLMIsolatMicrobiologique.isolatMicrobiologique | FRCDAIsolatMicrobiologique.specimen | FRObservationLaboratoryReportResultsDocument.specimen |
+| FRLMIsolatMicrobiologique.isolatMicrobiologique.isolat | FRCDAIsolatMicrobiologique.specimen.specimenRole |  |
+| FRLMIsolatMicrobiologique.isolatMicrobiologique. isolat.identifiant | FRCDAIsolatMicrobiologique.specimen. specimenRole.id |  |
+| FRLMIsolatMicrobiologique.isolatMicrobiologique. isolat.agent | FRCDAIsolatMicrobiologique.specimen. specimenRole.specimenPlayingEntity |  |
+| FRLMIsolatMicrobiologique.isolatMicrobiologique. isolat.agent.code | FRCDAIsolatMicrobiologique.specimen. specimenRole.specimenPlayingEntity.code |  |
+| FRLMIsolatMicrobiologique.laboratoireExecutant | FRCDAIsolatMicrobiologique.performer | FRObservationLaboratoryReportResultsDocument.performer.extension:laboratoireExecutant |
+| FRLMIsolatMicrobiologique.auteur | FRCDAIsolatMicrobiologique.author | FRObservationLaboratoryReportResultsDocument.performer.extension:author |
+| FRLMIsolatMicrobiologique.valideur | FRCDAIsolatMicrobiologique.participant | FRObservationLaboratoryReportResultsDocument.performer.extension:dispositifAuto |
+| FRLMIsolatMicrobiologique.valideur | FRCDAIsolatMicrobiologique.participant | FRObservationLaboratoryReportResultsDocument.performer.extension:responsableExamen |
+| FRLMIsolatMicrobiologique.valideur | FRCDAIsolatMicrobiologique.participant | FRObservationLaboratoryReportResultsDocument.performer.extension:validateurResultat |
+| FRLMIsolatMicrobiologique.responsable | FRCDAIsolatMicrobiologique.participant | FRObservationLaboratoryReportResultsDocument.performer.extension:dispositifAuto |
+| FRLMIsolatMicrobiologique.responsable | FRCDAIsolatMicrobiologique.participant | FRObservationLaboratoryReportResultsDocument.performer.extension:responsableExamen |
+| FRLMIsolatMicrobiologique.responsable | FRCDAIsolatMicrobiologique.participant | FRObservationLaboratoryReportResultsDocument.performer.extension:validateurResultat |
+| FRLMIsolatMicrobiologique.dispositifAutomatique | FRCDAIsolatMicrobiologique.participant | FRObservationLaboratoryReportResultsDocument.performer.extension:dispositifAuto |
+| FRLMIsolatMicrobiologique.dispositifAutomatique | FRCDAIsolatMicrobiologique.participant | FRObservationLaboratoryReportResultsDocument.performer.extension:responsableExamen |
+| FRLMIsolatMicrobiologique.dispositifAutomatique | FRCDAIsolatMicrobiologique.participant | FRObservationLaboratoryReportResultsDocument.performer.extension:validateurResultat |
+| FRLMIsolatMicrobiologique.batterieExamensDeBiologieMedicale | FRCDAIsolatMicrobiologique.component:frBatterieExamensDeBiologieMedicale | FRObservationLaboratoryReportResultsDocument.hasMember:FRObservationLaboratoryReportResultsDocument |
+| FRLMIsolatMicrobiologique.resultatElementCliniquePertinent | FRCDAIsolatMicrobiologique.component:frResultatExamensDeBiologieElementCliniquePertinent | FRObservationLaboratoryReportResultsDocument.hasMember:FRObservationLaboratoryReportResultsDocument |
+| FRLMIsolatMicrobiologique.imageIllustrative | FRCDAIsolatMicrobiologique.component:frImageIllustrative | FRObservationLaboratoryReportResultsDocument.derivedFrom:FRMediaDocument |
+| FRLMIsolatMicrobiologique.commentaire | FRCDAIsolatMicrobiologique.component:frCommentaireER | FRObservationLaboratoryReportResultsDocument.note |
+| **FRLMObservationGrossesse** | **FRCDAObservationSurLaGrossesse** |  |
+| FRLMObservationGrossesse.identifiant | FRCDAObservationSurLaGrossesse.id | FRObservationPregnancyDocument.identifier |
+| FRLMObservationGrossesse.code | FRCDAObservationSurLaGrossesse.code | FRObservationPregnancyDocument.code |
+| FRLMObservationGrossesse.description | FRCDAObservationSurLaGrossesse.text | FRObservationPregnancyDocument.code.text |
+| FRLMObservationGrossesse.statut | FRCDAObservationSurLaGrossesse.statusCode | FRObservationPregnancyDocument.status |
+| FRLMObservationGrossesse.date | FRCDAObservationSurLaGrossesse.effectiveTime | FRObservationPregnancyDocument.effective[x] |
+| FRLMObservationGrossesse.resultat | FRCDAObservationSurLaGrossesse.value | FRObservationPregnancyDocument.value |
 | **FRLMDispositifMedicalEntree** | **FRCDADispositifMedical** | **FRDeviceRequestDocument** |
 | FRLMDispositifMedicalEntree.identifiant | FRCDADispositifMedical.id | FRDeviceRequestDocument.identifier |
 | FRLMDispositifMedicalEntree.description | FRCDADispositifMedical.text | FRDeviceRequestDocument.note |
@@ -176,6 +233,14 @@ Liste des ConceptMap détaillant le mapping entre les éléments du modèle mét
 | FRLMProduitSante.conditionnement | FRCDAProduitDeSante.pharm:asContent | FRMedicationDocument.extension:ihe-ext-medication-characteristic |
 | FRLMProduitSante.equivalentGenerique | FRCDAProduitDeSante.pharm:asSpecializedKind | FRMedicationDocument.extension:ihe-ext-medication-classification |
 | FRLMProduitSante.substanceActive | FRCDAProduitDeSante.pharm:ingredient | FRMedicationDocument.ingredient:substanceActive |
+| **FRLMRechercheDeMicroOrganismes** | **FRCDARechercheDeMicroOrganismes** |  |
+| FRLMRechercheDeMicroOrganismes.identifiant | FRCDARechercheDeMicroOrganismes.id | FRObservationMicroorganismDetectionDocument.identifier |
+| FRLMRechercheDeMicroOrganismes.code | FRCDARechercheDeMicroOrganismes.code | FRObservationMicroorganismDetectionDocument.code |
+| FRLMRechercheDeMicroOrganismes.description | FRCDARechercheDeMicroOrganismes.text | FRObservationMicroorganismDetectionDocument.code.text |
+| FRLMRechercheDeMicroOrganismes.statut | FRCDARechercheDeMicroOrganismes.statusCode | FRObservationMicroorganismDetectionDocument.status |
+| FRLMRechercheDeMicroOrganismes.date | FRCDARechercheDeMicroOrganismes.effectiveTime | FRObservationMicroorganismDetectionDocument.effective[x] |
+| FRLMRechercheDeMicroOrganismes.valeur | FRCDARechercheDeMicroOrganismes.value | FRObservationMicroorganismDetectionDocument.valueBoolean |
+| FRLMRechercheDeMicroOrganismes.auteur | FRCDARechercheDeMicroOrganismes.author | FRObservationMicroorganismDetectionDocument.performer.extension:author |
 | **FRLMReferenceItemPlanTraitement** | **FRCDAReferenceItemPlanTraitement** | **FRCarePlanDocument** |
 | FRLMReferenceItemPlanTraitement.identifiant | FRCDAReferenceItemPlanTraitement.id | FRCarePlanDocument.identifier |
 | FRLMReferenceItemPlanTraitement.code | FRCDAReferenceItemPlanTraitement.code | FRCarePlanDocument.category |
@@ -184,6 +249,53 @@ Liste des ConceptMap détaillant le mapping entre les éléments du modèle mét
 | FRLMReferenceItemPlanTraitement.traitementPrescrit | FRCDAReferenceItemPlanTraitement.entryRelationship:frItemPlanTraitement | FRCarePlanDocument.activity.reference:FRMedicationRequestDocument |
 | FRLMReferenceItemPlanTraitement.reference | FRCDAReferenceItemPlanTraitement.reference | FRCarePlanDocument.activity.reference:FRMedicationRequestDocument |
 | FRLMReferenceItemPlanTraitement.reference. externalDocument.identifiant | FRCDAReferenceItemPlanTraitement.reference. externalDocument.id | FRCarePlanDocument.activity.reference:FRMedicationRequestDocument.identifier |
+| **FRLMResultatExamensBiologieElementCliniquePertinent** | **FRCDAResultatExamensDeBiologieElementCliniquePertinent** |  |
+| FRLMResultatExamensBiologieElementCliniquePertinent.identifiant | FRCDAResultatExamensDeBiologieElementCliniquePertinent.id | FRObservationLaboratoryReportResultsDocument.identifier |
+| FRLMResultatExamensBiologieElementCliniquePertinent.codeAnalyseObservation | FRCDAResultatExamensDeBiologieElementCliniquePertinent.code | FRObservationLaboratoryReportResultsDocument.code |
+| FRLMResultatExamensBiologieElementCliniquePertinent.dateHeureResultat | FRCDAResultatExamensDeBiologieElementCliniquePertinent.effectiveTime | FRObservationLaboratoryReportResultsDocument.effectivePeriod |
+| FRLMResultatExamensBiologieElementCliniquePertinent.valeurResultat | FRCDAResultatExamensDeBiologieElementCliniquePertinent.value | FRObservationLaboratoryReportResultsDocument.value[x] |
+| FRLMResultatExamensBiologieElementCliniquePertinent.interpretation | FRCDAResultatExamensDeBiologieElementCliniquePertinent.interpretationCode.code |  |
+| FRLMResultatExamensBiologieElementCliniquePertinent.methode | FRCDAResultatExamensDeBiologieElementCliniquePertinent.methodCode | FRObservationLaboratoryReportResultsDocument.method |
+| FRLMResultatExamensBiologieElementCliniquePertinent.choice:FRLMSujetNonHumain | FRCDAResultatExamensDeBiologieElementCliniquePertinent.subject | FRObservationLaboratoryReportResultsDocument.subject |
+| FRLMResultatExamensBiologieElementCliniquePertinent.choice:FRLMPatientSujetNonHumain | FRCDAResultatExamensDeBiologieElementCliniquePertinent.subject | FRObservationLaboratoryReportResultsDocument.subject |
+| FRLMResultatExamensBiologieElementCliniquePertinent.laboratoireExecutant | FRCDAResultatExamensDeBiologieElementCliniquePertinent.performer | FRObservationLaboratoryReportResultsDocument.performer.extension:laboratoireExecutant |
+| FRLMResultatExamensBiologieElementCliniquePertinent.auteur | FRCDAResultatExamensDeBiologieElementCliniquePertinent.author | FRObservationLaboratoryReportResultsDocument.performer.extension:author |
+| FRLMResultatExamensBiologieElementCliniquePertinent.valideur | FRCDAResultatExamensDeBiologieElementCliniquePertinent.participant | FRObservationLaboratoryReportResultsDocument.performer.extension:dispositifAuto |
+| FRLMResultatExamensBiologieElementCliniquePertinent.valideur | FRCDAResultatExamensDeBiologieElementCliniquePertinent.participant | FRObservationLaboratoryReportResultsDocument.performer.extension:responsableExamen |
+| FRLMResultatExamensBiologieElementCliniquePertinent.valideur | FRCDAResultatExamensDeBiologieElementCliniquePertinent.participant | FRObservationLaboratoryReportResultsDocument.performer.extension:validateurResultat |
+| FRLMResultatExamensBiologieElementCliniquePertinent.responsable | FRCDAResultatExamensDeBiologieElementCliniquePertinent.participant | FRObservationLaboratoryReportResultsDocument.performer.extension:dispositifAuto |
+| FRLMResultatExamensBiologieElementCliniquePertinent.responsable | FRCDAResultatExamensDeBiologieElementCliniquePertinent.participant | FRObservationLaboratoryReportResultsDocument.performer.extension:responsableExamen |
+| FRLMResultatExamensBiologieElementCliniquePertinent.responsable | FRCDAResultatExamensDeBiologieElementCliniquePertinent.participant | FRObservationLaboratoryReportResultsDocument.performer.extension:validateurResultat |
+| FRLMResultatExamensBiologieElementCliniquePertinent.dispositifAutomatique | FRCDAResultatExamensDeBiologieElementCliniquePertinent.participant | FRObservationLaboratoryReportResultsDocument.performer.extension:dispositifAuto |
+| FRLMResultatExamensBiologieElementCliniquePertinent.dispositifAutomatique | FRCDAResultatExamensDeBiologieElementCliniquePertinent.participant | FRObservationLaboratoryReportResultsDocument.performer.extension:responsableExamen |
+| FRLMResultatExamensBiologieElementCliniquePertinent.dispositifAutomatique | FRCDAResultatExamensDeBiologieElementCliniquePertinent.participant | FRObservationLaboratoryReportResultsDocument.performer.extension:validateurResultat |
+| FRLMResultatExamensBiologieElementCliniquePertinent.commentaire | FRCDAResultatExamensDeBiologieElementCliniquePertinent.entryRelationship:frCommentaireER | FRObservationLaboratoryReportResultsDocument.note |
+| FRLMResultatExamensBiologieElementCliniquePertinent.prelevement | FRCDAResultatExamensDeBiologieElementCliniquePertinent.entryRelationship:frPrelevement | FRObservationLaboratoryReportResultsDocument.specimen |
+| FRLMResultatExamensBiologieElementCliniquePertinent.resultatsAnterieurs | FRCDAResultatExamensDeBiologieElementCliniquePertinent.entryRelationship.observation | FRObservationLaboratoryReportResultsDocument.extension:workflow-supportingInfo |
+| FRLMResultatExamensBiologieElementCliniquePertinent.intervallesReference | FRCDAResultatExamensDeBiologieElementCliniquePertinent.referenceRange.observationRange | FRObservationLaboratoryReportResultsDocument.valueRange |
+| **FRLMResultatsExamensBiologieMedicale** | **FRCDAResultatExamensDeBiologie** | **FRObservationLaboratoryReportResultsDocument** |
+| FRLMResultatsExamensBiologieMedicale.code | FRCDAResultatExamensDeBiologie.code | FRObservationLaboratoryReportResultsDocument.code |
+| FRLMResultatsExamensBiologieMedicale.statut | FRCDAResultatExamensDeBiologie.statusCode | FRObservationLaboratoryReportResultsDocument.status |
+| FRLMResultatsExamensBiologieMedicale.dateResultat | FRCDAResultatExamensDeBiologie.effectiveTime | FRObservationLaboratoryReportResultsDocument.effectivePeriod |
+| FRLMResultatsExamensBiologieMedicale.choice:FRLMSujetNonHumain | FRCDAResultatExamensDeBiologie.subject | FRObservationLaboratoryReportResultsDocument.subject |
+| FRLMResultatsExamensBiologieMedicale.choice:FRLMPatientSujetNonHumain | FRCDAResultatExamensDeBiologie.subject | FRObservationLaboratoryReportResultsDocument.subject |
+| FRLMResultatsExamensBiologieMedicale.laboratoireExecutant | FRCDAResultatExamensDeBiologie.performer | FRObservationLaboratoryReportResultsDocument.performer.extension:laboratoireExecutant |
+| FRLMResultatsExamensBiologieMedicale.auteur | FRCDAResultatExamensDeBiologie.author | FRObservationLaboratoryReportResultsDocument.performer.extension:author |
+| FRLMResultatsExamensBiologieMedicale.valideur | FRCDAResultatExamensDeBiologie.participant | FRObservationLaboratoryReportResultsDocument.performer.extension:dispositifAuto |
+| FRLMResultatsExamensBiologieMedicale.valideur | FRCDAResultatExamensDeBiologie.participant | FRObservationLaboratoryReportResultsDocument.performer.extension:responsableExamen |
+| FRLMResultatsExamensBiologieMedicale.valideur | FRCDAResultatExamensDeBiologie.participant | FRObservationLaboratoryReportResultsDocument.performer.extension:validateurResultat |
+| FRLMResultatsExamensBiologieMedicale.responsable | FRCDAResultatExamensDeBiologie.participant | FRObservationLaboratoryReportResultsDocument.performer.extension:dispositifAuto |
+| FRLMResultatsExamensBiologieMedicale.responsable | FRCDAResultatExamensDeBiologie.participant | FRObservationLaboratoryReportResultsDocument.performer.extension:responsableExamen |
+| FRLMResultatsExamensBiologieMedicale.responsable | FRCDAResultatExamensDeBiologie.participant | FRObservationLaboratoryReportResultsDocument.performer.extension:validateurResultat |
+| FRLMResultatsExamensBiologieMedicale.dispositifAutomatique | FRCDAResultatExamensDeBiologie.participant | FRObservationLaboratoryReportResultsDocument.performer.extension:dispositifAuto |
+| FRLMResultatsExamensBiologieMedicale.dispositifAutomatique | FRCDAResultatExamensDeBiologie.participant | FRObservationLaboratoryReportResultsDocument.performer.extension:responsableExamen |
+| FRLMResultatsExamensBiologieMedicale.dispositifAutomatique | FRCDAResultatExamensDeBiologie.participant | FRObservationLaboratoryReportResultsDocument.performer.extension:validateurResultat |
+| FRLMResultatsExamensBiologieMedicale.prelevement | FRCDAResultatExamensDeBiologie.entryRelationship:frPrelevement | FRObservationLaboratoryReportResultsDocument.specimen |
+| FRLMResultatsExamensBiologieMedicale.batterieExamensDeBiologieMedicale | FRCDAResultatExamensDeBiologie.entryRelationship:frBatterieExamensDeBiologieMedicale | FRObservationLaboratoryReportResultsDocument.hasMember:FRObservationLaboratoryReportResultsDocument |
+| FRLMResultatsExamensBiologieMedicale.isolatMicrobiologique | FRCDAResultatExamensDeBiologie.entryRelationship:frIsolatMicrobiologique | FRObservationLaboratoryReportResultsDocument.hasMember:FRObservationLaboratoryReportResultsDocument |
+| FRLMResultatsExamensBiologieMedicale.resultatElementCliniquePertinent | FRCDAResultatExamensDeBiologie.entryRelationship:frResultatExamensDeBiologieElementCliniquePertinent | FRObservationLaboratoryReportResultsDocument.hasMember:FRObservationLaboratoryReportResultsDocument |
+| FRLMResultatsExamensBiologieMedicale.imageIllustrative | FRCDAResultatExamensDeBiologie.entryRelationship:frImageIllustrative | FRObservationLaboratoryReportResultsDocument.derivedFrom:FRMediaDocument |
+| FRLMResultatsExamensBiologieMedicale.commentaire | FRCDAResultatExamensDeBiologie.entryRelationship:frCommentaireER | FRObservationLaboratoryReportResultsDocument.note |
 | **FRLMTraitement** | **FRCDATraitement** |  |
 | FRLMTraitement.identifiant | FRCDATraitement.id | FRMedicationStatementDocument.identifier |
 | FRLMTraitement.code | FRCDATraitement.code | FRMedicationStatementDocument.category |
@@ -276,6 +388,14 @@ Liste des ConceptMap détaillant le mapping entre les éléments du modèle mét
 | FRLMVaccination.reaction | FRCDAVaccination.entryRelationship:frProbleme | FRImmunizationDocument.reasonReference |
 | FRLMVaccination.commentaire | FRCDAVaccination.entryRelationship:frCommentaireER | FRImmunizationDocument.note |
 | FRLMVaccination.DoseAntigene | FRCDAVaccination.entryRelationship:frDoseAntigene | FRImmunizationDocument.extension:immunization-administeredProduct-r5 |
+| **FRLMIdentificationDeMicroOrganismesMultiresistants** | **FRCDAIdentificationMicroOrganismesMultiresistants** |  |
+| FRLMIdentificationDeMicroOrganismesMultiresistants.identifiant | FRCDAIdentificationMicroOrganismesMultiresistants.id | FRObservationMultiresistantMicroorganismsIdentificationDocument.identifier |
+| FRLMIdentificationDeMicroOrganismesMultiresistants.code | FRCDAIdentificationMicroOrganismesMultiresistants.code | FRObservationMultiresistantMicroorganismsIdentificationDocument.code |
+| FRLMIdentificationDeMicroOrganismesMultiresistants.description | FRCDAIdentificationMicroOrganismesMultiresistants.text | FRObservationMultiresistantMicroorganismsIdentificationDocument.code.text |
+| FRLMIdentificationDeMicroOrganismesMultiresistants.statut | FRCDAIdentificationMicroOrganismesMultiresistants.statusCode | FRObservationMultiresistantMicroorganismsIdentificationDocument.status |
+| FRLMIdentificationDeMicroOrganismesMultiresistants.date | FRCDAIdentificationMicroOrganismesMultiresistants.effectiveTime | FRObservationMultiresistantMicroorganismsIdentificationDocument.effective[x] |
+| FRLMIdentificationDeMicroOrganismesMultiresistants.valeur | FRCDAIdentificationMicroOrganismesMultiresistants.value | FRObservationMultiresistantMicroorganismsIdentificationDocument.valueString |
+| FRLMIdentificationDeMicroOrganismesMultiresistants.auteur | FRCDAIdentificationMicroOrganismesMultiresistants.author | FRObservationMultiresistantMicroorganismsIdentificationDocument.performer.extension:author |
 | **FRLMNaissance** | **FRCDANaissance** |  |
 | FRLMNaissance.identifiant | FRCDANaissance.id | FRObservationBirthEventDocument.identifier |
 | FRLMNaissance.Code | FRCDANaissance.code | FRObservationBirthEventDocument.code |
@@ -283,6 +403,14 @@ Liste des ConceptMap détaillant le mapping entre les éléments du modèle mét
 | FRLMNaissance.periode | FRCDANaissance.effectiveTime | FRObservationBirthEventDocument.effectiveDateTime |
 | FRLMNaissance.identificationNouveauNe | FRCDANaissance.subject | FRObservationBirthEventDocument.focus:RelatedPerson |
 | FRLMNaissance.observationNaissance | FRCDANaissance.component:frObservationSurLaGrossesse | FRObservationBirthEventDocument.hasMember:FRObservationPregnancyDocument |
+| **FRLMSyntheseMedicaleSejour** | **FRCDASyntheseMedicaleSejour** |  |
+| FRLMSyntheseMedicaleSejour.identifiant | FRCDASyntheseMedicaleSejour.id | FRObservationMedicalSummaryDocument.identifier |
+| FRLMSyntheseMedicaleSejour.code | FRCDASyntheseMedicaleSejour.code | FRObservationMedicalSummaryDocument.code |
+| FRLMSyntheseMedicaleSejour.description | FRCDASyntheseMedicaleSejour.text | FRObservationMedicalSummaryDocument.code.text |
+| FRLMSyntheseMedicaleSejour.statut | FRCDASyntheseMedicaleSejour.statusCode | FRObservationMedicalSummaryDocument.status |
+| FRLMSyntheseMedicaleSejour.date | FRCDASyntheseMedicaleSejour.effectiveTime | FRObservationMedicalSummaryDocument.effective[x] |
+| FRLMSyntheseMedicaleSejour.statutDocument | FRCDASyntheseMedicaleSejour.value | FRObservationMedicalSummaryDocument.valueString |
+| FRLMSyntheseMedicaleSejour.auteur | FRCDASyntheseMedicaleSejour.author | FRObservationMedicalSummaryDocument.performer.extension:author |
 | **FRLMTraitementPrescrit** | **FRCDATraitementPrescrit** | **FRMedicationRequestDocument** |
 | FRLMTraitementPrescrit.identifiant | FRCDATraitementPrescrit.id | FRMedicationRequestDocument.identifier |
 | FRLMTraitementPrescrit.code | FRCDATraitementPrescrit.code |  |
@@ -334,4 +462,12 @@ Liste des ConceptMap détaillant le mapping entre les éléments du modèle mét
 | FRLMTraitementSubordonne.rythmeAdministration | FRCDATraitementSubordonne.rateQuantity |  |
 | FRLMTraitementSubordonne.medicamentTraitement | FRCDAProduitDeSante.consumable |  |
 | FRLMTraitementSubordonne.preconditionTraitement | FRCDATraitementSubordonne.precondition |  |
+| **FRLMTransfusionDeProduitsSanguins** | **FRCDATransfusionDeProduitsSanguins** | **FRObservationBloodProductTransfusionDocument** |
+| FRLMTransfusionDeProduitsSanguins.identifiant | FRCDATransfusionDeProduitsSanguins.id | FRObservationBloodProductTransfusionDocument.identifier |
+| FRLMTransfusionDeProduitsSanguins.code | FRCDATransfusionDeProduitsSanguins.code | FRObservationBloodProductTransfusionDocument.code |
+| FRLMTransfusionDeProduitsSanguins.description | FRCDATransfusionDeProduitsSanguins.text | FRObservationBloodProductTransfusionDocument.note.text |
+| FRLMTransfusionDeProduitsSanguins.statut | FRCDATransfusionDeProduitsSanguins.statusCode | FRObservationBloodProductTransfusionDocument.status |
+| FRLMTransfusionDeProduitsSanguins.date | FRCDATransfusionDeProduitsSanguins.effectiveTime | FRObservationBloodProductTransfusionDocument.effectiveDateTime |
+| FRLMTransfusionDeProduitsSanguins.transfusionProduitSanguin | FRCDATransfusionDeProduitsSanguins.value | FRObservationBloodProductTransfusionDocument.valueBoolean |
+| FRLMTransfusionDeProduitsSanguins.auteur | FRCDATransfusionDeProduitsSanguins.author | FRObservationBloodProductTransfusionDocument.performer.extension:author |
 

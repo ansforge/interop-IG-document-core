@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRMediaLMCDAFHIR | *Version*:0.1.0 |
-| Draft as of 2026-01-22 | *Computable Name*: |
+| Draft as of 2026-01-26 | *Computable Name*: |
 
  
 Mapping des éléments du modèle métier FRLMImageIllustrative vers le profil CDA FRCDAImageIllustrative, puis vers le profil FHIR FRMediaDocument. 
@@ -26,7 +26,7 @@ Mapping des éléments du modèle métier FRLMImageIllustrative vers le profil C
   "version" : "0.1.0",
   "title" : "Mapping Métier/CDA/FHIR : \"Image illustrative\"",
   "status" : "draft",
-  "date" : "2026-01-22T13:29:51+00:00",
+  "date" : "2026-01-26T10:27:23+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -197,6 +197,15 @@ Mapping des éléments du modèle métier FRLMImageIllustrative vers le profil C
       "source" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-image-illustrative",
       "target" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-media-document",
       "element" : [
+        {
+          "code" : "FRCDAImageIllustrative",
+          "target" : [
+            {
+              "code" : "FRMediaDocument",
+              "equivalence" : "equivalent"
+            }
+          ]
+        },
         {
           "code" : "FRCDAImageIllustrative.id",
           "target" : [

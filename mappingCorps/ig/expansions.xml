@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="118d312e-fbb2-4fd5-88d7-3508362930dd"/>
+  <id value="555386c2-1390-4e12-bd94-87dbe18b1487"/>
   <meta>
-    <lastUpdated value="2026-01-22T13:29:51.922+00:00"/>
+    <lastUpdated value="2026-01-26T10:27:23.497+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -132,7 +132,7 @@
         <title value="FR ValueSet Participation Type"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-01-22T13:29:51+00:00"/>
+        <date value="2026-01-26T10:27:23+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -141,8 +141,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d620f234-7f58-4aa5-94ba-7cf85ab03a91"/>
-          <timestamp value="2026-01-22T13:45:39+00:00"/>
+          <identifier value="urn:uuid:6ec6781e-cdce-4adf-b9e6-7f43e509e4ca"/>
+          <timestamp value="2026-01-26T10:53:27+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -1865,7 +1865,7 @@
         <title value="Fr ValueSet RolePriseCharge"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-01-22T13:29:51+00:00"/>
+        <date value="2026-01-26T10:27:23+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1874,8 +1874,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:83c41b7b-560d-4dcf-82e1-9a10975b5800"/>
-          <timestamp value="2026-01-22T13:45:35+00:00"/>
+          <identifier value="urn:uuid:9ad3f3ba-b953-416b-94f9-c712a9c9e698"/>
+          <timestamp value="2026-01-26T10:53:24+00:00"/>
           <total value="74"/>
           <offset value="0"/>
           <parameter>
@@ -2425,7 +2425,7 @@
         <name value="FRValueSetActorTypeDocument"/>
         <title value="ValueSet - FR ValueSet Actor Type Document"/>
         <status value="draft"/>
-        <date value="2026-01-22T13:29:51+00:00"/>
+        <date value="2026-01-26T10:27:23+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -2434,8 +2434,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c392b9b9-be7c-4d58-ade5-8bc4da55fba3"/>
-          <timestamp value="2026-01-22T13:45:39+00:00"/>
+          <identifier value="urn:uuid:ebc33dec-7cc8-4a1e-80d7-d85cb68b9ddf"/>
+          <timestamp value="2026-01-26T10:53:28+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -20524,7 +20524,7 @@
         <title value="ValueSet - FR ValueSet EDQM Document"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-01-22T13:29:51+00:00"/>
+        <date value="2026-01-26T10:27:23+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -20533,8 +20533,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:78490836-e26e-4b8f-9cfa-ae1bf06a3c1a"/>
-          <timestamp value="2026-01-22T13:45:40+00:00"/>
+          <identifier value="urn:uuid:9430abff-d22c-4bca-a1db-4def12b914cd"/>
+          <timestamp value="2026-01-26T10:53:30+00:00"/>
           <total value="1297"/>
           <offset value="0"/>
           <parameter>
@@ -45614,7 +45614,7 @@
         <name value="FRValueSetEvaluationTypeDocument"/>
         <title value="ValueSet – FR ValueSet Type d'évaluation"/>
         <status value="draft"/>
-        <date value="2026-01-22T13:29:51+00:00"/>
+        <date value="2026-01-26T10:27:23+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -45623,8 +45623,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a39d1acb-7a96-4eb1-832e-7752029dfb90"/>
-          <timestamp value="2026-01-22T13:45:28.992Z"/>
+          <identifier value="urn:uuid:280cd0e6-6b49-484c-b92d-b2b803d84715"/>
+          <timestamp value="2026-01-26T10:53:15.583Z"/>
           <offset value="0"/>
           <parameter>
             <name value="limitedExpansion"/>
@@ -50927,7 +50927,7 @@
         <title value="ValueSet - FR ValueSet Result Type Document"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-01-22T13:29:51+00:00"/>
+        <date value="2026-01-26T10:27:23+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -50936,8 +50936,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:43c6b5df-f646-4981-b058-2df8b3f610c7"/>
-          <timestamp value="2026-01-22T13:45:44+00:00"/>
+          <identifier value="urn:uuid:0e947458-cff2-4b31-975a-26d79dd40641"/>
+          <timestamp value="2026-01-26T10:53:36+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>

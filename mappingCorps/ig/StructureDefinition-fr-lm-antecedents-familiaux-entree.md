@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-antecedents-familiaux-entree | *Version*:0.1.0 |
-| Draft as of 2026-01-22 | *Computable Name*:FRLMAntecedentsFamiliauxEntree |
+| Draft as of 2026-01-26 | *Computable Name*:FRLMAntecedentsFamiliauxEntree |
 
  
 Antécédents familiaux 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-antecedents-fa
   "name" : "FRLMAntecedentsFamiliauxEntree",
   "title" : "Modèle logique métier - FR LM Antécédents familiaux",
   "status" : "draft",
-  "date" : "2026-01-22T13:29:51+00:00",
+  "date" : "2026-01-26T10:27:23+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

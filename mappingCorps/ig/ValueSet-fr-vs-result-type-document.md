@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-result-type-document | *Version*:0.1.0 |
-| Draft as of 2026-01-22 | *Computable Name*:FRValueSetResultTypeDocument |
+| Draft as of 2026-01-26 | *Computable Name*:FRValueSetResultTypeDocument |
 
  
 ValueSet contenant les codes LOINC autorisés pour les types de résultats 
@@ -51,7 +51,7 @@ ValueSet contenant les codes LOINC autorisés pour les types de résultats
   "title" : "ValueSet - FR ValueSet Result Type Document",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-01-22T13:29:51+00:00",
+  "date" : "2026-01-26T10:27:23+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

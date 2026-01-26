@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-points-de-vigilances-non-code | *Version*:0.1.0 |
-| Draft as of 2026-01-22 | *Computable Name*:FRLMPointsDeVigilancesNonCode |
+| Draft as of 2026-01-26 | *Computable Name*:FRLMPointsDeVigilancesNonCode |
 
  
 Section Points de vigilance (non-codés) 
@@ -51,7 +51,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-points-de-vigi
   "name" : "FRLMPointsDeVigilancesNonCode",
   "title" : "Modèle logique métier - FR LM Points de vigilance (non-codés)",
   "status" : "draft",
-  "date" : "2026-01-22T13:29:51+00:00",
+  "date" : "2026-01-26T10:27:23+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
