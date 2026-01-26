@@ -13,7 +13,7 @@ Description: "FRObservationPregnancyHistoryDocument permet de regrouper les obse
 * status ^short = "Statut de l'observation"
 * status = #final
 * effective[x] 1..1 MS
-* effective[x] only dateTime
+* effective[x] only Period
   * ^short = "Période de la grossesse"
 
 * hasMember 1..* MS
