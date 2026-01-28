@@ -76,6 +76,10 @@ Description: "Mapping des éléments du modèle métier FRLMImageIllustrative ve
 * group[+].source = "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-image-illustrative"
 * group[=].target = "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-media-document"
 // Élément racine
+* group[=].element[+].code = #FRCDAImageIllustrative
+* group[=].element[=].target.code = #FRMediaDocument
+* group[=].element[=].target.equivalence = #equivalent
+// Identifiant
 * group[=].element[+].code = #FRCDAImageIllustrative.id
 * group[=].element[=].target.code = #FRMediaDocument.identifier
 * group[=].element[=].target.equivalence = #equivalent
