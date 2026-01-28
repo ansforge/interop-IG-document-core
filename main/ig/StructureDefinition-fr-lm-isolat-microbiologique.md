@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-isolat-microbiologique | *Version*:0.1.0 |
-| Draft as of 2026-01-23 | *Computable Name*:FRLMIsolatMicrobiologique |
+| Draft as of 2026-01-28 | *Computable Name*:FRLMIsolatMicrobiologique |
 
  
 Isolat microbiologique 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-isolat-microbi
   "name" : "FRLMIsolatMicrobiologique",
   "title" : "Modèle logique métier - FR LM Isolat microbiologique",
   "status" : "draft",
-  "date" : "2026-01-23T08:28:04+00:00",
+  "date" : "2026-01-28T14:36:08+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -126,8 +126,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-isolat-microbi
         ]
       },
       {
-        "id" : "fr-lm-isolat-microbiologique.dateateResultat",
-        "path" : "fr-lm-isolat-microbiologique.dateateResultat",
+        "id" : "fr-lm-isolat-microbiologique.dateResultat",
+        "path" : "fr-lm-isolat-microbiologique.dateResultat",
         "short" : "Date et heure des résultats",
         "definition" : "Date et heure des résultats",
         "min" : 0,

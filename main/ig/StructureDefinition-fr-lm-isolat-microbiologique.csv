@@ -7,8 +7,8 @@
 ","Code isolat","Code isolat","","","","","","","","","",,,,,"",,,,"fr-lm-isolat-microbiologique.codeIsolat",0,1,"",""
 "fr-lm-isolat-microbiologique.statut","fr-lm-isolat-microbiologique.statut","","","",1,1,"","","","code {[]} {[]}
 ","Niveau de complétude","Niveau de complétude","","","","","","","","","",,,,,"",,,,"fr-lm-isolat-microbiologique.statut",1,1,"",""
-"fr-lm-isolat-microbiologique.dateateResultat","fr-lm-isolat-microbiologique.dateateResultat","","","",0,1,"","","","dateTime {[]} {[]}
-","Date et heure des résultats","Date et heure des résultats","","","","","","","","","",,,,,"",,,,"fr-lm-isolat-microbiologique.dateateResultat",0,1,"",""
+"fr-lm-isolat-microbiologique.dateResultat","fr-lm-isolat-microbiologique.dateResultat","","","",0,1,"","","","dateTime {[]} {[]}
+","Date et heure des résultats","Date et heure des résultats","","","","","","","","","",,,,,"",,,,"fr-lm-isolat-microbiologique.dateResultat",0,1,"",""
 "fr-lm-isolat-microbiologique.choice[x]","fr-lm-isolat-microbiologique.choice[x]","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-sujet-non-humain {[]} {[]}
 https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-sujet-non-humain {[]} {[]}","Sujet non humain ou Patient avec sujet non humain","Sujet non humain ou Patient avec sujet non humain","","","","","","","","","",,,,,"",,,,"fr-lm-isolat-microbiologique.choice[x]",0,1,"",""
 "fr-lm-isolat-microbiologique.isolatMicrobiologique","fr-lm-isolat-microbiologique.isolatMicrobiologique","","","",1,1,"","","","Base {[]} {[]}

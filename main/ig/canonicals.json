@@ -96,6 +96,30 @@
     "version" : "0.1.0"
   },
   {
+    "id" : "FRLaboratoryBatteryResultsLMCDAFHIR",
+    "type" : "ConceptMap",
+    "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRLaboratoryBatteryResultsLMCDAFHIR",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "FRLaboratoryIsolateResultsLMCDAFHIR",
+    "type" : "ConceptMap",
+    "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRLaboratoryIsolateResultsLMCDAFHIR",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "FRLaboratoryResultClinicalElementLMCDAFHIR",
+    "type" : "ConceptMap",
+    "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRLaboratoryResultClinicalElementLMCDAFHIR",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "FRLaboratoryResultsLMCDAFHIR",
+    "type" : "ConceptMap",
+    "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRLaboratoryResultsLMCDAFHIR",
+    "version" : "0.1.0"
+  },
+  {
     "id" : "FRMediaLMCDAFHIR",
     "type" : "ConceptMap",
     "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRMediaLMCDAFHIR",
@@ -153,6 +177,42 @@
     "id" : "FRObservationBirthEventLMCDAFHIR",
     "type" : "ConceptMap",
     "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRObservationBirthEventLMCDAFHIR",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "FRObservationBloodProductTransfusionLMCDAFHIR",
+    "type" : "ConceptMap",
+    "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRObservationBloodProductTransfusionLMCDAFHIR",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "FRObservationMedicalSummaryLMCDAFHIR",
+    "type" : "ConceptMap",
+    "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRObservationMedicalSummaryLMCDAFHIR",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "FRObservationMicroorganismDetectionLMCDAFHIR",
+    "type" : "ConceptMap",
+    "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRObservationMicroorganismDetectionLMCDAFHIR",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "FRObservationMultiresistantMicroorganismsIdentificationLMCDAFHIR",
+    "type" : "ConceptMap",
+    "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRObservationMultiresistantMicroorganismsIdentificationLMCDAFHIR",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "FRObservationPregnancyHistoryLMCDAFHIR",
+    "type" : "ConceptMap",
+    "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRObservationPregnancyHistoryLMCDAFHIR",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "FRObservationPregnancyLMCDAFHIR",
+    "type" : "ConceptMap",
+    "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRObservationPregnancyLMCDAFHIR",
     "version" : "0.1.0"
   },
   {
@@ -2065,6 +2125,13 @@
     "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-microorganism-detection-document",
     "version" : "0.1.0",
     "name" : "FRObservationMicroorganismDetectionDocument"
+  },
+  {
+    "id" : "fr-observation-multiresistant-microorganism-document",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-multiresistant-microorganism-document",
+    "version" : "0.1.0",
+    "name" : "FRObservationMultiresistantMicroorganismsIdentificationDocument"
   },
   {
     "id" : "fr-observation-pain-score-document",

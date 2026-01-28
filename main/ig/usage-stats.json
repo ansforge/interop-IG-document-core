@@ -274,6 +274,10 @@
         "title": "Observation - FR Observation Microorganism Detection Document"
       },
       {
+        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-multiresistant-microorganism-document",
+        "title": "Observation - FR Observation Multiresistant Microorganisms Identification Document"
+      },
+      {
         "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-pain-score-document",
         "title": "Observation - FR Observation Pain Score Document"
       },

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRMedicationDispenseLMCDAFHIR | *Version*:0.1.0 |
-| Draft as of 2026-01-23 | *Computable Name*: |
+| Draft as of 2026-01-28 | *Computable Name*: |
 
  
 Mapping des éléments du modèle métier FRLMTraitementDispense vers le profil CDA FRCDATraitementDispense, puis vers le profil FHIR FRMedicationDispenseDocument. 
@@ -26,7 +26,7 @@ Mapping des éléments du modèle métier FRLMTraitementDispense vers le profil 
   "version" : "0.1.0",
   "title" : "Mapping Métier/CDA/FHIR : \"Traitement dispensé\"",
   "status" : "draft",
-  "date" : "2026-01-23T08:28:04+00:00",
+  "date" : "2026-01-28T14:36:08+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-auteur-apsr | *Version*:0.1.0 |
-| Draft as of 2026-01-23 | *Computable Name*:FRLMAuteurAPSR |
+| Draft as of 2026-01-28 | *Computable Name*:FRLMAuteurAPSR |
 
  
 Auteur APSR (Anatomic Pathology Structured Report), la structure de cet élément est identique à celle de l’élément Auteur 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-auteur-apsr.cs
   "name" : "FRLMAuteurAPSR",
   "title" : "Modèle logique métier - FR LM Auteur APSR",
   "status" : "draft",
-  "date" : "2026-01-23T08:28:04+00:00",
+  "date" : "2026-01-28T14:36:08+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
