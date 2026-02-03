@@ -8,5 +8,4 @@ Characteristics: #can-be-target
 * code 1..1 CodeableConcept "Code de l'entrée"
 * statut 1..1 code "Statut de l'entrée" 
 * horodatage 1..1 dateTime "Horodatage de l'entrée"
-* valeur 1..1 CodeableConcept "Valeur de l'observation"
 * evaluation 1..* FRLMEvaluation "Évaluation"

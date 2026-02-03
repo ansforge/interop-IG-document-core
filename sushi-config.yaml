@@ -444,8 +444,19 @@ groups:
       - mappingPersonneStructureAuteurFHIR
       - mappingSystemeFHIR
 
-  Mapping ML-CDA-FHIR corps:
-    name: Concept Maps du corps d'un document
+  Mapping ML-CDA-FHIR des sections d'un document:
+    name: Concept Maps des sections d'un document
+    resources:
+      - FRImagingResultatsLMCDAFHIR
+      - FRImagingClinicalInformationLMCDAFHIR
+      - FRImagingServiceRequestLMCDAFHIR
+      - FRImagingRadiationExposureLMCDAFHIR
+      - FRSocialHistoryLMCDAFHIR
+      - FRFunctionalStatusLMCDAFHIR
+      - FRPhysicalFunctionsLMCDAFHIR
+
+  Mapping ML-CDA-FHIR des composants élémentaires d'un document:
+    name: Concept Maps des composants élémentaires d'un Document
     resources:
       - FRActLMCDAFHIR
       - FRAdvanceDirectiveLMCDAFHIR
@@ -482,6 +493,22 @@ groups:
       - FRObservationMultiresistantMicroorganismsIdentificationLMCDAFHIR
       - FRObservationPregnancyLMCDAFHIR
       - FRObservationPregnancyHistoryLMCDAFHIR
+      - FRImagingQuantityLMCDAFHIR
+      - FRResultsLMCDAFHIR
+      - FRObservationResultLMCDAFHIR
+      - FRObservationSocialHistoryLMCDAFHIR
+      - FRObservationSurveyPannelLMCDAFHIR
+      - FRObservationSurveyLMCDAFHIR
+      - FRObservationSurveyComponentLMCDAFHIR
+      - FRObservationSurveyComponentN2LMCDAFHIR
+      - FRObservationTransfusionAccidentsLMCDAFHIR
+      - FRObservationVitalSignsLMCDAFHIR
+      - FRObservationVitalSignsPanelLMCDAFHIR
+      - FRObservationWorkRelatedAccidentLMCDAFHIR
+      - FRPregnancyHistoryLMCDAFHIR
+      - FRImagingProcedureLMCDAFHIR
+      - FRServiceRequestLMCDAFHIR
+      - FRSpecimenLMCDAFHIR
 
 resources: 
   Binary/BIO-CR-BIO-2024.01-Microbiologie-V1:
