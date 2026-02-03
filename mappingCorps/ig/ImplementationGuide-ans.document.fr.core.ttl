@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "FRDocumentCore"] ; # 
   fhir:title [ fhir:v "ANS IG document core"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-01-26T10:27:23+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-02-03T11:02:09+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -108,7 +108,7 @@
        fhir:l <http://hl7.org/fhir/uv/fhir-clinical-document/ImplementationGuide/hl7.fhir.uv.fhir-clinical-document>
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.uv.fhir-clinical-document" ] ;
-     fhir:version [ fhir:v "1.0.0" ]
+     fhir:version [ fhir:v "1.0.1" ]
   ] [
      fhir:id [ fhir:v "ihe_pharm_mpd" ] ;
      fhir:uri [

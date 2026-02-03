@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-habitus-mode-de-vie-entree | *Version*:0.1.0 |
-| Draft as of 2026-01-26 | *Computable Name*:FRLMHabitusModeDeVieEntree |
+| Draft as of 2026-02-03 | *Computable Name*:FRLMHabitusModeDeVieEntree |
 
  
 Habitus Mode de vie 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-habitus-mode-d
   "name" : "FRLMHabitusModeDeVieEntree",
   "title" : "Modèle logique métier - FR LM Habitus Mode de vie",
   "status" : "draft",
-  "date" : "2026-01-26T10:27:23+00:00",
+  "date" : "2026-02-03T11:02:09+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

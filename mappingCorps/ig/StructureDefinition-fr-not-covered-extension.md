@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-not-covered-extension | *Version*:0.1.0 |
-| Draft as of 2026-01-26 | *Computable Name*:FRNotCoveredExtension |
+| Draft as of 2026-02-03 | *Computable Name*:FRNotCoveredExtension |
 
 Extension permettant d’indiquer si le traitement est non remboursable.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-not-covered-exten
   "name" : "FRNotCoveredExtension",
   "title" : "FR Not Covered Extension",
   "status" : "draft",
-  "date" : "2026-01-26T10:27:23+00:00",
+  "date" : "2026-02-03T11:02:09+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

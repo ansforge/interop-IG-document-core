@@ -10,7 +10,7 @@
   <name value="FRDocumentCore"/>
   <title value="ANS IG document core"/>
   <status value="draft"/>
-  <date value="2026-01-26T10:27:23+00:00"/>
+  <date value="2026-02-03T11:02:09+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -65,7 +65,7 @@
   <dependsOn id="hl7_fhir_uv_fhir_clinical_document">
     <uri value="http://hl7.org/fhir/uv/fhir-clinical-document/ImplementationGuide/hl7.fhir.uv.fhir-clinical-document"/>
     <packageId value="hl7.fhir.uv.fhir-clinical-document"/>
-    <version value="1.0.0"/>
+    <version value="1.0.1"/>
   </dependsOn>
   <dependsOn id="ihe_pharm_mpd">
     <uri value="https://profiles.ihe.net/PHARM/MPD/ImplementationGuide/ihe.pharm.mpd"/>
