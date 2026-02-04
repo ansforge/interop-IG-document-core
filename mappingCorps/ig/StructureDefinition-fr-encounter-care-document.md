@@ -9,17 +9,17 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-encounter-care-document | *Version*:0.1.0 |
-| Draft as of 2026-02-03 | *Computable Name*:FREncounterCareDocument |
+| Draft as of 2026-02-04 | *Computable Name*:FREncounterCareDocument |
 
  
 Ce profil représente l’association du document à une prise en charge. 
 
 **Utilisations:**
 
-* Utiliser ce Profil: [FR Bundle Document](StructureDefinition-fr-bundle-document.md)
-* Référer à ce Profil: [FR Composition Document](StructureDefinition-fr-composition-document.md)
+* Utilise ce/t/te Profil: [FR Bundle Document](StructureDefinition-fr-bundle-document.md)
+* Référence ce Profil: [FR Composition Document](StructureDefinition-fr-composition-document.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-encounter-care-document)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-encounter-care-document)
 
 ### Formal Views of Profile Content
 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-encounter-care-do
   "name" : "FREncounterCareDocument",
   "title" : "FR Encounter Care Document",
   "status" : "draft",
-  "date" : "2026-02-03T11:02:09+00:00",
+  "date" : "2026-02-04T10:58:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

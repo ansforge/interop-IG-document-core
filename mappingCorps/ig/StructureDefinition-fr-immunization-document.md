@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-immunization-document | *Version*:0.1.0 |
-| Draft as of 2026-02-03 | *Computable Name*:FRImmunizationDocument |
+| Draft as of 2026-02-04 | *Computable Name*:FRImmunizationDocument |
 
  
 FRImmunizationDocument permet de décrire l’administration d’un vaccin. 
@@ -19,9 +19,9 @@ FRImmunizationDocument permet de décrire l’administration d’un vaccin.
 
 **Utilisations:**
 
-* Référer à ce Profil: [ImmunizationRecommendation - FR Immunization Recommendation Document](StructureDefinition-fr-immunization-recommendation-document.md)
+* Référence ce Profil: [ImmunizationRecommendation - FR Immunization Recommendation Document](StructureDefinition-fr-immunization-recommendation-document.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-immunization-document)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-immunization-document)
 
 ### Formal Views of Profile Content
 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-immunization-docu
   "name" : "FRImmunizationDocument",
   "title" : "Immunization - FR Immunization Document",
   "status" : "draft",
-  "date" : "2026-02-03T11:02:09+00:00",
+  "date" : "2026-02-04T10:58:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

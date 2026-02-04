@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-procedure-difficulty-extension | *Version*:0.1.0 |
-| Draft as of 2026-02-03 | *Computable Name*:FRProcedureDifficultyExtension |
+| Draft as of 2026-02-04 | *Computable Name*:FRProcedureDifficultyExtension |
 
 Extension permettant d’indiquer la difficulté perçue ou mesurée d’un acte.
 
@@ -19,9 +19,9 @@ Extension permettant d’indiquer la difficulté perçue ou mesurée d’un acte
 
 **Utilisations:**
 
-* Utiliser ce Extension: [Procedure - FR Procedure Act Document](StructureDefinition-fr-procedure-act-document.md)
+* Utilise ce/t/te Extension: [Procedure - FR Procedure Act Document](StructureDefinition-fr-procedure-act-document.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-procedure-difficulty-extension)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-procedure-difficulty-extension)
 
 ### Formal Views of Extension Content
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-procedure-difficu
   "name" : "FRProcedureDifficultyExtension",
   "title" : "FR Procedure Difficulty Extension",
   "status" : "draft",
-  "date" : "2026-02-03T11:02:09+00:00",
+  "date" : "2026-02-04T10:58:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

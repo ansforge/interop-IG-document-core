@@ -9,16 +9,16 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-complications-acte | *Version*:0.1.0 |
-| Draft as of 2026-02-03 | *Computable Name*:FRLMComplicationsActe |
+| Draft as of 2026-02-04 | *Computable Name*:FRLMComplicationsActe |
 
  
 Section Complications au cours de l’acte 
 
 **Utilisations:**
 
-* Utiliser ce Modèle logique: [Modèle logique métier - FR LM Acte d'imagerie](StructureDefinition-fr-lm-acte-imagerie.md)
+* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Acte d'imagerie](StructureDefinition-fr-lm-acte-imagerie.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-complications-acte)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-complications-acte)
 
 ### Formal Views of Profile Content
 
@@ -51,7 +51,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-complications-
   "name" : "FRLMComplicationsActe",
   "title" : "Modèle logique métier - FR LM Complications Acte",
   "status" : "draft",
-  "date" : "2026-02-03T11:02:09+00:00",
+  "date" : "2026-02-04T10:58:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

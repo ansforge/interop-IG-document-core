@@ -9,16 +9,16 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-pregnancy-document | *Version*:0.1.0 |
-| Draft as of 2026-02-03 | *Computable Name*:FRObservationPregnancyDocument |
+| Draft as of 2026-02-04 | *Computable Name*:FRObservationPregnancyDocument |
 
  
 FRObservationPregnancyDocument permet d’apporter des informations relatives aux grossesses actuelle ou passées. 
 
 **Utilisations:**
 
-* Référer à ce Profil: [Observation - FR Observation Birth Event Document](StructureDefinition-fr-observation-birth-event-document.md), [Observation - FR Observation Pregnancy History Document](StructureDefinition-fr-observation-pregnancy-history-document.md), [FR Patient History Extension](StructureDefinition-fr-patient-history-extension.md) and [List - FR Pregnancy History Document](StructureDefinition-fr-pregnancy-history-document.md)
+* Référence ce Profil: [Observation - FR Observation Birth Event Document](StructureDefinition-fr-observation-birth-event-document.md), [Observation - FR Observation Pregnancy History Document](StructureDefinition-fr-observation-pregnancy-history-document.md), [FR Patient History Extension](StructureDefinition-fr-patient-history-extension.md) and [List - FR Pregnancy History Document](StructureDefinition-fr-pregnancy-history-document.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-observation-pregnancy-document)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-observation-pregnancy-document)
 
 ### Formal Views of Profile Content
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-observation-pregn
   "name" : "FRObservationPregnancyDocument",
   "title" : "Observation - FR Observation Pregnancy Document",
   "status" : "draft",
-  "date" : "2026-02-03T11:02:09+00:00",
+  "date" : "2026-02-04T10:58:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -261,6 +261,12 @@ Other representations of profile: [CSV](StructureDefinition-fr-observation-pregn
         "id" : "Observation.note",
         "path" : "Observation.note",
         "short" : "Commentaire",
+        "mustSupport" : true
+      },
+      {
+        "id" : "Observation.bodySite",
+        "path" : "Observation.bodySite",
+        "short" : "Localisation anatomique",
         "mustSupport" : true
       },
       {

@@ -9,16 +9,16 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-survey-document | *Version*:0.1.0 |
-| Draft as of 2026-02-03 | *Computable Name*:FRObservationSurveyDocument |
+| Draft as of 2026-02-04 | *Computable Name*:FRObservationSurveyDocument |
 
  
 FRObservationSurveyDocument permet de rapporter un résultat (score) répondant à une question faisant partie d’une évaluation (questionnaire d’enquête par exemple). 
 
 **Utilisations:**
 
-* Référer à ce Profil: [Observation - FR Observation Survey Pannel Document](StructureDefinition-fr-observation-survey-pannel-document.md)
+* Référence ce Profil: [Observation - FR Observation Survey Pannel Document](StructureDefinition-fr-observation-survey-pannel-document.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-observation-survey-document)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-observation-survey-document)
 
 ### Formal Views of Profile Content
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-observation-surve
   "name" : "FRObservationSurveyDocument",
   "title" : "Observation - FR Observation Survey Document",
   "status" : "draft",
-  "date" : "2026-02-03T11:02:09+00:00",
+  "date" : "2026-02-04T10:58:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

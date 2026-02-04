@@ -9,16 +9,16 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-assigned-person | *Version*:0.1.0 |
-| Draft as of 2026-02-03 | *Computable Name*:FRCDAAssignedPerson |
+| Draft as of 2026-02-04 | *Computable Name*:FRCDAAssignedPerson |
 
  
 L’élément de l’en-tête du CDA assignedPerson permet de décrire une personne physique. 
 
 **Utilisations:**
 
-* Utiliser ce Profil de modèle logique: [CDA - assignedAuthor](StructureDefinition-fr-cda-assigned-author.md), [CDA - assignedEntity](StructureDefinition-fr-cda-assigned-entity.md), [CDA - associatedEntity](StructureDefinition-fr-cda-associated-entity.md), [CDA - intendedRecipient](StructureDefinition-fr-cda-intended-recipient.md) and [CDA - relatedEntity](StructureDefinition-fr-cda-related-entity.md)
+* Utilise ce/t/te Profil de modèle logique: [CDA - assignedAuthor](StructureDefinition-fr-cda-assigned-author.md), [CDA - assignedEntity](StructureDefinition-fr-cda-assigned-entity.md), [CDA - associatedEntity](StructureDefinition-fr-cda-associated-entity.md), [CDA - intendedRecipient](StructureDefinition-fr-cda-intended-recipient.md) and [CDA - relatedEntity](StructureDefinition-fr-cda-related-entity.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-assigned-person)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-assigned-person)
 
 ### Formal Views of Profile Content
 
@@ -70,7 +70,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-assigned-pers
   "name" : "FRCDAAssignedPerson",
   "title" : "CDA - assignedPerson",
   "status" : "draft",
-  "date" : "2026-02-03T11:02:09+00:00",
+  "date" : "2026-02-04T10:58:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

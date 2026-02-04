@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-immunization-recommendation-document | *Version*:0.1.0 |
-| Draft as of 2026-02-03 | *Computable Name*:FRImmunizationRecommendationDocument |
+| Draft as of 2026-02-04 | *Computable Name*:FRImmunizationRecommendationDocument |
 
  
 FRImmunizationRecommendationDocument permet de décrire une vaccination prévue ou proposée. 
@@ -20,9 +20,9 @@ FRImmunizationRecommendationDocument permet de décrire une vaccination prévue 
 
 **Utilisations:**
 
-* Ce Profil nest utilisé par aucun profil dans ce guide dimplémentation
+* Ce Profil n'est utilisé par aucun autre profil dans ce guide d'implémentation
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-immunization-recommendation-document)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-immunization-recommendation-document)
 
 ### Formal Views of Profile Content
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-immunization-reco
   "name" : "FRImmunizationRecommendationDocument",
   "title" : "ImmunizationRecommendation - FR Immunization Recommendation Document",
   "status" : "draft",
-  "date" : "2026-02-03T11:02:09+00:00",
+  "date" : "2026-02-04T10:58:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

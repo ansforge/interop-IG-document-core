@@ -11,6 +11,8 @@
 ","Statut de l'entrée","Statut de l'entrée","","","","","","","","","",,,,,"",,,,"fr-lm-evaluation.statut",1,1,"",""
 "fr-lm-evaluation.date","fr-lm-evaluation.date","","","",1,1,"","","","dateTime {[]} {[]}
 ","Date","Date","","","","","","","","","",,,,,"",,,,"fr-lm-evaluation.date",1,1,"",""
+"fr-lm-evaluation.valeur","fr-lm-evaluation.valeur","","","",1,1,"","","","Base {[]} {[]}
+","Valeur de l'évaluation","Valeur de l'évaluation","","","","","","","","","",,,,,"",,,,"fr-lm-evaluation.valeur",1,1,"",""
 "fr-lm-evaluation.interpretation","fr-lm-evaluation.interpretation","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Interprétation","Interprétation","","","","","","","","","",,,,,"",,,,"fr-lm-evaluation.interpretation",0,1,"",""
 "fr-lm-evaluation.evaluateur","fr-lm-evaluation.evaluateur","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure {[]} {[]}

@@ -13,6 +13,14 @@ Liste des ConceptMap détaillant le mapping entre les éléments du modèle mét
 | | | |
 | :--- | :--- | :--- |
 | Modèle métier | CDA | FHIR |
+| **FRLMAccidentsTransfusionnels** | **FRCDAAccidentsTransfusionnels** | **FRObservationTransfusionAccidentsDocument** |
+| FRLMAccidentsTransfusionnels.identifiant | FRCDAAccidentsTransfusionnels.id | FRObservationTransfusionAccidentsDocument.identifier |
+| FRLMAccidentsTransfusionnels.code | FRCDAAccidentsTransfusionnels.code | FRObservationTransfusionAccidentsDocument.code |
+| FRLMAccidentsTransfusionnels.description | FRCDAAccidentsTransfusionnels.text | FRObservationTransfusionAccidentsDocument.note |
+| FRLMAccidentsTransfusionnels.statut | FRCDAAccidentsTransfusionnels.statusCode | FRObservationTransfusionAccidentsDocument.status |
+| FRLMAccidentsTransfusionnels.date | FRCDAAccidentsTransfusionnels.effectiveTime | FRObservationTransfusionAccidentsDocument.effectiveDateTime |
+| FRLMAccidentsTransfusionnels.valeur | FRCDAAccidentsTransfusionnels.value | FRObservationTransfusionAccidentsDocument.valueString |
+| FRLMAccidentsTransfusionnels.auteur | FRCDAAccidentsTransfusionnels.author | FRObservationTransfusionAccidentsDocument.performer.extension:author |
 | **FRLMActe** | **FRCDAActe** | **FRProcedureActDocument** |
 | FRLMActe.identifiant | FRCDAActe.id | FRProcedureActDocument.identifier |
 | FRLMActe.description | FRCDAActe.text | FRProcedureActDocument.note |
@@ -83,6 +91,36 @@ Liste des ConceptMap détaillant le mapping entre les éléments du modèle mét
 | FRLMBatterieExamensBiologieMedicale.resultatElementCliniquePertinent | FRCDABatterieExamensDeBiologieMedicale.component:frResultatExamensDeBiologieElementCliniquePertinent | FRObservationLaboratoryReportResultsDocument.hasMember:FRObservationLaboratoryReportResultsDocument |
 | FRLMBatterieExamensBiologieMedicale.imageIllustrative | FRCDABatterieExamensDeBiologieMedicale.component:frImageIllustrative | FRObservationLaboratoryReportResultsDocument.derivedFrom:FRMediaDocument |
 | FRLMBatterieExamensBiologieMedicale.commentaire | FRCDABatterieExamensDeBiologieMedicale.component:frCommentaireER | FRObservationLaboratoryReportResultsDocument.note |
+| **FRLMEvaluationComposantN2** | **FRCDAEvaluationComposantN2** | FRObservationSurveyDocument.component:ComposantN2 |
+| FRLMEvaluationComposantN2.identifiant | FRCDAEvaluationComposantN2.id | FRObservationSurveyDocument.component:ComposantN2.id |
+| FRLMEvaluationComposantN2.codeEvaluation | FRCDAEvaluationComposantN2.code | FRObservationSurveyDocument.component:ComposantN2.code |
+| FRLMEvaluationComposantN2.description | FRCDAEvaluationComposantN2.text | FRObservationSurveyDocument.component:ComposantN2.code.text |
+| FRLMEvaluationComposantN2.statut | FRCDAEvaluationComposantN2.statusCode | FRObservationSurveyDocument.status |
+| FRLMEvaluationComposantN2.horodatage | FRCDAEvaluationComposantN2.effectiveTime | FRObservationSurveyDocument.effective[x] |
+| FRLMEvaluationComposantN2.resultat | FRCDAEvaluationComposantN2.value | FRObservationSurveyDocument.component:ComposantN2.value[x] |
+| FRLMEvaluationComposantN2.interpretation | FRCDAEvaluationComposantN2.interpretationCode | FRObservationSurveyDocument.component:ComposantN2.interpretation |
+| FRLMEvaluationComposantN2.commentaire | FRCDAEvaluationComposantN2.entryRelationship:FRCDACommentaireER | FRObservationSurveyDocument.component:ComposantN2.extension:note.value[x] |
+| **FRLMEvaluationComposant** | **FRCDAEvaluationComposant** | **FRObservationSurveyDocument** |
+| FRLMEvaluationComposant.identifiant | FRCDAEvaluationComposant.id | FRObservationSurveyDocument.component:ComposantN1.id |
+| FRLMEvaluationComposant.codeEvaluation | FRCDAEvaluationComposant.code | FRObservationSurveyDocument.component:ComposantN1.code |
+| FRLMEvaluationComposant.description | FRCDAEvaluationComposant.text | FRObservationSurveyDocument.component:ComposantN1.code.text |
+| FRLMEvaluationComposant.statut | FRCDAEvaluationComposant.statusCode | FRObservationSurveyDocument.status |
+| FRLMEvaluationComposant.horodatage | FRCDAEvaluationComposant.effectiveTime | FRObservationSurveyDocument.effective[x] |
+| FRLMEvaluationComposant.resultat | FRCDAEvaluationComposant.value | FRObservationSurveyDocument.component:ComposantN1.value[x] |
+| FRLMEvaluationComposant.interpretation | FRCDAEvaluationComposant.interpretationCode | FRObservationSurveyDocument.component:ComposantN1.interpretation |
+| FRLMEvaluationComposant.composantEvaluation | FRCDAEvaluationComposant.entryRelationship:FRCDAEvaluationComposantN2 | FRObservationSurveyDocument.component:ComposantN2 |
+| FRLMEvaluationComposant.commentaire | FRCDAEvaluationComposant.entryRelationship:FRCDACommentaireER | FRObservationSurveyDocument.component:ComposantN1.extension:note.value[x] |
+| **FRLMDemandeExamenOuSuivi** | **FRCDADemandeDExamenOuDeSuivi** | **FRServiceRequestDocument** |
+| FRLMDemandeExamenOuSuivi.identifiant | FRCDADemandeDExamenOuDeSuivi.id | FRServiceRequestDocument.identifier |
+| FRLMDemandeExamenOuSuivi.typeDemande | FRCDADemandeDExamenOuDeSuivi.code | FRServiceRequestDocument.code |
+| FRLMDemandeExamenOuSuivi.description | FRCDADemandeDExamenOuDeSuivi.text | FRServiceRequestDocument.note |
+| FRLMDemandeExamenOuSuivi.statutDemande | FRCDADemandeDExamenOuDeSuivi.statusCode | FRServiceRequestDocument.status |
+| FRLMDemandeExamenOuSuivi.date | FRCDADemandeDExamenOuDeSuivi.effectiveTime | FRServiceRequestDocument.occurrence[x] |
+| FRLMDemandeExamenOuSuivi.resultat | FRCDADemandeDExamenOuDeSuivi.value | FRServiceRequestDocument.orderDetail.coding |
+| FRLMDemandeExamenOuSuivi.interpretation | FRCDADemandeDExamenOuDeSuivi.interpretationCode | FRServiceRequestDocument.extension:interpretation |
+| FRLMDemandeExamenOuSuivi.methode | FRCDADemandeDExamenOuDeSuivi.methodCode | FRServiceRequestDocument.extension:method |
+| FRLMDemandeExamenOuSuivi.cible | FRCDADemandeDExamenOuDeSuivi.targetSiteCode | FRServiceRequestDocument.bodySite |
+| FRLMDemandeExamenOuSuivi.auteur | FRCDADemandeDExamenOuDeSuivi.author | FRServiceRequestDocument.requester.extension:author |
 | **FRLMDirectiveAnticipee** | **FRCDADirectiveAnticipee** | **FRAdvanceDirectiveDocument** |
 | FRLMDirectiveAnticipee.identifiant | FRCDADirectiveAnticipee.id |  |
 | FRLMDirectiveAnticipee.code | FRCDADirectiveAnticipee.code | FRAdvanceDirectiveDocument.provision.code |
@@ -117,6 +155,13 @@ Liste des ConceptMap détaillant le mapping entre les éléments du modèle mét
 | FRLMEffetIndesirable.imputabiliteEffetIndesirable | FRCDAEffetIndesirable.entryRelationship:frImputabiliteEffetIndesirable | FRAdverseEventDocument.suspectEntity.causality |
 | FRLMEffetIndesirable.graviteEffetIndesirable | FRCDAEffetIndesirable.entryRelationship:frGraviteEffetIndesirable | FRAdverseEventDocument.seriousness |
 | FRLMEffetIndesirable.evolutionEffetIndesirable | FRCDAEffetIndesirable.entryRelationship:frEvolutionEffetIndesirable | FRAdverseEventDocument.outcome |
+| **FRLMEnRapportAvecAccidentTravail** | **FRCDAEnRapportAvecAccidentTravail** | **FRObservationWorkRelatedAccidentDocument** |
+| FRLMEnRapportAvecAccidentTravail.identifiant | FRCDAEnRapportAvecAccidentTravail.id | FRObservationWorkRelatedAccidentDocument.identifier |
+| FRLMEnRapportAvecAccidentTravail.code | FRCDAEnRapportAvecAccidentTravail.code | FRObservationWorkRelatedAccidentDocument.code |
+| FRLMEnRapportAvecAccidentTravail.description | FRCDAEnRapportAvecAccidentTravail.text | FRObservationWorkRelatedAccidentDocument.note |
+| FRLMEnRapportAvecAccidentTravail.statut | FRCDAEnRapportAvecAccidentTravail.statusCode | FRObservationWorkRelatedAccidentDocument.status |
+| FRLMEnRapportAvecAccidentTravail.horodatage | FRCDAEnRapportAvecAccidentTravail.effectiveTime | FRObservationWorkRelatedAccidentDocument.effectiveDateTime |
+| FRLMEnRapportAvecAccidentTravail.resultat | FRCDAEnRapportAvecAccidentTravail.value | FRObservationWorkRelatedAccidentDocument.valueBoolean |
 | **FRLMRencontre** | **FRCDARencontre** | **FREncounterDocument** |
 | FRLMRencontre.identifiant | FRCDARencontre.id | FREncounterDocument.identifier |
 | FRLMRencontre.typeRencontre | FRCDARencontre.code | FREncounterDocument.class |
@@ -130,6 +175,21 @@ Liste des ConceptMap détaillant le mapping entre les éléments du modèle mét
 | FRLMRencontre.participant | FRCDARencontre.participant | FREncounterDocument.participant |
 | FRLMRencontre.autreParticipant | FRCDARencontre.participant | FREncounterDocument.location.location |
 | FRLMRencontre.autreParticipant | FRCDARencontre.participant | FREncounterDocument.participant |
+| **FRLMEvaluation** | **FRCDAEvaluation** | **FRObservationSurveyDocument** |
+| FRLMEvaluation.identifiant | FRCDAEvaluation.id |  |
+| FRLMEvaluation.typeEvaluation | FRCDAEvaluation.code | FRObservationSurveyDocument.code |
+| FRLMEvaluation.description | FRCDAEvaluation.text | FRObservationSurveyDocument.code.text |
+| FRLMEvaluation.statut | FRCDAEvaluation.statusCode |  |
+| FRLMEvaluation.date | FRCDAEvaluation.effectiveTime |  |
+| FRLMEvaluation.valeur | FRCDAEvaluation.value | FRObservationSurveyDocument.value[x] |
+| FRLMEvaluation.interpretation | FRCDAEvaluation.interpretationCode | FRObservationSurveyDocument.interpretation |
+| FRLMEvaluation.evaluateur | FRCDAEvaluation.performer | FRObservationSurveyDocument.performer.extension:Evaluateur |
+| FRLMEvaluation.auteurEvaluation | FRCDAEvaluation.author | FRObservationSurveyDocument.performer.extension:Auteur |
+| FRLMEvaluation.responsableEvaluation | FRCDAEvaluation.participant | FRObservationSurveyDocument.performer.extension:Participant |
+| FRLMEvaluation.evaluationComposant | FRCDAEvaluation.entryRelationship:FRCDAEvaluationComposant | FRObservationSurveyDocument.component |
+| FRLMEvaluation.statutEvaluation | FRCDAEvaluation.entryRelationship:FRCDAStatut | FRObservationSurveyDocument.status.extension:statusReason |
+| FRLMEvaluation.commentaire | FRCDAEvaluation.entryRelationship:FRCDACommentaireER | FRObservationSurveyDocument.note |
+| FRLMEvaluation.referenceInterne | FRCDAEvaluation.entryRelationship:FRCDAReferenceInterne | FRObservationSurveyDocument.hasMember |
 | **FRLMExamenImagerie** | **FRCDADICOMExamenImagerie** | **FRImagingStudyDocument** |
 | FRLMExamenImagerie.uuidInstanceExamen | FRCDADICOMExamenImagerie.id | FRImagingStudyDocument.identifier:studyInstanceUid |
 | FRLMExamenImagerie.codeActe | FRCDADICOMExamenImagerie.code |  |
@@ -137,13 +197,43 @@ Liste des ConceptMap détaillant le mapping entre les éléments du modèle mét
 | FRLMExamenImagerie.dateActe | FRCDADICOMExamenImagerie.effectiveTime | FRImagingStudyDocument.started |
 | FRLMExamenImagerie.serieImagerie | FRCDADICOMExamenImagerie.entryRelationship:frDICOMSerieImagerie | FRImagingStudyDocument.series |
 | FRLMExamenImagerie.objectifsReferences | FRCDADICOMExamenImagerie.entryRelationship:frDICOMSerieImagerie. entryRelationship:frDICOMSOPInstanceObservvation.entryRelationship:frDICOMObjectifsDeReference | FRImagingStudyDocument.reasonCode |
+| **FRLMStatutFonctionnel** | **FRCDAFonctionsPhysiques** | FRCompositionDocument.section:PhysicalFunctions |
+| FRLMStatutFonctionnel.identifiant | FRCDAFonctionsPhysiques.id | FRCompositionDocument.section:PhysicalFunctions.id |
+| FRLMStatutFonctionnel.code | FRCDAFonctionsPhysiques.code | FRCompositionDocument.section:PhysicalFunctions.code |
+| FRLMStatutFonctionnel.titreSection | FRCDAFonctionsPhysiques.title | FRCompositionDocument.section:PhysicalFunctions.title |
+| FRLMStatutFonctionnel.blocNarratif | FRCDAFonctionsPhysiques.text | FRCompositionDocument.section:PhysicalFunctions.text |
+| FRLMStatutFonctionnel.entree.groupeQuestionnairesEvaluation | FRCDAFonctionsPhysiques.entry:FRCDAGroupDeQuestionnairesDEvaluation | FRCompositionDocument.section:PhysicalFunctions.entry:FRObservationSurveyPannelDocument |
+| FRLMStatutFonctionnel.entree.evalutation | FRCDAFonctionsPhysiques.entry:FRCDAEvaluation | FRCompositionDocument.section:PhysicalFunctions.entry:FRObservationSurveyDocument |
+| **FRLMGroupDeQuestionnairesDevaluation** | **FRCDAGroupeDeQuestionnairesDEvaluation** | **FRObservationSurveyDocument** |
+| FRLMGroupDeQuestionnairesDevaluation.identifiant | FRCDAGroupeDeQuestionnairesDEvaluation.id | FRObservationSurveyDocument.identifier |
+| FRLMGroupDeQuestionnairesDevaluation.code | FRCDAGroupeDeQuestionnairesDEvaluation.code | FRObservationSurveyDocument.code |
+| FRLMGroupDeQuestionnairesDevaluation.statut | FRCDAGroupeDeQuestionnairesDEvaluation.statusCode | FRObservationSurveyDocument.status |
+| FRLMGroupDeQuestionnairesDevaluation.horodatage | FRCDAGroupeDeQuestionnairesDEvaluation.effectiveTime | FRObservationSurveyDocument.effectiveDateTime |
+| FRLMGroupDeQuestionnairesDevaluation.evaluation | FRCDAGroupeDeQuestionnairesDEvaluation.component:FRCDAEvaluation | FRObservationSurveyDocument.hasMember:FRObservationSurveyDocument |
+| **FRLMHabitusModeDeVieEntree** | **FRCDAHabitusModeDeVie** | **FRObservationSocialHistoryDocument** |
+| FRLMHabitusModeDeVieEntree.identifiant | FRCDAHabitusModeDeVie.id | FRObservationSocialHistoryDocument.identifier |
+| FRLMHabitusModeDeVieEntree.code | FRCDAHabitusModeDeVie.code | FRObservationSocialHistoryDocument.code |
+| FRLMHabitusModeDeVieEntree.code.precision | FRCDAHabitusModeDeVie.code.qualifier | FRObservationSocialHistoryDocument.component |
+| FRLMHabitusModeDeVieEntree.code. precision.name | FRCDAHabitusModeDeVie.code. qualifier.name | FRObservationSocialHistoryDocument.component.code |
+| FRLMHabitusModeDeVieEntree.code. precision.value | FRCDAHabitusModeDeVie.code. qualifier.value | FRObservationSocialHistoryDocument.component.value |
+| FRLMHabitusModeDeVieEntree.description | FRCDAHabitusModeDeVie.text | FRObservationSocialHistoryDocument.note |
+| FRLMHabitusModeDeVieEntree.statut | FRCDAHabitusModeDeVie.statusCode | FRObservationSocialHistoryDocument.status |
+| FRLMHabitusModeDeVieEntree.horodatage | FRCDAHabitusModeDeVie.effectiveTime | FRObservationSocialHistoryDocument.effectiveDateTime |
+| FRLMHabitusModeDeVieEntree.resultat | FRCDAHabitusModeDeVie.value | FRObservationSocialHistoryDocument.value |
 | **FRLMHistoriqueGrossesse** | **FRCDAHistoriqueDeLaGrossesse** |  |
+| **FRLMHistoriqueGrossesse** | **FRCDAHistoriqueDeLaGrossesse** | **FRPregnancyHistoryDocument** |
 | FRLMHistoriqueGrossesse.identifiant | FRCDAHistoriqueDeLaGrossesse.id | FRObservationPregnancyHistoryDocument.identifier |
+| FRLMHistoriqueGrossesse.identifiant | FRCDAHistoriqueDeLaGrossesse.id | FRPregnancyHistoryDocument.identifier |
 | FRLMHistoriqueGrossesse.code | FRCDAHistoriqueDeLaGrossesse.code | FRObservationPregnancyHistoryDocument.code |
+| FRLMHistoriqueGrossesse.code | FRCDAHistoriqueDeLaGrossesse.code | FRPregnancyHistoryDocument.code |
 | FRLMHistoriqueGrossesse.statut | FRCDAHistoriqueDeLaGrossesse.statusCode | FRObservationPregnancyHistoryDocument.status |
+| FRLMHistoriqueGrossesse.statut | FRCDAHistoriqueDeLaGrossesse.statusCode |  |
 | FRLMHistoriqueGrossesse.periodeGrossesse | FRCDAHistoriqueDeLaGrossesse.effectiveTime | FRObservationPregnancyHistoryDocument.effectivePeriod |
+| FRLMHistoriqueGrossesse.periodeGrossesse | FRCDAHistoriqueDeLaGrossesse.effectiveTime | FRPregnancyHistoryDocument.date |
 | FRLMHistoriqueGrossesse.choice:FRLMNaissance | FRCDAHistoriqueDeLaGrossesse.entryRelationship:frNaissance | FRObservationPregnancyHistoryDocument.hasMember:FRObservationBirthEventDocument |
+| FRLMHistoriqueGrossesse.choice[x] | FRCDAHistoriqueDeLaGrossesse.entryRelationship:FRCDAObservationSurLaGrossesse | FRPregnancyHistoryDocument.entry.item:FRObservationPregnancyDocument |
 | FRLMHistoriqueGrossesse.choice:FRLMObservationGrossesse | FRCDAHistoriqueDeLaGrossesse.entryRelationship:frObservationSurLaGrossesse | FRObservationPregnancyHistoryDocument.hasMember:FRObservationPregnancyDocument |
+| FRLMHistoriqueGrossesse.choice[x] | FRCDAHistoriqueDeLaGrossesse.entryRelationship:FRCDANaissance | FRPregnancyHistoryDocument.entry.item:FRObservationBirthEventDocument |
 | **FRLMImageIllustrative** | **FRCDAImageIllustrative** | **FRMediaDocument** |
 | FRLMImageIllustrative.identifiant | FRCDAImageIllustrative.id | FRMediaDocument.identifier |
 | FRLMImageIllustrative.langue | FRCDAImageIllustrative.languageCode | FRMediaDocument.content.language |
@@ -233,6 +323,15 @@ Liste des ConceptMap détaillant le mapping entre les éléments du modèle mét
 | FRLMProduitSante.conditionnement | FRCDAProduitDeSante.pharm:asContent | FRMedicationDocument.extension:ihe-ext-medication-characteristic |
 | FRLMProduitSante.equivalentGenerique | FRCDAProduitDeSante.pharm:asSpecializedKind | FRMedicationDocument.extension:ihe-ext-medication-classification |
 | FRLMProduitSante.substanceActive | FRCDAProduitDeSante.pharm:ingredient | FRMedicationDocument.ingredient:substanceActive |
+| **FRLMPrelevement** | **FRCDAPrelevement** | **FRSpecimenDocument** |
+| FRLMPrelevement.actePrelevement | FRCDAPrelevement.code | FRSpecimenDocument.processing.procedure.coding.code |
+| FRLMPrelevement.datePrelevement | FRCDAPrelevement.effectiveTime | FRSpecimenDocument.collection.collected[x] |
+| FRLMPrelevement.localisationPrelevement | FRCDAPrelevement.targetSiteCode | FRSpecimenDocument.collection.bodySite |
+| FRLMPrelevement.performer | FRCDAPrelevement.performer | FRSpecimenDocument.collection.collector |
+| FRLMPrelevement.echantillonPreleve | FRCDAPrelevement.participant:echantillonPreleve | FRSpecimenDocument.type |
+| FRLMPrelevement.dispositifUtilise | FRCDAPrelevement.participant:dispositifUtilise | FRSpecimenDocument.container |
+| FRLMPrelevement.produitUtilise | FRCDAPrelevement.participant:produitUtilise | FRSpecimenDocument.processing.additive:Substance |
+| FRLMPrelevement.dateReceptionEchantillon | FRCDAPrelevement.entryRelationship | FRSpecimenDocument.receivedTime |
 | **FRLMRechercheDeMicroOrganismes** | **FRCDARechercheDeMicroOrganismes** |  |
 | FRLMRechercheDeMicroOrganismes.identifiant | FRCDARechercheDeMicroOrganismes.id | FRObservationMicroorganismDetectionDocument.identifier |
 | FRLMRechercheDeMicroOrganismes.code | FRCDARechercheDeMicroOrganismes.code | FRObservationMicroorganismDetectionDocument.code |
@@ -273,6 +372,27 @@ Liste des ConceptMap détaillant le mapping entre les éléments du modèle mét
 | FRLMResultatExamensBiologieElementCliniquePertinent.prelevement | FRCDAResultatExamensDeBiologieElementCliniquePertinent.entryRelationship:frPrelevement | FRObservationLaboratoryReportResultsDocument.specimen |
 | FRLMResultatExamensBiologieElementCliniquePertinent.resultatsAnterieurs | FRCDAResultatExamensDeBiologieElementCliniquePertinent.entryRelationship.observation | FRObservationLaboratoryReportResultsDocument.extension:workflow-supportingInfo |
 | FRLMResultatExamensBiologieElementCliniquePertinent.intervallesReference | FRCDAResultatExamensDeBiologieElementCliniquePertinent.referenceRange.observationRange | FRObservationLaboratoryReportResultsDocument.valueRange |
+| **FRLMObservationResult** | **FRCDAResultat** | **FRObservationResultDocument** |
+| FRLMObservationResult.identifiant | FRCDAResultat.id | FRObservationResultDocument.identifier |
+| FRLMObservationResult.code | FRCDAResultat.code | FRObservationResultDocument.code |
+| FRLMObservationResult.description | FRCDAResultat.text | FRObservationResultDocument.note |
+| FRLMObservationResult.statut | FRCDAResultat.statusCode | FRObservationResultDocument.status |
+| FRLMObservationResult.date | FRCDAResultat.effectiveTime | FRObservationResultDocument.effective[x] |
+| FRLMObservationResult.valeur | FRCDAResultat.value | FRObservationResultDocument.value[x] |
+| FRLMObservationResult.interpretation | FRCDAResultat.interpretationCode | FRObservationResultDocument.interpretation |
+| FRLMObservationResult.site | FRCDAResultat.targetSiteCode | FRObservationResultDocument.bodySite |
+| FRLMObservationResult.auteur | FRCDAResultat.author | FRObservationResultDocument.performer.extension:author |
+| FRLMObservationResult.intervalleReference | FRCDAResultat.referenceRange | FRObservationResultDocument.referenceRange |
+| FRLMObservationResult.commentaires | FRCDAResultat.entryRelationship:FRCDACommentaireER |  |
+| FRLMObservationResult.demandeExamen |  |  |
+| **FRLMResultatsEntry** | **FRCDAResultats** |  |
+| FRLMResultatsEntry.identifiant | FRCDAResultats.id | FRDiagnosticReportDocument.identifier |
+| FRLMResultatsEntry.code | FRCDAResultats.code | FRDiagnosticReportDocument.code |
+| FRLMResultatsEntry.statut | FRCDAResultats.statusCode | FRDiagnosticReportDocument.status |
+| FRLMResultatsEntry.date | FRCDAResultats.effectiveTime | FRDiagnosticReportDocument.effectiveDateTime |
+| FRLMResultatsEntry.executant | FRCDAResultats.performer | FRDiagnosticReportDocument.performer |
+| FRLMResultatsEntry.auteur | FRCDAResultats.author | FRDiagnosticReportDocument.resultsInterpreter |
+| FRLMResultatsEntry.resultat | FRCDAResultats.component:FRCDAResultat | FRDiagnosticReportDocument.result:FRObservationResultDocument |
 | **FRLMResultatsExamensBiologieMedicale** | **FRCDAResultatExamensDeBiologie** | **FRObservationLaboratoryReportResultsDocument** |
 | FRLMResultatsExamensBiologieMedicale.code | FRCDAResultatExamensDeBiologie.code | FRObservationLaboratoryReportResultsDocument.code |
 | FRLMResultatsExamensBiologieMedicale.statut | FRCDAResultatExamensDeBiologie.statusCode | FRObservationLaboratoryReportResultsDocument.status |
@@ -296,6 +416,40 @@ Liste des ConceptMap détaillant le mapping entre les éléments du modèle mét
 | FRLMResultatsExamensBiologieMedicale.resultatElementCliniquePertinent | FRCDAResultatExamensDeBiologie.entryRelationship:frResultatExamensDeBiologieElementCliniquePertinent | FRObservationLaboratoryReportResultsDocument.hasMember:FRObservationLaboratoryReportResultsDocument |
 | FRLMResultatsExamensBiologieMedicale.imageIllustrative | FRCDAResultatExamensDeBiologie.entryRelationship:frImageIllustrative | FRObservationLaboratoryReportResultsDocument.derivedFrom:FRMediaDocument |
 | FRLMResultatsExamensBiologieMedicale.commentaire | FRCDAResultatExamensDeBiologie.entryRelationship:frCommentaireER | FRObservationLaboratoryReportResultsDocument.note |
+| **FRLMSigneVitalObserve** | **FRCDASigneVitalObserve** | **FRObservationVitalSignsDocument** |
+| FRLMSigneVitalObserve.identifiant | FRCDASigneVitalObserve.id | FRObservationVitalSignsDocument.identifier |
+| FRLMSigneVitalObserve.code | FRCDASigneVitalObserve.code | FRObservationVitalSignsDocument.code |
+| FRLMSigneVitalObserve.description | FRCDASigneVitalObserve.text | FRObservationVitalSignsDocument.code.text |
+| FRLMSigneVitalObserve.statut | FRCDASigneVitalObserve.statusCode | FRObservationVitalSignsDocument.status |
+| FRLMSigneVitalObserve.date | FRCDASigneVitalObserve.effectiveTime | FRObservationVitalSignsDocument.effectiveDateTime |
+| FRLMSigneVitalObserve.observationEffectuee | FRCDASigneVitalObserve.value | FRObservationVitalSignsDocument.component.valueQuantity |
+| FRLMSigneVitalObserve.interpretation | FRCDASigneVitalObserve.interpretationCode | FRObservationVitalSignsDocument.interpretation |
+| FRLMSigneVitalObserve.methodeUtilisee | FRCDASigneVitalObserve.methodCode | FRObservationVitalSignsDocument.method |
+| FRLMSigneVitalObserve.siteObservation | FRCDASigneVitalObserve.targetSiteCode | FRObservationVitalSignsDocument.bodySite |
+| FRLMSigneVitalObserve.auteur | FRCDASigneVitalObserve.author | FRObservationVitalSignsDocument.performer.extension:author |
+| **FRLMSigneVital** | **FRCDASignesVitaux** | **FRObservationVitalSignsPanelDocument** |
+| FRLMSigneVital.identifiant | FRCDASignesVitaux.id | FRObservationVitalSignsPanelDocument.id |
+| FRLMSigneVital.code | FRCDASignesVitaux.code | FRObservationVitalSignsPanelDocument.code |
+| FRLMSigneVital.statut | FRCDASignesVitaux.statusCode | FRObservationVitalSignsPanelDocument.status |
+| FRLMSigneVital.date | FRCDASignesVitaux.effectiveTime | FRObservationVitalSignsPanelDocument.effectiveDateTime |
+| FRLMSigneVital.auteur | FRCDASignesVitaux.author | FRObservationVitalSignsPanelDocument.performer.extension:author |
+| FRLMSigneVital.signeVital | FRCDASignesVitaux.component:FRCDASigneVitalObserve | FRObservationVitalSignsPanelDocument.hasMember:FRObservationVitalSignsDocument |
+| **FRLMStatutFonctionnel** | **FRCDAStatutFonctionnel** | FRCompositionDocument.section:FRFunctionalStatus |
+| FRLMStatutFonctionnel.codeSection | FRCDAStatutFonctionnel.code | FRCompositionDocument.section:FRFunctionalStatus.code |
+| FRLMStatutFonctionnel.titreSection | FRCDAStatutFonctionnel.title | FRCompositionDocument.section:FRFunctionalStatus.title |
+| FRLMStatutFonctionnel.blocNarratif | FRCDAStatutFonctionnel.text | FRCompositionDocument.section:FRFunctionalStatus.text |
+| FRLMStatutFonctionnel.auteur | FRCDAStatutFonctionnel.author | FRCompositionDocument.author |
+| FRLMStatutFonctionnel.informateur | FRCDAStatutFonctionnel.informant | FRCompositionDocument.extension:informant |
+| FRLMStatutFonctionnel.entree.groupeQuestionnairesEvaluation | FRCDAStatutFonctionnel.entry:FRCDAGroupDeQuestionnairesDEvaluation | FRCompositionDocument.section:FRFunctionalStatus.entry:FRObservationSurveyPannelDocument |
+| **FRLMTechniqueImagerie** | **FRCDADICOMTechniqueImagerie** | **FRProcedureImagingDocument** |
+| FRLMTechniqueImagerie.identifiant | FRCDADICOMTechniqueImagerie.id | FRProcedureImagingDocument.identifier |
+| FRLMTechniqueImagerie.codeActe | FRCDADICOMTechniqueImagerie.code | FRProcedureImagingDocument.code |
+| FRLMTechniqueImagerie.description | FRCDADICOMTechniqueImagerie.text | FRProcedureImagingDocument.note |
+| FRLMTechniqueImagerie.date | FRCDADICOMTechniqueImagerie.effectiveTime | FRProcedureImagingDocument.performed[x] |
+| FRLMTechniqueImagerie.modaliteAcquisition | FRCDADICOMTechniqueImagerie.methodCode |  |
+| FRLMTechniqueImagerie.lateralite | FRCDADICOMTechniqueImagerie.targetSiteCode | FRProcedureImagingDocument.bodySite |
+| FRLMTechniqueImagerie.lateralite.precisionTopographique | FRCDADICOMTechniqueImagerie.targetSiteCode.qualifier |  |
+| FRLMTechniqueImagerie.participant | FRCDADICOMTechniqueImagerie.participant |  |
 | **FRLMTraitement** | **FRCDATraitement** |  |
 | FRLMTraitement.identifiant | FRCDATraitement.id | FRMedicationStatementDocument.identifier |
 | FRLMTraitement.code | FRCDATraitement.code | FRMedicationStatementDocument.category |
@@ -388,6 +542,21 @@ Liste des ConceptMap détaillant le mapping entre les éléments du modèle mét
 | FRLMVaccination.reaction | FRCDAVaccination.entryRelationship:frProbleme | FRImmunizationDocument.reasonReference |
 | FRLMVaccination.commentaire | FRCDAVaccination.entryRelationship:frCommentaireER | FRImmunizationDocument.note |
 | FRLMVaccination.DoseAntigene | FRCDAVaccination.entryRelationship:frDoseAntigene | FRImmunizationDocument.extension:immunization-administeredProduct-r5 |
+| **FRLMDemandeExamenImagerie** | **FRCDADICOMDemandeExamen** | FRCompositionDocument.section:serviceRequest.FRServiceRequestDocument |
+| FRLMDemandeExamenImagerie.titreSection | FRCDADICOMDemandeExamen.title | FRCompositionDocument.section:serviceRequest.title |
+| FRLMDemandeExamenImagerie.blocNarratif | FRCDADICOMDemandeExamen.text | FRCompositionDocument.section:serviceRequest.FRServiceRequestDocument.note:finaliteExamen |
+| FRLMDemandeExamenImagerie.blocNarratif | FRCDADICOMDemandeExamen.text | FRCompositionDocument.section:serviceRequest.FRServiceRequestDocument.note:justificationDemande |
+| **FRLMExpositionRadiations** | **FRCDADICOMExpositionAuxRadiations** | FRCompositionDocument.section:radiationExposure |
+| FRLMExpositionRadiations.titreSection | FRCDADICOMExpositionAuxRadiations.title | FRCompositionDocument.section:radiationExposure.title |
+| FRLMExpositionRadiations.blocNarratif | FRCDADICOMExpositionAuxRadiations.text | FRCompositionDocument.section:radiationExposure.text |
+| FRLMExpositionRadiations.entree.autorisationExposition | FRCDADICOMExpositionAuxRadiations.entry:FRCDADICOMExpositionPatient | FRCompositionDocument.section:radiationExposure.entry:FRObservationRadiationExposureDocument.performer:professionnelAutorisantExposition |
+| FRLMExpositionRadiations.entree.quantiteExposition | FRCDADICOMExpositionAuxRadiations.entry:FRCDADICOMQuantite | FRCompositionDocument.section:radiationExposure.entry:FRObservationRadiationExposureDocument.component |
+| FRLMExpositionRadiations.entree.administrationRadiopharmaceutique | FRCDADICOMExpositionAuxRadiations.entry:FRCDADICOMAdministrationRadiopharmaceutique | FRCompositionDocument.section:radiationExposure.entry:FRObservationRadiationExposureDocument.partOf:medicationAdministrationRef |
+| **FRLMHabitusModeDeVie** | **FRCDAHabitusModeDeVieSection** | FRCompositionDocument.section:socialHistory |
+| FRLMHabitusModeDeVie.codeSection | FRCDAHabitusModeDeVieSection.code | FRCompositionDocument.section:socialHistory.code |
+| FRLMHabitusModeDeVie.titreSection | FRCDAHabitusModeDeVieSection.title | FRCompositionDocument.section:socialHistory.title |
+| FRLMHabitusModeDeVie.blocNarratif | FRCDAHabitusModeDeVieSection.text | FRCompositionDocument.section:socialHistory.text |
+| FRLMHabitusModeDeVie.entree.habitusModeDeVieEntry | FRCDAHabitusModeDeVieSection.entry:FRCDAHabitusModeDeVie | FRCompositionDocument.section:socialHistory.entry:FRObservationSocialHistoryDocument |
 | **FRLMIdentificationDeMicroOrganismesMultiresistants** | **FRCDAIdentificationMicroOrganismesMultiresistants** |  |
 | FRLMIdentificationDeMicroOrganismesMultiresistants.identifiant | FRCDAIdentificationMicroOrganismesMultiresistants.id | FRObservationMultiresistantMicroorganismsIdentificationDocument.identifier |
 | FRLMIdentificationDeMicroOrganismesMultiresistants.code | FRCDAIdentificationMicroOrganismesMultiresistants.code | FRObservationMultiresistantMicroorganismsIdentificationDocument.code |
@@ -396,6 +565,17 @@ Liste des ConceptMap détaillant le mapping entre les éléments du modèle mét
 | FRLMIdentificationDeMicroOrganismesMultiresistants.date | FRCDAIdentificationMicroOrganismesMultiresistants.effectiveTime | FRObservationMultiresistantMicroorganismsIdentificationDocument.effective[x] |
 | FRLMIdentificationDeMicroOrganismesMultiresistants.valeur | FRCDAIdentificationMicroOrganismesMultiresistants.value | FRObservationMultiresistantMicroorganismsIdentificationDocument.valueString |
 | FRLMIdentificationDeMicroOrganismesMultiresistants.auteur | FRCDAIdentificationMicroOrganismesMultiresistants.author | FRObservationMultiresistantMicroorganismsIdentificationDocument.performer.extension:author |
+| **FRLMInformationsCliniques** | **FRCDADICOMHistoriqueMedical** | FRCompositionDocument.section:history |
+| FRLMInformationsCliniques.titreSection | FRCDADICOMHistoriqueMedical.title | FRCompositionDocument.section:history.title |
+| FRLMInformationsCliniques.blocNarratif | FRCDADICOMHistoriqueMedical.text |  |
+| FRLMInformationsCliniques.entree.antecedentsMedicaux | FRCDADICOMHistoriqueMedical.entry.observation:antecedentsMedicaux | FRCompositionDocument.section:history.entry:Observation |
+| FRLMInformationsCliniques.entree.antecedentsChirurgicaux | FRCDADICOMHistoriqueMedical.entry.observation:antecedentsChirurgicaux | FRCompositionDocument.section:history.entry:Observation |
+| FRLMInformationsCliniques.entree.statutGrossesse | FRCDADICOMHistoriqueMedical.entry.observation:grossesse | FRCompositionDocument.section:history.entry:FRObservationPregnancyDocument |
+| FRLMInformationsCliniques.entree.contreIndications | FRCDADICOMHistoriqueMedical.entry.observation:contreIndications | FRCompositionDocument.section:history.entry:FRObservationContraIndicationsImagingDocument |
+| FRLMInformationsCliniques.entree.probleme |  |  |
+| FRLMInformationsCliniques.entree.dispositifMedical |  |  |
+| FRLMInformationsCliniques.entree.administrationProduitDeSante |  |  |
+| FRLMInformationsCliniques.entree.sexeClinique |  |  |
 | **FRLMNaissance** | **FRCDANaissance** |  |
 | FRLMNaissance.identifiant | FRCDANaissance.id | FRObservationBirthEventDocument.identifier |
 | FRLMNaissance.Code | FRCDANaissance.code | FRObservationBirthEventDocument.code |
@@ -403,6 +583,15 @@ Liste des ConceptMap détaillant le mapping entre les éléments du modèle mét
 | FRLMNaissance.periode | FRCDANaissance.effectiveTime | FRObservationBirthEventDocument.effectiveDateTime |
 | FRLMNaissance.identificationNouveauNe | FRCDANaissance.subject | FRObservationBirthEventDocument.focus:RelatedPerson |
 | FRLMNaissance.observationNaissance | FRCDANaissance.component:frObservationSurLaGrossesse | FRObservationBirthEventDocument.hasMember:FRObservationPregnancyDocument |
+| **FRLMQuantiteExposition** | **FRCDADICOMQuantite** | FRObservationRadiationExposureDocument.component |
+| FRLMQuantiteExposition.code | FRCDADICOMQuantite.code | FRCompositionDocument.section:radiationExposure.FRObservationRadiationExposureDocument.component.code |
+| FRLMQuantiteExposition.valeur | FRCDADICOMQuantite.value | FRCompositionDocument.section:radiationExposure.FRObservationRadiationExposureDocument.component.valueQuantity |
+| FRLMQuantiteExposition.lateralite | FRCDADICOMQuantite.targetSiteCode | FRCompositionDocument.section:radiationExposure.FRObservationRadiationExposureDocument.bodySite |
+| FRLMQuantiteExposition.lateralite.topographique | FRCDADICOMQuantite.targetSiteCode.qualifier | FRCompositionDocument.section:radiationExposure.FRObservationRadiationExposureDocument.bodySite.extension:precisionTopographique |
+| FRLMQuantiteExposition.lateralite. topographique.valeur | FRCDADICOMQuantite.targetSiteCode. qualifier.value | FRCompositionDocument.section:radiationExposure.FRObservationRadiationExposureDocument.bodySite.extension:precisionTopographique.locationQualifier |
+| **FRLMResultatsExamenImagerie** | **FRCDADICOMResultats** | FRCompositionDocument.section:Findings |
+| FRLMResultatsExamenImagerie.titreSection | FRCDADICOMResultats.title | FRCompositionDocument.section:Findings.title |
+| FRLMResultatsExamenImagerie.blocNarratif | FRCDADICOMResultats.text |  |
 | **FRLMSyntheseMedicaleSejour** | **FRCDASyntheseMedicaleSejour** |  |
 | FRLMSyntheseMedicaleSejour.identifiant | FRCDASyntheseMedicaleSejour.id | FRObservationMedicalSummaryDocument.identifier |
 | FRLMSyntheseMedicaleSejour.code | FRCDASyntheseMedicaleSejour.code | FRObservationMedicalSummaryDocument.code |

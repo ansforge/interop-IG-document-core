@@ -9,16 +9,16 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-habitus-mode-de-vie-entree | *Version*:0.1.0 |
-| Draft as of 2026-02-03 | *Computable Name*:FRLMHabitusModeDeVieEntree |
+| Draft as of 2026-02-04 | *Computable Name*:FRLMHabitusModeDeVieEntree |
 
  
 Habitus Mode de vie 
 
 **Utilisations:**
 
-* Ce Modèle logique nest utilisé par aucun profil dans ce guide dimplémentation
+* Ce Modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-habitus-mode-de-vie-entree)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-habitus-mode-de-vie-entree)
 
 ### Formal Views of Profile Content
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-habitus-mode-d
   "name" : "FRLMHabitusModeDeVieEntree",
   "title" : "Modèle logique métier - FR LM Habitus Mode de vie",
   "status" : "draft",
-  "date" : "2026-02-03T11:02:09+00:00",
+  "date" : "2026-02-04T10:58:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -105,6 +105,45 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-habitus-mode-d
         "short" : "Code de l'entrée. Élément observé",
         "definition" : "Code de l'entrée. Élément observé",
         "min" : 1,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id" : "fr-lm-habitus-mode-de-vie-entree.code.precision",
+        "path" : "fr-lm-habitus-mode-de-vie-entree.code.precision",
+        "short" : "Précision sur l'élément observé",
+        "definition" : "Précision sur l'élément observé",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id" : "fr-lm-habitus-mode-de-vie-entree.code.precision.name",
+        "path" : "fr-lm-habitus-mode-de-vie-entree.code.precision.name",
+        "short" : "Nom du qualifier",
+        "definition" : "Nom du qualifier",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id" : "fr-lm-habitus-mode-de-vie-entree.code.precision.value",
+        "path" : "fr-lm-habitus-mode-de-vie-entree.code.precision.value",
+        "short" : "Valeur du qualifier",
+        "definition" : "Valeur du qualifier",
+        "min" : 0,
         "max" : "1",
         "type" : [
           {

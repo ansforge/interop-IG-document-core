@@ -13,5 +13,5 @@
 ","Exécutant","Exécutant","","","","","","","","","",,,,,"",,,,"fr-lm-resultats-entree.executant",0,*,"",""
 "fr-lm-resultats-entree.auteur","fr-lm-resultats-entree.auteur","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-auteur {[]} {[]}
 ","Auteur","Auteur","","","","","","","","","",,,,,"",,,,"fr-lm-resultats-entree.auteur",0,*,"",""
-"fr-lm-resultats-entree.resultat","fr-lm-resultats-entree.resultat","","","",1,*,"","","","Base {[]} {[]}
+"fr-lm-resultats-entree.resultat","fr-lm-resultats-entree.resultat","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation-result {[]} {[]}
 ","Resultat","Resultat","","","","","","","","","",,,,,"",,,,"fr-lm-resultats-entree.resultat",1,*,"",""

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-family-member-history-body-site-extension | *Version*:0.1.0 |
-| Draft as of 2026-02-03 | *Computable Name*:FRFamilyMemberHistoryBodySiteExtension |
+| Draft as of 2026-02-04 | *Computable Name*:FRFamilyMemberHistoryBodySiteExtension |
 
 Extension permettant d’indiquer la localisation anatomique d’une condition dans antécédents familiaux
 
@@ -19,9 +19,9 @@ Extension permettant d’indiquer la localisation anatomique d’une condition d
 
 **Utilisations:**
 
-* Utiliser ce Extension: [FamilyMemberHistory - FR Family Member History Document](StructureDefinition-fr-family-member-history-document.md)
+* Utilise ce/t/te Extension: [FamilyMemberHistory - FR Family Member History Document](StructureDefinition-fr-family-member-history-document.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-family-member-history-body-site-extension)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-family-member-history-body-site-extension)
 
 ### Formal Views of Extension Content
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-family-member-his
   "name" : "FRFamilyMemberHistoryBodySiteExtension",
   "title" : "FR Family Member History Body Site Extension",
   "status" : "draft",
-  "date" : "2026-02-03T11:02:09+00:00",
+  "date" : "2026-02-04T10:58:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

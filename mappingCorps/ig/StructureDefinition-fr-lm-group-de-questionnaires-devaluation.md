@@ -9,16 +9,16 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-group-de-questionnaires-devaluation | *Version*:0.1.0 |
-| Draft as of 2026-02-03 | *Computable Name*:FRLMGroupDeQuestionnairesDevaluation |
+| Draft as of 2026-02-04 | *Computable Name*:FRLMGroupDeQuestionnairesDevaluation |
 
  
 Groupe de questionnaires d’évalutation 
 
 **Utilisations:**
 
-* Utiliser ce Modèle logique: [Modèle logique métier - FR LM Fonctions physiques](StructureDefinition-fr-lm-fonctions-physiques.md) and [Modèle logique métier - FR LM Statut fonctionnel](StructureDefinition-fr-lm-statut-fonctionnel.md)
+* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Fonctions physiques](StructureDefinition-fr-lm-fonctions-physiques.md) and [Modèle logique métier - FR LM Statut fonctionnel](StructureDefinition-fr-lm-statut-fonctionnel.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-group-de-questionnaires-devaluation)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-group-de-questionnaires-devaluation)
 
 ### Formal Views of Profile Content
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-group-de-quest
   "name" : "FRLMGroupDeQuestionnairesDevaluation",
   "title" : "Modèle logique métier - FR LM Groupe de questionnaires d'évalutation",
   "status" : "draft",
-  "date" : "2026-02-03T11:02:09+00:00",
+  "date" : "2026-02-04T10:58:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -135,19 +135,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-group-de-quest
         "type" : [
           {
             "code" : "dateTime"
-          }
-        ]
-      },
-      {
-        "id" : "fr-lm-group-de-questionnaires-devaluation.valeur",
-        "path" : "fr-lm-group-de-questionnaires-devaluation.valeur",
-        "short" : "Valeur de l'observation",
-        "definition" : "Valeur de l'observation",
-        "min" : 1,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "CodeableConcept"
           }
         ]
       },

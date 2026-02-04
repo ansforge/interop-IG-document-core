@@ -9,16 +9,16 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-name | *Version*:0.1.0 |
-| Draft as of 2026-02-03 | *Computable Name*:FRCDAName |
+| Draft as of 2026-02-04 | *Computable Name*:FRCDAName |
 
  
 L’élément de l’en-tête du CDA correspond au nom d’une personne physique. 
 
 **Utilisations:**
 
-* Utiliser ce Profil de modèle logique: [CDA - assignedPerson](StructureDefinition-fr-cda-assigned-person.md)
+* Utilise ce/t/te Profil de modèle logique: [CDA - assignedPerson](StructureDefinition-fr-cda-assigned-person.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-name)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-name)
 
 ### Formal Views of Profile Content
 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-name.csv), [E
   "name" : "FRCDAName",
   "title" : "CDA - Name",
   "status" : "draft",
-  "date" : "2026-02-03T11:02:09+00:00",
+  "date" : "2026-02-04T10:58:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

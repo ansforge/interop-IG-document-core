@@ -9,16 +9,16 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-intended-recipient | *Version*:0.1.0 |
-| Draft as of 2026-02-03 | *Computable Name*:FRCDAIntendedRecipient |
+| Draft as of 2026-02-04 | *Computable Name*:FRCDAIntendedRecipient |
 
  
 L’élément de l’en-tête du CDA intendedRecipient permet d’enregistrer le destinataire prévu du document. 
 
 **Utilisations:**
 
-* Utiliser ce Profil de modèle logique: [CDA - informationRecipient](StructureDefinition-fr-cda-information-recipient.md)
+* Utilise ce/t/te Profil de modèle logique: [CDA - informationRecipient](StructureDefinition-fr-cda-information-recipient.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-intended-recipient)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-intended-recipient)
 
 ### Formal Views of Profile Content
 
@@ -70,7 +70,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-intended-reci
   "name" : "FRCDAIntendedRecipient",
   "title" : "CDA - intendedRecipient",
   "status" : "draft",
-  "date" : "2026-02-03T11:02:09+00:00",
+  "date" : "2026-02-04T10:58:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

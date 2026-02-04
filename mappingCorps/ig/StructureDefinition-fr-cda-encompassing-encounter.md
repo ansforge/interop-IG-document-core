@@ -9,16 +9,16 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-encompassing-encounter | *Version*:0.1.0 |
-| Draft as of 2026-02-03 | *Computable Name*:FRCDAEncompassingEncounter |
+| Draft as of 2026-02-04 | *Computable Name*:FRCDAEncompassingEncounter |
 
  
 L’élément de l’en-tête du CDA encompassingEncounter permet de décrire la prise en charge du patient/usager par un professionnel ou par une structure. 
 
 **Utilisations:**
 
-* Utiliser ce Profil de modèle logique: [CDA - componentOf](StructureDefinition-fr-cda-component-of.md)
+* Utilise ce/t/te Profil de modèle logique: [CDA - componentOf](StructureDefinition-fr-cda-component-of.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-encompassing-encounter)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-encompassing-encounter)
 
 ### Formal Views of Profile Content
 
@@ -70,7 +70,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-encompassing-
   "name" : "FRCDAEncompassingEncounter",
   "title" : "CDA - encompassingEncounter",
   "status" : "draft",
-  "date" : "2026-02-03T11:02:09+00:00",
+  "date" : "2026-02-04T10:58:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

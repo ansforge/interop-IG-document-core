@@ -9,16 +9,16 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-serie-imagerie | *Version*:0.1.0 |
-| Draft as of 2026-02-03 | *Computable Name*:FRLMSerieImagerie |
+| Draft as of 2026-02-04 | *Computable Name*:FRLMSerieImagerie |
 
  
 Serie imagerie 
 
 **Utilisations:**
 
-* Utiliser ce Modèle logique: [Modèle logique métier - FR LM Examen Imagerie](StructureDefinition-fr-lm-examen-imagerie.md)
+* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Examen Imagerie](StructureDefinition-fr-lm-examen-imagerie.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-serie-imagerie)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-serie-imagerie)
 
 ### Formal Views of Profile Content
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-serie-imagerie
   "name" : "FRLMSerieImagerie",
   "title" : "Modèle logique métier - FR LM Serie imagerie",
   "status" : "draft",
-  "date" : "2026-02-03T11:02:09+00:00",
+  "date" : "2026-02-04T10:58:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

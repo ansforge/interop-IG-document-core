@@ -48,7 +48,7 @@ Sub-departmentServiceDiscipline","",0,*,"","","Y","CodeableConcept {[]} {[]}
 ","OBR-24","inboundRelationship[typeCode=COMP].source[classCode=LIST, moodCode=EVN, code < LabService].code","FiveWs.class"
 "DiagnosticReport.code","DiagnosticReport.code","","Type
 ","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
-","Type de résultat. Codee n LOINC.","A code or name that describes this diagnostic report.","","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-result-type-document","",,,,"DiagnosticReport.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Type de résultat","A code or name that describes this diagnostic report.","","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-result-type-document","",,,,"DiagnosticReport.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.code","OBR-4 (HL7 v2 doesn't provide an easy way to indicate both the ordered test and the performed panel)","code","FiveWs.what[x]"
 "DiagnosticReport.subject","DiagnosticReport.subject","","Patient
 ","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient|4.0.1], CanonicalType[http://hl7.org/fhir/StructureDefinition/Group|4.0.1], CanonicalType[http://hl7.org/fhir/StructureDefinition/Device|4.0.1], CanonicalType[http://hl7.org/fhir/StructureDefinition/Location|4.0.1]]}

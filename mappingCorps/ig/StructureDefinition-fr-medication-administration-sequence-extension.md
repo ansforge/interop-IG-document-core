@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-administration-sequence-extension | *Version*:0.1.0 |
-| Draft as of 2026-02-03 | *Computable Name*:FRMedicationAdministrationSequenceExtension |
+| Draft as of 2026-02-04 | *Computable Name*:FRMedicationAdministrationSequenceExtension |
 
 Extension permettant d’indiquer l’ordre d’une prise dans le cadre d’un schéma de traitement comportant des dosages progressifs ou fractionnés dans le contexte de MedicationAdministration. La valeur est un entier (integer) représentant le numéro de séquence de l’administration.
 
@@ -19,9 +19,9 @@ Extension permettant d’indiquer l’ordre d’une prise dans le cadre d’un s
 
 **Utilisations:**
 
-* Utiliser ce Extension: [MedicationAdministration - FR Medication Administration Document](StructureDefinition-fr-medication-administration-document.md)
+* Utilise ce/t/te Extension: [MedicationAdministration - FR Medication Administration Document](StructureDefinition-fr-medication-administration-document.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-medication-administration-sequence-extension)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-medication-administration-sequence-extension)
 
 ### Formal Views of Extension Content
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-medication-admini
   "name" : "FRMedicationAdministrationSequenceExtension",
   "title" : "FR Medication Administration Sequence Extension",
   "status" : "draft",
-  "date" : "2026-02-03T11:02:09+00:00",
+  "date" : "2026-02-04T10:58:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

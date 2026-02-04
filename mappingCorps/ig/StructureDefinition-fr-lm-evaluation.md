@@ -9,16 +9,16 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-evaluation | *Version*:0.1.0 |
-| Draft as of 2026-02-03 | *Computable Name*:FRLMEvaluation |
+| Draft as of 2026-02-04 | *Computable Name*:FRLMEvaluation |
 
  
 Evaluation 
 
 **Utilisations:**
 
-* Utiliser ce Modèle logique: [Modèle logique métier - FR LM Fonctions physiques](StructureDefinition-fr-lm-fonctions-physiques.md) and [Modèle logique métier - FR LM Groupe de questionnaires d'évalutation](StructureDefinition-fr-lm-group-de-questionnaires-devaluation.md)
+* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Fonctions physiques](StructureDefinition-fr-lm-fonctions-physiques.md) and [Modèle logique métier - FR LM Groupe de questionnaires d'évalutation](StructureDefinition-fr-lm-group-de-questionnaires-devaluation.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-evaluation)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-evaluation)
 
 ### Formal Views of Profile Content
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-evaluation.csv
   "name" : "FRLMEvaluation",
   "title" : "Modèle logique métier - FR LM Evaluation",
   "status" : "draft",
-  "date" : "2026-02-03T11:02:09+00:00",
+  "date" : "2026-02-04T10:58:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -148,6 +148,19 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-evaluation.csv
         "type" : [
           {
             "code" : "dateTime"
+          }
+        ]
+      },
+      {
+        "id" : "fr-lm-evaluation.valeur",
+        "path" : "fr-lm-evaluation.valeur",
+        "short" : "Valeur de l'évaluation",
+        "definition" : "Valeur de l'évaluation",
+        "min" : 1,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Base"
           }
         ]
       },

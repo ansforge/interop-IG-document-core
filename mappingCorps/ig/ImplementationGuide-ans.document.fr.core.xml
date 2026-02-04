@@ -3,14 +3,14 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="ans.document.fr.core"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : ImplementationGuide ans.document.fr.core</b></p><a name="ans.document.fr.core"> </a><a name="hcans.document.fr.core"> </a><h2>FRDocumentCore</h2><p>LURL officielle pour ce guide dimplémentation est : </p><pre>https://interop.esante.gouv.fr/ig/document/core/ImplementationGuide/ans.document.fr.core</pre></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : ImplementationGuide ans.document.fr.core</b></p><a name="ans.document.fr.core"> </a><a name="hcans.document.fr.core"> </a><h2>FRDocumentCore</h2><p>L'URL officielle pour ce guide d'implémentation est : </p><pre>https://interop.esante.gouv.fr/ig/document/core/ImplementationGuide/ans.document.fr.core</pre></div>
   </text>
   <url value="https://interop.esante.gouv.fr/ig/document/core/ImplementationGuide/ans.document.fr.core"/>
   <version value="0.1.0"/>
   <name value="FRDocumentCore"/>
   <title value="ANS IG document core"/>
   <status value="draft"/>
-  <date value="2026-02-03T11:02:09+00:00"/>
+  <date value="2026-02-04T10:58:36+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -539,8 +539,11 @@
     <grouping id="Mapping ML-CDA-FHIR entête">
       <name value="Concept Maps de l'entête du document"/>
     </grouping>
-    <grouping id="Mapping ML-CDA-FHIR corps">
-      <name value="Concept Maps du corps d'un document"/>
+    <grouping id="Mapping ML-CDA-FHIR des sections d'un document">
+      <name value="Concept Maps des sections d'un document"/>
+    </grouping>
+    <grouping id="Mapping ML-CDA-FHIR des composants élémentaires d'un document">
+      <name value="Concept Maps des composants élémentaires d'un Document"/>
     </grouping>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1664,12 +1667,24 @@
         <valueString value="ConceptMap"/>
       </extension>
       <reference>
+        <reference value="ConceptMap/FRObservationTransfusionAccidentsLMCDAFHIR"/>
+      </reference>
+      <name value="Mapping FRLMAccidentsTransfusionnels → FRCDAAccidentsTransfusionnels → FRObservationTransfusionAccidentsDocument"/>
+      <description value="Mapping des éléments du modèle métier FRLMAccidentsTransfusionnels vers le profil CDA FRCDAAccidentsTransfusionnels, puis vers le profil FHIR FRObservationTransfusionAccidentsDocument."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
         <reference value="ConceptMap/FRActLMCDAFHIR"/>
       </reference>
       <name value="Mapping FRLMActe → FRCDAActe → FRProcedureActDocument"/>
       <description value="Mapping des éléments du modèle métier FRLMActe vers le profil CDA FRCDAActe, puis vers le profil FHIR FRProcedureActDocument."/>
       <exampleBoolean value="false"/>
-      <groupingId value="Mapping ML-CDA-FHIR corps"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1681,7 +1696,7 @@
       <name value="Mapping FRLMAdministrationDeDerivesDuSang → FRCDAAdministrationDeDerivesDuSang → FRObservationAdministrationBloodDerivativesDocument"/>
       <description value="Mapping des éléments du modèle métier FRLMAdministrationDeDerivesDuSang vers le profil CDA FRCDAAdministrationDeDerivesDuSang, puis vers le profil FHIR FRObservationAdministrationBloodDerivativesDocument."/>
       <exampleBoolean value="false"/>
-      <groupingId value="Mapping ML-CDA-FHIR corps"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1693,7 +1708,7 @@
       <name value="Mapping FRLMAllergieOuHypersensibilite / FRCDAAllergieOuHypersensibilite -&gt; FRAllergyIntoleranceDocument"/>
       <description value="Mapping des éléments du modèle métier FRLMAllergieOuHypersensibilite vers le profil CDA FRCDAAllergieOuHypersensibilite,puis vers le profil FHIR FRAllergyIntoleranceDocument."/>
       <exampleBoolean value="false"/>
-      <groupingId value="Mapping ML-CDA-FHIR corps"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1705,7 +1720,7 @@
       <name value="Mapping FRLMAntecedentFamilialObserve → FRCDAAntecedentFamilialObserve → FRFamilyMemberHistoryDocument"/>
       <description value="Mapping des éléments du modèle métier FRLMAntecedentFamilialObserve vers le profil CDA FRCDAAntecedentFamilialObserve, puis vers le profil FHIR FRFamilyMemberHistoryDocument."/>
       <exampleBoolean value="false"/>
-      <groupingId value="Mapping ML-CDA-FHIR corps"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1717,7 +1732,7 @@
       <name value="Mapping FRLMAntecedentsFamiliauxEntree → FRCDAAntecedentsFamiliaux → FRFamilyMemberHistoryDocument"/>
       <description value="Mapping des éléments du modèle métier FRLMAntecedentsFamiliauxEntree vers le profil CDA FRCDAAntecedentsFamiliaux, puis vers le profil FHIR FRFamilyMemberHistoryDocument."/>
       <exampleBoolean value="false"/>
-      <groupingId value="Mapping ML-CDA-FHIR corps"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1729,7 +1744,7 @@
       <name value="Mapping FRLMBatterieExamensBiologieMedicale → FRCDABatterieExamensDeBiologieMedicale → FRObservationLaboratoryReportResultsDocument"/>
       <description value="Mapping des éléments du modèle métier FRLMBatterieExamensBiologieMedicale vers le profil CDA FRCDABatterieExamensDeBiologieMedicale, puis vers le profil FHIR FRObservationLaboratoryReportResultsDocument."/>
       <exampleBoolean value="false"/>
-      <groupingId value="Mapping ML-CDA-FHIR corps"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1741,7 +1756,31 @@
       <name value="Mapping FRLMCondition → FRCDACondition → FRConditionDocument"/>
       <description value="Mapping des éléments du modèle métier FRLMProbleme vers le profil CDA FRCDAProbleme, puis vers le profil FHIR FRConditionDocument."/>
       <exampleBoolean value="false"/>
-      <groupingId value="Mapping ML-CDA-FHIR corps"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/FRImagingServiceRequestLMCDAFHIR"/>
+      </reference>
+      <name value="Mapping FRLMDemandeExamenImagerie → FRCDADICOMDemandeExamen → FRServiceRequestDocument"/>
+      <description value="Mapping des éléments du modèle métier FRLMDemandeExamenImagerie vers la section CDA FRCDADICOMDemandeExamen puis vers le profil FHIR FRCompositionDocument.section:serviceRequest."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Mapping ML-CDA-FHIR des sections d'un document"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/FRServiceRequestLMCDAFHIR"/>
+      </reference>
+      <name value="Mapping FRLMDemandeExamenOuSuivi → FRCDADemandeDExamenOuDeSuivi → FRServiceRequestDocument"/>
+      <description value="Mapping des éléments du modèle métier FRLMDemandeExamenOuSuivi vers le profil CDA FRCDADemandeDExamenOuDeSuivi, puis vers le profil FHIR FRServiceRequestDocument."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1753,7 +1792,7 @@
       <name value="Mapping FRLMDirectiveAnticipee → FRCDADirectiveAnticipee → FRAdvanceDirectiveDocument"/>
       <description value="Mapping des éléments du modèle métier FRLMDirectiveAnticipee vers le profil CDA FRCDADirectiveAnticipee, puis vers le profil FHIR FRAdvanceDirectiveDocument."/>
       <exampleBoolean value="false"/>
-      <groupingId value="Mapping ML-CDA-FHIR corps"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1765,7 +1804,7 @@
       <name value="Mapping FRLMDispositifMedicalEntree → FRCDADispositifMedical → FRDeviceUseStatement"/>
       <description value="Mapping des éléments du modèle métier FRLMDispositifMedicalEntree vers le&#xA;profil CDA FRCDADispositifMedical, puis vers le profil FHIR FRDeviceUseStatementDocument."/>
       <exampleBoolean value="false"/>
-      <groupingId value="Mapping ML-CDA-FHIR corps"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1777,7 +1816,55 @@
       <name value="Mapping FRLMDocumentAttache → FRCDADocumentAttache → FRDocumentReferenceDocument"/>
       <description value="Mapping des éléments du modèle métier FRLMDocumentAttache vers le profil CDA FRCDADocumentAttache, puis vers le profil FHIR FRDocumentReferenceDocument."/>
       <exampleBoolean value="false"/>
-      <groupingId value="Mapping ML-CDA-FHIR corps"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/FRObservationWorkRelatedAccidentLMCDAFHIR"/>
+      </reference>
+      <name value="Mapping FRLMEnRapportAvecAccidentTravail → FRCDAEnRapportAvecAccidentTravail → FRObservationWorkRelatedAccidentDocument"/>
+      <description value="Mapping des éléments du modèle métier FRLMEnRapportAvecAccidentTravail vers le profil CDA FRCDAEnRapportAvecAccidentTravail, puis vers le profil FHIR FRObservationWorkRelatedAccidentDocument."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/FRObservationSurveyLMCDAFHIR"/>
+      </reference>
+      <name value="Mapping FRLMEvaluation → FRCDAEvaluation → FRObservationSurveyDocument"/>
+      <description value="Mapping des éléments du modèle métier FRLMEvaluation vers le profil CDA FRCDAEvaluation, puis vers le profil FHIR FRObservationSurveyDocument."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/FRObservationSurveyComponentLMCDAFHIR"/>
+      </reference>
+      <name value="Mapping FRLMEvaluationComposant → FRCDAEvaluationComposant → FRObservationSurveyDocument"/>
+      <description value="Mapping des éléments du modèle métier FRLMEvaluationComposant vers le profil CDA FRCDAEvaluationComposant, puis vers le profil FHIR FRObservationSurveyDocument."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/FRObservationSurveyComponentN2LMCDAFHIR"/>
+      </reference>
+      <name value="Mapping FRLMEvaluationComposantN2 → FRCDAEvaluationComposantN2 → FRObservationSurveyDocument"/>
+      <description value="Mapping des éléments du modèle métier FRLMEvaluationComposantN2 vers le profil CDA FRCDAEvaluationComposantN2, puis vers le profil FHIR FRObservationSurveyDocument."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1789,7 +1876,7 @@
       <name value="Mapping FRLMEvenementIndesirable → FRCDAEvenementIndesirable → FRAdverseEventDocument"/>
       <description value="Mapping des éléments du modèle métier FRLMEvenementIndesirable vers le profil CDA FRCDAEvenementIndesirable, puis vers le profil FHIR FRAdverseEvent."/>
       <exampleBoolean value="false"/>
-      <groupingId value="Mapping ML-CDA-FHIR corps"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1801,7 +1888,55 @@
       <name value="Mapping FRLMExamenImagerie → FRCDADICOMExamenImagerie → FRImagingStudyDocument"/>
       <description value="Mapping des éléments du modèle métier FRLMExamenImagerie vers le profil CDA FRCDADICOMExamenImagerie, puis vers le profil FHIR FRImagingStudyDocument."/>
       <exampleBoolean value="false"/>
-      <groupingId value="Mapping ML-CDA-FHIR corps"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/FRImagingRadiationExposureLMCDAFHIR"/>
+      </reference>
+      <name value="Mapping FRLMExpositionRadiations → FRCDADICOMExpositionAuxRadiations → FRCompositionDocument.section:radiationExposure"/>
+      <description value="Mapping des éléments du modèle métier FRLMExpositionRadiations vers la section CDA FRCDADICOMExpositionAuxRadiations puis vers le profil FHIR FRCompositionDocument.section:radiationExposure."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Mapping ML-CDA-FHIR des sections d'un document"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/FRObservationSurveyPannelLMCDAFHIR"/>
+      </reference>
+      <name value="Mapping FRLMGroupDeQuestionnairesDevaluation → FRCDAGroupeDeQuestionnairesDEvaluation → FRObservationSurveyDocument"/>
+      <description value="Mapping des éléments du modèle métier FRLMGroupDeQuestionnairesDevaluation vers le profil CDA FRCDAGroupeDeQuestionnairesDEvaluation, puis vers le profil FHIR FRObservationSurveyDocument."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/FRSocialHistoryLMCDAFHIR"/>
+      </reference>
+      <name value="Mapping FRLMHabitusModeDeVie → FRCDAHabitusModeDeVieSection → FRCompositionDocument.section:socialHistory"/>
+      <description value="Mapping des éléments du modèle métier FRLMHabitusModeDeVie vers la section CDA FRCDAHabitusModeDeVieSection, puis vers le profil FHIR FRCompositionDocument.section:socialHistory."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Mapping ML-CDA-FHIR des sections d'un document"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/FRObservationSocialHistoryLMCDAFHIR"/>
+      </reference>
+      <name value="Mapping FRLMHabitusModeDeVieEntree → FRCDAHabitusModeDeVie → FRObservationSocialHistoryDocument"/>
+      <description value="Mapping des éléments du modèle métier FRLMHabitusModeDeVieEntree vers le profil CDA FRCDAHabitusModeDeVie, puis vers le profil FHIR FRObservationSocialHistoryDocument."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1813,7 +1948,19 @@
       <name value="Mapping FRLMHistoriqueGrossesse → FRCDAHistoriqueDeLaGrossesse → FRObservationPregnancyHistoryDocument"/>
       <description value="Mapping des éléments du modèle métier FRLMHistoriqueGrossesse vers le profil CDA FRCDAHistoriqueDeLaGrossesse, puis vers le profil FHIR FRObservationPregnancyHistoryDocument."/>
       <exampleBoolean value="false"/>
-      <groupingId value="Mapping ML-CDA-FHIR corps"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/FRPregnancyHistoryLMCDAFHIR"/>
+      </reference>
+      <name value="Mapping FRLMHistoriqueGrossesse → FRCDAHistoriqueDeLaGrossesse → FRPregnancyHistoryDocument"/>
+      <description value="Mapping des éléments du modèle métier FRLMHistoriqueGrossesse vers le profil CDA FRCDAHistoriqueDeLaGrossesse, puis vers le profil FHIR FRPregnancyHistoryDocument."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1825,7 +1972,7 @@
       <name value="Mapping FRLMIdentificationDeMicroOrganismesMultiresistants → FRCDAIdentificationMicroOrganismesMultiresistants → FRObservationMultiresistantMicroorganismsIdentificationDocument"/>
       <description value="Mapping des éléments du modèle métier FRLMIdentificationDeMicroOrganismesMultiresistants vers le profil CDA FRCDAIdentificationMicroOrganismesMultiresistants, puis vers le profil FHIR FRObservationMultiresistantMicroorganismsIdentificationDocument."/>
       <exampleBoolean value="false"/>
-      <groupingId value="Mapping ML-CDA-FHIR corps"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1837,7 +1984,19 @@
       <name value="Mapping FRLMImageIllustrative → FRCDAImageIllustrative → FRMediaDocument"/>
       <description value="Mapping des éléments du modèle métier FRLMImageIllustrative vers le profil CDA FRCDAImageIllustrative, puis vers le profil FHIR FRMediaDocument."/>
       <exampleBoolean value="false"/>
-      <groupingId value="Mapping ML-CDA-FHIR corps"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/FRImagingClinicalInformationLMCDAFHIR"/>
+      </reference>
+      <name value="Mapping FRLMInformationsCliniques → FRCDADICOMHistoriqueMedical → FRCompositionDocument.section:History (Observation / FRConditionDocument/ FRObservationPregnancyDocument / FRObservationContraIndicationsImagingDocument / FRDeviceAuteurDocument / FRMedicationAdministrationDocument)"/>
+      <description value="Mapping des éléments du modèle métier FRLMInformationsCliniques vers la section CDA FRCDADICOMHistoriqueMedical puis vers les profils FHIR Observation, FRConditionDocument, FRObservationPregnancyDocument, FRObservationContraIndicationsImagingDocument, FRDeviceAuteurDocument et FRMedicationAdministrationDocument."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Mapping ML-CDA-FHIR des sections d'un document"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1849,7 +2008,7 @@
       <name value="Mapping FRLMIsolatMicrobiologique → FRCDAIsolatMicrobiologique → FRObservationLaboratoryReportResultsDocument"/>
       <description value="Mapping des éléments du modèle métier FRLMIsolatMicrobiologique vers le profil CDA FRCDAIsolatMicrobiologique, puis vers le profil FHIR FRObservationLaboratoryReportResultsDocument."/>
       <exampleBoolean value="false"/>
-      <groupingId value="Mapping ML-CDA-FHIR corps"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1872,7 +2031,19 @@
       <name value="Mapping FRLMObservationGrossesse → FRCDAObservationSurLaGrossesse → FRObservationPregnancyDocument"/>
       <description value="Mapping des éléments du modèle métier FRLMObservationGrossesse vers le profil CDA FRCDAObservationSurLaGrossesse, puis vers le profil FHIR FRObservationPregnancyDocument."/>
       <exampleBoolean value="false"/>
-      <groupingId value="Mapping ML-CDA-FHIR corps"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/FRObservationResultLMCDAFHIR"/>
+      </reference>
+      <name value="Mapping FRLMObservationResult → FRCDAResultat → FRObservationResultDocument"/>
+      <description value="Mapping des éléments du modèle métier FRLMObservationResult vers le profil CDA FRCDAResultat, puis vers le profil FHIR FRObservationResultDocument."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1884,7 +2055,19 @@
       <name value="Mapping FRLMOrdreDispositifMedical → FRCDAOrdreDispositifMedical → FRDeviceRequestDocument"/>
       <description value="Mapping des éléments du modèle métier FRLMDispositifMedicalEntree vers le profil CDA FRCDADispositifMedical, puis vers le profil FHIR FRDeviceRequestDocument."/>
       <exampleBoolean value="false"/>
-      <groupingId value="Mapping ML-CDA-FHIR corps"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/FRSpecimenLMCDAFHIR"/>
+      </reference>
+      <name value="Mapping FRLMPrelevement → FRCDAPrelevement → FRSpecimenDocument"/>
+      <description value="Mapping des éléments du modèle métier FRLMPrelevement vers le profil CDA FRCDAPrelevement, puis vers le profil FHIR FRSpecimenDocument."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1896,7 +2079,7 @@
       <name value="Mapping FRLMProduitSante → FRCDAProduitDeSante → FRMedicationDocument"/>
       <description value="Mapping des éléments du modèle métier FRLMProduitSante vers le profil CDA FRCDAProduitDeSante, puis vers le profil FHIR FRMedicationDocument."/>
       <exampleBoolean value="false"/>
-      <groupingId value="Mapping ML-CDA-FHIR corps"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1908,7 +2091,7 @@
       <name value="Mapping FRLMRechercheDeMicroOrganismes → FRCDARechercheDeMicroOrganismes → FRObservationMicroorganismDetectionDocument"/>
       <description value="Mapping des éléments du modèle métier FRLMRechercheDeMicroOrganismes vers le profil CDA FRCDARechercheDeMicroOrganismes, puis vers le profil FHIR FRObservationMicroorganismDetectionDocument."/>
       <exampleBoolean value="false"/>
-      <groupingId value="Mapping ML-CDA-FHIR corps"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1920,7 +2103,7 @@
       <name value="Mapping FRLMReferenceItemPlanTraitement → FRCDAReferenceItemPlanTraitement → FRCarePlanDocument"/>
       <description value="Mapping des éléments du modèle métier FRLMReferenceItemPlanTraitement vers le profil CDA FRCDAReferenceItemPlanTraitement, puis vers le profil FHIR FRCarePlanDocument."/>
       <exampleBoolean value="false"/>
-      <groupingId value="Mapping ML-CDA-FHIR corps"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1932,7 +2115,7 @@
       <name value="Mapping FRLMRencontre → FRCDARencontre → FREncounterDocument"/>
       <description value="Mapping des éléments du modèle métier FRLMRencontre vers le profil CDA FRCDARencontre, puis vers le profil FHIR FREncounterDocument."/>
       <exampleBoolean value="false"/>
-      <groupingId value="Mapping ML-CDA-FHIR corps"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1944,7 +2127,7 @@
       <name value="Mapping FRLMResultatExamensBiologieElementCliniquePertinent → Profile: FRCDAResultatExamensDeBiologieElementCliniquePertinent&#xA; → FRObservationLaboratoryReportResultsDocument"/>
       <description value="Mapping des éléments du modèle métier FRLMResultatExamensBiologieElementCliniquePertinent vers le profil CDA FRCDAResultatExamensDeBiologieElementCliniquePertinent, puis vers le profil FHIR FRObservationLaboratoryReportResultsDocument."/>
       <exampleBoolean value="false"/>
-      <groupingId value="Mapping ML-CDA-FHIR corps"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1956,7 +2139,19 @@
       <name value="Mapping FRLMResultatsEntry → FRCDAResultats → FRDiagnosticReportDocument"/>
       <description value="Mapping des éléments du modèle métier FRLMResultatsEntry vers le profil CDA FRCDAResultats, puis vers le profil FHIR FRDiagnosticReportDocument."/>
       <exampleBoolean value="false"/>
-      <groupingId value="Mapping ML-CDA-FHIR corps"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/FRResultsLMCDAFHIR"/>
+      </reference>
+      <name value="Mapping FRLMResultatsEntry → FRCDAResultats → FRDiagnosticReportDocument"/>
+      <description value="Mapping des éléments du modèle métier FRLMResultatsEntry vers le profil CDA FRCDAResultats, puis vers le profil FHIR FRDiagnosticReportDocument."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1968,7 +2163,55 @@
       <name value="Mapping FRLMResultatsExamensBiologieMedicale → FRCDAResultatExamensDeBiologie → FRObservationLaboratoryReportResultsDocument"/>
       <description value="Mapping des éléments du modèle métier FRLMResultatsExamensBiologieMedicale vers le profil CDA FRCDAResultatExamensDeBiologie, puis vers le profil FHIR FRObservationLaboratoryReportResultsDocument."/>
       <exampleBoolean value="false"/>
-      <groupingId value="Mapping ML-CDA-FHIR corps"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/FRObservationVitalSignsPanelLMCDAFHIR"/>
+      </reference>
+      <name value="Mapping FRLMSigneVital → FRCDASignesVitaux → FRObservationVitalSignsPanelDocument"/>
+      <description value="Mapping des éléments du modèle métier FRLMSigneVital vers le profil CDA FRCDASignesVitaux, puis vers le profil FHIR FRObservationVitalSignsPanelDocument."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/FRObservationVitalSignsLMCDAFHIR"/>
+      </reference>
+      <name value="Mapping FRLMSigneVitalObserve → FRCDASigneVitalObserve → FRObservationVitalSignsDocument"/>
+      <description value="Mapping des éléments du modèle métier FRLMSigneVitalObserve vers le profil CDA FRCDASigneVitalObserve, puis vers le profil FHIR FRObservationVitalSignsDocument."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/FRPhysicalFunctionsLMCDAFHIR"/>
+      </reference>
+      <name value="Mapping FRLMStatutFonctionnel → FRCDAFonctionsPhysiques → FRCompositionDocument.section:PhysicalFunctions"/>
+      <description value="Mapping des éléments du modèle métier FRLMStatutFonctionnel vers le profil CDA FRCDAFonctionsPhysiques, puis vers le profil FHIR FRCompositionDocument.section:PhysicalFunctions."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Mapping ML-CDA-FHIR des sections d'un document"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/FRFunctionalStatusLMCDAFHIR"/>
+      </reference>
+      <name value="Mapping FRLMStatutFonctionnel → FRCDAStatutFonctionnel → FRCompositionDocument.section:FRFunctionalStatus"/>
+      <description value="Mapping des éléments du modèle métier FRLMStatutFonctionnel vers le profil CDA FRCDAStatutFonctionnel, puis vers la section FHIR FRCompositionDocument.section:FRFunctionalStatus."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Mapping ML-CDA-FHIR des sections d'un document"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1980,7 +2223,19 @@
       <name value="Mapping FRLMSyntheseMedicaleSejour → FRCDASyntheseMedicaleSejour → FRObservationMedicalSummaryDocument"/>
       <description value="Mapping des éléments du modèle métier FRLMSyntheseMedicaleSejour vers la sous-entrée CDA FRCDASyntheseMedicaleSejour puis vers le profil FHIR FRObservationMedicalSummaryDocument."/>
       <exampleBoolean value="false"/>
-      <groupingId value="Mapping ML-CDA-FHIR corps"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/FRImagingProcedureLMCDAFHIR"/>
+      </reference>
+      <name value="Mapping FRLMTechniqueImagerie → FRCDADICOMTechniqueImagerie → FRProcedureImagingDocument"/>
+      <description value="Mapping des éléments du modèle métier FRLMTechniqueImagerie vers le profil CDA FRCDADICOMTechniqueImagerie, puis vers le profil FHIR FRProcedureImagingDocument."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1992,7 +2247,7 @@
       <name value="Mapping FRLMTraitement → FRCDATraitement → FRMedicationAdministrationDocument"/>
       <description value="Mapping des éléments du modèle métier FRLMTraitement vers le profil CDA FRCDATraitement, puis vers le profil FHIR FRMedicationAdministrationDocument."/>
       <exampleBoolean value="false"/>
-      <groupingId value="Mapping ML-CDA-FHIR corps"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2004,7 +2259,7 @@
       <name value="Mapping FRLMTraitement → FRCDATraitement → FRMedicationStatementDocument"/>
       <description value="Mapping des éléments du modèle métier FRLMTraitement vers la sous-entrée CDA FRCDATraitement puis vers le profil FHIR FRMedicationStatementDocument."/>
       <exampleBoolean value="false"/>
-      <groupingId value="Mapping ML-CDA-FHIR corps"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2016,7 +2271,7 @@
       <name value="Mapping FRLMTraitementDispense → FRCDATraitementDispense → FRMedicationDispenseDocument"/>
       <description value="Mapping des éléments du modèle métier FRLMTraitementDispense vers le profil CDA FRCDATraitementDispense, puis vers le profil FHIR FRMedicationDispenseDocument."/>
       <exampleBoolean value="false"/>
-      <groupingId value="Mapping ML-CDA-FHIR corps"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2028,7 +2283,7 @@
       <name value="Mapping FRLMTraitementPrescrit → FRCDATraitementPrescrit → FRMedicationRequestDocument"/>
       <description value="Mapping des éléments du modèle métier FRLMTraitementPrescrit vers l'entrée CDA FRCDATraitementPrescrit, puis vers le profil FHIR FRMedicationRequestDocument."/>
       <exampleBoolean value="false"/>
-      <groupingId value="Mapping ML-CDA-FHIR corps"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2040,7 +2295,7 @@
       <name value="Mapping FRLMTraitementPrescritSubordonne → FRCDATraitementPrescritSubordonne → FRMedicationsCombinaisonDocument"/>
       <description value="Mapping des éléments du modèle métier FRLMTraitementPrescritSubordonne vers la sous-entrée CDA FRCDATraitementSubordonne puis vers le profil FHIR FRMedicationsCombinaisonDocument."/>
       <exampleBoolean value="false"/>
-      <groupingId value="Mapping ML-CDA-FHIR corps"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2052,7 +2307,7 @@
       <name value="Mapping FRLMTraitementSubordonne → FRCDATraitementSubordonne → FRMedicationsCombinaisonDocument"/>
       <description value="Mapping des éléments du modèle métier FRLMTraitementSubordonne vers la sous-entrée CDA FRCDATraitementSubordonne puis vers le profil FHIR FRMedicationsCombinaisonDocument."/>
       <exampleBoolean value="false"/>
-      <groupingId value="Mapping ML-CDA-FHIR corps"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2064,7 +2319,7 @@
       <name value="Mapping FRLMTransfusionDeProduitsSanguins → FRCDATransfusionDeProduitsSanguins → FRObservationBloodProductTransfusionDocument"/>
       <description value="Mapping des éléments du modèle métier FRLMTransfusionDeProduitsSanguins vers la sous-entrée CDA FRCDATransfusionDeProduitsSanguins puis vers le profil FHIR FRObservationBloodProductTransfusionDocument."/>
       <exampleBoolean value="false"/>
-      <groupingId value="Mapping ML-CDA-FHIR corps"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2076,7 +2331,7 @@
       <name value="Mapping FRLMVaccination → FRCDAVaccination → FRImmunizationDocument"/>
       <description value="Mapping des éléments du modèle métier FRLMVaccination vers le profil CDA FRCDAVaccination, puis vers le profil FHIR FRImmunizationDocument."/>
       <exampleBoolean value="false"/>
-      <groupingId value="Mapping ML-CDA-FHIR corps"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2088,7 +2343,7 @@
       <name value="Mapping FRLMVaccinRecommande → FRCDAVaccinRecommande → FRImmunizationRecommendationDocument"/>
       <description value="Mapping des éléments du modèle métier FRLMVaccinRecommande vers le profil CDA FRCDAVaccinRecommande, puis vers le profil FHIR FRImmunizationRecommendationDocument."/>
       <exampleBoolean value="false"/>
-      <groupingId value="Mapping ML-CDA-FHIR corps"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2317,6 +2572,30 @@
       <description value="Ce ConceptMap présente deux groupes de mapping : &#xA; - Mapping 1 : entre le modèle métier \&quot;validateur\&quot; et l'élément CDA \&quot;authenticator\&quot;&#xA; - Mapping 2 : entre l'élément CDA \&quot;authenticator\&quot; et l'élément FHIR \&quot;Composition.attester\&quot;"/>
       <exampleBoolean value="false"/>
       <groupingId value="Mapping ML-CDA-FHIR entête"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/FRImagingQuantityLMCDAFHIR"/>
+      </reference>
+      <name value="Mapping Métier/CDA/FHIR : Quantité d'exposition aux radiations"/>
+      <description value="Mapping des éléments du modèle métier FRLMQuantiteExposition vers l'entrée CDA FRCDADICOMQuantite puis vers le composant FHIR FRObservationRadiationExposureDocument.component."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Mapping ML-CDA-FHIR des composants élémentaires d'un document"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/FRImagingResultatsLMCDAFHIR"/>
+      </reference>
+      <name value="Mapping Métier/CDA/FHIR : Résultats d'imagerie"/>
+      <description value="Mapping des éléments du modèle métier FRLMResultatsExamenImagerie vers la section CDA FRCDADICOMResultats puis vers le profil FHIR FRCompositionDocument.section:Findings."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Mapping ML-CDA-FHIR des sections d'un document"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -3421,6 +3700,17 @@
       <description value="observation"/>
       <exampleBoolean value="false"/>
       <groupingId value="Modèles logiques métier des composants élémentaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-lm-observation-result"/>
+      </reference>
+      <name value="Modèle logique métier - FR LM Observation Result"/>
+      <description value="Résultat d'une observation médicale (résultat d'examen de laboratoire, d'imagerie, etc.)"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -4654,7 +4944,7 @@
         <reference value="StructureDefinition/fr-service-request-document"/>
       </reference>
       <name value="ServiceRequest - FR Service Request Document"/>
-      <description value="FRSeviceRequestDocument profil permet de porter des demandes d'examens (analyses biologiques, évaluations, étude d'imagerie, etc…) ou de suivis particuliers à programmer dans le cadre d'un plan de soins."/>
+      <description value="FRServiceRequestDocument profil permet de porter des demandes d'examens (analyses biologiques, évaluations, étude d'imagerie, etc…) ou de suivis particuliers à programmer dans le cadre d'un plan de soins."/>
       <exampleBoolean value="false"/>
       <groupingId value="Ressources FHIR corps"/>
     </resource>

@@ -9,16 +9,16 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-exposition-radiations | *Version*:0.1.0 |
-| Draft as of 2026-02-03 | *Computable Name*:FRLMExpositionRadiations |
+| Draft as of 2026-02-04 | *Computable Name*:FRLMExpositionRadiations |
 
  
 Section Exposition aux radiations 
 
 **Utilisations:**
 
-* Utiliser ce Modèle logique: [Modèle logique métier - FR LM Acte d'imagerie](StructureDefinition-fr-lm-acte-imagerie.md) and [Modèle logique métier - FR LM Corps document](StructureDefinition-fr-lm-corps-document.md)
+* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Acte d'imagerie](StructureDefinition-fr-lm-acte-imagerie.md) and [Modèle logique métier - FR LM Corps document](StructureDefinition-fr-lm-corps-document.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-exposition-radiations)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-exposition-radiations)
 
 ### Formal Views of Profile Content
 
@@ -51,7 +51,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-exposition-rad
   "name" : "FRLMExpositionRadiations",
   "title" : "Modèle logique métier - FR LM Exposition aux radiations",
   "status" : "draft",
-  "date" : "2026-02-03T11:02:09+00:00",
+  "date" : "2026-02-04T10:58:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -123,6 +123,19 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-exposition-rad
         "type" : [
           {
             "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-quantite-exposition"
+          }
+        ]
+      },
+      {
+        "id" : "fr-lm-exposition-radiations.entree.administrationRadiopharmaceutique",
+        "path" : "fr-lm-exposition-radiations.entree.administrationRadiopharmaceutique",
+        "short" : "Entrée administration des produits radiopharmaceutiques",
+        "definition" : "Entrée administration des produits radiopharmaceutiques",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-administration-produit-de-sante"
           }
         ]
       }

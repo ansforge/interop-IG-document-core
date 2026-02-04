@@ -9,16 +9,16 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-assigned-entity | *Version*:0.1.0 |
-| Draft as of 2026-02-03 | *Computable Name*:FRCDAAssignedEntity |
+| Draft as of 2026-02-04 | *Computable Name*:FRCDAAssignedEntity |
 
  
 L’élément de l’en-tête du CDA assignedEntity est utilisé dans les éléments suivants : dataEnterer, informant, legalAuthenticator, authenticator, performer, responsibleParty et encounterParticipant. 
 
 **Utilisations:**
 
-* Utiliser ce Profil de modèle logique: [CDA - authenticator](StructureDefinition-fr-cda-authenticator.md), [CDA - dataEnterer](StructureDefinition-fr-cda-data-enterer.md), [CDA - informant](StructureDefinition-fr-cda-informant.md), [CDA - legalAuthenticator](StructureDefinition-fr-cda-legal-authenticator.md) and [CDA - performer](StructureDefinition-fr-cda-performer.md)
+* Utilise ce/t/te Profil de modèle logique: [CDA - authenticator](StructureDefinition-fr-cda-authenticator.md), [CDA - dataEnterer](StructureDefinition-fr-cda-data-enterer.md), [CDA - informant](StructureDefinition-fr-cda-informant.md), [CDA - legalAuthenticator](StructureDefinition-fr-cda-legal-authenticator.md) and [CDA - performer](StructureDefinition-fr-cda-performer.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-assigned-entity)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-assigned-entity)
 
 ### Formal Views of Profile Content
 
@@ -70,7 +70,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-assigned-enti
   "name" : "FRCDAAssignedEntity",
   "title" : "CDA - assignedEntity",
   "status" : "draft",
-  "date" : "2026-02-03T11:02:09+00:00",
+  "date" : "2026-02-04T10:58:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

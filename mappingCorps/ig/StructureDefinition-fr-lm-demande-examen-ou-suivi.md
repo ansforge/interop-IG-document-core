@@ -9,16 +9,16 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-demande-examen-ou-suivi | *Version*:0.1.0 |
-| Draft as of 2026-02-03 | *Computable Name*:FRLMDemandeExamenOuSuivi |
+| Draft as of 2026-02-04 | *Computable Name*:FRLMDemandeExamenOuSuivi |
 
  
 Demande d’examen ou de suivi / Objectif à atteindre 
 
 **Utilisations:**
 
-* Utiliser ce Modèle logique: [Modèle logique métier - FR LM Plan de soins](StructureDefinition-fr-lm-plan-soins.md)
+* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Observation Result](StructureDefinition-fr-lm-observation-result.md) and [Modèle logique métier - FR LM Plan de soins](StructureDefinition-fr-lm-plan-soins.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-demande-examen-ou-suivi)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-demande-examen-ou-suivi)
 
 ### Formal Views of Profile Content
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-demande-examen
   "name" : "FRLMDemandeExamenOuSuivi",
   "title" : "Modèle logique métier - FR LM Demande d'examen ou de suivi",
   "status" : "draft",
-  "date" : "2026-02-03T11:02:09+00:00",
+  "date" : "2026-02-04T10:58:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

@@ -78,6 +78,48 @@
     "version" : "0.1.0"
   },
   {
+    "id" : "FRFunctionalStatusLMCDAFHIR",
+    "type" : "ConceptMap",
+    "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRFunctionalStatusLMCDAFHIR",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "FRImagingClinicalInformationLMCDAFHIR",
+    "type" : "ConceptMap",
+    "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRImagingClinicalInformationLMCDAFHIR",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "FRImagingProcedureLMCDAFHIR",
+    "type" : "ConceptMap",
+    "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRImagingProcedureLMCDAFHIR",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "FRImagingQuantityLMCDAFHIR",
+    "type" : "ConceptMap",
+    "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRImagingQuantityLMCDAFHIR",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "FRImagingRadiationExposureLMCDAFHIR",
+    "type" : "ConceptMap",
+    "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRImagingRadiationExposureLMCDAFHIR",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "FRImagingResultatsLMCDAFHIR",
+    "type" : "ConceptMap",
+    "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRImagingResultatsLMCDAFHIR",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "FRImagingServiceRequestLMCDAFHIR",
+    "type" : "ConceptMap",
+    "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRImagingServiceRequestLMCDAFHIR",
+    "version" : "0.1.0"
+  },
+  {
     "id" : "FRImagingStudyLMCDAFHIR",
     "type" : "ConceptMap",
     "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRImagingStudyLMCDAFHIR",
@@ -213,6 +255,102 @@
     "id" : "FRObservationPregnancyLMCDAFHIR",
     "type" : "ConceptMap",
     "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRObservationPregnancyLMCDAFHIR",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "FRObservationResultLMCDAFHIR",
+    "type" : "ConceptMap",
+    "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRObservationResultLMCDAFHIR",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "FRObservationSocialHistoryLMCDAFHIR",
+    "type" : "ConceptMap",
+    "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRObservationSocialHistoryLMCDAFHIR",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "FRObservationSurveyComponentLMCDAFHIR",
+    "type" : "ConceptMap",
+    "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRObservationSurveyComponentLMCDAFHIR",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "FRObservationSurveyComponentN2LMCDAFHIR",
+    "type" : "ConceptMap",
+    "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRObservationSurveyComponentN2LMCDAFHIR",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "FRObservationSurveyLMCDAFHIR",
+    "type" : "ConceptMap",
+    "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRObservationSurveyLMCDAFHIR",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "FRObservationSurveyPannelLMCDAFHIR",
+    "type" : "ConceptMap",
+    "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRObservationSurveyPannelLMCDAFHIR",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "FRObservationTransfusionAccidentsLMCDAFHIR",
+    "type" : "ConceptMap",
+    "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRObservationTransfusionAccidentsLMCDAFHIR",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "FRObservationVitalSignsLMCDAFHIR",
+    "type" : "ConceptMap",
+    "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRObservationVitalSignsLMCDAFHIR",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "FRObservationVitalSignsPanelLMCDAFHIR",
+    "type" : "ConceptMap",
+    "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRObservationVitalSignsPanelLMCDAFHIR",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "FRObservationWorkRelatedAccidentLMCDAFHIR",
+    "type" : "ConceptMap",
+    "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRObservationWorkRelatedAccidentLMCDAFHIR",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "FRPhysicalFunctionsLMCDAFHIR",
+    "type" : "ConceptMap",
+    "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRPhysicalFunctionsLMCDAFHIR",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "FRPregnancyHistoryLMCDAFHIR",
+    "type" : "ConceptMap",
+    "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRPregnancyHistoryLMCDAFHIR",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "FRResultsLMCDAFHIR",
+    "type" : "ConceptMap",
+    "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRResultsLMCDAFHIR",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "FRServiceRequestLMCDAFHIR",
+    "type" : "ConceptMap",
+    "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRServiceRequestLMCDAFHIR",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "FRSocialHistoryLMCDAFHIR",
+    "type" : "ConceptMap",
+    "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRSocialHistoryLMCDAFHIR",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "FRSpecimenLMCDAFHIR",
+    "type" : "ConceptMap",
+    "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRSpecimenLMCDAFHIR",
     "version" : "0.1.0"
   },
   {
@@ -1455,6 +1593,13 @@
     "name" : "FRLMObservationGrossesse"
   },
   {
+    "id" : "fr-lm-observation-result",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation-result",
+    "version" : "0.1.0",
+    "name" : "FRLMObservationResult"
+  },
+  {
     "id" : "fr-lm-operateur-saisie",
     "type" : "StructureDefinition",
     "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-operateur-saisie",
@@ -2306,7 +2451,7 @@
     "type" : "StructureDefinition",
     "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-service-request-document",
     "version" : "0.1.0",
-    "name" : "FRSeviceRequestDocument"
+    "name" : "FRServiceRequestDocument"
   },
   {
     "id" : "fr-specimen-document",

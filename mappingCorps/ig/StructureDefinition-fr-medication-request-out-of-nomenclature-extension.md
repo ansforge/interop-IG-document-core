@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-request-out-of-nomenclature-extension | *Version*:0.1.0 |
-| Draft as of 2026-02-03 | *Computable Name*:FRMedicationRequestOutOfNomenclatureExtension |
+| Draft as of 2026-02-04 | *Computable Name*:FRMedicationRequestOutOfNomenclatureExtension |
 
 Extension permettant d’indiquer si le traitement prescrit est hors autorisation de mise sur le marché (AMM)
 
@@ -19,9 +19,9 @@ Extension permettant d’indiquer si le traitement prescrit est hors autorisatio
 
 **Utilisations:**
 
-* Utiliser ce Extension: [MedicationRequest - FR Medication Request Document](StructureDefinition-fr-medication-request-document.md)
+* Utilise ce/t/te Extension: [MedicationRequest - FR Medication Request Document](StructureDefinition-fr-medication-request-document.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-medication-request-out-of-nomenclature-extension)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-medication-request-out-of-nomenclature-extension)
 
 ### Formal Views of Extension Content
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-medication-reques
   "name" : "FRMedicationRequestOutOfNomenclatureExtension",
   "title" : "FR Medication Request Out Of Nomenclature Extension",
   "status" : "draft",
-  "date" : "2026-02-03T11:02:09+00:00",
+  "date" : "2026-02-04T10:58:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

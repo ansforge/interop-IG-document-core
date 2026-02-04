@@ -9,16 +9,16 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure | *Version*:0.1.0 |
-| Draft as of 2026-02-03 | *Computable Name*:FRLMPersonneStructure |
+| Draft as of 2026-02-04 | *Computable Name*:FRLMPersonneStructure |
 
  
 Une personne (professionnel ou patient ou autre) et/ou une structure (pour les professionnels). 
 
 **Utilisations:**
 
-* Utiliser ce Modèle logique: [Modèle logique métier - FR LM Acte](StructureDefinition-fr-lm-acte.md), [Modèle logique métier - FR LM Destinataire prévu](StructureDefinition-fr-lm-destinataire-prevu.md), [Modèle logique métier - FR LM Dispositif médical](StructureDefinition-fr-lm-dispositif-medical-entree.md), [Modèle logique métier - FR LM Evaluation](StructureDefinition-fr-lm-evaluation.md)... Show 12 more, [Modèle logique métier - FR LM Évènement](StructureDefinition-fr-lm-evenement.md), [Modèle logique métier - FR LM Informateur](StructureDefinition-fr-lm-informateur.md), [Modèle logique métier - FR LM Laboratoire exécutant](StructureDefinition-fr-lm-laboratoire-executant.md), [Modèle logique métier - FR LM Opérateur de saisie](StructureDefinition-fr-lm-operateur-saisie.md), [Modèle logique métier - FR LM Participant](StructureDefinition-fr-lm-participant.md), [Modèle logique métier - FR LM Performer](StructureDefinition-fr-lm-performer.md), [Modèle logique métier - FR LM Prélèvement](StructureDefinition-fr-lm-prelevement.md), [Modèle logique métier - FR LM Prescription](StructureDefinition-fr-lm-prescription-entree.md), [Modèle logique métier - FR LM Prise en charge](StructureDefinition-fr-lm-prise-en-charge.md), [Modèle logique métier - FR LM Rencontre](StructureDefinition-fr-lm-rencontre.md), [Modèle logique métier - FR LM Responsable](StructureDefinition-fr-lm-responsable.md) and [Modèle logique métier - FR LM Validateur](StructureDefinition-fr-lm-validateur.md)
+* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Acte](StructureDefinition-fr-lm-acte.md), [Modèle logique métier - FR LM Destinataire prévu](StructureDefinition-fr-lm-destinataire-prevu.md), [Modèle logique métier - FR LM Dispositif médical](StructureDefinition-fr-lm-dispositif-medical-entree.md), [Modèle logique métier - FR LM Evaluation](StructureDefinition-fr-lm-evaluation.md)... Show 12 more, [Modèle logique métier - FR LM Évènement](StructureDefinition-fr-lm-evenement.md), [Modèle logique métier - FR LM Informateur](StructureDefinition-fr-lm-informateur.md), [Modèle logique métier - FR LM Laboratoire exécutant](StructureDefinition-fr-lm-laboratoire-executant.md), [Modèle logique métier - FR LM Opérateur de saisie](StructureDefinition-fr-lm-operateur-saisie.md), [Modèle logique métier - FR LM Participant](StructureDefinition-fr-lm-participant.md), [Modèle logique métier - FR LM Performer](StructureDefinition-fr-lm-performer.md), [Modèle logique métier - FR LM Prélèvement](StructureDefinition-fr-lm-prelevement.md), [Modèle logique métier - FR LM Prescription](StructureDefinition-fr-lm-prescription-entree.md), [Modèle logique métier - FR LM Prise en charge](StructureDefinition-fr-lm-prise-en-charge.md), [Modèle logique métier - FR LM Rencontre](StructureDefinition-fr-lm-rencontre.md), [Modèle logique métier - FR LM Responsable](StructureDefinition-fr-lm-responsable.md) and [Modèle logique métier - FR LM Validateur](StructureDefinition-fr-lm-validateur.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-personne-structure)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-personne-structure)
 
 ### Formal Views of Profile Content
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-personne-struc
   "name" : "FRLMPersonneStructure",
   "title" : "Modèle logique métier - FR LM Personne et/ou Structure",
   "status" : "draft",
-  "date" : "2026-02-03T11:02:09+00:00",
+  "date" : "2026-02-04T10:58:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

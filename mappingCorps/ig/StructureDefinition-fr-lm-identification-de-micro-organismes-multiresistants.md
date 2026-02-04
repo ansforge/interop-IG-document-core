@@ -9,16 +9,16 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-identification-de-micro-organismes-multiresistants | *Version*:0.1.0 |
-| Draft as of 2026-02-03 | *Computable Name*:FRLMIdentificationDeMicroOrganismesMultiresistants |
+| Draft as of 2026-02-04 | *Computable Name*:FRLMIdentificationDeMicroOrganismesMultiresistants |
 
  
 Identification de micro-organismes multirésistants 
 
 **Utilisations:**
 
-* Ce Modèle logique nest utilisé par aucun profil dans ce guide dimplémentation
+* Ce Modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-identification-de-micro-organismes-multiresistants)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-identification-de-micro-organismes-multiresistants)
 
 ### Formal Views of Profile Content
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-identification
   "name" : "FRLMIdentificationDeMicroOrganismesMultiresistants",
   "title" : "Modèle logique métier - FR LM Identification de micro-organismes multirésistants",
   "status" : "draft",
-  "date" : "2026-02-03T11:02:09+00:00",
+  "date" : "2026-02-04T10:58:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

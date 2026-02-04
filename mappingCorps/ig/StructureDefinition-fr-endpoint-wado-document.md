@@ -9,16 +9,16 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-endpoint-wado-document | *Version*:0.1.0 |
-| Draft as of 2026-02-03 | *Computable Name*:FREndpointWadoDocument |
+| Draft as of 2026-02-04 | *Computable Name*:FREndpointWadoDocument |
 
  
 FREndpointWadoDocument permet d’enregistrer les références Wado, les types de média et le type de connection IHE IID 
 
 **Utilisations:**
 
-* Référer à ce Profil: [ImagingStudy - FR Imaging study Document](StructureDefinition-fr-imaging-study-document.md)
+* Référence ce Profil: [ImagingStudy - FR Imaging study Document](StructureDefinition-fr-imaging-study-document.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-endpoint-wado-document)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-endpoint-wado-document)
 
 ### Formal Views of Profile Content
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-endpoint-wado-doc
   "name" : "FREndpointWadoDocument",
   "title" : "Endpoint - FR Endpoint Wado Document",
   "status" : "draft",
-  "date" : "2026-02-03T11:02:09+00:00",
+  "date" : "2026-02-04T10:58:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

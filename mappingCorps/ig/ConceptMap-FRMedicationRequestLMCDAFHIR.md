@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRMedicationRequestLMCDAFHIR | *Version*:0.1.0 |
-| Draft as of 2026-02-03 | *Computable Name*: |
+| Draft as of 2026-02-04 | *Computable Name*: |
 
  
 Mapping des éléments du modèle métier FRLMTraitementPrescrit vers l’entrée CDA FRCDATraitementPrescrit, puis vers le profil FHIR FRMedicationRequestDocument. 
@@ -26,7 +26,7 @@ Mapping des éléments du modèle métier FRLMTraitementPrescrit vers l’entré
   "version" : "0.1.0",
   "title" : "Mapping Métier/CDA/FHIR : Traitement prescrit",
   "status" : "draft",
-  "date" : "2026-02-03T11:02:09+00:00",
+  "date" : "2026-02-04T10:58:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

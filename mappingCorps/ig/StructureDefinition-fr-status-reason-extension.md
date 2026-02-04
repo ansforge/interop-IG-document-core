@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-status-reason-extension | *Version*:0.1.0 |
-| Draft as of 2026-02-03 | *Computable Name*:FRStatusReasonExtension |
+| Draft as of 2026-02-04 | *Computable Name*:FRStatusReasonExtension |
 
 Extension permettant d’indiquer le motif du statut métier d’une évaluation.
 
@@ -19,9 +19,9 @@ Extension permettant d’indiquer le motif du statut métier d’une évaluation
 
 **Utilisations:**
 
-* Utiliser ce Extension: [Observation - FR Observation Survey Document](StructureDefinition-fr-observation-survey-document.md)
+* Utilise ce/t/te Extension: [Observation - FR Observation Survey Document](StructureDefinition-fr-observation-survey-document.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-status-reason-extension)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-status-reason-extension)
 
 ### Formal Views of Extension Content
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-status-reason-ext
   "name" : "FRStatusReasonExtension",
   "title" : "FR Status Reason Extension",
   "status" : "draft",
-  "date" : "2026-02-03T11:02:09+00:00",
+  "date" : "2026-02-04T10:58:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

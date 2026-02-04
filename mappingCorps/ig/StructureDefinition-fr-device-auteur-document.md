@@ -9,17 +9,17 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-device-auteur-document | *Version*:0.1.0 |
-| Draft as of 2026-02-03 | *Computable Name*:FRDeviceAuteurDocument |
+| Draft as of 2026-02-04 | *Computable Name*:FRDeviceAuteurDocument |
 
  
 Ce profil représente le système auteur du document. 
 
 **Utilisations:**
 
-* Utiliser ce Profil: [FR Bundle Document](StructureDefinition-fr-bundle-document.md)
-* Référer à ce Profil: [FR Actor Extension](StructureDefinition-fr-actor-extension.md), [FR Composition Document](StructureDefinition-fr-composition-document.md), [FamilyMemberHistory - FR Family Member History Document](StructureDefinition-fr-family-member-history-document.md), [Media - FR Media Document](StructureDefinition-fr-media-document.md) and [FR Patient History Extension](StructureDefinition-fr-patient-history-extension.md)
+* Utilise ce/t/te Profil: [FR Bundle Document](StructureDefinition-fr-bundle-document.md)
+* Référence ce Profil: [FR Actor Extension](StructureDefinition-fr-actor-extension.md), [FR Composition Document](StructureDefinition-fr-composition-document.md), [FamilyMemberHistory - FR Family Member History Document](StructureDefinition-fr-family-member-history-document.md), [Media - FR Media Document](StructureDefinition-fr-media-document.md) and [FR Patient History Extension](StructureDefinition-fr-patient-history-extension.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-device-auteur-document)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-device-auteur-document)
 
 ### Formal Views of Profile Content
 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-device-auteur-doc
   "name" : "FRDeviceAuteurDocument",
   "title" : "FR Device Document",
   "status" : "draft",
-  "date" : "2026-02-03T11:02:09+00:00",
+  "date" : "2026-02-04T10:58:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

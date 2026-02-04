@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-patient-history-extension | *Version*:0.1.0 |
-| Draft as of 2026-02-03 | *Computable Name*:FRPatientHistoryExtension |
+| Draft as of 2026-02-04 | *Computable Name*:FRPatientHistoryExtension |
 
 Historique médical du patient pertinent pour l’examen d’imagerie
 
@@ -19,9 +19,9 @@ Historique médical du patient pertinent pour l’examen d’imagerie
 
 **Utilisations:**
 
-* Utiliser ce Extension: [DiagnosticReport - FR Diagnostic Report Imaging Document](StructureDefinition-fr-diagnostic-report-imaging-document.md)
+* Utilise ce/t/te Extension: [DiagnosticReport - FR Diagnostic Report Imaging Document](StructureDefinition-fr-diagnostic-report-imaging-document.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-patient-history-extension)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-patient-history-extension)
 
 ### Formal Views of Extension Content
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-patient-history-e
   "name" : "FRPatientHistoryExtension",
   "title" : "FR Patient History Extension",
   "status" : "draft",
-  "date" : "2026-02-03T11:02:09+00:00",
+  "date" : "2026-02-04T10:58:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

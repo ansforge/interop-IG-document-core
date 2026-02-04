@@ -9,16 +9,16 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-assigned-author | *Version*:0.1.0 |
-| Draft as of 2026-02-03 | *Computable Name*:FRCDAAssignedAuthor |
+| Draft as of 2026-02-04 | *Computable Name*:FRCDAAssignedAuthor |
 
  
 L’élément de l’en-tête du CDA assignedAuthor contient les éléments permettant de décrire l’auteur. 
 
 **Utilisations:**
 
-* Utiliser ce Profil de modèle logique: [CDA - author](StructureDefinition-fr-cda-author.md)
+* Utilise ce/t/te Profil de modèle logique: [CDA - author](StructureDefinition-fr-cda-author.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-assigned-author)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-assigned-author)
 
 ### Formal Views of Profile Content
 
@@ -70,7 +70,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-assigned-auth
   "name" : "FRCDAAssignedAuthor",
   "title" : "CDA - assignedAuthor",
   "status" : "draft",
-  "date" : "2026-02-03T11:02:09+00:00",
+  "date" : "2026-02-04T10:58:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
