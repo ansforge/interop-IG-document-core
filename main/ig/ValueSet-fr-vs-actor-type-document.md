@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-actor-type-document | *Version*:0.1.0 |
-| Draft as of 2026-01-28 | *Computable Name*:FRValueSetActorTypeDocument |
+| Draft as of 2026-02-05 | *Computable Name*:FRValueSetActorTypeDocument |
 
  
 Jeu de valeurs pour les types d’acteurs. 
@@ -50,7 +50,7 @@ Jeu de valeurs pour les types d’acteurs.
   "name" : "FRValueSetActorTypeDocument",
   "title" : "ValueSet - FR ValueSet Actor Type Document",
   "status" : "draft",
-  "date" : "2026-01-28T14:36:08+00:00",
+  "date" : "2026-02-05T08:09:31+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

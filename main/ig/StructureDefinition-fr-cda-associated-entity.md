@@ -9,16 +9,16 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-associated-entity | *Version*:0.1.0 |
-| Draft as of 2026-01-28 | *Computable Name*:FRCDAAssociatedEntity |
+| Draft as of 2026-02-05 | *Computable Name*:FRCDAAssociatedEntity |
 
  
 L’élément de l’en-tête du CDA associatedEntity permet de représenter les caractéristiques du professionnel et/ou de l’établissement participant. 
 
 **Utilisations:**
 
-* Utiliser ce Profil de modèle logique: [CDA - participant](StructureDefinition-fr-cda-participant.md)
+* Utilise ce/t/te Profil de modèle logique: [CDA - participant](StructureDefinition-fr-cda-participant.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-associated-entity)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-associated-entity)
 
 ### Formal Views of Profile Content
 
@@ -70,7 +70,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-associated-en
   "name" : "FRCDAAssociatedEntity",
   "title" : "CDA - associatedEntity",
   "status" : "draft",
-  "date" : "2026-01-28T14:36:08+00:00",
+  "date" : "2026-02-05T08:09:31+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

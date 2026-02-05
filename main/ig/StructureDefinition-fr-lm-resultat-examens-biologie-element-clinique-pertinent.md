@@ -9,16 +9,16 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-resultat-examens-biologie-element-clinique-pertinent | *Version*:0.1.0 |
-| Draft as of 2026-01-28 | *Computable Name*:FRLMResultatExamensBiologieElementCliniquePertinent |
+| Draft as of 2026-02-05 | *Computable Name*:FRLMResultatExamensBiologieElementCliniquePertinent |
 
  
 Résultat d’examens de biologie / élement clinique pertinent 
 
 **Utilisations:**
 
-* Utiliser ce Modèle logique: [Modèle logique métier - FR LM Batterie d'examens de biologie médicale](StructureDefinition-fr-lm-batterie-examens-biologie-medicale.md), [Modèle logique métier - FR LM Isolat microbiologique](StructureDefinition-fr-lm-isolat-microbiologique.md) and [Modèle logique métier - FR LM Resultats d'examens de biologie medicale](StructureDefinition-fr-lm-resultats-examens-biologie-medicale.md)
+* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Batterie d'examens de biologie médicale](StructureDefinition-fr-lm-batterie-examens-biologie-medicale.md), [Modèle logique métier - FR LM Isolat microbiologique](StructureDefinition-fr-lm-isolat-microbiologique.md) and [Modèle logique métier - FR LM Resultats d'examens de biologie medicale](StructureDefinition-fr-lm-resultats-examens-biologie-medicale.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-resultat-examens-biologie-element-clinique-pertinent)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-resultat-examens-biologie-element-clinique-pertinent)
 
 ### Formal Views of Profile Content
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-resultat-exame
   "name" : "FRLMResultatExamensBiologieElementCliniquePertinent",
   "title" : "Modèle logique métier - FR LM Résultat d'examens de biologie / élement clinique pertinent",
   "status" : "draft",
-  "date" : "2026-01-28T14:36:08+00:00",
+  "date" : "2026-02-05T08:09:31+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

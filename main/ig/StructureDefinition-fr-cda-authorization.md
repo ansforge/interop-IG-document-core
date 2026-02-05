@@ -9,16 +9,16 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-authorization | *Version*:0.1.0 |
-| Draft as of 2026-01-28 | *Computable Name*:FRCDAAuthorization |
+| Draft as of 2026-02-05 | *Computable Name*:FRCDAAuthorization |
 
  
 L’élément de l’en-tête du CDA authorization permet de documenter qu’un consentement éclairé a été obtenu et d’indiquer quel type de consentement a été fourni. 
 
 **Utilisations:**
 
-* Utiliser ce Profil de modèle logique: [CDA - clinicalDocument](StructureDefinition-fr-cda-clinical-document.md)
+* Utilise ce/t/te Profil de modèle logique: [CDA - clinicalDocument](StructureDefinition-fr-cda-clinical-document.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-authorization)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-authorization)
 
 ### Formal Views of Profile Content
 
@@ -70,7 +70,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-authorization
   "name" : "FRCDAAuthorization",
   "title" : "CDA - authorization",
   "status" : "draft",
-  "date" : "2026-01-28T14:36:08+00:00",
+  "date" : "2026-02-05T08:09:31+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

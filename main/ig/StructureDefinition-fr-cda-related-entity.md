@@ -9,16 +9,16 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-related-entity | *Version*:0.1.0 |
-| Draft as of 2026-01-28 | *Computable Name*:FRCDARelatedEntity |
+| Draft as of 2026-02-05 | *Computable Name*:FRCDARelatedEntity |
 
  
 L’élément de l’en-tête du CDA relatedEntity permet de décrire : un informateur non professionnel, une personne de confiance, une personne à prévenir en cas d’urgence, un aidant ou une personne aidée. 
 
 **Utilisations:**
 
-* Utiliser ce Profil de modèle logique: [CDA - informant](StructureDefinition-fr-cda-informant.md)
+* Utilise ce/t/te Profil de modèle logique: [CDA - informant](StructureDefinition-fr-cda-informant.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-related-entity)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-related-entity)
 
 ### Formal Views of Profile Content
 
@@ -70,7 +70,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-related-entit
   "name" : "FRCDARelatedEntity",
   "title" : "CDA - relatedEntity",
   "status" : "draft",
-  "date" : "2026-01-28T14:36:08+00:00",
+  "date" : "2026-02-05T08:09:31+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

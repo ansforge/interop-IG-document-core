@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-procedure-priority-extension | *Version*:0.1.0 |
-| Draft as of 2026-01-28 | *Computable Name*:FRProcedurePriorityExtension |
+| Draft as of 2026-02-05 | *Computable Name*:FRProcedurePriorityExtension |
 
 Extension permettant d’indiquer d’indique la priorité clinique de l’observation.
 
@@ -19,9 +19,9 @@ Extension permettant d’indiquer d’indique la priorité clinique de l’obser
 
 **Utilisations:**
 
-* Utiliser ce Extension: [Procedure - FR Procedure Act Document](StructureDefinition-fr-procedure-act-document.md)
+* Utilise ce/t/te Extension: [Procedure - FR Procedure Act Document](StructureDefinition-fr-procedure-act-document.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-procedure-priority-extension)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-procedure-priority-extension)
 
 ### Formal Views of Extension Content
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-procedure-priorit
   "name" : "FRProcedurePriorityExtension",
   "title" : "FR Procedure Priority Extension",
   "status" : "draft",
-  "date" : "2026-01-28T14:36:08+00:00",
+  "date" : "2026-02-05T08:09:31+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

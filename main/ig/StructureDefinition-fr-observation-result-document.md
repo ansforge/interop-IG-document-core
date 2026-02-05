@@ -9,16 +9,16 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-result-document | *Version*:0.1.0 |
-| Draft as of 2026-01-28 | *Computable Name*:FRObservationResultDocument |
+| Draft as of 2026-02-05 | *Computable Name*:FRObservationResultDocument |
 
  
 FRObservationResultDocument permet d’indiquer le résultat observé. 
 
 **Utilisations:**
 
-* Référer à ce Profil: [DiagnosticReport - FR Diagnostic Report Document](StructureDefinition-fr-diagnostic-report-document.md) and [DiagnosticReport - FR Diagnostic Report Imaging Document](StructureDefinition-fr-diagnostic-report-imaging-document.md)
+* Référence ce Profil: [DiagnosticReport - FR Diagnostic Report Document](StructureDefinition-fr-diagnostic-report-document.md) and [DiagnosticReport - FR Diagnostic Report Imaging Document](StructureDefinition-fr-diagnostic-report-imaging-document.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-observation-result-document)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-observation-result-document)
 
 ### Formal Views of Profile Content
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-observation-resul
   "name" : "FRObservationResultDocument",
   "title" : "Observation - FR Observation Result Document",
   "status" : "draft",
-  "date" : "2026-01-28T14:36:08+00:00",
+  "date" : "2026-02-05T08:09:31+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -278,6 +278,12 @@ Other representations of profile: [CSV](StructureDefinition-fr-observation-resul
         "id" : "Observation.note",
         "path" : "Observation.note",
         "short" : "Commentaire",
+        "mustSupport" : true
+      },
+      {
+        "id" : "Observation.bodySite",
+        "path" : "Observation.bodySite",
+        "short" : "Localisation anatomique",
         "mustSupport" : true
       },
       {

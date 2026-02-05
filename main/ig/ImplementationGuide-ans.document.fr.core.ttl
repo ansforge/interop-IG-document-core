@@ -11,7 +11,7 @@
   fhir:id [ fhir:v "ans.document.fr.core"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : ImplementationGuide ans.document.fr.core</b></p><a name=\"ans.document.fr.core\"> </a><a name=\"hcans.document.fr.core\"> </a><h2>FRDocumentCore</h2><p>LURL officielle pour ce guide dimplémentation est : </p><pre>https://interop.esante.gouv.fr/ig/document/core/ImplementationGuide/ans.document.fr.core</pre></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : ImplementationGuide ans.document.fr.core</b></p><a name=\"ans.document.fr.core\"> </a><a name=\"hcans.document.fr.core\"> </a><h2>FRDocumentCore</h2><p>L'URL officielle pour ce guide d'implémentation est : </p><pre>https://interop.esante.gouv.fr/ig/document/core/ImplementationGuide/ans.document.fr.core</pre></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:url [
      fhir:v "https://interop.esante.gouv.fr/ig/document/core/ImplementationGuide/ans.document.fr.core"^^xsd:anyURI ;
@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "FRDocumentCore"] ; # 
   fhir:title [ fhir:v "ANS IG document core"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-01-28T14:36:08+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-02-05T08:09:31+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -108,7 +108,7 @@
        fhir:l <http://hl7.org/fhir/uv/fhir-clinical-document/ImplementationGuide/hl7.fhir.uv.fhir-clinical-document>
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.uv.fhir-clinical-document" ] ;
-     fhir:version [ fhir:v "1.0.0" ]
+     fhir:version [ fhir:v "1.0.1" ]
   ] [
      fhir:id [ fhir:v "ihe_pharm_mpd" ] ;
      fhir:uri [
@@ -1457,8 +1457,11 @@
        fhir:id [ fhir:v "Mapping ML-CDA-FHIR entête" ] ;
        fhir:name [ fhir:v "Concept Maps de l'entête du document" ]
      ] [
-       fhir:id [ fhir:v "Mapping ML-CDA-FHIR corps" ] ;
-       fhir:name [ fhir:v "Concept Maps du corps d'un document" ]
+       fhir:id [ fhir:v "Mapping ML-CDA-FHIR des sections d'un document" ] ;
+       fhir:name [ fhir:v "Concept Maps des sections d'un document" ]
+     ] [
+       fhir:id [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ] ;
+       fhir:name [ fhir:v "Concept Maps des composants élémentaires d'un Document" ]
      ] ) ;
      fhir:resource ( [
        fhir:extension ( [
@@ -3535,6 +3538,28 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRObservationTransfusionAccidentsLMCDAFHIR> ;
+         fhir:reference [ fhir:v "ConceptMap/FRObservationTransfusionAccidentsLMCDAFHIR" ]
+       ] ;
+       fhir:name [ fhir:v "Mapping FRLMAccidentsTransfusionnels → FRCDAAccidentsTransfusionnels → FRObservationTransfusionAccidentsDocument" ] ;
+       fhir:description [ fhir:v "Mapping des éléments du modèle métier FRLMAccidentsTransfusionnels vers le profil CDA FRCDAAccidentsTransfusionnels, puis vers le profil FHIR FRObservationTransfusionAccidentsDocument." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ConceptMap"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRActLMCDAFHIR> ;
          fhir:reference [ fhir:v "ConceptMap/FRActLMCDAFHIR" ]
        ] ;
@@ -3544,7 +3569,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR corps" ]
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -3566,7 +3591,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR corps" ]
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -3588,7 +3613,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR corps" ]
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -3610,7 +3635,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR corps" ]
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -3632,7 +3657,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR corps" ]
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -3654,7 +3679,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR corps" ]
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -3676,7 +3701,51 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR corps" ]
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ConceptMap"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRImagingServiceRequestLMCDAFHIR> ;
+         fhir:reference [ fhir:v "ConceptMap/FRImagingServiceRequestLMCDAFHIR" ]
+       ] ;
+       fhir:name [ fhir:v "Mapping FRLMDemandeExamenImagerie → FRCDADICOMDemandeExamen → FRServiceRequestDocument" ] ;
+       fhir:description [ fhir:v "Mapping des éléments du modèle métier FRLMDemandeExamenImagerie vers la section CDA FRCDADICOMDemandeExamen puis vers le profil FHIR FRCompositionDocument.section:serviceRequest." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des sections d'un document" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ConceptMap"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRServiceRequestLMCDAFHIR> ;
+         fhir:reference [ fhir:v "ConceptMap/FRServiceRequestLMCDAFHIR" ]
+       ] ;
+       fhir:name [ fhir:v "Mapping FRLMDemandeExamenOuSuivi → FRCDADemandeDExamenOuDeSuivi → FRServiceRequestDocument" ] ;
+       fhir:description [ fhir:v "Mapping des éléments du modèle métier FRLMDemandeExamenOuSuivi vers le profil CDA FRCDADemandeDExamenOuDeSuivi, puis vers le profil FHIR FRServiceRequestDocument." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -3698,7 +3767,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR corps" ]
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -3720,7 +3789,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR corps" ]
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -3742,7 +3811,95 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR corps" ]
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ConceptMap"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRObservationWorkRelatedAccidentLMCDAFHIR> ;
+         fhir:reference [ fhir:v "ConceptMap/FRObservationWorkRelatedAccidentLMCDAFHIR" ]
+       ] ;
+       fhir:name [ fhir:v "Mapping FRLMEnRapportAvecAccidentTravail → FRCDAEnRapportAvecAccidentTravail → FRObservationWorkRelatedAccidentDocument" ] ;
+       fhir:description [ fhir:v "Mapping des éléments du modèle métier FRLMEnRapportAvecAccidentTravail vers le profil CDA FRCDAEnRapportAvecAccidentTravail, puis vers le profil FHIR FRObservationWorkRelatedAccidentDocument." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ConceptMap"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRObservationSurveyLMCDAFHIR> ;
+         fhir:reference [ fhir:v "ConceptMap/FRObservationSurveyLMCDAFHIR" ]
+       ] ;
+       fhir:name [ fhir:v "Mapping FRLMEvaluation → FRCDAEvaluation → FRObservationSurveyDocument" ] ;
+       fhir:description [ fhir:v "Mapping des éléments du modèle métier FRLMEvaluation vers le profil CDA FRCDAEvaluation, puis vers le profil FHIR FRObservationSurveyDocument." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ConceptMap"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRObservationSurveyComponentLMCDAFHIR> ;
+         fhir:reference [ fhir:v "ConceptMap/FRObservationSurveyComponentLMCDAFHIR" ]
+       ] ;
+       fhir:name [ fhir:v "Mapping FRLMEvaluationComposant → FRCDAEvaluationComposant → FRObservationSurveyDocument" ] ;
+       fhir:description [ fhir:v "Mapping des éléments du modèle métier FRLMEvaluationComposant vers le profil CDA FRCDAEvaluationComposant, puis vers le profil FHIR FRObservationSurveyDocument." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ConceptMap"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRObservationSurveyComponentN2LMCDAFHIR> ;
+         fhir:reference [ fhir:v "ConceptMap/FRObservationSurveyComponentN2LMCDAFHIR" ]
+       ] ;
+       fhir:name [ fhir:v "Mapping FRLMEvaluationComposantN2 → FRCDAEvaluationComposantN2 → FRObservationSurveyDocument" ] ;
+       fhir:description [ fhir:v "Mapping des éléments du modèle métier FRLMEvaluationComposantN2 vers le profil CDA FRCDAEvaluationComposantN2, puis vers le profil FHIR FRObservationSurveyDocument." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -3764,7 +3921,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR corps" ]
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -3786,7 +3943,95 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR corps" ]
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ConceptMap"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRImagingRadiationExposureLMCDAFHIR> ;
+         fhir:reference [ fhir:v "ConceptMap/FRImagingRadiationExposureLMCDAFHIR" ]
+       ] ;
+       fhir:name [ fhir:v "Mapping FRLMExpositionRadiations → FRCDADICOMExpositionAuxRadiations → FRCompositionDocument.section:radiationExposure" ] ;
+       fhir:description [ fhir:v "Mapping des éléments du modèle métier FRLMExpositionRadiations vers la section CDA FRCDADICOMExpositionAuxRadiations puis vers le profil FHIR FRCompositionDocument.section:radiationExposure." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des sections d'un document" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ConceptMap"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRObservationSurveyPannelLMCDAFHIR> ;
+         fhir:reference [ fhir:v "ConceptMap/FRObservationSurveyPannelLMCDAFHIR" ]
+       ] ;
+       fhir:name [ fhir:v "Mapping FRLMGroupDeQuestionnairesDevaluation → FRCDAGroupeDeQuestionnairesDEvaluation → FRObservationSurveyDocument" ] ;
+       fhir:description [ fhir:v "Mapping des éléments du modèle métier FRLMGroupDeQuestionnairesDevaluation vers le profil CDA FRCDAGroupeDeQuestionnairesDEvaluation, puis vers le profil FHIR FRObservationSurveyDocument." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ConceptMap"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRSocialHistoryLMCDAFHIR> ;
+         fhir:reference [ fhir:v "ConceptMap/FRSocialHistoryLMCDAFHIR" ]
+       ] ;
+       fhir:name [ fhir:v "Mapping FRLMHabitusModeDeVie → FRCDAHabitusModeDeVieSection → FRCompositionDocument.section:socialHistory" ] ;
+       fhir:description [ fhir:v "Mapping des éléments du modèle métier FRLMHabitusModeDeVie vers la section CDA FRCDAHabitusModeDeVieSection, puis vers le profil FHIR FRCompositionDocument.section:socialHistory." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des sections d'un document" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ConceptMap"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRObservationSocialHistoryLMCDAFHIR> ;
+         fhir:reference [ fhir:v "ConceptMap/FRObservationSocialHistoryLMCDAFHIR" ]
+       ] ;
+       fhir:name [ fhir:v "Mapping FRLMHabitusModeDeVieEntree → FRCDAHabitusModeDeVie → FRObservationSocialHistoryDocument" ] ;
+       fhir:description [ fhir:v "Mapping des éléments du modèle métier FRLMHabitusModeDeVieEntree vers le profil CDA FRCDAHabitusModeDeVie, puis vers le profil FHIR FRObservationSocialHistoryDocument." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -3808,7 +4053,29 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR corps" ]
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ConceptMap"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRPregnancyHistoryLMCDAFHIR> ;
+         fhir:reference [ fhir:v "ConceptMap/FRPregnancyHistoryLMCDAFHIR" ]
+       ] ;
+       fhir:name [ fhir:v "Mapping FRLMHistoriqueGrossesse → FRCDAHistoriqueDeLaGrossesse → FRPregnancyHistoryDocument" ] ;
+       fhir:description [ fhir:v "Mapping des éléments du modèle métier FRLMHistoriqueGrossesse vers le profil CDA FRCDAHistoriqueDeLaGrossesse, puis vers le profil FHIR FRPregnancyHistoryDocument." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -3830,7 +4097,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR corps" ]
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -3852,7 +4119,29 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR corps" ]
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ConceptMap"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRImagingClinicalInformationLMCDAFHIR> ;
+         fhir:reference [ fhir:v "ConceptMap/FRImagingClinicalInformationLMCDAFHIR" ]
+       ] ;
+       fhir:name [ fhir:v "Mapping FRLMInformationsCliniques → FRCDADICOMHistoriqueMedical → FRCompositionDocument.section:History (Observation / FRConditionDocument/ FRObservationPregnancyDocument / FRObservationContraIndicationsImagingDocument / FRDeviceAuteurDocument / FRMedicationAdministrationDocument)" ] ;
+       fhir:description [ fhir:v "Mapping des éléments du modèle métier FRLMInformationsCliniques vers la section CDA FRCDADICOMHistoriqueMedical puis vers les profils FHIR Observation, FRConditionDocument, FRObservationPregnancyDocument, FRObservationContraIndicationsImagingDocument, FRDeviceAuteurDocument et FRMedicationAdministrationDocument." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des sections d'un document" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -3874,7 +4163,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR corps" ]
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -3917,7 +4206,29 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR corps" ]
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ConceptMap"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRObservationResultLMCDAFHIR> ;
+         fhir:reference [ fhir:v "ConceptMap/FRObservationResultLMCDAFHIR" ]
+       ] ;
+       fhir:name [ fhir:v "Mapping FRLMObservationResult → FRCDAResultat → FRObservationResultDocument" ] ;
+       fhir:description [ fhir:v "Mapping des éléments du modèle métier FRLMObservationResult vers le profil CDA FRCDAResultat, puis vers le profil FHIR FRObservationResultDocument." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -3939,7 +4250,29 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR corps" ]
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ConceptMap"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRSpecimenLMCDAFHIR> ;
+         fhir:reference [ fhir:v "ConceptMap/FRSpecimenLMCDAFHIR" ]
+       ] ;
+       fhir:name [ fhir:v "Mapping FRLMPrelevement → FRCDAPrelevement → FRSpecimenDocument" ] ;
+       fhir:description [ fhir:v "Mapping des éléments du modèle métier FRLMPrelevement vers le profil CDA FRCDAPrelevement, puis vers le profil FHIR FRSpecimenDocument." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -3961,7 +4294,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR corps" ]
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -3983,7 +4316,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR corps" ]
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -4005,7 +4338,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR corps" ]
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -4027,7 +4360,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR corps" ]
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -4049,7 +4382,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR corps" ]
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -4071,7 +4404,29 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR corps" ]
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ConceptMap"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRResultsLMCDAFHIR> ;
+         fhir:reference [ fhir:v "ConceptMap/FRResultsLMCDAFHIR" ]
+       ] ;
+       fhir:name [ fhir:v "Mapping FRLMResultatsEntry → FRCDAResultats → FRDiagnosticReportDocument" ] ;
+       fhir:description [ fhir:v "Mapping des éléments du modèle métier FRLMResultatsEntry vers le profil CDA FRCDAResultats, puis vers le profil FHIR FRDiagnosticReportDocument." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -4093,7 +4448,95 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR corps" ]
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ConceptMap"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRObservationVitalSignsPanelLMCDAFHIR> ;
+         fhir:reference [ fhir:v "ConceptMap/FRObservationVitalSignsPanelLMCDAFHIR" ]
+       ] ;
+       fhir:name [ fhir:v "Mapping FRLMSigneVital → FRCDASignesVitaux → FRObservationVitalSignsPanelDocument" ] ;
+       fhir:description [ fhir:v "Mapping des éléments du modèle métier FRLMSigneVital vers le profil CDA FRCDASignesVitaux, puis vers le profil FHIR FRObservationVitalSignsPanelDocument." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ConceptMap"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRObservationVitalSignsLMCDAFHIR> ;
+         fhir:reference [ fhir:v "ConceptMap/FRObservationVitalSignsLMCDAFHIR" ]
+       ] ;
+       fhir:name [ fhir:v "Mapping FRLMSigneVitalObserve → FRCDASigneVitalObserve → FRObservationVitalSignsDocument" ] ;
+       fhir:description [ fhir:v "Mapping des éléments du modèle métier FRLMSigneVitalObserve vers le profil CDA FRCDASigneVitalObserve, puis vers le profil FHIR FRObservationVitalSignsDocument." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ConceptMap"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRPhysicalFunctionsLMCDAFHIR> ;
+         fhir:reference [ fhir:v "ConceptMap/FRPhysicalFunctionsLMCDAFHIR" ]
+       ] ;
+       fhir:name [ fhir:v "Mapping FRLMStatutFonctionnel → FRCDAFonctionsPhysiques → FRCompositionDocument.section:PhysicalFunctions" ] ;
+       fhir:description [ fhir:v "Mapping des éléments du modèle métier FRLMStatutFonctionnel vers le profil CDA FRCDAFonctionsPhysiques, puis vers le profil FHIR FRCompositionDocument.section:PhysicalFunctions." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des sections d'un document" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ConceptMap"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRFunctionalStatusLMCDAFHIR> ;
+         fhir:reference [ fhir:v "ConceptMap/FRFunctionalStatusLMCDAFHIR" ]
+       ] ;
+       fhir:name [ fhir:v "Mapping FRLMStatutFonctionnel → FRCDAStatutFonctionnel → FRCompositionDocument.section:FRFunctionalStatus" ] ;
+       fhir:description [ fhir:v "Mapping des éléments du modèle métier FRLMStatutFonctionnel vers le profil CDA FRCDAStatutFonctionnel, puis vers la section FHIR FRCompositionDocument.section:FRFunctionalStatus." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des sections d'un document" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -4115,7 +4558,29 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR corps" ]
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ConceptMap"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRImagingProcedureLMCDAFHIR> ;
+         fhir:reference [ fhir:v "ConceptMap/FRImagingProcedureLMCDAFHIR" ]
+       ] ;
+       fhir:name [ fhir:v "Mapping FRLMTechniqueImagerie → FRCDADICOMTechniqueImagerie → FRProcedureImagingDocument" ] ;
+       fhir:description [ fhir:v "Mapping des éléments du modèle métier FRLMTechniqueImagerie vers le profil CDA FRCDADICOMTechniqueImagerie, puis vers le profil FHIR FRProcedureImagingDocument." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -4137,7 +4602,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR corps" ]
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -4159,7 +4624,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR corps" ]
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -4181,7 +4646,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR corps" ]
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -4203,7 +4668,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR corps" ]
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -4225,7 +4690,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR corps" ]
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -4247,7 +4712,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR corps" ]
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -4269,7 +4734,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR corps" ]
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -4291,7 +4756,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR corps" ]
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -4313,7 +4778,7 @@
          a fhir:Boolean ;
          fhir:v false
        ] ;
-       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR corps" ]
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -4732,6 +5197,50 @@
          fhir:v false
        ] ;
        fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR entête" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ConceptMap"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRImagingQuantityLMCDAFHIR> ;
+         fhir:reference [ fhir:v "ConceptMap/FRImagingQuantityLMCDAFHIR" ]
+       ] ;
+       fhir:name [ fhir:v "Mapping Métier/CDA/FHIR : Quantité d'exposition aux radiations" ] ;
+       fhir:description [ fhir:v "Mapping des éléments du modèle métier FRLMQuantiteExposition vers l'entrée CDA FRCDADICOMQuantite puis vers le composant FHIR FRObservationRadiationExposureDocument.component." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ConceptMap"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRImagingResultatsLMCDAFHIR> ;
+         fhir:reference [ fhir:v "ConceptMap/FRImagingResultatsLMCDAFHIR" ]
+       ] ;
+       fhir:name [ fhir:v "Mapping Métier/CDA/FHIR : Résultats d'imagerie" ] ;
+       fhir:description [ fhir:v "Mapping des éléments du modèle métier FRLMResultatsExamenImagerie vers la section CDA FRCDADICOMResultats puis vers le profil FHIR FRCompositionDocument.section:Findings." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Mapping ML-CDA-FHIR des sections d'un document" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -6756,6 +7265,27 @@
          fhir:v false
        ] ;
        fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation-result> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-lm-observation-result" ]
+       ] ;
+       fhir:name [ fhir:v "Modèle logique métier - FR LM Observation Result" ] ;
+       fhir:description [ fhir:v "Résultat d'une observation médicale (résultat d'examen de laboratoire, d'imagerie, etc.)" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -9016,7 +9546,7 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-service-request-document" ]
        ] ;
        fhir:name [ fhir:v "ServiceRequest - FR Service Request Document" ] ;
-       fhir:description [ fhir:v "FRSeviceRequestDocument profil permet de porter des demandes d'examens (analyses biologiques, évaluations, étude d'imagerie, etc…) ou de suivis particuliers à programmer dans le cadre d'un plan de soins." ] ;
+       fhir:description [ fhir:v "FRServiceRequestDocument profil permet de porter des demandes d'examens (analyses biologiques, évaluations, étude d'imagerie, etc…) ou de suivis particuliers à programmer dans le cadre d'un plan de soins." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

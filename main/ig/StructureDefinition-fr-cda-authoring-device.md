@@ -9,16 +9,16 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-authoring-device | *Version*:0.1.0 |
-| Draft as of 2026-01-28 | *Computable Name*:FRCDAAuthoringDevice |
+| Draft as of 2026-02-05 | *Computable Name*:FRCDAAuthoringDevice |
 
  
 L’élément de l’en-tête du CDA authoringDevice contient les informations complémentaires si l’auteur est un système. 
 
 **Utilisations:**
 
-* Utiliser ce Profil de modèle logique: [CDA - assignedAuthor](StructureDefinition-fr-cda-assigned-author.md)
+* Utilise ce/t/te Profil de modèle logique: [CDA - assignedAuthor](StructureDefinition-fr-cda-assigned-author.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-authoring-device)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-authoring-device)
 
 ### Formal Views of Profile Content
 
@@ -70,7 +70,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-authoring-dev
   "name" : "FRCDAAuthoringDevice",
   "title" : "CDA - authoringDevice",
   "status" : "draft",
-  "date" : "2026-01-28T14:36:08+00:00",
+  "date" : "2026-02-05T08:09:31+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

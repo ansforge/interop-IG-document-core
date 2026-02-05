@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-interpretation-extension | *Version*:0.1.0 |
-| Draft as of 2026-01-28 | *Computable Name*:FRInterpretationExtension |
+| Draft as of 2026-02-05 | *Computable Name*:FRInterpretationExtension |
 
 Extension permettant de spécifier une interprétation.
 
@@ -19,9 +19,9 @@ Extension permettant de spécifier une interprétation.
 
 **Utilisations:**
 
-* Utiliser ce Extension: [FamilyMemberHistory - FR Family Member History Document](StructureDefinition-fr-family-member-history-document.md) and [ServiceRequest - FR Service Request Document](StructureDefinition-fr-service-request-document.md)
+* Utilise ce/t/te Extension: [FamilyMemberHistory - FR Family Member History Document](StructureDefinition-fr-family-member-history-document.md) and [ServiceRequest - FR Service Request Document](StructureDefinition-fr-service-request-document.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-interpretation-extension)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-interpretation-extension)
 
 ### Formal Views of Extension Content
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-interpretation-ex
   "name" : "FRInterpretationExtension",
   "title" : "FR Interpretation Extension",
   "status" : "draft",
-  "date" : "2026-01-28T14:36:08+00:00",
+  "date" : "2026-02-05T08:09:31+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

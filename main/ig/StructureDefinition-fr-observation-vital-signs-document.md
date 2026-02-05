@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-vital-signs-document | *Version*:0.1.0 |
-| Draft as of 2026-01-28 | *Computable Name*:FRObservationVitalSignsDocument |
+| Draft as of 2026-02-05 | *Computable Name*:FRObservationVitalSignsDocument |
 
  
 * FRObservationVitalSignsDocument permet d’indiquer les informations détaillées relatives à une mesure clinique spécifique.
@@ -18,9 +18,9 @@
 
 **Utilisations:**
 
-* Référer à ce Profil: [Observation - FR Observation Vital Signs Panel Document](StructureDefinition-fr-Observation-vital-signs-panel-document.md)
+* Référence ce Profil: [Observation - FR Observation Vital Signs Panel Document](StructureDefinition-fr-Observation-vital-signs-panel-document.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-observation-vital-signs-document)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-observation-vital-signs-document)
 
 ### Formal Views of Profile Content
 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-observation-vital
   "name" : "FRObservationVitalSignsDocument",
   "title" : "Observation - FR Observation Vital Signs Document",
   "status" : "draft",
-  "date" : "2026-01-28T14:36:08+00:00",
+  "date" : "2026-02-05T08:09:31+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-method-extension | *Version*:0.1.0 |
-| Draft as of 2026-01-28 | *Computable Name*:FRMethodExtension |
+| Draft as of 2026-02-05 | *Computable Name*:FRMethodExtension |
 
 Extension permettant d’indiquer la méthode utilisée : techniques biologiques (ex. : titration, agglutination…), techniques d’imagerie dans les demandes d’examen (ultrasound, tomographie, IRM…), des méthodes de mesure spécifiques, etc.
 
@@ -19,9 +19,9 @@ Extension permettant d’indiquer la méthode utilisée : techniques biologiques
 
 **Utilisations:**
 
-* Utiliser ce Extension: [FamilyMemberHistory - FR Family Member History Document](StructureDefinition-fr-family-member-history-document.md) and [ServiceRequest - FR Service Request Document](StructureDefinition-fr-service-request-document.md)
+* Utilise ce/t/te Extension: [FamilyMemberHistory - FR Family Member History Document](StructureDefinition-fr-family-member-history-document.md) and [ServiceRequest - FR Service Request Document](StructureDefinition-fr-service-request-document.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-method-extension)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-method-extension)
 
 ### Formal Views of Extension Content
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-method-extension.
   "name" : "FRMethodExtension",
   "title" : "FR Method Extension",
   "status" : "draft",
-  "date" : "2026-01-28T14:36:08+00:00",
+  "date" : "2026-02-05T08:09:31+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

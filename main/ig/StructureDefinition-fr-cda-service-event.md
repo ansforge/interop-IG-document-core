@@ -9,16 +9,16 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-service-event | *Version*:0.1.0 |
-| Draft as of 2026-01-28 | *Computable Name*:FRCDAServiceEvent |
+| Draft as of 2026-02-05 | *Computable Name*:FRCDAServiceEvent |
 
  
 L’élément de l’en-tête du CDA serviceEvent permet de représenter un évènement (acte, traitement, diagnostic, etc…) décrit dans le document. L’occurrence de documentationOf/serviceEvent contenant les données de l’évènement documenté principal doit inclure un élément effectiveTime et un élément performer renseignés, sans recours à l’attribut nullFlavor. 
 
 **Utilisations:**
 
-* Utiliser ce Profil de modèle logique: [CDA - documentationOf](StructureDefinition-fr-cda-documentation-of.md)
+* Utilise ce/t/te Profil de modèle logique: [CDA - documentationOf](StructureDefinition-fr-cda-documentation-of.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-service-event)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-service-event)
 
 ### Formal Views of Profile Content
 
@@ -70,7 +70,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-service-event
   "name" : "FRCDAServiceEvent",
   "title" : "CDA - serviceEvent",
   "status" : "draft",
-  "date" : "2026-01-28T14:36:08+00:00",
+  "date" : "2026-02-05T08:09:31+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

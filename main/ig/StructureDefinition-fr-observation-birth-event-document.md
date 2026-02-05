@@ -9,16 +9,16 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-birth-event-document | *Version*:0.1.0 |
-| Draft as of 2026-01-28 | *Computable Name*:FRObservationBirthEventDocument |
+| Draft as of 2026-02-05 | *Computable Name*:FRObservationBirthEventDocument |
 
  
 FRObservationBirthEventDocument est un profil qui permet de rassembler les observations relatives à une naissance. 
 
 **Utilisations:**
 
-* Référer à ce Profil: [Observation - FR Observation Pregnancy History Document](StructureDefinition-fr-observation-pregnancy-history-document.md) and [List - FR Pregnancy History Document](StructureDefinition-fr-pregnancy-history-document.md)
+* Référence ce Profil: [Observation - FR Observation Pregnancy History Document](StructureDefinition-fr-observation-pregnancy-history-document.md) and [List - FR Pregnancy History Document](StructureDefinition-fr-pregnancy-history-document.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-observation-birth-event-document)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-observation-birth-event-document)
 
 ### Formal Views of Profile Content
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-observation-birth
   "name" : "FRObservationBirthEventDocument",
   "title" : "Observation - FR Observation Birth Event Document",
   "status" : "draft",
-  "date" : "2026-01-28T14:36:08+00:00",
+  "date" : "2026-02-05T08:09:31+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

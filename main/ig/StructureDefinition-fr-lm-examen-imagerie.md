@@ -9,16 +9,16 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-examen-imagerie | *Version*:0.1.0 |
-| Draft as of 2026-01-28 | *Computable Name*:FRLMExamenImagerie |
+| Draft as of 2026-02-05 | *Computable Name*:FRLMExamenImagerie |
 
  
 DICOM Examen Imagerie 
 
 **Utilisations:**
 
-* Utiliser ce Modèle logique: [Modèle logique métier - FR LM Object Catalog](StructureDefinition-fr-lm-object-catalog.md)
+* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Object Catalog](StructureDefinition-fr-lm-object-catalog.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-examen-imagerie)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-examen-imagerie)
 
 ### Formal Views of Profile Content
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-examen-imageri
   "name" : "FRLMExamenImagerie",
   "title" : "Modèle logique métier - FR LM Examen Imagerie",
   "status" : "draft",
-  "date" : "2026-01-28T14:36:08+00:00",
+  "date" : "2026-02-05T08:09:31+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

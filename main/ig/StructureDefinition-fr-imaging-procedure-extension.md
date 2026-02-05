@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-imaging-procedure-extension | *Version*:0.1.0 |
-| Draft as of 2026-01-28 | *Computable Name*:FRImagingProcedureExtension |
+| Draft as of 2026-02-05 | *Computable Name*:FRImagingProcedureExtension |
 
 Imaging procedure used for the imaging acquisition
 
@@ -19,9 +19,9 @@ Imaging procedure used for the imaging acquisition
 
 **Utilisations:**
 
-* Utiliser ce Extension: [DiagnosticReport - FR Diagnostic Report Imaging Document](StructureDefinition-fr-diagnostic-report-imaging-document.md)
+* Utilise ce/t/te Extension: [DiagnosticReport - FR Diagnostic Report Imaging Document](StructureDefinition-fr-diagnostic-report-imaging-document.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-imaging-procedure-extension)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-imaging-procedure-extension)
 
 ### Formal Views of Extension Content
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-imaging-procedure
   "name" : "FRImagingProcedureExtension",
   "title" : "FR Imaging Procedure Extension",
   "status" : "draft",
-  "date" : "2026-01-28T14:36:08+00:00",
+  "date" : "2026-02-05T08:09:31+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

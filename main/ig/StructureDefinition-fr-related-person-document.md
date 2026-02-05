@@ -9,17 +9,17 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-related-person-document | *Version*:0.1.0 |
-| Draft as of 2026-01-28 | *Computable Name*:FRRelatedPersonDocument |
+| Draft as of 2026-02-05 | *Computable Name*:FRRelatedPersonDocument |
 
  
 Ce profil représente l’informateur non professionnel. 
 
 **Utilisations:**
 
-* Utiliser ce Profil: [FR Bundle Document](StructureDefinition-fr-bundle-document.md)
-* Référer à ce Profil: [FR Actor Extension](StructureDefinition-fr-actor-extension.md), [FR Composition Document](StructureDefinition-fr-composition-document.md) and [Procedure - FR Procedure Act Document](StructureDefinition-fr-procedure-act-document.md)
+* Utilise ce/t/te Profil: [FR Bundle Document](StructureDefinition-fr-bundle-document.md)
+* Référence ce Profil: [FR Actor Extension](StructureDefinition-fr-actor-extension.md), [FR Composition Document](StructureDefinition-fr-composition-document.md) and [Procedure - FR Procedure Act Document](StructureDefinition-fr-procedure-act-document.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-related-person-document)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-related-person-document)
 
 ### Formal Views of Profile Content
 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-related-person-do
   "name" : "FRRelatedPersonDocument",
   "title" : "FR RelatedPerson Document",
   "status" : "draft",
-  "date" : "2026-01-28T14:36:08+00:00",
+  "date" : "2026-02-05T08:09:31+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

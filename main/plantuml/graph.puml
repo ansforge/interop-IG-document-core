@@ -1747,6 +1747,7 @@ package IG #DDDDDD{
              fr-lm-evaluation.description => [1..1]
              fr-lm-evaluation.statut => [1..1]
              fr-lm-evaluation.date => [1..1]
+             fr-lm-evaluation.valeur => [1..1]
              fr-lm-evaluation.interpretation => [0..1]
              fr-lm-evaluation.evaluateur => [0..1]
              fr-lm-evaluation.auteurEvaluation => [0..1]
@@ -1823,6 +1824,7 @@ package IG #DDDDDD{
              fr-lm-exposition-radiations.sousSection => [None..0]
              fr-lm-exposition-radiations.entree.autorisationExposition => [1..1]
              fr-lm-exposition-radiations.entree.quantiteExposition => [0..*]
+             fr-lm-exposition-radiations.entree.administrationRadiopharmaceutique => [0..1]
         } 
 
         class FRLMFacteursDeRisqueProfessionnelsNonCode{
@@ -1856,7 +1858,6 @@ package IG #DDDDDD{
              fr-lm-group-de-questionnaires-devaluation.code => [1..1]
              fr-lm-group-de-questionnaires-devaluation.statut => [1..1]
              fr-lm-group-de-questionnaires-devaluation.horodatage => [1..1]
-             fr-lm-group-de-questionnaires-devaluation.valeur => [1..1]
              fr-lm-group-de-questionnaires-devaluation.evaluation => [1..*]
         } 
 
@@ -1865,6 +1866,9 @@ package IG #DDDDDD{
              fr-lm-habitus-mode-de-vie-entree => [None..None]
              fr-lm-habitus-mode-de-vie-entree.identifiant => [1..1]
              fr-lm-habitus-mode-de-vie-entree.code => [1..1]
+             fr-lm-habitus-mode-de-vie-entree.code.precision => [0..1]
+             fr-lm-habitus-mode-de-vie-entree.code.precision.name => [0..1]
+             fr-lm-habitus-mode-de-vie-entree.code.precision.value => [0..1]
              fr-lm-habitus-mode-de-vie-entree.description => [1..1]
              fr-lm-habitus-mode-de-vie-entree.statut => [1..1]
              fr-lm-habitus-mode-de-vie-entree.horodatage => [0..1]
@@ -2120,6 +2124,23 @@ package IG #DDDDDD{
              fr-lm-observation-grossesse.statut => [1..1]
              fr-lm-observation-grossesse.date => [1..1]
              fr-lm-observation-grossesse.resultat => [1..1]
+        } 
+
+        class FRLMObservationResult{
+
+             fr-lm-observation-result => [None..None]
+             fr-lm-observation-result.identifiant => [1..1]
+             fr-lm-observation-result.code => [1..1]
+             fr-lm-observation-result.description => [1..1]
+             fr-lm-observation-result.statut => [1..1]
+             fr-lm-observation-result.date => [1..1]
+             fr-lm-observation-result.valeur => [1..1]
+             fr-lm-observation-result.interpretation => [0..1]
+             fr-lm-observation-result.site => [0..1]
+             fr-lm-observation-result.auteur => [0..*]
+             fr-lm-observation-result.intervalleReference => [0..*]
+             fr-lm-observation-result.commentaires => [0..*]
+             fr-lm-observation-result.demandeExamen => [0..*]
         } 
 
         class FRLMObservation{
@@ -2883,9 +2904,9 @@ package IG #DDDDDD{
              fr-lm-technique-imagerie.date => [0..1]
              fr-lm-technique-imagerie.modaliteAcquisition => [1..*]
              fr-lm-technique-imagerie.lateralite => [0..1]
-             fr-lm-technique-imagerie.lateralite.topographique => [0..1]
-             fr-lm-technique-imagerie.lateralite.topographique.nom => [1..1]
-             fr-lm-technique-imagerie.lateralite.topographique.valeur => [1..1]
+             fr-lm-technique-imagerie.lateralite.precisionTopographique => [0..1]
+             fr-lm-technique-imagerie.lateralite.precisionTopographique.nom => [1..1]
+             fr-lm-technique-imagerie.lateralite.precisionTopographique.valeur => [1..1]
              fr-lm-technique-imagerie.participant => [0..1]
         } 
 
@@ -3308,6 +3329,7 @@ package IG #DDDDDD{
              Observation.value[x] => [1..None]
              Observation.interpretation => [None..1]
              Observation.note => [None..None]
+             Observation.bodySite => [None..None]
              Observation.method => [None..None]
         } 
 
@@ -3359,6 +3381,7 @@ package IG #DDDDDD{
              Observation.value[x] => [1..None]
              Observation.interpretation => [None..1]
              Observation.note => [None..None]
+             Observation.bodySite => [None..None]
              Observation.method => [None..None]
         } 
 
@@ -3382,6 +3405,7 @@ package IG #DDDDDD{
              Observation.value[x] => [1..None]
              Observation.interpretation => [None..1]
              Observation.note => [None..None]
+             Observation.bodySite => [None..None]
              Observation.method => [None..None]
         } 
 
@@ -3467,6 +3491,7 @@ package IG #DDDDDD{
              Observation.value[x] => [1..None]
              Observation.interpretation => [None..1]
              Observation.note => [None..None]
+             Observation.bodySite => [None..None]
              Observation.method => [None..None]
         } 
 
@@ -3487,6 +3512,7 @@ package IG #DDDDDD{
              Observation.value[x] => [1..None]
              Observation.interpretation => [None..1]
              Observation.note => [None..None]
+             Observation.bodySite => [None..None]
              Observation.method => [None..None]
         } 
 
@@ -3507,6 +3533,7 @@ package IG #DDDDDD{
              Observation.value[x] => [1..None]
              Observation.interpretation => [None..1]
              Observation.note => [None..None]
+             Observation.bodySite => [None..None]
              Observation.method => [None..None]
         } 
 
@@ -3543,6 +3570,7 @@ package IG #DDDDDD{
              Observation.value[x] => [1..None]
              Observation.interpretation => [None..1]
              Observation.note => [None..None]
+             Observation.bodySite => [None..None]
              Observation.method => [None..None]
         } 
 
@@ -3604,6 +3632,7 @@ package IG #DDDDDD{
              Observation.value[x] => [1..None]
              Observation.interpretation => [None..1]
              Observation.note => [None..None]
+             Observation.bodySite => [None..None]
              Observation.method => [None..None]
              Observation.referenceRange => [None..None]
         } 
@@ -3673,6 +3702,7 @@ package IG #DDDDDD{
 
              Observation.identifier => [1..None]
              Observation.status => [None..None]
+             Observation.code => [None..None]
              Observation.effective[x] => [1..None]
              Observation.effective[x]:effectiveDateTime => [1..1]
              Observation.hasMember => [1..None]
@@ -3695,6 +3725,7 @@ package IG #DDDDDD{
              Observation.value[x] => [1..None]
              Observation.interpretation => [None..1]
              Observation.note => [None..None]
+             Observation.bodySite => [None..None]
              Observation.method => [None..None]
         } 
 
@@ -3735,6 +3766,7 @@ package IG #DDDDDD{
              Observation.value[x] => [1..None]
              Observation.interpretation => [None..1]
              Observation.note => [None..None]
+             Observation.bodySite => [None..None]
              Observation.method => [None..None]
         } 
 
@@ -3868,7 +3900,7 @@ package IG #DDDDDD{
              RelatedPerson.name.given => [None..1]
         } 
 
-        class FRSeviceRequestDocument{
+        class FRServiceRequestDocument{
 
              ServiceRequest.extension => [None..None]
              ServiceRequest.extension:interpretation => <&plus>[0..1]
@@ -4010,9 +4042,9 @@ package IG #DDDDDD{
      FRProcedureActDocument -[#black,dashed,thickness=2]-> FRActorExtension
      FRProcedureActDocument -[#black,dashed,thickness=2]-> FRActorExtension
      FRProcedureActDocument -[#black,dashed,thickness=2]-> FRActorExtension
-     FRSeviceRequestDocument -[#black,dashed,thickness=2]-> FRInterpretationExtension
-     FRSeviceRequestDocument -[#black,dashed,thickness=2]-> FRMethodExtension
-     FRSeviceRequestDocument -[#black,dashed,thickness=2]-> FRActorExtension
+     FRServiceRequestDocument -[#black,dashed,thickness=2]-> FRInterpretationExtension
+     FRServiceRequestDocument -[#black,dashed,thickness=2]-> FRMethodExtension
+     FRServiceRequestDocument -[#black,dashed,thickness=2]-> FRActorExtension
 
         class FRActorExtension{
 
@@ -4796,6 +4828,10 @@ package "Ressources de base" #palegreen {
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
+    class095a1b43effec73955e31e790438de49 --> FRLMObservationResult
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
     class095a1b43effec73955e31e790438de49 --> FRLMObservation
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
@@ -5248,7 +5284,7 @@ package "Ressources de base" #palegreen {
 
  class "ServiceRequest" as  class36a80548d09d2e7c003ede674799a03a 
 
-    class36a80548d09d2e7c003ede674799a03a --> FRSeviceRequestDocument
+    class36a80548d09d2e7c003ede674799a03a --> FRServiceRequestDocument
 
  class "Specimen" as  class8dc6383321d3c88f6b3d533921197caa 
 

@@ -9,7 +9,5 @@
 ","Statut de l'entrée","Statut de l'entrée","","","","","","","","","",,,,,"",,,,"fr-lm-group-de-questionnaires-devaluation.statut",1,1,"",""
 "fr-lm-group-de-questionnaires-devaluation.horodatage","fr-lm-group-de-questionnaires-devaluation.horodatage","","","",1,1,"","","","dateTime {[]} {[]}
 ","Horodatage de l'entrée","Horodatage de l'entrée","","","","","","","","","",,,,,"",,,,"fr-lm-group-de-questionnaires-devaluation.horodatage",1,1,"",""
-"fr-lm-group-de-questionnaires-devaluation.valeur","fr-lm-group-de-questionnaires-devaluation.valeur","","","",1,1,"","","","CodeableConcept {[]} {[]}
-","Valeur de l'observation","Valeur de l'observation","","","","","","","","","",,,,,"",,,,"fr-lm-group-de-questionnaires-devaluation.valeur",1,1,"",""
 "fr-lm-group-de-questionnaires-devaluation.evaluation","fr-lm-group-de-questionnaires-devaluation.evaluation","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-evaluation {[]} {[]}
 ","Évaluation","Évaluation","","","","","","","","","",,,,,"",,,,"fr-lm-group-de-questionnaires-devaluation.evaluation",1,*,"",""

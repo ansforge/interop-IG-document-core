@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-not-covered-extension | *Version*:0.1.0 |
-| Draft as of 2026-01-28 | *Computable Name*:FRNotCoveredExtension |
+| Draft as of 2026-02-05 | *Computable Name*:FRNotCoveredExtension |
 
 Extension permettant d’indiquer si le traitement est non remboursable.
 
@@ -19,9 +19,9 @@ Extension permettant d’indiquer si le traitement est non remboursable.
 
 **Utilisations:**
 
-* Utiliser ce Extension: [DeviceRequest - FR Device request Document](StructureDefinition-fr-device-request-document.md), [DeviceUseStatement - FR Device Use Statement Document](StructureDefinition-fr-device-use-statement-document.md) and [MedicationRequest - FR Medication Request Document](StructureDefinition-fr-medication-request-document.md)
+* Utilise ce/t/te Extension: [DeviceRequest - FR Device request Document](StructureDefinition-fr-device-request-document.md), [DeviceUseStatement - FR Device Use Statement Document](StructureDefinition-fr-device-use-statement-document.md) and [MedicationRequest - FR Medication Request Document](StructureDefinition-fr-medication-request-document.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-not-covered-extension)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-not-covered-extension)
 
 ### Formal Views of Extension Content
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-not-covered-exten
   "name" : "FRNotCoveredExtension",
   "title" : "FR Not Covered Extension",
   "status" : "draft",
-  "date" : "2026-01-28T14:36:08+00:00",
+  "date" : "2026-02-05T08:09:31+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

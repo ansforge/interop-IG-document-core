@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ImplementationGuide/ans.document.fr.core | *Version*:0.1.0 |
-| Draft as of 2026-01-28 | *Computable Name*:FRDocumentCore |
+| Draft as of 2026-02-05 | *Computable Name*:FRDocumentCore |
 
  **Guide de mise en œuvre des documents dématérialisés produits en France dans le domaine sanitaire et le domaine médico-social.**
  Implementation guides of dematerialized health and medico-social documents produced in France. 
@@ -72,7 +72,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
 
 * ISO maintains the copyright on the country codes, and controls its use carefully. For further details see the ISO 3166 web page: [https://www.iso.org/iso-3166-country-codes.html](https://www.iso.org/iso-3166-country-codes.html)
 
-* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/6.5.0/CodeSystem-ISO3166Part1.html): [ConceptMap/FRActLMCDAFHIR](ConceptMap-FRActLMCDAFHIR.md), [ConceptMap/FRAdvanceDirectiveLMCDAFHIR](ConceptMap-FRAdvanceDirectiveLMCDAFHIR.md)... Show 346 more, [ConceptMap/FRAdverseEventLMCDAFHIR](ConceptMap-FRAdverseEventLMCDAFHIR.md), [ConceptMap/FRAllergyIntoleranceLMCDAFHIR](ConceptMap-FRAllergyIntoleranceLMCDAFHIR.md), [ConceptMap/FRCarePlanLMCDAFHIR](ConceptMap-FRCarePlanLMCDAFHIR.md), [ConceptMap/FRConditionLMCDAFHIR](ConceptMap-FRConditionLMCDAFHIR.md), [ConceptMap/FRDeviceRequestLMCDAFHIR](ConceptMap-FRDeviceRequestLMCDAFHIR.md), [ConceptMap/FRDeviceUseStatementLMCDAFHIR](ConceptMap-FRDeviceUseStatementLMCDAFHIR.md), [ConceptMap/FRDiagnosticReportLMCDAFHIR](ConceptMap-FRDiagnosticReportLMCDAFHIR.md), [ConceptMap/FRDocumentReferenceLMCDAFHIR](ConceptMap-FRDocumentReferenceLMCDAFHIR.md), [ConceptMap/FREncounterLMCDAFHIR](ConceptMap-FREncounterLMCDAFHIR.md), [ConceptMap/FRFamilyMemberHistoriesLMCDAFHIR](ConceptMap-FRFamilyMemberHistoriesLMCDAFHIR.md), [ConceptMap/FRFamilyMemberHistoryLMCDAFHIR](ConceptMap-FRFamilyMemberHistoryLMCDAFHIR.md), [ConceptMap/FRImagingStudyLMCDAFHIR](ConceptMap-FRImagingStudyLMCDAFHIR.md), [ConceptMap/FRImmunizationLMCDAFHIR](ConceptMap-FRImmunizationLMCDAFHIR.md), [ConceptMap/FRImmunizationRecommendationLMCDAFHIR](ConceptMap-FRImmunizationRecommendationLMCDAFHIR.md), [ConceptMap/FRLaboratoryBatteryResultsLMCDAFHIR](ConceptMap-FRLaboratoryBatteryResultsLMCDAFHIR.md), [ConceptMap/FRLaboratoryIsolateResultsLMCDAFHIR](ConceptMap-FRLaboratoryIsolateResultsLMCDAFHIR.md), [ConceptMap/FRLaboratoryResultClinicalElementLMCDAFHIR](ConceptMap-FRLaboratoryResultClinicalElementLMCDAFHIR.md), [ConceptMap/FRLaboratoryResultsLMCDAFHIR](ConceptMap-FRLaboratoryResultsLMCDAFHIR.md), [ConceptMap/FRMediaLMCDAFHIR](ConceptMap-FRMediaLMCDAFHIR.md), [ConceptMap/FRMedicationAdministrationLMCDAFHIR](ConceptMap-FRMedicationAdministrationLMCDAFHIR.md), [ConceptMap/FRMedicationDispenseLMCDAFHIR](ConceptMap-FRMedicationDispenseLMCDAFHIR.md), [ConceptMap/FRMedicationLMCDAFHIR](ConceptMap-FRMedicationLMCDAFHIR.md), [ConceptMap/FRMedicationRequestLMCDAFHIR](ConceptMap-FRMedicationRequestLMCDAFHIR.md), [ConceptMap/FRMedicationStatementLMCDAFHIR](ConceptMap-FRMedicationStatementLMCDAFHIR.md), [ConceptMap/FRMedicationsCombinaisonLMCDAFHIR](ConceptMap-FRMedicationsCombinaisonLMCDAFHIR.md), [ConceptMap/FRMedicationsCombinaisonRequestLMCDAFHIR](ConceptMap-FRMedicationsCombinaisonRequestLMCDAFHIR.md), [ConceptMap/FRObservationAdministrationBloodDerivativesLMCDAFHIR](ConceptMap-FRObservationAdministrationBloodDerivativesLMCDAFHIR.md), [ConceptMap/FRObservationBirthEventLMCDAFHIR](ConceptMap-FRObservationBirthEventLMCDAFHIR.md), [ConceptMap/FRObservationBloodProductTransfusionLMCDAFHIR](ConceptMap-FRObservationBloodProductTransfusionLMCDAFHIR.md), [ConceptMap/FRObservationMedicalSummaryLMCDAFHIR](ConceptMap-FRObservationMedicalSummaryLMCDAFHIR.md), [ConceptMap/FRObservationMicroorganismDetectionLMCDAFHIR](ConceptMap-FRObservationMicroorganismDetectionLMCDAFHIR.md), [ConceptMap/FRObservationMultiresistantMicroorganismsIdentificationLMCDAFHIR](ConceptMap-FRObservationMultiresistantMicroorganismsIdentificationLMCDAFHIR.md), [ConceptMap/FRObservationPregnancyHistoryLMCDAFHIR](ConceptMap-FRObservationPregnancyHistoryLMCDAFHIR.md), [ConceptMap/FRObservationPregnancyLMCDAFHIR](ConceptMap-FRObservationPregnancyLMCDAFHIR.md), [FRAccessionNumberIdentifierDocument](StructureDefinition-fr-accession-number-identifier-document.md), [FRActorExtension](StructureDefinition-fr-actor-extension.md), [FRAdvanceDirectiveDocument](StructureDefinition-fr-advance-directive-document.md), [FRAdverseEventDocument](StructureDefinition-fr-adverse-event-document.md), [FRAllergyIntoleranceDocument](StructureDefinition-fr-allergie-intolerance-document.md), [FRAuthorTimeExtension](StructureDefinition-fr-author-time-extension.md), [FRBodyStructureDocument](StructureDefinition-fr-body-structure-document.md), [FRBundleDocument](StructureDefinition-fr-bundle-document.md), [FRCDAAssignedAuthor](StructureDefinition-fr-cda-assigned-author.md), [FRCDAAssignedCustodian](StructureDefinition-fr-cda-assigned-custodian.md), [FRCDAAssignedEntity](StructureDefinition-fr-cda-assigned-entity.md), [FRCDAAssignedPerson](StructureDefinition-fr-cda-assigned-person.md), [FRCDAAssociatedEntity](StructureDefinition-fr-cda-associated-entity.md), [FRCDAAuthenticator](StructureDefinition-fr-cda-authenticator.md), [FRCDAAuthor](StructureDefinition-fr-cda-author.md), [FRCDAAuthoringDevice](StructureDefinition-fr-cda-authoring-device.md), [FRCDAAuthorization](StructureDefinition-fr-cda-authorization.md), [FRCDAClinicalDocument](StructureDefinition-fr-cda-clinical-document.md), [FRCDAComponentOf](StructureDefinition-fr-cda-component-of.md), [FRCDACustodian](StructureDefinition-fr-cda-custodian.md), [FRCDADataEnterer](StructureDefinition-fr-cda-data-enterer.md), [FRCDADocumentationOf](StructureDefinition-fr-cda-documentation-of.md), [FRCDAEncompassingEncounter](StructureDefinition-fr-cda-encompassing-encounter.md), [FRCDAEncounterParticipant](StructureDefinition-fr-cda-encounter-participant.md), [FRCDAHealthCareFacility](StructureDefinition-fr-cda-health-care-facility.md), [FRCDAInFulfillmentOf](StructureDefinition-fr-cda-inFulfillment-of.md), [FRCDAInformant](StructureDefinition-fr-cda-informant.md), [FRCDAInformationRecipient](StructureDefinition-fr-cda-information-recipient.md), [FRCDAIntendedRecipient](StructureDefinition-fr-cda-intended-recipient.md), [FRCDALegalAuthenticator](StructureDefinition-fr-cda-legal-authenticator.md), [FRCDAName](StructureDefinition-fr-cda-name.md), [FRCDAOrder](StructureDefinition-fr-cda-order.md), [FRCDAParentDocument](StructureDefinition-fr-cda-parent-document.md), [FRCDAParticipant](StructureDefinition-fr-cda-participant.md), [FRCDAPatient](StructureDefinition-fr-cda-patient.md), [FRCDAPatientRole](StructureDefinition-fr-cda-patient-role.md), [FRCDAPerformer](StructureDefinition-fr-cda-performer.md), [FRCDARecordTarget](StructureDefinition-fr-cda-record-target.md), [FRCDARelatedDocument](StructureDefinition-fr-cda-related-document.md), [FRCDARelatedEntity](StructureDefinition-fr-cda-related-entity.md), [FRCDARepresentedCustodianOrganization](StructureDefinition-fr-cda-represented-custodian-organization.md), [FRCDARepresentedOrganization](StructureDefinition-fr-cda-represented-organization.md), [FRCDAServiceEvent](StructureDefinition-fr-cda-service-event.md), [FRCarePlanDocument](StructureDefinition-fr-care-plan-document.md), [FRComparisonStudiesExtension](StructureDefinition-fr-comparison-studies-extension.md), [FRCompositionDocument](StructureDefinition-fr-composition-document.md), [FRConditionDocument](StructureDefinition-fr-condition-document.md), [FRDeviceAuteurDocument](StructureDefinition-fr-device-auteur-document.md), [FRDeviceRequestDocument](StructureDefinition-fr-device-request-document.md), [FRDeviceUseStatementDocument](StructureDefinition-fr-device-use-statement-document.md), [FRDiagnosticReportBIOChapterDocument](StructureDefinition-fr-diagnostic-report-bio-chapter-document.md), [FRDiagnosticReportDocument](StructureDefinition-fr-diagnostic-report-document.md), [FRDiagnosticReportImagingDocument](StructureDefinition-fr-diagnostic-report-imaging-document.md), [FRDocumentCore](index.md), [FRDocumentReferenceDocument](StructureDefinition-fr-document-reference-document.md), [FREncounterCareDocument](StructureDefinition-fr-encounter-care-document.md), [FREncounterDocument](StructureDefinition-fr-encounter-document.md), [FREndpointWadoDocument](StructureDefinition-fr-endpoint-wado-document.md), [FRFamilyMemberHistoryBodySiteExtension](StructureDefinition-fr-family-member-history-body-site-extension.md), [FRFamilyMemberHistoryDocument](StructureDefinition-fr-family-member-history-document.md), [FRHumanNameDocument](StructureDefinition-fr-human-name-document.md), [FRImagingProcedureExtension](StructureDefinition-fr-imaging-procedure-extension.md), [FRImagingStudyDocument](StructureDefinition-fr-imaging-study-document.md), [FRImmunizationDocument](StructureDefinition-fr-immunization-document.md), [FRImmunizationRecommendationDocument](StructureDefinition-fr-immunization-recommendation-document.md), [FRImmunizationTypeExtension](StructureDefinition-fr-immunization-type-extension.md), [FRInterpretationExtension](StructureDefinition-fr-interpretation-extension.md), [FRLMAccidentsTransfusionnels](StructureDefinition-fr-lm-accidents-transfusionnels.md), [FRLMActe](StructureDefinition-fr-lm-acte.md), [FRLMActeImagerie](StructureDefinition-fr-lm-acte-imagerie.md), [FRLMActeSubstitution](StructureDefinition-fr-lm-acte-substitution.md), [FRLMAddendum](StructureDefinition-fr-lm-addendum.md), [FRLMAdministrationDeDerivesDuSang](StructureDefinition-fr-lm-administration-de-derives-du-sang.md), [FRLMAdministrationProduitDeSante](StructureDefinition-fr-lm-administration-produit-de-sante.md), [FRLMAllergieOuHypersensibilite](StructureDefinition-fr-lm-allergie-ou-hypersensibilite.md), [FRLMAllergiesEtHypersensibilites](StructureDefinition-fr-lm-allergies-et-hypersensibilites.md), [FRLMAntecedentFamilialObserve](StructureDefinition-fr-lm-antecedent-familial-observe.md), [FRLMAntecedentsFamiliaux](StructureDefinition-fr-lm-antecedents-familiaux.md), [FRLMAntecedentsFamiliauxEntree](StructureDefinition-fr-lm-antecedents-familiaux-entree.md), [FRLMAntecedentsMedicaux](StructureDefinition-fr-lm-antecedents-medicaux.md), [FRLMAuteur](StructureDefinition-fr-lm-auteur.md), [FRLMAuteurAPSR](StructureDefinition-fr-lm-auteur-apsr.md), [FRLMAutorisationExposition](StructureDefinition-fr-lm-autorisation-exposition.md), [FRLMAutorisationSubstitution](StructureDefinition-fr-lm-autorisation-substitution.md), [FRLMBatterieExamensBiologieMedicale](StructureDefinition-fr-lm-batterie-examens-biologie-medicale.md), [FRLMCRBIOChapitre](StructureDefinition-fr-lm-cr-bio-chapitre.md), [FRLMCRBIOSousChapitre](StructureDefinition-fr-lm-cr-bio-sous-chapitre.md), [FRLMCertitude](StructureDefinition-fr-lm-certitude.md), [FRLMCodesAbarres](StructureDefinition-fr-lm-codes-a-barres.md), [FRLMCommentaireER](StructureDefinition-fr-lm-commentaire-er.md), [FRLMCommentaireNonCode](StructureDefinition-fr-lm-commentaire-non-code.md), [FRLMComparaisonExamensImagerie](StructureDefinition-fr-lm-comparaison-examens-imagerie.md), [FRLMComplicationsActe](StructureDefinition-fr-lm-complications-acte.md), [FRLMConclusionExamenImagerie](StructureDefinition-fr-lm-conclusion-examen-imagerie.md), [FRLMConsentement](StructureDefinition-fr-lm-consentement.md), [FRLMCorpsDocument](StructureDefinition-fr-lm-corps-document.md), [FRLMCriticite](StructureDefinition-fr-lm-criticite.md), [FRLMDemandeExamenImagerie](StructureDefinition-fr-lm-demande-examen-imagerie.md), [FRLMDemandeExamenOuSuivi](StructureDefinition-fr-lm-demande-examen-ou-suivi.md), [FRLMDestinatairePrevu](StructureDefinition-fr-lm-destinataire-prevu.md), [FRLMDirectiveAnticipee](StructureDefinition-fr-lm-directive-anticipee.md), [FRLMDirectivesAnticipees](StructureDefinition-fr-lm-directives-anticipees.md), [FRLMDispensationMedicaments](StructureDefinition-fr-lm-dispensation-medicaments.md), [FRLMDispositifMedical](StructureDefinition-fr-lm-dispositif-medical.md), [FRLMDispositifMedicalEntree](StructureDefinition-fr-lm-dispositif-medical-entree.md), [FRLMDispositifsMedicaux](StructureDefinition-fr-lm-dispositifs-medicaux.md), [FRLMDocumentAttache](StructureDefinition-fr-lm-document-attache.md), [FRLMDocumentDeReference](StructureDefinition-fr-lm-document-reference.md), [FRLMDocumentPDFCopie](StructureDefinition-fr-lm-document-pdf-copie.md), [FRLMDocumentsAjoutes](StructureDefinition-fr-lm-documents-ajoutes.md), [FRLMDoseAntigene](StructureDefinition-fr-lm-dose-antigene.md), [FRLMEchantillonPreleve](StructureDefinition-fr-lm-echantillon-preleve.md), [FRLMEducationPatient](StructureDefinition-fr-lm-education-patient.md), [FRLMEffetIndesirable](StructureDefinition-fr-lm-effet-indesirable.md), [FRLMEffetsIndesirables](StructureDefinition-fr-lm-effets-indesirables.md), [FRLMEnRapportAvecALD](StructureDefinition-fr-lm-en-rapport-avec-ald.md), [FRLMEnRapportAvecAccidentTravail](StructureDefinition-fr-lm-en-rapport-avec-accident-travail.md), [FRLMEnRapportAvecLaPrevention](StructureDefinition-fr-lm-en-rapport-avec-la-prevention.md), [FRLMEnteteDocument](StructureDefinition-fr-lm-entete-document.md), [FRLMEvaluation](StructureDefinition-fr-lm-evaluation.md), [FRLMEvaluationComposant](StructureDefinition-fr-lm-evaluation-composant.md), [FRLMEvaluationComposantN2](StructureDefinition-fr-lm-evaluation-composant-n2.md), [FRLMEvenement](StructureDefinition-fr-lm-evenement.md), [FRLMEvenementIndesirablePendantHospitalisation](StructureDefinition-fr-lm-evenement-indesirable-pendant-hospitalisation.md), [FRLMEvenementsIndesirablesSuiteAdministrationDerivesSang](StructureDefinition-fr-lm-evenements-indesirables-suite-administration-derives-sang.md), [FRLMEvolutionEffetIndesirable](StructureDefinition-fr-lm-evolution-effet-indesirable.md), [FRLMExamenImagerie](StructureDefinition-fr-lm-examen-imagerie.md), [FRLMExpositionRadiations](StructureDefinition-fr-lm-exposition-radiations.md), [FRLMFacteursDeRisqueProfessionnelsNonCode](StructureDefinition-fr-lm-facteurs-de-risque-professionnels-non-code.md), [FRLMFonctionsPhysiques](StructureDefinition-fr-lm-fonctions-physiques.md), [FRLMGraviteEffetIndesirable](StructureDefinition-fr-lm-gravite-effet-indesirable.md), [FRLMGroupDeQuestionnairesDevaluation](StructureDefinition-fr-lm-group-de-questionnaires-devaluation.md), [FRLMHabitusModeDeVie](StructureDefinition-fr-lm-habitus-mode-de-vie.md), [FRLMHabitusModeDeVieEntree](StructureDefinition-fr-lm-habitus-mode-de-vie-entree.md), [FRLMHistoriqueDesActes](StructureDefinition-fr-lm-historique-des-actes.md), [FRLMHistoriqueDesGrossesses](StructureDefinition-fr-lm-historique-des-grossesses.md), [FRLMHistoriqueGrossesse](StructureDefinition-fr-lm-historique-grossesse.md), [FRLMHorsAMM](StructureDefinition-fr-lm-hors-amm.md), [FRLMIdentificationDeMicroOrganismesMultiresistants](StructureDefinition-fr-lm-identification-de-micro-organismes-multiresistants.md), [FRLMImageIllustrative](StructureDefinition-fr-lm-image-illustrative.md), [FRLMImputabiliteEffetIndesirable](StructureDefinition-fr-lm-imputabilite-effet-indesirable.md), [FRLMInformantAPSR](StructureDefinition-fr-lm-informant-apsr.md), [FRLMInformateur](StructureDefinition-fr-lm-informateur.md), [FRLMInformationsCliniques](StructureDefinition-fr-lm-informations-cliniques.md), [FRLMInstructionAuPatient](StructureDefinition-fr-lm-instruction-au-patient.md), [FRLMInstructionsAuDispensateur](StructureDefinition-fr-lm-instructions-au-dispensateur.md), [FRLMInstructionsPatient](StructureDefinition-fr-lm-instructions-patient.md), [FRLMIsolatMicrobiologique](StructureDefinition-fr-lm-isolat-microbiologique.md), [FRLMLaboratoireExecutant](StructureDefinition-fr-lm-laboratoire-executant.md), [FRLMModaliteEntree](StructureDefinition-fr-lm-modalite-entree.md), [FRLMModaliteSortie](StructureDefinition-fr-lm-modalite-sortie.md), [FRLMNaissance](StructureDefinition-fr-lm-naissance.md), [FRLMNonRemboursable](StructureDefinition-fr-lm-non-remboursable.md), [FRLMNotesDispensateur](StructureDefinition-fr-lm-notes-dispensateur.md), [FRLMObjectCatalog](StructureDefinition-fr-lm-object-catalog.md), [FRLMObservation](StructureDefinition-fr-lm-observation.md), [FRLMObservationGrossesse](StructureDefinition-fr-lm-observation-grossesse.md), [FRLMOperateurSaisie](StructureDefinition-fr-lm-operateur-saisie.md), [FRLMParticipant](StructureDefinition-fr-lm-participant.md), [FRLMParticipantAPSR](StructureDefinition-fr-lm-participant-apsr.md), [FRLMParticipantCorps](StructureDefinition-fr-lm-participant-corps.md), [FRLMPatientSujetNonHumain](StructureDefinition-fr-lm-patient-sujet-non-humain.md), [FRLMPatientUsager](StructureDefinition-fr-lm-patient-usager.md), [FRLMPerformer](StructureDefinition-fr-lm-performer.md), [FRLMPeriodeDeRenouvellement](StructureDefinition-fr-lm-periode-de-renouvellement.md), [FRLMPersonneStructure](StructureDefinition-fr-lm-personne-structure.md), [FRLMPersonneStructureAuteur](StructureDefinition-fr-lm-personne-structure-auteur.md), [FRLMPlanSoins](StructureDefinition-fr-lm-plan-soins.md), [FRLMPointsDeVigilancesNonCode](StructureDefinition-fr-lm-points-de-vigilances-non-code.md), [FRLMPrelevement](StructureDefinition-fr-lm-prelevement.md), [FRLMPrescription](StructureDefinition-fr-lm-prescription.md), [FRLMPrescriptionDispositifsMedicaux](StructureDefinition-fr-lm-prescription-dispositifs-medicaux.md), [FRLMPrescriptionEntree](StructureDefinition-fr-lm-prescription-entree.md), [FRLMPrescriptionMedicaments](StructureDefinition-fr-lm-prescription-medicaments.md), [FRLMPriseEncharge](StructureDefinition-fr-lm-prise-en-charge.md), [FRLMProbleme](StructureDefinition-fr-lm-probleme.md), [FRLMProblemesActifs](StructureDefinition-fr-lm-problemes-actifs.md), [FRLMProduitSante](StructureDefinition-fr-lm-produit-sante.md), [FRLMQuantiteExposition](StructureDefinition-fr-lm-quantite-exposition.md), [FRLMQuantiteProduit](StructureDefinition-fr-lm-quantite-produit.md), [FRLMRaisonRecommandation](StructureDefinition-fr-lm-raison-recommandation.md), [FRLMRaisonRecommandationNonCode](StructureDefinition-fr-lm-raison-recommandation-non-code.md), [FRLMRangVaccination](StructureDefinition-fr-lm-rang-vaccination.md), [FRLMRechercheDeMicroOrganismes](StructureDefinition-fr-lm-recherche-de-micro-organismes.md), [FRLMReferenceInterne](StructureDefinition-fr-lm-reference-interne.md), [FRLMReferenceItemPlanTraitement](StructureDefinition-fr-lm-reference-item-plan-traitement.md), [FRLMReferenceItemPrescription](StructureDefinition-fr-lm-reference-item-prescription.md), [FRLMReferencesExternes](StructureDefinition-fr-lm-references-externes.md), [FRLMRencontre](StructureDefinition-fr-lm-rencontre.md), [FRLMResponsable](StructureDefinition-fr-lm-responsable.md), [FRLMResultatExamensBiologieElementCliniquePertinent](StructureDefinition-fr-lm-resultat-examens-biologie-element-clinique-pertinent.md), [FRLMResultats](StructureDefinition-fr-lm-resultats.md), [FRLMResultatsEntry](StructureDefinition-fr-lm-resultats-entree.md), [FRLMResultatsEvenements](StructureDefinition-fr-lm-resultats-evenements.md), [FRLMResultatsExamenImagerie](StructureDefinition-fr-lm-resultats-examen-imagerie.md), [FRLMResultatsExamens](StructureDefinition-fr-lm-resultats-examens.md), [FRLMResultatsExamensBiologieMedicale](StructureDefinition-fr-lm-resultats-examens-biologie-medicale.md), [FRLMResultatsExamensNonCode](StructureDefinition-fr-lm-resultats-examens-non-code.md), [FRLMResultatsLaboratoireBiologieSecondeIntention](StructureDefinition-fr-lm-resultats-laboratoire-biologie-seconde-intention.md), [FRLMSOPInstance](StructureDefinition-fr-lm-sop-instance.md), [FRLMSection](StructureDefinition-fr-lm-section.md), [FRLMSerieImagerie](StructureDefinition-fr-lm-serie-imagerie.md), [FRLMSeverite](StructureDefinition-fr-lm-severite.md), [FRLMSigneVital](StructureDefinition-fr-lm-signe-vital.md), [FRLMSigneVitalObserve](StructureDefinition-fr-lm-signe-vital-observe.md), [FRLMSignesVitaux](StructureDefinition-fr-lm-signes-vitaux.md), [FRLMStatut](StructureDefinition-fr-lm-statut.md), [FRLMStatutCliniquePatient](StructureDefinition-fr-lm-statut-clinique-patient.md), [FRLMStatutDocument](StructureDefinition-fr-lm-statut-document.md), [FRLMStatutDocumentEntree](StructureDefinition-fr-lm-statut-document-entree.md), [FRLMStatutFonctionnel](StructureDefinition-fr-lm-statut-fonctionnel.md), [FRLMStatutProbleme](StructureDefinition-fr-lm-statut-probleme.md), [FRLMStructureConservation](StructureDefinition-fr-lm-structure-conservation.md), [FRLMSujet](StructureDefinition-fr-lm-sujet.md), [FRLMSujetNonHumain](StructureDefinition-fr-lm-sujet-non-humain.md), [FRLMSyntheseMedicaleSejour](StructureDefinition-fr-lm-synthese-medicale-sejour.md), [FRLMSystemeStructureAuteur](StructureDefinition-fr-lm-systeme-structure-auteur.md), [FRLMTechniqueImagerie](StructureDefinition-fr-lm-technique-imagerie.md), [FRLMTraitement](StructureDefinition-fr-lm-traitement.md), [FRLMTraitementDispense](StructureDefinition-fr-lm-traitement-dispense.md), [FRLMTraitementPrescrit](StructureDefinition-fr-lm-traitement-prescrit.md), [FRLMTraitementPrescritSubordonne](StructureDefinition-fr-lm-traitement-prescrit-subordonne.md), [FRLMTraitementSortie](StructureDefinition-fr-lm-traitement-sortie.md), [FRLMTraitementSubordonne](StructureDefinition-fr-lm-traitement-subordonne.md), [FRLMTraitements](StructureDefinition-fr-lm-traitements.md), [FRLMTraitementsAdministres](StructureDefinition-fr-lm-traitements-administres.md), [FRLMTransfertDuPatient](StructureDefinition-fr-lm-transfert-du-patient.md), [FRLMTransfusionDeProduitsSanguins](StructureDefinition-fr-lm-transfusion-de-produits-sanguins.md), [FRLMVaccinRecommande](StructureDefinition-fr-lm-vaccin-recommande.md), [FRLMVaccination](StructureDefinition-fr-lm-vaccination.md), [FRLMVaccinations](StructureDefinition-fr-lm-vaccinations.md), [FRLMValidateur](StructureDefinition-fr-lm-validateur.md), [FRLocationDocument](StructureDefinition-fr-location-document.md), [FRMediaDocument](StructureDefinition-fr-media-document.md), [FRMedicationAdministrationDocument](StructureDefinition-fr-medication-administration-document.md), [FRMedicationAdministrationSequenceExtension](StructureDefinition-fr-medication-administration-sequence-extension.md), [FRMedicationDispenseDocument](StructureDefinition-fr-medication-dispense-document.md), [FRMedicationDocument](StructureDefinition-fr-medication-document.md), [FRMedicationRequestDocument](StructureDefinition-fr-medication-request-document.md), [FRMedicationRequestOutOfNomenclatureExtension](StructureDefinition-fr-medication-request-out-of-nomenclature-extension.md), [FRMedicationStatementDocument](StructureDefinition-fr-medication-statement-document.md), [FRMedicationsCombinaisonDocument](StructureDefinition-fr-medications-combinaison-document.md), [FRMethodExtension](StructureDefinition-fr-method-extension.md), [FRNotCoveredExtension](StructureDefinition-fr-not-covered-extension.md), [FRNumberOfFramesExtension](StructureDefinition-fr-number-of-frames-extension.md), [FRObservationAdministrationBloodDerivativesDocument](StructureDefinition-fr-observation-administration-blood-derivatives-document.md), [FRObservationAntenatalTestingAndSurveillanceBatteryDocument](StructureDefinition-fr-observation-antenatal-testing-surveillance-battery-document.md), [FRObservationBirthEventDocument](StructureDefinition-fr-observation-birth-event-document.md), [FRObservationBloodProductTransfusionDocument](StructureDefinition-fr-observation-blood-product-transfusion-document.md), [FRObservationContraIndicationsImagingDocument](StructureDefinition-fr-observation-contra-indications-document.md), [FRObservationLaboratoryReportResultsDocument](StructureDefinition-fr-observation-laboratory-report-results-document.md), [FRObservationMedicalSummaryDocument](StructureDefinition-fr-observation-medical-summary-document.md), [FRObservationMicroorganismDetectionDocument](StructureDefinition-fr-observation-microorganism-detection-document.md), [FRObservationMultiresistantMicroorganismsIdentificationDocument](StructureDefinition-fr-observation-multiresistant-microorganism-document.md), [FRObservationPainScoreDocument](StructureDefinition-fr-observation-pain-score-document.md), [FRObservationPregnancyDocument](StructureDefinition-fr-observation-pregnancy-document.md), [FRObservationPregnancyHistoryDocument](StructureDefinition-fr-observation-pregnancy-history-document.md), [FRObservationRadiationExposureDocument](StructureDefinition-fr-observation-radiation-exposure-document.md), [FRObservationResultDocument](StructureDefinition-fr-observation-result-document.md), [FRObservationSocialHistoryDocument](StructureDefinition-fr-observation-social-history-document.md), [FRObservationSurveyDocument](StructureDefinition-fr-observation-survey-document.md), [FRObservationSurveyPannelDocument](StructureDefinition-fr-observation-survey-pannel-document.md), [FRObservationTransfusionAccidentsDocument](StructureDefinition-fr-observation-transfusion-accidents-document.md), [FRObservationVitalSignsDocument](StructureDefinition-fr-observation-vital-signs-document.md), [FRObservationVitalSignsPanelDocument](StructureDefinition-fr-Observation-vital-signs-panel-document.md), [FRObservationWorkRelatedAccidentDocument](StructureDefinition-fr-observation-work-related-accident-document.md), [FROrganizationDocument](StructureDefinition-fr-organization-document.md), [FRPatientDocument](StructureDefinition-fr-patient-document.md), [FRPatientHistoryExtension](StructureDefinition-fr-patient-history-extension.md), [FRPatientINSDocument](StructureDefinition-fr-patient-ins-document.md), [FRPerformerEventExtension](StructureDefinition-fr-performer-event-extension.md), [FRPractitionerDocument](StructureDefinition-fr-practitioner-document.md), [FRPractitionerRoleDocument](StructureDefinition-fr-practitionerRole-document.md), [FRPregnancyHistoryDocument](StructureDefinition-fr-pregnancy-history-document.md), [FRProcedureActDocument](StructureDefinition-fr-procedure-act-document.md), [FRProcedureDifficultyExtension](StructureDefinition-fr-procedure-difficulty-extension.md), [FRProcedureImagingDocument](StructureDefinition-fr-procedure-imaging-document.md), [FRProcedurePriorityExtension](StructureDefinition-fr-procedure-priority-extension.md), [FRRelatedPersonDocument](StructureDefinition-fr-related-person-document.md), [FRSeviceRequestDocument](StructureDefinition-fr-service-request-document.md), [FRSpecimenDocument](StructureDefinition-fr-specimen-document.md), [FRStatusReasonExtension](StructureDefinition-fr-status-reason-extension.md), [FRStudyInstanceUidIdentifierDocument](StructureDefinition-fr-study-instance-uid-identifier-document.md), [FRTaskPatientTransportDocument](StructureDefinition-fr-task-patient-transport-document.md), [FRValueSetActorTypeDocument](ValueSet-fr-vs-actor-type-document.md), [FRValueSetAllergySubstanceDocument](ValueSet-fr-vs-allergy-substance.md), [FRValueSetEDQMDocument](ValueSet-fr-vs-edqm-document.md), [FRValueSetEvaluationTypeDocument](ValueSet-fr-vs-evaluation-type.md), [FRValueSetMedicationTranslationDocument](ValueSet-fr-vs-medication-translation-document.md), [FRValueSetParticipationType](ValueSet-fr-doc-vs-participation-type.md), [FRValueSetProcedureCodeDocument](ValueSet-fr-vs-procedure-code.md), [FRValueSetResultTypeDocument](ValueSet-fr-vs-result-type-document.md), [FRValueSetRolePriseCharge](ValueSet-fr-doc-vs-role-prise-charge.md), [Mapping Métier/CDA/FHIR : Entête d'un document](ConceptMap-mappingmodelemetierCDAFHIR.md), [Mapping Métier/CDA/FHIR : "Auteur"](ConceptMap-mappingAuteurCDAFHIR.md), [Mapping Métier/CDA/FHIR : "Consentement"](ConceptMap-mappingConsentementCDAFHIR.md), [Mapping Métier/CDA/FHIR : "Destinataire prévu"](ConceptMap-mappingDestinatairePrevuCDAFHIR.md), [Mapping Métier/CDA/FHIR : "DocumentDeReference"](ConceptMap-mappingDocumentDeReferenceCDAFHIR.md), [Mapping Métier/CDA/FHIR : "Evènement documenté"](ConceptMap-mappingEvenementCDAFHIR.md), [Mapping Métier/CDA/FHIR : "Informateur"](ConceptMap-mappingInformateurCDAFHIR.md), [Mapping Métier/CDA/FHIR : "Opérateur de saisie"](ConceptMap-mappingOperateurSaisieCDAFHIR.md), [Mapping Métier/CDA/FHIR : "Participant"](ConceptMap-mappingParticipantCDAFHIR.md), [Mapping Métier/CDA/FHIR : "Patient/Usager"](ConceptMap-mappingPatientCDAFHIR.md), [Mapping Métier/CDA/FHIR : "Personne / Structure (AssignedEntity)"](ConceptMap-mappingPersonneStructureAssignedEntityFHIR.md), [Mapping Métier/CDA/FHIR : "Personne / Structure (Auteur)"](ConceptMap-mappingPersonneStructureAuteurFHIR.md), [Mapping Métier/CDA/FHIR : "Personne / Structure (RelatedEntity)"](ConceptMap-mappingPersonneStructureRelatedEntityFHIR.md), [Mapping Métier/CDA/FHIR : "Prescription"](ConceptMap-mappingPrescriptionCDAFHIR.md), [Mapping Métier/CDA/FHIR : "Prise en charge"](ConceptMap-mappingPriseEnchargeCDAFHIR.md), [Mapping Métier/CDA/FHIR : "Responsable du document"](ConceptMap-mappingResponsableCDAFHIR.md), [Mapping Métier/CDA/FHIR : "Structure chargée de la conservation du document"](ConceptMap-mappingStructureConservationCDAFHIR.md), [Mapping Métier/CDA/FHIR : "Système / Structure Auteur"](ConceptMap-mappingSystemeFHIR.md) and [Mapping Métier/CDA/FHIR : "Validateur"](ConceptMap-mappingValidateurCDAFHIR.md)
+* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/6.5.0/CodeSystem-ISO3166Part1.html): [ConceptMap/FRActLMCDAFHIR](ConceptMap-FRActLMCDAFHIR.md), [ConceptMap/FRAdvanceDirectiveLMCDAFHIR](ConceptMap-FRAdvanceDirectiveLMCDAFHIR.md)... Show 370 more, [ConceptMap/FRAdverseEventLMCDAFHIR](ConceptMap-FRAdverseEventLMCDAFHIR.md), [ConceptMap/FRAllergyIntoleranceLMCDAFHIR](ConceptMap-FRAllergyIntoleranceLMCDAFHIR.md), [ConceptMap/FRCarePlanLMCDAFHIR](ConceptMap-FRCarePlanLMCDAFHIR.md), [ConceptMap/FRConditionLMCDAFHIR](ConceptMap-FRConditionLMCDAFHIR.md), [ConceptMap/FRDeviceRequestLMCDAFHIR](ConceptMap-FRDeviceRequestLMCDAFHIR.md), [ConceptMap/FRDeviceUseStatementLMCDAFHIR](ConceptMap-FRDeviceUseStatementLMCDAFHIR.md), [ConceptMap/FRDiagnosticReportLMCDAFHIR](ConceptMap-FRDiagnosticReportLMCDAFHIR.md), [ConceptMap/FRDocumentReferenceLMCDAFHIR](ConceptMap-FRDocumentReferenceLMCDAFHIR.md), [ConceptMap/FREncounterLMCDAFHIR](ConceptMap-FREncounterLMCDAFHIR.md), [ConceptMap/FRFamilyMemberHistoriesLMCDAFHIR](ConceptMap-FRFamilyMemberHistoriesLMCDAFHIR.md), [ConceptMap/FRFamilyMemberHistoryLMCDAFHIR](ConceptMap-FRFamilyMemberHistoryLMCDAFHIR.md), [ConceptMap/FRFunctionalStatusLMCDAFHIR](ConceptMap-FRFunctionalStatusLMCDAFHIR.md), [ConceptMap/FRImagingClinicalInformationLMCDAFHIR](ConceptMap-FRImagingClinicalInformationLMCDAFHIR.md), [ConceptMap/FRImagingProcedureLMCDAFHIR](ConceptMap-FRImagingProcedureLMCDAFHIR.md), [ConceptMap/FRImagingQuantityLMCDAFHIR](ConceptMap-FRImagingQuantityLMCDAFHIR.md), [ConceptMap/FRImagingRadiationExposureLMCDAFHIR](ConceptMap-FRImagingRadiationExposureLMCDAFHIR.md), [ConceptMap/FRImagingResultatsLMCDAFHIR](ConceptMap-FRImagingResultatsLMCDAFHIR.md), [ConceptMap/FRImagingServiceRequestLMCDAFHIR](ConceptMap-FRImagingServiceRequestLMCDAFHIR.md), [ConceptMap/FRImagingStudyLMCDAFHIR](ConceptMap-FRImagingStudyLMCDAFHIR.md), [ConceptMap/FRImmunizationLMCDAFHIR](ConceptMap-FRImmunizationLMCDAFHIR.md), [ConceptMap/FRImmunizationRecommendationLMCDAFHIR](ConceptMap-FRImmunizationRecommendationLMCDAFHIR.md), [ConceptMap/FRLaboratoryBatteryResultsLMCDAFHIR](ConceptMap-FRLaboratoryBatteryResultsLMCDAFHIR.md), [ConceptMap/FRLaboratoryIsolateResultsLMCDAFHIR](ConceptMap-FRLaboratoryIsolateResultsLMCDAFHIR.md), [ConceptMap/FRLaboratoryResultClinicalElementLMCDAFHIR](ConceptMap-FRLaboratoryResultClinicalElementLMCDAFHIR.md), [ConceptMap/FRLaboratoryResultsLMCDAFHIR](ConceptMap-FRLaboratoryResultsLMCDAFHIR.md), [ConceptMap/FRMediaLMCDAFHIR](ConceptMap-FRMediaLMCDAFHIR.md), [ConceptMap/FRMedicationAdministrationLMCDAFHIR](ConceptMap-FRMedicationAdministrationLMCDAFHIR.md), [ConceptMap/FRMedicationDispenseLMCDAFHIR](ConceptMap-FRMedicationDispenseLMCDAFHIR.md), [ConceptMap/FRMedicationLMCDAFHIR](ConceptMap-FRMedicationLMCDAFHIR.md), [ConceptMap/FRMedicationRequestLMCDAFHIR](ConceptMap-FRMedicationRequestLMCDAFHIR.md), [ConceptMap/FRMedicationStatementLMCDAFHIR](ConceptMap-FRMedicationStatementLMCDAFHIR.md), [ConceptMap/FRMedicationsCombinaisonLMCDAFHIR](ConceptMap-FRMedicationsCombinaisonLMCDAFHIR.md), [ConceptMap/FRMedicationsCombinaisonRequestLMCDAFHIR](ConceptMap-FRMedicationsCombinaisonRequestLMCDAFHIR.md), [ConceptMap/FRObservationAdministrationBloodDerivativesLMCDAFHIR](ConceptMap-FRObservationAdministrationBloodDerivativesLMCDAFHIR.md), [ConceptMap/FRObservationBirthEventLMCDAFHIR](ConceptMap-FRObservationBirthEventLMCDAFHIR.md), [ConceptMap/FRObservationBloodProductTransfusionLMCDAFHIR](ConceptMap-FRObservationBloodProductTransfusionLMCDAFHIR.md), [ConceptMap/FRObservationMedicalSummaryLMCDAFHIR](ConceptMap-FRObservationMedicalSummaryLMCDAFHIR.md), [ConceptMap/FRObservationMicroorganismDetectionLMCDAFHIR](ConceptMap-FRObservationMicroorganismDetectionLMCDAFHIR.md), [ConceptMap/FRObservationMultiresistantMicroorganismsIdentificationLMCDAFHIR](ConceptMap-FRObservationMultiresistantMicroorganismsIdentificationLMCDAFHIR.md), [ConceptMap/FRObservationPregnancyHistoryLMCDAFHIR](ConceptMap-FRObservationPregnancyHistoryLMCDAFHIR.md), [ConceptMap/FRObservationPregnancyLMCDAFHIR](ConceptMap-FRObservationPregnancyLMCDAFHIR.md), [ConceptMap/FRObservationResultLMCDAFHIR](ConceptMap-FRObservationResultLMCDAFHIR.md), [ConceptMap/FRObservationSocialHistoryLMCDAFHIR](ConceptMap-FRObservationSocialHistoryLMCDAFHIR.md), [ConceptMap/FRObservationSurveyComponentLMCDAFHIR](ConceptMap-FRObservationSurveyComponentLMCDAFHIR.md), [ConceptMap/FRObservationSurveyComponentN2LMCDAFHIR](ConceptMap-FRObservationSurveyComponentN2LMCDAFHIR.md), [ConceptMap/FRObservationSurveyLMCDAFHIR](ConceptMap-FRObservationSurveyLMCDAFHIR.md), [ConceptMap/FRObservationSurveyPannelLMCDAFHIR](ConceptMap-FRObservationSurveyPannelLMCDAFHIR.md), [ConceptMap/FRObservationTransfusionAccidentsLMCDAFHIR](ConceptMap-FRObservationTransfusionAccidentsLMCDAFHIR.md), [ConceptMap/FRObservationVitalSignsLMCDAFHIR](ConceptMap-FRObservationVitalSignsLMCDAFHIR.md), [ConceptMap/FRObservationVitalSignsPanelLMCDAFHIR](ConceptMap-FRObservationVitalSignsPanelLMCDAFHIR.md), [ConceptMap/FRObservationWorkRelatedAccidentLMCDAFHIR](ConceptMap-FRObservationWorkRelatedAccidentLMCDAFHIR.md), [ConceptMap/FRPhysicalFunctionsLMCDAFHIR](ConceptMap-FRPhysicalFunctionsLMCDAFHIR.md), [ConceptMap/FRPregnancyHistoryLMCDAFHIR](ConceptMap-FRPregnancyHistoryLMCDAFHIR.md), [ConceptMap/FRResultsLMCDAFHIR](ConceptMap-FRResultsLMCDAFHIR.md), [ConceptMap/FRServiceRequestLMCDAFHIR](ConceptMap-FRServiceRequestLMCDAFHIR.md), [ConceptMap/FRSocialHistoryLMCDAFHIR](ConceptMap-FRSocialHistoryLMCDAFHIR.md), [ConceptMap/FRSpecimenLMCDAFHIR](ConceptMap-FRSpecimenLMCDAFHIR.md), [FRAccessionNumberIdentifierDocument](StructureDefinition-fr-accession-number-identifier-document.md), [FRActorExtension](StructureDefinition-fr-actor-extension.md), [FRAdvanceDirectiveDocument](StructureDefinition-fr-advance-directive-document.md), [FRAdverseEventDocument](StructureDefinition-fr-adverse-event-document.md), [FRAllergyIntoleranceDocument](StructureDefinition-fr-allergie-intolerance-document.md), [FRAuthorTimeExtension](StructureDefinition-fr-author-time-extension.md), [FRBodyStructureDocument](StructureDefinition-fr-body-structure-document.md), [FRBundleDocument](StructureDefinition-fr-bundle-document.md), [FRCDAAssignedAuthor](StructureDefinition-fr-cda-assigned-author.md), [FRCDAAssignedCustodian](StructureDefinition-fr-cda-assigned-custodian.md), [FRCDAAssignedEntity](StructureDefinition-fr-cda-assigned-entity.md), [FRCDAAssignedPerson](StructureDefinition-fr-cda-assigned-person.md), [FRCDAAssociatedEntity](StructureDefinition-fr-cda-associated-entity.md), [FRCDAAuthenticator](StructureDefinition-fr-cda-authenticator.md), [FRCDAAuthor](StructureDefinition-fr-cda-author.md), [FRCDAAuthoringDevice](StructureDefinition-fr-cda-authoring-device.md), [FRCDAAuthorization](StructureDefinition-fr-cda-authorization.md), [FRCDAClinicalDocument](StructureDefinition-fr-cda-clinical-document.md), [FRCDAComponentOf](StructureDefinition-fr-cda-component-of.md), [FRCDACustodian](StructureDefinition-fr-cda-custodian.md), [FRCDADataEnterer](StructureDefinition-fr-cda-data-enterer.md), [FRCDADocumentationOf](StructureDefinition-fr-cda-documentation-of.md), [FRCDAEncompassingEncounter](StructureDefinition-fr-cda-encompassing-encounter.md), [FRCDAEncounterParticipant](StructureDefinition-fr-cda-encounter-participant.md), [FRCDAHealthCareFacility](StructureDefinition-fr-cda-health-care-facility.md), [FRCDAInFulfillmentOf](StructureDefinition-fr-cda-inFulfillment-of.md), [FRCDAInformant](StructureDefinition-fr-cda-informant.md), [FRCDAInformationRecipient](StructureDefinition-fr-cda-information-recipient.md), [FRCDAIntendedRecipient](StructureDefinition-fr-cda-intended-recipient.md), [FRCDALegalAuthenticator](StructureDefinition-fr-cda-legal-authenticator.md), [FRCDAName](StructureDefinition-fr-cda-name.md), [FRCDAOrder](StructureDefinition-fr-cda-order.md), [FRCDAParentDocument](StructureDefinition-fr-cda-parent-document.md), [FRCDAParticipant](StructureDefinition-fr-cda-participant.md), [FRCDAPatient](StructureDefinition-fr-cda-patient.md), [FRCDAPatientRole](StructureDefinition-fr-cda-patient-role.md), [FRCDAPerformer](StructureDefinition-fr-cda-performer.md), [FRCDARecordTarget](StructureDefinition-fr-cda-record-target.md), [FRCDARelatedDocument](StructureDefinition-fr-cda-related-document.md), [FRCDARelatedEntity](StructureDefinition-fr-cda-related-entity.md), [FRCDARepresentedCustodianOrganization](StructureDefinition-fr-cda-represented-custodian-organization.md), [FRCDARepresentedOrganization](StructureDefinition-fr-cda-represented-organization.md), [FRCDAServiceEvent](StructureDefinition-fr-cda-service-event.md), [FRCarePlanDocument](StructureDefinition-fr-care-plan-document.md), [FRComparisonStudiesExtension](StructureDefinition-fr-comparison-studies-extension.md), [FRCompositionDocument](StructureDefinition-fr-composition-document.md), [FRConditionDocument](StructureDefinition-fr-condition-document.md), [FRDeviceAuteurDocument](StructureDefinition-fr-device-auteur-document.md), [FRDeviceRequestDocument](StructureDefinition-fr-device-request-document.md), [FRDeviceUseStatementDocument](StructureDefinition-fr-device-use-statement-document.md), [FRDiagnosticReportBIOChapterDocument](StructureDefinition-fr-diagnostic-report-bio-chapter-document.md), [FRDiagnosticReportDocument](StructureDefinition-fr-diagnostic-report-document.md), [FRDiagnosticReportImagingDocument](StructureDefinition-fr-diagnostic-report-imaging-document.md), [FRDocumentCore](index.md), [FRDocumentReferenceDocument](StructureDefinition-fr-document-reference-document.md), [FREncounterCareDocument](StructureDefinition-fr-encounter-care-document.md), [FREncounterDocument](StructureDefinition-fr-encounter-document.md), [FREndpointWadoDocument](StructureDefinition-fr-endpoint-wado-document.md), [FRFamilyMemberHistoryBodySiteExtension](StructureDefinition-fr-family-member-history-body-site-extension.md), [FRFamilyMemberHistoryDocument](StructureDefinition-fr-family-member-history-document.md), [FRHumanNameDocument](StructureDefinition-fr-human-name-document.md), [FRImagingProcedureExtension](StructureDefinition-fr-imaging-procedure-extension.md), [FRImagingStudyDocument](StructureDefinition-fr-imaging-study-document.md), [FRImmunizationDocument](StructureDefinition-fr-immunization-document.md), [FRImmunizationRecommendationDocument](StructureDefinition-fr-immunization-recommendation-document.md), [FRImmunizationTypeExtension](StructureDefinition-fr-immunization-type-extension.md), [FRInterpretationExtension](StructureDefinition-fr-interpretation-extension.md), [FRLMAccidentsTransfusionnels](StructureDefinition-fr-lm-accidents-transfusionnels.md), [FRLMActe](StructureDefinition-fr-lm-acte.md), [FRLMActeImagerie](StructureDefinition-fr-lm-acte-imagerie.md), [FRLMActeSubstitution](StructureDefinition-fr-lm-acte-substitution.md), [FRLMAddendum](StructureDefinition-fr-lm-addendum.md), [FRLMAdministrationDeDerivesDuSang](StructureDefinition-fr-lm-administration-de-derives-du-sang.md), [FRLMAdministrationProduitDeSante](StructureDefinition-fr-lm-administration-produit-de-sante.md), [FRLMAllergieOuHypersensibilite](StructureDefinition-fr-lm-allergie-ou-hypersensibilite.md), [FRLMAllergiesEtHypersensibilites](StructureDefinition-fr-lm-allergies-et-hypersensibilites.md), [FRLMAntecedentFamilialObserve](StructureDefinition-fr-lm-antecedent-familial-observe.md), [FRLMAntecedentsFamiliaux](StructureDefinition-fr-lm-antecedents-familiaux.md), [FRLMAntecedentsFamiliauxEntree](StructureDefinition-fr-lm-antecedents-familiaux-entree.md), [FRLMAntecedentsMedicaux](StructureDefinition-fr-lm-antecedents-medicaux.md), [FRLMAuteur](StructureDefinition-fr-lm-auteur.md), [FRLMAuteurAPSR](StructureDefinition-fr-lm-auteur-apsr.md), [FRLMAutorisationExposition](StructureDefinition-fr-lm-autorisation-exposition.md), [FRLMAutorisationSubstitution](StructureDefinition-fr-lm-autorisation-substitution.md), [FRLMBatterieExamensBiologieMedicale](StructureDefinition-fr-lm-batterie-examens-biologie-medicale.md), [FRLMCRBIOChapitre](StructureDefinition-fr-lm-cr-bio-chapitre.md), [FRLMCRBIOSousChapitre](StructureDefinition-fr-lm-cr-bio-sous-chapitre.md), [FRLMCertitude](StructureDefinition-fr-lm-certitude.md), [FRLMCodesAbarres](StructureDefinition-fr-lm-codes-a-barres.md), [FRLMCommentaireER](StructureDefinition-fr-lm-commentaire-er.md), [FRLMCommentaireNonCode](StructureDefinition-fr-lm-commentaire-non-code.md), [FRLMComparaisonExamensImagerie](StructureDefinition-fr-lm-comparaison-examens-imagerie.md), [FRLMComplicationsActe](StructureDefinition-fr-lm-complications-acte.md), [FRLMConclusionExamenImagerie](StructureDefinition-fr-lm-conclusion-examen-imagerie.md), [FRLMConsentement](StructureDefinition-fr-lm-consentement.md), [FRLMCorpsDocument](StructureDefinition-fr-lm-corps-document.md), [FRLMCriticite](StructureDefinition-fr-lm-criticite.md), [FRLMDemandeExamenImagerie](StructureDefinition-fr-lm-demande-examen-imagerie.md), [FRLMDemandeExamenOuSuivi](StructureDefinition-fr-lm-demande-examen-ou-suivi.md), [FRLMDestinatairePrevu](StructureDefinition-fr-lm-destinataire-prevu.md), [FRLMDirectiveAnticipee](StructureDefinition-fr-lm-directive-anticipee.md), [FRLMDirectivesAnticipees](StructureDefinition-fr-lm-directives-anticipees.md), [FRLMDispensationMedicaments](StructureDefinition-fr-lm-dispensation-medicaments.md), [FRLMDispositifMedical](StructureDefinition-fr-lm-dispositif-medical.md), [FRLMDispositifMedicalEntree](StructureDefinition-fr-lm-dispositif-medical-entree.md), [FRLMDispositifsMedicaux](StructureDefinition-fr-lm-dispositifs-medicaux.md), [FRLMDocumentAttache](StructureDefinition-fr-lm-document-attache.md), [FRLMDocumentDeReference](StructureDefinition-fr-lm-document-reference.md), [FRLMDocumentPDFCopie](StructureDefinition-fr-lm-document-pdf-copie.md), [FRLMDocumentsAjoutes](StructureDefinition-fr-lm-documents-ajoutes.md), [FRLMDoseAntigene](StructureDefinition-fr-lm-dose-antigene.md), [FRLMEchantillonPreleve](StructureDefinition-fr-lm-echantillon-preleve.md), [FRLMEducationPatient](StructureDefinition-fr-lm-education-patient.md), [FRLMEffetIndesirable](StructureDefinition-fr-lm-effet-indesirable.md), [FRLMEffetsIndesirables](StructureDefinition-fr-lm-effets-indesirables.md), [FRLMEnRapportAvecALD](StructureDefinition-fr-lm-en-rapport-avec-ald.md), [FRLMEnRapportAvecAccidentTravail](StructureDefinition-fr-lm-en-rapport-avec-accident-travail.md), [FRLMEnRapportAvecLaPrevention](StructureDefinition-fr-lm-en-rapport-avec-la-prevention.md), [FRLMEnteteDocument](StructureDefinition-fr-lm-entete-document.md), [FRLMEvaluation](StructureDefinition-fr-lm-evaluation.md), [FRLMEvaluationComposant](StructureDefinition-fr-lm-evaluation-composant.md), [FRLMEvaluationComposantN2](StructureDefinition-fr-lm-evaluation-composant-n2.md), [FRLMEvenement](StructureDefinition-fr-lm-evenement.md), [FRLMEvenementIndesirablePendantHospitalisation](StructureDefinition-fr-lm-evenement-indesirable-pendant-hospitalisation.md), [FRLMEvenementsIndesirablesSuiteAdministrationDerivesSang](StructureDefinition-fr-lm-evenements-indesirables-suite-administration-derives-sang.md), [FRLMEvolutionEffetIndesirable](StructureDefinition-fr-lm-evolution-effet-indesirable.md), [FRLMExamenImagerie](StructureDefinition-fr-lm-examen-imagerie.md), [FRLMExpositionRadiations](StructureDefinition-fr-lm-exposition-radiations.md), [FRLMFacteursDeRisqueProfessionnelsNonCode](StructureDefinition-fr-lm-facteurs-de-risque-professionnels-non-code.md), [FRLMFonctionsPhysiques](StructureDefinition-fr-lm-fonctions-physiques.md), [FRLMGraviteEffetIndesirable](StructureDefinition-fr-lm-gravite-effet-indesirable.md), [FRLMGroupDeQuestionnairesDevaluation](StructureDefinition-fr-lm-group-de-questionnaires-devaluation.md), [FRLMHabitusModeDeVie](StructureDefinition-fr-lm-habitus-mode-de-vie.md), [FRLMHabitusModeDeVieEntree](StructureDefinition-fr-lm-habitus-mode-de-vie-entree.md), [FRLMHistoriqueDesActes](StructureDefinition-fr-lm-historique-des-actes.md), [FRLMHistoriqueDesGrossesses](StructureDefinition-fr-lm-historique-des-grossesses.md), [FRLMHistoriqueGrossesse](StructureDefinition-fr-lm-historique-grossesse.md), [FRLMHorsAMM](StructureDefinition-fr-lm-hors-amm.md), [FRLMIdentificationDeMicroOrganismesMultiresistants](StructureDefinition-fr-lm-identification-de-micro-organismes-multiresistants.md), [FRLMImageIllustrative](StructureDefinition-fr-lm-image-illustrative.md), [FRLMImputabiliteEffetIndesirable](StructureDefinition-fr-lm-imputabilite-effet-indesirable.md), [FRLMInformantAPSR](StructureDefinition-fr-lm-informant-apsr.md), [FRLMInformateur](StructureDefinition-fr-lm-informateur.md), [FRLMInformationsCliniques](StructureDefinition-fr-lm-informations-cliniques.md), [FRLMInstructionAuPatient](StructureDefinition-fr-lm-instruction-au-patient.md), [FRLMInstructionsAuDispensateur](StructureDefinition-fr-lm-instructions-au-dispensateur.md), [FRLMInstructionsPatient](StructureDefinition-fr-lm-instructions-patient.md), [FRLMIsolatMicrobiologique](StructureDefinition-fr-lm-isolat-microbiologique.md), [FRLMLaboratoireExecutant](StructureDefinition-fr-lm-laboratoire-executant.md), [FRLMModaliteEntree](StructureDefinition-fr-lm-modalite-entree.md), [FRLMModaliteSortie](StructureDefinition-fr-lm-modalite-sortie.md), [FRLMNaissance](StructureDefinition-fr-lm-naissance.md), [FRLMNonRemboursable](StructureDefinition-fr-lm-non-remboursable.md), [FRLMNotesDispensateur](StructureDefinition-fr-lm-notes-dispensateur.md), [FRLMObjectCatalog](StructureDefinition-fr-lm-object-catalog.md), [FRLMObservation](StructureDefinition-fr-lm-observation.md), [FRLMObservationGrossesse](StructureDefinition-fr-lm-observation-grossesse.md), [FRLMObservationResult](StructureDefinition-fr-lm-observation-result.md), [FRLMOperateurSaisie](StructureDefinition-fr-lm-operateur-saisie.md), [FRLMParticipant](StructureDefinition-fr-lm-participant.md), [FRLMParticipantAPSR](StructureDefinition-fr-lm-participant-apsr.md), [FRLMParticipantCorps](StructureDefinition-fr-lm-participant-corps.md), [FRLMPatientSujetNonHumain](StructureDefinition-fr-lm-patient-sujet-non-humain.md), [FRLMPatientUsager](StructureDefinition-fr-lm-patient-usager.md), [FRLMPerformer](StructureDefinition-fr-lm-performer.md), [FRLMPeriodeDeRenouvellement](StructureDefinition-fr-lm-periode-de-renouvellement.md), [FRLMPersonneStructure](StructureDefinition-fr-lm-personne-structure.md), [FRLMPersonneStructureAuteur](StructureDefinition-fr-lm-personne-structure-auteur.md), [FRLMPlanSoins](StructureDefinition-fr-lm-plan-soins.md), [FRLMPointsDeVigilancesNonCode](StructureDefinition-fr-lm-points-de-vigilances-non-code.md), [FRLMPrelevement](StructureDefinition-fr-lm-prelevement.md), [FRLMPrescription](StructureDefinition-fr-lm-prescription.md), [FRLMPrescriptionDispositifsMedicaux](StructureDefinition-fr-lm-prescription-dispositifs-medicaux.md), [FRLMPrescriptionEntree](StructureDefinition-fr-lm-prescription-entree.md), [FRLMPrescriptionMedicaments](StructureDefinition-fr-lm-prescription-medicaments.md), [FRLMPriseEncharge](StructureDefinition-fr-lm-prise-en-charge.md), [FRLMProbleme](StructureDefinition-fr-lm-probleme.md), [FRLMProblemesActifs](StructureDefinition-fr-lm-problemes-actifs.md), [FRLMProduitSante](StructureDefinition-fr-lm-produit-sante.md), [FRLMQuantiteExposition](StructureDefinition-fr-lm-quantite-exposition.md), [FRLMQuantiteProduit](StructureDefinition-fr-lm-quantite-produit.md), [FRLMRaisonRecommandation](StructureDefinition-fr-lm-raison-recommandation.md), [FRLMRaisonRecommandationNonCode](StructureDefinition-fr-lm-raison-recommandation-non-code.md), [FRLMRangVaccination](StructureDefinition-fr-lm-rang-vaccination.md), [FRLMRechercheDeMicroOrganismes](StructureDefinition-fr-lm-recherche-de-micro-organismes.md), [FRLMReferenceInterne](StructureDefinition-fr-lm-reference-interne.md), [FRLMReferenceItemPlanTraitement](StructureDefinition-fr-lm-reference-item-plan-traitement.md), [FRLMReferenceItemPrescription](StructureDefinition-fr-lm-reference-item-prescription.md), [FRLMReferencesExternes](StructureDefinition-fr-lm-references-externes.md), [FRLMRencontre](StructureDefinition-fr-lm-rencontre.md), [FRLMResponsable](StructureDefinition-fr-lm-responsable.md), [FRLMResultatExamensBiologieElementCliniquePertinent](StructureDefinition-fr-lm-resultat-examens-biologie-element-clinique-pertinent.md), [FRLMResultats](StructureDefinition-fr-lm-resultats.md), [FRLMResultatsEntry](StructureDefinition-fr-lm-resultats-entree.md), [FRLMResultatsEvenements](StructureDefinition-fr-lm-resultats-evenements.md), [FRLMResultatsExamenImagerie](StructureDefinition-fr-lm-resultats-examen-imagerie.md), [FRLMResultatsExamens](StructureDefinition-fr-lm-resultats-examens.md), [FRLMResultatsExamensBiologieMedicale](StructureDefinition-fr-lm-resultats-examens-biologie-medicale.md), [FRLMResultatsExamensNonCode](StructureDefinition-fr-lm-resultats-examens-non-code.md), [FRLMResultatsLaboratoireBiologieSecondeIntention](StructureDefinition-fr-lm-resultats-laboratoire-biologie-seconde-intention.md), [FRLMSOPInstance](StructureDefinition-fr-lm-sop-instance.md), [FRLMSection](StructureDefinition-fr-lm-section.md), [FRLMSerieImagerie](StructureDefinition-fr-lm-serie-imagerie.md), [FRLMSeverite](StructureDefinition-fr-lm-severite.md), [FRLMSigneVital](StructureDefinition-fr-lm-signe-vital.md), [FRLMSigneVitalObserve](StructureDefinition-fr-lm-signe-vital-observe.md), [FRLMSignesVitaux](StructureDefinition-fr-lm-signes-vitaux.md), [FRLMStatut](StructureDefinition-fr-lm-statut.md), [FRLMStatutCliniquePatient](StructureDefinition-fr-lm-statut-clinique-patient.md), [FRLMStatutDocument](StructureDefinition-fr-lm-statut-document.md), [FRLMStatutDocumentEntree](StructureDefinition-fr-lm-statut-document-entree.md), [FRLMStatutFonctionnel](StructureDefinition-fr-lm-statut-fonctionnel.md), [FRLMStatutProbleme](StructureDefinition-fr-lm-statut-probleme.md), [FRLMStructureConservation](StructureDefinition-fr-lm-structure-conservation.md), [FRLMSujet](StructureDefinition-fr-lm-sujet.md), [FRLMSujetNonHumain](StructureDefinition-fr-lm-sujet-non-humain.md), [FRLMSyntheseMedicaleSejour](StructureDefinition-fr-lm-synthese-medicale-sejour.md), [FRLMSystemeStructureAuteur](StructureDefinition-fr-lm-systeme-structure-auteur.md), [FRLMTechniqueImagerie](StructureDefinition-fr-lm-technique-imagerie.md), [FRLMTraitement](StructureDefinition-fr-lm-traitement.md), [FRLMTraitementDispense](StructureDefinition-fr-lm-traitement-dispense.md), [FRLMTraitementPrescrit](StructureDefinition-fr-lm-traitement-prescrit.md), [FRLMTraitementPrescritSubordonne](StructureDefinition-fr-lm-traitement-prescrit-subordonne.md), [FRLMTraitementSortie](StructureDefinition-fr-lm-traitement-sortie.md), [FRLMTraitementSubordonne](StructureDefinition-fr-lm-traitement-subordonne.md), [FRLMTraitements](StructureDefinition-fr-lm-traitements.md), [FRLMTraitementsAdministres](StructureDefinition-fr-lm-traitements-administres.md), [FRLMTransfertDuPatient](StructureDefinition-fr-lm-transfert-du-patient.md), [FRLMTransfusionDeProduitsSanguins](StructureDefinition-fr-lm-transfusion-de-produits-sanguins.md), [FRLMVaccinRecommande](StructureDefinition-fr-lm-vaccin-recommande.md), [FRLMVaccination](StructureDefinition-fr-lm-vaccination.md), [FRLMVaccinations](StructureDefinition-fr-lm-vaccinations.md), [FRLMValidateur](StructureDefinition-fr-lm-validateur.md), [FRLocationDocument](StructureDefinition-fr-location-document.md), [FRMediaDocument](StructureDefinition-fr-media-document.md), [FRMedicationAdministrationDocument](StructureDefinition-fr-medication-administration-document.md), [FRMedicationAdministrationSequenceExtension](StructureDefinition-fr-medication-administration-sequence-extension.md), [FRMedicationDispenseDocument](StructureDefinition-fr-medication-dispense-document.md), [FRMedicationDocument](StructureDefinition-fr-medication-document.md), [FRMedicationRequestDocument](StructureDefinition-fr-medication-request-document.md), [FRMedicationRequestOutOfNomenclatureExtension](StructureDefinition-fr-medication-request-out-of-nomenclature-extension.md), [FRMedicationStatementDocument](StructureDefinition-fr-medication-statement-document.md), [FRMedicationsCombinaisonDocument](StructureDefinition-fr-medications-combinaison-document.md), [FRMethodExtension](StructureDefinition-fr-method-extension.md), [FRNotCoveredExtension](StructureDefinition-fr-not-covered-extension.md), [FRNumberOfFramesExtension](StructureDefinition-fr-number-of-frames-extension.md), [FRObservationAdministrationBloodDerivativesDocument](StructureDefinition-fr-observation-administration-blood-derivatives-document.md), [FRObservationAntenatalTestingAndSurveillanceBatteryDocument](StructureDefinition-fr-observation-antenatal-testing-surveillance-battery-document.md), [FRObservationBirthEventDocument](StructureDefinition-fr-observation-birth-event-document.md), [FRObservationBloodProductTransfusionDocument](StructureDefinition-fr-observation-blood-product-transfusion-document.md), [FRObservationContraIndicationsImagingDocument](StructureDefinition-fr-observation-contra-indications-document.md), [FRObservationLaboratoryReportResultsDocument](StructureDefinition-fr-observation-laboratory-report-results-document.md), [FRObservationMedicalSummaryDocument](StructureDefinition-fr-observation-medical-summary-document.md), [FRObservationMicroorganismDetectionDocument](StructureDefinition-fr-observation-microorganism-detection-document.md), [FRObservationMultiresistantMicroorganismsIdentificationDocument](StructureDefinition-fr-observation-multiresistant-microorganism-document.md), [FRObservationPainScoreDocument](StructureDefinition-fr-observation-pain-score-document.md), [FRObservationPregnancyDocument](StructureDefinition-fr-observation-pregnancy-document.md), [FRObservationPregnancyHistoryDocument](StructureDefinition-fr-observation-pregnancy-history-document.md), [FRObservationRadiationExposureDocument](StructureDefinition-fr-observation-radiation-exposure-document.md), [FRObservationResultDocument](StructureDefinition-fr-observation-result-document.md), [FRObservationSocialHistoryDocument](StructureDefinition-fr-observation-social-history-document.md), [FRObservationSurveyDocument](StructureDefinition-fr-observation-survey-document.md), [FRObservationSurveyPannelDocument](StructureDefinition-fr-observation-survey-pannel-document.md), [FRObservationTransfusionAccidentsDocument](StructureDefinition-fr-observation-transfusion-accidents-document.md), [FRObservationVitalSignsDocument](StructureDefinition-fr-observation-vital-signs-document.md), [FRObservationVitalSignsPanelDocument](StructureDefinition-fr-Observation-vital-signs-panel-document.md), [FRObservationWorkRelatedAccidentDocument](StructureDefinition-fr-observation-work-related-accident-document.md), [FROrganizationDocument](StructureDefinition-fr-organization-document.md), [FRPatientDocument](StructureDefinition-fr-patient-document.md), [FRPatientHistoryExtension](StructureDefinition-fr-patient-history-extension.md), [FRPatientINSDocument](StructureDefinition-fr-patient-ins-document.md), [FRPerformerEventExtension](StructureDefinition-fr-performer-event-extension.md), [FRPractitionerDocument](StructureDefinition-fr-practitioner-document.md), [FRPractitionerRoleDocument](StructureDefinition-fr-practitionerRole-document.md), [FRPregnancyHistoryDocument](StructureDefinition-fr-pregnancy-history-document.md), [FRProcedureActDocument](StructureDefinition-fr-procedure-act-document.md), [FRProcedureDifficultyExtension](StructureDefinition-fr-procedure-difficulty-extension.md), [FRProcedureImagingDocument](StructureDefinition-fr-procedure-imaging-document.md), [FRProcedurePriorityExtension](StructureDefinition-fr-procedure-priority-extension.md), [FRRelatedPersonDocument](StructureDefinition-fr-related-person-document.md), [FRServiceRequestDocument](StructureDefinition-fr-service-request-document.md), [FRSpecimenDocument](StructureDefinition-fr-specimen-document.md), [FRStatusReasonExtension](StructureDefinition-fr-status-reason-extension.md), [FRStudyInstanceUidIdentifierDocument](StructureDefinition-fr-study-instance-uid-identifier-document.md), [FRTaskPatientTransportDocument](StructureDefinition-fr-task-patient-transport-document.md), [FRValueSetActorTypeDocument](ValueSet-fr-vs-actor-type-document.md), [FRValueSetAllergySubstanceDocument](ValueSet-fr-vs-allergy-substance.md), [FRValueSetEDQMDocument](ValueSet-fr-vs-edqm-document.md), [FRValueSetEvaluationTypeDocument](ValueSet-fr-vs-evaluation-type.md), [FRValueSetMedicationTranslationDocument](ValueSet-fr-vs-medication-translation-document.md), [FRValueSetParticipationType](ValueSet-fr-doc-vs-participation-type.md), [FRValueSetProcedureCodeDocument](ValueSet-fr-vs-procedure-code.md), [FRValueSetResultTypeDocument](ValueSet-fr-vs-result-type-document.md), [FRValueSetRolePriseCharge](ValueSet-fr-doc-vs-role-prise-charge.md), [Mapping Métier/CDA/FHIR : Entête d'un document](ConceptMap-mappingmodelemetierCDAFHIR.md), [Mapping Métier/CDA/FHIR : "Auteur"](ConceptMap-mappingAuteurCDAFHIR.md), [Mapping Métier/CDA/FHIR : "Consentement"](ConceptMap-mappingConsentementCDAFHIR.md), [Mapping Métier/CDA/FHIR : "Destinataire prévu"](ConceptMap-mappingDestinatairePrevuCDAFHIR.md), [Mapping Métier/CDA/FHIR : "DocumentDeReference"](ConceptMap-mappingDocumentDeReferenceCDAFHIR.md), [Mapping Métier/CDA/FHIR : "Evènement documenté"](ConceptMap-mappingEvenementCDAFHIR.md), [Mapping Métier/CDA/FHIR : "Informateur"](ConceptMap-mappingInformateurCDAFHIR.md), [Mapping Métier/CDA/FHIR : "Opérateur de saisie"](ConceptMap-mappingOperateurSaisieCDAFHIR.md), [Mapping Métier/CDA/FHIR : "Participant"](ConceptMap-mappingParticipantCDAFHIR.md), [Mapping Métier/CDA/FHIR : "Patient/Usager"](ConceptMap-mappingPatientCDAFHIR.md), [Mapping Métier/CDA/FHIR : "Personne / Structure (AssignedEntity)"](ConceptMap-mappingPersonneStructureAssignedEntityFHIR.md), [Mapping Métier/CDA/FHIR : "Personne / Structure (Auteur)"](ConceptMap-mappingPersonneStructureAuteurFHIR.md), [Mapping Métier/CDA/FHIR : "Personne / Structure (RelatedEntity)"](ConceptMap-mappingPersonneStructureRelatedEntityFHIR.md), [Mapping Métier/CDA/FHIR : "Prescription"](ConceptMap-mappingPrescriptionCDAFHIR.md), [Mapping Métier/CDA/FHIR : "Prise en charge"](ConceptMap-mappingPriseEnchargeCDAFHIR.md), [Mapping Métier/CDA/FHIR : "Responsable du document"](ConceptMap-mappingResponsableCDAFHIR.md), [Mapping Métier/CDA/FHIR : "Structure chargée de la conservation du document"](ConceptMap-mappingStructureConservationCDAFHIR.md), [Mapping Métier/CDA/FHIR : "Système / Structure Auteur"](ConceptMap-mappingSystemeFHIR.md) and [Mapping Métier/CDA/FHIR : "Validateur"](ConceptMap-mappingValidateurCDAFHIR.md)
 
 
 * Publications of the World Health Organization enjoy copyright protection in accordance with the provisions of Protocol 2 of the Universal Copyright Convention. All rights reserved.
@@ -144,7 +144,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
   "name" : "FRDocumentCore",
   "title" : "ANS IG document core",
   "status" : "draft",
-  "date" : "2026-01-28T14:36:08+00:00",
+  "date" : "2026-02-05T08:09:31+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -218,7 +218,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "id" : "hl7_fhir_uv_fhir_clinical_document",
       "uri" : "http://hl7.org/fhir/uv/fhir-clinical-document/ImplementationGuide/hl7.fhir.uv.fhir-clinical-document",
       "packageId" : "hl7.fhir.uv.fhir-clinical-document",
-      "version" : "1.0.0"
+      "version" : "1.0.1"
     },
     {
       "id" : "ihe_pharm_mpd",
@@ -979,8 +979,12 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
         "name" : "Concept Maps de l'entête du document"
       },
       {
-        "id" : "Mapping ML-CDA-FHIR corps",
-        "name" : "Concept Maps du corps d'un document"
+        "id" : "Mapping ML-CDA-FHIR des sections d'un document",
+        "name" : "Concept Maps des sections d'un document"
+      },
+      {
+        "id" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document",
+        "name" : "Concept Maps des composants élémentaires d'un Document"
       }
     ],
     "resource" : [
@@ -2391,12 +2395,27 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
           }
         ],
         "reference" : {
+          "reference" : "ConceptMap/FRObservationTransfusionAccidentsLMCDAFHIR"
+        },
+        "name" : "Mapping FRLMAccidentsTransfusionnels → FRCDAAccidentsTransfusionnels → FRObservationTransfusionAccidentsDocument",
+        "description" : "Mapping des éléments du modèle métier FRLMAccidentsTransfusionnels vers le profil CDA FRCDAAccidentsTransfusionnels, puis vers le profil FHIR FRObservationTransfusionAccidentsDocument.",
+        "exampleBoolean" : false,
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ConceptMap"
+          }
+        ],
+        "reference" : {
           "reference" : "ConceptMap/FRActLMCDAFHIR"
         },
         "name" : "Mapping FRLMActe → FRCDAActe → FRProcedureActDocument",
         "description" : "Mapping des éléments du modèle métier FRLMActe vers le profil CDA FRCDAActe, puis vers le profil FHIR FRProcedureActDocument.",
         "exampleBoolean" : false,
-        "groupingId" : "Mapping ML-CDA-FHIR corps"
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
       },
       {
         "extension" : [
@@ -2411,7 +2430,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
         "name" : "Mapping FRLMAdministrationDeDerivesDuSang → FRCDAAdministrationDeDerivesDuSang → FRObservationAdministrationBloodDerivativesDocument",
         "description" : "Mapping des éléments du modèle métier FRLMAdministrationDeDerivesDuSang vers le profil CDA FRCDAAdministrationDeDerivesDuSang, puis vers le profil FHIR FRObservationAdministrationBloodDerivativesDocument.",
         "exampleBoolean" : false,
-        "groupingId" : "Mapping ML-CDA-FHIR corps"
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
       },
       {
         "extension" : [
@@ -2426,7 +2445,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
         "name" : "Mapping FRLMAllergieOuHypersensibilite / FRCDAAllergieOuHypersensibilite -> FRAllergyIntoleranceDocument",
         "description" : "Mapping des éléments du modèle métier FRLMAllergieOuHypersensibilite vers le profil CDA FRCDAAllergieOuHypersensibilite,puis vers le profil FHIR FRAllergyIntoleranceDocument.",
         "exampleBoolean" : false,
-        "groupingId" : "Mapping ML-CDA-FHIR corps"
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
       },
       {
         "extension" : [
@@ -2441,7 +2460,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
         "name" : "Mapping FRLMAntecedentFamilialObserve → FRCDAAntecedentFamilialObserve → FRFamilyMemberHistoryDocument",
         "description" : "Mapping des éléments du modèle métier FRLMAntecedentFamilialObserve vers le profil CDA FRCDAAntecedentFamilialObserve, puis vers le profil FHIR FRFamilyMemberHistoryDocument.",
         "exampleBoolean" : false,
-        "groupingId" : "Mapping ML-CDA-FHIR corps"
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
       },
       {
         "extension" : [
@@ -2456,7 +2475,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
         "name" : "Mapping FRLMAntecedentsFamiliauxEntree → FRCDAAntecedentsFamiliaux → FRFamilyMemberHistoryDocument",
         "description" : "Mapping des éléments du modèle métier FRLMAntecedentsFamiliauxEntree vers le profil CDA FRCDAAntecedentsFamiliaux, puis vers le profil FHIR FRFamilyMemberHistoryDocument.",
         "exampleBoolean" : false,
-        "groupingId" : "Mapping ML-CDA-FHIR corps"
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
       },
       {
         "extension" : [
@@ -2471,7 +2490,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
         "name" : "Mapping FRLMBatterieExamensBiologieMedicale → FRCDABatterieExamensDeBiologieMedicale → FRObservationLaboratoryReportResultsDocument",
         "description" : "Mapping des éléments du modèle métier FRLMBatterieExamensBiologieMedicale vers le profil CDA FRCDABatterieExamensDeBiologieMedicale, puis vers le profil FHIR FRObservationLaboratoryReportResultsDocument.",
         "exampleBoolean" : false,
-        "groupingId" : "Mapping ML-CDA-FHIR corps"
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
       },
       {
         "extension" : [
@@ -2486,7 +2505,37 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
         "name" : "Mapping FRLMCondition → FRCDACondition → FRConditionDocument",
         "description" : "Mapping des éléments du modèle métier FRLMProbleme vers le profil CDA FRCDAProbleme, puis vers le profil FHIR FRConditionDocument.",
         "exampleBoolean" : false,
-        "groupingId" : "Mapping ML-CDA-FHIR corps"
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ConceptMap"
+          }
+        ],
+        "reference" : {
+          "reference" : "ConceptMap/FRImagingServiceRequestLMCDAFHIR"
+        },
+        "name" : "Mapping FRLMDemandeExamenImagerie → FRCDADICOMDemandeExamen → FRServiceRequestDocument",
+        "description" : "Mapping des éléments du modèle métier FRLMDemandeExamenImagerie vers la section CDA FRCDADICOMDemandeExamen puis vers le profil FHIR FRCompositionDocument.section:serviceRequest.",
+        "exampleBoolean" : false,
+        "groupingId" : "Mapping ML-CDA-FHIR des sections d'un document"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ConceptMap"
+          }
+        ],
+        "reference" : {
+          "reference" : "ConceptMap/FRServiceRequestLMCDAFHIR"
+        },
+        "name" : "Mapping FRLMDemandeExamenOuSuivi → FRCDADemandeDExamenOuDeSuivi → FRServiceRequestDocument",
+        "description" : "Mapping des éléments du modèle métier FRLMDemandeExamenOuSuivi vers le profil CDA FRCDADemandeDExamenOuDeSuivi, puis vers le profil FHIR FRServiceRequestDocument.",
+        "exampleBoolean" : false,
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
       },
       {
         "extension" : [
@@ -2501,7 +2550,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
         "name" : "Mapping FRLMDirectiveAnticipee → FRCDADirectiveAnticipee → FRAdvanceDirectiveDocument",
         "description" : "Mapping des éléments du modèle métier FRLMDirectiveAnticipee vers le profil CDA FRCDADirectiveAnticipee, puis vers le profil FHIR FRAdvanceDirectiveDocument.",
         "exampleBoolean" : false,
-        "groupingId" : "Mapping ML-CDA-FHIR corps"
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
       },
       {
         "extension" : [
@@ -2516,7 +2565,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
         "name" : "Mapping FRLMDispositifMedicalEntree → FRCDADispositifMedical → FRDeviceUseStatement",
         "description" : "Mapping des éléments du modèle métier FRLMDispositifMedicalEntree vers le\nprofil CDA FRCDADispositifMedical, puis vers le profil FHIR FRDeviceUseStatementDocument.",
         "exampleBoolean" : false,
-        "groupingId" : "Mapping ML-CDA-FHIR corps"
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
       },
       {
         "extension" : [
@@ -2531,7 +2580,67 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
         "name" : "Mapping FRLMDocumentAttache → FRCDADocumentAttache → FRDocumentReferenceDocument",
         "description" : "Mapping des éléments du modèle métier FRLMDocumentAttache vers le profil CDA FRCDADocumentAttache, puis vers le profil FHIR FRDocumentReferenceDocument.",
         "exampleBoolean" : false,
-        "groupingId" : "Mapping ML-CDA-FHIR corps"
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ConceptMap"
+          }
+        ],
+        "reference" : {
+          "reference" : "ConceptMap/FRObservationWorkRelatedAccidentLMCDAFHIR"
+        },
+        "name" : "Mapping FRLMEnRapportAvecAccidentTravail → FRCDAEnRapportAvecAccidentTravail → FRObservationWorkRelatedAccidentDocument",
+        "description" : "Mapping des éléments du modèle métier FRLMEnRapportAvecAccidentTravail vers le profil CDA FRCDAEnRapportAvecAccidentTravail, puis vers le profil FHIR FRObservationWorkRelatedAccidentDocument.",
+        "exampleBoolean" : false,
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ConceptMap"
+          }
+        ],
+        "reference" : {
+          "reference" : "ConceptMap/FRObservationSurveyLMCDAFHIR"
+        },
+        "name" : "Mapping FRLMEvaluation → FRCDAEvaluation → FRObservationSurveyDocument",
+        "description" : "Mapping des éléments du modèle métier FRLMEvaluation vers le profil CDA FRCDAEvaluation, puis vers le profil FHIR FRObservationSurveyDocument.",
+        "exampleBoolean" : false,
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ConceptMap"
+          }
+        ],
+        "reference" : {
+          "reference" : "ConceptMap/FRObservationSurveyComponentLMCDAFHIR"
+        },
+        "name" : "Mapping FRLMEvaluationComposant → FRCDAEvaluationComposant → FRObservationSurveyDocument",
+        "description" : "Mapping des éléments du modèle métier FRLMEvaluationComposant vers le profil CDA FRCDAEvaluationComposant, puis vers le profil FHIR FRObservationSurveyDocument.",
+        "exampleBoolean" : false,
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ConceptMap"
+          }
+        ],
+        "reference" : {
+          "reference" : "ConceptMap/FRObservationSurveyComponentN2LMCDAFHIR"
+        },
+        "name" : "Mapping FRLMEvaluationComposantN2 → FRCDAEvaluationComposantN2 → FRObservationSurveyDocument",
+        "description" : "Mapping des éléments du modèle métier FRLMEvaluationComposantN2 vers le profil CDA FRCDAEvaluationComposantN2, puis vers le profil FHIR FRObservationSurveyDocument.",
+        "exampleBoolean" : false,
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
       },
       {
         "extension" : [
@@ -2546,7 +2655,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
         "name" : "Mapping FRLMEvenementIndesirable → FRCDAEvenementIndesirable → FRAdverseEventDocument",
         "description" : "Mapping des éléments du modèle métier FRLMEvenementIndesirable vers le profil CDA FRCDAEvenementIndesirable, puis vers le profil FHIR FRAdverseEvent.",
         "exampleBoolean" : false,
-        "groupingId" : "Mapping ML-CDA-FHIR corps"
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
       },
       {
         "extension" : [
@@ -2561,7 +2670,67 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
         "name" : "Mapping FRLMExamenImagerie → FRCDADICOMExamenImagerie → FRImagingStudyDocument",
         "description" : "Mapping des éléments du modèle métier FRLMExamenImagerie vers le profil CDA FRCDADICOMExamenImagerie, puis vers le profil FHIR FRImagingStudyDocument.",
         "exampleBoolean" : false,
-        "groupingId" : "Mapping ML-CDA-FHIR corps"
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ConceptMap"
+          }
+        ],
+        "reference" : {
+          "reference" : "ConceptMap/FRImagingRadiationExposureLMCDAFHIR"
+        },
+        "name" : "Mapping FRLMExpositionRadiations → FRCDADICOMExpositionAuxRadiations → FRCompositionDocument.section:radiationExposure",
+        "description" : "Mapping des éléments du modèle métier FRLMExpositionRadiations vers la section CDA FRCDADICOMExpositionAuxRadiations puis vers le profil FHIR FRCompositionDocument.section:radiationExposure.",
+        "exampleBoolean" : false,
+        "groupingId" : "Mapping ML-CDA-FHIR des sections d'un document"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ConceptMap"
+          }
+        ],
+        "reference" : {
+          "reference" : "ConceptMap/FRObservationSurveyPannelLMCDAFHIR"
+        },
+        "name" : "Mapping FRLMGroupDeQuestionnairesDevaluation → FRCDAGroupeDeQuestionnairesDEvaluation → FRObservationSurveyDocument",
+        "description" : "Mapping des éléments du modèle métier FRLMGroupDeQuestionnairesDevaluation vers le profil CDA FRCDAGroupeDeQuestionnairesDEvaluation, puis vers le profil FHIR FRObservationSurveyDocument.",
+        "exampleBoolean" : false,
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ConceptMap"
+          }
+        ],
+        "reference" : {
+          "reference" : "ConceptMap/FRSocialHistoryLMCDAFHIR"
+        },
+        "name" : "Mapping FRLMHabitusModeDeVie → FRCDAHabitusModeDeVieSection → FRCompositionDocument.section:socialHistory",
+        "description" : "Mapping des éléments du modèle métier FRLMHabitusModeDeVie vers la section CDA FRCDAHabitusModeDeVieSection, puis vers le profil FHIR FRCompositionDocument.section:socialHistory.",
+        "exampleBoolean" : false,
+        "groupingId" : "Mapping ML-CDA-FHIR des sections d'un document"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ConceptMap"
+          }
+        ],
+        "reference" : {
+          "reference" : "ConceptMap/FRObservationSocialHistoryLMCDAFHIR"
+        },
+        "name" : "Mapping FRLMHabitusModeDeVieEntree → FRCDAHabitusModeDeVie → FRObservationSocialHistoryDocument",
+        "description" : "Mapping des éléments du modèle métier FRLMHabitusModeDeVieEntree vers le profil CDA FRCDAHabitusModeDeVie, puis vers le profil FHIR FRObservationSocialHistoryDocument.",
+        "exampleBoolean" : false,
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
       },
       {
         "extension" : [
@@ -2576,7 +2745,22 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
         "name" : "Mapping FRLMHistoriqueGrossesse → FRCDAHistoriqueDeLaGrossesse → FRObservationPregnancyHistoryDocument",
         "description" : "Mapping des éléments du modèle métier FRLMHistoriqueGrossesse vers le profil CDA FRCDAHistoriqueDeLaGrossesse, puis vers le profil FHIR FRObservationPregnancyHistoryDocument.",
         "exampleBoolean" : false,
-        "groupingId" : "Mapping ML-CDA-FHIR corps"
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ConceptMap"
+          }
+        ],
+        "reference" : {
+          "reference" : "ConceptMap/FRPregnancyHistoryLMCDAFHIR"
+        },
+        "name" : "Mapping FRLMHistoriqueGrossesse → FRCDAHistoriqueDeLaGrossesse → FRPregnancyHistoryDocument",
+        "description" : "Mapping des éléments du modèle métier FRLMHistoriqueGrossesse vers le profil CDA FRCDAHistoriqueDeLaGrossesse, puis vers le profil FHIR FRPregnancyHistoryDocument.",
+        "exampleBoolean" : false,
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
       },
       {
         "extension" : [
@@ -2591,7 +2775,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
         "name" : "Mapping FRLMIdentificationDeMicroOrganismesMultiresistants → FRCDAIdentificationMicroOrganismesMultiresistants → FRObservationMultiresistantMicroorganismsIdentificationDocument",
         "description" : "Mapping des éléments du modèle métier FRLMIdentificationDeMicroOrganismesMultiresistants vers le profil CDA FRCDAIdentificationMicroOrganismesMultiresistants, puis vers le profil FHIR FRObservationMultiresistantMicroorganismsIdentificationDocument.",
         "exampleBoolean" : false,
-        "groupingId" : "Mapping ML-CDA-FHIR corps"
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
       },
       {
         "extension" : [
@@ -2606,7 +2790,22 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
         "name" : "Mapping FRLMImageIllustrative → FRCDAImageIllustrative → FRMediaDocument",
         "description" : "Mapping des éléments du modèle métier FRLMImageIllustrative vers le profil CDA FRCDAImageIllustrative, puis vers le profil FHIR FRMediaDocument.",
         "exampleBoolean" : false,
-        "groupingId" : "Mapping ML-CDA-FHIR corps"
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ConceptMap"
+          }
+        ],
+        "reference" : {
+          "reference" : "ConceptMap/FRImagingClinicalInformationLMCDAFHIR"
+        },
+        "name" : "Mapping FRLMInformationsCliniques → FRCDADICOMHistoriqueMedical → FRCompositionDocument.section:History (Observation / FRConditionDocument/ FRObservationPregnancyDocument / FRObservationContraIndicationsImagingDocument / FRDeviceAuteurDocument / FRMedicationAdministrationDocument)",
+        "description" : "Mapping des éléments du modèle métier FRLMInformationsCliniques vers la section CDA FRCDADICOMHistoriqueMedical puis vers les profils FHIR Observation, FRConditionDocument, FRObservationPregnancyDocument, FRObservationContraIndicationsImagingDocument, FRDeviceAuteurDocument et FRMedicationAdministrationDocument.",
+        "exampleBoolean" : false,
+        "groupingId" : "Mapping ML-CDA-FHIR des sections d'un document"
       },
       {
         "extension" : [
@@ -2621,7 +2820,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
         "name" : "Mapping FRLMIsolatMicrobiologique → FRCDAIsolatMicrobiologique → FRObservationLaboratoryReportResultsDocument",
         "description" : "Mapping des éléments du modèle métier FRLMIsolatMicrobiologique vers le profil CDA FRCDAIsolatMicrobiologique, puis vers le profil FHIR FRObservationLaboratoryReportResultsDocument.",
         "exampleBoolean" : false,
-        "groupingId" : "Mapping ML-CDA-FHIR corps"
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
       },
       {
         "extension" : [
@@ -2650,7 +2849,22 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
         "name" : "Mapping FRLMObservationGrossesse → FRCDAObservationSurLaGrossesse → FRObservationPregnancyDocument",
         "description" : "Mapping des éléments du modèle métier FRLMObservationGrossesse vers le profil CDA FRCDAObservationSurLaGrossesse, puis vers le profil FHIR FRObservationPregnancyDocument.",
         "exampleBoolean" : false,
-        "groupingId" : "Mapping ML-CDA-FHIR corps"
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ConceptMap"
+          }
+        ],
+        "reference" : {
+          "reference" : "ConceptMap/FRObservationResultLMCDAFHIR"
+        },
+        "name" : "Mapping FRLMObservationResult → FRCDAResultat → FRObservationResultDocument",
+        "description" : "Mapping des éléments du modèle métier FRLMObservationResult vers le profil CDA FRCDAResultat, puis vers le profil FHIR FRObservationResultDocument.",
+        "exampleBoolean" : false,
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
       },
       {
         "extension" : [
@@ -2665,7 +2879,22 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
         "name" : "Mapping FRLMOrdreDispositifMedical → FRCDAOrdreDispositifMedical → FRDeviceRequestDocument",
         "description" : "Mapping des éléments du modèle métier FRLMDispositifMedicalEntree vers le profil CDA FRCDADispositifMedical, puis vers le profil FHIR FRDeviceRequestDocument.",
         "exampleBoolean" : false,
-        "groupingId" : "Mapping ML-CDA-FHIR corps"
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ConceptMap"
+          }
+        ],
+        "reference" : {
+          "reference" : "ConceptMap/FRSpecimenLMCDAFHIR"
+        },
+        "name" : "Mapping FRLMPrelevement → FRCDAPrelevement → FRSpecimenDocument",
+        "description" : "Mapping des éléments du modèle métier FRLMPrelevement vers le profil CDA FRCDAPrelevement, puis vers le profil FHIR FRSpecimenDocument.",
+        "exampleBoolean" : false,
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
       },
       {
         "extension" : [
@@ -2680,7 +2909,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
         "name" : "Mapping FRLMProduitSante → FRCDAProduitDeSante → FRMedicationDocument",
         "description" : "Mapping des éléments du modèle métier FRLMProduitSante vers le profil CDA FRCDAProduitDeSante, puis vers le profil FHIR FRMedicationDocument.",
         "exampleBoolean" : false,
-        "groupingId" : "Mapping ML-CDA-FHIR corps"
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
       },
       {
         "extension" : [
@@ -2695,7 +2924,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
         "name" : "Mapping FRLMRechercheDeMicroOrganismes → FRCDARechercheDeMicroOrganismes → FRObservationMicroorganismDetectionDocument",
         "description" : "Mapping des éléments du modèle métier FRLMRechercheDeMicroOrganismes vers le profil CDA FRCDARechercheDeMicroOrganismes, puis vers le profil FHIR FRObservationMicroorganismDetectionDocument.",
         "exampleBoolean" : false,
-        "groupingId" : "Mapping ML-CDA-FHIR corps"
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
       },
       {
         "extension" : [
@@ -2710,7 +2939,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
         "name" : "Mapping FRLMReferenceItemPlanTraitement → FRCDAReferenceItemPlanTraitement → FRCarePlanDocument",
         "description" : "Mapping des éléments du modèle métier FRLMReferenceItemPlanTraitement vers le profil CDA FRCDAReferenceItemPlanTraitement, puis vers le profil FHIR FRCarePlanDocument.",
         "exampleBoolean" : false,
-        "groupingId" : "Mapping ML-CDA-FHIR corps"
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
       },
       {
         "extension" : [
@@ -2725,7 +2954,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
         "name" : "Mapping FRLMRencontre → FRCDARencontre → FREncounterDocument",
         "description" : "Mapping des éléments du modèle métier FRLMRencontre vers le profil CDA FRCDARencontre, puis vers le profil FHIR FREncounterDocument.",
         "exampleBoolean" : false,
-        "groupingId" : "Mapping ML-CDA-FHIR corps"
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
       },
       {
         "extension" : [
@@ -2740,7 +2969,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
         "name" : "Mapping FRLMResultatExamensBiologieElementCliniquePertinent → Profile: FRCDAResultatExamensDeBiologieElementCliniquePertinent\n → FRObservationLaboratoryReportResultsDocument",
         "description" : "Mapping des éléments du modèle métier FRLMResultatExamensBiologieElementCliniquePertinent vers le profil CDA FRCDAResultatExamensDeBiologieElementCliniquePertinent, puis vers le profil FHIR FRObservationLaboratoryReportResultsDocument.",
         "exampleBoolean" : false,
-        "groupingId" : "Mapping ML-CDA-FHIR corps"
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
       },
       {
         "extension" : [
@@ -2755,7 +2984,22 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
         "name" : "Mapping FRLMResultatsEntry → FRCDAResultats → FRDiagnosticReportDocument",
         "description" : "Mapping des éléments du modèle métier FRLMResultatsEntry vers le profil CDA FRCDAResultats, puis vers le profil FHIR FRDiagnosticReportDocument.",
         "exampleBoolean" : false,
-        "groupingId" : "Mapping ML-CDA-FHIR corps"
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ConceptMap"
+          }
+        ],
+        "reference" : {
+          "reference" : "ConceptMap/FRResultsLMCDAFHIR"
+        },
+        "name" : "Mapping FRLMResultatsEntry → FRCDAResultats → FRDiagnosticReportDocument",
+        "description" : "Mapping des éléments du modèle métier FRLMResultatsEntry vers le profil CDA FRCDAResultats, puis vers le profil FHIR FRDiagnosticReportDocument.",
+        "exampleBoolean" : false,
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
       },
       {
         "extension" : [
@@ -2770,7 +3014,67 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
         "name" : "Mapping FRLMResultatsExamensBiologieMedicale → FRCDAResultatExamensDeBiologie → FRObservationLaboratoryReportResultsDocument",
         "description" : "Mapping des éléments du modèle métier FRLMResultatsExamensBiologieMedicale vers le profil CDA FRCDAResultatExamensDeBiologie, puis vers le profil FHIR FRObservationLaboratoryReportResultsDocument.",
         "exampleBoolean" : false,
-        "groupingId" : "Mapping ML-CDA-FHIR corps"
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ConceptMap"
+          }
+        ],
+        "reference" : {
+          "reference" : "ConceptMap/FRObservationVitalSignsPanelLMCDAFHIR"
+        },
+        "name" : "Mapping FRLMSigneVital → FRCDASignesVitaux → FRObservationVitalSignsPanelDocument",
+        "description" : "Mapping des éléments du modèle métier FRLMSigneVital vers le profil CDA FRCDASignesVitaux, puis vers le profil FHIR FRObservationVitalSignsPanelDocument.",
+        "exampleBoolean" : false,
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ConceptMap"
+          }
+        ],
+        "reference" : {
+          "reference" : "ConceptMap/FRObservationVitalSignsLMCDAFHIR"
+        },
+        "name" : "Mapping FRLMSigneVitalObserve → FRCDASigneVitalObserve → FRObservationVitalSignsDocument",
+        "description" : "Mapping des éléments du modèle métier FRLMSigneVitalObserve vers le profil CDA FRCDASigneVitalObserve, puis vers le profil FHIR FRObservationVitalSignsDocument.",
+        "exampleBoolean" : false,
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ConceptMap"
+          }
+        ],
+        "reference" : {
+          "reference" : "ConceptMap/FRPhysicalFunctionsLMCDAFHIR"
+        },
+        "name" : "Mapping FRLMStatutFonctionnel → FRCDAFonctionsPhysiques → FRCompositionDocument.section:PhysicalFunctions",
+        "description" : "Mapping des éléments du modèle métier FRLMStatutFonctionnel vers le profil CDA FRCDAFonctionsPhysiques, puis vers le profil FHIR FRCompositionDocument.section:PhysicalFunctions.",
+        "exampleBoolean" : false,
+        "groupingId" : "Mapping ML-CDA-FHIR des sections d'un document"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ConceptMap"
+          }
+        ],
+        "reference" : {
+          "reference" : "ConceptMap/FRFunctionalStatusLMCDAFHIR"
+        },
+        "name" : "Mapping FRLMStatutFonctionnel → FRCDAStatutFonctionnel → FRCompositionDocument.section:FRFunctionalStatus",
+        "description" : "Mapping des éléments du modèle métier FRLMStatutFonctionnel vers le profil CDA FRCDAStatutFonctionnel, puis vers la section FHIR FRCompositionDocument.section:FRFunctionalStatus.",
+        "exampleBoolean" : false,
+        "groupingId" : "Mapping ML-CDA-FHIR des sections d'un document"
       },
       {
         "extension" : [
@@ -2785,7 +3089,22 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
         "name" : "Mapping FRLMSyntheseMedicaleSejour → FRCDASyntheseMedicaleSejour → FRObservationMedicalSummaryDocument",
         "description" : "Mapping des éléments du modèle métier FRLMSyntheseMedicaleSejour vers la sous-entrée CDA FRCDASyntheseMedicaleSejour puis vers le profil FHIR FRObservationMedicalSummaryDocument.",
         "exampleBoolean" : false,
-        "groupingId" : "Mapping ML-CDA-FHIR corps"
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ConceptMap"
+          }
+        ],
+        "reference" : {
+          "reference" : "ConceptMap/FRImagingProcedureLMCDAFHIR"
+        },
+        "name" : "Mapping FRLMTechniqueImagerie → FRCDADICOMTechniqueImagerie → FRProcedureImagingDocument",
+        "description" : "Mapping des éléments du modèle métier FRLMTechniqueImagerie vers le profil CDA FRCDADICOMTechniqueImagerie, puis vers le profil FHIR FRProcedureImagingDocument.",
+        "exampleBoolean" : false,
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
       },
       {
         "extension" : [
@@ -2800,7 +3119,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
         "name" : "Mapping FRLMTraitement → FRCDATraitement → FRMedicationAdministrationDocument",
         "description" : "Mapping des éléments du modèle métier FRLMTraitement vers le profil CDA FRCDATraitement, puis vers le profil FHIR FRMedicationAdministrationDocument.",
         "exampleBoolean" : false,
-        "groupingId" : "Mapping ML-CDA-FHIR corps"
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
       },
       {
         "extension" : [
@@ -2815,7 +3134,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
         "name" : "Mapping FRLMTraitement → FRCDATraitement → FRMedicationStatementDocument",
         "description" : "Mapping des éléments du modèle métier FRLMTraitement vers la sous-entrée CDA FRCDATraitement puis vers le profil FHIR FRMedicationStatementDocument.",
         "exampleBoolean" : false,
-        "groupingId" : "Mapping ML-CDA-FHIR corps"
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
       },
       {
         "extension" : [
@@ -2830,7 +3149,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
         "name" : "Mapping FRLMTraitementDispense → FRCDATraitementDispense → FRMedicationDispenseDocument",
         "description" : "Mapping des éléments du modèle métier FRLMTraitementDispense vers le profil CDA FRCDATraitementDispense, puis vers le profil FHIR FRMedicationDispenseDocument.",
         "exampleBoolean" : false,
-        "groupingId" : "Mapping ML-CDA-FHIR corps"
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
       },
       {
         "extension" : [
@@ -2845,7 +3164,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
         "name" : "Mapping FRLMTraitementPrescrit → FRCDATraitementPrescrit → FRMedicationRequestDocument",
         "description" : "Mapping des éléments du modèle métier FRLMTraitementPrescrit vers l'entrée CDA FRCDATraitementPrescrit, puis vers le profil FHIR FRMedicationRequestDocument.",
         "exampleBoolean" : false,
-        "groupingId" : "Mapping ML-CDA-FHIR corps"
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
       },
       {
         "extension" : [
@@ -2860,7 +3179,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
         "name" : "Mapping FRLMTraitementPrescritSubordonne → FRCDATraitementPrescritSubordonne → FRMedicationsCombinaisonDocument",
         "description" : "Mapping des éléments du modèle métier FRLMTraitementPrescritSubordonne vers la sous-entrée CDA FRCDATraitementSubordonne puis vers le profil FHIR FRMedicationsCombinaisonDocument.",
         "exampleBoolean" : false,
-        "groupingId" : "Mapping ML-CDA-FHIR corps"
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
       },
       {
         "extension" : [
@@ -2875,7 +3194,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
         "name" : "Mapping FRLMTraitementSubordonne → FRCDATraitementSubordonne → FRMedicationsCombinaisonDocument",
         "description" : "Mapping des éléments du modèle métier FRLMTraitementSubordonne vers la sous-entrée CDA FRCDATraitementSubordonne puis vers le profil FHIR FRMedicationsCombinaisonDocument.",
         "exampleBoolean" : false,
-        "groupingId" : "Mapping ML-CDA-FHIR corps"
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
       },
       {
         "extension" : [
@@ -2890,7 +3209,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
         "name" : "Mapping FRLMTransfusionDeProduitsSanguins → FRCDATransfusionDeProduitsSanguins → FRObservationBloodProductTransfusionDocument",
         "description" : "Mapping des éléments du modèle métier FRLMTransfusionDeProduitsSanguins vers la sous-entrée CDA FRCDATransfusionDeProduitsSanguins puis vers le profil FHIR FRObservationBloodProductTransfusionDocument.",
         "exampleBoolean" : false,
-        "groupingId" : "Mapping ML-CDA-FHIR corps"
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
       },
       {
         "extension" : [
@@ -2905,7 +3224,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
         "name" : "Mapping FRLMVaccination → FRCDAVaccination → FRImmunizationDocument",
         "description" : "Mapping des éléments du modèle métier FRLMVaccination vers le profil CDA FRCDAVaccination, puis vers le profil FHIR FRImmunizationDocument.",
         "exampleBoolean" : false,
-        "groupingId" : "Mapping ML-CDA-FHIR corps"
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
       },
       {
         "extension" : [
@@ -2920,7 +3239,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
         "name" : "Mapping FRLMVaccinRecommande → FRCDAVaccinRecommande → FRImmunizationRecommendationDocument",
         "description" : "Mapping des éléments du modèle métier FRLMVaccinRecommande vers le profil CDA FRCDAVaccinRecommande, puis vers le profil FHIR FRImmunizationRecommendationDocument.",
         "exampleBoolean" : false,
-        "groupingId" : "Mapping ML-CDA-FHIR corps"
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
       },
       {
         "extension" : [
@@ -3206,6 +3525,36 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
         "description" : "Ce ConceptMap présente deux groupes de mapping : \n - Mapping 1 : entre le modèle métier \\\"validateur\\\" et l'élément CDA \\\"authenticator\\\"\n - Mapping 2 : entre l'élément CDA \\\"authenticator\\\" et l'élément FHIR \\\"Composition.attester\\\"",
         "exampleBoolean" : false,
         "groupingId" : "Mapping ML-CDA-FHIR entête"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ConceptMap"
+          }
+        ],
+        "reference" : {
+          "reference" : "ConceptMap/FRImagingQuantityLMCDAFHIR"
+        },
+        "name" : "Mapping Métier/CDA/FHIR : Quantité d'exposition aux radiations",
+        "description" : "Mapping des éléments du modèle métier FRLMQuantiteExposition vers l'entrée CDA FRCDADICOMQuantite puis vers le composant FHIR FRObservationRadiationExposureDocument.component.",
+        "exampleBoolean" : false,
+        "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ConceptMap"
+          }
+        ],
+        "reference" : {
+          "reference" : "ConceptMap/FRImagingResultatsLMCDAFHIR"
+        },
+        "name" : "Mapping Métier/CDA/FHIR : Résultats d'imagerie",
+        "description" : "Mapping des éléments du modèle métier FRLMResultatsExamenImagerie vers la section CDA FRCDADICOMResultats puis vers le profil FHIR FRCompositionDocument.section:Findings.",
+        "exampleBoolean" : false,
+        "groupingId" : "Mapping ML-CDA-FHIR des sections d'un document"
       },
       {
         "extension" : [
@@ -4586,6 +4935,20 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
         "description" : "observation",
         "exampleBoolean" : false,
         "groupingId" : "Modèles logiques métier des composants élémentaires"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:logical"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/fr-lm-observation-result"
+        },
+        "name" : "Modèle logique métier - FR LM Observation Result",
+        "description" : "Résultat d'une observation médicale (résultat d'examen de laboratoire, d'imagerie, etc.)",
+        "exampleBoolean" : false
       },
       {
         "extension" : [
@@ -6128,7 +6491,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
           "reference" : "StructureDefinition/fr-service-request-document"
         },
         "name" : "ServiceRequest - FR Service Request Document",
-        "description" : "FRSeviceRequestDocument profil permet de porter des demandes d'examens (analyses biologiques, évaluations, étude d'imagerie, etc…) ou de suivis particuliers à programmer dans le cadre d'un plan de soins.",
+        "description" : "FRServiceRequestDocument profil permet de porter des demandes d'examens (analyses biologiques, évaluations, étude d'imagerie, etc…) ou de suivis particuliers à programmer dans le cadre d'un plan de soins.",
         "exampleBoolean" : false,
         "groupingId" : "Ressources FHIR corps"
       },

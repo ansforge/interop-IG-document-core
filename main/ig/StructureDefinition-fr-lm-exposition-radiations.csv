@@ -15,3 +15,5 @@
 ","Entrée autorisation à l'exposition aux rayonnements ionisants","Entrée autorisation à l'exposition aux rayonnements ionisants","","","","","","","","","",,,,,"",,,,"fr-lm-exposition-radiations.entree.autorisationExposition",1,1,"",""
 "fr-lm-exposition-radiations.entree.quantiteExposition","fr-lm-exposition-radiations.entree.quantiteExposition","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-quantite-exposition {[]} {[]}
 ","Entrée Quantité","Entrée Quantité","","","","","","","","","",,,,,"",,,,"fr-lm-exposition-radiations.entree.quantiteExposition",0,*,"",""
+"fr-lm-exposition-radiations.entree.administrationRadiopharmaceutique","fr-lm-exposition-radiations.entree.administrationRadiopharmaceutique","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-administration-produit-de-sante {[]} {[]}
+","Entrée administration des produits radiopharmaceutiques","Entrée administration des produits radiopharmaceutiques","","","","","","","","","",,,,,"",,,,"fr-lm-exposition-radiations.entree.administrationRadiopharmaceutique",0,1,"",""

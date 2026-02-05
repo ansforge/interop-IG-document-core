@@ -9,16 +9,16 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-accession-number-identifier-document | *Version*:0.1.0 |
-| Draft as of 2026-01-28 | *Computable Name*:FRAccessionNumberIdentifierDocument |
+| Draft as of 2026-02-05 | *Computable Name*:FRAccessionNumberIdentifierDocument |
 
  
 DataType définissant l’Accession Number d’une demande d’examen. Il s’agit d’un identifiant unique attribué à chaque demande d’examen. 
 
 **Utilisations:**
 
-* Utiliser ce Profil de type de données: [ServiceRequest - FR Service Request Document](StructureDefinition-fr-service-request-document.md)
+* Utilise ce/t/te profil de type de données: [ServiceRequest - FR Service Request Document](StructureDefinition-fr-service-request-document.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-accession-number-identifier-document)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-accession-number-identifier-document)
 
 ### Formal Views of Profile Content
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-accession-number-
   "name" : "FRAccessionNumberIdentifierDocument",
   "title" : "FR Accession Number Identifier Document",
   "status" : "draft",
-  "date" : "2026-01-28T14:36:08+00:00",
+  "date" : "2026-02-05T08:09:31+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

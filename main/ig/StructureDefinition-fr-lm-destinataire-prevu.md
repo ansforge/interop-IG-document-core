@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-destinataire-prevu | *Version*:0.1.0 |
-| Draft as of 2026-01-28 | *Computable Name*:FRLMDestinatairePrevu |
+| Draft as of 2026-02-05 | *Computable Name*:FRLMDestinatairePrevu |
 
  
 Personne déclarée comme destinataire prévu du document. 
@@ -18,9 +18,9 @@ Personne déclarée comme destinataire prévu du document.
 
 **Utilisations:**
 
-* Utiliser ce Modèle logique: [Modèle logique métier - FR LM En-tête document](StructureDefinition-fr-lm-entete-document.md)
+* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM En-tête document](StructureDefinition-fr-lm-entete-document.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-destinataire-prevu)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-destinataire-prevu)
 
 ### Formal Views of Profile Content
 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-destinataire-p
   "name" : "FRLMDestinatairePrevu",
   "title" : "Modèle logique métier - FR LM Destinataire prévu",
   "status" : "draft",
-  "date" : "2026-01-28T14:36:08+00:00",
+  "date" : "2026-02-05T08:09:31+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
