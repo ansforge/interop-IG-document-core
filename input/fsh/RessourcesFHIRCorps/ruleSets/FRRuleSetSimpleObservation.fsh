@@ -50,5 +50,8 @@ RuleSet: FRRuleSetSimpleObservation
 * note MS
 * note ^short = "Commentaire"
 
+* bodySite MS
+* bodySite ^short = "Localisation anatomique"
+
 * encounter only Reference (FREncounterDocument)
 * encounter ^short = "Rencontre de soins durant laquelle cette observation a été effectuée"

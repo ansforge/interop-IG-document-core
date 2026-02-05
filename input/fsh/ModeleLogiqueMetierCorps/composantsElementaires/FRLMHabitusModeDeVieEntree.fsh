@@ -6,6 +6,9 @@ Characteristics: #can-be-target
 
 * identifiant 1..1 Identifier "Identifiant de l'entrée"
 * code 1..1 CodeableConcept "Code de l'entrée. Élément observé"
+  * precision 0..1 CodeableConcept "Précision sur l'élément observé"
+    * name 0..1 CodeableConcept "Nom du qualifier"
+    * value 0..1 CodeableConcept "Valeur du qualifier"
 * description 1..1 Narrative "Description narrative"
 * statut 1..1 code "Statut de l'entrée" 
 * horodatage 0..1 dateTime "Horodatage de l'entrée"
