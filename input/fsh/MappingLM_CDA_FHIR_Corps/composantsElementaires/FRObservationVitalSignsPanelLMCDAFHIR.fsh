@@ -35,7 +35,7 @@ Description: "Mapping des éléments du modèle métier FRLMSigneVital vers le p
 * group[=].element[=].target.equivalence = #equivalent
 // Signe vital observé
 * group[=].element[+].code = #FRLMSigneVital.signeVital
-* group[=].element[=].target.code = #FRCDASignesVitaux.component:FRCDASigneVitalObserve
+* group[=].element[=].target.code = #FRCDASignesVitaux.component:frSigneVitalObserve
 * group[=].element[=].target.equivalence = #equivalent
 
 // Groupe Mapping 2 : CDA → FHIR
@@ -66,6 +66,6 @@ Description: "Mapping des éléments du modèle métier FRLMSigneVital vers le p
 * group[=].element[=].target.code = #FRObservationVitalSignsPanelDocument.performer.extension:author
 * group[=].element[=].target.equivalence = #equivalent
 // Signe vital observé
-* group[=].element[+].code = #FRCDASignesVitaux.component:FRCDASigneVitalObserve
+* group[=].element[+].code = #FRCDASignesVitaux.component:frSigneVitalObserve
 * group[=].element[=].target.code = #FRObservationVitalSignsPanelDocument.hasMember:FRObservationVitalSignsDocument
 * group[=].element[=].target.equivalence = #equivalent

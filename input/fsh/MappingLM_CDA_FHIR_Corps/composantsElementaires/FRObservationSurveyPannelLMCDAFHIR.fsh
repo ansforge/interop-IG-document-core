@@ -30,7 +30,7 @@ Description: "Mapping des éléments du modèle métier FRLMGroupDeQuestionnaire
 * group[=].element[=].target.equivalence = #equivalent
 // Évaluation
 * group[=].element[+].code = #FRLMGroupDeQuestionnairesDevaluation.evaluation
-* group[=].element[=].target.code = #FRCDAGroupeDeQuestionnairesDEvaluation.component:FRCDAEvaluation
+* group[=].element[=].target.code = #FRCDAGroupeDeQuestionnairesDEvaluation.component:frEvaluation
 * group[=].element[=].target.equivalence = #equivalent
 
 // Groupe Mapping 2 : CDA → FHIR
@@ -57,6 +57,6 @@ Description: "Mapping des éléments du modèle métier FRLMGroupDeQuestionnaire
 * group[=].element[=].target.code = #FRObservationSurveyDocument.effectiveDateTime
 * group[=].element[=].target.equivalence = #equivalent
 // Composants d'évaluation
-* group[=].element[+].code = #FRCDAGroupeDeQuestionnairesDEvaluation.component:FRCDAEvaluation
+* group[=].element[+].code = #FRCDAGroupeDeQuestionnairesDEvaluation.component:frEvaluation
 * group[=].element[=].target.code = #FRObservationSurveyDocument.hasMember:FRObservationSurveyDocument
 * group[=].element[=].target.equivalence = #equivalent

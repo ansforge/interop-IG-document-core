@@ -39,7 +39,7 @@ Description: "Mapping des éléments du modèle métier FRLMResultatsEntry vers 
 * group[=].element[=].target.equivalence = #equivalent
 // Résultat (observation)
 * group[=].element[+].code = #FRLMResultatsEntry.resultat
-* group[=].element[=].target.code = #FRCDAResultats.component:FRCDAResultat
+* group[=].element[=].target.code = #FRCDAResultats.component:frResultat
 * group[=].element[=].target.equivalence = #equivalent
 
 // Groupe Mapping 2 : CDA FRCDAResultats → FHIR FRDiagnosticReportDocument
@@ -70,6 +70,6 @@ Description: "Mapping des éléments du modèle métier FRLMResultatsEntry vers 
 * group[=].element[=].target.code = #FRDiagnosticReportDocument.resultsInterpreter
 * group[=].element[=].target.equivalence = #equivalent
 // Résultats (component → result)
-* group[=].element[+].code = #FRCDAResultats.component:FRCDAResultat
+* group[=].element[+].code = #FRCDAResultats.component:frResultat
 * group[=].element[=].target.code = #FRDiagnosticReportDocument.result:FRObservationResultDocument
 * group[=].element[=].target.equivalence = #equivalent

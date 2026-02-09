@@ -1,6 +1,6 @@
-Profile: FRCDAParticipant
+Profile: FRCDAParticipantEntete
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Participant1
-Id: fr-cda-participant
+Id: fr-cda-participant-entete
 Title: "CDA - participant"
 Description: "L'élément de l'en-tête du CDA participant permet de représenter toute personne/structure impliquée dans les évènements décrits par le document qui n’a pas été mentionné ailleurs."
 * ^status = #draft

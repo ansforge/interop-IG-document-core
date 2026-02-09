@@ -30,11 +30,11 @@ Description: "Mapping des éléments du modèle métier FRLMHistoriqueGrossesse 
 * group[=].element[=].target.equivalence = #equivalent  
 // informations relatives à la grossesse 
 * group[=].element[+].code = #FRLMHistoriqueGrossesse.choice[x]
-* group[=].element[=].target.code = #FRCDAHistoriqueDeLaGrossesse.entryRelationship:FRCDAObservationSurLaGrossesse
+* group[=].element[=].target.code = #FRCDAHistoriqueDeLaGrossesse.entryRelationship:frObservationSurLaGrossesse
 * group[=].element[=].target.equivalence = #equivalent
 // informations relatives à une naissance
 * group[=].element[+].code = #FRLMHistoriqueGrossesse.choice[x]
-* group[=].element[=].target.code = #FRCDAHistoriqueDeLaGrossesse.entryRelationship:FRCDANaissance
+* group[=].element[=].target.code = #FRCDAHistoriqueDeLaGrossesse.entryRelationship:frNaissance
 * group[=].element[=].target.equivalence = #equivalent
 
 // Groupe Mapping 2 : CDA → FHIR
@@ -57,10 +57,10 @@ Description: "Mapping des éléments du modèle métier FRLMHistoriqueGrossesse 
 * group[=].element[=].target.code = #FRPregnancyHistoryDocument.date
 * group[=].element[=].target.equivalence = #equivalent
 // informations relatives à la grossesse 
-* group[=].element[+].code = #FRCDAHistoriqueDeLaGrossesse.entryRelationship:FRCDAObservationSurLaGrossesse
+* group[=].element[+].code = #FRCDAHistoriqueDeLaGrossesse.entryRelationship:frObservationSurLaGrossesse
 * group[=].element[=].target.code = #FRPregnancyHistoryDocument.entry.item:FRObservationPregnancyDocument
 * group[=].element[=].target.equivalence = #equivalent
 // informations relatives à une naissance
-* group[=].element[+].code = #FRCDAHistoriqueDeLaGrossesse.entryRelationship:FRCDANaissance
+* group[=].element[+].code = #FRCDAHistoriqueDeLaGrossesse.entryRelationship:frNaissance
 * group[=].element[=].target.code = #FRPregnancyHistoryDocument.entry.item:FRObservationBirthEventDocument
 * group[=].element[=].target.equivalence = #equivalent
