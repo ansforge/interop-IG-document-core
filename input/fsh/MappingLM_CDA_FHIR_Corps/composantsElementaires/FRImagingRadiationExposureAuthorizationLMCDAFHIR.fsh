@@ -35,4 +35,4 @@ Description: "Mapping des éléments du modèle métier FRLMAutorisationExpositi
 // professionnel autorisant l'exposition
 * group[=].element[+].code = #FRCDADICOMExpositionPatient.participant
 * group[=].element[=].target.code = #FRObservationRadiationExposureDocument.performer:professionnelAutorisantExposition
-* group[=].element[=].target.equivalence = #equivalent"
+* group[=].element[=].target.equivalence = #equivalent
