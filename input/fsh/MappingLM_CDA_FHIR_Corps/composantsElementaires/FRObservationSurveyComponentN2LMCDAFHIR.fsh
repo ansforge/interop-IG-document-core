@@ -43,7 +43,7 @@ Description: "Mapping des éléments du modèle métier FRLMEvaluationComposantN
 * group[=].element[=].target.equivalence = #equivalent
 // Commentaire
 * group[=].element[+].code = #FRLMEvaluationComposantN2.commentaire
-* group[=].element[=].target.code = #FRCDAEvaluationComposantN2.entryRelationship:FRCDACommentaireER
+* group[=].element[=].target.code = #FRCDAEvaluationComposantN2.entryRelationship:frCommentaireER
 * group[=].element[=].target.equivalence = #equivalent
 
 // Groupe Mapping 2 : CDA → FHIR
@@ -82,6 +82,6 @@ Description: "Mapping des éléments du modèle métier FRLMEvaluationComposantN
 * group[=].element[=].target.code = #FRObservationSurveyDocument.component:ComposantN2.interpretation
 * group[=].element[=].target.equivalence = #equivalent
 // Commentaire
-* group[=].element[+].code = #FRCDAEvaluationComposantN2.entryRelationship:FRCDACommentaireER
+* group[=].element[+].code = #FRCDAEvaluationComposantN2.entryRelationship:frCommentaireER
 * group[=].element[=].target.code = #FRObservationSurveyDocument.component:ComposantN2.extension:note.value[x]
 * group[=].element[=].target.equivalence = #equivalent 

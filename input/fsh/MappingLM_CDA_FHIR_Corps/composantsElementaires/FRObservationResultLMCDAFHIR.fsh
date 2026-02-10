@@ -55,7 +55,7 @@ Description: "Mapping des éléments du modèle métier FRLMObservationResult ve
 * group[=].element[=].target.equivalence = #equivalent
 // Commentaires
 * group[=].element[+].code = #FRLMObservationResult.commentaires
-* group[=].element[=].target.code = #FRCDAResultat.entryRelationship:FRCDACommentaireER
+* group[=].element[=].target.code = #FRCDAResultat.entryRelationship:frCommentaireER
 * group[=].element[=].target.equivalence = #equivalent
 // Demande d'examen associée
 * group[=].element[+].code = #FRLMObservationResult.demandeExamen
@@ -109,8 +109,8 @@ Description: "Mapping des éléments du modèle métier FRLMObservationResult ve
 * group[=].element[+].code = #FRCDAResultat.referenceRange
 * group[=].element[=].target.code = #FRObservationResultDocument.referenceRange
 * group[=].element[=].target.equivalence = #equivalent
-// Commentaires (entryRelationship:FRCDACommentaireER)
-* group[=].element[+].code = #FRCDAResultat.entryRelationship:FRCDACommentaireER
+// Commentaires (entryRelationship:frCommentaireER)
+* group[=].element[+].code = #FRCDAResultat.entryRelationship:frCommentaireER
 * group[=].element[=].target.code = #FRObservationResultDocument.note
 * group[=].element[=].target.equivalence = #equivalent
 // Demande d'examen associée

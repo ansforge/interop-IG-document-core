@@ -54,19 +54,19 @@ Description: "Mapping des éléments du modèle métier FRLMEvaluation vers le p
 * group[=].element[=].target.equivalence = #equivalent
 // Composants de l'évaluation
 * group[=].element[+].code = #FRLMEvaluation.evaluationComposant
-* group[=].element[=].target.code = #FRCDAEvaluation.entryRelationship:FRCDAEvaluationComposant
+* group[=].element[=].target.code = #FRCDAEvaluation.entryRelationship:frEvaluationComposant
 * group[=].element[=].target.equivalence = #equivalent
 // Statut de l’évaluation
 * group[=].element[+].code = #FRLMEvaluation.statutEvaluation
-* group[=].element[=].target.code = #FRCDAEvaluation.entryRelationship:FRCDAStatut
+* group[=].element[=].target.code = #FRCDAEvaluation.entryRelationship:frStatut
 * group[=].element[=].target.equivalence = #equivalent
 // Commentaire
 * group[=].element[+].code = #FRLMEvaluation.commentaire
-* group[=].element[=].target.code = #FRCDAEvaluation.entryRelationship:FRCDACommentaireER
+* group[=].element[=].target.code = #FRCDAEvaluation.entryRelationship:frCommentaireER
 * group[=].element[=].target.equivalence = #equivalent
 // Reference Interne
 * group[=].element[+].code = #FRLMEvaluation.referenceInterne
-* group[=].element[=].target.code = #FRCDAEvaluation.entryRelationship:FRCDAReferenceInterne
+* group[=].element[=].target.code = #FRCDAEvaluation.entryRelationship:frReferenceInterne
 * group[=].element[=].target.equivalence = #equivalent
 
 // Groupe Mapping 2 : CDA → FHIR
@@ -105,18 +105,18 @@ Description: "Mapping des éléments du modèle métier FRLMEvaluation vers le p
 * group[=].element[=].target.code = #FRObservationSurveyDocument.performer.extension:Participant
 * group[=].element[=].target.equivalence = #equivalent
 // Composants de l'évaluation
-* group[=].element[+].code = #FRCDAEvaluation.entryRelationship:FRCDAEvaluationComposant
+* group[=].element[+].code = #FRCDAEvaluation.entryRelationship:frEvaluationComposant
 * group[=].element[=].target.code = #FRObservationSurveyDocument.component
 * group[=].element[=].target.equivalence = #equivalent
 // Statut de l’évaluation
-* group[=].element[+].code = #FRCDAEvaluation.entryRelationship:FRCDAStatut
+* group[=].element[+].code = #FRCDAEvaluation.entryRelationship:frStatut
 * group[=].element[=].target.code = #FRObservationSurveyDocument.status.extension:statusReason
 * group[=].element[=].target.equivalence = #equivalent
 // Commentaire
-* group[=].element[+].code = #FRCDAEvaluation.entryRelationship:FRCDACommentaireER
+* group[=].element[+].code = #FRCDAEvaluation.entryRelationship:frCommentaireER
 * group[=].element[=].target.code = #FRObservationSurveyDocument.note
 * group[=].element[=].target.equivalence = #equivalent
 // Reference Interne
-* group[=].element[+].code = #FRCDAEvaluation.entryRelationship:FRCDAReferenceInterne
+* group[=].element[+].code = #FRCDAEvaluation.entryRelationship:frReferenceInterne
 * group[=].element[=].target.code = #FRObservationSurveyDocument.hasMember
 * group[=].element[=].target.equivalence = #equivalent

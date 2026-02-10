@@ -42,11 +42,11 @@ Description: "Mapping des éléments du modèle métier FRLMEvaluationComposant 
 * group[=].element[=].target.equivalence = #equivalent
 // component N2 de l'évaluation
 * group[=].element[+].code = #FRLMEvaluationComposant.composantEvaluation
-* group[=].element[=].target.code = #FRCDAEvaluationComposant.entryRelationship:FRCDAEvaluationComposantN2
+* group[=].element[=].target.code = #FRCDAEvaluationComposant.entryRelationship:frEvaluationComposantN2
 * group[=].element[=].target.equivalence = #equivalent  
 // Commentaire
 * group[=].element[+].code = #FRLMEvaluationComposant.commentaire
-* group[=].element[=].target.code = #FRCDAEvaluationComposant.entryRelationship:FRCDACommentaireER
+* group[=].element[=].target.code = #FRCDAEvaluationComposant.entryRelationship:frCommentaireER
 * group[=].element[=].target.equivalence = #equivalent
 
 // Groupe Mapping 2 : CDA → FHIR
@@ -85,10 +85,10 @@ Description: "Mapping des éléments du modèle métier FRLMEvaluationComposant 
 * group[=].element[=].target.code = #FRObservationSurveyDocument.component:ComposantN1.interpretation
 * group[=].element[=].target.equivalence = #equivalent
 // component N2 de l'évaluation
-* group[=].element[+].code = #FRCDAEvaluationComposant.entryRelationship:FRCDAEvaluationComposantN2
+* group[=].element[+].code = #FRCDAEvaluationComposant.entryRelationship:frEvaluationComposantN2
 * group[=].element[=].target.code = #FRObservationSurveyDocument.component:ComposantN2
 * group[=].element[=].target.equivalence = #equivalent
 // Commentaire
-* group[=].element[+].code = #FRCDAEvaluationComposant.entryRelationship:FRCDACommentaireER
+* group[=].element[+].code = #FRCDAEvaluationComposant.entryRelationship:frCommentaireER
 * group[=].element[=].target.code = #FRObservationSurveyDocument.component:ComposantN1.extension:note.value[x]
 * group[=].element[=].target.equivalence = #equivalent

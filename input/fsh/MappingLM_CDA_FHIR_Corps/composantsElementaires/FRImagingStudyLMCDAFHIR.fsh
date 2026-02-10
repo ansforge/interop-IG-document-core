@@ -36,7 +36,7 @@ Description: "Mapping des éléments du modèle métier FRLMExamenImagerie vers 
 * group[=].element[=].target.equivalence = #equivalent
 // Objectifs de référence
 * group[=].element[+].code = #FRLMExamenImagerie.objectifsReferences
-* group[=].element[=].target.code = #FRCDADICOMExamenImagerie.entryRelationship:frDICOMSerieImagerie.entryRelationship:frDICOMSOPInstanceObservvation.entryRelationship:frDICOMObjectifsDeReference
+* group[=].element[=].target.code = #FRCDADICOMExamenImagerie.entryRelationship:frDICOMSerieImagerie.entryRelationship:frDICOMSOPInstanceObservation.entryRelationship:frDICOMObjectifsDeReference
 * group[=].element[=].target.equivalence = #equivalent
 
 // Groupe Mapping 2 : CDA → FHIR
@@ -68,6 +68,6 @@ Description: "Mapping des éléments du modèle métier FRLMExamenImagerie vers 
 * group[=].element[=].target.code = #FRImagingStudyDocument.series
 * group[=].element[=].target.equivalence = #equivalent
 // Objectifs de référence
-* group[=].element[+].code = #FRCDADICOMExamenImagerie.entryRelationship:frDICOMSerieImagerie.entryRelationship:frDICOMSOPInstanceObservvation.entryRelationship:frDICOMObjectifsDeReference
+* group[=].element[+].code = #FRCDADICOMExamenImagerie.entryRelationship:frDICOMSerieImagerie.entryRelationship:frDICOMSOPInstanceObservation.entryRelationship:frDICOMObjectifsDeReference
 * group[=].element[=].target.code = #FRImagingStudyDocument.reasonCode
 * group[=].element[=].target.equivalence = #equivalent

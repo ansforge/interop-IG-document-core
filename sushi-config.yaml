@@ -309,7 +309,7 @@ groups:
       - StructureDefinition/fr-cda-assigned-person
       - StructureDefinition/fr-cda-authenticator
       - StructureDefinition/fr-cda-authoring-device
-      - StructureDefinition/fr-cda-participant
+      - StructureDefinition/fr-cda-participant-entete
       - StructureDefinition/fr-cda-patient
       - StructureDefinition/fr-cda-represented-custodian-organization
       - StructureDefinition/fr-cda-represented-organization
@@ -509,6 +509,18 @@ groups:
       - FRImagingProcedureLMCDAFHIR
       - FRServiceRequestLMCDAFHIR
       - FRSpecimenLMCDAFHIR
+      - FRImagingMedicationAministrationLMCDAFHIR
+      - FRImagingRadiationExposureAuthorizationLMCDAFHIR
+      - FRAllowedSubstitutionLMCDAFHIR
+      - FRActSubstitutionLMCDAFHIR
+      - FRCertitudeLMCDAFHIR
+      - FRCriticiteLMCDAFHIR
+      - FRNoteLMCDAFHIR
+      - FRParticipantCorpsLMCDAFHIR
+      - FRObservationLMCDAFHIR
+      - FRPatientWithNonHumanSubjectLMCDAFHIR
+      - FRNonHumanSubjectLMCDAFHIR
+     
 
 resources: 
   Binary/BIO-CR-BIO-2024.01-Microbiologie-V1:
