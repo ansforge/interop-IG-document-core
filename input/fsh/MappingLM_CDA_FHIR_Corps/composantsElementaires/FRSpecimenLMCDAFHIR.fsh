@@ -43,7 +43,7 @@ Description: "Mapping des éléments du modèle métier FRLMPrelevement vers le 
 * group[=].element[=].target.equivalence = #equivalent
 // Date de réception de l'échantillon
 * group[=].element[+].code = #FRLMPrelevement.dateReceptionEchantillon
-* group[=].element[=].target.code = #FRCDAPrelevement.entryRelationship
+* group[=].element[=].target.code = #FRCDAPrelevement.entryRelationship.act
 * group[=].element[=].target.equivalence = #equivalent
 
 // Groupe Mapping 2 : CDA → FHIR
@@ -82,6 +82,6 @@ Description: "Mapping des éléments du modèle métier FRLMPrelevement vers le 
 * group[=].element[=].target.code = #FRSpecimenDocument.processing.additive:Substance
 * group[=].element[=].target.equivalence = #equivalent
 // Date de réception de l'échantillon
-* group[=].element[+].code = #FRCDAPrelevement.entryRelationship
+* group[=].element[+].code = #FRCDAPrelevement.entryRelationship.act
 * group[=].element[=].target.code = #FRSpecimenDocument.receivedTime
 * group[=].element[=].target.equivalence = #equivalent

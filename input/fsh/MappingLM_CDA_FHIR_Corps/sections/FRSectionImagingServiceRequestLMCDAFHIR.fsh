@@ -1,4 +1,4 @@
-Instance: FRImagingServiceRequestLMCDAFHIR
+Instance: FRSectionImagingServiceRequestLMCDAFHIR
 InstanceOf: ConceptMap
 Usage: #definition
 Title: "Mapping FRLMDemandeExamenImagerie → FRCDADICOMDemandeExamen → FRServiceRequestDocument"

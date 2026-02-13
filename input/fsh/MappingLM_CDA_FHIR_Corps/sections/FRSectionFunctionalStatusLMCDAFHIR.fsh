@@ -1,8 +1,8 @@
-Instance: FRFunctionalStatusLMCDAFHIR
+Instance: FRSectionFunctionalStatusLMCDAFHIR
 InstanceOf: ConceptMap
 Usage: #definition
 Title: "Mapping FRLMStatutFonctionnel → FRCDAStatutFonctionnel → FRCompositionDocument.section:FRFunctionalStatus"
-Description: "Mapping des éléments du modèle métier FRLMStatutFonctionnel vers le profil CDA FRCDAStatutFonctionnel, puis vers la section FHIR FRCompositionDocument.section:FRFunctionalStatus."
+Description: "Mapping des éléments du modèle métier FRLMStatutFonctionnel vers la section CDA FRCDAStatutFonctionnel, puis vers la section FHIR FRCompositionDocument.section:FRFunctionalStatus."
 * title = "Mapping Métier/CDA/FHIR : \"Statut fonctionnel\""
 * status = #draft
 // Groupe Mapping 1 : modèle métier → CDA

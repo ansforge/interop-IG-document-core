@@ -1,4 +1,4 @@
-Instance: FRSocialHistoryLMCDAFHIR
+Instance: FRSectionSocialHistoryLMCDAFHIR
 InstanceOf: ConceptMap
 Usage: #definition
 Title: "Mapping FRLMHabitusModeDeVie → FRCDAHabitusModeDeVieSection → FRCompositionDocument.section:socialHistory"
