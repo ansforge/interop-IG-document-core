@@ -156,7 +156,7 @@ ORDER BY
 } %}
 
 
-### Mapping entre les entrées entre : Modèle métier / CDA / FHIR
+### Mapping des entrées entre : Modèle métier / CDA / FHIR
 {% sql {
 "query": "
 WITH AllGroups AS (
