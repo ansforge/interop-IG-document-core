@@ -2,7 +2,7 @@ Instance: FRSectionPhysicalFunctionsLMCDAFHIR
 InstanceOf: ConceptMap
 Usage: #definition
 Title: "Mapping FRLMFonctionsPhysiques → FRCDAFonctionsPhysiques → FRCompositionDocument.section:PhysicalFunctions"
-Description: "Mapping des éléments du modèle métier FRLMFonctionsPhysiques vers le profil CDA FRCDAFonctionsPhysiques, puis vers le profil FHIR FRCompositionDocument.section:PhysicalFunctions."
+Description: "Mapping des éléments du modèle métier FRLMFonctionsPhysiques vers la section CDA FRCDAFonctionsPhysiques, puis vers le profil FHIR FRCompositionDocument.section:PhysicalFunctions."
 * title = "Mapping Métier/CDA/FHIR : \"Fonctions physiques\""
 * status = #draft   
 // Groupe Mapping 1 : modèle métier → CDA

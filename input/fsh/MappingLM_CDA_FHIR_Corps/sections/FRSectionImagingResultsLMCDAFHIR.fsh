@@ -1,4 +1,4 @@
-Instance: FRSectionImagingResultatsLMCDAFHIR
+Instance: FRSectionImagingResultsLMCDAFHIR
 InstanceOf: ConceptMap
 Usage: #definition
 Title: "Mapping Métier/CDA/FHIR : Résultats d'imagerie"

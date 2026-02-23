@@ -2,7 +2,7 @@ Instance: FRSectionImagingComparisonLMCDAFHIR
 InstanceOf: ConceptMap
 Usage: #definition
 Title: "Mapping FRLMComparaisonExamensImagerie → FRCDADICOMExamenComparatif → FRCompositionDocument.section:Comparison"
-Description: "Mapping des éléments du modèle métier FRLMComparaisonExamensImagerie vers le profil CDA FRCDADICOMExamenComparatif, puis vers la section Comparison du profil FHIR FRCompositionDocument."
+Description: "Mapping des éléments du modèle métier FRLMComparaisonExamensImagerie vers la section CDA FRCDADICOMExamenComparatif, puis vers la section Comparison du profil FHIR FRCompositionDocument."
 * title = "Mapping Métier/CDA/FHIR : \"Comparaison d'examens d'imagerie\""
 * status = #draft   
 

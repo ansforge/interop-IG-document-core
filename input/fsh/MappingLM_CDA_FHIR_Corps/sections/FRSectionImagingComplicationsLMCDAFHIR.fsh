@@ -2,7 +2,7 @@ Instance: FRSectionImagingComplicationsLMCDAFHIR
 InstanceOf: ConceptMap
 Usage: #definition
 Title: "Mapping FRLMComplicationsActe → FRCDADICOMComplications → FRProcedureImagingDocument.complication.text"
-Description: "Mapping des éléments du modèle métier FRLMComplicationsActe vers le profil CDA FRCDADICOMComplications, puis vers le champ 'complication.text' du profil FHIR FRProcedureImagingDocument."
+Description: "Mapping des éléments du modèle métier FRLMComplicationsActe vers la section CDA FRCDADICOMComplications, puis vers le champ 'complication.text' du profil FHIR FRProcedureImagingDocument."
 * title = "Mapping Métier/CDA/FHIR : \"Complications survenues au cours de l'acte d'imagerie\""
 * status = #draft
 

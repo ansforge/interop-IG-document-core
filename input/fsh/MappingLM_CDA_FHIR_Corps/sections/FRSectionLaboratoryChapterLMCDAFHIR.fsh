@@ -2,7 +2,7 @@ Instance: FRSectionLaboratoryChapterLMCDAFHIR
 InstanceOf: ConceptMap
 Usage: #definition
 Title: "Mapping FRLMCRBIOChapitre → FRCDACRBIOChapitre → FRCompositionDocument.section"
-Description: "Mapping des éléments du modèle métier FRLMCRBIOChapitre vers le profil CDA FRCDACRBIOChapitre, puis vers le profil FHIR FRCompositionDocument.section."
+Description: "Mapping des éléments du modèle métier FRLMCRBIOChapitre vers la section CDA FRCDACRBIOChapitre, puis vers le profil FHIR FRCompositionDocument.section."
 * title = "Mapping Métier/CDA/FHIR : \"Chapitre de BIO\""
 * status = #draft
 

@@ -2,7 +2,7 @@ Instance: FRCriticiteLMCDAFHIR
 InstanceOf: ConceptMap
 Usage: #definition
 Title: "Mapping FRLMCriticite -> FRCDACriticite -> FRAllergyIntoleranceDocument.criticality"
-Description: "Mapping des elements du modele metier FRLMCriticite vers le profil CDA FRCDACriticite, puis vers le profil FHIR FRAllergyIntoleranceDocument.criticality."
+Description: "Mapping des éléments du modele metier FRLMCriticite vers le profil CDA FRCDACriticite, puis vers le profil FHIR FRAllergyIntoleranceDocument.criticality."
 * title = "Mapping Metier/CDA/FHIR : \"Criticite\""
 * status = #draft
 

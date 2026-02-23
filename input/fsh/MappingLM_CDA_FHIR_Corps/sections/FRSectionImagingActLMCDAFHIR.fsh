@@ -2,7 +2,7 @@ Instance: FRSectionImagingActLMCDAFHIR
 InstanceOf: ConceptMap
 Usage: #definition
 Title: "Mapping Métier/CDA/FHIR : Acte d'imagerie"
-Description: "Mapping des éléments du modèle métier FRLMActeImagerie vers le profil CDA FRCDADICOMActeImagerie, puis vers le profil FHIR FRCompositionDocument.section:ImagingStudy."
+Description: "Mapping des éléments du modèle métier FRLMActeImagerie vers la section CDA FRCDADICOMActeImagerie, puis vers le profil FHIR FRCompositionDocument.section:ImagingStudy."
 * title = "Mapping Métier/CDA/FHIR : \"Acte d'imagerie\""
 * status = #draft
 
@@ -67,7 +67,7 @@ Description: "Mapping des éléments du modèle métier FRLMActeImagerie vers le
 * group[=].element[=].target.equivalence = #equivalent
 // Sous section : Complications de l'acte
 * group[=].element[+].code = #FRCDADICOMActeImagerie.component:frDICOMComplications
-* group[=].element[=].target.code = #FRCompositionDocument.section:ImagingStudy.section:Complications
+* group[=].element[=].target.code = #FRCompositionDocument.section:ImagingStudy.entry:FRProcedureImagingDocument.complication.text
 * group[=].element[=].target.equivalence = #equivalent
 // Sous section : Expositions aux radiations
 * group[+].element[+].code = #FRCDADICOMActeImagerie.component:frDICOMExpositionsAuxRadiations
@@ -75,7 +75,7 @@ Description: "Mapping des éléments du modèle métier FRLMActeImagerie vers le
 * group[=].element[=].target.equivalence = #equivalent
 // Sous section : Catalogue des objets
 * group[=].element[+].code = #FRCDADICOMActeImagerie.component:frDICOMObjectCatalog
-* group[=].element[=].target.code = #FRCompositionDocument.section:ImagingStudy.section:ObjectCatalog
+* group[=].element[=].target.code = #FRCompositionDocument.section:ImagingStudy
 * group[=].element[=].target.equivalence = #equivalent
 // Entrée : Technique d'imagerie
 * group[=].element[+].code = #FRCDADICOMActeImagerie.entry.frDICOMTechniqueImagerie

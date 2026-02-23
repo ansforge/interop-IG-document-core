@@ -2,7 +2,7 @@ Instance: FRParticipantCorpsLMCDAFHIR
 InstanceOf: ConceptMap
 Usage: #definition
 Title: "Mapping FRLMParticipantCorps -> FRCDAParticipant -> FRActorExtension"
-Description: "Mapping des elements du modele metier FRLMParticipantCorps vers le profil CDA FRCDAParticipant, puis vers l'extension FHIR FRActorExtension."
+Description: "Mapping des éléments du modele metier FRLMParticipantCorps vers le profil CDA FRCDAParticipant, puis vers l'extension FHIR FRActorExtension."
 * title = "Mapping Metier/CDA/FHIR : \"Participant\""
 * status = #draft
 
