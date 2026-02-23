@@ -1,4 +1,4 @@
-Instance: FRImagingRadiationExposureLMCDAFHIR
+Instance: FRSectionImagingRadiationExposureLMCDAFHIR
 InstanceOf: ConceptMap
 Usage: #definition
 Title: "Mapping FRLMExpositionRadiations → FRCDADICOMExpositionAuxRadiations → FRCompositionDocument.section:radiationExposure"
@@ -12,6 +12,10 @@ Description: "Mapping des éléments du modèle métier FRLMExpositionRadiations
 // Élément racine
 * group[=].element[+].code = #FRLMExpositionRadiations
 * group[=].element[=].target.code = #FRCDADICOMExpositionAuxRadiations
+* group[=].element[=].target.equivalence = #equivalent
+// code de la section
+* group[=].element[+].code = #FRLMExpositionRadiations.codeSection
+* group[=].element[=].target.code = #FRCDADICOMExpositionAuxRadiations.code
 * group[=].element[=].target.equivalence = #equivalent
 // titreSection
 * group[=].element[+].code = #FRLMExpositionRadiations.titreSection
@@ -40,6 +44,10 @@ Description: "Mapping des éléments du modèle métier FRLMExpositionRadiations
 // Élément racine
 * group[=].element[+].code = #FRCDADICOMExpositionAuxRadiations
 * group[=].element[=].target.code = #FRCompositionDocument.section:radiationExposure
+* group[=].element[=].target.equivalence = #equivalent
+// code de la section
+* group[=].element[+].code = #FRCDADICOMExpositionAuxRadiations.code
+* group[=].element[=].target.code = #FRCompositionDocument.section:radiationExposure.code
 * group[=].element[=].target.equivalence = #equivalent
 // Titre de la section
 * group[=].element[+].code = #FRCDADICOMExpositionAuxRadiations.title

@@ -447,13 +447,24 @@ groups:
   Mapping ML-CDA-FHIR des sections d'un document:
     name: Concept Maps des sections d'un document
     resources:
-      - FRImagingResultatsLMCDAFHIR
-      - FRImagingClinicalInformationLMCDAFHIR
-      - FRImagingServiceRequestLMCDAFHIR
-      - FRImagingRadiationExposureLMCDAFHIR
-      - FRSocialHistoryLMCDAFHIR
-      - FRFunctionalStatusLMCDAFHIR
-      - FRPhysicalFunctionsLMCDAFHIR
+      - FRSectionImagingResultatsLMCDAFHIR
+      - FRSectionImagingClinicalInformationLMCDAFHIR
+      - FRSectionImagingServiceRequestLMCDAFHIR
+      - FRSectionImagingRadiationExposureLMCDAFHIR
+      - FRSectionImagingActLMCDAFHIR
+      - FRSectionImagingAddendumLMCDAFHIR
+      - FRSectionSocialHistoryLMCDAFHIR
+      - FRSectionFunctionalStatusLMCDAFHIR
+      - FRSectionPhysicalFunctionsLMCDAFHIR
+      - FRSectionAllergyIntoleranceLMCDAFHIR
+      - FRSectionFamilyHistoryLMCDAFHIR
+      - FRSectionBarCodesLMCDAFHIR
+      - FRSectionNoteLMCDAFHIR
+      - FRSectionImagingComparisonLMCDAFHIR
+      - FRSectionImagingComplicationsLMCDAFHIR
+      - FRSectionImagingConclusionLMCDAFHIR
+      - FRSectionMedicalHistoryLMCDAFHIR
+      - FRSectionLaboratoryChapterLMCDAFHIR
 
   Mapping ML-CDA-FHIR des composants élémentaires d'un document:
     name: Concept Maps des composants élémentaires d'un Document
@@ -474,6 +485,7 @@ groups:
       - FRImagingStudyLMCDAFHIR
       - FRImmunizationLMCDAFHIR
       - FRImmunizationRecommendationLMCDAFHIR
+      - FRObservationBirthEventLMCDAFHIR
       - FRMediaLMCDAFHIR
       - FRMedicationAdministrationLMCDAFHIR
       - FRMedicationDispenseLMCDAFHIR
