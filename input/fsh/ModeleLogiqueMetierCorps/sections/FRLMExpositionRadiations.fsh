@@ -10,3 +10,4 @@ Characteristics: #can-be-target
 * entree 
   * autorisationExposition 1..1 FRLMAutorisationExposition "Entrée autorisation à l'exposition aux rayonnements ionisants"
   * quantiteExposition 0..* FRLMQuantiteExposition "Entrée Quantité"
+  * administrationRadiopharmaceutique 0..1 FRLMAdministrationProduitDeSante "Entrée administration des produits radiopharmaceutiques"

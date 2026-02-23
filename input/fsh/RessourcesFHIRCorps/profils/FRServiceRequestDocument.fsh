@@ -1,9 +1,8 @@
-Profile: FRSeviceRequestDocument
+Profile: FRServiceRequestDocument
 Parent: ServiceRequest
 Id: fr-service-request-document
 Title: "ServiceRequest - FR Service Request Document"
-Description: "FRSeviceRequestDocument profil permet de porter des demandes d'examens (analyses biologiques, évaluations, étude d'imagerie, etc…) ou de suivis particuliers à programmer dans le cadre d'un plan de soins."
-
+Description: "FRServiceRequestDocument profil permet de porter des demandes d'examens (analyses biologiques, évaluations, étude d'imagerie, etc…) ou de suivis particuliers à programmer dans le cadre d'un plan de soins."
 // mettre le bon canonical à partir de HL7 Europe Base and Core FHIR IG
 //* ^extension[$imposeProfile].valueCanonical = Canonical()
 
@@ -31,7 +30,6 @@ Si la demande est un objectif à atteindre : 'GOL = plan'
 * code.coding ^short = "Type de la demande : Si aucun code n'est trouvé dans des terminologies existantes, utiliser le code : GEN-092.04.20 'Autre demande d’examen ou de suivi'"
 //Si aucun code n'est trouvé dans des terminologies existantes, utiliser le code : GEN-092.04.20
 //* code.concept = https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis#GEN-092.04.20 "Autre demande d’examen ou de suivi"
-* category ^short = "Catégorie de la demande"
 * occurrence[x] 1..1 MS
 * occurrence[x] ^short = "Date prévisionnelle de l'examen, du suivi, de l'objectif"
 * orderDetail 0..1 MS

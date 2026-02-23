@@ -14,6 +14,9 @@ Description: "FRObservationSurveyPannelDocument permet de rassembler des observa
 * status = #final
 * status ^short = "Statut de l'ensemble des évaluations"
 
+* code MS
+* code ^short = "Code de l'ensemble des évaluations"
+
 * effectiveDateTime 1..1 MS
 * effectiveDateTime ^short = "Date"
 

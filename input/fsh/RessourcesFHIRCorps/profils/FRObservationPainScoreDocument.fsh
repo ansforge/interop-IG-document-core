@@ -1,3 +1,4 @@
+// ne fait partie du modèle Européen EHDS, on le garde pour des prochaines versions
 Profile: FRObservationPainScoreDocument
 Parent: Observation
 Id: fr-observation-pain-score-document

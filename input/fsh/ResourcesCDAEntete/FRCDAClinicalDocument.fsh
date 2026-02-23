@@ -41,7 +41,7 @@ Description: "L'élément de l'en-tête CDA 'ClinicalDocument' est l’élément
   * ^short = "Professionnel ou patient/usager ou système responsable du document."
 * authenticator only FRCDAAuthenticator 
   * ^short = "Professionnel attestant la validité du document" 
-* participant only FRCDAParticipant 
+* participant only FRCDAParticipantEntete
   * ^short = "Participant, différent de l'auteur, du responsable, de l'opérateur de saisie, de l'informateur ou du destinataire."
 * inFulfillmentOf only FRCDAInFulfillmentOf 
   * ^short = "Prescription" 

@@ -28,9 +28,6 @@ Description: "FRMedicationRequestDocument permet de décrire un traitement presc
       * periodUnit MS
       * when MS
       * offset MS
-      // Nombre de renouvellement(s) possible(s) // ou bien : 	dispenseRequest.numberOfRepeatsAllowed
-      //* countMax MS 
-        //* ^short = "Nombre de renouvellement(s) possible(s)"
   // Dosages conditionnels
   * asNeeded[x] MS 
   * route MS
@@ -51,6 +48,9 @@ Description: "FRMedicationRequestDocument permet de décrire un traitement presc
   * maxDosePerPeriod ^short = "Dose maximale"
   * maxDosePerPeriod.numerator 1..1 MS
   * maxDosePerPeriod.denominator 1..1 MS
+
+* dispenseRequest.numberOfRepeatsAllowed MS
+  * ^short = "Nombre de renouvellement(s) possible(s)"
 * medication[x] MS
 * medication[x] only CodeableConcept or Reference(FRMedicationDocument or FRMedicationsCombinaisonDocument)
   * ^short = "Produit de santé"
