@@ -67,7 +67,7 @@ Description: "Mapping des éléments du modèle métier FRLMActeImagerie vers la
 * group[=].element[=].target.equivalence = #equivalent
 // Sous section : Complications de l'acte
 * group[=].element[+].code = #FRCDADICOMActeImagerie.component:frDICOMComplications
-* group[=].element[=].target.code = #FRCompositionDocument.section:ImagingStudy.entry:FRProcedureImagingDocument.complication.text
+* group[=].element[=].target.code = #FRCompositionDocument.section:ImagingStudy.section:Complications
 * group[=].element[=].target.equivalence = #equivalent
 // Sous section : Expositions aux radiations
 * group[+].element[+].code = #FRCDADICOMActeImagerie.component:frDICOMExpositionsAuxRadiations
@@ -75,7 +75,7 @@ Description: "Mapping des éléments du modèle métier FRLMActeImagerie vers la
 * group[=].element[=].target.equivalence = #equivalent
 // Sous section : Catalogue des objets
 * group[=].element[+].code = #FRCDADICOMActeImagerie.component:frDICOMObjectCatalog
-* group[=].element[=].target.code = #FRCompositionDocument.section:ImagingStudy
+* group[=].element[=].target.code = #FRCompositionDocument.section:ImagingStudy.section:ObjectCatalog
 * group[=].element[=].target.equivalence = #equivalent
 // Entrée : Technique d'imagerie
 * group[=].element[+].code = #FRCDADICOMActeImagerie.entry.frDICOMTechniqueImagerie
@@ -89,16 +89,3 @@ section:ImagingStudy = Reference(FRImagingStudyDocument) et section:ImagingStudy
 * group[=].element[=].target.equivalence = #equivalent
 * group[=].element[=].target.comment = "Correspondance avec une référence à une ressource FRMedicationAdministrationDocument de type MedicationAdministration dans l'entrée de la section ImagingStudy.
 section:ImagingStudy = Reference(FRImagingStudyDocument) et section:ImagingStudy.entry:ImagingStudy.procedureReference = Reference(FRProcedureImagingDocument) et section:ImagingStudy.entry:ImagingStudy.procedureReference.partOf = Reference(FRMedicationAdministrationDocument)."
-
-/* 
-// Entrée : Technique d'imagerie
-* group[=].element[+].code = #FRCDADICOMActeImagerie.entry.frDICOMTechniqueImagerie
-* group[=].element[=].target.code = #FRProcedureImagingDocument
-* group[=].element[=].target.equivalence = #relatedto
-* group[=].element[=].target.comment = "La technique d’imagerie est portée par une ressource Procedure référencée par la section ImagingStudy."
-// Entrée : Produits de santé administrés
-* group[=].element[+].code = #FRCDADICOMActeImagerie.entry.frDICOMAdministrationProduitDeSante
-* group[=].element[=].target.code = #FRMedicationAdministrationDocument
-* group[=].element[=].target.equivalence = #relatedto
-* group[=].element[=].target.comment = "Les produits administrés sont représentés par des ressources MedicationAdministration associées à l’acte FRProcedureImagingDocument."
- */
