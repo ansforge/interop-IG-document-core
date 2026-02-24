@@ -8,11 +8,11 @@ Cette page contient la liste des profils CDA définis dans le guide **ANS IG Doc
     FROM Resources
     WHERE Type = 'StructureDefinition'
       AND (
-        Title LIKE 'CDA - FR%'
+        Title LIKE '%CDA%'
       )
       AND (
-        Description LIKE 'Entrée%'
-     OR Description LIKE 'Section%'
+       Description LIKE '%Entrée%'
+OR Description LIKE '%Section%'
   )
   ",
   "class": "lines",
