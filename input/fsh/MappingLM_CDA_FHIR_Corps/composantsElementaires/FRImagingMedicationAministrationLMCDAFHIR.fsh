@@ -2,7 +2,7 @@ Instance: FRImagingMedicationAministrationLMCDAFHIR
 InstanceOf: ConceptMap
 Usage: #definition
 Title: "Mapping FRLMAdministrationProduitDeSante -> FRCDADICOMAdministrationProduitDeSante -> FRMedicationAdministrationDocument"
-Description: "Mapping des elements du modele metier FRLMAdministrationProduitDeSante vers le profil CDA FRCDADICOMAdministrationProduitDeSante, puis vers le profil FHIR FRMedicationAdministrationDocument."
+Description: "Mapping des éléments du modele metier FRLMAdministrationProduitDeSante vers le profil CDA FRCDADICOMAdministrationProduitDeSante, puis vers le profil FHIR FRMedicationAdministrationDocument."
 * title = "Mapping Metier/CDA/FHIR : \"Administration de produit de sante en imagerie\""
 * status = #draft
 

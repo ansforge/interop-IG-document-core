@@ -2,7 +2,7 @@ Instance: FRSectionImagingConclusionLMCDAFHIR
 InstanceOf: ConceptMap
 Usage: #definition
 Title: "Mapping FRLMConclusionExamenImagerie → FRCDADICOMConclusion → FRDiagnosticReportImagingDocument.conclusion"
-Description: "Mapping des éléments du modèle métier FRLMConclusionExamenImagerie vers le profil CDA FRCDADICOMConclusion, puis vers le champ 'conclusion' du profil FHIR FRDiagnosticReportImagingDocument."
+Description: "Mapping des éléments du modèle métier FRLMConclusionExamenImagerie vers la section CDA FRCDADICOMConclusion, puis vers le champ 'conclusion' du profil FHIR FRDiagnosticReportImagingDocument."
 * title = "Mapping Métier/CDA/FHIR : \"Conclusion de l'examen d'imagerie\""
 * status = #draft
 

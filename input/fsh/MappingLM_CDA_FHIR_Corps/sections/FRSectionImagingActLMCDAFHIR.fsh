@@ -2,7 +2,7 @@ Instance: FRSectionImagingActLMCDAFHIR
 InstanceOf: ConceptMap
 Usage: #definition
 Title: "Mapping Métier/CDA/FHIR : Acte d'imagerie"
-Description: "Mapping des éléments du modèle métier FRLMActeImagerie vers le profil CDA FRCDADICOMActeImagerie, puis vers le profil FHIR FRCompositionDocument.section:ImagingStudy."
+Description: "Mapping des éléments du modèle métier FRLMActeImagerie vers la section CDA FRCDADICOMActeImagerie, puis vers le profil FHIR FRCompositionDocument.section:ImagingStudy."
 * title = "Mapping Métier/CDA/FHIR : \"Acte d'imagerie\""
 * status = #draft
 

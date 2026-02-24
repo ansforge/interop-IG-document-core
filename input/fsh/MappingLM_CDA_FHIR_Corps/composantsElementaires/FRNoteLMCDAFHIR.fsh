@@ -2,7 +2,7 @@ Instance: FRNoteLMCDAFHIR
 InstanceOf: ConceptMap
 Usage: #definition
 Title: "Mapping FRLMCommentaireER -> FRCDACommentaireER -> Annotation"
-Description: "Mapping des elements du modele metier FRLMCommentaireER vers l'element CDA FRCDACommentaireER, puis vers l'element FHIR Annotation."
+Description: "Mapping des éléments du modele metier FRLMCommentaireER vers l'element CDA FRCDACommentaireER, puis vers l'element FHIR Annotation."
 * title = "Mapping Metier/CDA/FHIR : \"Commentaire ER\""
 * status = #draft
 

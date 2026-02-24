@@ -2,7 +2,7 @@ Instance: FRObservationLMCDAFHIR
 InstanceOf: ConceptMap
 Usage: #definition
 Title: "Mapping FRLMObservation -> FRCDASimpleObservation -> Observation"
-Description: "Mapping des elements du modele metier FRLMObservation vers le profil CDA FRCDASimpleObservation, puis vers le profil FHIR Observation."
+Description: "Mapping des éléments du modele metier FRLMObservation vers le profil CDA FRCDASimpleObservation, puis vers le profil FHIR Observation."
 * title = "Mapping Metier/CDA/FHIR : \"Observation\""
 * status = #draft
 

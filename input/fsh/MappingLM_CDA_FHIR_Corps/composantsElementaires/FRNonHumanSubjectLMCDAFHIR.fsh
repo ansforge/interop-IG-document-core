@@ -2,7 +2,7 @@ Instance: FRNonHumanSubjectLMCDAFHIR
 InstanceOf: ConceptMap
 Usage: #definition
 Title: "Mapping FRLMSujetNonHumain -> FRCDASujetNonHumain -> FRObservationLaboratoryReportResultsDocument"
-Description: "Mapping des elements du modele metier FRLMSujetNonHumain vers l'element CDA FRCDASujetNonHumain, puis vers les ressources FHIR Observation/Specimen/Substance."
+Description: "Mapping des éléments du modele metier FRLMSujetNonHumain vers l'element CDA FRCDASujetNonHumain, puis vers les ressources FHIR Observation/Specimen/Substance."
 * title = "Mapping Metier/CDA/FHIR : \"Sujet non humain\""
 * status = #draft
 

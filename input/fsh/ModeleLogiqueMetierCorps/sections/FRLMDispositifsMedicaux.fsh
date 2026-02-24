@@ -8,4 +8,4 @@ Characteristics: #can-be-target
 * titreSection 1..1 
 * sousSection 0..0 
 * entree
-  * dispositifsMedicaux 0..* FRLMDispositifMedical "Entrée Dispositif medical"
+  * dispositifsMedicaux 0..* FRLMDispositifMedicalEntree "Entrée Dispositif medical"
