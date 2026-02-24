@@ -18,15 +18,14 @@ Description: "Entrée FR-Instructions-au-patient: <p>IHE-PCC - Patient-Medicatio
 * classCode MS
 * classCode = #ACT
 * moodCode MS
+* moodCode = #INT
 * templateId 1..3
 * templateId ^slicing.discriminator.type = #value
 * templateId ^slicing.discriminator.path = "root"
 * templateId ^slicing.rules = #open
-
 * templateId contains ihePatientMedicationInstruction 1..1
 and ccdPatientInstructions 1..1
 and frInstructionsAuPatient 1..1
-
 * templateId[ihePatientMedicationInstruction] 1..1
 * templateId[ihePatientMedicationInstruction].root = "1.3.6.1.4.1.19376.1.5.3.1.4.3"
 * templateId[ihePatientMedicationInstruction] ^short = "Conformité Patient Medication Instruction (IHE PCC)"
@@ -36,26 +35,23 @@ and frInstructionsAuPatient 1..1
 * templateId[frInstructionsAuPatient] 1..1
 * templateId[frInstructionsAuPatient].root = "1.2.250.1.213.1.1.3.33"
 * templateId[frInstructionsAuPatient] ^short = "Conformité FR-Instructions-au-patient (CI-SIS)"
-
 * code MS
+* code 1..1
 * code ^short = "<b>Code de l'entrée</b>
    <br clear='none'/>"
+* code.code = #PINSTRUCT
+* code.codeSystem = "1.3.6.1.4.1.19376.1.5.3.2"
+* code.codeSystemName = "IHEActCode"
 * text MS
 * text 1..1
-* text ^short = "Instructions au patient"
-
+* text.xmlText = "Instructions au patient"
 * statusCode.code MS
 * statusCode.code = #completed
-
 * entryRelationship MS
 * entryRelationship 0..*
-
 * entryRelationship ^slicing.discriminator.type = #value
 * entryRelationship ^slicing.discriminator.path = "$this"
 * entryRelationship ^slicing.rules = #open
-
 * entryRelationship contains 
 frInstructionAuPatient 0..*
-
-
-
+* entryRelationship[frInstructionAuPatient].observation only FRCDAInstructionAuPatient

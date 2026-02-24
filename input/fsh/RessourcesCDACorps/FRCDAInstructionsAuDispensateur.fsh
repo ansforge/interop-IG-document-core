@@ -14,15 +14,14 @@ Description: "Entrée FR-Instructions-au-dispensateur: <p>IHE-PCC - Medication 
 * classCode MS
 * classCode = #ACT
 * moodCode MS
+* moodCode = #INT
 * templateId 1..3
 * templateId ^slicing.discriminator.type = #value
 * templateId ^slicing.discriminator.path = "root"
 * templateId ^slicing.rules = #open
-
 * templateId contains ccdFulfillmentInstructions 1..1
 and iheFulfillmentNotes 1..1
 and frInstructionsAuDispensateur 1..1
-
 * templateId[ccdFulfillmentInstructions] 1..1
 * templateId[ccdFulfillmentInstructions].root = "2.16.840.1.113883.10.20.1.43"
 * templateId[ccdFulfillmentInstructions] ^short = "Conformité Fulfillment instructions (CCD)"
@@ -32,13 +31,10 @@ and frInstructionsAuDispensateur 1..1
 * templateId[frInstructionsAuDispensateur] 1..1
 * templateId[frInstructionsAuDispensateur].root = "1.2.250.1.213.1.1.3.34"
 * templateId[frInstructionsAuDispensateur] ^short = "Conformité FR-Instructions-au-dispensateur (CI-SIS)"
-
 * code MS
+* code 1..1
 * code ^short = "<b>Code de l'entrée</b>
    <br clear='none'/>"
 * text MS
 * text 1..1
-* text ^short = "Instructions au dispensateur sous forme textuelle."
-
-
-
+* text.xmlText = "Instructions au dispensateur sous forme textuelle."

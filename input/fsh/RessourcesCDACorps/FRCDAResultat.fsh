@@ -10,18 +10,16 @@ Description: "Entrée FR-Resultat: <ul>
 * classCode MS
 * classCode = #OBS
 * moodCode MS
+* moodCode = #EVN
 * id 1..1
 * id ^short = "Identifiant"
-
 * templateId 1..3
 * templateId ^slicing.discriminator.type = #value
 * templateId ^slicing.discriminator.path = "root"
 * templateId ^slicing.rules = #open
-
 * templateId contains frResultat 1..1
 and iheSimpleObservation 1..1
 and frSimpleObservation 1..1
-
 * templateId[frResultat] 1..1
 * templateId[frResultat].root = "1.2.250.1.213.1.1.3.209"
 * templateId[frResultat] ^short = "Conformité FR-Resultat (CI-SIS)"
@@ -31,32 +29,30 @@ and frSimpleObservation 1..1
 * templateId[frSimpleObservation] 1..1
 * templateId[frSimpleObservation].root = "1.2.250.1.213.1.1.3.48"
 * templateId[frSimpleObservation] ^short = "Conformité FR-Simple-Observation (CI-SIS)"
-
 * code MS
+* code 1..1
 * code ^short = "<b>Code du résultat</b>"
 * text MS
 * text 1..1
-* text ^short = "Description narrative"
-
+* text.xmlText = "Description narrative"
 * effectiveTime MS
 * effectiveTime 1..1
 * effectiveTime ^short = "Date de l'observation"
 * value MS
 * value 1..1
 * value ^short = "Observation effectuée"
-* value only ANY
-
+* value only CD
+* interpretationCode MS
+* interpretationCode 0..1
+* interpretationCode ^short = "<b>Interprétation</b>"
 * entryRelationship MS
 * entryRelationship 0..*
-
 * entryRelationship ^slicing.discriminator.type = #value
 * entryRelationship ^slicing.discriminator.path = "$this"
 * entryRelationship ^slicing.rules = #open
-
 * entryRelationship contains 
 frCommentaireER 0..*
-
-
+* entryRelationship[frCommentaireER].act only FRCDACommentaireER
+* targetSiteCode MS
 * targetSiteCode 0..1
 * targetSiteCode ^short = "<b>Site de l'observation</b>"
-

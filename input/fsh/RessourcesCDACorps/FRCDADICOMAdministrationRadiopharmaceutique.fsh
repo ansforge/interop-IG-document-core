@@ -20,23 +20,29 @@ Description: "Entrée FR-DICOM-Administration-radiopharmaceutique: <p>Cette entr
          <p>autres informations liées à l’administration d’un produit </p>
       </li>
    </ul>"
+* classCode MS
+* moodCode MS
 * templateId 1..1
 * templateId ^slicing.discriminator.type = #value
 * templateId ^slicing.discriminator.path = "root"
 * templateId ^slicing.rules = #open
-
 * templateId contains frDicomAdministrationRadiopharmaceutique 1..1
-
 * templateId[frDicomAdministrationRadiopharmaceutique] 1..1
 * templateId[frDicomAdministrationRadiopharmaceutique].root = "1.2.250.1.213.1.1.3.173"
 * templateId[frDicomAdministrationRadiopharmaceutique] ^short = "Conformité FR-DICOM-Administration-radiopharmaceutique (CI-SIS)"
-
 * code MS
+* code 1..1
 * code ^short = "<b>Type de traitement</b>
    <br clear='none'/>"
 * code.code = #440252007
 * code.codeSystem = "2.16.840.1.113883.6.96"
 * code.codeSystemName = "SNOMED CT"
-
-
-
+* routeCode MS
+* routeCode 0..1
+* routeCode ^short = "<b>Voie d'administration </b>
+   <br clear='none'/>
+   <div>
+      <b>Terminologie utilisée : </b> EDQM - Standard terms / classe ROA (Voie d'administration)</div>"
+* consumable 1..1
+  * manufacturedProduct 1..1
+    * manufacturedMaterial 1..1

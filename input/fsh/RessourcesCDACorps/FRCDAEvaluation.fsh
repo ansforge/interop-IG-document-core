@@ -16,19 +16,17 @@ Description: "Entrée FR-Evaluation: <p>IHE-PCC - Survey Observation </p>
 * classCode MS
 * classCode = #OBS
 * moodCode MS
+* moodCode = #EVN
 * id 1..1
 * id ^short = "Identifiant"
-
 * templateId 1..4
 * templateId ^slicing.discriminator.type = #value
 * templateId ^slicing.discriminator.path = "root"
 * templateId ^slicing.rules = #open
-
 * templateId contains iheSurveyObservation 1..1
 and iheSimpleObservation 1..1
 and ccdResultObservation 1..1
 and frEvaluation 1..1
-
 * templateId[iheSurveyObservation] 1..1
 * templateId[iheSurveyObservation].root = "1.3.6.1.4.1.19376.1.5.3.1.1.12.3.6"
 * templateId[iheSurveyObservation] ^short = "Conformité Survey Observation (IHE PCC)"
@@ -41,8 +39,8 @@ and frEvaluation 1..1
 * templateId[frEvaluation] 1..1
 * templateId[frEvaluation].root = "1.2.250.1.213.1.1.3.25"
 * templateId[frEvaluation] ^short = "Conformité FR-Evaluation (CI-SIS)"
-
 * code MS
+* code 1..1
 * code ^short = "<p>
       <strong>Type d'évaluation :</strong>
    </p>
@@ -54,31 +52,33 @@ and frEvaluation 1..1
    <p/>"
 * text MS
 * text 1..1
-* text ^short = "Description narrative"
-
+* text.xmlText = "Description narrative"
 * statusCode.code MS
 * statusCode.code = #completed
-
 * effectiveTime MS
 * effectiveTime 1..1
 * effectiveTime ^short = "Date"
 * value MS
 * value 1..1
 * value ^short = "Valeur de l'évaluationLe type (code) et la valeur de la mesure (réponse) dépendent du volet utilisant cette entrée et sont spécifiquement précisés dans les volets de contenus."
-* value only ANY
-
+* value only CD
+* interpretationCode MS
+* interpretationCode 0..1
+* interpretationCode ^short = "<div>
+      <b>Interprétation</b>
+   </div>
+   <div>Un code d’interprétation de la valeur pourra être utilisé pour donner une évaluation de la réponse.</div>"
 * entryRelationship MS
 * entryRelationship 0..*
-
 * entryRelationship ^slicing.discriminator.type = #value
 * entryRelationship ^slicing.discriminator.path = "$this"
 * entryRelationship ^slicing.rules = #open
-
 * entryRelationship contains 
-dummySlice6668 0..*
+frEvaluationComposant 0..*
  and frStatut 0..1
  and frCommentaireER 0..*
  and frReferenceInterne 0..*
-
-
-
+* entryRelationship[frEvaluationComposant].observation only FRCDAEvaluationComposant
+* entryRelationship[frStatut].observation only FRCDAStatut
+* entryRelationship[frCommentaireER].act only FRCDACommentaireER
+* entryRelationship[frReferenceInterne].act only FRCDAReferenceInterne

@@ -10,34 +10,27 @@ Description: "Entrée FR-Evolution-effet-indesirable: <ul>
 * classCode MS
 * classCode = #OBS
 * moodCode MS
+* moodCode = #EVN
 * templateId 1..1
 * templateId ^slicing.discriminator.type = #value
 * templateId ^slicing.discriminator.path = "root"
 * templateId ^slicing.rules = #open
-
-* templateId contains frResultat 1..1
-
-* templateId[frResultat] 1..1
-* templateId[frResultat].root = "1.2.250.1.213.1.1.3.213"
-* templateId[frResultat] ^short = "Conformité FR-Resultat (CI-SIS)"
-
+* templateId contains frEvolutionEffetIndesirable 1..1
+* templateId[frEvolutionEffetIndesirable] 1..1
+* templateId[frEvolutionEffetIndesirable].root = "1.2.250.1.213.1.1.3.213"
+* templateId[frEvolutionEffetIndesirable] ^short = "Conformité FR-Resultat (CI-SIS)"
 * code MS
+* code 1..1
 * code ^short = "<b>Code de l'entrée</b>"
 * code.code = #GEN-319
 * code.codeSystem = "1.2.250.1.213.1.1.4.322"
 * code.codeSystemName = "TerminologieCISIS"
-
 * text MS
 * text 1..1
-* text ^short = "Partie narrative de l'entrée"
-
+* text.xmlText = "Partie narrative de l'entrée"
 * statusCode.code MS
 * statusCode.code = #completed
-
 * value MS
 * value 1..1
 * value ^short = "Evolution"
 * value only CD
-
-
-

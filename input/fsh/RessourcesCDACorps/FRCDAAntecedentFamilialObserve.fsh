@@ -14,19 +14,17 @@ Description: "Entrée FR-Antecedent-familial-observe: <p>IHE-PCC - Family Histor
 * classCode MS
 * classCode = #OBS
 * moodCode MS
+* moodCode = #EVN
 * id 1..1
 * id ^short = "Identifiant"
-
 * templateId 1..4
 * templateId ^slicing.discriminator.type = #value
 * templateId ^slicing.discriminator.path = "root"
 * templateId ^slicing.rules = #open
-
 * templateId contains iheFamilyHistoryObservation 1..1
 and ccdFamilyHistoryObservation 1..1
 and iheSimpleObservation 1..1
 and frAntecedentFamilialObserve 1..1
-
 * templateId[iheFamilyHistoryObservation] 1..1
 * templateId[iheFamilyHistoryObservation].root = "1.3.6.1.4.1.19376.1.5.3.1.4.13.3"
 * templateId[iheFamilyHistoryObservation] ^short = "Conformité Family History Observation (IHE PCC)"
@@ -39,22 +37,22 @@ and frAntecedentFamilialObserve 1..1
 * templateId[frAntecedentFamilialObserve] 1..1
 * templateId[frAntecedentFamilialObserve].root = "1.2.250.1.213.1.1.3.51"
 * templateId[frAntecedentFamilialObserve] ^short = "Conformité FR-Antecedent-familial-observe (CI-SIS)"
-
-* code MS
-* code ^short = "<b>Type de l'observation</b>"
 * code MS
 * code 1..1
-* code ^short = "Type de l'observation"
+* code ^short = "<b>Type de l'observation</b>"
 * code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-code-probleme-cisis
-
 * text MS
 * text 1..1
-* text ^short = "Description narrative de la valeur de l'observation"
-
+* text.xmlText = "Description narrative de la valeur de l'observation"
 * effectiveTime MS
 * effectiveTime 0..1
 * effectiveTime ^short = "Horodatage de l'entrée"
-
+* interpretationCode MS
+* interpretationCode 0..1
+* interpretationCode ^short = "<b>Interpétration</b>"
+* methodCode MS
+* methodCode 0..1
+* methodCode ^short = "<b>Méthode utilisée</b>"
+* targetSiteCode MS
 * targetSiteCode 0..1
 * targetSiteCode ^short = "<b>Site</b>"
-

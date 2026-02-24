@@ -19,10 +19,10 @@ Description: "Entrée FR-Commentaire-ER: <p>IHE-PCC - Comments <br/>
          <p>Lorsque l’entrée FR-Commentaire-ER est utilisée dans une entrée : </p>
          <ul>
             <li>
-               <p>de type organizer : l’utiliser dans un élément component avec l’attribut type-Code=\"COMP\".</p>
+               <p>de type organizer : l’utiliser dans un élément component avec l’attribut type-Code='COMP'.</p>
             </li>
             <li>
-               <p>de type observation ou act, etc… : l’utiliser dans un élément entryRelationship avec les attributs typeCode=\"SUBJ\" et inversionInd=\"true\". </p>
+               <p>de type observation ou act, etc… : l’utiliser dans un élément entryRelationship avec les attributs typeCode='SUBJ' et inversionInd='true'. </p>
             </li>
          </ul>
       </li>
@@ -30,15 +30,14 @@ Description: "Entrée FR-Commentaire-ER: <p>IHE-PCC - Comments <br/>
 * classCode MS
 * classCode = #ACT
 * moodCode MS
+* moodCode = #EVN
 * templateId 1..3
 * templateId ^slicing.discriminator.type = #value
 * templateId ^slicing.discriminator.path = "root"
 * templateId ^slicing.rules = #open
-
 * templateId contains ccdComment 1..1
 and iheCommentEntry 1..1
 and frCommentaireER 1..1
-
 * templateId[ccdComment] 1..1
 * templateId[ccdComment].root = "2.16.840.1.113883.10.20.1.40"
 * templateId[ccdComment] ^short = "Conformité Comment (CCD) "
@@ -48,19 +47,14 @@ and frCommentaireER 1..1
 * templateId[frCommentaireER] 1..1
 * templateId[frCommentaireER].root = "1.2.250.1.213.1.1.3.32"
 * templateId[frCommentaireER] ^short = "Conformité FR-Commentaire-ER (CI-SIS)"
-
 * code MS
+* code 1..1
 * code ^short = "<b>Code de l'entrée</b>"
 * code.code = #48767-8
 * code.codeSystem = "2.16.840.1.113883.6.1"
 * code.codeSystemName = "LOINC"
-
 * text MS
 * text 1..1
-* text ^short = "Texte du commentaire"
-
+* text.xmlText = "Texte du commentaire"
 * statusCode.code MS
 * statusCode.code = #completed
-
-
-

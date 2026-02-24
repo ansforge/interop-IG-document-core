@@ -14,15 +14,14 @@ Description: "Entrée FR-Severite: <p>IHE-PCC - Severity</p>
 * classCode MS
 * classCode = #OBS
 * moodCode MS
+* moodCode = #EVN
 * templateId 1..3
 * templateId ^slicing.discriminator.type = #value
 * templateId ^slicing.discriminator.path = "root"
 * templateId ^slicing.rules = #open
-
 * templateId contains iheSeverity 1..1
 and ccdSeverityObservation 1..1
 and frSeverite 1..1
-
 * templateId[iheSeverity] 1..1
 * templateId[iheSeverity].root = "1.3.6.1.4.1.19376.1.5.3.1.4.1"
 * templateId[iheSeverity] ^short = "Conformité Severity (IHE PCC)"
@@ -32,20 +31,15 @@ and frSeverite 1..1
 * templateId[frSeverite] 1..1
 * templateId[frSeverite].root = "1.2.250.1.213.1.1.3.29"
 * templateId[frSeverite] ^short = "Conformité FR-Severite (CI-SIS)"
-
 * code MS
+* code 1..1
 * code ^short = "<b>Code de l’entrée</b>"
 * text MS
 * text 1..1
-* text ^short = "Description narrative"
-
+* text.xmlText = "Description narrative"
 * statusCode.code MS
 * statusCode.code = #completed
-
 * value MS
 * value 1..1
 * value ^short = "Niveau de sévérité :Valeur provenant de JDV_SeveriteObservation_CISIS (1.2.250.1.213.1.1.5.675)D’autres nomenclatures spécifiques peuvent cependant être utilisées."
 * value only CD
-
-
-

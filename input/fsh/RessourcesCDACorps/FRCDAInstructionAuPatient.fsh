@@ -11,18 +11,16 @@ Description: "Entrée FR-Instruction-au-patient: <p>IHE-PCC - Simple-Observation
 * classCode MS
 * classCode = #OBS
 * moodCode MS
+* moodCode = #EVN
 * id 1..1
 * id ^short = "Identifiant"
-
 * templateId 1..3
 * templateId ^slicing.discriminator.type = #value
 * templateId ^slicing.discriminator.path = "root"
 * templateId ^slicing.rules = #open
-
 * templateId contains iheSimpleObservation 1..1
 and frSimpleObservation 1..1
 and frInstructionAuPatient 1..1
-
 * templateId[iheSimpleObservation] 1..1
 * templateId[iheSimpleObservation].root = "1.3.6.1.4.1.19376.1.5.3.1.4.13"
 * templateId[iheSimpleObservation] ^short = "Conformité Simple Observation (IHE PCC)"
@@ -32,8 +30,8 @@ and frInstructionAuPatient 1..1
 * templateId[frInstructionAuPatient] 1..1
 * templateId[frInstructionAuPatient].root = "1.2.250.1.213.1.1.3.48.35"
 * templateId[frInstructionAuPatient] ^short = "Conformité FR-Instruction-au-patient (CI-SIS)"
-
 * code MS
+* code 1..1
 * code ^short = "<div>
       <b>Code de l'observation</b>
    </div>
@@ -47,11 +45,9 @@ and frInstructionAuPatient 1..1
    </div>"
 * text MS
 * text 1..1
-* text ^short = "Description narrative de l'observation"
-
+* text.xmlText = "Description narrative de l'observation"
 * statusCode.code MS
 * statusCode.code = #completed
-
 * effectiveTime MS
 * effectiveTime 0..1
 * effectiveTime ^short = "Horodatage de l’entrée"
@@ -59,6 +55,3 @@ and frInstructionAuPatient 1..1
 * value 0..*
 * value ^short = "Instruction au patient sous forme codéeJDV dépendant du cas d’usage.  • Pour les prescription d’examen de biologie : JDV_Bio_instruction_patient_CISIS (1.2.250.1.213.1.1.5.691) "
 * value only CD
-
-
-

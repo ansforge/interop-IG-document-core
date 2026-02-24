@@ -11,18 +11,18 @@ Description: "Entrée FR-Demande-d-examen-ou-de-suivi: <p>IHE-PCC - Observation 
          <p>Cette entrée est basée sur l'élément Simple Observation (1.3.6.1.4.1.19376.1.5.3.1.4.13) qu'elle spécialise.</p>
       </li>
    </ul>"
+* classCode MS
+* classCode = #OBS
+* moodCode MS
 * id 1..1
 * id ^short = "Identifiant"
-
 * templateId 1..3
 * templateId ^slicing.discriminator.type = #value
 * templateId ^slicing.discriminator.path = "root"
 * templateId ^slicing.rules = #open
-
 * templateId contains iheObservationRequest 1..1
 and ccdPlanOfCareActivityPlannedRealised 1..1
 and frDemandeDexamenOuDeSuivi 1..1
-
 * templateId[iheObservationRequest] 1..1
 * templateId[iheObservationRequest].root = "1.3.6.1.4.1.19376.1.5.3.1.1.20.3.1"
 * templateId[iheObservationRequest] ^short = "Conformité Observation Request (IHE PCC)"
@@ -32,8 +32,8 @@ and frDemandeDexamenOuDeSuivi 1..1
 * templateId[frDemandeDexamenOuDeSuivi] 1..1
 * templateId[frDemandeDexamenOuDeSuivi].root = "1.2.250.1.213.1.1.3.27"
 * templateId[frDemandeDexamenOuDeSuivi] ^short = "Conformité FR-Demande-d-examen-ou-de-suivi (CI-SIS)"
-
 * code MS
+* code 1..1
 * code ^short = "<div>
       <b>Type de la demande</b>
    </div>
@@ -45,17 +45,23 @@ and frDemandeDexamenOuDeSuivi 1..1
       </ul> et décrire le type de la demande sous forme de texte libre dans la partie narrative avec une référence vers l'entrée correspondante. </div>"
 * text MS
 * text 1..1
-* text ^short = "Description narrative"
-
+* text.xmlText = "Description narrative"
 * effectiveTime MS
 * effectiveTime 1..1
 * effectiveTime ^short = "Date prévisionnelle de l'examen, du suivi, de l'objectif"
 * value MS
 * value 0..1
 * value ^short = "Résultat de la demande"
-* value only ANY
-
-
+* value only CD
+* interpretationCode MS
+* interpretationCode 0..1
+* interpretationCode ^short = "<div>
+      <b>Interprétation</b>
+   </div>"
+* interpretationCode from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationInterpretation-cisis
+* methodCode MS
+* methodCode 0..1
+* methodCode ^short = "<b>Méthode</b>"
+* targetSiteCode MS
 * targetSiteCode 0..*
 * targetSiteCode ^short = "<b>Cible</b>"
-

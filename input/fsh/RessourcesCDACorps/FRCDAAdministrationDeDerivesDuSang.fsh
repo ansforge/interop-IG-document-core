@@ -11,18 +11,16 @@ Description: "Entrée FR-Administration-de-derives-du-sang: <p>IHE-PCC - Simple-
 * classCode MS
 * classCode = #OBS
 * moodCode MS
+* moodCode = #EVN
 * id 1..1
 * id ^short = "Identifiant"
-
 * templateId 1..3
 * templateId ^slicing.discriminator.type = #value
 * templateId ^slicing.discriminator.path = "root"
 * templateId ^slicing.rules = #open
-
 * templateId contains iheSimpleObservation 1..1
 and frSimpleObservation 1..1
 and frAdministrationDeDerivesDuSang 1..1
-
 * templateId[iheSimpleObservation] 1..1
 * templateId[iheSimpleObservation].root = "1.3.6.1.4.1.19376.1.5.3.1.4.13"
 * templateId[iheSimpleObservation] ^short = "Conformité Simple Observation (IHE PCC)"
@@ -32,20 +30,17 @@ and frAdministrationDeDerivesDuSang 1..1
 * templateId[frAdministrationDeDerivesDuSang] 1..1
 * templateId[frAdministrationDeDerivesDuSang].root = "1.2.250.1.213.1.1.3.48.2"
 * templateId[frAdministrationDeDerivesDuSang] ^short = "Conformité FR-Administration-de-derives-du-sang (CI-SIS)"
-
 * code MS
+* code 1..1
 * code ^short = "<b>Code de l'observation</b>"
 * code.code = #MED-147
 * code.codeSystem = "1.2.250.1.213.1.1.4.322"
 * code.codeSystemName = "TerminologieCISIS"
-
 * text MS
 * text 1..1
-* text ^short = "Description narrative"
-
+* text.xmlText = "Description narrative"
 * statusCode.code MS
 * statusCode.code = #completed
-
 * effectiveTime MS
 * effectiveTime 1..1
 * effectiveTime ^short = "Date de l'observation"
@@ -53,6 +48,3 @@ and frAdministrationDeDerivesDuSang 1..1
 * value 1..1
 * value ^short = "Administration de dérivés du sang."
 * value only BL
-
-
-

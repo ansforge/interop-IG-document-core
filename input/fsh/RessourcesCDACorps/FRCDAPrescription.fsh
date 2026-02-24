@@ -22,18 +22,17 @@ Description: "Entrée FR-Prescription: <p>IHE-PCC - Supply</p>
          </p>
       </li>
    </ul>"
+* classCode MS
+* moodCode MS
 * id 1..1
 * id ^short = "Identifiant"
-
 * templateId 1..3
 * templateId ^slicing.discriminator.type = #value
 * templateId ^slicing.discriminator.path = "root"
 * templateId ^slicing.rules = #open
-
 * templateId contains ccdSupplyActivity 1..1
 and iheSupplyEntry 1..1
 and frPrescription 1..1
-
 * templateId[ccdSupplyActivity] 1..1
 * templateId[ccdSupplyActivity].root = "2.16.840.1.113883.10.20.1.34"
 * templateId[ccdSupplyActivity] ^short = "Conformité Supply activity (CCD)"
@@ -43,17 +42,11 @@ and frPrescription 1..1
 * templateId[frPrescription] 1..1
 * templateId[frPrescription].root = "1.2.250.1.213.1.1.3.44"
 * templateId[frPrescription] ^short = "Conformité FR-Prescription (CI-SIS)"
-
-* code MS
 * entryRelationship MS
 * entryRelationship 0..*
-
 * entryRelationship ^slicing.discriminator.type = #value
 * entryRelationship ^slicing.discriminator.path = "$this"
 * entryRelationship ^slicing.rules = #open
-
 * entryRelationship contains 
 frInstructionsAuDispensateur 0..1
-
-
-
+* entryRelationship[frInstructionsAuDispensateur].act only FRCDAInstructionsAuDispensateur

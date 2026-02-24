@@ -6,18 +6,16 @@ Description: "Entrée FR-Transfusion-de-produits-sanguins: <p>Cette entrée perm
 * classCode MS
 * classCode = #OBS
 * moodCode MS
+* moodCode = #EVN
 * id 1..1
 * id ^short = "Identifiant"
-
 * templateId 1..3
 * templateId ^slicing.discriminator.type = #value
 * templateId ^slicing.discriminator.path = "root"
 * templateId ^slicing.rules = #open
-
 * templateId contains iheSimpleObservation 1..1
 and frSimpleObservation 1..1
 and frTransfusionDeProduitsSanguins 1..1
-
 * templateId[iheSimpleObservation] 1..1
 * templateId[iheSimpleObservation].root = "1.3.6.1.4.1.19376.1.5.3.1.4.13"
 * templateId[iheSimpleObservation] ^short = "Conformité Simple Observation (IHE PCC)"
@@ -27,20 +25,17 @@ and frTransfusionDeProduitsSanguins 1..1
 * templateId[frTransfusionDeProduitsSanguins] 1..1
 * templateId[frTransfusionDeProduitsSanguins].root = "1.2.250.1.213.1.1.3.48.10"
 * templateId[frTransfusionDeProduitsSanguins] ^short = "Conformité FR-Transfusion-de-produits-sanguins (CI-SIS)"
-
 * code MS
+* code 1..1
 * code ^short = "<b>Code de l'observation</b>"
 * code.code = #MED-145
 * code.codeSystem = "1.2.250.1.213.1.1.4.322"
 * code.codeSystemName = "TerminologieCISIS"
-
 * text MS
 * text 1..1
-* text ^short = "Partie narrative de l’observation"
-
+* text.xmlText = "Partie narrative de l’observation"
 * statusCode.code MS
 * statusCode.code = #completed
-
 * effectiveTime MS
 * effectiveTime 1..1
 * effectiveTime ^short = "Date de l'observation"
@@ -48,6 +43,3 @@ and frTransfusionDeProduitsSanguins 1..1
 * value 1..1
 * value ^short = "Transfusion de produit sanguin."
 * value only BL
-
-
-

@@ -21,28 +21,31 @@ Description: "Entrée FR-DICOM-Administration-produit-de-sante: <p>DICOM Part 20
          <p>autres informations liées à l’administration d’un produit </p>
       </li>
    </ul>"
+* classCode MS
+* moodCode MS
 * id 1..1
 * id ^short = "Identifiant"
-
 * templateId 1..2
 * templateId ^slicing.discriminator.type = #value
 * templateId ^slicing.discriminator.path = "root"
 * templateId ^slicing.rules = #open
-
 * templateId contains frDicomAdministrationProduitDeSante 1..1
 and dicomProceduralMedication 1..1
-
 * templateId[frDicomAdministrationProduitDeSante] 1..1
 * templateId[frDicomAdministrationProduitDeSante].root = "1.2.250.1.213.1.1.3.151"
 * templateId[frDicomAdministrationProduitDeSante] ^short = "Conformité FR-DICOM-Administration-produit-de-sante (CI-SIS) "
 * templateId[dicomProceduralMedication] 1..1
 * templateId[dicomProceduralMedication].root = "1.2.840.10008.9.13"
 * templateId[dicomProceduralMedication] ^short = "Conformité Procedural Medication (DICOM Part 20)"
-
-* code MS
 * text MS
 * text 0..1
-* text ^short = "Partie narrative de l'entrée"
-
-
-
+* text.xmlText = "Partie narrative de l'entrée"
+* routeCode MS
+* routeCode 0..1
+* routeCode ^short = "<b>Voie d'administration </b>
+   <br clear='none'/>
+   <div>
+      <b>Terminologie utilisée : </b> EDQM - Standard terms / classe ROA (Voie d'administration)</div>"
+* consumable 1..1
+  * manufacturedProduct 1..1
+    * manufacturedMaterial 1..1
