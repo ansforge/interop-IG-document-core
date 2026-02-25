@@ -1,0 +1,453 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"Supply","Supply","","","",1,1,"","","","null {[]} {[]}
+","Base for all types and resources","Defines the basic properties of every data value. This is an abstract type, meaning that no value can be just a data value without belonging to any concrete type. Every concrete type is a specialization of this general abstract DataValue type.","","","","","","","","","",,,,,"",,,,"Base",0,*,"","","n/a"
+"Supply.nullFlavor","Supply.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple]]} {[]}
+","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor","",,,,"ANY.nullFlavor",0,1,"",""
+"Supply.realmCode","Supply.realmCode","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CS {[]} {[]}
+","","When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.realmCode",0,*,"",""
+"Supply.typeId","Supply.typeId","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
+","","When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question.","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.typeId",0,1,"","II-1:An II instance must have either a root or an nullFlavor. {root.exists() or nullFlavor.exists()}
+"
+"Supply.typeId.nullFlavor","Supply.typeId.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple]]} {[]}
+","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor","",,,,"ANY.nullFlavor",0,1,"",""
+"Supply.typeId.assigningAuthorityName","Supply.typeId.assigningAuthorityName","","","Assigning Authority Name",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple]]} {[]}
+","","A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.","","","","","","","","","",,,,,"",,,,"II.assigningAuthorityName",0,1,"",""
+"Supply.typeId.displayable","Supply.typeId.displayable","","","Displayable",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple]]} {[]}
+","","Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).","","","","","","","","","",,,,,"",,,,"II.displayable",0,1,"",""
+"Supply.typeId.root","Supply.typeId.root","","","Root",1,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/oid], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/uuid], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/ruid]]} {[]}
+","","Identifies the type as an HL7 Registered model","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""2.16.840.1.113883.1.3""/>","","","","",,,,,"",,,,"II.root",0,1,"",""
+"Supply.typeId.extension","Supply.typeId.extension","","","Extension",1,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple]]} {[]}
+","","A character string as a unique identifier within the scope of the identifier root.","","","","","","","","","",,,,,"",,,,"II.extension",0,1,"",""
+"Supply.templateId","Supply.templateId","","","",2,2,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
+","","When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question","","","","","","","","","",,,,,"","value:root}
+","",,"open","InfrastructureRoot.templateId",0,*,"",""
+"Supply.templateId:ccdSupplyActivity","Supply.templateId","ccdSupplyActivity","","",1,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
+","Conformité Supply Activity (CCD)","When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.templateId",0,*,"",""
+"Supply.templateId:ccdSupplyActivity.nullFlavor","Supply.templateId.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple]]} {[]}
+","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor","",,,,"ANY.nullFlavor",0,1,"",""
+"Supply.templateId:ccdSupplyActivity.assigningAuthorityName","Supply.templateId.assigningAuthorityName","","","Assigning Authority Name",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple]]} {[]}
+","","A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.","","","","","","","","","",,,,,"",,,,"II.assigningAuthorityName",0,1,"",""
+"Supply.templateId:ccdSupplyActivity.displayable","Supply.templateId.displayable","","","Displayable",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple]]} {[]}
+","","Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).","","","","","","","","","",,,,,"",,,,"II.displayable",0,1,"",""
+"Supply.templateId:ccdSupplyActivity.root","Supply.templateId.root","","","Root",1,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/oid], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/uuid], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/ruid]]} {[]}
+","","A unique identifier that guarantees the global uniqueness of the instance identifier. The root alone may be the entire instance identifier.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""2.16.840.1.113883.10.20.1.34""/>","","","",,,,,"",,,,"II.root",0,1,"",""
+"Supply.templateId:ccdSupplyActivity.extension","Supply.templateId.extension","","","Extension",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple]]} {[]}
+","","A character string as a unique identifier within the scope of the identifier root.","","","","","","","","","",,,,,"",,,,"II.extension",0,1,"",""
+"Supply.templateId:frDispositifMedical","Supply.templateId","frDispositifMedical","","",1,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
+","Conformité FR-Dispositif-medical (CI-SIS)","When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.templateId",0,*,"",""
+"Supply.templateId:frDispositifMedical.nullFlavor","Supply.templateId.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple]]} {[]}
+","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor","",,,,"ANY.nullFlavor",0,1,"",""
+"Supply.templateId:frDispositifMedical.assigningAuthorityName","Supply.templateId.assigningAuthorityName","","","Assigning Authority Name",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple]]} {[]}
+","","A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.","","","","","","","","","",,,,,"",,,,"II.assigningAuthorityName",0,1,"",""
+"Supply.templateId:frDispositifMedical.displayable","Supply.templateId.displayable","","","Displayable",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple]]} {[]}
+","","Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).","","","","","","","","","",,,,,"",,,,"II.displayable",0,1,"",""
+"Supply.templateId:frDispositifMedical.root","Supply.templateId.root","","","Root",1,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/oid], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/uuid], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/ruid]]} {[]}
+","","A unique identifier that guarantees the global uniqueness of the instance identifier. The root alone may be the entire instance identifier.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""1.2.250.1.213.1.1.3.20""/>","","","",,,,,"",,,,"II.root",0,1,"",""
+"Supply.templateId:frDispositifMedical.extension","Supply.templateId.extension","","","Extension",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple]]} {[]}
+","","A character string as a unique identifier within the scope of the identifier root.","","","","","","","","","",,,,,"",,,,"II.extension",0,1,"",""
+"Supply.classCode","Supply.classCode","","","",1,1,"Y","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple]]} {[]}
+","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""SPLY""/>","","<valueCode xmlns=""http://hl7.org/fhir"" value=""SPLY""/>","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-ActClassSupply","",,,,"Supply.classCode",1,1,"",""
+"Supply.moodCode","Supply.moodCode","","","",1,1,"Y","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple]]} {[]}
+","","","","","","","","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-xDocumentSubstanceMood|2.0.0","",,,,"Supply.moodCode",1,1,"",""
+"Supply.id","Supply.id","","","",1,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
+","Identifiant","","","","","","","","","","",,,,,"",,,,"Supply.id",0,*,"",""
+"Supply.code","Supply.code","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CD {[]} {[]}
+","","","","","","","","","","","",,"example","","http://terminology.hl7.org/ValueSet/v3-ActCode","",,,,"Supply.code",0,1,"",""
+"Supply.text","Supply.text","","","",0,1,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/ED {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Supply.text",0,1,"",""
+"Supply.text.nullFlavor","Supply.text.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple]]} {[]}
+","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor","",,,,"ANY.nullFlavor",0,1,"",""
+"Supply.text.compression","Supply.text.compression","","","Compression",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple]]} {[]}
+","","Indicates whether the raw byte data is compressed, and what compression algorithm was used.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDACompressionAlgorithm","",,,,"ED.compression",0,1,"",""
+"Supply.text.integrityCheck","Supply.text.integrityCheck","","","Integrity Check",0,1,"","","","base64Binary {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bin]]} {[]}
+","","The integrity check is a short binary value representing a cryptographically strong checksum that is calculated over the binary data. The purpose of this property, when communicated with a reference is for anyone to validate later whether the reference still resolved to the same data that the reference resolved to when the encapsulated data value with reference was created.","","","","","","","","","",,,,,"",,,,"ED.integrityCheck",0,1,"",""
+"Supply.text.integrityCheckAlgorithm","Supply.text.integrityCheckAlgorithm","","","Integrity Check Algorithm",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple]]} {[]}
+","","Specifies the algorithm used to compute the integrityCheck value. The cryptographically strong checksum algorithm Secure Hash Algorithm-1 (SHA-1) is currently the industry standard. It has superseded the MD5 algorithm only a couple of years ago, when certain flaws in the security of MD5 were discovered. Currently the SHA-1 hash algorithm is the default choice for the integrity check algorithm. Note that SHA-256 is also entering widespread usage.","","","","","","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-IntegrityCheckAlgorithm|2.0.0","",,,,"ED.integrityCheckAlgorithm",0,1,"",""
+"Supply.text.language","Supply.text.language","","","Language",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple]]} {[]}
+","","For character based information the language property specifies the human language of the text.","","","","","","","","","",,,,,"",,,,"ED.language",0,1,"",""
+"Supply.text.mediaType","Supply.text.mediaType","","","Media Type",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple]]} {[]}
+","","Identifies the type of the encapsulated data and identifies a method to interpret or render the data.","","","","","","","","","",,"example","","http://terminology.hl7.org/ValueSet/v3-MediaType","",,,,"ED.mediaType",0,1,"",""
+"Supply.text.representation","Supply.text.representation","","","",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple]]} {[]}
+","","","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/BinaryDataEncoding","",,,,"ED.representation",0,1,"",""
+"Supply.text.xmlText","Supply.text.xmlText","","","",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple]]} {[]}
+","Allows for mixed text content. If @representation='B64', this SHALL be a base64binary string.","Data that is primarily intended for human interpretation or for further machine processing is outside the scope of HL7. This includes unformatted or formatted written language, multimedia data, or structured information as defined by a different standard (e.g., XML-signatures.)","This element is represented in XML as textual content. The actual name ""xmlText"" will not appear in a CDA instance.","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Description narrative""/>","","","",,,,,"",,,,"ED.xmlText",0,1,"",""
+"Supply.text.reference","Supply.text.reference","","","Reference",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/TEL {[]} {[]}
+","","A telecommunication address (TEL), such as a URL for HTTP or FTP, which will resolve to precisely the same binary data that could as well have been provided as inline data.","","","","","","","","","",,,,,"",,,,"ED.reference",0,1,"",""
+"Supply.text.thumbnail","Supply.text.thumbnail","","","Thumbnail",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ED {[]} {[]}
+","","An abbreviated rendition of the full data. A thumbnail requires significantly fewer resources than the full data, while still maintaining some distinctive similarity with the full data. A thumbnail is typically used with by-reference encapsulated data. It allows a user to select data more efficiently before actually downloading through the reference.","","","","","","","","","",,,,,"",,,,"ED.thumbnail",0,1,"",""
+"Supply.statusCode","Supply.statusCode","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CS {[]} {[]}
+","","","","","","","","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-ActStatus","",,,,"Supply.statusCode",0,1,"",""
+"Supply.effectiveTime","Supply.effectiveTime","","","",1,1,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/SXCM-TS {[]} {[]}
+http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS {[]} {[]}http://hl7.org/cda/stds/core/StructureDefinition/EIVL-TS {[]} {[]}http://hl7.org/cda/stds/core/StructureDefinition/PIVL-TS {[]} {[]}http://hl7.org/cda/stds/core/StructureDefinition/SXPR-TS {[]} {[]}","Date d'utilisation ou de présence chez le patientSi la date n'est pas connue, utiliser la valeur nullFlavor='UNK'.","","","","","","","","","","",,,,,"",,,,"Supply.effectiveTime",0,*,"",""
+"Supply.priorityCode","Supply.priorityCode","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CE {[]} {[]}
+","","","","","","","","","","","",,"example","","http://terminology.hl7.org/ValueSet/v3-ActPriority","",,,,"Supply.priorityCode",0,*,"",""
+"Supply.repeatNumber","Supply.repeatNumber","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/IVL-INT {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Supply.repeatNumber",0,1,"",""
+"Supply.independentInd","Supply.independentInd","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/BL {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Supply.independentInd",0,1,"",""
+"Supply.quantity","Supply.quantity","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/PQ {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Supply.quantity",0,1,"",""
+"Supply.expectedUseTime","Supply.expectedUseTime","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Supply.expectedUseTime",0,1,"",""
+"Supply.product","Supply.product","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/InfrastructureRoot {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Supply.product",0,1,"",""
+"Supply.product.nullFlavor","Supply.product.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple]]} {[]}
+","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor","",,,,"ANY.nullFlavor",0,1,"",""
+"Supply.product.realmCode","Supply.product.realmCode","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CS {[]} {[]}
+","","When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.realmCode",0,*,"",""
+"Supply.product.typeId","Supply.product.typeId","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
+","","When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question.","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.typeId",0,1,"","II-1:An II instance must have either a root or an nullFlavor. {root.exists() or nullFlavor.exists()}
+"
+"Supply.product.typeId.nullFlavor","Supply.product.typeId.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple]]} {[]}
+","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor","",,,,"ANY.nullFlavor",0,1,"",""
+"Supply.product.typeId.assigningAuthorityName","Supply.product.typeId.assigningAuthorityName","","","Assigning Authority Name",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple]]} {[]}
+","","A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.","","","","","","","","","",,,,,"",,,,"II.assigningAuthorityName",0,1,"",""
+"Supply.product.typeId.displayable","Supply.product.typeId.displayable","","","Displayable",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple]]} {[]}
+","","Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).","","","","","","","","","",,,,,"",,,,"II.displayable",0,1,"",""
+"Supply.product.typeId.root","Supply.product.typeId.root","","","Root",1,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/oid], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/uuid], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/ruid]]} {[]}
+","","Identifies the type as an HL7 Registered model","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""2.16.840.1.113883.1.3""/>","","","","",,,,,"",,,,"II.root",0,1,"",""
+"Supply.product.typeId.extension","Supply.product.typeId.extension","","","Extension",1,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple]]} {[]}
+","","A character string as a unique identifier within the scope of the identifier root.","","","","","","","","","",,,,,"",,,,"II.extension",0,1,"",""
+"Supply.product.templateId","Supply.product.templateId","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
+","","When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.templateId",0,*,"",""
+"Supply.product.typeCode","Supply.product.typeCode","","","",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple]]} {[]}
+","","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""PRD""/>","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-ParticipationTargetDirect","",,,,"Supply.product.typeCode",0,1,"",""
+"Supply.product.manufacturedProduct","Supply.product.manufacturedProduct","","","",1,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ManufacturedProduct {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Supply.product.manufacturedProduct",1,1,"",""
+"Supply.subject","Supply.subject","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Subject {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Supply.subject",0,1,"",""
+"Supply.specimen","Supply.specimen","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Specimen {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Supply.specimen",0,*,"",""
+"Supply.performer","Supply.performer","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Performer2 {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Supply.performer",0,*,"",""
+"Supply.author","Supply.author","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Author {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Supply.author",0,*,"",""
+"Supply.informant","Supply.informant","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Informant {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Supply.informant",0,*,"",""
+"Supply.participant","Supply.participant","","","",1,*,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/Participant2 {[]} {[]}
+","Dispositif médical","","","","","","","","","","",,,,,"",,,,"Supply.participant",0,*,"",""
+"Supply.participant.nullFlavor","Supply.participant.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple]]} {[]}
+","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor","",,,,"ANY.nullFlavor",0,1,"",""
+"Supply.participant.realmCode","Supply.participant.realmCode","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CS {[]} {[]}
+","","When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.realmCode",0,*,"",""
+"Supply.participant.typeId","Supply.participant.typeId","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
+","","When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question.","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.typeId",0,1,"","II-1:An II instance must have either a root or an nullFlavor. {root.exists() or nullFlavor.exists()}
+"
+"Supply.participant.typeId.nullFlavor","Supply.participant.typeId.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple]]} {[]}
+","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor","",,,,"ANY.nullFlavor",0,1,"",""
+"Supply.participant.typeId.assigningAuthorityName","Supply.participant.typeId.assigningAuthorityName","","","Assigning Authority Name",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple]]} {[]}
+","","A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.","","","","","","","","","",,,,,"",,,,"II.assigningAuthorityName",0,1,"",""
+"Supply.participant.typeId.displayable","Supply.participant.typeId.displayable","","","Displayable",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple]]} {[]}
+","","Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).","","","","","","","","","",,,,,"",,,,"II.displayable",0,1,"",""
+"Supply.participant.typeId.root","Supply.participant.typeId.root","","","Root",1,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/oid], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/uuid], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/ruid]]} {[]}
+","","Identifies the type as an HL7 Registered model","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""2.16.840.1.113883.1.3""/>","","","","",,,,,"",,,,"II.root",0,1,"",""
+"Supply.participant.typeId.extension","Supply.participant.typeId.extension","","","Extension",1,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple]]} {[]}
+","","A character string as a unique identifier within the scope of the identifier root.","","","","","","","","","",,,,,"",,,,"II.extension",0,1,"",""
+"Supply.participant.templateId","Supply.participant.templateId","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
+","","When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.templateId",0,*,"",""
+"Supply.participant.typeCode","Supply.participant.typeCode","","","",1,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple]]} {[]}
+","","","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""DEV""/>","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDAParticipationType","",,,,"Participant2.typeCode",1,1,"",""
+"Supply.participant.contextControlCode","Supply.participant.contextControlCode","","","",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple]]} {[]}
+","","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""OP""/>","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDAContextControl","",,,,"Participant2.contextControlCode",0,1,"",""
+"Supply.participant.sdtcFunctionCode","Supply.participant.sdtcFunctionCode","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CE {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Participant2.sdtcFunctionCode",0,1,"",""
+"Supply.participant.time","Supply.participant.time","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Participant2.time",0,1,"",""
+"Supply.participant.awarenessCode","Supply.participant.awarenessCode","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CE {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Participant2.awarenessCode",0,1,"",""
+"Supply.participant.participantRole","Supply.participant.participantRole","","","",1,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ParticipantRole {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Participant2.participantRole",1,1,"",""
+"Supply.participant.participantRole.nullFlavor","Supply.participant.participantRole.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple]]} {[]}
+","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor","",,,,"ANY.nullFlavor",0,1,"",""
+"Supply.participant.participantRole.realmCode","Supply.participant.participantRole.realmCode","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CS {[]} {[]}
+","","When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.realmCode",0,*,"",""
+"Supply.participant.participantRole.typeId","Supply.participant.participantRole.typeId","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
+","","When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question.","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.typeId",0,1,"","II-1:An II instance must have either a root or an nullFlavor. {root.exists() or nullFlavor.exists()}
+"
+"Supply.participant.participantRole.typeId.nullFlavor","Supply.participant.participantRole.typeId.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple]]} {[]}
+","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor","",,,,"ANY.nullFlavor",0,1,"",""
+"Supply.participant.participantRole.typeId.assigningAuthorityName","Supply.participant.participantRole.typeId.assigningAuthorityName","","","Assigning Authority Name",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple]]} {[]}
+","","A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.","","","","","","","","","",,,,,"",,,,"II.assigningAuthorityName",0,1,"",""
+"Supply.participant.participantRole.typeId.displayable","Supply.participant.participantRole.typeId.displayable","","","Displayable",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple]]} {[]}
+","","Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).","","","","","","","","","",,,,,"",,,,"II.displayable",0,1,"",""
+"Supply.participant.participantRole.typeId.root","Supply.participant.participantRole.typeId.root","","","Root",1,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/oid], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/uuid], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/ruid]]} {[]}
+","","Identifies the type as an HL7 Registered model","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""2.16.840.1.113883.1.3""/>","","","","",,,,,"",,,,"II.root",0,1,"",""
+"Supply.participant.participantRole.typeId.extension","Supply.participant.participantRole.typeId.extension","","","Extension",1,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple]]} {[]}
+","","A character string as a unique identifier within the scope of the identifier root.","","","","","","","","","",,,,,"",,,,"II.extension",0,1,"",""
+"Supply.participant.participantRole.templateId","Supply.participant.participantRole.templateId","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
+","","When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.templateId",0,*,"",""
+"Supply.participant.participantRole.classCode","Supply.participant.participantRole.classCode","","","",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple]]} {[]}
+","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""ROL""/>","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""MANU""/>","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDARoleClassRoot","",,,,"ParticipantRole.classCode",0,1,"",""
+"Supply.participant.participantRole.id","Supply.participant.participantRole.id","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
+","<b>Identifiant unique du DM (UDI)</b>
+   <br clear='none'/>
+   <span style='line-height: 14.95px;'>Cet élément est facultatif, car les identifiants de production (p. ex., numéro de série, numéro de lot, identifiant unique) peuvent ne pas être connus.</span>
+   <br clear='none'/>","","","","","","","","","","",,,,,"",,,,"ParticipantRole.id",0,*,"",""
+"Supply.participant.participantRole.sdtcIdentifiedBy","Supply.participant.participantRole.sdtcIdentifiedBy","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/IdentifiedBy {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ParticipantRole.sdtcIdentifiedBy",0,*,"",""
+"Supply.participant.participantRole.code","Supply.participant.participantRole.code","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CE {[]} {[]}
+","","","","","","","","","","","",,"example","","http://hl7.org/cda/stds/core/ValueSet/CDARoleCode","",,,,"ParticipantRole.code",0,1,"",""
+"Supply.participant.participantRole.addr","Supply.participant.participantRole.addr","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/AD {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ParticipantRole.addr",0,*,"",""
+"Supply.participant.participantRole.telecom","Supply.participant.participantRole.telecom","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/TEL {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ParticipantRole.telecom",0,*,"",""
+"Supply.participant.participantRole.playingDevice","Supply.participant.participantRole.playingDevice","","","",1,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Device {[]} {[]}
+","<b>Type de DM</b>","","","","","","","","","","",,,,,"",,,,"ParticipantRole.playingDevice",0,1,"",""
+"Supply.participant.participantRole.playingDevice.nullFlavor","Supply.participant.participantRole.playingDevice.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple]]} {[]}
+","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor","",,,,"ANY.nullFlavor",0,1,"",""
+"Supply.participant.participantRole.playingDevice.realmCode","Supply.participant.participantRole.playingDevice.realmCode","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CS {[]} {[]}
+","","When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.realmCode",0,*,"",""
+"Supply.participant.participantRole.playingDevice.typeId","Supply.participant.participantRole.playingDevice.typeId","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
+","","When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question.","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.typeId",0,1,"","II-1:An II instance must have either a root or an nullFlavor. {root.exists() or nullFlavor.exists()}
+"
+"Supply.participant.participantRole.playingDevice.typeId.nullFlavor","Supply.participant.participantRole.playingDevice.typeId.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple]]} {[]}
+","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor","",,,,"ANY.nullFlavor",0,1,"",""
+"Supply.participant.participantRole.playingDevice.typeId.assigningAuthorityName","Supply.participant.participantRole.playingDevice.typeId.assigningAuthorityName","","","Assigning Authority Name",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple]]} {[]}
+","","A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.","","","","","","","","","",,,,,"",,,,"II.assigningAuthorityName",0,1,"",""
+"Supply.participant.participantRole.playingDevice.typeId.displayable","Supply.participant.participantRole.playingDevice.typeId.displayable","","","Displayable",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple]]} {[]}
+","","Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).","","","","","","","","","",,,,,"",,,,"II.displayable",0,1,"",""
+"Supply.participant.participantRole.playingDevice.typeId.root","Supply.participant.participantRole.playingDevice.typeId.root","","","Root",1,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/oid], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/uuid], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/ruid]]} {[]}
+","","Identifies the type as an HL7 Registered model","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""2.16.840.1.113883.1.3""/>","","","","",,,,,"",,,,"II.root",0,1,"",""
+"Supply.participant.participantRole.playingDevice.typeId.extension","Supply.participant.participantRole.playingDevice.typeId.extension","","","Extension",1,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple]]} {[]}
+","","A character string as a unique identifier within the scope of the identifier root.","","","","","","","","","",,,,,"",,,,"II.extension",0,1,"",""
+"Supply.participant.participantRole.playingDevice.templateId","Supply.participant.participantRole.playingDevice.templateId","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
+","","When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.templateId",0,*,"",""
+"Supply.participant.participantRole.playingDevice.classCode","Supply.participant.participantRole.playingDevice.classCode","","","",0,1,"Y","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple]]} {[]}
+","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""DEV""/>","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""DEV""/>","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-EntityClassDevice","",,,,"Device.classCode",0,1,"",""
+"Supply.participant.participantRole.playingDevice.determinerCode","Supply.participant.participantRole.playingDevice.determinerCode","","","",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple]]} {[]}
+","","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""INSTANCE""/>","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-EntityDeterminer","",,,,"Device.determinerCode",0,1,"",""
+"Supply.participant.participantRole.playingDevice.code","Supply.participant.participantRole.playingDevice.code","","","",1,1,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/CE {[]} {[]}
+","<div>
+      <b>Code du DM :</b>
+   </div>
+   <div>
+      <b>Terminologie EMDN </b>(1.2.250.1.213.2.68) : catégorie européenne du DM</div>
+   <div>
+      <p>
+         <strong>ou</strong>
+      </p>
+      <p>
+         <b>JDV_AbsentOrUnknownDevices_CISIS (1.2.250.1.213.1.1.5.663)</b>
+      </p>
+   </div>","","","","","","","","","","",,"example","","http://hl7.org/cda/stds/core/ValueSet/CDAEntityCode","",,,,"Device.code",0,1,"",""
+"Supply.participant.participantRole.playingDevice.manufacturerModelName","Supply.participant.participantRole.playingDevice.manufacturerModelName","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/SC {[]} {[]}
+","","","","","","","","","","","",,"example","","http://terminology.hl7.org/ValueSet/v3-ManufacturerModelNameExample","",,,,"Device.manufacturerModelName",0,1,"",""
+"Supply.participant.participantRole.playingDevice.softwareName","Supply.participant.participantRole.playingDevice.softwareName","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/SC {[]} {[]}
+","","","","","","","","","","","",,"example","","http://terminology.hl7.org/ValueSet/v3-SoftwareNameExample","",,,,"Device.softwareName",0,1,"",""
+"Supply.participant.participantRole.playingEntity","Supply.participant.participantRole.playingEntity","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/PlayingEntity {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ParticipantRole.playingEntity",0,1,"",""
+"Supply.participant.participantRole.scopingEntity","Supply.participant.participantRole.scopingEntity","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Entity {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ParticipantRole.scopingEntity",0,1,"",""
+"Supply.entryRelationship","Supply.entryRelationship","","","",0,*,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/EntryRelationship {[]} {[]}
+","","","","","","","","","","","",,,,,"","value:$this}
+","",,"open","Supply.entryRelationship",0,*,"",""
+"Supply.entryRelationship:frEnRapportAvecALD","Supply.entryRelationship","frEnRapportAvecALD","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/EntryRelationship {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Supply.entryRelationship",0,*,"",""
+"Supply.entryRelationship:frEnRapportAvecALD.nullFlavor","Supply.entryRelationship.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple]]} {[]}
+","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor","",,,,"ANY.nullFlavor",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecALD.realmCode","Supply.entryRelationship.realmCode","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CS {[]} {[]}
+","","When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.realmCode",0,*,"",""
+"Supply.entryRelationship:frEnRapportAvecALD.typeId","Supply.entryRelationship.typeId","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
+","","When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question.","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.typeId",0,1,"","II-1:An II instance must have either a root or an nullFlavor. {root.exists() or nullFlavor.exists()}
+"
+"Supply.entryRelationship:frEnRapportAvecALD.typeId.nullFlavor","Supply.entryRelationship.typeId.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple]]} {[]}
+","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor","",,,,"ANY.nullFlavor",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecALD.typeId.assigningAuthorityName","Supply.entryRelationship.typeId.assigningAuthorityName","","","Assigning Authority Name",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple]]} {[]}
+","","A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.","","","","","","","","","",,,,,"",,,,"II.assigningAuthorityName",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecALD.typeId.displayable","Supply.entryRelationship.typeId.displayable","","","Displayable",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple]]} {[]}
+","","Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).","","","","","","","","","",,,,,"",,,,"II.displayable",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecALD.typeId.root","Supply.entryRelationship.typeId.root","","","Root",1,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/oid], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/uuid], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/ruid]]} {[]}
+","","Identifies the type as an HL7 Registered model","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""2.16.840.1.113883.1.3""/>","","","","",,,,,"",,,,"II.root",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecALD.typeId.extension","Supply.entryRelationship.typeId.extension","","","Extension",1,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple]]} {[]}
+","","A character string as a unique identifier within the scope of the identifier root.","","","","","","","","","",,,,,"",,,,"II.extension",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecALD.templateId","Supply.entryRelationship.templateId","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
+","","When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.templateId",0,*,"",""
+"Supply.entryRelationship:frEnRapportAvecALD.typeCode","Supply.entryRelationship.typeCode","","","",1,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple]]} {[]}
+","","","","","","","","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-xActRelationshipEntryRelationship","",,,,"EntryRelationship.typeCode",1,1,"",""
+"Supply.entryRelationship:frEnRapportAvecALD.inversionInd","Supply.entryRelationship.inversionInd","","","",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple]]} {[]}
+","","The entryRelationship.inversionInd can be set to ""true"" to indicate that the relationship should be interpreted as if the roles of the source and target entries were reversed.","","","","","","","","","",,,,,"",,,,"EntryRelationship.inversionInd",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecALD.contextConductionInd","Supply.entryRelationship.contextConductionInd","","","",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple]]} {[]}
+","","The entryRelationship.contextConductionInd differs from the otherwise common use of this attribute in that in all other cases where this attribute is used, the value is fixed at ""true"", whereas here the value is defaulted to ""true"", and can be changed to ""false"" when referencing an entry in the same document. Setting the context conduction to false when referencing an entry in the same document keeps clear the fact that the referenced object retains its original context.","","","<valueBoolean xmlns=""http://hl7.org/fhir"" value=""true""/>","","","","","","",,,,,"",,,,"EntryRelationship.contextConductionInd",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecALD.negationInd","Supply.entryRelationship.negationInd","","","",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple]]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.negationInd",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecALD.sequenceNumber","Supply.entryRelationship.sequenceNumber","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/INT {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.sequenceNumber",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecALD.seperatableInd","Supply.entryRelationship.seperatableInd","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/BL {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.seperatableInd",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecALD.act","Supply.entryRelationship.act","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Act {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.act",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecALD.encounter","Supply.entryRelationship.encounter","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Encounter {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.encounter",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecALD.observation","Supply.entryRelationship.observation","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[CanonicalType[https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-en-rapport-avec-ald]]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observation",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecALD.observationMedia","Supply.entryRelationship.observationMedia","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observationMedia",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecALD.organizer","Supply.entryRelationship.organizer","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Organizer {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.organizer",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecALD.procedure","Supply.entryRelationship.procedure","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Procedure {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.procedure",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecALD.regionOfInterest","Supply.entryRelationship.regionOfInterest","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/RegionOfInterest {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.regionOfInterest",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecALD.substanceAdministration","Supply.entryRelationship.substanceAdministration","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.substanceAdministration",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecALD.supply","Supply.entryRelationship.supply","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Supply {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.supply",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecAccidentTravail","Supply.entryRelationship","frEnRapportAvecAccidentTravail","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/EntryRelationship {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Supply.entryRelationship",0,*,"",""
+"Supply.entryRelationship:frEnRapportAvecAccidentTravail.nullFlavor","Supply.entryRelationship.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple]]} {[]}
+","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor","",,,,"ANY.nullFlavor",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecAccidentTravail.realmCode","Supply.entryRelationship.realmCode","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CS {[]} {[]}
+","","When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.realmCode",0,*,"",""
+"Supply.entryRelationship:frEnRapportAvecAccidentTravail.typeId","Supply.entryRelationship.typeId","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
+","","When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question.","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.typeId",0,1,"","II-1:An II instance must have either a root or an nullFlavor. {root.exists() or nullFlavor.exists()}
+"
+"Supply.entryRelationship:frEnRapportAvecAccidentTravail.typeId.nullFlavor","Supply.entryRelationship.typeId.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple]]} {[]}
+","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor","",,,,"ANY.nullFlavor",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecAccidentTravail.typeId.assigningAuthorityName","Supply.entryRelationship.typeId.assigningAuthorityName","","","Assigning Authority Name",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple]]} {[]}
+","","A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.","","","","","","","","","",,,,,"",,,,"II.assigningAuthorityName",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecAccidentTravail.typeId.displayable","Supply.entryRelationship.typeId.displayable","","","Displayable",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple]]} {[]}
+","","Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).","","","","","","","","","",,,,,"",,,,"II.displayable",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecAccidentTravail.typeId.root","Supply.entryRelationship.typeId.root","","","Root",1,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/oid], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/uuid], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/ruid]]} {[]}
+","","Identifies the type as an HL7 Registered model","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""2.16.840.1.113883.1.3""/>","","","","",,,,,"",,,,"II.root",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecAccidentTravail.typeId.extension","Supply.entryRelationship.typeId.extension","","","Extension",1,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple]]} {[]}
+","","A character string as a unique identifier within the scope of the identifier root.","","","","","","","","","",,,,,"",,,,"II.extension",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecAccidentTravail.templateId","Supply.entryRelationship.templateId","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
+","","When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.templateId",0,*,"",""
+"Supply.entryRelationship:frEnRapportAvecAccidentTravail.typeCode","Supply.entryRelationship.typeCode","","","",1,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple]]} {[]}
+","","","","","","","","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-xActRelationshipEntryRelationship","",,,,"EntryRelationship.typeCode",1,1,"",""
+"Supply.entryRelationship:frEnRapportAvecAccidentTravail.inversionInd","Supply.entryRelationship.inversionInd","","","",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple]]} {[]}
+","","The entryRelationship.inversionInd can be set to ""true"" to indicate that the relationship should be interpreted as if the roles of the source and target entries were reversed.","","","","","","","","","",,,,,"",,,,"EntryRelationship.inversionInd",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecAccidentTravail.contextConductionInd","Supply.entryRelationship.contextConductionInd","","","",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple]]} {[]}
+","","The entryRelationship.contextConductionInd differs from the otherwise common use of this attribute in that in all other cases where this attribute is used, the value is fixed at ""true"", whereas here the value is defaulted to ""true"", and can be changed to ""false"" when referencing an entry in the same document. Setting the context conduction to false when referencing an entry in the same document keeps clear the fact that the referenced object retains its original context.","","","<valueBoolean xmlns=""http://hl7.org/fhir"" value=""true""/>","","","","","","",,,,,"",,,,"EntryRelationship.contextConductionInd",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecAccidentTravail.negationInd","Supply.entryRelationship.negationInd","","","",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple]]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.negationInd",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecAccidentTravail.sequenceNumber","Supply.entryRelationship.sequenceNumber","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/INT {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.sequenceNumber",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecAccidentTravail.seperatableInd","Supply.entryRelationship.seperatableInd","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/BL {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.seperatableInd",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecAccidentTravail.act","Supply.entryRelationship.act","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Act {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.act",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecAccidentTravail.encounter","Supply.entryRelationship.encounter","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Encounter {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.encounter",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecAccidentTravail.observation","Supply.entryRelationship.observation","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[CanonicalType[https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-en-rapport-avec-accident-travail]]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observation",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecAccidentTravail.observationMedia","Supply.entryRelationship.observationMedia","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observationMedia",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecAccidentTravail.organizer","Supply.entryRelationship.organizer","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Organizer {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.organizer",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecAccidentTravail.procedure","Supply.entryRelationship.procedure","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Procedure {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.procedure",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecAccidentTravail.regionOfInterest","Supply.entryRelationship.regionOfInterest","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/RegionOfInterest {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.regionOfInterest",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecAccidentTravail.substanceAdministration","Supply.entryRelationship.substanceAdministration","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.substanceAdministration",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecAccidentTravail.supply","Supply.entryRelationship.supply","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Supply {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.supply",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecLaPrevention","Supply.entryRelationship","frEnRapportAvecLaPrevention","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/EntryRelationship {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Supply.entryRelationship",0,*,"",""
+"Supply.entryRelationship:frEnRapportAvecLaPrevention.nullFlavor","Supply.entryRelationship.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple]]} {[]}
+","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor","",,,,"ANY.nullFlavor",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecLaPrevention.realmCode","Supply.entryRelationship.realmCode","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CS {[]} {[]}
+","","When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.realmCode",0,*,"",""
+"Supply.entryRelationship:frEnRapportAvecLaPrevention.typeId","Supply.entryRelationship.typeId","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
+","","When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question.","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.typeId",0,1,"","II-1:An II instance must have either a root or an nullFlavor. {root.exists() or nullFlavor.exists()}
+"
+"Supply.entryRelationship:frEnRapportAvecLaPrevention.typeId.nullFlavor","Supply.entryRelationship.typeId.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple]]} {[]}
+","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor","",,,,"ANY.nullFlavor",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecLaPrevention.typeId.assigningAuthorityName","Supply.entryRelationship.typeId.assigningAuthorityName","","","Assigning Authority Name",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple]]} {[]}
+","","A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.","","","","","","","","","",,,,,"",,,,"II.assigningAuthorityName",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecLaPrevention.typeId.displayable","Supply.entryRelationship.typeId.displayable","","","Displayable",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple]]} {[]}
+","","Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).","","","","","","","","","",,,,,"",,,,"II.displayable",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecLaPrevention.typeId.root","Supply.entryRelationship.typeId.root","","","Root",1,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/oid], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/uuid], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/ruid]]} {[]}
+","","Identifies the type as an HL7 Registered model","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""2.16.840.1.113883.1.3""/>","","","","",,,,,"",,,,"II.root",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecLaPrevention.typeId.extension","Supply.entryRelationship.typeId.extension","","","Extension",1,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple]]} {[]}
+","","A character string as a unique identifier within the scope of the identifier root.","","","","","","","","","",,,,,"",,,,"II.extension",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecLaPrevention.templateId","Supply.entryRelationship.templateId","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
+","","When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.templateId",0,*,"",""
+"Supply.entryRelationship:frEnRapportAvecLaPrevention.typeCode","Supply.entryRelationship.typeCode","","","",1,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple]]} {[]}
+","","","","","","","","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-xActRelationshipEntryRelationship","",,,,"EntryRelationship.typeCode",1,1,"",""
+"Supply.entryRelationship:frEnRapportAvecLaPrevention.inversionInd","Supply.entryRelationship.inversionInd","","","",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple]]} {[]}
+","","The entryRelationship.inversionInd can be set to ""true"" to indicate that the relationship should be interpreted as if the roles of the source and target entries were reversed.","","","","","","","","","",,,,,"",,,,"EntryRelationship.inversionInd",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecLaPrevention.contextConductionInd","Supply.entryRelationship.contextConductionInd","","","",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple]]} {[]}
+","","The entryRelationship.contextConductionInd differs from the otherwise common use of this attribute in that in all other cases where this attribute is used, the value is fixed at ""true"", whereas here the value is defaulted to ""true"", and can be changed to ""false"" when referencing an entry in the same document. Setting the context conduction to false when referencing an entry in the same document keeps clear the fact that the referenced object retains its original context.","","","<valueBoolean xmlns=""http://hl7.org/fhir"" value=""true""/>","","","","","","",,,,,"",,,,"EntryRelationship.contextConductionInd",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecLaPrevention.negationInd","Supply.entryRelationship.negationInd","","","",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple]]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.negationInd",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecLaPrevention.sequenceNumber","Supply.entryRelationship.sequenceNumber","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/INT {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.sequenceNumber",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecLaPrevention.seperatableInd","Supply.entryRelationship.seperatableInd","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/BL {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.seperatableInd",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecLaPrevention.act","Supply.entryRelationship.act","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Act {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.act",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecLaPrevention.encounter","Supply.entryRelationship.encounter","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Encounter {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.encounter",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecLaPrevention.observation","Supply.entryRelationship.observation","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[CanonicalType[https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-en-rapport-avec-la-prevention]]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observation",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecLaPrevention.observationMedia","Supply.entryRelationship.observationMedia","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observationMedia",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecLaPrevention.organizer","Supply.entryRelationship.organizer","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Organizer {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.organizer",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecLaPrevention.procedure","Supply.entryRelationship.procedure","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Procedure {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.procedure",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecLaPrevention.regionOfInterest","Supply.entryRelationship.regionOfInterest","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/RegionOfInterest {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.regionOfInterest",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecLaPrevention.substanceAdministration","Supply.entryRelationship.substanceAdministration","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.substanceAdministration",0,1,"",""
+"Supply.entryRelationship:frEnRapportAvecLaPrevention.supply","Supply.entryRelationship.supply","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Supply {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.supply",0,1,"",""
+"Supply.entryRelationship:frNonRemboursable","Supply.entryRelationship","frNonRemboursable","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/EntryRelationship {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Supply.entryRelationship",0,*,"",""
+"Supply.entryRelationship:frNonRemboursable.nullFlavor","Supply.entryRelationship.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple]]} {[]}
+","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor","",,,,"ANY.nullFlavor",0,1,"",""
+"Supply.entryRelationship:frNonRemboursable.realmCode","Supply.entryRelationship.realmCode","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CS {[]} {[]}
+","","When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.realmCode",0,*,"",""
+"Supply.entryRelationship:frNonRemboursable.typeId","Supply.entryRelationship.typeId","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
+","","When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question.","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.typeId",0,1,"","II-1:An II instance must have either a root or an nullFlavor. {root.exists() or nullFlavor.exists()}
+"
+"Supply.entryRelationship:frNonRemboursable.typeId.nullFlavor","Supply.entryRelationship.typeId.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple]]} {[]}
+","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor","",,,,"ANY.nullFlavor",0,1,"",""
+"Supply.entryRelationship:frNonRemboursable.typeId.assigningAuthorityName","Supply.entryRelationship.typeId.assigningAuthorityName","","","Assigning Authority Name",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple]]} {[]}
+","","A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.","","","","","","","","","",,,,,"",,,,"II.assigningAuthorityName",0,1,"",""
+"Supply.entryRelationship:frNonRemboursable.typeId.displayable","Supply.entryRelationship.typeId.displayable","","","Displayable",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple]]} {[]}
+","","Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).","","","","","","","","","",,,,,"",,,,"II.displayable",0,1,"",""
+"Supply.entryRelationship:frNonRemboursable.typeId.root","Supply.entryRelationship.typeId.root","","","Root",1,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/oid], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/uuid], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/ruid]]} {[]}
+","","Identifies the type as an HL7 Registered model","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""2.16.840.1.113883.1.3""/>","","","","",,,,,"",,,,"II.root",0,1,"",""
+"Supply.entryRelationship:frNonRemboursable.typeId.extension","Supply.entryRelationship.typeId.extension","","","Extension",1,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple]]} {[]}
+","","A character string as a unique identifier within the scope of the identifier root.","","","","","","","","","",,,,,"",,,,"II.extension",0,1,"",""
+"Supply.entryRelationship:frNonRemboursable.templateId","Supply.entryRelationship.templateId","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
+","","When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.templateId",0,*,"",""
+"Supply.entryRelationship:frNonRemboursable.typeCode","Supply.entryRelationship.typeCode","","","",1,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple]]} {[]}
+","","","","","","","","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-xActRelationshipEntryRelationship","",,,,"EntryRelationship.typeCode",1,1,"",""
+"Supply.entryRelationship:frNonRemboursable.inversionInd","Supply.entryRelationship.inversionInd","","","",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple]]} {[]}
+","","The entryRelationship.inversionInd can be set to ""true"" to indicate that the relationship should be interpreted as if the roles of the source and target entries were reversed.","","","","","","","","","",,,,,"",,,,"EntryRelationship.inversionInd",0,1,"",""
+"Supply.entryRelationship:frNonRemboursable.contextConductionInd","Supply.entryRelationship.contextConductionInd","","","",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple]]} {[]}
+","","The entryRelationship.contextConductionInd differs from the otherwise common use of this attribute in that in all other cases where this attribute is used, the value is fixed at ""true"", whereas here the value is defaulted to ""true"", and can be changed to ""false"" when referencing an entry in the same document. Setting the context conduction to false when referencing an entry in the same document keeps clear the fact that the referenced object retains its original context.","","","<valueBoolean xmlns=""http://hl7.org/fhir"" value=""true""/>","","","","","","",,,,,"",,,,"EntryRelationship.contextConductionInd",0,1,"",""
+"Supply.entryRelationship:frNonRemboursable.negationInd","Supply.entryRelationship.negationInd","","","",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple]]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.negationInd",0,1,"",""
+"Supply.entryRelationship:frNonRemboursable.sequenceNumber","Supply.entryRelationship.sequenceNumber","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/INT {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.sequenceNumber",0,1,"",""
+"Supply.entryRelationship:frNonRemboursable.seperatableInd","Supply.entryRelationship.seperatableInd","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/BL {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.seperatableInd",0,1,"",""
+"Supply.entryRelationship:frNonRemboursable.act","Supply.entryRelationship.act","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Act {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.act",0,1,"",""
+"Supply.entryRelationship:frNonRemboursable.encounter","Supply.entryRelationship.encounter","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Encounter {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.encounter",0,1,"",""
+"Supply.entryRelationship:frNonRemboursable.observation","Supply.entryRelationship.observation","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[CanonicalType[https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-non-remboursable]]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observation",0,1,"",""
+"Supply.entryRelationship:frNonRemboursable.observationMedia","Supply.entryRelationship.observationMedia","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observationMedia",0,1,"",""
+"Supply.entryRelationship:frNonRemboursable.organizer","Supply.entryRelationship.organizer","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Organizer {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.organizer",0,1,"",""
+"Supply.entryRelationship:frNonRemboursable.procedure","Supply.entryRelationship.procedure","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Procedure {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.procedure",0,1,"",""
+"Supply.entryRelationship:frNonRemboursable.regionOfInterest","Supply.entryRelationship.regionOfInterest","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/RegionOfInterest {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.regionOfInterest",0,1,"",""
+"Supply.entryRelationship:frNonRemboursable.substanceAdministration","Supply.entryRelationship.substanceAdministration","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.substanceAdministration",0,1,"",""
+"Supply.entryRelationship:frNonRemboursable.supply","Supply.entryRelationship.supply","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Supply {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.supply",0,1,"",""
+"Supply.reference","Supply.reference","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Reference {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Supply.reference",0,*,"",""
+"Supply.precondition","Supply.precondition","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Precondition {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Supply.precondition",0,*,"",""
+"Supply.sdtcInFulfillmentOf1","Supply.sdtcInFulfillmentOf1","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/InFulfillmentOf1 {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Supply.sdtcInFulfillmentOf1",0,*,"",""

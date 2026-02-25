@@ -1,0 +1,191 @@
+# CDA - FR DICOM Administration produit de sante - ANS IG document core v0.1.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **CDA - FR DICOM Administration produit de sante**
+
+## Logical Model: CDA - FR DICOM Administration produit de sante 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-administration-produit-de-sante | *Version*:0.1.0 |
+| Draft as of 2026-02-25 | *Computable Name*:FRCDADICOMAdministrationProduitDeSante |
+
+ 
+Entrée FR-DICOM-Administration-produit-de-sante: <p>DICOM Part 20 - Procedural Medication</p> 
+Cette entrée permet d'enregistrer l’administration de produits (hors radiopharmaceutiques) : 
+* produit administré
+* dose administrée
+* voie d’administration
+* numéro de lot
+* autres informations liées à l’administration d’un produit 
+ 
+
+**Utilisations:**
+
+* Ce Profil de modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
+
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-dicom-administration-produit-de-sante)
+
+### Formal Views of Profile Content
+
+ [Description of Profiles, Differentials, Snapshots and how the different presentations work](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+ 
+
+Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-administration-produit-de-sante.csv), [Excel](StructureDefinition-fr-cda-dicom-administration-produit-de-sante.xlsx) 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "fr-cda-dicom-administration-produit-de-sante",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/tools/StructureDefinition/logical-target",
+    "_valueBoolean" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+        "valueCode" : "not-applicable"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+    "valueUri" : "urn:hl7-org:v3"
+  },
+  {
+    "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-name",
+    "valueString" : "substanceAdministration"
+  },
+  {
+    "url" : "http://hl7.org/fhir/tools/StructureDefinition/logical-container",
+    "valueUri" : "http://hl7.org/cda/stds/core/StructureDefinition/ClinicalDocument"
+  },
+  {
+    "url" : "http://hl7.org/fhir/tools/StructureDefinition/type-profile-style",
+    "valueUri" : "cda"
+  }],
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-administration-produit-de-sante",
+  "version" : "0.1.0",
+  "name" : "FRCDADICOMAdministrationProduitDeSante",
+  "title" : "CDA - FR DICOM Administration produit de sante",
+  "status" : "draft",
+  "date" : "2026-02-25T10:04:45+00:00",
+  "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Entrée FR-DICOM-Administration-produit-de-sante: <p>DICOM Part 20 - Procedural Medication</p>\n   <p>Cette entrée permet d'enregistrer l’administration de produits (hors radiopharmaceutiques) :</p>\n   <ul>\n      <li>\n         <p>produit administré</p>\n      </li>\n      <li>\n         <p>dose administrée</p>\n      </li>\n      <li>\n         <p>voie d’administration</p>\n      </li>\n      <li>\n         <p>numéro de lot</p>\n      </li>\n      <li>\n         <p>autres informations liées à l’administration d’un produit </p>\n      </li>\n   </ul>",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
+  "fhirVersion" : "4.0.1",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "logical",
+  "abstract" : false,
+  "type" : "http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration",
+  "baseDefinition" : "http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "SubstanceAdministration",
+      "path" : "SubstanceAdministration"
+    },
+    {
+      "id" : "SubstanceAdministration.templateId",
+      "path" : "SubstanceAdministration.templateId",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "root"
+        }],
+        "rules" : "open"
+      },
+      "min" : 2,
+      "max" : "2"
+    },
+    {
+      "id" : "SubstanceAdministration.templateId:frDicomAdministrationProduitDeSante",
+      "path" : "SubstanceAdministration.templateId",
+      "sliceName" : "frDicomAdministrationProduitDeSante",
+      "short" : "Conformité FR-DICOM-Administration-produit-de-sante (CI-SIS) ",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "SubstanceAdministration.templateId:frDicomAdministrationProduitDeSante.root",
+      "path" : "SubstanceAdministration.templateId.root",
+      "min" : 1,
+      "patternString" : "1.2.250.1.213.1.1.3.151"
+    },
+    {
+      "id" : "SubstanceAdministration.templateId:dicomProceduralMedication",
+      "path" : "SubstanceAdministration.templateId",
+      "sliceName" : "dicomProceduralMedication",
+      "short" : "Conformité Procedural Medication (DICOM Part 20)",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "SubstanceAdministration.templateId:dicomProceduralMedication.root",
+      "path" : "SubstanceAdministration.templateId.root",
+      "min" : 1,
+      "patternString" : "1.2.840.10008.9.13"
+    },
+    {
+      "id" : "SubstanceAdministration.classCode",
+      "path" : "SubstanceAdministration.classCode",
+      "mustSupport" : true
+    },
+    {
+      "id" : "SubstanceAdministration.moodCode",
+      "path" : "SubstanceAdministration.moodCode",
+      "mustSupport" : true
+    },
+    {
+      "id" : "SubstanceAdministration.id",
+      "path" : "SubstanceAdministration.id",
+      "short" : "Identifiant",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "SubstanceAdministration.text",
+      "path" : "SubstanceAdministration.text",
+      "mustSupport" : true
+    },
+    {
+      "id" : "SubstanceAdministration.text.xmlText",
+      "path" : "SubstanceAdministration.text.xmlText",
+      "patternString" : "Partie narrative de l'entrée"
+    },
+    {
+      "id" : "SubstanceAdministration.routeCode",
+      "path" : "SubstanceAdministration.routeCode",
+      "short" : "<b>Voie d'administration </b>\n   <br clear='none'/>\n   <div>\n      <b>Terminologie utilisée : </b> EDQM - Standard terms / classe ROA (Voie d'administration)</div>",
+      "mustSupport" : true
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.manufacturedProduct.manufacturedMaterial",
+      "path" : "SubstanceAdministration.consumable.manufacturedProduct.manufacturedMaterial",
+      "min" : 1
+    }]
+  }
+}
+
+```
