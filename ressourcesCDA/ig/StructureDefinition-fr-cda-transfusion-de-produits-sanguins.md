@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-transfusion-de-produits-sanguins | *Version*:0.1.0 |
-| Draft as of 2026-02-25 | *Computable Name*:FRCDATransfusionDeProduitsSanguins |
+| Draft as of 2026-02-26 | *Computable Name*:FRCDATransfusionDeProduitsSanguins |
 
  
 Entrée FR-Transfusion-de-produits-sanguins: <p>Cette entrée permet d’indiquer s’il a eu ou pas transfusion de produit sanguin.</p> 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-transfusion-d
   "name" : "FRCDATransfusionDeProduitsSanguins",
   "title" : "CDA - FR Transfusion de produits sanguins",
   "status" : "draft",
-  "date" : "2026-02-25T10:04:45+00:00",
+  "date" : "2026-02-26T08:51:17+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

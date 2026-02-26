@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-quantite-de-produit | *Version*:0.1.0 |
-| Draft as of 2026-02-25 | *Computable Name*:FRCDAQuantiteDeProduit |
+| Draft as of 2026-02-26 | *Computable Name*:FRCDAQuantiteDeProduit |
 
  
 Entrée FR-Quantite-de-produit: <p>IHE-PRE - Amount of units of the consumable</p> 
@@ -68,7 +68,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-quantite-de-p
   "name" : "FRCDAQuantiteDeProduit",
   "title" : "CDA - FR Quantite de produit",
   "status" : "draft",
-  "date" : "2026-02-25T10:04:45+00:00",
+  "date" : "2026-02-26T08:51:17+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

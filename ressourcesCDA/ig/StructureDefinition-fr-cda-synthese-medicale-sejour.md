@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-synthese-medicale-sejour | *Version*:0.1.0 |
-| Draft as of 2026-02-25 | *Computable Name*:FRCDASyntheseMedicaleSejour |
+| Draft as of 2026-02-26 | *Computable Name*:FRCDASyntheseMedicaleSejour |
 
  
 Entrée FR-Synthese-medicale-sejour: <ul> <li> <p>Cette entrée permet de fournir, sous forme textuelle, une synthèse médicale du séjour. </p> </li> </ul> 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-synthese-medi
   "name" : "FRCDASyntheseMedicaleSejour",
   "title" : "CDA - FR Synthese medicale sejour",
   "status" : "draft",
-  "date" : "2026-02-25T10:04:45+00:00",
+  "date" : "2026-02-26T08:51:17+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

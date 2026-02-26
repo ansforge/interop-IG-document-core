@@ -7454,8 +7454,8 @@ WARNING: ValueSet/fr-vs-evaluation-type: ValueSet: Published value sets SHOULD c
 ERROR: ValueSet/fr-vs-medication-translation-document: ValueSet.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr-FR'. Default display is 'France'
 WARNING: ValueSet/fr-vs-medication-translation-document: ValueSet.compose.include[1].system: No definition could be found for URL value 'https://smt.esante.gouv.fr/terminologie-cip_ucd'
 WARNING: ValueSet/fr-vs-medication-translation-document: ValueSet.compose.include[3].system: No definition could be found for URL value 'https://smt.esante.gouv.fr/terminologie-medicabase'
-ERROR: ValueSet.where(id = 'fr-vs-medication-translation-document'): Error from https://smt.esante.gouv.fr/fhir: Error: [1a8ee9f1-104e-4003-82db-a88f99f56209]: Could not find the code system https://smt.esante.gouv.fr/terminologie-cip_ucd|2026-02
-Information: X-Request-Id: 8f46a6ab-a30a-40a6-83e2-47fcd77cb7b3
+ERROR: ValueSet.where(id = 'fr-vs-medication-translation-document'): Error from https://smt.esante.gouv.fr/fhir: Error: [d171c746-28a7-4273-8cc0-84a95212dbcc]: Could not find the code system https://smt.esante.gouv.fr/terminologie-cip_ucd|2026-02
+Information: X-Request-Id: 43ff6ce0-220f-4883-96bd-832f6466b79e
 == fsh-generated/resources/ValueSet-fr-vs-procedure-code.json ==
 ERROR: ValueSet/fr-vs-procedure-code: ValueSet.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr-FR'. Default display is 'France'
 WARNING: ValueSet/fr-vs-procedure-code: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present

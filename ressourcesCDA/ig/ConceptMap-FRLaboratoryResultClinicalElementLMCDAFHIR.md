@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRLaboratoryResultClinicalElementLMCDAFHIR | *Version*:0.1.0 |
-| Draft as of 2026-02-25 | *Computable Name*: |
+| Draft as of 2026-02-26 | *Computable Name*: |
 
  
 Mapping des éléments du modèle métier FRLMResultatExamensBiologieElementCliniquePertinent vers le profil CDA FRCDAResultatExamensDeBiologieElementCliniquePertinent, puis vers le profil FHIR FRObservationLaboratoryReportResultsDocument. 
@@ -26,7 +26,7 @@ Mapping des éléments du modèle métier FRLMResultatExamensBiologieElementClin
   "version" : "0.1.0",
   "title" : "Mapping Métier/CDA/FHIR : \"Résultat d'examens de biologie - Élément clinique pertinent\"",
   "status" : "draft",
-  "date" : "2026-02-25T10:04:45+00:00",
+  "date" : "2026-02-26T08:51:17+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

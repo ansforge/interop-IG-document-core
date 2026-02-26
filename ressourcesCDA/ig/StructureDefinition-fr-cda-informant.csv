@@ -28,12 +28,9 @@
 "Informant.assignedEntity","Informant.assignedEntity","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/AssignedEntity {[CanonicalType[https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-assigned-entity]]} {[]}
 ","Professionnel / Structure / Patient/usager ayant fourni des informations relatives au document.","","","","","","","","","","",,,,,"",,,,"Informant.assignedEntity",0,1,"",""
 "Informant.relatedEntity","Informant.relatedEntity","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/RelatedEntity {[CanonicalType[https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-related-entity]]} {[]}
-","","**Informateur non professionnel** ayant fourni des informations relatives au document.
+","Informateur non professionnel ayant fourni des informations relatives au document.
 
-- Ou : Personne de confiance désignée par le patient/usager.
-
-- Ou : Personne à prévenir en cas d’urgence.
-
-- Ou : Aidant du patient/usager.
-
-- Ou : Personne aidée","","","","","","","","","",,,,,"",,,,"Informant.relatedEntity",0,1,"",""
+  Ou : Personne de confiance désignée par le patient/usager.
+  Ou : Personne à prévenir en cas d’urgence.
+  Ou : Aidant du patient/usager.
+  Ou : Personne aidée","","","","","","","","","","",,,,,"",,,,"Informant.relatedEntity",0,1,"",""

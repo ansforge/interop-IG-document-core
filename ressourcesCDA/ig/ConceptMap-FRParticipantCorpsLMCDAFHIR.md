@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRParticipantCorpsLMCDAFHIR | *Version*:0.1.0 |
-| Draft as of 2026-02-25 | *Computable Name*: |
+| Draft as of 2026-02-26 | *Computable Name*: |
 
  
 Mapping des elements du modele metier FRLMParticipantCorps vers le profil CDA FRCDAParticipant, puis vers l’extension FHIR FRActorExtension. 
@@ -26,7 +26,7 @@ Mapping des elements du modele metier FRLMParticipantCorps vers le profil CDA FR
   "version" : "0.1.0",
   "title" : "Mapping Metier/CDA/FHIR : \"Participant\"",
   "status" : "draft",
-  "date" : "2026-02-25T10:04:45+00:00",
+  "date" : "2026-02-26T08:51:17+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

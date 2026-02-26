@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-informant | *Version*:0.1.0 |
-| Draft as of 2026-02-25 | *Computable Name*:FRCDAInformant |
+| Draft as of 2026-02-26 | *Computable Name*:FRCDAInformant |
 
  
 L’élément de l’en-tête du CDA informant permet d’identifier un informateur, une personne de confiance, une personne à prévenir en cas d’urgence, un aidant ou une personne aidée. 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-informant.csv
   "name" : "FRCDAInformant",
   "title" : "CDA - informant",
   "status" : "draft",
-  "date" : "2026-02-25T10:04:45+00:00",
+  "date" : "2026-02-26T08:51:17+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -132,7 +132,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-informant.csv
     {
       "id" : "Informant.relatedEntity",
       "path" : "Informant.relatedEntity",
-      "definition" : "**Informateur non professionnel** ayant fourni des informations relatives au document.\r\n\n- Ou : Personne de confiance désignée par le patient/usager.\r\n\n- Ou : Personne à prévenir en cas d’urgence.\r\n\n- Ou : Aidant du patient/usager.\r\n\n- Ou : Personne aidée",
+      "short" : "Informateur non professionnel ayant fourni des informations relatives au document.\n\n  Ou : Personne de confiance désignée par le patient/usager.\n  Ou : Personne à prévenir en cas d’urgence.\n  Ou : Aidant du patient/usager.\n  Ou : Personne aidée",
       "type" : [{
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/RelatedEntity",
         "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-related-entity"]

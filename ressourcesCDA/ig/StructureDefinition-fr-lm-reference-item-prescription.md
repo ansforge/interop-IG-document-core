@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-reference-item-prescription | *Version*:0.1.0 |
-| Draft as of 2026-02-25 | *Computable Name*:FRLMReferenceItemPrescription |
+| Draft as of 2026-02-26 | *Computable Name*:FRLMReferenceItemPrescription |
 
  
 Référence item prescription 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-reference-item
   "name" : "FRLMReferenceItemPrescription",
   "title" : "Modèle logique métier - FR LM Référence item prescription",
   "status" : "draft",
-  "date" : "2026-02-25T10:04:45+00:00",
+  "date" : "2026-02-26T08:51:17+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

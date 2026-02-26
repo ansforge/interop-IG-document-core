@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-en-rapport-avec-ald | *Version*:0.1.0 |
-| Draft as of 2026-02-25 | *Computable Name*:FRCDAEnRapportAvecALD |
+| Draft as of 2026-02-26 | *Computable Name*:FRCDAEnRapportAvecALD |
 
  
 Entrée FR-En-rapport-avec-ALD: <ul> <li> <p>Cette observation permet d’indiquer si l’élément auquel elle est associée est en rapport avec une ALD.</p> </li> </ul> 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-en-rapport-av
   "name" : "FRCDAEnRapportAvecALD",
   "title" : "CDA - FR En rapport avec ALD",
   "status" : "draft",
-  "date" : "2026-02-25T10:04:45+00:00",
+  "date" : "2026-02-26T08:51:17+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="8789494c-b988-4bd3-b17d-c9b64a2c100b"/>
+  <id value="dd41f13f-5dfa-4a75-a994-ad1f8509390e"/>
   <meta>
-    <lastUpdated value="2026-02-25T10:04:45.180+00:00"/>
+    <lastUpdated value="2026-02-26T08:51:17.870+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -132,7 +132,7 @@
         <title value="FR ValueSet Participation Type"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-02-25T10:04:45+00:00"/>
+        <date value="2026-02-26T08:51:17+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -141,8 +141,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:4dc69250-53a3-4020-ba26-0b5a0936069c"/>
-          <timestamp value="2026-02-25T10:31:15+00:00"/>
+          <identifier value="urn:uuid:5f615686-0dc9-4561-ae21-ffd6b1da2d79"/>
+          <timestamp value="2026-02-26T09:08:56+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -1865,7 +1865,7 @@
         <title value="Fr ValueSet RolePriseCharge"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-02-25T10:04:45+00:00"/>
+        <date value="2026-02-26T08:51:17+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1874,8 +1874,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ae5dd52f-1f70-476b-9a03-d761155431b2"/>
-          <timestamp value="2026-02-25T10:31:10+00:00"/>
+          <identifier value="urn:uuid:c1307eb5-4aab-47c5-84f1-dcd337724ffd"/>
+          <timestamp value="2026-02-26T09:08:52+00:00"/>
           <total value="74"/>
           <offset value="0"/>
           <parameter>
@@ -2425,7 +2425,7 @@
         <name value="FRValueSetActorTypeDocument"/>
         <title value="ValueSet - FR ValueSet Actor Type Document"/>
         <status value="draft"/>
-        <date value="2026-02-25T10:04:45+00:00"/>
+        <date value="2026-02-26T08:51:17+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -2434,8 +2434,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:697f8c6e-f8e5-4c0f-b0f9-a6e94d39309d"/>
-          <timestamp value="2026-02-25T10:31:15+00:00"/>
+          <identifier value="urn:uuid:d334ed3b-9525-447f-ad7a-7a1e3f4c49e1"/>
+          <timestamp value="2026-02-26T09:08:56+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -20524,7 +20524,7 @@
         <title value="ValueSet - FR ValueSet EDQM Document"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-02-25T10:04:45+00:00"/>
+        <date value="2026-02-26T08:51:17+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -20533,8 +20533,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:7a70260b-da11-4304-922c-d18c598a3e75"/>
-          <timestamp value="2026-02-25T10:31:17+00:00"/>
+          <identifier value="urn:uuid:5518062f-6706-40f7-b824-119e92b0c51f"/>
+          <timestamp value="2026-02-26T09:08:58+00:00"/>
           <total value="1297"/>
           <offset value="0"/>
           <parameter>
@@ -24580,9 +24580,9 @@
             <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
               <p>Expansion de tx.fhir.org basée sur :</p>
               <ul>
-                <li>codesystem International Classification of Functioning, Disability and Health version 2001a
+                <li>codesystem International Classification of Functioning, Disability and Health version 2017a
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="http://hl7.org/fhir/sid/icf|2001a" title="Cliquer pour copier l'URL" class="btn-copy"> </button>
+                    <button data-clipboard-text="http://hl7.org/fhir/sid/icf|2017a" title="Cliquer pour copier l'URL" class="btn-copy"> </button>
                   </span>
                 </li>
                 <li>Loinc v2.81
@@ -45624,7 +45624,7 @@
         <name value="FRValueSetEvaluationTypeDocument"/>
         <title value="ValueSet – FR ValueSet Type d'évaluation"/>
         <status value="draft"/>
-        <date value="2026-02-25T10:04:45+00:00"/>
+        <date value="2026-02-26T08:51:17+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -45633,8 +45633,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:aa1119c9-86aa-43d5-adc8-685254c905f2"/>
-          <timestamp value="2026-02-25T10:31:05+00:00"/>
+          <identifier value="urn:uuid:5c803c7a-b3c0-4c01-9f39-41ccffe974b8"/>
+          <timestamp value="2026-02-26T09:08:46+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -45670,7 +45670,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://hl7.org/fhir/sid/icf|2001a"/>
+            <valueUri value="http://hl7.org/fhir/sid/icf|2017a"/>
           </parameter>
           <property>
             <code value="status"/>
@@ -49949,7 +49949,7 @@
         <title value="ValueSet - FR ValueSet Result Type Document"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-02-25T10:04:45+00:00"/>
+        <date value="2026-02-26T08:51:17+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -49958,8 +49958,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a7b1f306-464f-497c-a074-e8d542365b13"/>
-          <timestamp value="2026-02-25T10:31:21+00:00"/>
+          <identifier value="urn:uuid:6c4abda1-e9a6-4102-bed8-2b09088da53e"/>
+          <timestamp value="2026-02-26T09:09:01+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>

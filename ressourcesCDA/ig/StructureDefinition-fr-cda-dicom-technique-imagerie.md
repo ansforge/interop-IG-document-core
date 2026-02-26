@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-technique-imagerie | *Version*:0.1.0 |
-| Draft as of 2026-02-25 | *Computable Name*:FRCDADICOMTechniqueImagerie |
+| Draft as of 2026-02-26 | *Computable Name*:FRCDADICOMTechniqueImagerie |
 
  
 Entrée FR-DICOM-Technique-imagerie: <p>DICOM Part 20 - Procedure Technique</p> 
@@ -72,7 +72,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-techniq
   "name" : "FRCDADICOMTechniqueImagerie",
   "title" : "CDA - FR DICOM Technique imagerie",
   "status" : "draft",
-  "date" : "2026-02-25T10:04:45+00:00",
+  "date" : "2026-02-26T08:51:17+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
