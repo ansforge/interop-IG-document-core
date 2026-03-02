@@ -11,6 +11,13 @@ de l'arrêt ou du refus de traitement ou d'acte médicaux.»"
 
 // mettre le bon canonical à partir de HL7 Europe Base and Core FHIR IG
 //* ^extension[$imposeProfile].valueCanonical = Canonical()
+* identifier MS
+* identifier ^slicing.discriminator.type = #pattern
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #open
+
+* identifier contains mainIdentifier 1..1 MS
+* identifier[mainIdentifier] ^short = "Identifiant de la directive anticipée"
 
 * status MS
 * status ^short = "Statut"

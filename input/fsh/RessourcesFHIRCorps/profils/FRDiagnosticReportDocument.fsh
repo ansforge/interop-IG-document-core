@@ -8,7 +8,7 @@ Description: "FRDiagnosticReportDocument est un profil permettant de regrouper l
 * identifier 1..1  MS
 * identifier ^short = "Identifiant"
 * code MS
-  * ^short = "Type de résultat. Codee n LOINC."
+  * ^short = "Type de résultat"
 * code from FRValueSetResultTypeDocument (required) // VS à remplacer par le JDV ANS à créer par Alain
 * status MS
 * status ^short = "Statut"
@@ -20,7 +20,7 @@ Description: "FRDiagnosticReportDocument est un profil permettant de regrouper l
   * ^short = "Exécutant"
 * performer.extension contains $event-performerFunction named performerFunction 1..1
 * performer.extension[performerFunction] 1..1
-* performer.extension[performerFunction].valueCodeableConcept.coding.code = #PPRF "primary performe"
+* performer.extension[performerFunction].valueCodeableConcept.coding.code = #PPRF "primary performer"
 * performer only Reference (FRPractitionerDocument or FRPractitionerRoleDocument or FROrganizationDocument)
 
 * resultsInterpreter MS

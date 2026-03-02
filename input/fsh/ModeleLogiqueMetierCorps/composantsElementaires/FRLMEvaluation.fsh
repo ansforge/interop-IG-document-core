@@ -9,6 +9,7 @@ Characteristics: #can-be-target
 * description 1..1 Narrative "Description narrative"
 * statut 1..1 code "Statut de l'entrée" 
 * date 1..1 dateTime "Date"
+* valeur 1..1 Base "Valeur de l'évaluation"
 * interpretation 0..1 CodeableConcept "Interprétation"
 * evaluateur 0..1 FRLMPersonneStructure "Evaluateur"
 * auteurEvaluation 0..1 FRLMAuteur "Auteur de l'évaluation"

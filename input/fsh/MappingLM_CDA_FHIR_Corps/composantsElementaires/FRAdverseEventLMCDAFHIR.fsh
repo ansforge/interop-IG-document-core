@@ -33,9 +33,14 @@ Description: "Mapping des éléments du modèle métier FRLMEvenementIndesirable
 * group[=].element[=].target.equivalence = #equivalent
 
 // Date de début et de fin de l'effet indésirable
-* group[=].element[+].code = #FRLMEffetIndesirable.dateDebutFin
-* group[=].element[=].target.code = #FRCDAEffetIndesirable.effectiveTime
-* group[=].element[=].target.equivalence = #equivalent  
+* group[=].element[+].code = #FRLMEffetIndesirable.dateDebut
+* group[=].element[=].target.code = #FRCDAEffetIndesirable.effectiveTime.low
+* group[=].element[=].target.equivalence = #equivalent 
+
+// Date de fin de l'effet indésirable
+* group[=].element[+].code = #FRLMEffetIndesirable.dateFin
+* group[=].element[=].target.code = #FRCDAEffetIndesirable.effectiveTime.high
+* group[=].element[=].target.equivalence = #equivalent
 
 // Valeur de l'observation
 * group[=].element[+].code = #FRLMEffetIndesirable.valeur

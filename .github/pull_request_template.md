@@ -6,4 +6,4 @@
 
 ## Preview
 
-https://ansforge.github.io/IG-document-core/[ajouter_nom_de_la_branche]/ig
+https://ansforge.github.io/interop-IG-document-core/[ajouter_nom_de_la_branche]/ig

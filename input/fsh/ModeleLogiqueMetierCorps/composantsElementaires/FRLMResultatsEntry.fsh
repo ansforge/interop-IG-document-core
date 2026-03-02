@@ -10,6 +10,4 @@ Characteristics: #can-be-target
 * date 0..1 dateTime "Date de l'entrée"
 * executant 0..* FRLMLaboratoireExecutant "Exécutant"
 * auteur 0..* FRLMAuteur "Auteur"
-//FHIR : .result Reference(Observation)
-// Créer un modèle métier pour l'entrée FR-Resultat ?
-* resultat 1..* Base "Resultat"
+* resultat 1..* FRLMObservationResult "Resultat"

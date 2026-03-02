@@ -1,3 +1,4 @@
+// ne fait partie du modèle Européen EHDS, on le garde pour des prochaines versions
 Profile: FRTaskPatientTransportDocument
 Parent: Task
 Id: fr-task-patient-transport-document

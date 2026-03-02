@@ -36,8 +36,12 @@ Description: "Mapping des éléments du modèle métier FRLMProbleme vers le pro
 * group[=].element[=].target.code = #FRCDAProbleme.statusCode
 * group[=].element[=].target.equivalence = #equivalent
 // Date de début du problème
-* group[=].element[+].code = #FRLMProbleme.dateProbleme
-* group[=].element[=].target.code = #FRCDAProbleme.effectiveTime
+* group[=].element[+].code = #FRLMProbleme.dateDebutProbleme
+* group[=].element[=].target.code = #FRCDAProbleme.effectiveTime.low
+* group[=].element[=].target.equivalence = #equivalent
+// Date de fin du problème
+* group[=].element[+].code = #FRLMProbleme.dateFinProbleme
+* group[=].element[=].target.code = #FRCDAProbleme.effectiveTime.high
 * group[=].element[=].target.equivalence = #equivalent
 // Statut du problème
 * group[=].element[+].code = #FRLMProbleme.statutProbleme
@@ -98,7 +102,8 @@ Description: "Mapping des éléments du modèle métier FRLMProbleme vers le pro
 * group[=].element[=].target.equivalence = #equivalent
 // Statut de l'entrée
 * group[=].element[+].code = #FRCDAProbleme.statusCode
-* group[=].element[=].target.equivalence = #unmatched
+* group[=].element[=].target.code = #FRConditionDocument.clinicalStatus
+* group[=].element[=].target.equivalence = #equivalent
 // Date de début du problème
 * group[=].element[+].code = #FRCDAProbleme.effectiveTime.low
 * group[=].element[=].target.code = #FRConditionDocument.onsetDateTime
@@ -126,6 +131,14 @@ Description: "Mapping des éléments du modèle métier FRLMProbleme vers le pro
 // Document référencé
 * group[=].element[+].code = #FRCDAProbleme.reference
 * group[=].element[=].target.code = #FRConditionDocument.evidence.detail
+* group[=].element[=].target.equivalence = #equivalent
+// Document référencé - identifiant
+* group[=].element[+].code = #FRCDAProbleme.reference.externalDocument.id
+* group[=].element[=].target.code = #FRConditionDocument.evidence.detail:FRDocumentReferenceDocument.identifier
+* group[=].element[=].target.equivalence = #equivalent
+// Document référencé - référence externe (URL du document)
+* group[=].element[+].code = #FRCDAProbleme.reference.externalDocument.text.reference
+* group[=].element[=].target.code = #FRConditionDocument.evidence.detail:FRDocumentReferenceDocument.content.attachment.url
 * group[=].element[=].target.equivalence = #equivalent
 // Commentaire
 * group[=].element[+].code = #FRCDAProbleme.entryRelationship:frCommentaireER

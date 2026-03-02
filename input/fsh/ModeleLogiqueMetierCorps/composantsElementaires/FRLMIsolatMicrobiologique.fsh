@@ -8,7 +8,7 @@ Characteristics: #can-be-target
 * identifiant 0..1 Identifier "Identifiant de l'examen"
 * codeIsolat 0..1 CodeableConcept "Code isolat"
 * statut 1..1 code "Niveau de complétude"
-* dateateResultat 0..1 dateTime "Date et heure des résultats"
+* dateResultat 0..1 dateTime "Date et heure des résultats"
 * choice[x] 0..1 FRLMSujetNonHumain or FRLMPatientSujetNonHumain "Sujet non humain ou Patient avec sujet non humain"
 * isolatMicrobiologique 1..1 Base "Isolat microbiologique"
   * isolat 1..1 Base "Isolat microbiologique"

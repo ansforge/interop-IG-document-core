@@ -37,12 +37,13 @@ Description: "
   * site ^short = "Région anatomique d'administration"
   * site from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-human-substance-administration-site-cisis
   
-  //* dose MS
-   // * ^short = "Dose à administrer"
+* dosage.doseAndRate MS
+* dosage.doseAndRate.doseQuantity MS
+  * ^short = "Dose déclarée"
 
-* dosage.doseAndRate.rate[x] MS
-* dosage.doseAndRate.rateRatio MS
-  * ^short = "doseMaximale"
+* dosage.maxDosePerPeriod MS
+* dosage.maxDosePerPeriod
+  * ^short = "dose maximale"
 * dosage.doseAndRate.rateQuantity MS
   * ^short = "rythme d'administration"
 //Instructions au patient
