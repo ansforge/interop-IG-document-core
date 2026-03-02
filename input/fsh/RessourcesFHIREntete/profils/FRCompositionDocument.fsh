@@ -131,13 +131,6 @@ Description: "Ce profil est utilisé pour représenter un document médical."
 * encounter 1..1 MS
 * encounter only Reference(FREncounterCareDocument)
 
-
-/* * section ^slicing.discriminator[0].type = #value
-* section ^slicing.discriminator[0].path = "code"
-* section ^slicing.ordered = false
-* section ^slicing.rules = #open
-  * ^definition = "La ressource Composition est structurée en différentes sections." */
-
 * section 1..*
 // Binder section.code sur le ValueSet
 * section.id 0..1
