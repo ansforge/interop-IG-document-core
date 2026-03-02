@@ -16,7 +16,6 @@ et contenant les codes et libellés traduits en français pour la biologie. */
 * $LNC#11348-0 "Antécédents médicaux"
 * $LNC#57723-9 "Numéro de code à barres unique"
 * $LNC#55111-9 "Description de l'acte d’imagerie"
-//* $LNC#55107-7 "Addendum"
 * $LNC#55109-3 "Complications"
 * $LNC#19005-8 "Conclusions"
 * $LNC#55115-0 "Demande"
@@ -29,7 +28,7 @@ et contenant les codes et libellés traduits en français pour la biologie. */
 * $LNC#59776-5 "Résultats de l'acte"
 * $LNC#42348-3 "Directives anticipées"
 * $LNC#60590-7 "Médicaments délivrés"
-* $LNC#55107-7 "Documents ajoutés"
+* $LNC#55107-7 "Documents ajoutés" // le même code utilisé pour la section Addendum de l'imagerie
 * $LNC#34895-3 "Education du patient"
 * $LNC#44939-7 "Effets indésirables prévisibles liés aux médicaments"
 * $LNC#10161-8 "Facteurs de risques professionnels"
