@@ -50,7 +50,7 @@ ValueSet de toutes les sections dans un document
   "name" : "FRValueSetListeSectionsDocument",
   "title" : "ValueSet – FR ValueSet Liste des sections",
   "status" : "draft",
-  "date" : "2026-03-02T10:56:24+00:00",
+  "date" : "2026-03-02T10:53:58+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
