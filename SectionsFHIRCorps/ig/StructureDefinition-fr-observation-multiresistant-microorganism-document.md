@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-multiresistant-microorganism-document | *Version*:0.1.0 |
-| Draft as of 2026-03-02 | *Computable Name*:FRObservationMultiresistantMicroorganismsIdentificationDocument |
+| Draft as of 2026-03-04 | *Computable Name*:FRObservationMultiresistantMicroorganismsIdentificationDocument |
 
  
 FRObservationMultiresistantMicroorganismsIdentificationDocument permet de décrire sous forme textuelle les micro-organismes identifiés. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-observation-multi
   "name" : "FRObservationMultiresistantMicroorganismsIdentificationDocument",
   "title" : "Observation - FR Observation Multiresistant Microorganisms Identification Document",
   "status" : "draft",
-  "date" : "2026-03-02T10:53:58+00:00",
+  "date" : "2026-03-04T08:48:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

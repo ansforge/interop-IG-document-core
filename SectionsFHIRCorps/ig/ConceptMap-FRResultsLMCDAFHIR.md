@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRResultsLMCDAFHIR | *Version*:0.1.0 |
-| Draft as of 2026-03-02 | *Computable Name*: |
+| Draft as of 2026-03-04 | *Computable Name*: |
 
  
 Mapping des éléments du modèle métier FRLMResultatsEntry vers le profil CDA FRCDAResultats, puis vers le profil FHIR FRDiagnosticReportDocument. 
@@ -26,7 +26,7 @@ Mapping des éléments du modèle métier FRLMResultatsEntry vers le profil CDA 
   "version" : "0.1.0",
   "title" : "Mapping Métier/CDA/FHIR : \"Résultats classés par type d’examens (BIO, IMG, etc…)\"",
   "status" : "draft",
-  "date" : "2026-03-02T10:53:58+00:00",
+  "date" : "2026-03-04T08:48:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
