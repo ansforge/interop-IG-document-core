@@ -133,12 +133,9 @@ Description: "Ce profil est utilisé pour représenter un document médical."
 
 * section 1..*
 // Binder section.code sur le ValueSet
-* section.id 0..1
 * section.code from FRValueSetListeSectionsDocument (extensible)
 * section.title 1..1
 * section.text 1..1
-* section.entry 0..*   // entrée libre, sera profilée dans les volets spécifiques
-* section.section 0..* // sous-section libre, sera profilée dans les volets spécifiques
 * section obeys comp-4
 
 /// INVARIANTS
