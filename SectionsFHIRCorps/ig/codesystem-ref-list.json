@@ -9,10 +9,22 @@
     "oids" : ["1.2.840.10008.2.16.4"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-imagerie-objectif-reference-cisis.html" : "JDV Imagerie Objectif Reference CISIS",
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-modalite-acquisition-cisis.html" : "JDV Modalite Acquisition CISIS",
-    "ValueSet-fr-vs-liste-sections.html" : "ValueSet – FR ValueSet Liste des sections",
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-quantite-exposition-rayonnements-cisis.html" : "JDV Quantite Exposition Rayonnements CISIS"
+    "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-section-document-cisis" : "JDV Section Document CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-modalite-acquisition-cisis.html" : "JDV Modalite Acquisition CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-imagerie-objectif-reference-cisis.html" : "JDV Imagerie Objectif Reference CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-quantite-exposition-rayonnements-cisis.html" : "JDV Quantite Exposition Rayonnements CISIS"
+  },
+  {
+    "url" : "http://hl7.org/fhir/sid/icd-10",
+    "version" : "2.1.1",
+    "status" : "retired",
+    "name" : "Icd10",
+    "title" : "ICD-10",
+    "description" : "International Classification of Diseases revision 10 (ICD 10)",
+    "oids" : ["2.16.840.1.113883.6.3"],
+    "uses" : {
+    },
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-contre-indication-cisis.html" : "JDV Contrindication CISIS"
   },
   {
     "url" : "http://hl7.org/fhir/sid/icf",
@@ -47,14 +59,14 @@
     "oids" : ["2.16.840.1.113883.6.1"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-observation-grossesse-cisis.html" : "JDV Observation Grossesse CISIS",
     "ValueSet-fr-vs-evaluation-type.html" : "ValueSet – FR ValueSet Type d'évaluation",
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-social-history-code-cisis.html" : "JDV Social History Code CISIS",
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-type-directive-anticipee-cisis.html" : "JDV Type Directive Anticipee CISIS",
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-signe-vital-cisis.html" : "JDV Signe Vital CISIS",
-    "ValueSet-fr-vs-liste-sections.html" : "ValueSet – FR ValueSet Liste des sections",
+    "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-section-document-cisis" : "JDV Section Document CISIS",
     "ValueSet-fr-vs-result-type-document.html" : "ValueSet - FR ValueSet Result Type Document",
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-code-document-imagerie-cisis.html" : "JDV Code Document Imagerie CISIS"
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-observation-grossesse-cisis.html" : "JDV Observation Grossesse CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-social-history-code-cisis.html" : "JDV Social History Code CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-code-document-imagerie-cisis.html" : "JDV Code Document Imagerie CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-type-directive-anticipee-cisis.html" : "JDV Type Directive Anticipee CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-signe-vital-cisis.html" : "JDV Signe Vital CISIS"
   },
   {
     "url" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
@@ -70,7 +82,7 @@
   },
   {
     "url" : "http://snomed.info/sct",
-    "version" : "http://snomed.info/sct/900000000000207008/version/20251001",
+    "version" : "http://snomed.info/sct/900000000000207008/version/20260201",
     "status" : "active",
     "name" : "SNOMED_CT",
     "title" : "SNOMED CT core",
@@ -78,23 +90,23 @@
     "oids" : ["2.16.840.1.113883.6.96"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-origine-effet-indesirable-cisis.html" : "JDV Origine Effet Indesirable CISIS",
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-type-evenement-indesirable-previsible-cisis.html" : "JDV Type Evenement Indesirable Previsible CISIS",
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-code-probleme-cisis.html" : "JDV Code Probleme CISIS",
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-human-substance-administration-site-cisis.html" : "JDV Human Substance Administration Site CISIS",
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-type-directive-anticipee-cisis.html" : "JDV Type Directive Anticipee CISIS",
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-immunization-approach-site-code-cisis.html" : "JDV Immunization Approach Site Code CISIS",
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-modificateur-topographique-cisis.html" : "JDV Modificateur Topographique CISIS",
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-health-status-code-cisis.html" : "JDV Health Status Code CISIS",
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-evaluation-douleur-cisis.html" : "JDV Evaluation Douleur CISIS",
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-localisation-anatomique-cisis.html" : "JDV Localisation Anatomique CISIS",
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-evolution-cisis.html" : "JDV Evolution CISIS",
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-gravite-cisis.html" : "JDV Gravite CISIS",
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-modalite-sortie-cisis.html" : "JDV Modalite Sortie CISIS",
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-modalite-entree-cisis.html" : "JDV Modalite Entree CISIS",
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-contre-indication-cisis.html" : "JDV Contrindication CISIS",
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-imputabilite-cisis.html" : "JDV Imputabilite CISIS",
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-severite-observation-cisis.html" : "JDV Severite Observation CISIS"
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-immunization-approach-site-code-cisis.html" : "JDV Immunization Approach Site Code CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-evolution-cisis.html" : "JDV Evolution CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-human-substance-administration-site-cisis.html" : "JDV Human Substance Administration Site CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-modalite-entree-cisis.html" : "JDV Modalite Entree CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-modalite-sortie-cisis.html" : "JDV Modalite Sortie CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-evaluation-douleur-cisis.html" : "JDV Evaluation Douleur CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-imputabilite-cisis.html" : "JDV Imputabilite CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-health-status-code-cisis.html" : "JDV Health Status Code CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-type-evenement-indesirable-previsible-cisis.html" : "JDV Type Evenement Indesirable Previsible CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-contre-indication-cisis.html" : "JDV Contrindication CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-origine-effet-indesirable-cisis.html" : "JDV Origine Effet Indesirable CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-modificateur-topographique-cisis.html" : "JDV Modificateur Topographique CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-code-probleme-cisis.html" : "JDV Code Probleme CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-localisation-anatomique-cisis.html" : "JDV Localisation Anatomique CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-type-directive-anticipee-cisis.html" : "JDV Type Directive Anticipee CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-gravite-cisis.html" : "JDV Gravite CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-severite-observation-cisis.html" : "JDV Severite Observation CISIS"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v2-0487",
@@ -106,11 +118,11 @@
     "oids" : ["2.16.840.1.113883.18.311"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-specimen-type-cisis.html" : "JDV Specimen Type CISIS"
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-specimen-type-cisis.html" : "JDV Specimen Type CISIS"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-    "version" : "9.0.0",
+    "version" : "10.0.0",
     "status" : "active",
     "name" : "ActCode",
     "title" : "ActCode",
@@ -118,12 +130,12 @@
     "oids" : ["2.16.840.1.113883.5.4"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-hl7-v3-ActSubstanceAdministrationImmunizationCode-cisis.html" : "ActSubstanceAdministrationImmunizationCode",
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-completude-dispensation-cisis.html" : "JDV Completude Dispensation CISIS"
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-completude-dispensation-cisis.html" : "JDV Completude Dispensation CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-hl7-v3-ActSubstanceAdministrationImmunizationCode-cisis.html" : "ActSubstanceAdministrationImmunizationCode"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-ActPriority",
-    "version" : "3.0.0",
+    "version" : "4.0.0",
     "status" : "active",
     "name" : "ActPriority",
     "title" : "ActPriority",
@@ -131,11 +143,11 @@
     "oids" : ["2.16.840.1.113883.5.7"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-hl7-v3-ActPriority-cisis.html" : "ActPriority"
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-hl7-v3-ActPriority-cisis.html" : "ActPriority"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
-    "version" : "3.0.0",
+    "version" : "4.0.0",
     "status" : "active",
     "name" : "ObservationInterpretation",
     "title" : "ObservationInterpretation",
@@ -143,11 +155,11 @@
     "oids" : ["2.16.840.1.113883.5.83"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-hl7-v3-ObservationInterpretation-cisis.html" : "ObservationInterpretation"
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-hl7-v3-ObservationInterpretation-cisis.html" : "ObservationInterpretation"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationMethod",
-    "version" : "3.0.0",
+    "version" : "4.0.0",
     "status" : "active",
     "name" : "ObservationMethod",
     "title" : "ObservationMethod",
@@ -155,11 +167,11 @@
     "oids" : ["2.16.840.1.113883.5.84"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-hl7-v3-ObservationMethod-cisis.html" : "ObservationMethod"
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-hl7-v3-ObservationMethod-cisis.html" : "ObservationMethod"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
-    "version" : "5.0.0",
+    "version" : "6.0.0",
     "status" : "active",
     "name" : "ParticipationType",
     "title" : "ParticipationType",
@@ -167,13 +179,13 @@
     "oids" : ["2.16.840.1.113883.5.90"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-participant-additionnel-resultat-cisis.html" : "JDV Participant Additionnel Resultat CISIS",
+    "ValueSet-fr-vs-actor-type-document.html" : "ValueSet - FR ValueSet Actor Type Document",
     "ValueSet-fr-doc-vs-participation-type.html" : "FR ValueSet Participation Type",
-    "ValueSet-fr-vs-actor-type-document.html" : "ValueSet - FR ValueSet Actor Type Document"
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-participant-additionnel-resultat-cisis.html" : "JDV Participant Additionnel Resultat CISIS"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
-    "version" : "4.0.0",
+    "version" : "5.0.0",
     "status" : "active",
     "name" : "RoleClass",
     "title" : "RoleClass",
@@ -181,11 +193,11 @@
     "oids" : ["2.16.840.1.113883.5.110"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-role-informateur-cisis.html" : "Jdv Role Informateur CISIS"
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-role-informateur-cisis.html" : "Jdv Role Informateur CISIS"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
-    "version" : "3.0.0",
+    "version" : "4.0.0",
     "status" : "active",
     "name" : "RoleCode",
     "title" : "RoleCode",
@@ -193,11 +205,11 @@
     "oids" : ["2.16.840.1.113883.5.111"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-hl7-v3-PersonalRelationshipRoleType-cisis.html" : "PersonalRelationshipRoleType"
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-hl7-v3-PersonalRelationshipRoleType-cisis.html" : "PersonalRelationshipRoleType"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-SpecimenType",
-    "version" : "3.0.0",
+    "version" : "4.0.0",
     "status" : "active",
     "name" : "SpecimenType",
     "title" : "SpecimenType",
@@ -205,11 +217,11 @@
     "oids" : ["2.16.840.1.113883.5.129"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-specimen-type-cisis.html" : "JDV Specimen Type CISIS"
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-specimen-type-cisis.html" : "JDV Specimen Type CISIS"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution",
-    "version" : "3.0.0",
+    "version" : "4.0.0",
     "status" : "active",
     "name" : "SubstanceAdminSubstitution",
     "title" : "Substance Admin Substitution",
@@ -217,7 +229,7 @@
     "oids" : ["2.16.840.1.113883.5.1070"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-hl7-v3-ActSubstanceAdminSubstitutionCode-cisis.html" : "ActSubstanceAdminSubstitutionCode"
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-hl7-v3-ActSubstanceAdminSubstitutionCode-cisis.html" : "ActSubstanceAdminSubstitutionCode"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_A00-ProducteurDocNonPS/FHIR/TRE-A00-ProducteurDocNonPS",
@@ -229,10 +241,10 @@
     "oids" : ["1.2.250.1.213.1.1.4.6"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-type-systeme-cisis.html" : "Jdv Type Systeme CISIS",
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J01-XdsAuthorSpecialty-CISIS.html" : "JDV_J01_XdsAuthorSpecialty_CISIS",
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J04-XdsPracticeSettingCode-CISIS.html" : "JDV_J04_XdsPracticeSettingCode_CISIS",
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J02-XdsHealthcareFacilityTypeCode-CISIS.html" : "JDV_J02_XdsHealthcareFacilityTypeCode_CISIS"
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-JDV-J02-XdsHealthcareFacilityTypeCode-CISIS.html" : "JDV_J02_XdsHealthcareFacilityTypeCode_CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-type-systeme-cisis.html" : "Jdv Type Systeme CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-JDV-J01-XdsAuthorSpecialty-CISIS.html" : "JDV_J01_XdsAuthorSpecialty_CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-JDV-J04-XdsPracticeSettingCode-CISIS.html" : "JDV_J04_XdsPracticeSettingCode_CISIS"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_A01-CadreExercice/FHIR/TRE-A01-CadreExercice",
@@ -244,11 +256,11 @@
     "oids" : ["1.2.250.1.213.1.1.4.9"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J04-XdsPracticeSettingCode-CISIS.html" : "JDV_J04_XdsPracticeSettingCode_CISIS"
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-JDV-J04-XdsPracticeSettingCode-CISIS.html" : "JDV_J04_XdsPracticeSettingCode_CISIS"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_A02-ProfessionSavFaire-CISIS/FHIR/TRE-A02-ProfessionSavFaire-CISIS",
-    "version" : "20241213120000",
+    "version" : "20260202120000",
     "status" : "active",
     "name" : "TRE_A02_ProfessionSavFaire_CISIS",
     "title" : null,
@@ -256,7 +268,7 @@
     "oids" : ["1.2.250.1.213.1.1.4.5"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J01-XdsAuthorSpecialty-CISIS.html" : "JDV_J01_XdsAuthorSpecialty_CISIS"
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-JDV-J01-XdsAuthorSpecialty-CISIS.html" : "JDV_J01_XdsAuthorSpecialty_CISIS"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_A13-HL7ParticipationType/FHIR/TRE-A13-HL7ParticipationType",
@@ -268,8 +280,8 @@
     "oids" : ["2.16.840.1.113883.5.90"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J140-EncounterParticipationType-CISIS.html" : "JDV_J140_EncounterParticipationType_CISIS",
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J144-ParticipationType-CISIS.html" : "JDV_J144_ParticipationType_CISIS"
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-JDV-J140-EncounterParticipationType-CISIS.html" : "JDV_J140_EncounterParticipationType_CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-JDV-J144-ParticipationType-CISIS.html" : "JDV_J144_ParticipationType_CISIS"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite",
@@ -281,7 +293,7 @@
     "oids" : ["1.2.250.1.71.4.2.4"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J02-XdsHealthcareFacilityTypeCode-CISIS.html" : "JDV_J02_XdsHealthcareFacilityTypeCode_CISIS"
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-JDV-J02-XdsHealthcareFacilityTypeCode-CISIS.html" : "JDV_J02_XdsHealthcareFacilityTypeCode_CISIS"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R11-CiviliteExercice/FHIR/TRE-R11-CiviliteExercice",
@@ -293,7 +305,7 @@
     "oids" : ["1.2.250.1.213.1.6.1.11"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J246-Titre-CISIS.html" : "JDV_J246_Titre_CISIS"
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-JDV-J246-Titre-CISIS.html" : "JDV_J246_Titre_CISIS"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode",
@@ -305,7 +317,7 @@
     "oids" : ["2.16.840.1.113883.5.111"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J11-RelationPatient-CISIS.html" : "JDV_J11_RelationPatient_CISIS"
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-JDV-J11-RelationPatient-CISIS.html" : "JDV_J11_RelationPatient_CISIS"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique",
@@ -317,7 +329,7 @@
     "oids" : ["1.2.250.1.213.1.1.4.327"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J11-RelationPatient-CISIS.html" : "JDV_J11_RelationPatient_CISIS"
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-JDV-J11-RelationPatient-CISIS.html" : "JDV_J11_RelationPatient_CISIS"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R258-RelationPriseCharge/FHIR/TRE-R258-RelationPriseCharge",
@@ -329,7 +341,7 @@
     "oids" : ["1.2.250.1.213.1.1.4.2.280"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J47-FunctionCode-CISIS.html" : "JDV_J47_FunctionCode_CISIS"
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-JDV-J47-FunctionCode-CISIS.html" : "JDV_J47_FunctionCode_CISIS"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction",
@@ -341,7 +353,7 @@
     "oids" : ["2.16.840.1.113883.5.88"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J47-FunctionCode-CISIS.html" : "JDV_J47_FunctionCode_CISIS"
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-JDV-J47-FunctionCode-CISIS.html" : "JDV_J47_FunctionCode_CISIS"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass",
@@ -353,7 +365,7 @@
     "oids" : ["2.16.840.1.113883.5.110"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J141-RoleClass-CISIS.html" : "JDV_J141_RoleClass_CISIS"
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-JDV-J141-RoleClass-CISIS.html" : "JDV_J141_RoleClass_CISIS"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R303-HL7v3AdministrativeGender/FHIR/TRE-R303-HL7v3AdministrativeGender",
@@ -365,7 +377,7 @@
     "oids" : ["2.16.840.1.113883.5.1"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J143-AdministrativeGender-CISIS.html" : "JDV_J143_AdministrativeGender_CISIS"
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-JDV-J143-AdministrativeGender-CISIS.html" : "JDV_J143_AdministrativeGender_CISIS"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R304-HL7v3ActCode/FHIR/TRE-R304-HL7v3ActCode",
@@ -377,7 +389,7 @@
     "oids" : ["2.16.840.1.113883.5.4"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J142-TypeRencontre-CISIS.html" : "JDV_J142_TypeRencontre_CISIS"
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-JDV-J142-TypeRencontre-CISIS.html" : "JDV_J142_TypeRencontre_CISIS"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R305-TypeRencontre/FHIR/TRE-R305-TypeRencontre",
@@ -389,11 +401,11 @@
     "oids" : ["1.2.250.1.213.1.1.4.2.291"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J142-TypeRencontre-CISIS.html" : "JDV_J142_TypeRencontre_CISIS"
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-JDV-J142-TypeRencontre-CISIS.html" : "JDV_J142_TypeRencontre_CISIS"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R66-CategorieEtablissement/FHIR/TRE-R66-CategorieEtablissement",
-    "version" : "20250425120000",
+    "version" : "20260223120000",
     "status" : "active",
     "name" : "TRE_R66_CategorieEtablissement",
     "title" : null,
@@ -401,8 +413,8 @@
     "oids" : ["1.2.250.1.213.1.6.1.8"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-j368-categorie-etablissement-cisis.html" : "Jdv J368 Categorie Etablissement Cisis",
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-modalite-sortie-cisis.html" : "JDV Modalite Sortie CISIS"
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-modalite-sortie-cisis.html" : "JDV Modalite Sortie CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-j368-categorie-etablissement-cisis.html" : "Jdv J368 Categorie Etablissement Cisis"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R81-Civilite/FHIR/TRE-R81-Civilite",
@@ -414,11 +426,11 @@
     "oids" : ["1.2.250.1.213.1.6.1.69"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J245-Civilite-CISIS.html" : "JDV_J245_Civilite_CISIS"
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-JDV-J245-Civilite-CISIS.html" : "JDV_J245_Civilite_CISIS"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge",
-    "version" : "20250919120000",
+    "version" : "20260202120000",
     "status" : "active",
     "name" : "TRE_R85_RolePriseCharge",
     "title" : null,
@@ -426,9 +438,9 @@
     "oids" : ["1.2.250.1.213.1.6.1.107"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J47-FunctionCode-CISIS.html" : "JDV_J47_FunctionCode_CISIS",
-    "ValueSet-fr-doc-vs-role-prise-charge.html" : "Fr ValueSet RolePriseCharge",
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J01-XdsAuthorSpecialty-CISIS.html" : "JDV_J01_XdsAuthorSpecialty_CISIS"
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-JDV-J47-FunctionCode-CISIS.html" : "JDV_J47_FunctionCode_CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-JDV-J01-XdsAuthorSpecialty-CISIS.html" : "JDV_J01_XdsAuthorSpecialty_CISIS",
+    "ValueSet-fr-doc-vs-role-prise-charge.html" : "Fr ValueSet RolePriseCharge"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R94-ProfessionSocial/FHIR/TRE-R94-ProfessionSocial",
@@ -440,7 +452,7 @@
     "oids" : ["1.2.250.1.213.1.6.1.4"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J01-XdsAuthorSpecialty-CISIS.html" : "JDV_J01_XdsAuthorSpecialty_CISIS"
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-JDV-J01-XdsAuthorSpecialty-CISIS.html" : "JDV_J01_XdsAuthorSpecialty_CISIS"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R95-UsagerTitre/FHIR/TRE-R95-UsagerTitre",
@@ -452,11 +464,11 @@
     "oids" : ["1.2.250.1.213.1.6.1.109"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J01-XdsAuthorSpecialty-CISIS.html" : "JDV_J01_XdsAuthorSpecialty_CISIS"
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-JDV-J01-XdsAuthorSpecialty-CISIS.html" : "JDV_J01_XdsAuthorSpecialty_CISIS"
   },
   {
     "url" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
-    "version" : "202510230000",
+    "version" : "202512170000",
     "status" : "active",
     "name" : "TerminologieCISIS",
     "title" : "TerminologieCISIS - Terminologie des concepts non trouvés dans les autres terminologies",
@@ -464,17 +476,19 @@
     "oids" : ["1.2.250.1.213.1.1.4.322"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-origine-effet-indesirable-cisis.html" : "JDV Origine Effet Indesirable CISIS",
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-observation-grossesse-cisis.html" : "JDV Observation Grossesse CISIS",
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-type-directive-anticipee-cisis.html" : "JDV Type Directive Anticipee CISIS",
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-type-motorisation-cisis.html" : "JDV Type Motorisation CISIS",
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-evaluation-douleur-cisis.html" : "JDV Evaluation Douleur CISIS",
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-evolution-cisis.html" : "JDV Evolution CISIS",
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-gravite-cisis.html" : "JDV Gravite CISIS",
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-mode-de-transport-cisis.html" : "JDV Mode De Transport CISIS",
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-modalite-sortie-cisis.html" : "JDV Modalite Sortie CISIS",
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-modalite-entree-cisis.html" : "JDV Modalite Entree CISIS",
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-contre-indication-cisis.html" : "JDV Contrindication CISIS"
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-evolution-cisis.html" : "JDV Evolution CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-modalite-entree-cisis.html" : "JDV Modalite Entree CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-modalite-sortie-cisis.html" : "JDV Modalite Sortie CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-mode-de-transport-cisis.html" : "JDV Mode De Transport CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-evaluation-douleur-cisis.html" : "JDV Evaluation Douleur CISIS",
+    "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-section-document-cisis" : "JDV Section Document CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-type-evenement-indesirable-previsible-cisis.html" : "JDV Type Evenement Indesirable Previsible CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-observation-grossesse-cisis.html" : "JDV Observation Grossesse CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-contre-indication-cisis.html" : "JDV Contrindication CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-origine-effet-indesirable-cisis.html" : "JDV Origine Effet Indesirable CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-type-motorisation-cisis.html" : "JDV Type Motorisation CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-type-directive-anticipee-cisis.html" : "JDV Type Directive Anticipee CISIS",
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-gravite-cisis.html" : "JDV Gravite CISIS"
   },
   {
     "url" : "https://smt.esante.gouv.fr/terminologie-atc",
@@ -490,19 +504,19 @@
   },
   {
     "url" : "https://smt.esante.gouv.fr/terminologie-bdpm",
-    "version" : "2025-10-01",
+    "version" : "2026-02-03",
     "status" : "active",
     "name" : "BDPM",
     "title" : "Base de données publique du médicament",
     "description" : "LA BDPM est un des référentiels du médicament gérée et distribuée par l’ANSM. Elle recense l’ensemble des spécialités et des présentations effectivement commercialisées durant les 5 dernières années. De ce fait, elle ne propose pas un historique exhaustif des codes de présentation et spécialités, celui-ci peut être obtenu grâce à la base RCP disponible sur le site de l’ANSM",
     "uses" : {
     },
-    "ValueSet-fr-vs-allergy-substance.html" : "ValueSet – FR ValueSet Allergy Substance Document",
-    "ValueSet-fr-vs-medication-translation-document.html" : "ValueSet - FR ValueSet Medication Translation Document"
+    "ValueSet-fr-vs-medication-translation-document.html" : "ValueSet - FR ValueSet Medication Translation Document",
+    "ValueSet-fr-vs-allergy-substance.html" : "ValueSet – FR ValueSet Allergy Substance Document"
   },
   {
     "url" : "https://smt.esante.gouv.fr/terminologie-ccam",
-    "version" : "v79.10",
+    "version" : "v81.00",
     "status" : "active",
     "name" : "CCAM",
     "title" : "Classification Commune des Actes Médicaux",
@@ -513,16 +527,16 @@
     "ValueSet-fr-vs-procedure-code.html" : "ValueSet – FR ValueSet Codes d’actes"
   },
   {
-    "url" : "https://smt.esante.gouv.fr/terminologie-cim-10",
-    "version" : "2025-01-01",
+    "url" : "https://smt.esante.gouv.fr/terminologie-sms",
+    "version" : "2026-02",
     "status" : "active",
-    "name" : "CIM_10_FR_PMSI",
-    "title" : "Classification internationale des maladies et des problèmes de santé connexes - 10ème révision - Version française à usage PMSI (Programme Médicalisé des Systèmes d'Information)",
-    "description" : "La Classification Internationale des Maladies (CIM) permet d’établir les statistiques sanitaires (morbi-mortalité) partout dans le monde. Elle est gérée par l’Organisation Mondiale de la Santé qui publie une mise à jour annuelle. En France l’ATIH édite et publie une version complète du volume 1 de la CIM–10 à usage PMSI. La CIM–10 est aussi utilisée pour alimenter les dossier médicaux électronique des patients.Elle est destinée à être progressivement remplacée par la CIM 11",
-    "oids" : ["2.16.840.1.113883.6.3"],
+    "name" : "Dictionnaire_SMS_Substance_Management_Services_",
+    "title" : "Dictionnaire européen multilingue des substances entrant dans la composition de médicaments",
+    "description" : "Le dictionnaire des substances ou SMS a été conçu par l’European Medicines Agency (EMA) dans le cadre d’une démarche qualité. Ce dictionnaire contient les substances entrant dans la composition de médicaments destinés à un humain et/ou vétérinaire.",
+    "oids" : ["2.16.840.1.113883.3.6905.2"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-contre-indication-cisis.html" : "JDV Contrindication CISIS"
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-vs-sms-all.html" : "ValueSet_SMS_All"
   },
   {
     "url" : "https://smt.esante.gouv.fr/terminologie-standardterms",
@@ -534,7 +548,7 @@
     "oids" : ["0.4.0.127.0.16.1.1.2.1"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-jdv-immunization-route-code-cisis.html" : "JDV Immunization Route Code CISIS",
-    "ValueSet-fr-vs-edqm-document.html" : "ValueSet - FR ValueSet EDQM Document"
+    "ValueSet-fr-vs-edqm-document.html" : "ValueSet - FR ValueSet EDQM Document",
+    "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-immunization-route-code-cisis.html" : "JDV Immunization Route Code CISIS"
   }]
 }

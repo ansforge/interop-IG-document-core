@@ -583,7 +583,6 @@ These define sets of codes used by systems conforming to this implementation gui
 * NCIT (code C25218 : ‘Intervention’) si l’acte n’est pas trouvé dans CCAM
 * CISIS jdv-absent-or-unknown-procedure-cisis pour actes chirurgicaux inconnus ou absents.
 Si aucun code approprié n’est disponible, l’acte peut être décrit en texte libre. |
-| [ValueSet – FR ValueSet Liste des sections](ValueSet-fr-vs-liste-sections.md) | ValueSet de toutes les sections dans un document |
 | [ValueSet – FR ValueSet Type d'évaluation](ValueSet-fr-vs-evaluation-type.md) | Codes autorisés pour indiquer le type d’évaluation. Inclut LOINC, ICF, et permet d’autres systèmes si aucun code approprié n’est trouvé. |
 
 ### Terminology: Concept Maps 

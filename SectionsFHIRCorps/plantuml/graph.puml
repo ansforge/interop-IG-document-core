@@ -4183,10 +4183,6 @@ package IG #DDDDDD{
 
      FRCompositionDocument -[#black,dotted,thickness=2]-> FRValueSetParticipationType
 
-        class FRValueSetListeSectionsDocument  
-
-     FRCompositionDocument -[#black,dotted,thickness=2]-> FRValueSetListeSectionsDocument
-
         class FRValueSetResultTypeDocument  
 
      FRDiagnosticReportDocument -[#black,dotted,thickness=2]-> FRValueSetResultTypeDocument

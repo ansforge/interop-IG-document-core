@@ -67,7 +67,6 @@
 * [ValueSet – FR ValueSet Allergy Substance Document](ValueSet-fr-vs-allergy-substance.md)
 * [ValueSet - FR ValueSet EDQM Document](ValueSet-fr-vs-edqm-document.md)
 * [ValueSet – FR ValueSet Type d'évaluation](ValueSet-fr-vs-evaluation-type.md)
-* [ValueSet – FR ValueSet Liste des sections](ValueSet-fr-vs-liste-sections.md)
 * [ValueSet - FR ValueSet Medication Translation Document](ValueSet-fr-vs-medication-translation-document.md)
 * [ValueSet – FR ValueSet Codes d’actes](ValueSet-fr-vs-procedure-code.md)
 * [ValueSet - FR ValueSet Result Type Document](ValueSet-fr-vs-result-type-document.md)

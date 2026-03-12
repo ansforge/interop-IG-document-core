@@ -2841,13 +2841,6 @@
   "name" : "FRValueSetEvaluationTypeDocument"
 },
 {
-  "id" : "fr-vs-liste-sections",
-  "type" : "ValueSet",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-liste-sections",
-  "version" : "0.1.0",
-  "name" : "FRValueSetListeSectionsDocument"
-},
-{
   "id" : "fr-vs-medication-translation-document",
   "type" : "ValueSet",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-medication-translation-document",
