@@ -133,7 +133,7 @@ Description: "Ce profil est utilisé pour représenter un document médical."
 
 * section 1..*
 // Binder section.code sur le ValueSet
-* section.code from FRValueSetListeSectionsDocument (extensible)
+* section.code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-section-document-cisis
 * section.title 1..1
 * section.text 1..1
 * section obeys comp-4
