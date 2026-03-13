@@ -15,6 +15,10 @@
 
 >  **Attention !** Cet Implementation Guide n'est pas en version courante. La version courante sera accessible via l'URL canonique suite à la première release : http://interop.esante.gouv.fr/ig/fhir/[code - ig] 
 
+**⚠️ Version de test**
+
+Cette publication est une version de test. Elle ne doit pas être utilisée en production.
+
 ### Introduction
 
 **Le partage** dans Mon espace santé et **l’échange** par messagerie sécurisée de santé **des documents médicaux et médico-sociaux permet d’améliorer la continuité et la coordination des soins**.
@@ -140,7 +144,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
   "name" : "FRDocumentCore",
   "title" : "ANS IG document core",
   "status" : "draft",
-  "date" : "2026-03-13T14:11:35+00:00",
+  "date" : "2026-03-13T17:00:40+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
