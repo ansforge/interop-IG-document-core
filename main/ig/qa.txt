@@ -3,7 +3,7 @@ FRDocumentCore : Validation Results
 
 err = 1033, warn = 4664, info = 1111
 IG Publisher Version: 2.1.2
-Generated Fri Mar 13 18:19:20 UTC 2026. FHIR version 4.0.1 for ans.document.fr.core#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/document/core)
+Generated Fri Mar 13 22:48:33 UTC 2026. FHIR version 4.0.1 for ans.document.fr.core#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/document/core)
  Build Errors : 11 / 4 / 0
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRActLMCDAFHIR : 1 / 8 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRActSubstitutionLMCDAFHIR : 1 / 8 / 1
@@ -6242,7 +6242,7 @@ ERROR: ValueSet/fr-vs-medication-translation-document: ValueSet.jurisdiction[0].
 WARNING: ValueSet/fr-vs-medication-translation-document: ValueSet.compose.include[1].system: No definition could be found for URL value 'https://smt.esante.gouv.fr/terminologie-cip_ucd'
 WARNING: ValueSet/fr-vs-medication-translation-document: ValueSet.compose.include[3].system: No definition could be found for URL value 'https://smt.esante.gouv.fr/terminologie-medicabase'
 WARNING: ValueSet.where(id = 'fr-vs-medication-translation-document'): Error from https://smt.esante.gouv.fr/fhir: Error: [24e56fbb-c50d-4abf-9179-705a8a187369]: Could not find the code system https://smt.esante.gouv.fr/terminologie-cip_ucd|2026-03
-Information: X-Request-Id: 7b619df0-a49c-428a-8cbe-6fef8cea3c90
+Information: X-Request-Id: be141322-5e15-45af-a9ed-f1bff38ea80d
 == fsh-generated/resources/ValueSet-fr-vs-procedure-code.json ==
 ERROR: ValueSet/fr-vs-procedure-code: ValueSet.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr-FR'. Default display is 'France'
 WARNING: ValueSet/fr-vs-procedure-code: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
