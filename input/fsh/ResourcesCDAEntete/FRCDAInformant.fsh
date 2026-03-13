@@ -11,8 +11,9 @@ Description: "L'élément de l'en-tête du CDA informant permet d'identifier un 
 * contextControlCode 0..0
 * assignedEntity only fr-cda-assigned-entity
 * assignedEntity ^short = "Professionnel / Structure / Patient/usager ayant fourni des informations relatives au document."
-* relatedEntity ^short = "Informateur non professionnel ayant fourni des informations relatives au document. 
-Ou : Personne de confiance désignée par le patient/usager.
-Ou : Personne à prévenir en cas d’urgence. 
-Ou : Aidant du patient/usager. ou : Personne aidée"
+* relatedEntity ^short = "Informateur non professionnel ayant fourni des informations relatives au document.\u000A
+  Ou : Personne de confiance désignée par le patient/usager.
+  Ou : Personne à prévenir en cas d’urgence.
+  Ou : Aidant du patient/usager.
+  Ou : Personne aidée"
 * relatedEntity only fr-cda-related-entity
