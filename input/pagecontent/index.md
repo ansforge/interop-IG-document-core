@@ -13,6 +13,11 @@ Implementation guides of dematerialized health and medico-social documents produ
 </div>
 {% endif %}
 
+<div style="width: 65%; background-color: #fff9e6; border-left: 4px solid #ff9800; padding: 8px 12px; margin-bottom: 16px;">
+    <b>⚠️ Version de test</b><br>
+    Cette publication est une version de test. Elle ne doit pas être utilisée en production.
+</div>
+
 <div class="figure">
     <img src="ci-sis-logo.png" alt="CI-SIS" title="Logo du CI-SIS" style="width:100%;">
 </div>
