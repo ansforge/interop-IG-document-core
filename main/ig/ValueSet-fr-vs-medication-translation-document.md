@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-medication-translation-document | *Version*:0.1.0 |
-| Draft as of 2026-02-25 | *Computable Name*:FRValueSetMedicationTranslationDocument |
+| Draft as of 2026-03-13 | *Computable Name*:FRValueSetMedicationTranslationDocument |
 
  
 Systèmes autorisés pour les autres codifications. 
@@ -26,7 +26,7 @@ Systèmes autorisés pour les autres codifications.
 
 ### Expansion
 
-No Expansion for this valueset (not supported by Publication Tooling)
+No Expansion for this valueset (Unknown Code System)
 
 -------
 
@@ -55,7 +55,7 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "title" : "ValueSet - FR ValueSet Medication Translation Document",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-02-25T10:05:30+00:00",
+  "date" : "2026-03-13T14:11:35+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -37,7 +37,7 @@
     "https://smt.esante.gouv.fr/terminologie-bdpm",
     "https://smt.esante.gouv.fr/terminologie-cip_ucd",
     "http://snomed.info/sct",
-    "https://smt.esante.gouv.fr/terminologie-atc"]
+    "http://www.whocc.no/atc"]
   },
   {
     "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-edqm-document",

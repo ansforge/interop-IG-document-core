@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-composition-document | *Version*:0.1.0 |
-| Draft as of 2026-02-25 | *Computable Name*:FRCompositionDocument |
+| Draft as of 2026-03-13 | *Computable Name*:FRCompositionDocument |
 
  
 Ce profil est utilisé pour représenter un document médical. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-composition-docum
   "name" : "FRCompositionDocument",
   "title" : "FR Composition Document",
   "status" : "draft",
-  "date" : "2026-02-25T10:05:30+00:00",
+  "date" : "2026-03-13T14:11:35+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -641,15 +641,26 @@ Other representations of profile: [CSV](StructureDefinition-fr-composition-docum
     {
       "id" : "Composition.section",
       "path" : "Composition.section",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "value",
-          "path" : "code"
-        }],
-        "ordered" : false,
-        "rules" : "open"
-      },
-      "definition" : "La ressource Composition est structurée en différentes sections."
+      "constraint" : [{
+        "key" : "comp-4",
+        "severity" : "error",
+        "human" : "Une section ne peut pas contenir à la fois des entrées et des sous-sections.",
+        "expression" : "not(exists(f:entry) and exists(f:section))",
+        "source" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-composition-document"
+      }]
+    },
+    {
+      "id" : "Composition.section.code",
+      "path" : "Composition.section.code",
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-section-document-cisis"
+      }
+    },
+    {
+      "id" : "Composition.section.text",
+      "path" : "Composition.section.text",
+      "min" : 1
     }]
   }
 }

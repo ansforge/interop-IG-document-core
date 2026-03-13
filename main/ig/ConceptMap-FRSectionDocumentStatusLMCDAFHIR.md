@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRSectionDocumentStatusLMCDAFHIR | *Version*:0.1.0 |
-| Draft as of 2026-02-25 | *Computable Name*: |
+| Draft as of 2026-03-13 | *Computable Name*: |
 
  
 Mapping des éléments du modèle métier FRLMStatutDocument vers la section CDA FRCDAStatutDuDocument, puis vers la section FHIR FRCompositionDocument.section:documentStatus. 
@@ -26,7 +26,7 @@ Mapping des éléments du modèle métier FRLMStatutDocument vers la section CDA
   "version" : "0.1.0",
   "title" : "Mapping Métier/CDA/FHIR : \"Statut du document\"",
   "status" : "draft",
-  "date" : "2026-02-25T10:05:30+00:00",
+  "date" : "2026-03-13T14:11:35+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

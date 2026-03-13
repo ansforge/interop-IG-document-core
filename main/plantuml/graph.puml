@@ -785,6 +785,8 @@ package IG #DDDDDD{
              Composition.event:principalEvent.extension:performer => <&plus>[1..1]
              Composition.event:principalEvent.period => [1..None]
              Composition.section => [None..None]
+             Composition.section.code => [None..None]
+             Composition.section.text => [1..None]
         } 
 
         class FRConditionDocument{
