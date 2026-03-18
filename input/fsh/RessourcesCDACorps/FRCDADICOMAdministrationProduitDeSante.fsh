@@ -32,7 +32,6 @@ and dicomProceduralMedication 1..1
 * statusCode ^definition = "Status de l'entrée"
 * statusCode.code = #completed
 * routeCode MS
-* routeCode 0..1
 * routeCode ^short = "Voie d'administration Terminologie utilisée :  EDQM - Standard terms / classe ROA (Voie d'administration)"
 * routeCode ^definition = "Voie d'administration"
 * doseQuantity MS 
@@ -50,10 +49,10 @@ Les sous-éléments 'low' et 'high' permettent de fournir le rythme minimal et m
 L'argument @value permet d'indiquer la quantité de produit à administrer.
 L'argument @unit permet d'indiquer le rythme d'administration en combinant l'unité de quantité et l'unité de temps (séparés par le caractère ‘/'). Les unités sont exprimées selon le système de codage UCUM.
 Dans chaque élément 'low' et 'high', un élément 'translation' peut permettre de pointer sur l'élément de la partie narrative relative à cette information."
-* consumable 1..1
+* consumable MS
 * consumable ^short = "Médicament"
 * consumable ^definition = "Médicament"
-  * manufacturedProduct 1..1
+  * manufacturedProduct MS
   * manufacturedProduct ^short = "Produit de santé"
   * manufacturedProduct ^definition = "Produit de santé" 
     * manufacturedMaterial 1..1

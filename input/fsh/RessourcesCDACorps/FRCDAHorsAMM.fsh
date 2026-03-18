@@ -30,7 +30,6 @@ and frHorsAMM 1..1
 * templateId[frHorsAMM] ^short = "Conformité FR-Hors-AMM (CI-SIS)"
 * templateId[frHorsAMM] ^definition = "Conformité FR-Hors-AMM (CI-SIS)"
 * code MS
-* code 1..1
 * code ^short = "Type de l'entrée"
 * code ^definition = "Type de l'entrée"
 * code.code = #GEN-179
@@ -45,7 +44,6 @@ and frHorsAMM 1..1
 * statusCode ^definition = "Statut de l'entrée"
 * statusCode.code = #completed
 * effectiveTime MS
-* effectiveTime 0..1
 * effectiveTime ^short = "Horodatage de l'entrée"
 * effectiveTime ^definition = "Horodatage de l'entrée"
 * value MS

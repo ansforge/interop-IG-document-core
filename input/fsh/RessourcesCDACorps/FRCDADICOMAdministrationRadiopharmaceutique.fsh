@@ -26,10 +26,10 @@ Description: "Entrée FR-DICOM-Administration-radiopharmaceutique: Cette entrée
 * code ^short = "Type de traitement"
 * code ^definition = "Type de traitement"
 * code.code = #440252007
+* code.displayName = "administration de produits radiopharmaceutiques"
 * code.codeSystem = "2.16.840.1.113883.6.96"
 * code.codeSystemName = "SNOMED CT"
 * routeCode MS
-* routeCode 0..1
 * routeCode ^short = "Voie d'administration"
 * routeCode ^definition = "Voie d'administration. Terminologie utilisée :  EDQM - Standard terms / classe ROA (Voie d'administration)"
 * doseQuantity MS 
@@ -47,10 +47,9 @@ Les sous-éléments 'low' et 'high' permettent de fournir le rythme minimal et m
 L'argument @value permet d'indiquer la quantité de produit à administrer.
 L'argument @unit permet d'indiquer le rythme d'administration en combinant l'unité de quantité et l'unité de temps (séparés par le caractère ‘/'). Les unités sont exprimées selon le système de codage UCUM.
 Dans chaque élément 'low' et 'high', un élément 'translation' peut permettre de pointer sur l'élément de la partie narrative relative à cette information."
-* consumable 1..1
 * consumable ^short = "Produit radiopharmaceutique"
 * consumable ^definition = "Produit radiopharmaceutique"
-  * manufacturedProduct 1..1
+  * manufacturedProduct MS
     * manufacturedMaterial 1..1
       * code MS
       * code ^short = "Code du produit radiopharmaceutique"

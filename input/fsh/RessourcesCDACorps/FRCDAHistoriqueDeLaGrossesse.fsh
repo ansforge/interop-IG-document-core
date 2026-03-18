@@ -29,6 +29,7 @@ and frHistoriqueDeLaGrossesse 1..1
 * code ^definition = "Code de l'entrée"
 * code ^short = ""
 * code.code = #118185001
+* code.displayName = "constatation à propos de la grossesse"
 * code.codeSystem = "2.16.840.1.113883.6.96"
 * code.codeSystemName = "SNOMED_CT"
 * statusCode MS

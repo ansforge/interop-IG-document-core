@@ -31,7 +31,6 @@ and frObservationSurLaGrossesse 1..1
 * templateId[frObservationSurLaGrossesse] ^short = "Conformité Simple Observation (CI-SIS)"
 * templateId[frObservationSurLaGrossesse] ^definition = "Conformité FR-Observation-Sur-La-Grossesse (CI-SIS)"
 * code MS
-* code 1..1
 * code ^short = "Type d'observationCe code peut provenir du JDV_ObservationGrossesse_CISIS (1.2.250.1.213.1.1.5.500).D’autres codes ou JDV peuvent être utilisés."
 * code ^definition = "Type d'observation"
 * text MS

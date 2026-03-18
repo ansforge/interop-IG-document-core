@@ -17,10 +17,10 @@ Description: "Entrée FR-Gravite-effet-indesirable: Cette entrée permet de pré
 * templateId[frGraviteEffetIndesirable] ^short = "Conformité FR-Gravite-effet-indesirable (CI-SIS)"
 * templateId[frGraviteEffetIndesirable] ^definition = "Conformité FR-Gravite-effet-indesirable (CI-SIS)"
 * code MS
-* code 1..1
 * code ^short = "Code de l'entrée"
 * code ^definition = "Code de l'entrée"
 * code.code = #94030-4
+* code.displayName = "Gravité de l'effet indésirable"
 * code.codeSystem = "2.16.840.1.113883.6.1"
 * code.codeSystemName = "LOINC"
 * text MS

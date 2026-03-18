@@ -36,7 +36,6 @@ and FRCDAHabitusModeDeVie 1..1
 * templateId[FRCDAHabitusModeDeVie] ^short = "Conformité FR-Habitus-Mode-de-vie (CI-SIS)"
 * templateId[FRCDAHabitusModeDeVie] ^definition = "Conformité FR-Habitus-Mode-de-vie (CI-SIS)"
 * code MS
-* code 1..1
 * code ^short = "Élément observé"
 * code ^definition = "Élément observé"
 * code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-social-history-code-cisis

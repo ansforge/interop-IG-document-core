@@ -28,6 +28,7 @@ and frNaissance 1..1
 * code ^short = "Code de l'entrée"
 * code ^definition = "Code de l'entrée"
 * code.code = #118215003
+* code.displayName = "observation sur l'accouchement"
 * code.codeSystem = "2.16.840.1.113883.6.96"
 * code.codeSystemName = "SNOMED_CT"
 * statusCode MS

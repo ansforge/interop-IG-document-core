@@ -31,10 +31,10 @@ and frIdentificationMicroOrganismesMultiresistants 1..1
 * templateId[frIdentificationMicroOrganismesMultiresistants] ^short = "Conformité FR-Identification-micro-organismes-multiresistants (CI-SIS)"
 * templateId[frIdentificationMicroOrganismesMultiresistants] ^definition = "Conformité FR-Identification-micro-organismes-multiresistants (CI-SIS)"
 * code MS
-* code 1..1
 * code ^short = "Code de l'observation"
 * code ^definition = "Code de l'observation"
 * code.code = #MED-144
+* code.displayName = "Identification de micro-organismes multirésistants"
 * code.codeSystem = "1.2.250.1.213.1.1.4.322"
 * code.codeSystemName = "TerminologieCISIS"
 * text MS
