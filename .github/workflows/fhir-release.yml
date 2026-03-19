@@ -13,7 +13,8 @@ jobs:
           path: igSource
       - uses: ansforge/IG-workflows@nr-test-ig-registry-push
         with:      
-          repo_ig: "./igSource"   
+          repo_ig: "./igSource"
+          ig-publisher-version : "2.1.2"
           github_page: "true"
           github_page_token: ${{ secrets.GITHUB_TOKEN }}
           bake: "false"
