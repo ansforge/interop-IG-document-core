@@ -1,4 +1,4 @@
-# ImagingStudy - FR Imaging study Document - ANS IG document core v0.1.0
+# ImagingStudy - FR Imaging study Document - ANS IG document core v0.1.0-snapsnot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-imaging-study-document | *Version*:0.1.0 |
-| Draft as of 2026-03-13 | *Computable Name*:FRImagingStudyDocument |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-imaging-study-document | *Version*:0.1.0-snapsnot |
+| Draft as of 2026-03-20 | *Computable Name*:FRImagingStudyDocument |
 
  
 FRImagingStudyDocument (DICOM Part 20 - Study Act) contient les informations DICOM d’un examen d’imagerie réalisé sur un patient. L’examen est composé d’une ou de plusieurs séries d’images médicales. 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-imaging-study-doc
   "resourceType" : "StructureDefinition",
   "id" : "fr-imaging-study-document",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-imaging-study-document",
-  "version" : "0.1.0",
+  "version" : "0.1.0-snapsnot",
   "name" : "FRImagingStudyDocument",
   "title" : "ImagingStudy - FR Imaging study Document",
   "status" : "draft",
-  "date" : "2026-03-13T22:26:12+00:00",
+  "date" : "2026-03-20T08:18:16+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

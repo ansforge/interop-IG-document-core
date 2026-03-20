@@ -1,4 +1,4 @@
-# CDA - clinicalDocument - ANS IG document core v0.1.0
+# CDA - clinicalDocument - ANS IG document core v0.1.0-snapsnot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-clinical-document | *Version*:0.1.0 |
-| Draft as of 2026-03-13 | *Computable Name*:FRCDAClinicalDocument |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-clinical-document | *Version*:0.1.0-snapsnot |
+| Draft as of 2026-03-20 | *Computable Name*:FRCDAClinicalDocument |
 
  
 L’élément de l’en-tête CDA ‘ClinicalDocument’ est l’élément racine d’un document médical. 
@@ -62,11 +62,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-clinical-docu
     "valueUri" : "http://hl7.org/cda/stds/core/StructureDefinition/ClinicalDocument"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-clinical-document",
-  "version" : "0.1.0",
+  "version" : "0.1.0-snapsnot",
   "name" : "FRCDAClinicalDocument",
   "title" : "CDA - clinicalDocument",
   "status" : "draft",
-  "date" : "2026-03-13T22:26:12+00:00",
+  "date" : "2026-03-20T08:18:16+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

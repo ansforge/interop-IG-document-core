@@ -1,4 +1,4 @@
-# Accueil - ANS IG document core v0.1.0
+# Accueil - ANS IG document core v0.1.0-snapsnot
 
 * [**Table of Contents**](toc.md)
 * **Accueil**
@@ -7,8 +7,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ImplementationGuide/ans.document.fr.core | *Version*:0.1.0 |
-| Draft as of 2026-03-13 | *Computable Name*:FRDocumentCore |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ImplementationGuide/ans.document.fr.core | *Version*:0.1.0-snapsnot |
+| Draft as of 2026-03-20 | *Computable Name*:FRDocumentCore |
 
  **Guide de mise en œuvre des documents dématérialisés produits en France dans le domaine sanitaire et le domaine médico-social.**
  Implementation guides of dematerialized health and medico-social documents produced in France. 
@@ -140,11 +140,11 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
   "resourceType" : "ImplementationGuide",
   "id" : "ans.document.fr.core",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/ImplementationGuide/ans.document.fr.core",
-  "version" : "0.1.0",
+  "version" : "0.1.0-snapsnot",
   "name" : "FRDocumentCore",
   "title" : "ANS IG document core",
   "status" : "draft",
-  "date" : "2026-03-13T22:26:12+00:00",
+  "date" : "2026-03-20T08:18:16+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

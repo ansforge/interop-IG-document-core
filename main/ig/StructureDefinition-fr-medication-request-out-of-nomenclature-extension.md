@@ -1,4 +1,4 @@
-# FR Medication Request Out Of Nomenclature Extension - ANS IG document core v0.1.0
+# FR Medication Request Out Of Nomenclature Extension - ANS IG document core v0.1.0-snapsnot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-request-out-of-nomenclature-extension | *Version*:0.1.0 |
-| Draft as of 2026-03-13 | *Computable Name*:FRMedicationRequestOutOfNomenclatureExtension |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-request-out-of-nomenclature-extension | *Version*:0.1.0-snapsnot |
+| Draft as of 2026-03-20 | *Computable Name*:FRMedicationRequestOutOfNomenclatureExtension |
 
 Extension permettant d’indiquer si le traitement prescrit est hors autorisation de mise sur le marché (AMM)
 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-medication-reques
   "resourceType" : "StructureDefinition",
   "id" : "fr-medication-request-out-of-nomenclature-extension",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-request-out-of-nomenclature-extension",
-  "version" : "0.1.0",
+  "version" : "0.1.0-snapsnot",
   "name" : "FRMedicationRequestOutOfNomenclatureExtension",
   "title" : "FR Medication Request Out Of Nomenclature Extension",
   "status" : "draft",
-  "date" : "2026-03-13T22:26:12+00:00",
+  "date" : "2026-03-20T08:18:16+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

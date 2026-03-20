@@ -1,4 +1,4 @@
-# FR Accession Number Identifier Document - ANS IG document core v0.1.0
+# FR Accession Number Identifier Document - ANS IG document core v0.1.0-snapsnot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-accession-number-identifier-document | *Version*:0.1.0 |
-| Draft as of 2026-03-13 | *Computable Name*:FRAccessionNumberIdentifierDocument |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-accession-number-identifier-document | *Version*:0.1.0-snapsnot |
+| Draft as of 2026-03-20 | *Computable Name*:FRAccessionNumberIdentifierDocument |
 
  
 DataType définissant l’Accession Number d’une demande d’examen. Il s’agit d’un identifiant unique attribué à chaque demande d’examen. 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-accession-number-
   "resourceType" : "StructureDefinition",
   "id" : "fr-accession-number-identifier-document",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-accession-number-identifier-document",
-  "version" : "0.1.0",
+  "version" : "0.1.0-snapsnot",
   "name" : "FRAccessionNumberIdentifierDocument",
   "title" : "FR Accession Number Identifier Document",
   "status" : "draft",
-  "date" : "2026-03-13T22:26:12+00:00",
+  "date" : "2026-03-20T08:18:16+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

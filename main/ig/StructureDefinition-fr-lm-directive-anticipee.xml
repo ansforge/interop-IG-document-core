@@ -21,11 +21,11 @@
     <valueCode value="can-be-target"/>
   </extension>
   <url value="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-directive-anticipee"/>
-  <version value="0.1.0"/>
+  <version value="0.1.0-snapsnot"/>
   <name value="FRLMDirectiveAnticipee"/>
   <title value="Modèle logique métier - FR LM Directive anticipée"/>
   <status value="draft"/>
-  <date value="2026-03-13T22:26:12+00:00"/>
+  <date value="2026-03-20T08:18:16+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>

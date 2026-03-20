@@ -1,4 +1,4 @@
-# Mapping Métier/CDA/FHIR : "Système / Structure Auteur" - ANS IG document core v0.1.0
+# Mapping Métier/CDA/FHIR : "Système / Structure Auteur" - ANS IG document core v0.1.0-snapsnot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/mappingSystemeFHIR | *Version*:0.1.0 |
-| Draft as of 2026-03-13 | *Computable Name*:Mapping Métier/CDA/FHIR : "Système / Structure Auteur" |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/mappingSystemeFHIR | *Version*:0.1.0-snapsnot |
+| Draft as of 2026-03-20 | *Computable Name*:Mapping Métier/CDA/FHIR : "Système / Structure Auteur" |
 
  
 Ce ConceptMap de l’élément SystemeStructureAuteur présente deux groupes de mapping : 
@@ -26,12 +26,12 @@ Ce ConceptMap de l’élément SystemeStructureAuteur présente deux groupes de 
   "resourceType" : "ConceptMap",
   "id" : "mappingSystemeFHIR",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/mappingSystemeFHIR",
-  "version" : "0.1.0",
+  "version" : "0.1.0-snapsnot",
   "name" : "Mapping Métier/CDA/FHIR : \"Système / Structure Auteur\"",
   "title" : "Mapping Métier/CDA/FHIR : \"Système / Structure Auteur\"",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-03-13T22:26:12+00:00",
+  "date" : "2026-03-20T08:18:16+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

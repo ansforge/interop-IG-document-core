@@ -1,4 +1,4 @@
-# Mapping FRLMTraitementPrescrit → FRCDATraitementPrescrit → FRMedicationRequestDocument - ANS IG document core v0.1.0
+# Mapping FRLMTraitementPrescrit → FRCDATraitementPrescrit → FRMedicationRequestDocument - ANS IG document core v0.1.0-snapsnot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRMedicationRequestLMCDAFHIR | *Version*:0.1.0 |
-| Draft as of 2026-03-13 | *Computable Name*: |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRMedicationRequestLMCDAFHIR | *Version*:0.1.0-snapsnot |
+| Draft as of 2026-03-20 | *Computable Name*: |
 
  
 Mapping des éléments du modèle métier FRLMTraitementPrescrit vers l’entrée CDA FRCDATraitementPrescrit, puis vers le profil FHIR FRMedicationRequestDocument. 
@@ -23,10 +23,10 @@ Mapping des éléments du modèle métier FRLMTraitementPrescrit vers l’entré
   "resourceType" : "ConceptMap",
   "id" : "FRMedicationRequestLMCDAFHIR",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRMedicationRequestLMCDAFHIR",
-  "version" : "0.1.0",
+  "version" : "0.1.0-snapsnot",
   "title" : "Mapping Métier/CDA/FHIR : Traitement prescrit",
   "status" : "draft",
-  "date" : "2026-03-13T22:26:12+00:00",
+  "date" : "2026-03-20T08:18:16+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

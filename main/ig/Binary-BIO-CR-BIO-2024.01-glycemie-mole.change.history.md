@@ -1,4 +1,4 @@
-#  - ANS IG document core v0.1.0
+#  - ANS IG document core v0.1.0-snapsnot
 
 ## : Binary/BIO-CR-BIO-2024.01-glycemie-mole - Change History
 

@@ -1,4 +1,4 @@
-# Condition - FR Condition Document - ANS IG document core v0.1.0
+# Condition - FR Condition Document - ANS IG document core v0.1.0-snapsnot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-condition-document | *Version*:0.1.0 |
-| Draft as of 2026-03-13 | *Computable Name*:FRConditionDocument |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-condition-document | *Version*:0.1.0-snapsnot |
+| Draft as of 2026-03-20 | *Computable Name*:FRConditionDocument |
 
  
 FRConditionDocument est un profil utilisé pour décrire un problème du patient (une pathologie par exemple). 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-condition-documen
   "resourceType" : "StructureDefinition",
   "id" : "fr-condition-document",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-condition-document",
-  "version" : "0.1.0",
+  "version" : "0.1.0-snapsnot",
   "name" : "FRConditionDocument",
   "title" : "Condition - FR Condition Document",
   "status" : "draft",
-  "date" : "2026-03-13T22:26:12+00:00",
+  "date" : "2026-03-20T08:18:16+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

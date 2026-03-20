@@ -1,4 +1,4 @@
-# FR Organization Document - ANS IG document core v0.1.0
+# FR Organization Document - ANS IG document core v0.1.0-snapsnot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-organization-document | *Version*:0.1.0 |
-| Draft as of 2026-03-13 | *Computable Name*:FROrganizationDocument |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-organization-document | *Version*:0.1.0-snapsnot |
+| Draft as of 2026-03-20 | *Computable Name*:FROrganizationDocument |
 
  
 Ce profil représente la structure pour le compte de laquelle intervient le professionnel. 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-organization-docu
   "resourceType" : "StructureDefinition",
   "id" : "fr-organization-document",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-organization-document",
-  "version" : "0.1.0",
+  "version" : "0.1.0-snapsnot",
   "name" : "FROrganizationDocument",
   "title" : "FR Organization Document",
   "status" : "draft",
-  "date" : "2026-03-13T22:26:12+00:00",
+  "date" : "2026-03-20T08:18:16+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -1,4 +1,4 @@
-# Modèle logique métier - FR LM Traitement Prescrit - ANS IG document core v0.1.0
+# Modèle logique métier - FR LM Traitement Prescrit - ANS IG document core v0.1.0-snapsnot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-traitement-prescrit | *Version*:0.1.0 |
-| Draft as of 2026-03-13 | *Computable Name*:FRLMTraitementPrescrit |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-traitement-prescrit | *Version*:0.1.0-snapsnot |
+| Draft as of 2026-03-20 | *Computable Name*:FRLMTraitementPrescrit |
 
  
 Traitement prescrit 
@@ -41,11 +41,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-traitement-pre
     "valueCode" : "can-be-target"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-traitement-prescrit",
-  "version" : "0.1.0",
+  "version" : "0.1.0-snapsnot",
   "name" : "FRLMTraitementPrescrit",
   "title" : "Modèle logique métier - FR LM Traitement Prescrit",
   "status" : "draft",
-  "date" : "2026-03-13T22:26:12+00:00",
+  "date" : "2026-03-20T08:18:16+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -78,8 +78,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-traitement-pre
     {
       "id" : "fr-lm-traitement-prescrit.identifiant",
       "path" : "fr-lm-traitement-prescrit.identifiant",
-      "short" : "Identifiant de l'entrée",
-      "definition" : "Identifiant de l'entrée",
+      "short" : "Identifiant",
+      "definition" : "Identifiant",
       "min" : 1,
       "max" : "*",
       "type" : [{
@@ -87,32 +87,10 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-traitement-pre
       }]
     },
     {
-      "id" : "fr-lm-traitement-prescrit.code",
-      "path" : "fr-lm-traitement-prescrit.code",
-      "short" : "Acte ou situation",
-      "definition" : "Acte ou situation",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "CodeableConcept"
-      }]
-    },
-    {
-      "id" : "fr-lm-traitement-prescrit.description",
-      "path" : "fr-lm-traitement-prescrit.description",
-      "short" : "Partie narrative de l’entrée",
-      "definition" : "Partie narrative de l’entrée",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "Narrative"
-      }]
-    },
-    {
       "id" : "fr-lm-traitement-prescrit.status",
       "path" : "fr-lm-traitement-prescrit.status",
-      "short" : "Statut de l’entrée",
-      "definition" : "Statut de l’entrée",
+      "short" : "Statut",
+      "definition" : "Statut",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -255,28 +233,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-traitement-pre
       "max" : "*",
       "type" : [{
         "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-reference-interne"
-      }]
-    },
-    {
-      "id" : "fr-lm-traitement-prescrit.traitementPrescritSubordonnee",
-      "path" : "fr-lm-traitement-prescrit.traitementPrescritSubordonnee",
-      "short" : "Traitement prescrit subordonnée",
-      "definition" : "Traitement prescrit subordonnée",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-traitement-prescrit-subordonne"
-      }]
-    },
-    {
-      "id" : "fr-lm-traitement-prescrit.referenceItemPlanTraitement",
-      "path" : "fr-lm-traitement-prescrit.referenceItemPlanTraitement",
-      "short" : "Référence à un item du plan de traitement",
-      "definition" : "Référence à un item du plan de traitement",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-reference-item-plan-traitement"
       }]
     },
     {

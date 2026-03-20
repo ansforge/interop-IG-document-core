@@ -14,11 +14,11 @@
     "valueCode" : "can-be-target"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-vaccinations",
-  "version" : "0.1.0",
+  "version" : "0.1.0-snapsnot",
   "name" : "FRLMVaccinations",
   "title" : "Modèle logique métier - FR LM Vaccinations",
   "status" : "draft",
-  "date" : "2026-03-13T22:26:12+00:00",
+  "date" : "2026-03-20T08:18:16+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -44,7 +44,7 @@
   "snapshot" : {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
-      "valueString" : "0.1.0"
+      "valueString" : "0.1.0-snapsnot"
     }],
     "element" : [{
       "id" : "fr-lm-vaccinations",

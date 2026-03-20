@@ -16,11 +16,11 @@
     <valueCode value="can-be-target"/>
   </extension>
   <url value="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-resultats-examen-imagerie"/>
-  <version value="0.1.0"/>
+  <version value="0.1.0-snapsnot"/>
   <name value="FRLMResultatsExamenImagerie"/>
   <title value="Modèle logique métier - FR LM Résultats d'examen d'imagerie"/>
   <status value="draft"/>
-  <date value="2026-03-13T22:26:12+00:00"/>
+  <date value="2026-03-20T08:18:16+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -45,7 +45,7 @@
   <derivation value="specialization"/>
   <snapshot>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
-      <valueString value="0.1.0"/>
+      <valueString value="0.1.0-snapsnot"/>
     </extension>
     <element id="fr-lm-resultats-examen-imagerie">
       <path value="fr-lm-resultats-examen-imagerie"/>

@@ -1,4 +1,4 @@
-# Observation - FR Observation Radiation Exposure Document - ANS IG document core v0.1.0
+# Observation - FR Observation Radiation Exposure Document - ANS IG document core v0.1.0-snapsnot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-radiation-exposure-document | *Version*:0.1.0 |
-| Draft as of 2026-03-13 | *Computable Name*:FRObservationRadiationExposureDocument |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-radiation-exposure-document | *Version*:0.1.0-snapsnot |
+| Draft as of 2026-03-20 | *Computable Name*:FRObservationRadiationExposureDocument |
 
  
 FRObservationRadiationExposureDocument permet d’enregistrer les informations relatives à l’exposition du patient aux rayonnements et les informations de radioprotection. 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-observation-radia
   "resourceType" : "StructureDefinition",
   "id" : "fr-observation-radiation-exposure-document",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-radiation-exposure-document",
-  "version" : "0.1.0",
+  "version" : "0.1.0-snapsnot",
   "name" : "FRObservationRadiationExposureDocument",
   "title" : "Observation - FR Observation Radiation Exposure Document",
   "status" : "draft",
-  "date" : "2026-03-13T22:26:12+00:00",
+  "date" : "2026-03-20T08:18:16+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

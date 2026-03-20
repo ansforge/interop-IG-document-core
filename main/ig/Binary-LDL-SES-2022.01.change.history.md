@@ -1,4 +1,4 @@
-#  - ANS IG document core v0.1.0
+#  - ANS IG document core v0.1.0-snapsnot
 
 ## : Binary/LDL-SES-2022.01 - Change History
 

@@ -1,4 +1,4 @@
-# Mapping FRLMFonctionsPhysiques → FRCDAFonctionsPhysiques → FRCompositionDocument.section:PhysicalFunctions - ANS IG document core v0.1.0
+# Mapping FRLMFonctionsPhysiques → FRCDAFonctionsPhysiques → FRCompositionDocument.section:PhysicalFunctions - ANS IG document core v0.1.0-snapsnot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRSectionPhysicalFunctionsLMCDAFHIR | *Version*:0.1.0 |
-| Draft as of 2026-03-13 | *Computable Name*: |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRSectionPhysicalFunctionsLMCDAFHIR | *Version*:0.1.0-snapsnot |
+| Draft as of 2026-03-20 | *Computable Name*: |
 
  
 Mapping des éléments du modèle métier FRLMFonctionsPhysiques vers la section CDA FRCDAFonctionsPhysiques, puis vers le profil FHIR FRCompositionDocument.section:PhysicalFunctions. 
@@ -23,10 +23,10 @@ Mapping des éléments du modèle métier FRLMFonctionsPhysiques vers la section
   "resourceType" : "ConceptMap",
   "id" : "FRSectionPhysicalFunctionsLMCDAFHIR",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRSectionPhysicalFunctionsLMCDAFHIR",
-  "version" : "0.1.0",
+  "version" : "0.1.0-snapsnot",
   "title" : "Mapping Métier/CDA/FHIR : \"Fonctions physiques\"",
   "status" : "draft",
-  "date" : "2026-03-13T22:26:12+00:00",
+  "date" : "2026-03-20T08:18:16+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

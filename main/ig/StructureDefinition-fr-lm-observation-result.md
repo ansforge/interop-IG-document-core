@@ -1,4 +1,4 @@
-# Modèle logique métier - FR LM Observation Result - ANS IG document core v0.1.0
+# Modèle logique métier - FR LM Observation Result - ANS IG document core v0.1.0-snapsnot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation-result | *Version*:0.1.0 |
-| Draft as of 2026-03-13 | *Computable Name*:FRLMObservationResult |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation-result | *Version*:0.1.0-snapsnot |
+| Draft as of 2026-03-20 | *Computable Name*:FRLMObservationResult |
 
  
 Résultat d’une observation médicale (résultat d’examen de laboratoire, d’imagerie, etc.) 
@@ -41,11 +41,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-observation-re
     "valueCode" : "can-be-target"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation-result",
-  "version" : "0.1.0",
+  "version" : "0.1.0-snapsnot",
   "name" : "FRLMObservationResult",
   "title" : "Modèle logique métier - FR LM Observation Result",
   "status" : "draft",
-  "date" : "2026-03-13T22:26:12+00:00",
+  "date" : "2026-03-20T08:18:16+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

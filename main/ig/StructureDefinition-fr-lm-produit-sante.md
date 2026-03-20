@@ -1,4 +1,4 @@
-# Modèle logique métier - FR LM Produit de santé - ANS IG document core v0.1.0
+# Modèle logique métier - FR LM Produit de santé - ANS IG document core v0.1.0-snapsnot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-produit-sante | *Version*:0.1.0 |
-| Draft as of 2026-03-13 | *Computable Name*:FRLMProduitSante |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-produit-sante | *Version*:0.1.0-snapsnot |
+| Draft as of 2026-03-20 | *Computable Name*:FRLMProduitSante |
 
  
 Produit de santé 
@@ -41,11 +41,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-produit-sante.
     "valueCode" : "can-be-target"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-produit-sante",
-  "version" : "0.1.0",
+  "version" : "0.1.0-snapsnot",
   "name" : "FRLMProduitSante",
   "title" : "Modèle logique métier - FR LM Produit de santé",
   "status" : "draft",
-  "date" : "2026-03-13T22:26:12+00:00",
+  "date" : "2026-03-20T08:18:16+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -93,17 +93,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-produit-sante.
       "definition" : "Code du produit de santé",
       "min" : 1,
       "max" : "1",
-      "type" : [{
-        "code" : "CodeableConcept"
-      }]
-    },
-    {
-      "id" : "fr-lm-produit-sante.medicament.codeProduit.autreCodification",
-      "path" : "fr-lm-produit-sante.medicament.codeProduit.autreCodification",
-      "short" : "Produit de santé / Autre codification",
-      "definition" : "Produit de santé / Autre codification",
-      "min" : 0,
-      "max" : "*",
       "type" : [{
         "code" : "CodeableConcept"
       }]

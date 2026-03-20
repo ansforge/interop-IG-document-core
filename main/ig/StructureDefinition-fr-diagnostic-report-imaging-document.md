@@ -1,4 +1,4 @@
-# DiagnosticReport - FR Diagnostic Report Imaging Document - ANS IG document core v0.1.0
+# DiagnosticReport - FR Diagnostic Report Imaging Document - ANS IG document core v0.1.0-snapsnot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-diagnostic-report-imaging-document | *Version*:0.1.0 |
-| Draft as of 2026-03-13 | *Computable Name*:FRDiagnosticReportImagingDocument |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-diagnostic-report-imaging-document | *Version*:0.1.0-snapsnot |
+| Draft as of 2026-03-20 | *Computable Name*:FRDiagnosticReportImagingDocument |
 
  
 Le profil FRDiagnosticReportImagingDocument est dédié aux comptes rendus d’imagerie. Ce document représente le rapport d’un examen d’imagerie. Il constitue la ressource principale qui fait référence à l’ensemble des données produites lors de l’examen d’imagerie. 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-diagnostic-report
   "resourceType" : "StructureDefinition",
   "id" : "fr-diagnostic-report-imaging-document",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-diagnostic-report-imaging-document",
-  "version" : "0.1.0",
+  "version" : "0.1.0-snapsnot",
   "name" : "FRDiagnosticReportImagingDocument",
   "title" : "DiagnosticReport - FR Diagnostic Report Imaging Document",
   "status" : "draft",
-  "date" : "2026-03-13T22:26:12+00:00",
+  "date" : "2026-03-20T08:18:16+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

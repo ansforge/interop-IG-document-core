@@ -1,4 +1,4 @@
-# ValueSet – FR ValueSet Codes d’actes - ANS IG document core v0.1.0
+# ValueSet – FR ValueSet Codes d’actes - ANS IG document core v0.1.0-snapsnot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-procedure-code | *Version*:0.1.0 |
-| Draft as of 2026-03-13 | *Computable Name*:FRValueSetProcedureCodeDocument |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-procedure-code | *Version*:0.1.0-snapsnot |
+| Draft as of 2026-03-20 | *Computable Name*:FRValueSetProcedureCodeDocument |
 
  
 Codes autorisés pour indiquer un acte. Inclut : 
@@ -28,8 +28,6 @@ Si aucun code approprié n’est disponible, l’acte peut être décrit en text
  
 
 ### Expansion
-
-No Expansion for this valueset (Unknown Code System)
 
 -------
 
@@ -53,11 +51,11 @@ No Expansion for this valueset (Unknown Code System)
   "resourceType" : "ValueSet",
   "id" : "fr-vs-procedure-code",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-procedure-code",
-  "version" : "0.1.0",
+  "version" : "0.1.0-snapsnot",
   "name" : "FRValueSetProcedureCodeDocument",
   "title" : "ValueSet – FR ValueSet Codes d’actes",
   "status" : "draft",
-  "date" : "2026-03-13T22:26:12+00:00",
+  "date" : "2026-03-20T08:18:16+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

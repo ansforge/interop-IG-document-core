@@ -1,4 +1,4 @@
-# Modèle logique métier - FR LM Hors Autorisation de Mise sur le Marché (AMM) - ANS IG document core v0.1.0
+# Modèle logique métier - FR LM Hors Autorisation de Mise sur le Marché (AMM) - ANS IG document core v0.1.0-snapsnot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-hors-amm | *Version*:0.1.0 |
-| Draft as of 2026-03-13 | *Computable Name*:FRLMHorsAMM |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-hors-amm | *Version*:0.1.0-snapsnot |
+| Draft as of 2026-03-20 | *Computable Name*:FRLMHorsAMM |
 
  
 Hors Autorisation de Mise sur le Marché (AMM) 
@@ -41,11 +41,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-hors-amm.csv),
     "valueCode" : "can-be-target"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-hors-amm",
-  "version" : "0.1.0",
+  "version" : "0.1.0-snapsnot",
   "name" : "FRLMHorsAMM",
   "title" : "Modèle logique métier - FR LM Hors Autorisation de Mise sur le Marché (AMM)",
   "status" : "draft",
-  "date" : "2026-03-13T22:26:12+00:00",
+  "date" : "2026-03-20T08:18:16+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
