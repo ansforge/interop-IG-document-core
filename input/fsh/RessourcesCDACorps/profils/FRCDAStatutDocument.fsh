@@ -17,16 +17,15 @@ Description: "Entrée FR-Statut-document: Cette entrée permet d'indiquer le sta
 * templateId contains iheSimpleObservation 1..1
 and frSimpleObservation 1..1
 and frStatutDocument 1..1
-* templateId[iheSimpleObservation] 1..1
+* templateId[iheSimpleObservation].root 1..1
 * templateId[iheSimpleObservation].root = "1.3.6.1.4.1.19376.1.5.3.1.4.13"
 * templateId[iheSimpleObservation] ^short = "Conformité FR-Severite (CI-SIS)"
-* templateId[iheSimpleObservation] ^definition = "
-         Conformité FR-Severite (CI-SIS)"
-* templateId[frSimpleObservation] 1..1
+* templateId[iheSimpleObservation] ^definition = "Conformité FR-Severite (CI-SIS)"
+* templateId[frSimpleObservation].root 1..1
 * templateId[frSimpleObservation].root = "1.2.250.1.213.1.1.3.48"
 * templateId[frSimpleObservation] ^short = "Conformité FR-Simple-observation (CI-SIS)"
 * templateId[frSimpleObservation] ^definition = "Conformité FR-Simple-observation (CI-SIS)"
-* templateId[frStatutDocument] 1..1
+* templateId[frStatutDocument].root 1..1
 * templateId[frStatutDocument].root = "1.2.250.1.213.1.1.3.48.16"
 * templateId[frStatutDocument] ^short = "Conformité FR-Statut-document (CI-SIS)"
 * templateId[frStatutDocument] ^definition = "Conformité FR-Statut-document (CI-SIS)"

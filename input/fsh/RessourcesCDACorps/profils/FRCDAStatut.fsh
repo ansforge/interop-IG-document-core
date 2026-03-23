@@ -17,15 +17,15 @@ Description: "Entrée FR-Statut: Cette entrée de type observation permet de dé
 * templateId contains iheSimpleObservation 1..1
 and frSimpleObservation 1..1
 and frStatut 1..1
-* templateId[iheSimpleObservation] 1..1
+* templateId[iheSimpleObservation].root 1..1
 * templateId[iheSimpleObservation].root = "1.3.6.1.4.1.19376.1.5.3.1.4.13"
 * templateId[iheSimpleObservation] ^short = " Conformité Simple observation (IHE PCC)"
 * templateId[iheSimpleObservation] ^definition = "Conformité Simple observation (IHE PCC)"
-* templateId[frSimpleObservation] 1..1
+* templateId[frSimpleObservation].root 1..1
 * templateId[frSimpleObservation].root = "1.2.250.1.213.1.1.3.48"
 * templateId[frSimpleObservation] ^short = "Conformité FR-Simple-observation (CI-SIS)"
 * templateId[frSimpleObservation] ^definition = "Conformité FR-Simple-observation (CI-SIS)"
-* templateId[frStatut] 1..1
+* templateId[frStatut].root 1..1
 * templateId[frStatut].root = "1.2.250.1.213.1.1.3.217"
 * templateId[frStatut] ^short = "Conformité FR-Statut (CI-SIS)"
 * templateId[frStatut] ^definition = "Conformité FR-Statut (CI-SIS)"

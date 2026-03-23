@@ -16,7 +16,7 @@ Description: "Entrée FR-Transport-du-professionnel: Cette entrée de type act p
 * templateId ^slicing.discriminator.path = "root"
 * templateId ^slicing.rules = #open
 * templateId contains frTransportDuProfessionnel 1..1
-* templateId[frTransportDuProfessionnel] 1..1
+* templateId[frTransportDuProfessionnel].root 1..1
 * templateId[frTransportDuProfessionnel].root = "1.2.250.1.213.1.1.3.216"
 * templateId[frTransportDuProfessionnel] ^short = "Conformité FR-Transport-du-professionnel (CI-SIS)"
 * templateId[frTransportDuProfessionnel] ^definition = "Conformité FR-Transport-du-professionnel (CI-SIS)"
@@ -63,14 +63,8 @@ Si @typeCode de l'élément parent participant à « ORG » | « DST » alors @c
 Si @typeCode de l'élément parent participant à « RCV » alors @classCode= « ROL »"
 * participant ^definition = "Lieu de départ / Destination / Professionnel concerné"
 * participant only FRCDAParticipantCorps
-* entryRelationship MS
-* entryRelationship ^slicing.discriminator.type = #value
-* entryRelationship ^slicing.discriminator.path = "$this"
-* entryRelationship ^slicing.rules = #open
-* entryRelationship contains 
-frSimpleObservation 0..*
-* entryRelationship[frSimpleObservation].observation only FRCDASimpleObservation
-* entryRelationship[frSimpleObservation].typeCode = #COMP
-* entryRelationship[frSimpleObservation].inversionInd = false
-* entryRelationship[frSimpleObservation] ^short = "Autres précision sur le trajet ou le transport du professionnel"
-* entryRelationship[frSimpleObservation] ^definition = "Autres précision sur le trajet ou le transport du professionnel"
+* entryRelationship.observation only FRCDASimpleObservation
+* entryRelationship.typeCode = #COMP
+* entryRelationship.inversionInd = false
+* entryRelationship ^short = "Autres précision sur le trajet ou le transport du professionnel"
+* entryRelationship ^definition = "Autres précision sur le trajet ou le transport du professionnel"

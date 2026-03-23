@@ -19,11 +19,11 @@ Plusieurs occurrences d'informant peuvent être utilisées et chaque occurrence 
 * templateId ^slicing.rules = #open
 * templateId contains iheInformantAPSR 1..1
 and frInformantAPSR 1..1
-* templateId[iheInformantAPSR] 1..1
+* templateId[iheInformantAPSR].root 1..1
 * templateId[iheInformantAPSR].root = "1.3.6.1.4.1.19376.1.8.1.4.6"
 * templateId[iheInformantAPSR] ^short = "Conformité Informant (IHE PCC)"
 * templateId[iheInformantAPSR] ^definition = "Conformité Informant (IHE PCC)"
-* templateId[frInformantAPSR] 1..1
+* templateId[frInformantAPSR].root 1..1
 * templateId[frInformantAPSR].root = "1.2.250.1.213.1.1.3.161"
 * templateId[frInformantAPSR] ^short = "Conformité FR-Informant-APSR (CI-SIS)"
 * templateId[frInformantAPSR] ^definition = "Conformité FR-Informant-APSR (CI-SIS)"

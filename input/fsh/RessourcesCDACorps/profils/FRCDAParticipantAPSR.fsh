@@ -17,11 +17,11 @@ ENT : transcripteur."
 * templateId ^slicing.rules = #open
 * templateId contains iheParticipantAPSR 1..1
 and frParticipantAPSR 1..1
-* templateId[iheParticipantAPSR] 1..1
+* templateId[iheParticipantAPSR].root 1..1
 * templateId[iheParticipantAPSR].root = "1.3.6.1.4.1.19376.1.8.1.4.7"
 * templateId[iheParticipantAPSR] ^short = "Conformité IHE APSR - AdditionalParticipantAPSR (IHE APSR)"
 * templateId[iheParticipantAPSR] ^definition = "Conformité IHE APSR - AdditionalParticipantAPSR (IHE APSR)"
-* templateId[frParticipantAPSR] 1..1
+* templateId[frParticipantAPSR].root 1..1
 * templateId[frParticipantAPSR].root = "1.2.250.1.213.1.1.3.75"
 * templateId[frParticipantAPSR] ^short = "Conformité FR Participant APSR (CI-SIS)"
 * templateId[frParticipantAPSR] ^definition = "Conformité FR Participant APSR (CI-SIS)"

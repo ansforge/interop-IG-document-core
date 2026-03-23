@@ -17,19 +17,19 @@ Description: "Entrée FR-Signes-vitaux: IHE-PCC - Vital signs organizer. L'entr�
 and ccdResultOrganizer 1..1
 and ccdVitalSignsOrganizer 1..1
 and frSignesVitaux 1..1
-* templateId[iheVitalSignsOrganizer] 1..1
+* templateId[iheVitalSignsOrganizer].root 1..1
 * templateId[iheVitalSignsOrganizer].root = "1.3.6.1.4.1.19376.1.5.3.1.4.13.1"
 * templateId[iheVitalSignsOrganizer] ^short = "Conformité Vital Signs Organizer (IHE PCC)"
 * templateId[iheVitalSignsOrganizer] ^definition = "Conformité Vital Signs Organizer (IHE PCC)"
-* templateId[ccdResultOrganizer] 1..1
+* templateId[ccdResultOrganizer].root 1..1
 * templateId[ccdResultOrganizer].root = "2.16.840.1.113883.10.20.1.32"
 * templateId[ccdResultOrganizer] ^short = "Conformité Result organizer (CCD)"
 * templateId[ccdResultOrganizer] ^definition = "Conformité Result organizer (CCD)"
-* templateId[ccdVitalSignsOrganizer] 1..1
+* templateId[ccdVitalSignsOrganizer].root 1..1
 * templateId[ccdVitalSignsOrganizer].root = "2.16.840.1.113883.10.20.1.35"
 * templateId[ccdVitalSignsOrganizer] ^short = "Conformité Vital signs organizer (CCD)"
 * templateId[ccdVitalSignsOrganizer] ^definition = "Conformité Vital signs organizer (CCD)"
-* templateId[frSignesVitaux] 1..1
+* templateId[frSignesVitaux].root 1..1
 * templateId[frSignesVitaux].root = "1.2.250.1.213.1.1.3.49"
 * templateId[frSignesVitaux] ^short = "Conformité FR-Signes-vitaux (CI-SIS)"
 * templateId[frSignesVitaux] ^definition = "Conformité FR-Signes-vitaux (CI-SIS)"
@@ -53,12 +53,7 @@ and frSignesVitaux 1..1
 * author only FRCDAAuthor
 * component MS
 * component 1..*
-* component ^slicing.discriminator.type = #type
-* component ^slicing.discriminator.path = "$this"
-* component ^slicing.rules = #open
-* component contains
-frSigneVitalObserve 1..1 
-* component[frSigneVitalObserve] ^short = "Entrée Signe vital observé"
-* component[frSigneVitalObserve].typeCode = #COMP
-* component[frSigneVitalObserve].observation 0..1 
-* component[frSigneVitalObserve].observation only FRCDASigneVitalObserve
+* component ^short = "Entrée Signe vital observé"
+* component.typeCode = #COMP
+* component.observation 0..1
+* component.observation only FRCDASigneVitalObserve

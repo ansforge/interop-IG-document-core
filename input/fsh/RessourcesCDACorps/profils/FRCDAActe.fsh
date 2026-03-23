@@ -18,15 +18,15 @@ Description: "Entrée FR-Acte: IHE-PCC - Procedure. L'entrée 'Acte' est une ent
 and ccdPlanOfCareActivityPlanned 0..1
 and ccdPlanOfCareActivityPlannedRealised 0..1
 and frActe 1..1
-* templateId[iheProcedureEntry] 1..1
+* templateId[iheProcedureEntry].root 1..1
 * templateId[iheProcedureEntry].root = "1.3.6.1.4.1.19376.1.5.3.1.4.19"
 * templateId[iheProcedureEntry] ^short = "Conformité Procedure Entry (IHE PCC)"
 * templateId[iheProcedureEntry] ^definition = "Conformité Procedure Entry (IHE PCC)"
-* templateId[ccdPlanOfCareActivityPlanned] 0..1
+* templateId[ccdPlanOfCareActivityPlanned].root 1..1
 * templateId[ccdPlanOfCareActivityPlanned].root = "2.16.840.1.113883.10.20.1.29"
 * templateId[ccdPlanOfCareActivityPlanned] ^short = "Conformité Plan of care activity (CCD) si acte prévu "
 * templateId[ccdPlanOfCareActivityPlanned] ^definition = "Conformité Plan of care activity (CCD) si acte prévu"
-* templateId[ccdPlanOfCareActivityPlannedRealised] 0..1
+* templateId[ccdPlanOfCareActivityPlannedRealised].root 1..1
 * templateId[ccdPlanOfCareActivityPlannedRealised].root = "2.16.840.1.113883.10.20.1.25"
 * templateId[ccdPlanOfCareActivityPlannedRealised] ^short = "Conformité Procedure activity (CCD) si acte réalisée "
 * templateId[ccdPlanOfCareActivityPlannedRealised] ^definition = "Conformité Procedure activity (CCD) si acte réalisée"
@@ -102,7 +102,34 @@ Sinon, utiliser la codification SNOMED CT (2.16.840.1.113883.6.96)"""
 * entryRelationship ^slicing.discriminator.path = "$this"
 * entryRelationship ^slicing.rules = #open
 * entryRelationship contains 
-frReferenceInterne 0..*
- and frSimpleObservation 0..1
-* entryRelationship[frReferenceInterne].act only FRCDAReferenceInterne
-* entryRelationship[frSimpleObservation].observation only FRCDASimpleObservation
+frReferenceInterneCirconstances 0..* and frReferenceInterneMotifActe 0..* and frReferenceInterneDM 0..*
+ and frSimpleObservationDifficulte 0..1 and frSimpleObservationScores 0..*
+* entryRelationship[frReferenceInterneCirconstances].act only FRCDAReferenceInterne
+* entryRelationship[frReferenceInterneCirconstances].typeCode = #COMP
+* entryRelationship[frReferenceInterneCirconstances].inversionInd = true
+* entryRelationship[frReferenceInterneCirconstances] ^short = "Circonstances ayant décidé de l'acte"
+* entryRelationship[frReferenceInterneCirconstances] ^definition = "Circonstances ayant décidé de l'acte"
+
+* entryRelationship[frReferenceInterneMotifActe].act only FRCDAReferenceInterne
+* entryRelationship[frReferenceInterneMotifActe].typeCode = #RSON
+* entryRelationship[frReferenceInterneMotifActe].inversionInd = false
+* entryRelationship[frReferenceInterneMotifActe] ^short = "Motif de l'acte"
+* entryRelationship[frReferenceInterneMotifActe] ^definition = "Motif de l'acte"
+
+* entryRelationship[frReferenceInterneDM].act only FRCDAReferenceInterne
+* entryRelationship[frReferenceInterneDM].typeCode = #REFR
+* entryRelationship[frReferenceInterneDM].inversionInd = false
+* entryRelationship[frReferenceInterneDM] ^short = "Référence interne à un DM"
+* entryRelationship[frReferenceInterneDM] ^definition = "Référence interne à un DM"
+
+* entryRelationship[frSimpleObservationDifficulte].observation only FRCDASimpleObservation
+* entryRelationship[frSimpleObservationDifficulte].typeCode = #COMP
+* entryRelationship[frSimpleObservationDifficulte].inversionInd = false
+* entryRelationship[frSimpleObservationDifficulte] ^short = "Difficulté de l'acte"
+* entryRelationship[frSimpleObservationDifficulte] ^definition = "Difficulté de l'acte"
+
+* entryRelationship[frSimpleObservationScores].observation only FRCDASimpleObservation
+* entryRelationship[frSimpleObservationScores].typeCode = #COMP
+* entryRelationship[frSimpleObservationScores].inversionInd = false
+* entryRelationship[frSimpleObservationScores] ^short = "Scores"
+* entryRelationship[frSimpleObservationScores] ^definition = "Scores"

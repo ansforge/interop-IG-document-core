@@ -9,11 +9,11 @@ Description: "Entrée FR-Sujet: IHE-PCC - Subject participation. Cet élément p
 * templateId ^slicing.rules = #open
 * templateId contains iheSujet 1..1
 and frSujet 1..1
-* templateId[iheSujet] 1..1
+* templateId[iheSujet].root 1..1
 * templateId[iheSujet].root = "1.3.6.1.4.1.19376.1.5.3.1.4.15.2"
 * templateId[iheSujet] ^short = "Conformité Subject participation (IHE PCC)"
 * templateId[iheSujet] ^definition = "Conformité Subject participation (IHE PCC)"
-* templateId[frSujet] 1..1
+* templateId[frSujet].root 1..1
 * templateId[frSujet].root = "1.2.250.1.213.1.1.3.60"
 * templateId[frSujet] ^short = "Conformité FR-Sujet (CI-SIS)"
 * templateId[frSujet] ^definition = "Conformité FR-Sujet (CI-SIS)"

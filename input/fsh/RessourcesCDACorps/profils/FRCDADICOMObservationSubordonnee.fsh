@@ -15,11 +15,11 @@ Description: "Entrée FR-DICOM-Observation-subordonnee: DICOM PART 20 - Observat
 * templateId ^slicing.rules = #open
 * templateId contains dicomCodedObservation 1..1
 and FRCDADICOMObservationSubordonnee 1..1
-* templateId[dicomCodedObservation] 1..1
+* templateId[dicomCodedObservation].root 1..1
 * templateId[dicomCodedObservation].root = "2.16.840.1.113883.10.20.6.2.13"
 * templateId[dicomCodedObservation] ^short = "Conformité Coded Observation (DICOM Part 20)"
 * templateId[dicomCodedObservation] ^definition = "Conformité Coded Observation (DICOM Part 20)"
-* templateId[FRCDADICOMObservationSubordonnee] 1..1
+* templateId[FRCDADICOMObservationSubordonnee].root 1..1
 * templateId[FRCDADICOMObservationSubordonnee].root = "1.2.250.1.213.1.1.3.167"
 * templateId[FRCDADICOMObservationSubordonnee] ^short = "Conformité FR-DICOM-Observation-subordonnee (CI-SIS)"
 * templateId[FRCDADICOMObservationSubordonnee] ^definition = "Conformité FR-DICOM-Observation-subordonnee (CI-SIS)"

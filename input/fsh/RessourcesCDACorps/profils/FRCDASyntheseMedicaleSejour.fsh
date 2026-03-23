@@ -17,15 +17,15 @@ Description: "Entrée FR-Synthese-medicale-sejour: Cette entrée permet de fourn
 * templateId contains iheSimpleObservation 1..1
 and frSimpleObservation 1..1
 and frSyntheseMedicaleSejour 1..1
-* templateId[iheSimpleObservation] 1..1
+* templateId[iheSimpleObservation].root 1..1
 * templateId[iheSimpleObservation].root = "1.3.6.1.4.1.19376.1.5.3.1.4.13"
 * templateId[iheSimpleObservation] ^short = "Conformité Simple Observation (IHE PCC)"
 * templateId[iheSimpleObservation] ^definition = "Conformité Simple Observation (IHE PCC)"
-* templateId[frSimpleObservation] 1..1
+* templateId[frSimpleObservation].root 1..1
 * templateId[frSimpleObservation].root = "1.2.250.1.213.1.1.3.48"
 * templateId[frSimpleObservation] ^short = "Conformité FR-Simple-Observation (CI-SIS)"
 * templateId[frSimpleObservation] ^definition = "Conformité FR-Simple-Observation (CI-SIS)"
-* templateId[frSyntheseMedicaleSejour] 1..1
+* templateId[frSyntheseMedicaleSejour].root 1..1
 * templateId[frSyntheseMedicaleSejour].root = "1.2.250.1.213.1.1.3.48.9"
 * templateId[frSyntheseMedicaleSejour] ^short = "Conformité FR-Synthese-medicale-sejour (CI-SIS)"
 * templateId[frSyntheseMedicaleSejour] ^definition = "Conformité FR-Synthese-medicale-sejour (CI-SIS)"

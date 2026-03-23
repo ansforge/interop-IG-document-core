@@ -16,15 +16,15 @@ Description: "Entrée FR-Vaccination: IHE-PCC - Immunizations. L'entrée Vaccina
 * templateId contains iheImmunizations 1..1
 and ccdMedicationActivity 1..1
 and frVaccination 1..1
-* templateId[iheImmunizations] 1..1
+* templateId[iheImmunizations].root 1..1
 * templateId[iheImmunizations].root = "1.3.6.1.4.1.19376.1.5.3.1.4.12"
 * templateId[iheImmunizations] ^short = "Conformité Immunizations (IHE PCC)"
 * templateId[iheImmunizations] ^definition = "Conformité Immunizations (IHE PCC)"
-* templateId[ccdMedicationActivity] 1..1
+* templateId[ccdMedicationActivity].root 1..1
 * templateId[ccdMedicationActivity].root = "2.16.840.1.113883.10.20.1.24"
 * templateId[ccdMedicationActivity] ^short = "Conformité Medication activity (CCD)"
 * templateId[ccdMedicationActivity] ^definition = "Conformité Medication activity (CCD)"
-* templateId[frVaccination] 1..1
+* templateId[frVaccination].root 1..1
 * templateId[frVaccination].root = "1.2.250.1.213.1.1.3.45"
 * templateId[frVaccination] ^short = "Conformité FR-Vaccination (CI-SIS)"
 * templateId[frVaccination] ^definition = "Conformité FR-Vaccination (CI-SIS)"

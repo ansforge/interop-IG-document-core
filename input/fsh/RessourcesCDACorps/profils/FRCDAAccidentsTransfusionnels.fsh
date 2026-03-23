@@ -17,20 +17,19 @@ Description: "Entrée FR-Accidents-transfusionnels: Cette entrée permet de déc
 * templateId contains iheSimpleObservation 1..1
 and frSimpleObservation 1..1
 and frAccidentsTransfusionnels 1..1
-* templateId[iheSimpleObservation] 1..1
+* templateId[iheSimpleObservation].root 1..1
 * templateId[iheSimpleObservation].root = "1.3.6.1.4.1.19376.1.5.3.1.4.13"
 * templateId[iheSimpleObservation] ^short = "Conformité Simple Observation (IHE-PCC)"
 * templateId[iheSimpleObservation] ^definition = "Conformité Simple Observation (IHE-PCC)"
-* templateId[frSimpleObservation] 1..1
+* templateId[frSimpleObservation].root 1..1
 * templateId[frSimpleObservation].root = "1.2.250.1.213.1.1.3.48"
 * templateId[frSimpleObservation] ^short = "Conformité FR-Simple-observation (CI-SIS)"
 * templateId[frSimpleObservation] ^definition = "Conformité FR-Simple-observation (CI-SIS)"
-* templateId[frAccidentsTransfusionnels] 1..1    
+* templateId[frAccidentsTransfusionnels].root 1..1    
 * templateId[frAccidentsTransfusionnels].root = "1.2.250.1.213.1.1.3.48.1"
 * templateId[frAccidentsTransfusionnels] ^short = "Conformité FR-Accidents transfusionnels (CI-SIS)"
 * templateId[frAccidentsTransfusionnels] ^definition = "Conformité FR-Accidents transfusionnels (CI-SIS)"
 * code MS
-* code 1..1
 * code ^short = "Code de l'observation"
 * code ^definition = "Code de l'observation"
 * code ^short = "Code de l'observation"
@@ -44,12 +43,19 @@ and frAccidentsTransfusionnels 1..1
 * text ^definition = "Partie narrative de l'observation"
 * statusCode MS
 * statusCode 1..1
+* statusCode.code = #completed
+* statusCode ^short = "Statut de l'observation"
+* statusCode ^definition = "Statut de l'observation"
 * effectiveTime MS
 * effectiveTime 1..1
 * effectiveTime ^short = "Date de l'observation"
 * effectiveTime ^definition = "Date de l'observation"
 * value MS
 * value 1..1
+* value ^short = "Description sous forme textuelle de l'accident transfusionnel"
+* value ^definition = "Description sous forme textuelle de l'accident transfusionnel"
 * value only ST
 * author 0..1
+* author ^short = "Auteur de l'observation accident transfusionnel"
+* author ^definition = "Auteur de l'observation accident transfusionnel"
 * author only FRCDAAuthor

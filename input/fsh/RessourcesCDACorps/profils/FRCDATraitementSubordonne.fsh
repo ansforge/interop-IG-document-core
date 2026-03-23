@@ -17,11 +17,11 @@ Description: "Entrée FR-Traitement-subordonne: Une entrée FR-Traitement de pre
 * templateId ^slicing.rules = #open
 * templateId contains frTraitementSubordonne 1..1
 and iheModeAdministrationDosesProgressives 1..1
-* templateId[frTraitementSubordonne] 1..1
+* templateId[frTraitementSubordonne].root 1..1
 * templateId[frTraitementSubordonne].root = "1.2.250.1.213.1.1.3.42.1"
 * templateId[frTraitementSubordonne] ^short = "Déclaration de conformité FR-Traitement"
 * templateId[frTraitementSubordonne] ^definition = "Déclaration de conformité FR-Traitement"
-* templateId[iheModeAdministrationDosesProgressives] 1..1
+* templateId[iheModeAdministrationDosesProgressives].root 1..1
 * templateId[iheModeAdministrationDosesProgressives].root = "1.3.6.1.4.1.19376.1.5.3.1.4.8"
 * templateId[iheModeAdministrationDosesProgressives] ^short = "Mode d'administration"
 * templateId[iheModeAdministrationDosesProgressives] ^definition = "Mode d'administration"

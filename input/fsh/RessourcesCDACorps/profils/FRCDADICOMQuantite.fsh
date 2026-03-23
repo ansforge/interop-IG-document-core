@@ -17,11 +17,11 @@ Description: "Entrée FR-DICOM-Quantite: DICOM Part 20 - Quantity Measurement. 
 * templateId ^slicing.rules = #open
 * templateId contains dicomQuantityMeasurement 1..1
 and frDicomQuantite 1..1
-* templateId[dicomQuantityMeasurement] 1..1
+* templateId[dicomQuantityMeasurement].root 1..1
 * templateId[dicomQuantityMeasurement].root = "2.16.840.1.113883.10.20.6.2.14"
 * templateId[dicomQuantityMeasurement] ^short = "Conformité Quantity Measurement (DICOM Part 20)"
 * templateId[dicomQuantityMeasurement] ^definition = "Conformité Quantity Measurement (DICOM Part 20)"
-* templateId[frDicomQuantite] 1..1
+* templateId[frDicomQuantite].root 1..1
 * templateId[frDicomQuantite].root = "1.2.250.1.213.1.1.3.154"
 * templateId[frDicomQuantite] ^short = "Conformité FR-DICOM-Quantite (CI-SIS)"
 * templateId[frDicomQuantite] ^definition = "Conformité FR-DICOM-Quantite (CI-SIS)"

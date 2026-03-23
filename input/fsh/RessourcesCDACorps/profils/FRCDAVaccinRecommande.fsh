@@ -19,15 +19,15 @@ Si la vaccination est proposée :@moodCode='PRP'"
 * templateId contains iheImmunizationRecommandation 1..1
 and ccdPlanOfCareActivityPlannedRealised 1..1
 and frVaccinRecommande 1..1
-* templateId[iheImmunizationRecommandation] 1..1
+* templateId[iheImmunizationRecommandation].root 1..1
 * templateId[iheImmunizationRecommandation].root = "1.3.6.1.4.1.19376.1.5.3.1.4.12.2"
 * templateId[iheImmunizationRecommandation] ^short = "Conformité Immunization Recommandation (IHE PCC)"
 * templateId[iheImmunizationRecommandation] ^definition = "Conformité Immunization Recommandation (IHE PCC)"
-* templateId[ccdPlanOfCareActivityPlannedRealised] 1..1
+* templateId[ccdPlanOfCareActivityPlannedRealised].root 1..1
 * templateId[ccdPlanOfCareActivityPlannedRealised].root = "2.16.840.1.113883.10.20.1.25"
 * templateId[ccdPlanOfCareActivityPlannedRealised] ^short = "Conformité Plan of care activity (CCD)"
 * templateId[ccdPlanOfCareActivityPlannedRealised] ^definition = "Conformité Plan of care activity (CCD)"
-* templateId[frVaccinRecommande] 1..1
+* templateId[frVaccinRecommande].root 1..1
 * templateId[frVaccinRecommande].root = "1.2.250.1.213.1.1.3.47"
 * templateId[frVaccinRecommande] ^short = "Conformité FR-Vaccin-recommande (CI-SIS)"
 * templateId[frVaccinRecommande] ^definition = "Conformité FR-Vaccin-recommande (CI-SIS)"

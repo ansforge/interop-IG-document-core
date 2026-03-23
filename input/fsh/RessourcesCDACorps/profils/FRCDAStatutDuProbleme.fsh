@@ -15,19 +15,19 @@ Description: "Entrée FR-Statut-du-probleme: IHE-PCC - Problem-Status-Observatio
 and ccdProblemStatusObservation 1..1
 and iheProblemStatusObservation 1..1
 and frStatutDuProbleme 1..1
-* templateId[ccdStatusObservation] 1..1
+* templateId[ccdStatusObservation].root 1..1
 * templateId[ccdStatusObservation].root = "2.16.840.1.113883.10.20.1.57"
 * templateId[ccdStatusObservation] ^short = "Conformité Status observation (CCD)"
 * templateId[ccdStatusObservation] ^definition = "Conformité Status observation (CCD)"
-* templateId[ccdProblemStatusObservation] 1..1
+* templateId[ccdProblemStatusObservation].root 1..1
 * templateId[ccdProblemStatusObservation].root = "2.16.840.1.113883.10.20.1.50"
 * templateId[ccdProblemStatusObservation] ^short = "Conformité Problem status observation (CCD)"
 * templateId[ccdProblemStatusObservation] ^definition = "Conformité Problem status observation (CCD)"
-* templateId[iheProblemStatusObservation] 1..1
+* templateId[iheProblemStatusObservation].root 1..1
 * templateId[iheProblemStatusObservation].root = "1.3.6.1.4.1.19376.1.5.3.1.4.1.1"
 * templateId[iheProblemStatusObservation] ^short = "Conformité Problem Status Observation (IHE PCC)"
 * templateId[iheProblemStatusObservation] ^definition = "Conformité Problem Status Observation (IHE PCC)"
-* templateId[frStatutDuProbleme] 1..1
+* templateId[frStatutDuProbleme].root 1..1
 * templateId[frStatutDuProbleme].root = "1.2.250.1.213.1.1.3.30"
 * templateId[frStatutDuProbleme] ^short = "Conformité FR-Statut-du-probleme (CI-SIS)"
 * templateId[frStatutDuProbleme] ^definition = "Conformité FR-Statut-du-probleme (CI-SIS)"
@@ -50,7 +50,7 @@ and frStatutDuProbleme 1..1
 * value MS
 * value 1..1
 * value only CE
-* value ^short = """Statut du problème: 
+* value ^short = """Statut du problème: \r\n
 Valeur est issue du 
 JDV_HL7_ConditionClinical_CISIS (2.16.840.1.113883.4.642.3.164) si appelé par une entrée FR-Probleme; 
 JDV_HL7_allergyintolerance-clinical_CISIS (2.16.840.1.113883.4.642.3.1372) si appelé par une entrée FR-Allergie-ou-intolerance"""

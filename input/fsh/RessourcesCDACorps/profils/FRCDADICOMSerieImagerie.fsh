@@ -14,11 +14,11 @@ Description: "Entrée FR-DICOM-Serie-imagerie: DICOM Part 20 - Series Act. Cett
 * templateId ^slicing.rules = #open
 * templateId contains frDicomSerieImagerie 1..1
 and dicomSeriesAct 1..1
-* templateId[frDicomSerieImagerie] 1..1
+* templateId[frDicomSerieImagerie].root 1..1
 * templateId[frDicomSerieImagerie].root = "1.2.250.1.213.1.1.3.156"
 * templateId[frDicomSerieImagerie] ^short = "Conformité FR-DICOM-Serie-imagerie (CI-SIS)"
 * templateId[frDicomSerieImagerie] ^definition = "Conformité FR-DICOM-Serie-imagerie (CI-SIS)"
-* templateId[dicomSeriesAct] 1..1
+* templateId[dicomSeriesAct].root 1..1
 * templateId[dicomSeriesAct].root = "1.2.840.10008.9.17"
 * templateId[dicomSeriesAct] ^short = "Conformité Series Act (DICOM Part 20)"
 * templateId[dicomSeriesAct] ^definition = "Conformité Series Act (DICOM Part 20)"
@@ -45,10 +45,8 @@ and dicomSeriesAct 1..1
 * effectiveTime MS
 * effectiveTime ^short = "Date de la série d'actes"
 * effectiveTime ^definition = "Date de la série d'actes"
-* entryRelationship MS
-* entryRelationship ^slicing.discriminator.type = #value
-* entryRelationship ^slicing.discriminator.path = "$this"
-* entryRelationship ^slicing.rules = #open
-* entryRelationship contains 
-frDicomSOPInstanceObservation 1..1
-* entryRelationship[frDicomSOPInstanceObservation].observation only FRCDADICOMSOPInstanceObservation
+* entryRelationship 1..1 MS
+* entryRelationship.observation only FRCDADICOMSOPInstanceObservation
+* entryRelationship.typeCode = #COMP
+* entryRelationship ^short = "SOP Instance Observation de la série d'images médicales"
+* entryRelationship ^definition = "SOP Instance Observation de la série d'images médicales"

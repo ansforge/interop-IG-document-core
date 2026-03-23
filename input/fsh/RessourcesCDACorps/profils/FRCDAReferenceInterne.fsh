@@ -14,11 +14,11 @@ Description: "Entrée FR-Reference-interne: IHE-PCC - Internal-Reference. L'él�
 * templateId ^slicing.rules = #open
 * templateId contains iheInternalReferences 1..1
 and frReferenceInterne 1..1
-* templateId[iheInternalReferences] 1..1
+* templateId[iheInternalReferences].root 1..1
 * templateId[iheInternalReferences].root = "1.3.6.1.4.1.19376.1.5.3.1.4.4.1"
 * templateId[iheInternalReferences] ^short = "Conformité Internal References (IHE PCC)"
 * templateId[iheInternalReferences] ^definition = "Conformité Internal References (IHE PCC)"
-* templateId[frReferenceInterne] 1..1
+* templateId[frReferenceInterne].root 1..1
 * templateId[frReferenceInterne].root = "1.2.250.1.213.1.1.3.36"
 * templateId[frReferenceInterne] ^short = "Conformité FR-Reference-interne (CI-SIS)"
 * templateId[frReferenceInterne] ^definition = "Conformité FR-Reference-interne (CI-SIS)"

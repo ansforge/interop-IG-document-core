@@ -14,11 +14,11 @@ Description: "Entrée FR-DICOM-Examen-imagerie: DICOM Part 20 - Study Act. Cett
 * templateId ^slicing.rules = #open
 * templateId contains frDicomExamenImagerie 1..1
 and FRCDADICOMExamenimagerie 1..1
-* templateId[frDicomExamenImagerie] 1..1
+* templateId[frDicomExamenImagerie].root 1..1
 * templateId[frDicomExamenImagerie].root = "1.2.250.1.213.1.1.3.155"
 * templateId[frDicomExamenImagerie] ^short = "Conformité FR-DICOM-Examen-imagerie (CI-SIS)"
 * templateId[frDicomExamenImagerie] ^definition = "Conformité FR-DICOM-Examen-imagerie (CI-SIS)"
-* templateId[FRCDADICOMExamenimagerie] 1..1
+* templateId[FRCDADICOMExamenimagerie].root 1..1
 * templateId[FRCDADICOMExamenimagerie].root = "1.2.840.10008.9.16"
 * templateId[FRCDADICOMExamenimagerie] ^short = "Conformité Study Act (DICOM Part 20)"
 * templateId[FRCDADICOMExamenimagerie] ^definition = "Conformité Study Act (DICOM Part 20)"
@@ -42,3 +42,6 @@ and FRCDADICOMExamenimagerie 1..1
 * entryRelationship contains 
 frDicomSerieImagerie 1..1
 * entryRelationship[frDicomSerieImagerie].act only FRCDADICOMSerieImagerie
+* entryRelationship[frDicomSerieImagerie].typeCode = #COMP
+* entryRelationship[frDicomSerieImagerie] ^short = "Série d'images médicales de l'examen d'imagerie"
+* entryRelationship[frDicomSerieImagerie] ^definition = "Série d'images médicales de l'examen d'imagerie"

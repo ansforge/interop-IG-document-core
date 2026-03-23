@@ -14,19 +14,19 @@ Description: "Entrée FR-Signe-vital-observe: IHE-PCC - Vital Signs Observation.
 and ccdResultObservation 1..1
 and iheVitalSignsObservation 1..1
 and frSigneVitalObserve 1..1
-* templateId[iheSimpleObservation] 1..1
+* templateId[iheSimpleObservation].root 1..1
 * templateId[iheSimpleObservation].root = "1.3.6.1.4.1.19376.1.5.3.1.4.13"
 * templateId[iheSimpleObservation] ^short = "Conformité Simple Observation (IHE PCC)"
 * templateId[iheSimpleObservation] ^definition = "Conformité Simple Observation (IHE PCC)"
-* templateId[ccdResultObservation] 1..1
+* templateId[ccdResultObservation].root 1..1
 * templateId[ccdResultObservation].root = "2.16.840.1.113883.10.20.1.31"
 * templateId[ccdResultObservation] ^short = "Conformité Result observation (CCD)"
 * templateId[ccdResultObservation] ^definition = "Conformité Result observation (CCD)"
-* templateId[iheVitalSignsObservation] 1..1
+* templateId[iheVitalSignsObservation].root 1..1
 * templateId[iheVitalSignsObservation].root = "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"
 * templateId[iheVitalSignsObservation] ^short = "Conformité Vital Signs Observation (IHE PCC)"
 * templateId[iheVitalSignsObservation] ^definition = "Conformité Vital Signs Observation (IHE PCC)"
-* templateId[frSigneVitalObserve] 1..1
+* templateId[frSigneVitalObserve].root 1..1
 * templateId[frSigneVitalObserve].root = "1.2.250.1.213.1.1.3.50"
 * templateId[frSigneVitalObserve] ^short = "Conformité FR-Signe-vital-observé (CI-SIS)"
 * templateId[frSigneVitalObserve] ^definition = "Conformité FR-Signe-vital-observé (CI-SIS)"

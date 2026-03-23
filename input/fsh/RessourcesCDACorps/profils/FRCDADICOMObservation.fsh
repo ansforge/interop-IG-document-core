@@ -17,11 +17,11 @@ Description: "Entrée FR-DICOM-Observation: DICOM Part 20 - Coded Observation. 
 * templateId ^slicing.rules = #open
 * templateId contains frDicomObservation 1..1
 and dicomCodedObservation 1..1
-* templateId[frDicomObservation] 1..1
+* templateId[frDicomObservation].root 1..1
 * templateId[frDicomObservation].root = "1.2.250.1.213.1.1.3.150"
 * templateId[frDicomObservation] ^short = "Conformité FR-DICOM-Observation (CI-SIS)"
 * templateId[frDicomObservation] ^definition = "Conformité FR-DICOM-Observation (CI-SIS)"
-* templateId[dicomCodedObservation] 1..1
+* templateId[dicomCodedObservation].root 1..1
 * templateId[dicomCodedObservation].root = "2.16.840.1.113883.10.20.6.2.13"
 * templateId[dicomCodedObservation] ^short = "Conformité Coded Observation (DICOM Part 20)"
 * templateId[dicomCodedObservation] ^definition = "Conformité Coded Observation (DICOM Part 20)"
@@ -79,4 +79,6 @@ and dicomCodedObservation 1..1
 frDicomSOPInstanceObservation 0..*
  and frDicomQuantite 0..*
 * entryRelationship[frDicomSOPInstanceObservation].observation only FRCDADICOMSOPInstanceObservation
+* entryRelationship[frDicomSOPInstanceObservation].typeCode = #SPRT
 * entryRelationship[frDicomQuantite].observation only FRCDADICOMQuantite
+* entryRelationship[frDicomQuantite].typeCode = #SPRT

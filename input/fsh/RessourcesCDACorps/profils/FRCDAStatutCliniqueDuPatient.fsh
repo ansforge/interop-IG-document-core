@@ -14,15 +14,15 @@ Description: "Entrée FR-Statut-clinique-du-patient: IHE-PCC - Health-Status-Obs
 * templateId contains ccdProblemHealthStatusObservation 1..1
 and iheHealthStatusObservation 1..1
 and frStatutCliniqueDuPatient 1..1
-* templateId[ccdProblemHealthStatusObservation] 1..1
+* templateId[ccdProblemHealthStatusObservation].root 1..1
 * templateId[ccdProblemHealthStatusObservation].root = "2.16.840.1.113883.10.20.1.51"
 * templateId[ccdProblemHealthStatusObservation] ^short = "Conformité Problem healthstatus observation (CCD)"
 * templateId[ccdProblemHealthStatusObservation] ^definition = "Conformité Problem healthstatus observation (CCD)"
-* templateId[iheHealthStatusObservation] 1..1
+* templateId[iheHealthStatusObservation].root 1..1
 * templateId[iheHealthStatusObservation].root = "1.3.6.1.4.1.19376.1.5.3.1.4.1.2"
 * templateId[iheHealthStatusObservation] ^short = "Conformité Health Status Observation (IHE PCC)"
 * templateId[iheHealthStatusObservation] ^definition = "Conformité Health Status Observation (IHE PCC)"
-* templateId[frStatutCliniqueDuPatient] 1..1
+* templateId[frStatutCliniqueDuPatient].root 1..1
 * templateId[frStatutCliniqueDuPatient].root = "1.2.250.1.213.1.1.3.31"
 * templateId[frStatutCliniqueDuPatient] ^short = "Conformité FR-Statut-clinique-du-patient (CI-SIS)"
 * templateId[frStatutCliniqueDuPatient] ^definition = "Conformité FR-Statut-clinique-du-patient (CI-SIS)"

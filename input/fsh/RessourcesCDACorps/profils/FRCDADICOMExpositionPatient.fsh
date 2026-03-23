@@ -6,10 +6,18 @@ Description: "Entrée FR-DICOM-Exposition-patient: DICOM Part 20 - inclue dans l
 * classCode MS
 * moodCode MS
 * moodCode = #EVN
+
 * templateId 1..1
-* templateId.root = "1.2.250.1.213.1.1.3.165"
-* templateId ^short = "FR-DICOM-Exposition-patient (CI-SIS)"
-* templateId ^definition = "FR-DICOM-Exposition-patient (CI-SIS)"
+* templateId ^slicing.discriminator.type = #value
+* templateId ^slicing.discriminator.path = "root"
+* templateId ^slicing.rules = #open
+* templateId contains frDicomExpositionPatient 1..1
+
+* templateId[frDicomExpositionPatient].root 1..1
+* templateId[frDicomExpositionPatient].root = "1.2.250.1.213.1.1.3.165"
+* templateId[frDicomExpositionPatient] ^short = "FR-DICOM-Exposition-patient (CI-SIS)"
+* templateId[frDicomExpositionPatient] ^definition = "FR-DICOM-Exposition-patient (CI-SIS)"
+
 * code MS
 * code 1..1
 * code ^short = "Code de l'entrée"
@@ -19,4 +27,6 @@ Description: "Entrée FR-DICOM-Exposition-patient: DICOM Part 20 - inclue dans l
 * code.codeSystemName = "DCM"
 * code.displayName = "Exposition du patient aux rayonnements ionisants"
 * participant 1..1
+* participant ^short = "Participant"
+* participant ^definition = "Participant"
 * participant only FRCDAParticipantCorps

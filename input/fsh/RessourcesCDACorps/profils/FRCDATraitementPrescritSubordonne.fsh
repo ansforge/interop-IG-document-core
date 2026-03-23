@@ -15,7 +15,7 @@ Pour les dosages progressifs, fractionnés ou conditionnels, les sous-entrées F
 * templateId ^slicing.discriminator.path = "root"
 * templateId ^slicing.rules = #open
 * templateId contains frTraitementPrescritSubordonne 1..1
-* templateId[frTraitementPrescritSubordonne] 1..1
+* templateId[frTraitementPrescritSubordonne].root 1..1
 * templateId[frTraitementPrescritSubordonne].root = "1.2.250.1.213.1.1.3.83.1"
 * templateId[frTraitementPrescritSubordonne] ^short = "Conformité FR-Traitement-prescrit-subordonnee (CI-SIS)"
 * templateId[frTraitementPrescritSubordonne] ^definition = "Conformité FR-Traitement-prescrit-subordonnee (CI-SIS)"

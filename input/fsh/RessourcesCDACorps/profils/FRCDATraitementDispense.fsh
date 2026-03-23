@@ -17,19 +17,19 @@ Description: "Entrée FR-Traitement-dispense: IHE PHARM DIS - DispenseItemEntry.
 and frTraitementDispense 1..1
 and ccdSupplyActivity 1..1
 and iheSupplyEntry 1..1
-* templateId[iheDispenseItemEntry] 1..1
+* templateId[iheDispenseItemEntry].root 1..1
 * templateId[iheDispenseItemEntry].root = "1.3.6.1.4.1.19376.1.9.1.3.4"
 * templateId[iheDispenseItemEntry] ^short = "Conformité DispenseItemEntry (IHE PHARM DIS)"
 * templateId[iheDispenseItemEntry] ^definition = "Conformité DispenseItemEntry (IHE PHARM DIS)"
-* templateId[frTraitementDispense] 1..1
+* templateId[frTraitementDispense].root 1..1
 * templateId[frTraitementDispense].root = "1.2.250.1.213.1.1.3.204"
 * templateId[frTraitementDispense] ^short = "Conformité FR-Traitement-dispensé (CI-SIS)"
 * templateId[frTraitementDispense] ^definition = "Conformité FR-Traitement-dispensé (CI-SIS)"
-* templateId[ccdSupplyActivity] 1..1
+* templateId[ccdSupplyActivity].root 1..1
 * templateId[ccdSupplyActivity].root = "2.16.840.1.113883.10.20.1.34"
 * templateId[ccdSupplyActivity] ^short = "Conformité Supply Activity (CCD)"
 * templateId[ccdSupplyActivity] ^definition = "Conformité Supply Activity (CCD)"
-* templateId[iheSupplyEntry] 1..1
+* templateId[iheSupplyEntry].root 1..1
 * templateId[iheSupplyEntry].root = "1.3.6.1.4.1.19376.1.5.3.1.4.7.3"
 * templateId[iheSupplyEntry] ^short = "Conformité Supply Entry (IHE PCC)"
 * templateId[iheSupplyEntry] ^definition = "Conformité Supply Entry (IHE PCC)"

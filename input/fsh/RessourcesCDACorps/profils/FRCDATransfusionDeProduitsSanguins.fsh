@@ -17,11 +17,11 @@ Description: "Entrée FR-Transfusion-de-produits-sanguins: Cette entrée permet 
 * templateId contains iheSimpleObservation 1..1
 and frSimpleObservation 1..1
 and frTransfusionDeProduitsSanguins 1..1
-* templateId[iheSimpleObservation] 1..1
+* templateId[iheSimpleObservation].root 1..1
 * templateId[iheSimpleObservation].root = "1.3.6.1.4.1.19376.1.5.3.1.4.13"
 * templateId[iheSimpleObservation] ^short = "Conformité Simple Observation (IHE PCC)"
 * templateId[iheSimpleObservation] ^definition = "Conformité Simple Observation (IHE PCC)"
-* templateId[frSimpleObservation] 1..1
+* templateId[frSimpleObservation].root 1..1
 * templateId[frSimpleObservation].root = "1.2.250.1.213.1.1.3.48"
 * templateId[frSimpleObservation] ^short = "Conformité FR-Simple-Observation (CI-SIS)"
 * templateId[frSimpleObservation] ^definition = "Conformité FR-Simple-Observation (CI-SIS)"
@@ -50,7 +50,7 @@ and frTransfusionDeProduitsSanguins 1..1
 * effectiveTime ^definition = "Date de l'observation"
 * value 1..1 MS 
 * value ^short = "Transfusion de produit sanguin."
-* value ^definition = "Transfusion de produit"
+* value ^definition = "Transfusion de produit sanguin"
 * value only BL
 * author 0..1
 * author only FRCDAAuthor

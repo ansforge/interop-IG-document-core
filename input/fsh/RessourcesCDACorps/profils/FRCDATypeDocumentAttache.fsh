@@ -19,15 +19,15 @@ Sous la forme UID (UUID ou OID) Attribué par le LPS avec si possible les attrib
 * templateId contains iheSimpleObservation 1..1
 and frSimpleObservation 1..1
 and frTypeDocumentAttache 1..1
-* templateId[iheSimpleObservation] 1..1
+* templateId[iheSimpleObservation].root 1..1
 * templateId[iheSimpleObservation].root = "1.3.6.1.4.1.19376.1.5.3.1.4.13"
 * templateId[iheSimpleObservation] ^short = "Conformité Simple Observation (IHE PCC)"
 * templateId[iheSimpleObservation] ^definition = "Conformité Simple Observation (IHE PCC)"
-* templateId[frSimpleObservation] 1..1
+* templateId[frSimpleObservation].root 1..1
 * templateId[frSimpleObservation].root = "1.2.250.1.213.1.1.3.48"
 * templateId[frSimpleObservation] ^short = "Conformité FR-Simple-Observation (CI-SIS)"
 * templateId[frSimpleObservation] ^definition = "Conformité FR-Simple-Observation (CI-SIS)"
-* templateId[frTypeDocumentAttache] 1..1
+* templateId[frTypeDocumentAttache].root 1..1
 * templateId[frTypeDocumentAttache].root = "1.2.250.1.213.1.1.3.48.18"
 * templateId[frTypeDocumentAttache] ^short = "Conformité FR-Type-document-attache (CI-SIS)"
 * templateId[frTypeDocumentAttache] ^definition = "Conformité FR-Type-document-attache (CI-SIS)"
