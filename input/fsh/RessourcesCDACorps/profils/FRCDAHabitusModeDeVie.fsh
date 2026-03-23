@@ -2,7 +2,8 @@ Profile: FRCDAHabitusModeDeVie
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Observation
 Id: fr-cda-habitus-mode-de-vie
 Title: "CDA - FR Habitus Mode de vie"
-Description: "Entrée FR-Habitus-Mode-de-vie: IHE-PCC - Social History ObservationL'entrée Habitus, Mode de vie permet de décrire des éléments sociaux du patient. 
+Description: "Entrée FR-Habitus-Mode-de-vie: IHE-PCC - Social History Observation. 
+ - L'entrée Habitus, Mode de vie permet de décrire des éléments sociaux du patient. 
  - Cette entrée est basée sur l'élément Simple Observation (1.3.6.1.4.1.19376.1.5.3.1.4.13) qu'elle spécialise en portant des contraintes sur les vocabulaires des éléments 'code' et 'value'."
 * classCode MS
 * classCode = #OBS
@@ -19,26 +20,26 @@ Description: "Entrée FR-Habitus-Mode-de-vie: IHE-PCC - Social History Observati
 and iheSimpleObservation 1..1
 and socialHistoryObservation 1..1
 and FRCDAHabitusModeDeVie 1..1
-* templateId[iheSocialHistoryObservation] 1..1
+* templateId[iheSocialHistoryObservation].root 1..1
 * templateId[iheSocialHistoryObservation].root = "1.3.6.1.4.1.19376.1.5.3.1.4.13.4"
 * templateId[iheSocialHistoryObservation] ^short = "Conformité Social history observation (IHE PCC)"
 * templateId[iheSocialHistoryObservation] ^definition = "Conformité Social history observation (IHE PCC)"
-* templateId[iheSimpleObservation] 1..1
+* templateId[iheSimpleObservation].root 1..1
 * templateId[iheSimpleObservation].root = "1.3.6.1.4.1.19376.1.5.3.1.4.13"
 * templateId[iheSimpleObservation] ^short = "Conformité Simple Observation (IHE PCC)"
 * templateId[iheSimpleObservation] ^definition = "Conformité Simple Observation (IHE PCC)"
-* templateId[socialHistoryObservation] 1..1
+* templateId[socialHistoryObservation].root 1..1
 * templateId[socialHistoryObservation].root = "2.16.840.1.113883.10.20.1.33"
 * templateId[socialHistoryObservation] ^short = "Conformité Social history observation (CCD)"
 * templateId[socialHistoryObservation] ^definition = "Conformité Social history observation (CCD)"
-* templateId[FRCDAHabitusModeDeVie] 1..1
+* templateId[FRCDAHabitusModeDeVie].root 1..1
 * templateId[FRCDAHabitusModeDeVie].root = "1.2.250.1.213.1.1.3.52"
 * templateId[FRCDAHabitusModeDeVie] ^short = "Conformité FR-Habitus-Mode-de-vie (CI-SIS)"
 * templateId[FRCDAHabitusModeDeVie] ^definition = "Conformité FR-Habitus-Mode-de-vie (CI-SIS)"
 * code MS
 * code ^short = "Élément observé"
 * code ^definition = "Élément observé"
-* code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-social-history-code-cisis
+* code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-social-history-code-cisis (required)
 * text MS
 * text 1..1
 * text ^short = "Description narrative"

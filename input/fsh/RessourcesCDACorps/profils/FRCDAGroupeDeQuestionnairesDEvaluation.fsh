@@ -2,7 +2,7 @@ Profile: FRCDAGroupeDeQuestionnairesDEvaluation
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Organizer
 Id: fr-cda-groupe-de-questionnaires-d-evaluation
 Title: "CDA - FR Groupe de questionnaires d evaluation"
-Description: "Entrée FR-Groupe-de-questionnaires-d-evaluation: IHE-PCC - Survey-pannel L'entrée 'Groupe de questionnaires d’évaluation' est une entrée de type 'organizer' qui permet de rassembler des observations de questionnaires."
+Description: "Entrée FR-Groupe-de-questionnaires-d-evaluation: IHE-PCC - Survey-pannel. L'entrée 'Groupe de questionnaires d’évaluation' est une entrée de type 'organizer' qui permet de rassembler des observations de questionnaires."
 * classCode MS
 * classCode = #CLUSTER
 * moodCode MS
@@ -16,15 +16,15 @@ Description: "Entrée FR-Groupe-de-questionnaires-d-evaluation: IHE-PCC - Survey
 * templateId contains iheSurveyPanel 1..1
 and ccdResultOrganizer 1..1
 and frGroupeDeQuestionnairesDevaluation 1..1
-* templateId[iheSurveyPanel] 1..1
+* templateId[iheSurveyPanel].root 1..1
 * templateId[iheSurveyPanel].root = "1.3.6.1.4.1.19376.1.5.3.1.1.12.3.7"
 * templateId[iheSurveyPanel] ^short = "Conformité Survey Panel (IHE PCC)"
 * templateId[iheSurveyPanel] ^definition = "Conformité Survey Panel (IHE PCC)"
-* templateId[ccdResultOrganizer] 1..1
+* templateId[ccdResultOrganizer].root 1..1
 * templateId[ccdResultOrganizer].root = "2.16.840.1.113883.10.20.1.32"
 * templateId[ccdResultOrganizer] ^short = "Conformité Result organizer (CCD)"
 * templateId[ccdResultOrganizer] ^definition = "Conformité Result organizer (CCD)"
-* templateId[frGroupeDeQuestionnairesDevaluation] 1..1
+* templateId[frGroupeDeQuestionnairesDevaluation].root 1..1
 * templateId[frGroupeDeQuestionnairesDevaluation].root = "1.2.250.1.213.1.1.3.95"
 * templateId[frGroupeDeQuestionnairesDevaluation] ^short = "Conformité FR-Groupe-de-questionnaires-d-evaluation (CI-SIS)"
 * templateId[frGroupeDeQuestionnairesDevaluation] ^definition = "Conformité FR-Groupe-de-questionnaires-d-evaluation (CI-SIS)"
@@ -40,13 +40,7 @@ and frGroupeDeQuestionnairesDevaluation 1..1
 * effectiveTime 1..1
 * effectiveTime ^short = "Horodatage de l'entrée"
 * effectiveTime ^definition = "Horodatage de l'entrée"
-* component MS
-* component 1..1
-* component ^slicing.discriminator.type = #type
-* component ^slicing.discriminator.path = "$this"
-* component ^slicing.rules = #open
-* component contains
-frEvaluation 1..1 
-* component[frEvaluation].observation 0..1 
-* component[frEvaluation].observation ^short = "Évaluation"
-* component[frEvaluation].observation only FRCDAEvaluation
+* component 1..* MS
+* component.typeCode = #COMP
+* component.observation ^short = "Évaluation"
+* component.observation only FRCDAEvaluation

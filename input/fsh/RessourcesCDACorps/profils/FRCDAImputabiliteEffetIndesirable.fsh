@@ -12,7 +12,7 @@ Description: "Entrée FR-Imputabilite-effet-indesirable: Cette entrée permet de
 * templateId ^slicing.discriminator.path = "root"
 * templateId ^slicing.rules = #open
 * templateId contains frImputabiliteEffetIndesirable 1..1
-* templateId[frImputabiliteEffetIndesirable] 1..1
+* templateId[frImputabiliteEffetIndesirable].root 1..1
 * templateId[frImputabiliteEffetIndesirable].root = "1.2.250.1.213.1.1.3.211"
 * templateId[frImputabiliteEffetIndesirable] ^short = "Conformité FR-Imputabilite-effet-indesirable (CI-SIS)"
 * templateId[frImputabiliteEffetIndesirable] ^definition = "Conformité FR-Imputabilite-effet-indesirable (CI-SIS)"
@@ -28,7 +28,7 @@ Description: "Entrée FR-Imputabilite-effet-indesirable: Cette entrée permet de
 * text ^short = "Partie narrative de l'entrée"
 * statusCode MS
 * statusCode 1..1
-* statusCode ^short = "Statut de l'entréeFixé à la valeur 'completed'"
+* statusCode ^short = "Statut de l'entrée. Fixé à la valeur 'completed'"
 * statusCode ^definition = "Statut de l'entrée"
 * statusCode.code = #completed
 * value MS

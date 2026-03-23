@@ -18,15 +18,15 @@ Description: "Entrée FR-Identification-micro-organismes-multiresistants: Cette 
 * templateId contains iheSimpleObservation 1..1
 and frSimpleObservation 1..1
 and frIdentificationMicroOrganismesMultiresistants 1..1
-* templateId[iheSimpleObservation] 1..1
+* templateId[iheSimpleObservation].root 1..1
 * templateId[iheSimpleObservation].root = "1.3.6.1.4.1.19376.1.5.3.1.4.13"
 * templateId[iheSimpleObservation] ^short = "Conformité Simple Observation (IHE PCC)"
 * templateId[iheSimpleObservation] ^definition = "Conformité Simple Observation (IHE PCC)"
-* templateId[frSimpleObservation] 1..1
+* templateId[frSimpleObservation].root 1..1
 * templateId[frSimpleObservation].root = "1.2.250.1.213.1.1.3.48"
 * templateId[frSimpleObservation] ^short = "Conformité FR-Simple-Observation (CI-SIS)"
 * templateId[frSimpleObservation] ^definition = "Conformité FR-Simple-Observation (CI-SIS)"
-* templateId[frIdentificationMicroOrganismesMultiresistants] 1..1
+* templateId[frIdentificationMicroOrganismesMultiresistants].root 1..1
 * templateId[frIdentificationMicroOrganismesMultiresistants].root = "1.2.250.1.213.1.1.3.48.5"
 * templateId[frIdentificationMicroOrganismesMultiresistants] ^short = "Conformité FR-Identification-micro-organismes-multiresistants (CI-SIS)"
 * templateId[frIdentificationMicroOrganismesMultiresistants] ^definition = "Conformité FR-Identification-micro-organismes-multiresistants (CI-SIS)"
@@ -49,6 +49,7 @@ and frIdentificationMicroOrganismesMultiresistants 1..1
 * effectiveTime 1..1
 * effectiveTime ^short = "Date de l'observation"
 * effectiveTime ^definition = "Date de l'observation"
+* effectiveTime ^type.profile = "http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS"
 * value MS
 * value 1..1
 * value ^short = "Description sous forme textuelle des micro-organismes identifiés"
