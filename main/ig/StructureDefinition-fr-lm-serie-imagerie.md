@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-serie-imagerie | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-03-20 | *Computable Name*:FRLMSerieImagerie |
+| Draft as of 2026-03-23 | *Computable Name*:FRLMSerieImagerie |
 
  
 Serie imagerie 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-serie-imagerie
   "name" : "FRLMSerieImagerie",
   "title" : "Modèle logique métier - FR LM Serie imagerie",
   "status" : "draft",
-  "date" : "2026-03-20T08:18:16+00:00",
+  "date" : "2026-03-23T13:14:10+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

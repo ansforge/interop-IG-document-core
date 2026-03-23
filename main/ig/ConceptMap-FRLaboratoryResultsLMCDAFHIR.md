@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRLaboratoryResultsLMCDAFHIR | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-03-20 | *Computable Name*: |
+| Draft as of 2026-03-23 | *Computable Name*: |
 
  
 Mapping des éléments du modèle métier FRLMResultatsExamensBiologieMedicale vers le profil CDA FRCDAResultatExamensDeBiologie, puis vers le profil FHIR FRObservationLaboratoryReportResultsDocument. 
@@ -26,7 +26,7 @@ Mapping des éléments du modèle métier FRLMResultatsExamensBiologieMedicale v
   "version" : "0.1.0-snapsnot",
   "title" : "Mapping Métier/CDA/FHIR : \"Résultats d'examens de biologie médicale\"",
   "status" : "draft",
-  "date" : "2026-03-20T08:18:16+00:00",
+  "date" : "2026-03-23T13:14:10+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

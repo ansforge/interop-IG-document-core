@@ -6,8 +6,8 @@
   "status" : "draft",
   "package-id" : "ans.document.fr.core",
   "ig-ver" : "0.1.0-snapsnot",
-  "date" : "Fri, 20 Mar, 2026 08:18:16 +0000",
-  "dateISO8601" : "2026-03-20T08:18:16+00:00",
+  "date" : "Mon, 23 Mar, 2026 13:14:10 +0000",
+  "dateISO8601" : "2026-03-23T13:14:10+00:00",
   "errs" : 1033,
   "warnings" : 4649,
   "hints" : 1112,
@@ -15,5 +15,5 @@
   "suppressed-warnings" : 0,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 4881534992
+  "maxMemory" : 6529487136
 }
