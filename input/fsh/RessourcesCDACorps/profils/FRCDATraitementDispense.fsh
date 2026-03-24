@@ -41,6 +41,7 @@ and iheSupplyEntry 1..1
 * text 1..1
 * text ^short = "Texte de l'entrée"
 * text ^definition = "Texte de l'entrée"
+* text.reference 1..1 MS
 * quantity 1..1 MS
 * quantity ^short = "Quantité : Unité issue de EDQM Packaging"
 * quantity ^definition = "Quantité"
@@ -49,7 +50,6 @@ and iheSupplyEntry 1..1
 * product ^definition = "Médicament délivré"
 * product only FRCDAProduitDeSante
 * entryRelationship MS
-* entryRelationship 0..*
 * entryRelationship ^slicing.discriminator.type = #value
 * entryRelationship ^slicing.discriminator.path = "$this"
 * entryRelationship ^slicing.rules = #open
