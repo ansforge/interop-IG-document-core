@@ -21,6 +21,8 @@ Description: "FR-Participant: CDA - participant. Participant du corps"
 * time MS
 * time ^short = "Date et heure de la participation"
 * time ^definition = "Date et heure de la participation"
+  * low MS
+  * high MS
 * participantRole MS
 * participantRole ^short = "Rôle du participant dans l'acte"
 * participantRole ^definition = "Rôle du participant dans l'acte"
