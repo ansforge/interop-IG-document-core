@@ -46,33 +46,57 @@ and iheModeAdministrationDosesDebutDiffere 0..1
 * templateId[ihePosologieStructuree] ^definition = "Conformité Posologie structurée"
 * templateId[iheModeAdministrationNormal].root 1..1
 * templateId[iheModeAdministrationNormal].root = "1.3.6.1.4.1.19376.1.5.3.1.4.7.1"
-* templateId[iheModeAdministrationNormal] ^short = "Mode d'administration : normal   Administration sans précaution particulière à prendre.      Dans ce cas, ne pas utiliser de  subordonné. "
-* templateId[iheModeAdministrationNormal] ^definition = "Mode d'administration"
+* templateId[iheModeAdministrationNormal] ^short = "Mode d'administration : normal. 
+Administration sans précaution particulière à prendre. Dans ce cas, ne pas utiliser de  subordonné."
+* templateId[iheModeAdministrationNormal] ^definition = "Mode d'administration: normal"
 * templateId[iheModeAdministrationDosesProgressives].root 1..1
 * templateId[iheModeAdministrationDosesProgressives].root = "1.3.6.1.4.1.19376.1.5.3.1.4.8"
-* templateId[iheModeAdministrationDosesProgressives] ^short = "Mode d'administration : doses progressives   Administration pour les médicamments dont la posologie optimale (ou l'arrêt) n'est obtenue que progressivement, par paliers.      Par exemple      - 0.5 mg par jour pendant 3 jours,      - puis 1 mg par jour les 5 jours suivants      - puis 2 mg par jour      Souvent, en particulier lorsque l'arrêt brusque du traitement peut avoir des conséquences négatives,
-                        les doses sont réduites progressivement.      Les doses peuvent être ajustées en modifiant la fréquence de la dose, la quantité de la dose, ou les deux.      Lorsque la fréquence de la dose est simplement ajustée (par ex. 5 mg de prednisone deux fois par jour pendant trois jours, puis 5 mg par jour pendant trois jours, puis 5 mg tous les deux jours), une seule entrée
-                        Traitement est nécessaire et les différentes fréquences sont enregistrées dans l'élement .      Lorsque la dose varie (par ex. 15 mg de prednisone par jour pendant trois jours, puis 10 mg par jour pendant trois jours, puis 5 mg par jour pendant trois jours), un composant subordonné doit être créé pour chaque dose. "
-* templateId[iheModeAdministrationDosesProgressives] ^definition = "Mode d'administration"
+* templateId[iheModeAdministrationDosesProgressives] ^short = "Mode d'administration : doses progressives.
+ Administration pour les médicamments dont la posologie optimale (ou l'arrêt) n'est obtenue que progressivement, par paliers. 
+Par exemple : 
+ - 0.5 mg par jour pendant 3 jours ;
+ - puis 1 mg par jour les 5 jours suivants ;
+ - puis 2 mg par jour. 
+Souvent, en particulier lorsque l'arrêt brusque du traitement peut avoir des conséquences négatives, les doses sont réduites progressivement. 
+Les doses peuvent être ajustées en modifiant la fréquence de la dose, la quantité de la dose, ou les deux. 
+Lorsque la fréquence de la dose est simplement ajustée (par ex. 5 mg de prednisone deux fois par jour pendant trois jours, puis 5 mg par jour pendant trois jours, puis 5 mg tous les deux jours), une seule entrée
+Traitement est nécessaire et les différentes fréquences sont enregistrées dans l'élement . 
+Lorsque la dose varie (par ex. 15 mg de prednisone par jour pendant trois jours, puis 10 mg par jour pendant trois jours, puis 5 mg par jour pendant trois jours), un composant subordonné doit être créé pour chaque dose. "
+* templateId[iheModeAdministrationDosesProgressives] ^definition = "Mode d'administration : doses progressives"
 * templateId[iheModeAdministrationDosesFractionnees].root 1..1
 * templateId[iheModeAdministrationDosesFractionnees].root = "1.3.6.1.4.1.19376.1.5.3.1.4.9"
-* templateId[iheModeAdministrationDosesFractionnees] ^short = "Mode d'administration : doses fractionnées   Administration de médicaments dont la posologie varie d'un jour sur l'autre.      Par exemple : Coumadine : ¼ cp les jours pairs et ½ cp les jours impairs      Une dose fractionnée est souvent utilisée lorsque différentes doses sont administrées à différents moments (par ex. à différents moments de la journée ou sur des jours différents). Il peut s'agir de
-                        tenir compte de différents taux métaboliques à différents moments de la journée ou simplement d'aborder les carences du boîtage des médicaments (par ex. 2 mg de Coumadin les jours pairs et 2,5 mg les jours impairs parce que la Coumadine n'existe pas sous une forme posologique à 2,25 mg).      Dans ce cas, une entrée subordonnée  est requise
-                        pour chaque dose fractionnée. "
-* templateId[iheModeAdministrationDosesFractionnees] ^definition = "Mode d'administration"
+* templateId[iheModeAdministrationDosesFractionnees] ^short = "Mode d'administration : doses fractionnées. 
+Administration de médicaments dont la posologie varie d'un jour sur l'autre. 
+Par exemple : Coumadine : ¼ cp les jours pairs et ½ cp les jours impairs. 
+Une dose fractionnée est souvent utilisée lorsque différentes doses sont administrées à différents moments (par ex. à différents moments de la journée ou sur des jours différents). 
+Il peut s'agir de tenir compte de différents taux métaboliques à différents moments de la journée ou simplement d'aborder les carences du boîtage des médicaments (par ex. 2 mg de Coumadin les jours pairs et 2,5 mg les jours impairs parce que la Coumadine n'existe pas sous une forme posologique à 2,25 mg). 
+Dans ce cas, une entrée subordonnée  est requise pour chaque dose fractionnée."
+* templateId[iheModeAdministrationDosesFractionnees] ^definition = "Mode d'administration : doses fractionnées"
 * templateId[iheModeAdministrationDosesConditionnelles].root 1..1
 * templateId[iheModeAdministrationDosesConditionnelles].root = "1.3.6.1.4.1.19376.1.5.3.1.4.10"
-* templateId[iheModeAdministrationDosesConditionnelles] ^short = "Mode d'administration : doses conditionnelles   Administration en fonction d'un événement (typiquement dosage de la glycémie pour les diabétiques).      Une dose conditionnelle est souvent utilisée lorsque la quantité de la dose diffère en fonction de certaines mesures (p. ex. une dose d'insuline en fonction du taux de glycémie). Dans ce cas, une entrée subordonnée  est requise
-                        pour chaque dose conditionnelle. "
-* templateId[iheModeAdministrationDosesConditionnelles] ^definition = "Mode d'administration"
+* templateId[iheModeAdministrationDosesConditionnelles] ^short = "Mode d'administration : doses conditionnelles. 
+Administration en fonction d'un événement (typiquement dosage de la glycémie pour les diabétiques). 
+Une dose conditionnelle est souvent utilisée lorsque la quantité de la dose diffère en fonction de certaines mesures (p. ex. une dose d'insuline en fonction du taux de glycémie). 
+Dans ce cas, une entrée subordonnée  est requise pour chaque dose conditionnelle."
+* templateId[iheModeAdministrationDosesConditionnelles] ^definition = "Mode d'administration : doses conditionnelles"
 * templateId[iheModeAdministrationDosesCombinees].root 1..1
 * templateId[iheModeAdministrationDosesCombinees].root = "1.3.6.1.4.1.19376.1.5.3.1.4.11"
-* templateId[iheModeAdministrationDosesCombinees] ^short = "Mode d'administration : doses combinées   Administration de médicaments combinés à d'autres dans le contexte d'une même prise.      Une association médicamenteuse est composée de deux ou plusieurs autres médicaments. Ceux-ci peuvent être préemballés, comme l'Acuilix, qui est une combinaison d'hydrochlorothiazide et de quinapril dans des proportions prédéfinies, ou préparés par un pharmacien.      Dans le cas d'une association médicamenteuse préemballée, il suffit de fournir le nom du produit médicamenteux d'association et la désignation de sa concentration dans une seule entrée . L'information posologique doit ensuite être enregistrée sous la forme d'un simple comptage des unités d'administration.      Dans le cas d'un mélange préparé, la description du mélange doit être fournie en tant que nom du produit, dans l'entrée . Cette entrée peut, mais ce n'est pas obligatoire, avoir des entrées subordonnées  sous cette entrée pour enregistrer les composants du mélange. "
-* templateId[iheModeAdministrationDosesCombinees] ^definition = "Mode d'administration"
+* templateId[iheModeAdministrationDosesCombinees] ^short = "Mode d'administration : doses combinées.
+Administration de médicaments combinés à d'autres dans le contexte d'une même prise. 
+Une association médicamenteuse est composée de deux ou plusieurs autres médicaments. 
+Ceux-ci peuvent être préemballés, comme l'Acuilix, qui est une combinaison d'hydrochlorothiazide et de quinapril dans des proportions prédéfinies, ou préparés par un pharmacien. 
+Dans le cas d'une association médicamenteuse préemballée, il suffit de fournir le nom du produit médicamenteux d'association et la désignation de sa concentration dans une seule entrée . 
+L'information posologique doit ensuite être enregistrée sous la forme d'un simple comptage des unités d'administration. 
+Dans le cas d'un mélange préparé, la description du mélange doit être fournie en tant que nom du produit, dans l'entrée . 
+Cette entrée peut, mais ce n'est pas obligatoire, avoir des entrées subordonnées  sous cette entrée pour enregistrer les composants du mélange."
+* templateId[iheModeAdministrationDosesCombinees] ^definition = "Mode d'administration : doses combinées"
 * templateId[iheModeAdministrationDosesDebutDiffere].root 1..1
 * templateId[iheModeAdministrationDosesDebutDiffere].root = "1.3.6.1.4.1.19376.1.5.3.1.4.21"
-* templateId[iheModeAdministrationDosesDebutDiffere] ^short = "Mode d'administration : doses à début différé   Administration de médicaments dont le début est différée et ne peut être calculés.      Exemples : 3 jours avant le voyage, 1 jour avant une intervention.      Dans ce cas, ne pas utiliser de  subordonné. "
-* templateId[iheModeAdministrationDosesDebutDiffere] ^definition = "Mode d'administration"
+* templateId[iheModeAdministrationDosesDebutDiffere] ^short = "Mode d'administration : doses à début différé. 
+Administration de médicaments dont le début est différée et ne peut être calculés. 
+Exemples : 3 jours avant le voyage, 1 jour avant une intervention. 
+Dans ce cas, ne pas utiliser de  subordonné."
+* templateId[iheModeAdministrationDosesDebutDiffere] ^definition = "Mode d'administration : doses à début différé"
 * code MS
 * code ^short = "Acte ou situation"
 * code ^definition = "Acte ou situation"
@@ -83,6 +107,7 @@ and iheModeAdministrationDosesDebutDiffere 0..1
 * text MS
 * text 1..1
 * text ^short = "Partie narrative de l’entrée"
+* text.reference 1..1 MS
 * statusCode MS
 * statusCode 1..1
 * statusCode ^short = "Statut de l'entrée"
@@ -113,6 +138,8 @@ Dans le cas où la posologie n'est pas structurée et décrite uniquement dans l
 Dans le cas où la posologie est structurée, si la voie d'administration est connue, elle peut être indiquée à partir de la terminologie EDQM (0.4.0.127.0.16.1.1.2.1).      
 Si elle n'est pas connue, la raison pour laquelle elle est inconnue peut être décrite en utilisant l'attribut nullFlavor."
 * routeCode ^definition = "Voie d'administration"
+* routeCode.codeSystem = "0.4.0.127.0.16.1.1.2.1"
+* routeCode.originalText.reference 1..1 MS
 * approachSiteCode ^short = "région anatomique d'administration :
 Dans le cas où la posologie n'est pas structurée et décrite uniquement dans la partie narrative, cet élément ne doit pas être présent.   
 Dans le cas où la posologie est structurée, si la région anatomique d'administration est connue, elle peut être indiquée."
@@ -126,6 +153,14 @@ Dans le cas où l'on s'exprime en quantités indénombrables, l'unité doit êtr
 Dans le cas où l'on s'exprime en quantités dénombrables (capsules, comprimés, gélules, etc.) l'unité ne doit pas être renseignée. A la place, on ajoute un champ 'translation' qui permet de pointer sur l'élément de la partie narrative relative à cette information.
 """
 * doseQuantity ^definition = "Dose à administrer"
+  * low 1..1 MS
+  * low.translation 0..1 MS
+  * low.translation.originalText 1..1 MS
+  * low.translation.originalText.reference 1..1 MS
+  * high 1...1 MS
+  * high.translation 0..1 MS
+  * high.translation.originalText 1..1 MS
+  * high.translation.originalText.reference 1..1 MS
 * rateQuantity MS
 * rateQuantity ^short = """Rythme d'administration : \r\n
 Le rythme d'administration permet d'indiquer la quantité de produit à administrer par unité de temps.
@@ -134,6 +169,14 @@ L'argument @value permet d'indiquer la quantité de produit à administrer.
 L'argument @unit permet d'indiquer le rythme d'administration en combinant l'unité de quantité et l'unité de temps (séparés par le caractère ‘/'). Les unités sont exprimées selon le système de codage UCUM.
 Dans chaque élément 'low' et 'high', un élément 'translation' peut permettre de pointer sur l'élément de la partie narrative relative à cette information.
 """
+  * low 1..1 MS
+  * low.translation 0..1 MS
+  * low.translation.originalText 1..1 MS
+  * low.translation.originalText.reference 1..1 MS
+  * high 1...1 MS
+  * high.translation 0..1 MS
+  * high.translation.originalText 1..1 MS
+  * high.translation.originalText.reference 1..1 MS
 * maxDoseQuantity MS
 * maxDoseQuantity ^short = """Dose maximale à administrer : \r\n
 La dose maximale à 'maxDoseQuantity' permet d'indiquer la quantité maximale de produit à administrer par unité de temps.
@@ -143,6 +186,8 @@ Les sous-éléments 'numerator' et 'denominator' permettent de fournir :
 - denominator : la plage de temps sur laquelle s'applique ce maximum.
 Les unités sont exprimées selon le système de codage UCUM.
 """
+  * numerator 1..1 MS
+  * denominator 1..1 MS
 * consumable only FRCDAProduitDeSante
 * consumable ^short = "Produit de santé"
 * consumable ^definition = "Produit de santé"
@@ -170,7 +215,6 @@ Dans le cas où cette entrée Traitement prescrit est utilisée dans un autre do
   * criterion MS
   * criterion.text 1..1
 * entryRelationship MS
-* entryRelationship 0..*
 * entryRelationship ^slicing.discriminator.type = #value
 * entryRelationship ^slicing.discriminator.path = "$this"
 * entryRelationship ^slicing.rules = #open
