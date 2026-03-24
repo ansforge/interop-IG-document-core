@@ -3,7 +3,7 @@ Parent: http://hl7.org/cda/stds/core/StructureDefinition/Participant2
 Id: fr-cda-participant-corps
 Title: "CDA - FR Participant corps"
 Description: "FR-Participant: CDA - participant. Participant du corps"
-* templateId 0..*
+
 * templateId ^slicing.discriminator.type = #value
 * templateId ^slicing.discriminator.path = "root"
 * templateId ^slicing.rules = #open
