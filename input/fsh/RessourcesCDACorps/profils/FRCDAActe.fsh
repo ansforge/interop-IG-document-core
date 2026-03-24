@@ -5,8 +5,11 @@ Title: "CDA - FR Acte"
 Description: "Entrée FR-Acte: IHE-PCC - Procedure. L'entrée 'Acte' est une entrée de type 'procedure' décrivant un acte planifié ou réalisé."
 * classCode MS
 * moodCode MS
-* moodCode ^short = "Si acte prévu : - moodCode='INT' - negationInd='false' (valeur par défaut) Si acte réalisé : - moodCode='EVN' - negationInd='true' si l'acte n'a pas eu lieu - negationInd='false' si l'acte a eu lieu (valeur par défaut)"
-* moodCode ^definition = "Si acte prévu"
+* moodCode ^short = """
+ - Si acte prévu : moodCode='INT' ; negationInd='false' (valeur par défaut) 
+ - Si acte réalisé : moodCode='EVN' ; negationInd='true' 
+     - si l'acte n'a pas eu lieu : negationInd='false' 
+     - si l'acte a eu lieu (valeur par défaut)"""
 * id 1..*
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
