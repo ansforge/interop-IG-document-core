@@ -42,9 +42,9 @@ S'il y a un traitement, les sous-éléments 'low' et 'high' permettent de fourni
 Dans le cas où l'on s'exprime en quantités indénombrables, l'unité doit être transmise. Les unités sont exprimées selon le système de codage UCUM.
 Dans le cas où l'on s'exprime en quantités dénombrables (capsules, comprimés, gélules, etc.) l'unité ne doit pas être renseignée. A la place, on ajoute un champ 'translation' qui permet de pointer sur l'élément de la partie narrative relative à cette information.
 """
+* doseQuantity ^definition = "Dose à administrer"
   * low 1..1 MS
   * high1..1 MS
-* doseQuantity ^definition = "Dose à administrer"
 * rateQuantity MS
 * rateQuantity ^short = """Rythme d'administration : \r\n
 Le rythme d'administration permet d'indiquer la quantité de produit à administrer par unité de temps.
