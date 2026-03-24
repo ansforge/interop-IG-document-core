@@ -42,6 +42,7 @@ and frStatutDuProbleme 1..1
 * text 1..1
 * text ^short = "Description narrative"
 * text ^definition = "Description narrative"
+* text.reference 1..1 MS
 * statusCode MS
 * statusCode 1..1
 * statusCode ^short = "Statut de l'entrée Fixé à la valeur 'completed'"
