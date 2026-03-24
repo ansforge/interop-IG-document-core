@@ -26,10 +26,10 @@ and frSujet 1..1
   * code ^definition = "Lien avec le patient"
   * code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-PersonalRelationshipRoleType-cisis
   * code.codeSystem = "2.16.840.1.113883.5.111"
-  * addr 1..1 MS
+  * addr MS
   * addr only CISISAddr
   * addr ^short = "Adresse"
-  * telecom 1..1 MS
+  * telecom MS
   * telecom only CISISTelecom
   * telecom ^short = "Télécom"
   * subject MS
