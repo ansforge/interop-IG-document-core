@@ -49,6 +49,7 @@ ou jdv-absent-or-unknown-procedure-cisis (1.2.250.1.213.1.1.5.665) pour les acte
 * text 1..1
 * text ^short = "Description narrative de l'acte"
 * text ^definition = "Description narrative de l'acte"
+* text.reference 1..1 MS
 * statusCode MS
 * statusCode 1..1
 * statusCode ^short = """Statut de l'acte : \r\n
