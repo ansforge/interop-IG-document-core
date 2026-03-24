@@ -39,7 +39,7 @@ and frTransportDuPatient 1..1
 * effectiveTime.low ^short = "Date de début du transport"
 * effectiveTime.high 1..1 MS
 * effectiveTime.high ^short = "Date de fin du transport: 
-Si l’heure d’arrivée n’est pas connue (dans le cas notamment d’un transport projeté), effectiveTime/@high prend une valeur nullflavor="UNK"."
+Si l’heure d’arrivée n’est pas connue (dans le cas notamment d’un transport projeté), effectiveTime/@high prend une valeur nullflavor='UNK'."
 * performer 0..1 MS
 * performer ^short = "Transporteur : \r\n
 Les attributs de cet élément prennent les valeurs suivantes : @typeCode= «PRF»"
