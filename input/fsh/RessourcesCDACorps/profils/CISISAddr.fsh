@@ -2,7 +2,11 @@ Profile: CISISAddr
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/AD
 Id: cisis-addr
 Title: "CDA - FR CISIS Addr"
-Description: "CISIS Addr"
+Description: """Adresse géopostale : Le contenu de addr est défini par la norme AFNOR XPZ 10-011 en tant que structure d'adresse postale et géographique à des fins de présentation. Cette norme est reprise dans le Référentiel Général d'Interopérabilité (RGI).
+Les partenaires de l'échange doivent s'accorder sur la structure de addr à échanger.
+En effet, addr peut convoyer une adresse géopostale formée :
+ - soit de composants élémentaires de l'adresse c'est-à-dire un élément XML pour le numéro dans la voie, un pour le type de voie, un pour le nom de la voie, etc.;
+ - soit de lignes obtenues par assemblage des composants élémentaires de l'adresse, chaque ligne étant un élément XML."""
 
 // use
 * use 0..1 MS
@@ -107,7 +111,7 @@ Lieu qui porte un nom rappelant une particularité topographique ou historique e
 // ADRESSE LIBRE (streetAddressLine)
 * item[streetAddressLine] ^short = "Structure formée des lignes obtenues par assemblage des composants élémentaires de l'adresse géopostale.
 Les équivalences avec les éléments XML contenant les composants élémentaires sont indiquées pour chaque ligne (ex: postalCode+city)."
-* item[streetAddressLine].xmlText ^short = "Ligne d'adresse : \r\n
+* item[streetAddressLine].streetAddressLine ^short = "Ligne d'adresse : \r\n
 Première ligne : regroupe les données d'identification du destinataire, 
 Deuxième ligne : Point de remise (additionalLocator), 
 Troisième ligne : Complément du point de remise (unitID), 
