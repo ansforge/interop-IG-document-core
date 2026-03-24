@@ -41,6 +41,7 @@ and frTypeDocumentAttache 1..1
 * text MS
 * text 1..1
 * text ^short = "Partie narrative de l’observation"
+* text.reference 1..1 MS
 * statusCode MS
 * statusCode 1..1
 * statusCode ^short = "Statut de l’observationFixé à la valeur 'completed'"
@@ -60,6 +61,7 @@ Elle peut être notifiée si elle est différente de la réalisation du docu-men
 * value.originalText ^short = """Référence à l’élément narratif de la section : \r\n
 S’il est présent, cet élément permet de pointer vers un élément textuel de la partie narrative de la section. L’élément textuel pointé contient les commentaires éventuels faits sur les documents attachés."""
 * value.originalText.reference ^short = "Référence à l'élément narratif de la section. value=' identifiant de l'image '  Cet identifiant est utilisé dans la partie narrative par l'élément renderMultiMedia/referenceObject."
+* value.originalText.reference 1..1 MS
 * value.qualifier MS
 * value.qualifier ^short = """Précision :\r\n
 Élément permettant s'il y a lieu de préciser l'élément observé dans un document attaché (typiquement ‘gauche' ou ‘droite' pour latéraliser la vue d'un élément d'imagerie)."""
