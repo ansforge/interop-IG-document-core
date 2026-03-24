@@ -41,6 +41,7 @@ and frAccidentsTransfusionnels 1..1
 * text 1..1
 * text ^short = "Partie narrative de l'observation"
 * text ^definition = "Partie narrative de l'observation"
+* text.reference 1..1 MS
 * statusCode MS
 * statusCode 1..1
 * statusCode.code = #completed
