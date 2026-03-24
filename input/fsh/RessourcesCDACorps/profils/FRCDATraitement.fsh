@@ -166,6 +166,12 @@ Les sous-éléments 'numerator' et 'denominator' permettent de fournir :
 - denominator : la plage de temps sur laquelle s'applique ce maximum.
 Les unités sont exprimées selon le système de codage UCUM.
 """
+  * numerator 1..1 MS
+    * unit MS
+    * value MS
+  * denominator 1..1 MS
+    * unit MS
+    * value MS
 * consumable only FRCDAProduitDeSante
 * consumable ^short = "Médicament"
 * consumable ^definition = "Médicament"
@@ -177,7 +183,6 @@ Permet de décrire les conditions préalables à l'utilisation du médicament.  
   * criterion MS
   * criterion.text 1..1
 * entryRelationship MS
-* entryRelationship 0..*
 * entryRelationship ^slicing.discriminator.type = #value
 * entryRelationship ^slicing.discriminator.path = "$this"
 * entryRelationship ^slicing.rules = #open
@@ -193,7 +198,7 @@ frPrescription 0..*
 * entryRelationship[frTraitementSubordonne].substanceAdministration only FRCDATraitementSubordonne
 * entryRelationship[frTraitementSubordonne].substanceAdministration ^short = """
 Traitement subordonné : \r\n
-Une entrée Traitement de premier niveau peut contenir une ou plusieurs sous-entrées "Traitement" subordonnées pour les cas spécifiques des dosages progressifs, fractionnés ou conditionnels, ou pour gérer la combinaison de médicaments.
+Une entrée Traitement de premier niveau peut contenir une ou plusieurs sous-entrées 'Traitement' subordonnées pour les cas spécifiques des dosages progressifs, fractionnés ou conditionnels, ou pour gérer la combinaison de médicaments.
 L'utilisation de sous-entrées 'Traitement' subordonnées pour traiter ces cas est facultative. Dans ce cas, l'information doit être fournie dans la partie narrative de l'entrée 'Traitement' de premier niveau sous forme de texte libre.
 """
 * entryRelationship[frTraitementSubordonne].substanceAdministration ^definition = "Traitement subordonné"
