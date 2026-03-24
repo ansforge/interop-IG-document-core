@@ -55,5 +55,4 @@ and frSignesVitaux 1..1
 * component 1..*
 * component ^short = "Entrée Signe vital observé"
 * component.typeCode = #COMP
-* component.observation 0..1
 * component.observation only FRCDASigneVitalObserve
