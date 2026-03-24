@@ -320,6 +320,85 @@ groups:
       - StructureDefinition/fr-cda-encompassing-encounter
       - StructureDefinition/fr-cda-encounter-participant
       - StructureDefinition/fr-cda-health-care-facility
+  Ressources CDA corps:
+    name: Eléments CDA du corps
+    resources:
+      - StructureDefinition/cisis-telecom
+      - StructureDefinition/cisis-addr
+      - StructureDefinition/fr-cda-accidents-transfusionnels
+      - StructureDefinition/fr-cda-acte
+      - StructureDefinition/fr-cda-simple-observation
+      - StructureDefinition/fr-cda-reference-interne
+      - StructureDefinition/fr-cda-performer-corps
+      - StructureDefinition/fr-cda-participant-corps
+      - StructureDefinition/fr-cda-participant-role
+      - StructureDefinition/fr-cda-dicom-examen-imagerie
+      - StructureDefinition/fr-cda-dicom-exposition-patient
+      - StructureDefinition/fr-cda-dicom-observation
+      - StructureDefinition/fr-cda-dicom-observation-subordonnee
+      - StructureDefinition/fr-cda-dicom-quantite
+      - StructureDefinition/fr-cda-dicom-quantite-subordonnee
+      - StructureDefinition/fr-cda-dicom-serie-imagerie
+      - StructureDefinition/fr-cda-informant-apsr
+      - StructureDefinition/fr-cda-laboratoire-executant
+      - StructureDefinition/fr-cda-participant-apsr
+      - StructureDefinition/fr-cda-signes-vitaux
+      - StructureDefinition/fr-cda-signe-vital-observe
+      - StructureDefinition/fr-cda-statut
+      - StructureDefinition/fr-cda-statut-clinique-du-patient
+      - StructureDefinition/fr-cda-statut-document
+      - StructureDefinition/fr-cda-statut-du-probleme
+      - StructureDefinition/fr-cda-sujet
+      - StructureDefinition/fr-cda-sujet-personne
+      - StructureDefinition/fr-cda-synthese-medicale-sejour
+      - StructureDefinition/fr-cda-traitement
+      - StructureDefinition/fr-cda-traitement-dispense
+      - StructureDefinition/fr-cda-traitement-prescrit
+      - StructureDefinition/fr-cda-traitement-prescrit-subordonne
+      - StructureDefinition/fr-cda-transfusion-de-produits-sanguins
+      - StructureDefinition/fr-cda-transport-du-patient
+      - StructureDefinition/fr-cda-transport-du-professionnel
+      - StructureDefinition/fr-cda-type-document-attache
+      - StructureDefinition/fr-cda-vaccination
+      - StructureDefinition/fr-cda-vaccin-recommande
+      - StructureDefinition/fr-cda-dicom-administration-produit-de-sante
+      - StructureDefinition/fr-cda-dicom-administration-radiopharmaceutique
+      - StructureDefinition/fr-cda-gravite-effet-indesirable
+      - StructureDefinition/fr-cda-groupe-de-questionnaires-d-evaluation
+      - StructureDefinition/fr-cda-habitus-mode-de-vie
+      - StructureDefinition/fr-cda-historique-de-la-grossesse
+      - StructureDefinition/fr-cda-hors-amm
+      - StructureDefinition/fr-cda-identification-micro-organismes-multiresistants
+      - StructureDefinition/fr-cda-image-illustrative
+      - StructureDefinition/fr-cda-imputabilite-effet-indesirable
+      - StructureDefinition/fr-cda-instruction-au-patient
+      - StructureDefinition/fr-cda-instructions-au-dispensateur
+      - StructureDefinition/fr-cda-instructions-au-patient
+      - StructureDefinition/fr-cda-isolat-microbiologique
+      - StructureDefinition/fr-cda-item-plan-traitement
+      - StructureDefinition/fr-cda-liste-des-allergies-et-hypersensibilites
+      - StructureDefinition/fr-cda-liste-des-problemes
+      - StructureDefinition/fr-cda-modalite-entree
+      - StructureDefinition/fr-cda-modalite-sortie
+      - StructureDefinition/fr-cda-naissance
+      - StructureDefinition/fr-cda-non-remboursable
+      - StructureDefinition/fr-cda-notes-du-dispensateur
+      - StructureDefinition/fr-cda-observation-sur-la-grossesse
+      - StructureDefinition/fr-cda-organisme-assurance-maladie
+      - StructureDefinition/fr-cda-patient-avec-sujet-non-humain
+      - StructureDefinition/fr-cda-periode-de-renouvellement
+      - StructureDefinition/fr-cda-rang-de-la-vaccination
+      - StructureDefinition/fr-cda-recherche-de-micro-organismes
+      - StructureDefinition/fr-cda-reference-item-plan-traitement
+      - StructureDefinition/fr-cda-reference-item-prescription
+      - StructureDefinition/fr-cda-references-externes
+      - StructureDefinition/fr-cda-rencontre
+      - StructureDefinition/fr-cda-resultat
+      - StructureDefinition/fr-cda-resultat-examens-de-biologie-element-clinique-pertinent
+      - StructureDefinition/fr-cda-resultats-examens-de-biologie-medicale
+      - StructureDefinition/fr-cda-severite
+      - StructureDefinition/fr-cda-sujet-non-humain
+      - StructureDefinition/fr-cda-observation-sur-echelle-douleur
 
   Ressources FHIR entête:
     name: Profils FHIR entête

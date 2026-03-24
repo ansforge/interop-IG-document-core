@@ -44,12 +44,11 @@ and frIdentificationMicroOrganismesMultiresistants 1..1
 * statusCode 1..1
 * statusCode ^short = "Statut de l'observation"
 * statusCode ^definition = "Statut de l'observation"
-* statusCode from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis
+* statusCode from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis (required)
 * effectiveTime MS
 * effectiveTime 1..1
 * effectiveTime ^short = "Date de l'observation"
 * effectiveTime ^definition = "Date de l'observation"
-* effectiveTime ^type.profile = "http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS"
 * value MS
 * value 1..1
 * value ^short = "Description sous forme textuelle des micro-organismes identifiés"

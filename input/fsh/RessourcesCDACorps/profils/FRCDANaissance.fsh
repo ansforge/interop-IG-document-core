@@ -3,7 +3,7 @@ Parent: http://hl7.org/cda/stds/core/StructureDefinition/Organizer
 Id: fr-cda-naissance
 Title: "CDA - FR Naissance"
 Description: "Entrée FR-Naissance: IHE-PCC - Birth event organizer. 
- - Cette entrée rassemble les observations relatives à une naissance.Elle peut-être utilisée comme 'component'; d'une entrée FR-Historique-de-la-grossesse (1.3.6.1.4.1.19376.1.5.3.1.4.13.5.1)."
+ - Cette entrée rassemble les observations relatives à une naissance. Elle peut-être utilisée comme 'component'; d'une entrée FR-Historique-de-la-grossesse (1.3.6.1.4.1.19376.1.5.3.1.4.13.5.1)."
 * classCode MS
 * classCode = #CLUSTER
 * moodCode MS

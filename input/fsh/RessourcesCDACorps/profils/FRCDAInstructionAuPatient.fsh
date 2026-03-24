@@ -45,7 +45,6 @@ and frInstructionAuPatient 1..1
 * effectiveTime MS
 * effectiveTime ^short = "Horodatage de l’entrée"
 * effectiveTime ^definition = "Horodatage de l’entrée"
-* effectiveTime ^type.profile = "http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS"
 * value MS
 * value ^short = "Instruction au patient sous forme codée. JDV dépendant du cas d’usage.
 • Pour les prescription d’examen de biologie : JDV_Bio_instruction_patient_CISIS (1.2.250.1.213.1.1.5.691)"

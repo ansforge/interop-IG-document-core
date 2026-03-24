@@ -116,5 +116,5 @@ frCommentaireER 0..*
 * entryRelationship[frResultatsAnterieurs].observation.referenceRange.observationRange.interpretationCode 1..1 MS
 * entryRelationship[frResultatsAnterieurs].observation.referenceRange.observationRange.interpretationCode.code = #N
 * entryRelationship[frResultatsAnterieurs].observation.referenceRange.observationRange.interpretationCode.codeSystem = "2.16.840.1.113883.5.83"
-// Demande de création de l'extension lab: a été créée
+// Demande faite pour l'ajout de l'extension lab
 // * entryRelationship[frResultatsAnterieurs].observation.referenceRange.observationRange.lab:precondition 0..* 

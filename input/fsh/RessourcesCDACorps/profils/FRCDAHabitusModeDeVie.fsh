@@ -2,9 +2,9 @@ Profile: FRCDAHabitusModeDeVie
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Observation
 Id: fr-cda-habitus-mode-de-vie
 Title: "CDA - FR Habitus Mode de vie"
-Description: "Entrée FR-Habitus-Mode-de-vie: IHE-PCC - Social History Observation. 
- - L'entrée Habitus, Mode de vie permet de décrire des éléments sociaux du patient. 
- - Cette entrée est basée sur l'élément Simple Observation (1.3.6.1.4.1.19376.1.5.3.1.4.13) qu'elle spécialise en portant des contraintes sur les vocabulaires des éléments 'code' et 'value'."
+Description: "Entrée FR-Habitus-Mode-de-vie: IHE-PCC - Social History Observation
+ - L'entrée Habitus, Mode de vie permet de décrire des éléments sociaux du patient 
+ - Cette entrée est basée sur l'élément Simple Observation (1.3.6.1.4.1.19376.1.5.3.1.4.13) qu'elle spécialise en portant des contraintes sur les vocabulaires des éléments 'code' et 'value'"
 * classCode MS
 * classCode = #OBS
 * moodCode MS

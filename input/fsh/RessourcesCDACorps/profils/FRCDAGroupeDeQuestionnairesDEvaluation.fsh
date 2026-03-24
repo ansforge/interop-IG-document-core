@@ -2,7 +2,8 @@ Profile: FRCDAGroupeDeQuestionnairesDEvaluation
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Organizer
 Id: fr-cda-groupe-de-questionnaires-d-evaluation
 Title: "CDA - FR Groupe de questionnaires d evaluation"
-Description: "Entrée FR-Groupe-de-questionnaires-d-evaluation: IHE-PCC - Survey-pannel. L'entrée 'Groupe de questionnaires d’évaluation' est une entrée de type 'organizer' qui permet de rassembler des observations de questionnaires."
+Description: "Entrée FR-Groupe-de-questionnaires-d-evaluation: IHE-PCC - Survey-pannel
+ - L'entrée 'Groupe de questionnaires d’évaluation' est une entrée de type 'organizer' qui permet de rassembler des observations de questionnaires."
 * classCode MS
 * classCode = #CLUSTER
 * moodCode MS

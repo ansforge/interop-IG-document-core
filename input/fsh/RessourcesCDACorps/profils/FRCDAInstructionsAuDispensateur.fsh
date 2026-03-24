@@ -2,7 +2,8 @@ Profile: FRCDAInstructionsAuDispensateur
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Act
 Id: fr-cda-instructions-au-dispensateur
 Title: "CDA - FR Instructions au dispensateur"
-Description: "Entrée FR-Instructions-au-dispensateur: IHE-PCC - Medication Fulfillment Instructions. Toute prescription peut faire l'objet d'instructions au dispensateur (pharmacien), par exemple pour indiquer que le traitement doit être étiqueté dans une langue étrangère, etc …  
+Description: "Entrée FR-Instructions-au-dispensateur: IHE-PCC - Medication Fulfillment Instructions. 
+ - Toute prescription peut faire l'objet d'instructions au dispensateur (pharmacien), par exemple pour indiquer que le traitement doit être étiqueté dans une langue étrangère, etc …  
  - Cette entrée est incluse dans une entrée Prescription à l'aide d'un élément entryRelationship ."
 * classCode MS
 * classCode = #ACT

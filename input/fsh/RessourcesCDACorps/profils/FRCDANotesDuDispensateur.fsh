@@ -44,3 +44,4 @@ and ccdFulfillmentInstructions 1..1
 * statusCode 1..1
 * statusCode ^short = "Statut de l'entréeFixé à la valeur 'completed'"
 * statusCode ^definition = "Statut de l'entrée"
+* statusCode.code = #completed

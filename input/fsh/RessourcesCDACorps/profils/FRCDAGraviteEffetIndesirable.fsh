@@ -2,8 +2,8 @@ Profile: FRCDAGraviteEffetIndesirable
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Observation
 Id: fr-cda-gravite-effet-indesirable
 Title: "CDA - FR Gravite effet indesirable"
-Description: "Entrée FR-Gravite-effet-indesirable: Cette entrée permet de préciser la gravité d'un effet indésirable à un médicament. 
- - Il est utilisé exclusivement dans un lien 'entryRelationship' grâce auquel il est lié à l’élément qu’il qualifie."
+Description: "Entrée FR-Gravite-effet-indesirable
+ - Cette entrée permet de préciser la gravité d'un effet indésirable à un médicament. Il est utilisé exclusivement dans un lien 'entryRelationship' grâce auquel il est lié à l’élément qu’il qualifie."
 * classCode MS
 * classCode = #OBS
 * moodCode MS

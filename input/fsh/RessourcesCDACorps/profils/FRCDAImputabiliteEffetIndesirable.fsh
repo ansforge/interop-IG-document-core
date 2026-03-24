@@ -36,6 +36,6 @@ Description: "Entrée FR-Imputabilite-effet-indesirable: Cette entrée permet de
 * value ^short = "Niveau d'imputabilité"
 * value ^definition = "Niveau d'imputabilité"
 * value only CD
-* value from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-imputabilite-cisis
+* value from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-imputabilite-cisis (required)
 * value.code MS
 * value.code 1..1

@@ -2,7 +2,8 @@ Profile: FRCDAIsolatMicrobiologique
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Organizer
 Id: fr-cda-isolat-microbiologique
 Title: "CDA - FR Isolat microbiologique"
-Description: "Entrée FR-Isolat-microbiologique: IHE-PCC - Laboratory isolate organizer. L'entrée Isolat microbiologique est une entrée de type 'organizer' qui est utilisée pour les comptes rendus comprenant des résultats de microbiologie. 
+Description: "Entrée FR-Isolat-microbiologique: IHE-PCC - Laboratory isolate organizer. 
+ - L'entrée Isolat microbiologique est une entrée de type 'organizer' qui est utilisée pour les comptes rendus comprenant des résultats de microbiologie. 
  - Elle décrit un isolat (milieu de culture sur lequel a poussé un microorganisme) et les résultats d'examens obtenus sur cet isolat (antibiogramme, antifongigramme, sérotype, génotype …)."
 * classCode MS
 * classCode = #CLUSTER
@@ -31,7 +32,7 @@ and frIsolatMicrobiologique 1..1
 * statusCode 1..1
 * statusCode ^short = "Niveau de complétude‘completed' : Rendu final complet. Tous les résultats attendus pour cet examen sont présents.‘active' : Rendu partiel. Certains résultats sont encore à venir pour cet examen.‘aborted' : L'examen est abandonné. Quelques résultats peuvent apparaître."
 * statusCode ^definition = "Niveau de complétude"
-* statusCode from https://interop.esante.fr/fhir/ValueSet/FR-Isolat-microbiologique_ValueSet 
+* statusCode from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis (required)
 * effectiveTime MS
 * effectiveTime ^short = "Date et heure des résultats"
 * effectiveTime ^definition = "Date et heure des résultats"

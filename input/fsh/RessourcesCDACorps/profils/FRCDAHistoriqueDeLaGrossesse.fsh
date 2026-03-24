@@ -42,7 +42,6 @@ and frHistoriqueDeLaGrossesse 1..1
 * effectiveTime 1..1
 * effectiveTime ^short = "Période de la grossesse"
 * effectiveTime ^definition = "Période de la grossesse"
-* effectiveTime ^type.profile = "http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS"
 * component MS
 * component 1..1
 * component ^slicing.discriminator.type = #type

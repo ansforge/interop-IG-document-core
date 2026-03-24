@@ -58,12 +58,10 @@ and frItemPlanTraitement 1..1
 * effectiveTime[frEffectiveTimeDuree] obeys fr-effectiveTime-duree-type
 * effectiveTime[frEffectiveTimeFrequence] obeys fr-operator-a
 * effectiveTime[frEffectiveTimeFrequence] obeys fr-effectiveTime-frequence-types
-* effectiveTime[frEffectiveTimeFrequence] obeys fr-operator-a
-* effectiveTime[frEffectiveTimeFrequence] obeys fr-effectiveTime-frequence-types
 * routeCode MS
 * routeCode ^short = "Voie d'administration - Si la voie d'administration est connue, elle doit être indiquée (code et displayName).  - Si elle n'est pas connue, la raison pour laquelle elle est inconnue peut être décrite en utilisant l'attribut nullFlavor."
 * routeCode ^definition = "Voie d'administration"
-* routeCode from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-route-of-administration-cisis
+* routeCode from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-route-of-administration-cisis (required)
 * approachSiteCode MS
 * approachSiteCode ^short = "région anatomique d'administration"
 * approachSiteCode ^definition = "région anatomique d'administration"

@@ -3,8 +3,7 @@ Parent: http://hl7.org/cda/stds/core/StructureDefinition/Observation
 Id: fr-cda-severite
 Title: "CDA - FR Severite"
 Description: "Entrée FR-Severite: IHE-PCC - Severity. 
- - Cette entrée permet de donner le niveau de sévérité d’un problème : bas, modéré, élevé, etc... 
- - Il est utilisé exclusivement dans un lien entryRelationship grâce auquel il est lié à l’élément qu’il qualifie."
+ - Cette entrée permet de donner le niveau de sévérité d’un problème : bas, modéré, élevé, etc... Il est utilisé exclusivement dans un lien entryRelationship grâce auquel il est lié à l’élément qu’il qualifie."
 * classCode MS
 * classCode = #OBS
 * moodCode MS

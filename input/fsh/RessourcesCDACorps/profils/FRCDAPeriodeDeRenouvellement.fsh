@@ -22,7 +22,12 @@ and frPeriodeDeRenouvellement 1..1
 * templateId[frPeriodeDeRenouvellement] ^definition = "Conformité FR-periode-de-renouvellement (CI-SIS)"
 * effectiveTime MS
 * effectiveTime 1..1
-* effectiveTime ^type.profile = "http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS"
 * effectiveTime ^short = "- Si la période de renouvellement est définie à partir d'une date précise, utiliser les éléments <low> et <high> avec l'élément <high> (date de fin) obligatoire et l'élément <low> (date de début) facultatif.
 - Si la période de renouvellement est définie par une durée, utiliser les éléments <low> et <width> avec  l'élément <width> (période de temps) obligatoire et l'élément <low> (date de début) facultatif."
 * effectiveTime ^definition = "Période de renouvellement"
+* effectiveTime obeys fr-effectiveTime-type
+
+Invariant: fr-effectiveTime-type
+Description: "La durée doit être IVL-TS"
+Expression: "is(IVL_TS)"
+Severity: #error
