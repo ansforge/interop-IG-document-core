@@ -9,7 +9,9 @@ Description: "Entrée FR-DICOM-Administration-produit-de-sante: DICOM Part 20 - 
  - autres informations liées à l’administration d’un produit"
 * classCode MS
 * moodCode MS
-* moodCode ^short = "Si le traitement a déjà été administré ou si information rapportée par le patient ou si aucun traitement : moodCode='EVN'  Si le traitement est en attente d'administration : moodCode='INT'"
+* moodCode ^short = """
+ - Si le traitement a déjà été administré ou si information rapportée par le patient ou si aucun traitement : moodCode='EVN'  
+ - Si le traitement est en attente d'administration : moodCode='INT'"""
 * moodCode ^definition = "Si le traitement a déjà été administré ou si information rapportée par le patient ou si aucun traitement : moodCode='EVN'  Si le traitement est en attente d'administration : moodCode='INT'"
 * id 1..1
 * id ^short = "Identifiant de l'entrée"
