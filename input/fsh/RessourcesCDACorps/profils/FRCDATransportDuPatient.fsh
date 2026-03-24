@@ -7,7 +7,6 @@ Description: "Entrée FR-Transport-du-patient: IHE-PCC - Transport. Cette entré
 * classCode = #ACT
 * moodCode MS
 * moodCode ^short = "Si le transport est à faire : moodCode='INT'. Si le transport a déjà été effectué : moodCode='EVN'."
-* moodCode ^definition = "Si le transport est à faire"
 * id 1..1
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
@@ -31,10 +30,16 @@ and frTransportDuPatient 1..1
 * code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis
 * text MS
 * text ^short = "Texte décrivant le transport"
+* text.reference 1..1 MS
 * effectiveTime MS
 * effectiveTime 1..1
 * effectiveTime ^short = "Date du transport"
 * effectiveTime ^definition = "Date du transport"
+* effectiveTime.low 1..1 MS
+* effectiveTime.low ^short = "Date de début du transport"
+* effectiveTime.high 1..1 MS
+* effectiveTime.high ^short = "Date de fin du transport: 
+Si l’heure d’arrivée n’est pas connue (dans le cas notamment d’un transport projeté), effectiveTime/@high prend une valeur nullflavor="UNK"."
 * performer 0..1 MS
 * performer ^short = "Transporteur : \r\n
 Les attributs de cet élément prennent les valeurs suivantes : @typeCode= «PRF»"
