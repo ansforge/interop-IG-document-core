@@ -145,6 +145,8 @@ Dans le cas où la posologie n'est pas structurée et décrite uniquement dans l
 Dans le cas où la posologie est structurée, si la région anatomique d'administration est connue, elle peut être indiquée."
 * approachSiteCode ^definition = "région anatomique d'administration"
 * approachSiteCode from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-human-substance-administration-site-cisis (required)
+  * code 1..1 MS
+  * originalText.reference 1..1 MS
 * doseQuantity MS
 * doseQuantity ^short = """Dose à administrer : \r\n
 S'il n'y a pas de traitement, utiliser une valeur nullFlavor.
