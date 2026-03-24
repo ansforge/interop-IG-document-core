@@ -31,6 +31,7 @@ and frSimpleObservation 1..1
 * text 1..1
 * text ^short = "Description narrative de l'observation"
 * text ^definition = "Description narrative de l'observation"
+* text.reference MS
 * statusCode MS
 * statusCode 1..1
 * statusCode ^short = "Statut de l'observation"
@@ -43,12 +44,15 @@ and frSimpleObservation 1..1
  Si la date et l'heure sont inconnues, cet élément doit l'indiquer à l'aide d'un attribut nullFlavor. 
  La date doit être enregistrée à l'aide du type de données approprié (pour une date précise ou pour un intervalle contenant un élément low et un élément high). """
 * effectiveTime ^definition = "Date de l'observation"
+* repeatNumber MS
 * value MS
-* value only CD
+* value ^short = "Valeur de l'observation"
+* value ^definition = "Valeur de l'observation"
 * interpretationCode MS
 * interpretationCode 0..1
 * interpretationCode ^short = "Interprétation :interpretationCode provient du JDV_HL7_ObservationInterpretation_CISIS (2.16.840.1.113883.1.11.78)"
 * interpretationCode ^definition = "Interprétation"
+* interpretationCode from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationInterpretation-cisis
 * methodCode MS
 * methodCode 0..1
 * methodCode ^short = "Méthode"
