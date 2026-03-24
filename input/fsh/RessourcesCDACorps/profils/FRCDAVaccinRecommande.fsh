@@ -2,7 +2,8 @@ Profile: FRCDAVaccinRecommande
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration
 Id: fr-cda-vaccin-recommande
 Title: "CDA - FR Vaccin recommande"
-Description: "Entrée FR-Vaccin-recommande: IHE-PCC - Immunization recommendationL'entrée 'Vaccin recommandé' est une entrée de type 'substanceAdministration' qui permet de décrire une vaccination prévue ou proposée.Une vaccination proposée est une proposition qui est utilisée dans la prise de décisions (elle peut apparaître comme une contribution ou un résultat provenant de l'aide à la décision clinique). Une vaccination prévue dépend d'un plan accepté et à venir. Cette entrée hérite de la structuration, des contraintes et des vocabulaires de l'entrée 'Immunization' (1.3.6.1.4.1.19376.1.5.3.1.4.12). "
+Description: "Entrée FR-Vaccin-recommande: IHE-PCC - Immunization recommendation. L'entrée 'Vaccin recommandé' est une entrée de type 'substanceAdministration' qui permet de décrire une vaccination prévue ou proposée. Une vaccination proposée est une proposition qui est utilisée dans la prise de décisions (elle peut apparaître comme une contribution ou un résultat provenant de l'aide à la décision clinique). 
+Une vaccination prévue dépend d'un plan accepté et à venir. Cette entrée hérite de la structuration, des contraintes et des vocabulaires de l'entrée 'Immunization' (1.3.6.1.4.1.19376.1.5.3.1.4.12)."
 * classCode MS
 * moodCode MS
 * moodCode ^short = "Si la vaccination est prévue : @moodCode='INT' ;
@@ -39,6 +40,7 @@ and frVaccinRecommande 1..1
 * text MS
 * text 1..1
 * text ^short = "Partie narrative de l’entrée"
+* text.reference 1..1 MS
 * statusCode MS
 * statusCode 1..1
 * statusCode ^short = "Statut de l’entréeFixé à la valeur code='active'"
@@ -48,6 +50,8 @@ and frVaccinRecommande 1..1
 * effectiveTime 1..1
 * effectiveTime ^short = "Période de vaccination souhaitable"
 * effectiveTime ^definition = "Période de vaccination souhaitable"
+* effectiveTime.low 1..1 MS
+* effectiveTime.high 1..1 MS
 * routeCode MS
 * routeCode ^short = "Voie d'administration"
 * routeCode ^definition = "Voie d'administration"
@@ -63,7 +67,6 @@ and frVaccinRecommande 1..1
 * consumable ^short = "Vaccin"
 * consumable ^definition = "Vaccin"
 * entryRelationship MS
-* entryRelationship 0..*
 * entryRelationship ^slicing.discriminator.type = #value
 * entryRelationship ^slicing.discriminator.path = "$this"
 * entryRelationship ^slicing.rules = #open
