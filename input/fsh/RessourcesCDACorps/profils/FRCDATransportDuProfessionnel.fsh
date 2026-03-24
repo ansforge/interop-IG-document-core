@@ -7,7 +7,6 @@ Description: "Entrée FR-Transport-du-professionnel: Cette entrée de type act p
 * classCode = #ACT
 * moodCode MS
 * moodCode ^short = "Si le transport est à faire : moodCode='INT'. Si le transport a déjà été effectué : moodCode='EVN'."
-* moodCode ^definition = "Si le transport est à faire"
 * id 1..1
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
@@ -41,6 +40,7 @@ Valeur issue du JDV_TypeMotorisation_CISIS (1.2.250.1.213.1.1.5.801)"
 * text MS
 * text ^short = "Texte décrivant le transport"
 * text ^definition = "Texte décrivant le transport"
+* text.reference 1..1 MS
 * text.reference ^short = "Référence vers la partie narrative de la section"
 * effectiveTime MS
 * effectiveTime 1..1
