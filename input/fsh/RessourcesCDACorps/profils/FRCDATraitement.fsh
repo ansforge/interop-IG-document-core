@@ -132,7 +132,14 @@ Dans le cas où l'on s'exprime en quantités indénombrables, l'unité doit êtr
 Dans le cas où l'on s'exprime en quantités dénombrables (capsules, comprimés, gélules, etc.) l'unité ne doit pas être renseignée. A la place, on ajoute un champ 'translation' qui permet de pointer sur l'élément de la partie narrative relative à cette information.
 """
 * doseQuantity ^definition = "Dose à administrer"
-* rateQuantity MS
+  * low MS
+  * low.translation 0..1 MS
+  * low.translation.originalText 1..1 MS
+  * low.translation.originalText.reference 1..1 MS
+  * high MS
+  * high.translation 0..1 MS
+  * high.translation.originalText 1..1 MS
+  * high.translation.originalText.reference 1..1 MS
 * rateQuantity ^short = """Rythme d'administration : \r\n
 Le rythme d'administration permet d'indiquer la quantité de produit à administrer par unité de temps.
 Les sous-éléments 'low' et 'high' permettent de fournir le rythme minimal et maximal de l'administration. Dans le cas où le rythme est fixe, ces deux sous-éléments prendront les mêmes valeurs.
@@ -140,6 +147,16 @@ L'argument @value permet d'indiquer la quantité de produit à administrer.
 L'argument @unit permet d'indiquer le rythme d'administration en combinant l'unité de quantité et l'unité de temps (séparés par le caractère ‘/'). Les unités sont exprimées selon le système de codage UCUM.
 Dans chaque élément 'low' et 'high', un élément 'translation' peut permettre de pointer sur l'élément de la partie narrative relative à cette information.
 """
+* rateQuantity MS
+  * low 1..1 MS
+  * low.translation 0..1 MS
+  * low.translation.originalText 1..1 MS
+  * low.translation.originalText.reference 1..1 MS
+  * high 1...1 MS
+  * high.translation 0..1 MS
+  * high.translation.originalText 1..1 MS
+  * high.translation.originalText.reference 1..1 MS
+  * nullFlavor MS
 * maxDoseQuantity MS
 * maxDoseQuantity ^short = """Dose maximale à administrer : \r\n
 La dose maximale à 'maxDoseQuantity' permet d'indiquer la quantité maximale de produit à administrer par unité de temps.
