@@ -50,7 +50,7 @@ Codes autorisés pour indiquer le type d’évaluation. Inclut LOINC, ICF, et pe
   "name" : "FRValueSetEvaluationTypeDocument",
   "title" : "ValueSet – FR ValueSet Type d'évaluation",
   "status" : "draft",
-  "date" : "2026-03-24T14:01:37+00:00",
+  "date" : "2026-03-24T14:15:17+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
