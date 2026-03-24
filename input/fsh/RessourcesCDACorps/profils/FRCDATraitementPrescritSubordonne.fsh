@@ -44,7 +44,7 @@ Dans le cas où l'on s'exprime en quantités dénombrables (capsules, comprimés
 """
 * doseQuantity ^definition = "Dose à administrer"
   * low 1..1 MS
-  * high1..1 MS
+  * high 1..1 MS
 * rateQuantity MS
 * rateQuantity ^short = """Rythme d'administration : \r\n
 Le rythme d'administration permet d'indiquer la quantité de produit à administrer par unité de temps.
@@ -54,7 +54,7 @@ L'argument @unit permet d'indiquer le rythme d'administration en combinant l'uni
 Dans chaque élément 'low' et 'high', un élément 'translation' peut permettre de pointer sur l'élément de la partie narrative relative à cette information.
 """
   * low 1..1 MS
-  * high1..1 MS
+  * high 1..1 MS
 * consumable only FRCDAProduitDeSante
 * consumable ^short = "Produit de santé"
 * consumable ^definition = "Produit de santé"

@@ -46,12 +46,9 @@ and frVaccinRecommande 1..1
 * statusCode ^short = "Statut de l’entréeFixé à la valeur code='active'"
 * statusCode ^definition = "Statut de l’entrée"
 * statusCode.code = #active
-* effectiveTime MS
-* effectiveTime 1..1
+* effectiveTime 1..1 MS
 * effectiveTime ^short = "Période de vaccination souhaitable"
 * effectiveTime ^definition = "Période de vaccination souhaitable"
-* effectiveTime.low 1..1 MS
-* effectiveTime.high 1..1 MS
 * routeCode MS
 * routeCode ^short = "Voie d'administration"
 * routeCode ^definition = "Voie d'administration"

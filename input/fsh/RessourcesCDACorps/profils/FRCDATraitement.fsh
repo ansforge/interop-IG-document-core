@@ -152,7 +152,7 @@ Dans chaque élément 'low' et 'high', un élément 'translation' peut permettre
   * low.translation 0..1 MS
   * low.translation.originalText 1..1 MS
   * low.translation.originalText.reference 1..1 MS
-  * high 1...1 MS
+  * high 1..1 MS
   * high.translation 0..1 MS
   * high.translation.originalText 1..1 MS
   * high.translation.originalText.reference 1..1 MS
