@@ -21,10 +21,10 @@ and frDicomCodedObservation 1..1
 * templateId[frDicomObservation].root = "1.2.250.1.213.1.1.3.150"
 * templateId[frDicomObservation] ^short = "Conformité FR-DICOM-Observation (CI-SIS)"
 * templateId[frDicomObservation] ^definition = "Conformité FR-DICOM-Observation (CI-SIS)"
-* templateId[frDicomCodedObservation].root 1..1
-* templateId[frDicomCodedObservation].root = "2.16.840.1.113883.10.20.6.2.13"
-* templateId[frDicomCodedObservation] ^short = "Conformité Coded Observation (DICOM Part 20)"
-* templateId[frDicomCodedObservation] ^definition = "Conformité Coded Observation (DICOM Part 20)"
+* templateId[dicomCodedObservation].root 1..1
+* templateId[dicomCodedObservation].root = "2.16.840.1.113883.10.20.6.2.13"
+* templateId[dicomCodedObservation] ^short = "Conformité Coded Observation (DICOM Part 20)"
+* templateId[dicomCodedObservation] ^definition = "Conformité Coded Observation (DICOM Part 20)"
 * code MS
 * code ^short = "Code de l'observation"
 * code ^definition = "Code de l'observation"
