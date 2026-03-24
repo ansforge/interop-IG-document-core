@@ -30,6 +30,7 @@ and dicomQuantityMeasurement 1..1
 * text MS
 * text ^short = "Partie narrative de l'entrée"
 * text ^definition = "Partie narrative de l'entrée"
+* text.reference 1..1 MS
 * statusCode MS
 * statusCode 1..1
 * statusCode ^short = "Status de l'entrée"
