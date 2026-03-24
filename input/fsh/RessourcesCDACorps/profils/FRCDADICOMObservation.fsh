@@ -16,7 +16,7 @@ Description: "Entrée FR-DICOM-Observation: DICOM Part 20 - Coded Observation. 
 * templateId ^slicing.discriminator.path = "root"
 * templateId ^slicing.rules = #open
 * templateId contains frDicomObservation 1..1
-and frDicomCodedObservation 1..1
+and dicomCodedObservation 1..1
 * templateId[frDicomObservation].root 1..1
 * templateId[frDicomObservation].root = "1.2.250.1.213.1.1.3.150"
 * templateId[frDicomObservation] ^short = "Conformité FR-DICOM-Observation (CI-SIS)"
