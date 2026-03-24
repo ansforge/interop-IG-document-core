@@ -22,6 +22,7 @@ Pour les dosages progressifs, fractionnés ou conditionnels, les sous-entrées F
 * text MS
 * text 1..1
 * text ^short = "Partie narrative de l’entrée"
+* text.reference 1..1 MS
 * statusCode MS
 * statusCode 1..1
 * statusCode ^short = "Statut de l’entréeFixé à la valeur 'completed'"
@@ -41,6 +42,8 @@ S'il y a un traitement, les sous-éléments 'low' et 'high' permettent de fourni
 Dans le cas où l'on s'exprime en quantités indénombrables, l'unité doit être transmise. Les unités sont exprimées selon le système de codage UCUM.
 Dans le cas où l'on s'exprime en quantités dénombrables (capsules, comprimés, gélules, etc.) l'unité ne doit pas être renseignée. A la place, on ajoute un champ 'translation' qui permet de pointer sur l'élément de la partie narrative relative à cette information.
 """
+  * low 1..1 MS
+  * high1..1 MS
 * doseQuantity ^definition = "Dose à administrer"
 * rateQuantity MS
 * rateQuantity ^short = """Rythme d'administration : \r\n
@@ -50,21 +53,13 @@ L'argument @value permet d'indiquer la quantité de produit à administrer.
 L'argument @unit permet d'indiquer le rythme d'administration en combinant l'unité de quantité et l'unité de temps (séparés par le caractère ‘/'). Les unités sont exprimées selon le système de codage UCUM.
 Dans chaque élément 'low' et 'high', un élément 'translation' peut permettre de pointer sur l'élément de la partie narrative relative à cette information.
 """
-* maxDoseQuantity MS
-* maxDoseQuantity ^short = """Dose maximale à administrer : \r\n
-La dose maximale à 'maxDoseQuantity' permet d'indiquer la quantité maximale de produit à administrer par unité de temps.
-Plusieurs occurrences de 'maxDoseQuantity' peuvent être utilisées pour indiquer différentes limites sur différentes périodes de temps.
-Les sous-éléments 'numerator' et 'denominator' permettent de fournir :
-- numerator : la quantité maximale à administrer,
-- denominator : la plage de temps sur laquelle s'applique ce maximum.
-Les unités sont exprimées selon le système de codage UCUM.
-"""
+  * low 1..1 MS
+  * high1..1 MS
 * consumable only FRCDAProduitDeSante
 * consumable ^short = "Produit de santé"
 * consumable ^definition = "Produit de santé"
 
 * precondition MS
-* precondition 0..*
 * precondition ^short = "Précondition à l'utilisation du médicament : \r\n
  Permet de décrire les conditions préalables à l'utilisation du médicament. L'attribut @value de l'élément 'reference' est une URI qui pointe vers la partie narrative du document CDA décrivant ces conditions préalables."
 * precondition ^definition = "Précondition à l'utilisation du médicament"
