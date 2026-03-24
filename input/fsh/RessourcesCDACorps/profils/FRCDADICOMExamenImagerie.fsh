@@ -36,12 +36,7 @@ and FRCDADICOMExamenimagerie 1..1
 * effectiveTime ^short = "Date de l'acte"
 * effectiveTime ^definition = "Date de l'acte"
 * entryRelationship MS
-* entryRelationship ^slicing.discriminator.type = #value
-* entryRelationship ^slicing.discriminator.path = "$this"
-* entryRelationship ^slicing.rules = #open
-* entryRelationship contains 
-frDicomSerieImagerie 1..1
-* entryRelationship[frDicomSerieImagerie].act only FRCDADICOMSerieImagerie
-* entryRelationship[frDicomSerieImagerie].typeCode = #COMP
-* entryRelationship[frDicomSerieImagerie] ^short = "Série d'images médicales de l'examen d'imagerie"
-* entryRelationship[frDicomSerieImagerie] ^definition = "Série d'images médicales de l'examen d'imagerie"
+* entryRelationship.act only FRCDADICOMSerieImagerie
+* entryRelationship.typeCode = #COMP
+* entryRelationship ^short = "Série d'images médicales de l'examen d'imagerie"
+* entryRelationship ^definition = "Série d'images médicales de l'examen d'imagerie"
