@@ -40,6 +40,7 @@ and frStatut 1..1
 * text MS
 * text 1..1
 * text ^short = "Description narrative de l'observation"
+* text.reference 1..1 MS
 * statusCode MS
 * statusCode 1..1
 * statusCode ^short = "Statut de l'entrée"
