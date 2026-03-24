@@ -29,6 +29,7 @@ and frDicomObservationSubordonnee 1..1
 * text MS
 * text ^short = "Partie narrative de l'observation"
 * text ^definition = "Partie narrative de l'observation"
+* text.reference 1..1 MS
 * statusCode MS
 * statusCode 1..1
 * statusCode ^short = "status de l'observation"
