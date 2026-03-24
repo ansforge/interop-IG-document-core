@@ -5,9 +5,10 @@ Title: "CDA - FR Traitement subordonne"
 Description: "Entrée FR-Traitement-subordonne: Une entrée FR-Traitement de premier niveau peut contenir une ou plusieurs sous-entrées FR-Traitement-subordonne pour les cas spécifiques des dosages progressifs, fractionnés ou conditionnels, ou pour gérer la combinaison de médicaments. L’utilisation de sous-entrées FR-Traitement-subordonne pour traiter ces cas est facultative. Dans le cas où l’entrée FR-Traitement-subordonne n’est pas utilisée, l'information doit être fournie dans la partie narrative de l'entrée FR-Traitement de premier niveau sous forme de texte libre.Pour les dosages progressifs, fractionnés ou conditionnels, les sous-entrées FR-Traitement-subordonne ne doivent spécifier que la fréquence et / ou le dosage modifiés.Pour le dosage conditionnel, chaque sous-entrée FR-Traitement-subordonne doit avoir un élément 'precondition' pour indiquer les conditions préalables à l’utilisation du médicament.Pour la combinaison de médicaments, chaque sous-entrée FR-Traitement-subordonne précisera le produit entrant dans la combinaison."
 * classCode MS
 * moodCode MS
-* moodCode ^short = "Si le traitement a déjà été administré ou si information rapportée par le patient ou si aucun traitement :   - moodCode='EVN' ;
+* moodCode ^short = "Si le traitement a déjà été administré ou si information rapportée par le patient ou si aucun traitement : - moodCode='EVN' ;
   Si le traitement est en attente d'administration :  - moodCode='INT'"
-* moodCode ^definition = "Si le traitement a déjà été administré ou si information rapportée par le patient ou si aucun traitement; si le traitement est en attente d'administration"
+* moodCode ^definition = "Si le traitement a déjà été administré ou si information rapportée par le patient ou si aucun traitement : - moodCode='EVN' ;
+  Si le traitement est en attente d'administration :  - moodCode='INT'"
 * id 1..*
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
@@ -28,6 +29,7 @@ and iheModeAdministrationDosesProgressives 1..1
 * text MS
 * text 1..1
 * text ^short = "Partie narrative de l’entrée"
+* text.reference 1..1 MS
 * statusCode MS
 * statusCode 1..1
 * statusCode ^short = "Statut de l’entrée : Fixé à la valeur 'completed'"
@@ -38,6 +40,7 @@ and iheModeAdministrationDosesProgressives 1..1
 * effectiveTime ^short = """Fréquence d'administration :\r\n
 L'attribut @operator de cet élément est fixé à la valeur operator='A' (l'expression de la fréquence s'applique à l'intervalle de temps déterminé précédemment).
 L'attribut @type de cet élément détermine le type de donnée utilisé pour représenter la fréquence d'administration du médicament. Les types de données autorisés sont : PIVL-TS, EIVL-TS ou SXPR-TS."""
+* effectiveTime ^definition = "Fréquence d'administration"
 * doseQuantity MS
 * doseQuantity ^short = """Dose à administrer : \r\n
 S'il n'y a pas de traitement, utiliser une valeur nullFlavor.
@@ -46,6 +49,8 @@ Dans le cas où l'on s'exprime en quantités indénombrables, l'unité doit êtr
 Dans le cas où l'on s'exprime en quantités dénombrables (capsules, comprimés, gélules, etc.) l'unité ne doit pas être renseignée. A la place, on ajoute un champ 'translation' qui permet de pointer sur l'élément de la partie narrative relative à cette information.
 """
 * doseQuantity ^definition = "Dose à administrer"
+  * low 1..1 MS
+  * high 1..1 MS
 * rateQuantity MS
 * rateQuantity ^short = """Rythme d'administration : \r\n
 Le rythme d'administration permet d'indiquer la quantité de produit à administrer par unité de temps.
@@ -54,6 +59,8 @@ L'argument @value permet d'indiquer la quantité de produit à administrer.
 L'argument @unit permet d'indiquer le rythme d'administration en combinant l'unité de quantité et l'unité de temps (séparés par le caractère ‘/'). Les unités sont exprimées selon le système de codage UCUM.
 Dans chaque élément 'low' et 'high', un élément 'translation' peut permettre de pointer sur l'élément de la partie narrative relative à cette information.
 """
+  * low 1..1 MS
+  * high 1..1 MS
 * consumable only FRCDAProduitDeSante
 * consumable ^short = """Médicament: \r\n
 Pour les doses progressives, fractionnées ou conditionnelles, utilser un nullFlavor='NA'.
