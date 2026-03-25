@@ -26,7 +26,7 @@ and iheSubstitutionAct 1..1
 * code ^short = "Code de l'entrée"
 * code ^definition = "Code de l'entrée"
 * code.code = #G
-* code.displayName = " Substitution autorisée par un produit générique"
+* code.displayName = "Substitution autorisée par un produit générique"
 * code.codeSystem = "2.16.840.1.113883.5.1070"
 * code.codeSystemName = "HL7_SubstanceAdminSubstitution"
 * statusCode MS
