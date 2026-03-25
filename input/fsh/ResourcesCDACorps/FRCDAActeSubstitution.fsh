@@ -2,7 +2,7 @@ Profile: FRCDAActeSubstitution
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Act
 Id: fr-cda-acte-substitution
 Title: "CDA - FR Acte substitution"
-Description: "Entrée FR-Acte-substitution: IHE PHARM DIS - Substitution actCette observation permet d'indiquer si le traitement a été substitué. "
+Description: "Entrée FR-Acte-substitution: IHE PHARM DIS - Substitution actCette observation permet d'indiquer si le traitement a été substitué."
 * classCode MS
 * classCode = #ACT
 * moodCode MS
