@@ -33,7 +33,6 @@ and frAdministrationDeDerivesDuSang 1..1
 * code 1..1
 * code ^short = "Code de l'observation"
 * code ^definition = "Code de l'observation"
-* code ^short = ""
 * code.code = #MED-147
 * code.displayName = "Administration de dérivés du sang"
 * code.codeSystem = "1.2.250.1.213.1.1.4.322"
