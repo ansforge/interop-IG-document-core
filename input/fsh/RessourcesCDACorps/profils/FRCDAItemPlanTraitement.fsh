@@ -54,10 +54,10 @@ and frItemPlanTraitement 1..1
 * effectiveTime ^slicing.discriminator.path = "operator"
 * effectiveTime ^slicing.rules = #open
 * effectiveTime contains frEffectiveTimeDuree 0..1 and frEffectiveTimeFrequence 0..*
-* effectiveTime[frEffectiveTimeDuree] obeys fr-operator-not-a
-* effectiveTime[frEffectiveTimeDuree] obeys fr-effectiveTime-duree-type
-* effectiveTime[frEffectiveTimeFrequence] obeys fr-operator-a
-* effectiveTime[frEffectiveTimeFrequence] obeys fr-effectiveTime-frequence-types
+* effectiveTime[frEffectiveTimeDuree] obeys fr-operator-not-a-item-plan-traitement
+* effectiveTime[frEffectiveTimeDuree] obeys fr-effectiveTime-duree-type-item-plan-traitement
+* effectiveTime[frEffectiveTimeFrequence] obeys fr-operator-a-item-plan-traitement
+* effectiveTime[frEffectiveTimeFrequence] obeys fr-effectiveTime-frequence-types-item-plan-traitement
 * routeCode MS
 * routeCode ^short = "Voie d'administration - Si la voie d'administration est connue, elle doit être indiquée (code et displayName).  - Si elle n'est pas connue, la raison pour laquelle elle est inconnue peut être décrite en utilisant l'attribut nullFlavor."
 * routeCode ^definition = "Voie d'administration"
@@ -136,22 +136,22 @@ frReferenceInterne 0..*
   * criterion MS
   * criterion.text 1..1 MS
 
-Invariant: fr-operator-a
+Invariant: fr-operator-a-item-plan-traitement
 Description: "operator doit être A"
 Expression: "operator = 'A'"
 Severity: #error
  
-Invariant: fr-operator-not-a
+Invariant: fr-operator-not-a-item-plan-traitement
 Description: "operator doit être différent de A"
 Expression: "operator != 'A'"
 Severity: #error
  
-Invariant: fr-effectiveTime-frequence-types
+Invariant: fr-effectiveTime-frequence-types-item-plan-traitement
 Description: "La fréquence doit être SXCM-TS, PIVL-TS, EIVL-TS ou SXPR-TS"
 Expression: "is(SXCM_TS) or is(PIVL_TS) or is(EIVL_TS) or is(SXPR_TS)"
 Severity: #error
  
-Invariant: fr-effectiveTime-duree-type
+Invariant: fr-effectiveTime-duree-type-item-plan-traitement
 Description: "La durée doit être IVL-TS"
 Expression: "is(IVL_TS)"
 Severity: #error

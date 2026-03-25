@@ -23,14 +23,6 @@ and frSujetNonHumain 1..1
   * code 1..1
   * code ^short = "Sujet (ex. poulet, poisson, œuf, salade, eau, terre, air, peinture, etc.)."
   * code ^definition = "Sujet"
-/*   * code.qualifier.name MS
-  * code.qualifier.name ^short = "Nom du sujet"
-  * code.qualifier.name ^definition = "Nom du sujet"
-  * code.qualifier.name.value MS 
-  * code.qualifier.name.value ^short = "Type de sujet (aliment ou substance) :
-Terminologie SNOMED CT : Concepts appartenant aux hiérarchies
-260787004 |Physical object (physical object)| et 276339004 |Environment (environment)"
-  * code.qualifier.name.value ^definition = "Type de sujet (aliment ou substance)" */
   * addr MS
   * addr 1..1
   * addr ^short = "Lieu de provenance du sujet non humain"
