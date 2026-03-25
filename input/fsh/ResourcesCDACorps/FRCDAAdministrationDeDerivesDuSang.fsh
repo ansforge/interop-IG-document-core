@@ -30,7 +30,6 @@ and frAdministrationDeDerivesDuSang 1..1
 * templateId[frAdministrationDeDerivesDuSang] ^short = "Conformité FR-Administration-de-derives-du-sang (CI-SIS)"
 * templateId[frAdministrationDeDerivesDuSang] ^definition = "Conformité FR-Administration-de-derives-du-sang (CI-SIS)"
 * code MS
-* code 1..1
 * code ^short = "Code de l'observation"
 * code ^definition = "Code de l'observation"
 * code.code = #MED-147
