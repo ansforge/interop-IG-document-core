@@ -22,7 +22,6 @@ and iheSubstitutionAct 1..1
 * templateId[iheSubstitutionAct] ^short = "Conformité Substitution act (IHE PHARM DIS)"
 * templateId[iheSubstitutionAct] ^definition = "Conformité Substitution act (IHE PHARM DIS)"
 * code MS
-* code 1..1
 * code ^short = "Code de l'entrée"
 * code ^definition = "Code de l'entrée"
 * code.code = #G
