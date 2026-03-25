@@ -40,7 +40,6 @@ and frAllergieOuHypersensibilite 1..1
 * templateId[frAllergieOuHypersensibilite] ^short = "Conformité FR-Allergie-ou-hypersensibilite (CI-SIS)"
 * templateId[frAllergieOuHypersensibilite] ^definition = "Conformité FR-Allergie-ou-hypersensibilite (CI-SIS)"
 * code MS
-* code 1..1
 * code ^short = "Type d'allergie / hypersensibilité non allergique / intolérance / idiosyncrasie"
 * code ^definition = "Type d'allergie / hypersensibilité non allergique / intolérance / idiosyncrasie"
 * code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-evenement-indesirable-previsible-cisis
