@@ -10,8 +10,12 @@ Description: "Entrée FR-DICOM-Administration-radiopharmaceutique: Cette entrée
  - autres informations liées à l’administration d’un produit"
 * classCode MS
 * moodCode MS
-* moodCode ^short = "Si le traitement a déjà été administré ou si information rapportée par le patient ou si aucun traitement : moodCode='EVN'  Si le traitement est en attente d'administration : moodCode='INT'"
-* moodCode ^definition = "Si le traitement a déjà été administré ou si information rapportée par le patient ou si aucun traitement : moodCode='EVN'  Si le traitement est en attente d'administration : moodCode='INT'"
+* moodCode ^short = """
+ - Si le traitement a déjà été administré ou si information rapportée par le patient ou si aucun traitement : moodCode='EVN'  
+ - Si le traitement est en attente d'administration : moodCode='INT'"""
+* moodCode ^definition = """
+ - Si le traitement a déjà été administré ou si information rapportée par le patient ou si aucun traitement : moodCode='EVN'  
+ - Si le traitement est en attente d'administration : moodCode='INT'"""
 * templateId 1..1
 * templateId ^slicing.discriminator.type = #value
 * templateId ^slicing.discriminator.path = "root"
@@ -52,6 +56,10 @@ Dans chaque élément 'low' et 'high', un élément 'translation' peut permettre
       * code MS
       * code ^short = "Code du produit radiopharmaceutique"
       * code ^definition = "Code du produit de santé"
+      * code.translation MS 
+      * code.translation ^short = "Valeur issue de l'ATC niveau 2"
+      * code.originalText 1..1 MS
+      * code.originalText.reference 1..1 MS
       * name ^short = "Nom de marque du produit"
       * name ^definition = "Nom de marque du produit"
       * lotNumberText ^short = "Numéro de lot"

@@ -8,7 +8,6 @@ Description: "Entrée FR-Notes-du-dispensateur: IHE PHARM DIS - fulfillment note
 * classCode = #ACT
 * moodCode MS
 * moodCode = #INT
-* id 0..*
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..3
@@ -31,7 +30,6 @@ and ccdFulfillmentInstructions 1..1
 * templateId[ccdFulfillmentInstructions] ^short = "Conformité Fulfillment instructions (CCD)"
 * templateId[ccdFulfillmentInstructions] ^definition = "Conformité Fulfillment instructions (CCD)"
 * code MS
-* code 1..1
 * code ^short = "Code de l'entrée"
 * code ^definition = "Code de l'entrée"
 * code.code = #FINSTRUCT
@@ -39,7 +37,9 @@ and ccdFulfillmentInstructions 1..1
 * code.codeSystemName = "IHEActCode"
 * text MS
 * text 1..1
-* text.xmlText = "Notes du dispensateur sous forme textuelle"
+* text ^short = "Notes du dispensateur sous forme textuelle"
+* text.reference 1..1 MS
+* text.reference ^short = "Référence à la partie narrative contenant le texte libre de l’instruction au dispensateur"
 * statusCode MS
 * statusCode 1..1
 * statusCode ^short = "Statut de l'entréeFixé à la valeur 'completed'"

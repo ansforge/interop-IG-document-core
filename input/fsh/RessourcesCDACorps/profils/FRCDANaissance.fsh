@@ -41,10 +41,16 @@ and frNaissance 1..1
 * effectiveTime ^short = "Période des observations"
 * effectiveTime ^definition = "Période des observations. Quand cette entrée est utilisée dans une entrée FR-Historique-de-la-grossesse, cette période doit correspondre à la période de la grossesse."
 * subject 1..1
-* subject ^short = "Identification du nouveau né"
-* subject ^definition = "Identification du nouveau né. Le nouveau né est décrit dans l'élément 'Sujet' (nom, age, sexe, ...)."
+* subject ^short = "Identification du nouveau né. Le nouveau né est décrit dans l'élément 'Sujet' (nom, age, sexe, ...). 
+Les attributs de l'élément  du  sont fixés aux valeurs suivantes :
+@code='CHILD'
+@displayName='Enfant'
+@codeSystem='2.16.840.1.113883.5.111'
+@codeSystemName='RoleCode'"
+* subject ^definition = "Identification du nouveau né" 
 * subject only FRCDASujet
 * component MS
 * component 1..*
+* component ^short = "Observation sur la naissance"
 * component.typeCode = #COMP
 * component.observation only FRCDAObservationSurLaGrossesse

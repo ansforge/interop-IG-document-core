@@ -7,7 +7,7 @@ Description: "Entrée FR-Modalite-sortie: Cette entrée permet de préciser la m
 * classCode = #OBS
 * moodCode MS
 * moodCode ^short = "@moodCode='EVN' (si réalisée), 'INT' (si prévisionnelle)"
-* moodCode ^definition = "@moodCode='EVN' (si réalisée)"
+* moodCode ^definition = "@moodCode='EVN' (si réalisée), 'INT' (si prévisionnelle)"
 * id 1..1
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"

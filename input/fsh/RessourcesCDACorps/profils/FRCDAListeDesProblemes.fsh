@@ -51,6 +51,8 @@ and frListeDesProblemes 1..1
 * effectiveTime.low ^short = "Date du début"
 * effectiveTime.low ^definition = "Date du début"
 * entryRelationship  1..* MS
+* entryRelationship ^short = "Entrée Problème"
+* entryRelationship ^definition = "Entrée Problème"
 * entryRelationship.typeCode = #SUBJ
 * entryRelationship.inversionInd = false
 * entryRelationship.observation only FRCDAProbleme

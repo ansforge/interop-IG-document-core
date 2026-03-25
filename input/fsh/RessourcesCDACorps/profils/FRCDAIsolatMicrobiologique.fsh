@@ -32,7 +32,7 @@ and frIsolatMicrobiologique 1..1
 * statusCode 1..1
 * statusCode ^short = "Niveau de complétude‘completed' : Rendu final complet. Tous les résultats attendus pour cet examen sont présents.‘active' : Rendu partiel. Certains résultats sont encore à venir pour cet examen.‘aborted' : L'examen est abandonné. Quelques résultats peuvent apparaître."
 * statusCode ^definition = "Niveau de complétude"
-* statusCode from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis (required)
+* statusCode from FRValueSetStatusCode (required)
 * effectiveTime MS
 * effectiveTime ^short = "Date et heure des résultats"
 * effectiveTime ^definition = "Date et heure des résultats"
@@ -46,6 +46,7 @@ and frIsolatMicrobiologique 1..1
 * specimen.specimenRole.specimenPlayingEntity MS
 * specimen.specimenRole.specimenPlayingEntity ^short = "L'agent infectieux cultivé (bactérie, levure, virus, parasite)"
 * specimen.specimenRole.specimenPlayingEntity.classCode = #MIC
+* specimen.specimenRole.specimenPlayingEntity.code 1..1 MS
 * performer MS
 * performer 1..1
 * performer ^short = "Laboratoire exécutant"

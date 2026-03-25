@@ -25,13 +25,13 @@ and frRangDeLaVaccination 1..1
 * templateId[frRangDeLaVaccination] ^short = "Conformité FR-Rang-de-la-vaccination (CI-SIS)"
 * templateId[frRangDeLaVaccination] ^definition = "Conformité FR-Rang-de-la-vaccination (CI-SIS)"
 * code MS
-* code 1..1
 * code ^short = "Code de l'entrée"
 * code ^definition = "Code de l'entrée"
 * code.code = #30973-2
 * code.displayName = "Rang de la vaccination"
 * code.codeSystem = "2.16.840.1.113883.6.1"
 * code.codeSystemName = "LOINC"
+* derivationExpr MS
 * text MS
 * text ^short = "Partie narrative de l’entrée"
 * text ^definition = "Partie narrative de l’entrée"
@@ -46,6 +46,7 @@ and frRangDeLaVaccination 1..1
 * priorityCode MS
 * priorityCode ^short = "Priorité"
 * priorityCode ^definition = "Priorité"
+* priorityCode from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActPriority-cisis (required)
 * repeatNumber MS
 * languageCode MS
 * value MS

@@ -65,6 +65,7 @@ and frItemPlanTraitement 1..1
 * approachSiteCode MS
 * approachSiteCode ^short = "région anatomique d'administration"
 * approachSiteCode ^definition = "région anatomique d'administration"
+* approachSiteCode from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-human-substance-administration-site-cisis (required)
 * doseQuantity MS
 * doseQuantity ^short = "Dose à administrer. Dans le cas où la posologie n'est pas structurée et décrite uniquement dans la partie narrative , cet élément ne doit pas être présent
 Dans le cas où la posologie est structurée et que le mode d'administration est 'normal' , la dose à administrer est obligatoire (nullFlavor interdit). Dans les autres cas , la dose à administrer peut être fournie."
@@ -80,9 +81,12 @@ Les sous-éléments 'numerator' et 'denominator' permettent de fournir :
 - denominator : la plage de temps sur laquelle s'applique ce maximum. 
 Les unités sont exprimées selon le système de codage UCUM."
 * maxDoseQuantity ^definition = "Dose maximale"
+* maxDoseQuantity.numerator 1..1 MS
+* maxDoseQuantity.denominator 1..1 MS
 * consumable MS
 * consumable ^short = "Produit de santé"
 * consumable ^definition = "Produit de santé"
+* consumable only FRCDAProduitDeSante
 * author MS
 * author ^slicing.discriminator.type = #value
 * author ^slicing.discriminator.path = "$this"
@@ -130,6 +134,7 @@ frReferenceInterne 0..*
 * precondition ^short = "Précondition à l'utilisation du médicament. Permet de décrire les conditions préalables à l'utilisation du médicament. L'attribut @value de l'élément 'reference' est une URI qui pointe vers la partie narrative du document CDA décrivant ces conditions préalables."
 * precondition ^definition = "Précondition à l'utilisation du médicament"
   * criterion MS
+  * criterion.text 1..1 MS
 
 Invariant: fr-operator-a
 Description: "operator doit être A"

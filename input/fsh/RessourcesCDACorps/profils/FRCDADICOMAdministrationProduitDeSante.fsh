@@ -12,7 +12,9 @@ Description: "Entrée FR-DICOM-Administration-produit-de-sante: DICOM Part 20 - 
 * moodCode ^short = """
  - Si le traitement a déjà été administré ou si information rapportée par le patient ou si aucun traitement : moodCode='EVN'  
  - Si le traitement est en attente d'administration : moodCode='INT'"""
-* moodCode ^definition = "Si le traitement a déjà été administré ou si information rapportée par le patient ou si aucun traitement : moodCode='EVN'  Si le traitement est en attente d'administration : moodCode='INT'"
+* moodCode ^definition = """
+ - Si le traitement a déjà été administré ou si information rapportée par le patient ou si aucun traitement : moodCode='EVN'  
+ - Si le traitement est en attente d'administration : moodCode='INT'"""
 * id 1..1
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
@@ -32,6 +34,7 @@ and dicomProceduralMedication 1..1
 * templateId[dicomProceduralMedication] ^definition = "Conformité Procedural Medication (DICOM Part 20)"
 * text MS
 * text ^short = "Partie narrative de l'entrée"
+* text.reference MS
 * statusCode MS
 * statusCode 1..1
 * statusCode ^short = "Status de l'entrée"
@@ -68,6 +71,13 @@ Dans chaque élément 'low' et 'high', un élément 'translation' peut permettre
       - UCD : Unités Communes de Dispensation (1.2.250.1.213.2.61) 
       + code ATC"
       * code ^definition = "Code du produit de santé"
+      * code.translation MS
+      * code.translation ^short = """
+      - ATC : Classification anatomique, thérapeutique et chimique (2.16.840.1.113883.6.73)
+      - CIS : Code Identifiant de Spécialité (1.2.250.1.213.2.3.1)
+      - MV : Médicament Virtuel (1.2.250.1.213.2.59) de Medicabase"""
+      * code.originalText 1..1 MS
+      * code.originalText.reference 1..1 MS
       * name ^short = "Nom de marque du produit"
       * name ^definition = "Nom de marque du produit"
       * lotNumberText ^short = "Numéro de lot"

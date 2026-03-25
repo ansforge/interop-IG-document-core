@@ -39,3 +39,9 @@ and frReferencesExternes 1..1
 * reference ^definition = "Document référencé"
 * reference.typeCode from FRValueSetReferenceExterne
 * reference.externalDocument 1..1 MS
+* reference.externalDocument.classCode = #DOC 
+* reference.externalDocument.id 1..1 MS
+* reference.externalDocument.text MS
+* reference.externalDocument.text ^short = "Référence externe du document"
+* reference.externalDocument.text.reference MS
+* reference.externalDocument.text.reference ^short = "Cet élément peut contenir l'URL du document. L'adresse du document peut apparaître dans la partie narrative de la section par le biais d'un lien linkHtml."

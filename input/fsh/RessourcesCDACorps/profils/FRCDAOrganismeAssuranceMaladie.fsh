@@ -38,14 +38,11 @@ and frOrganismeAssuranceMaladie 1..1
 * statusCode ^short = "Statut de l'entrée"
 * statusCode ^definition = "Statut de l'entrée"
 * statusCode.code = #completed
-* performer MS
-* performer 1..1
 * performer ^short = "Organisme de couverture sociale"
 * performer ^definition = "Organisme de couverture sociale"
 * performer 1..1 MS
 * performer.assignedEntity MS
 * performer.assignedEntity.classCode MS
-* performer.assignedEntity MS
 * performer.assignedEntity.id ^short = "Identifiant de l'organisme"
 * performer.assignedEntity.id ^definition = "Identifiant de l'organisme"
 * performer.assignedEntity.code 1..1 MS
@@ -107,6 +104,7 @@ frParticipantAssure 0..1 MS
 * entryRelationship MS
 * entryRelationship ^short = "Informations sur le plan de soins"
 * entryRelationship ^definition = "Informations sur le plan de soins"
+  * typeCode = #REFR
   * act 1..1
     * classCode MS
     * classCode = #ACT

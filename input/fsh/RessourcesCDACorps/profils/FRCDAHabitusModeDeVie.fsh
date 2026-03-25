@@ -40,6 +40,9 @@ and FRCDAHabitusModeDeVie 1..1
 * code ^short = "Élément observé"
 * code ^definition = "Élément observé"
 * code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-social-history-code-cisis (required)
+* code.qualifier MS
+* code.qualifier ^short = "Précision du code"
+* code.qualifier ^definition = "Précision du code"
 * text MS
 * text 1..1
 * text ^short = "Description narrative"

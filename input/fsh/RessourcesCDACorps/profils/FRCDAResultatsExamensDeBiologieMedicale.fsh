@@ -40,7 +40,7 @@ Fixé: @code = active
 Ou 
 Fixé: @code = aborted"
 * statusCode ^definition = "Niveau de complétude"
-* statusCode from https://interop.esante.fr/fhir/ValueSet/FR-Resultats-examens-de-biologie-medicale_ValueSet (required)
+* statusCode from FRValueSetStatusCode (required)
 * effectiveTime MS
 * effectiveTime ^short = "Date et heure du résultat"
 * effectiveTime ^definition = "Date et heure du résultat"

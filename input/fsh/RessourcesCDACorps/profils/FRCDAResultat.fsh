@@ -2,7 +2,7 @@ Profile: FRCDAResultat
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Observation
 Id: fr-cda-resultat
 Title: "CDA - FR Resultat"
-Description: "Entrée FR-Resultat: Cette entrée permet d'indiquer le résultat observé. "
+Description: "Entrée FR-Resultat: Cette entrée permet d'indiquer le résultat observé."
 * classCode MS
 * classCode = #OBS
 * moodCode MS
@@ -30,13 +30,13 @@ and frSimpleObservation 1..1
 * templateId[frSimpleObservation] ^short = "Conformité FR-Simple-Observation (CI-SIS)"
 * templateId[frSimpleObservation] ^definition = "Conformité FR-Simple-Observation (CI-SIS)"
 * code MS
-* code 1..1
 * code ^short = "Code du résultat"
 * code ^definition = "Code du résultat"
 * text MS
 * text 1..1
 * text ^short = "Description narrative"
 * text ^definition = "Description narrative"
+* text.reference 1..1 MS
 * statusCode MS
 * statusCode 1..1
 * statusCode ^short = "Statut de l'observation : completed"

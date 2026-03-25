@@ -34,7 +34,7 @@ and frObservationSurEchelleDouleur 1..1
 * code ^short = "Code de l'observation"
 * code ^definition = "Code de l'observation"
 * code.code = #38208-5
-* code.displayName = "38208-5"
+* code.displayName = "Sévérité de la douleur"
 * code.codeSystem = "2.16.840.1.113883.6.1"
 * code.codeSystemName = "LOINC"
 * text MS

@@ -28,7 +28,6 @@ and frSeverite 1..1
 * templateId[frSeverite] ^short = "Conformité FR-Severite (CI-SIS)"
 * templateId[frSeverite] ^definition = "Conformité FR-Severite (CI-SIS)"
 * code MS
-* code 1..1
 * code ^short = "Code de l’entrée"
 * code ^definition = "Code de l’entrée"
 * code.code = #SEV 

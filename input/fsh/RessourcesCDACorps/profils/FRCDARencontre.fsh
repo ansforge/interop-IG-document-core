@@ -73,25 +73,32 @@ Sinon, l'élément  n'est pas fourni."
 * informant ^short = "Informateur"
 * informant ^definition = "Informateur"
 * informant only FRCDAInformant
-* participant 0..1 MS
-* participant ^short = "Lieu d'exécution"
-* participant ^definition = "Lieu d'exécution"
-  * typeCode = #LOC
-  * participantRole MS
-    * classCode = #SDLOC
-    * id MS
-    * id ^short = "Identifiant de l'établissement"
-    * id ^definition = "Identifiant de l'établissement"
-    * addr MS
-    * addr ^short = "Adresse"
-    * addr ^definition = "Adresse"
-    * telecom MS
-    * telecom ^short = "Coordonnées télécom"
-    * telecom ^definition = "Coordonnées télécom"
-    * playingEntity MS
-      * classCode = #PLC
-      * name 1..1 MS 
-      *  name ^short = "Nom de l'établissement"
-      *  name ^short = "Nom de l'établissement"
-* participant MS
-* participant only FRCDAParticipantCorps
+* participant ^slicing.discriminator.type = #value
+* participant ^slicing.discriminator.path = "typeCode"
+* participant ^slicing.rules = #open
+
+* participant contains
+    lieuExecution 0..1 MS and
+    autresParticipants 0..* MS
+// Lieu d'exécution
+* participant[lieuExecution].typeCode = #LOC
+* participant[lieuExecution] ^short = "Lieu d'exécution"
+* participant[lieuExecution] ^definition = "Lieu d'exécution"
+* participant[lieuExecution].participantRole MS
+* participant[lieuExecution].participantRole.classCode = #SDLOC
+* participant[lieuExecution].participantRole.id MS
+* participant[lieuExecution].participantRole.id ^short = "Identifiant de l'établissement"
+* participant[lieuExecution].participantRole.id ^definition = "Identifiant de l'établissement"
+* participant[lieuExecution].participantRole.addr MS
+* participant[lieuExecution].participantRole.addr ^short = "Adresse"
+* participant[lieuExecution].participantRole.addr ^definition = "Adresse"
+* participant[lieuExecution].participantRole.telecom MS
+* participant[lieuExecution].participantRole.telecom ^short = "Coordonnées télécom"
+* participant[lieuExecution].participantRole.telecom ^definition = "Coordonnées télécom"
+* participant[lieuExecution].participantRole.playingEntity MS
+* participant[lieuExecution].participantRole.playingEntity.classCode = #PLC
+* participant[lieuExecution].participantRole.playingEntity.name 1..1 MS
+* participant[lieuExecution].participantRole.playingEntity.name ^short = "Nom de l'établissement"
+* participant[lieuExecution].participantRole.playingEntity.name ^definition = "Nom de l'établissement"
+//autres participants
+* participant[autresParticipants] only FRCDAParticipantCorps

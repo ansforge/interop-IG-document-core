@@ -64,4 +64,5 @@ and frAutresInformations 0..*
 * entryRelationship[frAllergieOuHypersensibilite].typeCode = #SUBJ
 * entryRelationship[frAllergieOuHypersensibilite].inversionInd = false
 * entryRelationship[frAllergieOuHypersensibilite].observation only FRCDAAllergieOuHypersensibilite
+* entryRelationship[frAutresInformations] ^short = "Entrée Autres informations sur l’allergie ou l'hypersensibilité"
 * entryRelationship[frAutresInformations].typeCode = #REFR

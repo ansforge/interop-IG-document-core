@@ -101,6 +101,7 @@ frCommentaireER 0..*
 * entryRelationship[frResultatsAnterieurs].observation.code MS
 * entryRelationship[frResultatsAnterieurs].observation.code ^short = "Même code que l'observation de niveau supérieur"
 * entryRelationship[frResultatsAnterieurs].observation.code.originalText MS
+* entryRelationship[frResultatsAnterieurs].observation.code.originalText.reference 1..1 MS
 * entryRelationship[frResultatsAnterieurs].observation.code.translation 0..1 MS
 * entryRelationship[frResultatsAnterieurs].observation.statusCode.code = #completed
 * entryRelationship[frResultatsAnterieurs].observation.effectiveTime 1..1 MS

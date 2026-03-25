@@ -26,8 +26,14 @@ and frPeriodeDeRenouvellement 1..1
 - Si la période de renouvellement est définie par une durée, utiliser les éléments <low> et <width> avec  l'élément <width> (période de temps) obligatoire et l'élément <low> (date de début) facultatif."
 * effectiveTime ^definition = "Période de renouvellement"
 * effectiveTime obeys fr-effectiveTime-type
+* effectiveTime obeys fr-inv-effectiveTime
 
 Invariant: fr-effectiveTime-type
 Description: "La durée doit être IVL-TS"
 Expression: "is(IVL_TS)"
+Severity: #error
+
+Invariant: fr-inv-effectiveTime
+Description: "Soit high, soit width doit être présent, mais pas les deux"
+Expression: "(high.exists() xor width.exists())"
 Severity: #error
