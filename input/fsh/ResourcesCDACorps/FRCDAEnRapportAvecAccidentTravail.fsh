@@ -30,7 +30,6 @@ and frEnRapportAvecAccidentTravail 1..1
 * templateId[frEnRapportAvecAccidentTravail] ^short = "Conformité FR-En-rapport-avec-accident-travail (CI-SIS)"
 * templateId[frEnRapportAvecAccidentTravail] ^definition = "Conformité FR-En-rapport-avec-accident-travail (CI-SIS)"
 * code MS
-* code 1..1
 * code ^short = "Catégorie de l'observationEn rapport avec un accident du travail ou une maladie professionnelle (GEN-180)"
 * code ^definition = "Catégorie de l'observation"
 * code.code = #GEN-180
