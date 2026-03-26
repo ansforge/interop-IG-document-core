@@ -2,7 +2,7 @@ Profile: FRCDACertitude
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Observation
 Id: fr-cda-certitude
 Title: "CDA - FR Certitude"
-Description: "Entrée FR-Certitude: Cette entrée permet de fournir la certitude d'une observation (problème ou allergie/hypersensibilité). Elle est utilisée exclusivement dans un lien entryRelationship grâce auquel elle est liée à l’élément qu’elle qualifie. "
+Description: "Entrée FR-Certitude: Cette entrée permet de fournir la certitude d'une observation (problème ou allergie/hypersensibilité). Elle est utilisée exclusivement dans un lien entryRelationship grâce auquel elle est liée à l’élément qu’elle qualifie."
 * classCode MS
 * classCode = #OBS
 * moodCode MS
