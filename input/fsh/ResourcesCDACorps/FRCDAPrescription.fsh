@@ -34,7 +34,6 @@ and frPrescription 1..1
 * quantity ^definition = "Quantité"
 * value 1..1
 * performer MS
-* performer 0..*
 * performer ^short = "Dispensateur"
 * performer ^definition = "Dispensateur"
   * typeCode="PRF"
