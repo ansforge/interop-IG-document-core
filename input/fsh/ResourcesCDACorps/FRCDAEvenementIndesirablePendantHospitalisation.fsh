@@ -16,10 +16,10 @@ Description: "Entrée FR-Evenement-indesirable-pendant-hospitalisation: Cette en
 * templateId ^slicing.rules = #open
 * templateId contains iheSimpleObservation 1..1
 and frSimpleObservation 1..1
-and FRCDAEvenementIndesirablePendantHospitalisation 1..1
+and frEvenementIndesirablePendantHospitalisation 1..1
 * templateId[iheSimpleObservation].root = "1.3.6.1.4.1.19376.1.5.3.1.4.13"
 * templateId[frSimpleObservation].root = "1.2.250.1.213.1.1.3.48"
-* templateId[FRCDAEvenementIndesirablePendantHospitalisation].root = "1.2.250.1.213.1.1.3.48.3"
+* templateId[frEvenementIndesirablePendantHospitalisation].root = "1.2.250.1.213.1.1.3.48.3"
 * code MS
 * code 1..1
 * code ^short = "Code de l'observation"
