@@ -48,7 +48,6 @@ and frBatterieExamensDeBiologieMedicale 1..1
 * performer only FRCDALaboratoireExecutant
 * performer ^short = "Laboratoire sous-traitant - Apparaît à ce niveau si et et seulement si ce résultat a été produit par un laboratoire exécutant distinct du laboratoire exécutant déclaré aux niveaux supérieurs."
 * performer ^definition = "Laboratoire sous-traitant"
-* participant 0..*
 * participant only FRCDAParticipantCorps
 * participant ^short = "Participant - Les attributs de cet élément prennent les valeurs suivantes : @typeCode= 'AUTHEN' pour 'Valideur de ces résultats' @typeCode='RESP' pour 'Responsable de cet examen' @typeCode='DEV' pour 'Dispositif automatique impliqué dans la production des résultats'"
 * participant ^definition = "Participant"
