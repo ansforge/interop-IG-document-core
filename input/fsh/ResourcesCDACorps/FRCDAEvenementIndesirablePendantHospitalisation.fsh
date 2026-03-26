@@ -21,7 +21,6 @@ and frEvenementIndesirablePendantHospitalisation 1..1
 * templateId[frSimpleObservation].root = "1.2.250.1.213.1.1.3.48"
 * templateId[frEvenementIndesirablePendantHospitalisation].root = "1.2.250.1.213.1.1.3.48.3"
 * code MS
-* code 1..1
 * code ^short = "Code de l'observation"
 * code ^definition = "Code de l'observation"
 * code.code = #MED-143
