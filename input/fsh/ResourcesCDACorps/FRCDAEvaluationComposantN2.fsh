@@ -15,7 +15,6 @@ Description: "Entrée FR-Evaluation-Composant-N2: Cette entrée permet de porter
 * templateId ^short = "Conformité FR-Evaluation-Composant(CI-SIS)"
 * templateId ^definition = "Conformité FR-Evaluation-Composant(CI-SIS)"
 * code MS
-* code 1..1
 * code ^short = "Code de l'évaluation : dépend du volet utilisant cette entrée (les précisions sont alors fournies dans le volet correspondant). Utiliser de préférence un code LOINC (2.16.840.1.113883.6.1) ou ICF (2.16.840.1.113883.6.254) ou autre.Si le type d'évaluation n'est pas trouvé dans les terminologies proposées, utiliser le code='54522-8' displayName='Statut fonctionnel' codeSystem=' 2.16.840.1.113883.6.1' codeSystemName='LOINC' et décrire le type d'évaluation sous forme de texte libre dans la partie narrative avec une référence vers l'entrée correspondante."
 * code ^definition = "Code de l'évaluation"
 * text MS
