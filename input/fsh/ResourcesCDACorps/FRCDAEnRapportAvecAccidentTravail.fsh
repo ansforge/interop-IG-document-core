@@ -34,6 +34,8 @@ and frEnRapportAvecAccidentTravail 1..1
 * code ^definition = "Catégorie de l'observation"
 * code.code = #GEN-180
 * code.codeSystem = "1.2.250.1.213.1.1.4.322"
+* code.displayName = "En rapport avec un accident du travail ou une maladie professionnelle"
+* code.codeSystemName = "TerminologieCISIS"
 * text MS
 * text 1..1
 * text ^short = "Description narrative"
