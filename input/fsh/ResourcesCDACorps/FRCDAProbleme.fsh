@@ -42,7 +42,8 @@ and frProbleme 1..1
 * code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-code-probleme-cisis
 * text MS
 * text 1..1
-* text ^short = "Description narrative du problème - Cet élément permet de décrire le problème enregistré, les dates, commentaires, etc."
+* text ^short = "Description narrative du problème : cet élément permet de décrire le problème enregistré, les dates, commentaires, etc."
+* text.reference 1..1 MS
 * statusCode MS
 * statusCode 1..1
 * statusCode ^short = "Statut de l’entrée"
