@@ -12,7 +12,6 @@ Description: "Entrée FR-Evolution-effet-indesirable: Cette entrée permet de pr
 * templateId ^short = "Conformité FR-Resultat (CI-SIS)"
 * templateId ^definition = "Conformité FR-Resultat (CI-SIS)"
 * code MS
-* code 1..1
 * code ^short = "Code de l'entrée"
 * code ^definition = "Code de l'entrée"
 * code.code = #GEN-319
