@@ -40,7 +40,7 @@ and frDispositifMedical 1..1
 * effectiveTime 1..1
 * effectiveTime ^short = "Date d'utilisation ou de présence chez le patient - Si la date n'est pas connue, utiliser la valeur nullFlavor='UNK'."
 * effectiveTime ^definition = "Date d'utilisation ou de présence chez le patient"
-* repeatNumber 0..1
+* repeatNumber MS
 * repeatNumber ^short = "Nombre de renouvellement(s) possible(s)"
 * repeatNumber ^definition = "Nombre de renouvellement(s) possible(s)"
 * quantity 0..1
