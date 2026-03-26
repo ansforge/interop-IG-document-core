@@ -8,7 +8,9 @@ Description: "Entrée FR-Dispositif-medical: L'entrée Dispositif Médical est u
 * moodCode ^short = "
  - Si le DM a été dispensé : @moodCode='EVN'  
  - Si le DM n’a pas encore été dispensé : @moodCode='INT'"
-* moodCode ^definition = "Si le DM a été dispensé:  @moodCode='EVN'  Si le DM n’a pas encore été dispensé : @moodCode='INT'"
+* moodCode ^definition = "
+ - Si le DM a été dispensé : @moodCode='EVN'  
+ - Si le DM n’a pas encore été dispensé : @moodCode='INT'"
 * id 1..*
 * id ^short = "Identifiant de la fourniture du DM -Sous la forme UID (UUID ou OID). Cet identifiant correspond à l'identifiant de la fourniture du dispositf médical (p. ex. procédure d'implant). Si l'identifiant n'est pas connu, utiliser la valeur nullFlavor='UNK'."
 * id ^definition = "Identifiant de la fourniture du DM"
