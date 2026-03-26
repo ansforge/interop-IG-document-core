@@ -10,7 +10,6 @@ Description: "Entrée FR-Document-attache: L'entrée Document Attaché est une e
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..1
-* templateId only frDocumentAttache 
 * templateId.root = "1.2.250.1.213.1.1.3.18"
 * templateId ^short = "Conformité FR-Document-attache (CI-SIS)"
 * templateId ^definition = "Conformité FR-Document-attache (CI-SIS)"
