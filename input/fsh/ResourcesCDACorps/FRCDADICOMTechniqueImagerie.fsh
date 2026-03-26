@@ -2,7 +2,7 @@ Profile: FRCDADICOMTechniqueImagerie
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Procedure
 Id: fr-cda-dicom-technique-imagerie
 Title: "CDA - FR DICOM Technique imagerie"
-Description: "Entrée FR-DICOM-Technique-imagerie: DICOM Part 20 - Procedure Technique Cette entrée permet d’enregistrer les différents paramètres de l’acquisition d’image :  acte d'imagerie  modalité d'acquisition  localisation anatomique / latéralité / topographie d'autres paramètres de l'acte "
+Description: "Entrée FR-DICOM-Technique-imagerie: DICOM Part 20 - Procedure Technique Cette entrée permet d’enregistrer les différents paramètres de l’acquisition d’image :  acte d'imagerie  modalité d'acquisition  localisation anatomique / latéralité / topographie d'autres paramètres de l'acte"
 * classCode MS
 * moodCode from http://terminology.hl7.org/ValueSet/v3-xDocumentProcedureMood
 * id 1..1
