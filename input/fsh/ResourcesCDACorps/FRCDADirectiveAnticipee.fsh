@@ -68,7 +68,6 @@ and frDirectiveAnticipee 1..1
     * id 1..1
     * id ^short = "Identifiant du document externe"
     * id ^definition = "Identifiant du document externe"
-    * text 0..1
     * text ^short = "Lien vers le document externe"
       * reference 1..1
 * entryRelationship
