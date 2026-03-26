@@ -5,8 +5,8 @@ Title: "CDA - FR Evenement"
 Description: "Entrée FR-Evenement: FR-EvenementCette entrée est un élément de type 'encounter' permettant de conserver les données d’activités liées à un patient / usager. Il peut s'agir d'un évènement passé ou à venir."
 * classCode MS
 * moodCode MS
-* moodCode ^short = "Si évènement planifié @moodCode ='INT'Si évènement réalisé @mooCode = 'EVN'"
-* moodCode ^definition = "Si évènement planifié @moodCode ='INT' Si évènement réalisé @mooCode = 'EVN' "
+* moodCode ^short = "Si évènement planifié @moodCode ='INT' ; Si évènement réalisé @mooCode = 'EVN'"
+* moodCode ^definition = "Si évènement planifié @moodCode ='INT' ; Si évènement réalisé @mooCode = 'EVN'"
 * id 1..*
 * id ^short = "Identifiant de l'évènement"
 * id ^definition = "Identifiant de l'évènement"
