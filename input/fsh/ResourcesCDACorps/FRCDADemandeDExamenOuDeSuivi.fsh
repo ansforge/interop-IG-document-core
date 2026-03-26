@@ -74,5 +74,7 @@ and frDemandeDexamenOuDeSuivi 1..1
 * targetSiteCode 0..*
 * targetSiteCode ^short = "Cible"
 * targetSiteCode ^definition = "Cible"
-* author 0..*
+* author ^short = "Auteur de la demande"
+* author ^definition = "Auteur de la demande"
+
 * author only FRCDAAuthor
