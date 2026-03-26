@@ -55,8 +55,6 @@ and frAllergieOuHypersensibilite 1..1
 * effectiveTime 1..1
 * effectiveTime ^short = "Date de début et de fin"
 * effectiveTime ^definition = "Date de début et de fin"
-  * low 1..1
-  * high 0..1
 * value MS
 * value 1..1
 * value only CD

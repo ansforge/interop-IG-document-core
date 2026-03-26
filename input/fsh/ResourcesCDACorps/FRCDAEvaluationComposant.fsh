@@ -46,8 +46,6 @@ and frEvaluationComposant 1..1
 * effectiveTime 1..1
 * effectiveTime ^short = "Horodatage de l'entrée"
 * effectiveTime ^definition = "Horodatage de l'entrée"
-  * low 0..1
-  * high 0..1
 * value MS
 * value 1..1
 * value only CD

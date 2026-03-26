@@ -59,10 +59,6 @@ and frEvenement 1..1
 * effectiveTime 0..1
 * effectiveTime ^short = "Date de l’évènement"
 * effectiveTime ^definition = "Date de l’évènement"
-  * low 1..1
-  * low ^short = "Date de début de l'évènement"
-  * high 0..1
-  * high ^short = "Date de fin de l'évènement"
 * performer 0..1
 * performer only FRCDAPerformerCorps
 * performer ^short = "Executant - Les attributs de cet élément prennent les valeurs suivantes: @typeCode='PRF'"

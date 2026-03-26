@@ -52,10 +52,6 @@ and frProbleme 1..1
 * effectiveTime 1..1
 * effectiveTime ^short = "Dates de début et de fin du problème"
 * effectiveTime ^definition = "Dates de début et de fin du problème"
-  * low 1..1
-  * low ^short = "Date de début et fin du problème - S’il n’est pas possible de donner une date, même approximative (l’année par exemple), mettre un nullflavor='UNK'"
-  * high 0..1
-  * high ^short = "Date de fin du problème - lorsqu'elle est présente, indique la date à laquelle l'observation n'était plus connue comme étant vraie : elle représente la date de résolution du problème. Elle peut être approximative. Elle peut ne pas être renseignée si l'observation porte sur un état du patient qui est peu susceptible de changer (p. ex. le diagnostic d'une maladie incurable)."
 * value MS
 * value 1..1
 * value only CD
