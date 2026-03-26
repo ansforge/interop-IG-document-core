@@ -2,7 +2,7 @@ Profile: FRCDACriticite
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Observation
 Id: fr-cda-criticite
 Title: "CDA - FR Criticite"
-Description: "Entrée FR-Criticite: Cette entrée permet de fournir la criticité d'une l’allergie ou hypersensibilité.Elle est utilisée exclusivement dans un lien entryRelationship grâce auquel elle est liée à l’élément qu’elle qualifie. "
+Description: "Entrée FR-Criticite: Cette entrée permet de fournir la criticité d'une l’allergie ou hypersensibilité. Elle est utilisée exclusivement dans un lien entryRelationship grâce auquel elle est liée à l’élément qu’elle qualifie."
 * classCode MS
 * classCode = #OBS
 * moodCode MS
