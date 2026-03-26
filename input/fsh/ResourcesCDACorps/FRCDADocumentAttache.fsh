@@ -53,5 +53,5 @@ frObservationMedia  1..1
   * value only ED
     * representation 0..1
     * representation ^short = "B64"
-    * mediaType 0..1
+    * mediaType MS
     * mediaType ^short = "Valeurs les plus utilisées : 'image/gif' ou 'image/jpeg' ou 'image/png' ou 'image/bm'ou 'image/tiff' ou 'text/rtf' ou 'text/plain' ou 'application/pdf'ou ou 'application/xml. D’autres valeurs peuvent être utilisées."
