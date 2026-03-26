@@ -40,7 +40,7 @@ and dicomProcedureTechnique 1..1
 * methodCode from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-acquisition-cisis (required) 
 * targetSiteCode ^short = "Localisation anatomique :SNOMED CT (2.16.840.1.113883.6.96)"
 * targetSiteCode ^definition = "Localisation anatomique"
-  * originalText 0..1
+  * originalText MS
     * mediaType 1..1
     * reference 1..1
       * value 1..1
