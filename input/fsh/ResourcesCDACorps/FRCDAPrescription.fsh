@@ -29,7 +29,6 @@ and frPrescription 1..1
 * templateId[frPrescription].root = "1.2.250.1.213.1.1.3.44"
 * templateId[frPrescription] ^short = "Conformité FR-Prescription (CI-SIS)"
 * templateId[frPrescription] ^definition = "Conformité FR-Prescription (CI-SIS)"
-* repeatNumber 0..1
 * repeatNumber ^short = "Nombre de renouvellements possibles"
 * quantity 0..1
 * quantity ^short = "Quantité - L'unité est exprimée selon le système de codage UCUM. "
