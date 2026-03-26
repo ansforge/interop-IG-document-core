@@ -70,7 +70,7 @@ and frDirectiveAnticipee 1..1
     * id ^definition = "Identifiant du document externe"
     * text ^short = "Lien vers le document externe"
       * reference 1..1
-* entryRelationship
+* entryRelationship 0..1 MS
   * typeCode = #COMP
   * observationMedia 1..1
   * observationMedia ^short = "observationMedia"
