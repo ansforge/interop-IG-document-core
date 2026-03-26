@@ -29,7 +29,6 @@ and frDispositifMedical 1..1
 * templateId[frDispositifMedical] ^short = "Conformité FR-Dispositif-medical (CI-SIS)"
 * templateId[frDispositifMedical] ^definition = "Conformité FR-Dispositif-medical (CI-SIS)"
 * text MS
-* text 0..1
 * text ^short = "Description narrative"
   * reference 0..1
   * reference ^short = "Référence de la description narrative de la section"
