@@ -60,7 +60,7 @@ and frDispositifMedical 1..1
 * participant ^short = "Dispositif médical"
 * participant ^definition = "Dispositif médical"
   * typeCode = #DEV
-  * participantRole 1..1
+  * participantRole MS
     * classCode = #MANU
     * id 0..*
     * id ^short = "Identifiant unique du DM (UDI)Cet élément est facultatif, car les identifiants de production (p. ex., numéro de série, numéro de lot, identifiant unique) peuvent ne pas être connus."
