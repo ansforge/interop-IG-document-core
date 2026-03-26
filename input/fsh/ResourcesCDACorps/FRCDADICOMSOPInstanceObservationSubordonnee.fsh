@@ -46,6 +46,7 @@ and dicomSOPInstanceObservation 1..1
 * entryRelationship contains
 frDicomObjectifsDeReference 0..1
  and frDicomCadresReferences 0..1
+* entryRelationship[frDicomObjectifsDeReference] ^short = "Entrée FR-DICOM-Objectifs-de-reference"
 * entryRelationship[frDicomObjectifsDeReference].observation only FRCDADicomObjectifsDeReference
 * entryRelationship[frDicomObjectifsDeReference].typeCode = #RSON
 * entryRelationship[frDicomCadresReferences].observation only FRCDADicomCadresReferences
