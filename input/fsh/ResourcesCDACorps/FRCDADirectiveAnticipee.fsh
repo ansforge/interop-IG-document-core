@@ -37,7 +37,7 @@ and frDirectiveAnticipee 1..1
 * code MS
 * code ^short = "Type de la directive anticipée - La valeur est issue du jeu de valeurs JDV_TypeDirectiveAnticipee_CISIS (1.2.250.1.213.1.1.5.136)."
 * code ^definition = "Type de la directive anticipée"
-* code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-directive-anticipee-cisis
+* code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-directive-anticipee-cisis (required)
 * text MS
 * text 1..1
 * text ^short = "Partie narrative de l'observation"
