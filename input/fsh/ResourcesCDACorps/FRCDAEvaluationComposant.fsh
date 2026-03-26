@@ -57,7 +57,6 @@ and frEvaluationComposant 1..1
 * interpretationCode ^short = " Interprétation "
 * interpretationCode ^definition = "Interprétation"
 * entryRelationship MS
-* entryRelationship 0..*
 * entryRelationship ^slicing.discriminator.type = #value
 * entryRelationship ^slicing.discriminator.path = "$this"
 * entryRelationship ^slicing.rules = #open
