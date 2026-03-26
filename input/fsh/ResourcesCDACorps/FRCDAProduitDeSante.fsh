@@ -25,7 +25,7 @@ and ccdProductEntry 1..1
   * name 1..1
   * name ^short = "Nom de marque du produit"
 //  hl7:manufacturedProduct.hl7:manufacturedMaterial.pharm:formCode
-//  hl7:manufacturedProduct.hl7:manufacturedMaterial.hl7:lotNumberText
+* lotNumberText ^short = "Numéro de lot"
 //  hl7:manufacturedProduct.hl7:manufacturedMaterial.pharm:expirationTime
 //  hl7:manufacturedProduct.hl7:manufacturedMaterial.pharm:asContent
 //  hl7:manufacturedProduct.hl7:manufacturedMaterial.pharm:asSpecializedKind
