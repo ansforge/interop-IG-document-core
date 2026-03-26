@@ -35,7 +35,6 @@ and frAntecedentFamilialObserve 1..1
 * templateId[frAntecedentFamilialObserve] ^short = "Conformité FR-Antecedent-familial-observe (CI-SIS)"
 * templateId[frAntecedentFamilialObserve] ^definition = "Conformité FR-Antecedent-familial-observe (CI-SIS)"
 * code MS
-* code 1..1
 * code ^short = "Type de l'observation"
 * code ^definition = "Type de l'observation"
 * code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-code-probleme-cisis
