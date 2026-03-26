@@ -2,7 +2,7 @@ Profile: FRCDADoseAntigene
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration
 Id: fr-cda-dose-antigene
 Title: "CDA - FR Dose antigene"
-Description: "Entrée FR-Dose-antigene: IHE-PCC – Antigene-DoseL'entrée Dose d'antigène permet de décrire des informations complémentaires sur la vaccination, et plus précisément, la dose spécifique d'un antigène. "
+Description: "Entrée FR-Dose-antigene: IHE-PCC – Antigene-Dose. L'entrée Dose d'antigène permet de décrire des informations complémentaires sur la vaccination, et plus précisément, la dose spécifique d'un antigène."
 * classCode MS
 * moodCode MS
 * moodCode = #EVN
