@@ -58,3 +58,6 @@ and frCriticite 1..1
 * value from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-allergy-intolerance-criticality-cisis (required)
 * author 0..1
 * author only FRCDAAuthor
+* author ^short = "Une entrée SimpleObservations est supposée être rédigée par l'auteur du document (par reconduction de contexte). Toutefois, l'auteur spécifique d'une observation peut être fourni en enregistrant l'auteur dans l'en-tête et en faisant référence à cet auteur dans une l'élément <author> de l'entrée. Si les auteurs sont explicitement répertoriés dans le document, un élément <id> permet de faire référence à l'ID de l'auteur dans l'en-tête. Si l'auteur de l'observation n'est pas l'auteur du document, l'élément <person> doit comporter son nom et son identifiant."
+* author ^definition = "Auteur de l'observation"
+
