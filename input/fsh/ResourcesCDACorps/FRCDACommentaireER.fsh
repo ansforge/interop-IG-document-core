@@ -27,7 +27,6 @@ and frCommentaireER 1..1
 * templateId[frCommentaireER] ^short = "Conformité FR-Commentaire-ER (CI-SIS)"
 * templateId[frCommentaireER] ^definition = "Conformité FR-Commentaire-ER (CI-SIS)"
 * code MS
-* code 1..1
 * code ^short = "Code de l'entrée"
 * code ^definition = "Code de l'entrée"
 * code.code = #48767-8
