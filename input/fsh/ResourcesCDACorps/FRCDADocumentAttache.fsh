@@ -40,6 +40,7 @@ frObservationMedia  1..1
 * component[frTypeDocumentAttache].observation 0..1 
 * component[frTypeDocumentAttache].observation only FRCDATypeDocumentAttache
 * component[frTypeDocumentAttache] ^short = "Type de document attaché"
+* component[frObservationMedia] ^short = "Document attaché"
 * component[frObservationMedia].observationMedia 1..1
 * component[frObservationMedia].observationMedia 
   * classCode MS
