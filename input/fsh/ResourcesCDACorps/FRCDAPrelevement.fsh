@@ -32,6 +32,8 @@ and frPrelevement 1..1
 * targetSiteCode ^definition = "Localisation du prélèvement"
   * originalText 0..1
     * reference 1..1
+      * value 1..1 
+    * mediaType 1..1
   * qualifier MS
   * qualifier 0..*
   * qualifier ^short = "Précision topographique"
