@@ -50,6 +50,7 @@ and frEvenement 1..1
 * text MS
 * text 0..1
 * text ^short = "Libellé et motif de l'évènement"
+* text.reference 1..1 MS
 * statusCode MS
 * statusCode 0..1
 * statusCode ^short = "Statut de l'entrée"
