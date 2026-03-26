@@ -97,6 +97,6 @@ frSeverite 0..1
     * classCode = #DOC
     * id 1..1
     * id ^short = "Identifiant du document"
-* text 1..1
-  * reference 0..1
-  * reference ^short = "Cet élément contient l’URL du document. L’adresse du document est indiqué dans la partie narrative de la section par le biais d’un lien linkHtml "
+    * text 1..1
+      * reference 0..1
+      * reference ^short = "Cet élément contient l’URL du document. L’adresse du document est indiqué dans la partie narrative de la section par le biais d’un lien linkHtml"
