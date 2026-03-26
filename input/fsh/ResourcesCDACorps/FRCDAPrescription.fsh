@@ -32,6 +32,7 @@ and frPrescription 1..1
 * repeatNumber ^short = "Nombre de renouvellements possibles"
 * quantity ^short = "Quantité - L'unité est exprimée selon le système de codage UCUM. "
 * quantity ^definition = "Quantité"
+* value 1..1
 * performer MS
 * performer 0..*
 * performer ^short = "Dispensateur"
