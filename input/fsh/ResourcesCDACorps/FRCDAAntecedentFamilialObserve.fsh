@@ -37,7 +37,7 @@ and frAntecedentFamilialObserve 1..1
 * code MS
 * code ^short = "Type de l'observation"
 * code ^definition = "Type de l'observation"
-* code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-code-probleme-cisis
+* code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-code-probleme-cisis (required)
 * text MS
 * text 1..1
 * text ^short = "Description narrative de la valeur de l'observation"
