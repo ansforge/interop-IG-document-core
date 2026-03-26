@@ -80,7 +80,6 @@ and frDispositifMedical 1..1
 * author MS
 * author only FRCDAAuthor
 * entryRelationship MS
-* entryRelationship 0..*
 * entryRelationship ^slicing.discriminator.type = #value
 * entryRelationship ^slicing.discriminator.path = "$this"
 * entryRelationship ^slicing.rules = #open
