@@ -49,7 +49,6 @@ and frDispositifMedical 1..1
 * expectedUseTime ^short = "Durée d'utilisation - Si la date n’est pas connue, utiliser la valeur nullFla-vor='UNK'"
 * expectedUseTime ^definition = "Durée d'utilisation"
 * performer MS
-* performer 0..*
 * performer ^short = "Dispensateur"
 * performer ^definition = "Dispensateur"
   * time MS
