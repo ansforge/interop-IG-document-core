@@ -16,7 +16,7 @@ Description: "Entrée FR-Evenement-indesirable-suite-administration-derives-sang
 * templateId ^slicing.rules = #open
 * templateId contains iheSimpleObservation 1..1
 and frSimpleObservation 1..1
-and FRCDAEvenementIndesirableSuiteAdministrationDerivesSang 1..1
+and frEvenementIndesirableSuiteAdministrationDerivesSang 1..1
 * templateId[iheSimpleObservation].root = "1.3.6.1.4.1.19376.1.5.3.1.4.13"
 * templateId[frSimpleObservation].root = "1.2.250.1.213.1.1.3.48"
 * templateId[FRCDAEvenementIndesirableSuiteAdministrationDerivesSang].root = "1.2.250.1.213.1.1.3.48.4"
