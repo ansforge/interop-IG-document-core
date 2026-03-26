@@ -28,7 +28,6 @@ Description: "Entrée FR-Document-attache: L'entrée Document Attaché est une e
 * statusCode ^definition = "Statut de l'entrée"
 * statusCode.code = #completed
 * effectiveTime MS
-* effectiveTime 0..1
 * effectiveTime ^short = "Date de l'entrée"
 * effectiveTime ^definition = "Date de l'entrée"
 * component MS
