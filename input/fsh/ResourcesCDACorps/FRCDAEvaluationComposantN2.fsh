@@ -39,7 +39,6 @@ Description: "Entrée FR-Evaluation-Composant-N2: Cette entrée permet de porter
 * value.originalText 0..1
 * value.originalText.reference 1..1
 * interpretationCode MS
-* interpretationCode 0..*
 * interpretationCode ^short = " Interprétation "
 * interpretationCode ^definition = "Interprétation"
 * entryRelationship MS
