@@ -61,7 +61,7 @@ and frAllergieOuHypersensibilite 1..1
 * value 1..1
 * value only CD
 * value.originalText MS
-* value.originalText 0..1
+* value.originalText MS
 * value.originalText.reference 1..1
 * value ^short = "L'élément <value> sera utilisé pour indiquer qu'il n'y a pas d'allergie/hypersensibilité ou que l'on ne sait pas à partir du jdv-absent-or-unknown-allergy-cisis (1.2.250.1.213.1.1.5.661)."
 * value from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-absent-or-unknown-allergy-cisis
