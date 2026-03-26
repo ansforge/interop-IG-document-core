@@ -60,5 +60,5 @@ and dicomProcedureTechnique 1..1
     * value ^definition = "Valeur de la topographie"
     * value only CD
     * value from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modificateur-topographique-cisis
-* participant 1..1
+* participant 0..1
 * participant only FRCDAParticipantCorps
