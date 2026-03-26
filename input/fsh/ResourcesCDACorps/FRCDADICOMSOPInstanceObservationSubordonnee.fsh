@@ -39,7 +39,6 @@ and dicomSOPInstanceObservation 1..1
   * reference ^short = "Référence WADO"
   * reference ^definition = "Référence WADO"
 * effectiveTime MS
-* effectiveTime 0..1
 * effectiveTime ^short = "Date de l'observation"
 * effectiveTime ^definition = "Date de l'observation"
 * entryRelationship MS
