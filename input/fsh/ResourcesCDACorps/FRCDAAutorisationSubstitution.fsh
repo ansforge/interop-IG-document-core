@@ -26,6 +26,6 @@ and frAutorisationSubstitution 1..1
 * code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdminSubstitutionCode-cisis (required)
 * statusCode MS
 * statusCode 1..1
-* statusCode ^short = "Statut de l’entréeFixé à la valeur 'completed'"
+* statusCode ^short = "Statut de l’entrée. Fixé à la valeur 'completed'"
 * statusCode ^definition = "Statut de l’entrée"
 * statusCode.code = #completed
