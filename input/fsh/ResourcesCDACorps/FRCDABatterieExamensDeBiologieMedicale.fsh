@@ -24,7 +24,6 @@ and frBatterieExamensDeBiologieMedicale 1..1
 * templateId[frBatterieExamensDeBiologieMedicale] ^short = "Conformité FR-Batterie-examens-de-biologie-medicale (CI-SIS)"
 * templateId[frBatterieExamensDeBiologieMedicale] ^definition = "Conformité FR-Batterie-examens-de-biologie-medicale (CI-SIS)"
 * code MS
-* code 0..1
 * code ^short = "Code de la batterie d'examen"
 * code ^definition = "Code de la batterie d'examen"
   * originalText 0..1
