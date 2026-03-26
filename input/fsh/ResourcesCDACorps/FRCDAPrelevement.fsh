@@ -113,7 +113,6 @@ ProduitUtilise 0..* MS
     and frEchantillonDateReception 0..1
     * code MS
     * code 1..1
-    * code ^short = ""
     * code.code = #SPRECEIVE
     * code.displayName = "Échantillon reçu"
     * code.codeSystem = "1.3.5.1.4.1.19376.1.5.3.2"
