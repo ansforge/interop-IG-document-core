@@ -31,7 +31,6 @@ and dicomProcedureTechnique 1..1
 * text ^short = "Partie narrative de l'entrée"
 * text ^definition = "Partie narrative de l'entrée"
 * effectiveTime MS
-* effectiveTime 0..1
 * effectiveTime ^short = "Date de l'acte"
 * effectiveTime ^definition = "Date de l'acte"
 * methodCode MS
