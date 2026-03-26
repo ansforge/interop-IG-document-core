@@ -2,7 +2,7 @@ Profile: FRCDAAutorisationSubstitution
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Act
 Id: fr-cda-autorisation-substitution
 Title: "CDA - FR Autorisation Substitution"
-Description: "Entrée FR-Autorisation-Substitution: IHE-PRE - Substitution-PermissionCette observation permet d'indiquer si le traitement auquel elle est associée peut être substitué."
+Description: "Entrée FR-Autorisation-Substitution: IHE-PRE - Substitution-Permission. Cette observation permet d'indiquer si le traitement auquel elle est associée peut être substitué."
 * classCode MS
 * classCode = #ACT
 * moodCode MS
