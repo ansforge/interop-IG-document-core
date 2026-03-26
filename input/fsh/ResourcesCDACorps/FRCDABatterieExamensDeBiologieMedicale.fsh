@@ -69,7 +69,7 @@ frCommentaireER 0..*
 * component[frResultatExamensDeBiologieElementCliniquePertinent] ^short = "Résultat d'examen de biologie / élément clinique pertinent"
 * component[frResultatExamensDeBiologieElementCliniquePertinent].typeCode = #COMP
 * component[frResultatExamensDeBiologieElementCliniquePertinent].observation only FRCDAResultatExamensDeBiologieElementCliniquePertinent
-* component[frImageIllustrative].observationMedia ^short = "Image illustrative"
+* component[frImageIllustrative] ^short = "Image illustrative"
 * component[frImageIllustrative].typeCode = #COMP
 * component[frImageIllustrative].observationMedia only FRCDAImageIllustrative
 * component[frCommentaireER].act ^short = "Commentaire"
