@@ -54,7 +54,6 @@ and iheProblemEntry 1..1
 * value 1..1
 * value only CD
 * entryRelationship MS
-* entryRelationship 0..*
 * entryRelationship ^slicing.discriminator.type = #value
 * entryRelationship ^slicing.discriminator.path = "$this"
 * entryRelationship ^slicing.rules = #open
