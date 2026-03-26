@@ -2,7 +2,7 @@ Profile: FRCDADICOMSOPInstanceObservation
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Observation
 Id: fr-cda-dicom-sop-instance-observation
 Title: "CDA - FR DICOM SOP instance observation"
-Description: "Entrée FR-DICOM-SOP-instance-observation: DICOM Part 20 - SOP Instance ObservationCette entrée permet d'enregistrer l’url permettant d’accéder aux images sur la Drim box source. "
+Description: "Entrée FR-DICOM-SOP-instance-observation: DICOM Part 20 - SOP Instance Observation. Cette entrée permet d'enregistrer l’url permettant d’accéder aux images sur la Drim box source."
 * classCode MS
 * classCode = #DGIMG
 * moodCode MS
