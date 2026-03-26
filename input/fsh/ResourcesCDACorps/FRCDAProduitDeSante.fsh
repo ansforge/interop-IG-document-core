@@ -7,7 +7,7 @@ Description: "Entrée FR-Produit-de-sante: IHE-PCC - Product-Entry. L'entrée Pr
 * templateId ^slicing.discriminator.type = #value
 * templateId ^slicing.discriminator.path = "root"
 * templateId ^slicing.rules = #open
-* templateId contains productEntry 1..1
+* templateId contains iheProductEntry 1..1
 and FRCDAProduitDeSante 1..1
 and ccd 1..1
 * templateId[productEntry].root = "1.3.6.1.4.1.19376.1.5.3.1.4.7.2"
