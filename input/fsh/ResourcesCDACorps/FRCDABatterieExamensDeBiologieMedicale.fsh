@@ -72,6 +72,6 @@ frCommentaireER 0..*
 * component[frImageIllustrative] ^short = "Image illustrative"
 * component[frImageIllustrative].typeCode = #COMP
 * component[frImageIllustrative].observationMedia only FRCDAImageIllustrative
-* component[frCommentaireER].act ^short = "Commentaire"
+* component[frCommentaireER] ^short = "Commentaire"
 * component[frCommentaireER].act only FRCDACommentaireER
 * component[frCommentaireER].typeCode = #SUBJ
