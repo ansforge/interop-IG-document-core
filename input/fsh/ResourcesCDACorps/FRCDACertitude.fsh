@@ -30,7 +30,6 @@ and frCertitude 1..1
 * templateId[frCertitude] ^short = "Conformité FR-Certitude (CI-SIS)"
 * templateId[frCertitude] ^definition = "Conformité FR-Certitude (CI-SIS)"
 * code MS
-* code 1..1
 * code ^short = "Code de l'observation"
 * code ^definition = "Code de l'observation"
 * code.code = #66455-7
