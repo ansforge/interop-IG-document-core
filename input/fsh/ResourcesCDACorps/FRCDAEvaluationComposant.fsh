@@ -65,7 +65,7 @@ frEvaluationComposantN2 0..*
  and frCommentaireER 0..*
 * entryRelationship[frEvaluationComposantN2].observation only FRCDAEvaluationComposantN2
 * entryRelationship[frEvaluationComposantN2] ^short = "Sous-composant de l'évaluation"
-* entryRelationship[frEvaluationComposantN2].typeCode = #completed
+* entryRelationship[frEvaluationComposantN2].typeCode = #COMP
 * entryRelationship[frEvaluationComposantN2].inversionInd = false
 * entryRelationship[frCommentaireER].act only FRCDACommentaireER
 * entryRelationship[frCommentaireER] ^short = "Commentaire"
