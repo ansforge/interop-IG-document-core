@@ -54,7 +54,7 @@ and frDispositifMedical 1..1
   * time MS
   * time 1..1
     * nullFlavor = #UNK
-  * assignedEntity 1..1
+  * assignedEntity MS
   * assignedEntity only FRCDAAssignedEntity
 * participant 1..* MS
 * participant ^short = "Dispositif médical"
