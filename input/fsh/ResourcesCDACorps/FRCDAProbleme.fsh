@@ -2,7 +2,7 @@ Profile: FRCDAProbleme
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Observation
 Id: fr-cda-probleme
 Title: "CDA - FR Probleme"
-Description: "Entrée FR-Probleme: IHE-PCC - Problem-Entry Cette entrée permet de décrire un problème du patient (une pathologie par exemple) en précisant :  Le type de problème observé : problème, plainte, symptôme, diagnostic, etc. Le problème observé (en général, la pathologie observée), La sévérité, Le statut du problème (sauf pour une réaction à une allergie/hypersensibilité), Le statut clinique du patient (sauf pour une réaction à une allergie/hypersensibilité), Un commentaire. "
+Description: "Entrée FR-Probleme: IHE-PCC - Problem-Entry. Cette entrée permet de décrire un problème du patient (une pathologie par exemple) en précisant :  Le type de problème observé : problème, plainte, symptôme, diagnostic, etc. Le problème observé (en général, la pathologie observée), La sévérité, Le statut du problème (sauf pour une réaction à une allergie/hypersensibilité), Le statut clinique du patient (sauf pour une réaction à une allergie/hypersensibilité), Un commentaire."
 * classCode MS
 * classCode = #OBS
 * moodCode MS
