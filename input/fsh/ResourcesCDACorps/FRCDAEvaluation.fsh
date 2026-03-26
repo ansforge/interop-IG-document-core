@@ -75,7 +75,6 @@ and frEvaluation 1..1
 * participant ^definition = "Responsable de l'évaluation"
 * participant.typeCode = #RESP
 * entryRelationship MS
-* entryRelationship 0..*
 * entryRelationship ^slicing.discriminator.type = #value
 * entryRelationship ^slicing.discriminator.path = "$this"
 * entryRelationship ^slicing.rules = #open
