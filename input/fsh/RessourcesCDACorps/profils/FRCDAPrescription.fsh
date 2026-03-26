@@ -55,6 +55,6 @@ and frPrescription 1..1
 * author 0..1
 * author only FRCDAAuthor
 * entryRelationship MS
-* entryRelationship.act only frInstructionsAuDispensateur
+* entryRelationship.act only FRCDAInstructionsAuDispensateur
 * entryRelationship ^short = "Prescripteur -  Une prescription est en attente de dispensation (moodCode='INT'), peut comporter le prescripteur."
 * entryRelationship.typeCode = #SUBJ

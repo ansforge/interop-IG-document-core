@@ -324,45 +324,6 @@ groups:
   Ressources CDA corps:
     name: Eléments CDA du corps
     resources:
-      - StructureDefinition/fr-cda-acte-substitution
-      - StructureDefinition/fr-cda-administration-de-derives-du-sang
-      - StructureDefinition/fr-cda-allergie-ou-hypersensibilite
-      - StructureDefinition/fr-cda-antecedent-familial-observe
-      - StructureDefinition/fr-cda-antecedents-familiaux
-      - StructureDefinition/fr-cda-autorisation-substitution
-      - StructureDefinition/fr-cda-batterie-examens-de-biologie-medicale
-      - StructureDefinition/fr-cda-certitude
-      - StructureDefinition/fr-cda-commentaire-er
-      - StructureDefinition/fr-cda-criticite
-      - StructureDefinition/fr-cda-demande-d-examen-ou-de-suivi
-      - StructureDefinition/fr-cda-dicom-sop-instance-observation
-      - StructureDefinition/fr-cda-dicom-sop-instance-observation-subordonnee
-      - StructureDefinition/fr-cda-dicom-technique-imagerie
-      - StructureDefinition/fr-cda-directive-anticipee
-      - StructureDefinition/fr-cda-dispositif-medical
-      - StructureDefinition/fr-cda-document-attache
-      - StructureDefinition/fr-cda-dose-antigene
-      - StructureDefinition/fr-cda-effet-indesirable
-      - StructureDefinition/fr-cda-en-rapport-avec-accident-travail
-      - StructureDefinition/fr-cda-en-rapport-avec-ald
-      - StructureDefinition/fr-cda-en-rapport-avec-la-prevention
-      - StructureDefinition/fr-cda-evaluation
-      - StructureDefinition/fr-cda-evaluation-composant
-      - StructureDefinition/fr-cda-evaluation-composant-n2
-      - StructureDefinition/fr-cda-evenement
-      - StructureDefinition/fr-cda-evenement-indesirable-pendant-hospitalisation
-      - StructureDefinition/fr-cda-evenement-indesirable-suite-administration-derives-sang
-      - StructureDefinition/fr-cda-evolution-effet-indesirable
-      - StructureDefinition/fr-cda-prelevement
-      - StructureDefinition/fr-cda-prescription
-      - StructureDefinition/fr-cda-probleme
-      - StructureDefinition/fr-cda-produit-de-sante
-      - StructureDefinition/fr-cda-quantite-de-produit
-
-
-  Ressources CDA corps:
-    name: Eléments CDA du corps
-    resources:
       - StructureDefinition/cisis-telecom
       - StructureDefinition/cisis-addr
       - StructureDefinition/fr-cda-accidents-transfusionnels
@@ -439,6 +400,41 @@ groups:
       - StructureDefinition/fr-cda-severite
       - StructureDefinition/fr-cda-sujet-non-humain
       - StructureDefinition/fr-cda-observation-sur-echelle-douleur
+      - StructureDefinition/fr-cda-acte-substitution
+      - StructureDefinition/fr-cda-administration-de-derives-du-sang
+      - StructureDefinition/fr-cda-allergie-ou-hypersensibilite
+      - StructureDefinition/fr-cda-antecedent-familial-observe
+      - StructureDefinition/fr-cda-antecedents-familiaux
+      - StructureDefinition/fr-cda-autorisation-substitution
+      - StructureDefinition/fr-cda-batterie-examens-de-biologie-medicale
+      - StructureDefinition/fr-cda-certitude
+      - StructureDefinition/fr-cda-commentaire-er
+      - StructureDefinition/fr-cda-criticite
+      - StructureDefinition/fr-cda-demande-d-examen-ou-de-suivi
+      - StructureDefinition/fr-cda-dicom-sop-instance-observation
+      - StructureDefinition/fr-cda-dicom-sop-instance-observation-subordonnee
+      - StructureDefinition/fr-cda-dicom-technique-imagerie
+      - StructureDefinition/fr-cda-directive-anticipee
+      - StructureDefinition/fr-cda-dispositif-medical
+      - StructureDefinition/fr-cda-document-attache
+      - StructureDefinition/fr-cda-dose-antigene
+      - StructureDefinition/fr-cda-effet-indesirable
+      - StructureDefinition/fr-cda-en-rapport-avec-accident-travail
+      - StructureDefinition/fr-cda-en-rapport-avec-ald
+      - StructureDefinition/fr-cda-en-rapport-avec-la-prevention
+      - StructureDefinition/fr-cda-evaluation
+      - StructureDefinition/fr-cda-evaluation-composant
+      - StructureDefinition/fr-cda-evaluation-composant-n2
+      - StructureDefinition/fr-cda-evenement
+      - StructureDefinition/fr-cda-evenement-indesirable-pendant-hospitalisation
+      - StructureDefinition/fr-cda-evenement-indesirable-suite-administration-derives-sang
+      - StructureDefinition/fr-cda-evolution-effet-indesirable
+      - StructureDefinition/fr-cda-prelevement
+      - StructureDefinition/fr-cda-prescription
+      - StructureDefinition/fr-cda-probleme
+      - StructureDefinition/fr-cda-produit-de-sante
+      - StructureDefinition/fr-cda-quantite-de-produit
+
 
   Ressources FHIR entête:
     name: Profils FHIR entête

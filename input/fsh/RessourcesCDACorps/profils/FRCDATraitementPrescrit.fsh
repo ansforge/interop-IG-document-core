@@ -296,10 +296,14 @@ Si la ligne de prescription est liée à un item d'un plan de traitement, la ré
 * entryRelationship[frHorsAMM].typeCode = #COMP
 * entryRelationship[frHorsAMM] ^short = "Entrée Hors AMM"
 
-* reference.externalDocument only FRCDAReferencesExternes
-* reference.typeCode = #XCRPT
-* reference.externalDocument ^short = "Référence de la prescription: \r\n
+* reference MS
+* reference ^short = "Référence de la prescription : Non utilisé dans une prescription."
+* reference.
+  * typeCode = #XCRPT
+  * externalDocument 1..1 MS
+  * externalDocument ^short = "Référence de la prescription: \r\n
 Non utilisé dans une prescription."
+  * externalDocument.id 1..* MS
 
 Invariant: fr-operator-a-prescrit
 Description: "operator doit être A"

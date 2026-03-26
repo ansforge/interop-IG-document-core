@@ -46,7 +46,7 @@ and dicomSOPInstanceObservation 1..1
 frDicomSopInstanceObservationSubordonnee 0..*
  and frDicomObjectifsDeReference 0..1
  and frDicomCadresReferences 0..1
-* entryRelationship[frDicomSopInstanceObservationSubordonnee].observation only FRCDADicomSopInstanceObservationSubordonnee
+* entryRelationship[frDicomSopInstanceObservationSubordonnee].observation only FRCDADICOMSOPInstanceObservationSubordonnee
 * entryRelationship[frDicomSopInstanceObservationSubordonnee] ^short = "Non utilisé"
 * entryRelationship[frDicomSopInstanceObservationSubordonnee].typeCode = #SUBJ
 * entryRelationship[frDicomObjectifsDeReference].observation only FRCDADicomObjectifsDeReference

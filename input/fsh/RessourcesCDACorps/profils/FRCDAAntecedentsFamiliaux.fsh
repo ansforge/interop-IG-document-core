@@ -44,5 +44,5 @@ and frFamilyHistoryOrganizer 1..1
 * subject ^short = "Identification du parent"
 * component MS
 * component 1..*
-* component only frAntecedentFamilialObserve 
+* component.observation only FRCDAAntecedentFamilialObserve 
 * component ^short = "Antécédent familial observé"
