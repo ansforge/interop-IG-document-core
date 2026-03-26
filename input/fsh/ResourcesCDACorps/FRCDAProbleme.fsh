@@ -36,7 +36,6 @@ and frProbleme 1..1
 * templateId[frProbleme] ^short = "Conformité FR-Probleme (CI-SIS)"
 * templateId[frProbleme] ^definition = "Conformité FR-Probleme (CI-SIS)"
 * code MS
-* code 1..1
 * code ^short = "Type d'observation"
 * code ^definition = "Type d'observation"
 * code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-code-probleme-cisis
