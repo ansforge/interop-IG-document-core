@@ -30,7 +30,6 @@ and frEnRapportAvecALD 1..1
 * templateId[frEnRapportAvecALD] ^short = "Conformité FR-En-rapport-avec-ALD (CI-SIS)"
 * templateId[frEnRapportAvecALD] ^definition = "Conformité FR-En-rapport-avec-ALD (CI-SIS)"
 * code MS
-* code 1..1
 * code ^short = "Catégorie de l'entrée"
 * code ^definition = "Catégorie de l'entrée"
 * code.code = #MED-574
