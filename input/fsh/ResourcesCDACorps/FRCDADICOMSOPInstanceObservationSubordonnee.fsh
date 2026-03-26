@@ -40,7 +40,6 @@ and dicomSOPInstanceObservation 1..1
 * effectiveTime ^short = "Date de l'observation"
 * effectiveTime ^definition = "Date de l'observation"
 * entryRelationship MS
-* entryRelationship 0..*
 * entryRelationship ^slicing.discriminator.type = #value
 * entryRelationship ^slicing.discriminator.path = "$this"
 * entryRelationship ^slicing.rules = #open
