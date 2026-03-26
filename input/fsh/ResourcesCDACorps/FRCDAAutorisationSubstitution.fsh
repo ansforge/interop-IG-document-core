@@ -21,7 +21,7 @@ and frAutorisationSubstitution 1..1
 * templateId[frAutorisationSubstitution].root = "1.2.250.1.213.1.1.3.87"
 * templateId[frAutorisationSubstitution] ^short = "Conformité FR-Autorisation-Substitution (CI-SIS)"
 * templateId[frAutorisationSubstitution] ^definition = "Conformité FR-Autorisation-Substitution (CI-SIS)"
-* code ^short = "Type de substitution autorisé entre le traitement prescrit et le traitement dispensé. "
+* code ^short = "Type de substitution autorisé entre le traitement prescrit et le traitement dispensé."
 * code ^definition = "Type de substitution autorisé"
 * code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdminSubstitutionCode-cisis
 * statusCode MS
