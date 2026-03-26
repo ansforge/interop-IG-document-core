@@ -29,7 +29,6 @@ and dicomSOPInstanceObservation 1..1
 * code ^definition = "Classe SOP"
 * code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-sop-class-cisis (required)
 * text MS
-* text 0..1
 * text ^short = "Partie narrative de l'observation"
 * text ^definition = "Partie narrative de l'observation"
   * mediaType 1..1
