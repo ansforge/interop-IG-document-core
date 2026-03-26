@@ -39,7 +39,7 @@ and frPrelevement 1..1
   * qualifier ^definition = "Précision topographique"
     * name MS
     * name 1..1
-    * name ^short = ""
+    * name.displayName = "modificateur topographique"
     * name.code = #106233006
     * name.codeSystem = "2.16.840.1.113883.6.96"
     * name.codeSystemName = "SNOMED-CT"
