@@ -21,7 +21,6 @@ and frPrelevement 1..1
 * templateId[frPrelevement] ^short = "Conformité FR-Prelevement (CI-SIS)"
 * templateId[frPrelevement] ^definition = "Conformité FR-Prelevement (CI-SIS)"
 * code MS
-* code 0..1
 * code ^short = "Acte de prélèvement - Pour un prélèvement en vue d'examen de biologie médicale, le code affiné NABM de l'acte de prélèvement doit être renseigné si connu, sauf dans le cas d'un recueil d'échantillon effectué par le patient lui-même. Un prélèvement cytologique ou de tissu en vue d'un examen d'anatomie ou de cytologie pathologiques est codé à l'aide d'une nomenclature précisée dans les modèles de contenus métiers.Par défaut, utiliser le code suivant : code='33882-2' displayName='Prélèvement' codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'"
 * code ^definition = "Acte de prélèvement"
 * effectiveTime MS
