@@ -60,14 +60,12 @@ and frEvenement 1..1
 * effectiveTime 0..1
 * effectiveTime ^short = "Date de l’évènement"
 * effectiveTime ^definition = "Date de l’évènement"
-* performer 0..1
 * performer only FRCDAPerformerCorps
 * performer ^short = "Executant - Les attributs de cet élément prennent les valeurs suivantes: @typeCode='PRF'"
-* author 0..1
 * author only FRCDAAuthor
-* informant 0..1
+* author ^short = "Auteur"
 * informant only FRCDAInformant
-* participant 0..*
+* informant ^short = "Informateur"
 * participant only FRCDAParticipantCorps
 * participant ^short = "Lieu d'exécution / Entité juridique responsable de l'événement / Autres participants - Les attributs de cet élément prennent les valeurs suivantes : @typeCode='LOC' pour un Lieu d'éxécution - @typeCode='RESP' pour une Entité juridique - Les attributs du sous-élément participantRole prennent les valeurs suivantes : @classCode='SDLOC' pour un Lieu d'éxécution - Les attributs du sous-élément playingEntity prennent les valeurs suivantes : @classCode='PLC' pour un Lieu d'éxécution - @classCode='ENT' pour une Entité juridique @determinerCode='INSTANCE' pour un Lieu d'éxécution ou une Entité Juridique"
 * entryRelationship MS
