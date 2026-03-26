@@ -61,7 +61,6 @@ and frDemandeDexamenOuDeSuivi 1..1
 * effectiveTime ^definition = "Date prévisionnelle de l'examen"
 * value MS
 * value 0..1
-* value only CD
 * value ^short = "Résultat de la demande"
 * interpretationCode MS
 * interpretationCode 0..1
