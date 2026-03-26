@@ -23,7 +23,7 @@ and frAutorisationSubstitution 1..1
 * templateId[frAutorisationSubstitution] ^definition = "Conformité FR-Autorisation-Substitution (CI-SIS)"
 * code ^short = "Type de substitution autorisé entre le traitement prescrit et le traitement dispensé."
 * code ^definition = "Type de substitution autorisé"
-* code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdminSubstitutionCode-cisis
+* code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdminSubstitutionCode-cisis (required)
 * statusCode MS
 * statusCode 1..1
 * statusCode ^short = "Statut de l’entréeFixé à la valeur 'completed'"
