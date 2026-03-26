@@ -3,7 +3,6 @@ Parent: http://hl7.org/cda/stds/core/StructureDefinition/Observation
 Id: fr-cda-directive-anticipee
 Title: "CDA - FR Directive anticipee"
 Description: "Entrée FR-Directive-anticipee: IHE-PCC - Advance-Directive-Observation. Cette entrée permet d’indiquer si les directives anticipées du patient. Article L1111-11 du Code de la Santé Publique : « Toute personne majeure peut rédiger des directives anticipées pour le cas où elle serait un jour hors d'état d'exprimer sa volonté. Ces directives anticipées expriment la volonté de la personne relative à sa fin de vie en ce qui concerne les conditions de la poursuite, de la limitation, de l'arrêt ou du refus de traitement ou d'acte médicaux.»."
-                            traitement ou d'acte médicaux.». "
 * classCode MS
 * classCode = #OBS
 * moodCode MS
