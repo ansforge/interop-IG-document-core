@@ -28,7 +28,6 @@ and dicomProcedureTechnique 1..1
 * code ^definition = "Code de l'acte d'imagerie"
 * code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-code-document-imagerie-cisis (required) 
 * text MS
-* text 0..1
 * text ^short = "Partie narrative de l'entrée"
 * text ^definition = "Partie narrative de l'entrée"
 * effectiveTime MS
