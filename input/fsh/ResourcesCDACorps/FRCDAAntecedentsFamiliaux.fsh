@@ -34,7 +34,7 @@ and frFamilyHistoryOrganizer 1..1
 * participant ^short = "Lien avec un autre sujet"
 * participant ^definition = "Lien avec un autre sujet"
   * typeCode = #IND
-  * participantRole 1..1
+  * participantRole MS
     * classCode = #PRS
     * code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-PersonalRelationshipRoleType-cisis
     * playingEntity 1..1
