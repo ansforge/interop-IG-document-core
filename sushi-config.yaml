@@ -324,8 +324,6 @@ groups:
   Ressources CDA corps:
     name: Eléments CDA du corps
     resources:
-      - StructureDefinition/fr-cda-accidents-transfusionnels
-      - StructureDefinition/fr-cda-acte
       - StructureDefinition/fr-cda-acte-substitution
       - StructureDefinition/fr-cda-administration-de-derives-du-sang
       - StructureDefinition/fr-cda-allergie-ou-hypersensibilite
