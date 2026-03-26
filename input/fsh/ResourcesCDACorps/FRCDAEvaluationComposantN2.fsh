@@ -42,7 +42,6 @@ Description: "Entrée FR-Evaluation-Composant-N2: Cette entrée permet de porter
 * interpretationCode ^short = " Interprétation "
 * interpretationCode ^definition = "Interprétation"
 * entryRelationship MS
-* entryRelationship 0..*
 * entryRelationship only FRCDACommentaireER
 * entryRelationship.typeCode = #SUBJ
 * entryRelationship.inversionInd = true
