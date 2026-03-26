@@ -45,7 +45,6 @@ and frBatterieExamensDeBiologieMedicale 1..1
 * subject only FRCDASujetNonHumain or FRCDAPatientAvecSujetNonHumain
 * subject ^short = "Sujet non humain - Cet élément doit être présent lorsque le sujet des observations est un échantillon provenant d'un sujet non humain (animal ou autre élément environnemental). Le sujet non humain doit aussi être décrit dans l'en-tête du document. Participant avec sujet non humain - Cet élément doit être présent lorsque le sujet des observations de cette partie du compte rendu est un échantillon provenant d'un sujet non humain (animal ou autre élément environnemental), tandis que les autres parties du rapport sont liés au patient humain. Le sujet non humain doit aussi être décrit dans l'en-tête du document."
 * subject ^definition = "Sujet non humain ou Participant avec sujet non humain"
-* performer 0..*
 * performer only FRCDALaboratoireExecutant
 * performer ^short = "Laboratoire sous-traitant - Apparaît à ce niveau si et et seulement si ce résultat a été produit par un laboratoire exécutant distinct du laboratoire exécutant déclaré aux niveaux supérieurs."
 * performer ^definition = "Laboratoire sous-traitant"
