@@ -81,7 +81,6 @@ and frDirectiveAnticipee 1..1
     * value MS
     * value 1..1
     * value ^short = "Document encapsulé encodée en Base64"
-    * value only ED
       * mediaType from https://mos.esante.gouv.fr/NOS/JDV_J61-HealthcareFacilityTypeCode-DMP
       * representation 1..1
       * representation ^short = "Fixed: B64"
