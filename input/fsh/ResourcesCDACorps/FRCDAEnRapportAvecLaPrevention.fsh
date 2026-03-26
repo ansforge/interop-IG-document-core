@@ -30,7 +30,6 @@ and frEnRapportAvecLaPrevention 1..1
 * templateId[frEnRapportAvecLaPrevention] ^short = "Conformité FR-En-rapport-avec-la-prevention (CI-SIS)"
 * templateId[frEnRapportAvecLaPrevention] ^definition = "Conformité FR-En-rapport-avec-la-prevention"
 * code MS
-* code 1..1
 * code ^short = "Catégorie de l'entrée"
 * code ^definition = "Catégorie de l'entrée"
 * code.code = #GEN-295
