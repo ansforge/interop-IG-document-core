@@ -74,7 +74,7 @@ and frDispositifMedical 1..1
       * code 1..1
       * code ^short = "Code du DM :Terminologie EMDN (1.2.250.1.213.2.68) : catégorie européenne du DMouJDV_AbsentOrUnknownDevices_CISIS (1.2.250.1.213.1.1.5.663)"
       * code ^definition = "Code du DM"
-        * translation 0..*
+        * translation MS
         * translation ^short = "Autre code du dispositif médical : tout autre code disponible, par exemple : Référence catalogue / Date du catalogue + Identifiant catalogue (après l'arrivée d'EUDAMED) CLADIMED (2.250.1.213.2.65) - ACL-13 : Association Codification Logistique (OID [Précision attendue] ) pour le DM non implantables uniquement pour la ville (et parfois pour l'hôpital) - GTIN : Global trade Item Number (OID [Précision attendue] ) - LPP (OID [Précision attendue] ) [FR] (facturation) de la Cnam"
         * translation ^definition = "Autre code du dispositif médical"
 * author 0..*
