@@ -45,7 +45,7 @@ and frDispositifMedical 1..1
 * repeatNumber ^definition = "Nombre de renouvellement(s) possible(s)"
 * quantity MS
 * quantity ^short = "Quantité"
-* expectedUseTime 0..1
+* expectedUseTime MS
 * expectedUseTime ^short = "Durée d'utilisation - Si la date n’est pas connue, utiliser la valeur nullFla-vor='UNK'"
 * expectedUseTime ^definition = "Durée d'utilisation"
 * performer MS
