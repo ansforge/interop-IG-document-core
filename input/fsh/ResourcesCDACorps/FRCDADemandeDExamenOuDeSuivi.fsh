@@ -10,7 +10,10 @@ Description: "Entrée FR-Demande-d-examen-ou-de-suivi: IHE-PCC - Observation Req
  - Si la demande fait partie d'un plan de soins : @moodCode='INT'  
  - Si la demande est une proposition : @moodCode='PRP'  
  - Si la demande est un objectif à atteindre : @moodCode='GOL'"
-* moodCode ^definition = "Si la demande fait partie d'un plan de soins"
+* moodCode ^definition = " 
+ - Si la demande fait partie d'un plan de soins : @moodCode='INT'  
+ - Si la demande est une proposition : @moodCode='PRP'  
+ - Si la demande est un objectif à atteindre : @moodCode='GO"
 * id 1..1
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
