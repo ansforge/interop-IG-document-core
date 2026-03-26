@@ -35,7 +35,6 @@ and frEvaluation 1..1
 * templateId[frEvaluation] ^short = "Conformité FR-Evaluation (CI-SIS)"
 * templateId[frEvaluation] ^definition = "Conformité FR-Evaluation (CI-SIS)"
 * code MS
-* code 1..1
 * code ^short = "Type d'évaluation :LOINC (2.16.840.1.113883.6.1) ou ICF (2.16.840.1.113883.6.254) ou autreSi le type d'évaluation n'est pas trouvé dans les terminologies proposées, utiliser le code='54522-8' displayName='Statut fonctionnel' codeSystem=' 2.16.840.1.113883.6.1' codeSystemName='LOINC' et décrire le type d'évaluation sous forme de texte libre dans la partie narrative avec une référence vers l'entrée correspondante."
 * code ^definition = "Type d'évaluation"
 * code.translation 0..1
