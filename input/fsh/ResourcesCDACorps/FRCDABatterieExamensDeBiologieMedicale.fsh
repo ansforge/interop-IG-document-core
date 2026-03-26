@@ -52,7 +52,6 @@ and frBatterieExamensDeBiologieMedicale 1..1
 * participant only FRCDAParticipantCorps
 * participant ^short = "Participant - Les attributs de cet élément prennent les valeurs suivantes : @typeCode= 'AUTHEN' pour 'Valideur de ces résultats' @typeCode='RESP' pour 'Responsable de cet examen' @typeCode='DEV' pour 'Dispositif automatique impliqué dans la production des résultats'"
 * participant ^definition = "Participant"
-* author 0..*
 * author only FRCDAAuthor
 * author ^short = "Auteur - Apparaît à ce niveau si le rendu de ce  résultat procède de cet auteur spécifique, différent de celui déclaré aux niveaux supérieurs. Constraint @typeCode='AUT'"
 * component MS
