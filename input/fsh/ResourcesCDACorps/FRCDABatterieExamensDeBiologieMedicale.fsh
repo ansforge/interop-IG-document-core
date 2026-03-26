@@ -67,7 +67,7 @@ frCommentaireER 0..*
 * component[frPrelevement].procedure only FRCDAPrelevement
 * component[frPrelevement] ^short = "Prélèvement"
 * component[frPrelevement].typeCode = #COMP
-* component[frResultatExamensDeBiologieElementCliniquePertinent].observation ^short = "Résultat d'examen de biologie / élément clinique pertinent"
+* component[frResultatExamensDeBiologieElementCliniquePertinent] ^short = "Résultat d'examen de biologie / élément clinique pertinent"
 * component[frResultatExamensDeBiologieElementCliniquePertinent].typeCode = #COMP
 * component[frResultatExamensDeBiologieElementCliniquePertinent].observation only FRCDAResultatExamensDeBiologieElementCliniquePertinent
 * component[frImageIllustrative].observationMedia ^short = "Image illustrative"
