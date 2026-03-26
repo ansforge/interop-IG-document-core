@@ -8,7 +8,6 @@ Description: "Entrée FR-Evolution-effet-indesirable: Cette entrée permet de pr
 * moodCode MS
 * moodCode = #EVN
 * templateId 1..1
-* templateId only frEvolutionEffetIndesirable
 * templateId.root = "1.2.250.1.213.1.1.3.213"
 * templateId ^short = "Conformité FR-Resultat (CI-SIS)"
 * templateId ^definition = "Conformité FR-Resultat (CI-SIS)"
