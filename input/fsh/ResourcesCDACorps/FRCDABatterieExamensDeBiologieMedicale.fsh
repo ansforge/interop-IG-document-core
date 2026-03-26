@@ -39,7 +39,6 @@ and frBatterieExamensDeBiologieMedicale 1..1
 * statusCode ^definition = "Niveau de complétude"
 * statusCode from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis (required)
 * effectiveTime MS
-* effectiveTime 0..1
 * effectiveTime ^short = "Date de l'examen"
 * effectiveTime ^definition = "Date de l'examen"
 * subject MS
