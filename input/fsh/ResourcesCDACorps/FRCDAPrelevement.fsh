@@ -2,7 +2,7 @@ Profile: FRCDAPrelevement
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Procedure
 Id: fr-cda-prelevement
 Title: "CDA - FR Prelevement"
-Description: "Entrée FR-Prelevement: IHE-PCC - Specimen collectionL'élément 'Prélèvement' est un élément de type 'procedure' qui permet de décrire le prélèvement et l'échantillon biologique (le matériel).Cet élément est obligatoirement inclus dans une entrée 'Résultats d'examens de biologie médicale' (Laboratory Report Data Processing Entry – 1.3.6.1.4.1.19376.1.3.1). "
+Description: "Entrée FR-Prelevement: IHE-PCC - Specimen collection. L'élément 'Prélèvement' est un élément de type 'procedure' qui permet de décrire le prélèvement et l'échantillon biologique (le matériel).Cet élément est obligatoirement inclus dans une entrée 'Résultats d'examens de biologie médicale' (Laboratory Report Data Processing Entry – 1.3.6.1.4.1.19376.1.3.1)."
 * classCode MS
 * moodCode MS
 * moodCode = #EVN
