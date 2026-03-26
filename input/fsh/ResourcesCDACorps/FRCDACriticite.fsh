@@ -30,7 +30,6 @@ and frCriticite 1..1
 * templateId[frCriticite] ^short = "Conformité FR-Criticite (CI-SIS)"
 * templateId[frCriticite] ^definition = "Conformité FR-Criticite (CI-SIS)"
 * code MS
-* code 1..1
 * code ^short = "Code de l'observation"
 * code ^definition = "Code de l'observation"
 * code.code = #82606-5
