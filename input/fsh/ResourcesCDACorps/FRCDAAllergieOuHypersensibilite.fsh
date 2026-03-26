@@ -69,7 +69,7 @@ and frAllergieOuHypersensibilite 1..1
 * participant ^short = "Agent responsable"
 * participant ^definition = "Agent responsable"
   * typeCode = #CSM
-  * participantRole 1..1
+  * participantRole MS
     * classCode = #MANU
     * playingEntity 1..1
       * classCode = #MMAT
