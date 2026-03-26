@@ -35,7 +35,6 @@ and iheProblemEntry 1..1
 * templateId[iheProblemEntry] ^short = "Conformité Problem Entry (IHE PCC)"
 * templateId[iheProblemEntry] ^definition = "Conformité Problem Entry (IHE PCC)"
 * code MS
-* code 1..1
 * code ^short = "Code de l'entrée - Type d'effet indésirable"
 * code ^definition = "Code de l'entrée"
 * code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-origine-effet-indesirable-cisis
