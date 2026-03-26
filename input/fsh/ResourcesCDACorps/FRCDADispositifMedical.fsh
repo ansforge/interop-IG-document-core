@@ -35,7 +35,7 @@ and frDispositifMedical 1..1
 * statusCode MS
 * statusCode ^short = "Statut de l'entrée"
 * statusCode ^definition = "Statut de l'entrée"
-* statusCode from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis
+* statusCode from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis (required)
 * effectiveTime MS
 * effectiveTime 1..1
 * effectiveTime ^short = "Date d'utilisation ou de présence chez le patient - Si la date n'est pas connue, utiliser la valeur nullFlavor='UNK'."
