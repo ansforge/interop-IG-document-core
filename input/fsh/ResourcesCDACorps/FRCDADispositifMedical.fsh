@@ -2,7 +2,7 @@ Profile: FRCDADispositifMedical
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Supply
 Id: fr-cda-dispositif-medical
 Title: "CDA - FR Dispositif medical"
-Description: "Entrée FR-Dispositif-medical: L'entrée Dispositif Médical est une entrée de type 'supply' qui permet de fournir les information sur un dispositif médical. "
+Description: "Entrée FR-Dispositif-medical: L'entrée Dispositif Médical est une entrée de type 'supply' qui permet de fournir les information sur un dispositif médical."
 * classCode MS
 * moodCode MS
 * moodCode ^short = "Si le DM a été dispensé : @moodCode='EVN'  Si le DM n’a pas encore été dispensé : @moodCode='INT'"
