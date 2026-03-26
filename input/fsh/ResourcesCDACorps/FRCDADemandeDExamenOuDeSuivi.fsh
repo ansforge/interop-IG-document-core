@@ -6,7 +6,10 @@ Description: "Entrée FR-Demande-d-examen-ou-de-suivi: IHE-PCC - Observation Req
 * classCode MS
 * classCode = #OBS
 * moodCode MS
-* moodCode ^short = "Si la demande fait partie d'un plan de soins : @moodCode='INT'  Si la demande est une proposition : @moodCode='PRP'  Si la demande est un objectif à atteindre : @moodCode='GOL'"
+* moodCode ^short = "
+ - Si la demande fait partie d'un plan de soins : @moodCode='INT'  
+ - Si la demande est une proposition : @moodCode='PRP'  
+ - Si la demande est un objectif à atteindre : @moodCode='GOL'"
 * moodCode ^definition = "Si la demande fait partie d'un plan de soins"
 * id 1..1
 * id ^short = "Identifiant de l'entrée"
