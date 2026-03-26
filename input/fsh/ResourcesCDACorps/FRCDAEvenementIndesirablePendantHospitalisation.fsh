@@ -2,7 +2,7 @@ Profile: FRCDAEvenementIndesirablePendantHospitalisation
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Observation
 Id: fr-cda-evenement-indesirable-pendant-hospitalisation
 Title: "CDA - FR Evenement indesirable pendant hospitalisation"
-Description: "Entrée FR-Evenement-indesirable-pendant-hospitalisation: Cette entrée permet de décrire sous forme textuelle des événements indésirables survenus pendant l'hospitalisation. "
+Description: "Entrée FR-Evenement-indesirable-pendant-hospitalisation: Cette entrée permet de décrire sous forme textuelle des événements indésirables survenus pendant l'hospitalisation."
 * classCode MS
 * classCode = #OBS
 * moodCode MS
