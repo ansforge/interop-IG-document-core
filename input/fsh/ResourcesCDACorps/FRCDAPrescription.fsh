@@ -36,7 +36,6 @@ and frPrescription 1..1
 * performer MS
 * performer ^short = "Dispensateur"
 * performer ^definition = "Dispensateur"
-  * typeCode="PRF"
   * time MS
   * time 1..1
   * time ^short = "Date de la dispensation"
