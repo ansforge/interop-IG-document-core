@@ -19,7 +19,7 @@ and frSimpleObservation 1..1
 and frEvenementIndesirableSuiteAdministrationDerivesSang 1..1
 * templateId[iheSimpleObservation].root = "1.3.6.1.4.1.19376.1.5.3.1.4.13"
 * templateId[frSimpleObservation].root = "1.2.250.1.213.1.1.3.48"
-* templateId[FRCDAEvenementIndesirableSuiteAdministrationDerivesSang].root = "1.2.250.1.213.1.1.3.48.4"
+* templateId[frEvenementIndesirableSuiteAdministrationDerivesSang].root = "1.2.250.1.213.1.1.3.48.4"
 * code MS
 * code 1..1
 * code ^short = "Code de l'observation"
