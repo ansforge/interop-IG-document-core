@@ -50,7 +50,6 @@ frObservationMedia  1..1
   * value MS
   * value 1..1
   * value ^short = "Document encodé en Base 64.  Le charset utilisé par défaut est iso-8859-1"
-  * value only ED
     * representation MS
     * representation ^short = "B64"
     * mediaType MS
