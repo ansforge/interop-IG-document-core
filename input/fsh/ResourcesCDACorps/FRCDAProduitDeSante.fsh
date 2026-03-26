@@ -2,7 +2,7 @@ Profile: FRCDAProduitDeSante
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/ManufacturedProduct
 Id: fr-cda-produit-de-sante
 Title: "CDA - FR Produit de sante"
-Description: "Entrée FR-Produit-de-sante: IHE-PCC - Product-EntryL'entrée Produit de santé permet de décrire un médicament ou un vaccin. "
+Description: "Entrée FR-Produit-de-sante: IHE-PCC - Product-Entry. L'entrée Produit de santé permet de décrire un médicament ou un vaccin."
 * templateId 1..3
 * templateId ^slicing.discriminator.type = #value
 * templateId ^slicing.discriminator.path = "root"
