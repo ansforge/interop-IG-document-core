@@ -55,6 +55,6 @@ and frCriticite 1..1
 * value only CD
 * value ^short = "Valeur de l'observation"
 * value ^definition = "Une entrée SimpleObservation est supposée être rédigée par l'auteur du document (par reconduction de contexte)"
-* value from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-allergy-intolerance-criticality-cisis
+* value from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-allergy-intolerance-criticality-cisis (required)
 * author 0..1
 * author only FRCDAAuthor
