@@ -2,7 +2,7 @@ Profile: FRCDAEvenementIndesirableSuiteAdministrationDerivesSang
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Observation
 Id: fr-cda-evenement-indesirable-suite-administration-derives-sang
 Title: "CDA - FR Evenement indesirable suite administration derives sang"
-Description: "Entrée FR-Evenement-indesirable-suite-administration-derives-sang: Cette entrée permet de décrire sous forme textuelle des événements indésirables survenus suite à l'administration de dérivés du sang. "
+Description: "Entrée FR-Evenement-indesirable-suite-administration-derives-sang: Cette entrée permet de décrire sous forme textuelle des événements indésirables survenus suite à l'administration de dérivés du sang."
 * classCode MS
 * classCode = #OBS
 * moodCode MS
