@@ -49,5 +49,6 @@ frDicomObjectifsDeReference 0..1
 * entryRelationship[frDicomObjectifsDeReference] ^short = "Entrée FR-DICOM-Objectifs-de-reference"
 * entryRelationship[frDicomObjectifsDeReference].observation only FRCDADicomObjectifsDeReference
 * entryRelationship[frDicomObjectifsDeReference].typeCode = #RSON
+* entryRelationship[frDicomCadresReferences] ^short = "Entrée FR-DICOM-Cadres-references"
 * entryRelationship[frDicomCadresReferences].observation only FRCDADicomCadresReferences
 * entryRelationship[frDicomCadresReferences].typeCode = #COMP
