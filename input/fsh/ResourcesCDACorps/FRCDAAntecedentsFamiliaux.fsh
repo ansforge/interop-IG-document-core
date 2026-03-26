@@ -30,7 +30,7 @@ and frFamilyHistoryOrganizer 1..1
 * statusCode ^short = "Statut de l’entrée -Fixé à la valeur 'completed'"
 * statusCode ^definition = "Statut de l’entrée"
 * statusCode.code = #completed
-* participant 0..* MS
+* participant  MS
 * participant ^short = "Lien avec un autre sujet"
 * participant ^definition = "Lien avec un autre sujet"
   * typeCode = #IND
