@@ -51,7 +51,7 @@ frObservationMedia  1..1
   * value 1..1
   * value ^short = "Document encodé en Base 64.  Le charset utilisé par défaut est iso-8859-1"
   * value only ED
-    * representation 0..1
+    * representation MS
     * representation ^short = "B64"
     * mediaType MS
     * mediaType ^short = "Valeurs les plus utilisées : 'image/gif' ou 'image/jpeg' ou 'image/png' ou 'image/bm'ou 'image/tiff' ou 'text/rtf' ou 'text/plain' ou 'application/pdf'ou ou 'application/xml. D’autres valeurs peuvent être utilisées."
