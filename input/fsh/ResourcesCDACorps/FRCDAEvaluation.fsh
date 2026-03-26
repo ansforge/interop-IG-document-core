@@ -2,7 +2,7 @@ Profile: FRCDAEvaluation
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Observation
 Id: fr-cda-evaluation
 Title: "CDA - FR Evaluation"
-Description: "Entrée FR-Evaluation: IHE-PCC - Survey Observation - L'entrée Evaluation permet de rapporter un résultat (score) répondant à une question faisant partie d'une évaluation (questionnaire d'enquête par exemple).Cette entrée est basée sur l’entrée FR-Simple-Observation (1.3.6.1.4.1.19376.1.5.3.1.4.13) qu'elle spécialise. "
+Description: "Entrée FR-Evaluation: IHE-PCC - Survey Observation - L'entrée Evaluation permet de rapporter un résultat (score) répondant à une question faisant partie d'une évaluation (questionnaire d'enquête par exemple).Cette entrée est basée sur l’entrée FR-Simple-Observation (1.3.6.1.4.1.19376.1.5.3.1.4.13) qu'elle spécialise."
 * classCode MS
 * classCode = #OBS
 * moodCode MS
