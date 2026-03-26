@@ -25,7 +25,6 @@ and dicomSOPInstanceObservation 1..1
 * templateId[dicomSOPInstanceObservation] ^short = "Conformité SOP Instance Observation (DICOM Part 20)"
 * templateId[dicomSOPInstanceObservation] ^definition = "Conformité SOP Instance Observation (DICOM Part 20)"
 * code MS
-* code 1..1
 * code ^short = "Classe SOP valeur issue du JDV-SOPClass_CISIS (1.2.250.1.213.1.1.5.689)."
 * code ^definition = "Classe SOP"
 * code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-sop-class-cisis (required)
