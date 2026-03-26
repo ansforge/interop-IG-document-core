@@ -51,7 +51,6 @@ and frEvaluationComposant 1..1
 * value ^short = "Résultat de l'évaluation - Le type et la valeur du résultat de l'évaluation (value) dépendent du volet utilisant cette entrée (les précisions sont alors fournies dans le volet correspondant)."
 * value ^definition = "Résultat de l'évaluation"
 * value.originalText MS
-* value.originalText 0..1
 * value.originalText.reference 1..1
 * interpretationCode MS
 * interpretationCode 0..1
