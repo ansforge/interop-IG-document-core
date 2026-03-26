@@ -57,8 +57,8 @@ and frProbleme 1..1
 * value only CD
 * value ^short = "Problème observé. La valeur de l'élément value peut être: CIM-10 pour les pathologie  et réactions à une vaccination : Si le problème observé n'est pas trouvé dans la terminologie CIM-10, utiliser le code='R69' displayName='Causes inconnues et non précisées de morbidité' codeSystem='2.16.840.1.113883.6.3' codeSystemName='CIM-10' et décrire le problème sous forme de texte libre dans la partie narrative avec une référence vers l'entrée correspondante ; Réaction allergique: CIM-11 (2.16.840.1.113883.6.347) provenant du JDV_AllergieReaction_CISIS (1.2.250.1.213.1.1.5.674)/ Chapitre 04 Maladies du système immunitaire / Bloc Affections allergiques ou d'hyper-sensibilité ; >Si pas de problème ou pas d'information </b>: JDV_AbsentOrUnknownProblem_CISIS (1.2.250.1.213.1.1.5.662)"
   * originalText MS
-    * reference 0..1
-  * qualifier 0..*	
+    * reference MS
+  * qualifier MS
 * entryRelationship MS
 * entryRelationship 0..*
 * entryRelationship ^slicing.discriminator.type = #value
