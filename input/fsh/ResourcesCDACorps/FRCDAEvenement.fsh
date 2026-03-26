@@ -57,7 +57,6 @@ and frEvenement 1..1
 * statusCode ^definition = "Statut de l'entrée"
 * statusCode from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis (required)
 * effectiveTime MS
-* effectiveTime 0..1
 * effectiveTime ^short = "Date de l’évènement"
 * effectiveTime ^definition = "Date de l’évènement"
 * performer only FRCDAPerformerCorps
