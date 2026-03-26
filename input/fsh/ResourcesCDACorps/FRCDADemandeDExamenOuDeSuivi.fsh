@@ -37,7 +37,6 @@ and frDemandeDexamenOuDeSuivi 1..1
 * templateId[frDemandeDexamenOuDeSuivi] ^short = "Conformité FR-Demande-d-examen-ou-de-suivi (CI-SIS)"
 * templateId[frDemandeDexamenOuDeSuivi] ^definition = "Conformité FR-Demande-d-examen-ou-de-suivi (CI-SIS)"
 * code MS
-* code 1..1
 * code ^short = "Type de la demande Si aucun code n'est trouvé dans des terminologies existantes, utiliser le code : code='GEN-092.04.20'displayName='Autre demande d’examen ou de suivi'codeSystem='1.2.250.1.213.1.1.4.322' codeSystemName='TerminologieCISIS'  et décrire le type de la demande sous forme de texte libre dans la partie narrative avec une référence vers l'entrée correspondante. "
 * code ^definition = "Type de la demande"
 * text MS
