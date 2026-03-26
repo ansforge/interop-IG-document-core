@@ -49,7 +49,6 @@ and frAntecedentFamilialObserve 1..1
 * statusCode ^definition = "Statut de l'entrée"
 * statusCode.code = #completed
 * effectiveTime MS
-* effectiveTime 0..1
 * effectiveTime ^short = "Horodatage de l'entrée"
 * effectiveTime ^definition = "Horodatage de l'entrée"
 * interpretationCode MS
