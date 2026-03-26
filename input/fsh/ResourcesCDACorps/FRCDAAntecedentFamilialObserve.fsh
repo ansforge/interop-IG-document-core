@@ -40,7 +40,9 @@ and frAntecedentFamilialObserve 1..1
 * code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-code-probleme-cisis (required)
 * text MS
 * text 1..1
-* text ^short = "Description narrative de la valeur de l'observation"
+* text ^short = "Description narrative de la valeur de l'observation
+* text.reference 1..1 MS
+"
 * statusCode MS
 * statusCode 1..1
 * statusCode ^short = "Statut de l'entrée"
