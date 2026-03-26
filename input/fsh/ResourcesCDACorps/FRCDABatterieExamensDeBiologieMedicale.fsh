@@ -26,7 +26,7 @@ and frBatterieExamensDeBiologieMedicale 1..1
 * code MS
 * code ^short = "Code de la batterie d'examen"
 * code ^definition = "Code de la batterie d'examen"
-  * originalText 0..1
+  * originalText MS
     * reference 1..1
     * reference ^short = "Référence à l'expression verbale dans la partie visualisable du compte-rendu"
     * reference ^definition = "Référence à l'expression verbale dans la partie visualisable du compte-rendu"
