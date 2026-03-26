@@ -35,7 +35,6 @@ and frDirectiveAnticipee 1..1
 * templateId[frDirectiveAnticipee] ^short = "Conformité FR-Directive-Anticipée (CI-SIS)"
 * templateId[frDirectiveAnticipee] ^definition = "Conformité FR-Directive-Anticipée (CI-SIS)"
 * code MS
-* code 1..1
 * code ^short = "Type de la directive anticipée - La valeur est issue du jeu de valeurs JDV_TypeDirectiveAnticipee_CISIS (1.2.250.1.213.1.1.5.136)."
 * code ^definition = "Type de la directive anticipée"
 * code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-directive-anticipee-cisis
