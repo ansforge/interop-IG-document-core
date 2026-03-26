@@ -54,7 +54,6 @@ and frBatterieExamensDeBiologieMedicale 1..1
 * author only FRCDAAuthor
 * author ^short = "Auteur - Apparaît à ce niveau si le rendu de ce  résultat procède de cet auteur spécifique, différent de celui déclaré aux niveaux supérieurs. Constraint @typeCode='AUT'"
 * component MS
-* component 0..*
 * component ^slicing.discriminator.type = #type
 * component ^slicing.discriminator.path = "$this"
 * component ^slicing.rules = #open
