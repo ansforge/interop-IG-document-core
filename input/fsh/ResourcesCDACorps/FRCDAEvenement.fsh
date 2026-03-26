@@ -68,7 +68,6 @@ and frEvenement 1..1
 * participant only FRCDAParticipantCorps
 * participant ^short = "Lieu d'exécution / Entité juridique responsable de l'événement / Autres participants - Les attributs de cet élément prennent les valeurs suivantes : @typeCode='LOC' pour un Lieu d'éxécution - @typeCode='RESP' pour une Entité juridique - Les attributs du sous-élément participantRole prennent les valeurs suivantes : @classCode='SDLOC' pour un Lieu d'éxécution - Les attributs du sous-élément playingEntity prennent les valeurs suivantes : @classCode='PLC' pour un Lieu d'éxécution - @classCode='ENT' pour une Entité juridique @determinerCode='INSTANCE' pour un Lieu d'éxécution ou une Entité Juridique"
 * entryRelationship MS
-* entryRelationship 0..*
 * entryRelationship ^slicing.discriminator.type = #value
 * entryRelationship ^slicing.discriminator.path = "$this"
 * entryRelationship ^slicing.rules = #open
