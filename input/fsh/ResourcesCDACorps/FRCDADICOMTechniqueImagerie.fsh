@@ -26,7 +26,7 @@ and dicomProcedureTechnique 1..1
 * code 1..1
 * code ^short = "Code de l'acte d'imagerie :  Valeur provenant du  JDV_CodesDocumentImagerie_CISIS (1.2.250.1.213.1.1.5.687)"
 * code ^definition = "Code de l'acte d'imagerie"
-* code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-code-document-imagerie-cisis
+* code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-code-document-imagerie-cisis (required) 
 * text MS
 * text 0..1
 * text ^short = "Partie narrative de l'entrée"
