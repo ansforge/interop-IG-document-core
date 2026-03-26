@@ -2,7 +2,7 @@ Profile: FRCDAAntecedentFamilialObserve
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Observation
 Id: fr-cda-antecedent-familial-observe
 Title: "CDA - FR Antecedent familial observe"
-Description: "Entrée FR-Antecedent-familial-observe: IHE-PCC - Family History Observation L'entrée Antécédent familial observé permet d'apporter des informations complémentaires relatives aux membres de la famille du patient (pathologies, etc…). Cette entrée est utilisée dans un élément Antécédents familiaux (1.3.6.1.4.1.19376.1.5.3.1.4.15). "
+Description: "Entrée FR-Antecedent-familial-observe: IHE-PCC - Family History Observation L'entrée Antécédent familial observé permet d'apporter des informations complémentaires relatives aux membres de la famille du patient (pathologies, etc…). Cette entrée est utilisée dans un élément Antécédents familiaux (1.3.6.1.4.1.19376.1.5.3.1.4.15)."
 * classCode MS
 * classCode = #OBS
 * moodCode MS
