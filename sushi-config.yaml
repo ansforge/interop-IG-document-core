@@ -320,6 +320,47 @@ groups:
       - StructureDefinition/fr-cda-encompassing-encounter
       - StructureDefinition/fr-cda-encounter-participant
       - StructureDefinition/fr-cda-health-care-facility
+  
+  Ressources CDA corps:
+    name: Eléments CDA du corps
+    resources:
+      - StructureDefinition/fr-cda-accidents-transfusionnels
+      - StructureDefinition/fr-cda-acte
+      - StructureDefinition/fr-cda-acte-substitution
+      - StructureDefinition/fr-cda-administration-de-derives-du-sang
+      - StructureDefinition/fr-cda-allergie-ou-hypersensibilite
+      - StructureDefinition/fr-cda-antecedent-familial-observe
+      - StructureDefinition/fr-cda-antecedents-familiaux
+      - StructureDefinition/fr-cda-autorisation-substitution
+      - StructureDefinition/fr-cda-batterie-examens-de-biologie-medicale
+      - StructureDefinition/fr-cda-certitude
+      - StructureDefinition/fr-cda-commentaire-er
+      - StructureDefinition/fr-cda-criticite
+      - StructureDefinition/fr-cda-demande-d-examen-ou-de-suivi
+      - StructureDefinition/fr-cda-dicom-sop-instance-observation
+      - StructureDefinition/fr-cda-dicom-sop-instance-observation-subordonnee
+      - StructureDefinition/fr-cda-dicom-technique-imagerie
+      - StructureDefinition/fr-cda-directive-anticipee
+      - StructureDefinition/fr-cda-dispositif-medical
+      - StructureDefinition/fr-cda-document-attache
+      - StructureDefinition/fr-cda-dose-antigene
+      - StructureDefinition/fr-cda-effet-indesirable
+      - StructureDefinition/fr-cda-en-rapport-avec-accident-travail
+      - StructureDefinition/fr-cda-en-rapport-avec-ald
+      - StructureDefinition/fr-cda-en-rapport-avec-la-prevention
+      - StructureDefinition/fr-cda-evaluation
+      - StructureDefinition/fr-cda-evaluation-composant
+      - StructureDefinition/fr-cda-evaluation-composant-n2
+      - StructureDefinition/fr-cda-evenement
+      - StructureDefinition/fr-cda-evenement-indesirable-pendant-hospitalisation
+      - StructureDefinition/fr-cda-evenement-indesirable-suite-administration-derives-sang
+      - StructureDefinition/fr-cda-evolution-effet-indesirable
+      - StructureDefinition/fr-cda-prelevement
+      - StructureDefinition/fr-cda-prescription
+      - StructureDefinition/fr-cda-probleme
+      - StructureDefinition/fr-cda-produit-de-sante
+      - StructureDefinition/fr-cda-quantite-de-produit
+
 
   Ressources FHIR entête:
     name: Profils FHIR entête
@@ -391,112 +432,6 @@ groups:
         - StructureDefinition/fr-observation-vital-signs-document
         - StructureDefinition/fr-body-structure-document
         - StructureDefinition/fr-observation-multiresistant-microorganism-document
-        - StructureDefinition/fr-Accidents-transfusionnels
-        - StructureDefinition/fr-Acte
-        - StructureDefinition/fr-Acte-substitution
-        - StructureDefinition/fr-Administration-de-derives-du-sang
-        - StructureDefinition/fr-Allergie-ou-hypersensibilite
-        - StructureDefinition/fr-Antecedent-familial-observe
-        - StructureDefinition/fr-Antecedents-familiaux
-        - StructureDefinition/fr-Autorisation-Substitution
-        - StructureDefinition/fr-Batterie-examens-de-biologie-medicale
-        - StructureDefinition/fr-Certitude
-        - StructureDefinition/fr-Commentaire-ER
-        - StructureDefinition/fr-Criticite
-        - StructureDefinition/fr-Demande-d-examen-ou-de-suivi
-        - StructureDefinition/fr-DICOM-Administration-produit-de-sante
-        - StructureDefinition/fr-DICOM-Administration-radiopharmaceutique
-        - StructureDefinition/fr-DICOM-Examen-imagerie
-        - StructureDefinition/fr-DICOM-Exposition-patient
-        - StructureDefinition/fr-DICOM-Observation
-        - StructureDefinition/fr-DICOM-Observation-subordonnee
-        - StructureDefinition/fr-DICOM-Quantite
-        - StructureDefinition/fr-DICOM-Quantite-subordonnee
-        - StructureDefinition/fr-DICOM-Serie-imagerie
-        - StructureDefinition/fr-DICOM-SOP-instance-observation
-        - StructureDefinition/fr-DICOM-SOP-instance-observation-subordonnee
-        - StructureDefinition/fr-DICOM-Technique-imagerie
-        - StructureDefinition/fr-Directive-anticipee
-        - StructureDefinition/fr-Dispositif-medical
-        - StructureDefinition/fr-Document-attache
-        - StructureDefinition/fr-Dose-antigene
-        - StructureDefinition/fr-Effet-indesirable
-        - StructureDefinition/fr-En-rapport-avec-accident-travail
-        - StructureDefinition/fr-En-rapport-avec-ALD
-        - StructureDefinition/fr-En-rapport-avec-la-prevention
-        - StructureDefinition/fr-Evaluation
-        - StructureDefinition/fr-Evenement-indesirable-pendant-hospitalisation
-        - StructureDefinition/fr-Evenement-indesirable-suite-administration-derives-sang
-        - StructureDefinition/fr-Evolution-effet-indesirable
-        - StructureDefinition/fr-Gravite-effet-indesirable
-        - StructureDefinition/fr-Groupe-de-questionnaires-d-evaluation
-        - StructureDefinition/fr-Habitus-Mode-de-vie
-        - StructureDefinition/fr-Historique-de-la-grossesse
-        - StructureDefinition/fr-Hors-AMM
-        - StructureDefinition/fr-Identification-micro-organismes-multiresistants
-        - StructureDefinition/fr-Image-illustrative
-        - StructureDefinition/fr-Instruction-au-patient
-        - StructureDefinition/fr-Instructions-au-dispensateur
-        - StructureDefinition/fr-Instructions-au-patient
-        - StructureDefinition/fr-Isolat-microbiologique
-        - StructureDefinition/fr-Item-plan-traitement
-        - StructureDefinition/fr-Liste-des-allergies-et-hypersensibilites
-        - StructureDefinition/fr-Liste-des-problemes
-        - StructureDefinition/fr-Modalite-entree
-        - StructureDefinition/fr-Modalite-sortie
-        - StructureDefinition/fr-Naissance
-        - StructureDefinition/fr-Non-remboursable
-        - StructureDefinition/fr-Notes-du-dispensateur
-        - StructureDefinition/fr-Observation-sur-echelle-douleur
-        - StructureDefinition/fr-Observation-sur-la-grossesse
-        - StructureDefinition/fr-Periode-de-renouvellement
-        - StructureDefinition/fr-Prelevement
-        - StructureDefinition/fr-Prescription
-        - StructureDefinition/fr-Probleme
-        - StructureDefinition/fr-Produit-de-sante
-        - StructureDefinition/fr-Quantite-de-produit
-        - StructureDefinition/fr-Rang-de-la-vaccination
-        - StructureDefinition/fr-Recherche-de-micro-organismes
-        - StructureDefinition/fr-Reference-interne
-        - StructureDefinition/fr-Reference-item-plan-traitement
-        - StructureDefinition/fr-Reference-item-prescription
-        - StructureDefinition/fr-References-externes
-        - StructureDefinition/fr-Rencontre
-        - StructureDefinition/fr-Resultat
-        - StructureDefinition/fr-Resultat-examens-de-biologie-element-clinique-pertinent
-        - StructureDefinition/fr-Resultats
-        - StructureDefinition/fr-Resultats-examens-de-biologie-medicale
-        - StructureDefinition/fr-Severite
-        - StructureDefinition/fr-Signes-vitaux
-        - StructureDefinition/fr-Signe-vital-observe
-        - StructureDefinition/fr-Simple-Observation
-        - StructureDefinition/fr-Statut-clinique-du-patient
-        - StructureDefinition/fr-Statut-document
-        - StructureDefinition/fr-Statut-du-probleme
-        - StructureDefinition/fr-Synthese-medicale-sejour
-        - StructureDefinition/fr-Traitement
-        - StructureDefinition/fr-Traitement-dispense
-        - StructureDefinition/fr-Traitement-prescrit
-        - StructureDefinition/fr-Traitement-prescrit-subordonne
-        - StructureDefinition/fr-Traitement-subordonne
-        - StructureDefinition/fr-Transfusion-de-produits-sanguins
-        - StructureDefinition/fr-Type-document-attache
-        - StructureDefinition/fr-Vaccination
-        - StructureDefinition/fr-Vaccin-recommande
-        - StructureDefinition/fr-Dicom-Quantity
-        - StructureDefinition/fr-Dicom-Objectifs-De-Reference
-        - StructureDefinition/fr-Dicom-Cadres-References
-        - StructureDefinition/fr-Imputabilite-effet-indesirable
-        - StructureDefinition/fr-Transport-du-professionnel
-        - StructureDefinition/fr-Transport-du-patient
-        - StructureDefinition/fr-Evaluation-Composant
-        - StructureDefinition/fr-Evaluation-Composant-N2
-        - StructureDefinition/fr-Organisme-assurance-maladie
-        - StructureDefinition/fr-Sujet
-        - StructureDefinition/fr-Sujet-non-humain
-        - StructureDefinition/fr-Patient-avec-sujet-non-humain
-        
-        
   
   Data Type FHIR:
     name: Data Type Profiles 

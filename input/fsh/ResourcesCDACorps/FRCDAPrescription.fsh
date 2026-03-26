@@ -32,7 +32,6 @@ and frPrescription 1..1
 * repeatNumber ^short = "Nombre de renouvellements possibles"
 * quantity ^short = "Quantité - L'unité est exprimée selon le système de codage UCUM. "
 * quantity ^definition = "Quantité"
-* value 1..1
 * performer MS
 * performer ^short = "Dispensateur"
 * performer ^definition = "Dispensateur"
@@ -40,7 +39,7 @@ and frPrescription 1..1
   * time 1..1
   * time ^short = "Date de la dispensation"
   * time ^definition = "Date de la dispensation"
-  * time.nullFlavor = "UNK"
+  * time.nullFlavor = #UNK
   * assignedEntity 1..1
   * assignedEntity ^short = "Dispensateur"
   * assignedEntity ^definition = "Dispensateur"
@@ -56,6 +55,6 @@ and frPrescription 1..1
 * author 0..1
 * author only FRCDAAuthor
 * entryRelationship MS
-* entryRelationship only frInstructionsAuDispensateur
+* entryRelationship.act only frInstructionsAuDispensateur
 * entryRelationship ^short = "Prescripteur -  Une prescription est en attente de dispensation (moodCode='INT'), peut comporter le prescripteur."
-* entryRelationship[frInstructionsAuDispensateur].typeCode = #SUBJ
+* entryRelationship.typeCode = #SUBJ
