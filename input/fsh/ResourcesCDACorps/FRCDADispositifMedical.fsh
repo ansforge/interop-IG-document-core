@@ -33,7 +33,6 @@ and frDispositifMedical 1..1
   * reference MS
   * reference ^short = "Référence de la description narrative de la section"
 * statusCode MS
-* statusCode 0..1
 * statusCode ^short = "Statut de l'entrée"
 * statusCode ^definition = "Statut de l'entrée"
 * statusCode from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis
