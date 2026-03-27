@@ -26,6 +26,7 @@ Description: "Entrée FR-DICOM-Cadres-a-afficher: DICOM Part 20 - Cadres à affi
 
 * value MS
 * value 1..1
-* value only IVL_INT
+// ce type de donnée IVL_INT a été ajouté dans la nouvelle version de l'IG Clinical Document architecture HL7.
+//* value only IVL_INT
 * value ^short = "Cadres référencés"
 * value ^definition = "Plage d'entiers représentant les cadres à afficher"
