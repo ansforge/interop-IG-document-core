@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "0ee13bd4-8e8a-413c-81a5-8cc558d2b640",
+  "id" : "5e59b4fe-7dc5-49ba-9db9-e0046208440e",
   "meta" : {
-    "lastUpdated" : "2026-03-22T21:51:38.105+00:00"
+    "lastUpdated" : "2026-03-27T09:00:54.537+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -22,7 +22,7 @@
       "title" : "FR ValueSet Participation Type",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-03-22T21:51:38+00:00",
+      "date" : "2026-03-27T09:00:54+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -31,8 +31,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:e3ebb57d-9ed3-46fa-87ec-6677a81b7c13",
-        "timestamp" : "2026-03-22T22:08:01+00:00",
+        "identifier" : "urn:uuid:c75f9134-3815-4347-8c6e-4e1eb741a769",
+        "timestamp" : "2026-03-27T09:13:02+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -90,7 +90,7 @@
       "title" : "Fr ValueSet RolePriseCharge",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-03-22T21:51:38+00:00",
+      "date" : "2026-03-27T09:00:54+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -99,8 +99,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:018ff428-1701-4c07-b3a8-61b134184243",
-        "timestamp" : "2026-03-22T22:07:59+00:00",
+        "identifier" : "urn:uuid:097998e1-b24c-4ee2-bfb0-bb4d88a9857b",
+        "timestamp" : "2026-03-27T09:13:00+00:00",
         "total" : 75,
         "offset" : 0,
         "parameter" : [{
@@ -486,6 +486,340 @@
     }
   },
   {
+    "fullUrl" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-valueset-code-traitement",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion effectuée en interne basée sur :</p><ul><li><a href=\"http://hl7.org/fhir/uv/ips/STU1.1/CodeSystem-absent-unknown-uv-ips.html\">codesystem Absent and Unknown Data - IPS v1.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips|1.1.0\" title=\"Cliquer pour copier l'URL\" class=\"btn-copy\"> </button></span></li><li><a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActCode.html\">codesystem ActCode v10.0.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://terminology.hl7.org/CodeSystem/v3-ActCode|10.0.0\" title=\"Cliquer pour copier l'URL\" class=\"btn-copy\"> </button></span></li><li><a href=\"https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-absent-or-unknown-medication-cisis.html\">valueset JDV Absent Or Unknown Medication CISIS v20260220142104 (ValueSet)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://smt.esante.gouv.fr/fhir/ValueSet/jdv-absent-or-unknown-medication-cisis|20260220142104\" title=\"Cliquer pour copier l'URL\" class=\"btn-copy\"> </button></span></li><li><a href=\"https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-hl7-v3-ActSubstanceAdministrationCode-cisis.html\">valueset ActSubstanceAdministrationCode v20260220142105 (ValueSet)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdministrationCode-cisis|20260220142105\" title=\"Cliquer pour copier l'URL\" class=\"btn-copy\"> </button></span></li></ul></div><p>Ce jeu de valeur (ValueSet) contient 4 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>Système</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage (fr)</b></td><td><b>Définition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-ActCode-DRUG\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-ActCode</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActCode.html#v3-ActCode-DRUG\">DRUG</a></td><td>Médicament</td><td><div><p>The introduction of a drug into a subject with the intention of altering its biologic state with the intent of improving its health status.</p>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ActCode&quot;, &quot;version&quot;: &quot;10.0.0&quot;, &quot;code&quot;: &quot;DRUG&quot;, &quot;display&quot;: &quot;Médicament&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ActCode&quot;&gt;&lt;version value=&quot;10.0.0&quot;&gt;&lt;code value=&quot;DRUG&quot;&gt;&lt;display value=&quot;Médicament&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-ActCode-FD\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-ActCode</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActCode.html#v3-ActCode-FD\">FD</a></td><td>Aliment</td><td><div><p><strong>Description:</strong> The introduction of material into a subject with the intent of providing nutrition or other dietary supplements (e.g. minerals or vitamins).</p>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ActCode&quot;, &quot;version&quot;: &quot;10.0.0&quot;, &quot;code&quot;: &quot;FD&quot;, &quot;display&quot;: &quot;Aliment&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ActCode&quot;&gt;&lt;version value=&quot;10.0.0&quot;&gt;&lt;code value=&quot;FD&quot;&gt;&lt;display value=&quot;Aliment&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips-no-medication-info\"> </a><code>http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://hl7.org/fhir/uv/ips/STU1.1/CodeSystem-absent-unknown-uv-ips.html#absent-unknown-uv-ips-no-medication-info\">no-medication-info</a></td><td>Pas d'information sur les traitements médicamenteux</td><td>There is no information available about the subject's medication use or administration.</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips&quot;, &quot;version&quot;: &quot;1.1.0&quot;, &quot;code&quot;: &quot;no-medication-info&quot;, &quot;display&quot;: &quot;Pas d'information sur les traitements médicamenteux&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips&quot;&gt;&lt;version value=&quot;1.1.0&quot;&gt;&lt;code value=&quot;no-medication-info&quot;&gt;&lt;display value=&quot;Pas d'information sur les traitements médicamenteux&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips-no-known-medications\"> </a><code>http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://hl7.org/fhir/uv/ips/STU1.1/CodeSystem-absent-unknown-uv-ips.html#absent-unknown-uv-ips-no-known-medications\">no-known-medications</a></td><td>Pas de traitement médicamenteux connu</td><td>There are no medications for the subject that have to be reported in this record. This can mean either that there are none known, or that those known are not relevant for the purpose of this record.</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips&quot;, &quot;version&quot;: &quot;1.1.0&quot;, &quot;code&quot;: &quot;no-known-medications&quot;, &quot;display&quot;: &quot;Pas de traitement médicamenteux connu&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips&quot;&gt;&lt;version value=&quot;1.1.0&quot;&gt;&lt;code value=&quot;no-known-medications&quot;&gt;&lt;display value=&quot;Pas de traitement médicamenteux connu&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-valueset-code-traitement",
+      "version" : "0.1.0-snapsnot",
+      "name" : "FRValueSetCodeTraitement",
+      "title" : "ValueSet - FR ValueSet Code Traitement",
+      "status" : "draft",
+      "date" : "2026-03-27T09:00:54+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "FR",
+          "display" : "FRANCE"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:c592d5d6-a84d-401d-86a9-2f54e5d2ed05",
+        "timestamp" : "2026-03-27T09:13:03+00:00",
+        "total" : 4,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "fr"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdministrationCode-cisis|20260220142105"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://terminology.hl7.org/CodeSystem/v3-ActCode|10.0.0"
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-absent-or-unknown-medication-cisis|20260220142104"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips|1.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code" : "DRUG",
+          "display" : "Médicament"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code" : "FD",
+          "display" : "Aliment"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips",
+          "code" : "no-medication-info",
+          "display" : "Pas d'information sur les traitements médicamenteux"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips",
+          "code" : "no-known-medications",
+          "display" : "Pas de traitement médicamenteux connu"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-valueset-reference-externe",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion effectuée en interne basée sur <a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActRelationshipType.html\">codesystem ActRelationshipType v5.0.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://terminology.hl7.org/CodeSystem/v3-ActRelationshipType|5.0.0\" title=\"Cliquer pour copier l'URL\" class=\"btn-copy\"> </button></span></p><p>Ce jeu de valeur (ValueSet) contient 2 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>Système</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage (fr)</b></td><td><b>Définition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-ActRelationshipType-SPRT\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-ActRelationshipType</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActRelationshipType.html#v3-ActRelationshipType-SPRT\">SPRT</a></td><td>has support</td><td><div><p>Used to indicate that an existing service is suggesting evidence for a new observation. The assumption of support is attributed to the same actor who asserts the observation. Source must be an observation, target may be any service (e.g., to indicate a status post).</p>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ActRelationshipType&quot;, &quot;version&quot;: &quot;5.0.0&quot;, &quot;code&quot;: &quot;SPRT&quot;, &quot;display&quot;: &quot;has support&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ActRelationshipType&quot;&gt;&lt;version value=&quot;5.0.0&quot;&gt;&lt;code value=&quot;SPRT&quot;&gt;&lt;display value=&quot;has support&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-ActRelationshipType-REFR\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-ActRelationshipType</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActRelationshipType.html#v3-ActRelationshipType-REFR\">REFR</a></td><td>refers to</td><td><div><p>A relationship in which the target act is referred to by the source act. This permits a simple reference relationship that distinguishes between the referent and the referee.</p>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ActRelationshipType&quot;, &quot;version&quot;: &quot;5.0.0&quot;, &quot;code&quot;: &quot;REFR&quot;, &quot;display&quot;: &quot;refers to&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ActRelationshipType&quot;&gt;&lt;version value=&quot;5.0.0&quot;&gt;&lt;code value=&quot;REFR&quot;&gt;&lt;display value=&quot;refers to&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-valueset-reference-externe",
+      "version" : "0.1.0-snapsnot",
+      "name" : "FRValueSetReferenceExterne",
+      "title" : "ValueSet - FR ValueSet Reference externe",
+      "status" : "draft",
+      "date" : "2026-03-27T09:00:54+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "FR",
+          "display" : "FRANCE"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:c4192165-052a-4013-b923-3d4291e022dd",
+        "timestamp" : "2026-03-27T09:13:03+00:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "fr"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://terminology.hl7.org/CodeSystem/v3-ActRelationshipType|5.0.0"
+        }],
+        "contains" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActRelationshipType",
+          "code" : "SPRT",
+          "display" : "has support"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActRelationshipType",
+          "code" : "REFR",
+          "display" : "refers to"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-valueset-statut-du-probleme",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion effectuée en interne basée sur :</p><ul><li><a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-allergyintolerance-clinical.html\">codesystem AllergyIntolerance Clinical Status Codes v1.0.1 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical|1.0.1\" title=\"Cliquer pour copier l'URL\" class=\"btn-copy\"> </button></span></li><li><a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-condition-clinical.html\">codesystem Condition Clinical Status Codes v3.0.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://terminology.hl7.org/CodeSystem/condition-clinical|3.0.0\" title=\"Cliquer pour copier l'URL\" class=\"btn-copy\"> </button></span></li><li><a href=\"https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-hl7-allergyintolerance-clinical-cisis.html\">valueset AllergyIntolerance Clinical Status Codes v20260220142103 (ValueSet)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-allergyintolerance-clinical-cisis|20260220142103\" title=\"Cliquer pour copier l'URL\" class=\"btn-copy\"> </button></span></li><li><a href=\"https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-hl7-condition-clinical-cisis.html\">valueset Condition Clinical Status Codes v20260220142104 (ValueSet)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-condition-clinical-cisis|20260220142104\" title=\"Cliquer pour copier l'URL\" class=\"btn-copy\"> </button></span></li></ul></div><p>Ce jeu de valeur (ValueSet) contient 9 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>Système</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage (fr)</b></td><td><b>Définition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical-active\"> </a><code>http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-allergyintolerance-clinical.html#allergyintolerance-clinical-active\">active</a></td><td>Actif</td><td>The subject is currently experiencing, or is at risk of, a reaction to the identified substance.</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical&quot;, &quot;version&quot;: &quot;1.0.1&quot;, &quot;code&quot;: &quot;active&quot;, &quot;display&quot;: &quot;Actif&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical&quot;&gt;&lt;version value=&quot;1.0.1&quot;&gt;&lt;code value=&quot;active&quot;&gt;&lt;display value=&quot;Actif&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical-inactive\"> </a><code>http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-allergyintolerance-clinical.html#allergyintolerance-clinical-inactive\">inactive</a></td><td>Inactif</td><td>The subject is no longer at risk of a reaction to the identified substance.</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical&quot;, &quot;version&quot;: &quot;1.0.1&quot;, &quot;code&quot;: &quot;inactive&quot;, &quot;display&quot;: &quot;Inactif&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical&quot;&gt;&lt;version value=&quot;1.0.1&quot;&gt;&lt;code value=&quot;inactive&quot;&gt;&lt;display value=&quot;Inactif&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical-resolved\"> </a><code>http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-allergyintolerance-clinical.html#allergyintolerance-clinical-resolved\">resolved</a></td><td>Résolu</td><td>A reaction to the identified substance has been clinically reassessed by testing or re-exposure and is considered no longer to be present. Re-exposure could be accidental, unplanned, or outside of any clinical setting.</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical&quot;, &quot;version&quot;: &quot;1.0.1&quot;, &quot;code&quot;: &quot;resolved&quot;, &quot;display&quot;: &quot;Résolu&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical&quot;&gt;&lt;version value=&quot;1.0.1&quot;&gt;&lt;code value=&quot;resolved&quot;&gt;&lt;display value=&quot;Résolu&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/condition-clinical-active\"> </a><code>http://terminology.hl7.org/CodeSystem/condition-clinical</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-condition-clinical.html#condition-clinical-active\">active</a></td><td>Actif</td><td>The subject is currently experiencing the condition or situation, there is evidence of the condition or situation, or considered to be a significant risk.</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;active&quot;, &quot;display&quot;: &quot;Actif&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;active&quot;&gt;&lt;display value=&quot;Actif&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/condition-clinical-recurrence\"> </a><code>http://terminology.hl7.org/CodeSystem/condition-clinical</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-condition-clinical.html#condition-clinical-recurrence\">recurrence</a></td><td>Récurrent</td><td>The subject is experiencing a reoccurence or repeating of a previously resolved condition or situation, e.g. urinary tract infection, food insecurity.</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;recurrence&quot;, &quot;display&quot;: &quot;Récurrent&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;recurrence&quot;&gt;&lt;display value=&quot;Récurrent&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/condition-clinical-relapse\"> </a><code>http://terminology.hl7.org/CodeSystem/condition-clinical</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-condition-clinical.html#condition-clinical-relapse\">relapse</a></td><td>Rechute</td><td>The subject is experiencing a return of a condition or situation after a period of improvement or remission, e.g. relapse of cancer, alcoholism.</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;relapse&quot;, &quot;display&quot;: &quot;Rechute&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;relapse&quot;&gt;&lt;display value=&quot;Rechute&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/condition-clinical-inactive\"> </a><code>http://terminology.hl7.org/CodeSystem/condition-clinical</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-condition-clinical.html#condition-clinical-inactive\">inactive</a></td><td>Inactif</td><td>The subject is no longer experiencing the condition or situation and there is no longer evidence or appreciable risk of the condition or situation.</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;inactive&quot;, &quot;display&quot;: &quot;Inactif&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;inactive&quot;&gt;&lt;display value=&quot;Inactif&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/condition-clinical-remission\"> </a><code>http://terminology.hl7.org/CodeSystem/condition-clinical</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-condition-clinical.html#condition-clinical-remission\">remission</a></td><td>En rémission</td><td>The subject is not presently experiencing the condition or situation, but there is a risk of the condition or situation returning.</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;remission&quot;, &quot;display&quot;: &quot;En rémission&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;remission&quot;&gt;&lt;display value=&quot;En rémission&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/condition-clinical-resolved\"> </a><code>http://terminology.hl7.org/CodeSystem/condition-clinical</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-condition-clinical.html#condition-clinical-resolved\">resolved</a></td><td>Résolu</td><td>The subject is not presently experiencing the condition or situation and there is a negligible perceived risk of the condition or situation returning.</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;resolved&quot;, &quot;display&quot;: &quot;Résolu&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;resolved&quot;&gt;&lt;display value=&quot;Résolu&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-valueset-statut-du-probleme",
+      "version" : "0.1.0-snapsnot",
+      "name" : "FRValueSetStatutDuProbleme",
+      "title" : "ValueSet - FR ValueSet Statut du problème",
+      "status" : "draft",
+      "date" : "2026-03-27T09:00:54+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "FR",
+          "display" : "FRANCE"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:5b3af2f9-9b99-4e07-b18b-550882f644ae",
+        "timestamp" : "2026-03-27T09:13:04+00:00",
+        "total" : 9,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "fr"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-allergyintolerance-clinical-cisis|20260220142103"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical|1.0.1"
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-condition-clinical-cisis|20260220142104"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://terminology.hl7.org/CodeSystem/condition-clinical|3.0.0"
+        }],
+        "contains" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code" : "active",
+          "display" : "Actif"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code" : "inactive",
+          "display" : "Inactif"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code" : "resolved",
+          "display" : "Résolu"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "active",
+          "display" : "Actif"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "recurrence",
+          "display" : "Récurrent"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "relapse",
+          "display" : "Rechute"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "inactive",
+          "display" : "Inactif"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "remission",
+          "display" : "En rémission"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "resolved",
+          "display" : "Résolu"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-valueset-type-vaccination",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion effectuée en interne basée sur :</p><ul><li><a href=\"http://hl7.org/fhir/uv/ips/STU1.1/CodeSystem-absent-unknown-uv-ips.html\">codesystem Absent and Unknown Data - IPS v1.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips|1.1.0\" title=\"Cliquer pour copier l'URL\" class=\"btn-copy\"> </button></span></li><li><a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActCode.html\">codesystem ActCode v10.0.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://terminology.hl7.org/CodeSystem/v3-ActCode|10.0.0\" title=\"Cliquer pour copier l'URL\" class=\"btn-copy\"> </button></span></li><li><a href=\"https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-absent-or-unknown-immunization-cisis.html\">valueset JDV Absent Or Unknown Immunization CISIS v20260220142104 (ValueSet)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://smt.esante.gouv.fr/fhir/ValueSet/jdv-absent-or-unknown-immunization-cisis|20260220142104\" title=\"Cliquer pour copier l'URL\" class=\"btn-copy\"> </button></span></li><li><a href=\"https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-hl7-v3-ActSubstanceAdministrationImmunizationCode-cisis.html\">valueset ActSubstanceAdministrationImmunizationCode v20260220142105 (ValueSet)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdministrationImmunizationCode-cisis|20260220142105\" title=\"Cliquer pour copier l'URL\" class=\"btn-copy\"> </button></span></li></ul></div><p>Ce jeu de valeur (ValueSet) contient 5 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>Système</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage (fr)</b></td><td><b>Inactif</b></td><td><b>Définition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-ActCode-BOOSTER\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-ActCode</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActCode.html#v3-ActCode-BOOSTER\">BOOSTER</a></td><td>Rappel de vaccin</td><td>inactif</td><td><div><p>An additional immunization administration within a series intended to bolster or enhance immunity.</p>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ActCode&quot;, &quot;version&quot;: &quot;10.0.0&quot;, &quot;code&quot;: &quot;BOOSTER&quot;, &quot;display&quot;: &quot;Rappel de vaccin&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ActCode&quot;&gt;&lt;version value=&quot;10.0.0&quot;&gt;&lt;code value=&quot;BOOSTER&quot;&gt;&lt;display value=&quot;Rappel de vaccin&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-ActCode-IMMUNIZ\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-ActCode</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActCode.html#v3-ActCode-IMMUNIZ\">IMMUNIZ</a></td><td>Vaccination sans autre précision</td><td/><td><div><p>The introduction of an immunogen with the intent of stimulating an immune response, aimed at preventing subsequent infections by more viable agents.</p>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ActCode&quot;, &quot;version&quot;: &quot;10.0.0&quot;, &quot;code&quot;: &quot;IMMUNIZ&quot;, &quot;display&quot;: &quot;Vaccination sans autre précision&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ActCode&quot;&gt;&lt;version value=&quot;10.0.0&quot;&gt;&lt;code value=&quot;IMMUNIZ&quot;&gt;&lt;display value=&quot;Vaccination sans autre précision&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-ActCode-INITIMMUNIZ\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-ActCode</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActCode.html#v3-ActCode-INITIMMUNIZ\">INITIMMUNIZ</a></td><td>1ère série vaccinante</td><td>inactif</td><td><div><p>The first immunization administration in a series intended to produce immunity</p>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ActCode&quot;, &quot;version&quot;: &quot;10.0.0&quot;, &quot;code&quot;: &quot;INITIMMUNIZ&quot;, &quot;display&quot;: &quot;1ère série vaccinante&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ActCode&quot;&gt;&lt;version value=&quot;10.0.0&quot;&gt;&lt;code value=&quot;INITIMMUNIZ&quot;&gt;&lt;display value=&quot;1ère série vaccinante&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips-no-immunization-info\"> </a><code>http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://hl7.org/fhir/uv/ips/STU1.1/CodeSystem-absent-unknown-uv-ips.html#absent-unknown-uv-ips-no-immunization-info\">no-immunization-info</a></td><td>Pas d'information sur les vaccins</td><td/><td>The subject's history of previous immunizations is not known.</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips&quot;, &quot;version&quot;: &quot;1.1.0&quot;, &quot;code&quot;: &quot;no-immunization-info&quot;, &quot;display&quot;: &quot;Pas d'information sur les vaccins&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips&quot;&gt;&lt;version value=&quot;1.1.0&quot;&gt;&lt;code value=&quot;no-immunization-info&quot;&gt;&lt;display value=&quot;Pas d'information sur les vaccins&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips-no-known-immunizations\"> </a><code>http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://hl7.org/fhir/uv/ips/STU1.1/CodeSystem-absent-unknown-uv-ips.html#absent-unknown-uv-ips-no-known-immunizations\">no-known-immunizations</a></td><td>Pas de vaccin connu</td><td/><td>There is no history of previous immunizations for the subject that have to be reported in this record. This can mean either that there are none known, or that those known are not relevant for the purpose of this record.</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips&quot;, &quot;version&quot;: &quot;1.1.0&quot;, &quot;code&quot;: &quot;no-known-immunizations&quot;, &quot;display&quot;: &quot;Pas de vaccin connu&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips&quot;&gt;&lt;version value=&quot;1.1.0&quot;&gt;&lt;code value=&quot;no-known-immunizations&quot;&gt;&lt;display value=&quot;Pas de vaccin connu&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-valueset-type-vaccination",
+      "version" : "0.1.0-snapsnot",
+      "name" : "FRValueSetTypeVaccination",
+      "title" : "ValueSet - FR ValueSet Type Vaccination",
+      "status" : "draft",
+      "date" : "2026-03-27T09:00:54+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "FR",
+          "display" : "FRANCE"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:e65b1d4e-e763-4293-be02-641abbff20a8",
+        "timestamp" : "2026-03-27T09:13:04+00:00",
+        "total" : 5,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "fr"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdministrationImmunizationCode-cisis|20260220142105"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://terminology.hl7.org/CodeSystem/v3-ActCode|10.0.0"
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-absent-or-unknown-immunization-cisis|20260220142104"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips|1.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "inactive" : true,
+          "code" : "BOOSTER",
+          "display" : "Rappel de vaccin"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code" : "IMMUNIZ",
+          "display" : "Vaccination sans autre précision"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "inactive" : true,
+          "code" : "INITIMMUNIZ",
+          "display" : "1ère série vaccinante"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips",
+          "code" : "no-immunization-info",
+          "display" : "Pas d'information sur les vaccins"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips",
+          "code" : "no-known-immunizations",
+          "display" : "Pas de vaccin connu"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-actor-type-document",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -498,7 +832,7 @@
       "name" : "FRValueSetActorTypeDocument",
       "title" : "ValueSet - FR ValueSet Actor Type Document",
       "status" : "draft",
-      "date" : "2026-03-22T21:51:38+00:00",
+      "date" : "2026-03-27T09:00:54+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -507,8 +841,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:1f1d12f5-414c-442c-b807-84c17243ac74",
-        "timestamp" : "2026-03-22T22:08:01+00:00",
+        "identifier" : "urn:uuid:9d50c730-7a35-4305-b0ce-b879f5944606",
+        "timestamp" : "2026-03-27T09:13:04+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -568,7 +902,7 @@
       "title" : "ValueSet - FR ValueSet EDQM Document",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-03-22T21:51:38+00:00",
+      "date" : "2026-03-27T09:00:54+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -577,8 +911,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:c3876c59-bae7-4565-ba6e-92d6c0ebb715",
-        "timestamp" : "2026-03-22T22:08:03+00:00",
+        "identifier" : "urn:uuid:16ceb0bf-9873-476b-a537-886a365c69bf",
+        "timestamp" : "2026-03-27T09:13:05+00:00",
         "total" : 1297,
         "offset" : 0,
         "parameter" : [{
@@ -4625,7 +4959,7 @@
       "name" : "FRValueSetEvaluationTypeDocument",
       "title" : "ValueSet – FR ValueSet Type d'évaluation",
       "status" : "draft",
-      "date" : "2026-03-22T21:51:38+00:00",
+      "date" : "2026-03-27T09:00:54+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -4634,8 +4968,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:45ef80b4-0ae0-443f-8a0f-4f6b80076cad",
-        "timestamp" : "2026-03-22T22:07:56+00:00",
+        "identifier" : "urn:uuid:374612be-5572-44d7-a92c-0dfe5be57958",
+        "timestamp" : "2026-03-27T09:12:56+00:00",
         "offset" : 0,
         "parameter" : [{
           "name" : "displayLanguage",
@@ -8821,7 +9155,7 @@
       "name" : "FRValueSetProcedureCodeDocument",
       "title" : "ValueSet – FR ValueSet Codes d’actes",
       "status" : "draft",
-      "date" : "2026-03-22T21:51:38+00:00",
+      "date" : "2026-03-27T09:00:54+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -8834,8 +9168,8 @@
           "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
           "valueBoolean" : true
         }],
-        "identifier" : "urn:uuid:8aa3d44b-68e5-4388-a5fc-86776997426a",
-        "timestamp" : "2026-03-22T22:08:04+00:00",
+        "identifier" : "urn:uuid:7bcdbe75-017e-4c12-8cd1-65dd992dd132",
+        "timestamp" : "2026-03-27T09:13:06+00:00",
         "total" : 38225,
         "offset" : 0,
         "parameter" : [{
@@ -12907,7 +13241,7 @@
       "title" : "ValueSet - FR ValueSet Result Type Document",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-03-22T21:51:38+00:00",
+      "date" : "2026-03-27T09:00:54+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -12916,8 +13250,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:9c7fbfbf-d42a-4593-b6ea-f72000e18e0b",
-        "timestamp" : "2026-03-22T22:08:04+00:00",
+        "identifier" : "urn:uuid:1bdfcf67-e107-4824-a2a3-312b4a870c57",
+        "timestamp" : "2026-03-27T09:13:07+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{

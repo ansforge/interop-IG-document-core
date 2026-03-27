@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-organization-document | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-03-22 | *Computable Name*:FROrganizationDocument |
+| Draft as of 2026-03-27 | *Computable Name*:FROrganizationDocument |
 
  
 Ce profil représente la structure pour le compte de laquelle intervient le professionnel. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-organization-docu
   "name" : "FROrganizationDocument",
   "title" : "FR Organization Document",
   "status" : "draft",
-  "date" : "2026-03-22T21:51:38+00:00",
+  "date" : "2026-03-27T09:00:54+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-assigned-entity | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-03-22 | *Computable Name*:FRCDAAssignedEntity |
+| Draft as of 2026-03-27 | *Computable Name*:FRCDAAssignedEntity |
 
  
 L’élément de l’en-tête du CDA assignedEntity est utilisé dans les éléments suivants : dataEnterer, informant, legalAuthenticator, authenticator, performer, responsibleParty et encounterParticipant. 
 
 **Utilisations:**
 
-* Utilise ce/t/te Profil de modèle logique: [CDA - authenticator](StructureDefinition-fr-cda-authenticator.md), [CDA - dataEnterer](StructureDefinition-fr-cda-data-enterer.md), [CDA - informant](StructureDefinition-fr-cda-informant.md), [CDA - legalAuthenticator](StructureDefinition-fr-cda-legal-authenticator.md) and [CDA - performer](StructureDefinition-fr-cda-performer.md)
+* Utilise ce/t/te Profil de modèle logique: [CDA - authenticator](StructureDefinition-fr-cda-authenticator.md), [CDA - dataEnterer](StructureDefinition-fr-cda-data-enterer.md), [CDA - FR Dispositif medical](StructureDefinition-fr-cda-dispositif-medical.md), [CDA - FR Informant APSR](StructureDefinition-fr-cda-informant-apsr.md)... Show 6 more, [CDA - informant](StructureDefinition-fr-cda-informant.md), [CDA - FR Laboratoire executant](StructureDefinition-fr-cda-laboratoire-executant.md), [CDA - legalAuthenticator](StructureDefinition-fr-cda-legal-authenticator.md), [CDA - FR Performer corps](StructureDefinition-fr-cda-performer-corps.md), [CDA - performer](StructureDefinition-fr-cda-performer.md) and [CDA - FR Rencontre](StructureDefinition-fr-cda-rencontre.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-assigned-entity)
 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-assigned-enti
   "name" : "FRCDAAssignedEntity",
   "title" : "CDA - assignedEntity",
   "status" : "draft",
-  "date" : "2026-03-22T21:51:38+00:00",
+  "date" : "2026-03-27T09:00:54+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -96,10 +96,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-assigned-enti
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
-      "id" : "AssignedEntity",
-      "path" : "AssignedEntity"
-    },
-    {
       "id" : "AssignedEntity.nullFlavor",
       "path" : "AssignedEntity.nullFlavor",
       "max" : "0"
