@@ -47,11 +47,11 @@ frDicomSopInstanceObservationSubordonnee 0..*
  and frDicomObjectifsDeReference 0..1
  and frDicomCadresReferences 0..1
 * entryRelationship[frDicomSopInstanceObservationSubordonnee].observation only FRCDADICOMSOPInstanceObservationSubordonnee
-* entryRelationship[frDicomSopInstanceObservationSubordonnee] ^short = "Non utilisé"
+* entryRelationship[frDicomSopInstanceObservationSubordonnee] ^short = "Non utilisé dans le cadre Français"
 * entryRelationship[frDicomSopInstanceObservationSubordonnee].typeCode = #SUBJ
-* entryRelationship[frDicomObjectifsDeReference].observation only FRCDADicomObjectifsDeReference
-* entryRelationship[frDicomObjectifsDeReference] ^short = "Non utilisé"
+* entryRelationship[frDicomObjectifsDeReference].observation only FRCDADICOMObjectifsDeReference
+* entryRelationship[frDicomObjectifsDeReference] ^short = "Non utilisé dans le cadre Français"
 * entryRelationship[frDicomCadresReferences].typeCode = #RSON
-* entryRelationship[frDicomCadresReferences].observation only FRCDADicomCadresReferences
-* entryRelationship[frDicomCadresReferences] ^short = "Non utilisé"
+* entryRelationship[frDicomCadresReferences].observation only FRCDADICOMCadresReferences
+* entryRelationship[frDicomCadresReferences] ^short = "Non utilisé dans le cadre Français"
 

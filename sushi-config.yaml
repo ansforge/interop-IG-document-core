@@ -333,6 +333,8 @@ groups:
       - StructureDefinition/fr-cda-performer-corps
       - StructureDefinition/fr-cda-participant-corps
       - StructureDefinition/fr-cda-participant-role
+      - StructureDefinition/fr-cda-dicom-cadres-a-afficher
+      - StructureDefinition/fr-cda-dicom-cadres-references
       - StructureDefinition/fr-cda-dicom-examen-imagerie
       - StructureDefinition/fr-cda-dicom-exposition-patient
       - StructureDefinition/fr-cda-dicom-observation
@@ -434,6 +436,7 @@ groups:
       - StructureDefinition/fr-cda-probleme
       - StructureDefinition/fr-cda-produit-de-sante
       - StructureDefinition/fr-cda-quantite-de-produit
+      - StructureDefinition/fr-cda-dicom-objectifs-de-reference
 
 
   Ressources FHIR entête:

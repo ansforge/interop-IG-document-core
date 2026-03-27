@@ -47,8 +47,12 @@ and dicomSOPInstanceObservation 1..1
 frDicomObjectifsDeReference 0..1
  and frDicomCadresReferences 0..1
 * entryRelationship[frDicomObjectifsDeReference] ^short = "Entrée FR-DICOM-Objectifs-de-reference"
-* entryRelationship[frDicomObjectifsDeReference].observation only FRCDADicomObjectifsDeReference
+* entryRelationship[frDicomObjectifsDeReference].observation only FRCDADICOMObjectifsDeReference
 * entryRelationship[frDicomObjectifsDeReference].typeCode = #RSON
+* entryRelationship[frDicomObjectifsDeReference] ^short = "Non utilisé dans le cadre Français"
+
 * entryRelationship[frDicomCadresReferences] ^short = "Entrée FR-DICOM-Cadres-references"
-* entryRelationship[frDicomCadresReferences].observation only FRCDADicomCadresReferences
+* entryRelationship[frDicomCadresReferences].observation only FRCDADICOMCadresReferences
 * entryRelationship[frDicomCadresReferences].typeCode = #COMP
+* entryRelationship[frDicomCadresReferences] ^short = "Non utilisé dans le cadre Français"
+
