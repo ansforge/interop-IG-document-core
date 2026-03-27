@@ -588,6 +588,9 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
       "StructureDefinition.snapshot.element.binding"
     ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-defaulttype": [
+      "StructureDefinition.snapshot.element"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier": [
       "fr-lm-image-illustrative",
       "fr-lm-notes-dispensateur",

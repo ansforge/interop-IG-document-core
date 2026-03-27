@@ -18,6 +18,54 @@
     "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge"]
   },
   {
+    "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-valueset-code-traitement",
+    "version" : "0.1.0-snapsnot",
+    "status" : "draft",
+    "name" : "FRValueSetCodeTraitement",
+    "title" : "ValueSet - FR ValueSet Code Traitement",
+    "description" : "Jeu de valeurs regroupant les codes de traitement",
+    "systems" : ["http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips",
+    "http://terminology.hl7.org/CodeSystem/v3-ActCode"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-valueset-reference-externe",
+    "version" : "0.1.0-snapsnot",
+    "status" : "draft",
+    "name" : "FRValueSetReferenceExterne",
+    "title" : "ValueSet - FR ValueSet Reference externe",
+    "description" : "Jeu de valeurs regroupant les typeCode du document référencé",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActRelationshipType"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-valueset-status-code",
+    "version" : "0.1.0-snapsnot",
+    "status" : "draft",
+    "name" : "FRValueSetStatusCode",
+    "title" : "ValueSet - FR ValueSet StatusCode",
+    "description" : "Jeu de valeurs permet d'indique le niveau de complétude des résultats d’un examen (complet, partiel ou abandonné).\n - 'completed' : Rendu final complet. Tous les résultats attendus pour cet examen sont présents.\n - 'active' : Rendu partiel. Certains résultats sont encore à venir pour cet examen.\n - 'aborted' : L'examen est abandonné. Quelques résultats peuvent apparaître.",
+    "systems" : ["https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-valueset-statut-du-probleme",
+    "version" : "0.1.0-snapsnot",
+    "status" : "draft",
+    "name" : "FRValueSetStatutDuProbleme",
+    "title" : "ValueSet - FR ValueSet Statut du problème",
+    "description" : "Jeu de valeurs regroupant les codes de statut du problème et des allergies/intolérances",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/condition-clinical",
+    "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-valueset-type-vaccination",
+    "version" : "0.1.0-snapsnot",
+    "status" : "draft",
+    "name" : "FRValueSetTypeVaccination",
+    "title" : "ValueSet - FR ValueSet Type Vaccination",
+    "description" : "Jeu de valeurs regroupant les codes de type de vaccination",
+    "systems" : ["http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips",
+    "http://terminology.hl7.org/CodeSystem/v3-ActCode"]
+  },
+  {
     "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-actor-type-document",
     "version" : "0.1.0-snapsnot",
     "status" : "draft",

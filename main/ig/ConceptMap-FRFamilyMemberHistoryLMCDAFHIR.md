@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRFamilyMemberHistoryLMCDAFHIR | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-03-23 | *Computable Name*: |
+| Draft as of 2026-03-27 | *Computable Name*: |
 
  
 Mapping des éléments du modèle métier FRLMAntecedentFamilialObserve vers le profil CDA FRCDAAntecedentFamilialObserve, puis vers le profil FHIR FRFamilyMemberHistoryDocument. 
@@ -26,7 +26,7 @@ Mapping des éléments du modèle métier FRLMAntecedentFamilialObserve vers le 
   "version" : "0.1.0-snapsnot",
   "title" : "Mapping Métier/CDA/FHIR : \"Antécédent familial observé\"",
   "status" : "draft",
-  "date" : "2026-03-23T13:14:10+00:00",
+  "date" : "2026-03-27T09:33:49+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
