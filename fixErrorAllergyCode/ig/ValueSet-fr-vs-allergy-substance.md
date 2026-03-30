@@ -50,7 +50,7 @@ Jeu de valeurs permettant de coder la substance responsable d’une allergie
   "name" : "FRValueSetAllergySubstanceDocument",
   "title" : "ValueSet – FR ValueSet Allergy Substance Document",
   "status" : "draft",
-  "date" : "2026-03-30T13:38:14+00:00",
+  "date" : "2026-03-30T14:01:57+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

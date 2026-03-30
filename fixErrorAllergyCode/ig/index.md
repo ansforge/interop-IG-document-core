@@ -66,7 +66,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
 
 * [LOv2](https://github.com/etalab/licence-ouverte/blob/master/LO.md) 
 
-* [Base de données publique du médicament](https://interop.esante.gouv.fr/terminologies/1.7.0/CodeSystem-terminologie-bdpm.html): [FRImmunizationDocument](StructureDefinition-fr-immunization-document.md), [FRImmunizationRecommendationDocument](StructureDefinition-fr-immunization-recommendation-document.md), [FRMedicationDocument](StructureDefinition-fr-medication-document.md), [FRValueSetAllergyCodeDocument](ValueSet-fr-vs-allergy-code.md) and [FRValueSetMedicationTranslationDocument](ValueSet-fr-vs-medication-translation-document.md)
+* [Base de données publique du médicament](https://interop.esante.gouv.fr/terminologies/1.7.0/CodeSystem-terminologie-bdpm.html): [FRAllergyIntoleranceDocument](StructureDefinition-fr-allergie-intolerance-document.md), [FRImmunizationDocument](StructureDefinition-fr-immunization-document.md)... Show 4 more, [FRImmunizationRecommendationDocument](StructureDefinition-fr-immunization-recommendation-document.md), [FRMedicationDocument](StructureDefinition-fr-medication-document.md), [FRValueSetAllergyCodeDocument](ValueSet-fr-vs-allergy-code.md) and [FRValueSetMedicationTranslationDocument](ValueSet-fr-vs-medication-translation-document.md)
 * [Classification Commune des Actes Médicaux](https://interop.esante.gouv.fr/terminologies/1.7.0/CodeSystem-terminologie-ccam.html): [FRProcedureActDocument](StructureDefinition-fr-procedure-act-document.md) and [FRValueSetProcedureCodeDocument](ValueSet-fr-vs-procedure-code.md)
 
 
@@ -87,7 +87,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
 
 * The WHO grants a license for "commercial and non-commercial use" of ICD-11CC BY-ND 3.0 IGODetailed information can be found here: [[https://icd.who.int/en/docs/icd11-license.pdf](https://icd.who.int/en/docs/icd11-license.pdf)](https://icd.who.int/en/docs/icd11-license.pdf) Contact licensing@who.int to obtain further information.
 
-* [International Classification of Diseases, 11th Revision Mortality and Morbidity Statistics (MMS)](http://terminology.hl7.org/6.3.0/CodeSystem-ICD11MMS.html): [FRValueSetAllergyCodeDocument](ValueSet-fr-vs-allergy-code.md)
+* [International Classification of Diseases, 11th Revision Mortality and Morbidity Statistics (MMS)](http://terminology.hl7.org/6.3.0/CodeSystem-ICD11MMS.html): [FRAllergyIntoleranceDocument](StructureDefinition-fr-allergie-intolerance-document.md) and [FRValueSetAllergyCodeDocument](ValueSet-fr-vs-allergy-code.md)
 
 
 * These codes are excerpted from Digital Imaging and Communications in Medicine (DICOM) Standard, Part 16: Content Mapping Resource, Copyright Â© 2011 by the National Electrical Manufacturers Association.
@@ -155,7 +155,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
   "name" : "FRDocumentCore",
   "title" : "ANS IG document core",
   "status" : "draft",
-  "date" : "2026-03-30T13:38:14+00:00",
+  "date" : "2026-03-30T14:01:57+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

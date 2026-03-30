@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-allergie-intolera
   "name" : "FRAllergyIntoleranceDocument",
   "title" : "AllergyIntolerance - FR Allergy and intolerance Document",
   "status" : "draft",
-  "date" : "2026-03-30T13:38:14+00:00",
+  "date" : "2026-03-30T14:01:57+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -127,7 +127,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-allergie-intolera
       "mustSupport" : true,
       "binding" : {
         "strength" : "extensible",
-        "valueSet" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-allergy-substance"
+        "valueSet" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-allergy-code"
       }
     },
     {

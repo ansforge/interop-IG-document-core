@@ -22,7 +22,7 @@ Jeu de valeurs permettant de coder l’agent responsable d’une allergie :
 
  **References** 
 
-Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (par exemple dans les spécifications et / ou implémentations qui utilisent ce contenu)
+* [AllergyIntolerance - FR Allergy and intolerance Document](StructureDefinition-fr-allergie-intolerance-document.md)
 
 ### Définition logique (CLD)
 
@@ -58,7 +58,7 @@ No Expansion for this valueset (Unknown Code System)
   "name" : "FRValueSetAllergyCodeDocument",
   "title" : "ValueSet – FR ValueSet Allergy Code Document",
   "status" : "draft",
-  "date" : "2026-03-30T13:38:14+00:00",
+  "date" : "2026-03-30T14:01:57+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -83,13 +83,13 @@ No Expansion for this valueset (Unknown Code System)
       "system" : "https://smt.esante.gouv.fr/terminologie-cip_ucd"
     },
     {
-      "system" : "https://smt.esante.gouv.fr/terminologie-sms"
-    },
-    {
       "system" : "http://id.who.int/icd/release/11/mms"
     },
     {
       "valueSet" : ["https://smt.esante.gouv.fr/fhir/ValueSet/jdv-allergie-vaccin-cisis"]
+    },
+    {
+      "system" : "https://smt.esante.gouv.fr/terminologie-sms"
     }]
   }
 }

@@ -7438,9 +7438,9 @@ package IG #DDDDDD{
 
      FRAllergyIntoleranceDocument -[#black,dotted,thickness=2]-> FRValueSetAllergyInoleranceTypeDocument
 
-        class FRValueSetAllergySubstanceDocument  
+        class FRValueSetAllergyCodeDocument  
 
-     FRAllergyIntoleranceDocument -[#black,dotted,thickness=2]-> FRValueSetAllergySubstanceDocument
+     FRAllergyIntoleranceDocument -[#black,dotted,thickness=2]-> FRValueSetAllergyCodeDocument
 
         class FRValueSetAllergySubstanceDocument  
 
