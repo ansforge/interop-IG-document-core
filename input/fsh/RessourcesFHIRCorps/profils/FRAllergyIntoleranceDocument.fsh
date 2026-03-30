@@ -9,11 +9,12 @@ Description: "FRAllergyIntoleranceDocument est un profil utilisé pourdécrire u
 
 * identifier 1..* MS
 * identifier ^short = "Identifiant"
-
+* type MS
+* type ^short = "Type d'allergie ou d'intolérance"
+* type from FRValueSetAllergyInoleranceTypeDocument (required)
 * code 1..1 MS
-* code ^short = "Type d'allergie / hypersensibilité non allergique / intolérance / idiosyncrasie"
-* code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-evenement-indesirable-previsible-cisis
-
+* code ^short = "agent allergique"
+* code from FRValueSetAllergySubstanceDocument (extensible)
 * onset[x] MS
 * onset[x] ^short = "Date d'identification d'allergie ou d'intolérance"
 * onsetPeriod MS
@@ -37,8 +38,8 @@ Description: "FRAllergyIntoleranceDocument est un profil utilisé pourdécrire u
 * reaction ^short = "Réaction observée"
 
 * reaction.substance MS
-* reaction.substance ^short = "Agent responsable de l'allergie / intolérance"
-* reaction.substance from FRValueSetAllergySubstanceDocument (extensible)
+* reaction.substance ^short = "Substance responsable de la réaction"
+* reaction.substance from FRValueSetAllergySubstanceDocument (required)
 
 * reaction.manifestation MS
 * reaction.manifestation ^short = "Symptômes/signes cliniques associés à l’événement"
