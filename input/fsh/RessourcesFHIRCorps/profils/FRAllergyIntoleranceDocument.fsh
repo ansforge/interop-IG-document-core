@@ -12,6 +12,9 @@ Description: "FRAllergyIntoleranceDocument est un profil utilisé pourdécrire u
 * type MS
 * type ^short = "Type d'allergie ou d'intolérance"
 * type from FRValueSetAllergyInoleranceTypeDocument (required)
+* type MS
+* type ^short = "Type d'allergie ou d'intolérance"
+* type from FRValueSetAllergyInoleranceTypeDocument (required)
 * code 1..1 MS
 * code ^short = "agent allergique"
 * code from FRValueSetAllergyCodeDocument (extensible)
@@ -38,6 +41,8 @@ Description: "FRAllergyIntoleranceDocument est un profil utilisé pourdécrire u
 * reaction ^short = "Réaction observée"
 
 * reaction.substance MS
+* reaction.substance ^short = "Substance responsable de la réaction"
+* reaction.substance from FRValueSetAllergySubstanceDocument (required)
 * reaction.substance ^short = "Substance responsable de la réaction"
 * reaction.substance from FRValueSetAllergySubstanceDocument (required)
 
