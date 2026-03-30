@@ -14,7 +14,7 @@ Description: "FRAllergyIntoleranceDocument est un profil utilisé pourdécrire u
 * type from FRValueSetAllergyInoleranceTypeDocument (required)
 * code 1..1 MS
 * code ^short = "agent allergique"
-* code from FRValueSetAllergySubstanceDocument (extensible)
+* code from FRValueSetAllergyCodeDocument (extensible)
 * onset[x] MS
 * onset[x] ^short = "Date d'identification d'allergie ou d'intolérance"
 * onsetPeriod MS

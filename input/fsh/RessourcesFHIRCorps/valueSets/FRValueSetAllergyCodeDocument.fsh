@@ -13,12 +13,12 @@ Jeu de valeurs permettant de coder l’agent responsable d’une allergie :
 * include codes from system https://smt.esante.gouv.fr/terminologie-bdpm    // CIP
 * include codes from system https://smt.esante.gouv.fr/terminologie-cip_ucd      // UCD
 
-// Pour les substances : code SMS
-* include codes from system https://smt.esante.gouv.fr/terminologie-sms // SMS
-
 // pour les aliments ou agents environnementaux ou physiques :  CIM11
 // Chapitre X Codes d’extensions / Substances : Allergènes ou Substances, essentiellement non médicinales
 * include codes from system http://id.who.int/icd/release/11/mms // CIM11
 
 // pour les allergènes pouvant induire une contre-indication à la vaccination 
 * include codes from valueset https://smt.esante.gouv.fr/fhir/ValueSet/jdv-allergie-vaccin-cisis
+
+// Pour les substances : code SMS
+* include codes from system https://smt.esante.gouv.fr/terminologie-sms // SMS
