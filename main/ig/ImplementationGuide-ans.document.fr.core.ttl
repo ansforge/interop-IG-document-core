@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "FRDocumentCore"] ; # 
   fhir:title [ fhir:v "ANS IG document core"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-03-30T15:11:58+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-03-31T07:16:03+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -13304,6 +13304,27 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-allergy-intolerance-type-document> ;
+         fhir:reference [ fhir:v "ValueSet/fr-vs-allergy-intolerance-type-document" ]
+       ] ;
+       fhir:name [ fhir:v "ValueSet - FR ValueSet Allergy Intolerance Type Document" ] ;
+       fhir:description [ fhir:v "ValueSet contenant les codes SNOMED CT autorisés pour les types d'allergies et d'intolérances" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-valueset-code-traitement> ;
          fhir:reference [ fhir:v "ValueSet/fr-valueset-code-traitement" ]
        ] ;
@@ -13472,11 +13493,32 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-allergy-code> ;
+         fhir:reference [ fhir:v "ValueSet/fr-vs-allergy-code" ]
+       ] ;
+       fhir:name [ fhir:v "ValueSet – FR ValueSet Allergy Code Document" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs permettant de coder l’agent responsable d’une allergie :\n- Médicaments : CIP ou UCD\n- Substances : SMS\n- Aliments : CIM-11 Chapitre X Extensions – Allergènes ou substances non médicinales\n- Agents environnementaux ou physiques : idem CIM-11 Chapitre X Extensions\n- Allergènes pouvant induire une contre-indication vaccinale : jdv-allergie-vaccin-cisis" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-allergy-substance> ;
          fhir:reference [ fhir:v "ValueSet/fr-vs-allergy-substance" ]
        ] ;
        fhir:name [ fhir:v "ValueSet – FR ValueSet Allergy Substance Document" ] ;
-       fhir:description [ fhir:v "Jeu de valeurs permettant de coder l’agent responsable d’une allergie :\n- Médicaments : CIP ou UCD\n- Substances : SMS\n- Aliments : CIM-11 Chapitre X Extensions – Allergènes ou substances non médicinales\n- Agents environnementaux ou physiques : idem CIM-11 Chapitre X Extensions\n- Allergènes pouvant induire une contre-indication vaccinale : jdv-allergie-vaccin-cisis" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs permettant de coder la substance responsable d’une allergie" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

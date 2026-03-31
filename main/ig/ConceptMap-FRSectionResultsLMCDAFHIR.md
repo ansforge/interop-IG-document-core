@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRSectionResultsLMCDAFHIR | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-03-30 | *Computable Name*: |
+| Draft as of 2026-03-31 | *Computable Name*: |
 
  
 Mapping des éléments du modèle métier FRLMResultats vers la section CDA FRCDAResultats, puis vers la section FHIR FRCompositionDocument.section:results. 
@@ -26,7 +26,7 @@ Mapping des éléments du modèle métier FRLMResultats vers la section CDA FRCD
   "version" : "0.1.0-snapsnot",
   "title" : "Mapping Métier/CDA/FHIR : \"Résultats\"",
   "status" : "draft",
-  "date" : "2026-03-30T15:11:58+00:00",
+  "date" : "2026-03-31T07:16:03+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

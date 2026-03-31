@@ -729,6 +729,7 @@ These define sets of codes used by systems conforming to this implementation gui
 | [FR ValueSet Participation Type](ValueSet-fr-doc-vs-participation-type.md) | Type de participation : destinataire |
 | [Fr ValueSet RolePriseCharge](ValueSet-fr-doc-vs-role-prise-charge.md) | Pour les professions 41 (Assistant de service social) et 99 (Acteur caractérisé par son rôle). |
 | [ValueSet - FR ValueSet Actor Type Document](ValueSet-fr-vs-actor-type-document.md) | Jeu de valeurs pour les types d’acteurs. |
+| [ValueSet - FR ValueSet Allergy Intolerance Type Document](ValueSet-fr-vs-allergy-intolerance-type-document.md) | ValueSet contenant les codes SNOMED CT autorisés pour les types d’allergies et d’intolérances |
 | [ValueSet - FR ValueSet Code Traitement](ValueSet-fr-valueset-code-traitement.md) | Jeu de valeurs regroupant les codes de traitement |
 | [ValueSet - FR ValueSet EDQM Document](ValueSet-fr-vs-edqm-document.md) | ValueSet basé sur le CodeSystem EDQM fourni par SMT |
 | [ValueSet - FR ValueSet Medication Translation Document](ValueSet-fr-vs-medication-translation-document.md) | Systèmes autorisés pour les autres codifications. |
@@ -740,12 +741,13 @@ These define sets of codes used by systems conforming to this implementation gui
  |
 | [ValueSet - FR ValueSet Statut du problème](ValueSet-fr-valueset-statut-du-probleme.md) | Jeu de valeurs regroupant les codes de statut du problème et des allergies/intolérances |
 | [ValueSet - FR ValueSet Type Vaccination](ValueSet-fr-valueset-type-vaccination.md) | Jeu de valeurs regroupant les codes de type de vaccination |
-| [ValueSet – FR ValueSet Allergy Substance Document](ValueSet-fr-vs-allergy-substance.md) | Jeu de valeurs permettant de coder l’agent responsable d’une allergie :* Médicaments : CIP ou UCD
+| [ValueSet – FR ValueSet Allergy Code Document](ValueSet-fr-vs-allergy-code.md) | Jeu de valeurs permettant de coder l’agent responsable d’une allergie :* Médicaments : CIP ou UCD
 * Substances : SMS
 * Aliments : CIM-11 Chapitre X Extensions – Allergènes ou substances non médicinales
 * Agents environnementaux ou physiques : idem CIM-11 Chapitre X Extensions
 * Allergènes pouvant induire une contre-indication vaccinale : jdv-allergie-vaccin-cisis
  |
+| [ValueSet – FR ValueSet Allergy Substance Document](ValueSet-fr-vs-allergy-substance.md) | Jeu de valeurs permettant de coder la substance responsable d’une allergie |
 | [ValueSet – FR ValueSet Codes d’actes](ValueSet-fr-vs-procedure-code.md) | Codes autorisés pour indiquer un acte. Inclut :* Terminologie CCAM
 * NCIT (code C25218 : ‘Intervention’) si l’acte n’est pas trouvé dans CCAM
 * CISIS jdv-absent-or-unknown-procedure-cisis pour actes chirurgicaux inconnus ou absents.

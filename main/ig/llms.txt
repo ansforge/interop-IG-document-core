@@ -69,6 +69,8 @@
 * [ValueSet - FR ValueSet Statut du problème](ValueSet-fr-valueset-statut-du-probleme.md)
 * [ValueSet - FR ValueSet Type Vaccination](ValueSet-fr-valueset-type-vaccination.md)
 * [ValueSet - FR ValueSet Actor Type Document](ValueSet-fr-vs-actor-type-document.md)
+* [ValueSet – FR ValueSet Allergy Code Document](ValueSet-fr-vs-allergy-code.md)
+* [ValueSet - FR ValueSet Allergy Intolerance Type Document](ValueSet-fr-vs-allergy-intolerance-type-document.md)
 * [ValueSet – FR ValueSet Allergy Substance Document](ValueSet-fr-vs-allergy-substance.md)
 * [ValueSet - FR ValueSet EDQM Document](ValueSet-fr-vs-edqm-document.md)
 * [ValueSet – FR ValueSet Type d'évaluation](ValueSet-fr-vs-evaluation-type.md)

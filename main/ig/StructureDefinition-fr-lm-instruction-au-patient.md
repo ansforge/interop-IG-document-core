@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-instruction-au-patient | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-03-30 | *Computable Name*:FRLMInstructionAuPatient |
+| Draft as of 2026-03-31 | *Computable Name*:FRLMInstructionAuPatient |
 
  
 Instruction au patient 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-instruction-au
   "name" : "FRLMInstructionAuPatient",
   "title" : "Modèle logique métier - FR LM Instruction au patient",
   "status" : "draft",
-  "date" : "2026-03-30T15:11:58+00:00",
+  "date" : "2026-03-31T07:16:03+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

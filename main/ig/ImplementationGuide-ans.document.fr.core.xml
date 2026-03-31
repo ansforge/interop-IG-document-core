@@ -10,7 +10,7 @@
   <name value="FRDocumentCore"/>
   <title value="ANS IG document core"/>
   <status value="draft"/>
-  <date value="2026-03-30T15:11:58+00:00"/>
+  <date value="2026-03-31T07:16:03+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -6993,6 +6993,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/fr-vs-allergy-intolerance-type-document"/>
+      </reference>
+      <name value="ValueSet - FR ValueSet Allergy Intolerance Type Document"/>
+      <description value="ValueSet contenant les codes SNOMED CT autorisés pour les types d'allergies et d'intolérances"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/fr-valueset-code-traitement"/>
       </reference>
       <name value="ValueSet - FR ValueSet Code Traitement"/>
@@ -7081,10 +7092,21 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/fr-vs-allergy-code"/>
+      </reference>
+      <name value="ValueSet – FR ValueSet Allergy Code Document"/>
+      <description value="Jeu de valeurs permettant de coder l’agent responsable d’une allergie :&#xA;- Médicaments : CIP ou UCD&#xA;- Substances : SMS&#xA;- Aliments : CIM-11 Chapitre X Extensions – Allergènes ou substances non médicinales&#xA;- Agents environnementaux ou physiques : idem CIM-11 Chapitre X Extensions&#xA;- Allergènes pouvant induire une contre-indication vaccinale : jdv-allergie-vaccin-cisis"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/fr-vs-allergy-substance"/>
       </reference>
       <name value="ValueSet – FR ValueSet Allergy Substance Document"/>
-      <description value="Jeu de valeurs permettant de coder l’agent responsable d’une allergie :&#xA;- Médicaments : CIP ou UCD&#xA;- Substances : SMS&#xA;- Aliments : CIM-11 Chapitre X Extensions – Allergènes ou substances non médicinales&#xA;- Agents environnementaux ou physiques : idem CIM-11 Chapitre X Extensions&#xA;- Allergènes pouvant induire une contre-indication vaccinale : jdv-allergie-vaccin-cisis"/>
+      <description value="Jeu de valeurs permettant de coder la substance responsable d’une allergie"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

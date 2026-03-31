@@ -9,16 +9,10 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-allergy-substance | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-03-30 | *Computable Name*:FRValueSetAllergySubstanceDocument |
+| Draft as of 2026-03-31 | *Computable Name*:FRValueSetAllergySubstanceDocument |
 
  
-Jeu de valeurs permettant de coder l’agent responsable d’une allergie : 
-* Médicaments : CIP ou UCD
-* Substances : SMS
-* Aliments : CIM-11 Chapitre X Extensions – Allergènes ou substances non médicinales
-* Agents environnementaux ou physiques : idem CIM-11 Chapitre X Extensions
-* Allergènes pouvant induire une contre-indication vaccinale : jdv-allergie-vaccin-cisis
- 
+Jeu de valeurs permettant de coder la substance responsable d’une allergie 
 
  **References** 
 
@@ -29,8 +23,6 @@ Jeu de valeurs permettant de coder l’agent responsable d’une allergie :
  
 
 ### Expansion
-
-No Expansion for this valueset (Unknown Code System)
 
 -------
 
@@ -58,7 +50,7 @@ No Expansion for this valueset (Unknown Code System)
   "name" : "FRValueSetAllergySubstanceDocument",
   "title" : "ValueSet – FR ValueSet Allergy Substance Document",
   "status" : "draft",
-  "date" : "2026-03-30T15:11:58+00:00",
+  "date" : "2026-03-31T07:16:03+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -67,7 +59,7 @@ No Expansion for this valueset (Unknown Code System)
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Jeu de valeurs permettant de coder l’agent responsable d’une allergie :\n- Médicaments : CIP ou UCD\n- Substances : SMS\n- Aliments : CIM-11 Chapitre X Extensions – Allergènes ou substances non médicinales\n- Agents environnementaux ou physiques : idem CIM-11 Chapitre X Extensions\n- Allergènes pouvant induire une contre-indication vaccinale : jdv-allergie-vaccin-cisis",
+  "description" : "Jeu de valeurs permettant de coder la substance responsable d’une allergie",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -77,16 +69,7 @@ No Expansion for this valueset (Unknown Code System)
   }],
   "compose" : {
     "include" : [{
-      "system" : "https://smt.esante.gouv.fr/terminologie-bdpm"
-    },
-    {
-      "system" : "https://smt.esante.gouv.fr/terminologie-cip_ucd"
-    },
-    {
-      "system" : "http://id.who.int/icd/release/11/mms"
-    },
-    {
-      "valueSet" : ["https://smt.esante.gouv.fr/fhir/ValueSet/jdv-allergie-vaccin-cisis"]
+      "system" : "https://smt.esante.gouv.fr/terminologie-sms"
     }]
   }
 }

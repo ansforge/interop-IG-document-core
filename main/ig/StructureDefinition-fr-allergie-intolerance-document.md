@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-allergie-intolerance-document | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-03-30 | *Computable Name*:FRAllergyIntoleranceDocument |
+| Draft as of 2026-03-31 | *Computable Name*:FRAllergyIntoleranceDocument |
 
  
 FRAllergyIntoleranceDocument est un profil utilisé pourdécrire une allergie ou une hypersensibilité non allergique ou une intolérance ou une idiosyncrasie. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-allergie-intolera
   "name" : "FRAllergyIntoleranceDocument",
   "title" : "AllergyIntolerance - FR Allergy and intolerance Document",
   "status" : "draft",
-  "date" : "2026-03-30T15:11:58+00:00",
+  "date" : "2026-03-31T07:16:03+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -104,6 +104,16 @@ Other representations of profile: [CSV](StructureDefinition-fr-allergie-intolera
       "mustSupport" : true
     },
     {
+      "id" : "AllergyIntolerance.type",
+      "path" : "AllergyIntolerance.type",
+      "short" : "Type d'allergie ou d'intolérance",
+      "mustSupport" : true,
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-allergy-intolerance-type-document"
+      }
+    },
+    {
       "id" : "AllergyIntolerance.criticality",
       "path" : "AllergyIntolerance.criticality",
       "short" : "Criticité",
@@ -112,12 +122,12 @@ Other representations of profile: [CSV](StructureDefinition-fr-allergie-intolera
     {
       "id" : "AllergyIntolerance.code",
       "path" : "AllergyIntolerance.code",
-      "short" : "Type d'allergie / hypersensibilité non allergique / intolérance / idiosyncrasie",
+      "short" : "agent allergique",
       "min" : 1,
       "mustSupport" : true,
       "binding" : {
-        "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-evenement-indesirable-previsible-cisis"
+        "strength" : "extensible",
+        "valueSet" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-allergy-code"
       }
     },
     {
@@ -171,10 +181,10 @@ Other representations of profile: [CSV](StructureDefinition-fr-allergie-intolera
     {
       "id" : "AllergyIntolerance.reaction.substance",
       "path" : "AllergyIntolerance.reaction.substance",
-      "short" : "Agent responsable de l'allergie / intolérance",
+      "short" : "Substance responsable de la réaction",
       "mustSupport" : true,
       "binding" : {
-        "strength" : "extensible",
+        "strength" : "required",
         "valueSet" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-allergy-substance"
       }
     },

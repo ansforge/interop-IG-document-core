@@ -102,6 +102,7 @@ package IG #DDDDDD{
              AllergyIntolerance.identifier => [1..None]
              AllergyIntolerance.clinicalStatus => [None..None]
              AllergyIntolerance.verificationStatus => [None..None]
+             AllergyIntolerance.type => [None..None]
              AllergyIntolerance.criticality => [None..None]
              AllergyIntolerance.code => [1..None]
              AllergyIntolerance.patient => [None..None]
@@ -7432,6 +7433,14 @@ package IG #DDDDDD{
         class FRValueSetActorTypeDocument  
 
      FRActorExtension -[#black,dotted,thickness=2]-> FRValueSetActorTypeDocument
+
+        class FRValueSetAllergyInoleranceTypeDocument  
+
+     FRAllergyIntoleranceDocument -[#black,dotted,thickness=2]-> FRValueSetAllergyInoleranceTypeDocument
+
+        class FRValueSetAllergyCodeDocument  
+
+     FRAllergyIntoleranceDocument -[#black,dotted,thickness=2]-> FRValueSetAllergyCodeDocument
 
         class FRValueSetAllergySubstanceDocument  
 
