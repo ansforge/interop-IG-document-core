@@ -16,4 +16,4 @@ Characteristics: #can-be-target
 // Not used in EHDSDosaging model
 * dispensateurPrescription 0..* FRLMPersonneStructure "Dispensateur"
 //additionalInstruction : CodeableConcept	
-* instructionsAuDispensateur 0..1 FRLMInstructionsAuDispensateur "Instructions au dispensateur"
+* instructionsAuDispensateur 0..1 string "Instructions au dispensateur"
