@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "FRDocumentCore"] ; # 
   fhir:title [ fhir:v "ANS IG document core"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-03-31T07:16:03+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-04-01T07:43:12+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -10688,72 +10688,6 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-instruction-au-patient> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-lm-instruction-au-patient" ]
-       ] ;
-       fhir:name [ fhir:v "Modèle logique métier - FR LM Instruction au patient" ] ;
-       fhir:description [ fhir:v "Instruction au patient" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-instructions-au-dispensateur> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-lm-instructions-au-dispensateur" ]
-       ] ;
-       fhir:name [ fhir:v "Modèle logique métier - FR LM Instructions au dispensateur" ] ;
-       fhir:description [ fhir:v "Instructions au dispensateur" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-instructions-patient> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-lm-instructions-patient" ]
-       ] ;
-       fhir:name [ fhir:v "Modèle logique métier - FR LM Instructions au patient" ] ;
-       fhir:description [ fhir:v "Instructions au patient" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-isolat-microbiologique> ;
          fhir:reference [ fhir:v "StructureDefinition/fr-lm-isolat-microbiologique" ]
        ] ;
@@ -10894,8 +10828,7 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
+       ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -11237,6 +11170,27 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-posologie> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-lm-posologie" ]
+       ] ;
+       fhir:name [ fhir:v "Modèle logique métier - FR LM Posologie" ] ;
+       fhir:description [ fhir:v "Posologie" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-prescription-entree> ;
          fhir:reference [ fhir:v "StructureDefinition/fr-lm-prescription-entree" ]
        ] ;
@@ -11418,28 +11372,6 @@
        ] ;
        fhir:name [ fhir:v "Modèle logique métier - FR LM Prélèvement" ] ;
        fhir:description [ fhir:v "Prélèvement" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-periode-de-renouvellement> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-lm-periode-de-renouvellement" ]
-       ] ;
-       fhir:name [ fhir:v "Modèle logique métier - FR LM Période de renouvellement de la prescription" ] ;
-       fhir:description [ fhir:v "Période de renouvellement de la prescription" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -11682,28 +11614,6 @@
        ] ;
        fhir:name [ fhir:v "Modèle logique métier - FR LM Référence interne" ] ;
        fhir:description [ fhir:v "Référence interne" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-reference-item-plan-traitement> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-lm-reference-item-plan-traitement" ]
-       ] ;
-       fhir:name [ fhir:v "Modèle logique métier - FR LM Référence item plan traitement" ] ;
-       fhir:description [ fhir:v "Référence item plan traitement" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -12408,50 +12318,6 @@
        ] ;
        fhir:name [ fhir:v "Modèle logique métier - FR LM Traitement Prescrit" ] ;
        fhir:description [ fhir:v "Traitement prescrit" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-traitement-prescrit-subordonne> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-lm-traitement-prescrit-subordonne" ]
-       ] ;
-       fhir:name [ fhir:v "Modèle logique métier - FR LM Traitement Prescrit Subordonnee" ] ;
-       fhir:description [ fhir:v "Traitement prescrit subordonne" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-traitement-subordonne> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-lm-traitement-subordonne" ]
-       ] ;
-       fhir:name [ fhir:v "Modèle logique métier - FR LM Traitement subordonné" ] ;
-       fhir:description [ fhir:v "Traitement subordonné" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

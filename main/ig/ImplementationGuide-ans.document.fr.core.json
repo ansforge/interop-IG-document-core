@@ -10,7 +10,7 @@
   "name" : "FRDocumentCore",
   "title" : "ANS IG document core",
   "status" : "draft",
-  "date" : "2026-03-31T07:16:03+00:00",
+  "date" : "2026-04-01T07:43:12+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -6172,45 +6172,6 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/fr-lm-instruction-au-patient"
-      },
-      "name" : "Modèle logique métier - FR LM Instruction au patient",
-      "description" : "Instruction au patient",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-lm-instructions-au-dispensateur"
-      },
-      "name" : "Modèle logique métier - FR LM Instructions au dispensateur",
-      "description" : "Instructions au dispensateur",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-lm-instructions-patient"
-      },
-      "name" : "Modèle logique métier - FR LM Instructions au patient",
-      "description" : "Instructions au patient",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/fr-lm-isolat-microbiologique"
       },
       "name" : "Modèle logique métier - FR LM Isolat microbiologique",
@@ -6293,8 +6254,7 @@
       },
       "name" : "Modèle logique métier - FR LM Notes du dispensateur",
       "description" : "Notes du dispensateur",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -6496,6 +6456,18 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/fr-lm-posologie"
+      },
+      "name" : "Modèle logique métier - FR LM Posologie",
+      "description" : "Posologie",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/fr-lm-prescription-entree"
       },
       "name" : "Modèle logique métier - FR LM Prescription",
@@ -6604,19 +6576,6 @@
       },
       "name" : "Modèle logique métier - FR LM Prélèvement",
       "description" : "Prélèvement",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-lm-periode-de-renouvellement"
-      },
-      "name" : "Modèle logique métier - FR LM Période de renouvellement de la prescription",
-      "description" : "Période de renouvellement de la prescription",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier des composants élémentaires"
     },
@@ -6760,19 +6719,6 @@
       },
       "name" : "Modèle logique métier - FR LM Référence interne",
       "description" : "Référence interne",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-lm-reference-item-plan-traitement"
-      },
-      "name" : "Modèle logique métier - FR LM Référence item plan traitement",
-      "description" : "Référence item plan traitement",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier des composants élémentaires"
     },
@@ -7189,32 +7135,6 @@
       },
       "name" : "Modèle logique métier - FR LM Traitement Prescrit",
       "description" : "Traitement prescrit",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-lm-traitement-prescrit-subordonne"
-      },
-      "name" : "Modèle logique métier - FR LM Traitement Prescrit Subordonnee",
-      "description" : "Traitement prescrit subordonne",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-lm-traitement-subordonne"
-      },
-      "name" : "Modèle logique métier - FR LM Traitement subordonné",
-      "description" : "Traitement subordonné",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier des composants élémentaires"
     },

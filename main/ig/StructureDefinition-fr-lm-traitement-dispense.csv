@@ -3,21 +3,19 @@
 ","Modèle logique métier - FR LM Traitement dispensé","Traitement dispense","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "fr-lm-traitement-dispense.identifiant","fr-lm-traitement-dispense.identifiant","","","",1,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier]]} {[]}
 ","Identifiant de l’entrée","Identifiant de l’entrée","","","","","","","","","",,,,,"",,,,"fr-lm-traitement-dispense.identifiant",1,1,"",""
-"fr-lm-traitement-dispense.code","fr-lm-traitement-dispense.code","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Complétude de la dispensation","Complétude de la dispensation","","","","","","","","","",,,,,"",,,,"fr-lm-traitement-dispense.code",0,1,"",""
-"fr-lm-traitement-dispense.description","fr-lm-traitement-dispense.description","","","",1,1,"","","","Narrative {[]} {[]}
-","Texte de l'entrée","Texte de l'entrée","","","","","","","","","",,,,,"",,,,"fr-lm-traitement-dispense.description",1,1,"",""
+"fr-lm-traitement-dispense.completude","fr-lm-traitement-dispense.completude","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Complétude de la dispensation","Complétude de la dispensation","","","","","","","","","",,"","Valeur issue du JDV_CompletudeDispensation_CISIS (1.2.250.1.213.1.1.5.765)","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-completude-dispensation-cisis","",,,,"fr-lm-traitement-dispense.completude",0,1,"",""
 "fr-lm-traitement-dispense.quantite","fr-lm-traitement-dispense.quantite","","","",1,1,"","","","Quantity {[]} {[]}
 ","Quantité : Unité issue de EDQM Packaging","Quantité : Unité issue de EDQM Packaging","","","","","","","","","",,,,,"",,,,"fr-lm-traitement-dispense.quantite",1,1,"",""
 "fr-lm-traitement-dispense.medicamentDelivre","fr-lm-traitement-dispense.medicamentDelivre","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-produit-sante {[]} {[]}
 ","Médicament délivré","Médicament délivré","","","","","","","","","",,,,,"",,,,"fr-lm-traitement-dispense.medicamentDelivre",1,1,"",""
 "fr-lm-traitement-dispense.referencePrescription","fr-lm-traitement-dispense.referencePrescription","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-reference-item-prescription {[]} {[]}
 ","Référence de la prescription","Référence de la prescription","","","","","","","","","",,,,,"",,,,"fr-lm-traitement-dispense.referencePrescription",0,1,"",""
-"fr-lm-traitement-dispense.traitement","fr-lm-traitement-dispense.traitement","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-traitement {[]} {[]}
-","Posologie","Posologie","","","","","","","","","",,,,,"",,,,"fr-lm-traitement-dispense.traitement",0,1,"",""
-"fr-lm-traitement-dispense.instructionsPatient","fr-lm-traitement-dispense.instructionsPatient","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-instructions-patient {[]} {[]}
-","Instructions au patient","Instructions au patient","","","","","","","","","",,,,,"",,,,"fr-lm-traitement-dispense.instructionsPatient",0,1,"",""
-"fr-lm-traitement-dispense.notesDispensateur","fr-lm-traitement-dispense.notesDispensateur","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-notes-dispensateur {[]} {[]}
+"fr-lm-traitement-dispense.posologie","fr-lm-traitement-dispense.posologie","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-posologie {[]} {[]}
+","Posologie","Posologie","","","","","","","","","",,,,,"",,,,"fr-lm-traitement-dispense.posologie",0,1,"",""
+"fr-lm-traitement-dispense.notesDispensateur","fr-lm-traitement-dispense.notesDispensateur","","","",0,1,"","","","string {[]} {[]}
 ","Notes du dispensateur","Notes du dispensateur","","","","","","","","","",,,,,"",,,,"fr-lm-traitement-dispense.notesDispensateur",0,1,"",""
-"fr-lm-traitement-dispense.substitution","fr-lm-traitement-dispense.substitution","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-acte-substitution {[]} {[]}
-","Substitution","Substitution","","","","","","","","","",,,,,"",,,,"fr-lm-traitement-dispense.substitution",0,1,"",""
+"fr-lm-traitement-dispense.autorisationSubstitution","fr-lm-traitement-dispense.autorisationSubstitution","","","",1,1,"","","","Base {[]} {[]}
+","Autorisation de substitution","Autorisation de substitution","","","","","","","","","",,,,,"",,,,"fr-lm-traitement-dispense.autorisationSubstitution",1,1,"",""
+"fr-lm-traitement-dispense.autorisationSubstitution.type","fr-lm-traitement-dispense.autorisationSubstitution.type","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Type de substitution jdv-hl7-v3-ActSubstanceAdminSubstitutionCode-cisis (2.16.840.1.113883.1.11.16621)","Type de substitution jdv-hl7-v3-ActSubstanceAdminSubstitutionCode-cisis (2.16.840.1.113883.1.11.16621)","","","","","","","","","",,"","HL7_SubstanceAdminSubstitution","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdminSubstitutionCode-cisis","",,,,"fr-lm-traitement-dispense.autorisationSubstitution.type",0,1,"",""

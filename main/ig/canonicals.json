@@ -2617,27 +2617,6 @@
   "name" : "FRLMInformationsCliniques"
 },
 {
-  "id" : "fr-lm-instruction-au-patient",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-instruction-au-patient",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRLMInstructionAuPatient"
-},
-{
-  "id" : "fr-lm-instructions-au-dispensateur",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-instructions-au-dispensateur",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRLMInstructionsAuDispensateur"
-},
-{
-  "id" : "fr-lm-instructions-patient",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-instructions-patient",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRLMInstructionsPatient"
-},
-{
   "id" : "fr-lm-isolat-microbiologique",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-isolat-microbiologique",
@@ -2764,13 +2743,6 @@
   "name" : "FRLMPerformer"
 },
 {
-  "id" : "fr-lm-periode-de-renouvellement",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-periode-de-renouvellement",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRLMPeriodeDeRenouvellement"
-},
-{
   "id" : "fr-lm-personne-structure",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure",
@@ -2797,6 +2769,13 @@
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-points-de-vigilances-non-code",
   "version" : "0.1.0-snapsnot",
   "name" : "FRLMPointsDeVigilancesNonCode"
+},
+{
+  "id" : "fr-lm-posologie",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-posologie",
+  "version" : "0.1.0-snapsnot",
+  "name" : "FRLMPosologie"
 },
 {
   "id" : "fr-lm-prelevement",
@@ -2909,13 +2888,6 @@
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-reference-interne",
   "version" : "0.1.0-snapsnot",
   "name" : "FRLMReferenceInterne"
-},
-{
-  "id" : "fr-lm-reference-item-plan-traitement",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-reference-item-plan-traitement",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRLMReferenceItemPlanTraitement"
 },
 {
   "id" : "fr-lm-reference-item-prescription",
@@ -3163,25 +3135,11 @@
   "name" : "FRLMTraitementPrescrit"
 },
 {
-  "id" : "fr-lm-traitement-prescrit-subordonne",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-traitement-prescrit-subordonne",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRLMTraitementPrescritSubordonne"
-},
-{
   "id" : "fr-lm-traitement-sortie",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-traitement-sortie",
   "version" : "0.1.0-snapsnot",
   "name" : "FRLMTraitementSortie"
-},
-{
-  "id" : "fr-lm-traitement-subordonne",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-traitement-subordonne",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRLMTraitementSubordonne"
 },
 {
   "id" : "fr-lm-traitements",

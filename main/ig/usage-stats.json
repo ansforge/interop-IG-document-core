@@ -595,8 +595,6 @@
       "fr-lm-image-illustrative",
       "fr-lm-notes-dispensateur",
       "fr-lm-probleme.reference.externalDocument",
-      "fr-lm-reference-item-plan-traitement",
-      "fr-lm-reference-item-plan-traitement.reference.externalDocument",
       "fr-lm-reference-item-prescription",
       "fr-lm-reference-item-prescription.reference.externalDocument",
       "fr-lm-references-externes.reference.externalDocument",
@@ -624,7 +622,8 @@
       "Observation.component"
     ],
     "http://hl7.org/fhir/StructureDefinition/organization-period": [
-      "Organization"
+      "Organization",
+      "fr-lm-traitement-prescrit"
     ],
     "http://hl7.org/fhir/StructureDefinition/patient-birthPlace": [
       "Patient"

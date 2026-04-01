@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-traitement-dispense | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-03-31 | *Computable Name*:FRLMTraitementDispense |
+| Draft as of 2026-04-01 | *Computable Name*:FRLMTraitementDispense |
 
  
 Traitement dispense 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-traitement-dis
   "name" : "FRLMTraitementDispense",
   "title" : "Modèle logique métier - FR LM Traitement dispensé",
   "status" : "draft",
-  "date" : "2026-03-31T07:16:03+00:00",
+  "date" : "2026-04-01T07:43:12+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -88,26 +88,19 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-traitement-dis
       }]
     },
     {
-      "id" : "fr-lm-traitement-dispense.code",
-      "path" : "fr-lm-traitement-dispense.code",
+      "id" : "fr-lm-traitement-dispense.completude",
+      "path" : "fr-lm-traitement-dispense.completude",
       "short" : "Complétude de la dispensation",
       "definition" : "Complétude de la dispensation",
       "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "CodeableConcept"
-      }]
-    },
-    {
-      "id" : "fr-lm-traitement-dispense.description",
-      "path" : "fr-lm-traitement-dispense.description",
-      "short" : "Texte de l'entrée",
-      "definition" : "Texte de l'entrée",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "Narrative"
-      }]
+      }],
+      "binding" : {
+        "description" : "Valeur issue du JDV_CompletudeDispensation_CISIS (1.2.250.1.213.1.1.5.765)",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-completude-dispensation-cisis"
+      }
     },
     {
       "id" : "fr-lm-traitement-dispense.quantite",
@@ -143,25 +136,14 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-traitement-dis
       }]
     },
     {
-      "id" : "fr-lm-traitement-dispense.traitement",
-      "path" : "fr-lm-traitement-dispense.traitement",
+      "id" : "fr-lm-traitement-dispense.posologie",
+      "path" : "fr-lm-traitement-dispense.posologie",
       "short" : "Posologie",
       "definition" : "Posologie",
       "min" : 0,
       "max" : "1",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-traitement"
-      }]
-    },
-    {
-      "id" : "fr-lm-traitement-dispense.instructionsPatient",
-      "path" : "fr-lm-traitement-dispense.instructionsPatient",
-      "short" : "Instructions au patient",
-      "definition" : "Instructions au patient",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-instructions-patient"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-posologie"
       }]
     },
     {
@@ -172,19 +154,34 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-traitement-dis
       "min" : 0,
       "max" : "1",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-notes-dispensateur"
+        "code" : "string"
       }]
     },
     {
-      "id" : "fr-lm-traitement-dispense.substitution",
-      "path" : "fr-lm-traitement-dispense.substitution",
-      "short" : "Substitution",
-      "definition" : "Substitution",
+      "id" : "fr-lm-traitement-dispense.autorisationSubstitution",
+      "path" : "fr-lm-traitement-dispense.autorisationSubstitution",
+      "short" : "Autorisation de substitution",
+      "definition" : "Autorisation de substitution",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Base"
+      }]
+    },
+    {
+      "id" : "fr-lm-traitement-dispense.autorisationSubstitution.type",
+      "path" : "fr-lm-traitement-dispense.autorisationSubstitution.type",
+      "short" : "Type de substitution jdv-hl7-v3-ActSubstanceAdminSubstitutionCode-cisis (2.16.840.1.113883.1.11.16621)",
+      "definition" : "Type de substitution jdv-hl7-v3-ActSubstanceAdminSubstitutionCode-cisis (2.16.840.1.113883.1.11.16621)",
       "min" : 0,
       "max" : "1",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-acte-substitution"
-      }]
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "description" : "HL7_SubstanceAdminSubstitution",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdminSubstitutionCode-cisis"
+      }
     }]
   }
 }

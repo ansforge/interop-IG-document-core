@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-reference-interne | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-03-31 | *Computable Name*:FRLMReferenceInterne |
+| Draft as of 2026-04-01 | *Computable Name*:FRLMReferenceInterne |
 
  
 Référence interne 
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Acte](StructureDefinition-fr-lm-acte.md), [Modèle logique métier - FR LM Evaluation](StructureDefinition-fr-lm-evaluation.md), [Modèle logique métier - FR LM Traitement Prescrit](StructureDefinition-fr-lm-traitement-prescrit.md) and [Modèle logique métier - FR LM Traitement](StructureDefinition-fr-lm-traitement.md)
+* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Acte](StructureDefinition-fr-lm-acte.md) and [Modèle logique métier - FR LM Evaluation](StructureDefinition-fr-lm-evaluation.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-reference-interne)
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-reference-inte
   "name" : "FRLMReferenceInterne",
   "title" : "Modèle logique métier - FR LM Référence interne",
   "status" : "draft",
-  "date" : "2026-03-31T07:16:03+00:00",
+  "date" : "2026-04-01T07:43:12+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

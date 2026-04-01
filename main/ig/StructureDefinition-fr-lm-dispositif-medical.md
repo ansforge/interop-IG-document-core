@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dispositif-medical | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-03-31 | *Computable Name*:FRLMDispositifMedical |
+| Draft as of 2026-04-01 | *Computable Name*:FRLMDispositifMedical |
 
  
 Dispositif médical 
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Dispositif médical](StructureDefinition-fr-lm-dispositif-medical-entree.md) and [Modèle logique métier - FR LM Prélèvement](StructureDefinition-fr-lm-prelevement.md)
+* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Dispositif médical](StructureDefinition-fr-lm-dispositif-medical-entree.md), [Modèle logique métier - FR LM Prélèvement](StructureDefinition-fr-lm-prelevement.md) and [Modèle logique métier - FR LM Produit de santé](StructureDefinition-fr-lm-produit-sante.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-dispositif-medical)
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-dispositif-med
   "name" : "FRLMDispositifMedical",
   "title" : "Modèle logique métier - Dispositif médical",
   "status" : "draft",
-  "date" : "2026-03-31T07:16:03+00:00",
+  "date" : "2026-04-01T07:43:12+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

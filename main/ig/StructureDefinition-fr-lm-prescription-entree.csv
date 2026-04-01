@@ -11,5 +11,5 @@
 ","Prescripteur","Prescripteur","","","","","","","","","",,,,,"",,,,"fr-lm-prescription-entree.auteurPrescription",0,1,"",""
 "fr-lm-prescription-entree.dispensateurPrescription","fr-lm-prescription-entree.dispensateurPrescription","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure {[]} {[]}
 ","Dispensateur","Dispensateur","","","","","","","","","",,,,,"",,,,"fr-lm-prescription-entree.dispensateurPrescription",0,*,"",""
-"fr-lm-prescription-entree.instructionsAuDispensateur","fr-lm-prescription-entree.instructionsAuDispensateur","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-instructions-au-dispensateur {[]} {[]}
+"fr-lm-prescription-entree.instructionsAuDispensateur","fr-lm-prescription-entree.instructionsAuDispensateur","","","",0,1,"","","","string {[]} {[]}
 ","Instructions au dispensateur","Instructions au dispensateur","","","","","","","","","",,,,,"",,,,"fr-lm-prescription-entree.instructionsAuDispensateur",0,1,"",""
