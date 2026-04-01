@@ -8,4 +8,4 @@ Characteristics: #can-be-target
 * titreSection 1..1 
 * sousSection 0..0
 * entree
-  * habitusModeDeVieEntry 0..* FRLMHabitusModeDeVie "Entrée Habitus, Mode de vie"
+  * habitusModeDeVieEntry 0..* FRLMHabitusModeDeVieEntree "Entrée Habitus, Mode de vie"
