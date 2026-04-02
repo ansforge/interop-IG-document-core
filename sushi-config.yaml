@@ -185,7 +185,6 @@ groups:
     resources:
       - StructureDefinition/fr-lm-acte
       - StructureDefinition/fr-lm-antecedent-familial-observe
-      - StructureDefinition/fr-lm-antecedents-familiaux-entree
       - StructureDefinition/fr-lm-certitude
       - StructureDefinition/fr-lm-criticite
       - StructureDefinition/fr-lm-commentaire-er

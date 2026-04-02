@@ -45,7 +45,7 @@ Description: "Eléments métier du corps d'un document contenant les sections du
 * signesVitaux 0..* FRLMSignesVitaux "Section Signes vitaux"
 * statutDocument 0..* FRLMStatutDocument "Section Statut du document"
 * statutFonctionnel 0..* FRLMStatutFonctionnel "Section Statut fonctionnel"
-* traitements 0..* FRLMTraitement "Section Traitement"
+* traitements 0..* FRLMTraitements "Section Traitement"
 * traitementSortie 0..* FRLMTraitementSortie "Section Traitement à la sortie"
 * traitementsAdministres 0..* FRLMTraitementsAdministres "Section Traitements administrés"
 * vaccinations 0..* FRLMVaccinations "Section Vaccinations"
