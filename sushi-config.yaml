@@ -227,7 +227,6 @@ groups:
       - StructureDefinition/fr-lm-rang-vaccination
       - StructureDefinition/fr-lm-resultats-entree
       - StructureDefinition/fr-lm-resultats-examens-biologie-medicale
-      - StructureDefinition/fr-lm-signe-vital
       - StructureDefinition/fr-lm-signe-vital-observe
       - StructureDefinition/fr-lm-statut
       - StructureDefinition/fr-lm-traitement
