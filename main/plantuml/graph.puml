@@ -6010,17 +6010,6 @@ package IG #DDDDDD{
              fr-lm-signe-vital-observe.auteur => [0..1]
         } 
 
-        class FRLMSigneVital{
-
-             fr-lm-signe-vital => [None..None]
-             fr-lm-signe-vital.identifiant => [1..1]
-             fr-lm-signe-vital.code => [1..1]
-             fr-lm-signe-vital.statut => [1..1]
-             fr-lm-signe-vital.date => [1..1]
-             fr-lm-signe-vital.auteur => [0..*]
-             fr-lm-signe-vital.signeVital => [1..*]
-        } 
-
         class FRLMSignesVitaux{
 
              fr-lm-signes-vitaux => [None..None]
@@ -8715,10 +8704,6 @@ package "Ressources de base" #palegreen {
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
     class095a1b43effec73955e31e790438de49 --> FRLMSigneVitalObserve
-
- class "Base" as  class095a1b43effec73955e31e790438de49 
-
-    class095a1b43effec73955e31e790438de49 --> FRLMSigneVital
 
  class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-section" as  class5dabea989fe22a905d8f89cc210527f2 
 

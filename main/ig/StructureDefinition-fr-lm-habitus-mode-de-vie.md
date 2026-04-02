@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-habitus-mode-de-vie | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-01 | *Computable Name*:FRLMHabitusModeDeVie |
+| Draft as of 2026-04-02 | *Computable Name*:FRLMHabitusModeDeVie |
 
  
 Section Habitus et modes de vie 
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Corps document](StructureDefinition-fr-lm-corps-document.md) and [Modèle logique métier - FR LM Habitus et modes de vie](StructureDefinition-fr-lm-habitus-mode-de-vie.md)
+* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Corps document](StructureDefinition-fr-lm-corps-document.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-habitus-mode-de-vie)
 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-habitus-mode-d
   "name" : "FRLMHabitusModeDeVie",
   "title" : "Modèle logique métier - FR LM Habitus et modes de vie",
   "status" : "draft",
-  "date" : "2026-04-01T07:43:12+00:00",
+  "date" : "2026-04-02T07:21:27+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -97,7 +97,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-habitus-mode-d
       "min" : 0,
       "max" : "*",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-habitus-mode-de-vie"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-habitus-mode-de-vie-entree"
       }]
     }]
   }

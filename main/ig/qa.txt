@@ -1,9 +1,9 @@
 FRDocumentCore : Validation Results
 =========================================
 
-err = 1496, warn = 5466, info = 1135
+err = 1494, warn = 5453, info = 1135
 IG Publisher Version: 2.1.2 Out of date - current version is 2.2.4
-Generated Wed Apr 01 08:01:19 UTC 2026. FHIR version 4.0.1 for ans.document.fr.core#0.1.0-snapsnot (canonical = https://interop.esante.gouv.fr/ig/document/core)
+Generated Thu Apr 02 07:38:09 UTC 2026. FHIR version 4.0.1 for ans.document.fr.core#0.1.0-snapsnot (canonical = https://interop.esante.gouv.fr/ig/document/core)
  Build Errors : 13 / 7 / 0
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRActLMCDAFHIR : 1 / 6 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRActSubstitutionLMCDAFHIR : 1 / 6 / 1
@@ -61,7 +61,7 @@ Generated Wed Apr 01 08:01:19 UTC 2026. FHIR version 4.0.1 for ans.document.fr.c
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRObservationSurveyPannelLMCDAFHIR : 1 / 6 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRObservationTransfusionAccidentsLMCDAFHIR : 1 / 6 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRObservationVitalSignsLMCDAFHIR : 1 / 6 / 1
- /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRObservationVitalSignsPanelLMCDAFHIR : 1 / 7 / 1
+ /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRObservationVitalSignsPanelLMCDAFHIR : 1 / 8 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRObservationWorkRelatedAccidentLMCDAFHIR : 1 / 6 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRParticipantCorpsLMCDAFHIR : 1 / 8 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRPatientWithNonHumanSubjectLMCDAFHIR : 1 / 11 / 1
@@ -136,7 +136,7 @@ Generated Wed Apr 01 08:01:19 UTC 2026. FHIR version 4.0.1 for ans.document.fr.c
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-mappingSystemeFHIR : 1 / 7 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-mappingValidateurCDAFHIR : 1 / 5 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-mappingmodelemetierCDAFHIR : 1 / 8 / 1
- /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ImplementationGuide-ans.document.fr.core : 522 / 13 / 2
+ /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ImplementationGuide-ans.document.fr.core : 521 / 13 / 2
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-cisis-addr : 2 / 2 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-cisis-telecom : 2 / 1 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-Observation-vital-signs-panel-document : 1 / 1 / 2
@@ -450,7 +450,6 @@ Generated Wed Apr 01 08:01:19 UTC 2026. FHIR version 4.0.1 for ans.document.fr.c
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-lm-section : 1 / 12 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-lm-serie-imagerie : 1 / 20 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-lm-severite : 1 / 12 / 1
- /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-lm-signe-vital : 1 / 14 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-lm-signe-vital-observe : 1 / 22 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-lm-signes-vitaux : 1 / 12 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-lm-sop-instance : 3 / 14 / 1
@@ -1039,6 +1038,7 @@ WARNING: ConceptMap/FRObservationVitalSignsLMCDAFHIR: ConceptMap: Published conc
 WARNING: ConceptMap/FRObservationVitalSignsLMCDAFHIR: ConceptMap: Published concept maps SHOULD conform to the ShareableConceptMap profile, which says that the element ConceptMap.experimental is mandatory, but it is not present
 == fsh-generated/resources/ConceptMap-FRObservationVitalSignsPanelLMCDAFHIR.json ==
 ERROR: ConceptMap/FRObservationVitalSignsPanelLMCDAFHIR: ConceptMap.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
+WARNING: ConceptMap/FRObservationVitalSignsPanelLMCDAFHIR: ConceptMap.group[0].source: No definition could be found for URL value 'https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-signe-vital'
 WARNING: ConceptMap/FRObservationVitalSignsPanelLMCDAFHIR: ConceptMap.group[1].target: No definition could be found for URL value 'https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-vital-signs-panel-document'
 WARNING: ConceptMap/FRObservationVitalSignsPanelLMCDAFHIR: ConceptMap.group[0].source: The Source Code System https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-signe-vital is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
 WARNING: ConceptMap/FRObservationVitalSignsPanelLMCDAFHIR: ConceptMap.group[0].target: The Target Code System https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-signes-vitaux is not fully defined and populated, and no targetScope is specified, so the target code checking will not be performed
@@ -2231,37 +2231,37 @@ ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[471].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[472].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[473].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[474].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[475].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[476].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[477].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[474].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[475].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[476].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[477].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[478].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[479].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[480].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[481].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[482].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[483].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[484].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[480].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[481].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[482].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[483].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[484].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[485].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[486].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[487].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[488].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[487].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[488].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[489].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[490].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[491].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[492].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[493].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[493].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[494].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[495].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[496].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[496].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[497].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[498].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[499].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[500].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[501].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[502].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[503].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[504].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[500].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[501].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[502].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[503].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[504].groupingId: id value 'Ressources FHIR corps' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[505].groupingId: id value 'Ressources FHIR corps' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[506].groupingId: id value 'Ressources FHIR corps' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[507].groupingId: id value 'Ressources FHIR corps' is not valid
@@ -2279,8 +2279,8 @@ ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[519].groupingId: id value 'Ressources FHIR corps' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[520].groupingId: id value 'Ressources FHIR corps' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[521].groupingId: id value 'Ressources FHIR corps' is not valid
+WARNING: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[522].description: value should not start or finish with whitespace '\n - FRObservationVitalSignsDocument permet d'indiquer les informations détaillées relatives à une mesure clinique spécifique.\n - Il est basée sur la ressource Observation qu'elle spécialise en portant des contraintes sur les vocabulaires des éléments 'code' et 'value'.'
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[522].groupingId: id value 'Ressources FHIR corps' is not valid
-WARNING: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[523].description: value should not start or finish with whitespace '\n - FRObservationVitalSignsDocument permet d'indiquer les informations détaillées relatives à une mesure clinique spécifique.\n - Il est basée sur la ressource Observation qu'elle spécialise en portant des contraintes sur les vocabulaires des éléments 'code' et 'value'.'
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[523].groupingId: id value 'Ressources FHIR corps' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[524].groupingId: id value 'Ressources FHIR corps' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[525].groupingId: id value 'Ressources FHIR corps' is not valid
@@ -2288,8 +2288,7 @@ ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[527].groupingId: id value 'Ressources FHIR corps' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[528].groupingId: id value 'Ressources FHIR corps' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[529].groupingId: id value 'Ressources FHIR corps' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[530].groupingId: id value 'Ressources FHIR corps' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[545].reference: Unable to resolve resource with reference 'Binary/BIO-CR-BIO-2024.01-glycemie-mole'
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[544].reference: Unable to resolve resource with reference 'Binary/BIO-CR-BIO-2024.01-glycemie-mole'
 WARNING: ImplementationGuide/ans.document.fr.core: ImplementationGuide.dependsOn[1]: The ImplementationGuide is based on FHIR version 4.0.1 but package hl7.cda.uv.core#2.0.1-sd is based on FHIR version 5.0.0. In general, this version mismatch should be avoided - some tools will try to make this work with variable degrees of success, but others will not even try
 WARNING: ImplementationGuide/ans.document.fr.core: ImplementationGuide.dependsOn[3]: The ImplementationGuide uses package hl7.fhir.fr.core#2.1.0 released on 2024-09-04, but the most recent appropriate version is 2.2.0. This reference is getting old and the more recent version should be considered
 WARNING: ImplementationGuide/ans.document.fr.core: ImplementationGuide.dependsOn[7]: The ImplementationGuide is based on FHIR version 4.0.1 but package ihe.pharm.mpd#1.0.0-comment-2 is based on FHIR version 5.0.0. In general, this version mismatch should be avoided - some tools will try to make this work with variable degrees of success, but others will not even try
@@ -6846,22 +6845,6 @@ WARNING: StructureDefinition/fr-lm-severite: StructureDefinition.differential.el
 WARNING: StructureDefinition/fr-lm-severite: StructureDefinition.differential.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/fr-lm-severite: StructureDefinition.differential.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/fr-lm-severite: StructureDefinition.differential.element[5]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-== fsh-generated/resources/StructureDefinition-fr-lm-signe-vital.json ==
-ERROR: StructureDefinition/fr-lm-signe-vital: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
-WARNING: StructureDefinition/fr-lm-signe-vital: StructureDefinition.snapshot.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/fr-lm-signe-vital: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/fr-lm-signe-vital: StructureDefinition.snapshot.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/fr-lm-signe-vital: StructureDefinition.snapshot.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/fr-lm-signe-vital: StructureDefinition.snapshot.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/fr-lm-signe-vital: StructureDefinition.snapshot.element[5]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/fr-lm-signe-vital: StructureDefinition.snapshot.element[6]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/fr-lm-signe-vital: StructureDefinition.differential.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/fr-lm-signe-vital: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/fr-lm-signe-vital: StructureDefinition.differential.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/fr-lm-signe-vital: StructureDefinition.differential.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/fr-lm-signe-vital: StructureDefinition.differential.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/fr-lm-signe-vital: StructureDefinition.differential.element[5]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/fr-lm-signe-vital: StructureDefinition.differential.element[6]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 == fsh-generated/resources/StructureDefinition-fr-lm-signe-vital-observe.json ==
 ERROR: StructureDefinition/fr-lm-signe-vital-observe: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 WARNING: StructureDefinition/fr-lm-signe-vital-observe: StructureDefinition.snapshot.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
@@ -7479,8 +7462,8 @@ ERROR: StructureDefinition/fr-observation-administration-blood-derivatives-docum
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-administration-blood-derivatives-document'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-fr-observation-antenatal-testing-surveillance-battery-document.json ==
 ERROR: StructureDefinition/fr-observation-antenatal-testing-surveillance-battery-document: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
-ERROR: StructureDefinition/fr-observation-antenatal-testing-surveillance-battery-document: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'XX-ANTENATALTESTINGBATTERY' in the CodeSystem 'http://loinc.org' version '2.81'
-ERROR: StructureDefinition/fr-observation-antenatal-testing-surveillance-battery-document: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'XX-ANTENATALTESTINGBATTERY' in the CodeSystem 'http://loinc.org' version '2.81'
+ERROR: StructureDefinition/fr-observation-antenatal-testing-surveillance-battery-document: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'XX-ANTENATALTESTINGBATTERY' in the CodeSystem 'http://loinc.org' version '2.82'
+ERROR: StructureDefinition/fr-observation-antenatal-testing-surveillance-battery-document: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'XX-ANTENATALTESTINGBATTERY' in the CodeSystem 'http://loinc.org' version '2.82'
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-antenatal-testing-surveillance-battery-document'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-fr-observation-birth-event-document.json ==
 ERROR: StructureDefinition/fr-observation-birth-event-document: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
@@ -7727,8 +7710,8 @@ WARNING: ValueSet/fr-valueset-reference-externe: ValueSet: Published value sets 
 ERROR: ValueSet/fr-valueset-status-code: ValueSet.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 ERROR: ValueSet/fr-valueset-status-code: ValueSet.compose.include[0]: The system 'https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis' is actually a value set, which itself refers to the system 'http://terminology.hl7.org/CodeSystem/v3-ActStatus' so that may be what is intended here
 WARNING: ValueSet/fr-valueset-status-code: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: ValueSet.where(id = 'fr-valueset-status-code'): Error from https://smt.esante.gouv.fr/fhir: Error: [a36068d5-9bf0-42ef-8deb-1b279b5728f3]: A usable code system with URL https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis could not be resolved.
-Information: X-Request-Id: d1cff859-84e7-4cfc-ab66-09c14c326822
+WARNING: ValueSet.where(id = 'fr-valueset-status-code'): Error from https://smt.esante.gouv.fr/fhir: Error: [a588f4dd-c330-456a-95e2-3aa81d6320f7]: A usable code system with URL https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis could not be resolved.
+Information: X-Request-Id: d67fdac8-7c8a-44da-b93f-0f84e26b2207
 == fsh-generated/resources/ValueSet-fr-valueset-statut-du-probleme.json ==
 ERROR: ValueSet/fr-valueset-statut-du-probleme: ValueSet.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 WARNING: ValueSet/fr-valueset-statut-du-probleme: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
@@ -7763,8 +7746,8 @@ WARNING: ValueSet/fr-vs-evaluation-type: ValueSet: Published value sets SHOULD c
 ERROR: ValueSet/fr-vs-medication-translation-document: ValueSet.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 WARNING: ValueSet/fr-vs-medication-translation-document: ValueSet.compose.include[1].system: No definition could be found for URL value 'https://smt.esante.gouv.fr/terminologie-cip_ucd'
 WARNING: ValueSet/fr-vs-medication-translation-document: ValueSet.compose.include[3].system: No definition could be found for URL value 'https://smt.esante.gouv.fr/terminologie-medicabase'
-WARNING: ValueSet.where(id = 'fr-vs-medication-translation-document'): Error from https://smt.esante.gouv.fr/fhir: Error: [39a131b0-bf5c-4ee1-bac8-c2d3eb4eec4a]: Could not find the code system https://smt.esante.gouv.fr/terminologie-cip_ucd|2026-03
-Information: X-Request-Id: 58577f05-fe12-40a3-9015-0d66a82177dc
+WARNING: ValueSet.where(id = 'fr-vs-medication-translation-document'): Error from https://smt.esante.gouv.fr/fhir: Error: [19d3d386-a9bf-477a-bfb2-a6a5a151a649]: Could not find the code system https://smt.esante.gouv.fr/terminologie-cip_ucd|2026-04
+Information: X-Request-Id: 5ac94391-49b2-4ceb-b941-da7bfb7c4127
 == fsh-generated/resources/ValueSet-fr-vs-procedure-code.json ==
 ERROR: ValueSet/fr-vs-procedure-code: ValueSet.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 WARNING: ValueSet/fr-vs-procedure-code: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present

@@ -172,7 +172,6 @@ Modèles de données métier représentant les concepts élémentaires, modélis
 | [Modèle logique métier - FR LM Références externes](StructureDefinition-fr-lm-references-externes.md) | Références externes |
 | [Modèle logique métier - FR LM Résultat d'examens de biologie / élement clinique pertinent](StructureDefinition-fr-lm-resultat-examens-biologie-element-clinique-pertinent.md) | Résultat d’examens de biologie / élement clinique pertinent |
 | [Modèle logique métier - FR LM Serie imagerie](StructureDefinition-fr-lm-serie-imagerie.md) | Serie imagerie |
-| [Modèle logique métier - FR LM Signe vital](StructureDefinition-fr-lm-signe-vital.md) | Signe vital |
 | [Modèle logique métier - FR LM Signe vital observé](StructureDefinition-fr-lm-signe-vital-observe.md) | Signe vital observé |
 | [Modèle logique métier - FR LM SOP Instance](StructureDefinition-fr-lm-sop-instance.md) | SOP Instance |
 | [Modèle logique métier - FR LM Statut](StructureDefinition-fr-lm-statut.md) | Statut |

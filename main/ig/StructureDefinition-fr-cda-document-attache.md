@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-document-attache | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-01 | *Computable Name*:FRCDADocumentAttache |
+| Draft as of 2026-04-02 | *Computable Name*:FRCDADocumentAttache |
 
  
 Entrée FR-Document-attache: L’entrée Document Attaché est une entrée de type organiser qui permet de regrouper dans une même entrée les éléments qui contiennent : 
@@ -69,7 +69,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-document-atta
   "name" : "FRCDADocumentAttache",
   "title" : "CDA - FR Document attache",
   "status" : "draft",
-  "date" : "2026-04-01T07:43:12+00:00",
+  "date" : "2026-04-02T07:21:27+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

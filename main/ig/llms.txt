@@ -213,7 +213,6 @@
 * [Modèle logique métier - FR LM Serie imagerie](StructureDefinition-fr-lm-serie-imagerie.md)
 * [Modèle logique métier - FR LM Sévérité](StructureDefinition-fr-lm-severite.md)
 * [Modèle logique métier - FR LM Signe vital observé](StructureDefinition-fr-lm-signe-vital-observe.md)
-* [Modèle logique métier - FR LM Signe vital](StructureDefinition-fr-lm-signe-vital.md)
 * [Modèle logique métier - FR LM Signes vitaux](StructureDefinition-fr-lm-signes-vitaux.md)
 * [Modèle logique métier - FR LM SOP Instance](StructureDefinition-fr-lm-sop-instance.md)
 * [Modèle logique métier - FR LM Statut clinique du patient](StructureDefinition-fr-lm-statut-clinique-patient.md)

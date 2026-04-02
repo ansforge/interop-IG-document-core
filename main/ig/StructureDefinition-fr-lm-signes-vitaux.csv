@@ -11,5 +11,5 @@
 ","Sous-sections","Sous-sections","","","","","","","","","",,,,,"",,,,"fr-lm-section.sousSection",0,*,"",""
 "fr-lm-signes-vitaux.entree","fr-lm-signes-vitaux.entree","","","",1,*,"","","","Base {[]} {[]}
 ","Entrées","Entrées","","","","","","","","","",,,,,"",,,,"fr-lm-section.entree",0,*,"",""
-"fr-lm-signes-vitaux.entree.signesVitauxEntry","fr-lm-signes-vitaux.entree.signesVitauxEntry","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-signe-vital {[]} {[]}
+"fr-lm-signes-vitaux.entree.signesVitauxEntry","fr-lm-signes-vitaux.entree.signesVitauxEntry","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-signe-vital-observe {[]} {[]}
 ","Entrée Signes vitaux","Entrée Signes vitaux","","","","","","","","","",,,,,"",,,,"fr-lm-signes-vitaux.entree.signesVitauxEntry",1,*,"",""

@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "FRDocumentCore"] ; # 
   fhir:title [ fhir:v "ANS IG document core"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-04-01T07:43:12+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-04-02T07:21:27+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -11856,28 +11856,6 @@
        ] ;
        fhir:name [ fhir:v "Modèle logique métier - FR LM Serie imagerie" ] ;
        fhir:description [ fhir:v "Serie imagerie" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-signe-vital> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-lm-signe-vital" ]
-       ] ;
-       fhir:name [ fhir:v "Modèle logique métier - FR LM Signe vital" ] ;
-       fhir:description [ fhir:v "Signe vital" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRObservationBloodProductTransfusionLMCDAFHIR | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-01 | *Computable Name*: |
+| Draft as of 2026-04-02 | *Computable Name*: |
 
  
 Mapping des éléments du modèle métier FRLMTransfusionDeProduitsSanguins vers la sous-entrée CDA FRCDATransfusionDeProduitsSanguins puis vers le profil FHIR FRObservationBloodProductTransfusionDocument. 
@@ -26,7 +26,7 @@ Mapping des éléments du modèle métier FRLMTransfusionDeProduitsSanguins vers
   "version" : "0.1.0-snapsnot",
   "title" : "Mapping Métier/CDA/FHIR : Transfusion de produits sanguins",
   "status" : "draft",
-  "date" : "2026-04-01T07:43:12+00:00",
+  "date" : "2026-04-02T07:21:27+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

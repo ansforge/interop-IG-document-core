@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-signe-vital-observe | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-01 | *Computable Name*:FRLMSigneVitalObserve |
+| Draft as of 2026-04-02 | *Computable Name*:FRLMSigneVitalObserve |
 
  
 Signe vital observé 
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Signe vital](StructureDefinition-fr-lm-signe-vital.md)
+* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Signes vitaux](StructureDefinition-fr-lm-signes-vitaux.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-signe-vital-observe)
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-signe-vital-ob
   "name" : "FRLMSigneVitalObserve",
   "title" : "Modèle logique métier - FR LM Signe vital observé",
   "status" : "draft",
-  "date" : "2026-04-01T07:43:12+00:00",
+  "date" : "2026-04-02T07:21:27+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -3002,13 +3002,6 @@
   "name" : "FRLMSeverite"
 },
 {
-  "id" : "fr-lm-signe-vital",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-signe-vital",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRLMSigneVital"
-},
-{
   "id" : "fr-lm-signe-vital-observe",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-signe-vital-observe",
