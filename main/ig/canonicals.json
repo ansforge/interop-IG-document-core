@@ -2155,13 +2155,6 @@
   "name" : "FRLMAntecedentsFamiliaux"
 },
 {
-  "id" : "fr-lm-antecedents-familiaux-entree",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-antecedents-familiaux-entree",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRLMAntecedentsFamiliauxEntree"
-},
-{
   "id" : "fr-lm-antecedents-medicaux",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-antecedents-medicaux",

@@ -4508,15 +4508,6 @@ package IG #DDDDDD{
              fr-lm-antecedent-familial-observe.auteur => [0..1]
         } 
 
-        class FRLMAntecedentsFamiliauxEntree{
-
-             fr-lm-antecedents-familiaux-entree => [None..None]
-             fr-lm-antecedents-familiaux-entree.statut => [1..1]
-             fr-lm-antecedents-familiaux-entree.identificationParent => [1..1]
-             fr-lm-antecedents-familiaux-entree.participant => [0..*]
-             fr-lm-antecedents-familiaux-entree.antecedentFamilialObserve => [1..*]
-        } 
-
         class FRLMAntecedentsFamiliaux{
 
              fr-lm-antecedents-familiaux => [None..None]
@@ -8212,10 +8203,6 @@ package "Ressources de base" #palegreen {
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
     class095a1b43effec73955e31e790438de49 --> FRLMAntecedentFamilialObserve
-
- class "Base" as  class095a1b43effec73955e31e790438de49 
-
-    class095a1b43effec73955e31e790438de49 --> FRLMAntecedentsFamiliauxEntree
 
  class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-section" as  class5dabea989fe22a905d8f89cc210527f2 
 

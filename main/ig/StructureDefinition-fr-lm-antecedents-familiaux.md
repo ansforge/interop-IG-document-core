@@ -16,7 +16,7 @@ Section Antécédents familiaux
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Antécédents familiaux](StructureDefinition-fr-lm-antecedents-familiaux.md) and [Modèle logique métier - FR LM Corps document](StructureDefinition-fr-lm-corps-document.md)
+* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Corps document](StructureDefinition-fr-lm-corps-document.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-antecedents-familiaux)
 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-antecedents-fa
   "name" : "FRLMAntecedentsFamiliaux",
   "title" : "Modèle logique métier - FR LM Antécédents familiaux",
   "status" : "draft",
-  "date" : "2026-04-02T07:21:27+00:00",
+  "date" : "2026-04-02T12:41:19+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -97,7 +97,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-antecedents-fa
       "min" : 1,
       "max" : "*",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-antecedents-familiaux"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-antecedent-familial-observe"
       }]
     }]
   }

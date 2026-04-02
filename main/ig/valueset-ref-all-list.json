@@ -7012,9 +7012,9 @@
     "uses" : {
     },
     "StructureDefinition-fr-immunization-document.html" : "Immunization - FR Immunization Document",
-    "ValueSet-fr-valueset-type-vaccination.html" : "ValueSet - FR ValueSet Type Vaccination",
     "StructureDefinition-fr-cda-vaccin-recommande.html" : "CDA - FR Vaccin recommande",
-    "StructureDefinition-fr-immunization-type-extension.html" : "FR Immunization Type Extension"
+    "StructureDefinition-fr-immunization-type-extension.html" : "FR Immunization Type Extension",
+    "ValueSet-fr-valueset-type-vaccination.html" : "ValueSet - FR ValueSet Type Vaccination"
   },
   {
     "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-AdministrativeGender-cisis",
