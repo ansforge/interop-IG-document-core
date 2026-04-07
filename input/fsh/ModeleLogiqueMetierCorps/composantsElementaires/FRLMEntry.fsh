@@ -15,3 +15,4 @@ Description: "Modèle logique représentant l'entrée"
   * langue 0..1 CodeableConcept "'fr-FR' pour français métropolitain (la casse des caractères doit être respectée)
 La partie en minuscules indique le code de la langue utilisée (ISO-639-1)
 La partie en majuscules indique le code pays (ISO-3166)"
+  * code 0..1 CodeableConcept "Type de l'entrée"

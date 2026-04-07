@@ -26,6 +26,6 @@ Characteristics: #can-be-target
 // doseNumber 
 * rangVaccination 0..1 FRLMRangVaccination "Rang de la vaccination" 
 // Immunization.reaction.detail
-* reaction 0..* FRLMProbleme "Réaction observée suite au vaccin"
+* reaction 0..* FRLMProblem "Réaction observée suite au vaccin"
 * commentaire 0..1 FRLMCommentaireER "Commentaire" 
 * DoseAntigene 0..* FRLMDoseAntigene "Dose d'antigène"

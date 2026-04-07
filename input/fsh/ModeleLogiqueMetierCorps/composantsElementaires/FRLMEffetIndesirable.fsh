@@ -12,7 +12,7 @@ Characteristics: #can-be-target
 * dateFin 0..1 dateTime "Date de fin de l'effet indésirable"
 * valeur 1..1 CodeableConcept "Valeur de l'observation"
 * traitement 1..1 FRLMTraitement "Médicament, substance incriminée, posologie"
-* probleme 0..* FRLMProbleme "Réaction observée"
+* probleme 0..* FRLMProblem "Réaction observée"
 * imputabiliteEffetIndesirable 0..1 FRLMImputabiliteEffetIndesirable "Imputabilité"
 * graviteEffetIndesirable 1..1 FRLMGraviteEffetIndesirable "Gravité"
 * evolutionEffetIndesirable 0..1 FRLMEvolutionEffetIndesirable "Evolution"

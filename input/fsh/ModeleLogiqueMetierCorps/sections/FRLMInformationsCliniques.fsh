@@ -11,7 +11,7 @@ Characteristics: #can-be-target
   * antecedentsMedicaux 1..1 FRLMObservation "Observation"
   * antecedentsChirurgicaux 1..1 FRLMObservation "Observation"
   * contreIndications 0..1 FRLMObservation "Observation"
-  * probleme 0..* FRLMProbleme "Problème"
+  * probleme 0..* FRLMProblem "Problème"
   * dispositifMedical 0..* FRLMDispositifMedicalEntree "Dispositif médical"
   * statutGrossesse 0..1 FRLMObservationGrossesse "Statut grossesse"
   * administrationProduitDeSante 0..* FRLMAdministrationProduitDeSante "Produits de santé administré avant l'examen d'imagerie"

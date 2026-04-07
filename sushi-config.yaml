@@ -190,7 +190,7 @@ groups:
       - StructureDefinition/fr-lm-criticite
       - StructureDefinition/fr-lm-commentaire-er
       - StructureDefinition/fr-lm-demande-examen-ou-suivi
-      - StructureDefinition/fr-lm-probleme
+      - StructureDefinition/fr-lm-problem
       - StructureDefinition/fr-lm-rencontre
       - StructureDefinition/fr-lm-reference-interne
       - StructureDefinition/fr-lm-references-externes
