@@ -16,7 +16,7 @@ Dispositif médical
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Dispositif médical](StructureDefinition-fr-lm-dispositif-medical-entree.md), [Modèle logique métier - FR LM Prélèvement](StructureDefinition-fr-lm-prelevement.md) and [Modèle logique métier - FR LM Produit de santé](StructureDefinition-fr-lm-produit-sante.md)
+* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Dispositif médical](StructureDefinition-fr-lm-dispositif-medical-entree.md), [Logical model - FR LM Medication](StructureDefinition-fr-lm-medication.md) and [Modèle logique métier - FR LM Prélèvement](StructureDefinition-fr-lm-prelevement.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-device)
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-device.csv), [
   "name" : "FRLMDevice",
   "title" : "Logical model - Device",
   "status" : "draft",
-  "date" : "2026-04-07T14:19:51+00:00",
+  "date" : "2026-04-07T14:45:49+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

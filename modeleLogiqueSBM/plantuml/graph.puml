@@ -4634,6 +4634,24 @@ package IG #DDDDDD{
              fr-lm-conclusion-examen-imagerie.entree => [None..0]
         } 
 
+        class FRLMCondition{
+
+             fr-lm-condition => [None..None]
+             fr-lm-condition.type => [1..1]
+             fr-lm-condition.problem => [1..1]
+             fr-lm-condition.period => [1..1]
+             fr-lm-condition.period.onsetDate => [0..1]
+             fr-lm-condition.period.endDate => [0..1]
+             fr-lm-condition.severity => [0..1]
+             fr-lm-condition.status => [0..1]
+             fr-lm-condition.clinicalStatus => [0..1]
+             fr-lm-condition.bodySite => [0..*]
+             fr-lm-condition.stage => [0..*]
+             fr-lm-condition.diagnosisAssertionStatus => [0..1]
+             fr-lm-condition.reference => [1..*]
+             fr-lm-condition.note => [0..1]
+        } 
+
         class FRLMConsentement{
 
              fr-lm-consentement => [None..None]
@@ -4875,6 +4893,21 @@ package IG #DDDDDD{
              fr-lm-dose-antigene.identifiant => [1..1]
              fr-lm-dose-antigene.doseAntigene => [1..1]
              fr-lm-dose-antigene.antigene => [1..1]
+        } 
+
+        class FRLMDoseNumber{
+
+             fr-lm-dose-number => [None..None]
+             fr-lm-dose-number.identifiantRangVaccination => [0..*]
+             fr-lm-dose-number.codeRangVaccination => [1..1]
+             fr-lm-dose-number.derivationRangVaccination => [0..1]
+             fr-lm-dose-number.descriptionRangVaccination => [0..1]
+             fr-lm-dose-number.statutRangVaccination => [1..1]
+             fr-lm-dose-number.dateRangVaccination => [0..1]
+             fr-lm-dose-number.prioriteRangVaccination => [0..1]
+             fr-lm-dose-number.nombreRenouvellements => [0..1]
+             fr-lm-dose-number.languageRangVaccination => [0..1]
+             fr-lm-dose-number.rangVaccination => [1..1]
         } 
 
         class FRLMEchantillonPreleve{
@@ -5249,6 +5282,24 @@ package IG #DDDDDD{
              fr-lm-image-illustrative.precondition => [0..*]
         } 
 
+        class FRLMImmunisation{
+
+             fr-lm-immunisation => [None..None]
+             fr-lm-immunisation.periodOfImmunisation => [1..1]
+             fr-lm-immunisation.periodOfImmunisation.startDate => [0..1]
+             fr-lm-immunisation.periodOfImmunisation.endDate => [0..1]
+             fr-lm-immunisation.diseaseOrAgentTargeted => [0..*]
+             fr-lm-immunisation.administeredProduct => [1..1]
+             fr-lm-immunisation.route => [0..1]
+             fr-lm-immunisation.site => [0..*]
+             fr-lm-immunisation.doseQuantity => [0..1]
+             fr-lm-immunisation.doseNumber => [0..1]
+             fr-lm-immunisation.note => [0..1]
+             fr-lm-immunisation.prescription => [0..1]
+             fr-lm-immunisation.reaction => [0..*]
+             fr-lm-immunisation.reasonCode => [0..*]
+        } 
+
         class FRLMImputabiliteEffetIndesirable{
 
              fr-lm-imputabilite-effet-indesirable => [None..None]
@@ -5314,6 +5365,39 @@ package IG #DDDDDD{
              fr-lm-laboratoire-executant => [None..None]
              fr-lm-laboratoire-executant.dateExecution => [1..1]
              fr-lm-laboratoire-executant.executant => [1..1]
+        } 
+
+        class FRLMMedication{
+
+             fr-lm-medication => [None..None]
+             fr-lm-medication.medicament => [1..1]
+             fr-lm-medication.medicament.codeProduit => [0..*]
+             fr-lm-medication.medicament.codeProduit.identifyingCodeCodeableConcept => [0..1]
+             fr-lm-medication.medicament.codeProduit.identifyingCodeIdentifier => [0..*]
+             fr-lm-medication.medicament.classificationATC => [0..*]
+             fr-lm-medication.medicament.nomProduit => [0..1]
+             fr-lm-medication.medicament.porteurAutorisation => [0..1]
+             fr-lm-medication.medicament.porteurAutorisation.nomPorteurAutorisation => [0..1]
+             fr-lm-medication.medicament.porteurAutorisation.identifiantPorteurAutorisation => [0..*]
+             fr-lm-medication.medicament.item => [0..*]
+             fr-lm-medication.medicament.item.formeGalenique => [0..1]
+             fr-lm-medication.medicament.item.ingredient => [1..*]
+             fr-lm-medication.medicament.item.ingredient.isActive => [0..1]
+             fr-lm-medication.medicament.item.ingredient.substance => [1..1]
+             fr-lm-medication.medicament.item.ingredient.infoConcentration => [0..1]
+             fr-lm-medication.medicament.item.ingredient.infoConcentration.concentation => [1..1]
+             fr-lm-medication.medicament.item.ingredient.infoConcentration.substanceReferenceConcentration => [0..1]
+             fr-lm-medication.medicament.item.ingredient.quantiteItem => [0..1]
+             fr-lm-medication.medicament.item.ingredient.conditionnement => [0..1]
+             fr-lm-medication.medicament.device => [0..*]
+             fr-lm-medication.medicament.device.deviceQuantity => [1..1]
+             fr-lm-medication.medicament.device.device[x] => [1..1]
+             fr-lm-medication.medicament.characteristic => [0..*]
+             fr-lm-medication.medicament.characteristic.type => [1..1]
+             fr-lm-medication.medicament.characteristic.value[x] => [0..1]
+             fr-lm-medication.medicament.batch => [0..1]
+             fr-lm-medication.medicament.batch.numeroLot => [0..1]
+             fr-lm-medication.medicament.batch.dateExpiration => [0..1]
         } 
 
         class FRLMModaliteEntree{
@@ -5702,24 +5786,6 @@ package IG #DDDDDD{
              fr-lm-prise-en-charge.lieuPriseEnCharge.structure.typeStructure => [0..1]
         } 
 
-        class FRLMProblem{
-
-             fr-lm-problem => [None..None]
-             fr-lm-problem.type => [1..1]
-             fr-lm-problem.problem => [1..1]
-             fr-lm-problem.period => [1..1]
-             fr-lm-problem.period.onsetDate => [0..1]
-             fr-lm-problem.period.endDate => [0..1]
-             fr-lm-problem.severity => [0..1]
-             fr-lm-problem.status => [0..1]
-             fr-lm-problem.clinicalStatus => [0..1]
-             fr-lm-problem.bodySite => [0..*]
-             fr-lm-problem.stage => [0..*]
-             fr-lm-problem.diagnosisAssertionStatus => [0..1]
-             fr-lm-problem.reference => [1..*]
-             fr-lm-problem.note => [0..1]
-        } 
-
         class FRLMProblemesActifs{
 
              fr-lm-problemes-actifs => [None..None]
@@ -5727,39 +5793,6 @@ package IG #DDDDDD{
              fr-lm-problemes-actifs.sousSection => [None..0]
              fr-lm-problemes-actifs.entree => [1..None]
              fr-lm-problemes-actifs.entree.problemes => [1..*]
-        } 
-
-        class FRLMProduitSante{
-
-             fr-lm-produit-sante => [None..None]
-             fr-lm-produit-sante.medicament => [1..1]
-             fr-lm-produit-sante.medicament.codeProduit => [0..*]
-             fr-lm-produit-sante.medicament.codeProduit.identifyingCodeCodeableConcept => [0..1]
-             fr-lm-produit-sante.medicament.codeProduit.identifyingCodeIdentifier => [0..*]
-             fr-lm-produit-sante.medicament.classificationATC => [0..*]
-             fr-lm-produit-sante.medicament.nomProduit => [0..1]
-             fr-lm-produit-sante.medicament.porteurAutorisation => [0..1]
-             fr-lm-produit-sante.medicament.porteurAutorisation.nomPorteurAutorisation => [0..1]
-             fr-lm-produit-sante.medicament.porteurAutorisation.identifiantPorteurAutorisation => [0..*]
-             fr-lm-produit-sante.medicament.item => [0..*]
-             fr-lm-produit-sante.medicament.item.formeGalenique => [0..1]
-             fr-lm-produit-sante.medicament.item.ingredient => [1..*]
-             fr-lm-produit-sante.medicament.item.ingredient.isActive => [0..1]
-             fr-lm-produit-sante.medicament.item.ingredient.substance => [1..1]
-             fr-lm-produit-sante.medicament.item.ingredient.infoConcentration => [0..1]
-             fr-lm-produit-sante.medicament.item.ingredient.infoConcentration.concentation => [1..1]
-             fr-lm-produit-sante.medicament.item.ingredient.infoConcentration.substanceReferenceConcentration => [0..1]
-             fr-lm-produit-sante.medicament.item.ingredient.quantiteItem => [0..1]
-             fr-lm-produit-sante.medicament.item.ingredient.conditionnement => [0..1]
-             fr-lm-produit-sante.medicament.device => [0..*]
-             fr-lm-produit-sante.medicament.device.deviceQuantity => [1..1]
-             fr-lm-produit-sante.medicament.device.device[x] => [1..1]
-             fr-lm-produit-sante.medicament.characteristic => [0..*]
-             fr-lm-produit-sante.medicament.characteristic.type => [1..1]
-             fr-lm-produit-sante.medicament.characteristic.value[x] => [0..1]
-             fr-lm-produit-sante.medicament.batch => [0..1]
-             fr-lm-produit-sante.medicament.batch.numeroLot => [0..1]
-             fr-lm-produit-sante.medicament.batch.dateExpiration => [0..1]
         } 
 
         class FRLMQuantiteExposition{
@@ -5798,21 +5831,6 @@ package IG #DDDDDD{
              fr-lm-raison-recommandation.entree => [1..None]
              fr-lm-raison-recommandation.entree.observation => [1..1]
              fr-lm-raison-recommandation.entree.problemes => [1..*]
-        } 
-
-        class FRLMRangVaccination{
-
-             fr-lm-rang-vaccination => [None..None]
-             fr-lm-rang-vaccination.identifiantRangVaccination => [0..*]
-             fr-lm-rang-vaccination.codeRangVaccination => [1..1]
-             fr-lm-rang-vaccination.derivationRangVaccination => [0..1]
-             fr-lm-rang-vaccination.descriptionRangVaccination => [0..1]
-             fr-lm-rang-vaccination.statutRangVaccination => [1..1]
-             fr-lm-rang-vaccination.dateRangVaccination => [0..1]
-             fr-lm-rang-vaccination.prioriteRangVaccination => [0..1]
-             fr-lm-rang-vaccination.nombreRenouvellements => [0..1]
-             fr-lm-rang-vaccination.languageRangVaccination => [0..1]
-             fr-lm-rang-vaccination.rangVaccination => [1..1]
         } 
 
         class FRLMRechercheDeMicroOrganismes{
@@ -6310,25 +6328,6 @@ package IG #DDDDDD{
              fr-lm-vaccin-recommande.prescription => [0..1]
              fr-lm-vaccin-recommande.rangVaccination => [0..1]
              fr-lm-vaccin-recommande.commentaire => [0..1]
-        } 
-
-        class FRLMVaccination{
-
-             fr-lm-vaccination => [None..None]
-             fr-lm-vaccination.identifiant => [1..1]
-             fr-lm-vaccination.code => [1..1]
-             fr-lm-vaccination.description => [1..1]
-             fr-lm-vaccination.statut => [1..1]
-             fr-lm-vaccination.dateVaccination => [1..1]
-             fr-lm-vaccination.voieAadministration => [0..1]
-             fr-lm-vaccination.regionAnatomique => [0..*]
-             fr-lm-vaccination.doseVaccination => [0..1]
-             fr-lm-vaccination.vaccin => [1..1]
-             fr-lm-vaccination.prescription => [0..1]
-             fr-lm-vaccination.rangVaccination => [0..1]
-             fr-lm-vaccination.reaction => [0..*]
-             fr-lm-vaccination.commentaire => [0..1]
-             fr-lm-vaccination.DoseAntigene => [0..*]
         } 
 
         class FRLMVaccinations{
@@ -8292,6 +8291,10 @@ package "Ressources de base" #palegreen {
 
     class5dabea989fe22a905d8f89cc210527f2 --> FRLMConclusionExamenImagerie
 
+ class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry" as  classeb8bc4d6baa061f547965c0670265381 
+
+    classeb8bc4d6baa061f547965c0670265381 --> FRLMCondition
+
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
     class095a1b43effec73955e31e790438de49 --> FRLMConsentement
@@ -8367,6 +8370,10 @@ package "Ressources de base" #palegreen {
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
     class095a1b43effec73955e31e790438de49 --> FRLMDoseAntigene
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> FRLMDoseNumber
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
@@ -8488,6 +8495,10 @@ package "Ressources de base" #palegreen {
 
     class095a1b43effec73955e31e790438de49 --> FRLMImageIllustrative
 
+ class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry" as  classeb8bc4d6baa061f547965c0670265381 
+
+    classeb8bc4d6baa061f547965c0670265381 --> FRLMImmunisation
+
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
     class095a1b43effec73955e31e790438de49 --> FRLMImputabiliteEffetIndesirable
@@ -8511,6 +8522,10 @@ package "Ressources de base" #palegreen {
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
     class095a1b43effec73955e31e790438de49 --> FRLMLaboratoireExecutant
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> FRLMMedication
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
@@ -8620,17 +8635,9 @@ package "Ressources de base" #palegreen {
 
     class095a1b43effec73955e31e790438de49 --> FRLMPriseEncharge
 
- class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry" as  classeb8bc4d6baa061f547965c0670265381 
-
-    classeb8bc4d6baa061f547965c0670265381 --> FRLMProblem
-
  class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-section" as  class5dabea989fe22a905d8f89cc210527f2 
 
     class5dabea989fe22a905d8f89cc210527f2 --> FRLMProblemesActifs
-
- class "Base" as  class095a1b43effec73955e31e790438de49 
-
-    class095a1b43effec73955e31e790438de49 --> FRLMProduitSante
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
@@ -8647,10 +8654,6 @@ package "Ressources de base" #palegreen {
  class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-section" as  class5dabea989fe22a905d8f89cc210527f2 
 
     class5dabea989fe22a905d8f89cc210527f2 --> FRLMRaisonRecommandation
-
- class "Base" as  class095a1b43effec73955e31e790438de49 
-
-    class095a1b43effec73955e31e790438de49 --> FRLMRangVaccination
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
@@ -8819,10 +8822,6 @@ package "Ressources de base" #palegreen {
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
     class095a1b43effec73955e31e790438de49 --> FRLMVaccinRecommande
-
- class "Base" as  class095a1b43effec73955e31e790438de49 
-
-    class095a1b43effec73955e31e790438de49 --> FRLMVaccination
 
  class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-section" as  class5dabea989fe22a905d8f89cc210527f2 
 

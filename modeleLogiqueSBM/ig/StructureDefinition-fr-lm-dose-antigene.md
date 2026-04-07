@@ -16,7 +16,7 @@ Dose d’antigène
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Vaccination](StructureDefinition-fr-lm-vaccination.md)
+* Ce Modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-dose-antigene)
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-dose-antigene.
   "name" : "FRLMDoseAntigene",
   "title" : "Modèle logique métier - FR LM Dose d'antigène",
   "status" : "draft",
-  "date" : "2026-04-07T14:19:51+00:00",
+  "date" : "2026-04-07T14:45:49+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -105,7 +105,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-dose-antigene.
       "min" : 1,
       "max" : "1",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-produit-sante"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication"
       }]
     }]
   }

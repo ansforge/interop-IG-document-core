@@ -17,7 +17,7 @@
 ","Observation","Observation","","","","","","","","","",,,,,"",,,,"fr-lm-informations-cliniques.entree.antecedentsChirurgicaux",1,1,"",""
 "fr-lm-informations-cliniques.entree.contreIndications","fr-lm-informations-cliniques.entree.contreIndications","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation {[]} {[]}
 ","Observation","Observation","","","","","","","","","",,,,,"",,,,"fr-lm-informations-cliniques.entree.contreIndications",0,1,"",""
-"fr-lm-informations-cliniques.entree.probleme","fr-lm-informations-cliniques.entree.probleme","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-problem {[]} {[]}
+"fr-lm-informations-cliniques.entree.probleme","fr-lm-informations-cliniques.entree.probleme","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-condition {[]} {[]}
 ","Problème","Problème","","","","","","","","","",,,,,"",,,,"fr-lm-informations-cliniques.entree.probleme",0,*,"",""
 "fr-lm-informations-cliniques.entree.dispositifMedical","fr-lm-informations-cliniques.entree.dispositifMedical","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dispositif-medical-entree {[]} {[]}
 ","Dispositif médical","Dispositif médical","","","","","","","","","",,,,,"",,,,"fr-lm-informations-cliniques.entree.dispositifMedical",0,*,"",""

@@ -11,5 +11,5 @@
 ","Sous-sections","Sous-sections","","","","","","","","","",,,,,"",,,,"fr-lm-section.sousSection",0,*,"",""
 "fr-lm-vaccinations.entree","fr-lm-vaccinations.entree","","","",0,*,"","","","Base {[]} {[]}
 ","Entrées","Entrées","","","","","","","","","",,,,,"",,,,"fr-lm-section.entree",0,*,"",""
-"fr-lm-vaccinations.entree.vaccinations","fr-lm-vaccinations.entree.vaccinations","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-vaccination {[]} {[]}
+"fr-lm-vaccinations.entree.vaccinations","fr-lm-vaccinations.entree.vaccinations","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-immunisation {[]} {[]}
 ","Entrée Vaccination","Entrée Vaccination","","","","","","","","","",,,,,"",,,,"fr-lm-vaccinations.entree.vaccinations",1,*,"",""

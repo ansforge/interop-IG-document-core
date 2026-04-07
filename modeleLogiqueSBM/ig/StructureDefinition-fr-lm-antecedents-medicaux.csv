@@ -11,5 +11,5 @@
 ","Sous-sections","Sous-sections","","","","","","","","","",,,,,"",,,,"fr-lm-section.sousSection",0,*,"",""
 "fr-lm-antecedents-medicaux.entree","fr-lm-antecedents-medicaux.entree","","","",1,*,"","","","Base {[]} {[]}
 ","Entrées","Entrées","","","","","","","","","",,,,,"",,,,"fr-lm-section.entree",0,*,"",""
-"fr-lm-antecedents-medicaux.entree.problemes","fr-lm-antecedents-medicaux.entree.problemes","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-problem {[]} {[]}
+"fr-lm-antecedents-medicaux.entree.problemes","fr-lm-antecedents-medicaux.entree.problemes","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-condition {[]} {[]}
 ","Entrée Problème","Entrée Problème","","","","","","","","","",,,,,"",,,,"fr-lm-antecedents-medicaux.entree.problemes",1,*,"",""

@@ -106,7 +106,10 @@ Modèles de données métier représentant les concepts élémentaires, modélis
 | [FR LM Entry](StructureDefinition-fr-lm-entry.md) | Modèle logique représentant l’entrée |
 | [Logical model - Device](StructureDefinition-fr-lm-device.md) | Dispositif médical |
 | [Logical model - FR LM Allergy Intolerance](StructureDefinition-fr-lm-allergy-intolerance.md) | Allergie ou hypersensibilite |
-| [Logical model - FR LM Problem](StructureDefinition-fr-lm-problem.md) | Entrée Problème |
+| [Logical model - FR LM Condition](StructureDefinition-fr-lm-condition.md) | Entrée Problème |
+| [Logical model - FR LM Dose Number](StructureDefinition-fr-lm-dose-number.md) | Rang de la vaccination |
+| [Logical model - FR LM Immunisation](StructureDefinition-fr-lm-immunisation.md) | Vaccination |
+| [Logical model - FR LM Medication](StructureDefinition-fr-lm-medication.md) | Produit de santé |
 | [Modèle logique métier - FR LM Accident transfusionnel](StructureDefinition-fr-lm-accidents-transfusionnels.md) | Accident transfusionnel |
 | [Modèle logique métier - FR LM Acte](StructureDefinition-fr-lm-acte.md) | Acte |
 | [Modèle logique métier - FR LM Acte substitution](StructureDefinition-fr-lm-acte-substitution.md) | Acte substitution |
@@ -158,11 +161,9 @@ Modèles de données métier représentant les concepts élémentaires, modélis
 | [Modèle logique métier - FR LM Patient avec sujet non humain](StructureDefinition-fr-lm-patient-sujet-non-humain.md) | Patient avec sujet non humain |
 | [Modèle logique métier - FR LM Performer](StructureDefinition-fr-lm-performer.md) | Performer |
 | [Modèle logique métier - FR LM Prescription](StructureDefinition-fr-lm-prescription-entree.md) | Prescription |
-| [Modèle logique métier - FR LM Produit de santé](StructureDefinition-fr-lm-produit-sante.md) | Produit de santé |
 | [Modèle logique métier - FR LM Prélèvement](StructureDefinition-fr-lm-prelevement.md) | Prélèvement |
 | [Modèle logique métier - FR LM Quantité de produit](StructureDefinition-fr-lm-quantite-produit.md) | Quantité de produit |
 | [Modèle logique métier - FR LM Quantité exposition](StructureDefinition-fr-lm-quantite-exposition.md) | Quantité exposition |
-| [Modèle logique métier - FR LM Rang de la vaccination](StructureDefinition-fr-lm-rang-vaccination.md) | Rang de la vaccination |
 | [Modèle logique métier - FR LM Recherche de micro organismes](StructureDefinition-fr-lm-recherche-de-micro-organismes.md) | Recherche de micro organismes |
 | [Modèle logique métier - FR LM Rencontre](StructureDefinition-fr-lm-rencontre.md) | Rencontre |
 | [Modèle logique métier - FR LM Resultats](StructureDefinition-fr-lm-resultats-entree.md) | Resultats |
@@ -189,7 +190,6 @@ Modèles de données métier représentant les concepts élémentaires, modélis
 | [Modèle logique métier - FR LM Transfert du patient](StructureDefinition-fr-lm-transfert-du-patient.md) | Transfert du patient |
 | [Modèle logique métier - FR LM Transfusion de produits sanguins](StructureDefinition-fr-lm-transfusion-de-produits-sanguins.md) | Transfusion de produits sanguins |
 | [Modèle logique métier - FR LM Vaccin recommandé](StructureDefinition-fr-lm-vaccin-recommande.md) | Vaccin recommandé |
-| [Modèle logique métier - FR LM Vaccination](StructureDefinition-fr-lm-vaccination.md) | Vaccination |
 | [Modèle logique métier - FR LM Échantillon prélevé](StructureDefinition-fr-lm-echantillon-preleve.md) | Échantillon prélevé |
 
 ### Eléments CDA 

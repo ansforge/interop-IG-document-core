@@ -7,7 +7,7 @@
 ","Complétude de la dispensation","Complétude de la dispensation","","","","","","","","","",,"","Valeur issue du JDV_CompletudeDispensation_CISIS (1.2.250.1.213.1.1.5.765)","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-completude-dispensation-cisis","",,,,"fr-lm-traitement-dispense.completude",0,1,"",""
 "fr-lm-traitement-dispense.quantite","fr-lm-traitement-dispense.quantite","","","",1,1,"","","","Quantity {[]} {[]}
 ","Quantité : Unité issue de EDQM Packaging","Quantité : Unité issue de EDQM Packaging","","","","","","","","","",,,,,"",,,,"fr-lm-traitement-dispense.quantite",1,1,"",""
-"fr-lm-traitement-dispense.medicamentDelivre","fr-lm-traitement-dispense.medicamentDelivre","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-produit-sante {[]} {[]}
+"fr-lm-traitement-dispense.medicamentDelivre","fr-lm-traitement-dispense.medicamentDelivre","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication {[]} {[]}
 ","Médicament délivré","Médicament délivré","","","","","","","","","",,,,,"",,,,"fr-lm-traitement-dispense.medicamentDelivre",1,1,"",""
 "fr-lm-traitement-dispense.referencePrescription","fr-lm-traitement-dispense.referencePrescription","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-reference-item-prescription {[]} {[]}
 ","Référence de la prescription","Référence de la prescription","","","","","","","","","",,,,,"",,,,"fr-lm-traitement-dispense.referencePrescription",0,1,"",""

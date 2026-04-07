@@ -10,7 +10,7 @@
   <name value="FRDocumentCore"/>
   <title value="ANS IG document core"/>
   <status value="draft"/>
-  <date value="2026-04-07T14:19:51+00:00"/>
+  <date value="2026-04-07T14:45:49+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -3073,10 +3073,46 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/fr-lm-problem"/>
+        <reference value="StructureDefinition/fr-lm-condition"/>
       </reference>
-      <name value="Logical model - FR LM Problem"/>
+      <name value="Logical model - FR LM Condition"/>
       <description value="Entrée Problème"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Modèles logiques métier des composants élémentaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-lm-dose-number"/>
+      </reference>
+      <name value="Logical model - FR LM Dose Number"/>
+      <description value="Rang de la vaccination"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Modèles logiques métier des composants élémentaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-lm-immunisation"/>
+      </reference>
+      <name value="Logical model - FR LM Immunisation"/>
+      <description value="Vaccination"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Modèles logiques métier des composants élémentaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-lm-medication"/>
+      </reference>
+      <name value="Logical model - FR LM Medication"/>
+      <description value="Produit de santé"/>
       <exampleBoolean value="false"/>
       <groupingId value="Modèles logiques métier des composants élémentaires"/>
     </resource>
@@ -5924,18 +5960,6 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/fr-lm-produit-sante"/>
-      </reference>
-      <name value="Modèle logique métier - FR LM Produit de santé"/>
-      <description value="Produit de santé"/>
-      <exampleBoolean value="false"/>
-      <groupingId value="Modèles logiques métier des composants élémentaires"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/fr-lm-prelevement"/>
       </reference>
       <name value="Modèle logique métier - FR LM Prélèvement"/>
@@ -5990,18 +6014,6 @@
       <description value="Section Raison de la recommandation (non codée)"/>
       <exampleBoolean value="false"/>
       <groupingId value="Modèles logiques métier des sections d'un document"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/fr-lm-rang-vaccination"/>
-      </reference>
-      <name value="Modèle logique métier - FR LM Rang de la vaccination"/>
-      <description value="Rang de la vaccination"/>
-      <exampleBoolean value="false"/>
-      <groupingId value="Modèles logiques métier des composants élémentaires"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -6516,18 +6528,6 @@
       </reference>
       <name value="Modèle logique métier - FR LM Vaccin recommandé"/>
       <description value="Vaccin recommandé"/>
-      <exampleBoolean value="false"/>
-      <groupingId value="Modèles logiques métier des composants élémentaires"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/fr-lm-vaccination"/>
-      </reference>
-      <name value="Modèle logique métier - FR LM Vaccination"/>
-      <description value="Vaccination"/>
       <exampleBoolean value="false"/>
       <groupingId value="Modèles logiques métier des composants élémentaires"/>
     </resource>

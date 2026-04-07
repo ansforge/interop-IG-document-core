@@ -5,7 +5,7 @@
 ","Identifiant","Identifiant","","","","","","","","","",,,,,"",,,,"fr-lm-traitement-prescrit.identifiant",1,*,"",""
 "fr-lm-traitement-prescrit.status","fr-lm-traitement-prescrit.status","","","",1,1,"","","","code {[]} {[]}
 ","Statut","Statut","","","","","","","","","",,,,,"",,,,"fr-lm-traitement-prescrit.status",1,1,"",""
-"fr-lm-traitement-prescrit.produitSante","fr-lm-traitement-prescrit.produitSante","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-produit-sante {[]} {[]}
+"fr-lm-traitement-prescrit.produitSante","fr-lm-traitement-prescrit.produitSante","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication {[]} {[]}
 ","Produit de santé","Produit de santé","","","","","","","","","",,,,,"",,,,"fr-lm-traitement-prescrit.produitSante",1,1,"",""
 "fr-lm-traitement-prescrit.indication[x]","fr-lm-traitement-prescrit.indication[x]","","","",0,*,"","","","CodeableConcept {[]} {[]}
 string {[]} {[]}","Motif du traitement","Motif du traitement","","","","","","","","","",,,,,"",,,,"fr-lm-traitement-prescrit.indication[x]",0,*,"",""

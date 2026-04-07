@@ -5,7 +5,7 @@
 ","Identifiant de la ligne de prescription","Identifiant de la ligne de prescription","","","","","","","","","",,,,,"",,,,"fr-lm-reference-item-prescription.identifiant",1,1,"",""
 "fr-lm-reference-item-prescription.code","fr-lm-reference-item-prescription.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Code de l'entrée","Code de l'entrée","","","","","","","","","",,,,,"",,,,"fr-lm-reference-item-prescription.code",1,1,"",""
-"fr-lm-reference-item-prescription.produitSante","fr-lm-reference-item-prescription.produitSante","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-produit-sante {[]} {[]}
+"fr-lm-reference-item-prescription.produitSante","fr-lm-reference-item-prescription.produitSante","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication {[]} {[]}
 ","Produit de santé","Produit de santé","","","","","","","","","",,,,,"",,,,"fr-lm-reference-item-prescription.produitSante",1,1,"",""
 "fr-lm-reference-item-prescription.auteur","fr-lm-reference-item-prescription.auteur","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-auteur {[]} {[]}
 ","Auteur","Auteur","","","","","","","","","",,,,,"",,,,"fr-lm-reference-item-prescription.auteur",0,1,"",""

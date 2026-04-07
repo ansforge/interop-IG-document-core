@@ -26,7 +26,7 @@ Mapping des éléments du modèle métier FRLMDirectivesAnticipees vers la secti
   "version" : "0.1.0-snapsnot",
   "title" : "Mapping Métier/CDA/FHIR : \"Directives anticipées\"",
   "status" : "draft",
-  "date" : "2026-04-07T14:19:51+00:00",
+  "date" : "2026-04-07T14:45:49+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

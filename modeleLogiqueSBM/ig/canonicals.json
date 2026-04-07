@@ -2246,6 +2246,13 @@
   "name" : "FRLMConclusionExamenImagerie"
 },
 {
+  "id" : "fr-lm-condition",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-condition",
+  "version" : "0.1.0-snapsnot",
+  "name" : "FRLMCondition"
+},
+{
   "id" : "fr-lm-consentement",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-consentement",
@@ -2377,6 +2384,13 @@
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dose-antigene",
   "version" : "0.1.0-snapsnot",
   "name" : "FRLMDoseAntigene"
+},
+{
+  "id" : "fr-lm-dose-number",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dose-number",
+  "version" : "0.1.0-snapsnot",
+  "name" : "FRLMDoseNumber"
 },
 {
   "id" : "fr-lm-echantillon-preleve",
@@ -2589,6 +2603,13 @@
   "name" : "FRLMImageIllustrative"
 },
 {
+  "id" : "fr-lm-immunisation",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-immunisation",
+  "version" : "0.1.0-snapsnot",
+  "name" : "FRLMImmunisation"
+},
+{
   "id" : "fr-lm-imputabilite-effet-indesirable",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-imputabilite-effet-indesirable",
@@ -2629,6 +2650,13 @@
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-laboratoire-executant",
   "version" : "0.1.0-snapsnot",
   "name" : "FRLMLaboratoireExecutant"
+},
+{
+  "id" : "fr-lm-medication",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication",
+  "version" : "0.1.0-snapsnot",
+  "name" : "FRLMMedication"
 },
 {
   "id" : "fr-lm-modalite-entree",
@@ -2820,25 +2848,11 @@
   "name" : "FRLMPriseEncharge"
 },
 {
-  "id" : "fr-lm-problem",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-problem",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRLMProblem"
-},
-{
   "id" : "fr-lm-problemes-actifs",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-problemes-actifs",
   "version" : "0.1.0-snapsnot",
   "name" : "FRLMProblemesActifs"
-},
-{
-  "id" : "fr-lm-produit-sante",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-produit-sante",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRLMProduitSante"
 },
 {
   "id" : "fr-lm-quantite-exposition",
@@ -2867,13 +2881,6 @@
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-raison-recommandation-non-code",
   "version" : "0.1.0-snapsnot",
   "name" : "FRLMRaisonRecommandationNonCode"
-},
-{
-  "id" : "fr-lm-rang-vaccination",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-rang-vaccination",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRLMRangVaccination"
 },
 {
   "id" : "fr-lm-recherche-de-micro-organismes",
@@ -3168,13 +3175,6 @@
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-vaccin-recommande",
   "version" : "0.1.0-snapsnot",
   "name" : "FRLMVaccinRecommande"
-},
-{
-  "id" : "fr-lm-vaccination",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-vaccination",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRLMVaccination"
 },
 {
   "id" : "fr-lm-vaccinations",

@@ -10,7 +10,7 @@
   "name" : "FRDocumentCore",
   "title" : "ANS IG document core",
   "status" : "draft",
-  "date" : "2026-04-07T14:19:51+00:00",
+  "date" : "2026-04-07T14:45:49+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -3470,10 +3470,49 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/fr-lm-problem"
+        "reference" : "StructureDefinition/fr-lm-condition"
       },
-      "name" : "Logical model - FR LM Problem",
+      "name" : "Logical model - FR LM Condition",
       "description" : "Entrée Problème",
+      "exampleBoolean" : false,
+      "groupingId" : "Modèles logiques métier des composants élémentaires"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-lm-dose-number"
+      },
+      "name" : "Logical model - FR LM Dose Number",
+      "description" : "Rang de la vaccination",
+      "exampleBoolean" : false,
+      "groupingId" : "Modèles logiques métier des composants élémentaires"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-lm-immunisation"
+      },
+      "name" : "Logical model - FR LM Immunisation",
+      "description" : "Vaccination",
+      "exampleBoolean" : false,
+      "groupingId" : "Modèles logiques métier des composants élémentaires"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-lm-medication"
+      },
+      "name" : "Logical model - FR LM Medication",
+      "description" : "Produit de santé",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier des composants élémentaires"
     },
@@ -6559,19 +6598,6 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/fr-lm-produit-sante"
-      },
-      "name" : "Modèle logique métier - FR LM Produit de santé",
-      "description" : "Produit de santé",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/fr-lm-prelevement"
       },
       "name" : "Modèle logique métier - FR LM Prélèvement",
@@ -6630,19 +6656,6 @@
       "description" : "Section Raison de la recommandation (non codée)",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier des sections d'un document"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-lm-rang-vaccination"
-      },
-      "name" : "Modèle logique métier - FR LM Rang de la vaccination",
-      "description" : "Rang de la vaccination",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
     },
     {
       "extension" : [{
@@ -7200,19 +7213,6 @@
       },
       "name" : "Modèle logique métier - FR LM Vaccin recommandé",
       "description" : "Vaccin recommandé",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-lm-vaccination"
-      },
-      "name" : "Modèle logique métier - FR LM Vaccination",
-      "description" : "Vaccination",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier des composants élémentaires"
     },

@@ -624,7 +624,8 @@
       "Organization",
       "fr-lm-allergy-intolerance",
       "fr-lm-allergy-intolerance.reaction",
-      "fr-lm-problem",
+      "fr-lm-condition",
+      "fr-lm-immunisation",
       "fr-lm-traitement-prescrit"
     ],
     "http://hl7.org/fhir/StructureDefinition/patient-birthPlace": [

@@ -17,11 +17,11 @@
 ","Région anatomique d'administration","Région anatomique d'administration","","","","","","","","","",,"","SNOMED CT (2.16.840.1.113883.6.96)","","",,,,"fr-lm-vaccin-recommande.regionAnatomique",0,*,"",""
 "fr-lm-vaccin-recommande.doseAdministree","fr-lm-vaccin-recommande.doseAdministree","","","",0,1,"","","","Quantity {[]} {[]}
 ","Dose administrée","Dose administrée","","","","","","","","","",,,,,"",,,,"fr-lm-vaccin-recommande.doseAdministree",0,1,"",""
-"fr-lm-vaccin-recommande.vaccin","fr-lm-vaccin-recommande.vaccin","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-produit-sante {[]} {[]}
+"fr-lm-vaccin-recommande.vaccin","fr-lm-vaccin-recommande.vaccin","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication {[]} {[]}
 ","Vaccin","Vaccin","","","","","","","","","",,,,,"",,,,"fr-lm-vaccin-recommande.vaccin",1,1,"",""
 "fr-lm-vaccin-recommande.prescription","fr-lm-vaccin-recommande.prescription","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-prescription-entree {[]} {[]}
 ","Référence de la prescription","Référence de la prescription","","","","","","","","","",,,,,"",,,,"fr-lm-vaccin-recommande.prescription",0,1,"",""
-"fr-lm-vaccin-recommande.rangVaccination","fr-lm-vaccin-recommande.rangVaccination","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-rang-vaccination {[]} {[]}
+"fr-lm-vaccin-recommande.rangVaccination","fr-lm-vaccin-recommande.rangVaccination","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dose-number {[]} {[]}
 ","Rang de la vaccination","Rang de la vaccination","","","","","","","","","",,,,,"",,,,"fr-lm-vaccin-recommande.rangVaccination",0,1,"",""
 "fr-lm-vaccin-recommande.commentaire","fr-lm-vaccin-recommande.commentaire","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-commentaire-er {[]} {[]}
 ","Commentaire","Commentaire","","","","","","","","","",,,,,"",,,,"fr-lm-vaccin-recommande.commentaire",0,1,"",""
