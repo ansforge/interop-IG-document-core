@@ -8,4 +8,4 @@ Characteristics: #can-be-target
 * sousSection 0..0
 * entree 1..*
   * observation  1..1 FRLMObservation "Entrée Simple observation"
-  * problemes  1..* FRLMProblem "Entrée Problème"
+  * problemes  1..* FRLMCondition "Entrée Problème"

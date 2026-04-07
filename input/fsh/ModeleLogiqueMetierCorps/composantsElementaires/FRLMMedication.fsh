@@ -1,7 +1,6 @@
-Logical: FRLMProduitSante
-Id: fr-lm-produit-sante
-//Parent : EHDSMedication
-Title: "Modèle logique métier - FR LM Produit de santé"
+Logical: FRLMMedication
+Id: fr-lm-medication
+Title: "Logical model - FR LM Medication"
 Description: """Produit de santé"""
 Characteristics: #can-be-target
 

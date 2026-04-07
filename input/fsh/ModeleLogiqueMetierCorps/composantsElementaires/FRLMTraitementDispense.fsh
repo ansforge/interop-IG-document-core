@@ -9,7 +9,7 @@ Characteristics: #can-be-target
   * ^binding.description = "Valeur issue du JDV_CompletudeDispensation_CISIS (1.2.250.1.213.1.1.5.765)"
   * ^binding.valueSet = "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-completude-dispensation-cisis"
 * quantite  1..1 Quantity "Quantité : Unité issue de EDQM Packaging"
-* medicamentDelivre 1..1 FRLMProduitSante "Médicament délivré"
+* medicamentDelivre 1..1 FRLMMedication "Médicament délivré"
 * referencePrescription 0..1 FRLMReferenceItemPrescription "Référence de la prescription"
 * posologie 0..1 FRLMPosologie "Posologie"
 * notesDispensateur 0..1 string "Notes du dispensateur"

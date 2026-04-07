@@ -1,7 +1,7 @@
-Logical: FRLMProblem
-Id: fr-lm-problem
+Logical: FRLMCondition
+Id: fr-lm-condition
 Parent: FRLMEntry
-Title: "Logical model - FR LM Problem"
+Title: "Logical model - FR LM Condition"
 Description: """Entrée Problème"""
 Characteristics: #can-be-target
 

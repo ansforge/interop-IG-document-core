@@ -190,7 +190,7 @@ groups:
       - StructureDefinition/fr-lm-criticite
       - StructureDefinition/fr-lm-commentaire-er
       - StructureDefinition/fr-lm-demande-examen-ou-suivi
-      - StructureDefinition/fr-lm-problem
+      - StructureDefinition/fr-lm-condition
       - StructureDefinition/fr-lm-rencontre
       - StructureDefinition/fr-lm-reference-interne
       - StructureDefinition/fr-lm-references-externes
@@ -223,15 +223,15 @@ groups:
       - StructureDefinition/fr-lm-non-remboursable
       - StructureDefinition/fr-lm-observation-grossesse
       - StructureDefinition/fr-lm-prescription-entree
-      - StructureDefinition/fr-lm-produit-sante
-      - StructureDefinition/fr-lm-rang-vaccination
+      - StructureDefinition/fr-lm-medication
+      - StructureDefinition/fr-lm-dose-number
       - StructureDefinition/fr-lm-resultats-entree
       - StructureDefinition/fr-lm-resultats-examens-biologie-medicale
       - StructureDefinition/fr-lm-signe-vital-observe
       - StructureDefinition/fr-lm-statut
       - StructureDefinition/fr-lm-traitement
       - StructureDefinition/fr-lm-vaccin-recommande
-      - StructureDefinition/fr-lm-vaccination
+      - StructureDefinition/fr-lm-immunisation
       - StructureDefinition/fr-lm-traitement-dispense
       - StructureDefinition/fr-lm-reference-item-prescription
       - StructureDefinition/fr-lm-prelevement

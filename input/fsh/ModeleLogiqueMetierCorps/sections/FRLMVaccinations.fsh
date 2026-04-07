@@ -7,4 +7,4 @@ Characteristics: #can-be-target
 
 * titreSection 1..1 
 * sousSection 0..0
-* entree.vaccinations 1..* FRLMVaccination "Entrée Vaccination"
+* entree.vaccinations 1..* FRLMImmunisation "Entrée Vaccination"
