@@ -28,7 +28,7 @@ Characteristics: #can-be-target
       * conditionnement  0..1 Base "Conditionnement primaire (ampoule, bouteille,…) EDQM Standard Terms (0.4.0.127.0.16.1.1.2.1) / classe CON (Récipient) => ampoule, blister."
   * device 0..* Base "Dispositif d'administration inclus dans le produit. Les dispositifs qui ne sont pas contenus dans le conditionnement du médicament ne sont pas pris en compte."
     * deviceQuantity 1..1 Quantity "Nombre de dispositifs."
-    * device[x] 1..1 CodeableConcept or FRLMDispositifMedical "Dispositif codé."
+    * device[x] 1..1 CodeableConcept or FRLMDevice "Dispositif codé."
   * characteristic 0..* Base "Caractéristiques supplémentaires du produit (par ex. sans sucre, bouchon facile à ouvrir, dosage gradué). Il est prévu que les implémenteurs définissent un ensemble de valeurs (ValueSet) adapté à leurs cas d’usage."
     * type 1..1 CodeableConcept "Type de caractéristique"
     * value[x] 0..1 boolean or CodeableConcept or string or Quantity or dateTime or integer or decimal or Ratio "Valeur de la caractéristique"

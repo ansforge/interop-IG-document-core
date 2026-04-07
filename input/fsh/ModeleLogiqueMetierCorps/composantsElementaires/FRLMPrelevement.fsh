@@ -18,8 +18,8 @@ Characteristics: #can-be-target
 // EHDSSpecimen.container
 * echantillonPreleve 0..1 FRLMEchantillonPreleve "Échantillon prélevé"
 // EHDSSpecimen.sourceDevice
-* dispositifUtilise 0..* FRLMDispositifMedical "Dispositif utilisé"
+* dispositifUtilise 0..* FRLMDevice "Dispositif utilisé"
 // EHDSSpecimen.material
-* produitUtilise 0..* FRLMDispositifMedical "Produit utilisé"
+* produitUtilise 0..* FRLMDevice "Produit utilisé"
 // EHDSSpecimen.receivedDate
 * dateReceptionEchantillon 1..1 Base "Date de réception de l'échantillon"

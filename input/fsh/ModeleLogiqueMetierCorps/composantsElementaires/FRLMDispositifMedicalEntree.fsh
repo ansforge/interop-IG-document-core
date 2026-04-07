@@ -24,7 +24,7 @@ Characteristics: #can-be-target
 // Absent dans le modèle EHDSDeviceUse et pas d'équivalent en FHIR --> Peut être inclus comme extension ?
 * auteur 0..* FRLMAuteur "Prescripteur"
 // en FHIR et EHDS : 1..1
-* dispositifMedical 1..* FRLMDispositifMedical "Dispositif médical"
+* dispositifMedical 1..* FRLMDevice "Dispositif médical"
 // créer un modèle métier pour l'entrée En rapport avec une Affection Longue Durée (ALD)
 // en FHIR : DeviceUseStatement.reasonReference
 * affectionLongueDuree 0..1 Base  "Entrée En rapport avec une Affection Longue Durée (ALD)"
