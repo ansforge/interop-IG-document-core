@@ -1,6 +1,5 @@
 Logical: FRLMDevice
 Id: fr-lm-device
-//Parent: FRLMEntry
 Title: "Logical model - Device"
 Description: """Dispositif médical"""
 Characteristics: #can-be-target
