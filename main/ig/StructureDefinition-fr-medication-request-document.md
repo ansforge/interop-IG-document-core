@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-request-document | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-02 | *Computable Name*:FRMedicationRequestDocument |
+| Draft as of 2026-04-07 | *Computable Name*:FRMedicationRequestDocument |
 
  
 FRMedicationRequestDocument permet de décrire un traitement prescrit avec notamment le médicament, le mode d’administration, la quantité, la durée et la fréquence d’administration. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-medication-reques
   "name" : "FRMedicationRequestDocument",
   "title" : "MedicationRequest - FR Medication Request Document",
   "status" : "draft",
-  "date" : "2026-04-02T12:41:19+00:00",
+  "date" : "2026-04-07T08:23:13+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

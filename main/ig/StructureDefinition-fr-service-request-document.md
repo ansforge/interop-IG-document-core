@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-service-request-document | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-02 | *Computable Name*:FRServiceRequestDocument |
+| Draft as of 2026-04-07 | *Computable Name*:FRServiceRequestDocument |
 
  
 FRServiceRequestDocument profil permet de porter des demandes d’examens (analyses biologiques, évaluations, étude d’imagerie, etc…) ou de suivis particuliers à programmer dans le cadre d’un plan de soins. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-service-request-d
   "name" : "FRServiceRequestDocument",
   "title" : "ServiceRequest - FR Service Request Document",
   "status" : "draft",
-  "date" : "2026-04-02T12:41:19+00:00",
+  "date" : "2026-04-07T08:23:13+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-diagnostic-report-bio-chapter-document | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-02 | *Computable Name*:FRDiagnosticReportBIOChapterDocument |
+| Draft as of 2026-04-07 | *Computable Name*:FRDiagnosticReportBIOChapterDocument |
 
  
 FRDiagnosticReportBIOChapterDocument utilisé pour représenter un CR de biologie 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-diagnostic-report
   "name" : "FRDiagnosticReportBIOChapterDocument",
   "title" : "DiagnosticReport - FR Diagnostic Report BIO chapter Document",
   "status" : "draft",
-  "date" : "2026-04-02T12:41:19+00:00",
+  "date" : "2026-04-07T08:23:13+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
