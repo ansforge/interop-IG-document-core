@@ -45,7 +45,7 @@ CIM-11 / Chapitre 04 Maladies du système immunitaire / Bloc Affections allergiq
   <name value="FRLMAllergyIntolerance"/>
   <title value="Logical model - FR LM Allergy Intolerance"/>
   <status value="draft"/>
-  <date value="2026-04-07T10:50:27+00:00"/>
+  <date value="2026-04-07T13:39:53+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -132,8 +132,8 @@ CIM-11 / Chapitre 04 Maladies du système immunitaire / Bloc Affections allergiq
     </element>
     <element id="fr-lm-allergy-intolerance.header.author[x]">
       <path value="fr-lm-allergy-intolerance.header.author[x]"/>
-      <short value="Auteur(s) responsable(s) : Personne(s) ayant la responsabilité des informations fournies. Le rôle précis de l’auteur responsable dépend du contexte d’usage et du modèle concerné."/>
-      <definition value="Auteur(s) responsable(s) : Personne(s) ayant la responsabilité des informations fournies. Le rôle précis de l’auteur responsable dépend du contexte d’usage et du modèle concerné."/>
+      <short value="author[x] peut correspondre soit à un professionnel, soit à une organisation, soit à un système."/>
+      <definition value="author[x] peut correspondre soit à un professionnel, soit à une organisation, soit à un système."/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -142,8 +142,50 @@ CIM-11 / Chapitre 04 Maladies du système immunitaire / Bloc Affections allergiq
         <max value="*"/>
       </base>
       <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="fr-lm-allergy-intolerance.header.author[x].authorProfessional">
+      <path value="fr-lm-allergy-intolerance.header.author[x].authorProfessional"/>
+      <short value="L'auteur est un professionnel de santé"/>
+      <definition value="L'auteur est un professionnel de santé"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="fr-lm-entry.header.author[x].authorProfessional"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
         <code value="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure"/>
       </type>
+    </element>
+    <element id="fr-lm-allergy-intolerance.header.author[x].authorOrganisation">
+      <path value="fr-lm-allergy-intolerance.header.author[x].authorOrganisation"/>
+      <short value="L'auteur est une organisation"/>
+      <definition value="L'auteur est une organisation"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="fr-lm-entry.header.author[x].authorOrganisation"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure"/>
+      </type>
+    </element>
+    <element id="fr-lm-allergy-intolerance.header.author[x].authorDevice">
+      <path value="fr-lm-allergy-intolerance.header.author[x].authorDevice"/>
+      <short value="L'auteur est un système"/>
+      <definition value="L'auteur est un système"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="fr-lm-entry.header.author[x].authorDevice"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
       <type>
         <code value="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-systeme-structure-auteur"/>
       </type>

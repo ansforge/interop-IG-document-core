@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-entry.csv), [E
   "name" : "FRLMEntry",
   "title" : "FR LM Entry",
   "status" : "draft",
-  "date" : "2026-04-07T10:50:27+00:00",
+  "date" : "2026-04-07T13:39:53+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -107,14 +107,44 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-entry.csv), [E
     {
       "id" : "fr-lm-entry.header.author[x]",
       "path" : "fr-lm-entry.header.author[x]",
-      "short" : "Auteur(s) responsable(s) : Personne(s) ayant la responsabilité des informations fournies. Le rôle précis de l’auteur responsable dépend du contexte d’usage et du modèle concerné.",
-      "definition" : "Auteur(s) responsable(s) : Personne(s) ayant la responsabilité des informations fournies. Le rôle précis de l’auteur responsable dépend du contexte d’usage et du modèle concerné.",
+      "short" : "author[x] peut correspondre soit à un professionnel, soit à une organisation, soit à un système.",
+      "definition" : "author[x] peut correspondre soit à un professionnel, soit à une organisation, soit à un système.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Base"
+      }]
+    },
+    {
+      "id" : "fr-lm-entry.header.author[x].authorProfessional",
+      "path" : "fr-lm-entry.header.author[x].authorProfessional",
+      "short" : "L'auteur est un professionnel de santé",
+      "definition" : "L'auteur est un professionnel de santé",
       "min" : 0,
       "max" : "*",
       "type" : [{
         "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure"
-      },
-      {
+      }]
+    },
+    {
+      "id" : "fr-lm-entry.header.author[x].authorOrganisation",
+      "path" : "fr-lm-entry.header.author[x].authorOrganisation",
+      "short" : "L'auteur est une organisation",
+      "definition" : "L'auteur est une organisation",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure"
+      }]
+    },
+    {
+      "id" : "fr-lm-entry.header.author[x].authorDevice",
+      "path" : "fr-lm-entry.header.author[x].authorDevice",
+      "short" : "L'auteur est un système",
+      "definition" : "L'auteur est un système",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
         "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-systeme-structure-auteur"
       }]
     },

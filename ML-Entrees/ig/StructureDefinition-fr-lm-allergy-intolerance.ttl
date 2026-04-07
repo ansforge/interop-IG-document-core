@@ -31,7 +31,7 @@
   fhir:name [ fhir:v "FRLMAllergyIntolerance"] ; # 
   fhir:title [ fhir:v "Logical model - FR LM Allergy Intolerance"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-04-07T10:50:27+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-04-07T13:39:53+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -144,8 +144,8 @@
      ] [
        fhir:id [ fhir:v "fr-lm-allergy-intolerance.header.author[x]" ] ;
        fhir:path [ fhir:v "fr-lm-allergy-intolerance.header.author[x]" ] ;
-       fhir:short [ fhir:v "Auteur(s) responsable(s) : Personne(s) ayant la responsabilité des informations fournies. Le rôle précis de l’auteur responsable dépend du contexte d’usage et du modèle concerné." ] ;
-       fhir:definition [ fhir:v "Auteur(s) responsable(s) : Personne(s) ayant la responsabilité des informations fournies. Le rôle précis de l’auteur responsable dépend du contexte d’usage et du modèle concerné." ] ;
+       fhir:short [ fhir:v "author[x] peut correspondre soit à un professionnel, soit à une organisation, soit à un système." ] ;
+       fhir:definition [ fhir:v "author[x] peut correspondre soit à un professionnel, soit à une organisation, soit à un système." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "*" ] ;
        fhir:base [
@@ -155,10 +155,59 @@
        ] ;
        fhir:type ( [
          fhir:code [
+           fhir:v "Base"^^xsd:anyURI ;
+           fhir:l fhir:Base
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "fr-lm-allergy-intolerance.header.author[x].authorProfessional" ] ;
+       fhir:path [ fhir:v "fr-lm-allergy-intolerance.header.author[x].authorProfessional" ] ;
+       fhir:short [ fhir:v "L'auteur est un professionnel de santé" ] ;
+       fhir:definition [ fhir:v "L'auteur est un professionnel de santé" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "fr-lm-entry.header.author[x].authorProfessional" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
            fhir:v "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure"^^xsd:anyURI ;
            fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure>
          ]
-       ] [
+       ] )
+     ] [
+       fhir:id [ fhir:v "fr-lm-allergy-intolerance.header.author[x].authorOrganisation" ] ;
+       fhir:path [ fhir:v "fr-lm-allergy-intolerance.header.author[x].authorOrganisation" ] ;
+       fhir:short [ fhir:v "L'auteur est une organisation" ] ;
+       fhir:definition [ fhir:v "L'auteur est une organisation" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "fr-lm-entry.header.author[x].authorOrganisation" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure"^^xsd:anyURI ;
+           fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure>
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "fr-lm-allergy-intolerance.header.author[x].authorDevice" ] ;
+       fhir:path [ fhir:v "fr-lm-allergy-intolerance.header.author[x].authorDevice" ] ;
+       fhir:short [ fhir:v "L'auteur est un système" ] ;
+       fhir:definition [ fhir:v "L'auteur est un système" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "fr-lm-entry.header.author[x].authorDevice" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
          fhir:code [
            fhir:v "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-systeme-structure-auteur"^^xsd:anyURI ;
            fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-systeme-structure-auteur>
