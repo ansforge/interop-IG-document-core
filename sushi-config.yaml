@@ -183,6 +183,7 @@ groups:
     name: Modèles logiques métier des composants élémentaires
     description: Modèles de données métier représentant les concepts élémentaires, modélisés indépendamment de la syntaxe et de façon plus accessible pour le métier que les éléments techniques CDA et FHIR.
     resources:
+      - StructureDefinition/fr-lm-entry
       - StructureDefinition/fr-lm-acte
       - StructureDefinition/fr-lm-antecedent-familial-observe
       - StructureDefinition/fr-lm-certitude
@@ -198,7 +199,7 @@ groups:
       - StructureDefinition/fr-lm-statut-probleme
       - StructureDefinition/fr-lm-severite
       - StructureDefinition/fr-lm-acte-substitution
-      - StructureDefinition/fr-lm-allergie-ou-hypersensibilite
+      - StructureDefinition/fr-lm-allergy-intolerance	
       - StructureDefinition/fr-lm-directive-anticipee
       - StructureDefinition/fr-lm-dispositif-medical-entree
       - StructureDefinition/fr-lm-document-attache

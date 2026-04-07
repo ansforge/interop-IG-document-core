@@ -9,4 +9,4 @@ Characteristics: #can-be-target
 * titreSection ^short = "Allergies et hypersensibilités"
 * sousSection 0..0
 * entree 1..*
-  * allergieOuHypersensibilite 1..* FRLMAllergieOuHypersensibilite "Entrée Allergie ou Hypersensibilité"
+  * allergieOuHypersensibilite 1..* FRLMAllergyIntolerance "Entrée Allergie ou Hypersensibilité"
