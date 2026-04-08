@@ -2,7 +2,7 @@ Logical: FRLMDeviceUse
 Id: fr-lm-device-use
 Parent: FRLMEntry
 Title: "Logical model - FR LM Device use"
-Description: """Dispositif médical usage"""
+Description: """Modèle logique métier - FR LM Dispositif médical usage"""
 Characteristics: #can-be-target
 
 * status 1..1 CodeableConcept	"Status de l'utilisation du DM (ex active, completed, etc)."

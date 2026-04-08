@@ -186,8 +186,6 @@ groups:
       - StructureDefinition/fr-lm-entry
       - StructureDefinition/fr-lm-procedure
       - StructureDefinition/fr-lm-antecedent-familial-observe
-      - StructureDefinition/fr-lm-certitude
-      - StructureDefinition/fr-lm-criticite
       - StructureDefinition/fr-lm-commentaire-er
       - StructureDefinition/fr-lm-demande-examen-ou-suivi
       - StructureDefinition/fr-lm-condition
@@ -208,13 +206,11 @@ groups:
       - StructureDefinition/fr-lm-en-rapport-avec-la-prevention
       - StructureDefinition/fr-lm-en-rapport-avec-accident-travail
       - StructureDefinition/fr-lm-en-rapport-avec-ald
-      - StructureDefinition/fr-lm-evaluation
-      - StructureDefinition/fr-lm-evaluation-composant
-      - StructureDefinition/fr-lm-evaluation-composant-n2
+      - StructureDefinition/fm-lm-assessment
       - StructureDefinition/fr-lm-evolution-effet-indesirable
       - StructureDefinition/fr-lm-gravite-effet-indesirable
       - StructureDefinition/fr-lm-group-de-questionnaires-devaluation
-      - StructureDefinition/fr-lm-habitus-mode-de-vie-entree
+      - StructureDefinition/fm-lm-observation-social-history
       - StructureDefinition/fr-lm-historique-grossesse
       - StructureDefinition/fr-lm-hors-amm
       - StructureDefinition/fr-lm-image-illustrative
