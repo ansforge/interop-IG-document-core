@@ -2,7 +2,7 @@ Logical: FRLMImmunisation
 Id: fr-lm-immunisation
 Parent: FRLMEntry
 Title: "Logical model - FR LM Immunisation"
-Description: """Vaccination"""
+Description: """EntréeVaccination"""
 Characteristics: #can-be-target
 
 // Statut de la vaccination

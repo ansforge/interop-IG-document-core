@@ -1,7 +1,7 @@
 Logical: FRLMMedication
 Id: fr-lm-medication
 Title: "Logical model - FR LM Medication"
-Description: """Produit de santé"""
+Description: """Entrée Produit de santé"""
 Characteristics: #can-be-target
 
 * medicament 1..1 Base "Médicament"

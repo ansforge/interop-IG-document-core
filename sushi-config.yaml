@@ -185,7 +185,7 @@ groups:
     resources:
       - StructureDefinition/fr-lm-entry
       - StructureDefinition/fr-lm-procedure
-      - StructureDefinition/fr-lm-antecedent-familial-observe
+      - StructureDefinition/fr-lm-family-member-history
       - StructureDefinition/fr-lm-certitude
       - StructureDefinition/fr-lm-criticite
       - StructureDefinition/fr-lm-commentaire-er
