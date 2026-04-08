@@ -5,6 +5,9 @@ Title: "Logical model - FR LM Immunisation"
 Description: """Vaccination"""
 Characteristics: #can-be-target
 
+// Statut de la vaccination
+* status 1..1 code "Statut de la vaccination (réalisé, non fait, ...)."
+
 * periodOfImmunisation 1..1 period "Période de vaccination - Si vaccin effectuée => que la dateDebutVaccination est renseignée - Si vaccin à effectuer => dateDebutVaccination et dateFinVaccination peuvent être renseignée (période souhaitée pour la vaccination)"
   * startDate 0..1 dateTime "Date de début"
   * endDate 0..1 dateTime "Date de fin"

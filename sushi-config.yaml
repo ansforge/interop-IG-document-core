@@ -190,6 +190,7 @@ groups:
       - StructureDefinition/fr-lm-criticite
       - StructureDefinition/fr-lm-commentaire-er
       - StructureDefinition/fr-lm-demande-examen-ou-suivi
+      - StructureDefinition/fr-lm-care-plan
       - StructureDefinition/fr-lm-condition
       - StructureDefinition/fr-lm-rencontre
       - StructureDefinition/fr-lm-reference-interne
@@ -227,7 +228,7 @@ groups:
       - StructureDefinition/fr-lm-dose-number
       - StructureDefinition/fr-lm-resultats-entree
       - StructureDefinition/fr-lm-resultats-examens-biologie-medicale
-      - StructureDefinition/fr-lm-signe-vital-observe
+      - StructureDefinition/fr-lm-observation-vital-sign
       - StructureDefinition/fr-lm-statut
       - StructureDefinition/fr-lm-traitement
       - StructureDefinition/fr-lm-vaccin-recommande
