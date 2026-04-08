@@ -6,7 +6,7 @@ Characteristics: #can-be-target
 
 * identifiant 1..* Identifier "Identifiant"
 * status 1..1 code "Statut"
-* produitSante 1..1 FRLMProduitSante "Produit de santé"
+* produitSante 1..1 FRLMMedication "Produit de santé"
 * indication[x] 0..* CodeableConcept or string "Motif du traitement"
 * finaliteTherapeutique 0..1 CodeableConcept "Objet de la prescription - prophylaxie, traitement, anesthésie, etc"
 * dureeTraitement 0..1 dateTime "Durée du traitement"

@@ -15,6 +15,6 @@ Characteristics: #can-be-target
 // dosage : EHDSAdministeredDosage
 * dosage 0..1 FRLMPosologie "Posologie"
 // medication : EHDSMedication
-* medicament 1..1 FRLMProduitSante "Médicament"
+* medicament 1..1 FRLMMedication "Médicament"
 // reason[x]
 * reason[x] 0..* CodeableConcept or Reference "Motif du traitement"
