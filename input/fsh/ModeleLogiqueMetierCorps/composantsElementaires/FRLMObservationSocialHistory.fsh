@@ -1,7 +1,7 @@
 Logical: FRLMObservationSocialHistory
 Id: fm-lm-observation-social-history
 Title: "Logical model- FR LM Observation Social History"
-Description: """Modèle logique métier - FR LM Habitus Mode de vie"""
+Description: """Entrée Habitus Mode de vie"""
 Characteristics: #can-be-target
 
 * status 1..1	code	"Statut de l'entrée"

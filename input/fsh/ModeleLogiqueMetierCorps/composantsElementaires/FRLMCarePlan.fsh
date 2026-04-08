@@ -2,7 +2,7 @@ Logical: FRLMCarePlan
 Id: fr-lm-care-plan
 Parent: FRLMEntry
 Title: "Logical model - FR LM Care Plan"
-Description: """Plan de soins"""
+Description: """Entrée Plan de soins"""
 Characteristics: #can-be-target
 
 * status 1..1 CodeableConcept "Statut du plan de soin (projet, actif, suspendu, annulé, terminé, erreur, inconnu)"

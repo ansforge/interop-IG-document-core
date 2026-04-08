@@ -2,7 +2,7 @@ Logical: FRLMProcedure
 Id: fr-lm-procedure
 Parent: FRLMEntry
 Title: "Logical model- FR LM Procedure"
-Description: """Modèle logique métier - FR LM Acte"""
+Description: """Entrée Acte"""
 Characteristics: #can-be-target
 
 * status 1..1	CodeableConcept	"Statut de l'acte"

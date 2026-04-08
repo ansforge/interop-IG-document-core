@@ -1,7 +1,7 @@
 Logical: FRLMDoseNumber
 Id: fr-lm-dose-number
 Title: "Logical model - FR LM Dose Number"
-Description: """Rang de la vaccination"""
+Description: """Entrée Rang de la vaccination"""
 Characteristics: #can-be-target
 
 * identifiantRangVaccination 0..* Identifier "Identifiant de l’entrée"

@@ -185,7 +185,7 @@ groups:
     resources:
       - StructureDefinition/fr-lm-entry
       - StructureDefinition/fr-lm-procedure
-      - StructureDefinition/fr-lm-antecedent-familial-observe
+      - StructureDefinition/fr-lm-family-member-history
       - StructureDefinition/fr-lm-commentaire-er
       - StructureDefinition/fr-lm-demande-examen-ou-suivi
       - StructureDefinition/fr-lm-care-plan

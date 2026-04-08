@@ -1,7 +1,7 @@
 Logical: FRLMAssessment
 Id: fm-lm-assessment
 Title: "Logical model - FR LM Assessment"
-Description: """Evaluation"""
+Description: """Entrée Evaluation"""
 Characteristics: #can-be-target
 
 * status 1..1 code "Statut de l'évaluation"
