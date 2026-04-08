@@ -13,5 +13,5 @@
 ","Entrées","Entrées","","","","","","","","","",,,,,"",,,,"fr-lm-section.entree",0,*,"",""
 "fr-lm-raison-recommandation.entree.observation","fr-lm-raison-recommandation.entree.observation","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation {[]} {[]}
 ","Entrée Simple observation","Entrée Simple observation","","","","","","","","","",,,,,"",,,,"fr-lm-raison-recommandation.entree.observation",1,1,"",""
-"fr-lm-raison-recommandation.entree.problemes","fr-lm-raison-recommandation.entree.problemes","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-probleme {[]} {[]}
+"fr-lm-raison-recommandation.entree.problemes","fr-lm-raison-recommandation.entree.problemes","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-condition {[]} {[]}
 ","Entrée Problème","Entrée Problème","","","","","","","","","",,,,,"",,,,"fr-lm-raison-recommandation.entree.problemes",1,*,"",""

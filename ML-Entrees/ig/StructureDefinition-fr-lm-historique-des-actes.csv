@@ -11,7 +11,7 @@
 ","Sous-sections","Sous-sections","","","","","","","","","",,,,,"",,,,"fr-lm-section.sousSection",0,*,"",""
 "fr-lm-historique-des-actes.entree","fr-lm-historique-des-actes.entree","","","",1,*,"","","","Base {[]} {[]}
 ","Entrées","Entrées","","","","","","","","","",,,,,"",,,,"fr-lm-section.entree",0,*,"",""
-"fr-lm-historique-des-actes.entree.actes","fr-lm-historique-des-actes.entree.actes","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-acte {[]} {[]}
+"fr-lm-historique-des-actes.entree.actes","fr-lm-historique-des-actes.entree.actes","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-procedure {[]} {[]}
 ","Entrée Acte","Entrée Acte","","","","","","","","","",,,,,"",,,,"fr-lm-historique-des-actes.entree.actes",1,*,"",""
 "fr-lm-historique-des-actes.entree.references","fr-lm-historique-des-actes.entree.references","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-references-externes {[]} {[]}
 ","Entrée Références externes","Entrée Références externes","","","","","","","","","",,,,,"",,,,"fr-lm-historique-des-actes.entree.references",1,*,"",""

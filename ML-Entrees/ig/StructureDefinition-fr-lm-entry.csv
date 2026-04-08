@@ -31,3 +31,5 @@ La partie en minuscules indique le code de la langue utilisée (ISO-639-1)
 La partie en majuscules indique le code pays (ISO-3166)","'fr-FR' pour français métropolitain (la casse des caractères doit être respectée)
 La partie en minuscules indique le code de la langue utilisée (ISO-639-1)
 La partie en majuscules indique le code pays (ISO-3166)","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.langue",0,1,"",""
+"fr-lm-entry.header.code","fr-lm-entry.header.code","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Type de l'entrée","Type de l'entrée","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.code",0,1,"",""

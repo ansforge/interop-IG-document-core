@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-severite | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-07 | *Computable Name*:FRLMSeverite |
+| Draft as of 2026-04-08 | *Computable Name*:FRLMSeverite |
 
  
 Sévérité. 
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Problème](StructureDefinition-fr-lm-probleme.md)
+* Ce Modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-severite)
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-severite.csv),
   "name" : "FRLMSeverite",
   "title" : "Modèle logique métier - FR LM Sévérité",
   "status" : "draft",
-  "date" : "2026-04-07T13:39:53+00:00",
+  "date" : "2026-04-08T09:43:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

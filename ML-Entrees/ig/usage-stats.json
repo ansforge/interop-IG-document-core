@@ -594,7 +594,6 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier": [
       "fr-lm-image-illustrative",
       "fr-lm-notes-dispensateur",
-      "fr-lm-probleme.reference.externalDocument",
       "fr-lm-reference-item-prescription",
       "fr-lm-reference-item-prescription.reference.externalDocument",
       "fr-lm-references-externes.reference.externalDocument",
@@ -625,6 +624,10 @@
       "Organization",
       "fr-lm-allergy-intolerance",
       "fr-lm-allergy-intolerance.reaction",
+      "fr-lm-condition",
+      "fr-lm-device-use",
+      "fr-lm-immunisation",
+      "fr-lm-procedure",
       "fr-lm-traitement-prescrit"
     ],
     "http://hl7.org/fhir/StructureDefinition/patient-birthPlace": [

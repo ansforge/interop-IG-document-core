@@ -5,5 +5,5 @@
 ","Identifiant de la fourniture du DM","Identifiant de la fourniture du DM","","","","","","","","","",,,,,"",,,,"fr-lm-dose-antigene.identifiant",1,1,"",""
 "fr-lm-dose-antigene.doseAntigene","fr-lm-dose-antigene.doseAntigene","","","",1,1,"","","","Quantity {[]} {[]}
 ","Dose d'antigène","Dose d'antigène","","","","","","","","","",,,,,"",,,,"fr-lm-dose-antigene.doseAntigene",1,1,"",""
-"fr-lm-dose-antigene.antigene","fr-lm-dose-antigene.antigene","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-produit-sante {[]} {[]}
+"fr-lm-dose-antigene.antigene","fr-lm-dose-antigene.antigene","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication {[]} {[]}
 ","Antigène","Antigène","","","","","","","","","",,,,,"",,,,"fr-lm-dose-antigene.antigene",1,1,"",""

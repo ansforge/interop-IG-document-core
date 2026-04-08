@@ -11,7 +11,7 @@
 ","Sous-sections","Sous-sections","","","","","","","","","",,,,,"",,,,"fr-lm-section.sousSection",0,*,"",""
 "fr-lm-education-patient.entree","fr-lm-education-patient.entree","","","",0,*,"","","","Base {[]} {[]}
 ","Entrées","Entrées","","","","","","","","","",,,,,"",,,,"fr-lm-section.entree",0,*,"",""
-"fr-lm-education-patient.entree.acte","fr-lm-education-patient.entree.acte","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-acte {[]} {[]}
+"fr-lm-education-patient.entree.acte","fr-lm-education-patient.entree.acte","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-procedure {[]} {[]}
 ","Entrée Acte","Entrée Acte","","","","","","","","","",,,,,"",,,,"fr-lm-education-patient.entree.acte",0,*,"",""
 "fr-lm-education-patient.entree.observation","fr-lm-education-patient.entree.observation","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation {[]} {[]}
 ","Entrée Simple observation","Entrée Simple observation","","","","","","","","","",,,,,"",,,,"fr-lm-education-patient.entree.observation",0,*,"",""

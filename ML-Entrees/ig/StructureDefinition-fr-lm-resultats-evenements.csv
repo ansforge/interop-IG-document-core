@@ -15,5 +15,5 @@
 ","Entrée Simple observation","Entrée Simple observation","","","","","","","","","",,,,,"",,,,"fr-lm-resultats-evenements.entree.observation",1,*,"",""
 "fr-lm-resultats-evenements.entree.transfertPatient","fr-lm-resultats-evenements.entree.transfertPatient","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-transfert-du-patient {[]} {[]}
 ","Entrée Transfert du patient","Entrée Transfert du patient","","","","","","","","","",,,,,"",,,,"fr-lm-resultats-evenements.entree.transfertPatient",0,*,"",""
-"fr-lm-resultats-evenements.entree.probleme","fr-lm-resultats-evenements.entree.probleme","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-probleme {[]} {[]}
+"fr-lm-resultats-evenements.entree.probleme","fr-lm-resultats-evenements.entree.probleme","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-condition {[]} {[]}
 ","Entrée Problème","Entrée Problème","","","","","","","","","",,,,,"",,,,"fr-lm-resultats-evenements.entree.probleme",0,*,"",""

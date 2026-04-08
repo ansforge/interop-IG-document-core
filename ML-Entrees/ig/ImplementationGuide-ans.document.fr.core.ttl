@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "FRDocumentCore"] ; # 
   fhir:title [ fhir:v "ANS IG document core"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-04-07T13:39:53+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-04-08T09:43:36+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -6070,11 +6070,165 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-lm-device" ]
+       ] ;
+       fhir:name [ fhir:v "Logical model - Device" ] ;
+       fhir:description [ fhir:v "Dispositif médical" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-allergy-intolerance> ;
          fhir:reference [ fhir:v "StructureDefinition/fr-lm-allergy-intolerance" ]
        ] ;
        fhir:name [ fhir:v "Logical model - FR LM Allergy Intolerance" ] ;
        fhir:description [ fhir:v "Allergie ou hypersensibilite" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-condition> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-lm-condition" ]
+       ] ;
+       fhir:name [ fhir:v "Logical model - FR LM Condition" ] ;
+       fhir:description [ fhir:v "Entrée Problème" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device-use> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-lm-device-use" ]
+       ] ;
+       fhir:name [ fhir:v "Logical model - FR LM Device use" ] ;
+       fhir:description [ fhir:v "Dispositif médical usage" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dose-number> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-lm-dose-number" ]
+       ] ;
+       fhir:name [ fhir:v "Logical model - FR LM Dose Number" ] ;
+       fhir:description [ fhir:v "Rang de la vaccination" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-immunisation> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-lm-immunisation" ]
+       ] ;
+       fhir:name [ fhir:v "Logical model - FR LM Immunisation" ] ;
+       fhir:description [ fhir:v "Vaccination" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-lm-medication" ]
+       ] ;
+       fhir:name [ fhir:v "Logical model - FR LM Medication" ] ;
+       fhir:description [ fhir:v "Produit de santé" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-procedure> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-lm-procedure" ]
+       ] ;
+       fhir:name [ fhir:v "Logical model- FR LM Procedure" ] ;
+       fhir:description [ fhir:v "Acte" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -9126,55 +9280,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dispositif-medical> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-lm-dispositif-medical" ]
-       ] ;
-       fhir:name [ fhir:v "Modèle logique métier - Dispositif médical" ] ;
-       fhir:description [ fhir:v "Dispositif médical" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-accidents-transfusionnels> ;
          fhir:reference [ fhir:v "StructureDefinition/fr-lm-accidents-transfusionnels" ]
        ] ;
        fhir:name [ fhir:v "Modèle logique métier - FR LM Accident transfusionnel" ] ;
        fhir:description [ fhir:v "Accident transfusionnel" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-acte> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-lm-acte" ]
-       ] ;
-       fhir:name [ fhir:v "Modèle logique métier - FR LM Acte" ] ;
-       fhir:description [ fhir:v "Acte" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -9884,28 +9994,6 @@
          fhir:v false
        ] ;
        fhir:groupingId [ fhir:v "Modèles logiques métier des sections d'un document" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dispositif-medical-entree> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-lm-dispositif-medical-entree" ]
-       ] ;
-       fhir:name [ fhir:v "Modèle logique métier - FR LM Dispositif médical" ] ;
-       fhir:description [ fhir:v "Dispositif médical" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -11301,28 +11389,6 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-probleme> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-lm-probleme" ]
-       ] ;
-       fhir:name [ fhir:v "Modèle logique métier - FR LM Problème" ] ;
-       fhir:description [ fhir:v "Problème" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-problemes-actifs> ;
          fhir:reference [ fhir:v "StructureDefinition/fr-lm-problemes-actifs" ]
        ] ;
@@ -11333,28 +11399,6 @@
          fhir:v false
        ] ;
        fhir:groupingId [ fhir:v "Modèles logiques métier des sections d'un document" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-produit-sante> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-lm-produit-sante" ]
-       ] ;
-       fhir:name [ fhir:v "Modèle logique métier - FR LM Produit de santé" ] ;
-       fhir:description [ fhir:v "Produit de santé" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -11477,28 +11521,6 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-rang-vaccination> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-lm-rang-vaccination" ]
-       ] ;
-       fhir:name [ fhir:v "Modèle logique métier - FR LM Rang de la vaccination" ] ;
-       fhir:description [ fhir:v "Rang de la vaccination" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-recherche-de-micro-organismes> ;
          fhir:reference [ fhir:v "StructureDefinition/fr-lm-recherche-de-micro-organismes" ]
        ] ;
@@ -11521,8 +11543,8 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-rencontre> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-lm-rencontre" ]
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-encounter> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-lm-encounter" ]
        ] ;
        fhir:name [ fhir:v "Modèle logique métier - FR LM Rencontre" ] ;
        fhir:description [ fhir:v "Rencontre" ] ;
@@ -12428,28 +12450,6 @@
        ] ;
        fhir:name [ fhir:v "Modèle logique métier - FR LM Vaccin recommandé" ] ;
        fhir:description [ fhir:v "Vaccin recommandé" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-vaccination> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-lm-vaccination" ]
-       ] ;
-       fhir:name [ fhir:v "Modèle logique métier - FR LM Vaccination" ] ;
-       fhir:description [ fhir:v "Vaccination" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

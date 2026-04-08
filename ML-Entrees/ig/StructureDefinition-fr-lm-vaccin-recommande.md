@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-vaccin-recommande | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-07 | *Computable Name*:FRLMVaccinRecommande |
+| Draft as of 2026-04-08 | *Computable Name*:FRLMVaccinRecommande |
 
  
 Vaccin recommandé 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-vaccin-recomma
   "name" : "FRLMVaccinRecommande",
   "title" : "Modèle logique métier - FR LM Vaccin recommandé",
   "status" : "draft",
-  "date" : "2026-04-07T13:39:53+00:00",
+  "date" : "2026-04-08T09:43:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -174,7 +174,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-vaccin-recomma
       "min" : 1,
       "max" : "1",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-produit-sante"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication"
       }]
     },
     {
@@ -196,7 +196,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-vaccin-recomma
       "min" : 0,
       "max" : "1",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-rang-vaccination"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dose-number"
       }]
     },
     {

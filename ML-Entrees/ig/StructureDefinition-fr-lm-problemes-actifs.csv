@@ -11,5 +11,5 @@
 ","Sous-sections","Sous-sections","","","","","","","","","",,,,,"",,,,"fr-lm-section.sousSection",0,*,"",""
 "fr-lm-problemes-actifs.entree","fr-lm-problemes-actifs.entree","","","",1,*,"","","","Base {[]} {[]}
 ","Entrées","Entrées","","","","","","","","","",,,,,"",,,,"fr-lm-section.entree",0,*,"",""
-"fr-lm-problemes-actifs.entree.problemes","fr-lm-problemes-actifs.entree.problemes","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-probleme {[]} {[]}
+"fr-lm-problemes-actifs.entree.problemes","fr-lm-problemes-actifs.entree.problemes","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-condition {[]} {[]}
 ","Entrée Problème","Entrée Problème","","","","","","","","","",,,,,"",,,,"fr-lm-problemes-actifs.entree.problemes",1,*,"",""

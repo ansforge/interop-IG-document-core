@@ -9,7 +9,7 @@
 ","Durée du traitement","Durée du traitement","","","","","","","","","",,,,,"",,,,"fr-lm-traitement.dureeTraitement",0,1,"",""
 "fr-lm-traitement.dosage","fr-lm-traitement.dosage","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-posologie {[]} {[]}
 ","Posologie","Posologie","","","","","","","","","",,,,,"",,,,"fr-lm-traitement.dosage",0,1,"",""
-"fr-lm-traitement.medicament","fr-lm-traitement.medicament","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-produit-sante {[]} {[]}
+"fr-lm-traitement.medicament","fr-lm-traitement.medicament","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication {[]} {[]}
 ","Médicament","Médicament","","","","","","","","","",,,,,"",,,,"fr-lm-traitement.medicament",1,1,"",""
 "fr-lm-traitement.reason[x]","fr-lm-traitement.reason[x]","","","",0,*,"","","","CodeableConcept {[]} {[]}
 http://hl7.org/cda/stds/core/StructureDefinition/Reference {[]} {[]}","Motif du traitement","Motif du traitement","","","","","","","","","",,,,,"",,,,"fr-lm-traitement.reason[x]",0,*,"",""
