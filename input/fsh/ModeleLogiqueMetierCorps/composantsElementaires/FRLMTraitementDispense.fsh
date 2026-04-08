@@ -11,7 +11,7 @@ Characteristics: #can-be-target
 * quantite  1..1 Quantity "Quantité : Unité issue de EDQM Packaging"
 * medicamentDelivre 1..1 FRLMMedication "Médicament délivré"
 * referencePrescription 0..1 FRLMReferenceItemPrescription "Référence de la prescription"
-* posologie 0..1 FRLMPosologie "Posologie"
+* posologie 0..1 FRLMDosageInstructions "Posologie"
 * notesDispensateur 0..1 string "Notes du dispensateur"
 * autorisationSubstitution 1..1 Base "Autorisation de substitution"
   * type 0..1 CodeableConcept "Type de substitution jdv-hl7-v3-ActSubstanceAdminSubstitutionCode-cisis (2.16.840.1.113883.1.11.16621)"

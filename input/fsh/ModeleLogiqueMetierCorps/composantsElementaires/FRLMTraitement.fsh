@@ -13,7 +13,7 @@ Characteristics: #can-be-target
 // choix obligatoire dans le modèle EHDS et en FHIR
 * dureeTraitement 0..1 dateTime "Durée du traitement"
 // dosage : EHDSAdministeredDosage
-* dosage 0..1 FRLMPosologie "Posologie"
+* dosage 0..1 FRLMDosageInstructions "Posologie"
 // medication : EHDSMedication
 * medicament 1..1 FRLMMedication "Médicament"
 // reason[x]

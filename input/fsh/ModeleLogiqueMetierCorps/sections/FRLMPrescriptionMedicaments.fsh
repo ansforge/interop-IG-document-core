@@ -8,4 +8,4 @@ Characteristics: #can-be-target
 * auteur 0..1 FRLMAuteur "Auteur de la prescription"
 * sousSection 0..0
 * entree 1..*
-  * traitementPrescrit 1..* FRLMTraitementPrescrit "Entrée Traitement prescrit"
+  * traitementPrescrit 1..* FRLMMedicationPrescription "Entrée Traitement prescrit"

@@ -8,7 +8,7 @@ Characteristics: #can-be-target
 * code 1..1 CodeableConcept "Code de l'entrée"
 * produitSante 1..1 FRLMMedication "Produit de santé"
 * auteur 0..1 FRLMAuteur "Auteur"
-* traitementPrescrit 0..1 FRLMTraitementPrescrit "Traitement prescrit"
+* traitementPrescrit 0..1 FRLMMedicationPrescription "Traitement prescrit"
 * reference 0..1 Base "ID of parent container of referenced item"
   * externalDocument 1..1 Base "Document référencé"
     * identifiant 1..1 identifier "Identifiant du document"

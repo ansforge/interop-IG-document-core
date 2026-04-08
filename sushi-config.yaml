@@ -241,10 +241,10 @@ groups:
       - StructureDefinition/fr-lm-serie-imagerie
       - StructureDefinition/fr-lm-sop-instance
       - StructureDefinition/fr-lm-technique-imagerie
-      - StructureDefinition/fr-lm-traitement-prescrit
+      - StructureDefinition/fr-lm-medication-prescription
       - StructureDefinition/fr-lm-autorisation-substitution
       - StructureDefinition/fr-lm-quantite-exposition
-      - StructureDefinition/fr-lm-quantite-produit
+      - StructureDefinition/fr-lm-quantity-prescribed
       - StructureDefinition/fr-lm-statut-document-entree
       - StructureDefinition/fr-lm-transfusion-de-produits-sanguins
       - StructureDefinition/fr-lm-synthese-medicale-sejour
@@ -268,7 +268,7 @@ groups:
       - StructureDefinition/fr-lm-informant-apsr
       - StructureDefinition/fr-lm-device
       - StructureDefinition/fr-lm-echantillon-preleve
-  
+      - StructureDefinition/fr-lm-dosage-instructions
   Ressources CDA entête:
     name: Eléments CDA
     #description: Profils CDA
