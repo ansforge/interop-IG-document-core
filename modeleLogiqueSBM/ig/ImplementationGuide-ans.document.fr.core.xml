@@ -10,7 +10,7 @@
   <name value="FRDocumentCore"/>
   <title value="ANS IG document core"/>
   <status value="draft"/>
-  <date value="2026-04-08T10:07:24+00:00"/>
+  <date value="2026-04-08T12:33:58+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -3076,7 +3076,7 @@
         <reference value="StructureDefinition/fr-lm-care-plan"/>
       </reference>
       <name value="Logical model - FR LM Care Plan"/>
-      <description value="Plan de soins"/>
+      <description value="Entrée Plan de soins"/>
       <exampleBoolean value="false"/>
       <groupingId value="Modèles logiques métier des composants élémentaires"/>
     </resource>
@@ -3112,7 +3112,19 @@
         <reference value="StructureDefinition/fr-lm-dose-number"/>
       </reference>
       <name value="Logical model - FR LM Dose Number"/>
-      <description value="Rang de la vaccination"/>
+      <description value="Entrée Rang de la vaccination"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Modèles logiques métier des composants élémentaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-lm-family-member-history"/>
+      </reference>
+      <name value="Logical model - FR LM Family Member History"/>
+      <description value="Entrée Antécédent familial"/>
       <exampleBoolean value="false"/>
       <groupingId value="Modèles logiques métier des composants élémentaires"/>
     </resource>
@@ -3124,7 +3136,7 @@
         <reference value="StructureDefinition/fr-lm-immunisation"/>
       </reference>
       <name value="Logical model - FR LM Immunisation"/>
-      <description value="Vaccination"/>
+      <description value="EntréeVaccination"/>
       <exampleBoolean value="false"/>
       <groupingId value="Modèles logiques métier des composants élémentaires"/>
     </resource>
@@ -3136,7 +3148,7 @@
         <reference value="StructureDefinition/fr-lm-medication"/>
       </reference>
       <name value="Logical model - FR LM Medication"/>
-      <description value="Produit de santé"/>
+      <description value="Entrée Produit de santé"/>
       <exampleBoolean value="false"/>
       <groupingId value="Modèles logiques métier des composants élémentaires"/>
     </resource>
@@ -4901,18 +4913,6 @@
       <description value="Section Allergies et hypersensibilités"/>
       <exampleBoolean value="false"/>
       <groupingId value="Modèles logiques métier des sections d'un document"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/fr-lm-antecedent-familial-observe"/>
-      </reference>
-      <name value="Modèle logique métier - FR LM Antécédent familial observé"/>
-      <description value="Antécédent familial"/>
-      <exampleBoolean value="false"/>
-      <groupingId value="Modèles logiques métier des composants élémentaires"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

@@ -106,19 +106,19 @@ Modèles de données métier représentant les concepts élémentaires, modélis
 | [FR LM Entry](StructureDefinition-fr-lm-entry.md) | Modèle logique représentant l’entrée |
 | [Logical model - Device](StructureDefinition-fr-lm-device.md) | Dispositif médical |
 | [Logical model - FR LM Allergy Intolerance](StructureDefinition-fr-lm-allergy-intolerance.md) | Allergie ou hypersensibilite |
-| [Logical model - FR LM Care Plan](StructureDefinition-fr-lm-care-plan.md) | Plan de soins |
+| [Logical model - FR LM Care Plan](StructureDefinition-fr-lm-care-plan.md) | Entrée Plan de soins |
 | [Logical model - FR LM Condition](StructureDefinition-fr-lm-condition.md) | Entrée Problème |
 | [Logical model - FR LM Device use](StructureDefinition-fr-lm-device-use.md) | Dispositif médical usage |
-| [Logical model - FR LM Dose Number](StructureDefinition-fr-lm-dose-number.md) | Rang de la vaccination |
-| [Logical model - FR LM Immunisation](StructureDefinition-fr-lm-immunisation.md) | Vaccination |
-| [Logical model - FR LM Medication](StructureDefinition-fr-lm-medication.md) | Produit de santé |
+| [Logical model - FR LM Dose Number](StructureDefinition-fr-lm-dose-number.md) | Entrée Rang de la vaccination |
+| [Logical model - FR LM Family Member History](StructureDefinition-fr-lm-family-member-history.md) | Entrée Antécédent familial |
+| [Logical model - FR LM Immunisation](StructureDefinition-fr-lm-immunisation.md) | EntréeVaccination |
+| [Logical model - FR LM Medication](StructureDefinition-fr-lm-medication.md) | Entrée Produit de santé |
 | [Logical model - FR LM Observation Vital Sign](StructureDefinition-fr-lm-observation-vital-sign.md) | Signe vital observé |
 | [Logical model- FR LM Procedure](StructureDefinition-fr-lm-procedure.md) | Acte |
 | [Modèle logique métier - FR LM Accident transfusionnel](StructureDefinition-fr-lm-accidents-transfusionnels.md) | Accident transfusionnel |
 | [Modèle logique métier - FR LM Acte substitution](StructureDefinition-fr-lm-acte-substitution.md) | Acte substitution |
 | [Modèle logique métier - FR LM Administration de dérivés du sang](StructureDefinition-fr-lm-administration-de-derives-du-sang.md) | Administration de dérivés du sang |
 | [Modèle logique métier - FR LM Administration produit de sante](StructureDefinition-fr-lm-administration-produit-de-sante.md) | Administration produit de sante |
-| [Modèle logique métier - FR LM Antécédent familial observé](StructureDefinition-fr-lm-antecedent-familial-observe.md) | Antécédent familial |
 | [Modèle logique métier - FR LM Auteur APSR](StructureDefinition-fr-lm-auteur-apsr.md) | Auteur APSR (Anatomic Pathology Structured Report), la structure de cet élément est identique à celle de l’élément Auteur |
 | [Modèle logique métier - FR LM Autorisation exposition](StructureDefinition-fr-lm-autorisation-exposition.md) | Autorisation exposition |
 | [Modèle logique métier - FR LM Autorisation substitution](StructureDefinition-fr-lm-autorisation-substitution.md) | Autorisation substitution |

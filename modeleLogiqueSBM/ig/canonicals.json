@@ -2134,13 +2134,6 @@
   "name" : "FRLMAllergyIntolerance"
 },
 {
-  "id" : "fr-lm-antecedent-familial-observe",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-antecedent-familial-observe",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRLMAntecedentFamilialObserve"
-},
-{
   "id" : "fr-lm-antecedents-familiaux",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-antecedents-familiaux",
@@ -2531,6 +2524,13 @@
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-facteurs-de-risque-professionnels-non-code",
   "version" : "0.1.0-snapsnot",
   "name" : "FRLMFacteursDeRisqueProfessionnelsNonCode"
+},
+{
+  "id" : "fr-lm-family-member-history",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-family-member-history",
+  "version" : "0.1.0-snapsnot",
+  "name" : "FRLMFamilyMemberHistory"
 },
 {
   "id" : "fr-lm-fonctions-physiques",

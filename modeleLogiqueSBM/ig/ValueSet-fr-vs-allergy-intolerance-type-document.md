@@ -50,7 +50,7 @@ ValueSet contenant les codes SNOMED CT autorisés pour les types d’allergies e
   "name" : "FRValueSetAllergyInoleranceTypeDocument",
   "title" : "ValueSet - FR ValueSet Allergy Intolerance Type Document",
   "status" : "draft",
-  "date" : "2026-04-08T10:07:24+00:00",
+  "date" : "2026-04-08T12:33:58+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

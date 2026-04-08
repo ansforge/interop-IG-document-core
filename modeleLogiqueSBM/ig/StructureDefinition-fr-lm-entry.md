@@ -16,7 +16,7 @@ Modèle logique représentant l’entrée
 
 **Utilisations:**
 
-* Dérivé de ce Modèle logique: [Logical model - FR LM Allergy Intolerance](StructureDefinition-fr-lm-allergy-intolerance.md), [Logical model - FR LM Care Plan](StructureDefinition-fr-lm-care-plan.md), [Logical model - FR LM Condition](StructureDefinition-fr-lm-condition.md), [Logical model - FR LM Device use](StructureDefinition-fr-lm-device-use.md)... Show 3 more, [Logical model - FR LM Immunisation](StructureDefinition-fr-lm-immunisation.md), [Logical model - FR LM Observation Vital Sign](StructureDefinition-fr-lm-observation-vital-sign.md) and [Logical model- FR LM Procedure](StructureDefinition-fr-lm-procedure.md)
+* Dérivé de ce Modèle logique: [Logical model - FR LM Allergy Intolerance](StructureDefinition-fr-lm-allergy-intolerance.md), [Logical model - FR LM Care Plan](StructureDefinition-fr-lm-care-plan.md), [Logical model - FR LM Condition](StructureDefinition-fr-lm-condition.md), [Logical model - FR LM Device use](StructureDefinition-fr-lm-device-use.md)... Show 4 more, [Logical model - FR LM Family Member History](StructureDefinition-fr-lm-family-member-history.md), [Logical model - FR LM Immunisation](StructureDefinition-fr-lm-immunisation.md), [Logical model - FR LM Observation Vital Sign](StructureDefinition-fr-lm-observation-vital-sign.md) and [Logical model- FR LM Procedure](StructureDefinition-fr-lm-procedure.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-entry)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-entry.csv), [E
   "name" : "FRLMEntry",
   "title" : "FR LM Entry",
   "status" : "draft",
-  "date" : "2026-04-08T10:07:24+00:00",
+  "date" : "2026-04-08T12:33:58+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

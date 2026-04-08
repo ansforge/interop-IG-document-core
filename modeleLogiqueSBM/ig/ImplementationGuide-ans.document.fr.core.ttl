@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "FRDocumentCore"] ; # 
   fhir:title [ fhir:v "ANS IG document core"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-04-08T10:07:24+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-04-08T12:33:58+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -6118,7 +6118,7 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-lm-care-plan" ]
        ] ;
        fhir:name [ fhir:v "Logical model - FR LM Care Plan" ] ;
-       fhir:description [ fhir:v "Plan de soins" ] ;
+       fhir:description [ fhir:v "Entrée Plan de soins" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -6184,7 +6184,29 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-lm-dose-number" ]
        ] ;
        fhir:name [ fhir:v "Logical model - FR LM Dose Number" ] ;
-       fhir:description [ fhir:v "Rang de la vaccination" ] ;
+       fhir:description [ fhir:v "Entrée Rang de la vaccination" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-family-member-history> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-lm-family-member-history" ]
+       ] ;
+       fhir:name [ fhir:v "Logical model - FR LM Family Member History" ] ;
+       fhir:description [ fhir:v "Entrée Antécédent familial" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -6206,7 +6228,7 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-lm-immunisation" ]
        ] ;
        fhir:name [ fhir:v "Logical model - FR LM Immunisation" ] ;
-       fhir:description [ fhir:v "Vaccination" ] ;
+       fhir:description [ fhir:v "EntréeVaccination" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -6228,7 +6250,7 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-lm-medication" ]
        ] ;
        fhir:name [ fhir:v "Logical model - FR LM Medication" ] ;
-       fhir:description [ fhir:v "Produit de santé" ] ;
+       fhir:description [ fhir:v "Entrée Produit de santé" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -9466,28 +9488,6 @@
          fhir:v false
        ] ;
        fhir:groupingId [ fhir:v "Modèles logiques métier des sections d'un document" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-antecedent-familial-observe> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-lm-antecedent-familial-observe" ]
-       ] ;
-       fhir:name [ fhir:v "Modèle logique métier - FR LM Antécédent familial observé" ] ;
-       fhir:description [ fhir:v "Antécédent familial" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [

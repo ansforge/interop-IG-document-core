@@ -10,7 +10,7 @@
   "name" : "FRDocumentCore",
   "title" : "ANS IG document core",
   "status" : "draft",
-  "date" : "2026-04-08T10:07:24+00:00",
+  "date" : "2026-04-08T12:33:58+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -3473,7 +3473,7 @@
         "reference" : "StructureDefinition/fr-lm-care-plan"
       },
       "name" : "Logical model - FR LM Care Plan",
-      "description" : "Plan de soins",
+      "description" : "Entrée Plan de soins",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier des composants élémentaires"
     },
@@ -3512,7 +3512,20 @@
         "reference" : "StructureDefinition/fr-lm-dose-number"
       },
       "name" : "Logical model - FR LM Dose Number",
-      "description" : "Rang de la vaccination",
+      "description" : "Entrée Rang de la vaccination",
+      "exampleBoolean" : false,
+      "groupingId" : "Modèles logiques métier des composants élémentaires"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-lm-family-member-history"
+      },
+      "name" : "Logical model - FR LM Family Member History",
+      "description" : "Entrée Antécédent familial",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier des composants élémentaires"
     },
@@ -3525,7 +3538,7 @@
         "reference" : "StructureDefinition/fr-lm-immunisation"
       },
       "name" : "Logical model - FR LM Immunisation",
-      "description" : "Vaccination",
+      "description" : "EntréeVaccination",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier des composants élémentaires"
     },
@@ -3538,7 +3551,7 @@
         "reference" : "StructureDefinition/fr-lm-medication"
       },
       "name" : "Logical model - FR LM Medication",
-      "description" : "Produit de santé",
+      "description" : "Entrée Produit de santé",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier des composants élémentaires"
     },
@@ -5450,19 +5463,6 @@
       "description" : "Section Allergies et hypersensibilités",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier des sections d'un document"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-lm-antecedent-familial-observe"
-      },
-      "name" : "Modèle logique métier - FR LM Antécédent familial observé",
-      "description" : "Antécédent familial",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
     },
     {
       "extension" : [{

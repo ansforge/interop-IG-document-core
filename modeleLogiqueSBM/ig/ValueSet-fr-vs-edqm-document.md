@@ -55,7 +55,7 @@ ValueSet basé sur le CodeSystem EDQM fourni par SMT
   "title" : "ValueSet - FR ValueSet EDQM Document",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-04-08T10:07:24+00:00",
+  "date" : "2026-04-08T12:33:58+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

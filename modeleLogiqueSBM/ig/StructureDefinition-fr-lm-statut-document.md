@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-statut-documen
   "name" : "FRLMStatutDocument",
   "title" : "Modèle logique métier - FR LM Statut du document",
   "status" : "draft",
-  "date" : "2026-04-08T10:07:24+00:00",
+  "date" : "2026-04-08T12:33:58+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

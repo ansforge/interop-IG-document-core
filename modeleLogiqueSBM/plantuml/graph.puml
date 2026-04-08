@@ -4477,21 +4477,6 @@ package IG #DDDDDD{
              fr-lm-allergy-intolerance.reaction.period.endDate => [0..1]
         } 
 
-        class FRLMAntecedentFamilialObserve{
-
-             fr-lm-antecedent-familial-observe => [None..None]
-             fr-lm-antecedent-familial-observe.identifiant => [1..1]
-             fr-lm-antecedent-familial-observe.code => [1..1]
-             fr-lm-antecedent-familial-observe.descriptionNarrative => [1..1]
-             fr-lm-antecedent-familial-observe.statut => [1..1]
-             fr-lm-antecedent-familial-observe.horodatage => [0..1]
-             fr-lm-antecedent-familial-observe.resultat => [1..1]
-             fr-lm-antecedent-familial-observe.interpretation => [0..1]
-             fr-lm-antecedent-familial-observe.methode => [0..1]
-             fr-lm-antecedent-familial-observe.site => [0..1]
-             fr-lm-antecedent-familial-observe.auteur => [0..1]
-        } 
-
         class FRLMAntecedentsFamiliaux{
 
              fr-lm-antecedents-familiaux => [None..None]
@@ -5156,6 +5141,20 @@ package IG #DDDDDD{
              fr-lm-facteurs-de-risque-professionnels-non-code => [None..None]
              fr-lm-facteurs-de-risque-professionnels-non-code.sousSection => [None..0]
              fr-lm-facteurs-de-risque-professionnels-non-code.entree => [None..0]
+        } 
+
+        class FRLMFamilyMemberHistory{
+
+             fr-lm-family-member-history => [None..None]
+             fr-lm-family-member-history.statut => [1..1]
+             fr-lm-family-member-history.relatedPerson => [1..1]
+             fr-lm-family-member-history.condition => [0..*]
+             fr-lm-family-member-history.condition.code => [1..1]
+             fr-lm-family-member-history.condition.outcome => [0..1]
+             fr-lm-family-member-history.condition.contributedToDeath => [0..1]
+             fr-lm-family-member-history.condition.onset[x] => [0..1]
+             fr-lm-family-member-history.condition.bodySite => [0..1]
+             fr-lm-family-member-history.note => [0..1]
         } 
 
         class FRLMFonctionsPhysiques{
@@ -8223,10 +8222,6 @@ package "Ressources de base" #palegreen {
 
     classeb8bc4d6baa061f547965c0670265381 --> FRLMAllergyIntolerance
 
- class "Base" as  class095a1b43effec73955e31e790438de49 
-
-    class095a1b43effec73955e31e790438de49 --> FRLMAntecedentFamilialObserve
-
  class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-section" as  class5dabea989fe22a905d8f89cc210527f2 
 
     class5dabea989fe22a905d8f89cc210527f2 --> FRLMAntecedentsFamiliaux
@@ -8450,6 +8445,10 @@ package "Ressources de base" #palegreen {
  class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-section" as  class5dabea989fe22a905d8f89cc210527f2 
 
     class5dabea989fe22a905d8f89cc210527f2 --> FRLMFacteursDeRisqueProfessionnelsNonCode
+
+ class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry" as  classeb8bc4d6baa061f547965c0670265381 
+
+    classeb8bc4d6baa061f547965c0670265381 --> FRLMFamilyMemberHistory
 
  class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-section" as  class5dabea989fe22a905d8f89cc210527f2 
 

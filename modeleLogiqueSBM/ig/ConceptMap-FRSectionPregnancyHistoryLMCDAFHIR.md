@@ -26,7 +26,7 @@ Mapping des éléments du modèle métier FRLMHistoriqueDesGrossesses vers la se
   "version" : "0.1.0-snapsnot",
   "title" : "Mapping Métier/CDA/FHIR : \"Historique des grossesses\"",
   "status" : "draft",
-  "date" : "2026-04-08T10:07:24+00:00",
+  "date" : "2026-04-08T12:33:58+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

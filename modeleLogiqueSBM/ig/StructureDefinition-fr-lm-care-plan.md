@@ -12,7 +12,7 @@
 | Draft as of 2026-04-08 | *Computable Name*:FRLMCarePlan |
 
  
-Plan de soins 
+Entrée Plan de soins 
 
 **Utilisations:**
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-care-plan.csv)
   "name" : "FRLMCarePlan",
   "title" : "Logical model - FR LM Care Plan",
   "status" : "draft",
-  "date" : "2026-04-08T10:07:24+00:00",
+  "date" : "2026-04-08T12:33:58+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -54,7 +54,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-care-plan.csv)
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Plan de soins",
+  "description" : "Entrée Plan de soins",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -73,7 +73,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-care-plan.csv)
       "id" : "fr-lm-care-plan",
       "path" : "fr-lm-care-plan",
       "short" : "Logical model - FR LM Care Plan",
-      "definition" : "Plan de soins"
+      "definition" : "Entrée Plan de soins"
     },
     {
       "id" : "fr-lm-care-plan.status",

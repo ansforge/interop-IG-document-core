@@ -11,5 +11,5 @@
 ","Sous-sections","Sous-sections","","","","","","","","","",,,,,"",,,,"fr-lm-section.sousSection",0,*,"",""
 "fr-lm-antecedents-familiaux.entree","fr-lm-antecedents-familiaux.entree","","","",1,*,"","","","Base {[]} {[]}
 ","Entrées","Entrées","","","","","","","","","",,,,,"",,,,"fr-lm-section.entree",0,*,"",""
-"fr-lm-antecedents-familiaux.entree.antecedentsFamiliaux","fr-lm-antecedents-familiaux.entree.antecedentsFamiliaux","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-antecedent-familial-observe {[]} {[]}
+"fr-lm-antecedents-familiaux.entree.antecedentsFamiliaux","fr-lm-antecedents-familiaux.entree.antecedentsFamiliaux","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-family-member-history {[]} {[]}
 ","Entrée Antécédents familiaux","Entrée Antécédents familiaux","","","","","","","","","",,,,,"",,,,"fr-lm-antecedents-familiaux.entree.antecedentsFamiliaux",1,*,"",""
