@@ -12,7 +12,7 @@
 | Draft as of 2026-04-08 | *Computable Name*:FRLMImmunisation |
 
  
-Vaccination 
+Entrée Vaccination 
 
 **Utilisations:**
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-immunisation.c
   "name" : "FRLMImmunisation",
   "title" : "Logical model - FR LM Immunisation",
   "status" : "draft",
-  "date" : "2026-04-08T09:43:36+00:00",
+  "date" : "2026-04-08T13:03:38+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -54,7 +54,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-immunisation.c
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Vaccination",
+  "description" : "Entrée Vaccination",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -73,7 +73,18 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-immunisation.c
       "id" : "fr-lm-immunisation",
       "path" : "fr-lm-immunisation",
       "short" : "Logical model - FR LM Immunisation",
-      "definition" : "Vaccination"
+      "definition" : "Entrée Vaccination"
+    },
+    {
+      "id" : "fr-lm-immunisation.status",
+      "path" : "fr-lm-immunisation.status",
+      "short" : "Statut de la vaccination (réalisé, non fait, ...).",
+      "definition" : "Statut de la vaccination (réalisé, non fait, ...).",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }]
     },
     {
       "id" : "fr-lm-immunisation.periodOfImmunisation",

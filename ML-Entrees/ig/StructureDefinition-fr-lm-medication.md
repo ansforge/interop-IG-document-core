@@ -12,7 +12,7 @@
 | Draft as of 2026-04-08 | *Computable Name*:FRLMMedication |
 
  
-Produit de santé 
+Entrée Produit de santé 
 
 **Utilisations:**
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-medication.csv
   "name" : "FRLMMedication",
   "title" : "Logical model - FR LM Medication",
   "status" : "draft",
-  "date" : "2026-04-08T09:43:36+00:00",
+  "date" : "2026-04-08T13:03:38+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -54,7 +54,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-medication.csv
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Produit de santé",
+  "description" : "Entrée Produit de santé",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -73,7 +73,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-medication.csv
       "id" : "fr-lm-medication",
       "path" : "fr-lm-medication",
       "short" : "Logical model - FR LM Medication",
-      "definition" : "Produit de santé"
+      "definition" : "Entrée Produit de santé"
     },
     {
       "id" : "fr-lm-medication.medicament",

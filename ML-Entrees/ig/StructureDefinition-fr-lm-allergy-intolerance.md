@@ -12,7 +12,7 @@
 | Draft as of 2026-04-08 | *Computable Name*:FRLMAllergyIntolerance |
 
  
-Allergie ou hypersensibilite 
+Entrée Allergie ou Hypersensibilité 
 
 **Utilisations:**
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-allergy-intole
   "name" : "FRLMAllergyIntolerance",
   "title" : "Logical model - FR LM Allergy Intolerance",
   "status" : "draft",
-  "date" : "2026-04-08T09:43:36+00:00",
+  "date" : "2026-04-08T13:03:38+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -54,7 +54,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-allergy-intole
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Allergie ou hypersensibilite",
+  "description" : "Entrée Allergie ou Hypersensibilité",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -73,13 +73,13 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-allergy-intole
       "id" : "fr-lm-allergy-intolerance",
       "path" : "fr-lm-allergy-intolerance",
       "short" : "Logical model - FR LM Allergy Intolerance",
-      "definition" : "Allergie ou hypersensibilite"
+      "definition" : "Entrée Allergie ou Hypersensibilité"
     },
     {
       "id" : "fr-lm-allergy-intolerance.type",
       "path" : "fr-lm-allergy-intolerance.type",
-      "short" : "Allergie / hypersensibilité non allergique / intolérance / idiosyncrasie : jdv-type-event-indesirable-previsible-cisis (1.2.250.1.213.1.1.5.842)",
-      "definition" : "Allergie / hypersensibilité non allergique / intolérance / idiosyncrasie : jdv-type-event-indesirable-previsible-cisis (1.2.250.1.213.1.1.5.842)",
+      "short" : "Allergie / hypersensibilité non allergique / intolérance / idiosyncrasie",
+      "definition" : "Allergie / hypersensibilité non allergique / intolérance / idiosyncrasie",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -93,13 +93,16 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-allergy-intole
     {
       "id" : "fr-lm-allergy-intolerance.category",
       "path" : "fr-lm-allergy-intolerance.category",
-      "short" : "food | medication | environment | biologic : jdv-hl7-allergy-intolerance-category-cisis (2.16.840.1.113883.4.642.3.133",
-      "definition" : "food | medication | environment | biologic : jdv-hl7-allergy-intolerance-category-cisis (2.16.840.1.113883.4.642.3.133",
+      "short" : "food | medication | environment | biologic",
+      "definition" : "food | medication | environment | biologic",
       "min" : 1,
       "max" : "1",
       "type" : [{
         "code" : "CodeableConcept"
-      }]
+      }],
+      "binding" : {
+        "description" : " jdv-hl7-allergy-intolerance-category-cisis (2.16.840.1.113883.4.642.3.133)"
+      }
     },
     {
       "id" : "fr-lm-allergy-intolerance.agentOrAllergen",
@@ -126,8 +129,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-allergy-intole
     {
       "id" : "fr-lm-allergy-intolerance.status",
       "path" : "fr-lm-allergy-intolerance.status",
-      "short" : "Statut clinique de l'allergie\nDescription du binding: : jdv-hl7-allergyintolerance-clinical-cisis (2.16.840.1.113883.4.642.3.1372)",
-      "definition" : "Statut clinique de l'allergie\nDescription du binding: : jdv-hl7-allergyintolerance-clinical-cisis (2.16.840.1.113883.4.642.3.1372)",
+      "short" : "Statut clinique de l'allergie",
+      "definition" : "Statut clinique de l'allergie",
       "min" : 0,
       "max" : "1",
       "type" : [{

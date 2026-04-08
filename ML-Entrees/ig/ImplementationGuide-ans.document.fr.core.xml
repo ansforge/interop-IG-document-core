@@ -10,7 +10,7 @@
   <name value="FRDocumentCore"/>
   <title value="ANS IG document core"/>
   <status value="draft"/>
-  <date value="2026-04-08T09:43:36+00:00"/>
+  <date value="2026-04-08T13:03:38+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -3064,7 +3064,31 @@
         <reference value="StructureDefinition/fr-lm-allergy-intolerance"/>
       </reference>
       <name value="Logical model - FR LM Allergy Intolerance"/>
-      <description value="Allergie ou hypersensibilite"/>
+      <description value="Entrée Allergie ou Hypersensibilité"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Modèles logiques métier des composants élémentaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fm-lm-assessment"/>
+      </reference>
+      <name value="Logical model - FR LM Assessment"/>
+      <description value="Entrée Evaluation"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Modèles logiques métier des composants élémentaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-lm-care-plan"/>
+      </reference>
+      <name value="Logical model - FR LM Care Plan"/>
+      <description value="Entrée Plan de soins"/>
       <exampleBoolean value="false"/>
       <groupingId value="Modèles logiques métier des composants élémentaires"/>
     </resource>
@@ -3088,7 +3112,7 @@
         <reference value="StructureDefinition/fr-lm-device-use"/>
       </reference>
       <name value="Logical model - FR LM Device use"/>
-      <description value="Dispositif médical usage"/>
+      <description value="Entrée Dispositif médical usage"/>
       <exampleBoolean value="false"/>
       <groupingId value="Modèles logiques métier des composants élémentaires"/>
     </resource>
@@ -3100,7 +3124,19 @@
         <reference value="StructureDefinition/fr-lm-dose-number"/>
       </reference>
       <name value="Logical model - FR LM Dose Number"/>
-      <description value="Rang de la vaccination"/>
+      <description value="Entrée Rang de la vaccination"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Modèles logiques métier des composants élémentaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-lm-family-member-history"/>
+      </reference>
+      <name value="Logical model - FR LM Family Member History"/>
+      <description value="Entrée Antécédent familial"/>
       <exampleBoolean value="false"/>
       <groupingId value="Modèles logiques métier des composants élémentaires"/>
     </resource>
@@ -3112,7 +3148,7 @@
         <reference value="StructureDefinition/fr-lm-immunisation"/>
       </reference>
       <name value="Logical model - FR LM Immunisation"/>
-      <description value="Vaccination"/>
+      <description value="Entrée Vaccination"/>
       <exampleBoolean value="false"/>
       <groupingId value="Modèles logiques métier des composants élémentaires"/>
     </resource>
@@ -3124,7 +3160,31 @@
         <reference value="StructureDefinition/fr-lm-medication"/>
       </reference>
       <name value="Logical model - FR LM Medication"/>
-      <description value="Produit de santé"/>
+      <description value="Entrée Produit de santé"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Modèles logiques métier des composants élémentaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-lm-observation-vital-sign"/>
+      </reference>
+      <name value="Logical model - FR LM Observation Vital Sign"/>
+      <description value="Signe vital observé"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Modèles logiques métier des composants élémentaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fm-lm-observation-social-history"/>
+      </reference>
+      <name value="Logical model- FR LM Observation Social History"/>
+      <description value="Entrée Habitus Mode de vie"/>
       <exampleBoolean value="false"/>
       <groupingId value="Modèles logiques métier des composants élémentaires"/>
     </resource>
@@ -3136,7 +3196,7 @@
         <reference value="StructureDefinition/fr-lm-procedure"/>
       </reference>
       <name value="Logical model- FR LM Procedure"/>
-      <description value="Acte"/>
+      <description value="Entrée Acte"/>
       <exampleBoolean value="false"/>
       <groupingId value="Modèles logiques métier des composants élémentaires"/>
     </resource>
@@ -4883,18 +4943,6 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/fr-lm-antecedent-familial-observe"/>
-      </reference>
-      <name value="Modèle logique métier - FR LM Antécédent familial observé"/>
-      <description value="Antécédent familial"/>
-      <exampleBoolean value="false"/>
-      <groupingId value="Modèles logiques métier des composants élémentaires"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/fr-lm-antecedents-familiaux"/>
       </reference>
       <name value="Modèle logique métier - FR LM Antécédents familiaux"/>
@@ -4983,18 +5031,6 @@
       </reference>
       <name value="Modèle logique métier - FR LM Batterie d'examens de biologie médicale"/>
       <description value="Batterie d'examens de biologie médicale"/>
-      <exampleBoolean value="false"/>
-      <groupingId value="Modèles logiques métier des composants élémentaires"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/fr-lm-certitude"/>
-      </reference>
-      <name value="Modèle logique métier - FR LM Certitude"/>
-      <description value="Certitude"/>
       <exampleBoolean value="false"/>
       <groupingId value="Modèles logiques métier des composants élémentaires"/>
     </resource>
@@ -5105,18 +5141,6 @@
       <description value="Eléments métier du corps d'un document contenant les sections du document."/>
       <exampleBoolean value="false"/>
       <groupingId value="Modèles logiques métier des sections d'un document"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/fr-lm-criticite"/>
-      </reference>
-      <name value="Modèle logique métier - FR LM Criticite"/>
-      <description value="Criticite"/>
-      <exampleBoolean value="false"/>
-      <groupingId value="Modèles logiques métier des composants élémentaires"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -5351,42 +5375,6 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/fr-lm-evaluation"/>
-      </reference>
-      <name value="Modèle logique métier - FR LM Evaluation"/>
-      <description value="Evaluation"/>
-      <exampleBoolean value="false"/>
-      <groupingId value="Modèles logiques métier des composants élémentaires"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/fr-lm-evaluation-composant"/>
-      </reference>
-      <name value="Modèle logique métier - FR LM Evaluation Composant"/>
-      <description value="Evaluation Composant"/>
-      <exampleBoolean value="false"/>
-      <groupingId value="Modèles logiques métier des composants élémentaires"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/fr-lm-evaluation-composant-n2"/>
-      </reference>
-      <name value="Modèle logique métier - FR LM Evaluation Composant N2"/>
-      <description value="Evaluation Composant N2"/>
-      <exampleBoolean value="false"/>
-      <groupingId value="Modèles logiques métier des composants élémentaires"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/fr-lm-evolution-effet-indesirable"/>
       </reference>
       <name value="Modèle logique métier - FR LM Evolution effet indesirable"/>
@@ -5501,18 +5489,6 @@
       <description value="Section Habitus et modes de vie"/>
       <exampleBoolean value="false"/>
       <groupingId value="Modèles logiques métier des sections d'un document"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/fr-lm-habitus-mode-de-vie-entree"/>
-      </reference>
-      <name value="Modèle logique métier - FR LM Habitus Mode de vie"/>
-      <description value="Habitus Mode de vie"/>
-      <exampleBoolean value="false"/>
-      <groupingId value="Modèles logiques métier des composants élémentaires"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -6216,18 +6192,6 @@
       </reference>
       <name value="Modèle logique métier - FR LM Serie imagerie"/>
       <description value="Serie imagerie"/>
-      <exampleBoolean value="false"/>
-      <groupingId value="Modèles logiques métier des composants élémentaires"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/fr-lm-signe-vital-observe"/>
-      </reference>
-      <name value="Modèle logique métier - FR LM Signe vital observé"/>
-      <description value="Signe vital observé"/>
       <exampleBoolean value="false"/>
       <groupingId value="Modèles logiques métier des composants élémentaires"/>
     </resource>

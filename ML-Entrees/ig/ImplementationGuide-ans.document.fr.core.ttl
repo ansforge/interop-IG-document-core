@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "FRDocumentCore"] ; # 
   fhir:title [ fhir:v "ANS IG document core"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-04-08T09:43:36+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-04-08T13:03:38+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -6096,7 +6096,51 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-lm-allergy-intolerance" ]
        ] ;
        fhir:name [ fhir:v "Logical model - FR LM Allergy Intolerance" ] ;
-       fhir:description [ fhir:v "Allergie ou hypersensibilite" ] ;
+       fhir:description [ fhir:v "Entrée Allergie ou Hypersensibilité" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fm-lm-assessment> ;
+         fhir:reference [ fhir:v "StructureDefinition/fm-lm-assessment" ]
+       ] ;
+       fhir:name [ fhir:v "Logical model - FR LM Assessment" ] ;
+       fhir:description [ fhir:v "Entrée Evaluation" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-care-plan> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-lm-care-plan" ]
+       ] ;
+       fhir:name [ fhir:v "Logical model - FR LM Care Plan" ] ;
+       fhir:description [ fhir:v "Entrée Plan de soins" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -6140,7 +6184,7 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-lm-device-use" ]
        ] ;
        fhir:name [ fhir:v "Logical model - FR LM Device use" ] ;
-       fhir:description [ fhir:v "Dispositif médical usage" ] ;
+       fhir:description [ fhir:v "Entrée Dispositif médical usage" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -6162,7 +6206,29 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-lm-dose-number" ]
        ] ;
        fhir:name [ fhir:v "Logical model - FR LM Dose Number" ] ;
-       fhir:description [ fhir:v "Rang de la vaccination" ] ;
+       fhir:description [ fhir:v "Entrée Rang de la vaccination" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-family-member-history> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-lm-family-member-history" ]
+       ] ;
+       fhir:name [ fhir:v "Logical model - FR LM Family Member History" ] ;
+       fhir:description [ fhir:v "Entrée Antécédent familial" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -6184,7 +6250,7 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-lm-immunisation" ]
        ] ;
        fhir:name [ fhir:v "Logical model - FR LM Immunisation" ] ;
-       fhir:description [ fhir:v "Vaccination" ] ;
+       fhir:description [ fhir:v "Entrée Vaccination" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -6206,7 +6272,51 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-lm-medication" ]
        ] ;
        fhir:name [ fhir:v "Logical model - FR LM Medication" ] ;
-       fhir:description [ fhir:v "Produit de santé" ] ;
+       fhir:description [ fhir:v "Entrée Produit de santé" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation-vital-sign> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-lm-observation-vital-sign" ]
+       ] ;
+       fhir:name [ fhir:v "Logical model - FR LM Observation Vital Sign" ] ;
+       fhir:description [ fhir:v "Signe vital observé" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fm-lm-observation-social-history> ;
+         fhir:reference [ fhir:v "StructureDefinition/fm-lm-observation-social-history" ]
+       ] ;
+       fhir:name [ fhir:v "Logical model- FR LM Observation Social History" ] ;
+       fhir:description [ fhir:v "Entrée Habitus Mode de vie" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -6228,7 +6338,7 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-lm-procedure" ]
        ] ;
        fhir:name [ fhir:v "Logical model- FR LM Procedure" ] ;
-       fhir:description [ fhir:v "Acte" ] ;
+       fhir:description [ fhir:v "Entrée Acte" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -9434,28 +9544,6 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-antecedent-familial-observe> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-lm-antecedent-familial-observe" ]
-       ] ;
-       fhir:name [ fhir:v "Modèle logique métier - FR LM Antécédent familial observé" ] ;
-       fhir:description [ fhir:v "Antécédent familial" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-antecedents-familiaux> ;
          fhir:reference [ fhir:v "StructureDefinition/fr-lm-antecedents-familiaux" ]
        ] ;
@@ -9615,28 +9703,6 @@
        ] ;
        fhir:name [ fhir:v "Modèle logique métier - FR LM Batterie d'examens de biologie médicale" ] ;
        fhir:description [ fhir:v "Batterie d'examens de biologie médicale" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-certitude> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-lm-certitude" ]
-       ] ;
-       fhir:name [ fhir:v "Modèle logique métier - FR LM Certitude" ] ;
-       fhir:description [ fhir:v "Certitude" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -9840,28 +9906,6 @@
          fhir:v false
        ] ;
        fhir:groupingId [ fhir:v "Modèles logiques métier des sections d'un document" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-criticite> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-lm-criticite" ]
-       ] ;
-       fhir:name [ fhir:v "Modèle logique métier - FR LM Criticite" ] ;
-       fhir:description [ fhir:v "Criticite" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -10292,72 +10336,6 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-evaluation> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-lm-evaluation" ]
-       ] ;
-       fhir:name [ fhir:v "Modèle logique métier - FR LM Evaluation" ] ;
-       fhir:description [ fhir:v "Evaluation" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-evaluation-composant> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-lm-evaluation-composant" ]
-       ] ;
-       fhir:name [ fhir:v "Modèle logique métier - FR LM Evaluation Composant" ] ;
-       fhir:description [ fhir:v "Evaluation Composant" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-evaluation-composant-n2> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-lm-evaluation-composant-n2" ]
-       ] ;
-       fhir:name [ fhir:v "Modèle logique métier - FR LM Evaluation Composant N2" ] ;
-       fhir:description [ fhir:v "Evaluation Composant N2" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-evolution-effet-indesirable> ;
          fhir:reference [ fhir:v "StructureDefinition/fr-lm-evolution-effet-indesirable" ]
        ] ;
@@ -10566,28 +10544,6 @@
          fhir:v false
        ] ;
        fhir:groupingId [ fhir:v "Modèles logiques métier des sections d'un document" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-habitus-mode-de-vie-entree> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-lm-habitus-mode-de-vie-entree" ]
-       ] ;
-       fhir:name [ fhir:v "Modèle logique métier - FR LM Habitus Mode de vie" ] ;
-       fhir:description [ fhir:v "Habitus Mode de vie" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -11878,28 +11834,6 @@
        ] ;
        fhir:name [ fhir:v "Modèle logique métier - FR LM Serie imagerie" ] ;
        fhir:description [ fhir:v "Serie imagerie" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-signe-vital-observe> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-lm-signe-vital-observe" ]
-       ] ;
-       fhir:name [ fhir:v "Modèle logique métier - FR LM Signe vital observé" ] ;
-       fhir:description [ fhir:v "Signe vital observé" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

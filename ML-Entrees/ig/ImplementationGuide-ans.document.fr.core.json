@@ -10,7 +10,7 @@
   "name" : "FRDocumentCore",
   "title" : "ANS IG document core",
   "status" : "draft",
-  "date" : "2026-04-08T09:43:36+00:00",
+  "date" : "2026-04-08T13:03:38+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -3460,7 +3460,33 @@
         "reference" : "StructureDefinition/fr-lm-allergy-intolerance"
       },
       "name" : "Logical model - FR LM Allergy Intolerance",
-      "description" : "Allergie ou hypersensibilite",
+      "description" : "Entrée Allergie ou Hypersensibilité",
+      "exampleBoolean" : false,
+      "groupingId" : "Modèles logiques métier des composants élémentaires"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fm-lm-assessment"
+      },
+      "name" : "Logical model - FR LM Assessment",
+      "description" : "Entrée Evaluation",
+      "exampleBoolean" : false,
+      "groupingId" : "Modèles logiques métier des composants élémentaires"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-lm-care-plan"
+      },
+      "name" : "Logical model - FR LM Care Plan",
+      "description" : "Entrée Plan de soins",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier des composants élémentaires"
     },
@@ -3486,7 +3512,7 @@
         "reference" : "StructureDefinition/fr-lm-device-use"
       },
       "name" : "Logical model - FR LM Device use",
-      "description" : "Dispositif médical usage",
+      "description" : "Entrée Dispositif médical usage",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier des composants élémentaires"
     },
@@ -3499,7 +3525,20 @@
         "reference" : "StructureDefinition/fr-lm-dose-number"
       },
       "name" : "Logical model - FR LM Dose Number",
-      "description" : "Rang de la vaccination",
+      "description" : "Entrée Rang de la vaccination",
+      "exampleBoolean" : false,
+      "groupingId" : "Modèles logiques métier des composants élémentaires"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-lm-family-member-history"
+      },
+      "name" : "Logical model - FR LM Family Member History",
+      "description" : "Entrée Antécédent familial",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier des composants élémentaires"
     },
@@ -3512,7 +3551,7 @@
         "reference" : "StructureDefinition/fr-lm-immunisation"
       },
       "name" : "Logical model - FR LM Immunisation",
-      "description" : "Vaccination",
+      "description" : "Entrée Vaccination",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier des composants élémentaires"
     },
@@ -3525,7 +3564,33 @@
         "reference" : "StructureDefinition/fr-lm-medication"
       },
       "name" : "Logical model - FR LM Medication",
-      "description" : "Produit de santé",
+      "description" : "Entrée Produit de santé",
+      "exampleBoolean" : false,
+      "groupingId" : "Modèles logiques métier des composants élémentaires"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-lm-observation-vital-sign"
+      },
+      "name" : "Logical model - FR LM Observation Vital Sign",
+      "description" : "Signe vital observé",
+      "exampleBoolean" : false,
+      "groupingId" : "Modèles logiques métier des composants élémentaires"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fm-lm-observation-social-history"
+      },
+      "name" : "Logical model- FR LM Observation Social History",
+      "description" : "Entrée Habitus Mode de vie",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier des composants élémentaires"
     },
@@ -3538,7 +3603,7 @@
         "reference" : "StructureDefinition/fr-lm-procedure"
       },
       "name" : "Logical model- FR LM Procedure",
-      "description" : "Acte",
+      "description" : "Entrée Acte",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier des composants élémentaires"
     },
@@ -5431,19 +5496,6 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/fr-lm-antecedent-familial-observe"
-      },
-      "name" : "Modèle logique métier - FR LM Antécédent familial observé",
-      "description" : "Antécédent familial",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/fr-lm-antecedents-familiaux"
       },
       "name" : "Modèle logique métier - FR LM Antécédents familiaux",
@@ -5539,19 +5591,6 @@
       },
       "name" : "Modèle logique métier - FR LM Batterie d'examens de biologie médicale",
       "description" : "Batterie d'examens de biologie médicale",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-lm-certitude"
-      },
-      "name" : "Modèle logique métier - FR LM Certitude",
-      "description" : "Certitude",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier des composants élémentaires"
     },
@@ -5671,19 +5710,6 @@
       "description" : "Eléments métier du corps d'un document contenant les sections du document.",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier des sections d'un document"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-lm-criticite"
-      },
-      "name" : "Modèle logique métier - FR LM Criticite",
-      "description" : "Criticite",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
     },
     {
       "extension" : [{
@@ -5938,45 +5964,6 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/fr-lm-evaluation"
-      },
-      "name" : "Modèle logique métier - FR LM Evaluation",
-      "description" : "Evaluation",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-lm-evaluation-composant"
-      },
-      "name" : "Modèle logique métier - FR LM Evaluation Composant",
-      "description" : "Evaluation Composant",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-lm-evaluation-composant-n2"
-      },
-      "name" : "Modèle logique métier - FR LM Evaluation Composant N2",
-      "description" : "Evaluation Composant N2",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/fr-lm-evolution-effet-indesirable"
       },
       "name" : "Modèle logique métier - FR LM Evolution effet indesirable",
@@ -6100,19 +6087,6 @@
       "description" : "Section Habitus et modes de vie",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier des sections d'un document"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-lm-habitus-mode-de-vie-entree"
-      },
-      "name" : "Modèle logique métier - FR LM Habitus Mode de vie",
-      "description" : "Habitus Mode de vie",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
     },
     {
       "extension" : [{
@@ -6875,19 +6849,6 @@
       },
       "name" : "Modèle logique métier - FR LM Serie imagerie",
       "description" : "Serie imagerie",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-lm-signe-vital-observe"
-      },
-      "name" : "Modèle logique métier - FR LM Signe vital observé",
-      "description" : "Signe vital observé",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier des composants élémentaires"
     },

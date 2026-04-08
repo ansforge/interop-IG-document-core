@@ -12,11 +12,11 @@
 | Draft as of 2026-04-08 | *Computable Name*:FRLMProcedure |
 
  
-Acte 
+Entrée Acte 
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Logical model - FR LM Device use](StructureDefinition-fr-lm-device-use.md), [Modèle logique métier - FR LM Education du patient](StructureDefinition-fr-lm-education-patient.md), [Historique des actes](StructureDefinition-fr-lm-historique-des-actes.md), [Modèle logique métier - FR LM Plan de soins](StructureDefinition-fr-lm-plan-soins.md)... Show 2 more, [Logical model- FR LM Procedure](StructureDefinition-fr-lm-procedure.md) and [Modèle logique métier - FR LM Résultats d'examens](StructureDefinition-fr-lm-resultats-examens.md)
+* Utilise ce/t/te Modèle logique: [Logical model - FR LM Device use](StructureDefinition-fr-lm-device-use.md), [Modèle logique métier - FR LM Education du patient](StructureDefinition-fr-lm-education-patient.md), [Historique des actes](StructureDefinition-fr-lm-historique-des-actes.md), [Logical model- FR LM Procedure](StructureDefinition-fr-lm-procedure.md) and [Modèle logique métier - FR LM Résultats d'examens](StructureDefinition-fr-lm-resultats-examens.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-procedure)
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-procedure.csv)
   "name" : "FRLMProcedure",
   "title" : "Logical model- FR LM Procedure",
   "status" : "draft",
-  "date" : "2026-04-08T09:43:36+00:00",
+  "date" : "2026-04-08T13:03:38+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -54,7 +54,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-procedure.csv)
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Acte",
+  "description" : "Entrée Acte",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -73,7 +73,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-procedure.csv)
       "id" : "fr-lm-procedure",
       "path" : "fr-lm-procedure",
       "short" : "Logical model- FR LM Procedure",
-      "definition" : "Acte"
+      "definition" : "Entrée Acte"
     },
     {
       "id" : "fr-lm-procedure.status",

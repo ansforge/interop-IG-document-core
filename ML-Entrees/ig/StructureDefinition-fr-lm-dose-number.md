@@ -12,7 +12,7 @@
 | Draft as of 2026-04-08 | *Computable Name*:FRLMDoseNumber |
 
  
-Rang de la vaccination 
+Entrée Rang de la vaccination 
 
 **Utilisations:**
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-dose-number.cs
   "name" : "FRLMDoseNumber",
   "title" : "Logical model - FR LM Dose Number",
   "status" : "draft",
-  "date" : "2026-04-08T09:43:36+00:00",
+  "date" : "2026-04-08T13:03:38+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -54,7 +54,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-dose-number.cs
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Rang de la vaccination",
+  "description" : "Entrée Rang de la vaccination",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -73,7 +73,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-dose-number.cs
       "id" : "fr-lm-dose-number",
       "path" : "fr-lm-dose-number",
       "short" : "Logical model - FR LM Dose Number",
-      "definition" : "Rang de la vaccination"
+      "definition" : "Entrée Rang de la vaccination"
     },
     {
       "id" : "fr-lm-dose-number.identifiantRangVaccination",

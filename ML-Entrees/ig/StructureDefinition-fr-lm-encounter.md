@@ -16,7 +16,7 @@ Rencontre
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Plan de soins](StructureDefinition-fr-lm-plan-soins.md) and [Logical model- FR LM Procedure](StructureDefinition-fr-lm-procedure.md)
+* Utilise ce/t/te Modèle logique: [Logical model- FR LM Procedure](StructureDefinition-fr-lm-procedure.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-encounter)
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-encounter.csv)
   "name" : "FRLMEncounter",
   "title" : "Modèle logique métier - FR LM Rencontre",
   "status" : "draft",
-  "date" : "2026-04-08T09:43:36+00:00",
+  "date" : "2026-04-08T13:03:38+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

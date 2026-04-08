@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-fonctions-phys
   "name" : "FRLMFonctionsPhysiques",
   "title" : "Modèle logique métier - FR LM Fonctions physiques",
   "status" : "draft",
-  "date" : "2026-04-08T09:43:36+00:00",
+  "date" : "2026-04-08T13:03:38+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -103,7 +103,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-fonctions-phys
       "min" : 0,
       "max" : "*",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-evaluation"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fm-lm-assessment"
       }]
     }]
   }

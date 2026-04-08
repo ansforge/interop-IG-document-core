@@ -105,25 +105,27 @@ Modèles de données métier représentant les concepts élémentaires, modélis
 | :--- | :--- |
 | [FR LM Entry](StructureDefinition-fr-lm-entry.md) | Modèle logique représentant l’entrée |
 | [Logical model - Device](StructureDefinition-fr-lm-device.md) | Dispositif médical |
-| [Logical model - FR LM Allergy Intolerance](StructureDefinition-fr-lm-allergy-intolerance.md) | Allergie ou hypersensibilite |
+| [Logical model - FR LM Allergy Intolerance](StructureDefinition-fr-lm-allergy-intolerance.md) | Entrée Allergie ou Hypersensibilité |
+| [Logical model - FR LM Assessment](StructureDefinition-fm-lm-assessment.md) | Entrée Evaluation |
+| [Logical model - FR LM Care Plan](StructureDefinition-fr-lm-care-plan.md) | Entrée Plan de soins |
 | [Logical model - FR LM Condition](StructureDefinition-fr-lm-condition.md) | Entrée Problème |
-| [Logical model - FR LM Device use](StructureDefinition-fr-lm-device-use.md) | Dispositif médical usage |
-| [Logical model - FR LM Dose Number](StructureDefinition-fr-lm-dose-number.md) | Rang de la vaccination |
-| [Logical model - FR LM Immunisation](StructureDefinition-fr-lm-immunisation.md) | Vaccination |
-| [Logical model - FR LM Medication](StructureDefinition-fr-lm-medication.md) | Produit de santé |
-| [Logical model- FR LM Procedure](StructureDefinition-fr-lm-procedure.md) | Acte |
+| [Logical model - FR LM Device use](StructureDefinition-fr-lm-device-use.md) | Entrée Dispositif médical usage |
+| [Logical model - FR LM Dose Number](StructureDefinition-fr-lm-dose-number.md) | Entrée Rang de la vaccination |
+| [Logical model - FR LM Family Member History](StructureDefinition-fr-lm-family-member-history.md) | Entrée Antécédent familial |
+| [Logical model - FR LM Immunisation](StructureDefinition-fr-lm-immunisation.md) | Entrée Vaccination |
+| [Logical model - FR LM Medication](StructureDefinition-fr-lm-medication.md) | Entrée Produit de santé |
+| [Logical model - FR LM Observation Vital Sign](StructureDefinition-fr-lm-observation-vital-sign.md) | Signe vital observé |
+| [Logical model- FR LM Observation Social History](StructureDefinition-fm-lm-observation-social-history.md) | Entrée Habitus Mode de vie |
+| [Logical model- FR LM Procedure](StructureDefinition-fr-lm-procedure.md) | Entrée Acte |
 | [Modèle logique métier - FR LM Accident transfusionnel](StructureDefinition-fr-lm-accidents-transfusionnels.md) | Accident transfusionnel |
 | [Modèle logique métier - FR LM Acte substitution](StructureDefinition-fr-lm-acte-substitution.md) | Acte substitution |
 | [Modèle logique métier - FR LM Administration de dérivés du sang](StructureDefinition-fr-lm-administration-de-derives-du-sang.md) | Administration de dérivés du sang |
 | [Modèle logique métier - FR LM Administration produit de sante](StructureDefinition-fr-lm-administration-produit-de-sante.md) | Administration produit de sante |
-| [Modèle logique métier - FR LM Antécédent familial observé](StructureDefinition-fr-lm-antecedent-familial-observe.md) | Antécédent familial |
 | [Modèle logique métier - FR LM Auteur APSR](StructureDefinition-fr-lm-auteur-apsr.md) | Auteur APSR (Anatomic Pathology Structured Report), la structure de cet élément est identique à celle de l’élément Auteur |
 | [Modèle logique métier - FR LM Autorisation exposition](StructureDefinition-fr-lm-autorisation-exposition.md) | Autorisation exposition |
 | [Modèle logique métier - FR LM Autorisation substitution](StructureDefinition-fr-lm-autorisation-substitution.md) | Autorisation substitution |
 | [Modèle logique métier - FR LM Batterie d'examens de biologie médicale](StructureDefinition-fr-lm-batterie-examens-biologie-medicale.md) | Batterie d’examens de biologie médicale |
-| [Modèle logique métier - FR LM Certitude](StructureDefinition-fr-lm-certitude.md) | Certitude |
 | [Modèle logique métier - FR LM Commentaire](StructureDefinition-fr-lm-commentaire-er.md) | Commentaire |
-| [Modèle logique métier - FR LM Criticite](StructureDefinition-fr-lm-criticite.md) | Criticite |
 | [Modèle logique métier - FR LM Demande d'examen ou de suivi](StructureDefinition-fr-lm-demande-examen-ou-suivi.md) | Demande d’examen ou de suivi / Objectif à atteindre |
 | [Modèle logique métier - FR LM Directive anticipée](StructureDefinition-fr-lm-directive-anticipee.md) | Directive anticipée |
 | [Modèle logique métier - FR LM Document attaché](StructureDefinition-fr-lm-document-attache.md) | Document attaché |
@@ -132,16 +134,12 @@ Modèles de données métier représentant les concepts élémentaires, modélis
 | [Modèle logique métier - FR LM En rapport avec la prevention](StructureDefinition-fr-lm-en-rapport-avec-la-prevention.md) | En rapport avec la prevention |
 | [Modèle logique métier - FR LM En rapport avec un accident travail](StructureDefinition-fr-lm-en-rapport-avec-accident-travail.md) | En rapport avec un accident travail |
 | [Modèle logique métier - FR LM En rapport avec une Affection Longue Durée (ALD)](StructureDefinition-fr-lm-en-rapport-avec-ald.md) | En rapport avec une Affection Longue Durée (ALD) |
-| [Modèle logique métier - FR LM Evaluation](StructureDefinition-fr-lm-evaluation.md) | Evaluation |
-| [Modèle logique métier - FR LM Evaluation Composant](StructureDefinition-fr-lm-evaluation-composant.md) | Evaluation Composant |
-| [Modèle logique métier - FR LM Evaluation Composant N2](StructureDefinition-fr-lm-evaluation-composant-n2.md) | Evaluation Composant N2 |
 | [Modèle logique métier - FR LM Evolution effet indesirable](StructureDefinition-fr-lm-evolution-effet-indesirable.md) | Evolution effet indesirable |
 | [Modèle logique métier - FR LM Evènements indésirables pendant l'hospitalisation](StructureDefinition-fr-lm-evenement-indesirable-pendant-hospitalisation.md) | Evènements indésirables pendant l’hospitalisation |
 | [Modèle logique métier - FR LM Evènements indésirables suite à l'administration de dérivés du sang](StructureDefinition-fr-lm-evenements-indesirables-suite-administration-derives-sang.md) | Evènements indésirables suite à l’administration de dérivés du sang |
 | [Modèle logique métier - FR LM Examen Imagerie](StructureDefinition-fr-lm-examen-imagerie.md) | DICOM Examen Imagerie |
 | [Modèle logique métier - FR LM Gravite effet indesirable](StructureDefinition-fr-lm-gravite-effet-indesirable.md) | Gravite effet indesirable |
 | [Modèle logique métier - FR LM Groupe de questionnaires d'évalutation](StructureDefinition-fr-lm-group-de-questionnaires-devaluation.md) | Groupe de questionnaires d’évalutation |
-| [Modèle logique métier - FR LM Habitus Mode de vie](StructureDefinition-fr-lm-habitus-mode-de-vie-entree.md) | Habitus Mode de vie |
 | [Modèle logique métier - FR LM Historique de la grossesse](StructureDefinition-fr-lm-historique-grossesse.md) | Historique de la grossesse |
 | [Modèle logique métier - FR LM Hors Autorisation de Mise sur le Marché (AMM)](StructureDefinition-fr-lm-hors-amm.md) | Hors Autorisation de Mise sur le Marché (AMM) |
 | [Modèle logique métier - FR LM Identification de micro-organismes multirésistants](StructureDefinition-fr-lm-identification-de-micro-organismes-multiresistants.md) | Identification de micro-organismes multirésistants |
@@ -173,7 +171,6 @@ Modèles de données métier représentant les concepts élémentaires, modélis
 | [Modèle logique métier - FR LM Références externes](StructureDefinition-fr-lm-references-externes.md) | Références externes |
 | [Modèle logique métier - FR LM Résultat d'examens de biologie / élement clinique pertinent](StructureDefinition-fr-lm-resultat-examens-biologie-element-clinique-pertinent.md) | Résultat d’examens de biologie / élement clinique pertinent |
 | [Modèle logique métier - FR LM Serie imagerie](StructureDefinition-fr-lm-serie-imagerie.md) | Serie imagerie |
-| [Modèle logique métier - FR LM Signe vital observé](StructureDefinition-fr-lm-signe-vital-observe.md) | Signe vital observé |
 | [Modèle logique métier - FR LM SOP Instance](StructureDefinition-fr-lm-sop-instance.md) | SOP Instance |
 | [Modèle logique métier - FR LM Statut](StructureDefinition-fr-lm-statut.md) | Statut |
 | [Modèle logique métier - FR LM Statut clinique du patient](StructureDefinition-fr-lm-statut-clinique-patient.md) | Statut clinique du patient |

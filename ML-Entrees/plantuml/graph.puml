@@ -37,6 +37,30 @@ package IG #DDDDDD{
              TEL.use => [None..1]
         } 
 
+        class FRLMAssessment{
+
+             fm-lm-assessment => [None..None]
+             fm-lm-assessment.status => [1..1]
+             fm-lm-assessment.observationDate[x] => [1..1]
+             fm-lm-assessment.type => [1..1]
+             fm-lm-assessment.method => [0..1]
+             fm-lm-assessment.bodySite => [0..1]
+             fm-lm-assessment.result => [1..1]
+             fm-lm-assessment.interpretation => [0..*]
+             fm-lm-assessment.note => [0..1]
+             fm-lm-assessment.component => [0..*]
+        } 
+
+        class FRLMObservationSocialHistory{
+
+             fm-lm-observation-social-history => [None..None]
+             fm-lm-observation-social-history.status => [1..1]
+             fm-lm-observation-social-history.observationDate[x] => [1..1]
+             fm-lm-observation-social-history.type => [1..1]
+             fm-lm-observation-social-history.result => [1..1]
+             fm-lm-observation-social-history.note => [0..1]
+        } 
+
         class FRObservationVitalSignsPanelDocument{
 
              Observation => [None..None]
@@ -4477,21 +4501,6 @@ package IG #DDDDDD{
              fr-lm-allergy-intolerance.reaction.period.endDate => [0..1]
         } 
 
-        class FRLMAntecedentFamilialObserve{
-
-             fr-lm-antecedent-familial-observe => [None..None]
-             fr-lm-antecedent-familial-observe.identifiant => [1..1]
-             fr-lm-antecedent-familial-observe.code => [1..1]
-             fr-lm-antecedent-familial-observe.descriptionNarrative => [1..1]
-             fr-lm-antecedent-familial-observe.statut => [1..1]
-             fr-lm-antecedent-familial-observe.horodatage => [0..1]
-             fr-lm-antecedent-familial-observe.resultat => [1..1]
-             fr-lm-antecedent-familial-observe.interpretation => [0..1]
-             fr-lm-antecedent-familial-observe.methode => [0..1]
-             fr-lm-antecedent-familial-observe.site => [0..1]
-             fr-lm-antecedent-familial-observe.auteur => [0..1]
-        } 
-
         class FRLMAntecedentsFamiliaux{
 
              fr-lm-antecedents-familiaux => [None..None]
@@ -4553,15 +4562,13 @@ package IG #DDDDDD{
              fr-lm-batterie-examens-biologie-medicale.commentaire => [0..*]
         } 
 
-        class FRLMCertitude{
+        class FRLMCarePlan{
 
-             fr-lm-certitude => [None..None]
-             fr-lm-certitude.identifiant => [1..1]
-             fr-lm-certitude.code => [1..1]
-             fr-lm-certitude.statut => [1..1]
-             fr-lm-certitude.date => [1..1]
-             fr-lm-certitude.descriptionNarrative => [1..1]
-             fr-lm-certitude.valeur => [1..1]
+             fr-lm-care-plan => [None..None]
+             fr-lm-care-plan.status => [1..1]
+             fr-lm-care-plan.addresses => [0..*]
+             fr-lm-care-plan.goal => [0..*]
+             fr-lm-care-plan.activity => [0..*]
         } 
 
         class FRLMCodesAbarres{
@@ -4703,17 +4710,6 @@ package IG #DDDDDD{
              fr-lm-cr-bio-sous-chapitre.sousSection => [None..0]
              fr-lm-cr-bio-sous-chapitre.entree => [1..1]
              fr-lm-cr-bio-sous-chapitre.entree.resultatsExamensBiologieMedicale => [1..1]
-        } 
-
-        class FRLMCriticite{
-
-             fr-lm-criticite => [None..None]
-             fr-lm-criticite.identifiant => [1..1]
-             fr-lm-criticite.code => [1..1]
-             fr-lm-criticite.statut => [1..1]
-             fr-lm-criticite.date => [1..1]
-             fr-lm-criticite.descriptionNarrative => [1..1]
-             fr-lm-criticite.valeur => [1..1]
         } 
 
         class FRLMDemandeExamenImagerie{
@@ -5023,53 +5019,6 @@ package IG #DDDDDD{
              fr-lm-entry.header.date => [0..1]
              fr-lm-entry.header.source => [0..1]
              fr-lm-entry.header.langue => [0..1]
-             fr-lm-entry.header.code => [0..1]
-        } 
-
-        class FRLMEvaluationComposantN2{
-
-             fr-lm-evaluation-composant-n2 => [None..None]
-             fr-lm-evaluation-composant-n2.identifiant => [1..1]
-             fr-lm-evaluation-composant-n2.codeEvaluation => [1..1]
-             fr-lm-evaluation-composant-n2.description => [1..1]
-             fr-lm-evaluation-composant-n2.statut => [1..1]
-             fr-lm-evaluation-composant-n2.horodatage => [1..1]
-             fr-lm-evaluation-composant-n2.resultat => [1..1]
-             fr-lm-evaluation-composant-n2.interpretation => [0..*]
-             fr-lm-evaluation-composant-n2.commentaire => [0..*]
-        } 
-
-        class FRLMEvaluationComposant{
-
-             fr-lm-evaluation-composant => [None..None]
-             fr-lm-evaluation-composant.identifiant => [1..1]
-             fr-lm-evaluation-composant.codeEvaluation => [1..1]
-             fr-lm-evaluation-composant.description => [1..1]
-             fr-lm-evaluation-composant.statut => [1..1]
-             fr-lm-evaluation-composant.horodatage => [1..1]
-             fr-lm-evaluation-composant.resultat => [1..1]
-             fr-lm-evaluation-composant.interpretation => [0..1]
-             fr-lm-evaluation-composant.composantEvaluation => [0..*]
-             fr-lm-evaluation-composant.commentaire => [0..*]
-        } 
-
-        class FRLMEvaluation{
-
-             fr-lm-evaluation => [None..None]
-             fr-lm-evaluation.identifiant => [1..1]
-             fr-lm-evaluation.typeEvaluation => [1..1]
-             fr-lm-evaluation.description => [1..1]
-             fr-lm-evaluation.statut => [1..1]
-             fr-lm-evaluation.date => [1..1]
-             fr-lm-evaluation.valeur => [1..1]
-             fr-lm-evaluation.interpretation => [0..1]
-             fr-lm-evaluation.evaluateur => [0..1]
-             fr-lm-evaluation.auteurEvaluation => [0..1]
-             fr-lm-evaluation.responsableEvaluation => [0..1]
-             fr-lm-evaluation.evaluationComposant => [0..*]
-             fr-lm-evaluation.statutEvaluation => [0..1]
-             fr-lm-evaluation.commentaire => [0..*]
-             fr-lm-evaluation.referenceInterne => [0..*]
         } 
 
         class FRLMEvenementIndesirablePendantHospitalisation{
@@ -5150,6 +5099,20 @@ package IG #DDDDDD{
              fr-lm-facteurs-de-risque-professionnels-non-code.entree => [None..0]
         } 
 
+        class FRLMFamilyMemberHistory{
+
+             fr-lm-family-member-history => [None..None]
+             fr-lm-family-member-history.statut => [1..1]
+             fr-lm-family-member-history.relatedPerson => [1..1]
+             fr-lm-family-member-history.condition => [0..*]
+             fr-lm-family-member-history.condition.code => [1..1]
+             fr-lm-family-member-history.condition.outcome => [0..1]
+             fr-lm-family-member-history.condition.contributedToDeath => [0..1]
+             fr-lm-family-member-history.condition.onset[x] => [0..1]
+             fr-lm-family-member-history.condition.bodySite => [0..1]
+             fr-lm-family-member-history.note => [0..1]
+        } 
+
         class FRLMFonctionsPhysiques{
 
              fr-lm-fonctions-physiques => [None..None]
@@ -5175,20 +5138,6 @@ package IG #DDDDDD{
              fr-lm-group-de-questionnaires-devaluation.statut => [1..1]
              fr-lm-group-de-questionnaires-devaluation.horodatage => [1..1]
              fr-lm-group-de-questionnaires-devaluation.evaluation => [1..*]
-        } 
-
-        class FRLMHabitusModeDeVieEntree{
-
-             fr-lm-habitus-mode-de-vie-entree => [None..None]
-             fr-lm-habitus-mode-de-vie-entree.identifiant => [1..1]
-             fr-lm-habitus-mode-de-vie-entree.code => [1..1]
-             fr-lm-habitus-mode-de-vie-entree.code.precision => [0..1]
-             fr-lm-habitus-mode-de-vie-entree.code.precision.name => [0..1]
-             fr-lm-habitus-mode-de-vie-entree.code.precision.value => [0..1]
-             fr-lm-habitus-mode-de-vie-entree.description => [1..1]
-             fr-lm-habitus-mode-de-vie-entree.statut => [1..1]
-             fr-lm-habitus-mode-de-vie-entree.horodatage => [0..1]
-             fr-lm-habitus-mode-de-vie-entree.resultat => [1..1]
         } 
 
         class FRLMHabitusModeDeVie{
@@ -5273,6 +5222,7 @@ package IG #DDDDDD{
         class FRLMImmunisation{
 
              fr-lm-immunisation => [None..None]
+             fr-lm-immunisation.status => [1..1]
              fr-lm-immunisation.periodOfImmunisation => [1..1]
              fr-lm-immunisation.periodOfImmunisation.startDate => [0..1]
              fr-lm-immunisation.periodOfImmunisation.endDate => [0..1]
@@ -5480,6 +5430,19 @@ package IG #DDDDDD{
              fr-lm-observation-result.demandeExamen => [0..*]
         } 
 
+        class FRLMObservationVitalSign{
+
+             fr-lm-observation-vital-sign => [None..None]
+             fr-lm-observation-vital-sign.observationDate[x] => [1..1]
+             fr-lm-observation-vital-sign.type => [1..1]
+             fr-lm-observation-vital-sign.status => [1..1]
+             fr-lm-observation-vital-sign.method => [0..1]
+             fr-lm-observation-vital-sign.bodySite => [0..1]
+             fr-lm-observation-vital-sign.result => [1..1]
+             fr-lm-observation-vital-sign.interpretation => [0..*]
+             fr-lm-observation-vital-sign.note => [0..1]
+        } 
+
         class FRLMObservation{
 
              fr-lm-observation => [None..None]
@@ -5651,11 +5614,7 @@ package IG #DDDDDD{
              fr-lm-plan-soins => [None..None]
              fr-lm-plan-soins.titreSection => [1..None]
              fr-lm-plan-soins.sousSection => [None..0]
-             fr-lm-plan-soins.entree.actes => [0..*]
-             fr-lm-plan-soins.entree.demandeExamenOuSuivi => [0..*]
-             fr-lm-plan-soins.entree.traitement => [0..*]
-             fr-lm-plan-soins.entree.vaccinRecommande => [0..*]
-             fr-lm-plan-soins.entree.rencontre => [0..*]
+             fr-lm-plan-soins.entree.planDeSoins => [0..*]
         } 
 
         class FRLMPointsDeVigilancesNonCode{
@@ -6027,21 +5986,6 @@ package IG #DDDDDD{
              fr-lm-severite.descriptionNarrative => [1..1]
              fr-lm-severite.statutSeverite => [1..1]
              fr-lm-severite.niveauSeverite => [1..1]
-        } 
-
-        class FRLMSigneVitalObserve{
-
-             fr-lm-signe-vital-observe => [None..None]
-             fr-lm-signe-vital-observe.identifiant => [1..1]
-             fr-lm-signe-vital-observe.code => [1..1]
-             fr-lm-signe-vital-observe.description => [1..1]
-             fr-lm-signe-vital-observe.statut => [1..1]
-             fr-lm-signe-vital-observe.date => [1..1]
-             fr-lm-signe-vital-observe.observationEffectuee => [1..1]
-             fr-lm-signe-vital-observe.interpretation => [0..1]
-             fr-lm-signe-vital-observe.methodeUtilisee => [0..1]
-             fr-lm-signe-vital-observe.siteObservation => [0..1]
-             fr-lm-signe-vital-observe.auteur => [0..1]
         } 
 
         class FRLMSignesVitaux{
@@ -7500,6 +7444,14 @@ package "Ressources de base" #palegreen {
 
     class3ce7c1f18d683e945dff5b14e1dc367c --> CISISTelecom
 
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> FRLMAssessment
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> FRLMObservationSocialHistory
+
  class "vitalspanel" as  class48cc96dc575369fad67347d24c304310 
 
     class48cc96dc575369fad67347d24c304310 --> FRObservationVitalSignsPanelDocument
@@ -8220,10 +8172,6 @@ package "Ressources de base" #palegreen {
 
     classeb8bc4d6baa061f547965c0670265381 --> FRLMAllergyIntolerance
 
- class "Base" as  class095a1b43effec73955e31e790438de49 
-
-    class095a1b43effec73955e31e790438de49 --> FRLMAntecedentFamilialObserve
-
  class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-section" as  class5dabea989fe22a905d8f89cc210527f2 
 
     class5dabea989fe22a905d8f89cc210527f2 --> FRLMAntecedentsFamiliaux
@@ -8252,9 +8200,9 @@ package "Ressources de base" #palegreen {
 
     class095a1b43effec73955e31e790438de49 --> FRLMBatterieExamensBiologieMedicale
 
- class "Base" as  class095a1b43effec73955e31e790438de49 
+ class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry" as  classeb8bc4d6baa061f547965c0670265381 
 
-    class095a1b43effec73955e31e790438de49 --> FRLMCertitude
+    classeb8bc4d6baa061f547965c0670265381 --> FRLMCarePlan
 
  class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-section" as  class5dabea989fe22a905d8f89cc210527f2 
 
@@ -8299,10 +8247,6 @@ package "Ressources de base" #palegreen {
  class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-section" as  class5dabea989fe22a905d8f89cc210527f2 
 
     class5dabea989fe22a905d8f89cc210527f2 --> FRLMCRBIOSousChapitre
-
- class "Base" as  class095a1b43effec73955e31e790438de49 
-
-    class095a1b43effec73955e31e790438de49 --> FRLMCriticite
 
  class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-section" as  class5dabea989fe22a905d8f89cc210527f2 
 
@@ -8406,18 +8350,6 @@ package "Ressources de base" #palegreen {
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
-    class095a1b43effec73955e31e790438de49 --> FRLMEvaluationComposantN2
-
- class "Base" as  class095a1b43effec73955e31e790438de49 
-
-    class095a1b43effec73955e31e790438de49 --> FRLMEvaluationComposant
-
- class "Base" as  class095a1b43effec73955e31e790438de49 
-
-    class095a1b43effec73955e31e790438de49 --> FRLMEvaluation
-
- class "Base" as  class095a1b43effec73955e31e790438de49 
-
     class095a1b43effec73955e31e790438de49 --> FRLMEvenementIndesirablePendantHospitalisation
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
@@ -8444,6 +8376,10 @@ package "Ressources de base" #palegreen {
 
     class5dabea989fe22a905d8f89cc210527f2 --> FRLMFacteursDeRisqueProfessionnelsNonCode
 
+ class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry" as  classeb8bc4d6baa061f547965c0670265381 
+
+    classeb8bc4d6baa061f547965c0670265381 --> FRLMFamilyMemberHistory
+
  class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-section" as  class5dabea989fe22a905d8f89cc210527f2 
 
     class5dabea989fe22a905d8f89cc210527f2 --> FRLMFonctionsPhysiques
@@ -8455,10 +8391,6 @@ package "Ressources de base" #palegreen {
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
     class095a1b43effec73955e31e790438de49 --> FRLMGroupDeQuestionnairesDevaluation
-
- class "Base" as  class095a1b43effec73955e31e790438de49 
-
-    class095a1b43effec73955e31e790438de49 --> FRLMHabitusModeDeVieEntree
 
  class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-section" as  class5dabea989fe22a905d8f89cc210527f2 
 
@@ -8551,6 +8483,10 @@ package "Ressources de base" #palegreen {
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
     class095a1b43effec73955e31e790438de49 --> FRLMObservationResult
+
+ class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry" as  classeb8bc4d6baa061f547965c0670265381 
+
+    classeb8bc4d6baa061f547965c0670265381 --> FRLMObservationVitalSign
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
@@ -8719,10 +8655,6 @@ package "Ressources de base" #palegreen {
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
     class095a1b43effec73955e31e790438de49 --> FRLMSeverite
-
- class "Base" as  class095a1b43effec73955e31e790438de49 
-
-    class095a1b43effec73955e31e790438de49 --> FRLMSigneVitalObserve
 
  class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-section" as  class5dabea989fe22a905d8f89cc210527f2 
 

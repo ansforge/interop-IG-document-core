@@ -1,6 +1,6 @@
 "Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
 "fr-lm-immunisation","fr-lm-immunisation","","","",0,*,"","","","null {[]} {[]}
-","Logical model - FR LM Immunisation","Vaccination","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Logical model - FR LM Immunisation","Entrée Vaccination","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "fr-lm-immunisation.header","fr-lm-immunisation.header","","","",1,1,"","","","Base {[]} {[]}
 ","Métadonnées de base","Métadonnées de base","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header",1,1,"",""
 "fr-lm-immunisation.header.subject","fr-lm-immunisation.header.subject","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-usager {[]} {[]}
@@ -31,8 +31,8 @@ La partie en minuscules indique le code de la langue utilisée (ISO-639-1)
 La partie en majuscules indique le code pays (ISO-3166)","'fr-FR' pour français métropolitain (la casse des caractères doit être respectée)
 La partie en minuscules indique le code de la langue utilisée (ISO-639-1)
 La partie en majuscules indique le code pays (ISO-3166)","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.langue",0,1,"",""
-"fr-lm-immunisation.header.code","fr-lm-immunisation.header.code","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Type de l'entrée","Type de l'entrée","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.code",0,1,"",""
+"fr-lm-immunisation.status","fr-lm-immunisation.status","","","",1,1,"","","","code {[]} {[]}
+","Statut de la vaccination (réalisé, non fait, ...).","Statut de la vaccination (réalisé, non fait, ...).","","","","","","","","","",,,,,"",,,,"fr-lm-immunisation.status",1,1,"",""
 "fr-lm-immunisation.periodOfImmunisation","fr-lm-immunisation.periodOfImmunisation","","","",1,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/organization-period]]} {[]}
 ","Période de vaccination - Si vaccin effectuée => que la dateDebutVaccination est renseignée - Si vaccin à effectuer => dateDebutVaccination et dateFinVaccination peuvent être renseignée (période souhaitée pour la vaccination)","Période de vaccination - Si vaccin effectuée => que la dateDebutVaccination est renseignée - Si vaccin à effectuer => dateDebutVaccination et dateFinVaccination peuvent être renseignée (période souhaitée pour la vaccination)","","","","","","","","","",,,,,"",,,,"fr-lm-immunisation.periodOfImmunisation",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"

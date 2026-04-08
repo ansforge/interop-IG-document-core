@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-observation-vital
   "name" : "FRObservationVitalSignsDocument",
   "title" : "Observation - FR Observation Vital Signs Document",
   "status" : "draft",
-  "date" : "2026-04-08T09:43:36+00:00",
+  "date" : "2026-04-08T13:03:38+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -11,5 +11,5 @@
 ","Sous-sections","Sous-sections","","","","","","","","","",,,,,"",,,,"fr-lm-section.sousSection",0,*,"",""
 "fr-lm-habitus-mode-de-vie.entree","fr-lm-habitus-mode-de-vie.entree","","","",0,*,"","","","Base {[]} {[]}
 ","Entrées","Entrées","","","","","","","","","",,,,,"",,,,"fr-lm-section.entree",0,*,"",""
-"fr-lm-habitus-mode-de-vie.entree.habitusModeDeVieEntry","fr-lm-habitus-mode-de-vie.entree.habitusModeDeVieEntry","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-habitus-mode-de-vie-entree {[]} {[]}
+"fr-lm-habitus-mode-de-vie.entree.habitusModeDeVieEntry","fr-lm-habitus-mode-de-vie.entree.habitusModeDeVieEntry","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fm-lm-observation-social-history {[]} {[]}
 ","Entrée Habitus, Mode de vie","Entrée Habitus, Mode de vie","","","","","","","","","",,,,,"",,,,"fr-lm-habitus-mode-de-vie.entree.habitusModeDeVieEntry",0,*,"",""
