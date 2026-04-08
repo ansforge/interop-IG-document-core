@@ -11,13 +11,5 @@
 ","Sous-sections","Sous-sections","","","","","","","","","",,,,,"",,,,"fr-lm-section.sousSection",0,*,"",""
 "fr-lm-plan-soins.entree","fr-lm-plan-soins.entree","","","",0,*,"","","","Base {[]} {[]}
 ","Entrées","Entrées","","","","","","","","","",,,,,"",,,,"fr-lm-section.entree",0,*,"",""
-"fr-lm-plan-soins.entree.actes","fr-lm-plan-soins.entree.actes","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-acte {[]} {[]}
-","Entrée Acte","Entrée Acte","","","","","","","","","",,,,,"",,,,"fr-lm-plan-soins.entree.actes",0,*,"",""
-"fr-lm-plan-soins.entree.demandeExamenOuSuivi","fr-lm-plan-soins.entree.demandeExamenOuSuivi","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-demande-examen-ou-suivi {[]} {[]}
-","Entrée Demande d'examen ou de suivi","Entrée Demande d'examen ou de suivi","","","","","","","","","",,,,,"",,,,"fr-lm-plan-soins.entree.demandeExamenOuSuivi",0,*,"",""
-"fr-lm-plan-soins.entree.traitement","fr-lm-plan-soins.entree.traitement","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-traitement {[]} {[]}
-","Entrée Traitement","Entrée Traitement","","","","","","","","","",,,,,"",,,,"fr-lm-plan-soins.entree.traitement",0,*,"",""
-"fr-lm-plan-soins.entree.vaccinRecommande","fr-lm-plan-soins.entree.vaccinRecommande","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-vaccin-recommande {[]} {[]}
-","Entrée Vaccin recommandé","Entrée Vaccin recommandé","","","","","","","","","",,,,,"",,,,"fr-lm-plan-soins.entree.vaccinRecommande",0,*,"",""
-"fr-lm-plan-soins.entree.rencontre","fr-lm-plan-soins.entree.rencontre","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-rencontre {[]} {[]}
-","Entrée Rencontre","Entrée Rencontre","","","","","","","","","",,,,,"",,,,"fr-lm-plan-soins.entree.rencontre",0,*,"",""
+"fr-lm-plan-soins.entree.planDeSoins","fr-lm-plan-soins.entree.planDeSoins","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-care-plan {[]} {[]}
+","Entrée Plan de soins","Entrée Plan de soins","","","","","","","","","",,,,,"",,,,"fr-lm-plan-soins.entree.planDeSoins",0,*,"",""

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-plan-soins | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-07 | *Computable Name*:FRLMPlanSoins |
+| Draft as of 2026-04-08 | *Computable Name*:FRLMPlanSoins |
 
  
 Section Plan de soins 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-plan-soins.csv
   "name" : "FRLMPlanSoins",
   "title" : "Modèle logique métier - FR LM Plan de soins",
   "status" : "draft",
-  "date" : "2026-04-07T14:45:49+00:00",
+  "date" : "2026-04-08T10:07:24+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -90,58 +90,14 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-plan-soins.csv
       "max" : "0"
     },
     {
-      "id" : "fr-lm-plan-soins.entree.actes",
-      "path" : "fr-lm-plan-soins.entree.actes",
-      "short" : "Entrée Acte",
-      "definition" : "Entrée Acte",
+      "id" : "fr-lm-plan-soins.entree.planDeSoins",
+      "path" : "fr-lm-plan-soins.entree.planDeSoins",
+      "short" : "Entrée Plan de soins",
+      "definition" : "Entrée Plan de soins",
       "min" : 0,
       "max" : "*",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-acte"
-      }]
-    },
-    {
-      "id" : "fr-lm-plan-soins.entree.demandeExamenOuSuivi",
-      "path" : "fr-lm-plan-soins.entree.demandeExamenOuSuivi",
-      "short" : "Entrée Demande d'examen ou de suivi",
-      "definition" : "Entrée Demande d'examen ou de suivi",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-demande-examen-ou-suivi"
-      }]
-    },
-    {
-      "id" : "fr-lm-plan-soins.entree.traitement",
-      "path" : "fr-lm-plan-soins.entree.traitement",
-      "short" : "Entrée Traitement",
-      "definition" : "Entrée Traitement",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-traitement"
-      }]
-    },
-    {
-      "id" : "fr-lm-plan-soins.entree.vaccinRecommande",
-      "path" : "fr-lm-plan-soins.entree.vaccinRecommande",
-      "short" : "Entrée Vaccin recommandé",
-      "definition" : "Entrée Vaccin recommandé",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-vaccin-recommande"
-      }]
-    },
-    {
-      "id" : "fr-lm-plan-soins.entree.rencontre",
-      "path" : "fr-lm-plan-soins.entree.rencontre",
-      "short" : "Entrée Rencontre",
-      "definition" : "Entrée Rencontre",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-rencontre"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-care-plan"
       }]
     }]
   }

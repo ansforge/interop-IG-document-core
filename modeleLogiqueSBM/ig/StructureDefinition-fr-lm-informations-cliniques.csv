@@ -19,7 +19,7 @@
 ","Observation","Observation","","","","","","","","","",,,,,"",,,,"fr-lm-informations-cliniques.entree.contreIndications",0,1,"",""
 "fr-lm-informations-cliniques.entree.probleme","fr-lm-informations-cliniques.entree.probleme","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-condition {[]} {[]}
 ","Problème","Problème","","","","","","","","","",,,,,"",,,,"fr-lm-informations-cliniques.entree.probleme",0,*,"",""
-"fr-lm-informations-cliniques.entree.dispositifMedical","fr-lm-informations-cliniques.entree.dispositifMedical","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dispositif-medical-entree {[]} {[]}
+"fr-lm-informations-cliniques.entree.dispositifMedical","fr-lm-informations-cliniques.entree.dispositifMedical","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device-use {[]} {[]}
 ","Dispositif médical","Dispositif médical","","","","","","","","","",,,,,"",,,,"fr-lm-informations-cliniques.entree.dispositifMedical",0,*,"",""
 "fr-lm-informations-cliniques.entree.statutGrossesse","fr-lm-informations-cliniques.entree.statutGrossesse","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation-grossesse {[]} {[]}
 ","Statut grossesse","Statut grossesse","","","","","","","","","",,,,,"",,,,"fr-lm-informations-cliniques.entree.statutGrossesse",0,1,"",""

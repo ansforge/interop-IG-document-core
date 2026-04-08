@@ -11,7 +11,7 @@
 ","Sous-sections","Sous-sections","","","","","","","","","",,,,,"",,,,"fr-lm-section.sousSection",0,*,"",""
 "fr-lm-prescription-dispositifs-medicaux.entree","fr-lm-prescription-dispositifs-medicaux.entree","","","",1,*,"","","","Base {[]} {[]}
 ","Entrées","Entrées","","","","","","","","","",,,,,"",,,,"fr-lm-section.entree",0,*,"",""
-"fr-lm-prescription-dispositifs-medicaux.entree.dispositifMedical","fr-lm-prescription-dispositifs-medicaux.entree.dispositifMedical","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dispositif-medical-entree {[]} {[]}
+"fr-lm-prescription-dispositifs-medicaux.entree.dispositifMedical","fr-lm-prescription-dispositifs-medicaux.entree.dispositifMedical","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device-use {[]} {[]}
 ","Entrée Dispositif médical prescrit","Entrée Dispositif médical prescrit","","","","","","","","","",,,,,"",,,,"fr-lm-prescription-dispositifs-medicaux.entree.dispositifMedical",1,*,"",""
 "fr-lm-prescription-dispositifs-medicaux.auteur","fr-lm-prescription-dispositifs-medicaux.auteur","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-auteur {[]} {[]}
 ","Auteur de la prescription","Auteur de la prescription","","","","","","","","","",,,,,"",,,,"fr-lm-prescription-dispositifs-medicaux.auteur",0,1,"",""

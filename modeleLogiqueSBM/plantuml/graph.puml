@@ -4408,29 +4408,6 @@ package IG #DDDDDD{
              fr-lm-acte-substitution.statut => [1..1]
         } 
 
-        class FRLMActe{
-
-             fr-lm-acte => [None..None]
-             fr-lm-acte.identifiant => [1..*]
-             fr-lm-acte.description => [1..1]
-             fr-lm-acte.code => [1..1]
-             fr-lm-acte.titre => [0..1]
-             fr-lm-acte.statut => [1..1]
-             fr-lm-acte.date => [0..1]
-             fr-lm-acte.priorite => [0..1]
-             fr-lm-acte.localisationAnatomique => [0..1]
-             fr-lm-acte.voieDAbord => [0..1]
-             fr-lm-acte.perfomer => [0..*]
-             fr-lm-acte.auteur => [0..*]
-             fr-lm-acte.informateur => [0..*]
-             fr-lm-acte.participant => [0..*]
-             fr-lm-acte.circonstances => [0..*]
-             fr-lm-acte.reason => [0..*]
-             fr-lm-acte.dispositifMedical => [0..*]
-             fr-lm-acte.difficulte => [0..1]
-             fr-lm-acte.scores => [0..*]
-        } 
-
         class FRLMAddendum{
 
              fr-lm-addendum => [None..None]
@@ -4574,6 +4551,15 @@ package IG #DDDDDD{
              fr-lm-batterie-examens-biologie-medicale.resultatElementCliniquePertinent => [0..*]
              fr-lm-batterie-examens-biologie-medicale.imageIllustrative => [0..*]
              fr-lm-batterie-examens-biologie-medicale.commentaire => [0..*]
+        } 
+
+        class FRLMCarePlan{
+
+             fr-lm-care-plan => [None..None]
+             fr-lm-care-plan.status => [1..1]
+             fr-lm-care-plan.addresses => [0..*]
+             fr-lm-care-plan.goal => [0..*]
+             fr-lm-care-plan.activity => [0..*]
         } 
 
         class FRLMCertitude{
@@ -4768,6 +4754,21 @@ package IG #DDDDDD{
              fr-lm-destinataire-prevu.destinataire => [0..*]
         } 
 
+        class FRLMDeviceUse{
+
+             fr-lm-device-use => [None..None]
+             fr-lm-device-use.status => [1..1]
+             fr-lm-device-use.periodOfUse => [1..1]
+             fr-lm-device-use.periodOfUse.onsetDate => [0..1]
+             fr-lm-device-use.periodOfUse.endDate => [0..1]
+             fr-lm-device-use.periodOfUse.duration => [0..1]
+             fr-lm-device-use.DeviceUsageStatus => [1..1]
+             fr-lm-device-use.device => [1..1]
+             fr-lm-device-use.bodySite => [0..1]
+             fr-lm-device-use.reason[x] => [0..*]
+             fr-lm-device-use.note => [0..1]
+        } 
+
         class FRLMDevice{
 
              fr-lm-device => [None..None]
@@ -4819,25 +4820,6 @@ package IG #DDDDDD{
              fr-lm-dispensation-medicaments.entree => [1..None]
              fr-lm-dispensation-medicaments.entree.traitementDispense => [1..*]
              fr-lm-dispensation-medicaments.auteur => [1..1]
-        } 
-
-        class FRLMDispositifMedicalEntree{
-
-             fr-lm-dispositif-medical-entree => [None..None]
-             fr-lm-dispositif-medical-entree.identifiant => [1..*]
-             fr-lm-dispositif-medical-entree.description => [1..1]
-             fr-lm-dispositif-medical-entree.statut => [1..1]
-             fr-lm-dispositif-medical-entree.date => [1..1]
-             fr-lm-dispositif-medical-entree.renouvellement => [0..1]
-             fr-lm-dispositif-medical-entree.quantite => [0..1]
-             fr-lm-dispositif-medical-entree.duree => [0..1]
-             fr-lm-dispositif-medical-entree.performer => [0..*]
-             fr-lm-dispositif-medical-entree.auteur => [0..*]
-             fr-lm-dispositif-medical-entree.dispositifMedical => [1..*]
-             fr-lm-dispositif-medical-entree.affectionLongueDuree => [0..1]
-             fr-lm-dispositif-medical-entree.accidentTravail => [0..1]
-             fr-lm-dispositif-medical-entree.prevention => [0..1]
-             fr-lm-dispositif-medical-entree.nonRemboursable => [0..1]
         } 
 
         class FRLMDispositifsMedicaux{
@@ -4990,6 +4972,21 @@ package IG #DDDDDD{
              fr-lm-en-rapport-avec-la-prevention.auteur => [0..1]
         } 
 
+        class FRLMEncounter{
+
+             fr-lm-encounter => [None..None]
+             fr-lm-encounter.identifiant => [1..*]
+             fr-lm-encounter.typeRencontre => [1..1]
+             fr-lm-encounter.description => [0..1]
+             fr-lm-encounter.dateRencontre => [0..1]
+             fr-lm-encounter.confirmationRencontre => [0..1]
+             fr-lm-encounter.executant => [0..*]
+             fr-lm-encounter.auteur => [0..*]
+             fr-lm-encounter.informateur => [0..*]
+             fr-lm-encounter.participant => [0..1]
+             fr-lm-encounter.autreParticipant => [0..1]
+        } 
+
         class FRLMEnteteDocument{
 
              fr-lm-entete-document => [1..1]
@@ -5035,7 +5032,6 @@ package IG #DDDDDD{
              fr-lm-entry.header.date => [0..1]
              fr-lm-entry.header.source => [0..1]
              fr-lm-entry.header.langue => [0..1]
-             fr-lm-entry.header.code => [0..1]
         } 
 
         class FRLMEvaluationComposantN2{
@@ -5285,6 +5281,7 @@ package IG #DDDDDD{
         class FRLMImmunisation{
 
              fr-lm-immunisation => [None..None]
+             fr-lm-immunisation.status => [1..1]
              fr-lm-immunisation.periodOfImmunisation => [1..1]
              fr-lm-immunisation.periodOfImmunisation.startDate => [0..1]
              fr-lm-immunisation.periodOfImmunisation.endDate => [0..1]
@@ -5492,6 +5489,19 @@ package IG #DDDDDD{
              fr-lm-observation-result.demandeExamen => [0..*]
         } 
 
+        class FRLMObservationVitalSign{
+
+             fr-lm-observation-vital-sign => [None..None]
+             fr-lm-observation-vital-sign.observationDate[x] => [1..1]
+             fr-lm-observation-vital-sign.type => [1..1]
+             fr-lm-observation-vital-sign.status => [1..1]
+             fr-lm-observation-vital-sign.method => [0..1]
+             fr-lm-observation-vital-sign.bodySite => [0..1]
+             fr-lm-observation-vital-sign.result => [1..1]
+             fr-lm-observation-vital-sign.interpretation => [0..*]
+             fr-lm-observation-vital-sign.note => [0..1]
+        } 
+
         class FRLMObservation{
 
              fr-lm-observation => [None..None]
@@ -5663,11 +5673,7 @@ package IG #DDDDDD{
              fr-lm-plan-soins => [None..None]
              fr-lm-plan-soins.titreSection => [1..None]
              fr-lm-plan-soins.sousSection => [None..0]
-             fr-lm-plan-soins.entree.actes => [0..*]
-             fr-lm-plan-soins.entree.demandeExamenOuSuivi => [0..*]
-             fr-lm-plan-soins.entree.traitement => [0..*]
-             fr-lm-plan-soins.entree.vaccinRecommande => [0..*]
-             fr-lm-plan-soins.entree.rencontre => [0..*]
+             fr-lm-plan-soins.entree.planDeSoins => [0..*]
         } 
 
         class FRLMPointsDeVigilancesNonCode{
@@ -5795,6 +5801,26 @@ package IG #DDDDDD{
              fr-lm-problemes-actifs.entree.problemes => [1..*]
         } 
 
+        class FRLMProcedure{
+
+             fr-lm-procedure => [None..None]
+             fr-lm-procedure.status => [1..1]
+             fr-lm-procedure.code => [1..1]
+             fr-lm-procedure.procedureDate[x] => [1..1]
+             fr-lm-procedure.procedureDate[x].procedureDateDateTime => [0..1]
+             fr-lm-procedure.procedureDate[x].procedureDatePeriod => [0..1]
+             fr-lm-procedure.priority => [0..1]
+             fr-lm-procedure.bodySite => [0..1]
+             fr-lm-procedure.approachSiteCode => [0..1]
+             fr-lm-procedure.difficulty => [0..1]
+             fr-lm-procedure.reason[x] => [0..*]
+             fr-lm-procedure.outcome => [0..1]
+             fr-lm-procedure.complication => [0..*]
+             fr-lm-procedure.deviceUsed => [0..*]
+             fr-lm-procedure.focalDevice => [0..*]
+             fr-lm-procedure.note => [0..1]
+        } 
+
         class FRLMQuantiteExposition{
 
              fr-lm-quantite-exposition => [None..None]
@@ -5875,21 +5901,6 @@ package IG #DDDDDD{
              fr-lm-references-externes.reference.externalDocument.identifiant => [1..1]
              fr-lm-references-externes.reference.externalDocument.text => [0..1]
              fr-lm-references-externes.reference.externalDocument.text.reference => [0..1]
-        } 
-
-        class FRLMRencontre{
-
-             fr-lm-rencontre => [None..None]
-             fr-lm-rencontre.identifiant => [1..*]
-             fr-lm-rencontre.typeRencontre => [1..1]
-             fr-lm-rencontre.description => [0..1]
-             fr-lm-rencontre.dateRencontre => [0..1]
-             fr-lm-rencontre.confirmationRencontre => [0..1]
-             fr-lm-rencontre.executant => [0..*]
-             fr-lm-rencontre.auteur => [0..*]
-             fr-lm-rencontre.informateur => [0..*]
-             fr-lm-rencontre.participant => [0..1]
-             fr-lm-rencontre.autreParticipant => [0..1]
         } 
 
         class FRLMResponsable{
@@ -6034,21 +6045,6 @@ package IG #DDDDDD{
              fr-lm-severite.descriptionNarrative => [1..1]
              fr-lm-severite.statutSeverite => [1..1]
              fr-lm-severite.niveauSeverite => [1..1]
-        } 
-
-        class FRLMSigneVitalObserve{
-
-             fr-lm-signe-vital-observe => [None..None]
-             fr-lm-signe-vital-observe.identifiant => [1..1]
-             fr-lm-signe-vital-observe.code => [1..1]
-             fr-lm-signe-vital-observe.description => [1..1]
-             fr-lm-signe-vital-observe.statut => [1..1]
-             fr-lm-signe-vital-observe.date => [1..1]
-             fr-lm-signe-vital-observe.observationEffectuee => [1..1]
-             fr-lm-signe-vital-observe.interpretation => [0..1]
-             fr-lm-signe-vital-observe.methodeUtilisee => [0..1]
-             fr-lm-signe-vital-observe.siteObservation => [0..1]
-             fr-lm-signe-vital-observe.auteur => [0..1]
         } 
 
         class FRLMSignesVitaux{
@@ -8207,10 +8203,6 @@ package "Ressources de base" #palegreen {
 
     class095a1b43effec73955e31e790438de49 --> FRLMActeSubstitution
 
- class "Base" as  class095a1b43effec73955e31e790438de49 
-
-    class095a1b43effec73955e31e790438de49 --> FRLMActe
-
  class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-section" as  class5dabea989fe22a905d8f89cc210527f2 
 
     class5dabea989fe22a905d8f89cc210527f2 --> FRLMAddendum
@@ -8262,6 +8254,10 @@ package "Ressources de base" #palegreen {
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
     class095a1b43effec73955e31e790438de49 --> FRLMBatterieExamensBiologieMedicale
+
+ class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry" as  classeb8bc4d6baa061f547965c0670265381 
+
+    classeb8bc4d6baa061f547965c0670265381 --> FRLMCarePlan
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
@@ -8327,6 +8323,10 @@ package "Ressources de base" #palegreen {
 
     class095a1b43effec73955e31e790438de49 --> FRLMDestinatairePrevu
 
+ class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry" as  classeb8bc4d6baa061f547965c0670265381 
+
+    classeb8bc4d6baa061f547965c0670265381 --> FRLMDeviceUse
+
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
     class095a1b43effec73955e31e790438de49 --> FRLMDevice
@@ -8342,10 +8342,6 @@ package "Ressources de base" #palegreen {
  class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-section" as  class5dabea989fe22a905d8f89cc210527f2 
 
     class5dabea989fe22a905d8f89cc210527f2 --> FRLMDispensationMedicaments
-
- class "Base" as  class095a1b43effec73955e31e790438de49 
-
-    class095a1b43effec73955e31e790438de49 --> FRLMDispositifMedicalEntree
 
  class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-section" as  class5dabea989fe22a905d8f89cc210527f2 
 
@@ -8402,6 +8398,10 @@ package "Ressources de base" #palegreen {
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
     class095a1b43effec73955e31e790438de49 --> FRLMEnRapportAvecLaPrevention
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> FRLMEncounter
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
@@ -8559,6 +8559,10 @@ package "Ressources de base" #palegreen {
 
     class095a1b43effec73955e31e790438de49 --> FRLMObservationResult
 
+ class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry" as  classeb8bc4d6baa061f547965c0670265381 
+
+    classeb8bc4d6baa061f547965c0670265381 --> FRLMObservationVitalSign
+
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
     class095a1b43effec73955e31e790438de49 --> FRLMObservation
@@ -8639,6 +8643,10 @@ package "Ressources de base" #palegreen {
 
     class5dabea989fe22a905d8f89cc210527f2 --> FRLMProblemesActifs
 
+ class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry" as  classeb8bc4d6baa061f547965c0670265381 
+
+    classeb8bc4d6baa061f547965c0670265381 --> FRLMProcedure
+
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
     class095a1b43effec73955e31e790438de49 --> FRLMQuantiteExposition
@@ -8670,10 +8678,6 @@ package "Ressources de base" #palegreen {
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
     class095a1b43effec73955e31e790438de49 --> FRLMReferencesExternes
-
- class "Base" as  class095a1b43effec73955e31e790438de49 
-
-    class095a1b43effec73955e31e790438de49 --> FRLMRencontre
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
@@ -8726,10 +8730,6 @@ package "Ressources de base" #palegreen {
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
     class095a1b43effec73955e31e790438de49 --> FRLMSeverite
-
- class "Base" as  class095a1b43effec73955e31e790438de49 
-
-    class095a1b43effec73955e31e790438de49 --> FRLMSigneVitalObserve
 
  class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-section" as  class5dabea989fe22a905d8f89cc210527f2 
 

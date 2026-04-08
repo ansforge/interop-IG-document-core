@@ -14,7 +14,7 @@
   "name" : "FRLMCondition",
   "title" : "Logical model - FR LM Condition",
   "status" : "draft",
-  "date" : "2026-04-07T14:45:49+00:00",
+  "date" : "2026-04-08T10:07:24+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -257,22 +257,6 @@
       "max" : "1",
       "base" : {
         "path" : "fr-lm-entry.header.langue",
-        "min" : 0,
-        "max" : "1"
-      },
-      "type" : [{
-        "code" : "CodeableConcept"
-      }]
-    },
-    {
-      "id" : "fr-lm-condition.header.code",
-      "path" : "fr-lm-condition.header.code",
-      "short" : "Type de l'entrée",
-      "definition" : "Type de l'entrée",
-      "min" : 0,
-      "max" : "1",
-      "base" : {
-        "path" : "fr-lm-entry.header.code",
         "min" : 0,
         "max" : "1"
       },

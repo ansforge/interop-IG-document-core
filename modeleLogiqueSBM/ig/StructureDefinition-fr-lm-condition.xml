@@ -37,7 +37,7 @@ Binding Description: (preferred): e.g. TNM, ICD-O-3, Bi-Rads, Li-Rads, …<br/><
   <name value="FRLMCondition"/>
   <title value="Logical model - FR LM Condition"/>
   <status value="draft"/>
-  <date value="2026-04-07T14:45:49+00:00"/>
+  <date value="2026-04-08T10:07:24+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -265,21 +265,6 @@ Binding Description: (preferred): e.g. TNM, ICD-O-3, Bi-Rads, Li-Rads, …<br/><
       <max value="1"/>
       <base>
         <path value="fr-lm-entry.header.langue"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="CodeableConcept"/>
-      </type>
-    </element>
-    <element id="fr-lm-condition.header.code">
-      <path value="fr-lm-condition.header.code"/>
-      <short value="Type de l'entrée"/>
-      <definition value="Type de l'entrée"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="fr-lm-entry.header.code"/>
         <min value="0"/>
         <max value="1"/>
       </base>

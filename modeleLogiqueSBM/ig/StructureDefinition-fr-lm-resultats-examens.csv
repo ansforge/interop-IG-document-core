@@ -11,7 +11,7 @@
 ","Sous-sections","Sous-sections","","","","","","","","","",,,,,"",,,,"fr-lm-section.sousSection",0,*,"",""
 "fr-lm-resultats-examens.entree","fr-lm-resultats-examens.entree","","","",0,*,"","","","Base {[]} {[]}
 ","Entrées","Entrées","","","","","","","","","",,,,,"",,,,"fr-lm-section.entree",0,*,"",""
-"fr-lm-resultats-examens.entree.actes","fr-lm-resultats-examens.entree.actes","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-acte {[]} {[]}
+"fr-lm-resultats-examens.entree.actes","fr-lm-resultats-examens.entree.actes","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-procedure {[]} {[]}
 ","Entrée Acte","Entrée Acte","","","","","","","","","",,,,,"",,,,"fr-lm-resultats-examens.entree.actes",1,*,"",""
 "fr-lm-resultats-examens.entree.referencesExternes","fr-lm-resultats-examens.entree.referencesExternes","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-references-externes {[]} {[]}
 ","Entrée Références externes","Entrée Références externes","","","","","","","","","",,,,,"",,,,"fr-lm-resultats-examens.entree.referencesExternes",0,*,"",""

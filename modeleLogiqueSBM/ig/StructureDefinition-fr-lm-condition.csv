@@ -31,8 +31,6 @@ La partie en minuscules indique le code de la langue utilisée (ISO-639-1)
 La partie en majuscules indique le code pays (ISO-3166)","'fr-FR' pour français métropolitain (la casse des caractères doit être respectée)
 La partie en minuscules indique le code de la langue utilisée (ISO-639-1)
 La partie en majuscules indique le code pays (ISO-3166)","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.langue",0,1,"",""
-"fr-lm-condition.header.code","fr-lm-condition.header.code","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Type de l'entrée","Type de l'entrée","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.code",0,1,"",""
 "fr-lm-condition.type","fr-lm-condition.type","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Type d'observation","Type d'observation","","","","","","","","","",,"","Valeur issue du jdv-code-probleme-cisis (1.2.250.1.213.1.1.5.172)","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-code-probleme-cisis","",,,,"fr-lm-condition.type",1,1,"",""
 "fr-lm-condition.problem","fr-lm-condition.problem","","","",1,1,"","","","CodeableConcept {[]} {[]}

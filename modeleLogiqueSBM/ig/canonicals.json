@@ -2085,13 +2085,6 @@
   "name" : "FRLMAccidentsTransfusionnels"
 },
 {
-  "id" : "fr-lm-acte",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-acte",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRLMActe"
-},
-{
   "id" : "fr-lm-acte-imagerie",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-acte-imagerie",
@@ -2195,6 +2188,13 @@
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-batterie-examens-biologie-medicale",
   "version" : "0.1.0-snapsnot",
   "name" : "FRLMBatterieExamensBiologieMedicale"
+},
+{
+  "id" : "fr-lm-care-plan",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-care-plan",
+  "version" : "0.1.0-snapsnot",
+  "name" : "FRLMCarePlan"
 },
 {
   "id" : "fr-lm-certitude",
@@ -2316,6 +2316,13 @@
   "name" : "FRLMDevice"
 },
 {
+  "id" : "fr-lm-device-use",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device-use",
+  "version" : "0.1.0-snapsnot",
+  "name" : "FRLMDeviceUse"
+},
+{
   "id" : "fr-lm-directive-anticipee",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-directive-anticipee",
@@ -2335,13 +2342,6 @@
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dispensation-medicaments",
   "version" : "0.1.0-snapsnot",
   "name" : "FRLMDispensationMedicaments"
-},
-{
-  "id" : "fr-lm-dispositif-medical-entree",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dispositif-medical-entree",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRLMDispositifMedicalEntree"
 },
 {
   "id" : "fr-lm-dispositifs-medicaux",
@@ -2440,6 +2440,13 @@
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-en-rapport-avec-la-prevention",
   "version" : "0.1.0-snapsnot",
   "name" : "FRLMEnRapportAvecLaPrevention"
+},
+{
+  "id" : "fr-lm-encounter",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-encounter",
+  "version" : "0.1.0-snapsnot",
+  "name" : "FRLMEncounter"
 },
 {
   "id" : "fr-lm-entete-document",
@@ -2722,6 +2729,13 @@
   "name" : "FRLMObservationResult"
 },
 {
+  "id" : "fr-lm-observation-vital-sign",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation-vital-sign",
+  "version" : "0.1.0-snapsnot",
+  "name" : "FRLMObservationVitalSign"
+},
+{
   "id" : "fr-lm-operateur-saisie",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-operateur-saisie",
@@ -2855,6 +2869,13 @@
   "name" : "FRLMProblemesActifs"
 },
 {
+  "id" : "fr-lm-procedure",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-procedure",
+  "version" : "0.1.0-snapsnot",
+  "name" : "FRLMProcedure"
+},
+{
   "id" : "fr-lm-quantite-exposition",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-quantite-exposition",
@@ -2909,13 +2930,6 @@
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-references-externes",
   "version" : "0.1.0-snapsnot",
   "name" : "FRLMReferencesExternes"
-},
-{
-  "id" : "fr-lm-rencontre",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-rencontre",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRLMRencontre"
 },
 {
   "id" : "fr-lm-responsable",
@@ -3007,13 +3021,6 @@
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-severite",
   "version" : "0.1.0-snapsnot",
   "name" : "FRLMSeverite"
-},
-{
-  "id" : "fr-lm-signe-vital-observe",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-signe-vital-observe",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRLMSigneVitalObserve"
 },
 {
   "id" : "fr-lm-signes-vitaux",

@@ -31,7 +31,7 @@
   fhir:name [ fhir:v "FRLMCondition"] ; # 
   fhir:title [ fhir:v "Logical model - FR LM Condition"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-04-07T14:45:49+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-04-08T10:07:24+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -312,24 +312,6 @@
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
          fhir:path [ fhir:v "fr-lm-entry.header.langue" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
-       ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "CodeableConcept"^^xsd:anyURI ;
-           fhir:l fhir:CodeableConcept
-         ]
-       ] )
-     ] [
-       fhir:id [ fhir:v "fr-lm-condition.header.code" ] ;
-       fhir:path [ fhir:v "fr-lm-condition.header.code" ] ;
-       fhir:short [ fhir:v "Type de l'entrée" ] ;
-       fhir:definition [ fhir:v "Type de l'entrée" ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "fr-lm-entry.header.code" ] ;
          fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
          fhir:max [ fhir:v "1" ]
        ] ;

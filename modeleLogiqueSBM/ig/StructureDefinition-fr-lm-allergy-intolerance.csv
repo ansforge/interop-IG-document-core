@@ -31,8 +31,6 @@ La partie en minuscules indique le code de la langue utilisée (ISO-639-1)
 La partie en majuscules indique le code pays (ISO-3166)","'fr-FR' pour français métropolitain (la casse des caractères doit être respectée)
 La partie en minuscules indique le code de la langue utilisée (ISO-639-1)
 La partie en majuscules indique le code pays (ISO-3166)","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.langue",0,1,"",""
-"fr-lm-allergy-intolerance.header.code","fr-lm-allergy-intolerance.header.code","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Type de l'entrée","Type de l'entrée","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.code",0,1,"",""
 "fr-lm-allergy-intolerance.type","fr-lm-allergy-intolerance.type","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Allergie / hypersensibilité non allergique / intolérance / idiosyncrasie : jdv-type-event-indesirable-previsible-cisis (1.2.250.1.213.1.1.5.842)","Allergie / hypersensibilité non allergique / intolérance / idiosyncrasie : jdv-type-event-indesirable-previsible-cisis (1.2.250.1.213.1.1.5.842)","","","","","","","","","",,""," jdv-type-event-indesirable-previsible-cisis (1.2.250.1.213.1.1.5.842)","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-evenement-indesirable-previsible-cisis","",,,,"fr-lm-allergy-intolerance.type",1,1,"",""
 "fr-lm-allergy-intolerance.category","fr-lm-allergy-intolerance.category","","","",1,1,"","","","CodeableConcept {[]} {[]}
