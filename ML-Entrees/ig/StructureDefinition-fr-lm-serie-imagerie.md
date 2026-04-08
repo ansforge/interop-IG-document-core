@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-serie-imagerie
   "name" : "FRLMSerieImagerie",
   "title" : "Modèle logique métier - FR LM Serie imagerie",
   "status" : "draft",
-  "date" : "2026-04-08T13:03:38+00:00",
+  "date" : "2026-04-08T14:07:03+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

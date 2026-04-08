@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-traitement.csv
   "name" : "FRLMTraitement",
   "title" : "Modèle logique métier - FR LM Traitement",
   "status" : "draft",
-  "date" : "2026-04-08T13:03:38+00:00",
+  "date" : "2026-04-08T14:07:03+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -116,7 +116,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-traitement.csv
       "min" : 0,
       "max" : "1",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-posologie"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dosage-instructions"
       }]
     },
     {

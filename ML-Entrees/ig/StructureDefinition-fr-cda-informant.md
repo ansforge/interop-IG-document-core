@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-informant.csv
   "name" : "FRCDAInformant",
   "title" : "CDA - informant",
   "status" : "draft",
-  "date" : "2026-04-08T13:03:38+00:00",
+  "date" : "2026-04-08T14:07:03+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -10,7 +10,7 @@
   <name value="FRDocumentCore"/>
   <title value="ANS IG document core"/>
   <status value="draft"/>
-  <date value="2026-04-08T13:03:38+00:00"/>
+  <date value="2026-04-08T14:07:03+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -3169,10 +3169,34 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/fr-lm-medication-prescription"/>
+      </reference>
+      <name value="Logical model - FR LM Medication Prescription"/>
+      <description value="Entrée Traitement prescrit"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Modèles logiques métier des composants élémentaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/fr-lm-observation-vital-sign"/>
       </reference>
       <name value="Logical model - FR LM Observation Vital Sign"/>
       <description value="Signe vital observé"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Modèles logiques métier des composants élémentaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-lm-dosage-instructions"/>
+      </reference>
+      <name value="Logical model- FR LM Dosage Instructions"/>
+      <description value="Posologie"/>
       <exampleBoolean value="false"/>
       <groupingId value="Modèles logiques métier des composants élémentaires"/>
     </resource>
@@ -3197,6 +3221,18 @@
       </reference>
       <name value="Logical model- FR LM Procedure"/>
       <description value="Entrée Acte"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Modèles logiques métier des composants élémentaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-lm-quantity-prescribed"/>
+      </reference>
+      <name value="Logical model- FR LM Quantity Prescribed"/>
+      <description value="Entrée Quantité de produit"/>
       <exampleBoolean value="false"/>
       <groupingId value="Modèles logiques métier des composants élémentaires"/>
     </resource>
@@ -5853,17 +5889,6 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/fr-lm-posologie"/>
-      </reference>
-      <name value="Modèle logique métier - FR LM Posologie"/>
-      <description value="Posologie"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/fr-lm-prescription-entree"/>
       </reference>
       <name value="Modèle logique métier - FR LM Prescription"/>
@@ -5940,18 +5965,6 @@
       </reference>
       <name value="Modèle logique métier - FR LM Prélèvement"/>
       <description value="Prélèvement"/>
-      <exampleBoolean value="false"/>
-      <groupingId value="Modèles logiques métier des composants élémentaires"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/fr-lm-quantite-produit"/>
-      </reference>
-      <name value="Modèle logique métier - FR LM Quantité de produit"/>
-      <description value="Quantité de produit"/>
       <exampleBoolean value="false"/>
       <groupingId value="Modèles logiques métier des composants élémentaires"/>
     </resource>
@@ -6408,18 +6421,6 @@
       </reference>
       <name value="Modèle logique métier - FR LM Traitement dispensé"/>
       <description value="Traitement dispense"/>
-      <exampleBoolean value="false"/>
-      <groupingId value="Modèles logiques métier des composants élémentaires"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/fr-lm-traitement-prescrit"/>
-      </reference>
-      <name value="Modèle logique métier - FR LM Traitement Prescrit"/>
-      <description value="Traitement prescrit"/>
       <exampleBoolean value="false"/>
       <groupingId value="Modèles logiques métier des composants élémentaires"/>
     </resource>

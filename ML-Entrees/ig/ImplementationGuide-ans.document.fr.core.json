@@ -10,7 +10,7 @@
   "name" : "FRDocumentCore",
   "title" : "ANS IG document core",
   "status" : "draft",
-  "date" : "2026-04-08T13:03:38+00:00",
+  "date" : "2026-04-08T14:07:03+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -3574,10 +3574,36 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/fr-lm-medication-prescription"
+      },
+      "name" : "Logical model - FR LM Medication Prescription",
+      "description" : "Entrée Traitement prescrit",
+      "exampleBoolean" : false,
+      "groupingId" : "Modèles logiques métier des composants élémentaires"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/fr-lm-observation-vital-sign"
       },
       "name" : "Logical model - FR LM Observation Vital Sign",
       "description" : "Signe vital observé",
+      "exampleBoolean" : false,
+      "groupingId" : "Modèles logiques métier des composants élémentaires"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-lm-dosage-instructions"
+      },
+      "name" : "Logical model- FR LM Dosage Instructions",
+      "description" : "Posologie",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier des composants élémentaires"
     },
@@ -3604,6 +3630,19 @@
       },
       "name" : "Logical model- FR LM Procedure",
       "description" : "Entrée Acte",
+      "exampleBoolean" : false,
+      "groupingId" : "Modèles logiques métier des composants élémentaires"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-lm-quantity-prescribed"
+      },
+      "name" : "Logical model- FR LM Quantity Prescribed",
+      "description" : "Entrée Quantité de produit",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier des composants élémentaires"
     },
@@ -6482,18 +6521,6 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/fr-lm-posologie"
-      },
-      "name" : "Modèle logique métier - FR LM Posologie",
-      "description" : "Posologie",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/fr-lm-prescription-entree"
       },
       "name" : "Modèle logique métier - FR LM Prescription",
@@ -6576,19 +6603,6 @@
       },
       "name" : "Modèle logique métier - FR LM Prélèvement",
       "description" : "Prélèvement",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-lm-quantite-produit"
-      },
-      "name" : "Modèle logique métier - FR LM Quantité de produit",
-      "description" : "Quantité de produit",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier des composants élémentaires"
     },
@@ -7083,19 +7097,6 @@
       },
       "name" : "Modèle logique métier - FR LM Traitement dispensé",
       "description" : "Traitement dispense",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-lm-traitement-prescrit"
-      },
-      "name" : "Modèle logique métier - FR LM Traitement Prescrit",
-      "description" : "Traitement prescrit",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier des composants élémentaires"
     },

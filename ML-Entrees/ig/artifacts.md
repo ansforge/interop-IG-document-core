@@ -114,9 +114,12 @@ Modèles de données métier représentant les concepts élémentaires, modélis
 | [Logical model - FR LM Family Member History](StructureDefinition-fr-lm-family-member-history.md) | Entrée Antécédent familial |
 | [Logical model - FR LM Immunisation](StructureDefinition-fr-lm-immunisation.md) | Entrée Vaccination |
 | [Logical model - FR LM Medication](StructureDefinition-fr-lm-medication.md) | Entrée Produit de santé |
+| [Logical model - FR LM Medication Prescription](StructureDefinition-fr-lm-medication-prescription.md) | Entrée Traitement prescrit |
 | [Logical model - FR LM Observation Vital Sign](StructureDefinition-fr-lm-observation-vital-sign.md) | Signe vital observé |
+| [Logical model- FR LM Dosage Instructions](StructureDefinition-fr-lm-dosage-instructions.md) | Posologie |
 | [Logical model- FR LM Observation Social History](StructureDefinition-fm-lm-observation-social-history.md) | Entrée Habitus Mode de vie |
 | [Logical model- FR LM Procedure](StructureDefinition-fr-lm-procedure.md) | Entrée Acte |
+| [Logical model- FR LM Quantity Prescribed](StructureDefinition-fr-lm-quantity-prescribed.md) | Entrée Quantité de produit |
 | [Modèle logique métier - FR LM Accident transfusionnel](StructureDefinition-fr-lm-accidents-transfusionnels.md) | Accident transfusionnel |
 | [Modèle logique métier - FR LM Acte substitution](StructureDefinition-fr-lm-acte-substitution.md) | Acte substitution |
 | [Modèle logique métier - FR LM Administration de dérivés du sang](StructureDefinition-fr-lm-administration-de-derives-du-sang.md) | Administration de dérivés du sang |
@@ -160,7 +163,6 @@ Modèles de données métier représentant les concepts élémentaires, modélis
 | [Modèle logique métier - FR LM Performer](StructureDefinition-fr-lm-performer.md) | Performer |
 | [Modèle logique métier - FR LM Prescription](StructureDefinition-fr-lm-prescription-entree.md) | Prescription |
 | [Modèle logique métier - FR LM Prélèvement](StructureDefinition-fr-lm-prelevement.md) | Prélèvement |
-| [Modèle logique métier - FR LM Quantité de produit](StructureDefinition-fr-lm-quantite-produit.md) | Quantité de produit |
 | [Modèle logique métier - FR LM Quantité exposition](StructureDefinition-fr-lm-quantite-exposition.md) | Quantité exposition |
 | [Modèle logique métier - FR LM Recherche de micro organismes](StructureDefinition-fr-lm-recherche-de-micro-organismes.md) | Recherche de micro organismes |
 | [Modèle logique métier - FR LM Rencontre](StructureDefinition-fr-lm-encounter.md) | Rencontre |
@@ -183,7 +185,6 @@ Modèles de données métier représentant les concepts élémentaires, modélis
 | [Modèle logique métier - FR LM Technique imagerie](StructureDefinition-fr-lm-technique-imagerie.md) | Technique imagerie |
 | [Modèle logique métier - FR LM Traitement](StructureDefinition-fr-lm-traitement.md) | Traitement |
 | [Modèle logique métier - FR LM Traitement dispensé](StructureDefinition-fr-lm-traitement-dispense.md) | Traitement dispense |
-| [Modèle logique métier - FR LM Traitement Prescrit](StructureDefinition-fr-lm-traitement-prescrit.md) | Traitement prescrit |
 | [Modèle logique métier - FR LM Transfert du patient](StructureDefinition-fr-lm-transfert-du-patient.md) | Transfert du patient |
 | [Modèle logique métier - FR LM Transfusion de produits sanguins](StructureDefinition-fr-lm-transfusion-de-produits-sanguins.md) | Transfusion de produits sanguins |
 | [Modèle logique métier - FR LM Vaccin recommandé](StructureDefinition-fr-lm-vaccin-recommande.md) | Vaccin recommandé |
@@ -698,7 +699,6 @@ These define data models that represent the domain covered by this implementatio
 | [CDA - FR Traitement subordonne](StructureDefinition-fr-cda-traitement-subordonne.md) | Entrée FR-Traitement-subordonne: Une entrée FR-Traitement de premier niveau peut contenir une ou plusieurs sous-entrées FR-Traitement-subordonne pour les cas spécifiques des dosages progressifs, fractionnés ou conditionnels, ou pour gérer la combinaison de médicaments. L’utilisation de sous-entrées FR-Traitement-subordonne pour traiter ces cas est facultative. Dans le cas où l’entrée FR-Traitement-subordonne n’est pas utilisée, l’information doit être fournie dans la partie narrative de l’entrée FR-Traitement de premier niveau sous forme de texte libre.Pour les dosages progressifs, fractionnés ou conditionnels, les sous-entrées FR-Traitement-subordonne ne doivent spécifier que la fréquence et / ou le dosage modifiés.Pour le dosage conditionnel, chaque sous-entrée FR-Traitement-subordonne doit avoir un élément ‘precondition’ pour indiquer les conditions préalables à l’utilisation du médicament.Pour la combinaison de médicaments, chaque sous-entrée FR-Traitement-subordonne précisera le produit entrant dans la combinaison. |
 | [Modèle logique métier - FR LM Notes du dispensateur](StructureDefinition-fr-lm-notes-dispensateur.md) | Notes du dispensateur |
 | [Modèle logique métier - FR LM Observation Result](StructureDefinition-fr-lm-observation-result.md) | Résultat d’une observation médicale (résultat d’examen de laboratoire, d’imagerie, etc.) |
-| [Modèle logique métier - FR LM Posologie](StructureDefinition-fr-lm-posologie.md) | Posologie |
 
 ### Structures: Extension Definitions 
 

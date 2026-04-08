@@ -7,7 +7,7 @@
 ","Statut, completed","Statut, completed","","","","","","","","","",,,,,"",,,,"fr-lm-traitement.status",1,1,"",""
 "fr-lm-traitement.dureeTraitement","fr-lm-traitement.dureeTraitement","","","",0,1,"","","","dateTime {[]} {[]}
 ","Durée du traitement","Durée du traitement","","","","","","","","","",,,,,"",,,,"fr-lm-traitement.dureeTraitement",0,1,"",""
-"fr-lm-traitement.dosage","fr-lm-traitement.dosage","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-posologie {[]} {[]}
+"fr-lm-traitement.dosage","fr-lm-traitement.dosage","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dosage-instructions {[]} {[]}
 ","Posologie","Posologie","","","","","","","","","",,,,,"",,,,"fr-lm-traitement.dosage",0,1,"",""
 "fr-lm-traitement.medicament","fr-lm-traitement.medicament","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication {[]} {[]}
 ","Médicament","Médicament","","","","","","","","","",,,,,"",,,,"fr-lm-traitement.medicament",1,1,"",""

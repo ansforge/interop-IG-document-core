@@ -4856,6 +4856,42 @@ package IG #DDDDDD{
              fr-lm-documents-ajoutes.entree.documentAttache => [1..*]
         } 
 
+        class FRLMDosageInstructions{
+
+             fr-lm-dosage-instructions => [None..None]
+             fr-lm-dosage-instructions.renderedDosageInstruction => [0..1]
+             fr-lm-dosage-instructions.dosageDetails => [0..*]
+             fr-lm-dosage-instructions.dosageDetails.sequence => [0..1]
+             fr-lm-dosage-instructions.dosageDetails.note => [0..1]
+             fr-lm-dosage-instructions.dosageDetails.doseAndRate => [0..*]
+             fr-lm-dosage-instructions.dosageDetails.doseAndRate.dose[x] => [0..1]
+             fr-lm-dosage-instructions.dosageDetails.doseAndRate.rate[x] => [0..1]
+             fr-lm-dosage-instructions.dosageDetails.dateDePrise => [0..*]
+             fr-lm-dosage-instructions.dosageDetails.conditionDePrise => [0..*]
+             fr-lm-dosage-instructions.dosageDetails.date[x] => [0..1]
+             fr-lm-dosage-instructions.dosageDetails.duration => [0..1]
+             fr-lm-dosage-instructions.dosageDetails.duration.durationValue => [0..1]
+             fr-lm-dosage-instructions.dosageDetails.duration.durationUnit => [0..1]
+             fr-lm-dosage-instructions.dosageDetails.duration.durationMax => [0..1]
+             fr-lm-dosage-instructions.dosageDetails.frequency => [0..1]
+             fr-lm-dosage-instructions.dosageDetails.frequency.numberOfTimes => [0..1]
+             fr-lm-dosage-instructions.dosageDetails.frequency.period => [0..1]
+             fr-lm-dosage-instructions.dosageDetails.frequency.dayOfWeek => [0..*]
+             fr-lm-dosage-instructions.dosageDetails.frequency.timeOfDay => [0..1]
+             fr-lm-dosage-instructions.dosageDetails.frequency.additionalInstructions => [0..1]
+             fr-lm-dosage-instructions.dosageDetails.eventTime => [0..*]
+             fr-lm-dosage-instructions.dosageDetails.eventTime.eventTimeCode => [0..1]
+             fr-lm-dosage-instructions.dosageDetails.eventTime.offset => [0..1]
+             fr-lm-dosage-instructions.dosageDetails.eventEndSequence => [0..1]
+             fr-lm-dosage-instructions.dosageDetails.bodySite => [0..*]
+             fr-lm-dosage-instructions.dosageDetails.routeOfAdministration => [0..1]
+             fr-lm-dosage-instructions.dosageDetails.maxDosePerPeriod => [0..*]
+             fr-lm-dosage-instructions.dosageDetails.maxDosePerPeriod.quantity => [0..1]
+             fr-lm-dosage-instructions.dosageDetails.maxDosePerPeriod.duration => [0..1]
+             fr-lm-dosage-instructions.dosageDetails.maxDosePerAdministration => [0..1]
+             fr-lm-dosage-instructions.dosageDetails.MaxLifetimeDose => [0..1]
+        } 
+
         class FRLMDoseAntigene{
 
              fr-lm-dose-antigene => [None..None]
@@ -5305,37 +5341,62 @@ package IG #DDDDDD{
              fr-lm-laboratoire-executant.executant => [1..1]
         } 
 
+        class FRLMMedicationPrescription{
+
+             fr-lm-medication-prescription => [None..None]
+             fr-lm-medication-prescription.status => [1..1]
+             fr-lm-medication-prescription.medication => [1..1]
+             fr-lm-medication-prescription.indication[x] => [0..*]
+             fr-lm-medication-prescription.intendedUseType => [0..1]
+             fr-lm-medication-prescription.periodOfUse => [0..1]
+             fr-lm-medication-prescription.dosageInstructions => [1..1]
+             fr-lm-medication-prescription.quantityPrescribed => [0..1]
+             fr-lm-medication-prescription.validityPeriod => [0..1]
+             fr-lm-medication-prescription.substitution => [1..1]
+             fr-lm-medication-prescription.substitution.allowed[x] => [0..1]
+             fr-lm-medication-prescription.substitution.reason[x] => [0..1]
+             fr-lm-medication-prescription.numberOfRepeats => [0..1]
+             fr-lm-medication-prescription.minimumDispenseInterval => [0..1]
+             fr-lm-medication-prescription.offLabel => [1..1]
+             fr-lm-medication-prescription.offLabel.isOffLabelUse => [1..1]
+             fr-lm-medication-prescription.offLabel.reason[x] => [0..*]
+             fr-lm-medication-prescription.note => [0..1]
+             fr-lm-medication-prescription.enRapportAvecALD => [1..1]
+             fr-lm-medication-prescription.enRapportAvecAccidentTravail => [1..1]
+             fr-lm-medication-prescription.enRapportAvecPrevention => [1..1]
+             fr-lm-medication-prescription.nonRemboursable => [1..1]
+        } 
+
         class FRLMMedication{
 
              fr-lm-medication => [None..None]
-             fr-lm-medication.medicament => [1..1]
-             fr-lm-medication.medicament.codeProduit => [0..*]
-             fr-lm-medication.medicament.codeProduit.identifyingCodeCodeableConcept => [0..1]
-             fr-lm-medication.medicament.codeProduit.identifyingCodeIdentifier => [0..*]
-             fr-lm-medication.medicament.classificationATC => [0..*]
-             fr-lm-medication.medicament.nomProduit => [0..1]
-             fr-lm-medication.medicament.porteurAutorisation => [0..1]
-             fr-lm-medication.medicament.porteurAutorisation.nomPorteurAutorisation => [0..1]
-             fr-lm-medication.medicament.porteurAutorisation.identifiantPorteurAutorisation => [0..*]
-             fr-lm-medication.medicament.item => [0..*]
-             fr-lm-medication.medicament.item.formeGalenique => [0..1]
-             fr-lm-medication.medicament.item.ingredient => [1..*]
-             fr-lm-medication.medicament.item.ingredient.isActive => [0..1]
-             fr-lm-medication.medicament.item.ingredient.substance => [1..1]
-             fr-lm-medication.medicament.item.ingredient.infoConcentration => [0..1]
-             fr-lm-medication.medicament.item.ingredient.infoConcentration.concentation => [1..1]
-             fr-lm-medication.medicament.item.ingredient.infoConcentration.substanceReferenceConcentration => [0..1]
-             fr-lm-medication.medicament.item.ingredient.quantiteItem => [0..1]
-             fr-lm-medication.medicament.item.ingredient.conditionnement => [0..1]
-             fr-lm-medication.medicament.device => [0..*]
-             fr-lm-medication.medicament.device.deviceQuantity => [1..1]
-             fr-lm-medication.medicament.device.device[x] => [1..1]
-             fr-lm-medication.medicament.characteristic => [0..*]
-             fr-lm-medication.medicament.characteristic.type => [1..1]
-             fr-lm-medication.medicament.characteristic.value[x] => [0..1]
-             fr-lm-medication.medicament.batch => [0..1]
-             fr-lm-medication.medicament.batch.numeroLot => [0..1]
-             fr-lm-medication.medicament.batch.dateExpiration => [0..1]
+             fr-lm-medication.identifyingCode[x] => [0..*]
+             fr-lm-medication.identifyingCode[x].identifyingCodeCodeableConcept => [0..1]
+             fr-lm-medication.identifyingCode[x].identifyingCodeIdentifier => [0..*]
+             fr-lm-medication.classification => [0..*]
+             fr-lm-medication.productName => [0..1]
+             fr-lm-medication.marketingAuthorisationHolder => [0..1]
+             fr-lm-medication.marketingAuthorisationHolder.organisationName => [0..1]
+             fr-lm-medication.marketingAuthorisationHolder.organisationIdentifier => [0..*]
+             fr-lm-medication.item => [0..*]
+             fr-lm-medication.item.doseForm => [0..1]
+             fr-lm-medication.item.ingredient => [1..*]
+             fr-lm-medication.item.ingredient.isActive => [0..1]
+             fr-lm-medication.item.ingredient.substance => [1..1]
+             fr-lm-medication.item.ingredient.strength => [0..1]
+             fr-lm-medication.item.ingredient.strength.strength => [1..1]
+             fr-lm-medication.item.ingredient.strength.basisOfStrengthSubstance => [0..1]
+             fr-lm-medication.item.containedQuantity => [0..1]
+             fr-lm-medication.item.packageType => [0..1]
+             fr-lm-medication.device => [0..*]
+             fr-lm-medication.device.deviceQuantity => [1..1]
+             fr-lm-medication.device.device[x] => [1..1]
+             fr-lm-medication.characteristic => [0..*]
+             fr-lm-medication.characteristic.type => [1..1]
+             fr-lm-medication.characteristic.value[x] => [0..1]
+             fr-lm-medication.batch => [0..1]
+             fr-lm-medication.batch.lotNumber => [0..1]
+             fr-lm-medication.batch.expirationDate => [0..1]
         } 
 
         class FRLMModaliteEntree{
@@ -5625,42 +5686,6 @@ package IG #DDDDDD{
              fr-lm-points-de-vigilances-non-code.entree => [None..0]
         } 
 
-        class FRLMPosologie{
-
-             fr-lm-posologie => [None..None]
-             fr-lm-posologie.posologieTextuelle => [0..1]
-             fr-lm-posologie.posologieStructuree => [0..*]
-             fr-lm-posologie.posologieStructuree.sequence => [0..1]
-             fr-lm-posologie.posologieStructuree.instructionsPatient => [0..1]
-             fr-lm-posologie.posologieStructuree.doseEtDebit => [0..*]
-             fr-lm-posologie.posologieStructuree.doseEtDebit.dose[x] => [0..1]
-             fr-lm-posologie.posologieStructuree.doseEtDebit.rate[x] => [0..1]
-             fr-lm-posologie.posologieStructuree.dateDePrise => [0..*]
-             fr-lm-posologie.posologieStructuree.conditionDePrise => [0..*]
-             fr-lm-posologie.posologieStructuree.date[x] => [0..1]
-             fr-lm-posologie.posologieStructuree.dureeAdministration => [0..1]
-             fr-lm-posologie.posologieStructuree.dureeAdministration.duree => [0..1]
-             fr-lm-posologie.posologieStructuree.dureeAdministration.dureeUnite => [0..1]
-             fr-lm-posologie.posologieStructuree.dureeAdministration.dureeMax => [0..1]
-             fr-lm-posologie.posologieStructuree.frequenceAdministration => [0..1]
-             fr-lm-posologie.posologieStructuree.frequenceAdministration.nombreDeRepetition => [0..1]
-             fr-lm-posologie.posologieStructuree.frequenceAdministration.periode => [0..1]
-             fr-lm-posologie.posologieStructuree.frequenceAdministration.jourSemaine => [0..*]
-             fr-lm-posologie.posologieStructuree.frequenceAdministration.heurePrise => [0..1]
-             fr-lm-posologie.posologieStructuree.frequenceAdministration.instructionAdditionnelle => [0..1]
-             fr-lm-posologie.posologieStructuree.momentDePrise => [0..*]
-             fr-lm-posologie.posologieStructuree.momentDePrise.code => [0..1]
-             fr-lm-posologie.posologieStructuree.momentDePrise.offset => [0..1]
-             fr-lm-posologie.posologieStructuree.evenementFinSequence => [0..1]
-             fr-lm-posologie.posologieStructuree.siteAdministration => [0..*]
-             fr-lm-posologie.posologieStructuree.voieAdministration => [0..1]
-             fr-lm-posologie.posologieStructuree.doseMaxParPeriode => [0..*]
-             fr-lm-posologie.posologieStructuree.doseMaxParPeriode.quantite => [0..1]
-             fr-lm-posologie.posologieStructuree.doseMaxParPeriode.duree => [0..1]
-             fr-lm-posologie.posologieStructuree.doseMaxParAdministration => [0..1]
-             fr-lm-posologie.posologieStructuree.doseMaxVie => [0..1]
-        } 
-
         class FRLMPrelevement{
 
              fr-lm-prelevement => [None..None]
@@ -5777,11 +5802,11 @@ package IG #DDDDDD{
              fr-lm-quantite-exposition.lateralite.topographique.valeur => [1..1]
         } 
 
-        class FRLMQuantiteProduit{
+        class FRLMQuantityPrescribed{
 
-             fr-lm-quantite-produit => [None..None]
-             fr-lm-quantite-produit.independant => [1..1]
-             fr-lm-quantite-produit.quantiteProduit => [1..1]
+             fr-lm-quantity-prescribed => [None..None]
+             fr-lm-quantity-prescribed.independant => [1..1]
+             fr-lm-quantity-prescribed.quantiteProduit => [1..1]
         } 
 
         class FRLMRaisonRecommandationNonCode{
@@ -6162,33 +6187,6 @@ package IG #DDDDDD{
              fr-lm-traitement-dispense.notesDispensateur => [0..1]
              fr-lm-traitement-dispense.autorisationSubstitution => [1..1]
              fr-lm-traitement-dispense.autorisationSubstitution.type => [0..1]
-        } 
-
-        class FRLMTraitementPrescrit{
-
-             fr-lm-traitement-prescrit => [None..None]
-             fr-lm-traitement-prescrit.identifiant => [1..*]
-             fr-lm-traitement-prescrit.status => [1..1]
-             fr-lm-traitement-prescrit.produitSante => [1..1]
-             fr-lm-traitement-prescrit.indication[x] => [0..*]
-             fr-lm-traitement-prescrit.finaliteTherapeutique => [0..1]
-             fr-lm-traitement-prescrit.dureeTraitement => [0..1]
-             fr-lm-traitement-prescrit.posologie => [1..1]
-             fr-lm-traitement-prescrit.quantiteProduit => [0..1]
-             fr-lm-traitement-prescrit.periodeValiditeLignePrescription => [0..1]
-             fr-lm-traitement-prescrit.autorisationSubstitution => [1..1]
-             fr-lm-traitement-prescrit.autorisationSubstitution.allowed[x] => [0..1]
-             fr-lm-traitement-prescrit.autorisationSubstitution.reason[x] => [0..1]
-             fr-lm-traitement-prescrit.nombreRenouvellement => [0..1]
-             fr-lm-traitement-prescrit.horsAMM => [1..1]
-             fr-lm-traitement-prescrit.instructionsDispensateur => [0..1]
-             fr-lm-traitement-prescrit.prescripteur => [0..1]
-             fr-lm-traitement-prescrit.auteur => [0..1]
-             fr-lm-traitement-prescrit.enRapportAvecALD => [1..1]
-             fr-lm-traitement-prescrit.enRapportAvecAccidentTravail => [1..1]
-             fr-lm-traitement-prescrit.enRapportAvecPrevention => [1..1]
-             fr-lm-traitement-prescrit.nonRemboursable => [1..1]
-             fr-lm-traitement-prescrit.referencePrescription => [0..*]
         } 
 
         class FRLMTraitementSortie{
@@ -8302,6 +8300,10 @@ package "Ressources de base" #palegreen {
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
+    class095a1b43effec73955e31e790438de49 --> FRLMDosageInstructions
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
     class095a1b43effec73955e31e790438de49 --> FRLMDoseAntigene
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
@@ -8450,6 +8452,10 @@ package "Ressources de base" #palegreen {
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
+    class095a1b43effec73955e31e790438de49 --> FRLMMedicationPrescription
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
     class095a1b43effec73955e31e790438de49 --> FRLMMedication
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
@@ -8538,10 +8544,6 @@ package "Ressources de base" #palegreen {
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
-    class095a1b43effec73955e31e790438de49 --> FRLMPosologie
-
- class "Base" as  class095a1b43effec73955e31e790438de49 
-
     class095a1b43effec73955e31e790438de49 --> FRLMPrelevement
 
  class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-section" as  class5dabea989fe22a905d8f89cc210527f2 
@@ -8578,7 +8580,7 @@ package "Ressources de base" #palegreen {
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
-    class095a1b43effec73955e31e790438de49 --> FRLMQuantiteProduit
+    class095a1b43effec73955e31e790438de49 --> FRLMQuantityPrescribed
 
  class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-section" as  class5dabea989fe22a905d8f89cc210527f2 
 
@@ -8715,10 +8717,6 @@ package "Ressources de base" #palegreen {
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
     class095a1b43effec73955e31e790438de49 --> FRLMTraitementDispense
-
- class "Base" as  class095a1b43effec73955e31e790438de49 
-
-    class095a1b43effec73955e31e790438de49 --> FRLMTraitementPrescrit
 
  class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-section" as  class5dabea989fe22a905d8f89cc210527f2 
 

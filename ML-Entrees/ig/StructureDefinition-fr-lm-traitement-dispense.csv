@@ -11,7 +11,7 @@
 ","Médicament délivré","Médicament délivré","","","","","","","","","",,,,,"",,,,"fr-lm-traitement-dispense.medicamentDelivre",1,1,"",""
 "fr-lm-traitement-dispense.referencePrescription","fr-lm-traitement-dispense.referencePrescription","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-reference-item-prescription {[]} {[]}
 ","Référence de la prescription","Référence de la prescription","","","","","","","","","",,,,,"",,,,"fr-lm-traitement-dispense.referencePrescription",0,1,"",""
-"fr-lm-traitement-dispense.posologie","fr-lm-traitement-dispense.posologie","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-posologie {[]} {[]}
+"fr-lm-traitement-dispense.posologie","fr-lm-traitement-dispense.posologie","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dosage-instructions {[]} {[]}
 ","Posologie","Posologie","","","","","","","","","",,,,,"",,,,"fr-lm-traitement-dispense.posologie",0,1,"",""
 "fr-lm-traitement-dispense.notesDispensateur","fr-lm-traitement-dispense.notesDispensateur","","","",0,1,"","","","string {[]} {[]}
 ","Notes du dispensateur","Notes du dispensateur","","","","","","","","","",,,,,"",,,,"fr-lm-traitement-dispense.notesDispensateur",0,1,"",""

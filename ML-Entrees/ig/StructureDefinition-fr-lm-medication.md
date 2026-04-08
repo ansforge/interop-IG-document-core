@@ -16,7 +16,7 @@ Entrée Produit de santé
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Dose d'antigène](StructureDefinition-fr-lm-dose-antigene.md), [Logical model - FR LM Immunisation](StructureDefinition-fr-lm-immunisation.md), [Modèle logique métier - FR LM Référence item prescription](StructureDefinition-fr-lm-reference-item-prescription.md), [Modèle logique métier - FR LM Traitement dispensé](StructureDefinition-fr-lm-traitement-dispense.md)... Show 3 more, [Modèle logique métier - FR LM Traitement Prescrit](StructureDefinition-fr-lm-traitement-prescrit.md), [Modèle logique métier - FR LM Traitement](StructureDefinition-fr-lm-traitement.md) and [Modèle logique métier - FR LM Vaccin recommandé](StructureDefinition-fr-lm-vaccin-recommande.md)
+* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Dose d'antigène](StructureDefinition-fr-lm-dose-antigene.md), [Logical model - FR LM Immunisation](StructureDefinition-fr-lm-immunisation.md), [Logical model - FR LM Medication Prescription](StructureDefinition-fr-lm-medication-prescription.md), [Modèle logique métier - FR LM Référence item prescription](StructureDefinition-fr-lm-reference-item-prescription.md)... Show 3 more, [Modèle logique métier - FR LM Traitement dispensé](StructureDefinition-fr-lm-traitement-dispense.md), [Modèle logique métier - FR LM Traitement](StructureDefinition-fr-lm-traitement.md) and [Modèle logique métier - FR LM Vaccin recommandé](StructureDefinition-fr-lm-vaccin-recommande.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-medication)
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-medication.csv
   "name" : "FRLMMedication",
   "title" : "Logical model - FR LM Medication",
   "status" : "draft",
-  "date" : "2026-04-08T13:03:38+00:00",
+  "date" : "2026-04-08T14:07:03+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -76,21 +76,10 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-medication.csv
       "definition" : "Entrée Produit de santé"
     },
     {
-      "id" : "fr-lm-medication.medicament",
-      "path" : "fr-lm-medication.medicament",
-      "short" : "Médicament",
-      "definition" : "Médicament",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "Base"
-      }]
-    },
-    {
-      "id" : "fr-lm-medication.medicament.codeProduit",
-      "path" : "fr-lm-medication.medicament.codeProduit",
-      "short" : "Code du produit de santé",
-      "definition" : "Code du produit de santé",
+      "id" : "fr-lm-medication.identifyingCode[x]",
+      "path" : "fr-lm-medication.identifyingCode[x]",
+      "short" : "Code du produit de santé. Non présent pour les préparations magistrales.",
+      "definition" : "Code du produit de santé. Non présent pour les préparations magistrales.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -98,8 +87,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-medication.csv
       }]
     },
     {
-      "id" : "fr-lm-medication.medicament.codeProduit.identifyingCodeCodeableConcept",
-      "path" : "fr-lm-medication.medicament.codeProduit.identifyingCodeCodeableConcept",
+      "id" : "fr-lm-medication.identifyingCode[x].identifyingCodeCodeableConcept",
+      "path" : "fr-lm-medication.identifyingCode[x].identifyingCodeCodeableConcept",
       "short" : "Codes du médicament dans une termino spécifique",
       "definition" : "Codes du médicament dans une termino spécifique",
       "min" : 0,
@@ -109,8 +98,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-medication.csv
       }]
     },
     {
-      "id" : "fr-lm-medication.medicament.codeProduit.identifyingCodeIdentifier",
-      "path" : "fr-lm-medication.medicament.codeProduit.identifyingCodeIdentifier",
+      "id" : "fr-lm-medication.identifyingCode[x].identifyingCodeIdentifier",
+      "path" : "fr-lm-medication.identifyingCode[x].identifyingCodeIdentifier",
       "short" : "identifiant du medication définition",
       "definition" : "identifiant du medication définition",
       "min" : 0,
@@ -120,19 +109,19 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-medication.csv
       }]
     },
     {
-      "id" : "fr-lm-medication.medicament.classificationATC",
-      "path" : "fr-lm-medication.medicament.classificationATC",
-      "short" : "Code de regroupement ATC",
-      "definition" : "Code de regroupement ATC",
+      "id" : "fr-lm-medication.classification",
+      "path" : "fr-lm-medication.classification",
+      "short" : "Classification ATC",
+      "definition" : "Classification ATC",
       "min" : 0,
       "max" : "*",
       "type" : [{
-        "code" : "Base"
+        "code" : "CodeableConcept"
       }]
     },
     {
-      "id" : "fr-lm-medication.medicament.nomProduit",
-      "path" : "fr-lm-medication.medicament.nomProduit",
+      "id" : "fr-lm-medication.productName",
+      "path" : "fr-lm-medication.productName",
       "short" : "Nom du produit (contenant aussi le dosage et la forme galénique). Si le médicament est codé, le nom du produit peut ne pas être renseigné.",
       "definition" : "Nom du produit (contenant aussi le dosage et la forme galénique). Si le médicament est codé, le nom du produit peut ne pas être renseigné.",
       "min" : 0,
@@ -142,8 +131,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-medication.csv
       }]
     },
     {
-      "id" : "fr-lm-medication.medicament.porteurAutorisation",
-      "path" : "fr-lm-medication.medicament.porteurAutorisation",
+      "id" : "fr-lm-medication.marketingAuthorisationHolder",
+      "path" : "fr-lm-medication.marketingAuthorisationHolder",
       "short" : "Titulaire de l'autorisation de mise sur le marché du médicament. \n  Cette information est utile pour identifier précisément le produit. Si le produit ne dispose pas d'une autorisation de mise sur le marché, les informations fournies par le fabricant peuvent être utilisées.",
       "definition" : "Titulaire de l'autorisation de mise sur le marché du médicament. \n  Cette information est utile pour identifier précisément le produit. Si le produit ne dispose pas d'une autorisation de mise sur le marché, les informations fournies par le fabricant peuvent être utilisées.",
       "min" : 0,
@@ -153,8 +142,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-medication.csv
       }]
     },
     {
-      "id" : "fr-lm-medication.medicament.porteurAutorisation.nomPorteurAutorisation",
-      "path" : "fr-lm-medication.medicament.porteurAutorisation.nomPorteurAutorisation",
+      "id" : "fr-lm-medication.marketingAuthorisationHolder.organisationName",
+      "path" : "fr-lm-medication.marketingAuthorisationHolder.organisationName",
       "short" : "Nom de l'organisme détenant l'autorisation de commercialisation/fabrication.",
       "definition" : "Nom de l'organisme détenant l'autorisation de commercialisation/fabrication.",
       "min" : 0,
@@ -164,8 +153,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-medication.csv
       }]
     },
     {
-      "id" : "fr-lm-medication.medicament.porteurAutorisation.identifiantPorteurAutorisation",
-      "path" : "fr-lm-medication.medicament.porteurAutorisation.identifiantPorteurAutorisation",
+      "id" : "fr-lm-medication.marketingAuthorisationHolder.organisationIdentifier",
+      "path" : "fr-lm-medication.marketingAuthorisationHolder.organisationIdentifier",
       "short" : "Identifiant de l'organisation et/ou de son emplacement physique.",
       "definition" : "Identifiant de l'organisation et/ou de son emplacement physique.",
       "min" : 0,
@@ -175,10 +164,10 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-medication.csv
       }]
     },
     {
-      "id" : "fr-lm-medication.medicament.item",
-      "path" : "fr-lm-medication.medicament.item",
-      "short" : "Dans le cas de conditionnements combinés, il peut s'agir de plusieurs produits fabriqués, chacun disposant de sa propre forme pharmaceutique ainsi que de ses ingrédients et de leurs dosages définis.",
-      "definition" : "Dans le cas de conditionnements combinés, il peut s'agir de plusieurs produits fabriqués, chacun disposant de sa propre forme pharmaceutique ainsi que de ses ingrédients et de leurs dosages définis.",
+      "id" : "fr-lm-medication.item",
+      "path" : "fr-lm-medication.item",
+      "short" : "Dans le cas de conditionnements combinés, chaque ingrédient dispose de sa propre forme galénique, ses propres ingrédients et leurs dosages respectifs.",
+      "definition" : "Dans le cas de conditionnements combinés, chaque ingrédient dispose de sa propre forme galénique, ses propres ingrédients et leurs dosages respectifs.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -186,19 +175,22 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-medication.csv
       }]
     },
     {
-      "id" : "fr-lm-medication.medicament.item.formeGalenique",
-      "path" : "fr-lm-medication.medicament.item.formeGalenique",
+      "id" : "fr-lm-medication.item.doseForm",
+      "path" : "fr-lm-medication.item.doseForm",
       "short" : "Forme galénique du produit de santé. EDQM Standard Terms (0.4.0.127.0.16.1.1.2.1) / classe PDF (forme galénique).",
       "definition" : "Forme galénique du produit de santé. EDQM Standard Terms (0.4.0.127.0.16.1.1.2.1) / classe PDF (forme galénique).",
       "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "CodeableConcept"
-      }]
+      }],
+      "binding" : {
+        "description" : "EDQM Standard Terms"
+      }
     },
     {
-      "id" : "fr-lm-medication.medicament.item.ingredient",
-      "path" : "fr-lm-medication.medicament.item.ingredient",
+      "id" : "fr-lm-medication.item.ingredient",
+      "path" : "fr-lm-medication.item.ingredient",
       "short" : "Substance active",
       "definition" : "Substance active",
       "min" : 1,
@@ -208,8 +200,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-medication.csv
       }]
     },
     {
-      "id" : "fr-lm-medication.medicament.item.ingredient.isActive",
-      "path" : "fr-lm-medication.medicament.item.ingredient.isActive",
+      "id" : "fr-lm-medication.item.ingredient.isActive",
+      "path" : "fr-lm-medication.item.ingredient.isActive",
       "short" : "Indique si l'ingrédient est considéré comme un ingrédient actif. Les excipients ne sont généralement pas nécessaires et, par défaut, seuls les ingrédients actifs sont attendus.",
       "definition" : "Indique si l'ingrédient est considéré comme un ingrédient actif. Les excipients ne sont généralement pas nécessaires et, par défaut, seuls les ingrédients actifs sont attendus.",
       "min" : 0,
@@ -219,19 +211,22 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-medication.csv
       }]
     },
     {
-      "id" : "fr-lm-medication.medicament.item.ingredient.substance",
-      "path" : "fr-lm-medication.medicament.item.ingredient.substance",
-      "short" : "Substance => code SMS (2.16.840.1.113883.3.6905.2) de la substance active de l’European Medicines Agency (EMA)",
-      "definition" : "Substance => code SMS (2.16.840.1.113883.3.6905.2) de la substance active de l’European Medicines Agency (EMA)",
+      "id" : "fr-lm-medication.item.ingredient.substance",
+      "path" : "fr-lm-medication.item.ingredient.substance",
+      "short" : "Substance. Code SMS (2.16.840.1.113883.3.6905.2) de la substance active de l’European Medicines Agency (EMA)",
+      "definition" : "Substance. Code SMS (2.16.840.1.113883.3.6905.2) de la substance active de l’European Medicines Agency (EMA)",
       "min" : 1,
       "max" : "1",
       "type" : [{
         "code" : "CodeableConcept"
-      }]
+      }],
+      "binding" : {
+        "description" : "SMS (2.16.840.1.113883.3.6905.2)"
+      }
     },
     {
-      "id" : "fr-lm-medication.medicament.item.ingredient.infoConcentration",
-      "path" : "fr-lm-medication.medicament.item.ingredient.infoConcentration",
+      "id" : "fr-lm-medication.item.ingredient.strength",
+      "path" : "fr-lm-medication.item.ingredient.strength",
       "short" : "concentration par unité",
       "definition" : "concentration par unité",
       "min" : 0,
@@ -241,8 +236,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-medication.csv
       }]
     },
     {
-      "id" : "fr-lm-medication.medicament.item.ingredient.infoConcentration.concentation",
-      "path" : "fr-lm-medication.medicament.item.ingredient.infoConcentration.concentation",
+      "id" : "fr-lm-medication.item.ingredient.strength.strength",
+      "path" : "fr-lm-medication.item.ingredient.strength.strength",
       "short" : "numérateur/dénominateur. Ex 100 mg/1 ml ou 500 mg / comprimé.",
       "definition" : "numérateur/dénominateur. Ex 100 mg/1 ml ou 500 mg / comprimé.",
       "min" : 1,
@@ -252,10 +247,10 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-medication.csv
       }]
     },
     {
-      "id" : "fr-lm-medication.medicament.item.ingredient.infoConcentration.substanceReferenceConcentration",
-      "path" : "fr-lm-medication.medicament.item.ingredient.infoConcentration.substanceReferenceConcentration",
-      "short" : "à vérifier",
-      "definition" : "à vérifier",
+      "id" : "fr-lm-medication.item.ingredient.strength.basisOfStrengthSubstance",
+      "path" : "fr-lm-medication.item.ingredient.strength.basisOfStrengthSubstance",
+      "short" : "Concentration de référence d’une substance",
+      "definition" : "Concentration de référence d’une substance",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -263,8 +258,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-medication.csv
       }]
     },
     {
-      "id" : "fr-lm-medication.medicament.item.ingredient.quantiteItem",
-      "path" : "fr-lm-medication.medicament.item.ingredient.quantiteItem",
+      "id" : "fr-lm-medication.item.containedQuantity",
+      "path" : "fr-lm-medication.item.containedQuantity",
       "short" : "quantité pour 1 item",
       "definition" : "quantité pour 1 item",
       "min" : 0,
@@ -274,8 +269,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-medication.csv
       }]
     },
     {
-      "id" : "fr-lm-medication.medicament.item.ingredient.conditionnement",
-      "path" : "fr-lm-medication.medicament.item.ingredient.conditionnement",
+      "id" : "fr-lm-medication.item.packageType",
+      "path" : "fr-lm-medication.item.packageType",
       "short" : "Conditionnement primaire (ampoule, bouteille,…) EDQM Standard Terms (0.4.0.127.0.16.1.1.2.1) / classe CON (Récipient) => ampoule, blister.",
       "definition" : "Conditionnement primaire (ampoule, bouteille,…) EDQM Standard Terms (0.4.0.127.0.16.1.1.2.1) / classe CON (Récipient) => ampoule, blister.",
       "min" : 0,
@@ -285,8 +280,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-medication.csv
       }]
     },
     {
-      "id" : "fr-lm-medication.medicament.device",
-      "path" : "fr-lm-medication.medicament.device",
+      "id" : "fr-lm-medication.device",
+      "path" : "fr-lm-medication.device",
       "short" : "Dispositif d'administration inclus dans le produit. Les dispositifs qui ne sont pas contenus dans le conditionnement du médicament ne sont pas pris en compte.",
       "definition" : "Dispositif d'administration inclus dans le produit. Les dispositifs qui ne sont pas contenus dans le conditionnement du médicament ne sont pas pris en compte.",
       "min" : 0,
@@ -296,8 +291,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-medication.csv
       }]
     },
     {
-      "id" : "fr-lm-medication.medicament.device.deviceQuantity",
-      "path" : "fr-lm-medication.medicament.device.deviceQuantity",
+      "id" : "fr-lm-medication.device.deviceQuantity",
+      "path" : "fr-lm-medication.device.deviceQuantity",
       "short" : "Nombre de dispositifs.",
       "definition" : "Nombre de dispositifs.",
       "min" : 1,
@@ -307,8 +302,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-medication.csv
       }]
     },
     {
-      "id" : "fr-lm-medication.medicament.device.device[x]",
-      "path" : "fr-lm-medication.medicament.device.device[x]",
+      "id" : "fr-lm-medication.device.device[x]",
+      "path" : "fr-lm-medication.device.device[x]",
       "short" : "Dispositif codé.",
       "definition" : "Dispositif codé.",
       "min" : 1,
@@ -321,8 +316,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-medication.csv
       }]
     },
     {
-      "id" : "fr-lm-medication.medicament.characteristic",
-      "path" : "fr-lm-medication.medicament.characteristic",
+      "id" : "fr-lm-medication.characteristic",
+      "path" : "fr-lm-medication.characteristic",
       "short" : "Caractéristiques supplémentaires du produit (par ex. sans sucre, bouchon facile à ouvrir, dosage gradué). Il est prévu que les implémenteurs définissent un ensemble de valeurs (ValueSet) adapté à leurs cas d’usage.",
       "definition" : "Caractéristiques supplémentaires du produit (par ex. sans sucre, bouchon facile à ouvrir, dosage gradué). Il est prévu que les implémenteurs définissent un ensemble de valeurs (ValueSet) adapté à leurs cas d’usage.",
       "min" : 0,
@@ -332,8 +327,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-medication.csv
       }]
     },
     {
-      "id" : "fr-lm-medication.medicament.characteristic.type",
-      "path" : "fr-lm-medication.medicament.characteristic.type",
+      "id" : "fr-lm-medication.characteristic.type",
+      "path" : "fr-lm-medication.characteristic.type",
       "short" : "Type de caractéristique",
       "definition" : "Type de caractéristique",
       "min" : 1,
@@ -343,8 +338,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-medication.csv
       }]
     },
     {
-      "id" : "fr-lm-medication.medicament.characteristic.value[x]",
-      "path" : "fr-lm-medication.medicament.characteristic.value[x]",
+      "id" : "fr-lm-medication.characteristic.value[x]",
+      "path" : "fr-lm-medication.characteristic.value[x]",
       "short" : "Valeur de la caractéristique",
       "definition" : "Valeur de la caractéristique",
       "min" : 0,
@@ -375,8 +370,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-medication.csv
       }]
     },
     {
-      "id" : "fr-lm-medication.medicament.batch",
-      "path" : "fr-lm-medication.medicament.batch",
+      "id" : "fr-lm-medication.batch",
+      "path" : "fr-lm-medication.batch",
       "short" : "Informations relatives au lot d’un médicament. Elles sont généralement enregistrées lors de la dispensation ou de l’administration et sont rarement connues ou pertinentes dans le cadre d’une ordonnance ou d’une demande.",
       "definition" : "Informations relatives au lot d’un médicament. Elles sont généralement enregistrées lors de la dispensation ou de l’administration et sont rarement connues ou pertinentes dans le cadre d’une ordonnance ou d’une demande.",
       "min" : 0,
@@ -386,8 +381,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-medication.csv
       }]
     },
     {
-      "id" : "fr-lm-medication.medicament.batch.numeroLot",
-      "path" : "fr-lm-medication.medicament.batch.numeroLot",
+      "id" : "fr-lm-medication.batch.lotNumber",
+      "path" : "fr-lm-medication.batch.lotNumber",
       "short" : "Numéro de lot",
       "definition" : "Numéro de lot",
       "min" : 0,
@@ -397,8 +392,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-medication.csv
       }]
     },
     {
-      "id" : "fr-lm-medication.medicament.batch.dateExpiration",
-      "path" : "fr-lm-medication.medicament.batch.dateExpiration",
+      "id" : "fr-lm-medication.batch.expirationDate",
+      "path" : "fr-lm-medication.batch.expirationDate",
       "short" : "Date d'expiration du produit",
       "definition" : "Date d'expiration du produit",
       "min" : 0,

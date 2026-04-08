@@ -9,7 +9,7 @@
 ","Produit de santé","Produit de santé","","","","","","","","","",,,,,"",,,,"fr-lm-reference-item-prescription.produitSante",1,1,"",""
 "fr-lm-reference-item-prescription.auteur","fr-lm-reference-item-prescription.auteur","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-auteur {[]} {[]}
 ","Auteur","Auteur","","","","","","","","","",,,,,"",,,,"fr-lm-reference-item-prescription.auteur",0,1,"",""
-"fr-lm-reference-item-prescription.traitementPrescrit","fr-lm-reference-item-prescription.traitementPrescrit","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-traitement-prescrit {[]} {[]}
+"fr-lm-reference-item-prescription.traitementPrescrit","fr-lm-reference-item-prescription.traitementPrescrit","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication-prescription {[]} {[]}
 ","Traitement prescrit","Traitement prescrit","","","","","","","","","",,,,,"",,,,"fr-lm-reference-item-prescription.traitementPrescrit",0,1,"",""
 "fr-lm-reference-item-prescription.reference","fr-lm-reference-item-prescription.reference","","","",0,1,"","","","Base {[]} {[]}
 ","ID of parent container of referenced item","ID of parent container of referenced item","","","","","","","","","",,,,,"",,,,"fr-lm-reference-item-prescription.reference",0,1,"",""

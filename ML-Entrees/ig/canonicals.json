@@ -2372,6 +2372,13 @@
   "name" : "FRLMDocumentsAjoutes"
 },
 {
+  "id" : "fr-lm-dosage-instructions",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dosage-instructions",
+  "version" : "0.1.0-snapsnot",
+  "name" : "FRLMDosageInstructions"
+},
+{
   "id" : "fr-lm-dose-antigene",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dose-antigene",
@@ -2638,6 +2645,13 @@
   "name" : "FRLMMedication"
 },
 {
+  "id" : "fr-lm-medication-prescription",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication-prescription",
+  "version" : "0.1.0-snapsnot",
+  "name" : "FRLMMedicationPrescription"
+},
+{
   "id" : "fr-lm-modalite-entree",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-modalite-entree",
@@ -2785,13 +2799,6 @@
   "name" : "FRLMPointsDeVigilancesNonCode"
 },
 {
-  "id" : "fr-lm-posologie",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-posologie",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRLMPosologie"
-},
-{
   "id" : "fr-lm-prelevement",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-prelevement",
@@ -2855,11 +2862,11 @@
   "name" : "FRLMQuantiteExposition"
 },
 {
-  "id" : "fr-lm-quantite-produit",
+  "id" : "fr-lm-quantity-prescribed",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-quantite-produit",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-quantity-prescribed",
   "version" : "0.1.0-snapsnot",
-  "name" : "FRLMQuantiteProduit"
+  "name" : "FRLMQuantityPrescribed"
 },
 {
   "id" : "fr-lm-raison-recommandation",
@@ -3105,13 +3112,6 @@
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-traitement-dispense",
   "version" : "0.1.0-snapsnot",
   "name" : "FRLMTraitementDispense"
-},
-{
-  "id" : "fr-lm-traitement-prescrit",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-traitement-prescrit",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRLMTraitementPrescrit"
 },
 {
   "id" : "fr-lm-traitement-sortie",
