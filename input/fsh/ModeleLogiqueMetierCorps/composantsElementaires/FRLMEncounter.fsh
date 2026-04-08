@@ -1,5 +1,5 @@
-Logical: FRLMRencontre
-Id: fr-lm-rencontre
+Logical: FRLMEncounter
+Id: fr-lm-encounter
 //Parent : EHDSInpatientEncounter
 Title: "Modèle logique métier - FR LM Rencontre"
 Description: """Rencontre"""

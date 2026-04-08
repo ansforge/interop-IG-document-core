@@ -9,4 +9,4 @@ Characteristics: #can-be-target
 * entree
   * observation 1..* FRLMObservation "Entrée Simple observation"
   * transfertPatient 0..* FRLMTransfertDuPatient "Entrée Transfert du patient"
-  * probleme  0..* FRLMProbleme "Entrée Problème"
+  * probleme  0..* FRLMCondition "Entrée Problème"

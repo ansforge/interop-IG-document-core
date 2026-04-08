@@ -1,6 +1,6 @@
 /* Equivalents EHDSCondition précisés en commentaires pour chaque donnée métier */
-Logical: FRLMProbleme
-Id: fr-lm-probleme
+Logical: FRLMCondition
+Id: fr-lm-condition
 //Parent: EHDSCondition
 Title: "Modèle logique métier - FR LM Problème"
 Description: """Problème"""

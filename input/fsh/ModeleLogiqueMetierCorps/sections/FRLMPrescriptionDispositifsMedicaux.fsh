@@ -8,4 +8,4 @@ Characteristics: #can-be-target
 * auteur 0..1 FRLMAuteur "Auteur de la prescription"
 * sousSection 0..0
 * entree 1..*
-  * dispositifMedical  1..* FRLMDispositifMedicalEntree "Entrée Dispositif médical prescrit"
+  * dispositifMedical  1..* FRLMDeviceUse "Entrée Dispositif médical prescrit"
