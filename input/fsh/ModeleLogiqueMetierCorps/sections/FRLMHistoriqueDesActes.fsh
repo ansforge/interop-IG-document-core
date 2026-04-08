@@ -8,5 +8,5 @@ Characteristics: #can-be-target
 * titreSection 1..1 
 * sousSection 0..0
 * entree 1..*
-  * actes 1..* FRLMActe "Entrée Acte"
+  * actes 1..* FRLMProcedure "Entrée Acte"
   * references 1..* FRLMReferencesExternes "Entrée Références externes"

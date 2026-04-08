@@ -12,7 +12,7 @@ Characteristics: #can-be-target
   * antecedentsChirurgicaux 1..1 FRLMObservation "Observation"
   * contreIndications 0..1 FRLMObservation "Observation"
   * probleme 0..* FRLMCondition "Problème"
-  * dispositifMedical 0..* FRLMDispositifMedicalEntree "Dispositif médical"
+  * dispositifMedical 0..* FRLMDeviceUse "Dispositif médical"
   * statutGrossesse 0..1 FRLMObservationGrossesse "Statut grossesse"
   * administrationProduitDeSante 0..* FRLMAdministrationProduitDeSante "Produits de santé administré avant l'examen d'imagerie"
   * sexeClinique 0..* CodeableConcept "Sexe Clinique"

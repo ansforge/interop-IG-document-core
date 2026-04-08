@@ -1,4 +1,3 @@
-/* Equivalents EHDSAllergyIntolerance précisés en commentaires pour chaque donnée métier */
 Logical: FRLMAllergyIntolerance	
 Id: fr-lm-allergy-intolerance	
 Parent: FRLMEntry

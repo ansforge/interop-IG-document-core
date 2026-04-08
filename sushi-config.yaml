@@ -184,7 +184,7 @@ groups:
     description: Modèles de données métier représentant les concepts élémentaires, modélisés indépendamment de la syntaxe et de façon plus accessible pour le métier que les éléments techniques CDA et FHIR.
     resources:
       - StructureDefinition/fr-lm-entry
-      - StructureDefinition/fr-lm-acte
+      - StructureDefinition/fr-lm-procedure
       - StructureDefinition/fr-lm-antecedent-familial-observe
       - StructureDefinition/fr-lm-certitude
       - StructureDefinition/fr-lm-criticite
@@ -192,7 +192,7 @@ groups:
       - StructureDefinition/fr-lm-demande-examen-ou-suivi
       - StructureDefinition/fr-lm-care-plan
       - StructureDefinition/fr-lm-condition
-      - StructureDefinition/fr-lm-rencontre
+      - StructureDefinition/fr-lm-encounter
       - StructureDefinition/fr-lm-reference-interne
       - StructureDefinition/fr-lm-references-externes
       - StructureDefinition/fr-lm-observation
@@ -202,7 +202,7 @@ groups:
       - StructureDefinition/fr-lm-acte-substitution
       - StructureDefinition/fr-lm-allergy-intolerance	
       - StructureDefinition/fr-lm-directive-anticipee
-      - StructureDefinition/fr-lm-dispositif-medical-entree
+      - StructureDefinition/fr-lm-device-use
       - StructureDefinition/fr-lm-document-attache
       - StructureDefinition/fr-lm-dose-antigene
       - StructureDefinition/fr-lm-effet-indesirable
