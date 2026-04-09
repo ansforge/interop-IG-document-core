@@ -20,7 +20,7 @@ Characteristics: #can-be-target
 * numberOfRepeats 0..1 integer "Nombre de renouvellement(s) possible(s). Non renseigné si pas de limite du nombre de dispensation. '0'=dispensation unique. Le nombre total de dispensation = nombre de renouvellement + 1."
 * minimumDispenseInterval 0..1 Quantity "Intervalle minimal de délivrance. Si une ordonnance autorise des délivrances répétées, l'intervalle entre ces délivrances doit être indiqué ici."
 * offLabel 1..1 Base "Hors AMM"
-  * isOffLabelUse		1..1	boolean	"Indique si la prescription est hors AMM. Doit être égal à « true » lorsque la raison est fournie."
+  * isOffLabelUse	1..1	boolean	"Indique si la prescription est hors AMM. Doit être égal à « true » lorsque la raison est fournie."
   * reason[x]	0..* CodeableConcept or string "Raison de la prescription hors AMM"
 * note 0..1 string "Instructions au dispensateur"
 * enRapportAvecALD 1..1 boolean "En rapport avec ALD"
