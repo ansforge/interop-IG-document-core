@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dosage-instructions | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-08 | *Computable Name*:FRLMDosageInstructions |
+| Draft as of 2026-04-09 | *Computable Name*:FRLMDosageInstructions |
 
  
 Posologie 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-dosage-instruc
   "name" : "FRLMDosageInstructions",
   "title" : "Logical model- FR LM Dosage Instructions",
   "status" : "draft",
-  "date" : "2026-04-08T14:07:03+00:00",
+  "date" : "2026-04-09T12:24:05+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -162,8 +162,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-dosage-instruc
       }]
     },
     {
-      "id" : "fr-lm-dosage-instructions.dosageDetails.dateDePrise",
-      "path" : "fr-lm-dosage-instructions.dosageDetails.dateDePrise",
+      "id" : "fr-lm-dosage-instructions.dosageDetails.dateOfAdministration",
+      "path" : "fr-lm-dosage-instructions.dosageDetails.dateOfAdministration",
       "short" : "Date précise du moment de prise",
       "definition" : "Date précise du moment de prise",
       "min" : 0,
@@ -173,8 +173,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-dosage-instruc
       }]
     },
     {
-      "id" : "fr-lm-dosage-instructions.dosageDetails.conditionDePrise",
-      "path" : "fr-lm-dosage-instructions.dosageDetails.conditionDePrise",
+      "id" : "fr-lm-dosage-instructions.dosageDetails.conditionOfAdministration",
+      "path" : "fr-lm-dosage-instructions.dosageDetails.conditionOfAdministration",
       "short" : "Code ou texte de la condition sous laquelle le traitement doit être pris (ex : en cas de douleurs).",
       "definition" : "Code ou texte de la condition sous laquelle le traitement doit être pris (ex : en cas de douleurs).",
       "min" : 0,

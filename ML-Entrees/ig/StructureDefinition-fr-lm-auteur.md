@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-auteur | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-08 | *Computable Name*:FRLMAuteur |
+| Draft as of 2026-04-09 | *Computable Name*:FRLMAuteur |
 
  
 Auteur du document : ce peut être un professionnel, un patient/usager ou un système. 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-auteur.csv), [
   "name" : "FRLMAuteur",
   "title" : "Modèle logique métier - FR LM Auteur",
   "status" : "draft",
-  "date" : "2026-04-08T14:07:03+00:00",
+  "date" : "2026-04-09T12:24:05+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
