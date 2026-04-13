@@ -16,7 +16,7 @@ Posologie
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Logical model - FR LM Medication Dispense](StructureDefinition-fr-lm-medication-dispense.md), [Logical model - FR LM Medication Prescription](StructureDefinition-fr-lm-medication-prescription.md) and [Modèle logique métier - FR LM Traitement](StructureDefinition-fr-lm-traitement.md)
+* Utilise ce/t/te Modèle logique: [Logical model- FR LM Medication Administration ](StructureDefinition-fr-lm-medication-administration.md), [Logical model - FR LM Medication Dispense](StructureDefinition-fr-lm-medication-dispense.md) and [Logical model - FR LM Medication Prescription](StructureDefinition-fr-lm-medication-prescription.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-dosage-instructions)
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-dosage-instruc
   "name" : "FRLMDosageInstructions",
   "title" : "Logical model- FR LM Dosage Instructions",
   "status" : "draft",
-  "date" : "2026-04-13T08:58:24+00:00",
+  "date" : "2026-04-13T09:04:52+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -15,7 +15,7 @@
 ","Date de fin de l'effet indésirable","Date de fin de l'effet indésirable","","","","","","","","","",,,,,"",,,,"fr-lm-effet-indesirable.dateFin",0,1,"",""
 "fr-lm-effet-indesirable.valeur","fr-lm-effet-indesirable.valeur","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Valeur de l'observation","Valeur de l'observation","","","","","","","","","",,,,,"",,,,"fr-lm-effet-indesirable.valeur",1,1,"",""
-"fr-lm-effet-indesirable.traitement","fr-lm-effet-indesirable.traitement","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-traitement {[]} {[]}
+"fr-lm-effet-indesirable.traitement","fr-lm-effet-indesirable.traitement","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication-administration {[]} {[]}
 ","Médicament, substance incriminée, posologie","Médicament, substance incriminée, posologie","","","","","","","","","",,,,,"",,,,"fr-lm-effet-indesirable.traitement",1,1,"",""
 "fr-lm-effet-indesirable.probleme","fr-lm-effet-indesirable.probleme","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-condition {[]} {[]}
 ","Réaction observée","Réaction observée","","","","","","","","","",,,,,"",,,,"fr-lm-effet-indesirable.probleme",0,*,"",""

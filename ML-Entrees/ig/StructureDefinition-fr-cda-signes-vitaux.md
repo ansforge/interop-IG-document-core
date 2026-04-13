@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-signes-vitaux
   "name" : "FRCDASignesVitaux",
   "title" : "CDA - FR Signes vitaux",
   "status" : "draft",
-  "date" : "2026-04-13T08:58:24+00:00",
+  "date" : "2026-04-13T09:04:52+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

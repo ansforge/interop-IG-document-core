@@ -120,6 +120,7 @@ Modèles de données métier représentant les concepts élémentaires, modélis
 | [Logical model - FR LM Observation Vital Sign](StructureDefinition-fr-lm-observation-vital-sign.md) | Signe vital observé |
 | [Logical model - FR LM Transfusion de produits sanguins](StructureDefinition-fr-lm-transfusion-de-produits-sanguins.md) | Transfusion de produits sanguins |
 | [Logical model- FR LM Dosage Instructions](StructureDefinition-fr-lm-dosage-instructions.md) | Posologie |
+| [Logical model- FR LM Medication Administration ](StructureDefinition-fr-lm-medication-administration.md) | Entrée Traitement |
 | [Logical model- FR LM Observation Social History](StructureDefinition-fm-lm-observation-social-history.md) | Entrée Habitus Mode de vie |
 | [Logical model- FR LM Procedure](StructureDefinition-fr-lm-procedure.md) | Entrée Acte |
 | [Logical model- FR LM Quantity Prescribed](StructureDefinition-fr-lm-quantity-prescribed.md) | Entrée Quantité de produit |
@@ -186,7 +187,6 @@ Modèles de données métier représentant les concepts élémentaires, modélis
 | [Modèle logique métier - FR LM Synthese medicale sejour](StructureDefinition-fr-lm-synthese-medicale-sejour.md) | Synthese medicale sejour |
 | [Modèle logique métier - FR LM Sévérité](StructureDefinition-fr-lm-severite.md) | Sévérité. |
 | [Modèle logique métier - FR LM Technique imagerie](StructureDefinition-fr-lm-technique-imagerie.md) | Technique imagerie |
-| [Modèle logique métier - FR LM Traitement](StructureDefinition-fr-lm-traitement.md) | Traitement |
 | [Modèle logique métier - FR LM Transfert du patient](StructureDefinition-fr-lm-transfert-du-patient.md) | Transfert du patient |
 | [Modèle logique métier - FR LM Échantillon prélevé](StructureDefinition-fr-lm-echantillon-preleve.md) | Échantillon prélevé |
 

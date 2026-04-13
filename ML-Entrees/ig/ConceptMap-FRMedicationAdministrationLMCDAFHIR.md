@@ -26,7 +26,7 @@ Mapping des éléments du modèle métier FRLMTraitement vers le profil CDA FRCD
   "version" : "0.1.0-snapsnot",
   "title" : "Mapping Métier/CDA/FHIR : \"Traitement déjà administré\"",
   "status" : "draft",
-  "date" : "2026-04-13T08:58:24+00:00",
+  "date" : "2026-04-13T09:04:52+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

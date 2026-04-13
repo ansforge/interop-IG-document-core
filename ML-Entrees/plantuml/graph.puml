@@ -5358,6 +5358,16 @@ package IG #DDDDDD{
              fr-lm-laboratoire-executant.executant => [1..1]
         } 
 
+        class FRLMMedicationAdministration{
+
+             fr-lm-medication-administration => [None..None]
+             fr-lm-medication-administration.status => [1..1]
+             fr-lm-medication-administration.dureeTraitement => [0..1]
+             fr-lm-medication-administration.dosage => [0..1]
+             fr-lm-medication-administration.medicament => [1..1]
+             fr-lm-medication-administration.reason[x] => [0..*]
+        } 
+
         class FRLMMedicationDispense{
 
              fr-lm-medication-dispense => [None..None]
@@ -6211,17 +6221,6 @@ package IG #DDDDDD{
              fr-lm-traitement-sortie.sousSection => [None..0]
              fr-lm-traitement-sortie.entree => [1..None]
              fr-lm-traitement-sortie.entree.traitementSortie => [1..*]
-        } 
-
-        class FRLMTraitement{
-
-             fr-lm-traitement => [None..None]
-             fr-lm-traitement.identifiant => [1..*]
-             fr-lm-traitement.status => [1..1]
-             fr-lm-traitement.dureeTraitement => [0..1]
-             fr-lm-traitement.dosage => [0..1]
-             fr-lm-traitement.medicament => [1..1]
-             fr-lm-traitement.reason[x] => [0..*]
         } 
 
         class FRLMTraitementsAdministres{
@@ -8455,6 +8454,10 @@ package "Ressources de base" #palegreen {
 
  class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry" as  classeb8bc4d6baa061f547965c0670265381 
 
+    classeb8bc4d6baa061f547965c0670265381 --> FRLMMedicationAdministration
+
+ class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry" as  classeb8bc4d6baa061f547965c0670265381 
+
     classeb8bc4d6baa061f547965c0670265381 --> FRLMMedicationDispense
 
  class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry" as  classeb8bc4d6baa061f547965c0670265381 
@@ -8724,10 +8727,6 @@ package "Ressources de base" #palegreen {
  class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-section" as  class5dabea989fe22a905d8f89cc210527f2 
 
     class5dabea989fe22a905d8f89cc210527f2 --> FRLMTraitementSortie
-
- class "Base" as  class095a1b43effec73955e31e790438de49 
-
-    class095a1b43effec73955e31e790438de49 --> FRLMTraitement
 
  class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-section" as  class5dabea989fe22a905d8f89cc210527f2 
 

@@ -16,7 +16,7 @@ Entrée Produit de santé
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Dose d'antigène](StructureDefinition-fr-lm-dose-antigene.md), [Logical model - FR LM Immunisation](StructureDefinition-fr-lm-immunisation.md), [Logical model - FR LM Immunization Recommendation](StructureDefinition-fr-lm-immunization-recommendation.md), [Logical model - FR LM Medication Dispense](StructureDefinition-fr-lm-medication-dispense.md)... Show 3 more, [Logical model - FR LM Medication Prescription](StructureDefinition-fr-lm-medication-prescription.md), [Modèle logique métier - FR LM Référence item prescription](StructureDefinition-fr-lm-reference-item-prescription.md) and [Modèle logique métier - FR LM Traitement](StructureDefinition-fr-lm-traitement.md)
+* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Dose d'antigène](StructureDefinition-fr-lm-dose-antigene.md), [Logical model - FR LM Immunisation](StructureDefinition-fr-lm-immunisation.md), [Logical model - FR LM Immunization Recommendation](StructureDefinition-fr-lm-immunization-recommendation.md), [Logical model- FR LM Medication Administration ](StructureDefinition-fr-lm-medication-administration.md)... Show 3 more, [Logical model - FR LM Medication Dispense](StructureDefinition-fr-lm-medication-dispense.md), [Logical model - FR LM Medication Prescription](StructureDefinition-fr-lm-medication-prescription.md) and [Modèle logique métier - FR LM Référence item prescription](StructureDefinition-fr-lm-reference-item-prescription.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-medication)
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-medication.csv
   "name" : "FRLMMedication",
   "title" : "Logical model - FR LM Medication",
   "status" : "draft",
-  "date" : "2026-04-13T08:58:24+00:00",
+  "date" : "2026-04-13T09:04:52+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

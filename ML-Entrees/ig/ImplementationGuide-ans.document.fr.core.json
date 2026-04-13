@@ -10,7 +10,7 @@
   "name" : "FRDocumentCore",
   "title" : "ANS IG document core",
   "status" : "draft",
-  "date" : "2026-04-13T08:58:24+00:00",
+  "date" : "2026-04-13T09:04:52+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -3652,6 +3652,19 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/fr-lm-medication-administration"
+      },
+      "name" : "Logical model- FR LM Medication Administration\t",
+      "description" : "Entrée Traitement",
+      "exampleBoolean" : false,
+      "groupingId" : "Modèles logiques métier des composants élémentaires"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/fm-lm-observation-social-history"
       },
       "name" : "Logical model- FR LM Observation Social History",
@@ -7110,19 +7123,6 @@
       },
       "name" : "Modèle logique métier - FR LM Technique imagerie",
       "description" : "Technique imagerie",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-lm-traitement"
-      },
-      "name" : "Modèle logique métier - FR LM Traitement",
-      "description" : "Traitement",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier des composants élémentaires"
     },

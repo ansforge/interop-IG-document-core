@@ -11,5 +11,5 @@
 ","Sous-sections","Sous-sections","","","","","","","","","",,,,,"",,,,"fr-lm-section.sousSection",0,*,"",""
 "fr-lm-traitements.entree","fr-lm-traitements.entree","","","",1,*,"","","","Base {[]} {[]}
 ","Entrées","Entrées","","","","","","","","","",,,,,"",,,,"fr-lm-section.entree",0,*,"",""
-"fr-lm-traitements.entree.traitements","fr-lm-traitements.entree.traitements","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-traitement {[]} {[]}
+"fr-lm-traitements.entree.traitements","fr-lm-traitements.entree.traitements","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication-administration {[]} {[]}
 ","Entrée Traitement","Entrée Traitement","","","","","","","","","",,,,,"",,,,"fr-lm-traitements.entree.traitements",1,*,"",""

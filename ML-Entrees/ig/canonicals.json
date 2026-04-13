@@ -2652,6 +2652,13 @@
   "name" : "FRLMMedication"
 },
 {
+  "id" : "fr-lm-medication-administration",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication-administration",
+  "version" : "0.1.0-snapsnot",
+  "name" : "FRLMMedicationAdministration"
+},
+{
   "id" : "fr-lm-medication-dispense",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication-dispense",
@@ -3112,13 +3119,6 @@
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-technique-imagerie",
   "version" : "0.1.0-snapsnot",
   "name" : "FRLMTechniqueImagerie"
-},
-{
-  "id" : "fr-lm-traitement",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-traitement",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRLMTraitement"
 },
 {
   "id" : "fr-lm-traitement-sortie",
