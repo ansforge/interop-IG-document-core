@@ -1,6 +1,7 @@
 Logical: FRLMTransfusionDeProduitsSanguins
 Id: fr-lm-transfusion-de-produits-sanguins
-Title: "Modèle logique métier - FR LM Transfusion de produits sanguins"
+Parent: FRLMEntry
+Title: "Logical model - FR LM Transfusion de produits sanguins"
 Description: """Transfusion de produits sanguins"""
 Characteristics: #can-be-target
 

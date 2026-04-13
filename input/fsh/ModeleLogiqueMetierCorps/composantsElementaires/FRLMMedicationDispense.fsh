@@ -1,10 +1,10 @@
-Logical: FRLMTraitementDispense
-Id: fr-lm-traitement-dispense
-Title: "Modèle logique métier - FR LM Traitement dispensé"
-Description: """Traitement dispense"""
+Logical: FRLMMedicationDispense
+Id: fr-lm-medication-dispense
+Parent: FRLMEntry
+Title: "Logical model - FR LM Medication Dispense"
+Description: """Entrée Traitement dispense"""
 Characteristics: #can-be-target
 
-* identifiant 1..1 identifier "Identifiant de l’entrée"
 * completude 0..1 CodeableConcept "Complétude de la dispensation"
   * ^binding.description = "Valeur issue du JDV_CompletudeDispensation_CISIS (1.2.250.1.213.1.1.5.765)"
   * ^binding.valueSet = "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-completude-dispensation-cisis"

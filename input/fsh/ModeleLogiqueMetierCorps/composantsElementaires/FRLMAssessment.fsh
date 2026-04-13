@@ -1,5 +1,6 @@
 Logical: FRLMAssessment
 Id: fm-lm-assessment
+Parent: FRLMEntry
 Title: "Logical model - FR LM Assessment"
 Description: """Entrée Evaluation"""
 Characteristics: #can-be-target

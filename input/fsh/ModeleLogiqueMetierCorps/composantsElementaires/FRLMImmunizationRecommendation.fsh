@@ -1,7 +1,8 @@
-Logical: FRLMVaccinRecommande
-Id: fr-lm-vaccin-recommande
-Title: "Modèle logique métier - FR LM Vaccin recommandé"
-Description: """Vaccin recommandé"""
+Logical: FRLMImmunizationRecommendation
+Id: fr-lm-immunization-recommendation
+Parent: FRLMEntry
+Title: "Logical model - FR LM Immunization Recommendation"
+Description: """Entrée Vaccin recommandé"""
 Characteristics: #can-be-target
 
 * identifiantVaccinRecommande 1..1 Identifier "Identifiant de l’entrée"
