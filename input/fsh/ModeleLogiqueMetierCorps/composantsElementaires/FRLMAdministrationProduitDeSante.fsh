@@ -1,12 +1,10 @@
 Logical: FRLMAdministrationProduitDeSante
 Id: fr-lm-administration-produit-de-sante
-// Parent: EHDSMedicationAdministration
+Parent: FRLMEntry
 Title: "Modèle logique métier - FR LM Administration produit de sante"
 Description: """Administration produit de sante"""
 Characteristics: #can-be-target
 
-* identifiant 1..1 Identifier "Identifiant de l'entrée"
-* description 0..1 Narrative "Partie narrative de l'entrée"
 * statut 1..1 code "Statut de l'entrée"
 * voieAdministration 0..1 CodeableConcept "Voie d'administration" 
   * ^binding.description = "EDQM (0.4.0.127.0.16.1.1.2.1)"

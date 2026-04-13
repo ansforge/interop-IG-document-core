@@ -3,7 +3,9 @@ Id: fr-lm-personne-structure-auteur
 Title: "Modèle logique métier - FR LM Personne et/ou Structure Auteur"			
 Description: "Une personne (professionnel ou patient ou autre) et/ou une structure (pour les professionnels)." 
 Characteristics: #can-be-target 			 			 		
-* personne 0..1 Base "Personne"		 		
+* personne 0..1 Base "Personne"		
+  * roleFonctionnel 0..1 CodeableConcept "Rôle fonctionnel de l’auteur. A utiliser uniquement si l'auteur est un professionnel."
+  * horodatageParticipation 1..1 time "Horodatage de la participation de l’auteur."		 		 		
   * identifiantPersonne 1..* Identifier "Identifiant de la personne."				
   * professionRole 0..1 CodeableConcept "
 - Profession pour les professionnels.

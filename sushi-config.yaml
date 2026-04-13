@@ -106,7 +106,6 @@ groups:
     resources:
       - FRLMEnteteDocument	
       - FRLMPatientUsager
-      - FRLMAuteur
       - FRLMPersonneStructure
       - FRLMPersonneStructureAuteur
       - FRLMSystemeStructureAuteur
