@@ -226,7 +226,7 @@ groups:
       - StructureDefinition/fr-lm-resultats-examens-biologie-medicale
       - StructureDefinition/fr-lm-observation-vital-sign
       - StructureDefinition/fr-lm-statut
-      - StructureDefinition/fr-lm-traitement
+      - StructureDefinition/fr-lm-medication-administration
       - StructureDefinition/fr-lm-immunization-recommendation
       - StructureDefinition/fr-lm-immunisation
       - StructureDefinition/fr-lm-medication-dispense
