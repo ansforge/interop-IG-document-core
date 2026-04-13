@@ -1,5 +1,6 @@
 Logical: FRLMTransfertDuPatient
 Id: fr-lm-transfert-du-patient
+Parent: FRLMEntry
 Title: "Modèle logique métier - FR LM Transfert du patient"
 Description: """Transfert du patient"""
 Characteristics: #can-be-target

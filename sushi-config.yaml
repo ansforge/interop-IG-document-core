@@ -225,10 +225,10 @@ groups:
       - StructureDefinition/fr-lm-resultats-examens-biologie-medicale
       - StructureDefinition/fr-lm-observation-vital-sign
       - StructureDefinition/fr-lm-statut
-      - StructureDefinition/fr-lm-traitement
-      - StructureDefinition/fr-lm-vaccin-recommande
+      - StructureDefinition/fr-lm-medication-administration
+      - StructureDefinition/fr-lm-immunization-recommendation
       - StructureDefinition/fr-lm-immunisation
-      - StructureDefinition/fr-lm-traitement-dispense
+      - StructureDefinition/fr-lm-medication-dispense
       - StructureDefinition/fr-lm-reference-item-prescription
       - StructureDefinition/fr-lm-prelevement
       - StructureDefinition/fr-lm-administration-produit-de-sante

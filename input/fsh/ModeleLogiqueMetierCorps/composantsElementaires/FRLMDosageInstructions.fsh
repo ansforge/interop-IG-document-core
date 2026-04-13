@@ -15,9 +15,9 @@ Exemple - 1 à 3 comprimés: {'low':{'value':1,'unit':'Comprimé','system':'http
     * rate[x] 0..1 Quantity or Ratio or Range "Rythme d'administration
 Période temporelle pendant laquelle une dose définie est administrée, pour les perfusions par exemple.
 Exemple - 400µg pendant une minute (perfusion): {'numerator':{'value':400,'unit':'µg','system':'http://unitsofmeasure.org','code':'µg'},'denominator':{'value':1,'unit':'min','system':'http://unitsofmeasure.org','code':'min'}}"
-  * dateDePrise 0..* dateTime  "Date précise du moment de prise"
+  * dateOfAdministration 0..* dateTime  "Date précise du moment de prise"
   //Précondition
-  * conditionDePrise 0..* CodeableConcept "Code ou texte de la condition sous laquelle le traitement doit être pris (ex : en cas de douleurs)."
+  * conditionOfAdministration 0..* CodeableConcept "Code ou texte de la condition sous laquelle le traitement doit être pris (ex : en cas de douleurs)."
   * date[x] 0..1 Period or Quantity or Range "Période (date de début et de fin), durée ou intervalle de durée de la séquence de traitement (un parmi les trois)
 Exemple - La période représente une date de début et de fin (ex : du 1/10/2025 au 10/10/2025), la durée représente une quantité (ex : 5 jours), l'intervalle représente une quantité minimale et une quantité maximale (ex : de 5 à 10 jours)): {}"
   * duration 0..1 Base "Durée ou rythme d'administration - indique le temps d'administration des prises de la séquence (exemple d'utilisation : perfusion ou patch)

@@ -7,4 +7,4 @@ Characteristics: #can-be-target
 
 * sousSection 0..0
 * entree 1..*
-  * traitementSortie 1..* FRLMTraitement "Entrée Traitement"
+  * traitementSortie 1..* FRLMMedicationAdministration "Entrée Traitement"
