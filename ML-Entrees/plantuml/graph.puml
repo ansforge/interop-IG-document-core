@@ -5274,6 +5274,23 @@ package IG #DDDDDD{
              fr-lm-immunisation.reasonCode => [0..*]
         } 
 
+        class FRLMImmunizationRecommendation{
+
+             fr-lm-immunization-recommendation => [None..None]
+             fr-lm-immunization-recommendation.identifiantVaccinRecommande => [1..1]
+             fr-lm-immunization-recommendation.codeVaccinRecommande => [1..1]
+             fr-lm-immunization-recommendation.descriptionNarrativeVaccinRecommande => [1..1]
+             fr-lm-immunization-recommendation.statutVaccinRecommande => [1..1]
+             fr-lm-immunization-recommendation.periodeVaccination => [1..1]
+             fr-lm-immunization-recommendation.voieAdministration => [0..1]
+             fr-lm-immunization-recommendation.regionAnatomique => [0..*]
+             fr-lm-immunization-recommendation.doseAdministree => [0..1]
+             fr-lm-immunization-recommendation.vaccin => [1..1]
+             fr-lm-immunization-recommendation.prescription => [0..1]
+             fr-lm-immunization-recommendation.rangVaccination => [0..1]
+             fr-lm-immunization-recommendation.commentaire => [0..1]
+        } 
+
         class FRLMImputabiliteEffetIndesirable{
 
              fr-lm-imputabilite-effet-indesirable => [None..None]
@@ -5339,6 +5356,19 @@ package IG #DDDDDD{
              fr-lm-laboratoire-executant => [None..None]
              fr-lm-laboratoire-executant.dateExecution => [1..1]
              fr-lm-laboratoire-executant.executant => [1..1]
+        } 
+
+        class FRLMMedicationDispense{
+
+             fr-lm-medication-dispense => [None..None]
+             fr-lm-medication-dispense.completude => [0..1]
+             fr-lm-medication-dispense.quantite => [1..1]
+             fr-lm-medication-dispense.medicamentDelivre => [1..1]
+             fr-lm-medication-dispense.referencePrescription => [0..1]
+             fr-lm-medication-dispense.posologie => [0..1]
+             fr-lm-medication-dispense.notesDispensateur => [0..1]
+             fr-lm-medication-dispense.autorisationSubstitution => [1..1]
+             fr-lm-medication-dispense.autorisationSubstitution.type => [0..1]
         } 
 
         class FRLMMedicationPrescription{
@@ -6175,20 +6205,6 @@ package IG #DDDDDD{
              fr-lm-technique-imagerie.participant => [0..1]
         } 
 
-        class FRLMTraitementDispense{
-
-             fr-lm-traitement-dispense => [None..None]
-             fr-lm-traitement-dispense.identifiant => [1..1]
-             fr-lm-traitement-dispense.completude => [0..1]
-             fr-lm-traitement-dispense.quantite => [1..1]
-             fr-lm-traitement-dispense.medicamentDelivre => [1..1]
-             fr-lm-traitement-dispense.referencePrescription => [0..1]
-             fr-lm-traitement-dispense.posologie => [0..1]
-             fr-lm-traitement-dispense.notesDispensateur => [0..1]
-             fr-lm-traitement-dispense.autorisationSubstitution => [1..1]
-             fr-lm-traitement-dispense.autorisationSubstitution.type => [0..1]
-        } 
-
         class FRLMTraitementSortie{
 
              fr-lm-traitement-sortie => [None..None]
@@ -6246,23 +6262,6 @@ package IG #DDDDDD{
              fr-lm-transfusion-de-produits-sanguins.date => [1..1]
              fr-lm-transfusion-de-produits-sanguins.transfusionProduitSanguin => [1..1]
              fr-lm-transfusion-de-produits-sanguins.auteur => [0..1]
-        } 
-
-        class FRLMVaccinRecommande{
-
-             fr-lm-vaccin-recommande => [None..None]
-             fr-lm-vaccin-recommande.identifiantVaccinRecommande => [1..1]
-             fr-lm-vaccin-recommande.codeVaccinRecommande => [1..1]
-             fr-lm-vaccin-recommande.descriptionNarrativeVaccinRecommande => [1..1]
-             fr-lm-vaccin-recommande.statutVaccinRecommande => [1..1]
-             fr-lm-vaccin-recommande.periodeVaccination => [1..1]
-             fr-lm-vaccin-recommande.voieAdministration => [0..1]
-             fr-lm-vaccin-recommande.regionAnatomique => [0..*]
-             fr-lm-vaccin-recommande.doseAdministree => [0..1]
-             fr-lm-vaccin-recommande.vaccin => [1..1]
-             fr-lm-vaccin-recommande.prescription => [0..1]
-             fr-lm-vaccin-recommande.rangVaccination => [0..1]
-             fr-lm-vaccin-recommande.commentaire => [0..1]
         } 
 
         class FRLMVaccinations{
@@ -7442,13 +7441,13 @@ package "Ressources de base" #palegreen {
 
     class3ce7c1f18d683e945dff5b14e1dc367c --> CISISTelecom
 
- class "Base" as  class095a1b43effec73955e31e790438de49 
+ class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry" as  classeb8bc4d6baa061f547965c0670265381 
 
-    class095a1b43effec73955e31e790438de49 --> FRLMAssessment
+    classeb8bc4d6baa061f547965c0670265381 --> FRLMAssessment
 
- class "Base" as  class095a1b43effec73955e31e790438de49 
+ class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry" as  classeb8bc4d6baa061f547965c0670265381 
 
-    class095a1b43effec73955e31e790438de49 --> FRLMObservationSocialHistory
+    classeb8bc4d6baa061f547965c0670265381 --> FRLMObservationSocialHistory
 
  class "vitalspanel" as  class48cc96dc575369fad67347d24c304310 
 
@@ -8426,6 +8425,10 @@ package "Ressources de base" #palegreen {
 
     classeb8bc4d6baa061f547965c0670265381 --> FRLMImmunisation
 
+ class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry" as  classeb8bc4d6baa061f547965c0670265381 
+
+    classeb8bc4d6baa061f547965c0670265381 --> FRLMImmunizationRecommendation
+
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
     class095a1b43effec73955e31e790438de49 --> FRLMImputabiliteEffetIndesirable
@@ -8450,9 +8453,13 @@ package "Ressources de base" #palegreen {
 
     class095a1b43effec73955e31e790438de49 --> FRLMLaboratoireExecutant
 
- class "Base" as  class095a1b43effec73955e31e790438de49 
+ class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry" as  classeb8bc4d6baa061f547965c0670265381 
 
-    class095a1b43effec73955e31e790438de49 --> FRLMMedicationPrescription
+    classeb8bc4d6baa061f547965c0670265381 --> FRLMMedicationDispense
+
+ class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry" as  classeb8bc4d6baa061f547965c0670265381 
+
+    classeb8bc4d6baa061f547965c0670265381 --> FRLMMedicationPrescription
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
@@ -8714,10 +8721,6 @@ package "Ressources de base" #palegreen {
 
     class095a1b43effec73955e31e790438de49 --> FRLMTechniqueImagerie
 
- class "Base" as  class095a1b43effec73955e31e790438de49 
-
-    class095a1b43effec73955e31e790438de49 --> FRLMTraitementDispense
-
  class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-section" as  class5dabea989fe22a905d8f89cc210527f2 
 
     class5dabea989fe22a905d8f89cc210527f2 --> FRLMTraitementSortie
@@ -8734,17 +8737,13 @@ package "Ressources de base" #palegreen {
 
     class5dabea989fe22a905d8f89cc210527f2 --> FRLMTraitements
 
- class "Base" as  class095a1b43effec73955e31e790438de49 
+ class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry" as  classeb8bc4d6baa061f547965c0670265381 
 
-    class095a1b43effec73955e31e790438de49 --> FRLMTransfertDuPatient
+    classeb8bc4d6baa061f547965c0670265381 --> FRLMTransfertDuPatient
 
- class "Base" as  class095a1b43effec73955e31e790438de49 
+ class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry" as  classeb8bc4d6baa061f547965c0670265381 
 
-    class095a1b43effec73955e31e790438de49 --> FRLMTransfusionDeProduitsSanguins
-
- class "Base" as  class095a1b43effec73955e31e790438de49 
-
-    class095a1b43effec73955e31e790438de49 --> FRLMVaccinRecommande
+    classeb8bc4d6baa061f547965c0670265381 --> FRLMTransfusionDeProduitsSanguins
 
  class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-section" as  class5dabea989fe22a905d8f89cc210527f2 
 

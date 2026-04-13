@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dose-number | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-09 | *Computable Name*:FRLMDoseNumber |
+| Draft as of 2026-04-13 | *Computable Name*:FRLMDoseNumber |
 
  
 Entrée Rang de la vaccination 
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Logical model - FR LM Immunisation](StructureDefinition-fr-lm-immunisation.md) and [Modèle logique métier - FR LM Vaccin recommandé](StructureDefinition-fr-lm-vaccin-recommande.md)
+* Utilise ce/t/te Modèle logique: [Logical model - FR LM Immunisation](StructureDefinition-fr-lm-immunisation.md) and [Logical model - FR LM Immunization Recommendation](StructureDefinition-fr-lm-immunization-recommendation.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-dose-number)
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-dose-number.cs
   "name" : "FRLMDoseNumber",
   "title" : "Logical model - FR LM Dose Number",
   "status" : "draft",
-  "date" : "2026-04-09T12:24:05+00:00",
+  "date" : "2026-04-13T08:58:24+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

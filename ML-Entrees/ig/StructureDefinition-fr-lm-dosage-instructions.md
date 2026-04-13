@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dosage-instructions | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-09 | *Computable Name*:FRLMDosageInstructions |
+| Draft as of 2026-04-13 | *Computable Name*:FRLMDosageInstructions |
 
  
 Posologie 
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Logical model - FR LM Medication Prescription](StructureDefinition-fr-lm-medication-prescription.md), [Modèle logique métier - FR LM Traitement dispensé](StructureDefinition-fr-lm-traitement-dispense.md) and [Modèle logique métier - FR LM Traitement](StructureDefinition-fr-lm-traitement.md)
+* Utilise ce/t/te Modèle logique: [Logical model - FR LM Medication Dispense](StructureDefinition-fr-lm-medication-dispense.md), [Logical model - FR LM Medication Prescription](StructureDefinition-fr-lm-medication-prescription.md) and [Modèle logique métier - FR LM Traitement](StructureDefinition-fr-lm-traitement.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-dosage-instructions)
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-dosage-instruc
   "name" : "FRLMDosageInstructions",
   "title" : "Logical model- FR LM Dosage Instructions",
   "status" : "draft",
-  "date" : "2026-04-09T12:24:05+00:00",
+  "date" : "2026-04-13T08:58:24+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

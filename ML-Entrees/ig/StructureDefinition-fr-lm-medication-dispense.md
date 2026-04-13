@@ -1,24 +1,24 @@
-# Modèle logique métier - FR LM Traitement dispensé - ANS IG document core v0.1.0-snapsnot
+# Logical model - FR LM Medication Dispense - ANS IG document core v0.1.0-snapsnot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Modèle logique métier - FR LM Traitement dispensé**
+* **Logical model - FR LM Medication Dispense**
 
-## Logical Model: Modèle logique métier - FR LM Traitement dispensé 
+## Logical Model: Logical model - FR LM Medication Dispense 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-traitement-dispense | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-09 | *Computable Name*:FRLMTraitementDispense |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication-dispense | *Version*:0.1.0-snapsnot |
+| Draft as of 2026-04-13 | *Computable Name*:FRLMMedicationDispense |
 
  
-Traitement dispense 
+Entrée Traitement dispense 
 
 **Utilisations:**
 
 * Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Dispensation médicaments](StructureDefinition-fr-lm-dispensation-medicaments.md)
 
-Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-traitement-dispense)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-medication-dispense)
 
 ### Formal Views of Profile Content
 
@@ -26,7 +26,7 @@ Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https:/
 
  
 
-Other representations of profile: [CSV](StructureDefinition-fr-lm-traitement-dispense.csv), [Excel](StructureDefinition-fr-lm-traitement-dispense.xlsx) 
+Other representations of profile: [CSV](StructureDefinition-fr-lm-medication-dispense.csv), [Excel](StructureDefinition-fr-lm-medication-dispense.xlsx) 
 
 
 
@@ -35,17 +35,17 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-traitement-dis
 ```json
 {
   "resourceType" : "StructureDefinition",
-  "id" : "fr-lm-traitement-dispense",
+  "id" : "fr-lm-medication-dispense",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics",
     "valueCode" : "can-be-target"
   }],
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-traitement-dispense",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication-dispense",
   "version" : "0.1.0-snapsnot",
-  "name" : "FRLMTraitementDispense",
-  "title" : "Modèle logique métier - FR LM Traitement dispensé",
+  "name" : "FRLMMedicationDispense",
+  "title" : "Logical model - FR LM Medication Dispense",
   "status" : "draft",
-  "date" : "2026-04-09T12:24:05+00:00",
+  "date" : "2026-04-13T08:58:24+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -54,7 +54,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-traitement-dis
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Traitement dispense",
+  "description" : "Entrée Traitement dispense",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -65,31 +65,19 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-traitement-dis
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
-  "type" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-traitement-dispense",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
+  "type" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication-dispense",
+  "baseDefinition" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry",
   "derivation" : "specialization",
   "differential" : {
     "element" : [{
-      "id" : "fr-lm-traitement-dispense",
-      "path" : "fr-lm-traitement-dispense",
-      "short" : "Modèle logique métier - FR LM Traitement dispensé",
-      "definition" : "Traitement dispense"
+      "id" : "fr-lm-medication-dispense",
+      "path" : "fr-lm-medication-dispense",
+      "short" : "Logical model - FR LM Medication Dispense",
+      "definition" : "Entrée Traitement dispense"
     },
     {
-      "id" : "fr-lm-traitement-dispense.identifiant",
-      "path" : "fr-lm-traitement-dispense.identifiant",
-      "short" : "Identifiant de l’entrée",
-      "definition" : "Identifiant de l’entrée",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier"]
-      }]
-    },
-    {
-      "id" : "fr-lm-traitement-dispense.completude",
-      "path" : "fr-lm-traitement-dispense.completude",
+      "id" : "fr-lm-medication-dispense.completude",
+      "path" : "fr-lm-medication-dispense.completude",
       "short" : "Complétude de la dispensation",
       "definition" : "Complétude de la dispensation",
       "min" : 0,
@@ -103,8 +91,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-traitement-dis
       }
     },
     {
-      "id" : "fr-lm-traitement-dispense.quantite",
-      "path" : "fr-lm-traitement-dispense.quantite",
+      "id" : "fr-lm-medication-dispense.quantite",
+      "path" : "fr-lm-medication-dispense.quantite",
       "short" : "Quantité : Unité issue de EDQM Packaging",
       "definition" : "Quantité : Unité issue de EDQM Packaging",
       "min" : 1,
@@ -114,8 +102,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-traitement-dis
       }]
     },
     {
-      "id" : "fr-lm-traitement-dispense.medicamentDelivre",
-      "path" : "fr-lm-traitement-dispense.medicamentDelivre",
+      "id" : "fr-lm-medication-dispense.medicamentDelivre",
+      "path" : "fr-lm-medication-dispense.medicamentDelivre",
       "short" : "Médicament délivré",
       "definition" : "Médicament délivré",
       "min" : 1,
@@ -125,8 +113,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-traitement-dis
       }]
     },
     {
-      "id" : "fr-lm-traitement-dispense.referencePrescription",
-      "path" : "fr-lm-traitement-dispense.referencePrescription",
+      "id" : "fr-lm-medication-dispense.referencePrescription",
+      "path" : "fr-lm-medication-dispense.referencePrescription",
       "short" : "Référence de la prescription",
       "definition" : "Référence de la prescription",
       "min" : 0,
@@ -136,8 +124,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-traitement-dis
       }]
     },
     {
-      "id" : "fr-lm-traitement-dispense.posologie",
-      "path" : "fr-lm-traitement-dispense.posologie",
+      "id" : "fr-lm-medication-dispense.posologie",
+      "path" : "fr-lm-medication-dispense.posologie",
       "short" : "Posologie",
       "definition" : "Posologie",
       "min" : 0,
@@ -147,8 +135,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-traitement-dis
       }]
     },
     {
-      "id" : "fr-lm-traitement-dispense.notesDispensateur",
-      "path" : "fr-lm-traitement-dispense.notesDispensateur",
+      "id" : "fr-lm-medication-dispense.notesDispensateur",
+      "path" : "fr-lm-medication-dispense.notesDispensateur",
       "short" : "Notes du dispensateur",
       "definition" : "Notes du dispensateur",
       "min" : 0,
@@ -158,8 +146,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-traitement-dis
       }]
     },
     {
-      "id" : "fr-lm-traitement-dispense.autorisationSubstitution",
-      "path" : "fr-lm-traitement-dispense.autorisationSubstitution",
+      "id" : "fr-lm-medication-dispense.autorisationSubstitution",
+      "path" : "fr-lm-medication-dispense.autorisationSubstitution",
       "short" : "Autorisation de substitution",
       "definition" : "Autorisation de substitution",
       "min" : 1,
@@ -169,8 +157,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-traitement-dis
       }]
     },
     {
-      "id" : "fr-lm-traitement-dispense.autorisationSubstitution.type",
-      "path" : "fr-lm-traitement-dispense.autorisationSubstitution.type",
+      "id" : "fr-lm-medication-dispense.autorisationSubstitution.type",
+      "path" : "fr-lm-medication-dispense.autorisationSubstitution.type",
       "short" : "Type de substitution jdv-hl7-v3-ActSubstanceAdminSubstitutionCode-cisis (2.16.840.1.113883.1.11.16621)",
       "definition" : "Type de substitution jdv-hl7-v3-ActSubstanceAdminSubstitutionCode-cisis (2.16.840.1.113883.1.11.16621)",
       "min" : 0,

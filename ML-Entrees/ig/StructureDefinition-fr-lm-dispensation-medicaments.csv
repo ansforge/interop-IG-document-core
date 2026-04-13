@@ -11,7 +11,7 @@
 ","Sous-sections","Sous-sections","","","","","","","","","",,,,,"",,,,"fr-lm-section.sousSection",0,*,"",""
 "fr-lm-dispensation-medicaments.entree","fr-lm-dispensation-medicaments.entree","","","",1,*,"","","","Base {[]} {[]}
 ","Entrées","Entrées","","","","","","","","","",,,,,"",,,,"fr-lm-section.entree",0,*,"",""
-"fr-lm-dispensation-medicaments.entree.traitementDispense","fr-lm-dispensation-medicaments.entree.traitementDispense","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-traitement-dispense {[]} {[]}
+"fr-lm-dispensation-medicaments.entree.traitementDispense","fr-lm-dispensation-medicaments.entree.traitementDispense","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication-dispense {[]} {[]}
 ","Entrée Traitement dispensé","Entrée Traitement dispensé","","","","","","","","","",,,,,"",,,,"fr-lm-dispensation-medicaments.entree.traitementDispense",1,*,"",""
 "fr-lm-dispensation-medicaments.auteur","fr-lm-dispensation-medicaments.auteur","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-auteur {[]} {[]}
 ","Auteur","Auteur","","","","","","","","","",,,,,"",,,,"fr-lm-dispensation-medicaments.auteur",1,1,"",""

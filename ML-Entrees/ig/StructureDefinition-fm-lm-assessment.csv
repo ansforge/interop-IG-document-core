@@ -1,6 +1,36 @@
 "Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
 "fm-lm-assessment","fm-lm-assessment","","","",0,*,"","","","null {[]} {[]}
 ","Logical model - FR LM Assessment","Entrée Evaluation","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"fm-lm-assessment.header","fm-lm-assessment.header","","","",1,1,"","","","Base {[]} {[]}
+","Métadonnées de base","Métadonnées de base","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header",1,1,"",""
+"fm-lm-assessment.header.subject","fm-lm-assessment.header.subject","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-usager {[]} {[]}
+","Patient/subject information","Patient/subject information","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.subject",1,1,"",""
+"fm-lm-assessment.header.identifier","fm-lm-assessment.header.identifier","","","",0,*,"","","","Identifier {[]} {[]}
+","Identifiant de l’entrée","Identifiant de l’entrée","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.identifier",0,*,"",""
+"fm-lm-assessment.header.author[x]","fm-lm-assessment.header.author[x]","","","",0,*,"","","","Base {[]} {[]}
+","author[x] peut correspondre soit à un professionnel, soit à une organisation, soit à un système.","author[x] peut correspondre soit à un professionnel, soit à une organisation, soit à un système.","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.author[x]",0,*,"",""
+"fm-lm-assessment.header.author[x].authorProfessional","fm-lm-assessment.header.author[x].authorProfessional","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure {[]} {[]}
+","L'auteur est un professionnel de santé","L'auteur est un professionnel de santé","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.author[x].authorProfessional",0,*,"",""
+"fm-lm-assessment.header.author[x].authorOrganisation","fm-lm-assessment.header.author[x].authorOrganisation","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure {[]} {[]}
+","L'auteur est une organisation","L'auteur est une organisation","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.author[x].authorOrganisation",0,*,"",""
+"fm-lm-assessment.header.author[x].authorDevice","fm-lm-assessment.header.author[x].authorDevice","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-systeme-structure-auteur {[]} {[]}
+","L'auteur est un système","L'auteur est un système","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.author[x].authorDevice",0,*,"",""
+"fm-lm-assessment.header.performer","fm-lm-assessment.header.performer","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure {[]} {[]}
+","Exécutant (performer)","Exécutant (performer)","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.performer",0,*,"",""
+"fm-lm-assessment.header.participant","fm-lm-assessment.header.participant","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-participant-corps {[]} {[]}
+","Participant","Participant","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.participant",0,*,"",""
+"fm-lm-assessment.header.informant","fm-lm-assessment.header.informant","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-informateur {[]} {[]}
+","Informateur","Informateur","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.informant",0,*,"",""
+"fm-lm-assessment.header.date","fm-lm-assessment.header.date","","","",0,1,"","","","dateTime {[]} {[]}
+","Date/Heure de création par l'auteur","Date/Heure de création par l'auteur","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.date",0,1,"",""
+"fm-lm-assessment.header.source","fm-lm-assessment.header.source","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Source","Source","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.source",0,1,"",""
+"fm-lm-assessment.header.langue","fm-lm-assessment.header.langue","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","'fr-FR' pour français métropolitain (la casse des caractères doit être respectée)
+La partie en minuscules indique le code de la langue utilisée (ISO-639-1)
+La partie en majuscules indique le code pays (ISO-3166)","'fr-FR' pour français métropolitain (la casse des caractères doit être respectée)
+La partie en minuscules indique le code de la langue utilisée (ISO-639-1)
+La partie en majuscules indique le code pays (ISO-3166)","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.langue",0,1,"",""
 "fm-lm-assessment.status","fm-lm-assessment.status","","","",1,1,"","","","code {[]} {[]}
 ","Statut de l'évaluation","Statut de l'évaluation","","","","","","","","","",,,,,"",,,,"fm-lm-assessment.status",1,1,"",""
 "fm-lm-assessment.observationDate[x]","fm-lm-assessment.observationDate[x]","","","",1,1,"","","","dateTime {[]} {[]}

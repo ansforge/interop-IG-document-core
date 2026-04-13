@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-evenement-indesirable-suite-administration-derives-sang | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-09 | *Computable Name*:FRCDAEvenementIndesirableSuiteAdministrationDerivesSang |
+| Draft as of 2026-04-13 | *Computable Name*:FRCDAEvenementIndesirableSuiteAdministrationDerivesSang |
 
  
 Entrée FR-Evenement-indesirable-suite-administration-derives-sang: Cette entrée permet de décrire sous forme textuelle des événements indésirables survenus suite à l’administration de dérivés du sang. 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-evenement-ind
   "name" : "FRCDAEvenementIndesirableSuiteAdministrationDerivesSang",
   "title" : "CDA - FR Evenement indesirable suite administration derives sang",
   "status" : "draft",
-  "date" : "2026-04-09T12:24:05+00:00",
+  "date" : "2026-04-13T08:58:24+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

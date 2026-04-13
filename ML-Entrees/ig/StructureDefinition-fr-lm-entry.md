@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-09 | *Computable Name*:FRLMEntry |
+| Draft as of 2026-04-13 | *Computable Name*:FRLMEntry |
 
  
 Modèle logique représentant l’entrée 
 
 **Utilisations:**
 
-* Dérivé de ce Modèle logique: [Logical model - FR LM Allergy Intolerance](StructureDefinition-fr-lm-allergy-intolerance.md), [Logical model - FR LM Care Plan](StructureDefinition-fr-lm-care-plan.md), [Logical model - FR LM Condition](StructureDefinition-fr-lm-condition.md), [Logical model - FR LM Device use](StructureDefinition-fr-lm-device-use.md)... Show 4 more, [Logical model - FR LM Family Member History](StructureDefinition-fr-lm-family-member-history.md), [Logical model - FR LM Immunisation](StructureDefinition-fr-lm-immunisation.md), [Logical model - FR LM Observation Vital Sign](StructureDefinition-fr-lm-observation-vital-sign.md) and [Logical model- FR LM Procedure](StructureDefinition-fr-lm-procedure.md)
+* Dérivé de ce Modèle logique: [Logical model - FR LM Assessment](StructureDefinition-fm-lm-assessment.md), [Logical model- FR LM Observation Social History](StructureDefinition-fm-lm-observation-social-history.md), [Logical model - FR LM Allergy Intolerance](StructureDefinition-fr-lm-allergy-intolerance.md), [Logical model - FR LM Care Plan](StructureDefinition-fr-lm-care-plan.md)... Show 11 more, [Logical model - FR LM Condition](StructureDefinition-fr-lm-condition.md), [Logical model - FR LM Device use](StructureDefinition-fr-lm-device-use.md), [Logical model - FR LM Family Member History](StructureDefinition-fr-lm-family-member-history.md), [Logical model - FR LM Immunisation](StructureDefinition-fr-lm-immunisation.md), [Logical model - FR LM Immunization Recommendation](StructureDefinition-fr-lm-immunization-recommendation.md), [Logical model - FR LM Medication Dispense](StructureDefinition-fr-lm-medication-dispense.md), [Logical model - FR LM Medication Prescription](StructureDefinition-fr-lm-medication-prescription.md), [Logical model - FR LM Observation Vital Sign](StructureDefinition-fr-lm-observation-vital-sign.md), [Logical model- FR LM Procedure](StructureDefinition-fr-lm-procedure.md), [Modèle logique métier - FR LM Transfert du patient](StructureDefinition-fr-lm-transfert-du-patient.md) and [Logical model - FR LM Transfusion de produits sanguins](StructureDefinition-fr-lm-transfusion-de-produits-sanguins.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-entry)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-entry.csv), [E
   "name" : "FRLMEntry",
   "title" : "FR LM Entry",
   "status" : "draft",
-  "date" : "2026-04-09T12:24:05+00:00",
+  "date" : "2026-04-13T08:58:24+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

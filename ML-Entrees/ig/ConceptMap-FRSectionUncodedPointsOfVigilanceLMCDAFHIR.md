@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRSectionUncodedPointsOfVigilanceLMCDAFHIR | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-09 | *Computable Name*: |
+| Draft as of 2026-04-13 | *Computable Name*: |
 
  
 Mapping des éléments du modèle métier FRLMPointsDeVigilancesNonCode vers la section CDA FRCDAPointsDeVigilancesNonCode, puis vers la section FHIR FRCompositionDocument.section:uncodedPointsOfVigilance. 
@@ -26,7 +26,7 @@ Mapping des éléments du modèle métier FRLMPointsDeVigilancesNonCode vers la 
   "version" : "0.1.0-snapsnot",
   "title" : "Mapping Métier/CDA/FHIR : \"Points de vigilance (non-codés)\"",
   "status" : "draft",
-  "date" : "2026-04-09T12:24:05+00:00",
+  "date" : "2026-04-13T08:58:24+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-reference-item-prescription | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-09 | *Computable Name*:FRLMReferenceItemPrescription |
+| Draft as of 2026-04-13 | *Computable Name*:FRLMReferenceItemPrescription |
 
  
 Référence item prescription 
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Traitement dispensé](StructureDefinition-fr-lm-traitement-dispense.md)
+* Utilise ce/t/te Modèle logique: [Logical model - FR LM Medication Dispense](StructureDefinition-fr-lm-medication-dispense.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-reference-item-prescription)
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-reference-item
   "name" : "FRLMReferenceItemPrescription",
   "title" : "Modèle logique métier - FR LM Référence item prescription",
   "status" : "draft",
-  "date" : "2026-04-09T12:24:05+00:00",
+  "date" : "2026-04-13T08:58:24+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

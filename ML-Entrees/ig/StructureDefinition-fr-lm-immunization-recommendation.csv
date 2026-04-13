@@ -1,0 +1,57 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"fr-lm-immunization-recommendation","fr-lm-immunization-recommendation","","","",0,*,"","","","null {[]} {[]}
+","Logical model - FR LM Immunization Recommendation","Entrée Vaccin recommandé","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"fr-lm-immunization-recommendation.header","fr-lm-immunization-recommendation.header","","","",1,1,"","","","Base {[]} {[]}
+","Métadonnées de base","Métadonnées de base","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header",1,1,"",""
+"fr-lm-immunization-recommendation.header.subject","fr-lm-immunization-recommendation.header.subject","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-usager {[]} {[]}
+","Patient/subject information","Patient/subject information","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.subject",1,1,"",""
+"fr-lm-immunization-recommendation.header.identifier","fr-lm-immunization-recommendation.header.identifier","","","",0,*,"","","","Identifier {[]} {[]}
+","Identifiant de l’entrée","Identifiant de l’entrée","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.identifier",0,*,"",""
+"fr-lm-immunization-recommendation.header.author[x]","fr-lm-immunization-recommendation.header.author[x]","","","",0,*,"","","","Base {[]} {[]}
+","author[x] peut correspondre soit à un professionnel, soit à une organisation, soit à un système.","author[x] peut correspondre soit à un professionnel, soit à une organisation, soit à un système.","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.author[x]",0,*,"",""
+"fr-lm-immunization-recommendation.header.author[x].authorProfessional","fr-lm-immunization-recommendation.header.author[x].authorProfessional","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure {[]} {[]}
+","L'auteur est un professionnel de santé","L'auteur est un professionnel de santé","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.author[x].authorProfessional",0,*,"",""
+"fr-lm-immunization-recommendation.header.author[x].authorOrganisation","fr-lm-immunization-recommendation.header.author[x].authorOrganisation","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure {[]} {[]}
+","L'auteur est une organisation","L'auteur est une organisation","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.author[x].authorOrganisation",0,*,"",""
+"fr-lm-immunization-recommendation.header.author[x].authorDevice","fr-lm-immunization-recommendation.header.author[x].authorDevice","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-systeme-structure-auteur {[]} {[]}
+","L'auteur est un système","L'auteur est un système","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.author[x].authorDevice",0,*,"",""
+"fr-lm-immunization-recommendation.header.performer","fr-lm-immunization-recommendation.header.performer","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure {[]} {[]}
+","Exécutant (performer)","Exécutant (performer)","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.performer",0,*,"",""
+"fr-lm-immunization-recommendation.header.participant","fr-lm-immunization-recommendation.header.participant","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-participant-corps {[]} {[]}
+","Participant","Participant","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.participant",0,*,"",""
+"fr-lm-immunization-recommendation.header.informant","fr-lm-immunization-recommendation.header.informant","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-informateur {[]} {[]}
+","Informateur","Informateur","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.informant",0,*,"",""
+"fr-lm-immunization-recommendation.header.date","fr-lm-immunization-recommendation.header.date","","","",0,1,"","","","dateTime {[]} {[]}
+","Date/Heure de création par l'auteur","Date/Heure de création par l'auteur","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.date",0,1,"",""
+"fr-lm-immunization-recommendation.header.source","fr-lm-immunization-recommendation.header.source","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Source","Source","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.source",0,1,"",""
+"fr-lm-immunization-recommendation.header.langue","fr-lm-immunization-recommendation.header.langue","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","'fr-FR' pour français métropolitain (la casse des caractères doit être respectée)
+La partie en minuscules indique le code de la langue utilisée (ISO-639-1)
+La partie en majuscules indique le code pays (ISO-3166)","'fr-FR' pour français métropolitain (la casse des caractères doit être respectée)
+La partie en minuscules indique le code de la langue utilisée (ISO-639-1)
+La partie en majuscules indique le code pays (ISO-3166)","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.langue",0,1,"",""
+"fr-lm-immunization-recommendation.identifiantVaccinRecommande","fr-lm-immunization-recommendation.identifiantVaccinRecommande","","","",1,1,"","","","Identifier {[]} {[]}
+","Identifiant de l’entrée","Identifiant de l’entrée","","","","","","","","","",,,,,"",,,,"fr-lm-immunization-recommendation.identifiantVaccinRecommande",1,1,"",""
+"fr-lm-immunization-recommendation.codeVaccinRecommande","fr-lm-immunization-recommendation.codeVaccinRecommande","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Type d'acte : vaccination","Type d'acte : vaccination","","","","","","","","","",,,,,"",,,,"fr-lm-immunization-recommendation.codeVaccinRecommande",1,1,"",""
+"fr-lm-immunization-recommendation.descriptionNarrativeVaccinRecommande","fr-lm-immunization-recommendation.descriptionNarrativeVaccinRecommande","","","",1,1,"","","","Narrative {[]} {[]}
+","Partie narrative de l’entrée","Partie narrative de l’entrée","","","","","","","","","",,,,,"",,,,"fr-lm-immunization-recommendation.descriptionNarrativeVaccinRecommande",1,1,"",""
+"fr-lm-immunization-recommendation.statutVaccinRecommande","fr-lm-immunization-recommendation.statutVaccinRecommande","","","",1,1,"","","","code {[]} {[]}
+","Statut de l’entrée","Statut de l’entrée","","","","","","","","","",,,,,"",,,,"fr-lm-immunization-recommendation.statutVaccinRecommande",1,1,"",""
+"fr-lm-immunization-recommendation.periodeVaccination","fr-lm-immunization-recommendation.periodeVaccination","","","",1,1,"","","","dateTime {[]} {[]}
+","Période de vaccination souhaitable","Période de vaccination souhaitable","","","","","","","","","",,,,,"",,,,"fr-lm-immunization-recommendation.periodeVaccination",1,1,"",""
+"fr-lm-immunization-recommendation.voieAdministration","fr-lm-immunization-recommendation.voieAdministration","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Voie d’administration","Voie d’administration","","","","","","","","","",,,,,"",,,,"fr-lm-immunization-recommendation.voieAdministration",0,1,"",""
+"fr-lm-immunization-recommendation.regionAnatomique","fr-lm-immunization-recommendation.regionAnatomique","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","Région anatomique d'administration","Région anatomique d'administration","","","","","","","","","",,"","SNOMED CT (2.16.840.1.113883.6.96)","","",,,,"fr-lm-immunization-recommendation.regionAnatomique",0,*,"",""
+"fr-lm-immunization-recommendation.doseAdministree","fr-lm-immunization-recommendation.doseAdministree","","","",0,1,"","","","Quantity {[]} {[]}
+","Dose administrée","Dose administrée","","","","","","","","","",,,,,"",,,,"fr-lm-immunization-recommendation.doseAdministree",0,1,"",""
+"fr-lm-immunization-recommendation.vaccin","fr-lm-immunization-recommendation.vaccin","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication {[]} {[]}
+","Vaccin","Vaccin","","","","","","","","","",,,,,"",,,,"fr-lm-immunization-recommendation.vaccin",1,1,"",""
+"fr-lm-immunization-recommendation.prescription","fr-lm-immunization-recommendation.prescription","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-prescription-entree {[]} {[]}
+","Référence de la prescription","Référence de la prescription","","","","","","","","","",,,,,"",,,,"fr-lm-immunization-recommendation.prescription",0,1,"",""
+"fr-lm-immunization-recommendation.rangVaccination","fr-lm-immunization-recommendation.rangVaccination","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dose-number {[]} {[]}
+","Rang de la vaccination","Rang de la vaccination","","","","","","","","","",,,,,"",,,,"fr-lm-immunization-recommendation.rangVaccination",0,1,"",""
+"fr-lm-immunization-recommendation.commentaire","fr-lm-immunization-recommendation.commentaire","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-commentaire-er {[]} {[]}
+","Commentaire","Commentaire","","","","","","","","","",,,,,"",,,,"fr-lm-immunization-recommendation.commentaire",0,1,"",""

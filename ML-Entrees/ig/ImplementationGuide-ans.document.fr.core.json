@@ -10,7 +10,7 @@
   "name" : "FRDocumentCore",
   "title" : "ANS IG document core",
   "status" : "draft",
-  "date" : "2026-04-09T12:24:05+00:00",
+  "date" : "2026-04-13T08:58:24+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -3561,10 +3561,36 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/fr-lm-immunization-recommendation"
+      },
+      "name" : "Logical model - FR LM Immunization Recommendation",
+      "description" : "Entrée Vaccin recommandé",
+      "exampleBoolean" : false,
+      "groupingId" : "Modèles logiques métier des composants élémentaires"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/fr-lm-medication"
       },
       "name" : "Logical model - FR LM Medication",
       "description" : "Entrée Produit de santé",
+      "exampleBoolean" : false,
+      "groupingId" : "Modèles logiques métier des composants élémentaires"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-lm-medication-dispense"
+      },
+      "name" : "Logical model - FR LM Medication Dispense",
+      "description" : "Entrée Traitement dispense",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier des composants élémentaires"
     },
@@ -3591,6 +3617,19 @@
       },
       "name" : "Logical model - FR LM Observation Vital Sign",
       "description" : "Signe vital observé",
+      "exampleBoolean" : false,
+      "groupingId" : "Modèles logiques métier des composants élémentaires"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-lm-transfusion-de-produits-sanguins"
+      },
+      "name" : "Logical model - FR LM Transfusion de produits sanguins",
+      "description" : "Transfusion de produits sanguins",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier des composants élémentaires"
     },
@@ -7093,19 +7132,6 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/fr-lm-traitement-dispense"
-      },
-      "name" : "Modèle logique métier - FR LM Traitement dispensé",
-      "description" : "Traitement dispense",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/fr-lm-traitements"
       },
       "name" : "Modèle logique métier - FR LM Traitements",
@@ -7149,32 +7175,6 @@
       },
       "name" : "Modèle logique métier - FR LM Transfert du patient",
       "description" : "Transfert du patient",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-lm-transfusion-de-produits-sanguins"
-      },
-      "name" : "Modèle logique métier - FR LM Transfusion de produits sanguins",
-      "description" : "Transfusion de produits sanguins",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-lm-vaccin-recommande"
-      },
-      "name" : "Modèle logique métier - FR LM Vaccin recommandé",
-      "description" : "Vaccin recommandé",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier des composants élémentaires"
     },

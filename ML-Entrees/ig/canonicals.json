@@ -2596,6 +2596,13 @@
   "name" : "FRLMImmunisation"
 },
 {
+  "id" : "fr-lm-immunization-recommendation",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-immunization-recommendation",
+  "version" : "0.1.0-snapsnot",
+  "name" : "FRLMImmunizationRecommendation"
+},
+{
   "id" : "fr-lm-imputabilite-effet-indesirable",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-imputabilite-effet-indesirable",
@@ -2643,6 +2650,13 @@
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication",
   "version" : "0.1.0-snapsnot",
   "name" : "FRLMMedication"
+},
+{
+  "id" : "fr-lm-medication-dispense",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication-dispense",
+  "version" : "0.1.0-snapsnot",
+  "name" : "FRLMMedicationDispense"
 },
 {
   "id" : "fr-lm-medication-prescription",
@@ -3107,13 +3121,6 @@
   "name" : "FRLMTraitement"
 },
 {
-  "id" : "fr-lm-traitement-dispense",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-traitement-dispense",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRLMTraitementDispense"
-},
-{
   "id" : "fr-lm-traitement-sortie",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-traitement-sortie",
@@ -3147,13 +3154,6 @@
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-transfusion-de-produits-sanguins",
   "version" : "0.1.0-snapsnot",
   "name" : "FRLMTransfusionDeProduitsSanguins"
-},
-{
-  "id" : "fr-lm-vaccin-recommande",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-vaccin-recommande",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRLMVaccinRecommande"
 },
 {
   "id" : "fr-lm-vaccinations",
