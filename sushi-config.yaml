@@ -311,8 +311,36 @@ groups:
       - StructureDefinition/fr-cda-encounter-participant
       - StructureDefinition/fr-cda-health-care-facility
   
-  Ressources CDA corps:
-    name: Eléments CDA du corps
+  Ressources CDA corps des sections :
+    name: Eléments CDA du corps des sections
+    resources:
+      - StructureDefinition/fr-facteurs-de-risque-professionnels-non-code
+      - StructureDefinition/fr-fonctions-physiques
+      - StructureDefinition/fr-habitus-mode-de-vie
+      - StructureDefinition/fr-historique-des-actes
+      - StructureDefinition/fr-historique-des-grossesses
+      - StructureDefinition/fr-plan-de-soins
+      - StructureDefinition/fr-points-de-vigilances-non-code
+      - StructureDefinition/fr-prescription-dispositifs-medicaux
+      - StructureDefinition/fr-prescription-medicaments
+      - StructureDefinition/fr-problemes-actifs
+      - StructureDefinition/fr-raison-de-la-recommandation
+      - StructureDefinition/fr-raison-de-la-recommandation-non-code
+      - StructureDefinition/fr-resultats
+      - StructureDefinition/fr-resultats-de-laboratoire-de-biologie-de-seconde-intention
+      - StructureDefinition/fr-resultats-evenements
+      - StructureDefinition/fr-resultats-examens
+      - StructureDefinition/fr-resultats-examens-non-code
+      - StructureDefinition/fr-signes-vitaux
+      - StructureDefinition/fr-statut-du-document
+      - StructureDefinition/fr-statut-fonctionnel
+      - StructureDefinition/fr-traitements
+      - StructureDefinition/fr-traitements-administres
+      - StructureDefinition/fr-traitements-a-la-sortie
+      - StructureDefinition/fr-vaccinations
+
+  Ressources CDA corps des composants élémentaires :
+    name: Eléments CDA du corps des composants élémentaires
     resources:
       - StructureDefinition/cisis-telecom
       - StructureDefinition/cisis-addr
