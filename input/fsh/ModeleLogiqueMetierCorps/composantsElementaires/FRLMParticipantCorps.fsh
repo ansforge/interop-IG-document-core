@@ -1,6 +1,6 @@
 Logical: FRLMParticipantCorps
 Id: fr-lm-participant-corps
-Title: "Modèle logique métier - FR LM Participant"
+Title: "Logical model - FR LM Participant"
 Description: """Participant"""
 * dateEtHeureParticipation 0..1 dateTime "Date et heure de la participation"		 		
 * participantRole  1..1 BackboneElement "Participant"

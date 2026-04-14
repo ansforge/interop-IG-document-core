@@ -14,7 +14,7 @@ Characteristics: #can-be-target
 * laboratoireExecutant 0..* FRLMLaboratoireExecutant "Laboratoire sous-traitant. Apparaît à ce niveau si et et seulement si ce résultat a été produit par un laboratoire exécutant distinct du laboratoire exécutant déclaré aux niveaux supérieurs."
 * auteur 0..* FRLMPersonneStructureAuteur "Auteur"
 * participant 0..* FRLMParticipant "Participant"
-* prelevement 0..* FRLMPrelevement "Prélèvement"
+* prelevement 0..* FRLMSpecimen "Prélèvement"
 * resultatElementCliniquePertinent 0..* FRLMResultatExamensBiologieElementCliniquePertinent "Résultat d'examen de biologie / élément clinique pertinent"
 * imageIllustrative 0..* FRLMImageIllustrative "Image illustrative"
 * commentaire 0..* string "Commentaire"

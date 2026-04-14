@@ -1,12 +1,12 @@
 Logical: FRLMSerieImagerie
 Id: fr-lm-serie-imagerie
-Title: "Modèle logique métier - FR LM Serie imagerie"
+Parent: FRLMEntry
+Title: "Logical model - FR LM Serie imagerie"
 Description: """Serie imagerie"""
 Characteristics: #can-be-target
 
 * uuidSerie 1..* Identifier "UUID serie"
 * code 1..1 CodeableConcept "Code de l'entrée"
-* description 0..1 Narrative "Partie narrative de l'entrée"
 * date 0..1 dateTime "Date de la série d'actes" 
 * instanceSOP 1..1 FRLMSOPInstance "SOP instance"
 * referenceWado 1..1 Base "Référence WADO"

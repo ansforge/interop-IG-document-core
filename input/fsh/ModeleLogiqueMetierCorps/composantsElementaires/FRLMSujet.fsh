@@ -1,6 +1,6 @@
 Logical: FRLMSujet
 Id: fr-lm-sujet
-Title: "Modèle logique métier - FR LM Sujet"
+Title: "Logical model - FR LM Sujet"
 Description: "Sujet"
 
 * lienPatient 1..1 CodeableConcept "Lien avec le patient"	

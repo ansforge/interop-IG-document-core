@@ -192,9 +192,6 @@ groups:
       - StructureDefinition/fr-lm-reference-interne
       - StructureDefinition/fr-lm-references-externes
       - StructureDefinition/fr-lm-observation
-      - StructureDefinition/fr-lm-statut-clinique-patient
-      - StructureDefinition/fr-lm-statut-probleme
-      - StructureDefinition/fr-lm-severite
       - StructureDefinition/fr-lm-allergy-intolerance	
       - StructureDefinition/fr-lm-advance-directive
       - StructureDefinition/fr-lm-device-use
@@ -212,23 +209,22 @@ groups:
       - StructureDefinition/fr-lm-hors-amm
       - StructureDefinition/fr-lm-image-illustrative
       - StructureDefinition/fr-lm-imputabilite-effet-indesirable
-      - StructureDefinition/fr-lm-naissance
+      - StructureDefinition/fr-lm-birth-event
       - StructureDefinition/fr-lm-non-remboursable
-      - StructureDefinition/fr-lm-observation-grossesse
-      - StructureDefinition/fr-lm-prescription-entree
+      - StructureDefinition/fr-lm-observation-pregnancy
       - StructureDefinition/fr-lm-medication
       - StructureDefinition/fr-lm-dose-number
       - StructureDefinition/fr-lm-resultats-entree
       - StructureDefinition/fr-lm-resultats-examens-biologie-medicale
       - StructureDefinition/fr-lm-observation-vital-sign
-      - StructureDefinition/fr-lm-statut
+      - StructureDefinition/fr-lm-status
       - StructureDefinition/fr-lm-medication-administration
       - StructureDefinition/fr-lm-dicom-medication-administration
       - StructureDefinition/fr-lm-immunization-recommendation
       - StructureDefinition/fr-lm-immunisation
       - StructureDefinition/fr-lm-medication-dispense
       - StructureDefinition/fr-lm-reference-item-prescription
-      - StructureDefinition/fr-lm-prelevement
+      - StructureDefinition/fr-lm-specimen
       - StructureDefinition/fr-lm-batterie-examens-biologie-medicale
       - StructureDefinition/fr-lm-isolat-microbiologique
       - StructureDefinition/fr-lm-resultat-examens-biologie-element-clinique-pertinent
@@ -240,7 +236,7 @@ groups:
       - StructureDefinition/fr-lm-medication-prescription
       - StructureDefinition/fr-lm-quantite-exposition
       - StructureDefinition/fr-lm-quantity-prescribed
-      - StructureDefinition/fr-lm-statut-document-entree
+      - StructureDefinition/fr-lm-status-document-entry
       - StructureDefinition/fr-lm-transfusion-de-produits-sanguins
       - StructureDefinition/fr-lm-synthese-medicale-sejour
       - StructureDefinition/fr-lm-identification-de-micro-organismes-multiresistants
@@ -250,19 +246,19 @@ groups:
       - StructureDefinition/fr-lm-adverse-event-during-hospitalization
       - StructureDefinition/fr-lm-administration-blood-derivatives
       - StructureDefinition/fr-lm-transfusion-accidents
-      - StructureDefinition/fr-lm-transfert-du-patient
+      - StructureDefinition/fr-lm-patient-transfer
       - StructureDefinition/fr-lm-recherche-de-micro-organismes
       - StructureDefinition/fr-lm-sujet
       - StructureDefinition/fr-lm-participant-corps
       - StructureDefinition/fr-lm-sujet-non-humain
       - StructureDefinition/fr-lm-patient-sujet-non-humain
       - StructureDefinition/fr-lm-laboratoire-executant
-      - StructureDefinition/fr-lm-performer
       - StructureDefinition/fr-lm-participant-apsr
       - StructureDefinition/fr-lm-author-apsr
       - StructureDefinition/fr-lm-informant-apsr
       - StructureDefinition/fr-lm-device
       - StructureDefinition/fr-lm-dosage-instructions
+      - StructureDefinition/fr-lm-prescription-entree
   Ressources CDA entête:
     name: Eléments CDA
     #description: Profils CDA

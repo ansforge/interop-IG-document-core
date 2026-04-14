@@ -2,7 +2,7 @@
 Logical: FRLMPrescriptionEntree
 Id: fr-lm-prescription-entree
 //Parent : EHDSDosaging
-Title: "Modèle logique métier - FR LM Prescription"
+Title: "Logical model - FR LM Prescription"
 Description: """Prescription """
 Characteristics: #can-be-target
 
