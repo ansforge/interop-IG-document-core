@@ -17,7 +17,7 @@ https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patien
 ","Auteur","Auteur","","","","","","","","","",,,,,"",,,,"fr-lm-batterie-examens-biologie-medicale.auteur",0,*,"",""
 "fr-lm-batterie-examens-biologie-medicale.participant","fr-lm-batterie-examens-biologie-medicale.participant","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-participant {[]} {[]}
 ","Participant","Participant","","","","","","","","","",,,,,"",,,,"fr-lm-batterie-examens-biologie-medicale.participant",0,*,"",""
-"fr-lm-batterie-examens-biologie-medicale.prelevement","fr-lm-batterie-examens-biologie-medicale.prelevement","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-prelevement {[]} {[]}
+"fr-lm-batterie-examens-biologie-medicale.prelevement","fr-lm-batterie-examens-biologie-medicale.prelevement","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-specimen {[]} {[]}
 ","Prélèvement","Prélèvement","","","","","","","","","",,,,,"",,,,"fr-lm-batterie-examens-biologie-medicale.prelevement",0,*,"",""
 "fr-lm-batterie-examens-biologie-medicale.resultatElementCliniquePertinent","fr-lm-batterie-examens-biologie-medicale.resultatElementCliniquePertinent","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-resultat-examens-biologie-element-clinique-pertinent {[]} {[]}
 ","Résultat d'examen de biologie / élément clinique pertinent","Résultat d'examen de biologie / élément clinique pertinent","","","","","","","","","",,,,,"",,,,"fr-lm-batterie-examens-biologie-medicale.resultatElementCliniquePertinent",0,*,"",""

@@ -1,22 +1,22 @@
-# Modèle logique métier - FR LM Patient avec sujet non humain - ANS IG document core v0.1.0-snapsnot
+# Logical model - FR LM Patient avec sujet non humain - ANS IG document core v0.1.0-snapsnot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Modèle logique métier - FR LM Patient avec sujet non humain**
+* **Logical model - FR LM Patient avec sujet non humain**
 
-## Logical Model: Modèle logique métier - FR LM Patient avec sujet non humain 
+## Logical Model: Logical model - FR LM Patient avec sujet non humain 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-sujet-non-humain | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-13 | *Computable Name*:FRLMPatientSujetNonHumain |
+| Draft as of 2026-04-14 | *Computable Name*:FRLMPatientSujetNonHumain |
 
  
 Patient avec sujet non humain 
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Batterie d'examens de biologie médicale](StructureDefinition-fr-lm-batterie-examens-biologie-medicale.md), [Modèle logique métier - FR LM Isolat microbiologique](StructureDefinition-fr-lm-isolat-microbiologique.md), [Modèle logique métier - FR LM Résultat d'examens de biologie / élement clinique pertinent](StructureDefinition-fr-lm-resultat-examens-biologie-element-clinique-pertinent.md) and [Modèle logique métier - FR LM Resultats d'examens de biologie medicale](StructureDefinition-fr-lm-resultats-examens-biologie-medicale.md)
+* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Batterie d'examens de biologie médicale](StructureDefinition-fr-lm-batterie-examens-biologie-medicale.md), [Modèle logique métier - FR LM Isolat microbiologique](StructureDefinition-fr-lm-isolat-microbiologique.md), [Modèle logique métier - FR LM Résultat d'examens de biologie / élement clinique pertinent](StructureDefinition-fr-lm-resultat-examens-biologie-element-clinique-pertinent.md) and [Logical model - FR LM Resultats d'examens de biologie medicale](StructureDefinition-fr-lm-resultats-examens-biologie-medicale.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-patient-sujet-non-humain)
 
@@ -39,9 +39,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-patient-sujet-
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-sujet-non-humain",
   "version" : "0.1.0-snapsnot",
   "name" : "FRLMPatientSujetNonHumain",
-  "title" : "Modèle logique métier - FR LM Patient avec sujet non humain",
+  "title" : "Logical model - FR LM Patient avec sujet non humain",
   "status" : "draft",
-  "date" : "2026-04-13T09:04:52+00:00",
+  "date" : "2026-04-14T07:59:58+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -68,7 +68,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-patient-sujet-
     "element" : [{
       "id" : "fr-lm-patient-sujet-non-humain",
       "path" : "fr-lm-patient-sujet-non-humain",
-      "short" : "Modèle logique métier - FR LM Patient avec sujet non humain",
+      "short" : "Logical model - FR LM Patient avec sujet non humain",
       "definition" : "Patient avec sujet non humain"
     },
     {

@@ -1,15 +1,15 @@
-# Modèle logique métier - FR LM Prescription - ANS IG document core v0.1.0-snapsnot
+# Logical model - FR LM Prescription - ANS IG document core v0.1.0-snapsnot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Modèle logique métier - FR LM Prescription**
+* **Logical model - FR LM Prescription**
 
-## Logical Model: Modèle logique métier - FR LM Prescription 
+## Logical Model: Logical model - FR LM Prescription 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-prescription-entree | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-13 | *Computable Name*:FRLMPrescriptionEntree |
+| Draft as of 2026-04-14 | *Computable Name*:FRLMPrescriptionEntree |
 
  
 Prescription 
@@ -43,9 +43,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-prescription-e
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-prescription-entree",
   "version" : "0.1.0-snapsnot",
   "name" : "FRLMPrescriptionEntree",
-  "title" : "Modèle logique métier - FR LM Prescription",
+  "title" : "Logical model - FR LM Prescription",
   "status" : "draft",
-  "date" : "2026-04-13T09:04:52+00:00",
+  "date" : "2026-04-14T07:59:58+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -72,7 +72,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-prescription-e
     "element" : [{
       "id" : "fr-lm-prescription-entree",
       "path" : "fr-lm-prescription-entree",
-      "short" : "Modèle logique métier - FR LM Prescription",
+      "short" : "Logical model - FR LM Prescription",
       "definition" : "Prescription "
     },
     {

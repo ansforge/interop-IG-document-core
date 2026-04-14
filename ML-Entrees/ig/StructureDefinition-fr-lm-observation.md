@@ -1,15 +1,15 @@
-# Modèle logique métier - FR LM Observation - ANS IG document core v0.1.0-snapsnot
+# Logical model - FR LM Observation - ANS IG document core v0.1.0-snapsnot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Modèle logique métier - FR LM Observation**
+* **Logical model - FR LM Observation**
 
-## Logical Model: Modèle logique métier - FR LM Observation 
+## Logical Model: Logical model - FR LM Observation 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-13 | *Computable Name*:FRLMObservation |
+| Draft as of 2026-04-14 | *Computable Name*:FRLMObservation |
 
  
 observation 
@@ -43,9 +43,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-observation.cs
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation",
   "version" : "0.1.0-snapsnot",
   "name" : "FRLMObservation",
-  "title" : "Modèle logique métier - FR LM Observation",
+  "title" : "Logical model - FR LM Observation",
   "status" : "draft",
-  "date" : "2026-04-13T09:04:52+00:00",
+  "date" : "2026-04-14T07:59:58+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -66,29 +66,18 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-observation.cs
   "kind" : "logical",
   "abstract" : false,
   "type" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
+  "baseDefinition" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry",
   "derivation" : "specialization",
   "differential" : {
     "element" : [{
       "id" : "fr-lm-observation",
       "path" : "fr-lm-observation",
-      "short" : "Modèle logique métier - FR LM Observation",
+      "short" : "Logical model - FR LM Observation",
       "definition" : "observation"
     },
     {
-      "id" : "fr-lm-observation.observationIdentifiant",
-      "path" : "fr-lm-observation.observationIdentifiant",
-      "short" : "Identifiant de l'observation",
-      "definition" : "Identifiant de l'observation",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "Identifier"
-      }]
-    },
-    {
-      "id" : "fr-lm-observation.observationCode",
-      "path" : "fr-lm-observation.observationCode",
+      "id" : "fr-lm-observation.code",
+      "path" : "fr-lm-observation.code",
       "short" : "Code de l'observation",
       "definition" : "Code de l'observation",
       "min" : 1,
@@ -98,19 +87,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-observation.cs
       }]
     },
     {
-      "id" : "fr-lm-observation.observationDescription",
-      "path" : "fr-lm-observation.observationDescription",
-      "short" : "Description narrative de l'observation",
-      "definition" : "Description narrative de l'observation",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "Narrative"
-      }]
-    },
-    {
-      "id" : "fr-lm-observation.observationStatut",
-      "path" : "fr-lm-observation.observationStatut",
+      "id" : "fr-lm-observation.status",
+      "path" : "fr-lm-observation.status",
       "short" : "Statut de l'observation",
       "definition" : "Statut de l'observation",
       "min" : 1,
@@ -131,30 +109,31 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-observation.cs
       }]
     },
     {
-      "id" : "fr-lm-observation.observationNombreRenouvellements",
-      "path" : "fr-lm-observation.observationNombreRenouvellements",
-      "short" : "Nombre de renouvellements possibles",
-      "definition" : "Nombre de renouvellements possibles",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "Range"
-      }]
-    },
-    {
-      "id" : "fr-lm-observation.observationResultat",
-      "path" : "fr-lm-observation.observationResultat",
+      "id" : "fr-lm-observation.result[x]",
+      "path" : "fr-lm-observation.result[x]",
       "short" : "Valeur de l'observation",
       "definition" : "Valeur de l'observation",
       "min" : 0,
       "max" : "*",
       "type" : [{
         "code" : "CodeableConcept"
+      },
+      {
+        "code" : "string"
+      },
+      {
+        "code" : "Quantity"
+      },
+      {
+        "code" : "Ratio"
+      },
+      {
+        "code" : "Range"
       }]
     },
     {
-      "id" : "fr-lm-observation.observationInterpretation",
-      "path" : "fr-lm-observation.observationInterpretation",
+      "id" : "fr-lm-observation.interpretation",
+      "path" : "fr-lm-observation.interpretation",
       "short" : "Interprétation",
       "definition" : "Interprétation",
       "min" : 0,
@@ -164,8 +143,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-observation.cs
       }]
     },
     {
-      "id" : "fr-lm-observation.observationMethode",
-      "path" : "fr-lm-observation.observationMethode",
+      "id" : "fr-lm-observation.method",
+      "path" : "fr-lm-observation.method",
       "short" : "Méthode",
       "definition" : "Méthode",
       "min" : 0,
@@ -175,8 +154,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-observation.cs
       }]
     },
     {
-      "id" : "fr-lm-observation.observationLocalisationAnatomique",
-      "path" : "fr-lm-observation.observationLocalisationAnatomique",
+      "id" : "fr-lm-observation.location",
+      "path" : "fr-lm-observation.location",
       "short" : "Localisation anatomique",
       "definition" : "Localisation anatomique",
       "min" : 0,
@@ -187,17 +166,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-observation.cs
       "binding" : {
         "description" : "SNOMED CT (2.16.840.1.113883.6.96)"
       }
-    },
-    {
-      "id" : "fr-lm-observation.observationAuteur",
-      "path" : "fr-lm-observation.observationAuteur",
-      "short" : "Auteur de l'observation",
-      "definition" : "Auteur de l'observation",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-auteur"
-      }]
     }]
   }
 }

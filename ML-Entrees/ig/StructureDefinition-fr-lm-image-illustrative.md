@@ -1,22 +1,22 @@
-# Modèle logique métier - FR LM Image illustrative - ANS IG document core v0.1.0-snapsnot
+# Logical model - FR LM Image illustrative - ANS IG document core v0.1.0-snapsnot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Modèle logique métier - FR LM Image illustrative**
+* **Logical model - FR LM Image illustrative**
 
-## Logical Model: Modèle logique métier - FR LM Image illustrative 
+## Logical Model: Logical model - FR LM Image illustrative 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-image-illustrative | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-13 | *Computable Name*:FRLMImageIllustrative |
+| Draft as of 2026-04-14 | *Computable Name*:FRLMImageIllustrative |
 
  
-Image illustrative. 
+Entrée Image illustrative. 
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Batterie d'examens de biologie médicale](StructureDefinition-fr-lm-batterie-examens-biologie-medicale.md), [Modèle logique métier - FR LM Codes à barres](StructureDefinition-fr-lm-codes-a-barres.md), [Modèle logique métier - FR LM Isolat microbiologique](StructureDefinition-fr-lm-isolat-microbiologique.md) and [Modèle logique métier - FR LM Resultats d'examens de biologie medicale](StructureDefinition-fr-lm-resultats-examens-biologie-medicale.md)
+* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Batterie d'examens de biologie médicale](StructureDefinition-fr-lm-batterie-examens-biologie-medicale.md), [Modèle logique métier - FR LM Codes à barres](StructureDefinition-fr-lm-codes-a-barres.md), [Modèle logique métier - FR LM Isolat microbiologique](StructureDefinition-fr-lm-isolat-microbiologique.md) and [Logical model - FR LM Resultats d'examens de biologie medicale](StructureDefinition-fr-lm-resultats-examens-biologie-medicale.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-image-illustrative)
 
@@ -43,9 +43,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-image-illustra
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-image-illustrative",
   "version" : "0.1.0-snapsnot",
   "name" : "FRLMImageIllustrative",
-  "title" : "Modèle logique métier - FR LM Image illustrative",
+  "title" : "Logical model - FR LM Image illustrative",
   "status" : "draft",
-  "date" : "2026-04-13T09:04:52+00:00",
+  "date" : "2026-04-14T07:59:58+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -54,7 +54,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-image-illustra
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Image illustrative.",
+  "description" : "Entrée Image illustrative.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -66,37 +66,14 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-image-illustra
   "kind" : "logical",
   "abstract" : false,
   "type" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-image-illustrative",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
+  "baseDefinition" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry",
   "derivation" : "specialization",
   "differential" : {
     "element" : [{
       "id" : "fr-lm-image-illustrative",
       "path" : "fr-lm-image-illustrative",
-      "short" : "Modèle logique métier - FR LM Image illustrative",
-      "definition" : "Image illustrative."
-    },
-    {
-      "id" : "fr-lm-image-illustrative.identifiant",
-      "path" : "fr-lm-image-illustrative.identifiant",
-      "short" : "Identifiant de l’entrée",
-      "definition" : "Identifiant de l’entrée",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier"]
-      }]
-    },
-    {
-      "id" : "fr-lm-image-illustrative.langue",
-      "path" : "fr-lm-image-illustrative.langue",
-      "short" : "Langue",
-      "definition" : "Langue",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "Narrative"
-      }]
+      "short" : "Logical model - FR LM Image illustrative",
+      "definition" : "Entrée Image illustrative."
     },
     {
       "id" : "fr-lm-image-illustrative.imageEncodee",
@@ -132,65 +109,10 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-image-illustra
       }]
     },
     {
-      "id" : "fr-lm-image-illustrative.subject",
-      "path" : "fr-lm-image-illustrative.subject",
-      "short" : "Subject",
-      "definition" : "Subject",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "Base"
-      }]
-    },
-    {
       "id" : "fr-lm-image-illustrative.specimen",
       "path" : "fr-lm-image-illustrative.specimen",
       "short" : "Specimen",
       "definition" : "Specimen",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "Base"
-      }]
-    },
-    {
-      "id" : "fr-lm-image-illustrative.performer",
-      "path" : "fr-lm-image-illustrative.performer",
-      "short" : "Performer",
-      "definition" : "Performer",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "Base"
-      }]
-    },
-    {
-      "id" : "fr-lm-image-illustrative.auteur",
-      "path" : "fr-lm-image-illustrative.auteur",
-      "short" : "Auteur",
-      "definition" : "Auteur",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "Base"
-      }]
-    },
-    {
-      "id" : "fr-lm-image-illustrative.informant",
-      "path" : "fr-lm-image-illustrative.informant",
-      "short" : "Informant",
-      "definition" : "Informant",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "Base"
-      }]
-    },
-    {
-      "id" : "fr-lm-image-illustrative.participant",
-      "path" : "fr-lm-image-illustrative.participant",
-      "short" : "Participant",
-      "definition" : "Participant",
       "min" : 0,
       "max" : "*",
       "type" : [{

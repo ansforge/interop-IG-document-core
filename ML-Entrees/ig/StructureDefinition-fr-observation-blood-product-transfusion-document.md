@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-blood-product-transfusion-document | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-13 | *Computable Name*:FRObservationBloodProductTransfusionDocument |
+| Draft as of 2026-04-14 | *Computable Name*:FRObservationBloodProductTransfusionDocument |
 
  
 FRObservationBloodProductTransfusionDocument permet d’indiquer s’il a eu ou pas transfusion de produit sanguin. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-observation-blood
   "name" : "FRObservationBloodProductTransfusionDocument",
   "title" : "Observation - FR Blood Product Transfusion Document",
   "status" : "draft",
-  "date" : "2026-04-13T09:04:52+00:00",
+  "date" : "2026-04-14T07:59:58+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

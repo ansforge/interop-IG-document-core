@@ -21,7 +21,7 @@
 ","Problème","Problème","","","","","","","","","",,,,,"",,,,"fr-lm-informations-cliniques.entree.probleme",0,*,"",""
 "fr-lm-informations-cliniques.entree.dispositifMedical","fr-lm-informations-cliniques.entree.dispositifMedical","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device-use {[]} {[]}
 ","Dispositif médical","Dispositif médical","","","","","","","","","",,,,,"",,,,"fr-lm-informations-cliniques.entree.dispositifMedical",0,*,"",""
-"fr-lm-informations-cliniques.entree.statutGrossesse","fr-lm-informations-cliniques.entree.statutGrossesse","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation-grossesse {[]} {[]}
+"fr-lm-informations-cliniques.entree.statutGrossesse","fr-lm-informations-cliniques.entree.statutGrossesse","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation-pregnancy {[]} {[]}
 ","Statut grossesse","Statut grossesse","","","","","","","","","",,,,,"",,,,"fr-lm-informations-cliniques.entree.statutGrossesse",0,1,"",""
 "fr-lm-informations-cliniques.entree.administrationProduitDeSante","fr-lm-informations-cliniques.entree.administrationProduitDeSante","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-administration-produit-de-sante {[]} {[]}
 ","Produits de santé administré avant l'examen d'imagerie","Produits de santé administré avant l'examen d'imagerie","","","","","","","","","",,,,,"",,,,"fr-lm-informations-cliniques.entree.administrationProduitDeSante",0,*,"",""

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRPatientWithNonHumanSubjectLMCDAFHIR | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-13 | *Computable Name*: |
+| Draft as of 2026-04-14 | *Computable Name*: |
 
  
 Mapping des éléments du modele metier FRLMPatientSujetNonHumain vers l’element CDA FRCDAPatientAvecSujetNonHumain, puis vers les ressources FHIR Observation/Specimen/Substance et Observation/subject. 
@@ -26,7 +26,7 @@ Mapping des éléments du modele metier FRLMPatientSujetNonHumain vers l’eleme
   "version" : "0.1.0-snapsnot",
   "title" : "Mapping Metier/CDA/FHIR : \"Patient avec sujet non humain\"",
   "status" : "draft",
-  "date" : "2026-04-13T09:04:52+00:00",
+  "date" : "2026-04-14T07:59:58+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

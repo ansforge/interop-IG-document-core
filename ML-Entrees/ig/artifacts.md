@@ -104,6 +104,7 @@ Modèles de données métier représentant les concepts élémentaires, modélis
 | | |
 | :--- | :--- |
 | [FR LM Entry](StructureDefinition-fr-lm-entry.md) | Modèle logique représentant l’entrée |
+| [Logical - FR LM Références externes](StructureDefinition-fr-lm-references-externes.md) | Références externes |
 | [Logical model - Device](StructureDefinition-fr-lm-device.md) | Dispositif médical |
 | [Logical model - FR LM Allergy Intolerance](StructureDefinition-fr-lm-allergy-intolerance.md) | Entrée Allergie ou Hypersensibilité |
 | [Logical model - FR LM Assessment](StructureDefinition-fm-lm-assessment.md) | Entrée Evaluation |
@@ -112,25 +113,53 @@ Modèles de données métier représentant les concepts élémentaires, modélis
 | [Logical model - FR LM Device use](StructureDefinition-fr-lm-device-use.md) | Entrée Dispositif médical usage |
 | [Logical model - FR LM Dose Number](StructureDefinition-fr-lm-dose-number.md) | Entrée Rang de la vaccination |
 | [Logical model - FR LM Family Member History](StructureDefinition-fr-lm-family-member-history.md) | Entrée Antécédent familial |
+| [Logical model - FR LM Hors AMM](StructureDefinition-fr-lm-hors-amm.md) | Entrée Hors Autorisation de Mise sur le Marché (AMM) |
+| [Logical model - FR LM Identification de micro-organismes multirésistants](StructureDefinition-fr-lm-identification-de-micro-organismes-multiresistants.md) | Entrée Identification de micro-organismes multirésistants |
+| [Logical model - FR LM Image illustrative](StructureDefinition-fr-lm-image-illustrative.md) | Entrée Image illustrative. |
 | [Logical model - FR LM Immunisation](StructureDefinition-fr-lm-immunisation.md) | Entrée Vaccination |
 | [Logical model - FR LM Immunization Recommendation](StructureDefinition-fr-lm-immunization-recommendation.md) | Entrée Vaccin recommandé |
+| [logical model - FR LM Imputabilite effet indesirable](StructureDefinition-fr-lm-imputabilite-effet-indesirable.md) | Entrée Imputabilite effet indesirable |
 | [Logical model - FR LM Medication](StructureDefinition-fr-lm-medication.md) | Entrée Produit de santé |
 | [Logical model - FR LM Medication Dispense](StructureDefinition-fr-lm-medication-dispense.md) | Entrée Traitement dispense |
 | [Logical model - FR LM Medication Prescription](StructureDefinition-fr-lm-medication-prescription.md) | Entrée Traitement prescrit |
+| [logical model - FR LM Modalité d'entrée](StructureDefinition-fr-lm-modalite-entree.md) | Entrée Modalité d’entrée |
+| [Logical model - FR LM Modalité de sortie](StructureDefinition-fr-lm-modalite-sortie.md) | Entrée Modalité de sortie |
+| [Logical model - FR LM Naissance](StructureDefinition-fr-lm-birth-event.md) | Entrée Naissance |
+| [Logical model - FR LM Non remboursable](StructureDefinition-fr-lm-non-remboursable.md) | Entrée Non remboursable |
+| [Logical model - FR LM Observation](StructureDefinition-fr-lm-observation.md) | observation |
+| [Logical model - FR LM Observation Pregnancy](StructureDefinition-fr-lm-observation-pregnancy.md) | Entrée Observation sur la grossesse |
 | [Logical model - FR LM Observation Vital Sign](StructureDefinition-fr-lm-observation-vital-sign.md) | Signe vital observé |
+| [Logical model - FR LM Participant](StructureDefinition-fr-lm-participant-corps.md) | Participant |
+| [Logical model - FR LM Patient avec sujet non humain](StructureDefinition-fr-lm-patient-sujet-non-humain.md) | Patient avec sujet non humain |
+| [Logical model - FR LM Patient Transfer.](StructureDefinition-fr-lm-patient-transfer.md) | Entrée Transfert du patient |
+| [Logical model - FR LM Prescription](StructureDefinition-fr-lm-prescription-entree.md) | Prescription |
+| [Logical model - FR LM Quantité exposition](StructureDefinition-fr-lm-quantite-exposition.md) | Quantité exposition |
+| [Logical model - FR LM Recherche de micro organismes](StructureDefinition-fr-lm-recherche-de-micro-organismes.md) | Recherche de micro organismes |
+| [Logical model - FR LM Resultats](StructureDefinition-fr-lm-resultats-entree.md) | Resultats |
+| [Logical model - FR LM Resultats d'examens de biologie medicale](StructureDefinition-fr-lm-resultats-examens-biologie-medicale.md) | Resultats d’examens de biologie medicale |
+| [Logical model - FR LM Référence interne](StructureDefinition-fr-lm-reference-interne.md) | Entrée Référence interne |
+| [Logical model - FR LM Référence item prescription](StructureDefinition-fr-lm-reference-item-prescription.md) | Référence item prescription |
+| [Logical model - FR LM Serie imagerie](StructureDefinition-fr-lm-serie-imagerie.md) | Serie imagerie |
+| [Logical model - FR LM SOP Instance](StructureDefinition-fr-lm-sop-instance.md) | SOP Instance |
+| [Logical model - FR LM Specimen](StructureDefinition-fr-lm-specimen.md) | Entrée Prélèvement |
+| [Logical model - FR LM Statut](StructureDefinition-fr-lm-status.md) | Statut |
+| [Logical model - FR LM Statut du document](StructureDefinition-fr-lm-status-document-entry.md) | Entrée Statut du document |
+| [Logical model - FR LM Sujet](StructureDefinition-fr-lm-sujet.md) | Sujet |
+| [Logical model - FR LM Sujet non humain](StructureDefinition-fr-lm-sujet-non-humain.md) | Sujet non humain |
 | [Logical model - FR LM Transfusion de produits sanguins](StructureDefinition-fr-lm-transfusion-de-produits-sanguins.md) | Transfusion de produits sanguins |
 | [Logical model- FR LM Dosage Instructions](StructureDefinition-fr-lm-dosage-instructions.md) | Posologie |
+| [Logical model- FR LM Historique de la grossesse](StructureDefinition-fr-lm-historique-grossesse.md) | Entrée Historique de la grossesse |
 | [Logical model- FR LM Medication Administration ](StructureDefinition-fr-lm-medication-administration.md) | Entrée Traitement |
 | [Logical model- FR LM Observation Social History](StructureDefinition-fm-lm-observation-social-history.md) | Entrée Habitus Mode de vie |
 | [Logical model- FR LM Procedure](StructureDefinition-fr-lm-procedure.md) | Entrée Acte |
 | [Logical model- FR LM Quantity Prescribed](StructureDefinition-fr-lm-quantity-prescribed.md) | Entrée Quantité de produit |
+| [Logical model- FR LM Synthese medicale sejour](StructureDefinition-fr-lm-synthese-medicale-sejour.md) | Synthese medicale sejour |
+| [Logical model- FR LM Technique imagerie](StructureDefinition-fr-lm-technique-imagerie.md) | Entrée Technique imagerie |
 | [Modèle logique métier - FR LM Accident transfusionnel](StructureDefinition-fr-lm-accidents-transfusionnels.md) | Accident transfusionnel |
-| [Modèle logique métier - FR LM Acte substitution](StructureDefinition-fr-lm-acte-substitution.md) | Acte substitution |
 | [Modèle logique métier - FR LM Administration de dérivés du sang](StructureDefinition-fr-lm-administration-de-derives-du-sang.md) | Administration de dérivés du sang |
 | [Modèle logique métier - FR LM Administration produit de sante](StructureDefinition-fr-lm-administration-produit-de-sante.md) | Administration produit de sante |
 | [Modèle logique métier - FR LM Auteur APSR](StructureDefinition-fr-lm-auteur-apsr.md) | Auteur APSR (Anatomic Pathology Structured Report), la structure de cet élément est identique à celle de l’élément Auteur |
 | [Modèle logique métier - FR LM Autorisation exposition](StructureDefinition-fr-lm-autorisation-exposition.md) | Autorisation exposition |
-| [Modèle logique métier - FR LM Autorisation substitution](StructureDefinition-fr-lm-autorisation-substitution.md) | Autorisation substitution |
 | [Modèle logique métier - FR LM Batterie d'examens de biologie médicale](StructureDefinition-fr-lm-batterie-examens-biologie-medicale.md) | Batterie d’examens de biologie médicale |
 | [Modèle logique métier - FR LM Commentaire](StructureDefinition-fr-lm-commentaire-er.md) | Commentaire |
 | [Modèle logique métier - FR LM Demande d'examen ou de suivi](StructureDefinition-fr-lm-demande-examen-ou-suivi.md) | Demande d’examen ou de suivi / Objectif à atteindre |
@@ -147,48 +176,13 @@ Modèles de données métier représentant les concepts élémentaires, modélis
 | [Modèle logique métier - FR LM Examen Imagerie](StructureDefinition-fr-lm-examen-imagerie.md) | DICOM Examen Imagerie |
 | [Modèle logique métier - FR LM Gravite effet indesirable](StructureDefinition-fr-lm-gravite-effet-indesirable.md) | Gravite effet indesirable |
 | [Modèle logique métier - FR LM Groupe de questionnaires d'évalutation](StructureDefinition-fr-lm-group-de-questionnaires-devaluation.md) | Groupe de questionnaires d’évalutation |
-| [Modèle logique métier - FR LM Historique de la grossesse](StructureDefinition-fr-lm-historique-grossesse.md) | Historique de la grossesse |
-| [Modèle logique métier - FR LM Hors Autorisation de Mise sur le Marché (AMM)](StructureDefinition-fr-lm-hors-amm.md) | Hors Autorisation de Mise sur le Marché (AMM) |
-| [Modèle logique métier - FR LM Identification de micro-organismes multirésistants](StructureDefinition-fr-lm-identification-de-micro-organismes-multiresistants.md) | Identification de micro-organismes multirésistants |
-| [Modèle logique métier - FR LM Image illustrative](StructureDefinition-fr-lm-image-illustrative.md) | Image illustrative. |
-| [Modèle logique métier - FR LM Imputabilite effet indesirable](StructureDefinition-fr-lm-imputabilite-effet-indesirable.md) | Imputabilite effet indesirable |
 | [Modèle logique métier - FR LM Informant APSR](StructureDefinition-fr-lm-informant-apsr.md) | Informant APSR(Anatomic Pathology Structured Report), la structure de cet élément est identique à celle de l’élément Informateur |
 | [Modèle logique métier - FR LM Isolat microbiologique](StructureDefinition-fr-lm-isolat-microbiologique.md) | Isolat microbiologique |
 | [Modèle logique métier - FR LM Laboratoire exécutant](StructureDefinition-fr-lm-laboratoire-executant.md) | Laboratoire exécutant |
-| [Modèle logique métier - FR LM Modalité d'entrée](StructureDefinition-fr-lm-modalite-entree.md) | Modalité d’entrée |
-| [Modèle logique métier - FR LM Modalité de sortie](StructureDefinition-fr-lm-modalite-sortie.md) | Modalité de sortie |
-| [Modèle logique métier - FR LM Naissance](StructureDefinition-fr-lm-naissance.md) | Naissance |
-| [Modèle logique métier - FR LM Non remboursable](StructureDefinition-fr-lm-non-remboursable.md) | Non remboursable |
-| [Modèle logique métier - FR LM Observation](StructureDefinition-fr-lm-observation.md) | observation |
-| [Modèle logique métier - FR LM Observation sur la grossesse](StructureDefinition-fr-lm-observation-grossesse.md) | Observation sur la grossesse |
-| [Modèle logique métier - FR LM Participant](StructureDefinition-fr-lm-participant-corps.md) | Participant |
-| [Modèle logique métier - FR LM Participant APSR](StructureDefinition-fr-lm-participant-apsr.md) | Participant APSR(Anatomic Pathology Structured Report) |
-| [Modèle logique métier - FR LM Patient avec sujet non humain](StructureDefinition-fr-lm-patient-sujet-non-humain.md) | Patient avec sujet non humain |
-| [Modèle logique métier - FR LM Performer](StructureDefinition-fr-lm-performer.md) | Performer |
-| [Modèle logique métier - FR LM Prescription](StructureDefinition-fr-lm-prescription-entree.md) | Prescription |
-| [Modèle logique métier - FR LM Prélèvement](StructureDefinition-fr-lm-prelevement.md) | Prélèvement |
-| [Modèle logique métier - FR LM Quantité exposition](StructureDefinition-fr-lm-quantite-exposition.md) | Quantité exposition |
-| [Modèle logique métier - FR LM Recherche de micro organismes](StructureDefinition-fr-lm-recherche-de-micro-organismes.md) | Recherche de micro organismes |
 | [Modèle logique métier - FR LM Rencontre](StructureDefinition-fr-lm-encounter.md) | Rencontre |
-| [Modèle logique métier - FR LM Resultats](StructureDefinition-fr-lm-resultats-entree.md) | Resultats |
-| [Modèle logique métier - FR LM Resultats d'examens de biologie medicale](StructureDefinition-fr-lm-resultats-examens-biologie-medicale.md) | Resultats d’examens de biologie medicale |
-| [Modèle logique métier - FR LM Référence interne](StructureDefinition-fr-lm-reference-interne.md) | Référence interne |
-| [Modèle logique métier - FR LM Référence item prescription](StructureDefinition-fr-lm-reference-item-prescription.md) | Référence item prescription |
-| [Modèle logique métier - FR LM Références externes](StructureDefinition-fr-lm-references-externes.md) | Références externes |
 | [Modèle logique métier - FR LM Résultat d'examens de biologie / élement clinique pertinent](StructureDefinition-fr-lm-resultat-examens-biologie-element-clinique-pertinent.md) | Résultat d’examens de biologie / élement clinique pertinent |
-| [Modèle logique métier - FR LM Serie imagerie](StructureDefinition-fr-lm-serie-imagerie.md) | Serie imagerie |
-| [Modèle logique métier - FR LM SOP Instance](StructureDefinition-fr-lm-sop-instance.md) | SOP Instance |
-| [Modèle logique métier - FR LM Statut](StructureDefinition-fr-lm-statut.md) | Statut |
-| [Modèle logique métier - FR LM Statut clinique du patient](StructureDefinition-fr-lm-statut-clinique-patient.md) | Statut clinique du patient |
-| [Modèle logique métier - FR LM Statut du document](StructureDefinition-fr-lm-statut-document-entree.md) | Statut du document |
-| [Modèle logique métier - FR LM Statut du problème](StructureDefinition-fr-lm-statut-probleme.md) | Statut du problème. |
-| [Modèle logique métier - FR LM Sujet](StructureDefinition-fr-lm-sujet.md) | Sujet |
-| [Modèle logique métier - FR LM Sujet non humain](StructureDefinition-fr-lm-sujet-non-humain.md) | Sujet non humain |
-| [Modèle logique métier - FR LM Synthese medicale sejour](StructureDefinition-fr-lm-synthese-medicale-sejour.md) | Synthese medicale sejour |
-| [Modèle logique métier - FR LM Sévérité](StructureDefinition-fr-lm-severite.md) | Sévérité. |
-| [Modèle logique métier - FR LM Technique imagerie](StructureDefinition-fr-lm-technique-imagerie.md) | Technique imagerie |
-| [Modèle logique métier - FR LM Transfert du patient](StructureDefinition-fr-lm-transfert-du-patient.md) | Transfert du patient |
 | [Modèle logique métier - FR LM Échantillon prélevé](StructureDefinition-fr-lm-echantillon-preleve.md) | Échantillon prélevé |
+| [Mogical model - FR LM Participant APSR](StructureDefinition-fr-lm-participant-apsr.md) | Participant APSR(Anatomic Pathology Structured Report) |
 
 ### Eléments CDA 
 
@@ -697,8 +691,7 @@ These define data models that represent the domain covered by this implementatio
 | | |
 | :--- | :--- |
 | [CDA - FR Traitement subordonne](StructureDefinition-fr-cda-traitement-subordonne.md) | Entrée FR-Traitement-subordonne: Une entrée FR-Traitement de premier niveau peut contenir une ou plusieurs sous-entrées FR-Traitement-subordonne pour les cas spécifiques des dosages progressifs, fractionnés ou conditionnels, ou pour gérer la combinaison de médicaments. L’utilisation de sous-entrées FR-Traitement-subordonne pour traiter ces cas est facultative. Dans le cas où l’entrée FR-Traitement-subordonne n’est pas utilisée, l’information doit être fournie dans la partie narrative de l’entrée FR-Traitement de premier niveau sous forme de texte libre.Pour les dosages progressifs, fractionnés ou conditionnels, les sous-entrées FR-Traitement-subordonne ne doivent spécifier que la fréquence et / ou le dosage modifiés.Pour le dosage conditionnel, chaque sous-entrée FR-Traitement-subordonne doit avoir un élément ‘precondition’ pour indiquer les conditions préalables à l’utilisation du médicament.Pour la combinaison de médicaments, chaque sous-entrée FR-Traitement-subordonne précisera le produit entrant dans la combinaison. |
-| [Modèle logique métier - FR LM Notes du dispensateur](StructureDefinition-fr-lm-notes-dispensateur.md) | Notes du dispensateur |
-| [Modèle logique métier - FR LM Observation Result](StructureDefinition-fr-lm-observation-result.md) | Résultat d’une observation médicale (résultat d’examen de laboratoire, d’imagerie, etc.) |
+| [Logical model - FR LM Observation Result](StructureDefinition-fr-lm-observation-result.md) | Résultat d’une observation médicale (résultat d’examen de laboratoire, d’imagerie, etc.) |
 
 ### Structures: Extension Definitions 
 

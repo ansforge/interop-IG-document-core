@@ -11,5 +11,5 @@
 ","Sous-sections","Sous-sections","","","","","","","","","",,,,,"",,,,"fr-lm-section.sousSection",0,*,"",""
 "fr-lm-statut-document.entree","fr-lm-statut-document.entree","","","",1,1,"","","","Base {[]} {[]}
 ","Entrées","Entrées","","","","","","","","","",,,,,"",,,,"fr-lm-section.entree",0,*,"",""
-"fr-lm-statut-document.entree.statutDocument","fr-lm-statut-document.entree.statutDocument","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-statut-document-entree {[]} {[]}
+"fr-lm-statut-document.entree.statutDocument","fr-lm-statut-document.entree.statutDocument","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-status-document-entry {[]} {[]}
 ","Entrée Statut du document","Entrée Statut du document","","","","","","","","","",,,,,"",,,,"fr-lm-statut-document.entree.statutDocument",1,1,"",""

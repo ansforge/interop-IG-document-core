@@ -1,15 +1,15 @@
-# Modèle logique métier - FR LM Resultats d'examens de biologie medicale - ANS IG document core v0.1.0-snapsnot
+# Logical model - FR LM Resultats d'examens de biologie medicale - ANS IG document core v0.1.0-snapsnot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Modèle logique métier - FR LM Resultats d'examens de biologie medicale**
+* **Logical model - FR LM Resultats d'examens de biologie medicale**
 
-## Logical Model: Modèle logique métier - FR LM Resultats d'examens de biologie medicale 
+## Logical Model: Logical model - FR LM Resultats d'examens de biologie medicale 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-resultats-examens-biologie-medicale | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-13 | *Computable Name*:FRLMResultatsExamensBiologieMedicale |
+| Draft as of 2026-04-14 | *Computable Name*:FRLMResultatsExamensBiologieMedicale |
 
  
 Resultats d’examens de biologie medicale 
@@ -43,9 +43,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-resultats-exam
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-resultats-examens-biologie-medicale",
   "version" : "0.1.0-snapsnot",
   "name" : "FRLMResultatsExamensBiologieMedicale",
-  "title" : "Modèle logique métier - FR LM Resultats d'examens de biologie medicale",
+  "title" : "Logical model - FR LM Resultats d'examens de biologie medicale",
   "status" : "draft",
-  "date" : "2026-04-13T09:04:52+00:00",
+  "date" : "2026-04-14T07:59:58+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -66,13 +66,13 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-resultats-exam
   "kind" : "logical",
   "abstract" : false,
   "type" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-resultats-examens-biologie-medicale",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
+  "baseDefinition" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry",
   "derivation" : "specialization",
   "differential" : {
     "element" : [{
       "id" : "fr-lm-resultats-examens-biologie-medicale",
       "path" : "fr-lm-resultats-examens-biologie-medicale",
-      "short" : "Modèle logique métier - FR LM Resultats d'examens de biologie medicale",
+      "short" : "Logical model - FR LM Resultats d'examens de biologie medicale",
       "definition" : "Resultats d'examens de biologie medicale"
     },
     {
@@ -95,17 +95,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-resultats-exam
       "max" : "1",
       "type" : [{
         "code" : "code"
-      }]
-    },
-    {
-      "id" : "fr-lm-resultats-examens-biologie-medicale.dateResultat",
-      "path" : "fr-lm-resultats-examens-biologie-medicale.dateResultat",
-      "short" : "Date et heure des résultats",
-      "definition" : "Date et heure des résultats",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "dateTime"
       }]
     },
     {
@@ -134,50 +123,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-resultats-exam
       }]
     },
     {
-      "id" : "fr-lm-resultats-examens-biologie-medicale.auteur",
-      "path" : "fr-lm-resultats-examens-biologie-medicale.auteur",
-      "short" : "Participation d'un auteur au document.",
-      "definition" : "Participation d'un auteur au document.",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-auteur"
-      }]
-    },
-    {
-      "id" : "fr-lm-resultats-examens-biologie-medicale.valideur",
-      "path" : "fr-lm-resultats-examens-biologie-medicale.valideur",
-      "short" : "Valideur de ces résultats",
-      "definition" : "Valideur de ces résultats",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-participant-corps"
-      }]
-    },
-    {
-      "id" : "fr-lm-resultats-examens-biologie-medicale.responsable",
-      "path" : "fr-lm-resultats-examens-biologie-medicale.responsable",
-      "short" : "Responsable de cet examen",
-      "definition" : "Responsable de cet examen",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-participant-corps"
-      }]
-    },
-    {
-      "id" : "fr-lm-resultats-examens-biologie-medicale.dispositifAutomatique",
-      "path" : "fr-lm-resultats-examens-biologie-medicale.dispositifAutomatique",
-      "short" : "Dispositif automatique impliqué dans la production des résultats",
-      "definition" : "Dispositif automatique impliqué dans la production des résultats",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-participant-corps"
-      }]
-    },
-    {
       "id" : "fr-lm-resultats-examens-biologie-medicale.prelevement",
       "path" : "fr-lm-resultats-examens-biologie-medicale.prelevement",
       "short" : "Prélèvement",
@@ -185,7 +130,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-resultats-exam
       "min" : 0,
       "max" : "*",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-prelevement"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-specimen"
       }]
     },
     {
@@ -240,7 +185,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-resultats-exam
       "min" : 0,
       "max" : "*",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-commentaire-er"
+        "code" : "string"
       }]
     }]
   }

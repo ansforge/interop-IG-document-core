@@ -1,22 +1,22 @@
-# Modèle logique métier - FR LM Observation Result - ANS IG document core v0.1.0-snapsnot
+# Logical model - FR LM Observation Result - ANS IG document core v0.1.0-snapsnot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Modèle logique métier - FR LM Observation Result**
+* **Logical model - FR LM Observation Result**
 
-## Logical Model: Modèle logique métier - FR LM Observation Result 
+## Logical Model: Logical model - FR LM Observation Result 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation-result | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-13 | *Computable Name*:FRLMObservationResult |
+| Draft as of 2026-04-14 | *Computable Name*:FRLMObservationResult |
 
  
 Résultat d’une observation médicale (résultat d’examen de laboratoire, d’imagerie, etc.) 
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Resultats](StructureDefinition-fr-lm-resultats-entree.md)
+* Utilise ce/t/te Modèle logique: [Logical model - FR LM Resultats](StructureDefinition-fr-lm-resultats-entree.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-observation-result)
 
@@ -43,9 +43,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-observation-re
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation-result",
   "version" : "0.1.0-snapsnot",
   "name" : "FRLMObservationResult",
-  "title" : "Modèle logique métier - FR LM Observation Result",
+  "title" : "Logical model - FR LM Observation Result",
   "status" : "draft",
-  "date" : "2026-04-13T09:04:52+00:00",
+  "date" : "2026-04-14T07:59:58+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -66,25 +66,14 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-observation-re
   "kind" : "logical",
   "abstract" : false,
   "type" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation-result",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
+  "baseDefinition" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry",
   "derivation" : "specialization",
   "differential" : {
     "element" : [{
       "id" : "fr-lm-observation-result",
       "path" : "fr-lm-observation-result",
-      "short" : "Modèle logique métier - FR LM Observation Result",
+      "short" : "Logical model - FR LM Observation Result",
       "definition" : "Résultat d'une observation médicale (résultat d'examen de laboratoire, d'imagerie, etc.)"
-    },
-    {
-      "id" : "fr-lm-observation-result.identifiant",
-      "path" : "fr-lm-observation-result.identifiant",
-      "short" : "Identifiant de l'observation",
-      "definition" : "Identifiant de l'observation",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "Identifier"
-      }]
     },
     {
       "id" : "fr-lm-observation-result.code",
@@ -98,17 +87,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-observation-re
       }]
     },
     {
-      "id" : "fr-lm-observation-result.description",
-      "path" : "fr-lm-observation-result.description",
-      "short" : "Description narrative de l'observation",
-      "definition" : "Description narrative de l'observation",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "Narrative"
-      }]
-    },
-    {
       "id" : "fr-lm-observation-result.statut",
       "path" : "fr-lm-observation-result.statut",
       "short" : "Statut de l'observation : completed",
@@ -117,17 +95,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-observation-re
       "max" : "1",
       "type" : [{
         "code" : "code"
-      }]
-    },
-    {
-      "id" : "fr-lm-observation-result.date",
-      "path" : "fr-lm-observation-result.date",
-      "short" : "Date/heure de l'observation",
-      "definition" : "Date/heure de l'observation",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "dateTime"
       }]
     },
     {
@@ -164,17 +131,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-observation-re
       }]
     },
     {
-      "id" : "fr-lm-observation-result.auteur",
-      "path" : "fr-lm-observation-result.auteur",
-      "short" : "Auteur de l'observation",
-      "definition" : "Auteur de l'observation",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-auteur"
-      }]
-    },
-    {
       "id" : "fr-lm-observation-result.intervalleReference",
       "path" : "fr-lm-observation-result.intervalleReference",
       "short" : "Intervalle de référence",
@@ -193,7 +149,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-observation-re
       "min" : 0,
       "max" : "*",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-commentaire-er"
+        "code" : "string"
       }]
     },
     {

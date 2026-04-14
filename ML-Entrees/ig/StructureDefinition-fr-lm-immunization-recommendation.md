@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-immunization-recommendation | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-13 | *Computable Name*:FRLMImmunizationRecommendation |
+| Draft as of 2026-04-14 | *Computable Name*:FRLMImmunizationRecommendation |
 
  
 Entrée Vaccin recommandé 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-immunization-r
   "name" : "FRLMImmunizationRecommendation",
   "title" : "Logical model - FR LM Immunization Recommendation",
   "status" : "draft",
-  "date" : "2026-04-13T09:04:52+00:00",
+  "date" : "2026-04-14T07:59:58+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -76,19 +76,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-immunization-r
       "definition" : "Entrée Vaccin recommandé"
     },
     {
-      "id" : "fr-lm-immunization-recommendation.identifiantVaccinRecommande",
-      "path" : "fr-lm-immunization-recommendation.identifiantVaccinRecommande",
-      "short" : "Identifiant de l’entrée",
-      "definition" : "Identifiant de l’entrée",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "Identifier"
-      }]
-    },
-    {
-      "id" : "fr-lm-immunization-recommendation.codeVaccinRecommande",
-      "path" : "fr-lm-immunization-recommendation.codeVaccinRecommande",
+      "id" : "fr-lm-immunization-recommendation.recommendedVaccineCode",
+      "path" : "fr-lm-immunization-recommendation.recommendedVaccineCode",
       "short" : "Type d'acte : vaccination",
       "definition" : "Type d'acte : vaccination",
       "min" : 1,
@@ -98,19 +87,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-immunization-r
       }]
     },
     {
-      "id" : "fr-lm-immunization-recommendation.descriptionNarrativeVaccinRecommande",
-      "path" : "fr-lm-immunization-recommendation.descriptionNarrativeVaccinRecommande",
-      "short" : "Partie narrative de l’entrée",
-      "definition" : "Partie narrative de l’entrée",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "Narrative"
-      }]
-    },
-    {
-      "id" : "fr-lm-immunization-recommendation.statutVaccinRecommande",
-      "path" : "fr-lm-immunization-recommendation.statutVaccinRecommande",
+      "id" : "fr-lm-immunization-recommendation.recommendedVaccineStatus",
+      "path" : "fr-lm-immunization-recommendation.recommendedVaccineStatus",
       "short" : "Statut de l’entrée",
       "definition" : "Statut de l’entrée",
       "min" : 1,
@@ -120,8 +98,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-immunization-r
       }]
     },
     {
-      "id" : "fr-lm-immunization-recommendation.periodeVaccination",
-      "path" : "fr-lm-immunization-recommendation.periodeVaccination",
+      "id" : "fr-lm-immunization-recommendation.vaccinationPeriod",
+      "path" : "fr-lm-immunization-recommendation.vaccinationPeriod",
       "short" : "Période de vaccination souhaitable",
       "definition" : "Période de vaccination souhaitable",
       "min" : 1,
@@ -131,8 +109,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-immunization-r
       }]
     },
     {
-      "id" : "fr-lm-immunization-recommendation.voieAdministration",
-      "path" : "fr-lm-immunization-recommendation.voieAdministration",
+      "id" : "fr-lm-immunization-recommendation.routeOfAdministration",
+      "path" : "fr-lm-immunization-recommendation.routeOfAdministration",
       "short" : "Voie d’administration",
       "definition" : "Voie d’administration",
       "min" : 0,
@@ -142,8 +120,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-immunization-r
       }]
     },
     {
-      "id" : "fr-lm-immunization-recommendation.regionAnatomique",
-      "path" : "fr-lm-immunization-recommendation.regionAnatomique",
+      "id" : "fr-lm-immunization-recommendation.anatomicalRegion",
+      "path" : "fr-lm-immunization-recommendation.anatomicalRegion",
       "short" : "Région anatomique d'administration",
       "definition" : "Région anatomique d'administration",
       "min" : 0,
@@ -156,8 +134,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-immunization-r
       }
     },
     {
-      "id" : "fr-lm-immunization-recommendation.doseAdministree",
-      "path" : "fr-lm-immunization-recommendation.doseAdministree",
+      "id" : "fr-lm-immunization-recommendation.administeredDose",
+      "path" : "fr-lm-immunization-recommendation.administeredDose",
       "short" : "Dose administrée",
       "definition" : "Dose administrée",
       "min" : 0,
@@ -167,8 +145,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-immunization-r
       }]
     },
     {
-      "id" : "fr-lm-immunization-recommendation.vaccin",
-      "path" : "fr-lm-immunization-recommendation.vaccin",
+      "id" : "fr-lm-immunization-recommendation.vaccine",
+      "path" : "fr-lm-immunization-recommendation.vaccine",
       "short" : "Vaccin",
       "definition" : "Vaccin",
       "min" : 1,
@@ -178,8 +156,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-immunization-r
       }]
     },
     {
-      "id" : "fr-lm-immunization-recommendation.prescription",
-      "path" : "fr-lm-immunization-recommendation.prescription",
+      "id" : "fr-lm-immunization-recommendation.prescriptionReference",
+      "path" : "fr-lm-immunization-recommendation.prescriptionReference",
       "short" : "Référence de la prescription",
       "definition" : "Référence de la prescription",
       "min" : 0,
@@ -189,8 +167,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-immunization-r
       }]
     },
     {
-      "id" : "fr-lm-immunization-recommendation.rangVaccination",
-      "path" : "fr-lm-immunization-recommendation.rangVaccination",
+      "id" : "fr-lm-immunization-recommendation.vaccinationRank",
+      "path" : "fr-lm-immunization-recommendation.vaccinationRank",
       "short" : "Rang de la vaccination",
       "definition" : "Rang de la vaccination",
       "min" : 0,
@@ -200,14 +178,14 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-immunization-r
       }]
     },
     {
-      "id" : "fr-lm-immunization-recommendation.commentaire",
-      "path" : "fr-lm-immunization-recommendation.commentaire",
+      "id" : "fr-lm-immunization-recommendation.comment",
+      "path" : "fr-lm-immunization-recommendation.comment",
       "short" : "Commentaire",
       "definition" : "Commentaire",
       "min" : 0,
       "max" : "1",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-commentaire-er"
+        "code" : "string"
       }]
     }]
   }

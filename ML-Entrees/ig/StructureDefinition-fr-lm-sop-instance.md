@@ -1,22 +1,22 @@
-# Modèle logique métier - FR LM SOP Instance - ANS IG document core v0.1.0-snapsnot
+# Logical model - FR LM SOP Instance - ANS IG document core v0.1.0-snapsnot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Modèle logique métier - FR LM SOP Instance**
+* **Logical model - FR LM SOP Instance**
 
-## Logical Model: Modèle logique métier - FR LM SOP Instance 
+## Logical Model: Logical model - FR LM SOP Instance 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-sop-instance | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-13 | *Computable Name*:FRLMSOPInstance |
+| Draft as of 2026-04-14 | *Computable Name*:FRLMSOPInstance |
 
  
 SOP Instance 
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Serie imagerie](StructureDefinition-fr-lm-serie-imagerie.md)
+* Utilise ce/t/te Modèle logique: [Logical model - FR LM Serie imagerie](StructureDefinition-fr-lm-serie-imagerie.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-sop-instance)
 
@@ -43,9 +43,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-sop-instance.c
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-sop-instance",
   "version" : "0.1.0-snapsnot",
   "name" : "FRLMSOPInstance",
-  "title" : "Modèle logique métier - FR LM SOP Instance",
+  "title" : "Logical model - FR LM SOP Instance",
   "status" : "draft",
-  "date" : "2026-04-13T09:04:52+00:00",
+  "date" : "2026-04-14T07:59:58+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -66,13 +66,13 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-sop-instance.c
   "kind" : "logical",
   "abstract" : false,
   "type" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-sop-instance",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
+  "baseDefinition" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry",
   "derivation" : "specialization",
   "differential" : {
     "element" : [{
       "id" : "fr-lm-sop-instance",
       "path" : "fr-lm-sop-instance",
-      "short" : "Modèle logique métier - FR LM SOP Instance",
+      "short" : "Logical model - FR LM SOP Instance",
       "definition" : "SOP Instance"
     },
     {
@@ -101,17 +101,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-sop-instance.c
       }
     },
     {
-      "id" : "fr-lm-sop-instance.description",
-      "path" : "fr-lm-sop-instance.description",
-      "short" : "Partie narrative de l'observation",
-      "definition" : "Partie narrative de l'observation",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "Narrative"
-      }]
-    },
-    {
       "id" : "fr-lm-sop-instance.statut",
       "path" : "fr-lm-sop-instance.statut",
       "short" : "status de l'observation",
@@ -120,17 +109,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-sop-instance.c
       "max" : "1",
       "type" : [{
         "code" : "code"
-      }]
-    },
-    {
-      "id" : "fr-lm-sop-instance.date",
-      "path" : "fr-lm-sop-instance.date",
-      "short" : "Date de l'observation",
-      "definition" : "Date de l'observation",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "dateTime"
       }]
     },
     {

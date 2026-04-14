@@ -1,22 +1,22 @@
-# Modèle logique métier - FR LM Participant - ANS IG document core v0.1.0-snapsnot
+# Logical model - FR LM Participant - ANS IG document core v0.1.0-snapsnot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Modèle logique métier - FR LM Participant**
+* **Logical model - FR LM Participant**
 
-## Logical Model: Modèle logique métier - FR LM Participant 
+## Logical Model: Logical model - FR LM Participant 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-participant-corps | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-13 | *Computable Name*:FRLMParticipantCorps |
+| Draft as of 2026-04-14 | *Computable Name*:FRLMParticipantCorps |
 
  
 Participant 
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Autorisation exposition](StructureDefinition-fr-lm-autorisation-exposition.md), [Modèle logique métier - FR LM Rencontre](StructureDefinition-fr-lm-encounter.md), [FR LM Entry](StructureDefinition-fr-lm-entry.md), [Modèle logique métier - FR LM Isolat microbiologique](StructureDefinition-fr-lm-isolat-microbiologique.md)... Show 4 more, [Modèle logique métier - FR LM Résultat d'examens de biologie / élement clinique pertinent](StructureDefinition-fr-lm-resultat-examens-biologie-element-clinique-pertinent.md), [Modèle logique métier - FR LM Resultats d'examens de biologie medicale](StructureDefinition-fr-lm-resultats-examens-biologie-medicale.md), [Modèle logique métier - FR LM Technique imagerie](StructureDefinition-fr-lm-technique-imagerie.md) and [Modèle logique métier - FR LM Transfert du patient](StructureDefinition-fr-lm-transfert-du-patient.md)
+* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Autorisation exposition](StructureDefinition-fr-lm-autorisation-exposition.md), [Modèle logique métier - FR LM Rencontre](StructureDefinition-fr-lm-encounter.md) and [FR LM Entry](StructureDefinition-fr-lm-entry.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-participant-corps)
 
@@ -39,9 +39,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-participant-co
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-participant-corps",
   "version" : "0.1.0-snapsnot",
   "name" : "FRLMParticipantCorps",
-  "title" : "Modèle logique métier - FR LM Participant",
+  "title" : "Logical model - FR LM Participant",
   "status" : "draft",
-  "date" : "2026-04-13T09:04:52+00:00",
+  "date" : "2026-04-14T07:59:58+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -68,7 +68,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-participant-co
     "element" : [{
       "id" : "fr-lm-participant-corps",
       "path" : "fr-lm-participant-corps",
-      "short" : "Modèle logique métier - FR LM Participant",
+      "short" : "Logical model - FR LM Participant",
       "definition" : "Participant"
     },
     {

@@ -1,8 +1,36 @@
 "Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
 "fr-lm-historique-grossesse","fr-lm-historique-grossesse","","","",0,*,"","","","null {[]} {[]}
-","Modèle logique métier - FR LM Historique de la grossesse","Historique de la grossesse","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
-"fr-lm-historique-grossesse.identifiant","fr-lm-historique-grossesse.identifiant","","","",1,1,"","","","Identifier {[]} {[]}
-","Identifiant de l'entrée","Identifiant de l'entrée","","","","","","","","","",,,,,"",,,,"fr-lm-historique-grossesse.identifiant",1,1,"",""
+","Logical model- FR LM Historique de la grossesse","Entrée Historique de la grossesse","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"fr-lm-historique-grossesse.header","fr-lm-historique-grossesse.header","","","",1,1,"","","","Base {[]} {[]}
+","Métadonnées de base","Métadonnées de base","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header",1,1,"",""
+"fr-lm-historique-grossesse.header.subject","fr-lm-historique-grossesse.header.subject","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-usager {[]} {[]}
+","Patient/subject information","Patient/subject information","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.subject",1,1,"",""
+"fr-lm-historique-grossesse.header.identifier","fr-lm-historique-grossesse.header.identifier","","","",0,*,"","","","Identifier {[]} {[]}
+","Identifiant de l’entrée","Identifiant de l’entrée","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.identifier",0,*,"",""
+"fr-lm-historique-grossesse.header.author[x]","fr-lm-historique-grossesse.header.author[x]","","","",0,*,"","","","Base {[]} {[]}
+","author[x] peut correspondre soit à un professionnel, soit à une organisation, soit à un système.","author[x] peut correspondre soit à un professionnel, soit à une organisation, soit à un système.","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.author[x]",0,*,"",""
+"fr-lm-historique-grossesse.header.author[x].authorProfessional","fr-lm-historique-grossesse.header.author[x].authorProfessional","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure {[]} {[]}
+","L'auteur est un professionnel de santé","L'auteur est un professionnel de santé","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.author[x].authorProfessional",0,*,"",""
+"fr-lm-historique-grossesse.header.author[x].authorOrganisation","fr-lm-historique-grossesse.header.author[x].authorOrganisation","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure {[]} {[]}
+","L'auteur est une organisation","L'auteur est une organisation","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.author[x].authorOrganisation",0,*,"",""
+"fr-lm-historique-grossesse.header.author[x].authorDevice","fr-lm-historique-grossesse.header.author[x].authorDevice","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-systeme-structure-auteur {[]} {[]}
+","L'auteur est un système","L'auteur est un système","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.author[x].authorDevice",0,*,"",""
+"fr-lm-historique-grossesse.header.performer","fr-lm-historique-grossesse.header.performer","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure {[]} {[]}
+","Exécutant (performer)","Exécutant (performer)","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.performer",0,*,"",""
+"fr-lm-historique-grossesse.header.participant","fr-lm-historique-grossesse.header.participant","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-participant-corps {[]} {[]}
+","Participant","Participant","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.participant",0,*,"",""
+"fr-lm-historique-grossesse.header.informant","fr-lm-historique-grossesse.header.informant","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-informateur {[]} {[]}
+","Informateur","Informateur","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.informant",0,*,"",""
+"fr-lm-historique-grossesse.header.date","fr-lm-historique-grossesse.header.date","","","",0,1,"","","","dateTime {[]} {[]}
+","Période de la grossesse","Date/Heure de création par l'auteur","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.date",0,1,"",""
+"fr-lm-historique-grossesse.header.source","fr-lm-historique-grossesse.header.source","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Source","Source","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.source",0,1,"",""
+"fr-lm-historique-grossesse.header.langue","fr-lm-historique-grossesse.header.langue","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","'fr-FR' pour français métropolitain (la casse des caractères doit être respectée)
+La partie en minuscules indique le code de la langue utilisée (ISO-639-1)
+La partie en majuscules indique le code pays (ISO-3166)","'fr-FR' pour français métropolitain (la casse des caractères doit être respectée)
+La partie en minuscules indique le code de la langue utilisée (ISO-639-1)
+La partie en majuscules indique le code pays (ISO-3166)","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.langue",0,1,"",""
 "fr-lm-historique-grossesse.code","fr-lm-historique-grossesse.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Code de l'entrée","Code de l'entrée","","","","","","","","","",,,,,"",,,,"fr-lm-historique-grossesse.code",1,1,"",""
 "fr-lm-historique-grossesse.statut","fr-lm-historique-grossesse.statut","","","",1,1,"","","","CodeableConcept {[]} {[]}
@@ -11,10 +39,8 @@
     <code value=""completed""/>
   </coding>
 </valueCodeableConcept>","","","",,,,,"",,,,"fr-lm-historique-grossesse.statut",1,1,"",""
-"fr-lm-historique-grossesse.periodeGrossesse","fr-lm-historique-grossesse.periodeGrossesse","","","",1,1,"","","","dateTime {[]} {[]}
-","Période de la grossesse","Période de la grossesse","","","","","","","","","",,,,,"",,,,"fr-lm-historique-grossesse.periodeGrossesse",1,1,"",""
-"fr-lm-historique-grossesse.choice[x]","fr-lm-historique-grossesse.choice[x]","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-naissance {[]} {[]}
-https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation-grossesse {[]} {[]}","L'entrée Historique de la grossesse contient :
+"fr-lm-historique-grossesse.choice[x]","fr-lm-historique-grossesse.choice[x]","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-birth-event {[]} {[]}
+https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation-pregnancy {[]} {[]}","L'entrée Historique de la grossesse contient :
   • soit les informations relatives à une naissance (une ou plusieurs entrée FR-Naissance),  
   • soit les informations relatives à la grossesse  (une ou plusieurs entrée FR-Observation-sur-la-grossesse)","L'entrée Historique de la grossesse contient :
   • soit les informations relatives à une naissance (une ou plusieurs entrée FR-Naissance),  

@@ -2106,13 +2106,6 @@
   "name" : "FRLMActeImagerie"
 },
 {
-  "id" : "fr-lm-acte-substitution",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-acte-substitution",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRLMActeSubstitution"
-},
-{
   "id" : "fr-lm-addendum",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-addendum",
@@ -2183,18 +2176,18 @@
   "name" : "FRLMAutorisationExposition"
 },
 {
-  "id" : "fr-lm-autorisation-substitution",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-autorisation-substitution",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRLMAutorisationSubstitution"
-},
-{
   "id" : "fr-lm-batterie-examens-biologie-medicale",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-batterie-examens-biologie-medicale",
   "version" : "0.1.0-snapsnot",
   "name" : "FRLMBatterieExamensBiologieMedicale"
+},
+{
+  "id" : "fr-lm-birth-event",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-birth-event",
+  "version" : "0.1.0-snapsnot",
+  "name" : "FRLMBirthEvent"
 },
 {
   "id" : "fr-lm-care-plan",
@@ -2687,25 +2680,11 @@
   "name" : "FRLMModaliteSortie"
 },
 {
-  "id" : "fr-lm-naissance",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-naissance",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRLMNaissance"
-},
-{
   "id" : "fr-lm-non-remboursable",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-non-remboursable",
   "version" : "0.1.0-snapsnot",
   "name" : "FRLMNonRemboursable"
-},
-{
-  "id" : "fr-lm-notes-dispensateur",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-notes-dispensateur",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRLMNotesDispensateur"
 },
 {
   "id" : "fr-lm-object-catalog",
@@ -2722,11 +2701,11 @@
   "name" : "FRLMObservation"
 },
 {
-  "id" : "fr-lm-observation-grossesse",
+  "id" : "fr-lm-observation-pregnancy",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation-grossesse",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation-pregnancy",
   "version" : "0.1.0-snapsnot",
-  "name" : "FRLMObservationGrossesse"
+  "name" : "FRLMObservationPregnancy"
 },
 {
   "id" : "fr-lm-observation-result",
@@ -2778,18 +2757,18 @@
   "name" : "FRLMPatientSujetNonHumain"
 },
 {
+  "id" : "fr-lm-patient-transfer",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-transfer",
+  "version" : "0.1.0-snapsnot",
+  "name" : "FRLMPatientTransfer"
+},
+{
   "id" : "fr-lm-patient-usager",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-usager",
   "version" : "0.1.0-snapsnot",
   "name" : "FRLMPatientUsager"
-},
-{
-  "id" : "fr-lm-performer",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-performer",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRLMPerformer"
 },
 {
   "id" : "fr-lm-personne-structure",
@@ -2818,13 +2797,6 @@
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-points-de-vigilances-non-code",
   "version" : "0.1.0-snapsnot",
   "name" : "FRLMPointsDeVigilancesNonCode"
-},
-{
-  "id" : "fr-lm-prelevement",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-prelevement",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRLMPrelevement"
 },
 {
   "id" : "fr-lm-prescription",
@@ -3016,13 +2988,6 @@
   "name" : "FRLMSerieImagerie"
 },
 {
-  "id" : "fr-lm-severite",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-severite",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRLMSeverite"
-},
-{
   "id" : "fr-lm-signes-vitaux",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-signes-vitaux",
@@ -3037,18 +3002,25 @@
   "name" : "FRLMSOPInstance"
 },
 {
-  "id" : "fr-lm-statut",
+  "id" : "fr-lm-specimen",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-statut",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-specimen",
   "version" : "0.1.0-snapsnot",
-  "name" : "FRLMStatut"
+  "name" : "FRLMSpecimen"
 },
 {
-  "id" : "fr-lm-statut-clinique-patient",
+  "id" : "fr-lm-status",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-statut-clinique-patient",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-status",
   "version" : "0.1.0-snapsnot",
-  "name" : "FRLMStatutCliniquePatient"
+  "name" : "FRLMStatus"
+},
+{
+  "id" : "fr-lm-status-document-entry",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-status-document-entry",
+  "version" : "0.1.0-snapsnot",
+  "name" : "FRLMStatusDocumentEntry"
 },
 {
   "id" : "fr-lm-statut-document",
@@ -3058,25 +3030,11 @@
   "name" : "FRLMStatutDocument"
 },
 {
-  "id" : "fr-lm-statut-document-entree",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-statut-document-entree",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRLMStatutDocumentEntree"
-},
-{
   "id" : "fr-lm-statut-fonctionnel",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-statut-fonctionnel",
   "version" : "0.1.0-snapsnot",
   "name" : "FRLMStatutFonctionnel"
-},
-{
-  "id" : "fr-lm-statut-probleme",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-statut-probleme",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRLMStatutProbleme"
 },
 {
   "id" : "fr-lm-structure-conservation",
@@ -3140,13 +3098,6 @@
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-traitements-administres",
   "version" : "0.1.0-snapsnot",
   "name" : "FRLMTraitementsAdministres"
-},
-{
-  "id" : "fr-lm-transfert-du-patient",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-transfert-du-patient",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRLMTransfertDuPatient"
 },
 {
   "id" : "fr-lm-transfusion-de-produits-sanguins",

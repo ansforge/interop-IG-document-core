@@ -1,18 +1,18 @@
-# Modèle logique métier - FR LM Historique de la grossesse - ANS IG document core v0.1.0-snapsnot
+# Logical model- FR LM Historique de la grossesse - ANS IG document core v0.1.0-snapsnot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Modèle logique métier - FR LM Historique de la grossesse**
+* **Logical model- FR LM Historique de la grossesse**
 
-## Logical Model: Modèle logique métier - FR LM Historique de la grossesse 
+## Logical Model: Logical model- FR LM Historique de la grossesse 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-historique-grossesse | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-13 | *Computable Name*:FRLMHistoriqueGrossesse |
+| Draft as of 2026-04-14 | *Computable Name*:FRLMHistoriqueGrossesse |
 
  
-Historique de la grossesse 
+Entrée Historique de la grossesse 
 
 **Utilisations:**
 
@@ -43,9 +43,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-historique-gro
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-historique-grossesse",
   "version" : "0.1.0-snapsnot",
   "name" : "FRLMHistoriqueGrossesse",
-  "title" : "Modèle logique métier - FR LM Historique de la grossesse",
+  "title" : "Logical model- FR LM Historique de la grossesse",
   "status" : "draft",
-  "date" : "2026-04-13T09:04:52+00:00",
+  "date" : "2026-04-14T07:59:58+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -54,7 +54,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-historique-gro
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Historique de la grossesse",
+  "description" : "Entrée Historique de la grossesse",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -66,25 +66,19 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-historique-gro
   "kind" : "logical",
   "abstract" : false,
   "type" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-historique-grossesse",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
+  "baseDefinition" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry",
   "derivation" : "specialization",
   "differential" : {
     "element" : [{
       "id" : "fr-lm-historique-grossesse",
       "path" : "fr-lm-historique-grossesse",
-      "short" : "Modèle logique métier - FR LM Historique de la grossesse",
-      "definition" : "Historique de la grossesse"
+      "short" : "Logical model- FR LM Historique de la grossesse",
+      "definition" : "Entrée Historique de la grossesse"
     },
     {
-      "id" : "fr-lm-historique-grossesse.identifiant",
-      "path" : "fr-lm-historique-grossesse.identifiant",
-      "short" : "Identifiant de l'entrée",
-      "definition" : "Identifiant de l'entrée",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "Identifier"
-      }]
+      "id" : "fr-lm-historique-grossesse.header.date",
+      "path" : "fr-lm-historique-grossesse.header.date",
+      "short" : "Période de la grossesse"
     },
     {
       "id" : "fr-lm-historique-grossesse.code",
@@ -114,17 +108,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-historique-gro
       }
     },
     {
-      "id" : "fr-lm-historique-grossesse.periodeGrossesse",
-      "path" : "fr-lm-historique-grossesse.periodeGrossesse",
-      "short" : "Période de la grossesse",
-      "definition" : "Période de la grossesse",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "dateTime"
-      }]
-    },
-    {
       "id" : "fr-lm-historique-grossesse.choice[x]",
       "path" : "fr-lm-historique-grossesse.choice[x]",
       "short" : "L'entrée Historique de la grossesse contient :\n  • soit les informations relatives à une naissance (une ou plusieurs entrée FR-Naissance),  \n  • soit les informations relatives à la grossesse  (une ou plusieurs entrée FR-Observation-sur-la-grossesse)",
@@ -132,10 +115,10 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-historique-gro
       "min" : 1,
       "max" : "*",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-naissance"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-birth-event"
       },
       {
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation-grossesse"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation-pregnancy"
       }]
     }]
   }

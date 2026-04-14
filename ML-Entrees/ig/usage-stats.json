@@ -592,9 +592,6 @@
       "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier": [
-      "fr-lm-image-illustrative",
-      "fr-lm-notes-dispensateur",
-      "fr-lm-reference-item-prescription",
       "fr-lm-reference-item-prescription.reference.externalDocument",
       "fr-lm-references-externes.reference.externalDocument"
     ],

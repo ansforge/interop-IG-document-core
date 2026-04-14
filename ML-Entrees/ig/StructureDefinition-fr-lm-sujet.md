@@ -1,22 +1,22 @@
-# Modèle logique métier - FR LM Sujet - ANS IG document core v0.1.0-snapsnot
+# Logical model - FR LM Sujet - ANS IG document core v0.1.0-snapsnot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Modèle logique métier - FR LM Sujet**
+* **Logical model - FR LM Sujet**
 
-## Logical Model: Modèle logique métier - FR LM Sujet 
+## Logical Model: Logical model - FR LM Sujet 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-sujet | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-13 | *Computable Name*:FRLMSujet |
+| Draft as of 2026-04-14 | *Computable Name*:FRLMSujet |
 
  
 Sujet 
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Logical model - FR LM Family Member History](StructureDefinition-fr-lm-family-member-history.md) and [Modèle logique métier - FR LM Naissance](StructureDefinition-fr-lm-naissance.md)
+* Utilise ce/t/te Modèle logique: [Logical model - FR LM Naissance](StructureDefinition-fr-lm-birth-event.md) and [Logical model - FR LM Family Member History](StructureDefinition-fr-lm-family-member-history.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-sujet)
 
@@ -39,9 +39,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-sujet.csv), [E
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-sujet",
   "version" : "0.1.0-snapsnot",
   "name" : "FRLMSujet",
-  "title" : "Modèle logique métier - FR LM Sujet",
+  "title" : "Logical model - FR LM Sujet",
   "status" : "draft",
-  "date" : "2026-04-13T09:04:52+00:00",
+  "date" : "2026-04-14T07:59:58+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -68,7 +68,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-sujet.csv), [E
     "element" : [{
       "id" : "fr-lm-sujet",
       "path" : "fr-lm-sujet",
-      "short" : "Modèle logique métier - FR LM Sujet",
+      "short" : "Logical model - FR LM Sujet",
       "definition" : "Sujet"
     },
     {

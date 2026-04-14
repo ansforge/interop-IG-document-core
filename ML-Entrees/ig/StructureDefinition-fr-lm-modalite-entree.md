@@ -1,18 +1,18 @@
-# Modèle logique métier - FR LM Modalité d'entrée - ANS IG document core v0.1.0-snapsnot
+# logical model - FR LM Modalité d'entrée - ANS IG document core v0.1.0-snapsnot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Modèle logique métier - FR LM Modalité d'entrée**
+* **logical model - FR LM Modalité d'entrée**
 
-## Logical Model: Modèle logique métier - FR LM Modalité d'entrée 
+## Logical Model: logical model - FR LM Modalité d'entrée 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-modalite-entree | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-13 | *Computable Name*:FRLMModaliteEntree |
+| Draft as of 2026-04-14 | *Computable Name*:FRLMModaliteEntree |
 
  
-Modalité d’entrée 
+Entrée Modalité d’entrée 
 
 **Utilisations:**
 
@@ -43,9 +43,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-modalite-entre
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-modalite-entree",
   "version" : "0.1.0-snapsnot",
   "name" : "FRLMModaliteEntree",
-  "title" : "Modèle logique métier - FR LM Modalité d'entrée",
+  "title" : "logical model - FR LM Modalité d'entrée",
   "status" : "draft",
-  "date" : "2026-04-13T09:04:52+00:00",
+  "date" : "2026-04-14T07:59:58+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -54,7 +54,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-modalite-entre
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Modalité d'entrée",
+  "description" : "Entrée Modalité d'entrée",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -66,25 +66,14 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-modalite-entre
   "kind" : "logical",
   "abstract" : false,
   "type" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-modalite-entree",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
+  "baseDefinition" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry",
   "derivation" : "specialization",
   "differential" : {
     "element" : [{
       "id" : "fr-lm-modalite-entree",
       "path" : "fr-lm-modalite-entree",
-      "short" : "Modèle logique métier - FR LM Modalité d'entrée",
-      "definition" : "Modalité d'entrée"
-    },
-    {
-      "id" : "fr-lm-modalite-entree.identifiant",
-      "path" : "fr-lm-modalite-entree.identifiant",
-      "short" : "Identifiant de l’observation",
-      "definition" : "Identifiant de l’observation",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "Identifier"
-      }]
+      "short" : "logical model - FR LM Modalité d'entrée",
+      "definition" : "Entrée Modalité d'entrée"
     },
     {
       "id" : "fr-lm-modalite-entree.code",
@@ -95,17 +84,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-modalite-entre
       "max" : "1",
       "type" : [{
         "code" : "CodeableConcept"
-      }]
-    },
-    {
-      "id" : "fr-lm-modalite-entree.description",
-      "path" : "fr-lm-modalite-entree.description",
-      "short" : "Description narrative de l’observation",
-      "definition" : "Description narrative de l’observation",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "Narrative"
       }]
     },
     {
@@ -120,17 +98,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-modalite-entre
       }]
     },
     {
-      "id" : "fr-lm-modalite-entree.date",
-      "path" : "fr-lm-modalite-entree.date",
-      "short" : "Date de l’observation",
-      "definition" : "Date de l’observation",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "dateTime"
-      }]
-    },
-    {
       "id" : "fr-lm-modalite-entree.modaliteEntree",
       "path" : "fr-lm-modalite-entree.modaliteEntree",
       "short" : "Modalité d'entrée",
@@ -141,19 +108,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-modalite-entre
         "code" : "CodeableConcept"
       }],
       "binding" : {
-        "description" : "jdv-modalite-entree-cisis (1.2.250.1.213.1.1.5.73)"
+        "description" : "jdv-modalite-entree-cisis (1.2.250.1.213.1.1.5.73)",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-sortie-cisis"
       }
-    },
-    {
-      "id" : "fr-lm-modalite-entree.auteur",
-      "path" : "fr-lm-modalite-entree.auteur",
-      "short" : "Auteur",
-      "definition" : "Auteur",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-auteur"
-      }]
     }]
   }
 }
