@@ -1,8 +1,8 @@
-Profile: FRProcedureActDocument
+Profile: FRProcedureDocument
 Parent: Procedure
-Id: fr-procedure-act-document
-Title: "Procedure - FR Procedure Act Document"
-Description: "FRProcedureActDocument est un profil utilisé pour décrire un acte planifié ou réalisé."
+Id: fr-procedure-document
+Title: "Procedure - FR Procedure Document"
+Description: "FRProcedureDocument est un profil utilisé pour décrire un acte planifié ou réalisé."
 
 // mettre le bon canonical à partir de HL7 Europe Base and Core FHIR IG
 //* ^extension[$imposeProfile].valueCanonical = Canonical()
