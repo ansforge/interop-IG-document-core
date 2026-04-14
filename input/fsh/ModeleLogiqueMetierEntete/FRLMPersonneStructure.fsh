@@ -5,7 +5,9 @@ Description: "Une personne (professionnel ou patient ou autre) et/ou une structu
 Characteristics: #can-be-target 			 			 		
 * personne 0..1 Base "Personne"		 		
   * identifiantPersonne 0..1 Identifier "Identifiant de la personne.
-- obligatoire pour les professionnels et les patients."				
+- obligatoire pour les professionnels et les patients."		
+  * roleFonctionnel 0..1 CodeableConcept "Rôle fonctionnel"
+  * dateExecution  1..1 dateTime "Date de l’exécution"			
   * professionRole 0..1 CodeableConcept "
 - Profession pour les professionnels.
 - Rôle pour les non professionnels."	

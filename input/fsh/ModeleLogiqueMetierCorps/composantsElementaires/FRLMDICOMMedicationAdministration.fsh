@@ -1,8 +1,8 @@
-Logical: FRLMAdministrationProduitDeSante
-Id: fr-lm-administration-produit-de-sante
+Logical: FRLMDICOMMedicationAdministration
+Id: fr-lm-dicom-medication-administration
 Parent: FRLMEntry
-Title: "Modèle logique métier - FR LM Administration produit de sante"
-Description: """Administration produit de sante"""
+Title: "Logical model - FR LM DICOM Medication Administration"
+Description: """Entrée Administration de produit de santé"""
 Characteristics: #can-be-target
 
 * statut 1..1 code "Statut de l'entrée"

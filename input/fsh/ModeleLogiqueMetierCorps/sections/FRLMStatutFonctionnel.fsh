@@ -7,7 +7,7 @@ Characteristics: #can-be-target
 
 * sousSection 0..0
 * titreSection 1..1 
-* auteur 0..* FRLMAuteur "Auteur"
-* informateur 0..* FRLMInformateur "Informateur"
+* auteur 0..* FRLMPersonneStructureAuteur "Auteur"
+* informateur 0..* FRLMPersonneStructure "Informateur"
 * entree
   * groupeQuestionnairesEvaluation 0..* FRLMGroupDeQuestionnairesDevaluation "Groupe de questionnaires d'évalutation"

@@ -1,8 +1,8 @@
-Logical: FRLMAdministrationDeDerivesDuSang
-Id: fr-lm-administration-de-derives-du-sang
+Logical: FRLMAdministrationBloodDerivatives
+Id: fr-lm-administration-blood-derivatives
 Parent: FRLMEntry
-Title: "Modèle logique métier - FR LM Administration de dérivés du sang"
-Description: """Administration de dérivés du sang"""
+Title: "Logical model - FR LM Administration of Blood Derivatives"
+Description: """Entrée Administration de dérivés du sang"""
 Characteristics: #can-be-target
 
 * code 1..1 CodeableConcept "Code de l’observation"

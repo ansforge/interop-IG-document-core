@@ -185,8 +185,7 @@ groups:
       - StructureDefinition/fr-lm-entry
       - StructureDefinition/fr-lm-procedure
       - StructureDefinition/fr-lm-family-member-history
-      - StructureDefinition/fr-lm-commentaire-er
-      - StructureDefinition/fr-lm-demande-examen-ou-suivi
+      - StructureDefinition/fr-lm-service-request
       - StructureDefinition/fr-lm-care-plan
       - StructureDefinition/fr-lm-condition
       - StructureDefinition/fr-lm-encounter
@@ -196,21 +195,19 @@ groups:
       - StructureDefinition/fr-lm-statut-clinique-patient
       - StructureDefinition/fr-lm-statut-probleme
       - StructureDefinition/fr-lm-severite
-      - StructureDefinition/fr-lm-acte-substitution
       - StructureDefinition/fr-lm-allergy-intolerance	
-      - StructureDefinition/fr-lm-directive-anticipee
+      - StructureDefinition/fr-lm-advance-directive
       - StructureDefinition/fr-lm-device-use
-      - StructureDefinition/fr-lm-document-attache
-      - StructureDefinition/fr-lm-dose-antigene
-      - StructureDefinition/fr-lm-effet-indesirable
-      - StructureDefinition/fr-lm-en-rapport-avec-la-prevention
-      - StructureDefinition/fr-lm-en-rapport-avec-accident-travail
-      - StructureDefinition/fr-lm-en-rapport-avec-ald
-      - StructureDefinition/fm-lm-assessment
-      - StructureDefinition/fr-lm-evolution-effet-indesirable
-      - StructureDefinition/fr-lm-gravite-effet-indesirable
-      - StructureDefinition/fr-lm-group-de-questionnaires-devaluation
-      - StructureDefinition/fm-lm-observation-social-history
+      - StructureDefinition/fr-lm-attachement
+      - StructureDefinition/fr-lm-adverse-event
+      - StructureDefinition/fr-lm-observation-related-to-prevention
+      - StructureDefinition/fr-lm-observation-work-related-accident
+      - StructureDefinition/fr-lm-observation-long-term-condition
+      - StructureDefinition/fr-lm-assessment
+      - StructureDefinition/fr-lm-assessments
+      - StructureDefinition/fr-lm-evolution-adverse-event
+      - StructureDefinition/fr-lm-severity-adverse-event
+      - StructureDefinition/fr-lm-observation-social-history
       - StructureDefinition/fr-lm-historique-grossesse
       - StructureDefinition/fr-lm-hors-amm
       - StructureDefinition/fr-lm-image-illustrative
@@ -226,22 +223,21 @@ groups:
       - StructureDefinition/fr-lm-observation-vital-sign
       - StructureDefinition/fr-lm-statut
       - StructureDefinition/fr-lm-medication-administration
+      - StructureDefinition/fr-lm-dicom-medication-administration
       - StructureDefinition/fr-lm-immunization-recommendation
       - StructureDefinition/fr-lm-immunisation
       - StructureDefinition/fr-lm-medication-dispense
       - StructureDefinition/fr-lm-reference-item-prescription
       - StructureDefinition/fr-lm-prelevement
-      - StructureDefinition/fr-lm-administration-produit-de-sante
       - StructureDefinition/fr-lm-batterie-examens-biologie-medicale
       - StructureDefinition/fr-lm-isolat-microbiologique
       - StructureDefinition/fr-lm-resultat-examens-biologie-element-clinique-pertinent
-      - StructureDefinition/fr-lm-examen-imagerie
+      - StructureDefinition/fr-lm-imaging-study
       - StructureDefinition/fr-lm-autorisation-exposition
       - StructureDefinition/fr-lm-serie-imagerie
       - StructureDefinition/fr-lm-sop-instance
       - StructureDefinition/fr-lm-technique-imagerie
       - StructureDefinition/fr-lm-medication-prescription
-      - StructureDefinition/fr-lm-autorisation-substitution
       - StructureDefinition/fr-lm-quantite-exposition
       - StructureDefinition/fr-lm-quantity-prescribed
       - StructureDefinition/fr-lm-statut-document-entree
@@ -250,10 +246,10 @@ groups:
       - StructureDefinition/fr-lm-identification-de-micro-organismes-multiresistants
       - StructureDefinition/fr-lm-modalite-sortie
       - StructureDefinition/fr-lm-modalite-entree
-      - StructureDefinition/fr-lm-evenements-indesirables-suite-administration-derives-sang
-      - StructureDefinition/fr-lm-evenement-indesirable-pendant-hospitalisation
-      - StructureDefinition/fr-lm-administration-de-derives-du-sang
-      - StructureDefinition/fr-lm-accidents-transfusionnels
+      - StructureDefinition/fr-lm-adverse-event-following-administration-blood-derivatives
+      - StructureDefinition/fr-lm-adverse-event-during-hospitalization
+      - StructureDefinition/fr-lm-administration-blood-derivatives
+      - StructureDefinition/fr-lm-transfusion-accidents
       - StructureDefinition/fr-lm-transfert-du-patient
       - StructureDefinition/fr-lm-recherche-de-micro-organismes
       - StructureDefinition/fr-lm-sujet
@@ -263,10 +259,9 @@ groups:
       - StructureDefinition/fr-lm-laboratoire-executant
       - StructureDefinition/fr-lm-performer
       - StructureDefinition/fr-lm-participant-apsr
-      - StructureDefinition/fr-lm-auteur-apsr
+      - StructureDefinition/fr-lm-author-apsr
       - StructureDefinition/fr-lm-informant-apsr
       - StructureDefinition/fr-lm-device
-      - StructureDefinition/fr-lm-echantillon-preleve
       - StructureDefinition/fr-lm-dosage-instructions
   Ressources CDA entête:
     name: Eléments CDA

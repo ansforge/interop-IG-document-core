@@ -11,4 +11,4 @@ Characteristics: #can-be-target
 * statut 1..1 code "Statut de l'entrée. Fixé à la valeur 'completed'"
 * date 1..1 dateTime "Date de l'entrée"
 * transfusionProduitSanguin 1..1 boolean "Transfusion de produit sanguin"
-* auteur 0..1 FRLMAuteur "Auteur"
+* auteur 0..1 FRLMPersonneStructureAuteur "Auteur"

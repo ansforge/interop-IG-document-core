@@ -8,4 +8,4 @@ Characteristics: #can-be-target
 * titreSection 1..1 
 * sousSection 0..0 
 * entree
-  * directiveAnticipee 0..* FRLMDirectiveAnticipee "Entrée Directive anticipée"
+  * directiveAnticipee 0..* FRLMAdvanceDirective "Entrée Directive anticipée"

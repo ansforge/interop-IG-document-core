@@ -1,7 +1,7 @@
 Logical: FRLMDosageInstructions
 Id: fr-lm-dosage-instructions
 Title: "Logical model- FR LM Dosage Instructions"
-Description: """Posologie"""
+Description: """Entrée Posologie"""
 Characteristics: #can-be-target
 
 * renderedDosageInstruction 0..1 string "Posologie sous forme textuelle"
