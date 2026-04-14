@@ -8,4 +8,4 @@ Characteristics: #can-be-target
 * titreSection 1..1 
 * sousSection 0..0
 * entree 1..1
-  * statutDocument 1..1 FRLMStatutDocumentEntree "Entrée Statut du document"
+  * statutDocument 1..1 FRLMStatusDocumentEntry "Entrée Statut du document"

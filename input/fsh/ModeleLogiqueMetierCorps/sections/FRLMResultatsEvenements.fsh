@@ -8,5 +8,5 @@ Characteristics: #can-be-target
 * sousSection 0..0
 * entree
   * observation 1..* FRLMObservation "Entrée Simple observation"
-  * transfertPatient 0..* FRLMTransfertDuPatient "Entrée Transfert du patient"
+  * transfertPatient 0..* FRLMPatientTransfer "Entrée Transfert du patient"
   * probleme  0..* FRLMCondition "Entrée Problème"
