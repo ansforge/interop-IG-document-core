@@ -1,6 +1,6 @@
 Profile: FRCDASectionResultats
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Section
-Id: fr-cda-resultats
+Id: fr-cda-section-resultats
 Title: "CDA - FR Resultats"
 Description: "Cette section regroupe les résultats d'examens (biologie polyvalente, imagerie, cytologie, pathologie, génétique humaine...)"
 * templateId 1..1

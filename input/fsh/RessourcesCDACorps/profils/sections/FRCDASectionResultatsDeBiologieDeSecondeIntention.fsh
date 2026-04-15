@@ -1,7 +1,7 @@
-Profile: FRCDASectionResultatsDeLaboratoireDeBiologieDeSecondeIntention
+Profile: FRCDASectionResultatsDeBiologieDeSecondeIntention
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Section
-Id: fr-cda-resultats-de-laboratoire-de-biologie-de-seconde-intention
-Title: "CDA - FR Resultats de laboratoire de biologie de seconde intention"
+Id: fr-cda-resultats-de-biologie-de-seconde-intention
+Title: "CDA - FR Resultats de biologie de seconde intention"
 Description: "Cette section, optionnelle, est utilisée uniquement dans le cas d'usage particulier des résultats d'examen de laboratoire de biologie de seconde intention, lorsqu'ils ne peuvent être fournis dans un format structuré mais uniquement au format PDF.Cette solution permet d'encapsuler un fichier au format (PDF) et encodé en base 64 dans une section spécifique 'Résultats de laboratoire de biologie de seconde intention'.Attention : cette solution n'est pas conseillée et reste temporaire, car à terme, tous les résultats émanant des laboratoires de biologie devront être fournis dans un format structuré et codé."
 * templateId 1..1
 * templateId ^slicing.discriminator.type = #value
