@@ -541,7 +541,7 @@ groups:
         - StructureDefinition/fr-observation-survey-pannel-document
         - StructureDefinition/fr-observation-social-history-document
         - StructureDefinition/fr-procedure-imaging-document
-        - StructureDefinition/fr-procedure-act-document
+        - StructureDefinition/fr-procedure-document
         - StructureDefinition/fr-specimen-document
         - StructureDefinition/fr-pregnancy-history-document
         - StructureDefinition/fr-observation-result-document
@@ -657,7 +657,7 @@ groups:
   Mapping ML-CDA-FHIR des composants élémentaires d'un document:
     name: Concept Maps des composants élémentaires d'un Document
     resources:
-      - FRActLMCDAFHIR
+      - FRProcedureLMCDAFHIR
       - FRAdvanceDirectiveLMCDAFHIR
       - FRAdverseEventLMCDAFHIR
       - FRAllergyIntoleranceLMCDAFHIR
