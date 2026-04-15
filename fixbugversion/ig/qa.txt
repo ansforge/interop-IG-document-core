@@ -3,7 +3,7 @@ FRDocumentCore : Validation Results
 
 err = 1492, warn = 5445, info = 1135
 IG Publisher Version: 2.1.2 Out of date - current version is 2.2.6
-Generated Wed Apr 15 13:30:54 UTC 2026. FHIR version 4.0.1 for ans.document.fr.core#0.1.0-snapshot (canonical = https://interop.esante.gouv.fr/ig/document/core)
+Generated Wed Apr 15 14:43:43 UTC 2026. FHIR version 4.0.1 for ans.document.fr.core#0.1.0-snapsnot (canonical = https://interop.esante.gouv.fr/ig/document/core)
  Build Errors : 13 / 7 / 0
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRActSubstitutionLMCDAFHIR : 1 / 6 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRAdvanceDirectiveLMCDAFHIR : 1 / 6 / 1
@@ -7699,7 +7699,7 @@ ERROR: ValueSet/fr-valueset-status-code: ValueSet.jurisdiction[0].coding[0].disp
 ERROR: ValueSet/fr-valueset-status-code: ValueSet.compose.include[0]: The system 'https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis' is actually a value set, which itself refers to the system 'http://terminology.hl7.org/CodeSystem/v3-ActStatus' so that may be what is intended here
 WARNING: ValueSet/fr-valueset-status-code: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 WARNING: ValueSet.where(id = 'fr-valueset-status-code'): Error from https://smt.esante.gouv.fr/fhir: Error: [9823cb67-0c65-4621-9408-84e7e33cb811]: A usable code system with URL https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis could not be resolved.
-Information: X-Request-Id: 47cc51a5-872f-4a68-bde9-5f39227ed27d
+Information: X-Request-Id: 7f4da11c-32e9-4b9d-a3d1-92f8c85635fd
 == fsh-generated/resources/ValueSet-fr-valueset-statut-du-probleme.json ==
 ERROR: ValueSet/fr-valueset-statut-du-probleme: ValueSet.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 WARNING: ValueSet/fr-valueset-statut-du-probleme: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
@@ -7735,7 +7735,7 @@ ERROR: ValueSet/fr-vs-medication-translation-document: ValueSet.jurisdiction[0].
 WARNING: ValueSet/fr-vs-medication-translation-document: ValueSet.compose.include[1].system: No definition could be found for URL value 'https://smt.esante.gouv.fr/terminologie-cip_ucd'
 WARNING: ValueSet/fr-vs-medication-translation-document: ValueSet.compose.include[3].system: No definition could be found for URL value 'https://smt.esante.gouv.fr/terminologie-medicabase'
 WARNING: ValueSet.where(id = 'fr-vs-medication-translation-document'): Error from https://smt.esante.gouv.fr/fhir: Error: [5c3ee25c-1cdd-4106-8066-0ad6dac9d7c2]: Could not find the code system https://smt.esante.gouv.fr/terminologie-cip_ucd|2026-04
-Information: X-Request-Id: f578b801-1981-4d9b-a245-3f9fdaf737d1
+Information: X-Request-Id: 5ee3c02b-d2c2-44b1-89ac-c08dda970e7d
 == fsh-generated/resources/ValueSet-fr-vs-procedure-code.json ==
 ERROR: ValueSet/fr-vs-procedure-code: ValueSet.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 WARNING: ValueSet/fr-vs-procedure-code: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present

@@ -1,4 +1,4 @@
-# Entête document - ANS IG document core v0.1.0-snapshot
+# Entête document - ANS IG document core v0.1.0-snapsnot
 
 * [**Table of Contents**](toc.md)
 * **Entête document**

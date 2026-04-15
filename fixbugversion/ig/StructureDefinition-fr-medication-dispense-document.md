@@ -1,4 +1,4 @@
-# MedicationDispense - FR Medication Dispense Document - ANS IG document core v0.1.0-snapshot
+# MedicationDispense - FR Medication Dispense Document - ANS IG document core v0.1.0-snapsnot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-dispense-document | *Version*:0.1.0-snapshot |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-dispense-document | *Version*:0.1.0-snapsnot |
 | Draft as of 2026-04-15 | *Computable Name*:FRMedicationDispenseDocument |
 
  
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-medication-dispen
   "resourceType" : "StructureDefinition",
   "id" : "fr-medication-dispense-document",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-dispense-document",
-  "version" : "0.1.0-snapshot",
+  "version" : "0.1.0-snapsnot",
   "name" : "FRMedicationDispenseDocument",
   "title" : "MedicationDispense - FR Medication Dispense Document",
   "status" : "draft",
-  "date" : "2026-04-15T13:14:55+00:00",
+  "date" : "2026-04-15T14:22:12+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -1,4 +1,4 @@
-# FR Immunization Type Extension - ANS IG document core v0.1.0-snapshot
+# FR Immunization Type Extension - ANS IG document core v0.1.0-snapsnot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-immunization-type-extension | *Version*:0.1.0-snapshot |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-immunization-type-extension | *Version*:0.1.0-snapsnot |
 | Draft as of 2026-04-15 | *Computable Name*:FRImmunizationTypeExtension |
 
 Extension permettant de représenter le type de vaccination (ex: INITIMMUNIZ, BOOSTER, IMMUNIZ).
@@ -44,11 +44,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-immunization-type
   "resourceType" : "StructureDefinition",
   "id" : "fr-immunization-type-extension",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-immunization-type-extension",
-  "version" : "0.1.0-snapshot",
+  "version" : "0.1.0-snapsnot",
   "name" : "FRImmunizationTypeExtension",
   "title" : "FR Immunization Type Extension",
   "status" : "draft",
-  "date" : "2026-04-15T13:14:55+00:00",
+  "date" : "2026-04-15T14:22:12+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

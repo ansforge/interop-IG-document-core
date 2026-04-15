@@ -1,4 +1,4 @@
-# Mapping CDA / FHIR - ANS IG document core v0.1.0-snapshot
+# Mapping CDA / FHIR - ANS IG document core v0.1.0-snapsnot
 
 * [**Table of Contents**](toc.md)
 * [**Structure générale document**](structureGenerale.md)

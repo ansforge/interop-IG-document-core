@@ -1,4 +1,4 @@
-# IPS-FR - ANS IG document core v0.1.0-snapshot
+# IPS-FR - ANS IG document core v0.1.0-snapsnot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

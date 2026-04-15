@@ -1,4 +1,4 @@
-# Mapping FRLMObservationResult → FRCDAResultat → FRObservationResultDocument - ANS IG document core v0.1.0-snapshot
+# Mapping FRLMObservationResult → FRCDAResultat → FRObservationResultDocument - ANS IG document core v0.1.0-snapsnot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRObservationResultLMCDAFHIR | *Version*:0.1.0-snapshot |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRObservationResultLMCDAFHIR | *Version*:0.1.0-snapsnot |
 | Draft as of 2026-04-15 | *Computable Name*: |
 
  
@@ -23,10 +23,10 @@ Mapping des éléments du modèle métier FRLMObservationResult vers le profil C
   "resourceType" : "ConceptMap",
   "id" : "FRObservationResultLMCDAFHIR",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRObservationResultLMCDAFHIR",
-  "version" : "0.1.0-snapshot",
+  "version" : "0.1.0-snapsnot",
   "title" : "Mapping Métier/CDA/FHIR : \"Résultat d'observation\"",
   "status" : "draft",
-  "date" : "2026-04-15T13:14:55+00:00",
+  "date" : "2026-04-15T14:22:12+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

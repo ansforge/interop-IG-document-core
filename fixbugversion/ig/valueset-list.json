@@ -1,7 +1,7 @@
 {
   "codeSystems" : [{
     "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-doc-vs-participation-type",
-    "version" : "0.1.0-snapshot",
+    "version" : "0.1.0-snapsnot",
     "status" : "draft",
     "name" : "FRValueSetParticipationType",
     "title" : "FR ValueSet Participation Type",
@@ -10,7 +10,7 @@
   },
   {
     "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-doc-vs-role-prise-charge",
-    "version" : "0.1.0-snapshot",
+    "version" : "0.1.0-snapsnot",
     "status" : "draft",
     "name" : "FRValueSetRolePriseCharge",
     "title" : "Fr ValueSet RolePriseCharge",
@@ -19,7 +19,7 @@
   },
   {
     "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-valueset-code-traitement",
-    "version" : "0.1.0-snapshot",
+    "version" : "0.1.0-snapsnot",
     "status" : "draft",
     "name" : "FRValueSetCodeTraitement",
     "title" : "ValueSet - FR ValueSet Code Traitement",
@@ -29,7 +29,7 @@
   },
   {
     "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-valueset-reference-externe",
-    "version" : "0.1.0-snapshot",
+    "version" : "0.1.0-snapsnot",
     "status" : "draft",
     "name" : "FRValueSetReferenceExterne",
     "title" : "ValueSet - FR ValueSet Reference externe",
@@ -38,7 +38,7 @@
   },
   {
     "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-valueset-status-code",
-    "version" : "0.1.0-snapshot",
+    "version" : "0.1.0-snapsnot",
     "status" : "draft",
     "name" : "FRValueSetStatusCode",
     "title" : "ValueSet - FR ValueSet StatusCode",
@@ -47,7 +47,7 @@
   },
   {
     "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-valueset-statut-du-probleme",
-    "version" : "0.1.0-snapshot",
+    "version" : "0.1.0-snapsnot",
     "status" : "draft",
     "name" : "FRValueSetStatutDuProbleme",
     "title" : "ValueSet - FR ValueSet Statut du problème",
@@ -57,7 +57,7 @@
   },
   {
     "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-valueset-type-vaccination",
-    "version" : "0.1.0-snapshot",
+    "version" : "0.1.0-snapsnot",
     "status" : "draft",
     "name" : "FRValueSetTypeVaccination",
     "title" : "ValueSet - FR ValueSet Type Vaccination",
@@ -67,7 +67,7 @@
   },
   {
     "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-actor-type-document",
-    "version" : "0.1.0-snapshot",
+    "version" : "0.1.0-snapsnot",
     "status" : "draft",
     "name" : "FRValueSetActorTypeDocument",
     "title" : "ValueSet - FR ValueSet Actor Type Document",
@@ -76,7 +76,7 @@
   },
   {
     "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-allergy-code",
-    "version" : "0.1.0-snapshot",
+    "version" : "0.1.0-snapsnot",
     "status" : "draft",
     "name" : "FRValueSetAllergyCodeDocument",
     "title" : "ValueSet – FR ValueSet Allergy Code Document",
@@ -90,7 +90,7 @@
   },
   {
     "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-allergy-intolerance-type-document",
-    "version" : "0.1.0-snapshot",
+    "version" : "0.1.0-snapsnot",
     "status" : "draft",
     "name" : "FRValueSetAllergyInoleranceTypeDocument",
     "title" : "ValueSet - FR ValueSet Allergy Intolerance Type Document",
@@ -100,7 +100,7 @@
   },
   {
     "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-allergy-substance",
-    "version" : "0.1.0-snapshot",
+    "version" : "0.1.0-snapsnot",
     "status" : "draft",
     "name" : "FRValueSetAllergySubstanceDocument",
     "title" : "ValueSet – FR ValueSet Allergy Substance Document",
@@ -109,7 +109,7 @@
   },
   {
     "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-edqm-document",
-    "version" : "0.1.0-snapshot",
+    "version" : "0.1.0-snapsnot",
     "status" : "draft",
     "name" : "FRValueSetEDQMDocument",
     "title" : "ValueSet - FR ValueSet EDQM Document",
@@ -118,7 +118,7 @@
   },
   {
     "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-evaluation-type",
-    "version" : "0.1.0-snapshot",
+    "version" : "0.1.0-snapsnot",
     "status" : "draft",
     "name" : "FRValueSetEvaluationTypeDocument",
     "title" : "ValueSet – FR ValueSet Type d'évaluation",
@@ -127,7 +127,7 @@
   },
   {
     "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-medication-translation-document",
-    "version" : "0.1.0-snapshot",
+    "version" : "0.1.0-snapsnot",
     "status" : "draft",
     "name" : "FRValueSetMedicationTranslationDocument",
     "title" : "ValueSet - FR ValueSet Medication Translation Document",
@@ -139,7 +139,7 @@
   },
   {
     "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-procedure-code",
-    "version" : "0.1.0-snapshot",
+    "version" : "0.1.0-snapsnot",
     "status" : "draft",
     "name" : "FRValueSetProcedureCodeDocument",
     "title" : "ValueSet – FR ValueSet Codes d’actes",
@@ -150,7 +150,7 @@
   },
   {
     "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-result-type-document",
-    "version" : "0.1.0-snapshot",
+    "version" : "0.1.0-snapsnot",
     "status" : "draft",
     "name" : "FRValueSetResultTypeDocument",
     "title" : "ValueSet - FR ValueSet Result Type Document",

@@ -1,4 +1,4 @@
-# Observation - FR Observation Pain Score Document - ANS IG document core v0.1.0-snapshot
+# Observation - FR Observation Pain Score Document - ANS IG document core v0.1.0-snapsnot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-pain-score-document | *Version*:0.1.0-snapshot |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-pain-score-document | *Version*:0.1.0-snapsnot |
 | Draft as of 2026-04-15 | *Computable Name*:FRObservationPainScoreDocument |
 
  
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-observation-pain-
   "resourceType" : "StructureDefinition",
   "id" : "fr-observation-pain-score-document",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-pain-score-document",
-  "version" : "0.1.0-snapshot",
+  "version" : "0.1.0-snapsnot",
   "name" : "FRObservationPainScoreDocument",
   "title" : "Observation - FR Observation Pain Score Document",
   "status" : "draft",
-  "date" : "2026-04-15T13:14:55+00:00",
+  "date" : "2026-04-15T14:22:12+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

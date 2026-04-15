@@ -1,4 +1,4 @@
-# Mapping Métier/CDA/FHIR - ANS IG document core v0.1.0-snapshot
+# Mapping Métier/CDA/FHIR - ANS IG document core v0.1.0-snapsnot
 
 * [**Table of Contents**](toc.md)
 * [**Entête document**](enteteDocument.md)
