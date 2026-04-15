@@ -1,6 +1,6 @@
 Profile: FRCDASectionHistoriqueDesActes
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Section
-Id: fr-historique-des-actes
+Id: fr-cda-historique-des-actes
 Title: "CDA - FR Historique des actes"
 Description: "IHE-PCC - Coded-List-Of-Surgeries. Liste codée des actes chirurgicaux, diagnostiques invasifs (ex : cathétérisme cardiaque), thérapeutiques (ex : dialyse). Cette liste contient des entrées codées FR-Acte et éventuellement des entrées FR-References-externes à des documents faisant mention de ces actes."
 * templateId 1..4

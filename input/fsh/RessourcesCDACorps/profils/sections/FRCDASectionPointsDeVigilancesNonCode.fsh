@@ -1,6 +1,6 @@
 Profile: FRCDASectionPointsDeVigilancesNonCode
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Section
-Id: fr-points-de-vigilances-non-code
+Id: fr-cda-points-de-vigilances-non-code
 Title: "CDA - FR Points de vigilances non code"
 Description: "Section FR-Points-de-vigilances-non-code. Points de vigilance sous forme narrative (section non codée)."
 * templateId 1..1

@@ -1,6 +1,6 @@
 Profile: FRCDASectionStatutDuDocument
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Section
-Id: fr-statut-du-document
+Id: fr-cda-statut-du-document
 Title: "CDA - FR Statut du document"
 Description: "Cette section permet d’indiquer le statut du document (son état d’avancement dans le cycle de vie du document, depuis sa création jusqu'à sa validation définitive par son responsable légal."
 * templateId 1..1

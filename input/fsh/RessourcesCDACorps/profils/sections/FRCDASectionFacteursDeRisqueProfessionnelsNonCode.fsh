@@ -1,6 +1,6 @@
 Profile: FRCDASectionFacteursDeRisqueProfessionnelsNonCode
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Section
-Id: fr-facteurs-de-risque-professionnels-non-code
+Id: fr-cda-facteurs-de-risque-professionnels-non-code
 Title: "CDA - FR Facteurs de risque professionnels non code"
 Description: "IHE-PCC - Hazardous-Working-Conditions-SectionFacteurs de risques professionnels sous forme narrative (section non codée)."
 * templateId 1..2

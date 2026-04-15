@@ -1,6 +1,6 @@
 Profile: FRCDASectionStatutFonctionnel
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Section
-Id: fr-statut-fonctionnel
+Id: fr-cda-statut-fonctionnel
 Title: "CDA - FR Statut fonctionnel"
 Description: "Section FR-Statut-fonctionnel. Cette section permet de décrire des résultats d'évaluation du statut fonctionnel du patient."
 * templateId 1..2

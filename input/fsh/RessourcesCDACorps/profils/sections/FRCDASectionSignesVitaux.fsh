@@ -1,6 +1,6 @@
 Profile: FRCDASectionSignesVitaux
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Section
-Id: fr-signes-vitaux
+Id: fr-cda-section-signes-vitaux
 Title: "CDA - FR Signes vitaux"
 Description: "IHE-PCC - Coded Vital Signs. Section Liste codée des résultats mesurés des signes vitaux."
 * templateId 1..4

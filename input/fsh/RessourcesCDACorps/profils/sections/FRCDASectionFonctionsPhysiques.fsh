@@ -1,6 +1,6 @@
 Profile: FRCDASectionFonctionsPhysiques
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Section
-Id: fr-fonctions-physiques
+Id: fr-cda-fonctions-physiques
 Title: "CDA - FR Fonctions physiques"
 Description: "IHE-PCC - Physical Function Section. Cette section permet d'enregistrer les problèmes physiques fonctionnels et structurels qui concernent le patient."
 * templateId 1..2

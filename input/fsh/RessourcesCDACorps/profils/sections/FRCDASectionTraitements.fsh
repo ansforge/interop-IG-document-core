@@ -1,6 +1,6 @@
 Profile: FRCDASectionTraitements
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Section
-Id: fr-traitements
+Id: fr-cda-traitements
 Title: "CDA - FR Traitements"
 Description: "IHE-PCC - Medications. Liste des principales prises médicamenteuses."
 * templateId 1..3

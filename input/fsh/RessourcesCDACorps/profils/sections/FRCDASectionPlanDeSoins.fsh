@@ -1,6 +1,6 @@
 Profile: FRCDASectionPlanDeSoins
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Section
-Id: fr-plan-de-soins
+Id: fr-cda-plan-de-soins
 Title: "CDA - FR Plan de soins"
 Description: "IHE-PCC - Coded Care Plan. La section Plan de soins doit contenir une description narrative des attentes en matière de soins, y compris des propositions, des objectifs et des demandes pour le suivi ou l'amélioration de l'état du patient. "
 * templateId 1..3

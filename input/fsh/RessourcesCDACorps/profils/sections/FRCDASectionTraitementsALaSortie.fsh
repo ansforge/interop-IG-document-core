@@ -1,6 +1,6 @@
 Profile: FRCDASectionTraitementsALaSortie
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Section
-Id: fr-traitements-a-la-sortie
+Id: fr-cda-traitements-a-la-sortie
 Title: "CDA - FR Traitements à la sortie"
 Description: "IHE-PCC - Hospital-Discharge-Medications. La section 'Traitements à la sortie' contient une description narrative des médicaments à administrer au patient après sa sortie de l'hospitalisation et doit inclure des entrées 'Traitement'."
 * templateId 1..2

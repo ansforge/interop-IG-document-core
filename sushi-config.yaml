@@ -314,30 +314,30 @@ groups:
   Ressources CDA corps des sections :
     name: Eléments CDA du corps des sections
     resources:
-      - StructureDefinition/fr-facteurs-de-risque-professionnels-non-code
-      - StructureDefinition/fr-fonctions-physiques
-      - StructureDefinition/fr-habitus-mode-de-vie
-      - StructureDefinition/fr-historique-des-actes
-      - StructureDefinition/fr-historique-des-grossesses
-      - StructureDefinition/fr-plan-de-soins
-      - StructureDefinition/fr-points-de-vigilances-non-code
-      - StructureDefinition/fr-prescription-dispositifs-medicaux
-      - StructureDefinition/fr-prescription-medicaments
-      - StructureDefinition/fr-problemes-actifs
-      - StructureDefinition/fr-raison-de-la-recommandation
-      - StructureDefinition/fr-raison-de-la-recommandation-non-code
-      - StructureDefinition/fr-resultats
-      - StructureDefinition/fr-resultats-de-laboratoire-de-biologie-de-seconde-intention
-      - StructureDefinition/fr-resultats-evenements
-      - StructureDefinition/fr-resultats-examens
-      - StructureDefinition/fr-resultats-examens-non-code
-      - StructureDefinition/fr-signes-vitaux
-      - StructureDefinition/fr-statut-du-document
-      - StructureDefinition/fr-statut-fonctionnel
-      - StructureDefinition/fr-traitements
-      - StructureDefinition/fr-traitements-administres
-      - StructureDefinition/fr-traitements-a-la-sortie
-      - StructureDefinition/fr-vaccinations
+      - StructureDefinition/fr-cda-facteurs-de-risque-professionnels-non-code
+      - StructureDefinition/fr-cda-fonctions-physiques
+      - StructureDefinition/fr-cda-section-habitus-mode-de-vie
+      - StructureDefinition/fr-cda-historique-des-actes
+      - StructureDefinition/fr-cda-historique-des-grossesses
+      - StructureDefinition/fr-cda-plan-de-soins
+      - StructureDefinition/fr-cda-points-de-vigilances-non-code
+      - StructureDefinition/fr-cda-prescription-dispositifs-medicaux
+      - StructureDefinition/fr-cda-prescription-medicaments
+      - StructureDefinition/fr-cda-problemes-actifs
+      - StructureDefinition/fr-cda-raison-de-la-recommandation
+      - StructureDefinition/fr-cda-raison-de-la-recommandation-non-code
+      - StructureDefinition/fr-cda-resultats
+      - StructureDefinition/fr-cda-resultats-de-laboratoire-de-biologie-de-seconde-intention
+      - StructureDefinition/fr-cda-resultats-evenements
+      - StructureDefinition/fr-cda-resultats-examens
+      - StructureDefinition/fr-cda-resultats-examens-non-code
+      - StructureDefinition/fr-cda-section-signes-vitaux
+      - StructureDefinition/fr-cda-statut-du-document
+      - StructureDefinition/fr-cda-statut-fonctionnel
+      - StructureDefinition/fr-cda-traitements
+      - StructureDefinition/fr-cda-traitements-administres
+      - StructureDefinition/fr-cda-traitements-a-la-sortie
+      - StructureDefinition/fr-cda-vaccinations
 
   Ressources CDA corps des composants élémentaires :
     name: Eléments CDA du corps des composants élémentaires

@@ -1,6 +1,6 @@
 Profile: FRCDASectionHistoriqueDesGrossesses
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Section
-Id: fr-historique-des-grossesses
+Id: fr-cda-historique-des-grossesses
 Title: "CDA - FR Historique des grossesses"
 Description: "IHE-PCC - Pregnancy-History-Section. Cette section permet de décrire l'historique des grossesses de la patiente."
 * templateId 1..2

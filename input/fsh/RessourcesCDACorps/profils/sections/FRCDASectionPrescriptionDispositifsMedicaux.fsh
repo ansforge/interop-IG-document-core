@@ -1,6 +1,6 @@
 Profile: FRCDASectionPrescriptionDispositifsMedicaux
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Section
-Id: fr-prescription-dispositifs-medicaux
+Id: fr-cda-prescription-dispositifs-medicaux
 Title: "CDA - FR Prescription dispositifs medicaux"
 Description: "IHE-PRE - Prescription. Cette section regroupe les lignes de prescriptions des dispositifs médicaux."
 * templateId 1..1

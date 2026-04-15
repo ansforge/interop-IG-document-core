@@ -1,6 +1,6 @@
 Profile: FRCDASectionPrescriptionMedicaments
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Section
-Id: fr-prescription-medicaments
+Id: fr-cda-prescription-medicaments
 Title: "CDA - FR Prescription medicaments"
 Description: "IHE-PRE - Prescription. Cette section regroupe les lignes de prescriptions médicamenteuses."
 * templateId 1..2

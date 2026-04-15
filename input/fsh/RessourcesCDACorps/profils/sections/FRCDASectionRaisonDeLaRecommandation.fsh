@@ -1,6 +1,6 @@
 Profile: FRCDASectionRaisonDeLaRecommandation
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Section
-Id: fr-raison-de-la-recommandation
+Id: fr-cda-raison-de-la-recommandation
 Title: "CDA - FR Raison de la recommandation"
 Description: "IHE-PCC - Coded Reason for Referral Section. Cette section permet d'indiquer la raison pour laquelle le patient est adressé à l'hôpital, à une consultation, etc. et de donner des informations complémentaires, sous forme codées, à l'aide d'une entrée Simple observation et d'une entrée Problème. "
 * templateId 1..3

@@ -1,6 +1,6 @@
 Profile: FRCDASectionResultatsExamens
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Section
-Id: fr-resultats-examens
+Id: fr-cda-resultats-examens
 Title: "CDA - FR Resultats examens"
 Description: "IHE-PCC - Coded Results Section. Résultats d'examens réalisés par le patient et éventuellement références à d'autres documents du dossier du patient."
 * templateId 1..3

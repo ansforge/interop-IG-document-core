@@ -1,6 +1,6 @@
 Profile: FRCDASectionResultatsExamensNonCode
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Section
-Id: fr-resultats-examens-non-code
+Id: fr-cda-resultats-examens-non-code
 Title: "CDA - FR Resultats examens non code"
 Description: "IHE-PCC - Results. Résultats d’examens sous forme narrative non codée."
 * templateId 1..2

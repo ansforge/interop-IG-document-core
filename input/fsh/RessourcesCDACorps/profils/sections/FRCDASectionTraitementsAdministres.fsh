@@ -1,6 +1,6 @@
 Profile: FRCDASectionTraitementsAdministres
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Section
-Id: fr-traitements-administres
+Id: fr-cda-traitements-administres
 Title: "CDA - FR Traitements administres"
 Description: "IHE-PCC - Medications-Administered. La section 'Traitements administrés' contient une description narrative des médicaments administrés au patient et doit inclure des entrées 'Traitement'."
 * templateId 1..2

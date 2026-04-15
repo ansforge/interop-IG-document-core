@@ -1,6 +1,6 @@
 Profile: FRCDASectionRaisonDeLaRecommandationNonCode
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Section
-Id: fr-raison-de-la-recommandation-non-code
+Id: fr-cda-raison-de-la-recommandation-non-code
 Title: "CDA - FR Raison de la recommandation non code"
 Description: "IHE-PCC Reason-For-Referral. Cette section permet d'indiquer, sous forme textuelle uniquement, la raison pour laquelle le patient est adressé à l'hôpital, à une consultation, etc. "
 * templateId 1..2

@@ -1,6 +1,6 @@
 Profile: FRCDASectionVaccinations
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Section
-Id: fr-vaccinations
+Id: fr-cda-vaccinations
 Title: "CDA - FR Vaccinations"
 Description: "IHE-PCC - Immunizations Section. Liste des vaccinations effectuées."
 * templateId 1..3

@@ -1,6 +1,6 @@
 Profile: FRCDASectionProblemesActifs
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Section
-Id: fr-problemes-actifs
+Id: fr-cda-problemes-actifs
 Title: "CDA - FR Problemes actifs"
 Description: "IHE-PCC - Active-Problems-Section. Liste des problèmes actifs du patient."
 * templateId 1..3

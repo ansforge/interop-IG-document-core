@@ -1,6 +1,6 @@
 Profile: FRCDASectionHabitusModeDeVie
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Section
-Id: fr-habitus-mode-de-vie
+Id: fr-cda-section-habitus-mode-de-vie
 Title: "CDA - FR Habitus mode de vie"
 Description: "IHE-PCC - Coded Social History Section. Liste codée des informations relatives aux habitus et au mode de vie du patient."
 * templateId 1..4

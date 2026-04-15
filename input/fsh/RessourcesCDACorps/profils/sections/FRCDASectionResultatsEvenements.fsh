@@ -1,6 +1,6 @@
 Profile: FRCDASectionResultatsEvenements
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Section
-Id: fr-resultats-evenements
+Id: fr-cda-resultats-evenements
 Title: "CDA - FR Resultats evenements"
 Description: "IHE-PCC - Coded-Event-Outcomes. Evenements observés au décours d'un acte ou d'un problème."
 * templateId 1..3
