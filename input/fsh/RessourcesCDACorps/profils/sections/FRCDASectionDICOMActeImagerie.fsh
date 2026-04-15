@@ -1,8 +1,9 @@
 Profile: FRCDASectionDICOMActeImagerie
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Section
-Id: fr-dicom-acte-imagerie
+Id: fr-cda-dicom-acte-imagerie
 Title: "CDA - FR DICOM Acte imagerie"
-Description: "DICOM Part 20 - Imaging Procedure Description SectionCette section permet d'enregistrer les informations sur les détails techniques de l'acte d'imagerie et peut inclure des informations sur le protocole, le dispositif d’imagerie, le contraste, la dose de rayonnement, les médicaments administrés."
+Description: "DICOM Part 20 - Imaging Procedure Description Section
+ - Cette section permet d'enregistrer les informations sur les détails techniques de l'acte d'imagerie et peut inclure des informations sur le protocole, le dispositif d’imagerie, le contraste, la dose de rayonnement, les médicaments administrés."
 * templateId 1..2
 * templateId ^slicing.discriminator.type = #value
 * templateId ^slicing.discriminator.path = "root"
@@ -12,7 +13,7 @@ and dicomModalityPerformedProcedureStep 1..1
 * templateId[frSectionDicomActeImagerie].root = "1.2.250.1.213.1.1.2.206"
 * templateId[frSectionDicomActeImagerie] ^short = "Conformité FR-DICOM-Acte-imagerie (CI-SIS)"
 * templateId[dicomModalityPerformedProcedureStep].root = "1.2.840.10008.9.3"
-* templateId[dicomModalityPerformedProcedureStep] ^short = "Conformité FR-DICOM-Acte-imagerie (CI-SIS)"
+* templateId[dicomModalityPerformedProcedureStep] ^short = "Conformité Imaging Procedure Description (DICOM Part 20)"
 * code MS
 * code 1..1
 * code ^short = "Code de la section"
@@ -21,10 +22,10 @@ and dicomModalityPerformedProcedureStep 1..1
 * code.displayName = "Description de l'acte d’imagerie"
 * code.codeSystem = "2.16.840.1.113883.6.1"
 * code.codeSystemName = "LOINC"
-* title 1..1
+* title 1..1 MS
 * title ^short = "Titre de la section"
 * title ^definition = "Titre de la section"
-* text 0..1 MS
+* text 1..1 MS
 * text ^short = "Bloc narratif"
 * text ^definition = "Bloc narratif"
 * component MS
@@ -33,8 +34,8 @@ and dicomModalityPerformedProcedureStep 1..1
 * component ^slicing.discriminator.path = "$this"
 * component ^slicing.rules = #open
 * component contains
-frSectionDicomComplications 1..1 and
-frSectionDicomExpositionAuxRadiations 1..1 and
+frSectionDicomComplications 0..1 and
+frSectionDicomExpositionAuxRadiations 0..1 and
 frSectionDicomObjectCatalog 1..1 
 * component[frSectionDicomComplications].section only FRCDASectionDICOMComplications
 * component[frSectionDicomComplications].section ^short = "Section Complications"
@@ -42,14 +43,13 @@ frSectionDicomObjectCatalog 1..1
 * component[frSectionDicomExpositionAuxRadiations].section ^short = "Section Expositions aux radiations"
 * component[frSectionDicomObjectCatalog].section only FRCDASectionDICOMObjectCatalog
 * component[frSectionDicomObjectCatalog].section ^short = "Section Catalogue d'objects"
-* entry MS
-* entry 1..2
+* entry 1..* MS
 * entry ^slicing.discriminator.type = #type
 * entry ^slicing.discriminator.path = "$this"
 * entry ^slicing.rules = #open
 * entry contains
 frDicomTechniqueImagerie 1..1 and
-frDicomAdministrationProduitDeSante 1..1 
+frDicomAdministrationProduitDeSante 0..* 
 * entry[frDicomTechniqueImagerie].procedure only FRCDADICOMTechniqueImagerie
 * entry[frDicomTechniqueImagerie].procedure ^short = "Entrée technique d'imagerie"
 * entry[frDicomAdministrationProduitDeSante].substanceAdministration only FRCDADICOMAdministrationProduitDeSante

@@ -1,18 +1,19 @@
 Profile: FRCDASectionDICOMExpositionAuxRadiations
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Section
-Id: fr-dicom-exposition-aux-radiations
+Id: fr-cda-dicom-exposition-aux-radiations
 Title: "CDA - FR DICOM Exposition aux radiations"
-Description: "DICOM Part 20 - Radiation Exposure and Protection Information Cette sous-section permet d'enregistrer les informations relatives à l’exposition du patient aux rayonnements et les informations de radioprotection. "
+Description: "DICOM Part 20 - Radiation Exposure and Protection Information 
+ - Cette sous-section permet d'enregistrer les informations relatives à l’exposition du patient aux rayonnements et les informations de radioprotection."
 * templateId 1..2
 * templateId ^slicing.discriminator.type = #value
 * templateId ^slicing.discriminator.path = "root"
 * templateId ^slicing.rules = #open
 * templateId contains frSectionDicomExpositionAuxRadiations 1..1
-and dicomDetachedVisitManagement 1..1
+and dicomRadiationExposureAndProtectionInformation 1..1
 * templateId[frSectionDicomExpositionAuxRadiations].root = "1.2.250.1.213.1.1.2.215"
 * templateId[frSectionDicomExpositionAuxRadiations] ^short = "Conformité FR-DICOM-Exposition-aux-radiations (CI-SIS)"
-* templateId[dicomDetachedVisitManagement].root = "1.2.840.10008.9.8"
-* templateId[dicomDetachedVisitManagement] ^short = "Conformité FR-DICOM-Exposition-aux-radiations (CI-SIS)"
+* templateId[dicomRadiationExposureAndProtectionInformation].root = "1.2.840.10008.9.8"
+* templateId[dicomRadiationExposureAndProtectionInformation] ^short = "Conformité Radiation Exposure and Protection Information (DICOM Part 20)"
 * code MS
 * code 1..1
 * code ^short = "Code de la section"
@@ -24,21 +25,20 @@ and dicomDetachedVisitManagement 1..1
 * title 1..1
 * title ^short = "Titre de la section"
 * title ^definition = "Titre de la section"
-* text 0..1 MS
+* text 1..1 MS
 * text ^short = "Bloc narratif"
 * text ^definition = "Bloc narratif"
-* entry MS
-* entry 1..6
+* entry 1..* MS
 * entry ^slicing.discriminator.type = #type
 * entry ^slicing.discriminator.path = "$this"
 * entry ^slicing.rules = #open
 * entry contains
-frDicomSOPInstanceObservation 1..1 and
+frDicomSOPInstanceObservation 0..* and
 frDicomExpositionPatient 1..1 and
+frDicomObservationIndication 0..1 and
 frDicomObservationGrossesse 1..1 and
-frDicomObservationIndication 1..1 and
-frDicomQuantite 1..1 and
-frDicomAdministrationRadiopharmaceutique 1..1 
+frDicomQuantite 0..* and
+frDicomAdministrationRadiopharmaceutique 0..1 
 * entry[frDicomSOPInstanceObservation].observation only FRCDADICOMSOPInstanceObservation
 * entry[frDicomSOPInstanceObservation].observation ^short = "Entrée SOP instance Observation"
 * entry[frDicomExpositionPatient].procedure only FRCDADICOMExpositionPatient

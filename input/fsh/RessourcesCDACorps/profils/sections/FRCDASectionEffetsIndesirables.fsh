@@ -1,6 +1,6 @@
 Profile: FRCDASectionEffetsIndesirables
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Section
-Id: fr-effets-indesirables
+Id: fr-cda-effets-indesirables
 Title: "CDA - FR Effets indesirables"
 Description: "Liste des effets indésirables prévisibles liés aux médicaments."
 * templateId 1..1
@@ -18,10 +18,10 @@ Description: "Liste des effets indésirables prévisibles liés aux médicaments
 * code.displayName = "Effets indésirables prévisibles liés aux médicaments"
 * code.codeSystem = "2.16.840.1.113883.6.1"
 * code.codeSystemName = "LOINC"
-* title 1..1
+* title 1..1 MS
 * title ^short = "Titre de la section"
 * title ^definition = "Titre de la section"
-* text 0..1 MS
+* text 1..1 MS
 * text ^short = "Bloc narratif de la section"
 * text ^definition = "Bloc narratif de la section"
 * entry MS

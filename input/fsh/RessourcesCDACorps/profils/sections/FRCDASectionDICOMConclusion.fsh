@@ -1,18 +1,19 @@
 Profile: FRCDASectionDICOMConclusion
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Section
-Id: fr-dicom-conclusion
+Id: fr-cda-dicom-conclusion
 Title: "CDA - FR DICOM Conclusion"
-Description: "DICOM Part 20 - Impression SectionCette section permet d'enregistrer les informations sur les diagnostics les plus importantes ou d’autres conclusions cliniques qui peuvent être faites à partir des observations d’imagerie et d’autres informations cliniques. Elle peut inclure des recommandations pour des tests d’imagerie supplémentaires ou d’autres actions, ainsi que des évaluations globales. "
+Description: "DICOM Part 20 - Impression Section
+- Cette section permet d'enregistrer les informations sur les diagnostics les plus importantes ou d’autres conclusions cliniques qui peuvent être faites à partir des observations d’imagerie et d’autres informations cliniques. Elle peut inclure des recommandations pour des tests d’imagerie supplémentaires ou d’autres actions, ainsi que des évaluations globales."
 * templateId 1..2
 * templateId ^slicing.discriminator.type = #value
 * templateId ^slicing.discriminator.path = "root"
 * templateId ^slicing.rules = #open
-* templateId contains dicomDetachedInterpretationManagement 1..1
+* templateId contains dicomImpressionSection 1..1
 and frSectionDicomConclusion 1..1
-* templateId[dicomDetachedInterpretationManagement].root = "1.2.840.10008.9.5"
-* templateId[dicomDetachedInterpretationManagement] ^short = "Conformité Impression (DICOM Part 20)"
+* templateId[dicomImpressionSection].root = "1.2.840.10008.9.5"
+* templateId[dicomImpressionSection] ^short = "Conformité Impression (DICOM Part 20)"
 * templateId[frSectionDicomConclusion].root = "1.2.250.1.213.1.1.2.209"
-* templateId[frSectionDicomConclusion] ^short = "Conformité Impression (DICOM Part 20)"
+* templateId[frSectionDicomConclusion] ^short = "Conformité FR-DICOM-Conclusion (CI-SIS)"
 * code MS
 * code 1..1
 * code ^short = "Code de la section"
@@ -24,6 +25,6 @@ and frSectionDicomConclusion 1..1
 * title 1..1
 * title ^short = "Titre de la section"
 * title ^definition = "Titre de la section"
-* text 0..1 MS
+* text 1..1 MS
 * text ^short = "Bloc narratif"
 * text ^definition = "Bloc narratif"
