@@ -26,7 +26,7 @@ Mapping des éléments du modèle métier FRLMEffetsIndesirables vers la section
   "version" : "0.1.0-snapsnot",
   "title" : "Mapping Métier/CDA/FHIR : \"Effets indésirables\"",
   "status" : "draft",
-  "date" : "2026-04-15T07:34:08+00:00",
+  "date" : "2026-04-15T07:49:49+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

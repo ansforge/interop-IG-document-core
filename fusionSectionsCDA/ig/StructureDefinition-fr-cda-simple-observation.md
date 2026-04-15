@@ -16,7 +16,7 @@ Entrée FR-Simple-Observation: IHE-PCC - Simple-Observation. Cette entrée est u
 
 **Utilisations:**
 
-* Utilise ce/t/te Profil de modèle logique: [CDA - FR Acte](StructureDefinition-fr-cda-acte.md), [CDA - FR Evenement](StructureDefinition-fr-cda-evenement.md), [CDA - FR Transport du patient](StructureDefinition-fr-cda-transport-du-patient.md) and [CDA - FR Transport du professionnel](StructureDefinition-fr-cda-transport-du-professionnel.md)
+* Utilise ce/t/te Profil de modèle logique: [CDA - FR Acte](StructureDefinition-fr-cda-acte.md), [CDA - FR Documents ajoutes](StructureDefinition-fr-cda-documents-ajoutes.md), [CDA - FR Education du patient](StructureDefinition-fr-cda-education-du-patient.md), [CDA - FR Evenement](StructureDefinition-fr-cda-evenement.md)... Show 2 more, [CDA - FR Transport du patient](StructureDefinition-fr-cda-transport-du-patient.md) and [CDA - FR Transport du professionnel](StructureDefinition-fr-cda-transport-du-professionnel.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-simple-observation)
 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-simple-observ
   "name" : "FRCDASimpleObservation",
   "title" : "CDA - FR Simple Observation",
   "status" : "draft",
-  "date" : "2026-04-15T07:34:08+00:00",
+  "date" : "2026-04-15T07:49:49+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

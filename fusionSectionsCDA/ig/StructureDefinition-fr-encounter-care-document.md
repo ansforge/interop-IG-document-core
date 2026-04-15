@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-encounter-care-do
   "name" : "FREncounterCareDocument",
   "title" : "FR Encounter Care Document",
   "status" : "draft",
-  "date" : "2026-04-15T07:34:08+00:00",
+  "date" : "2026-04-15T07:49:49+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

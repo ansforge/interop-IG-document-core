@@ -19,7 +19,7 @@ Entrée FR-Document-attache: L’entrée Document Attaché est une entrée de ty
 
 **Utilisations:**
 
-* Ce Profil de modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
+* Utilise ce/t/te Profil de modèle logique: [CDA - FR Document PDF copie](StructureDefinition-fr-cda-document-pdf-copie.md) and [CDA - FR Documents ajoutes](StructureDefinition-fr-cda-documents-ajoutes.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-document-attache)
 
@@ -69,7 +69,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-document-atta
   "name" : "FRCDADocumentAttache",
   "title" : "CDA - FR Document attache",
   "status" : "draft",
-  "date" : "2026-04-15T07:34:08+00:00",
+  "date" : "2026-04-15T07:49:49+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
