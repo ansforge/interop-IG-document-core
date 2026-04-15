@@ -1,4 +1,4 @@
-# Mapping Métier/CDA/FHIR : "Auteur" - ANS IG document core v0.1.0-snapsnot
+# Mapping Métier/CDA/FHIR : "Auteur" - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/mappingAuteurCDAFHIR | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-07 | *Computable Name*:Mapping Métier/CDA/FHIR : "Auteur" |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/mappingAuteurCDAFHIR | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-15 | *Computable Name*:Mapping Métier/CDA/FHIR : "Auteur" |
 
  
 Ce ConceptMap présente deux groupes de mapping : 
@@ -26,12 +26,12 @@ Ce ConceptMap présente deux groupes de mapping :
   "resourceType" : "ConceptMap",
   "id" : "mappingAuteurCDAFHIR",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/mappingAuteurCDAFHIR",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "Mapping Métier/CDA/FHIR : \"Auteur\"",
   "title" : "Mapping Métier/CDA/FHIR : \"Auteur\"",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-04-07T08:23:13+00:00",
+  "date" : "2026-04-15T13:29:57+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

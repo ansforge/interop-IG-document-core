@@ -1,4 +1,4 @@
-# FR Family Member History Body Site Extension - ANS IG document core v0.1.0-snapsnot
+# FR Family Member History Body Site Extension - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-family-member-history-body-site-extension | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-07 | *Computable Name*:FRFamilyMemberHistoryBodySiteExtension |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-family-member-history-body-site-extension | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-15 | *Computable Name*:FRFamilyMemberHistoryBodySiteExtension |
 
 Extension permettant d’indiquer la localisation anatomique d’une condition dans antécédents familiaux
 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-family-member-his
   "resourceType" : "StructureDefinition",
   "id" : "fr-family-member-history-body-site-extension",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-family-member-history-body-site-extension",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRFamilyMemberHistoryBodySiteExtension",
   "title" : "FR Family Member History Body Site Extension",
   "status" : "draft",
-  "date" : "2026-04-07T08:23:13+00:00",
+  "date" : "2026-04-15T13:29:57+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

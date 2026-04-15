@@ -1,4 +1,4 @@
-# CDA - FR Statut document - ANS IG document core v0.1.0-snapsnot
+# CDA - FR Statut document - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-statut-document | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-07 | *Computable Name*:FRCDAStatutDocument |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-statut-document | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-15 | *Computable Name*:FRCDAStatutDocument |
 
  
 Entrée FR-Statut-document: Cette entrée permet d’indiquer le statut du document (son état d’avancement dans le cycle de vie du document, depuis sa création jusqu’à sa validation définitive par son responsable légal (élément ‘legalAuthenticator’ de l’en-tête) ainsi que la date de ce statut. 
@@ -62,11 +62,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-statut-docume
     "valueUri" : "cda"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-statut-document",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRCDAStatutDocument",
   "title" : "CDA - FR Statut document",
   "status" : "draft",
-  "date" : "2026-04-07T08:23:13+00:00",
+  "date" : "2026-04-15T13:29:57+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

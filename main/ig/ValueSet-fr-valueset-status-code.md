@@ -1,4 +1,4 @@
-# ValueSet - FR ValueSet StatusCode - ANS IG document core v0.1.0-snapsnot
+# ValueSet - FR ValueSet StatusCode - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-valueset-status-code | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-07 | *Computable Name*:FRValueSetStatusCode |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-valueset-status-code | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-15 | *Computable Name*:FRValueSetStatusCode |
 
  
 Jeu de valeurs permet d’indique le niveau de complétude des résultats d’un examen (complet, partiel ou abandonné). 
@@ -53,11 +53,11 @@ No Expansion for this valueset (Unknown Code System)
   "resourceType" : "ValueSet",
   "id" : "fr-valueset-status-code",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-valueset-status-code",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRValueSetStatusCode",
   "title" : "ValueSet - FR ValueSet StatusCode",
   "status" : "draft",
-  "date" : "2026-04-07T08:23:13+00:00",
+  "date" : "2026-04-15T13:29:57+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -1,4 +1,4 @@
-# Consent - FR Advance directive Document - ANS IG document core v0.1.0-snapsnot
+# Consent - FR Advance directive Document - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-advance-directive-document | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-07 | *Computable Name*:FRAdvanceDirectiveDocument |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-advance-directive-document | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-15 | *Computable Name*:FRAdvanceDirectiveDocument |
 
  
 FRAdvanceDirectiveDocument permet d’indiquer si les directives anticipées du patient. Article L1111-11 du Code de la Santé Publique : « Toute personne majeure peut rédiger des directives anticipées pour le cas où elle serait un jour hors d’état d’exprimer sa volonté. Ces directives anticipées expriment la volonté de la personne relative à sa fin de vie en ce qui concerne les conditions de la poursuite, de la limitation, de l’arrêt ou du refus de traitement ou d’acte médicaux.» 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-advance-directive
   "resourceType" : "StructureDefinition",
   "id" : "fr-advance-directive-document",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-advance-directive-document",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRAdvanceDirectiveDocument",
   "title" : "Consent - FR Advance directive Document",
   "status" : "draft",
-  "date" : "2026-04-07T08:23:13+00:00",
+  "date" : "2026-04-15T13:29:57+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -1,4 +1,4 @@
-# Mapping Métier/CDA/FHIR - ANS IG document core v0.1.0-snapsnot
+# Mapping Métier/CDA/FHIR - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Corps d'un document**](corpsDocument.md)
@@ -138,7 +138,7 @@ Liste des ConceptMap détaillant le mapping entre les éléments du modèle mét
 | FRLMHistoriqueDesActes.codeSection | FRCDAHistoriqueDesActes.code | FRCompositionDocument.section:historyActs.code |
 | FRLMHistoriqueDesActes.titreSection | FRCDAHistoriqueDesActes.title | FRCompositionDocument.section:historyActs.title |
 | FRLMHistoriqueDesActes.blocNarratif | FRCDAHistoriqueDesActes.text | FRCompositionDocument.section:historyActs.text |
-| FRLMHistoriqueDesActes.entree.actes | FRCDAHistoriqueDesActes.entry:FRCDAActe | FRCompositionDocument.section:historyActs.entry:FRProcedureActDocument |
+| FRLMHistoriqueDesActes.entree.actes | FRCDAHistoriqueDesActes.entry:FRCDAActe | FRCompositionDocument.section:historyActs.entry:FRProcedureDocument |
 | FRLMHistoriqueDesActes.entree.references | FRCDAHistoriqueDesActes.entry:FRCDAReferencesExternes | FRCompositionDocument.section:historyActs.entry:FRDocumentReferenceDocument |
 | **FRLMHistoriqueDesGrossesses** | **FRCDAHistoriqueDesGrossesses** | FRCompositionDocument.section:pregnancyHistory |
 | FRLMHistoriqueDesGrossesses.codeSection | FRCDAHistoriqueDesGrossesses.code | FRCompositionDocument.section:pregnancyHistory.code |
@@ -366,25 +366,25 @@ Liste des ConceptMap détaillant le mapping entre les éléments du modèle mét
 | **FRLMActeSubstitution** | **FRCDAActeSubstitution** | **FRMedicationDispenseDocument** |
 | FRLMActeSubstitution.code | FRCDAActeSubstitution.code | FRMedicationDispenseDocument.substitution.type |
 | FRLMActeSubstitution.statut | FRCDAActeSubstitution.statusCode | FRMedicationDispenseDocument.status |
-| **FRLMActe** | **FRCDAActe** | **FRProcedureActDocument** |
-| FRLMActe.identifiant | FRCDAActe.id | FRProcedureActDocument.identifier |
-| FRLMActe.description | FRCDAActe.text | FRProcedureActDocument.note |
-| FRLMActe.code | FRCDAActe.code | FRProcedureActDocument.code |
+| **FRLMActe** | **FRCDAActe** | **FRProcedureDocument** |
+| FRLMActe.identifiant | FRCDAActe.id | FRProcedureDocument.identifier |
+| FRLMActe.description | FRCDAActe.text | FRProcedureDocument.note |
+| FRLMActe.code | FRCDAActe.code | FRProcedureDocument.code |
 | FRLMActe.titre |  |  |
-| FRLMActe.statut | FRCDAActe.statusCode | FRProcedureActDocument.status |
-| FRLMActe.date | FRCDAActe.effectiveTime | FRProcedureActDocument.performed[x] |
-| FRLMActe.priorite | FRCDAActe.priorityCode | FRProcedureActDocument.extension:priority |
-| FRLMActe.localisationAnatomique | FRCDAActe.targetSiteCode | FRProcedureActDocument.bodySite.TargetSiteCode |
-| FRLMActe.voieDAbord | FRCDAActe.approachSiteCode | FRProcedureActDocument.bodySite.ApproachSiteCode |
-| FRLMActe.perfomer | FRCDAActe.performer | FRProcedureActDocument.performer.actor.extension:Intervenant |
-| FRLMActe.auteur | FRCDAActe.author | FRProcedureActDocument.recorder.extension:author |
-| FRLMActe.informateur | FRCDAActe.informant | FRProcedureActDocument.performer.actor.extension:Informateur |
-| FRLMActe.participant | FRCDAActe.participant | FRProcedureActDocument.performer.actor.extension:Participant |
-| FRLMActe.circonstances | FRCDAActe.entryRelationship:frReferenceInterneCirconstances | FRProcedureActDocument.encounter |
-| FRLMActe.reason | FRCDAActe.entryRelationship:frReferenceInterneMotifActe | FRProcedureActDocument.reasonReference |
-| FRLMActe.dispositifMedical | FRCDAActe.entryRelationship:frReferenceInterneDM | FRProcedureActDocument.usedReference |
-| FRLMActe.difficulte | FRCDAActe.entryRelationship:frSimpleObservationDifficulte | FRProcedureActDocument.extension:difficulte |
-| FRLMActe.scores | FRCDAActe.entryRelationship:frSimpleObservationScores | FRProcedureActDocument.partOf |
+| FRLMActe.statut | FRCDAActe.statusCode | FRProcedureDocument.status |
+| FRLMActe.date | FRCDAActe.effectiveTime | FRProcedureDocument.performed[x] |
+| FRLMActe.priorite | FRCDAActe.priorityCode | FRProcedureDocument.extension:priority |
+| FRLMActe.localisationAnatomique | FRCDAActe.targetSiteCode | FRProcedureDocument.bodySite.TargetSiteCode |
+| FRLMActe.voieDAbord | FRCDAActe.approachSiteCode | FRProcedureDocument.bodySite.ApproachSiteCode |
+| FRLMActe.perfomer | FRCDAActe.performer | FRProcedureDocument.performer.actor.extension:Intervenant |
+| FRLMActe.auteur | FRCDAActe.author | FRProcedureDocument.recorder.extension:author |
+| FRLMActe.informateur | FRCDAActe.informant | FRProcedureDocument.performer.actor.extension:Informateur |
+| FRLMActe.participant | FRCDAActe.participant | FRProcedureDocument.performer.actor.extension:Participant |
+| FRLMActe.circonstances | FRCDAActe.entryRelationship:frReferenceInterneCirconstances | FRProcedureDocument.encounter |
+| FRLMActe.reason | FRCDAActe.entryRelationship:frReferenceInterneMotifActe | FRProcedureDocument.reasonReference |
+| FRLMActe.dispositifMedical | FRCDAActe.entryRelationship:frReferenceInterneDM | FRProcedureDocument.usedReference |
+| FRLMActe.difficulte | FRCDAActe.entryRelationship:frSimpleObservationDifficulte | FRProcedureDocument.extension:difficulte |
+| FRLMActe.scores | FRCDAActe.entryRelationship:frSimpleObservationScores | FRProcedureDocument.partOf |
 | **FRLMAddendum** | **FRCDADicomAddendum** | FRCompositionDocument.section:Addendum |
 | FRLMAddendum.codeSection | FRCDADicomAddendum.code | FRCompositionDocument.section:Addendum.code |
 | FRLMAddendum.titreSection | FRCDADicomAddendum.title | FRCompositionDocument.section:Addendum.title |
@@ -699,7 +699,7 @@ Liste des ConceptMap détaillant le mapping entre les éléments du modèle mét
 | FRLMHistoriqueDesActes.codeSection | FRCDAHistoriqueDesActes.code | FRCompositionDocument.section:historyActs.code |
 | FRLMHistoriqueDesActes.titreSection | FRCDAHistoriqueDesActes.title | FRCompositionDocument.section:historyActs.title |
 | FRLMHistoriqueDesActes.blocNarratif | FRCDAHistoriqueDesActes.text | FRCompositionDocument.section:historyActs.text |
-| FRLMHistoriqueDesActes.entree.actes | FRCDAHistoriqueDesActes.entry:FRCDAActe | FRCompositionDocument.section:historyActs.entry:FRProcedureActDocument |
+| FRLMHistoriqueDesActes.entree.actes | FRCDAHistoriqueDesActes.entry:FRCDAActe | FRCompositionDocument.section:historyActs.entry:FRProcedureDocument |
 | FRLMHistoriqueDesActes.entree.references | FRCDAHistoriqueDesActes.entry:FRCDAReferencesExternes | FRCompositionDocument.section:historyActs.entry:FRDocumentReferenceDocument |
 | **FRLMHistoriqueDesGrossesses** | **FRCDAHistoriqueDesGrossesses** | FRCompositionDocument.section:pregnancyHistory |
 | FRLMHistoriqueDesGrossesses.codeSection | FRCDAHistoriqueDesGrossesses.code | FRCompositionDocument.section:pregnancyHistory.code |

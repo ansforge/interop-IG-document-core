@@ -1,4 +1,4 @@
-# CDA - FR Gravite effet indesirable - ANS IG document core v0.1.0-snapsnot
+# CDA - FR Gravite effet indesirable - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-gravite-effet-indesirable | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-07 | *Computable Name*:FRCDAGraviteEffetIndesirable |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-gravite-effet-indesirable | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-15 | *Computable Name*:FRCDAGraviteEffetIndesirable |
 
  
 Entrée FR-Gravite-effet-indesirable 
@@ -64,11 +64,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-gravite-effet
     "valueUri" : "cda"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-gravite-effet-indesirable",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRCDAGraviteEffetIndesirable",
   "title" : "CDA - FR Gravite effet indesirable",
   "status" : "draft",
-  "date" : "2026-04-07T08:23:13+00:00",
+  "date" : "2026-04-15T13:29:57+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

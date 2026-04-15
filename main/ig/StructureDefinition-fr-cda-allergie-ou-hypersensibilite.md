@@ -1,4 +1,4 @@
-# CDA - FR Allergie ou hypersensibilite - ANS IG document core v0.1.0-snapsnot
+# CDA - FR Allergie ou hypersensibilite - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-allergie-ou-hypersensibilite | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-07 | *Computable Name*:FRCDAAllergieOuHypersensibilite |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-allergie-ou-hypersensibilite | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-15 | *Computable Name*:FRCDAAllergieOuHypersensibilite |
 
  
 Entrée FR-Allergie-ou-hypersensibilite: IHE-PCC Allergy-And-Intolerance Cette entrée permet de décrire une allergie ou une hypersensibilité non allergique ou une intolérance ou une idiosyncrasie, en précisant :Le type : allergie médicamenteuse, hypersensibilité non allergique alimentaire, etc.La date de début et de finL’agent responsable : médicament, agent environnemental, …Le statut clinique : Actif, Inactif, RésoluLa criticité : Bas, Elevé, Impossible à évaluerLa certitude : Confirmé, Non confirmé, RéfutéLa (les) réaction(s) observée(s) : urticaire, nausée, … etLa sévérité de la réaction : Potentiellement mortel, Elevé, Modéré, Bas, …un commentaire sur la réactionCette entrée est basée sur l’entrée Problème (1.3.6.1.4.1.19376.1.5.3.1.4.5) qu’elle spécialise. 
@@ -62,11 +62,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-allergie-ou-h
     "valueUri" : "cda"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-allergie-ou-hypersensibilite",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRCDAAllergieOuHypersensibilite",
   "title" : "CDA - FR Allergie ou hypersensibilite",
   "status" : "draft",
-  "date" : "2026-04-07T08:23:13+00:00",
+  "date" : "2026-04-15T13:29:57+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

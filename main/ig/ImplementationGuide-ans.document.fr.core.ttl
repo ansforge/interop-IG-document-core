@@ -17,11 +17,11 @@
      fhir:v "https://interop.esante.gouv.fr/ig/document/core/ImplementationGuide/ans.document.fr.core"^^xsd:anyURI ;
      fhir:l <https://interop.esante.gouv.fr/ig/document/core/ImplementationGuide/ans.document.fr.core>
   ] ; # 
-  fhir:version [ fhir:v "0.1.0-snapsnot"] ; # 
+  fhir:version [ fhir:v "0.1.0-snapshot"] ; # 
   fhir:name [ fhir:v "FRDocumentCore"] ; # 
   fhir:title [ fhir:v "ANS IG document core"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-04-07T08:23:13+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-04-15T13:29:57+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -6070,11 +6070,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRActLMCDAFHIR> ;
-         fhir:reference [ fhir:v "ConceptMap/FRActLMCDAFHIR" ]
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRProcedureLMCDAFHIR> ;
+         fhir:reference [ fhir:v "ConceptMap/FRProcedureLMCDAFHIR" ]
        ] ;
-       fhir:name [ fhir:v "Mapping FRLMActe → FRCDAActe → FRProcedureActDocument" ] ;
-       fhir:description [ fhir:v "Mapping des éléments du modèle métier FRLMActe vers le profil CDA FRCDAActe, puis vers le profil FHIR FRProcedureActDocument." ] ;
+       fhir:name [ fhir:v "Mapping FRLMActe → FRCDAActe → FRProcedureDocument" ] ;
+       fhir:description [ fhir:v "Mapping des éléments du modèle métier FRLMActe vers le profil CDA FRCDAActe, puis vers le profil FHIR FRProcedureDocument." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -12995,11 +12995,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-procedure-act-document> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-procedure-act-document" ]
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-procedure-document> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-procedure-document" ]
        ] ;
-       fhir:name [ fhir:v "Procedure - FR Procedure Act Document" ] ;
-       fhir:description [ fhir:v "FRProcedureActDocument est un profil utilisé pour décrire un acte planifié ou réalisé." ] ;
+       fhir:name [ fhir:v "Procedure - FR Procedure Document" ] ;
+       fhir:description [ fhir:v "FRProcedureDocument est un profil utilisé pour décrire un acte planifié ou réalisé." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

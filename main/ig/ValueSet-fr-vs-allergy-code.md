@@ -1,4 +1,4 @@
-# ValueSet – FR ValueSet Allergy Code Document - ANS IG document core v0.1.0-snapsnot
+# ValueSet – FR ValueSet Allergy Code Document - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-allergy-code | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-07 | *Computable Name*:FRValueSetAllergyCodeDocument |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-allergy-code | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-15 | *Computable Name*:FRValueSetAllergyCodeDocument |
 
  
 Jeu de valeurs permettant de coder l’agent responsable d’une allergie : 
@@ -54,11 +54,11 @@ No Expansion for this valueset (Unknown Code System)
   "resourceType" : "ValueSet",
   "id" : "fr-vs-allergy-code",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-allergy-code",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRValueSetAllergyCodeDocument",
   "title" : "ValueSet – FR ValueSet Allergy Code Document",
   "status" : "draft",
-  "date" : "2026-04-07T08:23:13+00:00",
+  "date" : "2026-04-15T13:29:57+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

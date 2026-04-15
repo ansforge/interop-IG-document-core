@@ -1,4 +1,4 @@
-# Modèle logique métier - FR LM Identification de micro-organismes multirésistants - ANS IG document core v0.1.0-snapsnot
+# Modèle logique métier - FR LM Identification de micro-organismes multirésistants - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-identification-de-micro-organismes-multiresistants | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-07 | *Computable Name*:FRLMIdentificationDeMicroOrganismesMultiresistants |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-identification-de-micro-organismes-multiresistants | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-15 | *Computable Name*:FRLMIdentificationDeMicroOrganismesMultiresistants |
 
  
 Identification de micro-organismes multirésistants 
@@ -41,11 +41,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-identification
     "valueCode" : "can-be-target"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-identification-de-micro-organismes-multiresistants",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRLMIdentificationDeMicroOrganismesMultiresistants",
   "title" : "Modèle logique métier - FR LM Identification de micro-organismes multirésistants",
   "status" : "draft",
-  "date" : "2026-04-07T08:23:13+00:00",
+  "date" : "2026-04-15T13:29:57+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

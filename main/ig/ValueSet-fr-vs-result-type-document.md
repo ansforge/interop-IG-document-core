@@ -1,4 +1,4 @@
-# ValueSet - FR ValueSet Result Type Document - ANS IG document core v0.1.0-snapsnot
+# ValueSet - FR ValueSet Result Type Document - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-result-type-document | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-07 | *Computable Name*:FRValueSetResultTypeDocument |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-result-type-document | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-15 | *Computable Name*:FRValueSetResultTypeDocument |
 
  
 ValueSet contenant les codes LOINC autorisés pour les types de résultats 
@@ -46,12 +46,12 @@ ValueSet contenant les codes LOINC autorisés pour les types de résultats
   "resourceType" : "ValueSet",
   "id" : "fr-vs-result-type-document",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-result-type-document",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRValueSetResultTypeDocument",
   "title" : "ValueSet - FR ValueSet Result Type Document",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-04-07T08:23:13+00:00",
+  "date" : "2026-04-15T13:29:57+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

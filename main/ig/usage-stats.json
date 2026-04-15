@@ -1,6 +1,6 @@
 {
   "package": "ans.document.fr.core",
-  "version": "0.1.0-snapsnot",
+  "version": "0.1.0-snapshot",
   "fhirVersion": "4.0.1",
   "jurisdiction": "FR",
   "extensions": [
@@ -526,8 +526,8 @@
     ],
     "Procedure": [
       {
-        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-procedure-act-document",
-        "title": "Procedure - FR Procedure Act Document"
+        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-procedure-document",
+        "title": "Procedure - FR Procedure Document"
       },
       {
         "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-procedure-imaging-document",

@@ -1,11 +1,10 @@
 FRDocumentCore : Validation Results
 =========================================
 
-err = 1492, warn = 5444, info = 1135
-IG Publisher Version: 2.1.2 Out of date - current version is 2.2.5
-Generated Tue Apr 07 08:44:33 UTC 2026. FHIR version 4.0.1 for ans.document.fr.core#0.1.0-snapsnot (canonical = https://interop.esante.gouv.fr/ig/document/core)
+err = 1492, warn = 5445, info = 1135
+IG Publisher Version: 2.1.2 Out of date - current version is 2.2.6
+Generated Wed Apr 15 13:51:33 UTC 2026. FHIR version 4.0.1 for ans.document.fr.core#0.1.0-snapshot (canonical = https://interop.esante.gouv.fr/ig/document/core)
  Build Errors : 13 / 7 / 0
- /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRActLMCDAFHIR : 1 / 6 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRActSubstitutionLMCDAFHIR : 1 / 6 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRAdvanceDirectiveLMCDAFHIR : 1 / 6 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRAdverseEventLMCDAFHIR : 1 / 6 / 1
@@ -66,6 +65,7 @@ Generated Tue Apr 07 08:44:33 UTC 2026. FHIR version 4.0.1 for ans.document.fr.c
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRParticipantCorpsLMCDAFHIR : 1 / 8 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRPatientWithNonHumanSubjectLMCDAFHIR : 1 / 11 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRPregnancyHistoryLMCDAFHIR : 1 / 6 / 1
+ /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRProcedureLMCDAFHIR : 1 / 6 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRResultsLMCDAFHIR : 1 / 9 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRSectionActiveProblemsLMCDAFHIR : 1 / 8 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRSectionAddedDocumentsLMCDAFHIR : 1 / 8 / 1
@@ -313,7 +313,7 @@ Generated Tue Apr 07 08:44:33 UTC 2026. FHIR version 4.0.1 for ans.document.fr.c
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-family-member-history-document : 1 / 1 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-human-name-document : 1 / 6 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-imaging-procedure-extension : 1 / 1 / 1
- /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-imaging-study-document : 1 / 5 / 3
+ /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-imaging-study-document : 1 / 6 / 3
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-immunization-document : 1 / 3 / 2
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-immunization-recommendation-document : 1 / 3 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-immunization-type-extension : 1 / 1 / 1
@@ -517,8 +517,8 @@ Generated Tue Apr 07 08:44:33 UTC 2026. FHIR version 4.0.1 for ans.document.fr.c
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-practitioner-document : 1 / 23 / 2
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-practitionerRole-document : 1 / 17 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-pregnancy-history-document : 3 / 1 / 1
- /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-procedure-act-document : 1 / 3 / 3
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-procedure-difficulty-extension : 1 / 1 / 1
+ /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-procedure-document : 1 / 3 / 3
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-procedure-imaging-document : 1 / 6 / 5
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-procedure-priority-extension : 1 / 1 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-related-person-document : 1 / 6 / 1
@@ -572,14 +572,6 @@ ERROR: ressourcesFHIR-struc-gen.html#/html/body/div/div/div/div/div/ul/li/strong
 WARNING: /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/output/searchform.html#/html/body/div/div/div/a/img/div/a/img/div/p/img/footer/div/div/div/div/div/div/a/img/div/a/img/script at Line 255, column 7: The <script> containing the javascript '$( document ).ready('... is illegal and not allowed on the HL7 ci-build - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 ci-build (if it is justified and needed)
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
-== fsh-generated/resources/ConceptMap-FRActLMCDAFHIR.json ==
-ERROR: ConceptMap/FRActLMCDAFHIR: ConceptMap.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
-WARNING: ConceptMap/FRActLMCDAFHIR: ConceptMap.group[0].source: The Source Code System https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-acte is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
-WARNING: ConceptMap/FRActLMCDAFHIR: ConceptMap.group[0].target: The Target Code System https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-acte is not fully defined and populated, and no targetScope is specified, so the target code checking will not be performed
-WARNING: ConceptMap/FRActLMCDAFHIR: ConceptMap.group[1].source: The Source Code System https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-acte is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
-WARNING: ConceptMap/FRActLMCDAFHIR: ConceptMap.group[1].target: The Target Code System https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-procedure-act-document is not fully defined and populated, and no targetScope is specified, so the target code checking will not be performed
-WARNING: ConceptMap/FRActLMCDAFHIR: ConceptMap: Published concept maps SHOULD conform to the ShareableConceptMap profile, which says that the element ConceptMap.name should be present, but it is not
-WARNING: ConceptMap/FRActLMCDAFHIR: ConceptMap: Published concept maps SHOULD conform to the ShareableConceptMap profile, which says that the element ConceptMap.experimental is mandatory, but it is not present
 == fsh-generated/resources/ConceptMap-FRActSubstitutionLMCDAFHIR.json ==
 ERROR: ConceptMap/FRActSubstitutionLMCDAFHIR: ConceptMap.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 WARNING: ConceptMap/FRActSubstitutionLMCDAFHIR: ConceptMap.group[0].source: The Source Code System https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-acte-substitution is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
@@ -1085,6 +1077,14 @@ WARNING: ConceptMap/FRPregnancyHistoryLMCDAFHIR: ConceptMap.group[1].source: The
 WARNING: ConceptMap/FRPregnancyHistoryLMCDAFHIR: ConceptMap.group[1].target: The Target Code System https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-pregnancy-history-document is not fully defined and populated, and no targetScope is specified, so the target code checking will not be performed
 WARNING: ConceptMap/FRPregnancyHistoryLMCDAFHIR: ConceptMap: Published concept maps SHOULD conform to the ShareableConceptMap profile, which says that the element ConceptMap.name should be present, but it is not
 WARNING: ConceptMap/FRPregnancyHistoryLMCDAFHIR: ConceptMap: Published concept maps SHOULD conform to the ShareableConceptMap profile, which says that the element ConceptMap.experimental is mandatory, but it is not present
+== fsh-generated/resources/ConceptMap-FRProcedureLMCDAFHIR.json ==
+ERROR: ConceptMap/FRProcedureLMCDAFHIR: ConceptMap.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
+WARNING: ConceptMap/FRProcedureLMCDAFHIR: ConceptMap.group[0].source: The Source Code System https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-acte is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/FRProcedureLMCDAFHIR: ConceptMap.group[0].target: The Target Code System https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-acte is not fully defined and populated, and no targetScope is specified, so the target code checking will not be performed
+WARNING: ConceptMap/FRProcedureLMCDAFHIR: ConceptMap.group[1].source: The Source Code System https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-acte is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/FRProcedureLMCDAFHIR: ConceptMap.group[1].target: The Target Code System https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-procedure-document is not fully defined and populated, and no targetScope is specified, so the target code checking will not be performed
+WARNING: ConceptMap/FRProcedureLMCDAFHIR: ConceptMap: Published concept maps SHOULD conform to the ShareableConceptMap profile, which says that the element ConceptMap.name should be present, but it is not
+WARNING: ConceptMap/FRProcedureLMCDAFHIR: ConceptMap: Published concept maps SHOULD conform to the ShareableConceptMap profile, which says that the element ConceptMap.experimental is mandatory, but it is not present
 == fsh-generated/resources/ConceptMap-FRResultsLMCDAFHIR.json ==
 ERROR: ConceptMap/FRResultsLMCDAFHIR: ConceptMap.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 WARNING: ConceptMap/FRResultsLMCDAFHIR: ConceptMap.group[0].source: No definition could be found for URL value 'https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-resultats-entry'
@@ -4132,6 +4132,7 @@ ERROR: StructureDefinition/fr-imaging-study-document: StructureDefinition.jurisd
 WARNING: StructureDefinition/fr-imaging-study-document: StructureDefinition.snapshot.element[24].binding.valueSet: A definition could not be found for Canonical URL 'http://www.rsna.org/RadLex_Playbook.aspx'
 INFORMATION: StructureDefinition/fr-imaging-study-document: StructureDefinition.differential.element[5].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/fr-imaging-study-document: StructureDefinition.snapshot.element[16].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+WARNING: StructureDefinition/fr-imaging-study-document: StructureDefinition.snapshot.element[24].binding: The valueSet reference http://www.rsna.org/RadLex_Playbook.aspx on element ImagingStudy.procedureCode could not be resolved
 WARNING: StructureDefinition/fr-imaging-study-document: StructureDefinition.snapshot.element[48].binding: The definition for the element 'ImagingStudy.series.performer.function' binds to the value set 'http://hl7.org/fhir/ValueSet/series-performer-function|4.0.1' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/fr-imaging-study-document: StructureDefinition.snapshot: The slice 'studyInstanceUid' on path 'ImagingStudy.identifier' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
 WARNING: StructureDefinition/fr-imaging-study-document: StructureDefinition.snapshot: The slice 'serviceRequestAccessionNumber' on path 'ImagingStudy.basedOn' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
@@ -7618,16 +7619,16 @@ ERROR: StructureDefinition/fr-pregnancy-history-document: StructureDefinition.ju
 ERROR: StructureDefinition/fr-pregnancy-history-document: StructureDefinition.snapshot.element[13].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'constatation à propos de la grossesse' for http://snomed.info/sct#118185001. There are no valid display names found for language(s) 'fr-FR'. Default display is 'Finding related to pregnancy'
 ERROR: StructureDefinition/fr-pregnancy-history-document: StructureDefinition.differential.element[3].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'constatation à propos de la grossesse' for http://snomed.info/sct#118185001. There are no valid display names found for language(s) 'fr-FR'. Default display is 'Finding related to pregnancy'
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-pregnancy-history-document'): The Implementation Guide contains no examples for this profile
-== fsh-generated/resources/StructureDefinition-fr-procedure-act-document.json ==
-ERROR: StructureDefinition/fr-procedure-act-document: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
-INFORMATION: StructureDefinition/fr-procedure-act-document: StructureDefinition.differential.element[34].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-INFORMATION: StructureDefinition/fr-procedure-act-document: StructureDefinition.snapshot.element[127].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-WARNING: StructureDefinition/fr-procedure-act-document: StructureDefinition.snapshot: The slice 'ApproachSiteCode' on path 'Procedure.bodySite' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
-WARNING: StructureDefinition/fr-procedure-act-document: StructureDefinition.snapshot: The slice 'TargetSiteCode' on path 'Procedure.bodySite' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-procedure-act-document'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-fr-procedure-difficulty-extension.json ==
 ERROR: StructureDefinition/fr-procedure-difficulty-extension: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-procedure-difficulty-extension'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-fr-procedure-document.json ==
+ERROR: StructureDefinition/fr-procedure-document: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
+INFORMATION: StructureDefinition/fr-procedure-document: StructureDefinition.differential.element[34].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/fr-procedure-document: StructureDefinition.snapshot.element[127].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+WARNING: StructureDefinition/fr-procedure-document: StructureDefinition.snapshot: The slice 'ApproachSiteCode' on path 'Procedure.bodySite' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/fr-procedure-document: StructureDefinition.snapshot: The slice 'TargetSiteCode' on path 'Procedure.bodySite' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-procedure-document'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-fr-procedure-imaging-document.json ==
 ERROR: StructureDefinition/fr-procedure-imaging-document: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 WARNING: StructureDefinition/fr-procedure-imaging-document: StructureDefinition.snapshot.element[51].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/procedure-targetBodyStructure'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 1.0.0 (from hl7.fhir.uv.extensions.r4#1.0.0), 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.1.0 (from hl7.fhir.uv.extensions.r5#5.1.0), 5.2.0 (from hl7.fhir.uv.extensions.r4#5.2.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/procedure-targetBodyStructure' to 'http://hl7.org/fhir/StructureDefinition/procedure-targetBodyStructure|5.2.0'
@@ -7697,8 +7698,8 @@ WARNING: ValueSet/fr-valueset-reference-externe: ValueSet: Published value sets 
 ERROR: ValueSet/fr-valueset-status-code: ValueSet.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 ERROR: ValueSet/fr-valueset-status-code: ValueSet.compose.include[0]: The system 'https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis' is actually a value set, which itself refers to the system 'http://terminology.hl7.org/CodeSystem/v3-ActStatus' so that may be what is intended here
 WARNING: ValueSet/fr-valueset-status-code: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: ValueSet.where(id = 'fr-valueset-status-code'): Error from https://smt.esante.gouv.fr/fhir: Error: [2ced2a63-ed2b-402e-b0ff-fbccecab38ad]: A usable code system with URL https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis could not be resolved.
-Information: X-Request-Id: 05ac72c2-0a96-454a-b001-2f0e43e09c26
+WARNING: ValueSet.where(id = 'fr-valueset-status-code'): Error from https://smt.esante.gouv.fr/fhir: Error: [9823cb67-0c65-4621-9408-84e7e33cb811]: A usable code system with URL https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis could not be resolved.
+Information: X-Request-Id: 7c58e4da-3f1d-4634-b5fd-c016d6afc201
 == fsh-generated/resources/ValueSet-fr-valueset-statut-du-probleme.json ==
 ERROR: ValueSet/fr-valueset-statut-du-probleme: ValueSet.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 WARNING: ValueSet/fr-valueset-statut-du-probleme: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
@@ -7733,8 +7734,8 @@ WARNING: ValueSet/fr-vs-evaluation-type: ValueSet: Published value sets SHOULD c
 ERROR: ValueSet/fr-vs-medication-translation-document: ValueSet.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 WARNING: ValueSet/fr-vs-medication-translation-document: ValueSet.compose.include[1].system: No definition could be found for URL value 'https://smt.esante.gouv.fr/terminologie-cip_ucd'
 WARNING: ValueSet/fr-vs-medication-translation-document: ValueSet.compose.include[3].system: No definition could be found for URL value 'https://smt.esante.gouv.fr/terminologie-medicabase'
-WARNING: ValueSet.where(id = 'fr-vs-medication-translation-document'): Error from https://smt.esante.gouv.fr/fhir: Error: [849a5e06-f4c7-40b7-a556-ba980b063a6d]: Could not find the code system https://smt.esante.gouv.fr/terminologie-cip_ucd|2026-04
-Information: X-Request-Id: f1a5912b-3469-4af2-9e19-9e46d614a378
+WARNING: ValueSet.where(id = 'fr-vs-medication-translation-document'): Error from https://smt.esante.gouv.fr/fhir: Error: [5c3ee25c-1cdd-4106-8066-0ad6dac9d7c2]: Could not find the code system https://smt.esante.gouv.fr/terminologie-cip_ucd|2026-04
+Information: X-Request-Id: 9bd411ad-53a7-49bb-8bfd-d25badb3500d
 == fsh-generated/resources/ValueSet-fr-vs-procedure-code.json ==
 ERROR: ValueSet/fr-vs-procedure-code: ValueSet.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 WARNING: ValueSet/fr-vs-procedure-code: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present

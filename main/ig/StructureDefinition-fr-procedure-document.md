@@ -1,24 +1,24 @@
-# Procedure - FR Procedure Act Document - ANS IG document core v0.1.0-snapsnot
+# Procedure - FR Procedure Document - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Procedure - FR Procedure Act Document**
+* **Procedure - FR Procedure Document**
 
-## Resource Profile: Procedure - FR Procedure Act Document 
+## Resource Profile: Procedure - FR Procedure Document 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-procedure-act-document | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-07 | *Computable Name*:FRProcedureActDocument |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-procedure-document | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-15 | *Computable Name*:FRProcedureDocument |
 
  
-FRProcedureActDocument est un profil utilisé pour décrire un acte planifié ou réalisé. 
+FRProcedureDocument est un profil utilisé pour décrire un acte planifié ou réalisé. 
 
 **Utilisations:**
 
 * Ce Profil n'est utilisé par aucun autre profil dans ce guide d'implémentation
 
-Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-procedure-act-document)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-procedure-document)
 
 ### Formal Views of Profile Content
 
@@ -26,7 +26,7 @@ Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https:/
 
  
 
-Other representations of profile: [CSV](StructureDefinition-fr-procedure-act-document.csv), [Excel](StructureDefinition-fr-procedure-act-document.xlsx), [Schematron](StructureDefinition-fr-procedure-act-document.sch) 
+Other representations of profile: [CSV](StructureDefinition-fr-procedure-document.csv), [Excel](StructureDefinition-fr-procedure-document.xlsx), [Schematron](StructureDefinition-fr-procedure-document.sch) 
 
 
 
@@ -35,13 +35,13 @@ Other representations of profile: [CSV](StructureDefinition-fr-procedure-act-doc
 ```json
 {
   "resourceType" : "StructureDefinition",
-  "id" : "fr-procedure-act-document",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-procedure-act-document",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRProcedureActDocument",
-  "title" : "Procedure - FR Procedure Act Document",
+  "id" : "fr-procedure-document",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-procedure-document",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRProcedureDocument",
+  "title" : "Procedure - FR Procedure Document",
   "status" : "draft",
-  "date" : "2026-04-07T08:23:13+00:00",
+  "date" : "2026-04-15T13:29:57+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -50,7 +50,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-procedure-act-doc
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "FRProcedureActDocument est un profil utilisé pour décrire un acte planifié ou réalisé.",
+  "description" : "FRProcedureDocument est un profil utilisé pour décrire un acte planifié ou réalisé.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

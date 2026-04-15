@@ -1,4 +1,4 @@
-# FR Bundle Document - ANS IG document core v0.1.0-snapsnot
+# FR Bundle Document - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-bundle-document | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-07 | *Computable Name*:FRBundleDocument |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-bundle-document | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-15 | *Computable Name*:FRBundleDocument |
 
  
 Ce profil permet d’assembler les éléments de l’en-tête et du corps d’un document. 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-bundle-document.c
   "resourceType" : "StructureDefinition",
   "id" : "fr-bundle-document",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-bundle-document",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRBundleDocument",
   "title" : "FR Bundle Document",
   "status" : "draft",
-  "date" : "2026-04-07T08:23:13+00:00",
+  "date" : "2026-04-15T13:29:57+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

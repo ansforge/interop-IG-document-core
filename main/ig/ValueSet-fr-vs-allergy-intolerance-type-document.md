@@ -1,4 +1,4 @@
-# ValueSet - FR ValueSet Allergy Intolerance Type Document - ANS IG document core v0.1.0-snapsnot
+# ValueSet - FR ValueSet Allergy Intolerance Type Document - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-allergy-intolerance-type-document | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-07 | *Computable Name*:FRValueSetAllergyInoleranceTypeDocument |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-allergy-intolerance-type-document | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-15 | *Computable Name*:FRValueSetAllergyInoleranceTypeDocument |
 
  
 ValueSet contenant les codes SNOMED CT autorisés pour les types d’allergies et d’intolérances 
@@ -46,11 +46,11 @@ ValueSet contenant les codes SNOMED CT autorisés pour les types d’allergies e
   "resourceType" : "ValueSet",
   "id" : "fr-vs-allergy-intolerance-type-document",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-allergy-intolerance-type-document",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRValueSetAllergyInoleranceTypeDocument",
   "title" : "ValueSet - FR ValueSet Allergy Intolerance Type Document",
   "status" : "draft",
-  "date" : "2026-04-07T08:23:13+00:00",
+  "date" : "2026-04-15T13:29:57+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

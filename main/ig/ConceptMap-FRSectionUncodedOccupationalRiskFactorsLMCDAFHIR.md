@@ -1,4 +1,4 @@
-# Mapping FRLMFacteursDeRisqueProfessionnelsNonCode → FRCDAFacteursDeRisqueProfessionnelsNonCode → FRCompositionDocument.section:uncodedOccupationalRiskFactors - ANS IG document core v0.1.0-snapsnot
+# Mapping FRLMFacteursDeRisqueProfessionnelsNonCode → FRCDAFacteursDeRisqueProfessionnelsNonCode → FRCompositionDocument.section:uncodedOccupationalRiskFactors - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRSectionUncodedOccupationalRiskFactorsLMCDAFHIR | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-07 | *Computable Name*: |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRSectionUncodedOccupationalRiskFactorsLMCDAFHIR | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-15 | *Computable Name*: |
 
  
 Mapping des éléments du modèle métier FRLMFacteursDeRisqueProfessionnelsNonCode vers la section CDA FRCDAFacteursDeRisqueProfessionnelsNonCode, puis vers la section FHIR FRCompositionDocument.section:uncodedOccupationalRiskFactors. 
@@ -23,10 +23,10 @@ Mapping des éléments du modèle métier FRLMFacteursDeRisqueProfessionnelsNonC
   "resourceType" : "ConceptMap",
   "id" : "FRSectionUncodedOccupationalRiskFactorsLMCDAFHIR",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRSectionUncodedOccupationalRiskFactorsLMCDAFHIR",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "title" : "Mapping Métier/CDA/FHIR : \"Facteurs de risque professionnels non codés\"",
   "status" : "draft",
-  "date" : "2026-04-07T08:23:13+00:00",
+  "date" : "2026-04-15T13:29:57+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

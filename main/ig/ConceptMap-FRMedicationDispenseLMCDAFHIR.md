@@ -1,4 +1,4 @@
-# Mapping FRLMTraitementDispense → FRCDATraitementDispense → FRMedicationDispenseDocument - ANS IG document core v0.1.0-snapsnot
+# Mapping FRLMTraitementDispense → FRCDATraitementDispense → FRMedicationDispenseDocument - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRMedicationDispenseLMCDAFHIR | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-07 | *Computable Name*: |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRMedicationDispenseLMCDAFHIR | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-15 | *Computable Name*: |
 
  
 Mapping des éléments du modèle métier FRLMTraitementDispense vers le profil CDA FRCDATraitementDispense, puis vers le profil FHIR FRMedicationDispenseDocument. 
@@ -23,10 +23,10 @@ Mapping des éléments du modèle métier FRLMTraitementDispense vers le profil 
   "resourceType" : "ConceptMap",
   "id" : "FRMedicationDispenseLMCDAFHIR",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRMedicationDispenseLMCDAFHIR",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "title" : "Mapping Métier/CDA/FHIR : \"Traitement dispensé\"",
   "status" : "draft",
-  "date" : "2026-04-07T08:23:13+00:00",
+  "date" : "2026-04-15T13:29:57+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
