@@ -55,7 +55,7 @@ Description: "Mapping des éléments du modèle métier FRLMHistoriqueDesActes v
 * group[=].element[=].target[=].equivalence = #equivalent
 // Entrée Acte
 * group[=].element[+].code = #FRCDAHistoriqueDesActes.entry:FRCDAActe
-* group[=].element[=].target[+].code = #FRCompositionDocument.section:historyActs.entry:FRProcedureActDocument
+* group[=].element[=].target[+].code = #FRCompositionDocument.section:historyActs.entry:FRProcedureDocument
 * group[=].element[=].target[=].equivalence = #equivalent
 // Entrée Références externes
 * group[=].element[+].code = #FRCDAHistoriqueDesActes.entry:FRCDAReferencesExternes
