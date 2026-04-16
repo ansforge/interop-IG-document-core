@@ -31,7 +31,7 @@ Ce ConceptMap de l’élément PersonneStructureAuteur présente deux groupes de
   "title" : "Mapping Métier/CDA/FHIR : \"Personne / Structure (Auteur)\"",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-04-16T07:52:47+00:00",
+  "date" : "2026-04-16T09:27:41+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
