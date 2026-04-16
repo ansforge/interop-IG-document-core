@@ -9,10 +9,10 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-14 | *Computable Name*:FRLMDevice |
+| Draft as of 2026-04-16 | *Computable Name*:FRLMDevice |
 
  
-Dispositif médical 
+Entrée Dispositif médical 
 
 **Utilisations:**
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-device.csv), [
   "name" : "FRLMDevice",
   "title" : "Logical model - Device",
   "status" : "draft",
-  "date" : "2026-04-14T07:59:58+00:00",
+  "date" : "2026-04-16T07:11:11+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -54,7 +54,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-device.csv), [
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Dispositif médical",
+  "description" : "Entrée Dispositif médical",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -73,7 +73,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-device.csv), [
       "id" : "fr-lm-device",
       "path" : "fr-lm-device",
       "short" : "Logical model - Device",
-      "definition" : "Dispositif médical"
+      "definition" : "Entrée Dispositif médical"
     },
     {
       "id" : "fr-lm-device.identifier",

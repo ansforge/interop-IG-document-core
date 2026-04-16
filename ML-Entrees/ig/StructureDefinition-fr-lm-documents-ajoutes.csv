@@ -13,5 +13,5 @@
 ","Entrées","Entrées","","","","","","","","","",,,,,"",,,,"fr-lm-section.entree",0,*,"",""
 "fr-lm-documents-ajoutes.entree.simpleObservation","fr-lm-documents-ajoutes.entree.simpleObservation","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation {[]} {[]}
 ","Entrée Simple observation : Permet d'indiquer la nature des documents ajoutés","Entrée Simple observation : Permet d'indiquer la nature des documents ajoutés","","","","","","","","","",,,,,"",,,,"fr-lm-documents-ajoutes.entree.simpleObservation",0,1,"",""
-"fr-lm-documents-ajoutes.entree.documentAttache","fr-lm-documents-ajoutes.entree.documentAttache","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-document-attache {[]} {[]}
+"fr-lm-documents-ajoutes.entree.documentAttache","fr-lm-documents-ajoutes.entree.documentAttache","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-attachement {[]} {[]}
 ","Entrée Document attaché","Entrée Document attaché","","","","","","","","","",,,,,"",,,,"fr-lm-documents-ajoutes.entree.documentAttache",1,*,"",""

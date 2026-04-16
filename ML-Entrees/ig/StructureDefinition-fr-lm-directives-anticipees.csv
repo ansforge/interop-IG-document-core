@@ -11,5 +11,5 @@
 ","Sous-sections","Sous-sections","","","","","","","","","",,,,,"",,,,"fr-lm-section.sousSection",0,*,"",""
 "fr-lm-directives-anticipees.entree","fr-lm-directives-anticipees.entree","","","",0,*,"","","","Base {[]} {[]}
 ","Entrées","Entrées","","","","","","","","","",,,,,"",,,,"fr-lm-section.entree",0,*,"",""
-"fr-lm-directives-anticipees.entree.directiveAnticipee","fr-lm-directives-anticipees.entree.directiveAnticipee","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-directive-anticipee {[]} {[]}
+"fr-lm-directives-anticipees.entree.directiveAnticipee","fr-lm-directives-anticipees.entree.directiveAnticipee","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-advance-directive {[]} {[]}
 ","Entrée Directive anticipée","Entrée Directive anticipée","","","","","","","","","",,,,,"",,,,"fr-lm-directives-anticipees.entree.directiveAnticipee",0,*,"",""

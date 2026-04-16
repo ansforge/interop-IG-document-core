@@ -7,6 +7,10 @@
 ","Identifiant de la personne.
 - obligatoire pour les professionnels et les patients.","Identifiant de la personne.
 - obligatoire pour les professionnels et les patients.","","","","","","","","","",,,,,"",,,,"fr-lm-personne-structure.personne.identifiantPersonne",0,1,"",""
+"fr-lm-personne-structure.personne.roleFonctionnel","fr-lm-personne-structure.personne.roleFonctionnel","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Rôle fonctionnel","Rôle fonctionnel","","","","","","","","","",,,,,"",,,,"fr-lm-personne-structure.personne.roleFonctionnel",0,1,"",""
+"fr-lm-personne-structure.personne.dateExecution","fr-lm-personne-structure.personne.dateExecution","","","",1,1,"","","","dateTime {[]} {[]}
+","Date de l’exécution","Date de l’exécution","","","","","","","","","",,,,,"",,,,"fr-lm-personne-structure.personne.dateExecution",1,1,"",""
 "fr-lm-personne-structure.personne.professionRole","fr-lm-personne-structure.personne.professionRole","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","
 - Profession pour les professionnels.

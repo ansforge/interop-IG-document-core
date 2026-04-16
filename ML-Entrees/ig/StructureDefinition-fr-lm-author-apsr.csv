@@ -1,0 +1,53 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"fr-lm-author-apsr","fr-lm-author-apsr","","","",0,*,"","","","null {[]} {[]}
+","Logical model - FR LM Author APSR","Auteur APSR (Anatomic Pathology Structured Report), la structure de cet élément est identique à celle de l’élément Auteur","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"fr-lm-author-apsr.personne","fr-lm-author-apsr.personne","","","",0,1,"","","","Base {[]} {[]}
+","Personne","Personne","","","","","","","","","",,,,,"",,,,"fr-lm-personne-structure-auteur.personne",0,1,"",""
+"fr-lm-author-apsr.personne.roleFonctionnel","fr-lm-author-apsr.personne.roleFonctionnel","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Rôle fonctionnel de l’auteur. A utiliser uniquement si l'auteur est un professionnel.","Rôle fonctionnel de l’auteur. A utiliser uniquement si l'auteur est un professionnel.","","","","","","","","","",,,,,"",,,,"fr-lm-personne-structure-auteur.personne.roleFonctionnel",0,1,"",""
+"fr-lm-author-apsr.personne.horodatageParticipation","fr-lm-author-apsr.personne.horodatageParticipation","","","",1,1,"","","","time {[]} {[]}
+","Horodatage de la participation de l’auteur.","Horodatage de la participation de l’auteur.","","","","","","","","","",,,,,"",,,,"fr-lm-personne-structure-auteur.personne.horodatageParticipation",1,1,"",""
+"fr-lm-author-apsr.personne.identifiantPersonne","fr-lm-author-apsr.personne.identifiantPersonne","","","",1,*,"","","","Identifier {[]} {[]}
+","Identifiant de la personne.","Identifiant de la personne.","","","","","","","","","",,,,,"",,,,"fr-lm-personne-structure-auteur.personne.identifiantPersonne",1,*,"",""
+"fr-lm-author-apsr.personne.professionRole","fr-lm-author-apsr.personne.professionRole","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","
+- Profession pour les professionnels.
+- Rôle pour les non professionnels.
+- Obligatoire pour un professionnel.","
+- Profession pour les professionnels.
+- Rôle pour les non professionnels.
+- Obligatoire pour un professionnel.","","","","","","","","","",,,,,"",,,,"fr-lm-personne-structure-auteur.personne.professionRole",0,1,"",""
+"fr-lm-author-apsr.personne.adresse","fr-lm-author-apsr.personne.adresse","","","",0,*,"","","","Address {[]} {[]}
+","Adresse géopostale.
+  - Obligatoire pour un professionnel.","Adresse géopostale.
+  - Obligatoire pour un professionnel.","","","","","","","","","",,,,,"",,,,"fr-lm-personne-structure-auteur.personne.adresse",0,*,"",""
+"fr-lm-author-apsr.personne.coordonneesTelecom","fr-lm-author-apsr.personne.coordonneesTelecom","","","",0,*,"","","","ContactPoint {[]} {[]}
+","Coordonnées télécom.
+  - Obligatoire pour un professionnel.","Coordonnées télécom.
+  - Obligatoire pour un professionnel.","","","","","","","","","",,,,,"",,,,"fr-lm-personne-structure-auteur.personne.coordonneesTelecom",0,*,"",""
+"fr-lm-author-apsr.personne.IdentitePersonne","fr-lm-author-apsr.personne.IdentitePersonne","","","",1,1,"","","","Base {[]} {[]}
+","Identité de la personne","Identité de la personne","","","","","","","","","",,,,,"",,,,"fr-lm-personne-structure-auteur.personne.IdentitePersonne",1,1,"",""
+"fr-lm-author-apsr.personne.IdentitePersonne.nomPersonne","fr-lm-author-apsr.personne.IdentitePersonne.nomPersonne","","","",1,*,"","","","Base {[]} {[]}
+","Nom de la personne","Nom de la personne","","","","","","","","","",,,,,"",,,,"fr-lm-personne-structure-auteur.personne.IdentitePersonne.nomPersonne",1,*,"",""
+"fr-lm-author-apsr.personne.IdentitePersonne.prenomPersonne","fr-lm-author-apsr.personne.IdentitePersonne.prenomPersonne","","","",0,*,"","","","string {[]} {[]}
+","Prénom de la personne","Prénom de la personne","","","","","","","","","",,,,,"",,,,"fr-lm-personne-structure-auteur.personne.IdentitePersonne.prenomPersonne",0,*,"",""
+"fr-lm-author-apsr.personne.IdentitePersonne.civilite","fr-lm-author-apsr.personne.IdentitePersonne.civilite","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Civilité","Civilité","","","","","","","","","",,,,,"",,,,"fr-lm-personne-structure-auteur.personne.IdentitePersonne.civilite",0,1,"",""
+"fr-lm-author-apsr.personne.IdentitePersonne.titre","fr-lm-author-apsr.personne.IdentitePersonne.titre","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Titre","Titre","","","","","","","","","",,,,,"",,,,"fr-lm-personne-structure-auteur.personne.IdentitePersonne.titre",0,1,"",""
+"fr-lm-author-apsr.structure","fr-lm-author-apsr.structure","","","",0,1,"","","","Base {[]} {[]}
+","Structure","Structure","","","","","","","","","",,,,,"",,,,"fr-lm-personne-structure-auteur.structure",0,1,"",""
+"fr-lm-author-apsr.structure.identifiantStructure","fr-lm-author-apsr.structure.identifiantStructure","","","",0,1,"","","","Identifier {[]} {[]}
+","Identifiant de la structure.
+  - Obligatoire pour un professionnel.","Identifiant de la structure.
+  - Obligatoire pour un professionnel.","","","","","","","","","",,,,,"",,,,"fr-lm-personne-structure-auteur.structure.identifiantStructure",0,1,"",""
+"fr-lm-author-apsr.structure.nomStructure","fr-lm-author-apsr.structure.nomStructure","","","",0,1,"","","","string {[]} {[]}
+","Nom de la structure.
+  - Obligatoire pour un professionnel.","Nom de la structure.
+  - Obligatoire pour un professionnel.","","","","","","","","","",,,,,"",,,,"fr-lm-personne-structure-auteur.structure.nomStructure",0,1,"",""
+"fr-lm-author-apsr.structure.adresse","fr-lm-author-apsr.structure.adresse","","","",0,*,"","","","Address {[]} {[]}
+","Adresse géopostale","Adresse géopostale","","","","","","","","","",,,,,"",,,,"fr-lm-personne-structure-auteur.structure.adresse",0,*,"",""
+"fr-lm-author-apsr.structure.coordonneesTelecom","fr-lm-author-apsr.structure.coordonneesTelecom","","","",0,*,"","","","ContactPoint {[]} {[]}
+","Coordonnées télécom","Coordonnées télécom","","","","","","","","","",,,,,"",,,,"fr-lm-personne-structure-auteur.structure.coordonneesTelecom",0,*,"",""
+"fr-lm-author-apsr.structure.secteurActivite","fr-lm-author-apsr.structure.secteurActivite","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Secteur d'activité","Secteur d'activité","","","","","","","","","",,,,,"",,,,"fr-lm-personne-structure-auteur.structure.secteurActivite",0,1,"",""

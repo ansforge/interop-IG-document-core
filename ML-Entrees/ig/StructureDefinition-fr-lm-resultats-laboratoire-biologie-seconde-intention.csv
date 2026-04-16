@@ -13,5 +13,5 @@
 ","Entrées","Entrées","","","","","","","","","",,,,,"",,,,"fr-lm-section.entree",0,*,"",""
 "fr-lm-resultats-laboratoire-biologie-seconde-intention.entree.observation","fr-lm-resultats-laboratoire-biologie-seconde-intention.entree.observation","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation {[]} {[]}
 ","Entrée Simple observation","Entrée Simple observation","","","","","","","","","",,,,,"",,,,"fr-lm-resultats-laboratoire-biologie-seconde-intention.entree.observation",0,1,"",""
-"fr-lm-resultats-laboratoire-biologie-seconde-intention.entree.documentAttache","fr-lm-resultats-laboratoire-biologie-seconde-intention.entree.documentAttache","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-document-attache {[]} {[]}
+"fr-lm-resultats-laboratoire-biologie-seconde-intention.entree.documentAttache","fr-lm-resultats-laboratoire-biologie-seconde-intention.entree.documentAttache","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-attachement {[]} {[]}
 ","Entrée Document attaché","Entrée Document attaché","","","","","","","","","",,,,,"",,,,"fr-lm-resultats-laboratoire-biologie-seconde-intention.entree.documentAttache",1,*,"",""

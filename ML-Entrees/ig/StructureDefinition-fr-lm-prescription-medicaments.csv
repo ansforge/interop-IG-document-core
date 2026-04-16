@@ -13,5 +13,5 @@
 ","Entrées","Entrées","","","","","","","","","",,,,,"",,,,"fr-lm-section.entree",0,*,"",""
 "fr-lm-prescription-medicaments.entree.traitementPrescrit","fr-lm-prescription-medicaments.entree.traitementPrescrit","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication-prescription {[]} {[]}
 ","Entrée Traitement prescrit","Entrée Traitement prescrit","","","","","","","","","",,,,,"",,,,"fr-lm-prescription-medicaments.entree.traitementPrescrit",1,*,"",""
-"fr-lm-prescription-medicaments.auteur","fr-lm-prescription-medicaments.auteur","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-auteur {[]} {[]}
+"fr-lm-prescription-medicaments.auteur","fr-lm-prescription-medicaments.auteur","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure-auteur {[]} {[]}
 ","Auteur de la prescription","Auteur de la prescription","","","","","","","","","",,,,,"",,,,"fr-lm-prescription-medicaments.auteur",0,1,"",""

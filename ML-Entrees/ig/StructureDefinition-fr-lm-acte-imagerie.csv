@@ -19,5 +19,5 @@
 ","Section Object catalog","Section Object catalog","","","","","","","","","",,,,,"",,,,"fr-lm-acte-imagerie.sousSection.catalogueObjects",1,1,"",""
 "fr-lm-acte-imagerie.entree.techniqueImagerie","fr-lm-acte-imagerie.entree.techniqueImagerie","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-technique-imagerie {[]} {[]}
 ","Entrée technique d'imagerie","Entrée technique d'imagerie","","","","","","","","","",,,,,"",,,,"fr-lm-acte-imagerie.entree.techniqueImagerie",1,1,"",""
-"fr-lm-acte-imagerie.entree.administrationProduits","fr-lm-acte-imagerie.entree.administrationProduits","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-administration-produit-de-sante {[]} {[]}
+"fr-lm-acte-imagerie.entree.administrationProduits","fr-lm-acte-imagerie.entree.administrationProduits","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dicom-medication-administration {[]} {[]}
 ","Produits de santé administrés pendant l'acte d'imagerie","Produits de santé administrés pendant l'acte d'imagerie","","","","","","","","","",,,,,"",,,,"fr-lm-acte-imagerie.entree.administrationProduits",0,*,"",""

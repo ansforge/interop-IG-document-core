@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-administration-radiopharmaceutique | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-14 | *Computable Name*:FRCDADICOMAdministrationRadiopharmaceutique |
+| Draft as of 2026-04-16 | *Computable Name*:FRCDADICOMAdministrationRadiopharmaceutique |
 
  
 Entrée FR-DICOM-Administration-radiopharmaceutique: Cette entrée permet d’enregistrer l’administration de produits radiopharmaceutiques : 
@@ -72,7 +72,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-adminis
   "name" : "FRCDADICOMAdministrationRadiopharmaceutique",
   "title" : "CDA - FR DICOM Administration radiopharmaceutique",
   "status" : "draft",
-  "date" : "2026-04-14T07:59:58+00:00",
+  "date" : "2026-04-16T07:11:11+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

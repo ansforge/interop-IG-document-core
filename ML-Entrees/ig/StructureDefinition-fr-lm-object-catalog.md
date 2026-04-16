@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-object-catalog | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-14 | *Computable Name*:FRLMObjectCatalog |
+| Draft as of 2026-04-16 | *Computable Name*:FRLMObjectCatalog |
 
  
 Section Object Catalog 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-object-catalog
   "name" : "FRLMObjectCatalog",
   "title" : "Modèle logique métier - FR LM Object Catalog",
   "status" : "draft",
-  "date" : "2026-04-14T07:59:58+00:00",
+  "date" : "2026-04-16T07:11:11+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -97,7 +97,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-object-catalog
       "min" : 0,
       "max" : "*",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-examen-imagerie"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-imaging-study"
       }]
     }]
   }

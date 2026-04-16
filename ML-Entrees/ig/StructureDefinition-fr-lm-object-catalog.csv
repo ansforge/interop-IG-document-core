@@ -11,5 +11,5 @@
 ","Sous-sections","Sous-sections","","","","","","","","","",,,,,"",,,,"fr-lm-section.sousSection",0,*,"",""
 "fr-lm-object-catalog.entree","fr-lm-object-catalog.entree","","","",0,*,"","","","Base {[]} {[]}
 ","Entrées","Entrées","","","","","","","","","",,,,,"",,,,"fr-lm-section.entree",0,*,"",""
-"fr-lm-object-catalog.entree.examenImagerie","fr-lm-object-catalog.entree.examenImagerie","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-examen-imagerie {[]} {[]}
+"fr-lm-object-catalog.entree.examenImagerie","fr-lm-object-catalog.entree.examenImagerie","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-imaging-study {[]} {[]}
 ","Entrée Examen imagerie","Entrée Examen imagerie","","","","","","","","","",,,,,"",,,,"fr-lm-object-catalog.entree.examenImagerie",0,*,"",""

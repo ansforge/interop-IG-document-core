@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-participant-corps | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-14 | *Computable Name*:FRLMParticipantCorps |
+| Draft as of 2026-04-16 | *Computable Name*:FRLMParticipantCorps |
 
  
 Participant 
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Autorisation exposition](StructureDefinition-fr-lm-autorisation-exposition.md), [Modèle logique métier - FR LM Rencontre](StructureDefinition-fr-lm-encounter.md) and [FR LM Entry](StructureDefinition-fr-lm-entry.md)
+* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Autorisation exposition](StructureDefinition-fr-lm-autorisation-exposition.md) and [FR LM Entry](StructureDefinition-fr-lm-entry.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-participant-corps)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-participant-co
   "name" : "FRLMParticipantCorps",
   "title" : "Logical model - FR LM Participant",
   "status" : "draft",
-  "date" : "2026-04-14T07:59:58+00:00",
+  "date" : "2026-04-16T07:11:11+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

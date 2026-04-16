@@ -11,5 +11,5 @@
 ","Sous-sections","Sous-sections","","","","","","","","","",,,,,"",,,,"fr-lm-section.sousSection",0,*,"",""
 "fr-lm-addendum.entree","fr-lm-addendum.entree","","","",0,0,"","","","Base {[]} {[]}
 ","Entrées","Entrées","","","","","","","","","",,,,,"",,,,"fr-lm-section.entree",0,*,"",""
-"fr-lm-addendum.auteur","fr-lm-addendum.auteur","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-auteur {[]} {[]}
+"fr-lm-addendum.auteur","fr-lm-addendum.auteur","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure-auteur {[]} {[]}
 ","auteur du document","auteur du document","","","","","","","","","",,,,,"",,,,"fr-lm-addendum.auteur",1,1,"",""

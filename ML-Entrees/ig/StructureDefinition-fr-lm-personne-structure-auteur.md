@@ -9,14 +9,15 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure-auteur | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-14 | *Computable Name*:FRLMPersonneStructureAuteur |
+| Draft as of 2026-04-16 | *Computable Name*:FRLMPersonneStructureAuteur |
 
  
 Une personne (professionnel ou patient ou autre) et/ou une structure (pour les professionnels). 
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Auteur](StructureDefinition-fr-lm-auteur.md)
+* Dérivé de ce Modèle logique: [Logical model - FR LM Author APSR](StructureDefinition-fr-lm-author-apsr.md)
+* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Addendum](StructureDefinition-fr-lm-addendum.md), [Modèle logique métier - FR LM Batterie d'examens de biologie médicale](StructureDefinition-fr-lm-batterie-examens-biologie-medicale.md), [Modèle logique métier - FR LM Dispensation médicaments](StructureDefinition-fr-lm-dispensation-medicaments.md), [Modèle logique métier - FR LM En-tête document](StructureDefinition-fr-lm-entete-document.md)... Show 5 more, [FR LM Entry](StructureDefinition-fr-lm-entry.md), [Modèle logique métier - FR LM Prescription de dispositifs médicaux](StructureDefinition-fr-lm-prescription-dispositifs-medicaux.md), [Logical model - FR LM Prescription](StructureDefinition-fr-lm-prescription-entree.md), [Modèle logique métier - FR LM Prescription de médicaments](StructureDefinition-fr-lm-prescription-medicaments.md) and [Modèle logique métier - FR LM Statut fonctionnel](StructureDefinition-fr-lm-statut-fonctionnel.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-personne-structure-auteur)
 
@@ -45,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-personne-struc
   "name" : "FRLMPersonneStructureAuteur",
   "title" : "Modèle logique métier - FR LM Personne et/ou Structure Auteur",
   "status" : "draft",
-  "date" : "2026-04-14T07:59:58+00:00",
+  "date" : "2026-04-16T07:11:11+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -84,6 +85,28 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-personne-struc
       "max" : "1",
       "type" : [{
         "code" : "Base"
+      }]
+    },
+    {
+      "id" : "fr-lm-personne-structure-auteur.personne.roleFonctionnel",
+      "path" : "fr-lm-personne-structure-auteur.personne.roleFonctionnel",
+      "short" : "Rôle fonctionnel de l’auteur. A utiliser uniquement si l'auteur est un professionnel.",
+      "definition" : "Rôle fonctionnel de l’auteur. A utiliser uniquement si l'auteur est un professionnel.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }]
+    },
+    {
+      "id" : "fr-lm-personne-structure-auteur.personne.horodatageParticipation",
+      "path" : "fr-lm-personne-structure-auteur.personne.horodatageParticipation",
+      "short" : "Horodatage de la participation de l’auteur.",
+      "definition" : "Horodatage de la participation de l’auteur.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "time"
       }]
     },
     {

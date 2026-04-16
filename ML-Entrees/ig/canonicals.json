@@ -825,20 +825,6 @@
   "name" : "CISISTelecom"
 },
 {
-  "id" : "fm-lm-assessment",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fm-lm-assessment",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRLMAssessment"
-},
-{
-  "id" : "fm-lm-observation-social-history",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fm-lm-observation-social-history",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRLMObservationSocialHistory"
-},
-{
   "id" : "fr-Observation-vital-signs-panel-document",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-Observation-vital-signs-panel-document",
@@ -2092,13 +2078,6 @@
   "name" : "FRInterpretationExtension"
 },
 {
-  "id" : "fr-lm-accidents-transfusionnels",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-accidents-transfusionnels",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRLMAccidentsTransfusionnels"
-},
-{
   "id" : "fr-lm-acte-imagerie",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-acte-imagerie",
@@ -2113,18 +2092,39 @@
   "name" : "FRLMAddendum"
 },
 {
-  "id" : "fr-lm-administration-de-derives-du-sang",
+  "id" : "fr-lm-administration-blood-derivatives",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-administration-de-derives-du-sang",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-administration-blood-derivatives",
   "version" : "0.1.0-snapsnot",
-  "name" : "FRLMAdministrationDeDerivesDuSang"
+  "name" : "FRLMAdministrationBloodDerivatives"
 },
 {
-  "id" : "fr-lm-administration-produit-de-sante",
+  "id" : "fr-lm-advance-directive",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-administration-produit-de-sante",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-advance-directive",
   "version" : "0.1.0-snapsnot",
-  "name" : "FRLMAdministrationProduitDeSante"
+  "name" : "FRLMAdvanceDirective"
+},
+{
+  "id" : "fr-lm-adverse-event",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-adverse-event",
+  "version" : "0.1.0-snapsnot",
+  "name" : "FRLMAdverseEvent"
+},
+{
+  "id" : "fr-lm-adverse-event-during-hospitalization",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-adverse-event-during-hospitalization",
+  "version" : "0.1.0-snapsnot",
+  "name" : "FRLMAdverseEventDuringHospitalization"
+},
+{
+  "id" : "fr-lm-adverse-event-following-administration-blood-derivatives",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-adverse-event-following-administration-blood-derivatives",
+  "version" : "0.1.0-snapsnot",
+  "name" : "FRLMAdverseEventFollowingAdministrationBloodDerivatives"
 },
 {
   "id" : "fr-lm-allergies-et-hypersensibilites",
@@ -2155,18 +2155,32 @@
   "name" : "FRLMAntecedentsMedicaux"
 },
 {
-  "id" : "fr-lm-auteur",
+  "id" : "fr-lm-assessment",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-auteur",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-assessment",
   "version" : "0.1.0-snapsnot",
-  "name" : "FRLMAuteur"
+  "name" : "FRLMAssessment"
 },
 {
-  "id" : "fr-lm-auteur-apsr",
+  "id" : "fr-lm-assessments",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-auteur-apsr",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-assessments",
   "version" : "0.1.0-snapsnot",
-  "name" : "FRLMAuteurAPSR"
+  "name" : "FRLMAssessments"
+},
+{
+  "id" : "fr-lm-attachement",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-attachement",
+  "version" : "0.1.0-snapsnot",
+  "name" : "FRLMAttachement"
+},
+{
+  "id" : "fr-lm-author-apsr",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-author-apsr",
+  "version" : "0.1.0-snapsnot",
+  "name" : "FRLMAuthorAPSR"
 },
 {
   "id" : "fr-lm-autorisation-exposition",
@@ -2202,13 +2216,6 @@
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-codes-a-barres",
   "version" : "0.1.0-snapsnot",
   "name" : "FRLMCodesAbarres"
-},
-{
-  "id" : "fr-lm-commentaire-er",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-commentaire-er",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRLMCommentaireER"
 },
 {
   "id" : "fr-lm-commentaire-non-code",
@@ -2281,13 +2288,6 @@
   "name" : "FRLMDemandeExamenImagerie"
 },
 {
-  "id" : "fr-lm-demande-examen-ou-suivi",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-demande-examen-ou-suivi",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRLMDemandeExamenOuSuivi"
-},
-{
   "id" : "fr-lm-destinataire-prevu",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-destinataire-prevu",
@@ -2309,11 +2309,11 @@
   "name" : "FRLMDeviceUse"
 },
 {
-  "id" : "fr-lm-directive-anticipee",
+  "id" : "fr-lm-dicom-medication-administration",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-directive-anticipee",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dicom-medication-administration",
   "version" : "0.1.0-snapsnot",
-  "name" : "FRLMDirectiveAnticipee"
+  "name" : "FRLMDICOMMedicationAdministration"
 },
 {
   "id" : "fr-lm-directives-anticipees",
@@ -2335,13 +2335,6 @@
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dispositifs-medicaux",
   "version" : "0.1.0-snapsnot",
   "name" : "FRLMDispositifsMedicaux"
-},
-{
-  "id" : "fr-lm-document-attache",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-document-attache",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRLMDocumentAttache"
 },
 {
   "id" : "fr-lm-document-pdf-copie",
@@ -2372,25 +2365,11 @@
   "name" : "FRLMDosageInstructions"
 },
 {
-  "id" : "fr-lm-dose-antigene",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dose-antigene",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRLMDoseAntigene"
-},
-{
   "id" : "fr-lm-dose-number",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dose-number",
   "version" : "0.1.0-snapsnot",
   "name" : "FRLMDoseNumber"
-},
-{
-  "id" : "fr-lm-echantillon-preleve",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-echantillon-preleve",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRLMEchantillonPreleve"
 },
 {
   "id" : "fr-lm-education-patient",
@@ -2400,39 +2379,11 @@
   "name" : "FRLMEducationPatient"
 },
 {
-  "id" : "fr-lm-effet-indesirable",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-effet-indesirable",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRLMEffetIndesirable"
-},
-{
   "id" : "fr-lm-effets-indesirables",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-effets-indesirables",
   "version" : "0.1.0-snapsnot",
   "name" : "FRLMEffetsIndesirables"
-},
-{
-  "id" : "fr-lm-en-rapport-avec-accident-travail",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-en-rapport-avec-accident-travail",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRLMEnRapportAvecAccidentTravail"
-},
-{
-  "id" : "fr-lm-en-rapport-avec-ald",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-en-rapport-avec-ald",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRLMEnRapportAvecALD"
-},
-{
-  "id" : "fr-lm-en-rapport-avec-la-prevention",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-en-rapport-avec-la-prevention",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRLMEnRapportAvecLaPrevention"
 },
 {
   "id" : "fr-lm-encounter",
@@ -2463,32 +2414,11 @@
   "name" : "FRLMEvenement"
 },
 {
-  "id" : "fr-lm-evenement-indesirable-pendant-hospitalisation",
+  "id" : "fr-lm-evolution-adverse-event",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-evenement-indesirable-pendant-hospitalisation",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-evolution-adverse-event",
   "version" : "0.1.0-snapsnot",
-  "name" : "FRLMEvenementIndesirablePendantHospitalisation"
-},
-{
-  "id" : "fr-lm-evenements-indesirables-suite-administration-derives-sang",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-evenements-indesirables-suite-administration-derives-sang",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRLMEvenementsIndesirablesSuiteAdministrationDerivesSang"
-},
-{
-  "id" : "fr-lm-evolution-effet-indesirable",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-evolution-effet-indesirable",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRLMEvolutionEffetIndesirable"
-},
-{
-  "id" : "fr-lm-examen-imagerie",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-examen-imagerie",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRLMExamenImagerie"
+  "name" : "FRLMEvolutionAdverseEvent"
 },
 {
   "id" : "fr-lm-exposition-radiations",
@@ -2517,20 +2447,6 @@
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-fonctions-physiques",
   "version" : "0.1.0-snapsnot",
   "name" : "FRLMFonctionsPhysiques"
-},
-{
-  "id" : "fr-lm-gravite-effet-indesirable",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-gravite-effet-indesirable",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRLMGraviteEffetIndesirable"
-},
-{
-  "id" : "fr-lm-group-de-questionnaires-devaluation",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-group-de-questionnaires-devaluation",
-  "version" : "0.1.0-snapsnot",
-  "name" : "FRLMGroupDeQuestionnairesDevaluation"
 },
 {
   "id" : "fr-lm-habitus-mode-de-vie",
@@ -2580,6 +2496,13 @@
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-image-illustrative",
   "version" : "0.1.0-snapsnot",
   "name" : "FRLMImageIllustrative"
+},
+{
+  "id" : "fr-lm-imaging-study",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-imaging-study",
+  "version" : "0.1.0-snapsnot",
+  "name" : "FRLMImagingStudy"
 },
 {
   "id" : "fr-lm-immunisation",
@@ -2701,11 +2624,25 @@
   "name" : "FRLMObservation"
 },
 {
+  "id" : "fr-lm-observation-long-term-condition",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation-long-term-condition",
+  "version" : "0.1.0-snapsnot",
+  "name" : "FRLMObservationLongTermCondition"
+},
+{
   "id" : "fr-lm-observation-pregnancy",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation-pregnancy",
   "version" : "0.1.0-snapsnot",
   "name" : "FRLMObservationPregnancy"
+},
+{
+  "id" : "fr-lm-observation-related-to-prevention",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation-related-to-prevention",
+  "version" : "0.1.0-snapsnot",
+  "name" : "FRLMObservationRelatedToPrevention"
 },
 {
   "id" : "fr-lm-observation-result",
@@ -2715,11 +2652,25 @@
   "name" : "FRLMObservationResult"
 },
 {
+  "id" : "fr-lm-observation-social-history",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation-social-history",
+  "version" : "0.1.0-snapsnot",
+  "name" : "FRLMObservationSocialHistory"
+},
+{
   "id" : "fr-lm-observation-vital-sign",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation-vital-sign",
   "version" : "0.1.0-snapsnot",
   "name" : "FRLMObservationVitalSign"
+},
+{
+  "id" : "fr-lm-observation-work-related-accident",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation-work-related-accident",
+  "version" : "0.1.0-snapsnot",
+  "name" : "FRLMObservationWorkRelatedAccident"
 },
 {
   "id" : "fr-lm-operateur-saisie",
@@ -2988,6 +2939,20 @@
   "name" : "FRLMSerieImagerie"
 },
 {
+  "id" : "fr-lm-service-request",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-service-request",
+  "version" : "0.1.0-snapsnot",
+  "name" : "FRLMServiceRequest"
+},
+{
+  "id" : "fr-lm-severity-adverse-event",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-severity-adverse-event",
+  "version" : "0.1.0-snapsnot",
+  "name" : "FRLMSeverityAdverseEvent"
+},
+{
   "id" : "fr-lm-signes-vitaux",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-signes-vitaux",
@@ -3098,6 +3063,13 @@
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-traitements-administres",
   "version" : "0.1.0-snapsnot",
   "name" : "FRLMTraitementsAdministres"
+},
+{
+  "id" : "fr-lm-transfusion-accidents",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-transfusion-accidents",
+  "version" : "0.1.0-snapsnot",
+  "name" : "FRLMTransfusionAccidents"
 },
 {
   "id" : "fr-lm-transfusion-de-produits-sanguins",

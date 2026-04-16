@@ -3,6 +3,10 @@
 ","Modèle logique métier - FR LM Personne et/ou Structure Auteur","Une personne (professionnel ou patient ou autre) et/ou une structure (pour les professionnels).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "fr-lm-personne-structure-auteur.personne","fr-lm-personne-structure-auteur.personne","","","",0,1,"","","","Base {[]} {[]}
 ","Personne","Personne","","","","","","","","","",,,,,"",,,,"fr-lm-personne-structure-auteur.personne",0,1,"",""
+"fr-lm-personne-structure-auteur.personne.roleFonctionnel","fr-lm-personne-structure-auteur.personne.roleFonctionnel","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Rôle fonctionnel de l’auteur. A utiliser uniquement si l'auteur est un professionnel.","Rôle fonctionnel de l’auteur. A utiliser uniquement si l'auteur est un professionnel.","","","","","","","","","",,,,,"",,,,"fr-lm-personne-structure-auteur.personne.roleFonctionnel",0,1,"",""
+"fr-lm-personne-structure-auteur.personne.horodatageParticipation","fr-lm-personne-structure-auteur.personne.horodatageParticipation","","","",1,1,"","","","time {[]} {[]}
+","Horodatage de la participation de l’auteur.","Horodatage de la participation de l’auteur.","","","","","","","","","",,,,,"",,,,"fr-lm-personne-structure-auteur.personne.horodatageParticipation",1,1,"",""
 "fr-lm-personne-structure-auteur.personne.identifiantPersonne","fr-lm-personne-structure-auteur.personne.identifiantPersonne","","","",1,*,"","","","Identifier {[]} {[]}
 ","Identifiant de la personne.","Identifiant de la personne.","","","","","","","","","",,,,,"",,,,"fr-lm-personne-structure-auteur.personne.identifiantPersonne",1,*,"",""
 "fr-lm-personne-structure-auteur.personne.professionRole","fr-lm-personne-structure-auteur.personne.professionRole","","","",0,1,"","","","CodeableConcept {[]} {[]}

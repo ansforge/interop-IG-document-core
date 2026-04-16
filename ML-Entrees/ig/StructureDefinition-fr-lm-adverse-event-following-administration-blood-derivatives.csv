@@ -1,0 +1,39 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"fr-lm-adverse-event-following-administration-blood-derivatives","fr-lm-adverse-event-following-administration-blood-derivatives","","","",0,*,"","","","null {[]} {[]}
+","Logical model - FR LM Adverse Events Following Administration of Blood Derivatives","Entrée Evènements indésirables suite à l'administration de dérivés du sang","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"fr-lm-adverse-event-following-administration-blood-derivatives.header","fr-lm-adverse-event-following-administration-blood-derivatives.header","","","",1,1,"","","","Base {[]} {[]}
+","Métadonnées de base","Métadonnées de base","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header",1,1,"",""
+"fr-lm-adverse-event-following-administration-blood-derivatives.header.subject","fr-lm-adverse-event-following-administration-blood-derivatives.header.subject","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-usager {[]} {[]}
+","Patient/subject information","Patient/subject information","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.subject",1,1,"",""
+"fr-lm-adverse-event-following-administration-blood-derivatives.header.identifier","fr-lm-adverse-event-following-administration-blood-derivatives.header.identifier","","","",0,*,"","","","Identifier {[]} {[]}
+","Identifiant de l’entrée","Identifiant de l’entrée","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.identifier",0,*,"",""
+"fr-lm-adverse-event-following-administration-blood-derivatives.header.author[x]","fr-lm-adverse-event-following-administration-blood-derivatives.header.author[x]","","","",0,*,"","","","Base {[]} {[]}
+","author[x] peut correspondre soit à un professionnel, soit à une organisation, soit à un système.","author[x] peut correspondre soit à un professionnel, soit à une organisation, soit à un système.","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.author[x]",0,*,"",""
+"fr-lm-adverse-event-following-administration-blood-derivatives.header.author[x].authorProfessional","fr-lm-adverse-event-following-administration-blood-derivatives.header.author[x].authorProfessional","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure-auteur {[]} {[]}
+","L'auteur est un professionnel de santé","L'auteur est un professionnel de santé","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.author[x].authorProfessional",0,*,"",""
+"fr-lm-adverse-event-following-administration-blood-derivatives.header.author[x].authorOrganisation","fr-lm-adverse-event-following-administration-blood-derivatives.header.author[x].authorOrganisation","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure-auteur {[]} {[]}
+","L'auteur est une organisation","L'auteur est une organisation","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.author[x].authorOrganisation",0,*,"",""
+"fr-lm-adverse-event-following-administration-blood-derivatives.header.author[x].authorDevice","fr-lm-adverse-event-following-administration-blood-derivatives.header.author[x].authorDevice","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-systeme-structure-auteur {[]} {[]}
+","L'auteur est un système","L'auteur est un système","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.author[x].authorDevice",0,*,"",""
+"fr-lm-adverse-event-following-administration-blood-derivatives.header.performer","fr-lm-adverse-event-following-administration-blood-derivatives.header.performer","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure {[]} {[]}
+","Exécutant (performer)","Exécutant (performer)","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.performer",0,*,"",""
+"fr-lm-adverse-event-following-administration-blood-derivatives.header.participant","fr-lm-adverse-event-following-administration-blood-derivatives.header.participant","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-participant-corps {[]} {[]}
+","Participant","Participant","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.participant",0,*,"",""
+"fr-lm-adverse-event-following-administration-blood-derivatives.header.informant","fr-lm-adverse-event-following-administration-blood-derivatives.header.informant","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-informateur {[]} {[]}
+","Informateur","Informateur","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.informant",0,*,"",""
+"fr-lm-adverse-event-following-administration-blood-derivatives.header.date","fr-lm-adverse-event-following-administration-blood-derivatives.header.date","","","",0,1,"","","","dateTime {[]} {[]}
+","Date/Heure de création par l'auteur","Date/Heure de création par l'auteur","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.date",0,1,"",""
+"fr-lm-adverse-event-following-administration-blood-derivatives.header.source","fr-lm-adverse-event-following-administration-blood-derivatives.header.source","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Source","Source","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.source",0,1,"",""
+"fr-lm-adverse-event-following-administration-blood-derivatives.header.langue","fr-lm-adverse-event-following-administration-blood-derivatives.header.langue","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","'fr-FR' pour français métropolitain (la casse des caractères doit être respectée)
+La partie en minuscules indique le code de la langue utilisée (ISO-639-1)
+La partie en majuscules indique le code pays (ISO-3166)","'fr-FR' pour français métropolitain (la casse des caractères doit être respectée)
+La partie en minuscules indique le code de la langue utilisée (ISO-639-1)
+La partie en majuscules indique le code pays (ISO-3166)","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.langue",0,1,"",""
+"fr-lm-adverse-event-following-administration-blood-derivatives.code","fr-lm-adverse-event-following-administration-blood-derivatives.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Code de l’observation","Code de l’observation","","","","","","","","","",,,,,"",,,,"fr-lm-adverse-event-following-administration-blood-derivatives.code",1,1,"",""
+"fr-lm-adverse-event-following-administration-blood-derivatives.statut","fr-lm-adverse-event-following-administration-blood-derivatives.statut","","","",1,1,"","","","code {[]} {[]}
+","Statut de l’observation. Fixé à 'completed'","Statut de l’observation. Fixé à 'completed'","","","","","","","","","",,,,,"",,,,"fr-lm-adverse-event-following-administration-blood-derivatives.statut",1,1,"",""
+"fr-lm-adverse-event-following-administration-blood-derivatives.valeur","fr-lm-adverse-event-following-administration-blood-derivatives.valeur","","","",1,1,"","","","string {[]} {[]}
+","Description sous forme textuelle des évènements indésirables survenus suite à l'administration de dérivés du sang.","Description sous forme textuelle des évènements indésirables survenus suite à l'administration de dérivés du sang.","","","","","","","","","",,,,,"",,,,"fr-lm-adverse-event-following-administration-blood-derivatives.valeur",1,1,"",""

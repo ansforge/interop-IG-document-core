@@ -10,7 +10,7 @@
   "name" : "FRDocumentCore",
   "title" : "ANS IG document core",
   "status" : "draft",
-  "date" : "2026-04-14T07:59:58+00:00",
+  "date" : "2026-04-16T07:11:11+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -3460,7 +3460,72 @@
         "reference" : "StructureDefinition/fr-lm-device"
       },
       "name" : "Logical model - Device",
-      "description" : "Dispositif médical",
+      "description" : "Entrée Dispositif médical",
+      "exampleBoolean" : false,
+      "groupingId" : "Modèles logiques métier des composants élémentaires"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-lm-administration-blood-derivatives"
+      },
+      "name" : "Logical model - FR LM Administration of Blood Derivatives",
+      "description" : "Entrée Administration de dérivés du sang",
+      "exampleBoolean" : false,
+      "groupingId" : "Modèles logiques métier des composants élémentaires"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-lm-advance-directive"
+      },
+      "name" : "Logical model - FR LM Advance Directive",
+      "description" : "Entrée Directive anticipée",
+      "exampleBoolean" : false,
+      "groupingId" : "Modèles logiques métier des composants élémentaires"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-lm-adverse-event"
+      },
+      "name" : "Logical model - FR LM Adverse Event",
+      "description" : "Entrée Effet indésirable",
+      "exampleBoolean" : false,
+      "groupingId" : "Modèles logiques métier des composants élémentaires"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-lm-adverse-event-during-hospitalization"
+      },
+      "name" : "Logical model - FR LM Adverse Events During Hospitalization",
+      "description" : "Entrée Evènements indésirables pendant l'hospitalisation",
+      "exampleBoolean" : false,
+      "groupingId" : "Modèles logiques métier des composants élémentaires"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-lm-adverse-event-following-administration-blood-derivatives"
+      },
+      "name" : "Logical model - FR LM Adverse Events Following Administration of Blood Derivatives",
+      "description" : "Entrée Evènements indésirables suite à l'administration de dérivés du sang",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier des composants élémentaires"
     },
@@ -3483,10 +3548,49 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/fm-lm-assessment"
+        "reference" : "StructureDefinition/fr-lm-assessment"
       },
       "name" : "Logical model - FR LM Assessment",
       "description" : "Entrée Evaluation",
+      "exampleBoolean" : false,
+      "groupingId" : "Modèles logiques métier des composants élémentaires"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-lm-assessments"
+      },
+      "name" : "Logical model - FR LM Assessments",
+      "description" : "Entrée Groupe de questionnaires d'évalutation",
+      "exampleBoolean" : false,
+      "groupingId" : "Modèles logiques métier des composants élémentaires"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-lm-attachement"
+      },
+      "name" : "Logical model - FR LM Attachement",
+      "description" : "Entrée Document attaché",
+      "exampleBoolean" : false,
+      "groupingId" : "Modèles logiques métier des composants élémentaires"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-lm-author-apsr"
+      },
+      "name" : "Logical model - FR LM Author APSR",
+      "description" : "Auteur APSR (Anatomic Pathology Structured Report), la structure de cet élément est identique à celle de l’élément Auteur",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier des composants élémentaires"
     },
@@ -3535,10 +3639,36 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/fr-lm-dicom-medication-administration"
+      },
+      "name" : "Logical model - FR LM DICOM Medication Administration",
+      "description" : "Entrée Administration de produit de santé",
+      "exampleBoolean" : false,
+      "groupingId" : "Modèles logiques métier des composants élémentaires"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/fr-lm-dose-number"
       },
       "name" : "Logical model - FR LM Dose Number",
       "description" : "Entrée Rang de la vaccination",
+      "exampleBoolean" : false,
+      "groupingId" : "Modèles logiques métier des composants élémentaires"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-lm-evolution-adverse-event"
+      },
+      "name" : "Logical model - FR LM Evolution Adverse Event",
+      "description" : "Entrée Evolution effet indesirable",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier des composants élémentaires"
     },
@@ -3591,6 +3721,19 @@
       },
       "name" : "Logical model - FR LM Image illustrative",
       "description" : "Entrée Image illustrative.",
+      "exampleBoolean" : false,
+      "groupingId" : "Modèles logiques métier des composants élémentaires"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-lm-imaging-study"
+      },
+      "name" : "Logical model - FR LM Imaging Study",
+      "description" : "Entrée DICOM Examen Imagerie",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier des composants élémentaires"
     },
@@ -3743,10 +3886,36 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/fr-lm-observation-long-term-condition"
+      },
+      "name" : "Logical model - FR LM Observation Long Term Condition",
+      "description" : "Entrée Observation en rapport avec une Affection Longue Durée (ALD)",
+      "exampleBoolean" : false,
+      "groupingId" : "Modèles logiques métier des composants élémentaires"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/fr-lm-observation-pregnancy"
       },
       "name" : "Logical model - FR LM Observation Pregnancy",
       "description" : "Entrée Observation sur la grossesse",
+      "exampleBoolean" : false,
+      "groupingId" : "Modèles logiques métier des composants élémentaires"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-lm-observation-related-to-prevention"
+      },
+      "name" : "Logical model - FR LM Observation Related to Prevention",
+      "description" : "Entrée Observation en rapport avec la prevention",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier des composants élémentaires"
     },
@@ -3772,6 +3941,19 @@
       },
       "name" : "Logical model - FR LM Observation Vital Sign",
       "description" : "Signe vital observé",
+      "exampleBoolean" : false,
+      "groupingId" : "Modèles logiques métier des composants élémentaires"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-lm-observation-work-related-accident"
+      },
+      "name" : "Logical model - FR LM Observation Work Related Accident",
+      "description" : "Entrée Observation en rapport avec un accident travail",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier des composants élémentaires"
     },
@@ -3924,6 +4106,32 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/fr-lm-service-request"
+      },
+      "name" : "Logical model - FR LM Service Request",
+      "description" : "Entrée Demande d'examen ou de suivi / Objectif à atteindre",
+      "exampleBoolean" : false,
+      "groupingId" : "Modèles logiques métier des composants élémentaires"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-lm-severity-adverse-event"
+      },
+      "name" : "Logical model - FR LM Severity Adverse Event",
+      "description" : "Entrée Gravité effet indésirable",
+      "exampleBoolean" : false,
+      "groupingId" : "Modèles logiques métier des composants élémentaires"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/fr-lm-sop-instance"
       },
       "name" : "Logical model - FR LM SOP Instance",
@@ -4002,6 +4210,19 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/fr-lm-transfusion-accidents"
+      },
+      "name" : "Logical model - FR LM Transfusion accidents",
+      "description" : "Entrée Accidents transfusionnels",
+      "exampleBoolean" : false,
+      "groupingId" : "Modèles logiques métier des composants élémentaires"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/fr-lm-transfusion-de-produits-sanguins"
       },
       "name" : "Logical model - FR LM Transfusion de produits sanguins",
@@ -4018,7 +4239,7 @@
         "reference" : "StructureDefinition/fr-lm-dosage-instructions"
       },
       "name" : "Logical model- FR LM Dosage Instructions",
-      "description" : "Posologie",
+      "description" : "Entrée Posologie",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier des composants élémentaires"
     },
@@ -4054,7 +4275,7 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/fm-lm-observation-social-history"
+        "reference" : "StructureDefinition/fr-lm-observation-social-history"
       },
       "name" : "Logical model- FR LM Observation Social History",
       "description" : "Entrée Habitus Mode de vie",
@@ -5911,19 +6132,6 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/fr-lm-accidents-transfusionnels"
-      },
-      "name" : "Modèle logique métier - FR LM Accident transfusionnel",
-      "description" : "Accident transfusionnel",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/fr-lm-acte-imagerie"
       },
       "name" : "Modèle logique métier - FR LM Acte d'imagerie",
@@ -5943,32 +6151,6 @@
       "description" : "Section Addendum",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier des sections d'un document"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-lm-administration-de-derives-du-sang"
-      },
-      "name" : "Modèle logique métier - FR LM Administration de dérivés du sang",
-      "description" : "Administration de dérivés du sang",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-lm-administration-produit-de-sante"
-      },
-      "name" : "Modèle logique métier - FR LM Administration produit de sante",
-      "description" : "Administration produit de sante",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
     },
     {
       "extension" : [{
@@ -6028,36 +6210,10 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/fr-lm-auteur"
-      },
-      "name" : "Modèle logique métier - FR LM Auteur",
-      "description" : "Auteur du document : ce peut être un professionnel, un patient/usager ou un système. \n- Pour un professionnel ou un système, la structure de rattachement doit être précisée.",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier de l'entête d'un document"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-lm-auteur-apsr"
-      },
-      "name" : "Modèle logique métier - FR LM Auteur APSR",
-      "description" : "Auteur APSR (Anatomic Pathology Structured Report), la structure de cet élément est identique à celle de l’élément Auteur",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/fr-lm-autorisation-exposition"
       },
       "name" : "Modèle logique métier - FR LM Autorisation exposition",
-      "description" : "Autorisation exposition",
+      "description" : "Entrée Autorisation exposition",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier des composants élémentaires"
     },
@@ -6070,7 +6226,7 @@
         "reference" : "StructureDefinition/fr-lm-batterie-examens-biologie-medicale"
       },
       "name" : "Modèle logique métier - FR LM Batterie d'examens de biologie médicale",
-      "description" : "Batterie d'examens de biologie médicale",
+      "description" : "Entrée Batterie d'examens de biologie médicale",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier des composants élémentaires"
     },
@@ -6086,19 +6242,6 @@
       "description" : "Section Codes à barres",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier des sections d'un document"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-lm-commentaire-er"
-      },
-      "name" : "Modèle logique métier - FR LM Commentaire",
-      "description" : "Commentaire",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
     },
     {
       "extension" : [{
@@ -6210,38 +6353,12 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/fr-lm-demande-examen-ou-suivi"
-      },
-      "name" : "Modèle logique métier - FR LM Demande d'examen ou de suivi",
-      "description" : "Demande d'examen ou de suivi / Objectif à atteindre",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/fr-lm-destinataire-prevu"
       },
       "name" : "Modèle logique métier - FR LM Destinataire prévu",
       "description" : "Personne déclarée comme destinataire prévu du document.\n- Attention : Cet élément ne contient que le(s) destinataire(s) initialement prévu(s) à la création du document. Rien ne permet par la suite, de certifier que le document a réellement été envoyé à ce(s) destinataire(s).\n Par ailleurs, il ne faut pas créer de nouvelle version du document si on souhaite l'envoyer à d'autres destinataires.",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier de l'entête d'un document"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-lm-directive-anticipee"
-      },
-      "name" : "Modèle logique métier - FR LM Directive anticipée",
-      "description" : "Directive anticipée",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
     },
     {
       "extension" : [{
@@ -6288,19 +6405,6 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/fr-lm-document-attache"
-      },
-      "name" : "Modèle logique métier - FR LM Document attaché",
-      "description" : "Document attaché",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/fr-lm-document-reference"
       },
       "name" : "Modèle logique métier - FR LM Document de référence",
@@ -6340,38 +6444,12 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/fr-lm-dose-antigene"
-      },
-      "name" : "Modèle logique métier - FR LM Dose d'antigène",
-      "description" : "Dose d'antigène",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/fr-lm-education-patient"
       },
       "name" : "Modèle logique métier - FR LM Education du patient",
       "description" : "Section Education du patient",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier des sections d'un document"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-lm-effet-indesirable"
-      },
-      "name" : "Modèle logique métier - FR LM Effet indesirable",
-      "description" : "Effet indesirable",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
     },
     {
       "extension" : [{
@@ -6392,103 +6470,12 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/fr-lm-en-rapport-avec-la-prevention"
-      },
-      "name" : "Modèle logique métier - FR LM En rapport avec la prevention",
-      "description" : "En rapport avec la prevention",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-lm-en-rapport-avec-accident-travail"
-      },
-      "name" : "Modèle logique métier - FR LM En rapport avec un accident travail",
-      "description" : "En rapport avec un accident travail",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-lm-en-rapport-avec-ald"
-      },
-      "name" : "Modèle logique métier - FR LM En rapport avec une Affection Longue Durée (ALD)",
-      "description" : "En rapport avec une Affection Longue Durée (ALD)",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/fr-lm-entete-document"
       },
       "name" : "Modèle logique métier - FR LM En-tête document",
       "description" : "Eléments de l'entête d'un document contenant les informations générales et nécessaires à la gestion du document (identification et type du document, patient/usager, auteur, évènement documenté, etc...).",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier de l'entête d'un document"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-lm-evolution-effet-indesirable"
-      },
-      "name" : "Modèle logique métier - FR LM Evolution effet indesirable",
-      "description" : "Evolution effet indesirable",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-lm-evenement-indesirable-pendant-hospitalisation"
-      },
-      "name" : "Modèle logique métier - FR LM Evènements indésirables pendant l'hospitalisation",
-      "description" : "Evènements indésirables pendant l'hospitalisation",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-lm-evenements-indesirables-suite-administration-derives-sang"
-      },
-      "name" : "Modèle logique métier - FR LM Evènements indésirables suite à l'administration de dérivés du sang",
-      "description" : "Evènements indésirables suite à l'administration de dérivés du sang",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-lm-examen-imagerie"
-      },
-      "name" : "Modèle logique métier - FR LM Examen Imagerie",
-      "description" : "DICOM Examen Imagerie",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
     },
     {
       "extension" : [{
@@ -6528,32 +6515,6 @@
       "description" : "Section Fonctions physiques",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier des sections d'un document"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-lm-gravite-effet-indesirable"
-      },
-      "name" : "Modèle logique métier - FR LM Gravite effet indesirable",
-      "description" : "Gravite effet indesirable",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-lm-group-de-questionnaires-devaluation"
-      },
-      "name" : "Modèle logique métier - FR LM Groupe de questionnaires d'évalutation",
-      "description" : "Groupe de questionnaires d'évalutation",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
     },
     {
       "extension" : [{
@@ -6837,7 +6798,7 @@
         "reference" : "StructureDefinition/fr-lm-encounter"
       },
       "name" : "Modèle logique métier - FR LM Rencontre",
-      "description" : "Rencontre",
+      "description" : "Entrée Rencontre",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier des composants élémentaires"
     },
@@ -7100,19 +7061,6 @@
       "description" : "Professionnel attestant la validité des informations portées dans le document sans pour autant en prendre la responsabilité. N'est pas utilisé dans un document d'expression personnelle du patient/usager et un document produit par un système.",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier de l'entête d'un document"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-lm-echantillon-preleve"
-      },
-      "name" : "Modèle logique métier - FR LM Échantillon prélevé",
-      "description" : "Échantillon prélevé",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
     },
     {
       "extension" : [{

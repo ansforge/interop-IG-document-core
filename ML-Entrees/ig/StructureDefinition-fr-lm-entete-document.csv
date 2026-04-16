@@ -23,7 +23,7 @@
 ","Statut du document.","Statut du document.","","","","","","","","","",,,,,"",,,,"fr-lm-entete-document.statutDocument",1,1,"",""
 "fr-lm-entete-document.patient","fr-lm-entete-document.patient","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-usager {[]} {[]}
 ","Patient / Usager.","Patient / Usager.","","","","","","","","","",,,,,"",,,,"fr-lm-entete-document.patient",1,1,"",""
-"fr-lm-entete-document.auteur","fr-lm-entete-document.auteur","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-auteur {[]} {[]}
+"fr-lm-entete-document.auteur","fr-lm-entete-document.auteur","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure-auteur {[]} {[]}
 ","Auteur du document.","Auteur du document.","","","","","","","","","",,,,,"",,,,"fr-lm-entete-document.auteur",1,*,"",""
 "fr-lm-entete-document.operateurSaisie","fr-lm-entete-document.operateurSaisie","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-operateur-saisie {[]} {[]}
 ","Opérateur de saisie.","Opérateur de saisie.","","","","","","","","","",,,,,"",,,,"fr-lm-entete-document.operateurSaisie",0,1,"",""

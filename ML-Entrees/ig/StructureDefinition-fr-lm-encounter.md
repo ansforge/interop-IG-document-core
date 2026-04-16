@@ -9,10 +9,10 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-encounter | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-14 | *Computable Name*:FRLMEncounter |
+| Draft as of 2026-04-16 | *Computable Name*:FRLMEncounter |
 
  
-Rencontre 
+Entrée Rencontre 
 
 **Utilisations:**
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-encounter.csv)
   "name" : "FRLMEncounter",
   "title" : "Modèle logique métier - FR LM Rencontre",
   "status" : "draft",
-  "date" : "2026-04-14T07:59:58+00:00",
+  "date" : "2026-04-16T07:11:11+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -54,7 +54,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-encounter.csv)
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Rencontre",
+  "description" : "Entrée Rencontre",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -66,25 +66,14 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-encounter.csv)
   "kind" : "logical",
   "abstract" : false,
   "type" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-encounter",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
+  "baseDefinition" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry",
   "derivation" : "specialization",
   "differential" : {
     "element" : [{
       "id" : "fr-lm-encounter",
       "path" : "fr-lm-encounter",
       "short" : "Modèle logique métier - FR LM Rencontre",
-      "definition" : "Rencontre"
-    },
-    {
-      "id" : "fr-lm-encounter.identifiant",
-      "path" : "fr-lm-encounter.identifiant",
-      "short" : "Identifiant de l'entrée",
-      "definition" : "Identifiant de l'entrée",
-      "min" : 1,
-      "max" : "*",
-      "type" : [{
-        "code" : "Identifier"
-      }]
+      "definition" : "Entrée Rencontre"
     },
     {
       "id" : "fr-lm-encounter.typeRencontre",
@@ -95,17 +84,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-encounter.csv)
       "max" : "1",
       "type" : [{
         "code" : "CodeableConcept"
-      }]
-    },
-    {
-      "id" : "fr-lm-encounter.description",
-      "path" : "fr-lm-encounter.description",
-      "short" : "Description narrative",
-      "definition" : "Description narrative",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "Narrative"
       }]
     },
     {
@@ -128,61 +106,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-encounter.csv)
       "max" : "1",
       "type" : [{
         "code" : "CodeableConcept"
-      }]
-    },
-    {
-      "id" : "fr-lm-encounter.executant",
-      "path" : "fr-lm-encounter.executant",
-      "short" : "Exécutant",
-      "definition" : "Exécutant",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure"
-      }]
-    },
-    {
-      "id" : "fr-lm-encounter.auteur",
-      "path" : "fr-lm-encounter.auteur",
-      "short" : "Auteur",
-      "definition" : "Auteur",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-auteur"
-      }]
-    },
-    {
-      "id" : "fr-lm-encounter.informateur",
-      "path" : "fr-lm-encounter.informateur",
-      "short" : "Informateur",
-      "definition" : "Informateur",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-informateur"
-      }]
-    },
-    {
-      "id" : "fr-lm-encounter.participant",
-      "path" : "fr-lm-encounter.participant",
-      "short" : "Lieu d'exécution (PersonneStructure)",
-      "definition" : "Lieu d'exécution (PersonneStructure)",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-participant-corps"
-      }]
-    },
-    {
-      "id" : "fr-lm-encounter.autreParticipant",
-      "path" : "fr-lm-encounter.autreParticipant",
-      "short" : "Participant (utilisable dans le corps du document uniquement)",
-      "definition" : "Participant (utilisable dans le corps du document uniquement)",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-participant-corps"
       }]
     }]
   }

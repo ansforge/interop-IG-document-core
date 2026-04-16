@@ -11,7 +11,7 @@
 ","Sous-sections","Sous-sections","","","","","","","","","",,,,,"",,,,"fr-lm-section.sousSection",0,*,"",""
 "fr-lm-fonctions-physiques.entree","fr-lm-fonctions-physiques.entree","","","",0,*,"","","","Base {[]} {[]}
 ","Entrées","Entrées","","","","","","","","","",,,,,"",,,,"fr-lm-section.entree",0,*,"",""
-"fr-lm-fonctions-physiques.entree.groupeQuestionnairesEvaluation","fr-lm-fonctions-physiques.entree.groupeQuestionnairesEvaluation","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-group-de-questionnaires-devaluation {[]} {[]}
+"fr-lm-fonctions-physiques.entree.groupeQuestionnairesEvaluation","fr-lm-fonctions-physiques.entree.groupeQuestionnairesEvaluation","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-assessments {[]} {[]}
 ","Groupe de questionnaires d'évalutation","Groupe de questionnaires d'évalutation","","","","","","","","","",,,,,"",,,,"fr-lm-fonctions-physiques.entree.groupeQuestionnairesEvaluation",0,*,"",""
-"fr-lm-fonctions-physiques.entree.evalutation","fr-lm-fonctions-physiques.entree.evalutation","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fm-lm-assessment {[]} {[]}
+"fr-lm-fonctions-physiques.entree.evalutation","fr-lm-fonctions-physiques.entree.evalutation","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-assessment {[]} {[]}
 ","Entrée Evalutation","Entrée Evalutation","","","","","","","","","",,,,,"",,,,"fr-lm-fonctions-physiques.entree.evalutation",0,*,"",""

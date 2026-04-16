@@ -9,9 +9,9 @@
 ","Identifiant de l’entrée","Identifiant de l’entrée","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.identifier",0,*,"",""
 "fr-lm-specimen.header.author[x]","fr-lm-specimen.header.author[x]","","","",0,*,"","","","Base {[]} {[]}
 ","author[x] peut correspondre soit à un professionnel, soit à une organisation, soit à un système.","author[x] peut correspondre soit à un professionnel, soit à une organisation, soit à un système.","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.author[x]",0,*,"",""
-"fr-lm-specimen.header.author[x].authorProfessional","fr-lm-specimen.header.author[x].authorProfessional","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure {[]} {[]}
+"fr-lm-specimen.header.author[x].authorProfessional","fr-lm-specimen.header.author[x].authorProfessional","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure-auteur {[]} {[]}
 ","L'auteur est un professionnel de santé","L'auteur est un professionnel de santé","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.author[x].authorProfessional",0,*,"",""
-"fr-lm-specimen.header.author[x].authorOrganisation","fr-lm-specimen.header.author[x].authorOrganisation","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure {[]} {[]}
+"fr-lm-specimen.header.author[x].authorOrganisation","fr-lm-specimen.header.author[x].authorOrganisation","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure-auteur {[]} {[]}
 ","L'auteur est une organisation","L'auteur est une organisation","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.author[x].authorOrganisation",0,*,"",""
 "fr-lm-specimen.header.author[x].authorDevice","fr-lm-specimen.header.author[x].authorDevice","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-systeme-structure-auteur {[]} {[]}
 ","L'auteur est un système","L'auteur est un système","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.author[x].authorDevice",0,*,"",""
@@ -43,8 +43,6 @@ La partie en majuscules indique le code pays (ISO-3166)","","","","","","","",""
 https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-usager {[]} {[]}","Organisation prélevante","Organisation prélevante","","","","","","","","","",,,,,"",,,,"fr-lm-specimen.collection.perfomer[x]",0,1,"",""
 "fr-lm-specimen.collection.device","fr-lm-specimen.collection.device","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device {[]} {[]}
 ","Dispositif utilisé","Dispositif utilisé","","","","","","","","","",,,,,"",,,,"fr-lm-specimen.collection.device",0,*,"",""
-"fr-lm-specimen.echantillonPreleve","fr-lm-specimen.echantillonPreleve","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-echantillon-preleve {[]} {[]}
-","Échantillon prélevé","Échantillon prélevé","","","","","","","","","",,,,,"",,,,"fr-lm-specimen.echantillonPreleve",0,1,"",""
 "fr-lm-specimen.containerDevice","fr-lm-specimen.containerDevice","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device {[]} {[]}
 ","Produit utilisé","Produit utilisé","","","","","","","","","",,,,,"",,,,"fr-lm-specimen.containerDevice",0,*,"",""
 "fr-lm-specimen.receivedDate","fr-lm-specimen.receivedDate","","","",1,1,"","","","Base {[]} {[]}

@@ -11,9 +11,9 @@
 ","Sous-sections","Sous-sections","","","","","","","","","",,,,,"",,,,"fr-lm-section.sousSection",0,*,"",""
 "fr-lm-statut-fonctionnel.entree","fr-lm-statut-fonctionnel.entree","","","",0,*,"","","","Base {[]} {[]}
 ","Entrées","Entrées","","","","","","","","","",,,,,"",,,,"fr-lm-section.entree",0,*,"",""
-"fr-lm-statut-fonctionnel.entree.groupeQuestionnairesEvaluation","fr-lm-statut-fonctionnel.entree.groupeQuestionnairesEvaluation","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-group-de-questionnaires-devaluation {[]} {[]}
+"fr-lm-statut-fonctionnel.entree.groupeQuestionnairesEvaluation","fr-lm-statut-fonctionnel.entree.groupeQuestionnairesEvaluation","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-assessments {[]} {[]}
 ","Groupe de questionnaires d'évalutation","Groupe de questionnaires d'évalutation","","","","","","","","","",,,,,"",,,,"fr-lm-statut-fonctionnel.entree.groupeQuestionnairesEvaluation",0,*,"",""
-"fr-lm-statut-fonctionnel.auteur","fr-lm-statut-fonctionnel.auteur","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-auteur {[]} {[]}
+"fr-lm-statut-fonctionnel.auteur","fr-lm-statut-fonctionnel.auteur","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure-auteur {[]} {[]}
 ","Auteur","Auteur","","","","","","","","","",,,,,"",,,,"fr-lm-statut-fonctionnel.auteur",0,*,"",""
-"fr-lm-statut-fonctionnel.informateur","fr-lm-statut-fonctionnel.informateur","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-informateur {[]} {[]}
+"fr-lm-statut-fonctionnel.informateur","fr-lm-statut-fonctionnel.informateur","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure {[]} {[]}
 ","Informateur","Informateur","","","","","","","","","",,,,,"",,,,"fr-lm-statut-fonctionnel.informateur",0,*,"",""

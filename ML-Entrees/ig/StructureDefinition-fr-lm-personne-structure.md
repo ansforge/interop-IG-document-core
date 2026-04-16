@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-14 | *Computable Name*:FRLMPersonneStructure |
+| Draft as of 2026-04-16 | *Computable Name*:FRLMPersonneStructure |
 
  
 Une personne (professionnel ou patient ou autre) et/ou une structure (pour les professionnels). 
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Destinataire prévu](StructureDefinition-fr-lm-destinataire-prevu.md), [Modèle logique métier - FR LM Rencontre](StructureDefinition-fr-lm-encounter.md), [FR LM Entry](StructureDefinition-fr-lm-entry.md), [Modèle logique métier - FR LM Évènement](StructureDefinition-fr-lm-evenement.md)... Show 9 more, [Modèle logique métier - FR LM Informateur](StructureDefinition-fr-lm-informateur.md), [Modèle logique métier - FR LM Laboratoire exécutant](StructureDefinition-fr-lm-laboratoire-executant.md), [Modèle logique métier - FR LM Opérateur de saisie](StructureDefinition-fr-lm-operateur-saisie.md), [Modèle logique métier - FR LM Participant](StructureDefinition-fr-lm-participant.md), [Logical model - FR LM Prescription](StructureDefinition-fr-lm-prescription-entree.md), [Modèle logique métier - FR LM Prise en charge](StructureDefinition-fr-lm-prise-en-charge.md), [Modèle logique métier - FR LM Responsable](StructureDefinition-fr-lm-responsable.md), [Logical model - FR LM Specimen](StructureDefinition-fr-lm-specimen.md) and [Modèle logique métier - FR LM Validateur](StructureDefinition-fr-lm-validateur.md)
+* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Destinataire prévu](StructureDefinition-fr-lm-destinataire-prevu.md), [FR LM Entry](StructureDefinition-fr-lm-entry.md), [Modèle logique métier - FR LM Évènement](StructureDefinition-fr-lm-evenement.md), [Modèle logique métier - FR LM Informateur](StructureDefinition-fr-lm-informateur.md)... Show 9 more, [Modèle logique métier - FR LM Laboratoire exécutant](StructureDefinition-fr-lm-laboratoire-executant.md), [Modèle logique métier - FR LM Opérateur de saisie](StructureDefinition-fr-lm-operateur-saisie.md), [Modèle logique métier - FR LM Participant](StructureDefinition-fr-lm-participant.md), [Logical model - FR LM Prescription](StructureDefinition-fr-lm-prescription-entree.md), [Modèle logique métier - FR LM Prise en charge](StructureDefinition-fr-lm-prise-en-charge.md), [Modèle logique métier - FR LM Responsable](StructureDefinition-fr-lm-responsable.md), [Logical model - FR LM Specimen](StructureDefinition-fr-lm-specimen.md), [Modèle logique métier - FR LM Statut fonctionnel](StructureDefinition-fr-lm-statut-fonctionnel.md) and [Modèle logique métier - FR LM Validateur](StructureDefinition-fr-lm-validateur.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-personne-structure)
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-personne-struc
   "name" : "FRLMPersonneStructure",
   "title" : "Modèle logique métier - FR LM Personne et/ou Structure",
   "status" : "draft",
-  "date" : "2026-04-14T07:59:58+00:00",
+  "date" : "2026-04-16T07:11:11+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -95,6 +95,28 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-personne-struc
       "max" : "1",
       "type" : [{
         "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "fr-lm-personne-structure.personne.roleFonctionnel",
+      "path" : "fr-lm-personne-structure.personne.roleFonctionnel",
+      "short" : "Rôle fonctionnel",
+      "definition" : "Rôle fonctionnel",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }]
+    },
+    {
+      "id" : "fr-lm-personne-structure.personne.dateExecution",
+      "path" : "fr-lm-personne-structure.personne.dateExecution",
+      "short" : "Date de l’exécution",
+      "definition" : "Date de l’exécution",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "dateTime"
       }]
     },
     {

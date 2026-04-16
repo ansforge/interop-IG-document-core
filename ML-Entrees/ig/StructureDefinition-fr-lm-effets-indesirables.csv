@@ -11,5 +11,5 @@
 ","Sous-sections","Sous-sections","","","","","","","","","",,,,,"",,,,"fr-lm-section.sousSection",0,*,"",""
 "fr-lm-effets-indesirables.entree","fr-lm-effets-indesirables.entree","","","",1,*,"","","","Base {[]} {[]}
 ","Entrées","Entrées","","","","","","","","","",,,,,"",,,,"fr-lm-section.entree",0,*,"",""
-"fr-lm-effets-indesirables.entree.effetIndesirable","fr-lm-effets-indesirables.entree.effetIndesirable","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-effet-indesirable {[]} {[]}
+"fr-lm-effets-indesirables.entree.effetIndesirable","fr-lm-effets-indesirables.entree.effetIndesirable","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-adverse-event {[]} {[]}
 ","Entrée Effet indesirable","Entrée Effet indesirable","","","","","","","","","",,,,,"",,,,"fr-lm-effets-indesirables.entree.effetIndesirable",1,*,"",""
