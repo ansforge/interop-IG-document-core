@@ -1,4 +1,4 @@
-# FR RelatedPerson Document - ANS IG document core v0.1.0-snapsnot
+# FR RelatedPerson Document - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-related-person-document | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-15 | *Computable Name*:FRRelatedPersonDocument |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-related-person-document | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-16 | *Computable Name*:FRRelatedPersonDocument |
 
  
 Ce profil représente l’informateur non professionnel. 
@@ -17,7 +17,7 @@ Ce profil représente l’informateur non professionnel.
 **Utilisations:**
 
 * Utilise ce/t/te Profil: [FR Bundle Document](StructureDefinition-fr-bundle-document.md)
-* Référence ce Profil: [FR Actor Extension](StructureDefinition-fr-actor-extension.md), [FR Composition Document](StructureDefinition-fr-composition-document.md) and [Procedure - FR Procedure Act Document](StructureDefinition-fr-procedure-act-document.md)
+* Référence ce Profil: [FR Actor Extension](StructureDefinition-fr-actor-extension.md), [FR Composition Document](StructureDefinition-fr-composition-document.md) and [Procedure - FR Procedure Document](StructureDefinition-fr-procedure-document.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-related-person-document)
 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-related-person-do
   "resourceType" : "StructureDefinition",
   "id" : "fr-related-person-document",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-related-person-document",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRRelatedPersonDocument",
   "title" : "FR RelatedPerson Document",
   "status" : "draft",
-  "date" : "2026-04-15T07:49:49+00:00",
+  "date" : "2026-04-16T07:52:47+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

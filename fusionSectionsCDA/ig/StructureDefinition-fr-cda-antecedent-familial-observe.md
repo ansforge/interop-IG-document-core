@@ -1,4 +1,4 @@
-# CDA - FR Antecedent familial observe - ANS IG document core v0.1.0-snapsnot
+# CDA - FR Antecedent familial observe - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-antecedent-familial-observe | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-15 | *Computable Name*:FRCDAAntecedentFamilialObserve |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-antecedent-familial-observe | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-16 | *Computable Name*:FRCDAAntecedentFamilialObserve |
 
  
 Entrée FR-Antecedent-familial-observe: IHE-PCC - Family History Observation L’entrée Antécédent familial observé permet d’apporter des informations complémentaires relatives aux membres de la famille du patient (pathologies, etc…). Cette entrée est utilisée dans un élément Antécédents familiaux (1.3.6.1.4.1.19376.1.5.3.1.4.15). 
@@ -62,11 +62,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-antecedent-fa
     "valueUri" : "cda"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-antecedent-familial-observe",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRCDAAntecedentFamilialObserve",
   "title" : "CDA - FR Antecedent familial observe",
   "status" : "draft",
-  "date" : "2026-04-15T07:49:49+00:00",
+  "date" : "2026-04-16T07:52:47+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

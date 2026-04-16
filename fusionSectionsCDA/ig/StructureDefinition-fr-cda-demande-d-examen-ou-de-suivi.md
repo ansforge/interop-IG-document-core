@@ -1,4 +1,4 @@
-# CDA - FR Demande d examen ou de suivi - ANS IG document core v0.1.0-snapsnot
+# CDA - FR Demande d examen ou de suivi - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,15 +8,15 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-demande-d-examen-ou-de-suivi | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-15 | *Computable Name*:FRCDADemandeDExamenOuDeSuivi |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-demande-d-examen-ou-de-suivi | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-16 | *Computable Name*:FRCDADemandeDExamenOuDeSuivi |
 
  
 Entrée FR-Demande-d-examen-ou-de-suivi: IHE-PCC - Observation Request L’entrée Demande d’examen / de suivi est une observation qui permet de porter des demandes d’examens (analyses biologiques, évaluations, étude d’imagerie, etc…) ou de suivis particuliers à programmer dans le cadre d’un plan de soins. Cette entrée est basée sur l’élément Simple Observation (1.3.6.1.4.1.19376.1.5.3.1.4.13) qu’elle spécialise. 
 
 **Utilisations:**
 
-* Ce Profil de modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
+* Utilise ce/t/te Profil de modèle logique: [CDA - FR Plan de soins](StructureDefinition-fr-cda-plan-de-soins.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-demande-d-examen-ou-de-suivi)
 
@@ -62,11 +62,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-demande-d-exa
     "valueUri" : "cda"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-demande-d-examen-ou-de-suivi",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRCDADemandeDExamenOuDeSuivi",
   "title" : "CDA - FR Demande d examen ou de suivi",
   "status" : "draft",
-  "date" : "2026-04-15T07:49:49+00:00",
+  "date" : "2026-04-16T07:52:47+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

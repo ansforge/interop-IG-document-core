@@ -1,4 +1,4 @@
-# ValueSet - FR ValueSet EDQM Document - ANS IG document core v0.1.0-snapsnot
+# ValueSet - FR ValueSet EDQM Document - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-edqm-document | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-15 | *Computable Name*:FRValueSetEDQMDocument |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-edqm-document | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-16 | *Computable Name*:FRValueSetEDQMDocument |
 
  
 ValueSet basé sur le CodeSystem EDQM fourni par SMT 
@@ -50,12 +50,12 @@ ValueSet basé sur le CodeSystem EDQM fourni par SMT
   "resourceType" : "ValueSet",
   "id" : "fr-vs-edqm-document",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-edqm-document",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRValueSetEDQMDocument",
   "title" : "ValueSet - FR ValueSet EDQM Document",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-04-15T07:49:49+00:00",
+  "date" : "2026-04-16T07:52:47+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

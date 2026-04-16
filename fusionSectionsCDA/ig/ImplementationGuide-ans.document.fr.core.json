@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : ImplementationGuide ans.document.fr.core</b></p><a name=\"ans.document.fr.core\"> </a><a name=\"hcans.document.fr.core\"> </a><h2>FRDocumentCore</h2><p>L'URL officielle pour ce guide d'implémentation est : </p><pre>https://interop.esante.gouv.fr/ig/document/core/ImplementationGuide/ans.document.fr.core</pre></div>"
   },
   "url" : "https://interop.esante.gouv.fr/ig/document/core/ImplementationGuide/ans.document.fr.core",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRDocumentCore",
   "title" : "ANS IG document core",
   "status" : "draft",
-  "date" : "2026-04-15T07:49:49+00:00",
+  "date" : "2026-04-16T07:52:47+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -699,11 +699,11 @@
     },
     {
       "id" : "Ressources CDA corps des sections",
-      "name" : "Eléments CDA du corps des sections"
+      "name" : "Eléments CDA corps des sections"
     },
     {
       "id" : "Ressources CDA corps des composants élémentaires",
-      "name" : "Eléments CDA du corps"
+      "name" : "Eléments CDA corps des composants élémentaires"
     },
     {
       "id" : "Ressources FHIR entête",
@@ -1911,6 +1911,32 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/fr-cda-facteurs-de-risque-professionnels-non-code"
+      },
+      "name" : "CDA - FR Facteurs de risque professionnels non code",
+      "description" : "IHE-PCC - Hazardous-Working-Conditions-SectionFacteurs de risques professionnels sous forme narrative (section non codée).",
+      "exampleBoolean" : false,
+      "groupingId" : "Ressources CDA corps des sections"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-cda-fonctions-physiques"
+      },
+      "name" : "CDA - FR Fonctions physiques",
+      "description" : "IHE-PCC - Physical Function Section. Cette section permet d'enregistrer les problèmes physiques fonctionnels et structurels qui concernent le patient.",
+      "exampleBoolean" : false,
+      "groupingId" : "Ressources CDA corps des sections"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/fr-cda-gravite-effet-indesirable"
       },
       "name" : "CDA - FR Gravite effet indesirable",
@@ -1950,12 +1976,51 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/fr-cda-section-habitus-mode-de-vie"
+      },
+      "name" : "CDA - FR Habitus mode de vie",
+      "description" : "IHE-PCC - Coded Social History Section. Liste codée des informations relatives aux habitus et au mode de vie du patient.",
+      "exampleBoolean" : false,
+      "groupingId" : "Ressources CDA corps des sections"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/fr-cda-historique-de-la-grossesse"
       },
       "name" : "CDA - FR Historique de la grossesse",
       "description" : "Entrée FR-Historique-de-la-grossesse: IHE-PCC - Pregnancy History Organizer. \n - Cette entrée permet de regrouper les observations relatives à un épisode de grossesse.",
       "exampleBoolean" : false,
       "groupingId" : "Ressources CDA corps des composants élémentaires"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-cda-historique-des-actes"
+      },
+      "name" : "CDA - FR Historique des actes",
+      "description" : "IHE-PCC - Coded-List-Of-Surgeries. Liste codée des actes chirurgicaux, diagnostiques invasifs (ex : cathétérisme cardiaque), thérapeutiques (ex : dialyse). Cette liste contient des entrées codées FR-Acte et éventuellement des entrées FR-References-externes à des documents faisant mention de ces actes.",
+      "exampleBoolean" : false,
+      "groupingId" : "Ressources CDA corps des sections"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-cda-historique-des-grossesses"
+      },
+      "name" : "CDA - FR Historique des grossesses",
+      "description" : "IHE-PCC - Pregnancy-History-Section. Cette section permet de décrire l'historique des grossesses de la patiente.",
+      "exampleBoolean" : false,
+      "groupingId" : "Ressources CDA corps des sections"
     },
     {
       "extension" : [{
@@ -2314,6 +2379,32 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/fr-cda-plan-de-soins"
+      },
+      "name" : "CDA - FR Plan de soins",
+      "description" : "IHE-PCC - Coded Care Plan. La section Plan de soins doit contenir une description narrative des attentes en matière de soins, y compris des propositions, des objectifs et des demandes pour le suivi ou l'amélioration de l'état du patient.",
+      "exampleBoolean" : false,
+      "groupingId" : "Ressources CDA corps des sections"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-cda-points-de-vigilances-non-code"
+      },
+      "name" : "CDA - FR Points de vigilances non code",
+      "description" : "Section FR-Points-de-vigilances-non-code. Points de vigilance sous forme narrative (section non codée).",
+      "exampleBoolean" : false,
+      "groupingId" : "Ressources CDA corps des sections"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/fr-cda-prelevement"
       },
       "name" : "CDA - FR Prelevement",
@@ -2340,12 +2431,51 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/fr-cda-prescription-dispositifs-medicaux"
+      },
+      "name" : "CDA - FR Prescription dispositifs medicaux",
+      "description" : "IHE-PRE - Prescription. Cette section regroupe les lignes de prescriptions des dispositifs médicaux.",
+      "exampleBoolean" : false,
+      "groupingId" : "Ressources CDA corps des sections"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-cda-prescription-medicaments"
+      },
+      "name" : "CDA - FR Prescription medicaments",
+      "description" : "IHE-PRE - Prescription. Cette section regroupe les lignes de prescriptions médicamenteuses.",
+      "exampleBoolean" : false,
+      "groupingId" : "Ressources CDA corps des sections"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/fr-cda-probleme"
       },
       "name" : "CDA - FR Probleme",
       "description" : "Entrée FR-Probleme: IHE-PCC - Problem-Entry. Cette entrée permet de décrire un problème du patient (une pathologie par exemple) en précisant :  Le type de problème observé : problème, plainte, symptôme, diagnostic, etc. Le problème observé (en général, la pathologie observée), La sévérité, Le statut du problème (sauf pour une réaction à une allergie/hypersensibilité), Le statut clinique du patient (sauf pour une réaction à une allergie/hypersensibilité), Un commentaire.",
       "exampleBoolean" : false,
       "groupingId" : "Ressources CDA corps des composants élémentaires"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-cda-problemes-actifs"
+      },
+      "name" : "CDA - FR Problemes actifs",
+      "description" : "IHE-PCC - Active-Problems-Section. Liste des problèmes actifs du patient.",
+      "exampleBoolean" : false,
+      "groupingId" : "Ressources CDA corps des sections"
     },
     {
       "extension" : [{
@@ -2372,6 +2502,32 @@
       "description" : "Entrée FR-Quantite-de-produit: IHE-PRE - Amount of units of the consumable. Cette entrée permet de décrire la quantité de produit (<consumable>).",
       "exampleBoolean" : false,
       "groupingId" : "Ressources CDA corps des composants élémentaires"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-cda-raison-de-la-recommandation"
+      },
+      "name" : "CDA - FR Raison de la recommandation",
+      "description" : "IHE-PCC - Coded Reason for Referral Section. Cette section permet d'indiquer la raison pour laquelle le patient est adressé à l'hôpital, à une consultation, etc. et de donner des informations complémentaires, sous forme codées, à l'aide d'une entrée Simple observation et d'une entrée Problème.",
+      "exampleBoolean" : false,
+      "groupingId" : "Ressources CDA corps des sections"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-cda-raison-de-la-recommandation-non-code"
+      },
+      "name" : "CDA - FR Raison de la recommandation non code",
+      "description" : "IHE-PCC Reason-For-Referral. Cette section permet d'indiquer, sous forme textuelle uniquement, la raison pour laquelle le patient est adressé à l'hôpital, à une consultation, etc.",
+      "exampleBoolean" : false,
+      "groupingId" : "Ressources CDA corps des sections"
     },
     {
       "extension" : [{
@@ -2496,12 +2652,89 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/fr-cda-resultats"
+      },
+      "name" : "CDA - FR resultats",
+      "description" : "Entrée FR-resultats: L'entrée 'FR-Resultats' est une entrée de type 'organizer' regroupant les types des résultats classés par type d’examens (BIO, IMG, etc…).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-cda-section-resultats"
+      },
+      "name" : "CDA - FR Resultats",
+      "description" : "Cette section regroupe les résultats d'examens (biologie polyvalente, imagerie, cytologie, pathologie, génétique humaine...)",
+      "exampleBoolean" : false,
+      "groupingId" : "Ressources CDA corps des sections"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-cda-resultats-de-biologie-de-seconde-intention"
+      },
+      "name" : "CDA - FR Resultats de biologie de seconde intention",
+      "description" : "Cette section, optionnelle, est utilisée uniquement dans le cas d'usage particulier des résultats d'examen de laboratoire de biologie de seconde intention, lorsqu'ils ne peuvent être fournis dans un format structuré mais uniquement au format PDF.Cette solution permet d'encapsuler un fichier au format (PDF) et encodé en base 64 dans une section spécifique 'Résultats de laboratoire de biologie de seconde intention'.Attention : cette solution n'est pas conseillée et reste temporaire, car à terme, tous les résultats émanant des laboratoires de biologie devront être fournis dans un format structuré et codé.",
+      "exampleBoolean" : false,
+      "groupingId" : "Ressources CDA corps des sections"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-cda-resultats-evenements"
+      },
+      "name" : "CDA - FR Resultats evenements",
+      "description" : "IHE-PCC - Coded-Event-Outcomes. Evenements observés au décours d'un acte ou d'un problème.",
+      "exampleBoolean" : false,
+      "groupingId" : "Ressources CDA corps des sections"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-cda-resultats-examens"
+      },
+      "name" : "CDA - FR Resultats examens",
+      "description" : "IHE-PCC - Coded Results Section. Résultats d'examens réalisés par le patient et éventuellement références à d'autres documents du dossier du patient.",
+      "exampleBoolean" : false,
+      "groupingId" : "Ressources CDA corps des sections"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/fr-cda-resultats-examens-de-biologie-medicale"
       },
       "name" : "CDA - FR Resultats examens de biologie medicale",
       "description" : "Entrée FR-Resultats-examens-de-biologie-medicale: IHE-PCC - Laboratory Report Data Processing. \n - Le modèle de l'entrée Résultats d'examens de biologie médicale est identique quelle que soit la discipline de biologie. Cette entrée de type act peut comporter une liste d'éléments fils entryRelationship de typeCode='COMP'. Les éléments ci-dessous ne sont utilisables que dans l'entrée Résultats d'examens de biologie médicale : \n  - Prélèvement (Specimen Collection – 1.3.6.1.4.1.19376.1.3.1.2) \n  - Batterie d'examens de biologie médicale (Laboratory Battery Organizer – 1.3.6.1.4.1.19376.1.3.1.4)\n  - Isolats microbiologiques (Laboratory Isolate Organizer – 1.3.6.1.4.1.19376.1.3.1.5) \n  - Résultat d'examen / élément clinique pertinent (Laboratory Observation – 1.3.6.1.4.1.19376.1.3.1.6)",
       "exampleBoolean" : false,
       "groupingId" : "Ressources CDA corps des composants élémentaires"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-cda-resultats-examens-non-code"
+      },
+      "name" : "CDA - FR Resultats examens non code",
+      "description" : "IHE-PCC - Results. Résultats d’examens sous forme narrative non codée.",
+      "exampleBoolean" : false,
+      "groupingId" : "Ressources CDA corps des sections"
     },
     {
       "extension" : [{
@@ -2541,6 +2774,19 @@
       "description" : "Entrée FR-Signes-vitaux: IHE-PCC - Vital signs organizer. L'entrée Signes vitaux est une entrée de type 'organizer' qui permet de regrouper des informations relatives aux mesures cliniques du patient.",
       "exampleBoolean" : false,
       "groupingId" : "Ressources CDA corps des composants élémentaires"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-cda-section-signes-vitaux"
+      },
+      "name" : "CDA - FR Signes vitaux",
+      "description" : "IHE-PCC - Coded Vital Signs. Section Liste codée des résultats mesurés des signes vitaux.",
+      "exampleBoolean" : false,
+      "groupingId" : "Ressources CDA corps des sections"
     },
     {
       "extension" : [{
@@ -2600,12 +2846,38 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/fr-cda-statut-du-document"
+      },
+      "name" : "CDA - FR Statut du document",
+      "description" : "Cette section permet d’indiquer le statut du document (son état d’avancement dans le cycle de vie du document, depuis sa création jusqu'à sa validation définitive par son responsable légal.",
+      "exampleBoolean" : false,
+      "groupingId" : "Ressources CDA corps des sections"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/fr-cda-statut-du-probleme"
       },
       "name" : "CDA - FR Statut du probleme",
       "description" : "Entrée FR-Statut-du-probleme: IHE-PCC - Problem-Status-Observation. L'élément 'Statut du problème' est un élément de type 'observation' qui permet de fournir le statut du problème ou de l'allergie. Il est utilisé exclusivement dans un lien 'entryRelationship' grâce auquel il est lié à l'élément qu'il qualifie.",
       "exampleBoolean" : false,
       "groupingId" : "Ressources CDA corps des composants élémentaires"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-cda-statut-fonctionnel"
+      },
+      "name" : "CDA - FR Statut fonctionnel",
+      "description" : "Section FR-Statut-fonctionnel. Cette section permet de décrire des résultats d'évaluation du statut fonctionnel du patient.",
+      "exampleBoolean" : false,
+      "groupingId" : "Ressources CDA corps des sections"
     },
     {
       "extension" : [{
@@ -2729,6 +3001,45 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/fr-cda-traitements"
+      },
+      "name" : "CDA - FR Traitements",
+      "description" : "IHE-PCC - Medications. Liste des principales prises médicamenteuses.",
+      "exampleBoolean" : false,
+      "groupingId" : "Ressources CDA corps des sections"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-cda-traitements-administres"
+      },
+      "name" : "CDA - FR Traitements administres",
+      "description" : "IHE-PCC - Medications-Administered. La section 'Traitements administrés' contient une description narrative des médicaments administrés au patient et doit inclure des entrées 'Traitement'.",
+      "exampleBoolean" : false,
+      "groupingId" : "Ressources CDA corps des sections"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-cda-traitements-a-la-sortie"
+      },
+      "name" : "CDA - FR Traitements à la sortie",
+      "description" : "IHE-PCC - Hospital-Discharge-Medications. La section 'Traitements à la sortie' contient une description narrative des médicaments à administrer au patient après sa sortie de l'hospitalisation et doit inclure des entrées 'Traitement'.",
+      "exampleBoolean" : false,
+      "groupingId" : "Ressources CDA corps des sections"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/fr-cda-transfusion-de-produits-sanguins"
       },
       "name" : "CDA - FR Transfusion de produits sanguins",
@@ -2800,6 +3111,19 @@
       "description" : "Entrée FR-Vaccination: IHE-PCC - Immunizations. L'entrée Vaccination est une entrée de type 'substanceAdministration' pour décrire l'administration d'un vaccin. Elle permet également de décrire pourquoi un vaccin n'a pas été réalisé. Cette entrée hérite de la structuration, des contraintes et des vocabulaires de l'entrée Traitement (1.3.6.1.4.1.19376.1.5.3.1.4.7) sauf mentions précisées ci-après.",
       "exampleBoolean" : false,
       "groupingId" : "Ressources CDA corps des composants élémentaires"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-cda-vaccinations"
+      },
+      "name" : "CDA - FR Vaccinations",
+      "description" : "IHE-PCC - Immunizations Section. Liste des vaccinations effectuées.",
+      "exampleBoolean" : false,
+      "groupingId" : "Ressources CDA corps des sections"
     },
     {
       "extension" : [{
@@ -3759,10 +4083,10 @@
         "valueString" : "ConceptMap"
       }],
       "reference" : {
-        "reference" : "ConceptMap/FRActLMCDAFHIR"
+        "reference" : "ConceptMap/FRProcedureLMCDAFHIR"
       },
-      "name" : "Mapping FRLMActe → FRCDAActe → FRProcedureActDocument",
-      "description" : "Mapping des éléments du modèle métier FRLMActe vers le profil CDA FRCDAActe, puis vers le profil FHIR FRProcedureActDocument.",
+      "name" : "Mapping FRLMActe → FRCDAActe → FRProcedureDocument",
+      "description" : "Mapping des éléments du modèle métier FRLMActe vers le profil CDA FRCDAActe, puis vers le profil FHIR FRProcedureDocument.",
       "exampleBoolean" : false,
       "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
     },
@@ -7849,10 +8173,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/fr-procedure-act-document"
+        "reference" : "StructureDefinition/fr-procedure-document"
       },
-      "name" : "Procedure - FR Procedure Act Document",
-      "description" : "FRProcedureActDocument est un profil utilisé pour décrire un acte planifié ou réalisé.",
+      "name" : "Procedure - FR Procedure Document",
+      "description" : "FRProcedureDocument est un profil utilisé pour décrire un acte planifié ou réalisé.",
       "exampleBoolean" : false,
       "groupingId" : "Ressources FHIR corps"
     },

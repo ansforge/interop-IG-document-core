@@ -1,4 +1,4 @@
-# CDA - FR Evenement - ANS IG document core v0.1.0-snapsnot
+# CDA - FR Evenement - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-evenement | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-15 | *Computable Name*:FRCDAEvenement |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-evenement | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-16 | *Computable Name*:FRCDAEvenement |
 
  
 Entrée FR-Evenement: FR-EvenementCette entrée est un élément de type ‘encounter’ permettant de conserver les données d’activités liées à un patient / usager. Il peut s’agir d’un évènement passé ou à venir. 
@@ -62,11 +62,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-evenement.csv
     "valueUri" : "cda"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-evenement",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRCDAEvenement",
   "title" : "CDA - FR Evenement",
   "status" : "draft",
-  "date" : "2026-04-15T07:49:49+00:00",
+  "date" : "2026-04-16T07:52:47+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

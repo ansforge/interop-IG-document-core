@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Mapping Métier/CDA/FHIR - ANS IG document core v0.1.0-snapsnot</title>
+    <title>Mapping Métier/CDA/FHIR - ANS IG document core v0.1.0-snapshot</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -68,7 +68,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">ANS IG document core</span>
             <br/>
-            <span style="display:inline-block;">0.1.0-snapsnot - ci-build
+            <span style="display:inline-block;">0.1.0-snapshot - ci-build
 
 
 
@@ -247,7 +247,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">ANS IG document core - version de développement local (intégration continue v0.1.0-snapsnot) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/document/core/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">ANS IG document core - version de développement local (intégration continue v0.1.0-snapshot) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/document/core/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
   <h2>Mapping Métier/CDA/FHIR</h2>
   
 
@@ -581,16 +581,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div></td><td><div><p>FRCDADICOMExpositionAuxRadiations.entry:frDICOMAdministrationRadiopharmaceutique</p>
 </div></td><td><div><p>FRCompositionDocument.section:exposureRadiation.entry:FRObservationRadiationExposureDocument.partOf:medicationAdministrationRef</p>
 </div></td></tr><tr><td><div><p>FRLMExpositionRadiations.entree.observationGrossesse</p>
-</div></td><td><div><p>FRCDADICOMExpositionAuxRadiations.entry:frDICOMObservation</p>
-</div></td><td><div><p>FRCompositionDocument.section:exposureRadiation.entry:FRObservationRadiationExposureDocument.hasMember:observationGrossesse</p>
-</div></td></tr><tr><td><div><p>FRLMExpositionRadiations.entree.observationGrossesse</p>
-</div></td><td><div><p>FRCDADICOMExpositionAuxRadiations.entry:frDICOMObservation</p>
-</div></td><td><div><p>FRCompositionDocument.section:exposureRadiation.entry:FRObservationRadiationExposureDocument.hasMember:observationIndication</p>
-</div></td></tr><tr><td><div><p>FRLMExpositionRadiations.entree.observationIndication</p>
-</div></td><td><div><p>FRCDADICOMExpositionAuxRadiations.entry:frDICOMObservation</p>
+</div></td><td><div><p>FRCDADICOMExpositionAuxRadiations.entry:frDicomObservationGrossesse</p>
 </div></td><td><div><p>FRCompositionDocument.section:exposureRadiation.entry:FRObservationRadiationExposureDocument.hasMember:observationGrossesse</p>
 </div></td></tr><tr><td><div><p>FRLMExpositionRadiations.entree.observationIndication</p>
-</div></td><td><div><p>FRCDADICOMExpositionAuxRadiations.entry:frDICOMObservation</p>
+</div></td><td><div><p>FRCDADICOMExpositionAuxRadiations.entry:frDicomObservationIndication</p>
 </div></td><td><div><p>FRCompositionDocument.section:exposureRadiation.entry:FRObservationRadiationExposureDocument.hasMember:observationIndication</p>
 </div></td></tr><tr><td><div><p><strong>FRLMFacteursDeRisqueProfessionnelsNonCode</strong></p>
 </div></td><td><div><p><strong>FRCDAFacteursDeRisqueProfessionnelsNonCode</strong></p>
@@ -638,7 +632,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div></td><td><div><p>FRCompositionDocument.section:historyActs.text</p>
 </div></td></tr><tr><td><div><p>FRLMHistoriqueDesActes.entree.actes</p>
 </div></td><td><div><p>FRCDAHistoriqueDesActes.entry:FRCDAActe</p>
-</div></td><td><div><p>FRCompositionDocument.section:historyActs.entry:FRProcedureActDocument</p>
+</div></td><td><div><p>FRCompositionDocument.section:historyActs.entry:FRProcedureDocument</p>
 </div></td></tr><tr><td><div><p>FRLMHistoriqueDesActes.entree.references</p>
 </div></td><td><div><p>FRCDAHistoriqueDesActes.entry:FRCDAReferencesExternes</p>
 </div></td><td><div><p>FRCompositionDocument.section:historyActs.entry:FRDocumentReferenceDocument</p>
@@ -1305,59 +1299,59 @@ relatedSubject.addr</p>
 </div></td><td><div><p>FRMedicationDispenseDocument.status</p>
 </div></td></tr><tr><td><div><p><strong>FRLMActe</strong></p>
 </div></td><td><div><p><strong>FRCDAActe</strong></p>
-</div></td><td><div><p><strong>FRProcedureActDocument</strong></p>
+</div></td><td><div><p><strong>FRProcedureDocument</strong></p>
 </div></td></tr><tr><td><div><p>FRLMActe.identifiant</p>
 </div></td><td><div><p>FRCDAActe.id</p>
-</div></td><td><div><p>FRProcedureActDocument.identifier</p>
+</div></td><td><div><p>FRProcedureDocument.identifier</p>
 </div></td></tr><tr><td><div><p>FRLMActe.description</p>
 </div></td><td><div><p>FRCDAActe.text</p>
-</div></td><td><div><p>FRProcedureActDocument.note</p>
+</div></td><td><div><p>FRProcedureDocument.note</p>
 </div></td></tr><tr><td><div><p>FRLMActe.code</p>
 </div></td><td><div><p>FRCDAActe.code</p>
-</div></td><td><div><p>FRProcedureActDocument.code</p>
+</div></td><td><div><p>FRProcedureDocument.code</p>
 </div></td></tr><tr><td><div><p>FRLMActe.titre</p>
 </div></td><td /><td /></tr><tr><td><div><p>FRLMActe.statut</p>
 </div></td><td><div><p>FRCDAActe.statusCode</p>
-</div></td><td><div><p>FRProcedureActDocument.status</p>
+</div></td><td><div><p>FRProcedureDocument.status</p>
 </div></td></tr><tr><td><div><p>FRLMActe.date</p>
 </div></td><td><div><p>FRCDAActe.effectiveTime</p>
-</div></td><td><div><p>FRProcedureActDocument.performed[x]</p>
+</div></td><td><div><p>FRProcedureDocument.performed[x]</p>
 </div></td></tr><tr><td><div><p>FRLMActe.priorite</p>
 </div></td><td><div><p>FRCDAActe.priorityCode</p>
-</div></td><td><div><p>FRProcedureActDocument.extension:priority</p>
+</div></td><td><div><p>FRProcedureDocument.extension:priority</p>
 </div></td></tr><tr><td><div><p>FRLMActe.localisationAnatomique</p>
 </div></td><td><div><p>FRCDAActe.targetSiteCode</p>
-</div></td><td><div><p>FRProcedureActDocument.bodySite.TargetSiteCode</p>
+</div></td><td><div><p>FRProcedureDocument.bodySite.TargetSiteCode</p>
 </div></td></tr><tr><td><div><p>FRLMActe.voieDAbord</p>
 </div></td><td><div><p>FRCDAActe.approachSiteCode</p>
-</div></td><td><div><p>FRProcedureActDocument.bodySite.ApproachSiteCode</p>
+</div></td><td><div><p>FRProcedureDocument.bodySite.ApproachSiteCode</p>
 </div></td></tr><tr><td><div><p>FRLMActe.perfomer</p>
 </div></td><td><div><p>FRCDAActe.performer</p>
-</div></td><td><div><p>FRProcedureActDocument.performer.actor.extension:Intervenant</p>
+</div></td><td><div><p>FRProcedureDocument.performer.actor.extension:Intervenant</p>
 </div></td></tr><tr><td><div><p>FRLMActe.auteur</p>
 </div></td><td><div><p>FRCDAActe.author</p>
-</div></td><td><div><p>FRProcedureActDocument.recorder.extension:author</p>
+</div></td><td><div><p>FRProcedureDocument.recorder.extension:author</p>
 </div></td></tr><tr><td><div><p>FRLMActe.informateur</p>
 </div></td><td><div><p>FRCDAActe.informant</p>
-</div></td><td><div><p>FRProcedureActDocument.performer.actor.extension:Informateur</p>
+</div></td><td><div><p>FRProcedureDocument.performer.actor.extension:Informateur</p>
 </div></td></tr><tr><td><div><p>FRLMActe.participant</p>
 </div></td><td><div><p>FRCDAActe.participant</p>
-</div></td><td><div><p>FRProcedureActDocument.performer.actor.extension:Participant</p>
+</div></td><td><div><p>FRProcedureDocument.performer.actor.extension:Participant</p>
 </div></td></tr><tr><td><div><p>FRLMActe.circonstances</p>
 </div></td><td><div><p>FRCDAActe.entryRelationship:frReferenceInterneCirconstances</p>
-</div></td><td><div><p>FRProcedureActDocument.encounter</p>
+</div></td><td><div><p>FRProcedureDocument.encounter</p>
 </div></td></tr><tr><td><div><p>FRLMActe.reason</p>
 </div></td><td><div><p>FRCDAActe.entryRelationship:frReferenceInterneMotifActe</p>
-</div></td><td><div><p>FRProcedureActDocument.reasonReference</p>
+</div></td><td><div><p>FRProcedureDocument.reasonReference</p>
 </div></td></tr><tr><td><div><p>FRLMActe.dispositifMedical</p>
 </div></td><td><div><p>FRCDAActe.entryRelationship:frReferenceInterneDM</p>
-</div></td><td><div><p>FRProcedureActDocument.usedReference</p>
+</div></td><td><div><p>FRProcedureDocument.usedReference</p>
 </div></td></tr><tr><td><div><p>FRLMActe.difficulte</p>
 </div></td><td><div><p>FRCDAActe.entryRelationship:frSimpleObservationDifficulte</p>
-</div></td><td><div><p>FRProcedureActDocument.extension:difficulte</p>
+</div></td><td><div><p>FRProcedureDocument.extension:difficulte</p>
 </div></td></tr><tr><td><div><p>FRLMActe.scores</p>
 </div></td><td><div><p>FRCDAActe.entryRelationship:frSimpleObservationScores</p>
-</div></td><td><div><p>FRProcedureActDocument.partOf</p>
+</div></td><td><div><p>FRProcedureDocument.partOf</p>
 </div></td></tr><tr><td><div><p><strong>FRLMAddendum</strong></p>
 </div></td><td><div><p><strong>FRCDADicomAddendum</strong></p>
 </div></td><td><div><p>FRCompositionDocument.section:Addendum</p>
@@ -2144,16 +2138,10 @@ entryRelationship:frDICOMSOPInstanceObservation.entryRelationship:frDICOMObjecti
 </div></td><td><div><p>FRCDADICOMExpositionAuxRadiations.entry:frDICOMAdministrationRadiopharmaceutique</p>
 </div></td><td><div><p>FRCompositionDocument.section:exposureRadiation.entry:FRObservationRadiationExposureDocument.partOf:medicationAdministrationRef</p>
 </div></td></tr><tr><td><div><p>FRLMExpositionRadiations.entree.observationGrossesse</p>
-</div></td><td><div><p>FRCDADICOMExpositionAuxRadiations.entry:frDICOMObservation</p>
-</div></td><td><div><p>FRCompositionDocument.section:exposureRadiation.entry:FRObservationRadiationExposureDocument.hasMember:observationGrossesse</p>
-</div></td></tr><tr><td><div><p>FRLMExpositionRadiations.entree.observationGrossesse</p>
-</div></td><td><div><p>FRCDADICOMExpositionAuxRadiations.entry:frDICOMObservation</p>
-</div></td><td><div><p>FRCompositionDocument.section:exposureRadiation.entry:FRObservationRadiationExposureDocument.hasMember:observationIndication</p>
-</div></td></tr><tr><td><div><p>FRLMExpositionRadiations.entree.observationIndication</p>
-</div></td><td><div><p>FRCDADICOMExpositionAuxRadiations.entry:frDICOMObservation</p>
+</div></td><td><div><p>FRCDADICOMExpositionAuxRadiations.entry:frDicomObservationGrossesse</p>
 </div></td><td><div><p>FRCompositionDocument.section:exposureRadiation.entry:FRObservationRadiationExposureDocument.hasMember:observationGrossesse</p>
 </div></td></tr><tr><td><div><p>FRLMExpositionRadiations.entree.observationIndication</p>
-</div></td><td><div><p>FRCDADICOMExpositionAuxRadiations.entry:frDICOMObservation</p>
+</div></td><td><div><p>FRCDADICOMExpositionAuxRadiations.entry:frDicomObservationIndication</p>
 </div></td><td><div><p>FRCompositionDocument.section:exposureRadiation.entry:FRObservationRadiationExposureDocument.hasMember:observationIndication</p>
 </div></td></tr><tr><td><div><p><strong>FRLMFacteursDeRisqueProfessionnelsNonCode</strong></p>
 </div></td><td><div><p><strong>FRCDAFacteursDeRisqueProfessionnelsNonCode</strong></p>
@@ -2293,7 +2281,7 @@ qualifier.value</p>
 </div></td><td><div><p>FRCompositionDocument.section:historyActs.text</p>
 </div></td></tr><tr><td><div><p>FRLMHistoriqueDesActes.entree.actes</p>
 </div></td><td><div><p>FRCDAHistoriqueDesActes.entry:FRCDAActe</p>
-</div></td><td><div><p>FRCompositionDocument.section:historyActs.entry:FRProcedureActDocument</p>
+</div></td><td><div><p>FRCompositionDocument.section:historyActs.entry:FRProcedureDocument</p>
 </div></td></tr><tr><td><div><p>FRLMHistoriqueDesActes.entree.references</p>
 </div></td><td><div><p>FRCDAHistoriqueDesActes.entry:FRCDAReferencesExternes</p>
 </div></td><td><div><p>FRCompositionDocument.section:historyActs.entry:FRDocumentReferenceDocument</p>
@@ -3941,7 +3929,7 @@ qualifier.value</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.document.fr.core#0.1.0-snapsnot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Apr 15, 2026 07:49+0000">2026-04-15</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.document.fr.core#0.1.0-snapshot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 16, 2026 07:52+0000">2026-04-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |

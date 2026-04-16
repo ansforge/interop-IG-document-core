@@ -1,4 +1,4 @@
-# CDA - FR Liste des problemes - ANS IG document core v0.1.0-snapsnot
+# CDA - FR Liste des problemes - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,15 +8,15 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-liste-des-problemes | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-15 | *Computable Name*:FRCDAListeDesProblemes |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-liste-des-problemes | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-16 | *Computable Name*:FRCDAListeDesProblemes |
 
  
 Entrée FR-Liste-des-problemes: IHE-PCC - Problem-Concern. Cette entrée permet de regrouper des informations relatives aux pathologies non-allergiques du patient. Elle regroupe des entrées FR-Probleme qui décrivent chacun une pathologie. 
 
 **Utilisations:**
 
-* Utilise ce/t/te Profil de modèle logique: [CDA - FR Antecedents medicaux](StructureDefinition-fr-cda-antecedents-medicaux.md)
+* Utilise ce/t/te Profil de modèle logique: [CDA - FR Antecedents medicaux](StructureDefinition-fr-cda-antecedents-medicaux.md) and [CDA - FR Problemes actifs](StructureDefinition-fr-cda-problemes-actifs.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-liste-des-problemes)
 
@@ -62,11 +62,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-liste-des-pro
     "valueUri" : "cda"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-liste-des-problemes",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRCDAListeDesProblemes",
   "title" : "CDA - FR Liste des problemes",
   "status" : "draft",
-  "date" : "2026-04-15T07:49:49+00:00",
+  "date" : "2026-04-16T07:52:47+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

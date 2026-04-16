@@ -1,4 +1,4 @@
-# Condition - FR Condition Document - ANS IG document core v0.1.0-snapsnot
+# Condition - FR Condition Document - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,15 +8,15 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-condition-document | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-15 | *Computable Name*:FRConditionDocument |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-condition-document | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-16 | *Computable Name*:FRConditionDocument |
 
  
 FRConditionDocument est un profil utilisé pour décrire un problème du patient (une pathologie par exemple). 
 
 **Utilisations:**
 
-* Référence ce Profil: [AdverseEvent - FR adverse event Document](StructureDefinition-fr-adverse-event-document.md), [DeviceRequest - FR Device request Document](StructureDefinition-fr-device-request-document.md), [DeviceUseStatement - FR Device Use Statement Document](StructureDefinition-fr-device-use-statement-document.md), [Immunization - FR Immunization Document](StructureDefinition-fr-immunization-document.md)... Show 5 more, [MedicationAdministration - FR Medication Administration Document](StructureDefinition-fr-medication-administration-document.md), [MedicationRequest - FR Medication Request Document](StructureDefinition-fr-medication-request-document.md), [MedicationStatement - FR Medication Statement Document](StructureDefinition-fr-medication-statement-document.md), [FR Patient History Extension](StructureDefinition-fr-patient-history-extension.md) and [Procedure - FR Procedure Act Document](StructureDefinition-fr-procedure-act-document.md)
+* Référence ce Profil: [AdverseEvent - FR adverse event Document](StructureDefinition-fr-adverse-event-document.md), [DeviceRequest - FR Device request Document](StructureDefinition-fr-device-request-document.md), [DeviceUseStatement - FR Device Use Statement Document](StructureDefinition-fr-device-use-statement-document.md), [Immunization - FR Immunization Document](StructureDefinition-fr-immunization-document.md)... Show 5 more, [MedicationAdministration - FR Medication Administration Document](StructureDefinition-fr-medication-administration-document.md), [MedicationRequest - FR Medication Request Document](StructureDefinition-fr-medication-request-document.md), [MedicationStatement - FR Medication Statement Document](StructureDefinition-fr-medication-statement-document.md), [FR Patient History Extension](StructureDefinition-fr-patient-history-extension.md) and [Procedure - FR Procedure Document](StructureDefinition-fr-procedure-document.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-condition-document)
 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-condition-documen
   "resourceType" : "StructureDefinition",
   "id" : "fr-condition-document",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-condition-document",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRConditionDocument",
   "title" : "Condition - FR Condition Document",
   "status" : "draft",
-  "date" : "2026-04-15T07:49:49+00:00",
+  "date" : "2026-04-16T07:52:47+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

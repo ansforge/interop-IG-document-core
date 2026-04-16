@@ -1,4 +1,4 @@
-# CDA - FR Vaccin recommande - ANS IG document core v0.1.0-snapsnot
+# CDA - FR Vaccin recommande - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,15 +8,15 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-vaccin-recommande | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-15 | *Computable Name*:FRCDAVaccinRecommande |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-vaccin-recommande | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-16 | *Computable Name*:FRCDAVaccinRecommande |
 
  
 Entrée FR-Vaccin-recommande: IHE-PCC - Immunization recommendation. L’entrée ‘Vaccin recommandé’ est une entrée de type ‘substanceAdministration’ qui permet de décrire une vaccination prévue ou proposée. Une vaccination proposée est une proposition qui est utilisée dans la prise de décisions (elle peut apparaître comme une contribution ou un résultat provenant de l’aide à la décision clinique).  Une vaccination prévue dépend d’un plan accepté et à venir. Cette entrée hérite de la structuration, des contraintes et des vocabulaires de l’entrée ‘Immunization’ (1.3.6.1.4.1.19376.1.5.3.1.4.12). 
 
 **Utilisations:**
 
-* Ce Profil de modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
+* Utilise ce/t/te Profil de modèle logique: [CDA - FR Plan de soins](StructureDefinition-fr-cda-plan-de-soins.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-vaccin-recommande)
 
@@ -62,11 +62,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-vaccin-recomm
     "valueUri" : "cda"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-vaccin-recommande",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRCDAVaccinRecommande",
   "title" : "CDA - FR Vaccin recommande",
   "status" : "draft",
-  "date" : "2026-04-15T07:49:49+00:00",
+  "date" : "2026-04-16T07:52:47+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -96,10 +96,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-vaccin-recomm
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
-      "id" : "SubstanceAdministration",
-      "path" : "SubstanceAdministration"
-    },
-    {
       "id" : "SubstanceAdministration.templateId",
       "path" : "SubstanceAdministration.templateId",
       "slicing" : {

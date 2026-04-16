@@ -1,4 +1,4 @@
-# CDA - FR CISIS Addr - ANS IG document core v0.1.0-snapsnot
+# CDA - FR CISIS Addr - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/cisis-addr | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-15 | *Computable Name*:CISISAddr |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/cisis-addr | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-16 | *Computable Name*:CISISAddr |
 
  
 Adresse géopostale : Le contenu de addr est défini par la norme AFNOR XPZ 10-011 en tant que structure d’adresse postale et géographique à des fins de présentation. Cette norme est reprise dans le Référentiel Général d’Interopérabilité (RGI). Les partenaires de l’échange doivent s’accorder sur la structure de addr à échanger. En effet, addr peut convoyer une adresse géopostale formée : 
@@ -57,11 +57,11 @@ Other representations of profile: [CSV](StructureDefinition-cisis-addr.csv), [Ex
     "valueUri" : "http://hl7.org/cda/stds/core/StructureDefinition/ClinicalDocument"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/cisis-addr",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "CISISAddr",
   "title" : "CDA - FR CISIS Addr",
   "status" : "draft",
-  "date" : "2026-04-15T07:49:49+00:00",
+  "date" : "2026-04-16T07:52:47+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

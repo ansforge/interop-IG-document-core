@@ -1,4 +1,4 @@
-# Modèle logique métier - FR LM Informateur - ANS IG document core v0.1.0-snapsnot
+# Modèle logique métier - FR LM Informateur - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-informateur | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-15 | *Computable Name*:FRLMInformateur |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-informateur | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-16 | *Computable Name*:FRLMInformateur |
 
  
 Informateur (personne ayant fourni des informations utiles à la production du document : professionnel, structure, patient/usager, autre), personne de confiance, personne à prévenir en cas d’urgence, aidant, aidé. 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-informateur.cs
   "resourceType" : "StructureDefinition",
   "id" : "fr-lm-informateur",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-informateur",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRLMInformateur",
   "title" : "Modèle logique métier - FR LM Informateur",
   "status" : "draft",
-  "date" : "2026-04-15T07:49:49+00:00",
+  "date" : "2026-04-16T07:52:47+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

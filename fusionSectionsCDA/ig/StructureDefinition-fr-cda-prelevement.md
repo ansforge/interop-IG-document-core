@@ -1,4 +1,4 @@
-# CDA - FR Prelevement - ANS IG document core v0.1.0-snapsnot
+# CDA - FR Prelevement - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-prelevement | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-15 | *Computable Name*:FRCDAPrelevement |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-prelevement | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-16 | *Computable Name*:FRCDAPrelevement |
 
  
 Entrée FR-Prelevement: IHE-PCC - Specimen collection. L’élément ‘Prélèvement’ est un élément de type ‘procedure’ qui permet de décrire le prélèvement et l’échantillon biologique (le matériel).Cet élément est obligatoirement inclus dans une entrée ‘Résultats d’examens de biologie médicale’ (Laboratory Report Data Processing Entry – 1.3.6.1.4.1.19376.1.3.1). 
@@ -62,11 +62,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-prelevement.c
     "valueUri" : "cda"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-prelevement",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRCDAPrelevement",
   "title" : "CDA - FR Prelevement",
   "status" : "draft",
-  "date" : "2026-04-15T07:49:49+00:00",
+  "date" : "2026-04-16T07:52:47+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

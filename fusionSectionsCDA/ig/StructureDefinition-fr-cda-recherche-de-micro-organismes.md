@@ -1,4 +1,4 @@
-# CDA - FR Recherche de micro organismes - ANS IG document core v0.1.0-snapsnot
+# CDA - FR Recherche de micro organismes - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-recherche-de-micro-organismes | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-15 | *Computable Name*:FRCDARechercheDeMicroOrganismes |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-recherche-de-micro-organismes | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-16 | *Computable Name*:FRCDARechercheDeMicroOrganismes |
 
  
 Entrée FR-Recherche-de-micro-organismes: IHE PCC – Simple Observation. Cette entrée permet d’indiquer si une recherche de micro-organismes multirésistants ou émergents a été effectuée ou pas. 
@@ -62,11 +62,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-recherche-de-
     "valueUri" : "cda"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-recherche-de-micro-organismes",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRCDARechercheDeMicroOrganismes",
   "title" : "CDA - FR Recherche de micro organismes",
   "status" : "draft",
-  "date" : "2026-04-15T07:49:49+00:00",
+  "date" : "2026-04-16T07:52:47+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
