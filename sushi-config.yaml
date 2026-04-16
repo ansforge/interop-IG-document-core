@@ -8,7 +8,7 @@ publisher:
   name: Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris
   url: https://esante.gouv.fr
 status: draft
-version: 0.1.0-snapsnot # shall conforms to Semantic Versioning https://fr.wiktionary.org/wiki/SemVer
+version: 0.1.0-snapshot # shall conforms to Semantic Versioning https://fr.wiktionary.org/wiki/SemVer
 fhirVersion: 4.0.1
 copyrightYear: 2020+
 releaseLabel: ci-build # le release label doit être conforme au cycle de vie de la doctrine du ci-sis
@@ -312,7 +312,7 @@ groups:
       - StructureDefinition/fr-cda-health-care-facility
 
   Ressources CDA corps des sections :
-    name: Eléments CDA du corps des sections
+    name: Eléments CDA corps des sections
     resources:
       - StructureDefinition/fr-cda-allergies-et-hypersensibilites
       - StructureDefinition/fr-cda-section-antecedents-familiaux
@@ -337,9 +337,33 @@ groups:
       - StructureDefinition/fr-cda-documents-ajoutes
       - StructureDefinition/fr-cda-education-du-patient
       - StructureDefinition/fr-cda-effets-indesirables
+      - StructureDefinition/fr-cda-facteurs-de-risque-professionnels-non-code
+      - StructureDefinition/fr-cda-fonctions-physiques
+      - StructureDefinition/fr-cda-section-habitus-mode-de-vie
+      - StructureDefinition/fr-cda-historique-des-actes
+      - StructureDefinition/fr-cda-historique-des-grossesses
+      - StructureDefinition/fr-cda-plan-de-soins
+      - StructureDefinition/fr-cda-points-de-vigilances-non-code
+      - StructureDefinition/fr-cda-prescription-dispositifs-medicaux
+      - StructureDefinition/fr-cda-prescription-medicaments
+      - StructureDefinition/fr-cda-problemes-actifs
+      - StructureDefinition/fr-cda-raison-de-la-recommandation
+      - StructureDefinition/fr-cda-raison-de-la-recommandation-non-code
+      - StructureDefinition/fr-cda-section-resultats
+      - StructureDefinition/fr-cda-resultats-de-biologie-de-seconde-intention
+      - StructureDefinition/fr-cda-resultats-evenements
+      - StructureDefinition/fr-cda-resultats-examens
+      - StructureDefinition/fr-cda-resultats-examens-non-code
+      - StructureDefinition/fr-cda-section-signes-vitaux
+      - StructureDefinition/fr-cda-statut-du-document
+      - StructureDefinition/fr-cda-statut-fonctionnel
+      - StructureDefinition/fr-cda-traitements
+      - StructureDefinition/fr-cda-traitements-administres
+      - StructureDefinition/fr-cda-traitements-a-la-sortie
+      - StructureDefinition/fr-cda-vaccinations
 
   Ressources CDA corps des composants élémentaires :
-    name: Eléments CDA du corps
+    name: Eléments CDA corps des composants élémentaires
     resources:
       - StructureDefinition/cisis-telecom
       - StructureDefinition/cisis-addr
@@ -517,7 +541,7 @@ groups:
         - StructureDefinition/fr-observation-survey-pannel-document
         - StructureDefinition/fr-observation-social-history-document
         - StructureDefinition/fr-procedure-imaging-document
-        - StructureDefinition/fr-procedure-act-document
+        - StructureDefinition/fr-procedure-document
         - StructureDefinition/fr-specimen-document
         - StructureDefinition/fr-pregnancy-history-document
         - StructureDefinition/fr-observation-result-document
@@ -633,7 +657,7 @@ groups:
   Mapping ML-CDA-FHIR des composants élémentaires d'un document:
     name: Concept Maps des composants élémentaires d'un Document
     resources:
-      - FRActLMCDAFHIR
+      - FRProcedureLMCDAFHIR
       - FRAdvanceDirectiveLMCDAFHIR
       - FRAdverseEventLMCDAFHIR
       - FRAllergyIntoleranceLMCDAFHIR

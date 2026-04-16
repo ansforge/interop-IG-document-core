@@ -1,8 +1,8 @@
-Instance: FRActLMCDAFHIR
+Instance: FRProcedureLMCDAFHIR
 InstanceOf: ConceptMap
 Usage: #definition
-Title: "Mapping FRLMActe → FRCDAActe → FRProcedureActDocument"
-Description: "Mapping des éléments du modèle métier FRLMActe vers le profil CDA FRCDAActe, puis vers le profil FHIR FRProcedureActDocument."
+Title: "Mapping FRLMActe → FRCDAActe → FRProcedureDocument"
+Description: "Mapping des éléments du modèle métier FRLMActe vers le profil CDA FRCDAActe, puis vers le profil FHIR FRProcedureDocument."
 
 * title = "Mapping Métier/CDA/FHIR : \"Acte\""
 * status = #draft
@@ -90,102 +90,102 @@ Description: "Mapping des éléments du modèle métier FRLMActe vers le profil 
 
 // Groupe Mapping 2 : CDA → FHIR
 * group[+].source = "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-acte"
-* group[=].target = "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-procedure-act-document"
+* group[=].target = "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-procedure-document"
 
 /* Element racine */
 * group[=].element[+].code = #FRCDAActe
-* group[=].element[=].target.code = #FRProcedureActDocument
+* group[=].element[=].target.code = #FRProcedureDocument
 * group[=].element[=].target.equivalence = #equivalent
 
 /* Identifiant */
 * group[=].element[+].code = #FRCDAActe.id
-* group[=].element[=].target.code = #FRProcedureActDocument.identifier
+* group[=].element[=].target.code = #FRProcedureDocument.identifier
 * group[=].element[=].target.equivalence = #equivalent
 * group[=].element[=].target.comment = "L'élément id en CDA devient identifier en FHIR."
 
 /* Code de l'acte */
 * group[=].element[+].code = #FRCDAActe.code
-* group[=].element[=].target.code = #FRProcedureActDocument.code
+* group[=].element[=].target.code = #FRProcedureDocument.code
 * group[=].element[=].target.equivalence = #equivalent
 * group[=].element[=].target.comment = "Le code CDA correspond au code FHIR."
 
 /* Date effectiveTime */
 * group[=].element[+].code = #FRCDAActe.effectiveTime
-* group[=].element[=].target.code = #FRProcedureActDocument.performed[x]
+* group[=].element[=].target.code = #FRProcedureDocument.performed[x]
 * group[=].element[=].target.equivalence = #equivalent
 * group[=].element[=].target.comment = "effectiveTime → performedDateTime ou performedPeriod."
 
 /* Texte narratif */
 * group[=].element[+].code = #FRCDAActe.text
-* group[=].element[=].target.code = #FRProcedureActDocument.note
+* group[=].element[=].target.code = #FRProcedureDocument.note
 * group[=].element[=].target.equivalence = #equivalent
 * group[=].element[=].target.comment = "text CDA devient note/annotation FHIR."
 
 /* Statut */
 * group[=].element[+].code = #FRCDAActe.statusCode
-* group[=].element[=].target.code = #FRProcedureActDocument.status
+* group[=].element[=].target.code = #FRProcedureDocument.status
 * group[=].element[=].target.equivalence = #equivalent
 * group[=].element[=].target.comment = "statusCode CDA → status FHIR."
 
 /* Référence interne DM */
 * group[=].element[+].code = #FRCDAActe.entryRelationship:frReferenceInterneDM
-* group[=].element[=].target.code = #FRProcedureActDocument.usedReference
+* group[=].element[=].target.code = #FRProcedureDocument.usedReference
 * group[=].element[=].target.equivalence = #equivalent
 * group[=].element[=].target.comment = "DM référencé dans usedReference."
 
 /* Observations liées aux scores */
 * group[=].element[+].code = #FRCDAActe.entryRelationship:frSimpleObservationScores
-* group[=].element[=].target.code = #FRProcedureActDocument.partOf
+* group[=].element[=].target.code = #FRProcedureDocument.partOf
 * group[=].element[=].target.equivalence = #equivalent
 * group[=].element[=].target.comment = "Les observations liées aux scores deviennent partOf."
 
 /* Performers / Informant / Participant */
 * group[=].element[+].code = #FRCDAActe.performer
-* group[=].element[=].target.code = #FRProcedureActDocument.performer.actor.extension:Intervenant
+* group[=].element[=].target.code = #FRProcedureDocument.performer.actor.extension:Intervenant
 * group[=].element[=].target.equivalence = #equivalent
 
 * group[=].element[+].code = #FRCDAActe.informant
-* group[=].element[=].target.code = #FRProcedureActDocument.performer.actor.extension:Informateur
+* group[=].element[=].target.code = #FRProcedureDocument.performer.actor.extension:Informateur
 * group[=].element[=].target.equivalence = #equivalent
 
 * group[=].element[+].code = #FRCDAActe.participant
-* group[=].element[=].target.code = #FRProcedureActDocument.performer.actor.extension:Participant
+* group[=].element[=].target.code = #FRProcedureDocument.performer.actor.extension:Participant
 * group[=].element[=].target.equivalence = #equivalent
 
 /* Motif de l'acte */
 * group[=].element[+].code = #FRCDAActe.entryRelationship:frReferenceInterneMotifActe
-* group[=].element[=].target.code = #FRProcedureActDocument.reasonReference
+* group[=].element[=].target.code = #FRProcedureDocument.reasonReference
 * group[=].element[=].target.equivalence = #equivalent
 * group[=].element[=].target.comment = "Motif de l'acte en CDA correspond à reasonReference en FHIR."
 
 /* Rencontre associée */
 * group[=].element[+].code = #FRCDAActe.entryRelationship:frReferenceInterneCirconstances
-* group[=].element[=].target.code = #FRProcedureActDocument.encounter
+* group[=].element[=].target.code = #FRProcedureDocument.encounter
 * group[=].element[=].target.equivalence = #equivalent
 * group[=].element[=].target.comment = "Référence de contexte CDA → Encounter FHIR."
 
 /* Difficulté */
 * group[=].element[+].code = #FRCDAActe.entryRelationship:frSimpleObservationDifficulte
-* group[=].element[=].target.code = #FRProcedureActDocument.extension:difficulte
+* group[=].element[=].target.code = #FRProcedureDocument.extension:difficulte
 * group[=].element[=].target.equivalence = #equivalent
 
 /* author → recorder */
 * group[=].element[+].code = #FRCDAActe.author
-* group[=].element[=].target.code = #FRProcedureActDocument.recorder.extension:author
+* group[=].element[=].target.code = #FRProcedureDocument.recorder.extension:author
 * group[=].element[=].target.equivalence = #equivalent
 * group[=].element[=].target.comment = "author CDA → recorder FHIR."
 
 /* Priorité */
 * group[=].element[+].code = #FRCDAActe.priorityCode
-* group[=].element[=].target.code = #FRProcedureActDocument.extension:priority
+* group[=].element[=].target.code = #FRProcedureDocument.extension:priority
 * group[=].element[=].target.equivalence = #equivalent
 
 /* Localisation anatomique */
 * group[=].element[+].code = #FRCDAActe.targetSiteCode
-* group[=].element[=].target.code = #FRProcedureActDocument.bodySite.TargetSiteCode
+* group[=].element[=].target.code = #FRProcedureDocument.bodySite.TargetSiteCode
 * group[=].element[=].target.equivalence = #equivalent
 
 /* Voie d'abord */
 * group[=].element[+].code = #FRCDAActe.approachSiteCode
-* group[=].element[=].target.code = #FRProcedureActDocument.bodySite.ApproachSiteCode
+* group[=].element[=].target.code = #FRProcedureDocument.bodySite.ApproachSiteCode
 * group[=].element[=].target.equivalence = #equivalent
