@@ -8,4 +8,4 @@ Characteristics: #can-be-target
 * titreSection 1..1 
 * sousSection 0..0 
 * entree
-  * examenImagerie 0..* FRLMExamenImagerie "Entrée Examen imagerie"
+  * examenImagerie 0..* FRLMImagingStudy "Entrée Examen imagerie"

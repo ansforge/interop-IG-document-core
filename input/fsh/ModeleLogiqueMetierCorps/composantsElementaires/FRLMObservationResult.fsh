@@ -12,4 +12,4 @@ Characteristics: #can-be-target
 * site 0..1 CodeableConcept "Site de l'observation"
 * intervalleReference 0..* Range "Intervalle de référence"
 * commentaires 0..* string "entrée Commentaires"
-* demandeExamen 0..* FRLMDemandeExamenOuSuivi "Demande d'examen associée"
+* demandeExamen 0..* FRLMServiceRequest "Demande d'examen associée"

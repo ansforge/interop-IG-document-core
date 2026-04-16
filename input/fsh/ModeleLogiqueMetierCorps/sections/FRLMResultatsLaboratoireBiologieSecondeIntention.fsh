@@ -8,4 +8,4 @@ Characteristics: #can-be-target
 * sousSection 0..0
 * entree
   * observation  0..1 FRLMObservation "Entrée Simple observation"
-  * documentAttache 1..* FRLMDocumentAttache "Entrée Document attaché"
+  * documentAttache 1..* FRLMAttachement "Entrée Document attaché"

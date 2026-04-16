@@ -15,7 +15,8 @@ Characteristics: #can-be-target
   // EHDSSpecimen.collection.device
   * device 0..* FRLMDevice "Dispositif utilisé"
 // EHDSSpecimen.container ?
-* echantillonPreleve 0..1 FRLMEchantillonPreleve "Échantillon prélevé"
+// à verifier / supprimer ou bien remplacer ?
+//* echantillonPreleve 0..1 FRLMEchantillonPreleve "Échantillon prélevé"
 // EHDSSpecimen.containerDevice
 * containerDevice 0..* FRLMDevice "Produit utilisé"
 * receivedDate 1..1 Base "Date de réception de l'échantillon"

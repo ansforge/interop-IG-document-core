@@ -10,4 +10,4 @@ Characteristics: #can-be-target
 * auteur 0..* FRLMPersonneStructureAuteur "Auteur"
 * informateur 0..* FRLMPersonneStructure "Informateur"
 * entree
-  * groupeQuestionnairesEvaluation 0..* FRLMGroupDeQuestionnairesDevaluation "Groupe de questionnaires d'évalutation"
+  * groupeQuestionnairesEvaluation 0..* FRLMAssessments "Groupe de questionnaires d'évalutation"

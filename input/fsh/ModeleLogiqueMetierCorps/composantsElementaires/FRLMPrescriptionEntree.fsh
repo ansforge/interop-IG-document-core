@@ -12,7 +12,7 @@ Characteristics: #can-be-target
 //doseAndRate
 * quantitePrescription 0..1 Quantity "Quantité" 
 // Not used in EHDSDosaging model
-* auteurPrescription 0..1 FRLMAuteur "Prescripteur"
+* auteurPrescription 0..1 FRLMPersonneStructureAuteur "Prescripteur"
 // Not used in EHDSDosaging model
 * dispensateurPrescription 0..* FRLMPersonneStructure "Dispensateur"
 //additionalInstruction : CodeableConcept	
