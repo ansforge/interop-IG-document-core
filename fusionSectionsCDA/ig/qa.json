@@ -6,14 +6,14 @@
   "status" : "draft",
   "package-id" : "ans.document.fr.core",
   "ig-ver" : "0.1.0-snapshot",
-  "date" : "Thu, 16 Apr, 2026 09:27:41 +0000",
-  "dateISO8601" : "2026-04-16T09:27:41+00:00",
-  "errs" : 1686,
+  "date" : "Thu, 16 Apr, 2026 09:55:40 +0000",
+  "dateISO8601" : "2026-04-16T09:55:40+00:00",
+  "errs" : 1687,
   "warnings" : 5609,
   "hints" : 1136,
   "suppressed-hints" : 0,
   "suppressed-warnings" : 0,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 6188615680
+  "maxMemory" : 7056506848
 }
