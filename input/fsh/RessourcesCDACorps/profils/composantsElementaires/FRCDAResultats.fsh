@@ -28,7 +28,7 @@ Type de résultat :
 - 27898-6 Pathologie
 - 26435-8 Génétique humaine"
 * code ^definition = "Code de l'entrée en LOINC"
-* code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-resultat-cisis
+* code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-resultat-type-cisis
 * statusCode MS
 * statusCode 1..1
 * statusCode ^short = "Statut de l'entrée : completed"
