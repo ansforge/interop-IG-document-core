@@ -1,4 +1,4 @@
-# CDA - FR Traitement - ANS IG document core v0.1.0-snapsnot
+# CDA - FR Traitement - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-traitement | *Version*:0.1.0-snapsnot |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-traitement | *Version*:0.1.0-snapshot |
 | Draft as of 2026-04-17 | *Computable Name*:FRCDATraitement |
 
  
@@ -16,7 +16,7 @@ Entrée FR-Traitement: IHE-PCC - Medications. L’entrée ‘Traitement’ est u
 
 **Utilisations:**
 
-* Utilise ce/t/te Profil de modèle logique: [CDA - FR Effet indesirable](StructureDefinition-fr-cda-effet-indesirable.md) and [CDA - FR Traitement dispense](StructureDefinition-fr-cda-traitement-dispense.md)
+* Utilise ce/t/te Profil de modèle logique: [CDA - FR Effet indesirable](StructureDefinition-fr-cda-effet-indesirable.md), [CDA - FR Plan de soins](StructureDefinition-fr-cda-plan-de-soins.md), [CDA - FR Traitement dispense](StructureDefinition-fr-cda-traitement-dispense.md), [CDA - FR Traitements à la sortie](StructureDefinition-fr-cda-traitements-a-la-sortie.md)... Show 2 more, [CDA - FR Traitements administres](StructureDefinition-fr-cda-traitements-administres.md) and [CDA - FR Traitements](StructureDefinition-fr-cda-traitements.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-traitement)
 
@@ -62,11 +62,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-traitement.cs
     "valueUri" : "cda"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-traitement",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRCDATraitement",
   "title" : "CDA - FR Traitement",
   "status" : "draft",
-  "date" : "2026-04-17T08:26:12+00:00",
+  "date" : "2026-04-17T09:16:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

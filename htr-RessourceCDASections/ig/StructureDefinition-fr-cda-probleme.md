@@ -1,4 +1,4 @@
-# CDA - FR Probleme - ANS IG document core v0.1.0-snapsnot
+# CDA - FR Probleme - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-probleme | *Version*:0.1.0-snapsnot |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-probleme | *Version*:0.1.0-snapshot |
 | Draft as of 2026-04-17 | *Computable Name*:FRCDAProbleme |
 
  
@@ -16,7 +16,7 @@ Entrée FR-Probleme: IHE-PCC - Problem-Entry. Cette entrée permet de décrire u
 
 **Utilisations:**
 
-* Utilise ce/t/te Profil de modèle logique: [CDA - FR Allergie ou hypersensibilite](StructureDefinition-fr-cda-allergie-ou-hypersensibilite.md), [CDA - FR Effet indesirable](StructureDefinition-fr-cda-effet-indesirable.md), [CDA - FR Liste des problemes](StructureDefinition-fr-cda-liste-des-problemes.md) and [CDA - FR Vaccination](StructureDefinition-fr-cda-vaccination.md)
+* Utilise ce/t/te Profil de modèle logique: [CDA - FR Allergie ou hypersensibilite](StructureDefinition-fr-cda-allergie-ou-hypersensibilite.md), [CDA - FR Effet indesirable](StructureDefinition-fr-cda-effet-indesirable.md), [CDA - FR Liste des problemes](StructureDefinition-fr-cda-liste-des-problemes.md), [CDA - FR Raison de la recommandation](StructureDefinition-fr-cda-raison-de-la-recommandation.md)... Show 2 more, [CDA - FR Resultats evenements](StructureDefinition-fr-cda-resultats-evenements.md) and [CDA - FR Vaccination](StructureDefinition-fr-cda-vaccination.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-probleme)
 
@@ -62,11 +62,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-probleme.csv)
     "valueUri" : "cda"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-probleme",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRCDAProbleme",
   "title" : "CDA - FR Probleme",
   "status" : "draft",
-  "date" : "2026-04-17T08:26:12+00:00",
+  "date" : "2026-04-17T09:16:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

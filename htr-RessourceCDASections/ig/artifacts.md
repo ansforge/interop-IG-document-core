@@ -1,4 +1,4 @@
-# Artifacts Summary - ANS IG document core v0.1.0-snapsnot
+# Artifacts Summary - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * **Artifacts Summary**
@@ -111,7 +111,6 @@ Modèles de données métier représentant les concepts élémentaires, modélis
 | [Modèle logique métier - FR LM Administration produit de sante](StructureDefinition-fr-lm-administration-produit-de-sante.md) | Administration produit de sante |
 | [Modèle logique métier - FR LM Allergie ou Hypersensibilité](StructureDefinition-fr-lm-allergie-ou-hypersensibilite.md) | Allergie ou hypersensibilite |
 | [Modèle logique métier - FR LM Antécédent familial observé](StructureDefinition-fr-lm-antecedent-familial-observe.md) | Antécédent familial |
-| [Modèle logique métier - FR LM Antécédents familiaux](StructureDefinition-fr-lm-antecedents-familiaux-entree.md) | Antécédents familiaux |
 | [Modèle logique métier - FR LM Auteur APSR](StructureDefinition-fr-lm-auteur-apsr.md) | Auteur APSR (Anatomic Pathology Structured Report), la structure de cet élément est identique à celle de l’élément Auteur |
 | [Modèle logique métier - FR LM Autorisation exposition](StructureDefinition-fr-lm-autorisation-exposition.md) | Autorisation exposition |
 | [Modèle logique métier - FR LM Autorisation substitution](StructureDefinition-fr-lm-autorisation-substitution.md) | Autorisation substitution |
@@ -285,8 +284,32 @@ Modèles de données métier représentant les concepts élémentaires, modélis
 | [CDA - FR Education du patient](StructureDefinition-fr-cda-education-du-patient.md) | IHE-PCC - Patient Education Section* Liste des éléments se rapportant à l’éducation du patient vis-à-vis de sa maladie ou par rapport à un acte prévu.
  |
 | [CDA - FR Effets indesirables](StructureDefinition-fr-cda-effets-indesirables.md) | Liste des effets indésirables prévisibles liés aux médicaments. |
+| [CDA - FR Facteurs de risque professionnels non code](StructureDefinition-fr-cda-facteurs-de-risque-professionnels-non-code.md) | IHE-PCC - Hazardous-Working-Conditions-SectionFacteurs de risques professionnels sous forme narrative (section non codÃ©e). |
+| [CDA - FR Fonctions physiques](StructureDefinition-fr-cda-fonctions-physiques.md) | IHE-PCC - Physical Function Section. Cette section permet d’enregistrer les problÃ¨mes physiques fonctionnels et structurels qui concernent le patient. |
+| [CDA - FR Habitus mode de vie](StructureDefinition-fr-cda-section-habitus-mode-de-vie.md) | IHE-PCC - Coded Social History Section. Liste codÃ©e des informations relatives aux habitus et au mode de vie du patient. |
+| [CDA - FR Historique des actes](StructureDefinition-fr-cda-historique-des-actes.md) | IHE-PCC - Coded-List-Of-Surgeries. Liste codée des actes chirurgicaux, diagnostiques invasifs (ex : cathétérisme cardiaque), thérapeutiques (ex : dialyse). Cette liste contient des entrées codées FR-Acte et éventuellement des entrées FR-References-externes à des documents faisant mention de ces actes. |
+| [CDA - FR Historique des grossesses](StructureDefinition-fr-cda-historique-des-grossesses.md) | IHE-PCC - Pregnancy-History-Section. Cette section permet de décrire l’historique des grossesses de la patiente. |
+| [CDA - FR Plan de soins](StructureDefinition-fr-cda-plan-de-soins.md) | IHE-PCC - Coded Care Plan. La section Plan de soins doit contenir une description narrative des attentes en matière de soins, y compris des propositions, des objectifs et des demandes pour le suivi ou l’amélioration de l’état du patient. |
+| [CDA - FR Points de vigilances non code](StructureDefinition-fr-cda-points-de-vigilances-non-code.md) | Section FR-Points-de-vigilances-non-code. Points de vigilance sous forme narrative (section non codée). |
+| [CDA - FR Prescription dispositifs medicaux](StructureDefinition-fr-cda-prescription-dispositifs-medicaux.md) | IHE-PRE - Prescription. Cette section regroupe les lignes de prescriptions des dispositifs médicaux. |
+| [CDA - FR Prescription medicaments](StructureDefinition-fr-cda-prescription-medicaments.md) | IHE-PRE - Prescription. Cette section regroupe les lignes de prescriptions médicamenteuses. |
+| [CDA - FR Problemes actifs](StructureDefinition-fr-cda-problemes-actifs.md) | IHE-PCC - Active-Problems-Section. Liste des problèmes actifs du patient. |
+| [CDA - FR Raison de la recommandation](StructureDefinition-fr-cda-raison-de-la-recommandation.md) | IHE-PCC - Coded Reason for Referral Section. Cette section permet d’indiquer la raison pour laquelle le patient est adressé à l’hôpital, à une consultation, etc. et de donner des informations complémentaires, sous forme codées, à l’aide d’une entrée Simple observation et d’une entrée Problème. |
+| [CDA - FR Raison de la recommandation non code](StructureDefinition-fr-cda-raison-de-la-recommandation-non-code.md) | IHE-PCC Reason-For-Referral. Cette section permet d’indiquer, sous forme textuelle uniquement, la raison pour laquelle le patient est adressé à l’hôpital, à une consultation, etc. |
+| [CDA - FR Resultats](StructureDefinition-fr-cda-section-resultats.md) | Cette section regroupe les rÃ©sultats d’examens (biologie polyvalente, imagerie, cytologie, pathologie, gÃ©nÃ©tique humaine…) |
+| [CDA - FR Resultats de biologie de seconde intention](StructureDefinition-fr-cda-resultats-de-biologie-de-seconde-intention.md) | Cette section, optionnelle, est utilisée uniquement dans le cas d’usage particulier des résultats d’examen de laboratoire de biologie de seconde intention, lorsqu’ils ne peuvent être fournis dans un format structuré mais uniquement au format PDF.Cette solution permet d’encapsuler un fichier au format (PDF) et encodé en base 64 dans une section spécifique ‘Résultats de laboratoire de biologie de seconde intention’.Attention : cette solution n’est pas conseillée et reste temporaire, car à terme, tous les résultats émanant des laboratoires de biologie devront être fournis dans un format structuré et codé. |
+| [CDA - FR Resultats evenements](StructureDefinition-fr-cda-resultats-evenements.md) | IHE-PCC - Coded-Event-Outcomes. Evenements observés au décours d’un acte ou d’un problème. |
+| [CDA - FR Resultats examens](StructureDefinition-fr-cda-resultats-examens.md) | IHE-PCC - Coded Results Section. Résultats d’examens réalisés par le patient et éventuellement références à d’autres documents du dossier du patient. |
+| [CDA - FR Resultats examens non code](StructureDefinition-fr-cda-resultats-examens-non-code.md) | IHE-PCC - Results. Résultats d’examens sous forme narrative non codée. |
+| [CDA - FR Signes vitaux](StructureDefinition-fr-cda-section-signes-vitaux.md) | IHE-PCC - Coded Vital Signs. Section Liste codée des résultats mesurés des signes vitaux. |
+| [CDA - FR Statut du document](StructureDefinition-fr-cda-statut-du-document.md) | Cette section permet d’indiquer le statut du document (son état d’avancement dans le cycle de vie du document, depuis sa création jusqu’à sa validation définitive par son responsable légal. |
+| [CDA - FR Statut fonctionnel](StructureDefinition-fr-cda-statut-fonctionnel.md) | Section FR-Statut-fonctionnel. Cette section permet de décrire des résultats d’évaluation du statut fonctionnel du patient. |
+| [CDA - FR Traitements](StructureDefinition-fr-cda-traitements.md) | IHE-PCC - Medications. Liste des principales prises médicamenteuses. |
+| [CDA - FR Traitements administres](StructureDefinition-fr-cda-traitements-administres.md) | IHE-PCC - Medications-Administered. La section ‘Traitements administrés’ contient une description narrative des médicaments administrés au patient et doit inclure des entrées ‘Traitement’. |
+| [CDA - FR Traitements à la sortie](StructureDefinition-fr-cda-traitements-a-la-sortie.md) | IHE-PCC - Hospital-Discharge-Medications. La section ‘Traitements à la sortie’ contient une description narrative des médicaments à administrer au patient après sa sortie de l’hospitalisation et doit inclure des entrées ‘Traitement’. |
+| [CDA - FR Vaccinations](StructureDefinition-fr-cda-vaccinations.md) | IHE-PCC - Immunizations Section. Liste des vaccinations effectuées. |
 
-### Eléments CDA du corps 
+### Eléments CDA corps des composants élémentaires 
 
 | | |
 | :--- | :--- |
@@ -524,7 +547,7 @@ Modèles de données métier représentant les concepts élémentaires, modélis
  |
 | [Observation - FR Observation Vital Signs Panel Document](StructureDefinition-fr-Observation-vital-signs-panel-document.md) | FRObservationVitalSignsPanelDocument permet de regrouper des informations relatives aux mesures cliniques du patient. |
 | [Observation - FR Observation Work Related Accident Document](StructureDefinition-fr-observation-work-related-accident-document.md) | FRObservationWorkRelatedAccidentDocument permet d’indiquer si l’élément auquel elle est associée est en rapport avec un accident du travail / une maladie professionnelle. |
-| [Procedure - FR Procedure Act Document](StructureDefinition-fr-procedure-act-document.md) | FRProcedureActDocument est un profil utilisé pour décrire un acte planifié ou réalisé. |
+| [Procedure - FR Procedure Document](StructureDefinition-fr-procedure-document.md) | FRProcedureDocument est un profil utilisé pour décrire un acte planifié ou réalisé. |
 | [Procedure - FR Procedure Imaging Document](StructureDefinition-fr-procedure-imaging-document.md) | FRProcedureImagingDocument permet d’enregistrer les différents paramètres de l’acquisition d’image : acte d’imagerie, localisation anatomique / latéralité / topographie, d’autres paramètres de l’acte |
 | [ServiceRequest - FR Service Request Document](StructureDefinition-fr-service-request-document.md) | FRServiceRequestDocument profil permet de porter des demandes d’examens (analyses biologiques, évaluations, étude d’imagerie, etc…) ou de suivis particuliers à programmer dans le cadre d’un plan de soins. |
 | [Specimen - FR Specimen Document](StructureDefinition-fr-specimen-document.md) | FRSpecimenDocument est un profil utilisé pour décrire le prélèvement et l’échantillon biologique (le matériel). |
@@ -683,7 +706,7 @@ Modèles de données métier représentant les concepts élémentaires, modélis
 | | |
 | :--- | :--- |
 | [Mapping FRLMAccidentsTransfusionnels → FRCDAAccidentsTransfusionnels → FRObservationTransfusionAccidentsDocument](ConceptMap-FRObservationTransfusionAccidentsLMCDAFHIR.md) | Mapping des éléments du modèle métier FRLMAccidentsTransfusionnels vers le profil CDA FRCDAAccidentsTransfusionnels, puis vers le profil FHIR FRObservationTransfusionAccidentsDocument. |
-| [Mapping FRLMActe → FRCDAActe → FRProcedureActDocument](ConceptMap-FRActLMCDAFHIR.md) | Mapping des éléments du modèle métier FRLMActe vers le profil CDA FRCDAActe, puis vers le profil FHIR FRProcedureActDocument. |
+| [Mapping FRLMActe → FRCDAActe → FRProcedureDocument](ConceptMap-FRProcedureLMCDAFHIR.md) | Mapping des éléments du modèle métier FRLMActe vers le profil CDA FRCDAActe, puis vers le profil FHIR FRProcedureDocument. |
 | [Mapping FRLMActeSubstitution → FRCDAActeSubstitution → FRMedicationDispenseDocument](ConceptMap-FRActSubstitutionLMCDAFHIR.md) | Mapping des éléments du modèle métier FRLMActeSubstitution vers le profil CDA FRCDAActeSubstitution, puis vers le profil FHIR FRMedicationDispenseDocument. |
 | [Mapping FRLMAdministrationDeDerivesDuSang → FRCDAAdministrationDeDerivesDuSang → FRObservationAdministrationBloodDerivativesDocument](ConceptMap-FRObservationAdministrationBloodDerivativesLMCDAFHIR.md) | Mapping des éléments du modèle métier FRLMAdministrationDeDerivesDuSang vers le profil CDA FRCDAAdministrationDeDerivesDuSang, puis vers le profil FHIR FRObservationAdministrationBloodDerivativesDocument. |
 | [Mapping FRLMAdministrationProduitDeSante -> FRCDADICOMAdministrationProduitDeSante -> FRMedicationAdministrationDocument](ConceptMap-FRImagingMedicationAministrationLMCDAFHIR.md) | Mapping des éléments du modele metier FRLMAdministrationProduitDeSante vers le profil CDA FRCDADICOMAdministrationProduitDeSante, puis vers le profil FHIR FRMedicationAdministrationDocument. |
@@ -754,6 +777,7 @@ These define data models that represent the domain covered by this implementatio
 | :--- | :--- |
 | [CDA - FR Dispositifs medicaux](StructureDefinition-fr-dispositifs-medicaux.md) | IHE-PCC - Medical Devices SectionCette section ‘Dispositifs médicaux’ contient une description des dispositifs médicaux implantés (EES, DF, prothèses) chez le malade sous forme codée. |
 | [CDA - FR Traitement subordonne](StructureDefinition-fr-cda-traitement-subordonne.md) | Entrée FR-Traitement-subordonne: Une entrée FR-Traitement de premier niveau peut contenir une ou plusieurs sous-entrées FR-Traitement-subordonne pour les cas spécifiques des dosages progressifs, fractionnés ou conditionnels, ou pour gérer la combinaison de médicaments. L’utilisation de sous-entrées FR-Traitement-subordonne pour traiter ces cas est facultative. Dans le cas où l’entrée FR-Traitement-subordonne n’est pas utilisée, l’information doit être fournie dans la partie narrative de l’entrée FR-Traitement de premier niveau sous forme de texte libre.Pour les dosages progressifs, fractionnés ou conditionnels, les sous-entrées FR-Traitement-subordonne ne doivent spécifier que la fréquence et / ou le dosage modifiés.Pour le dosage conditionnel, chaque sous-entrée FR-Traitement-subordonne doit avoir un élément ‘precondition’ pour indiquer les conditions préalables à l’utilisation du médicament.Pour la combinaison de médicaments, chaque sous-entrée FR-Traitement-subordonne précisera le produit entrant dans la combinaison. |
+| [CDA - FR resultats](StructureDefinition-fr-cda-resultats.md) | Entrée FR-resultats: L’entrée ‘FR-Resultats’ est une entrée de type ‘organizer’ regroupant les types des résultats classés par type d’examens (BIO, IMG, etc…). |
 | [Modèle logique métier - FR LM Notes du dispensateur](StructureDefinition-fr-lm-notes-dispensateur.md) | Notes du dispensateur |
 | [Modèle logique métier - FR LM Observation Result](StructureDefinition-fr-lm-observation-result.md) | Résultat d’une observation médicale (résultat d’examen de laboratoire, d’imagerie, etc.) |
 | [Modèle logique métier - FR LM Posologie](StructureDefinition-fr-lm-posologie.md) | Posologie |

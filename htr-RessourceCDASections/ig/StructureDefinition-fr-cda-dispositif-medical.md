@@ -1,4 +1,4 @@
-# CDA - FR Dispositif medical - ANS IG document core v0.1.0-snapsnot
+# CDA - FR Dispositif medical - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dispositif-medical | *Version*:0.1.0-snapsnot |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dispositif-medical | *Version*:0.1.0-snapshot |
 | Draft as of 2026-04-17 | *Computable Name*:FRCDADispositifMedical |
 
  
@@ -16,7 +16,7 @@ Entrée FR-Dispositif-medical: L’entrée Dispositif Médical est une entrée d
 
 **Utilisations:**
 
-* Utilise ce/t/te Profil de modèle logique: [CDA - FR Dispositifs medicaux](StructureDefinition-fr-dispositifs-medicaux.md)
+* Utilise ce/t/te Profil de modèle logique: [CDA - FR Prescription dispositifs medicaux](StructureDefinition-fr-cda-prescription-dispositifs-medicaux.md) and [CDA - FR Dispositifs medicaux](StructureDefinition-fr-dispositifs-medicaux.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-dispositif-medical)
 
@@ -62,11 +62,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dispositif-me
     "valueUri" : "cda"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dispositif-medical",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRCDADispositifMedical",
   "title" : "CDA - FR Dispositif medical",
   "status" : "draft",
-  "date" : "2026-04-17T08:26:12+00:00",
+  "date" : "2026-04-17T09:16:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

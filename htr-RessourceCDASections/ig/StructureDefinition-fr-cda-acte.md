@@ -1,4 +1,4 @@
-# CDA - FR Acte - ANS IG document core v0.1.0-snapsnot
+# CDA - FR Acte - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-acte | *Version*:0.1.0-snapsnot |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-acte | *Version*:0.1.0-snapshot |
 | Draft as of 2026-04-17 | *Computable Name*:FRCDAActe |
 
  
@@ -16,7 +16,7 @@ Entrée FR-Acte: IHE-PCC - Procedure. L’entrée ‘Acte’ est une entrée de 
 
 **Utilisations:**
 
-* Utilise ce/t/te Profil de modèle logique: [CDA - FR Education du patient](StructureDefinition-fr-cda-education-du-patient.md)
+* Utilise ce/t/te Profil de modèle logique: [CDA - FR Education du patient](StructureDefinition-fr-cda-education-du-patient.md), [CDA - FR Historique des actes](StructureDefinition-fr-cda-historique-des-actes.md), [CDA - FR Plan de soins](StructureDefinition-fr-cda-plan-de-soins.md) and [CDA - FR Resultats examens](StructureDefinition-fr-cda-resultats-examens.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-acte)
 
@@ -62,11 +62,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-acte.csv), [E
     "valueUri" : "cda"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-acte",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRCDAActe",
   "title" : "CDA - FR Acte",
   "status" : "draft",
-  "date" : "2026-04-17T08:26:12+00:00",
+  "date" : "2026-04-17T09:16:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

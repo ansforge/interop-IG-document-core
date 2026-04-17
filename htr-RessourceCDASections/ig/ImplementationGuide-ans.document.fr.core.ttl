@@ -17,11 +17,11 @@
      fhir:v "https://interop.esante.gouv.fr/ig/document/core/ImplementationGuide/ans.document.fr.core"^^xsd:anyURI ;
      fhir:l <https://interop.esante.gouv.fr/ig/document/core/ImplementationGuide/ans.document.fr.core>
   ] ; # 
-  fhir:version [ fhir:v "0.1.0-snapsnot"] ; # 
+  fhir:version [ fhir:v "0.1.0-snapshot"] ; # 
   fhir:name [ fhir:v "FRDocumentCore"] ; # 
   fhir:title [ fhir:v "ANS IG document core"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-04-17T08:26:12+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-04-17T09:16:30+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -1451,7 +1451,7 @@
        fhir:name [ fhir:v "Eléments CDA du corps des sections" ]
      ] [
        fhir:id [ fhir:v "Ressources CDA corps des composants élémentaires" ] ;
-       fhir:name [ fhir:v "Eléments CDA du corps" ]
+       fhir:name [ fhir:v "Eléments CDA corps des composants élémentaires" ]
      ] [
        fhir:id [ fhir:v "Ressources FHIR entête" ] ;
        fhir:name [ fhir:v "Profils FHIR entête" ]
@@ -3468,6 +3468,50 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-facteurs-de-risque-professionnels-non-code> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-cda-facteurs-de-risque-professionnels-non-code" ]
+       ] ;
+       fhir:name [ fhir:v "CDA - FR Facteurs de risque professionnels non code" ] ;
+       fhir:description [ fhir:v "IHE-PCC - Hazardous-Working-Conditions-SectionFacteurs de risques professionnels sous forme narrative (section non codÃ©e)." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Ressources CDA corps des sections" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-fonctions-physiques> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-cda-fonctions-physiques" ]
+       ] ;
+       fhir:name [ fhir:v "CDA - FR Fonctions physiques" ] ;
+       fhir:description [ fhir:v "IHE-PCC - Physical Function Section. Cette section permet d'enregistrer les problÃ¨mes physiques fonctionnels et structurels qui concernent le patient." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Ressources CDA corps des sections" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-gravite-effet-indesirable> ;
          fhir:reference [ fhir:v "StructureDefinition/fr-cda-gravite-effet-indesirable" ]
        ] ;
@@ -3534,6 +3578,28 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-section-habitus-mode-de-vie> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-cda-section-habitus-mode-de-vie" ]
+       ] ;
+       fhir:name [ fhir:v "CDA - FR Habitus mode de vie" ] ;
+       fhir:description [ fhir:v "IHE-PCC - Coded Social History Section. Liste codÃ©e des informations relatives aux habitus et au mode de vie du patient." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Ressources CDA corps des sections" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-historique-de-la-grossesse> ;
          fhir:reference [ fhir:v "StructureDefinition/fr-cda-historique-de-la-grossesse" ]
        ] ;
@@ -3544,6 +3610,50 @@
          fhir:v false
        ] ;
        fhir:groupingId [ fhir:v "Ressources CDA corps des composants élémentaires" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-historique-des-actes> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-cda-historique-des-actes" ]
+       ] ;
+       fhir:name [ fhir:v "CDA - FR Historique des actes" ] ;
+       fhir:description [ fhir:v "IHE-PCC - Coded-List-Of-Surgeries. Liste codée des actes chirurgicaux, diagnostiques invasifs (ex : cathétérisme cardiaque), thérapeutiques (ex : dialyse). Cette liste contient des entrées codées FR-Acte et éventuellement des entrées FR-References-externes à des documents faisant mention de ces actes." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Ressources CDA corps des sections" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-historique-des-grossesses> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-cda-historique-des-grossesses" ]
+       ] ;
+       fhir:name [ fhir:v "CDA - FR Historique des grossesses" ] ;
+       fhir:description [ fhir:v "IHE-PCC - Pregnancy-History-Section. Cette section permet de décrire l'historique des grossesses de la patiente." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Ressources CDA corps des sections" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -4150,6 +4260,50 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-plan-de-soins> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-cda-plan-de-soins" ]
+       ] ;
+       fhir:name [ fhir:v "CDA - FR Plan de soins" ] ;
+       fhir:description [ fhir:v "IHE-PCC - Coded Care Plan. La section Plan de soins doit contenir une description narrative des attentes en matière de soins, y compris des propositions, des objectifs et des demandes pour le suivi ou l'amélioration de l'état du patient." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Ressources CDA corps des sections" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-points-de-vigilances-non-code> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-cda-points-de-vigilances-non-code" ]
+       ] ;
+       fhir:name [ fhir:v "CDA - FR Points de vigilances non code" ] ;
+       fhir:description [ fhir:v "Section FR-Points-de-vigilances-non-code. Points de vigilance sous forme narrative (section non codée)." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Ressources CDA corps des sections" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-prelevement> ;
          fhir:reference [ fhir:v "StructureDefinition/fr-cda-prelevement" ]
        ] ;
@@ -4194,6 +4348,50 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-prescription-dispositifs-medicaux> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-cda-prescription-dispositifs-medicaux" ]
+       ] ;
+       fhir:name [ fhir:v "CDA - FR Prescription dispositifs medicaux" ] ;
+       fhir:description [ fhir:v "IHE-PRE - Prescription. Cette section regroupe les lignes de prescriptions des dispositifs médicaux." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Ressources CDA corps des sections" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-prescription-medicaments> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-cda-prescription-medicaments" ]
+       ] ;
+       fhir:name [ fhir:v "CDA - FR Prescription medicaments" ] ;
+       fhir:description [ fhir:v "IHE-PRE - Prescription. Cette section regroupe les lignes de prescriptions médicamenteuses." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Ressources CDA corps des sections" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-probleme> ;
          fhir:reference [ fhir:v "StructureDefinition/fr-cda-probleme" ]
        ] ;
@@ -4204,6 +4402,28 @@
          fhir:v false
        ] ;
        fhir:groupingId [ fhir:v "Ressources CDA corps des composants élémentaires" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-problemes-actifs> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-cda-problemes-actifs" ]
+       ] ;
+       fhir:name [ fhir:v "CDA - FR Problemes actifs" ] ;
+       fhir:description [ fhir:v "IHE-PCC - Active-Problems-Section. Liste des problèmes actifs du patient." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Ressources CDA corps des sections" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -4248,6 +4468,50 @@
          fhir:v false
        ] ;
        fhir:groupingId [ fhir:v "Ressources CDA corps des composants élémentaires" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-raison-de-la-recommandation> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-cda-raison-de-la-recommandation" ]
+       ] ;
+       fhir:name [ fhir:v "CDA - FR Raison de la recommandation" ] ;
+       fhir:description [ fhir:v "IHE-PCC - Coded Reason for Referral Section. Cette section permet d'indiquer la raison pour laquelle le patient est adressé à l'hôpital, à une consultation, etc. et de donner des informations complémentaires, sous forme codées, à l'aide d'une entrée Simple observation et d'une entrée Problème." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Ressources CDA corps des sections" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-raison-de-la-recommandation-non-code> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-cda-raison-de-la-recommandation-non-code" ]
+       ] ;
+       fhir:name [ fhir:v "CDA - FR Raison de la recommandation non code" ] ;
+       fhir:description [ fhir:v "IHE-PCC Reason-For-Referral. Cette section permet d'indiquer, sous forme textuelle uniquement, la raison pour laquelle le patient est adressé à l'hôpital, à une consultation, etc." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Ressources CDA corps des sections" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -4458,6 +4722,115 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-resultats> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-cda-resultats" ]
+       ] ;
+       fhir:name [ fhir:v "CDA - FR resultats" ] ;
+       fhir:description [ fhir:v "Entrée FR-resultats: L'entrée 'FR-Resultats' est une entrée de type 'organizer' regroupant les types des résultats classés par type d’examens (BIO, IMG, etc…)." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-section-resultats> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-cda-section-resultats" ]
+       ] ;
+       fhir:name [ fhir:v "CDA - FR Resultats" ] ;
+       fhir:description [ fhir:v "Cette section regroupe les rÃ©sultats d'examens (biologie polyvalente, imagerie, cytologie, pathologie, gÃ©nÃ©tique humaine...)" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Ressources CDA corps des sections" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-resultats-de-biologie-de-seconde-intention> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-cda-resultats-de-biologie-de-seconde-intention" ]
+       ] ;
+       fhir:name [ fhir:v "CDA - FR Resultats de biologie de seconde intention" ] ;
+       fhir:description [ fhir:v "Cette section, optionnelle, est utilisée uniquement dans le cas d'usage particulier des résultats d'examen de laboratoire de biologie de seconde intention, lorsqu'ils ne peuvent être fournis dans un format structuré mais uniquement au format PDF.Cette solution permet d'encapsuler un fichier au format (PDF) et encodé en base 64 dans une section spécifique 'Résultats de laboratoire de biologie de seconde intention'.Attention : cette solution n'est pas conseillée et reste temporaire, car à terme, tous les résultats émanant des laboratoires de biologie devront être fournis dans un format structuré et codé." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Ressources CDA corps des sections" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-resultats-evenements> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-cda-resultats-evenements" ]
+       ] ;
+       fhir:name [ fhir:v "CDA - FR Resultats evenements" ] ;
+       fhir:description [ fhir:v "IHE-PCC - Coded-Event-Outcomes. Evenements observés au décours d'un acte ou d'un problème." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Ressources CDA corps des sections" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-resultats-examens> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-cda-resultats-examens" ]
+       ] ;
+       fhir:name [ fhir:v "CDA - FR Resultats examens" ] ;
+       fhir:description [ fhir:v "IHE-PCC - Coded Results Section. Résultats d'examens réalisés par le patient et éventuellement références à d'autres documents du dossier du patient." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Ressources CDA corps des sections" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-resultats-examens-de-biologie-medicale> ;
          fhir:reference [ fhir:v "StructureDefinition/fr-cda-resultats-examens-de-biologie-medicale" ]
        ] ;
@@ -4468,6 +4841,28 @@
          fhir:v false
        ] ;
        fhir:groupingId [ fhir:v "Ressources CDA corps des composants élémentaires" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-resultats-examens-non-code> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-cda-resultats-examens-non-code" ]
+       ] ;
+       fhir:name [ fhir:v "CDA - FR Resultats examens non code" ] ;
+       fhir:description [ fhir:v "IHE-PCC - Results. Résultats d’examens sous forme narrative non codée." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Ressources CDA corps des sections" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -4534,6 +4929,28 @@
          fhir:v false
        ] ;
        fhir:groupingId [ fhir:v "Ressources CDA corps des composants élémentaires" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-section-signes-vitaux> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-cda-section-signes-vitaux" ]
+       ] ;
+       fhir:name [ fhir:v "CDA - FR Signes vitaux" ] ;
+       fhir:description [ fhir:v "IHE-PCC - Coded Vital Signs. Section Liste codée des résultats mesurés des signes vitaux." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Ressources CDA corps des sections" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -4634,6 +5051,28 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-statut-du-document> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-cda-statut-du-document" ]
+       ] ;
+       fhir:name [ fhir:v "CDA - FR Statut du document" ] ;
+       fhir:description [ fhir:v "Cette section permet d’indiquer le statut du document (son état d’avancement dans le cycle de vie du document, depuis sa création jusqu'à sa validation définitive par son responsable légal." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Ressources CDA corps des sections" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-statut-du-probleme> ;
          fhir:reference [ fhir:v "StructureDefinition/fr-cda-statut-du-probleme" ]
        ] ;
@@ -4644,6 +5083,28 @@
          fhir:v false
        ] ;
        fhir:groupingId [ fhir:v "Ressources CDA corps des composants élémentaires" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-statut-fonctionnel> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-cda-statut-fonctionnel" ]
+       ] ;
+       fhir:name [ fhir:v "CDA - FR Statut fonctionnel" ] ;
+       fhir:description [ fhir:v "Section FR-Statut-fonctionnel. Cette section permet de décrire des résultats d'évaluation du statut fonctionnel du patient." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Ressources CDA corps des sections" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -4853,6 +5314,72 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-traitements> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-cda-traitements" ]
+       ] ;
+       fhir:name [ fhir:v "CDA - FR Traitements" ] ;
+       fhir:description [ fhir:v "IHE-PCC - Medications. Liste des principales prises médicamenteuses." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Ressources CDA corps des sections" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-traitements-administres> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-cda-traitements-administres" ]
+       ] ;
+       fhir:name [ fhir:v "CDA - FR Traitements administres" ] ;
+       fhir:description [ fhir:v "IHE-PCC - Medications-Administered. La section 'Traitements administrés' contient une description narrative des médicaments administrés au patient et doit inclure des entrées 'Traitement'." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Ressources CDA corps des sections" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-traitements-a-la-sortie> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-cda-traitements-a-la-sortie" ]
+       ] ;
+       fhir:name [ fhir:v "CDA - FR Traitements à la sortie" ] ;
+       fhir:description [ fhir:v "IHE-PCC - Hospital-Discharge-Medications. La section 'Traitements à la sortie' contient une description narrative des médicaments à administrer au patient après sa sortie de l'hospitalisation et doit inclure des entrées 'Traitement'." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Ressources CDA corps des sections" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-transfusion-de-produits-sanguins> ;
          fhir:reference [ fhir:v "StructureDefinition/fr-cda-transfusion-de-produits-sanguins" ]
        ] ;
@@ -4973,6 +5500,28 @@
          fhir:v false
        ] ;
        fhir:groupingId [ fhir:v "Ressources CDA corps des composants élémentaires" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-vaccinations> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-cda-vaccinations" ]
+       ] ;
+       fhir:name [ fhir:v "CDA - FR Vaccinations" ] ;
+       fhir:description [ fhir:v "IHE-PCC - Immunizations Section. Liste des vaccinations effectuées." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Ressources CDA corps des sections" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -6608,11 +7157,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRActLMCDAFHIR> ;
-         fhir:reference [ fhir:v "ConceptMap/FRActLMCDAFHIR" ]
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRProcedureLMCDAFHIR> ;
+         fhir:reference [ fhir:v "ConceptMap/FRProcedureLMCDAFHIR" ]
        ] ;
-       fhir:name [ fhir:v "Mapping FRLMActe → FRCDAActe → FRProcedureActDocument" ] ;
-       fhir:description [ fhir:v "Mapping des éléments du modèle métier FRLMActe vers le profil CDA FRCDAActe, puis vers le profil FHIR FRProcedureActDocument." ] ;
+       fhir:name [ fhir:v "Mapping FRLMActe → FRCDAActe → FRProcedureDocument" ] ;
+       fhir:description [ fhir:v "Mapping des éléments du modèle métier FRLMActe vers le profil CDA FRCDAActe, puis vers le profil FHIR FRProcedureDocument." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -9845,28 +10394,6 @@
        ] ;
        fhir:name [ fhir:v "Modèle logique métier - FR LM Antécédent familial observé" ] ;
        fhir:description [ fhir:v "Antécédent familial" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-antecedents-familiaux-entree> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-lm-antecedents-familiaux-entree" ]
-       ] ;
-       fhir:name [ fhir:v "Modèle logique métier - FR LM Antécédents familiaux" ] ;
-       fhir:description [ fhir:v "Antécédents familiaux" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -13555,11 +14082,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-procedure-act-document> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-procedure-act-document" ]
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-procedure-document> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-procedure-document" ]
        ] ;
-       fhir:name [ fhir:v "Procedure - FR Procedure Act Document" ] ;
-       fhir:description [ fhir:v "FRProcedureActDocument est un profil utilisé pour décrire un acte planifié ou réalisé." ] ;
+       fhir:name [ fhir:v "Procedure - FR Procedure Document" ] ;
+       fhir:description [ fhir:v "FRProcedureDocument est un profil utilisé pour décrire un acte planifié ou réalisé." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

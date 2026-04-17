@@ -1,4 +1,4 @@
-# ValueSet - FR ValueSet Reference externe - ANS IG document core v0.1.0-snapsnot
+# ValueSet - FR ValueSet Reference externe - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-valueset-reference-externe | *Version*:0.1.0-snapsnot |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-valueset-reference-externe | *Version*:0.1.0-snapshot |
 | Draft as of 2026-04-17 | *Computable Name*:FRValueSetReferenceExterne |
 
  
@@ -46,11 +46,11 @@ Jeu de valeurs regroupant les typeCode du document référencé
   "resourceType" : "ValueSet",
   "id" : "fr-valueset-reference-externe",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-valueset-reference-externe",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRValueSetReferenceExterne",
   "title" : "ValueSet - FR ValueSet Reference externe",
   "status" : "draft",
-  "date" : "2026-04-17T08:26:12+00:00",
+  "date" : "2026-04-17T09:16:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

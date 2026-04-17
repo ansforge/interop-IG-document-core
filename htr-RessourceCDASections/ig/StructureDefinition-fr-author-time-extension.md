@@ -1,4 +1,4 @@
-# FR Author Time Extension - ANS IG document core v0.1.0-snapsnot
+# FR Author Time Extension - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-author-time-extension | *Version*:0.1.0-snapsnot |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-author-time-extension | *Version*:0.1.0-snapshot |
 | Draft as of 2026-04-17 | *Computable Name*:FRAuthorTimeExtension |
 
 Extension permettant d’ajouter un horodatage (TS) à l’élément author d’une Composition.
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-author-time-exten
   "resourceType" : "StructureDefinition",
   "id" : "fr-author-time-extension",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-author-time-extension",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRAuthorTimeExtension",
   "title" : "FR Author Time Extension",
   "status" : "draft",
-  "date" : "2026-04-17T08:26:12+00:00",
+  "date" : "2026-04-17T09:16:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

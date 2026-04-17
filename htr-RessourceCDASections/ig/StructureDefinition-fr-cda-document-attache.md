@@ -1,4 +1,4 @@
-# CDA - FR Document attache - ANS IG document core v0.1.0-snapsnot
+# CDA - FR Document attache - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-document-attache | *Version*:0.1.0-snapsnot |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-document-attache | *Version*:0.1.0-snapshot |
 | Draft as of 2026-04-17 | *Computable Name*:FRCDADocumentAttache |
 
  
@@ -19,7 +19,7 @@ Entrée FR-Document-attache: L’entrée Document Attaché est une entrée de ty
 
 **Utilisations:**
 
-* Utilise ce/t/te Profil de modèle logique: [CDA - FR Document PDF copie](StructureDefinition-fr-cda-document-pdf-copie.md) and [CDA - FR Documents ajoutes](StructureDefinition-fr-cda-documents-ajoutes.md)
+* Utilise ce/t/te Profil de modèle logique: [CDA - FR Document PDF copie](StructureDefinition-fr-cda-document-pdf-copie.md), [CDA - FR Documents ajoutes](StructureDefinition-fr-cda-documents-ajoutes.md) and [CDA - FR Resultats de biologie de seconde intention](StructureDefinition-fr-cda-resultats-de-biologie-de-seconde-intention.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-document-attache)
 
@@ -65,11 +65,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-document-atta
     "valueUri" : "cda"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-document-attache",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRCDADocumentAttache",
   "title" : "CDA - FR Document attache",
   "status" : "draft",
-  "date" : "2026-04-17T08:26:12+00:00",
+  "date" : "2026-04-17T09:16:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

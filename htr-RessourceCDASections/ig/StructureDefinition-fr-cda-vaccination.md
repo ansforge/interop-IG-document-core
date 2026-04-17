@@ -1,4 +1,4 @@
-# CDA - FR Vaccination - ANS IG document core v0.1.0-snapsnot
+# CDA - FR Vaccination - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-vaccination | *Version*:0.1.0-snapsnot |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-vaccination | *Version*:0.1.0-snapshot |
 | Draft as of 2026-04-17 | *Computable Name*:FRCDAVaccination |
 
  
@@ -16,7 +16,7 @@ Entrée FR-Vaccination: IHE-PCC - Immunizations. L’entrée Vaccination est une
 
 **Utilisations:**
 
-* Ce Profil de modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
+* Utilise ce/t/te Profil de modèle logique: [CDA - FR Vaccinations](StructureDefinition-fr-cda-vaccinations.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-vaccination)
 
@@ -62,11 +62,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-vaccination.c
     "valueUri" : "cda"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-vaccination",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRCDAVaccination",
   "title" : "CDA - FR Vaccination",
   "status" : "draft",
-  "date" : "2026-04-17T08:26:12+00:00",
+  "date" : "2026-04-17T09:16:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

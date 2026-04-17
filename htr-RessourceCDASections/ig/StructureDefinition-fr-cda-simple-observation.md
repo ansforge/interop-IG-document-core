@@ -1,4 +1,4 @@
-# CDA - FR Simple Observation - ANS IG document core v0.1.0-snapsnot
+# CDA - FR Simple Observation - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-simple-observation | *Version*:0.1.0-snapsnot |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-simple-observation | *Version*:0.1.0-snapshot |
 | Draft as of 2026-04-17 | *Computable Name*:FRCDASimpleObservation |
 
  
@@ -16,7 +16,7 @@ Entrée FR-Simple-Observation: IHE-PCC - Simple-Observation. Cette entrée est u
 
 **Utilisations:**
 
-* Utilise ce/t/te Profil de modèle logique: [CDA - FR Acte](StructureDefinition-fr-cda-acte.md), [CDA - FR Documents ajoutes](StructureDefinition-fr-cda-documents-ajoutes.md), [CDA - FR Education du patient](StructureDefinition-fr-cda-education-du-patient.md), [CDA - FR Evenement](StructureDefinition-fr-cda-evenement.md)... Show 2 more, [CDA - FR Transport du patient](StructureDefinition-fr-cda-transport-du-patient.md) and [CDA - FR Transport du professionnel](StructureDefinition-fr-cda-transport-du-professionnel.md)
+* Utilise ce/t/te Profil de modèle logique: [CDA - FR Acte](StructureDefinition-fr-cda-acte.md), [CDA - FR Documents ajoutes](StructureDefinition-fr-cda-documents-ajoutes.md), [CDA - FR Education du patient](StructureDefinition-fr-cda-education-du-patient.md), [CDA - FR Evenement](StructureDefinition-fr-cda-evenement.md)... Show 6 more, [CDA - FR Raison de la recommandation](StructureDefinition-fr-cda-raison-de-la-recommandation.md), [CDA - FR Resultats de biologie de seconde intention](StructureDefinition-fr-cda-resultats-de-biologie-de-seconde-intention.md), [CDA - FR Resultats evenements](StructureDefinition-fr-cda-resultats-evenements.md), [CDA - FR Resultats examens](StructureDefinition-fr-cda-resultats-examens.md), [CDA - FR Transport du patient](StructureDefinition-fr-cda-transport-du-patient.md) and [CDA - FR Transport du professionnel](StructureDefinition-fr-cda-transport-du-professionnel.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-simple-observation)
 
@@ -62,11 +62,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-simple-observ
     "valueUri" : "cda"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-simple-observation",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRCDASimpleObservation",
   "title" : "CDA - FR Simple Observation",
   "status" : "draft",
-  "date" : "2026-04-17T08:26:12+00:00",
+  "date" : "2026-04-17T09:16:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -1,4 +1,4 @@
-# Mapping FRLMExpositionRadiations → FRCDADICOMExpositionAuxRadiations → FRCompositionDocument.section:exposureRadiation - ANS IG document core v0.1.0-snapsnot
+# Mapping FRLMExpositionRadiations → FRCDADICOMExpositionAuxRadiations → FRCompositionDocument.section:exposureRadiation - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRSectionExposureRadiationLMCDAFHIR | *Version*:0.1.0-snapsnot |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRSectionExposureRadiationLMCDAFHIR | *Version*:0.1.0-snapshot |
 | Draft as of 2026-04-17 | *Computable Name*: |
 
  
@@ -23,10 +23,10 @@ Mapping des éléments du modèle métier FRLMExpositionRadiations vers la secti
   "resourceType" : "ConceptMap",
   "id" : "FRSectionExposureRadiationLMCDAFHIR",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRSectionExposureRadiationLMCDAFHIR",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "title" : "Mapping Métier/CDA/FHIR : \"Exposition aux radiations\"",
   "status" : "draft",
-  "date" : "2026-04-17T08:26:12+00:00",
+  "date" : "2026-04-17T09:16:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -98,14 +98,14 @@ Mapping des éléments du modèle métier FRLMExpositionRadiations vers la secti
     {
       "code" : "FRLMExpositionRadiations.entree.observationGrossesse",
       "target" : [{
-        "code" : "FRCDADICOMExpositionAuxRadiations.entry:frDICOMObservation",
+        "code" : "FRCDADICOMExpositionAuxRadiations.entry:frDicomObservationGrossesse",
         "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "FRLMExpositionRadiations.entree.observationIndication",
       "target" : [{
-        "code" : "FRCDADICOMExpositionAuxRadiations.entry:frDICOMObservation",
+        "code" : "FRCDADICOMExpositionAuxRadiations.entry:frDicomObservationIndication",
         "equivalence" : "equivalent"
       }]
     }]
@@ -163,14 +163,14 @@ Mapping des éléments du modèle métier FRLMExpositionRadiations vers la secti
       }]
     },
     {
-      "code" : "FRCDADICOMExpositionAuxRadiations.entry:frDICOMObservation",
+      "code" : "FRCDADICOMExpositionAuxRadiations.entry:frDicomObservationGrossesse",
       "target" : [{
         "code" : "FRCompositionDocument.section:exposureRadiation.entry:FRObservationRadiationExposureDocument.hasMember:observationGrossesse",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "FRCDADICOMExpositionAuxRadiations.entry:frDICOMObservation",
+      "code" : "FRCDADICOMExpositionAuxRadiations.entry:frDicomObservationIndication",
       "target" : [{
         "code" : "FRCompositionDocument.section:exposureRadiation.entry:FRObservationRadiationExposureDocument.hasMember:observationIndication",
         "equivalence" : "equivalent"

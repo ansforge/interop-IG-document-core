@@ -1,4 +1,4 @@
-# Immunization - FR Immunization Document - ANS IG document core v0.1.0-snapsnot
+# Immunization - FR Immunization Document - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-immunization-document | *Version*:0.1.0-snapsnot |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-immunization-document | *Version*:0.1.0-snapshot |
 | Draft as of 2026-04-17 | *Computable Name*:FRImmunizationDocument |
 
  
@@ -40,11 +40,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-immunization-docu
   "resourceType" : "StructureDefinition",
   "id" : "fr-immunization-document",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-immunization-document",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRImmunizationDocument",
   "title" : "Immunization - FR Immunization Document",
   "status" : "draft",
-  "date" : "2026-04-17T08:26:12+00:00",
+  "date" : "2026-04-17T09:16:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

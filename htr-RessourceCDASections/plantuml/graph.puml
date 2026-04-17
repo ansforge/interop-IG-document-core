@@ -2118,6 +2118,47 @@ package IG #DDDDDD{
              Observation.value => [1..1]
         } 
 
+        class FRCDASectionFacteursDeRisqueProfessionnelsNonCode{
+
+             Section => [None..None]
+             Section.templateId => [1..2]
+             Section.templateId:iheSectionHazardousWorkingConditions => [1..1]
+             Section.templateId:iheSectionHazardousWorkingConditions.root => [1..None]
+             Section.templateId:frSectionFacteursDeRisqueProfessionnelsNonCode => [0..1]
+             Section.templateId:frSectionFacteursDeRisqueProfessionnelsNonCode.root => [1..None]
+             Section.id => [1..None]
+             Section.code => [1..None]
+             Section.code.code => [1..None]
+             Section.code.codeSystem => [1..None]
+             Section.code.codeSystemName => [None..None]
+             Section.code.displayName => [1..None]
+             Section.title => [None..None]
+             Section.text => [1..None]
+        } 
+
+        class FRCDASectionFonctionsPhysiques{
+
+             Section => [None..None]
+             Section.templateId => [1..2]
+             Section.templateId:iheSectionPhysicalFunction => [1..1]
+             Section.templateId:iheSectionPhysicalFunction.root => [1..None]
+             Section.templateId:frSectionFonctionsPhysiques => [0..1]
+             Section.templateId:frSectionFonctionsPhysiques.root => [1..None]
+             Section.id => [None..None]
+             Section.code => [1..None]
+             Section.code.code => [1..None]
+             Section.code.codeSystem => [1..None]
+             Section.code.codeSystemName => [None..None]
+             Section.code.displayName => [1..None]
+             Section.title => [None..None]
+             Section.text => [1..None]
+             Section.entry => [None..None]
+             Section.entry:frGroupeDeQuestionnairesDevaluation => [0..*]
+             Section.entry:frGroupeDeQuestionnairesDevaluation.organizer => [None..None]
+             Section.entry:frEvaluation => [0..*]
+             Section.entry:frEvaluation.observation => [None..None]
+        } 
+
         class FRCDAGraviteEffetIndesirable{
 
              Observation.templateId => [1..1]
@@ -2138,7 +2179,6 @@ package IG #DDDDDD{
 
         class FRCDAGroupeDeQuestionnairesDEvaluation{
 
-             Organizer => [None..None]
              Organizer.templateId => [3..3]
              Organizer.templateId:iheSurveyPanel => [1..1]
              Organizer.templateId:iheSurveyPanel.root => [1..None]
@@ -2234,6 +2274,56 @@ package IG #DDDDDD{
              Organizer.component:frNaissance.observation => [None..None]
              Organizer.component:frNaissance.organizer => [None..None]
              Organizer.component:frObservationSurLaGrossesse => [0..1]
+        } 
+
+        class FRCDASectionHistoriqueDesActes{
+
+             Section => [None..None]
+             Section.templateId => [4..4]
+             Section.templateId:iheSectionListOfSurgeries => [1..1]
+             Section.templateId:iheSectionListOfSurgeries.root => [1..None]
+             Section.templateId:iheSectionCodedListOfSurgeries => [1..1]
+             Section.templateId:iheSectionCodedListOfSurgeries.root => [1..None]
+             Section.templateId:ccdSectionProcedures => [1..1]
+             Section.templateId:ccdSectionProcedures.root => [1..None]
+             Section.templateId:frSectionHistoriqueDesActes => [1..1]
+             Section.templateId:frSectionHistoriqueDesActes.root => [1..None]
+             Section.id => [1..None]
+             Section.code => [1..None]
+             Section.code.code => [1..None]
+             Section.code.codeSystem => [1..None]
+             Section.code.codeSystemName => [None..None]
+             Section.code.displayName => [1..None]
+             Section.title => [1..None]
+             Section.text => [1..None]
+             Section.entry => [1..None]
+             Section.entry:frActe => [1..*]
+             Section.entry:frActe.procedure => [None..None]
+             Section.entry:frReferencesExternes => [0..*]
+             Section.entry:frReferencesExternes.act => [None..None]
+        } 
+
+        class FRCDASectionHistoriqueDesGrossesses{
+
+             Section => [None..None]
+             Section.templateId => [2..2]
+             Section.templateId:iheSectionPregnancyHistory => [1..1]
+             Section.templateId:iheSectionPregnancyHistory.root => [1..None]
+             Section.templateId:frSectionHistoriqueDesGrossesses => [1..1]
+             Section.templateId:frSectionHistoriqueDesGrossesses.root => [1..None]
+             Section.id => [None..None]
+             Section.code => [1..None]
+             Section.code.code => [1..None]
+             Section.code.codeSystem => [1..None]
+             Section.code.codeSystemName => [None..None]
+             Section.code.displayName => [1..None]
+             Section.title => [1..None]
+             Section.text => [1..None]
+             Section.entry => [1..None]
+             Section.entry:frObservationSurLaGrossesse => [0..*]
+             Section.entry:frObservationSurLaGrossesse.observation => [None..None]
+             Section.entry:frHistoriqueDeLaGrossesse => [0..*]
+             Section.entry:frHistoriqueDeLaGrossesse.organizer => [None..None]
         } 
 
         class FRCDAHorsAMM{
@@ -3057,6 +3147,53 @@ package IG #DDDDDD{
              Supply.effectiveTime => [1..1]
         } 
 
+        class FRCDASectionPlanDeSoins{
+
+             Section => [None..None]
+             Section.templateId => [3..3]
+             Section.templateId:iheSectionCodedCarePlan => [1..1]
+             Section.templateId:iheSectionCodedCarePlan.root => [1..None]
+             Section.templateId:ccdSectionCodedCarePlan => [1..1]
+             Section.templateId:ccdSectionCodedCarePlan.root => [1..None]
+             Section.templateId:frSectionPlanDeSoins => [1..1]
+             Section.templateId:frSectionPlanDeSoins.root => [1..None]
+             Section.id => [None..None]
+             Section.code => [1..None]
+             Section.code.code => [1..None]
+             Section.code.codeSystem => [1..None]
+             Section.code.codeSystemName => [None..None]
+             Section.code.displayName => [1..None]
+             Section.title => [1..None]
+             Section.text => [1..None]
+             Section.entry => [None..None]
+             Section.entry:frActe => [0..*]
+             Section.entry:frActe.procedure => [None..None]
+             Section.entry:frDemandeDexamenOuDeSuivi => [0..*]
+             Section.entry:frDemandeDexamenOuDeSuivi.observation => [None..None]
+             Section.entry:frTraitement => [0..*]
+             Section.entry:frTraitement.substanceAdministration => [None..None]
+             Section.entry:frVaccinRecommande => [0..*]
+             Section.entry:frVaccinRecommande.substanceAdministration => [None..None]
+             Section.entry:frRencontre => [0..*]
+             Section.entry:frRencontre.encounter => [None..None]
+        } 
+
+        class FRCDASectionPointsDeVigilancesNonCode{
+
+             Section => [None..None]
+             Section.templateId => [1..1]
+             Section.templateId:frSectionPointsDeVigilancesNonCode => [1..1]
+             Section.templateId:frSectionPointsDeVigilancesNonCode.root => [1..None]
+             Section.id => [1..None]
+             Section.code => [1..None]
+             Section.code.code => [1..None]
+             Section.code.codeSystem => [1..None]
+             Section.code.codeSystemName => [None..None]
+             Section.code.displayName => [1..None]
+             Section.title => [1..None]
+             Section.text => [1..None]
+        } 
+
         class FRCDAPrelevement{
 
              Procedure.templateId => [2..2]
@@ -3111,6 +3248,46 @@ package IG #DDDDDD{
              Procedure.entryRelationship.act.code.codeSystemName => [None..None]
              Procedure.entryRelationship.act.code.displayName => [None..None]
              Procedure.entryRelationship.act.effectiveTime => [1..None]
+        } 
+
+        class FRCDASectionPrescriptionDispositifsMedicaux{
+
+             Section => [None..None]
+             Section.templateId => [1..1]
+             Section.templateId:frSectionPrescriptionDispositifsMedicaux => [1..1]
+             Section.templateId:frSectionPrescriptionDispositifsMedicaux.root => [1..None]
+             Section.id => [None..None]
+             Section.code => [1..None]
+             Section.code.code => [1..None]
+             Section.code.codeSystem => [1..None]
+             Section.code.codeSystemName => [None..None]
+             Section.code.displayName => [1..None]
+             Section.title => [None..None]
+             Section.text => [1..None]
+             Section.author => [None..1]
+             Section.entry => [1..None]
+             Section.entry.supply => [None..None]
+        } 
+
+        class FRCDASectionPrescriptionMedicaments{
+
+             Section => [None..None]
+             Section.templateId => [2..2]
+             Section.templateId:ihePrePrescription => [1..1]
+             Section.templateId:ihePrePrescription.root => [1..None]
+             Section.templateId:frSectionPrescriptionMedicaments => [1..1]
+             Section.templateId:frSectionPrescriptionMedicaments.root => [1..None]
+             Section.id => [1..None]
+             Section.code => [1..None]
+             Section.code.code => [1..None]
+             Section.code.codeSystem => [1..None]
+             Section.code.codeSystemName => [None..None]
+             Section.code.displayName => [1..None]
+             Section.title => [None..None]
+             Section.text => [1..None]
+             Section.author => [None..1]
+             Section.entry => [1..None]
+             Section.entry.substanceAdministration => [None..None]
         } 
 
         class FRCDAPrescription{
@@ -3195,6 +3372,28 @@ package IG #DDDDDD{
              Observation.reference.externalDocument.text.reference => [None..None]
         } 
 
+        class FRCDASectionProblemesActifs{
+
+             Section => [None..None]
+             Section.templateId => [3..3]
+             Section.templateId:frSectionProblemesActifs => [1..1]
+             Section.templateId:frSectionProblemesActifs.root => [1..None]
+             Section.templateId:ccdSectionActiveProblems => [1..1]
+             Section.templateId:ccdSectionActiveProblems.root => [1..None]
+             Section.templateId:iheSectionActiveProblems => [1..1]
+             Section.templateId:iheSectionActiveProblems.root => [1..None]
+             Section.id => [None..None]
+             Section.code => [1..None]
+             Section.code.code => [1..None]
+             Section.code.codeSystem => [1..None]
+             Section.code.codeSystemName => [None..None]
+             Section.code.displayName => [1..None]
+             Section.title => [1..None]
+             Section.text => [1..None]
+             Section.entry => [1..None]
+             Section.entry.act => [None..None]
+        } 
+
         class FRCDAProduitDeSante{
 
              ManufacturedProduct.templateId => [3..3]
@@ -3229,9 +3428,51 @@ package IG #DDDDDD{
              Supply.quantity.value => [1..None]
         } 
 
+        class FRCDASectionRaisonDeLaRecommandationNonCode{
+
+             Section => [None..None]
+             Section.templateId => [2..2]
+             Section.templateId:iheSectionReasonforReferral => [1..1]
+             Section.templateId:iheSectionReasonforReferral.root => [1..None]
+             Section.templateId:frSectionRaisonDeLaRecommandationNonCode => [1..1]
+             Section.templateId:frSectionRaisonDeLaRecommandationNonCode.root => [1..None]
+             Section.id => [None..None]
+             Section.code => [1..None]
+             Section.code.code => [1..None]
+             Section.code.codeSystem => [1..None]
+             Section.code.codeSystemName => [None..None]
+             Section.code.displayName => [1..None]
+             Section.title => [None..None]
+             Section.text => [1..None]
+        } 
+
+        class FRCDASectionRaisonDeLaRecommandation{
+
+             Section => [None..None]
+             Section.templateId => [3..3]
+             Section.templateId:frSectionRaisonDeLaRecommandation => [1..1]
+             Section.templateId:frSectionRaisonDeLaRecommandation.root => [1..None]
+             Section.templateId:iheSectionCodedReasonforReferral => [1..1]
+             Section.templateId:iheSectionCodedReasonforReferral.root => [1..None]
+             Section.templateId:iheSectionReasonforReferral => [1..1]
+             Section.templateId:iheSectionReasonforReferral.root => [1..None]
+             Section.id => [None..None]
+             Section.code => [1..None]
+             Section.code.code => [1..None]
+             Section.code.codeSystem => [1..None]
+             Section.code.codeSystemName => [None..None]
+             Section.code.displayName => [1..None]
+             Section.title => [None..None]
+             Section.text => [1..None]
+             Section.entry => [2..None]
+             Section.entry:frSimpleObservation => [1..1]
+             Section.entry:frSimpleObservation.observation => [None..None]
+             Section.entry:frProbleme => [1..*]
+             Section.entry:frProbleme.observation => [None..None]
+        } 
+
         class FRCDARangDeLaVaccination{
 
-             Observation => [None..None]
              Observation.templateId => [2..2]
              Observation.templateId:ccdMedicationSeriesNumberObservation => [1..1]
              Observation.templateId:ccdMedicationSeriesNumberObservation.root => [1..None]
@@ -3416,7 +3657,6 @@ package IG #DDDDDD{
 
         class FRCDARencontre{
 
-             Encounter => [None..None]
              Encounter.templateId => [2..4]
              Encounter.templateId:iheEncounter => [1..1]
              Encounter.templateId:iheEncounter.root => [1..None]
@@ -3567,6 +3807,53 @@ package IG #DDDDDD{
              Observation.referenceRange => [None..None]
         } 
 
+        class FRCDASectionResultatsDeBiologieDeSecondeIntention{
+
+             Section => [None..None]
+             Section.templateId => [1..1]
+             Section.templateId:frSectionResultatsDeLaboratoireDeBiologieDeSecondeIntention => [1..1]
+             Section.templateId:frSectionResultatsDeLaboratoireDeBiologieDeSecondeIntention.root => [1..None]
+             Section.id => [None..None]
+             Section.code => [1..None]
+             Section.code.code => [1..None]
+             Section.code.codeSystem => [1..None]
+             Section.code.codeSystemName => [None..None]
+             Section.code.displayName => [1..None]
+             Section.title => [None..None]
+             Section.text => [1..None]
+             Section.entry => [1..None]
+             Section.entry:frSimpleObservation => [0..1]
+             Section.entry:frSimpleObservation.observation => [None..None]
+             Section.entry:frDocumentAttache => [1..*]
+             Section.entry:frDocumentAttache.organizer => [None..None]
+        } 
+
+        class FRCDASectionResultatsEvenements{
+
+             Section => [None..None]
+             Section.templateId => [3..3]
+             Section.templateId:ihecodedEventOutcomes => [1..1]
+             Section.templateId:ihecodedEventOutcomes.root => [1..None]
+             Section.templateId:iheEventOutcomes => [1..1]
+             Section.templateId:iheEventOutcomes.root => [1..None]
+             Section.templateId:frSectionResultatsEvenements => [1..1]
+             Section.templateId:frSectionResultatsEvenements.root => [1..None]
+             Section.id => [None..None]
+             Section.code => [1..None]
+             Section.code.code => [1..None]
+             Section.code.codeSystem => [1..None]
+             Section.code.codeSystemName => [None..None]
+             Section.code.displayName => [1..None]
+             Section.title => [None..None]
+             Section.text => [1..None]
+             Section.entry => [1..None]
+             Section.entry:frSimpleObservation => [1..*]
+             Section.entry:frSimpleObservation.observation => [None..None]
+             Section.entry:frTransfertDuPatient => [0..*]
+             Section.entry:frProbleme => [0..*]
+             Section.entry:frProbleme.observation => [None..None]
+        } 
+
         class FRCDAResultatsExamensDeBiologieMedicale{
 
              Act.templateId => [2..2]
@@ -3611,6 +3898,70 @@ package IG #DDDDDD{
              Act.entryRelationship:frImageIllustrative.observationMedia => [None..None]
         } 
 
+        class FRCDASectionResultatsExamensNonCode{
+
+             Section => [None..None]
+             Section.templateId => [2..2]
+             Section.templateId:iheSectionResults => [1..1]
+             Section.templateId:iheSectionResults.root => [1..None]
+             Section.templateId:frSectionResultatsExamensNonCode => [1..1]
+             Section.templateId:frSectionResultatsExamensNonCode.root => [1..None]
+             Section.id => [None..None]
+             Section.code => [1..None]
+             Section.code.code => [1..None]
+             Section.code.codeSystem => [1..None]
+             Section.code.codeSystemName => [None..None]
+             Section.code.displayName => [1..None]
+             Section.title => [None..None]
+             Section.text => [1..None]
+        } 
+
+        class FRCDASectionResultatsExamens{
+
+             Section => [None..None]
+             Section.templateId => [3..3]
+             Section.templateId:iheSectionCodedResults => [1..1]
+             Section.templateId:iheSectionCodedResults.root => [1..None]
+             Section.templateId:iheSectionResults => [1..1]
+             Section.templateId:iheSectionResults.root => [1..None]
+             Section.templateId:frSectionResultatsExamens => [1..1]
+             Section.templateId:frSectionResultatsExamens.root => [1..None]
+             Section.id => [None..None]
+             Section.code => [1..None]
+             Section.code.code => [1..None]
+             Section.code.codeSystem => [1..None]
+             Section.code.codeSystemName => [None..None]
+             Section.code.displayName => [1..None]
+             Section.title => [None..None]
+             Section.text => [1..None]
+             Section.entry => [1..None]
+             Section.entry:frActe => [1..*]
+             Section.entry:frActe.procedure => [None..None]
+             Section.entry:frReferencesExternes => [0..*]
+             Section.entry:frReferencesExternes.act => [None..None]
+             Section.entry:frSimpleObservation => [0..*]
+             Section.entry:frSimpleObservation.observation => [None..None]
+        } 
+
+        class FRCDAResultats{
+
+             Organizer => [None..None]
+             Organizer.templateId => [1..1]
+             Organizer.templateId:frResultats => [1..1]
+             Organizer.templateId:frResultats.root => [1..None]
+             Organizer.classCode => [None..None]
+             Organizer.moodCode => [None..None]
+             Organizer.id => [1..1]
+             Organizer.code => [1..None]
+             Organizer.statusCode => [None..None]
+             Organizer.effectiveTime => [None..None]
+             Organizer.performer => [1..1]
+             Organizer.author => [1..1]
+             Organizer.component => [1..1]
+             Organizer.component:frResultat => [1..1]
+             Organizer.component:frResultat.observation => [None..None]
+        } 
+
         class FRCDASectionAntecedentsFamiliaux{
 
              Section => [None..None]
@@ -3630,6 +3981,72 @@ package IG #DDDDDD{
              Section.code.codeSystemName => [None..None]
              Section.code.displayName => [1..None]
              Section.title => [None..None]
+             Section.text => [1..None]
+             Section.entry => [1..None]
+             Section.entry.organizer => [None..None]
+        } 
+
+        class FRCDASectionHabitusModeDeVie{
+
+             Section => [None..None]
+             Section.templateId => [4..4]
+             Section.templateId:ccdSectionCodedSocialHistory => [1..1]
+             Section.templateId:ccdSectionCodedSocialHistory.root => [1..None]
+             Section.templateId:iheSectionCodedSocialHistory => [1..1]
+             Section.templateId:iheSectionCodedSocialHistory.root => [1..None]
+             Section.templateId:frSectionHabitusModeDeVie => [1..1]
+             Section.templateId:frSectionHabitusModeDeVie.root => [1..None]
+             Section.templateId:iheSectionSocialHistory => [1..1]
+             Section.templateId:iheSectionSocialHistory.root => [1..None]
+             Section.id => [None..None]
+             Section.code => [1..None]
+             Section.code.code => [1..None]
+             Section.code.codeSystem => [1..None]
+             Section.code.codeSystemName => [None..None]
+             Section.code.displayName => [1..None]
+             Section.title => [1..None]
+             Section.text => [1..None]
+             Section.entry => [1..None]
+             Section.entry.observation => [None..None]
+        } 
+
+        class FRCDASectionResultats{
+
+             Section => [None..None]
+             Section.templateId => [1..1]
+             Section.templateId:frSectionResultats => [1..1]
+             Section.templateId:frSectionResultats.root => [1..None]
+             Section.id => [1..None]
+             Section.code => [1..None]
+             Section.code.code => [1..None]
+             Section.code.codeSystem => [1..None]
+             Section.code.codeSystemName => [None..None]
+             Section.code.displayName => [1..None]
+             Section.title => [1..None]
+             Section.text => [1..None]
+             Section.entry => [None..None]
+             Section.entry.organizer => [None..None]
+        } 
+
+        class FRCDASectionSignesVitaux{
+
+             Section => [None..None]
+             Section.templateId => [4..4]
+             Section.templateId:ccdSectionCodedVitalSigns => [1..1]
+             Section.templateId:ccdSectionCodedVitalSigns.root => [1..None]
+             Section.templateId:iheSectionVitalSigns => [1..1]
+             Section.templateId:iheSectionVitalSigns.root => [1..None]
+             Section.templateId:iheSectionCodedVitalSigns => [1..1]
+             Section.templateId:iheSectionCodedVitalSigns.root => [1..None]
+             Section.templateId:frSectionSignesVitaux => [1..1]
+             Section.templateId:frSectionSignesVitaux.root => [1..None]
+             Section.id => [None..None]
+             Section.code => [1..None]
+             Section.code.code => [1..None]
+             Section.code.codeSystem => [1..None]
+             Section.code.codeSystemName => [None..None]
+             Section.code.displayName => [1..None]
+             Section.title => [1..None]
              Section.text => [1..None]
              Section.entry => [1..None]
              Section.entry.organizer => [None..None]
@@ -3692,7 +4109,6 @@ package IG #DDDDDD{
 
         class FRCDASigneVitalObserve{
 
-             Observation => [None..None]
              Observation.templateId => [4..4]
              Observation.templateId:iheSimpleObservation => [1..1]
              Observation.templateId:iheSimpleObservation.root => [1..None]
@@ -3718,7 +4134,6 @@ package IG #DDDDDD{
 
         class FRCDASignesVitaux{
 
-             Organizer => [None..None]
              Organizer.templateId => [4..4]
              Organizer.templateId:iheVitalSignsOrganizer => [1..1]
              Organizer.templateId:iheVitalSignsOrganizer.root => [1..None]
@@ -3818,6 +4233,24 @@ package IG #DDDDDD{
              Observation.author => [None..1]
         } 
 
+        class FRCDASectionStatutDuDocument{
+
+             Section => [None..None]
+             Section.templateId => [1..1]
+             Section.templateId:frSectionStatutDuDocument => [1..1]
+             Section.templateId:frSectionStatutDuDocument.root => [1..None]
+             Section.id => [1..None]
+             Section.code => [1..None]
+             Section.code.code => [1..None]
+             Section.code.codeSystem => [1..None]
+             Section.code.codeSystemName => [None..None]
+             Section.code.displayName => [1..None]
+             Section.title => [1..None]
+             Section.text => [1..None]
+             Section.entry => [1..1]
+             Section.entry.observation => [None..None]
+        } 
+
         class FRCDAStatutDuProbleme{
 
              Observation.templateId => [4..4]
@@ -3841,6 +4274,28 @@ package IG #DDDDDD{
              Observation.statusCode => [1..None]
              Observation.statusCode.code => [None..None]
              Observation.value => [1..1]
+        } 
+
+        class FRCDASectionStatutFonctionnel{
+
+             Section => [None..None]
+             Section.templateId => [2..2]
+             Section.templateId:frSectionStatutFonctionnel => [1..1]
+             Section.templateId:frSectionStatutFonctionnel.root => [1..None]
+             Section.templateId:IPSSectionFunctionalStatus => [1..1]
+             Section.templateId:IPSSectionFunctionalStatus.root => [1..None]
+             Section.id => [None..None]
+             Section.code => [1..None]
+             Section.code.code => [1..None]
+             Section.code.codeSystem => [1..None]
+             Section.code.codeSystemName => [None..None]
+             Section.code.displayName => [1..None]
+             Section.title => [1..None]
+             Section.text => [1..None]
+             Section.author => [None..None]
+             Section.informant => [None..None]
+             Section.entry => [None..None]
+             Section.entry.organizer => [None..None]
         } 
 
         class FRCDAStatut{
@@ -4244,6 +4699,68 @@ package IG #DDDDDD{
              SubstanceAdministration.precondition.criterion.text => [1..None]
         } 
 
+        class FRCDASectionTraitementsALaSortie{
+
+             Section => [None..None]
+             Section.templateId => [2..2]
+             Section.templateId:iheSectionHospitalDischargeMedications => [1..1]
+             Section.templateId:iheSectionHospitalDischargeMedications.root => [1..None]
+             Section.templateId:frSectionTraitementsALaSortie => [1..1]
+             Section.templateId:frSectionTraitementsALaSortie.root => [1..None]
+             Section.id => [None..None]
+             Section.code => [1..None]
+             Section.code.code => [1..None]
+             Section.code.codeSystem => [1..None]
+             Section.code.codeSystemName => [None..None]
+             Section.code.displayName => [1..None]
+             Section.title => [None..None]
+             Section.text => [1..None]
+             Section.entry => [1..None]
+             Section.entry.substanceAdministration => [None..None]
+        } 
+
+        class FRCDASectionTraitementsAdministres{
+
+             Section => [None..None]
+             Section.templateId => [2..2]
+             Section.templateId:iheSectionMedications => [1..1]
+             Section.templateId:iheSectionMedications.root => [1..None]
+             Section.templateId:frSectionTraitementsAdministres => [1..1]
+             Section.templateId:frSectionTraitementsAdministres.root => [1..None]
+             Section.id => [None..None]
+             Section.code => [1..None]
+             Section.code.code => [1..None]
+             Section.code.codeSystem => [1..None]
+             Section.code.codeSystemName => [None..None]
+             Section.code.displayName => [1..None]
+             Section.title => [None..None]
+             Section.text => [1..None]
+             Section.entry => [1..None]
+             Section.entry.substanceAdministration => [None..None]
+        } 
+
+        class FRCDASectionTraitements{
+
+             Section => [None..None]
+             Section.templateId => [3..3]
+             Section.templateId:iheSectionMedications => [1..1]
+             Section.templateId:iheSectionMedications.root => [1..None]
+             Section.templateId:ccdSectionMedications => [1..1]
+             Section.templateId:ccdSectionMedications.root => [1..None]
+             Section.templateId:frSectionTraitements => [1..1]
+             Section.templateId:frSectionTraitements.root => [1..None]
+             Section.id => [None..None]
+             Section.code => [1..None]
+             Section.code.code => [1..None]
+             Section.code.codeSystem => [1..None]
+             Section.code.codeSystemName => [None..None]
+             Section.code.displayName => [1..None]
+             Section.title => [1..None]
+             Section.text => [1..None]
+             Section.entry => [1..None]
+             Section.entry.substanceAdministration => [None..None]
+        } 
+
         class FRCDATransfusionDeProduitsSanguins{
 
              Observation => [None..None]
@@ -4355,7 +4872,6 @@ package IG #DDDDDD{
 
         class FRCDAVaccinRecommande{
 
-             SubstanceAdministration => [None..None]
              SubstanceAdministration.templateId => [3..3]
              SubstanceAdministration.templateId:iheImmunizationRecommandation => [1..1]
              SubstanceAdministration.templateId:iheImmunizationRecommandation.root => [1..None]
@@ -4430,6 +4946,28 @@ package IG #DDDDDD{
              SubstanceAdministration.entryRelationship:frDoseAntigene => [0..*]
              SubstanceAdministration.entryRelationship:frDoseAntigene.typeCode => [None..None]
              SubstanceAdministration.entryRelationship:frDoseAntigene.substanceAdministration => [None..None]
+        } 
+
+        class FRCDASectionVaccinations{
+
+             Section => [None..None]
+             Section.templateId => [3..3]
+             Section.templateId:iheSectionImmunizations => [1..1]
+             Section.templateId:iheSectionImmunizations.root => [1..None]
+             Section.templateId:ccdSectionImmunizations => [1..1]
+             Section.templateId:ccdSectionImmunizations.root => [1..None]
+             Section.templateId:frSectionVaccinations => [1..1]
+             Section.templateId:frSectionVaccinations.root => [1..None]
+             Section.id => [None..None]
+             Section.code => [1..None]
+             Section.code.code => [1..None]
+             Section.code.codeSystem => [1..None]
+             Section.code.codeSystemName => [None..None]
+             Section.code.displayName => [1..None]
+             Section.title => [1..None]
+             Section.text => [1..None]
+             Section.entry => [1..None]
+             Section.entry.substanceAdministration => [None..None]
         } 
 
         class FRCompositionDocument{
@@ -4991,15 +5529,6 @@ package IG #DDDDDD{
              fr-lm-antecedent-familial-observe.methode => [0..1]
              fr-lm-antecedent-familial-observe.site => [0..1]
              fr-lm-antecedent-familial-observe.auteur => [0..1]
-        } 
-
-        class FRLMAntecedentsFamiliauxEntree{
-
-             fr-lm-antecedents-familiaux-entree => [None..None]
-             fr-lm-antecedents-familiaux-entree.statut => [1..1]
-             fr-lm-antecedents-familiaux-entree.identificationParent => [1..1]
-             fr-lm-antecedents-familiaux-entree.participant => [0..*]
-             fr-lm-antecedents-familiaux-entree.antecedentFamilialObserve => [1..*]
         } 
 
         class FRLMAntecedentsFamiliaux{
@@ -7523,7 +8052,7 @@ package IG #DDDDDD{
              List.entry.item => [None..None]
         } 
 
-        class FRProcedureActDocument{
+        class FRProcedureDocument{
 
              Procedure.extension => [None..None]
              Procedure.extension:priority => <&plus>[0..1]
@@ -7736,12 +8265,12 @@ package IG #DDDDDD{
      FRObservationTransfusionAccidentsDocument -[#black,dashed,thickness=2]-> FRActorExtension
      FRObservationVitalSignsDocument -[#black,dashed,thickness=2]-> FRActorExtension
      FRObservationWorkRelatedAccidentDocument -[#black,dashed,thickness=2]-> FRActorExtension
-     FRProcedureActDocument -[#black,dashed,thickness=2]-> FRProcedurePriorityExtension
-     FRProcedureActDocument -[#black,dashed,thickness=2]-> FRProcedureDifficultyExtension
-     FRProcedureActDocument -[#black,dashed,thickness=2]-> FRActorExtension
-     FRProcedureActDocument -[#black,dashed,thickness=2]-> FRActorExtension
-     FRProcedureActDocument -[#black,dashed,thickness=2]-> FRActorExtension
-     FRProcedureActDocument -[#black,dashed,thickness=2]-> FRActorExtension
+     FRProcedureDocument -[#black,dashed,thickness=2]-> FRProcedurePriorityExtension
+     FRProcedureDocument -[#black,dashed,thickness=2]-> FRProcedureDifficultyExtension
+     FRProcedureDocument -[#black,dashed,thickness=2]-> FRActorExtension
+     FRProcedureDocument -[#black,dashed,thickness=2]-> FRActorExtension
+     FRProcedureDocument -[#black,dashed,thickness=2]-> FRActorExtension
+     FRProcedureDocument -[#black,dashed,thickness=2]-> FRActorExtension
      FRServiceRequestDocument -[#black,dashed,thickness=2]-> FRInterpretationExtension
      FRServiceRequestDocument -[#black,dashed,thickness=2]-> FRMethodExtension
      FRServiceRequestDocument -[#black,dashed,thickness=2]-> FRActorExtension
@@ -7957,7 +8486,7 @@ package IG #DDDDDD{
 
         class FRValueSetProcedureCodeDocument  
 
-     FRProcedureActDocument -[#black,dotted,thickness=2]-> FRValueSetProcedureCodeDocument
+     FRProcedureDocument -[#black,dotted,thickness=2]-> FRValueSetProcedureCodeDocument
        }
 
 package "Ressources de base" #palegreen {
@@ -8326,6 +8855,14 @@ package "Ressources de base" #palegreen {
 
     class287dbca53f1e2132175be78f504e01fb --> FRCDAEvolutionEffetIndesirable
 
+ class "http://hl7.org/cda/stds/core/StructureDefinition/Section" as  classee0e0056a3297dc79c67abaf47837962 
+
+    classee0e0056a3297dc79c67abaf47837962 --> FRCDASectionFacteursDeRisqueProfessionnelsNonCode
+
+ class "http://hl7.org/cda/stds/core/StructureDefinition/Section" as  classee0e0056a3297dc79c67abaf47837962 
+
+    classee0e0056a3297dc79c67abaf47837962 --> FRCDASectionFonctionsPhysiques
+
  class "http://hl7.org/cda/stds/core/StructureDefinition/Observation" as  class287dbca53f1e2132175be78f504e01fb 
 
     class287dbca53f1e2132175be78f504e01fb --> FRCDAGraviteEffetIndesirable
@@ -8345,6 +8882,14 @@ package "Ressources de base" #palegreen {
  class "http://hl7.org/cda/stds/core/StructureDefinition/Organizer" as  class4b2d2fcaf52f2c5aad4a15a8ebd9b172 
 
     class4b2d2fcaf52f2c5aad4a15a8ebd9b172 --> FRCDAHistoriqueDeLaGrossesse
+
+ class "http://hl7.org/cda/stds/core/StructureDefinition/Section" as  classee0e0056a3297dc79c67abaf47837962 
+
+    classee0e0056a3297dc79c67abaf47837962 --> FRCDASectionHistoriqueDesActes
+
+ class "http://hl7.org/cda/stds/core/StructureDefinition/Section" as  classee0e0056a3297dc79c67abaf47837962 
+
+    classee0e0056a3297dc79c67abaf47837962 --> FRCDASectionHistoriqueDesGrossesses
 
  class "http://hl7.org/cda/stds/core/StructureDefinition/Observation" as  class287dbca53f1e2132175be78f504e01fb 
 
@@ -8502,9 +9047,25 @@ package "Ressources de base" #palegreen {
 
     classc783b2d1349221d4d9c5318712e8cdbe --> FRCDAPeriodeDeRenouvellement
 
+ class "http://hl7.org/cda/stds/core/StructureDefinition/Section" as  classee0e0056a3297dc79c67abaf47837962 
+
+    classee0e0056a3297dc79c67abaf47837962 --> FRCDASectionPlanDeSoins
+
+ class "http://hl7.org/cda/stds/core/StructureDefinition/Section" as  classee0e0056a3297dc79c67abaf47837962 
+
+    classee0e0056a3297dc79c67abaf47837962 --> FRCDASectionPointsDeVigilancesNonCode
+
  class "http://hl7.org/cda/stds/core/StructureDefinition/Procedure" as  classae5e4887c05970ed1e2f864f6c521475 
 
     classae5e4887c05970ed1e2f864f6c521475 --> FRCDAPrelevement
+
+ class "http://hl7.org/cda/stds/core/StructureDefinition/Section" as  classee0e0056a3297dc79c67abaf47837962 
+
+    classee0e0056a3297dc79c67abaf47837962 --> FRCDASectionPrescriptionDispositifsMedicaux
+
+ class "http://hl7.org/cda/stds/core/StructureDefinition/Section" as  classee0e0056a3297dc79c67abaf47837962 
+
+    classee0e0056a3297dc79c67abaf47837962 --> FRCDASectionPrescriptionMedicaments
 
  class "http://hl7.org/cda/stds/core/StructureDefinition/Supply" as  classc783b2d1349221d4d9c5318712e8cdbe 
 
@@ -8514,6 +9075,10 @@ package "Ressources de base" #palegreen {
 
     class287dbca53f1e2132175be78f504e01fb --> FRCDAProbleme
 
+ class "http://hl7.org/cda/stds/core/StructureDefinition/Section" as  classee0e0056a3297dc79c67abaf47837962 
+
+    classee0e0056a3297dc79c67abaf47837962 --> FRCDASectionProblemesActifs
+
  class "http://hl7.org/cda/stds/core/StructureDefinition/ManufacturedProduct" as  class08297d34b6b9483d135b9f93440f0ddc 
 
     class08297d34b6b9483d135b9f93440f0ddc --> FRCDAProduitDeSante
@@ -8521,6 +9086,14 @@ package "Ressources de base" #palegreen {
  class "http://hl7.org/cda/stds/core/StructureDefinition/Supply" as  classc783b2d1349221d4d9c5318712e8cdbe 
 
     classc783b2d1349221d4d9c5318712e8cdbe --> FRCDAQuantiteDeProduit
+
+ class "http://hl7.org/cda/stds/core/StructureDefinition/Section" as  classee0e0056a3297dc79c67abaf47837962 
+
+    classee0e0056a3297dc79c67abaf47837962 --> FRCDASectionRaisonDeLaRecommandationNonCode
+
+ class "http://hl7.org/cda/stds/core/StructureDefinition/Section" as  classee0e0056a3297dc79c67abaf47837962 
+
+    classee0e0056a3297dc79c67abaf47837962 --> FRCDASectionRaisonDeLaRecommandation
 
  class "http://hl7.org/cda/stds/core/StructureDefinition/Observation" as  class287dbca53f1e2132175be78f504e01fb 
 
@@ -8578,13 +9151,45 @@ package "Ressources de base" #palegreen {
 
     class287dbca53f1e2132175be78f504e01fb --> FRCDAResultat
 
+ class "http://hl7.org/cda/stds/core/StructureDefinition/Section" as  classee0e0056a3297dc79c67abaf47837962 
+
+    classee0e0056a3297dc79c67abaf47837962 --> FRCDASectionResultatsDeBiologieDeSecondeIntention
+
+ class "http://hl7.org/cda/stds/core/StructureDefinition/Section" as  classee0e0056a3297dc79c67abaf47837962 
+
+    classee0e0056a3297dc79c67abaf47837962 --> FRCDASectionResultatsEvenements
+
  class "http://hl7.org/cda/stds/core/StructureDefinition/Act" as  class8d4d674a722f7198503e63f485151da9 
 
     class8d4d674a722f7198503e63f485151da9 --> FRCDAResultatsExamensDeBiologieMedicale
 
  class "http://hl7.org/cda/stds/core/StructureDefinition/Section" as  classee0e0056a3297dc79c67abaf47837962 
 
+    classee0e0056a3297dc79c67abaf47837962 --> FRCDASectionResultatsExamensNonCode
+
+ class "http://hl7.org/cda/stds/core/StructureDefinition/Section" as  classee0e0056a3297dc79c67abaf47837962 
+
+    classee0e0056a3297dc79c67abaf47837962 --> FRCDASectionResultatsExamens
+
+ class "http://hl7.org/cda/stds/core/StructureDefinition/Organizer" as  class4b2d2fcaf52f2c5aad4a15a8ebd9b172 
+
+    class4b2d2fcaf52f2c5aad4a15a8ebd9b172 --> FRCDAResultats
+
+ class "http://hl7.org/cda/stds/core/StructureDefinition/Section" as  classee0e0056a3297dc79c67abaf47837962 
+
     classee0e0056a3297dc79c67abaf47837962 --> FRCDASectionAntecedentsFamiliaux
+
+ class "http://hl7.org/cda/stds/core/StructureDefinition/Section" as  classee0e0056a3297dc79c67abaf47837962 
+
+    classee0e0056a3297dc79c67abaf47837962 --> FRCDASectionHabitusModeDeVie
+
+ class "http://hl7.org/cda/stds/core/StructureDefinition/Section" as  classee0e0056a3297dc79c67abaf47837962 
+
+    classee0e0056a3297dc79c67abaf47837962 --> FRCDASectionResultats
+
+ class "http://hl7.org/cda/stds/core/StructureDefinition/Section" as  classee0e0056a3297dc79c67abaf47837962 
+
+    classee0e0056a3297dc79c67abaf47837962 --> FRCDASectionSignesVitaux
 
  class "http://hl7.org/cda/stds/core/StructureDefinition/ServiceEvent" as  class21fc45b6eacaebf264ceab7c3130a980 
 
@@ -8614,9 +9219,17 @@ package "Ressources de base" #palegreen {
 
     class287dbca53f1e2132175be78f504e01fb --> FRCDAStatutDocument
 
+ class "http://hl7.org/cda/stds/core/StructureDefinition/Section" as  classee0e0056a3297dc79c67abaf47837962 
+
+    classee0e0056a3297dc79c67abaf47837962 --> FRCDASectionStatutDuDocument
+
  class "http://hl7.org/cda/stds/core/StructureDefinition/Observation" as  class287dbca53f1e2132175be78f504e01fb 
 
     class287dbca53f1e2132175be78f504e01fb --> FRCDAStatutDuProbleme
+
+ class "http://hl7.org/cda/stds/core/StructureDefinition/Section" as  classee0e0056a3297dc79c67abaf47837962 
+
+    classee0e0056a3297dc79c67abaf47837962 --> FRCDASectionStatutFonctionnel
 
  class "http://hl7.org/cda/stds/core/StructureDefinition/Observation" as  class287dbca53f1e2132175be78f504e01fb 
 
@@ -8658,6 +9271,18 @@ package "Ressources de base" #palegreen {
 
     class6ff38cd11be36762fb79b4cd86d1de38 --> FRCDATraitement
 
+ class "http://hl7.org/cda/stds/core/StructureDefinition/Section" as  classee0e0056a3297dc79c67abaf47837962 
+
+    classee0e0056a3297dc79c67abaf47837962 --> FRCDASectionTraitementsALaSortie
+
+ class "http://hl7.org/cda/stds/core/StructureDefinition/Section" as  classee0e0056a3297dc79c67abaf47837962 
+
+    classee0e0056a3297dc79c67abaf47837962 --> FRCDASectionTraitementsAdministres
+
+ class "http://hl7.org/cda/stds/core/StructureDefinition/Section" as  classee0e0056a3297dc79c67abaf47837962 
+
+    classee0e0056a3297dc79c67abaf47837962 --> FRCDASectionTraitements
+
  class "http://hl7.org/cda/stds/core/StructureDefinition/Observation" as  class287dbca53f1e2132175be78f504e01fb 
 
     class287dbca53f1e2132175be78f504e01fb --> FRCDATransfusionDeProduitsSanguins
@@ -8681,6 +9306,10 @@ package "Ressources de base" #palegreen {
  class "http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration" as  class6ff38cd11be36762fb79b4cd86d1de38 
 
     class6ff38cd11be36762fb79b4cd86d1de38 --> FRCDAVaccination
+
+ class "http://hl7.org/cda/stds/core/StructureDefinition/Section" as  classee0e0056a3297dc79c67abaf47837962 
+
+    classee0e0056a3297dc79c67abaf47837962 --> FRCDASectionVaccinations
 
  class "http://hl7.org/fhir/uv/fhir-clinical-document/StructureDefinition/clinical-document-composition" as  classd9daa32262ad3cdcf2aad9f33da44536 
 
@@ -8793,10 +9422,6 @@ package "Ressources de base" #palegreen {
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
     class095a1b43effec73955e31e790438de49 --> FRLMAntecedentFamilialObserve
-
- class "Base" as  class095a1b43effec73955e31e790438de49 
-
-    class095a1b43effec73955e31e790438de49 --> FRLMAntecedentsFamiliauxEntree
 
  class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-section" as  class5dabea989fe22a905d8f89cc210527f2 
 
@@ -9528,7 +10153,7 @@ package "Ressources de base" #palegreen {
 
  class "Procedure" as  class8c4271e6faf2cea4cfc8e5b7108d8ee9 
 
-    class8c4271e6faf2cea4cfc8e5b7108d8ee9 --> FRProcedureActDocument
+    class8c4271e6faf2cea4cfc8e5b7108d8ee9 --> FRProcedureDocument
 
  class "Procedure" as  class8c4271e6faf2cea4cfc8e5b7108d8ee9 
 

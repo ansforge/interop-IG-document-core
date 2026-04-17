@@ -1,4 +1,4 @@
-# CarePlan - FR Care Plan Document - ANS IG document core v0.1.0-snapsnot
+# CarePlan - FR Care Plan Document - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-care-plan-document | *Version*:0.1.0-snapsnot |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-care-plan-document | *Version*:0.1.0-snapshot |
 | Draft as of 2026-04-17 | *Computable Name*:FRCarePlanDocument |
 
  
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-care-plan-documen
   "resourceType" : "StructureDefinition",
   "id" : "fr-care-plan-document",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-care-plan-document",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRCarePlanDocument",
   "title" : "CarePlan - FR Care Plan Document",
   "status" : "draft",
-  "date" : "2026-04-17T08:26:12+00:00",
+  "date" : "2026-04-17T09:16:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -1,4 +1,4 @@
-# Modèle logique métier - FR LM Conclusion examen d'imagerie - ANS IG document core v0.1.0-snapsnot
+# Modèle logique métier - FR LM Conclusion examen d'imagerie - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-conclusion-examen-imagerie | *Version*:0.1.0-snapsnot |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-conclusion-examen-imagerie | *Version*:0.1.0-snapshot |
 | Draft as of 2026-04-17 | *Computable Name*:FRLMConclusionExamenImagerie |
 
  
@@ -45,11 +45,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-conclusion-exa
     "valueCode" : "can-be-target"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-conclusion-examen-imagerie",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRLMConclusionExamenImagerie",
   "title" : "Modèle logique métier - FR LM Conclusion examen d'imagerie",
   "status" : "draft",
-  "date" : "2026-04-17T08:26:12+00:00",
+  "date" : "2026-04-17T09:16:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

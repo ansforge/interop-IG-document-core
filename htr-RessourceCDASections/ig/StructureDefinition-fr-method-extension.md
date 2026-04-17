@@ -1,4 +1,4 @@
-# FR Method Extension - ANS IG document core v0.1.0-snapsnot
+# FR Method Extension - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-method-extension | *Version*:0.1.0-snapsnot |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-method-extension | *Version*:0.1.0-snapshot |
 | Draft as of 2026-04-17 | *Computable Name*:FRMethodExtension |
 
 Extension permettant d’indiquer la méthode utilisée : techniques biologiques (ex. : titration, agglutination…), techniques d’imagerie dans les demandes d’examen (ultrasound, tomographie, IRM…), des méthodes de mesure spécifiques, etc.
@@ -44,11 +44,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-method-extension.
   "resourceType" : "StructureDefinition",
   "id" : "fr-method-extension",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-method-extension",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRMethodExtension",
   "title" : "FR Method Extension",
   "status" : "draft",
-  "date" : "2026-04-17T08:26:12+00:00",
+  "date" : "2026-04-17T09:16:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

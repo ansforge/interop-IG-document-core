@@ -1,4 +1,4 @@
-# Modèle logique métier - FR LM Traitements - ANS IG document core v0.1.0-snapsnot
+# Modèle logique métier - FR LM Traitements - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-traitements | *Version*:0.1.0-snapsnot |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-traitements | *Version*:0.1.0-snapshot |
 | Draft as of 2026-04-17 | *Computable Name*:FRLMTraitements |
 
  
@@ -16,7 +16,7 @@ Section Traitements
 
 **Utilisations:**
 
-* Ce Modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
+* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Corps document](StructureDefinition-fr-lm-corps-document.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-traitements)
 
@@ -45,11 +45,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-traitements.cs
     "valueCode" : "can-be-target"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-traitements",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRLMTraitements",
   "title" : "Modèle logique métier - FR LM Traitements",
   "status" : "draft",
-  "date" : "2026-04-17T08:26:12+00:00",
+  "date" : "2026-04-17T09:16:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

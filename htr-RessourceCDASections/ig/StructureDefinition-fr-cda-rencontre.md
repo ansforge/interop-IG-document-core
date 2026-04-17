@@ -1,4 +1,4 @@
-# CDA - FR Rencontre - ANS IG document core v0.1.0-snapsnot
+# CDA - FR Rencontre - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-rencontre | *Version*:0.1.0-snapsnot |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-rencontre | *Version*:0.1.0-snapshot |
 | Draft as of 2026-04-17 | *Computable Name*:FRCDARencontre |
 
  
@@ -18,7 +18,7 @@ Entrée FR-Rencontre: IHE-PCC - Encounter.
 
 **Utilisations:**
 
-* Ce Profil de modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
+* Utilise ce/t/te Profil de modèle logique: [CDA - FR Plan de soins](StructureDefinition-fr-cda-plan-de-soins.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-rencontre)
 
@@ -64,11 +64,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-rencontre.csv
     "valueUri" : "cda"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-rencontre",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRCDARencontre",
   "title" : "CDA - FR Rencontre",
   "status" : "draft",
-  "date" : "2026-04-17T08:26:12+00:00",
+  "date" : "2026-04-17T09:16:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -98,10 +98,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-rencontre.csv
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
-      "id" : "Encounter",
-      "path" : "Encounter"
-    },
-    {
       "id" : "Encounter.templateId",
       "path" : "Encounter.templateId",
       "slicing" : {

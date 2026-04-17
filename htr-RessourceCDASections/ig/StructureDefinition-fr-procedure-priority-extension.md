@@ -1,4 +1,4 @@
-# FR Procedure Priority Extension - ANS IG document core v0.1.0-snapsnot
+# FR Procedure Priority Extension - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-procedure-priority-extension | *Version*:0.1.0-snapsnot |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-procedure-priority-extension | *Version*:0.1.0-snapshot |
 | Draft as of 2026-04-17 | *Computable Name*:FRProcedurePriorityExtension |
 
 Extension permettant d’indiquer d’indique la priorité clinique de l’observation.
@@ -19,7 +19,7 @@ Extension permettant d’indiquer d’indique la priorité clinique de l’obser
 
 **Utilisations:**
 
-* Utilise ce/t/te Extension: [Procedure - FR Procedure Act Document](StructureDefinition-fr-procedure-act-document.md)
+* Utilise ce/t/te Extension: [Procedure - FR Procedure Document](StructureDefinition-fr-procedure-document.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-procedure-priority-extension)
 
@@ -44,11 +44,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-procedure-priorit
   "resourceType" : "StructureDefinition",
   "id" : "fr-procedure-priority-extension",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-procedure-priority-extension",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRProcedurePriorityExtension",
   "title" : "FR Procedure Priority Extension",
   "status" : "draft",
-  "date" : "2026-04-17T08:26:12+00:00",
+  "date" : "2026-04-17T09:16:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

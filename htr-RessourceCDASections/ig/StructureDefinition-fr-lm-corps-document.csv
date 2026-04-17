@@ -85,7 +85,7 @@
 ","Section Statut du document","Section Statut du document","","","","","","","","","",,,,,"",,,,"fr-lm-corps-document.statutDocument",0,*,"",""
 "fr-lm-corps-document.statutFonctionnel","fr-lm-corps-document.statutFonctionnel","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-statut-fonctionnel {[]} {[]}
 ","Section Statut fonctionnel","Section Statut fonctionnel","","","","","","","","","",,,,,"",,,,"fr-lm-corps-document.statutFonctionnel",0,*,"",""
-"fr-lm-corps-document.traitements","fr-lm-corps-document.traitements","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-traitement {[]} {[]}
+"fr-lm-corps-document.traitements","fr-lm-corps-document.traitements","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-traitements {[]} {[]}
 ","Section Traitement","Section Traitement","","","","","","","","","",,,,,"",,,,"fr-lm-corps-document.traitements",0,*,"",""
 "fr-lm-corps-document.traitementSortie","fr-lm-corps-document.traitementSortie","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-traitement-sortie {[]} {[]}
 ","Section Traitement à la sortie","Section Traitement à la sortie","","","","","","","","","",,,,,"",,,,"fr-lm-corps-document.traitementSortie",0,*,"",""

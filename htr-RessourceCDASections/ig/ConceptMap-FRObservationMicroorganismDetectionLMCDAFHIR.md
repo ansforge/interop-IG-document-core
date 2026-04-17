@@ -1,4 +1,4 @@
-# Mapping FRLMRechercheDeMicroOrganismes → FRCDARechercheDeMicroOrganismes → FRObservationMicroorganismDetectionDocument - ANS IG document core v0.1.0-snapsnot
+# Mapping FRLMRechercheDeMicroOrganismes → FRCDARechercheDeMicroOrganismes → FRObservationMicroorganismDetectionDocument - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRObservationMicroorganismDetectionLMCDAFHIR | *Version*:0.1.0-snapsnot |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRObservationMicroorganismDetectionLMCDAFHIR | *Version*:0.1.0-snapshot |
 | Draft as of 2026-04-17 | *Computable Name*: |
 
  
@@ -23,10 +23,10 @@ Mapping des éléments du modèle métier FRLMRechercheDeMicroOrganismes vers le
   "resourceType" : "ConceptMap",
   "id" : "FRObservationMicroorganismDetectionLMCDAFHIR",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRObservationMicroorganismDetectionLMCDAFHIR",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "title" : "Mapping Métier/CDA/FHIR : \"Recherche de micro organismes\"",
   "status" : "draft",
-  "date" : "2026-04-17T08:26:12+00:00",
+  "date" : "2026-04-17T09:16:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
