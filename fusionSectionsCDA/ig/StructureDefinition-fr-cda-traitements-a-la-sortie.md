@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-traitements-a-la-sortie | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-16 | *Computable Name*:FRCDASectionTraitementsALaSortie |
+| Draft as of 2026-04-17 | *Computable Name*:FRCDASectionTraitementsALaSortie |
 
  
 IHE-PCC - Hospital-Discharge-Medications. La section ‘Traitements à la sortie’ contient une description narrative des médicaments à administrer au patient après sa sortie de l’hospitalisation et doit inclure des entrées ‘Traitement’. 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-traitements-a
   "name" : "FRCDASectionTraitementsALaSortie",
   "title" : "CDA - FR Traitements à la sortie",
   "status" : "draft",
-  "date" : "2026-04-16T10:39:58+00:00",
+  "date" : "2026-04-17T08:40:59+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -141,6 +141,13 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-traitements-a
       "patternString" : "1.2.250.1.213.1.1.2.146"
     },
     {
+      "id" : "Section.id",
+      "path" : "Section.id",
+      "short" : "Identifiant de la section",
+      "definition" : "Identifiant de la section",
+      "mustSupport" : true
+    },
+    {
       "id" : "Section.code",
       "path" : "Section.code",
       "short" : "Code de la section",
@@ -151,12 +158,16 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-traitements-a
     {
       "id" : "Section.code.code",
       "path" : "Section.code.code",
-      "patternCode" : "10183-2"
+      "min" : 1,
+      "patternCode" : "10183-2",
+      "mustSupport" : true
     },
     {
       "id" : "Section.code.codeSystem",
       "path" : "Section.code.codeSystem",
-      "patternString" : "2.16.840.1.113883.6.1"
+      "min" : 1,
+      "patternString" : "2.16.840.1.113883.6.1",
+      "mustSupport" : true
     },
     {
       "id" : "Section.code.codeSystemName",
@@ -166,7 +177,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-traitements-a
     {
       "id" : "Section.code.displayName",
       "path" : "Section.code.displayName",
-      "patternString" : "Traitements à la sortie"
+      "min" : 1,
+      "patternString" : "Traitements à la sortie",
+      "mustSupport" : true
     },
     {
       "id" : "Section.title",

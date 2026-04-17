@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-traitement-dispense | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-16 | *Computable Name*:FRCDATraitementDispense |
+| Draft as of 2026-04-17 | *Computable Name*:FRCDATraitementDispense |
 
  
 Entrée FR-Traitement-dispense: IHE PHARM DIS - DispenseItemEntry. Cette entrée de type supply permet de décrire un traitement dispensé avec notamment le médicament dispensé, la quantité et la référence de la prescription. 
 
 **Utilisations:**
 
-* Utilise ce/t/te Profil de modèle logique: [CDA - FR Dispensation medicaments](StructureDefinition-fr-cda-dispensation-medicaments.md)
+* Ce Profil de modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-traitement-dispense)
 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-traitement-di
   "name" : "FRCDATraitementDispense",
   "title" : "CDA - FR Traitement dispense",
   "status" : "draft",
-  "date" : "2026-04-16T10:39:58+00:00",
+  "date" : "2026-04-17T08:40:59+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -96,6 +96,10 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-traitement-di
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
+      "id" : "Supply",
+      "path" : "Supply"
+    },
+    {
       "id" : "Supply.templateId",
       "path" : "Supply.templateId",
       "slicing" : {

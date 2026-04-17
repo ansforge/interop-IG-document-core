@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-observation | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-16 | *Computable Name*:FRCDADICOMObservation |
+| Draft as of 2026-04-17 | *Computable Name*:FRCDADICOMObservation |
 
  
 Entrée FR-DICOM-Observation: DICOM Part 20 - Coded Observation. Cette entrée permet d’enregistrer une observation avec une valeur codée ou textuelle. 
 
 **Utilisations:**
 
-* Utilise ce/t/te Profil de modèle logique: [CDA - FR DICOM Exposition aux radiations](StructureDefinition-fr-cda-dicom-exposition-aux-radiations.md) and [CDA - FR DICOM Historique medical](StructureDefinition-fr-cda-dicom-historique-medical.md)
+* Ce Profil de modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-dicom-observation)
 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-observa
   "name" : "FRCDADICOMObservation",
   "title" : "CDA - FR DICOM Observation",
   "status" : "draft",
-  "date" : "2026-04-16T10:39:58+00:00",
+  "date" : "2026-04-17T08:40:59+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -96,6 +96,10 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-observa
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
+      "id" : "Observation",
+      "path" : "Observation"
+    },
+    {
       "id" : "Observation.templateId",
       "path" : "Observation.templateId",
       "slicing" : {

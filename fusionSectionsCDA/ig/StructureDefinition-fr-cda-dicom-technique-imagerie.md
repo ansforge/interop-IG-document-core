@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-technique-imagerie | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-16 | *Computable Name*:FRCDADICOMTechniqueImagerie |
+| Draft as of 2026-04-17 | *Computable Name*:FRCDADICOMTechniqueImagerie |
 
  
 Entrée FR-DICOM-Technique-imagerie: DICOM Part 20 - Procedure Technique Cette entrée permet d’enregistrer les différents paramètres de l’acquisition d’image : acte d’imagerie modalité d’acquisition localisation anatomique / latéralité / topographie d’autres paramètres de l’acte 
 
 **Utilisations:**
 
-* Utilise ce/t/te Profil de modèle logique: [CDA - FR DICOM Acte imagerie](StructureDefinition-fr-cda-dicom-acte-imagerie.md)
+* Ce Profil de modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-dicom-technique-imagerie)
 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-techniq
   "name" : "FRCDADICOMTechniqueImagerie",
   "title" : "CDA - FR DICOM Technique imagerie",
   "status" : "draft",
-  "date" : "2026-04-16T10:39:58+00:00",
+  "date" : "2026-04-17T08:40:59+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -96,6 +96,10 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-techniq
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
+      "id" : "Procedure",
+      "path" : "Procedure"
+    },
+    {
       "id" : "Procedure.templateId",
       "path" : "Procedure.templateId",
       "slicing" : {

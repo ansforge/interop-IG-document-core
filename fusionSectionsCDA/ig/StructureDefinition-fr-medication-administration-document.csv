@@ -24,10 +24,12 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"MedicationAdministration.extension:occurenceR5","MedicationAdministration.extension","occurenceR5","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationAdministration.occurence%5Bx%5D]]} {[]}
-","Fréquence d'administration","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+"MedicationAdministration.extension:occurenceR5","MedicationAdministration.extension","occurenceR5","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationAdministration.occurence]]} {[]}
+","Fréquence d'administration","R5: `MedicationAdministration.occurence[x]` additional types (Timing)","Element `MedicationAdministration.occurence[x]` is mapped to FHIR R4 element `MedicationAdministration.effective[x]` as `SourceIsBroaderThanTarget`.
+The mappings for `MedicationAdministration.occurence[x]` do not cover the following types: Timing.
+The target context `MedicationAdministration.effective[x]` is a choice-type element and cannot directly hold extensions. The context is moved up to parent element `MedicationAdministration`.","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "MedicationAdministration.extension:occurenceR5.id","MedicationAdministration.extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "MedicationAdministration.extension:occurenceR5.extension","MedicationAdministration.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
@@ -35,13 +37,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "MedicationAdministration.extension:occurenceR5.url","MedicationAdministration.extension.url","","","",1,1,"","","","uri {[]} {[]}
-","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationAdministration.occurence[x]""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationAdministration.occurence""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
 "MedicationAdministration.extension:occurenceR5.value[x]","MedicationAdministration.extension.value[x]","","","",1,1,"","","","Timing {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"","type:$this}
-","",,"closed","Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","N/A"
-"MedicationAdministration.extension:occurenceR5.value[x]:valueTiming","MedicationAdministration.extension.value[x]","valueTiming","","",1,1,"","","","Timing {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Specific date/time or interval of time during which the administration took place (or did not take place)","A specific date/time or interval of time during which the administration took place (or did not take place). For many administrations, such as swallowing a tablet the use of dateTime is more appropriate.","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
 "MedicationAdministration.modifierExtension","MedicationAdministration.modifierExtension","","extensions
 user content","",0,*,"","Y","","Extension {[]} {[]}

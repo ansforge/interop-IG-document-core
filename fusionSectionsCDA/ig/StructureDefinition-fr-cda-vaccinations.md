@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-vaccinations | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-16 | *Computable Name*:FRCDASectionVaccinations |
+| Draft as of 2026-04-17 | *Computable Name*:FRCDASectionVaccinations |
 
  
 IHE-PCC - Immunizations Section. Liste des vaccinations effectuées. 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-vaccinations.
   "name" : "FRCDASectionVaccinations",
   "title" : "CDA - FR Vaccinations",
   "status" : "draft",
-  "date" : "2026-04-16T10:39:58+00:00",
+  "date" : "2026-04-17T08:40:59+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -155,6 +155,13 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-vaccinations.
       "patternString" : "1.2.250.1.213.1.1.2.147"
     },
     {
+      "id" : "Section.id",
+      "path" : "Section.id",
+      "short" : "Identifiant de la section",
+      "definition" : "Identifiant de la section",
+      "mustSupport" : true
+    },
+    {
       "id" : "Section.code",
       "path" : "Section.code",
       "short" : "Code de la section",
@@ -165,12 +172,16 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-vaccinations.
     {
       "id" : "Section.code.code",
       "path" : "Section.code.code",
-      "patternCode" : "11369-6"
+      "min" : 1,
+      "patternCode" : "11369-6",
+      "mustSupport" : true
     },
     {
       "id" : "Section.code.codeSystem",
       "path" : "Section.code.codeSystem",
-      "patternString" : "2.16.840.1.113883.6.1"
+      "min" : 1,
+      "patternString" : "2.16.840.1.113883.6.1",
+      "mustSupport" : true
     },
     {
       "id" : "Section.code.codeSystemName",
@@ -180,7 +191,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-vaccinations.
     {
       "id" : "Section.code.displayName",
       "path" : "Section.code.displayName",
-      "patternString" : "Historique des vaccinations"
+      "min" : 1,
+      "patternString" : "Historique des vaccinations",
+      "mustSupport" : true
     },
     {
       "id" : "Section.title",

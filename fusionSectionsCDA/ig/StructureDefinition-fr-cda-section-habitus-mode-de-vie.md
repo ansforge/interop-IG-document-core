@@ -9,10 +9,10 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-section-habitus-mode-de-vie | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-16 | *Computable Name*:FRCDASectionHabitusModeDeVie |
+| Draft as of 2026-04-17 | *Computable Name*:FRCDASectionHabitusModeDeVie |
 
  
-IHE-PCC - Coded Social History Section. Liste codée des informations relatives aux habitus et au mode de vie du patient. 
+IHE-PCC - Coded Social History Section. Liste codÃ©e des informations relatives aux habitus et au mode de vie du patient. 
 
 **Utilisations:**
 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-section-habit
   "name" : "FRCDASectionHabitusModeDeVie",
   "title" : "CDA - FR Habitus mode de vie",
   "status" : "draft",
-  "date" : "2026-04-16T10:39:58+00:00",
+  "date" : "2026-04-17T08:40:59+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -75,7 +75,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-section-habit
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "IHE-PCC - Coded Social History Section. Liste codée des informations relatives aux habitus et au mode de vie du patient.",
+  "description" : "IHE-PCC - Coded Social History Section. Liste codÃ©e des informations relatives aux habitus et au mode de vie du patient.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -116,7 +116,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-section-habit
       "id" : "Section.templateId:ccdSectionCodedSocialHistory",
       "path" : "Section.templateId",
       "sliceName" : "ccdSectionCodedSocialHistory",
-      "short" : "Conformité Social History Section (CCD)",
+      "short" : "ConformitÃ© Social History Section (CCD)",
       "min" : 1,
       "max" : "1"
     },
@@ -130,7 +130,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-section-habit
       "id" : "Section.templateId:iheSectionCodedSocialHistory",
       "path" : "Section.templateId",
       "sliceName" : "iheSectionCodedSocialHistory",
-      "short" : "Conformité Social History Section (IHE-PCC)",
+      "short" : "ConformitÃ© Social History Section (IHE-PCC)",
       "min" : 1,
       "max" : "1"
     },
@@ -144,7 +144,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-section-habit
       "id" : "Section.templateId:frSectionHabitusModeDeVie",
       "path" : "Section.templateId",
       "sliceName" : "frSectionHabitusModeDeVie",
-      "short" : "Conformité FR-Habitus-Mode-de-Vie (CI-SIS)",
+      "short" : "ConformitÃ© FR-Habitus-Mode-de-Vie (CI-SIS)",
       "min" : 1,
       "max" : "1"
     },
@@ -158,7 +158,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-section-habit
       "id" : "Section.templateId:iheSectionSocialHistory",
       "path" : "Section.templateId",
       "sliceName" : "iheSectionSocialHistory",
-      "short" : "Conformité Social History Section (IHE-PCC)",
+      "short" : "ConformitÃ© Social History Section (IHE-PCC)",
       "min" : 1,
       "max" : "1"
     },
@@ -167,6 +167,13 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-section-habit
       "path" : "Section.templateId.root",
       "min" : 1,
       "patternString" : "1.3.6.1.4.1.19376.1.5.3.1.3.16.2"
+    },
+    {
+      "id" : "Section.id",
+      "path" : "Section.id",
+      "short" : "Identifiant de la section",
+      "definition" : "Identifiant de la section",
+      "mustSupport" : true
     },
     {
       "id" : "Section.code",
@@ -179,12 +186,16 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-section-habit
     {
       "id" : "Section.code.code",
       "path" : "Section.code.code",
-      "patternCode" : "29762-2"
+      "min" : 1,
+      "patternCode" : "29762-2",
+      "mustSupport" : true
     },
     {
       "id" : "Section.code.codeSystem",
       "path" : "Section.code.codeSystem",
-      "patternString" : "2.16.840.1.113883.6.1"
+      "min" : 1,
+      "patternString" : "2.16.840.1.113883.6.1",
+      "mustSupport" : true
     },
     {
       "id" : "Section.code.codeSystemName",
@@ -194,7 +205,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-section-habit
     {
       "id" : "Section.code.displayName",
       "path" : "Section.code.displayName",
-      "patternString" : "Habitus, Mode de vie"
+      "min" : 1,
+      "patternString" : "Habitus, Mode de vie",
+      "mustSupport" : true
     },
     {
       "id" : "Section.title",
@@ -215,7 +228,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-section-habit
     {
       "id" : "Section.entry",
       "path" : "Section.entry",
-      "short" : "Entrée Habitus, Mode de vie",
+      "short" : "EntrÃ©e Habitus, Mode de vie",
       "min" : 1,
       "mustSupport" : true
     },

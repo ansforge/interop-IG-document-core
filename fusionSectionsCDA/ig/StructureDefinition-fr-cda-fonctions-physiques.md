@@ -9,10 +9,10 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-fonctions-physiques | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-16 | *Computable Name*:FRCDASectionFonctionsPhysiques |
+| Draft as of 2026-04-17 | *Computable Name*:FRCDASectionFonctionsPhysiques |
 
  
-IHE-PCC - Physical Function Section. Cette section permet d’enregistrer les problèmes physiques fonctionnels et structurels qui concernent le patient. 
+IHE-PCC - Physical Function Section. Cette section permet d’enregistrer les problÃ¨mes physiques fonctionnels et structurels qui concernent le patient. 
 
 **Utilisations:**
 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-fonctions-phy
   "name" : "FRCDASectionFonctionsPhysiques",
   "title" : "CDA - FR Fonctions physiques",
   "status" : "draft",
-  "date" : "2026-04-16T10:39:58+00:00",
+  "date" : "2026-04-17T08:40:59+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -75,7 +75,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-fonctions-phy
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "IHE-PCC - Physical Function Section. Cette section permet d'enregistrer les problèmes physiques fonctionnels et structurels qui concernent le patient.",
+  "description" : "IHE-PCC - Physical Function Section. Cette section permet d'enregistrer les problÃ¨mes physiques fonctionnels et structurels qui concernent le patient.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -116,7 +116,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-fonctions-phy
       "id" : "Section.templateId:iheSectionPhysicalFunction",
       "path" : "Section.templateId",
       "sliceName" : "iheSectionPhysicalFunction",
-      "short" : "Conformité Physical Function Section (IHE-PCC)",
+      "short" : "ConformitÃ© Physical Function Section (IHE-PCC)",
       "min" : 1,
       "max" : "1"
     },
@@ -130,7 +130,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-fonctions-phy
       "id" : "Section.templateId:frSectionFonctionsPhysiques",
       "path" : "Section.templateId",
       "sliceName" : "frSectionFonctionsPhysiques",
-      "short" : "Conformité FR-Fonctions-physiques (CI-SIS)",
+      "short" : "ConformitÃ©Â FR-Fonctions-physiques (CI-SIS)",
       "min" : 0,
       "max" : "1"
     },
@@ -139,6 +139,13 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-fonctions-phy
       "path" : "Section.templateId.root",
       "min" : 1,
       "patternString" : "1.2.250.1.213.1.1.2.115"
+    },
+    {
+      "id" : "Section.id",
+      "path" : "Section.id",
+      "short" : "Identifiant de la section",
+      "definition" : "Identifiant de la section",
+      "mustSupport" : true
     },
     {
       "id" : "Section.code",
@@ -151,12 +158,16 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-fonctions-phy
     {
       "id" : "Section.code.code",
       "path" : "Section.code.code",
-      "patternCode" : "46006-3"
+      "min" : 1,
+      "patternCode" : "46006-3",
+      "mustSupport" : true
     },
     {
       "id" : "Section.code.codeSystem",
       "path" : "Section.code.codeSystem",
-      "patternString" : "2.16.840.1.113883.6.1"
+      "min" : 1,
+      "patternString" : "2.16.840.1.113883.6.1",
+      "mustSupport" : true
     },
     {
       "id" : "Section.code.codeSystemName",
@@ -166,7 +177,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-fonctions-phy
     {
       "id" : "Section.code.displayName",
       "path" : "Section.code.displayName",
-      "patternString" : "Problèmes physiques fonctionnels et structurels"
+      "min" : 1,
+      "patternString" : "ProblÃ¨mes physiques fonctionnels et structurels",
+      "mustSupport" : true
     },
     {
       "id" : "Section.title",
@@ -205,7 +218,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-fonctions-phy
     {
       "id" : "Section.entry:frGroupeDeQuestionnairesDevaluation.organizer",
       "path" : "Section.entry.organizer",
-      "short" : "Entrée Groupe de questionnaires d'évalutation",
+      "short" : "EntrÃ©e Groupe de questionnaires d'Ã©valutation",
       "type" : [{
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Organizer",
         "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-groupe-de-questionnaires-d-evaluation"]
@@ -221,7 +234,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-fonctions-phy
     {
       "id" : "Section.entry:frEvaluation.observation",
       "path" : "Section.entry.observation",
-      "short" : "Entrée Evalutation",
+      "short" : "EntrÃ©e Evalutation",
       "type" : [{
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Observation",
         "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-evaluation"]

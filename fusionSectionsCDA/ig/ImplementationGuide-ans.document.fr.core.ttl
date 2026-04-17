@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "FRDocumentCore"] ; # 
   fhir:title [ fhir:v "ANS IG document core"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-04-16T10:39:58+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-04-17T08:40:59+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -85,6 +85,14 @@
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.fr.core" ] ;
      fhir:version [ fhir:v "2.1.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7_fhir_uv_xver_r5_r4" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/uv/xver/ImplementationGuide/hl7.fhir.uv.xver-r5.r4"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/xver/ImplementationGuide/hl7.fhir.uv.xver-r5.r4>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.xver-r5.r4" ] ;
+     fhir:version [ fhir:v "0.1.0" ]
   ] [
      fhir:id [ fhir:v "hl7_fhir_uv_extensions_r4" ] ;
      fhir:uri [
@@ -2053,28 +2061,6 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-allergies-et-hypersensibilites> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-cda-allergies-et-hypersensibilites" ]
-       ] ;
-       fhir:name [ fhir:v "CDA - FR Allergies et hypersensibilites" ] ;
-       fhir:description [ fhir:v "IHE-PCC - Allergies-And-Other-Adverse-Reactions \n - La section 'Allergies et hypersensibilités' permet de décrire la liste codée des allergies et hypersensibilités (médicaments, environnements, aliments,..) précisant notamment l'agent et les réactions observées." ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Ressources CDA corps des sections" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-antecedent-familial-observe> ;
          fhir:reference [ fhir:v "StructureDefinition/fr-cda-antecedent-familial-observe" ]
        ] ;
@@ -2107,50 +2093,6 @@
          fhir:v false
        ] ;
        fhir:groupingId [ fhir:v "Ressources CDA corps des composants élémentaires" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-section-antecedents-familiaux> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-cda-section-antecedents-familiaux" ]
-       ] ;
-       fhir:name [ fhir:v "CDA - FR Antecedents familiaux" ] ;
-       fhir:description [ fhir:v "IHE-PCC Coded-Family-Medical-History\n - Liste codée des antécédents familiaux." ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Ressources CDA corps des sections" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-antecedents-medicaux> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-cda-antecedents-medicaux" ]
-       ] ;
-       fhir:name [ fhir:v "CDA - FR Antecedents medicaux" ] ;
-       fhir:description [ fhir:v "IHE-PCC - History-Of-Past-Illness \n - La section 'Antécédents médicaux' doit contenir une liste codée des antécédents médicaux du patient. Il s'agit d'épisodes résolus, c'est à dire de maladies que l'on considère comme guéries. Si une maladies est susceptible de présenter des épisodes de rechute, elle sera classée dans des problèmes actifs, même si ces épisodes dont résolus." ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Ressources CDA corps des sections" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2273,28 +2215,6 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-code-a-barres> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-cda-code-a-barres" ]
-       ] ;
-       fhir:name [ fhir:v "CDA - FR Code a barres" ] ;
-       fhir:description [ fhir:v "Cette section permet d'enregistrer des codes à barres" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Ressources CDA corps des sections" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-commentaire-er> ;
          fhir:reference [ fhir:v "StructureDefinition/fr-cda-commentaire-er" ]
        ] ;
@@ -2305,72 +2225,6 @@
          fhir:v false
        ] ;
        fhir:groupingId [ fhir:v "Ressources CDA corps des composants élémentaires" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-commentaire-non-code> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-cda-commentaire-non-code" ]
-       ] ;
-       fhir:name [ fhir:v "CDA - FR Commentaire non code" ] ;
-       fhir:description [ fhir:v "IHE-PCC - Document-Summary Cette section permet d'indiquer un commentaire sous forme textuelle." ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Ressources CDA corps des sections" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-cr-bio-chapitre> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-cda-cr-bio-chapitre" ]
-       ] ;
-       fhir:name [ fhir:v "CDA - FR CR BIO Chapitre" ] ;
-       fhir:description [ fhir:v "IHE-PaLM - Laboratory Specialty Section\n - Une section de premier niveau est appelée 'Chapitre' et correspond à une sous-discipline de la biologie médicale (par exemple « biochimie »).Elle contient :soit directement la présentation des résultats d'examens de biologie médicale obtenus pour ce chapitre : dans ce cas, il y a un unique élément <text> (présentation du contenu pour le lecteur) et un unique élément <entry> (données codées pour les SIS dont procède le contenu de l'élément <text>)soit une liste de sections de second niveau, appelés sous-chapitres (par exemple « Gaz du sang ») : dans ce cas, il y a une liste d'éléments <component> dont chacun introduit une <section> de second niveau présentant un sous-ensemble de un ou plusieurs résultats d'examens de biologie médicale.Remarque : L'arborescence du corps du compte rendu d'examens de biologie médicale est choisie par le LPS producteur du document selon la logique de présentation définie par le laboratoire." ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Ressources CDA corps des sections" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-cr-bio-sous-chapitre> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-cda-cr-bio-sous-chapitre" ]
-       ] ;
-       fhir:name [ fhir:v "CDA - FR CR BIO Sous Chapitre" ] ;
-       fhir:description [ fhir:v "IHE-PaLM - Laboratory Report Item Section\n - Section de second niveau, appelée sous-chapitre (par exemple « Gaz du sang ») qui présente un sous-ensemble de un ou plusieurs résultats d'examens de biologie médicale. Elle est comporte un élément 'text' qui porte les résultats présentés et interprétés pour le lecteur et d'une entrée contenant les données codées dont procède le contenu de l'élément 'text'." ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Ressources CDA corps des sections" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2415,50 +2269,6 @@
          fhir:v false
        ] ;
        fhir:groupingId [ fhir:v "Ressources CDA corps des composants élémentaires" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-acte-imagerie> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-cda-dicom-acte-imagerie" ]
-       ] ;
-       fhir:name [ fhir:v "CDA - FR DICOM Acte imagerie" ] ;
-       fhir:description [ fhir:v "DICOM Part 20 - Imaging Procedure Description Section\n - Cette section permet d'enregistrer les informations sur les détails techniques de l'acte d'imagerie et peut inclure des informations sur le protocole, le dispositif d’imagerie, le contraste, la dose de rayonnement, les médicaments administrés." ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Ressources CDA corps des sections" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-addendum> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-cda-dicom-addendum" ]
-       ] ;
-       fhir:name [ fhir:v "CDA - FR DICOM Addendum" ] ;
-       fhir:description [ fhir:v "DICOM Part 20 - Addendum Section\n - La section Addendum permet d'enregistrer, dans une nouvelle version du compte-rendu, des informations correctives ou complémentaires par rapport au compte-rendu initial." ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Ressources CDA corps des sections" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2559,94 +2369,6 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-complications> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-cda-dicom-complications" ]
-       ] ;
-       fhir:name [ fhir:v "CDA - FR DICOM Complications" ] ;
-       fhir:description [ fhir:v "DICOM Part 20 - Complications\n - Cette sous-section permet d'enregistrer les complications survenues au cours de l'acte sous forme textuelle." ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Ressources CDA corps des sections" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-conclusion> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-cda-dicom-conclusion" ]
-       ] ;
-       fhir:name [ fhir:v "CDA - FR DICOM Conclusion" ] ;
-       fhir:description [ fhir:v "DICOM Part 20 - Impression Section\n- Cette section permet d'enregistrer les informations sur les diagnostics les plus importantes ou d’autres conclusions cliniques qui peuvent être faites à partir des observations d’imagerie et d’autres informations cliniques. Elle peut inclure des recommandations pour des tests d’imagerie supplémentaires ou d’autres actions, ainsi que des évaluations globales." ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Ressources CDA corps des sections" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-demande-examen> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-cda-dicom-demande-examen" ]
-       ] ;
-       fhir:name [ fhir:v "CDA - FR DICOM Demande examen" ] ;
-       fhir:description [ fhir:v "DICOM Part 20 - Request Section\n- Justification de la demande d’examen / Finalité de l'examen." ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Ressources CDA corps des sections" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-examen-comparatif> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-cda-dicom-examen-comparatif" ]
-       ] ;
-       fhir:name [ fhir:v "CDA - FR DICOM Examen comparatif" ] ;
-       fhir:description [ fhir:v "DICOM Part 20 - Comparison Study Section\n - Cette section textuelle permet d'enregistrer une comparaison de l'acte actuel avec un acte antérieur." ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Ressources CDA corps des sections" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-examen-imagerie> ;
          fhir:reference [ fhir:v "StructureDefinition/fr-cda-dicom-examen-imagerie" ]
        ] ;
@@ -2669,28 +2391,6 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-exposition-aux-radiations> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-cda-dicom-exposition-aux-radiations" ]
-       ] ;
-       fhir:name [ fhir:v "CDA - FR DICOM Exposition aux radiations" ] ;
-       fhir:description [ fhir:v "DICOM Part 20 - Radiation Exposure and Protection Information \n - Cette sous-section permet d'enregistrer les informations relatives à l’exposition du patient aux rayonnements et les informations de radioprotection." ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Ressources CDA corps des sections" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-exposition-patient> ;
          fhir:reference [ fhir:v "StructureDefinition/fr-cda-dicom-exposition-patient" ]
        ] ;
@@ -2701,72 +2401,6 @@
          fhir:v false
        ] ;
        fhir:groupingId [ fhir:v "Ressources CDA corps des composants élémentaires" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-historique-medical> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-cda-dicom-historique-medical" ]
-       ] ;
-       fhir:name [ fhir:v "CDA - FR DICOM Historique medical" ] ;
-       fhir:description [ fhir:v "DICOM Part 20 - Medical (General) History Section\n - Cette sous-section permet d'enregistrer les antécédents médicaux, les antécédents chirurgicaux et les contre-indications." ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Ressources CDA corps des sections" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-informations-cliniques> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-cda-dicom-informations-cliniques" ]
-       ] ;
-       fhir:name [ fhir:v "CDA - FR DICOM Informations cliniques" ] ;
-       fhir:description [ fhir:v "DICOM Part 20 - Clinical Information Section. Cette section permet d'enregistrer les détails cliniques liés au patient, tels que : \n - Justification de la demande dans la sous-section FR-DICOM-demande-examen [1..1] \n - Finalité de l'examen dans la même sous-section FR-DICOM-demande-examen [0..1] \n - Antécédents médicaux significatifs et pertinents pour cet examen dans la sous-section FR-Historique-medical [0..1]\n - Antécédents chirurgicaux pertinents pour cet examen dans la sous-section FR-Historique-medical [0..1] \n - Contre-indications et facteurs de risques connus au moment de la demande et dépendant de la modalité dans la sous-section FR-Historique-medical [0..1]" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Ressources CDA corps des sections" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-object-catalog> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-cda-dicom-object-catalog" ]
-       ] ;
-       fhir:name [ fhir:v "CDA - FR DICOM Object Catalog" ] ;
-       fhir:description [ fhir:v "DICOM Part 20 - DICOM Object Catalog Section. Le catalogue d’objets DICOM répertorie tous les objets référencés selon l'organisation suivante :\n - [0..*] Examen \n  - [1..*] Série (avec la modalité d'acquisition)\n   - [1..*] Objet référencé (avec la classe d'objet)" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Ressources CDA corps des sections" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2889,28 +2523,6 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-resultats> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-cda-dicom-resultats" ]
-       ] ;
-       fhir:name [ fhir:v "CDA - FR DICOM Resultats" ] ;
-       fhir:description [ fhir:v "DICOM Part 20 - Findings\n - Cette section permet d'enregistrer, sous forme textuelle, les observations cliniquement significatives confirmées ou découvertes au cours de l’intervention d’imagerie (description des résultats)." ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Ressources CDA corps des sections" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-serie-imagerie> ;
          fhir:reference [ fhir:v "StructureDefinition/fr-cda-dicom-serie-imagerie" ]
        ] ;
@@ -3021,28 +2633,6 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dispensation-medicaments> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-cda-dispensation-medicaments" ]
-       ] ;
-       fhir:name [ fhir:v "CDA - FR Dispensation medicaments" ] ;
-       fhir:description [ fhir:v "IHE PHARM DIS - Dispense SectionDescription d’un médicament administré au patient." ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Ressources CDA corps des sections" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dispositif-medical> ;
          fhir:reference [ fhir:v "StructureDefinition/fr-cda-dispositif-medical" ]
        ] ;
@@ -3053,27 +2643,6 @@
          fhir:v false
        ] ;
        fhir:groupingId [ fhir:v "Ressources CDA corps des composants élémentaires" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-dispositifs-medicaux> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-dispositifs-medicaux" ]
-       ] ;
-       fhir:name [ fhir:v "CDA - FR Dispositifs medicaux" ] ;
-       fhir:description [ fhir:v "IHE-PCC - Medical Devices SectionCette section 'Dispositifs médicaux' contient une description des dispositifs médicaux implantés (EES, DF, prothèses) chez le malade sous forme codée." ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -3108,50 +2677,6 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-document-pdf-copie> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-cda-document-pdf-copie" ]
-       ] ;
-       fhir:name [ fhir:v "CDA - FR Document PDF copie" ] ;
-       fhir:description [ fhir:v "Cette section ne contient qu’une et une seule entrée FR-Document-attache qui contiendra la copie PDF encodée en B64 du document CDA." ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Ressources CDA corps des sections" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-documents-ajoutes> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-cda-documents-ajoutes" ]
-       ] ;
-       fhir:name [ fhir:v "CDA - FR Documents ajoutes" ] ;
-       fhir:description [ fhir:v "Liste de documents ajoutés" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Ressources CDA corps des sections" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dose-antigene> ;
          fhir:reference [ fhir:v "StructureDefinition/fr-cda-dose-antigene" ]
        ] ;
@@ -3174,28 +2699,6 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-education-du-patient> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-cda-education-du-patient" ]
-       ] ;
-       fhir:name [ fhir:v "CDA - FR Education du patient" ] ;
-       fhir:description [ fhir:v "IHE-PCC - Patient Education Section\n - Liste des éléments se rapportant à l'éducation du patient vis-à-vis de sa maladie ou par rapport à un acte prévu." ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Ressources CDA corps des sections" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-effet-indesirable> ;
          fhir:reference [ fhir:v "StructureDefinition/fr-cda-effet-indesirable" ]
        ] ;
@@ -3206,28 +2709,6 @@
          fhir:v false
        ] ;
        fhir:groupingId [ fhir:v "Ressources CDA corps des composants élémentaires" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-effets-indesirables> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-cda-effets-indesirables" ]
-       ] ;
-       fhir:name [ fhir:v "CDA - FR Effets indesirables" ] ;
-       fhir:description [ fhir:v "Liste des effets indésirables prévisibles liés aux médicaments." ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Ressources CDA corps des sections" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -3464,7 +2945,7 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-cda-facteurs-de-risque-professionnels-non-code" ]
        ] ;
        fhir:name [ fhir:v "CDA - FR Facteurs de risque professionnels non code" ] ;
-       fhir:description [ fhir:v "IHE-PCC - Hazardous-Working-Conditions-SectionFacteurs de risques professionnels sous forme narrative (section non codée)." ] ;
+       fhir:description [ fhir:v "IHE-PCC - Hazardous-Working-Conditions-SectionFacteurs de risques professionnels sous forme narrative (section non codÃ©e)." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -3486,7 +2967,7 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-cda-fonctions-physiques" ]
        ] ;
        fhir:name [ fhir:v "CDA - FR Fonctions physiques" ] ;
-       fhir:description [ fhir:v "IHE-PCC - Physical Function Section. Cette section permet d'enregistrer les problèmes physiques fonctionnels et structurels qui concernent le patient." ] ;
+       fhir:description [ fhir:v "IHE-PCC - Physical Function Section. Cette section permet d'enregistrer les problÃ¨mes physiques fonctionnels et structurels qui concernent le patient." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -3574,7 +3055,7 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-cda-section-habitus-mode-de-vie" ]
        ] ;
        fhir:name [ fhir:v "CDA - FR Habitus mode de vie" ] ;
-       fhir:description [ fhir:v "IHE-PCC - Coded Social History Section. Liste codée des informations relatives aux habitus et au mode de vie du patient." ] ;
+       fhir:description [ fhir:v "IHE-PCC - Coded Social History Section. Liste codÃ©e des informations relatives aux habitus et au mode de vie du patient." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -4739,7 +4220,7 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-cda-section-resultats" ]
        ] ;
        fhir:name [ fhir:v "CDA - FR Resultats" ] ;
-       fhir:description [ fhir:v "Cette section regroupe les résultats d'examens (biologie polyvalente, imagerie, cytologie, pathologie, génétique humaine...)" ] ;
+       fhir:description [ fhir:v "Cette section regroupe les rÃ©sultats d'examens (biologie polyvalente, imagerie, cytologie, pathologie, gÃ©nÃ©tique humaine...)" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-plan-de-soins | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-16 | *Computable Name*:FRCDASectionPlanDeSoins |
+| Draft as of 2026-04-17 | *Computable Name*:FRCDASectionPlanDeSoins |
 
  
 IHE-PCC - Coded Care Plan. La section Plan de soins doit contenir une description narrative des attentes en matière de soins, y compris des propositions, des objectifs et des demandes pour le suivi ou l’amélioration de l’état du patient. 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-plan-de-soins
   "name" : "FRCDASectionPlanDeSoins",
   "title" : "CDA - FR Plan de soins",
   "status" : "draft",
-  "date" : "2026-04-16T10:39:58+00:00",
+  "date" : "2026-04-17T08:40:59+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -155,6 +155,13 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-plan-de-soins
       "patternString" : "1.2.250.1.213.1.1.2.158"
     },
     {
+      "id" : "Section.id",
+      "path" : "Section.id",
+      "short" : "Identifiant de la section",
+      "definition" : "Identifiant de la section",
+      "mustSupport" : true
+    },
+    {
       "id" : "Section.code",
       "path" : "Section.code",
       "short" : "Code de la section",
@@ -165,12 +172,16 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-plan-de-soins
     {
       "id" : "Section.code.code",
       "path" : "Section.code.code",
-      "patternCode" : "18776-5"
+      "min" : 1,
+      "patternCode" : "18776-5",
+      "mustSupport" : true
     },
     {
       "id" : "Section.code.codeSystem",
       "path" : "Section.code.codeSystem",
-      "patternString" : "2.16.840.1.113883.6.1"
+      "min" : 1,
+      "patternString" : "2.16.840.1.113883.6.1",
+      "mustSupport" : true
     },
     {
       "id" : "Section.code.codeSystemName",
@@ -180,7 +191,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-plan-de-soins
     {
       "id" : "Section.code.displayName",
       "path" : "Section.code.displayName",
-      "patternString" : "Plan de soins"
+      "min" : 1,
+      "patternString" : "Plan de soins",
+      "mustSupport" : true
     },
     {
       "id" : "Section.title",

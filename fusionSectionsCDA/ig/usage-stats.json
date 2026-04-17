@@ -569,7 +569,7 @@
     "http://hl7.org/fhir/5.0/StructureDefinition/extension-Immunization.basedOn": [
       "Immunization"
     ],
-    "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationAdministration.occurence%5Bx%5D": [
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationAdministration.occurence": [
       "MedicationAdministration"
     ],
     "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.dispenseRequest.dispenserInstruction": [

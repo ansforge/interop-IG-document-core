@@ -10,7 +10,7 @@
   "name" : "FRCompositionDocument",
   "title" : "FR Composition Document",
   "status" : "draft",
-  "date" : "2026-04-16T10:39:58+00:00",
+  "date" : "2026-04-17T08:40:59+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -681,7 +681,8 @@
       "sliceName" : "R5-Composition-version",
       "label" : "clinical document version number",
       "short" : "Version du document",
-      "definition" : "An Extension",
+      "definition" : "R5: `Composition.version` (new:string)",
+      "comment" : "Element `Composition.version` has a context of Composition based on following the parent source element upwards and mapping to `Composition`.\nElement `Composition.version` has no mapping targets in FHIR R4. Typically, this is because the element has been added (is a new element).\nWhile each resource, including the composition itself, has its own version identifier, this is a formal identifier for the logical version of the Composition as a whole. It would remain constant if the resources were moved to a new server, and all got new individual resource versions, for example.",
       "min" : 1,
       "max" : "1",
       "base" : {

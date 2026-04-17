@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-section-signes-vitaux | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-16 | *Computable Name*:FRCDASectionSignesVitaux |
+| Draft as of 2026-04-17 | *Computable Name*:FRCDASectionSignesVitaux |
 
  
 IHE-PCC - Coded Vital Signs. Section Liste codée des résultats mesurés des signes vitaux. 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-section-signe
   "name" : "FRCDASectionSignesVitaux",
   "title" : "CDA - FR Signes vitaux",
   "status" : "draft",
-  "date" : "2026-04-16T10:39:58+00:00",
+  "date" : "2026-04-17T08:40:59+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -169,6 +169,13 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-section-signe
       "patternString" : "1.2.250.1.213.1.1.2.75"
     },
     {
+      "id" : "Section.id",
+      "path" : "Section.id",
+      "short" : "Identifiant de la section",
+      "definition" : "Identifiant de la section",
+      "mustSupport" : true
+    },
+    {
       "id" : "Section.code",
       "path" : "Section.code",
       "short" : "Code de la section",
@@ -179,12 +186,16 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-section-signe
     {
       "id" : "Section.code.code",
       "path" : "Section.code.code",
-      "patternCode" : "8716-3"
+      "min" : 1,
+      "patternCode" : "8716-3",
+      "mustSupport" : true
     },
     {
       "id" : "Section.code.codeSystem",
       "path" : "Section.code.codeSystem",
-      "patternString" : "2.16.840.1.113883.6.1"
+      "min" : 1,
+      "patternString" : "2.16.840.1.113883.6.1",
+      "mustSupport" : true
     },
     {
       "id" : "Section.code.codeSystemName",
@@ -194,7 +205,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-section-signe
     {
       "id" : "Section.code.displayName",
       "path" : "Section.code.displayName",
-      "patternString" : "Signes vitaux"
+      "min" : 1,
+      "patternString" : "Signes vitaux",
+      "mustSupport" : true
     },
     {
       "id" : "Section.title",

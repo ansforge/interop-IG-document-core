@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-reference-item-prescription | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-16 | *Computable Name*:FRCDAReferenceItemPrescription |
+| Draft as of 2026-04-17 | *Computable Name*:FRCDAReferenceItemPrescription |
 
  
 Entrée FR-Reference-item-prescription: IHE-PRE - Reference-Prescription-Item. Cette entrée permet d’enregistrer la référence à un item de prescription. 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-reference-ite
   "name" : "FRCDAReferenceItemPrescription",
   "title" : "CDA - FR Reference item prescription",
   "status" : "draft",
-  "date" : "2026-04-16T10:39:58+00:00",
+  "date" : "2026-04-17T08:40:59+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -96,6 +96,10 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-reference-ite
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
+      "id" : "SubstanceAdministration",
+      "path" : "SubstanceAdministration"
+    },
+    {
       "id" : "SubstanceAdministration.templateId",
       "path" : "SubstanceAdministration.templateId",
       "slicing" : {

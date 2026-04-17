@@ -10,7 +10,7 @@
   "name" : "FRDocumentCore",
   "title" : "ANS IG document core",
   "status" : "draft",
-  "date" : "2026-04-16T10:39:58+00:00",
+  "date" : "2026-04-17T08:40:59+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -56,6 +56,12 @@
     "uri" : "https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core",
     "packageId" : "hl7.fhir.fr.core",
     "version" : "2.1.0"
+  },
+  {
+    "id" : "hl7_fhir_uv_xver_r5_r4",
+    "uri" : "http://hl7.org/fhir/uv/xver/ImplementationGuide/hl7.fhir.uv.xver-r5.r4",
+    "packageId" : "hl7.fhir.uv.xver-r5.r4",
+    "version" : "0.1.0"
   },
   {
     "id" : "hl7_fhir_uv_extensions_r4",
@@ -1080,19 +1086,6 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/fr-cda-allergies-et-hypersensibilites"
-      },
-      "name" : "CDA - FR Allergies et hypersensibilites",
-      "description" : "IHE-PCC - Allergies-And-Other-Adverse-Reactions \n - La section 'Allergies et hypersensibilités' permet de décrire la liste codée des allergies et hypersensibilités (médicaments, environnements, aliments,..) précisant notamment l'agent et les réactions observées.",
-      "exampleBoolean" : false,
-      "groupingId" : "Ressources CDA corps des sections"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/fr-cda-antecedent-familial-observe"
       },
       "name" : "CDA - FR Antecedent familial observe",
@@ -1112,32 +1105,6 @@
       "description" : "Entrée FR-Antecedents-familiaux: IHE-PCC - Family History Organizer L'entrée Antécédents familiaux est une entrée de type organizer qui permet de regrouper des informations relatives aux membres de la famille du patient. Les éléments ‘component' de cet organizer sont des entrées de type Family History Observation (1.3.6.1.4.1.19376.1.5.3.1.4.13.3).",
       "exampleBoolean" : false,
       "groupingId" : "Ressources CDA corps des composants élémentaires"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-cda-section-antecedents-familiaux"
-      },
-      "name" : "CDA - FR Antecedents familiaux",
-      "description" : "IHE-PCC Coded-Family-Medical-History\n - Liste codée des antécédents familiaux.",
-      "exampleBoolean" : false,
-      "groupingId" : "Ressources CDA corps des sections"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-cda-antecedents-medicaux"
-      },
-      "name" : "CDA - FR Antecedents medicaux",
-      "description" : "IHE-PCC - History-Of-Past-Illness \n - La section 'Antécédents médicaux' doit contenir une liste codée des antécédents médicaux du patient. Il s'agit d'épisodes résolus, c'est à dire de maladies que l'on considère comme guéries. Si une maladies est susceptible de présenter des épisodes de rechute, elle sera classée dans des problèmes actifs, même si ces épisodes dont résolus.",
-      "exampleBoolean" : false,
-      "groupingId" : "Ressources CDA corps des sections"
     },
     {
       "extension" : [{
@@ -1210,64 +1177,12 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/fr-cda-code-a-barres"
-      },
-      "name" : "CDA - FR Code a barres",
-      "description" : "Cette section permet d'enregistrer des codes à barres",
-      "exampleBoolean" : false,
-      "groupingId" : "Ressources CDA corps des sections"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/fr-cda-commentaire-er"
       },
       "name" : "CDA - FR Commentaire ER",
       "description" : "Entrée FR-Commentaire-ER: IHE-PCC - Comments L’entrée FR-Commentaire-ER est un élément qui permet de joindre un commentaire à une entrée ou à une section.  Note : IHE PCC a limité l’utilisation de l’élément « Comments » (1.3.6.1.4.1.19376.1.5.3.1.4.2) aux entrées de type observation et organizer. Ce n’est pas le cas dans CDD pour l’élément « Comment » (2.16.840.1.113883.10.20.1.40). Dans le CI-SIS, le choix a été fait de ne pas limiter l’utilisation de l’entrée FR-Commentaire-ER (1.3.6.1.4.1.19376.1.5.3.1.4.2) comme dans CCD. Lorsque l’entrée FR-Commentaire-ER est utilisée dans une entrée : de type organizer : l’utiliser dans un élément component avec l’attribut type-Code='COMP'.de type observation ou act, etc… : l’utiliser dans un élément entryRelationship avec les attributs typeCode='SUBJ' et inversionInd='true'.",
       "exampleBoolean" : false,
       "groupingId" : "Ressources CDA corps des composants élémentaires"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-cda-commentaire-non-code"
-      },
-      "name" : "CDA - FR Commentaire non code",
-      "description" : "IHE-PCC - Document-Summary Cette section permet d'indiquer un commentaire sous forme textuelle.",
-      "exampleBoolean" : false,
-      "groupingId" : "Ressources CDA corps des sections"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-cda-cr-bio-chapitre"
-      },
-      "name" : "CDA - FR CR BIO Chapitre",
-      "description" : "IHE-PaLM - Laboratory Specialty Section\n - Une section de premier niveau est appelée 'Chapitre' et correspond à une sous-discipline de la biologie médicale (par exemple « biochimie »).Elle contient :soit directement la présentation des résultats d'examens de biologie médicale obtenus pour ce chapitre : dans ce cas, il y a un unique élément <text> (présentation du contenu pour le lecteur) et un unique élément <entry> (données codées pour les SIS dont procède le contenu de l'élément <text>)soit une liste de sections de second niveau, appelés sous-chapitres (par exemple « Gaz du sang ») : dans ce cas, il y a une liste d'éléments <component> dont chacun introduit une <section> de second niveau\u00a0présentant un sous-ensemble de un ou plusieurs résultats d'examens de biologie médicale.Remarque : L'arborescence du corps du compte rendu d'examens de biologie médicale est choisie par le LPS producteur du document selon la logique de présentation définie par le laboratoire.",
-      "exampleBoolean" : false,
-      "groupingId" : "Ressources CDA corps des sections"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-cda-cr-bio-sous-chapitre"
-      },
-      "name" : "CDA - FR CR BIO Sous Chapitre",
-      "description" : "IHE-PaLM - Laboratory Report Item Section\n - Section de second niveau, appelée sous-chapitre (par exemple « Gaz du sang ») qui présente un sous-ensemble de un ou plusieurs résultats d'examens de biologie médicale. Elle est comporte un élément 'text' qui porte les résultats présentés et interprétés pour le lecteur et d'une entrée contenant les données codées dont procède le contenu de l'élément 'text'.",
-      "exampleBoolean" : false,
-      "groupingId" : "Ressources CDA corps des sections"
     },
     {
       "extension" : [{
@@ -1294,32 +1209,6 @@
       "description" : "Entrée FR-Demande-d-examen-ou-de-suivi: IHE-PCC - Observation Request L'entrée Demande d'examen / de suivi est une observation qui permet de porter des demandes d'examens (analyses biologiques, évaluations, étude d'imagerie, etc…) ou de suivis particuliers à programmer dans le cadre d'un plan de soins. Cette entrée est basée sur l'élément Simple Observation (1.3.6.1.4.1.19376.1.5.3.1.4.13) qu'elle spécialise.",
       "exampleBoolean" : false,
       "groupingId" : "Ressources CDA corps des composants élémentaires"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-cda-dicom-acte-imagerie"
-      },
-      "name" : "CDA - FR DICOM Acte imagerie",
-      "description" : "DICOM Part 20 - Imaging Procedure Description Section\n - Cette section permet d'enregistrer les informations sur les détails techniques de l'acte d'imagerie et peut inclure des informations sur le protocole, le dispositif d’imagerie, le contraste, la dose de rayonnement, les médicaments administrés.",
-      "exampleBoolean" : false,
-      "groupingId" : "Ressources CDA corps des sections"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-cda-dicom-addendum"
-      },
-      "name" : "CDA - FR DICOM Addendum",
-      "description" : "DICOM Part 20 - Addendum Section\n - La section Addendum permet d'enregistrer, dans une nouvelle version du compte-rendu, des informations correctives ou complémentaires par rapport au compte-rendu initial.",
-      "exampleBoolean" : false,
-      "groupingId" : "Ressources CDA corps des sections"
     },
     {
       "extension" : [{
@@ -1379,58 +1268,6 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/fr-cda-dicom-complications"
-      },
-      "name" : "CDA - FR DICOM Complications",
-      "description" : "DICOM Part 20 -\u00a0Complications\n - Cette sous-section permet d'enregistrer les complications survenues au cours de l'acte sous forme textuelle.",
-      "exampleBoolean" : false,
-      "groupingId" : "Ressources CDA corps des sections"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-cda-dicom-conclusion"
-      },
-      "name" : "CDA - FR DICOM Conclusion",
-      "description" : "DICOM Part 20 - Impression Section\n- Cette section permet d'enregistrer les informations sur les diagnostics les plus importantes ou d’autres conclusions cliniques qui peuvent être faites à partir des observations d’imagerie et d’autres informations cliniques. Elle peut inclure des recommandations pour des tests d’imagerie supplémentaires ou d’autres actions, ainsi que des évaluations globales.",
-      "exampleBoolean" : false,
-      "groupingId" : "Ressources CDA corps des sections"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-cda-dicom-demande-examen"
-      },
-      "name" : "CDA - FR DICOM Demande examen",
-      "description" : "DICOM Part 20 -\u00a0Request Section\n- Justification de la demande d’examen / Finalité de l'examen.",
-      "exampleBoolean" : false,
-      "groupingId" : "Ressources CDA corps des sections"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-cda-dicom-examen-comparatif"
-      },
-      "name" : "CDA - FR DICOM Examen comparatif",
-      "description" : "DICOM Part 20 -\u00a0Comparison Study Section\n - Cette section textuelle permet d'enregistrer une comparaison de l'acte actuel avec un acte antérieur.",
-      "exampleBoolean" : false,
-      "groupingId" : "Ressources CDA corps des sections"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/fr-cda-dicom-examen-imagerie"
       },
       "name" : "CDA - FR DICOM Examen imagerie",
@@ -1444,64 +1281,12 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/fr-cda-dicom-exposition-aux-radiations"
-      },
-      "name" : "CDA - FR DICOM Exposition aux radiations",
-      "description" : "DICOM Part 20 -\u00a0Radiation Exposure and Protection Information\u00a0\n - Cette sous-section permet d'enregistrer les informations relatives à l’exposition du patient aux rayonnements et les informations de radioprotection.",
-      "exampleBoolean" : false,
-      "groupingId" : "Ressources CDA corps des sections"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/fr-cda-dicom-exposition-patient"
       },
       "name" : "CDA - FR DICOM Exposition patient",
       "description" : "Entrée FR-DICOM-Exposition-patient: DICOM Part 20 - inclue dans l'entrée\u00a0FR-DICOM-Exposition-aux-radiations. Cette entrée permet d’enregistrer l'identité du professionnel de santé ayant donné l'autorisation de l'exposition du patient aux rayonnements.Elle est obligatoire dans la norme DICOM Part 20.",
       "exampleBoolean" : false,
       "groupingId" : "Ressources CDA corps des composants élémentaires"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-cda-dicom-historique-medical"
-      },
-      "name" : "CDA - FR DICOM Historique medical",
-      "description" : "DICOM Part 20 -\u00a0Medical (General) History Section\n - Cette sous-section permet d'enregistrer les antécédents médicaux, les antécédents chirurgicaux et les contre-indications.",
-      "exampleBoolean" : false,
-      "groupingId" : "Ressources CDA corps des sections"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-cda-dicom-informations-cliniques"
-      },
-      "name" : "CDA - FR DICOM Informations cliniques",
-      "description" : "DICOM Part 20 -\u00a0Clinical Information Section. Cette section permet d'enregistrer les détails cliniques liés au patient, tels que : \n - Justification de la demande dans la sous-section FR-DICOM-demande-examen [1..1] \n - Finalité de l'examen dans la même sous-section FR-DICOM-demande-examen [0..1] \n - Antécédents médicaux significatifs et pertinents pour cet examen dans la sous-section FR-Historique-medical [0..1]\n - Antécédents chirurgicaux pertinents pour cet examen dans la sous-section FR-Historique-medical [0..1] \n - Contre-indications et facteurs de risques connus au moment de la demande et dépendant de la modalité dans la sous-section FR-Historique-medical [0..1]",
-      "exampleBoolean" : false,
-      "groupingId" : "Ressources CDA corps des sections"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-cda-dicom-object-catalog"
-      },
-      "name" : "CDA - FR DICOM Object Catalog",
-      "description" : "DICOM Part 20 -\u00a0DICOM Object Catalog Section. Le catalogue d’objets DICOM répertorie tous les objets référencés selon l'organisation suivante :\n - [0..*] Examen \n  - [1..*] Série (avec la modalité d'acquisition)\n   - [1..*] Objet référencé (avec la classe d'objet)",
-      "exampleBoolean" : false,
-      "groupingId" : "Ressources CDA corps des sections"
     },
     {
       "extension" : [{
@@ -1574,19 +1359,6 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/fr-cda-dicom-resultats"
-      },
-      "name" : "CDA - FR DICOM Resultats",
-      "description" : "DICOM Part 20 -\u00a0Findings\n - Cette section permet d'enregistrer, sous forme textuelle, les observations cliniquement significatives confirmées ou découvertes au cours de l’intervention d’imagerie (description des résultats).",
-      "exampleBoolean" : false,
-      "groupingId" : "Ressources CDA corps des sections"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/fr-cda-dicom-serie-imagerie"
       },
       "name" : "CDA - FR DICOM Serie imagerie",
@@ -1652,37 +1424,12 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/fr-cda-dispensation-medicaments"
-      },
-      "name" : "CDA - FR Dispensation medicaments",
-      "description" : "IHE PHARM DIS - Dispense SectionDescription d’un médicament administré au patient.",
-      "exampleBoolean" : false,
-      "groupingId" : "Ressources CDA corps des sections"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/fr-cda-dispositif-medical"
       },
       "name" : "CDA - FR Dispositif medical",
       "description" : "Entrée FR-Dispositif-medical: L'entrée Dispositif Médical est une entrée de type 'supply' qui permet de fournir les information sur un dispositif médical.",
       "exampleBoolean" : false,
       "groupingId" : "Ressources CDA corps des composants élémentaires"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-dispositifs-medicaux"
-      },
-      "name" : "CDA - FR Dispositifs medicaux",
-      "description" : "IHE-PCC - Medical Devices SectionCette section 'Dispositifs médicaux' contient une description des dispositifs médicaux implantés (EES, DF, prothèses) chez le malade sous forme codée.",
-      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -1703,32 +1450,6 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/fr-cda-document-pdf-copie"
-      },
-      "name" : "CDA - FR Document PDF copie",
-      "description" : "Cette section ne contient qu’une et une seule entrée FR-Document-attache qui contiendra la copie PDF encodée en B64 du document CDA.",
-      "exampleBoolean" : false,
-      "groupingId" : "Ressources CDA corps des sections"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-cda-documents-ajoutes"
-      },
-      "name" : "CDA - FR Documents ajoutes",
-      "description" : "Liste de documents ajoutés",
-      "exampleBoolean" : false,
-      "groupingId" : "Ressources CDA corps des sections"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/fr-cda-dose-antigene"
       },
       "name" : "CDA - FR Dose antigene",
@@ -1742,38 +1463,12 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/fr-cda-education-du-patient"
-      },
-      "name" : "CDA - FR Education du patient",
-      "description" : "IHE-PCC - Patient Education Section\n - Liste des éléments se rapportant à l'éducation du patient vis-à-vis de sa maladie ou par rapport à un acte prévu.",
-      "exampleBoolean" : false,
-      "groupingId" : "Ressources CDA corps des sections"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/fr-cda-effet-indesirable"
       },
       "name" : "CDA - FR Effet indesirable",
       "description" : "Entrée FR-Effet-indesirable: Cette entrée permet de décrire un effet indésirable prévisible lié à un médicament.",
       "exampleBoolean" : false,
       "groupingId" : "Ressources CDA corps des composants élémentaires"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-cda-effets-indesirables"
-      },
-      "name" : "CDA - FR Effets indesirables",
-      "description" : "Liste des effets indésirables prévisibles liés aux médicaments.",
-      "exampleBoolean" : false,
-      "groupingId" : "Ressources CDA corps des sections"
     },
     {
       "extension" : [{
@@ -1914,7 +1609,7 @@
         "reference" : "StructureDefinition/fr-cda-facteurs-de-risque-professionnels-non-code"
       },
       "name" : "CDA - FR Facteurs de risque professionnels non code",
-      "description" : "IHE-PCC - Hazardous-Working-Conditions-SectionFacteurs de risques professionnels sous forme narrative (section non codée).",
+      "description" : "IHE-PCC - Hazardous-Working-Conditions-SectionFacteurs de risques professionnels sous forme narrative (section non codÃ©e).",
       "exampleBoolean" : false,
       "groupingId" : "Ressources CDA corps des sections"
     },
@@ -1927,7 +1622,7 @@
         "reference" : "StructureDefinition/fr-cda-fonctions-physiques"
       },
       "name" : "CDA - FR Fonctions physiques",
-      "description" : "IHE-PCC - Physical Function Section. Cette section permet d'enregistrer les problèmes physiques fonctionnels et structurels qui concernent le patient.",
+      "description" : "IHE-PCC - Physical Function Section. Cette section permet d'enregistrer les problÃ¨mes physiques fonctionnels et structurels qui concernent le patient.",
       "exampleBoolean" : false,
       "groupingId" : "Ressources CDA corps des sections"
     },
@@ -1979,7 +1674,7 @@
         "reference" : "StructureDefinition/fr-cda-section-habitus-mode-de-vie"
       },
       "name" : "CDA - FR Habitus mode de vie",
-      "description" : "IHE-PCC - Coded Social History Section. Liste codée des informations relatives aux habitus et au mode de vie du patient.",
+      "description" : "IHE-PCC - Coded Social History Section. Liste codÃ©e des informations relatives aux habitus et au mode de vie du patient.",
       "exampleBoolean" : false,
       "groupingId" : "Ressources CDA corps des sections"
     },
@@ -2667,7 +2362,7 @@
         "reference" : "StructureDefinition/fr-cda-section-resultats"
       },
       "name" : "CDA - FR Resultats",
-      "description" : "Cette section regroupe les résultats d'examens (biologie polyvalente, imagerie, cytologie, pathologie, génétique humaine...)",
+      "description" : "Cette section regroupe les rÃ©sultats d'examens (biologie polyvalente, imagerie, cytologie, pathologie, gÃ©nÃ©tique humaine...)",
       "exampleBoolean" : false,
       "groupingId" : "Ressources CDA corps des sections"
     },

@@ -9,10 +9,10 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-facteurs-de-risque-professionnels-non-code | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-16 | *Computable Name*:FRCDASectionFacteursDeRisqueProfessionnelsNonCode |
+| Draft as of 2026-04-17 | *Computable Name*:FRCDASectionFacteursDeRisqueProfessionnelsNonCode |
 
  
-IHE-PCC - Hazardous-Working-Conditions-SectionFacteurs de risques professionnels sous forme narrative (section non codée). 
+IHE-PCC - Hazardous-Working-Conditions-SectionFacteurs de risques professionnels sous forme narrative (section non codÃ©e). 
 
 **Utilisations:**
 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-facteurs-de-r
   "name" : "FRCDASectionFacteursDeRisqueProfessionnelsNonCode",
   "title" : "CDA - FR Facteurs de risque professionnels non code",
   "status" : "draft",
-  "date" : "2026-04-16T10:39:58+00:00",
+  "date" : "2026-04-17T08:40:59+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -75,7 +75,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-facteurs-de-r
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "IHE-PCC - Hazardous-Working-Conditions-SectionFacteurs de risques professionnels sous forme narrative (section non codée).",
+  "description" : "IHE-PCC - Hazardous-Working-Conditions-SectionFacteurs de risques professionnels sous forme narrative (section non codÃ©e).",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -116,7 +116,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-facteurs-de-r
       "id" : "Section.templateId:iheSectionHazardousWorkingConditions",
       "path" : "Section.templateId",
       "sliceName" : "iheSectionHazardousWorkingConditions",
-      "short" : "Conformité IHE-PCC Hazardous-Working-Conditions-Section (IHE-PCC)",
+      "short" : "ConformitÃ© IHE-PCC Hazardous-Working-Conditions-Section (IHE-PCC)",
       "min" : 1,
       "max" : "1"
     },
@@ -130,7 +130,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-facteurs-de-r
       "id" : "Section.templateId:frSectionFacteursDeRisqueProfessionnelsNonCode",
       "path" : "Section.templateId",
       "sliceName" : "frSectionFacteursDeRisqueProfessionnelsNonCode",
-      "short" : "Conformité FR-Facteurs-de-risque-professionnels-non-code (CI-SIS)",
+      "short" : "ConformitÃ© FR-Facteurs-de-risque-professionnels-non-code (CI-SIS)",
       "min" : 0,
       "max" : "1"
     },
@@ -139,6 +139,14 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-facteurs-de-r
       "path" : "Section.templateId.root",
       "min" : 1,
       "patternString" : "1.2.250.1.213.1.1.2.74"
+    },
+    {
+      "id" : "Section.id",
+      "path" : "Section.id",
+      "short" : "Identifiant de la section",
+      "definition" : "Identifiant de la section",
+      "min" : 1,
+      "mustSupport" : true
     },
     {
       "id" : "Section.code",
@@ -151,12 +159,16 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-facteurs-de-r
     {
       "id" : "Section.code.code",
       "path" : "Section.code.code",
-      "patternCode" : "10161-8"
+      "min" : 1,
+      "patternCode" : "10161-8",
+      "mustSupport" : true
     },
     {
       "id" : "Section.code.codeSystem",
       "path" : "Section.code.codeSystem",
-      "patternString" : "2.16.840.1.113883.6.1"
+      "min" : 1,
+      "patternString" : "2.16.840.1.113883.6.1",
+      "mustSupport" : true
     },
     {
       "id" : "Section.code.codeSystemName",
@@ -166,7 +178,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-facteurs-de-r
     {
       "id" : "Section.code.displayName",
       "path" : "Section.code.displayName",
-      "patternString" : "Facteurs de risques professionnels"
+      "min" : 1,
+      "patternString" : "Facteurs de risques professionnels",
+      "mustSupport" : true
     },
     {
       "id" : "Section.title",

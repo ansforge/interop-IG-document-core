@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dispositif-medical | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-16 | *Computable Name*:FRCDADispositifMedical |
+| Draft as of 2026-04-17 | *Computable Name*:FRCDADispositifMedical |
 
  
 Entrée FR-Dispositif-medical: L’entrée Dispositif Médical est une entrée de type ‘supply’ qui permet de fournir les information sur un dispositif médical. 
 
 **Utilisations:**
 
-* Utilise ce/t/te Profil de modèle logique: [CDA - FR Prescription dispositifs medicaux](StructureDefinition-fr-cda-prescription-dispositifs-medicaux.md) and [CDA - FR Dispositifs medicaux](StructureDefinition-fr-dispositifs-medicaux.md)
+* Utilise ce/t/te Profil de modèle logique: [CDA - FR Prescription dispositifs medicaux](StructureDefinition-fr-cda-prescription-dispositifs-medicaux.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-dispositif-medical)
 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dispositif-me
   "name" : "FRCDADispositifMedical",
   "title" : "CDA - FR Dispositif medical",
   "status" : "draft",
-  "date" : "2026-04-16T10:39:58+00:00",
+  "date" : "2026-04-17T08:40:59+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

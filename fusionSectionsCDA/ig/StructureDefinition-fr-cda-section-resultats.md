@@ -9,10 +9,10 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-section-resultats | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-16 | *Computable Name*:FRCDASectionResultats |
+| Draft as of 2026-04-17 | *Computable Name*:FRCDASectionResultats |
 
  
-Cette section regroupe les résultats d’examens (biologie polyvalente, imagerie, cytologie, pathologie, génétique humaine…) 
+Cette section regroupe les rÃ©sultats d’examens (biologie polyvalente, imagerie, cytologie, pathologie, gÃ©nÃ©tique humaine…) 
 
 **Utilisations:**
 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-section-resul
   "name" : "FRCDASectionResultats",
   "title" : "CDA - FR Resultats",
   "status" : "draft",
-  "date" : "2026-04-16T10:39:58+00:00",
+  "date" : "2026-04-17T08:40:59+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -75,7 +75,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-section-resul
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Cette section regroupe les résultats d'examens (biologie polyvalente, imagerie, cytologie, pathologie, génétique humaine...)",
+  "description" : "Cette section regroupe les rÃ©sultats d'examens (biologie polyvalente, imagerie, cytologie, pathologie, gÃ©nÃ©tique humaine...)",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -116,7 +116,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-section-resul
       "id" : "Section.templateId:frSectionResultats",
       "path" : "Section.templateId",
       "sliceName" : "frSectionResultats",
-      "short" : "Conformité de la section aux spécifications CI-SIS",
+      "short" : "ConformitÃ© de la section aux spÃ©cifications CI-SIS",
       "min" : 1,
       "max" : "1"
     },
@@ -125,6 +125,14 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-section-resul
       "path" : "Section.templateId.root",
       "min" : 1,
       "patternString" : "1.2.250.1.213.1.1.2.244"
+    },
+    {
+      "id" : "Section.id",
+      "path" : "Section.id",
+      "short" : "Identifiant de la section",
+      "definition" : "Identifiant de la section",
+      "min" : 1,
+      "mustSupport" : true
     },
     {
       "id" : "Section.code",
@@ -137,12 +145,16 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-section-resul
     {
       "id" : "Section.code.code",
       "path" : "Section.code.code",
-      "patternCode" : "30954-2"
+      "min" : 1,
+      "patternCode" : "30954-2",
+      "mustSupport" : true
     },
     {
       "id" : "Section.code.codeSystem",
       "path" : "Section.code.codeSystem",
-      "patternString" : "2.16.840.1.113883.6.1"
+      "min" : 1,
+      "patternString" : "2.16.840.1.113883.6.1",
+      "mustSupport" : true
     },
     {
       "id" : "Section.code.codeSystemName",
@@ -152,7 +164,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-section-resul
     {
       "id" : "Section.code.displayName",
       "path" : "Section.code.displayName",
-      "patternString" : "Résultats d’examens"
+      "min" : 1,
+      "patternString" : "RÃ©sultats dâ€™examens",
+      "mustSupport" : true
     },
     {
       "id" : "Section.title",
@@ -173,7 +187,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-section-resul
     {
       "id" : "Section.entry",
       "path" : "Section.entry",
-      "short" : "Entrée FR-Resultats",
+      "short" : "EntrÃ©e FR-Resultats",
       "mustSupport" : true
     },
     {
