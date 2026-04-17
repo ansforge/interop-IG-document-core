@@ -8,7 +8,7 @@ Description: "Entrée FR-Modalite-sortie: Cette entrée permet de préciser la m
 * moodCode MS
 * moodCode ^short = "@moodCode='EVN' (si réalisée), 'INT' (si prévisionnelle)"
 * moodCode ^definition = "@moodCode='EVN' (si réalisée), 'INT' (si prévisionnelle)"
-* id 1..1
+* id 1..1 MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..1
@@ -27,6 +27,9 @@ Description: "Entrée FR-Modalite-sortie: Cette entrée permet de préciser la m
 * code.displayName = "Modalité de sortie"
 * code.codeSystem = "1.2.250.1.213.1.1.4.322"
 * code.codeSystemName = "TerminologieCISIS"
+* code.code 1..1 MS
+* code.displayName 1..1 MS
+* code.codeSystem 1..1 MS
 * text MS
 * text 1..1
 * text ^short = "Partie narrative de l'observation"

@@ -31,6 +31,9 @@ Description: "Entrée FR-Resultats-examens-de-biologie-medicale: IHE-PCC - Labor
 * code 1..1
 * code ^short = "Code dont dérive le code de section"
 * code ^definition = "Code dont dérive le code de section"
+* code.code 1..1 MS
+* code.displayName 1..1 MS
+* code.codeSystem 1..1 MS
 * statusCode MS
 * statusCode 1..1
 * statusCode ^short = "Niveau de complétude.

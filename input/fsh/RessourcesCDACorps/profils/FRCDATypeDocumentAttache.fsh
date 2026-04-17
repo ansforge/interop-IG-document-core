@@ -7,7 +7,7 @@ Description: "Entrée FR-Type-document-attache: Élément de type Simple Observa
 * classCode = #OBS
 * moodCode MS
 * moodCode = #EVN
-* id 1..1
+* id 1..1 MS
 * id ^short = """Identifiant de l'entrée : \r\n
 Sous la forme UID (UUID ou OID) Attribué par le LPS avec si possible les attributs @root et @extension. Sinon, un identifiant unique de type UUID est affecté à l’attribut root et l’attribut extension est omis.
 """
@@ -38,6 +38,9 @@ and frTypeDocumentAttache 1..1
 * code.displayName = "Type de document"
 * code.codeSystem = "2.16.840.1.113883.6.1"
 * code.codeSystemName = "LOINC"
+* code.code 1..1 MS
+* code.displayName 1..1 MS
+* code.codeSystem 1..1 MS
 * text MS
 * text 1..1
 * text ^short = "Partie narrative de l’observation"

@@ -6,7 +6,7 @@ Description: "Entrée FR-Traitement-prescrit: IHE-PRE Prescription Item. Cette e
 * classCode MS
 * moodCode MS
 * moodCode = #INT
-* id 1..*
+* id 1..* MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..12
@@ -104,6 +104,9 @@ Dans ce cas, ne pas utiliser de  subordonné."
 * code.displayName = "Médicament"
 * code.codeSystem = "2.16.840.1.113883.5.4"
 * code.codeSystemName = "HL7_ActCode"
+* code.code 1..1 MS
+* code.displayName 1..1 MS
+* code.codeSystem 1..1 MS
 * text MS
 * text 1..1
 * text ^short = "Partie narrative de l’entrée"

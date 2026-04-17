@@ -7,7 +7,7 @@ Description: "Entrée FR-Prescription: IHE-PCC - Supply - Cette entrée permet d
 * moodCode MS
 * moodCode ^short = " Si la prescription a déjà été dispensée : moodCode='EVN' - Si la prescription est en attente de dispensation : moodCode='INT' "
 * moodCode ^definition = "Si la prescription a déjà été dispensée:"
-* id 1..1
+* id 1..1 MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..3
@@ -43,7 +43,7 @@ and frPrescription 1..1
   * assignedEntity 1..1
   * assignedEntity ^short = "Dispensateur"
   * assignedEntity ^definition = "Dispensateur"
-    * id 1..1
+    * id 1..1 MS
     * id ^short = "Identifiant du dispensateur"
     * id ^definition = "Identifiant du dispensateur"
     // CHOICE

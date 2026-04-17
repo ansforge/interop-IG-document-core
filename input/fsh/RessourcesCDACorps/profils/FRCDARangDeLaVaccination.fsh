@@ -31,6 +31,9 @@ and frRangDeLaVaccination 1..1
 * code.displayName = "Rang de la vaccination"
 * code.codeSystem = "2.16.840.1.113883.6.1"
 * code.codeSystemName = "LOINC"
+* code.code 1..1 MS
+* code.displayName 1..1 MS
+* code.codeSystem 1..1 MS
 * derivationExpr MS
 * text MS
 * text ^short = "Partie narrative de l’entrée"

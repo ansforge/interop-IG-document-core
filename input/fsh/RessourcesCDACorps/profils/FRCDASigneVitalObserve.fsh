@@ -3,7 +3,7 @@ Parent: http://hl7.org/cda/stds/core/StructureDefinition/Observation
 Id: fr-cda-signe-vital-observe
 Title: "CDA - FR Signe vital observe"
 Description: "Entrée FR-Signe-vital-observe: IHE-PCC - Vital Signs Observation. Cette entrée permet d'indiquer les informations détaillées relatives à une mesure clinique spécifique. Cette entrée est utilisée dans un élément component d'un élément Signes vitaux (1.3.6.1.4.1.19376.1.5.3.1.4.13.1). Cette entrée est basée sur l'élément Simple Observation (1.3.6.1.4.1.19376.1.5.3.1.4.13) qu'elle spécialise en portant des contraintes sur les vocabulaires des éléments 'code' et 'value'."
-* id 1..1
+* id 1..1 MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..4
@@ -33,7 +33,10 @@ and frSigneVitalObserve 1..1
 * code MS
 * code ^short = "Signe vital observé"
 * code ^definition = "Signe vital observé"
-* code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-signe-vital-cisis
+* code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-signe-vital-cisis (required)
+* code.code 1..1 MS
+* code.displayName 1..1 MS
+* code.codeSystem 1..1 MS
 * text MS
 * text 1..1
 * text ^short = "Description narrative"

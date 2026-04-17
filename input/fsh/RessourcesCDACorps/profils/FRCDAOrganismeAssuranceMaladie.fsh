@@ -7,7 +7,7 @@ Description: "Entrée FR-Organisme-assurance-maladie: IHE-PCC - Payers-entry. L'
 * classCode = #ACT
 * moodCode MS
 * moodCode = #EVN
-* id 1..*
+* id 1..* MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..3
@@ -33,6 +33,9 @@ and frOrganismeAssuranceMaladie 1..1
 * code ^short = "Type de couverture sociale"
 * code ^definition = "Type de couverture sociale"
 * code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-couverture-sociale-cisis (required)
+* code.code 1..1 MS
+* code.displayName 1..1 MS
+* code.codeSystem 1..1 MS
 * statusCode MS
 * statusCode 1..1
 * statusCode ^short = "Statut de l'entrée"
@@ -90,7 +93,7 @@ frParticipantAssure 0..1 MS
   * typeCode = #HLD
   * participantRole MS
     * classCode = #INDIV
-    * id 1..*
+    * id 1..* MS
     * id ^short = "Identifiant de l'assuré"
     * id ^definition = "Identifiant de l'assuré"
     * addr 1..*
@@ -108,7 +111,7 @@ frParticipantAssure 0..1 MS
   * act 1..1
     * classCode MS
     * classCode = #ACT
-    * id 1..*
+    * id 1..* MS
     * id ^short = "Identifiant du plan de soins"
     * id ^definition = "Identifiant du plan de soins"
     * text MS

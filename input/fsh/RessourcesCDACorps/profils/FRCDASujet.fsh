@@ -24,8 +24,11 @@ and frSujet 1..1
   * code 1..1
   * code ^short = "Lien avec le patient"
   * code ^definition = "Lien avec le patient"
-  * code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-PersonalRelationshipRoleType-cisis
+  * code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-PersonalRelationshipRoleType-cisis (required)
   * code.codeSystem = "2.16.840.1.113883.5.111"
+  * code.code 1..1 MS
+  * code.displayName 1..1 MS
+  * code.codeSystem 1..1 MS
   * addr MS
   * addr only CISISAddr
   * addr ^short = "Adresse"

@@ -10,7 +10,7 @@ Description: "Entrée FR-Rencontre: IHE-PCC - Encounter.
 - Si rencontre planifiée : moodCode='PRMS'. 
 - Si rencontre prévue mais non confirmée : moodCode='ARQ'."
 * moodCode from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActMood-cisis (required)
-* id 1..*
+* id 1..* MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..4
@@ -44,6 +44,9 @@ and frRencontre 1..1
 * code.qualifier 0..1 MS
 * code.qualifier ^short = "Précision sur le type de rencontre"
 * code.qualifier ^definition = "Précision sur le type de rencontre"
+* code.code 1..1 MS
+* code.displayName 1..1 MS
+* code.codeSystem 1..1 MS
 * text MS
 * text ^short = "Description narrative"
 * text ^definition = "Description narrative"
