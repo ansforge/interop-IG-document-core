@@ -7,7 +7,7 @@ Description: "Entrée FR-Transport-du-patient: IHE-PCC - Transport. Cette entré
 * classCode = #ACT
 * moodCode MS
 * moodCode ^short = "Si le transport est à faire : moodCode='INT'. Si le transport a déjà été effectué : moodCode='EVN'."
-* id 1..1
+* id 1..1 MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..2
@@ -27,7 +27,10 @@ and frTransportDuPatient 1..1
 * code MS
 * code ^short = "Mode de transport (Ambulance publique, Taxi, VSL, …)"
 * code ^definition = "Mode de transport"
-* code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis
+* code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis (required)
+* code.code 1..1 MS
+* code.displayName 1..1 MS
+* code.codeSystem 1..1 MS
 * text MS
 * text ^short = "Texte décrivant le transport"
 * text.reference 1..1 MS

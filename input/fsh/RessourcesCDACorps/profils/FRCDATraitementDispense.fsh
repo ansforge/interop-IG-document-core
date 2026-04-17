@@ -6,7 +6,7 @@ Description: "Entrée FR-Traitement-dispense: IHE PHARM DIS - DispenseItemEntry.
 * classCode MS
 * moodCode MS
 * moodCode = #EVN
-* id 1..1
+* id 1..1 MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..4
@@ -37,6 +37,9 @@ and iheSupplyEntry 1..1
 * code ^short = "Complétude de la dispensation : Valeur issue du JDV_CompletudeDispensation_CISIS (1.2.250.1.213.1.1.5.765)"
 * code ^definition = "Complétude de la dispensation"
 * code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-completude-dispensation-cisis (required)
+* code.code 1..1 MS
+* code.displayName 1..1 MS
+* code.codeSystem 1..1 MS
 * text MS
 * text 1..1
 * text ^short = "Texte de l'entrée"

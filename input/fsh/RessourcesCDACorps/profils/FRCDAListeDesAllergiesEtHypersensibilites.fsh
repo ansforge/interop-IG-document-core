@@ -8,7 +8,7 @@ Description: "Entrée FR-Liste-des-allergies-et-hypersensibilites: IHE-PCC - All
 * classCode = #ACT
 * moodCode MS
 * moodCode = #EVN
-* id 1..1
+* id 1..1 MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..4

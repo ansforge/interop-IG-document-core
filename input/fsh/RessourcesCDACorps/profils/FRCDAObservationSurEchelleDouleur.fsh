@@ -7,7 +7,7 @@ Description: "Entrée FR-Observation-sur-echelle-douleur: IHE-PCC - Pain Score O
 * classCode = #OBS
 * moodCode MS
 * moodCode = #EVN
-* id 1..1
+* id 1..1 MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..3
@@ -37,6 +37,9 @@ and frObservationSurEchelleDouleur 1..1
 * code.displayName = "Sévérité de la douleur"
 * code.codeSystem = "2.16.840.1.113883.6.1"
 * code.codeSystemName = "LOINC"
+* code.code 1..1 MS
+* code.displayName 1..1 MS
+* code.codeSystem 1..1 MS
 * text MS
 * text 1..1
 * text ^short = "Description narrative de l'observation"

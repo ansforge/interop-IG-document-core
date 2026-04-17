@@ -6,7 +6,7 @@ Description: "Entrée FR-Vaccination: IHE-PCC - Immunizations. L'entrée Vaccina
 * classCode MS
 * moodCode MS
 * moodCode = #EVN
-* id 1..1
+* id 1..1 MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..3
@@ -39,7 +39,10 @@ and frVaccination 1..1
  OR 
  JDV_AbsentOrUnknownImmunization_CISIS (1.2.250.1.213.1.1.5.666)"""
 * code ^definition = "Type de vaccination"
-* code from FRValueSetTypeVaccination
+* code from FRValueSetTypeVaccination (required)
+* code.code 1..1 MS
+* code.displayName 1..1 MS
+* code.codeSystem 1..1 MS
 * text MS
 * text 1..1
 * text ^short = "Partie narrative de l’entrée"
