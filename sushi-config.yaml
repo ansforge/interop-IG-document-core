@@ -312,8 +312,31 @@ groups:
       - StructureDefinition/fr-cda-health-care-facility
 
   Ressources CDA corps des sections :
-    name: Eléments CDA corps des sections
+    name: Eléments CDA du corps des sections
     resources:
+      - StructureDefinition/fr-cda-allergies-et-hypersensibilites
+      - StructureDefinition/fr-cda-section-antecedents-familiaux
+      - StructureDefinition/fr-cda-antecedents-medicaux
+      - StructureDefinition/fr-cda-code-a-barres
+      - StructureDefinition/fr-cda-commentaire-non-code
+      - StructureDefinition/fr-cda-cr-bio-chapitre
+      - StructureDefinition/fr-cda-cr-bio-sous-chapitre
+      - StructureDefinition/fr-cda-dicom-acte-imagerie
+      - StructureDefinition/fr-cda-dicom-addendum
+      - StructureDefinition/fr-cda-dicom-complications
+      - StructureDefinition/fr-cda-dicom-conclusion
+      - StructureDefinition/fr-cda-dicom-demande-examen
+      - StructureDefinition/fr-cda-dicom-examen-comparatif
+      - StructureDefinition/fr-cda-dicom-exposition-aux-radiations
+      - StructureDefinition/fr-cda-dicom-historique-medical
+      - StructureDefinition/fr-cda-dicom-informations-cliniques
+      - StructureDefinition/fr-cda-dicom-object-catalog
+      - StructureDefinition/fr-cda-dicom-resultats
+      - StructureDefinition/fr-cda-dispensation-medicaments
+      - StructureDefinition/fr-cda-document-pdf-copie
+      - StructureDefinition/fr-cda-documents-ajoutes
+      - StructureDefinition/fr-cda-education-du-patient
+      - StructureDefinition/fr-cda-effets-indesirables
       - StructureDefinition/fr-cda-facteurs-de-risque-professionnels-non-code
       - StructureDefinition/fr-cda-fonctions-physiques
       - StructureDefinition/fr-cda-section-habitus-mode-de-vie
