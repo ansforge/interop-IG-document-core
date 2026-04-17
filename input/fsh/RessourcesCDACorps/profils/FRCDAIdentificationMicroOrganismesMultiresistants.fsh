@@ -37,6 +37,9 @@ and frIdentificationMicroOrganismesMultiresistants 1..1
 * code.displayName = "Identification de micro-organismes multirésistants"
 * code.codeSystem = "1.2.250.1.213.1.1.4.322"
 * code.codeSystemName = "TerminologieCISIS"
+* code.code 1..1 MS
+* code.displayName 1..1 MS
+* code.codeSystem 1..1 MS
 * text MS
 * text 1..1
 * text ^short = "Partie narrative de l'observation"

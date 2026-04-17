@@ -31,6 +31,11 @@ and frInstructionsAuDispensateur 1..1
 * code MS
 * code ^short = "Code de l'entrée"
 * code ^definition = "Code de l'entrée"
+* code.code = #FINSTRUCT 
+* code.codeSystem = "1.3.6.1.4.1.19376.1.5.3.2" 
+* code.codeSystemName = "IHEActCode"
+* code.code 1..1 MS
+* code.codeSystem 1..1 MS
 * text MS
 * text 1..1
 * text ^short = "Instructions au dispensateur sous forme textuelle."

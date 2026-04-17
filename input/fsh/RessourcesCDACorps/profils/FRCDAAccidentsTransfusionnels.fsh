@@ -7,7 +7,7 @@ Description: "Entrée FR-Accidents-transfusionnels: Cette entrée permet de déc
 * classCode = #OBS
 * moodCode MS
 * moodCode = #EVN
-* id MS 1..1
+* id 1..1 MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..3

@@ -10,7 +10,7 @@ Description: "Entrée FR-Acte: IHE-PCC - Procedure. L'entrée 'Acte' est une ent
  - Si acte réalisé : moodCode='EVN' ; negationInd='true' 
      - si l'acte n'a pas eu lieu : negationInd='false' 
      - si l'acte a eu lieu (valeur par défaut)"""
-* id MS 1..*
+* id 1..* MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..4

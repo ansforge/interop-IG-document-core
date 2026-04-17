@@ -7,7 +7,7 @@ Description: "Entrée FR-Administration-de-derives-du-sang: IHE-PCC - Simple-Obs
 * classCode = #OBS
 * moodCode MS
 * moodCode = #EVN
-* id 1..1
+* id 1..1 MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..3

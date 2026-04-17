@@ -7,7 +7,7 @@ Description: "Entrée FR-DICOM-SOP-instance-observation-subordonnee: DICOM Part 
 * classCode = #DGIMG
 * moodCode MS
 * moodCode from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-xActMoodDocumentObservation
-* id 1..*
+* id 1..* MS
 * id ^short = "Identifiant de l'observation"
 * id ^definition = "Identifiant de l'observation"
 * templateId 1..2
@@ -28,6 +28,9 @@ and dicomSOPInstanceObservation 1..1
 * code ^short = "Classe SOP valeur issue du JDV-SOPClass_CISIS (1.2.250.1.213.1.1.5.689)."
 * code ^definition = "Classe SOP"
 * code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-sop-class-cisis (required)
+* code.code 1..1 MS
+* code.displayName 1..1 MS
+* code.codeSystem 1..1 MS
 * text MS
 * text ^short = "Partie narrative de l'observation"
 * text ^definition = "Partie narrative de l'observation"

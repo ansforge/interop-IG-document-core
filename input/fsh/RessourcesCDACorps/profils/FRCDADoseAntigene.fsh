@@ -7,7 +7,7 @@ Description: "Entrée FR-Dose-antigene: IHE-PCC – Antigene-Dose. L'entrée Dos
 * moodCode MS
 * moodCode = #EVN
 * negationInd = false
-* id 1..1
+* id 1..1 MS
 * id ^short = "Identifiant de la fourniture du DM - Attribué par le LPS avec si possible les attributs @root et @extension. Sinon, un identifiant unique de type UUID est affec-té à l’attribut root et l’attribut extension est omis."
 * id ^definition = "Identifiant de la fourniture du DM"
 * templateId 1..2
