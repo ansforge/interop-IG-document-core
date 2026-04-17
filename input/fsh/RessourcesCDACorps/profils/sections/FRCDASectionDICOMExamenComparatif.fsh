@@ -14,12 +14,18 @@ and dicomComparisonStudySection 1..1
 * templateId[frSectionDicomExamenComparatif] ^short = "Conformité FR-DICOM-Examen-comparatif (CI-SIS)"
 * templateId[dicomComparisonStudySection].root = "1.2.840.10008.9.4"
 * templateId[dicomComparisonStudySection] ^short = "Conformité Comparison Study (DICOM Part 20)"
+* id 1..1 MS
+* id ^short = "Identifiant de la section"
+* id ^definition = "Identifiant de la section"
 * code MS
 * code 1..1
 * code ^short = "Code de la section"
 * code ^definition = "Code de la section"
+* code.code 1..1
 * code.code = #18834-2
+* code.displayName 1..1
 * code.displayName = "Examen de comparaison radiologique"
+* code.codeSystem 1..1
 * code.codeSystem = "2.16.840.1.113883.6.1"
 * code.codeSystemName = "LOINC"
 * title 1..1

@@ -16,12 +16,18 @@ and dicomObjectCatalogSection 1..1
 * templateId[frSectionDicomObjectCatalog] ^short = "Conformité FR-DICOM-Object-Catalog (CI-SIS)"
 * templateId[dicomObjectCatalogSection].root = "2.16.840.1.113883.10.20.6.1.1"
 * templateId[dicomObjectCatalogSection] ^short = "Conformité DICOM Object Catalog Section (DICOM Part 20)"
+* id 1..1 MS
+* id ^short = "Identifiant de la section"
+* id ^definition = "Identifiant de la section"
 * code MS
 * code 1..1
 * code ^short = "Identifiant de la section"
 * code ^definition = "Identifiant de la section"
+* code.code 1..1
 * code.code = #121181
+* code.displayName 1..1
 * code.displayName = "Catalogue d’objets DICOM"
+* code.codeSystem 1..1
 * code.codeSystem = "1.2.840.10008.2.16.4"
 * code.codeSystemName = "DCM"
 * title 1..1 MS

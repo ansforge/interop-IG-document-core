@@ -14,12 +14,18 @@ and frSectionAntecedentsMedicaux 1..1
 * templateId[iheHistoryOfPastIllnessSection] ^short = "Déclaration de conformité de la section aux spécifications IHE PCC"
 * templateId[frSectionAntecedentsMedicaux].root = "1.2.250.1.213.1.1.2.134"
 * templateId[frSectionAntecedentsMedicaux] ^short = "Déclaration de conformité de la section aux spécifications CI-SIS"
+* id MS
+* id ^short = "Identifiant de la section"
+* id ^definition = "Identifiant de la section"
 * code MS
 * code 1..1
 * code ^short = "Code de la section"
 * code ^definition = "Code de la section"
+* code.code 1..1
 * code.code = #11348-0
+* code.displayName 1..1
 * code.displayName = "Antécédents médicaux"
+* code.codeSystem 1..1
 * code.codeSystem = "2.16.840.1.113883.6.1"
 * code.codeSystemName = "LOINC"
 * title 1..1
