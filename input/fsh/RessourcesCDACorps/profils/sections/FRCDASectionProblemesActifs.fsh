@@ -16,12 +16,18 @@ and iheSectionActiveProblems 1..1
 * templateId[ccdSectionActiveProblems] ^short = "Déclaration de conformité de la section aux spécifications (CCD)"
 * templateId[iheSectionActiveProblems].root = "1.3.6.1.4.1.19376.1.5.3.1.3.6"
 * templateId[iheSectionActiveProblems] ^short = "Déclaration de conformité de la section aux spécifications (IHE-PCC)"
+* id MS
+* id ^short = "Identifiant de la section"
+* id ^definition = "Identifiant de la section"
 * code MS
 * code 1..1
 * code ^short = "Code de la section"
 * code ^definition = "Code de la section"
+* code.code 1..1 MS
 * code.code = #11450-4
+* code.displayName 1..1 MS
 * code.displayName = "Liste des problèmes actifs"
+* code.codeSystem 1..1 MS
 * code.codeSystem = "2.16.840.1.113883.6.1"
 * code.codeSystemName = "LOINC"
 * title 1..1 MS

@@ -13,12 +13,18 @@ and frSectionHistoriqueDesGrossesses 1..1
 * templateId[iheSectionPregnancyHistory] ^short = "Déclaration de conformité de la section aux spécifications (IHE PCC)"
 * templateId[frSectionHistoriqueDesGrossesses].root = "1.2.250.1.213.1.1.2.77"
 * templateId[frSectionHistoriqueDesGrossesses] ^short = "Déclaration de conformité de la section aux spécifications (CI-SIS)"
+* id MS
+* id ^short = "Identifiant de la section"
+* id ^definition = "Identifiant de la section"
 * code MS
 * code 1..1
 * code ^short = "Code de la section"
 * code ^definition = "Code de la section"
+* code.code 1..1 MS
 * code.code = #10162-6
+* code.displayName 1..1 MS
 * code.displayName = "Historique des grossesses"
+* code.codeSystem 1..1 MS
 * code.codeSystem = "2.16.840.1.113883.6.1"
 * code.codeSystemName = "LOINC"
 * title 1..1 MS

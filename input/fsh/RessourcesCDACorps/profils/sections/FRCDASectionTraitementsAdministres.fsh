@@ -13,12 +13,18 @@ and frSectionTraitementsAdministres 1..1
 * templateId[iheSectionMedications] ^short = "Conformité Medications-Administered (IHE-PCC)"
 * templateId[frSectionTraitementsAdministres].root = "1.2.250.1.213.1.1.2.145"
 * templateId[frSectionTraitementsAdministres] ^short = "Conformité FR-Traitements-administres (CISIS)"
+* id MS
+* id ^short = "Identifiant de la section"
+* id ^definition = "Identifiant de la section"
 * code MS
 * code 1..1
 * code ^short = "Code de la section"
 * code ^definition = "Code de la section"
+* code.code 1..1 MS
 * code.code = #18610-6
+* code.displayName 1..1 MS
 * code.displayName = "Traitements administrés"
+* code.codeSystem 1..1 MS
 * code.codeSystem = "2.16.840.1.113883.6.1"
 * code.codeSystemName = "LOINC"
 * title MS
