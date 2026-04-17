@@ -16,7 +16,7 @@ Entrée FR-Effet-indesirable: Cette entrée permet de décrire un effet indésir
 
 **Utilisations:**
 
-* Ce Profil de modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
+* Utilise ce/t/te Profil de modèle logique: [CDA - FR Effets indesirables](StructureDefinition-fr-cda-effets-indesirables.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-effet-indesirable)
 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-effet-indesir
   "name" : "FRCDAEffetIndesirable",
   "title" : "CDA - FR Effet indesirable",
   "status" : "draft",
-  "date" : "2026-04-17T08:40:59+00:00",
+  "date" : "2026-04-17T11:35:08+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

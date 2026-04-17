@@ -19,7 +19,7 @@ Entrée FR-Document-attache: L’entrée Document Attaché est une entrée de ty
 
 **Utilisations:**
 
-* Utilise ce/t/te Profil de modèle logique: [CDA - FR Resultats de biologie de seconde intention](StructureDefinition-fr-cda-resultats-de-biologie-de-seconde-intention.md)
+* Utilise ce/t/te Profil de modèle logique: [CDA - FR Document PDF copie](StructureDefinition-fr-cda-document-pdf-copie.md), [CDA - FR Documents ajoutes](StructureDefinition-fr-cda-documents-ajoutes.md) and [CDA - FR Resultats de biologie de seconde intention](StructureDefinition-fr-cda-resultats-de-biologie-de-seconde-intention.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-document-attache)
 
@@ -69,7 +69,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-document-atta
   "name" : "FRCDADocumentAttache",
   "title" : "CDA - FR Document attache",
   "status" : "draft",
-  "date" : "2026-04-17T08:40:59+00:00",
+  "date" : "2026-04-17T11:35:08+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

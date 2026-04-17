@@ -16,7 +16,7 @@ Entrée FR-Antecedents-familiaux: IHE-PCC - Family History Organizer L’entrée
 
 **Utilisations:**
 
-* Ce Profil de modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
+* Utilise ce/t/te Profil de modèle logique: [CDA - FR Antecedents familiaux](StructureDefinition-fr-cda-section-antecedents-familiaux.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-antecedents-familiaux)
 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-antecedents-f
   "name" : "FRCDAAntecedentsFamiliaux",
   "title" : "CDA - FR Antecedents familiaux",
   "status" : "draft",
-  "date" : "2026-04-17T08:40:59+00:00",
+  "date" : "2026-04-17T11:35:08+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

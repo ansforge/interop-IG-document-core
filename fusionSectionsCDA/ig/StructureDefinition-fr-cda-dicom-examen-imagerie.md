@@ -16,7 +16,7 @@ Entrée FR-DICOM-Examen-imagerie: DICOM Part 20 - Study Act. Cette entrée cont
 
 **Utilisations:**
 
-* Ce Profil de modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
+* Utilise ce/t/te Profil de modèle logique: [CDA - FR DICOM Object Catalog](StructureDefinition-fr-cda-dicom-object-catalog.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-dicom-examen-imagerie)
 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-examen-
   "name" : "FRCDADICOMExamenImagerie",
   "title" : "CDA - FR DICOM Examen imagerie",
   "status" : "draft",
-  "date" : "2026-04-17T08:40:59+00:00",
+  "date" : "2026-04-17T11:35:08+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -96,10 +96,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-examen-
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
-      "id" : "Act",
-      "path" : "Act"
-    },
-    {
       "id" : "Act.templateId",
       "path" : "Act.templateId",
       "slicing" : {

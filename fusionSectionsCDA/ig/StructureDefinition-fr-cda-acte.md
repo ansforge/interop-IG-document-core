@@ -16,7 +16,7 @@ Entrée FR-Acte: IHE-PCC - Procedure. L’entrée ‘Acte’ est une entrée de 
 
 **Utilisations:**
 
-* Utilise ce/t/te Profil de modèle logique: [CDA - FR Historique des actes](StructureDefinition-fr-cda-historique-des-actes.md), [CDA - FR Plan de soins](StructureDefinition-fr-cda-plan-de-soins.md) and [CDA - FR Resultats examens](StructureDefinition-fr-cda-resultats-examens.md)
+* Utilise ce/t/te Profil de modèle logique: [CDA - FR Education du patient](StructureDefinition-fr-cda-education-du-patient.md), [CDA - FR Historique des actes](StructureDefinition-fr-cda-historique-des-actes.md), [CDA - FR Plan de soins](StructureDefinition-fr-cda-plan-de-soins.md) and [CDA - FR Resultats examens](StructureDefinition-fr-cda-resultats-examens.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-acte)
 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-acte.csv), [E
   "name" : "FRCDAActe",
   "title" : "CDA - FR Acte",
   "status" : "draft",
-  "date" : "2026-04-17T08:40:59+00:00",
+  "date" : "2026-04-17T11:35:08+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

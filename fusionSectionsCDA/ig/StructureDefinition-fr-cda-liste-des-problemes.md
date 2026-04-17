@@ -16,7 +16,7 @@ Entrée FR-Liste-des-problemes: IHE-PCC - Problem-Concern. Cette entrée permet 
 
 **Utilisations:**
 
-* Utilise ce/t/te Profil de modèle logique: [CDA - FR Problemes actifs](StructureDefinition-fr-cda-problemes-actifs.md)
+* Utilise ce/t/te Profil de modèle logique: [CDA - FR Antecedents medicaux](StructureDefinition-fr-cda-antecedents-medicaux.md) and [CDA - FR Problemes actifs](StructureDefinition-fr-cda-problemes-actifs.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-liste-des-problemes)
 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-liste-des-pro
   "name" : "FRCDAListeDesProblemes",
   "title" : "CDA - FR Liste des problemes",
   "status" : "draft",
-  "date" : "2026-04-17T08:40:59+00:00",
+  "date" : "2026-04-17T11:35:08+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -96,10 +96,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-liste-des-pro
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
-      "id" : "Act",
-      "path" : "Act"
-    },
-    {
       "id" : "Act.templateId",
       "path" : "Act.templateId",
       "slicing" : {
