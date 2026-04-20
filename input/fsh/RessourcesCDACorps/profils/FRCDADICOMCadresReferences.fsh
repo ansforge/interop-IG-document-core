@@ -20,6 +20,9 @@ Description: "Entrée FR-DICOM-Cadres-references: DICOM Part 20 - Une observatio
 * code.displayName = "cadres référencés"
 * code.codeSystem = "1.2.840.10008.2.16.4"
 * code.codeSystemName = "DCM"
+* code.code 1..1 MS
+* code.displayName 1..1 MS
+* code.codeSystem 1..1 MS
 
 * entryRelationship MS
 * entryRelationship.observation only FRCDADICOMCadresAAfficher

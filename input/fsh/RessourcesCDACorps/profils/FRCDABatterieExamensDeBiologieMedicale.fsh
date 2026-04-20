@@ -6,7 +6,7 @@ Description: "Entrée FR-Batterie-examens-de-biologie-medicale: IHE-PCC - Labora
 * classCode MS
 * classCode = #BATTERY
 * moodCode MS
-* id 0..1
+* id 0..1 MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..2
@@ -33,6 +33,9 @@ and frBatterieExamensDeBiologieMedicale 1..1
   * translation 0..1
   * translation ^short = "Code d'identification d'attente national ou code de portée locale"
   * translation ^definition = "Code d'identification d'attente national ou code de portée locale"
+* code.code 1..1 MS
+* code.displayName 1..1 MS
+* code.codeSystem 1..1 MS
 * statusCode MS
 * statusCode 1..1
 * statusCode ^short = "Niveau de complétude"

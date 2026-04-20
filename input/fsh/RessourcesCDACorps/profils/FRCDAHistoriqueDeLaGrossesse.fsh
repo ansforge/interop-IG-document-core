@@ -7,7 +7,7 @@ Description: "Entrée FR-Historique-de-la-grossesse: IHE-PCC - Pregnancy History
 * classCode MS
 * classCode = #CLUSTER
 * moodCode MS
-* id 1..1
+* id 1..1 MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..2
@@ -32,6 +32,9 @@ and frHistoriqueDeLaGrossesse 1..1
 * code.displayName = "constatation à propos de la grossesse"
 * code.codeSystem = "2.16.840.1.113883.6.96"
 * code.codeSystemName = "SNOMED_CT"
+* code.code 1..1 MS
+* code.displayName 1..1 MS
+* code.codeSystem 1..1 MS
 * statusCode MS
 * statusCode 1..1
 * statusCode ^short = "Statut de l’entréeFixé à la valeur 'completed'"

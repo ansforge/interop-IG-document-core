@@ -23,6 +23,9 @@ Description: "Entrée FR-DICOM-Cadres-a-afficher: DICOM Part 20 - Cadres à affi
 * code.displayName = "Cadres à afficher"
 * code.codeSystem = "1.2.840.10008.2.16.4"
 * code.codeSystemName = "DCM"
+* code.code 1..1 MS
+* code.displayName 1..1 MS
+* code.codeSystem 1..1 MS
 
 * value MS
 * value 1..1
