@@ -10,12 +10,18 @@ Description: "IHE-PRE - Prescription. Cette section regroupe les lignes de presc
 * templateId contains frSectionPrescriptionDispositifsMedicaux 1..1
 * templateId[frSectionPrescriptionDispositifsMedicaux].root = "1.2.250.1.213.1.1.2.222"
 * templateId[frSectionPrescriptionDispositifsMedicaux] ^short = "Déclaration de conformité de la section aux spécifications (CI-SIS)"
+* id MS
+* id ^short = "Identifiant de la section"
+* id ^definition = "Identifiant de la section"
 * code MS
 * code 1..1
 * code ^short = "Code de la section"
 * code ^definition = "Code de la section"
+* code.code 1..1 MS
 * code.code = #46264-8
+* code.displayName 1..1 MS
 * code.displayName = "Dispositifs médicaux"
+* code.codeSystem 1..1 MS
 * code.codeSystem = "2.16.840.1.113883.6.1"
 * code.codeSystemName = "LOINC"
 * title MS

@@ -14,10 +14,16 @@ and frSectionCrBioSousChapitre 1..1
 * templateId[iheLaboratoryReportItemSection] ^short = "Déclaration de conformité de la section aux spécifications IHE PCC"
 * templateId[frSectionCrBioSousChapitre].root = "1.2.250.1.213.1.1.2.71"
 * templateId[frSectionCrBioSousChapitre] ^short = "Déclaration de conformité de la section aux spécifications CI-SIS"
+* id MS
+* id ^short = "Identifiant de la section"
+* id ^definition = "Identifiant de la section"
 * code MS
 * code 1..1
 * code ^short = "Code du sous-chapitre Le code du sous-chapitre doit être un code issu du jeu de valeurs Circuit de la biologie (disponible sur bioloinc.fr) onglet ‘2.Chapitres LOINC’ et contenant les codes et libellés traduits en français pour la biologie."
 * code ^definition = "Code du sous-chapitre"
+* code.code 1..1 
+* code.displayName 1..1
+* code.codeSystem 1..1
 * title MS
 * title ^short = "Titre du sous-chapitre Identique au @displayName du <code>"
 * title ^definition = "Titre du sous-chapitre"

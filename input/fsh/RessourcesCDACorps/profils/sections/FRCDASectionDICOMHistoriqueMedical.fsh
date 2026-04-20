@@ -14,12 +14,18 @@ and dicomMedicalHistorySection 1..1
 * templateId[frSectionDicomHistoriqueMedical] ^short = "Conformité FR-DICOM-Historique-medical (CI-SIS)"
 * templateId[dicomMedicalHistorySection].root = "2.16.840.1.113883.10.20.22.2.39"
 * templateId[dicomMedicalHistorySection] ^short = "Conformité FR-DICOM-Historique-medical (CI-SIS)"
+* id 1..1 MS
+* id ^short = "Identifiant de la section"
+* id ^definition = "Identifiant de la section"
 * code MS
 * code 1..1
 * code ^short = "Code de la section"
 * code ^definition = "Code de la section"
+* code.code 1..1
 * code.code = #11329-0
+* code.displayName 1..1
 * code.displayName = "Historique médical"
+* code.codeSystem 1..1
 * code.codeSystem = "2.16.840.1.113883.6.1"
 * code.codeSystemName = "LOINC"
 * title 1..1 MS

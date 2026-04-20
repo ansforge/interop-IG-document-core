@@ -14,12 +14,18 @@ and frSectionDicomConclusion 1..1
 * templateId[dicomImpressionSection] ^short = "Conformité Impression (DICOM Part 20)"
 * templateId[frSectionDicomConclusion].root = "1.2.250.1.213.1.1.2.209"
 * templateId[frSectionDicomConclusion] ^short = "Conformité FR-DICOM-Conclusion (CI-SIS)"
+* id 1..1 MS
+* id ^short = "Identifiant de la section"
+* id ^definition = "Identifiant de la section"
 * code MS
 * code 1..1
 * code ^short = "Code de la section"
 * code ^definition = "Code de la section"
+* code.code 1..1
 * code.code = #19005-8
+* code.displayName 1..1
 * code.displayName = "Conclusions"
+* code.codeSystem 1..1
 * code.codeSystem = "2.16.840.1.113883.6.1"
 * code.codeSystemName = "LOINC"
 * title 1..1

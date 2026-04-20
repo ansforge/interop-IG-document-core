@@ -16,12 +16,18 @@ and iheSectionReasonforReferral 1..1
 * templateId[iheSectionCodedReasonforReferral] ^short = "Déclaration de conformité de la section aux spécifications (IHE-PCC)"
 * templateId[iheSectionReasonforReferral].root = "1.3.6.1.4.1.19376.1.5.3.1.3.1"
 * templateId[iheSectionReasonforReferral] ^short = "Déclaration de conformité de la section aux spécifications (IHE-PCC)"
+* id MS
+* id ^short = "Identifiant de la section"
+* id ^definition = "Identifiant de la section"
 * code MS
 * code 1..1
 * code ^short = "Code de la section"
 * code ^definition = "Code de la section"
+* code.code 1..1 MS
 * code.code = #42349-1
+* code.displayName 1..1 MS
 * code.displayName = "Raison de la recommandation"
+* code.codeSystem 1..1 MS
 * code.codeSystem = "2.16.840.1.113883.6.1"
 * code.codeSystemName = "LOINC"
 * title MS

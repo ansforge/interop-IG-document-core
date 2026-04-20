@@ -19,12 +19,18 @@ and frSectionSignesVitaux 1..1
 * templateId[iheSectionCodedVitalSigns] ^short = "Déclaration de conformité de la section au parent IHE PCC \"Vital Signs Section (narrative)\""
 * templateId[frSectionSignesVitaux].root = "1.2.250.1.213.1.1.2.75"
 * templateId[frSectionSignesVitaux] ^short = "Déclaration de conformité de la section aux spécifications (CI-SIS)"
+* id MS
+* id ^short = "Identifiant de la section"
+* id ^definition = "Identifiant de la section"
 * code MS
 * code 1..1
 * code ^short = "Code de la section"
 * code ^definition = "Code de la section"
+* code.code 1..1 MS
 * code.code = #8716-3
+* code.displayName 1..1 MS
 * code.displayName = "Signes vitaux"
+* code.codeSystem 1..1 MS
 * code.codeSystem = "2.16.840.1.113883.6.1"
 * code.codeSystemName = "LOINC"
 * title 1..1 MS

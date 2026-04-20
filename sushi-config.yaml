@@ -312,7 +312,7 @@ groups:
       - StructureDefinition/fr-cda-health-care-facility
 
   Ressources CDA corps des sections :
-    name: Eléments CDA corps des sections
+    name: Eléments CDA du corps des sections
     resources:
       - StructureDefinition/fr-cda-allergies-et-hypersensibilites
       - StructureDefinition/fr-cda-section-antecedents-familiaux

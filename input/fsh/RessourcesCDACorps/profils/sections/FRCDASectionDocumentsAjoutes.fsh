@@ -10,12 +10,18 @@ Description: "Liste de documents ajoutés"
 * templateId contains frSectionDocumentsAjoutes 1..1
 * templateId[frSectionDocumentsAjoutes].root = "1.2.250.1.213.1.1.2.37"
 * templateId[frSectionDocumentsAjoutes] ^short = "Conformité de la section aux spécifications CI-SIS"
+* id MS
+* id ^short = "Identifiant de la section"
+* id ^definition = "Identifiant de la section"
 * code MS
 * code 1..1
 * code ^short = "Code de la section"
 * code ^definition = "Code de la section"
+* code.code 1..1
 * code.code = #55107-7
+* code.displayName 1..1
 * code.displayName = "Documents ajoutés"
+* code.codeSystem 1..1
 * code.codeSystem = "2.16.840.1.113883.6.1"
 * code.codeSystemName = "LOINC"
 * title MS

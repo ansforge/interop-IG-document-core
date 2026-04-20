@@ -14,12 +14,18 @@ and dicomAddendumSection 1..1
 * templateId[frSectionDicomAddendum] ^short = "Conformité FR-DICOM-Addendum (CI-SIS)"
 * templateId[dicomAddendumSection].root = "1.2.840.10008.9.6"
 * templateId[dicomAddendumSection] ^short = "Conformité Addendum (DICOM Part 20)"
+* id 1..1 MS
+* id ^short = "Identifiant de la section"
+* id ^definition = "Identifiant de la section"
 * code MS
 * code 1..1
 * code ^short = "Code de la section"
 * code ^definition = "Code de la section"
+* code.code 1..1
 * code.code = #55107-7
+* code.displayName 1..1
 * code.displayName = "Addendum"
+* code.codeSystem 1..1
 * code.codeSystem = "2.16.840.1.113883.6.1"
 * code.codeSystemName = "LOINC"
 * title 1..1 MS

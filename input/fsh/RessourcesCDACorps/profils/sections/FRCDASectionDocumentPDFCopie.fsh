@@ -10,12 +10,18 @@ Description: "Cette section ne contient qu’une et une seule entrée FR-Documen
 * templateId contains frSectionDocumentPdfCopie 1..1
 * templateId[frSectionDocumentPdfCopie].root = "1.2.250.1.213.1.1.2.243"
 * templateId[frSectionDocumentPdfCopie] ^short = "Conformité de la section aux spécifications CI-SIS"
+* id MS
+* id ^short = "Identifiant de la section"
+* id ^definition = "Identifiant de la section"
 * code MS
 * code 1..1
 * code ^short = "Code de la section"
 * code ^definition = "Code de la section"
+* code.code 1..1
 * code.code = #55108-5
+* code.displayName 1..1
 * code.displayName = "Copie du document"
+* code.codeSystem 1..1
 * code.codeSystem = "2.16.840.1.113883.6.1"
 * code.codeSystemName = "LOINC"
 * title 1..1 MS

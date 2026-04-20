@@ -13,12 +13,18 @@ and frSectionPrescriptionMedicaments 1..1
 * templateId[ihePrePrescription] ^short = "Déclaration de conformité de la section aux spécifications IHE Pharm suppl. PRE"
 * templateId[frSectionPrescriptionMedicaments].root = "1.2.250.1.213.1.1.2.171"
 * templateId[frSectionPrescriptionMedicaments] ^short = "Déclaration de conformité de la section aux spécifications (CI-SIS)"
+* id 1..1 MS
+* id ^short = "Identifiant de la section"
+* id ^definition = "Identifiant de la section"
 * code MS
 * code 1..1
 * code ^short = "Code de la section"
 * code ^definition = "Code de la section"
+* code.code 1..1 MS
 * code.code = #57828-6
+* code.displayName 1..1 MS
 * code.displayName = "Prescriptions"
+* code.codeSystem 1..1 MS
 * code.codeSystem = "2.16.840.1.113883.6.1"
 * code.codeSystemName = "LOINC"
 * title 0..1 MS

@@ -18,12 +18,18 @@ and dicomClinicalInformationSection 1..1
 * templateId[frSectionDicomInformationsCliniques] ^short = "Conformité FR-DICOM-Informations-cliniques (CI-SIS)"
 * templateId[dicomClinicalInformationSection].root = "1.2.840.10008.9.2"
 * templateId[dicomClinicalInformationSection] ^short = "Conformité Clinical Information (DICOM Part 20)"
+* id 1..1 MS
+* id ^short = "Identifiant de la section"
+* id ^definition = "Identifiant de la section"
 * code MS
 * code 1..1
 * code ^short = "Code de la section"
 * code ^definition = "Code de la section"
+* code.code 1..1
 * code.code = #55752-0
+* code.displayName 1..1
 * code.displayName = "Informations cliniques"
+* code.codeSystem 1..1
 * code.codeSystem = "2.16.840.1.113883.6.1"
 * code.codeSystemName = "LOINC"
 * title 1..1 MS
