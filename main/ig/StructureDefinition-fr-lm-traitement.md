@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-traitement | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-15 | *Computable Name*:FRLMTraitement |
+| Draft as of 2026-04-20 | *Computable Name*:FRLMTraitement |
 
  
 Traitement 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-traitement.csv
   "name" : "FRLMTraitement",
   "title" : "Modèle logique métier - FR LM Traitement",
   "status" : "draft",
-  "date" : "2026-04-15T15:41:19+00:00",
+  "date" : "2026-04-20T15:11:12+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

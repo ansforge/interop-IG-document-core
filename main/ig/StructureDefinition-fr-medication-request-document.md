@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-request-document | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-15 | *Computable Name*:FRMedicationRequestDocument |
+| Draft as of 2026-04-20 | *Computable Name*:FRMedicationRequestDocument |
 
  
 FRMedicationRequestDocument permet de décrire un traitement prescrit avec notamment le médicament, le mode d’administration, la quantité, la durée et la fréquence d’administration. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-medication-reques
   "name" : "FRMedicationRequestDocument",
   "title" : "MedicationRequest - FR Medication Request Document",
   "status" : "draft",
-  "date" : "2026-04-15T15:41:19+00:00",
+  "date" : "2026-04-20T15:11:12+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -551,6 +551,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-medication-reques
         "code" : "Extension",
         "profile" : ["http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.dispenseRequest.dispenserInstruction"]
       }]
+    },
+    {
+      "id" : "MedicationRequest.dispenseRequest.extension:dispenserInstructionR5.extension",
+      "path" : "MedicationRequest.dispenseRequest.extension.extension",
+      "max" : "0"
     },
     {
       "id" : "MedicationRequest.dispenseRequest.extension:dispenserInstructionR5.value[x]",

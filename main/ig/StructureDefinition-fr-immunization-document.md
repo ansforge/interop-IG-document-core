@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-immunization-document | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-15 | *Computable Name*:FRImmunizationDocument |
+| Draft as of 2026-04-20 | *Computable Name*:FRImmunizationDocument |
 
  
 FRImmunizationDocument permet de décrire l’administration d’un vaccin. 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-immunization-docu
   "name" : "FRImmunizationDocument",
   "title" : "Immunization - FR Immunization Document",
   "status" : "draft",
-  "date" : "2026-04-15T15:41:19+00:00",
+  "date" : "2026-04-20T15:11:12+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -134,6 +134,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-immunization-docu
         "code" : "Extension",
         "profile" : ["http://hl7.org/fhir/5.0/StructureDefinition/extension-Immunization.basedOn"]
       }]
+    },
+    {
+      "id" : "Immunization.extension:basedOnRequestR5.extension",
+      "path" : "Immunization.extension.extension",
+      "max" : "0"
     },
     {
       "id" : "Immunization.extension:basedOnRequestR5.value[x]",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-administration-document | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-15 | *Computable Name*:FRMedicationAdministrationDocument |
+| Draft as of 2026-04-20 | *Computable Name*:FRMedicationAdministrationDocument |
 
  
 * FRMedicationAdministrationDocument permert de décrire les modalités d’administration d’un médicament au patient.
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-medication-admini
   "name" : "FRMedicationAdministrationDocument",
   "title" : "MedicationAdministration - FR Medication Administration Document",
   "status" : "draft",
-  "date" : "2026-04-15T15:41:19+00:00",
+  "date" : "2026-04-20T15:11:12+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -118,31 +118,13 @@ Other representations of profile: [CSV](StructureDefinition-fr-medication-admini
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationAdministration.occurence%5Bx%5D"]
+        "profile" : ["http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationAdministration.occurence"]
       }]
     },
     {
-      "id" : "MedicationAdministration.extension:occurenceR5.value[x]",
-      "path" : "MedicationAdministration.extension.value[x]",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "type",
-          "path" : "$this"
-        }],
-        "ordered" : false,
-        "rules" : "open"
-      },
-      "min" : 1
-    },
-    {
-      "id" : "MedicationAdministration.extension:occurenceR5.value[x]:valueTiming",
-      "path" : "MedicationAdministration.extension.value[x]",
-      "sliceName" : "valueTiming",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "Timing"
-      }]
+      "id" : "MedicationAdministration.extension:occurenceR5.extension",
+      "path" : "MedicationAdministration.extension.extension",
+      "max" : "0"
     },
     {
       "id" : "MedicationAdministration.identifier",
