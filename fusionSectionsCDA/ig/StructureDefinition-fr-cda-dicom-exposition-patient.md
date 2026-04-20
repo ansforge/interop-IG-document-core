@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-exposition-patient | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-17 | *Computable Name*:FRCDADICOMExpositionPatient |
+| Draft as of 2026-04-20 | *Computable Name*:FRCDADICOMExpositionPatient |
 
  
 Entrée FR-DICOM-Exposition-patient: DICOM Part 20 - inclue dans l’entrée FR-DICOM-Exposition-aux-radiations. Cette entrée permet d’enregistrer l’identité du professionnel de santé ayant donné l’autorisation de l’exposition du patient aux rayonnements.Elle est obligatoire dans la norme DICOM Part 20. 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-exposit
   "name" : "FRCDADICOMExpositionPatient",
   "title" : "CDA - FR DICOM Exposition patient",
   "status" : "draft",
-  "date" : "2026-04-17T11:35:08+00:00",
+  "date" : "2026-04-20T14:26:58+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -145,12 +145,16 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-exposit
     {
       "id" : "Procedure.code.code",
       "path" : "Procedure.code.code",
-      "patternCode" : "121290"
+      "min" : 1,
+      "patternCode" : "121290",
+      "mustSupport" : true
     },
     {
       "id" : "Procedure.code.codeSystem",
       "path" : "Procedure.code.codeSystem",
-      "patternString" : "1.2.840.10008.2.16.4"
+      "min" : 1,
+      "patternString" : "1.2.840.10008.2.16.4",
+      "mustSupport" : true
     },
     {
       "id" : "Procedure.code.codeSystemName",
@@ -160,7 +164,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-exposit
     {
       "id" : "Procedure.code.displayName",
       "path" : "Procedure.code.displayName",
-      "patternString" : "Exposition du patient aux rayonnements ionisants"
+      "patternString" : "Exposition du patient aux rayonnements ionisants",
+      "mustSupport" : true
     },
     {
       "id" : "Procedure.participant",

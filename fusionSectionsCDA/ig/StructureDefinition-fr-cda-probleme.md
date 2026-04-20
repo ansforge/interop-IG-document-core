@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-probleme | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-17 | *Computable Name*:FRCDAProbleme |
+| Draft as of 2026-04-20 | *Computable Name*:FRCDAProbleme |
 
  
 Entrée FR-Probleme: IHE-PCC - Problem-Entry. Cette entrée permet de décrire un problème du patient (une pathologie par exemple) en précisant : Le type de problème observé : problème, plainte, symptôme, diagnostic, etc. Le problème observé (en général, la pathologie observée), La sévérité, Le statut du problème (sauf pour une réaction à une allergie/hypersensibilité), Le statut clinique du patient (sauf pour une réaction à une allergie/hypersensibilité), Un commentaire. 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-probleme.csv)
   "name" : "FRCDAProbleme",
   "title" : "CDA - FR Probleme",
   "status" : "draft",
-  "date" : "2026-04-17T11:35:08+00:00",
+  "date" : "2026-04-20T14:26:58+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -191,7 +191,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-probleme.csv)
       "short" : "Identifiant de l'entrée",
       "definition" : "Identifiant de l'entrée",
       "min" : 1,
-      "max" : "1"
+      "max" : "1",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.code",
@@ -203,6 +204,23 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-probleme.csv)
         "strength" : "required",
         "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-code-probleme-cisis"
       }
+    },
+    {
+      "id" : "Observation.code.code",
+      "path" : "Observation.code.code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.codeSystem",
+      "path" : "Observation.code.codeSystem",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.displayName",
+      "path" : "Observation.code.displayName",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.text",
@@ -431,7 +449,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-probleme.csv)
       "path" : "Observation.reference.externalDocument.id",
       "short" : "Identifiant du document",
       "min" : 1,
-      "max" : "1"
+      "max" : "1",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.reference.externalDocument.text",

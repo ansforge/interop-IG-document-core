@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-liste-des-allergies-et-hypersensibilites | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-17 | *Computable Name*:FRCDAListeDesAllergiesEtHypersensibilites |
+| Draft as of 2026-04-20 | *Computable Name*:FRCDAListeDesAllergiesEtHypersensibilites |
 
  
 Entrée FR-Liste-des-allergies-et-hypersensibilites: IHE-PCC - Allergy-And-Intolerance-Concern. 
@@ -68,7 +68,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-liste-des-all
   "name" : "FRCDAListeDesAllergiesEtHypersensibilites",
   "title" : "CDA - FR Liste des allergies et hypersensibilites",
   "status" : "draft",
-  "date" : "2026-04-17T11:35:08+00:00",
+  "date" : "2026-04-20T14:26:58+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -188,7 +188,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-liste-des-all
       "short" : "Identifiant de l'entrée",
       "definition" : "Identifiant de l'entrée",
       "min" : 1,
-      "max" : "1"
+      "max" : "1",
+      "mustSupport" : true
     },
     {
       "id" : "Act.code",

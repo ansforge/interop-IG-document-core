@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-technique-imagerie | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-17 | *Computable Name*:FRCDADICOMTechniqueImagerie |
+| Draft as of 2026-04-20 | *Computable Name*:FRCDADICOMTechniqueImagerie |
 
  
 Entrée FR-DICOM-Technique-imagerie: DICOM Part 20 - Procedure Technique Cette entrée permet d’enregistrer les différents paramètres de l’acquisition d’image : acte d’imagerie modalité d’acquisition localisation anatomique / latéralité / topographie d’autres paramètres de l’acte 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-techniq
   "name" : "FRCDADICOMTechniqueImagerie",
   "title" : "CDA - FR DICOM Technique imagerie",
   "status" : "draft",
-  "date" : "2026-04-17T11:35:08+00:00",
+  "date" : "2026-04-20T14:26:58+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -149,7 +149,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-techniq
       "short" : "Identifiant de l'entrée",
       "definition" : "Identifiant de l'entrée",
       "min" : 1,
-      "max" : "1"
+      "max" : "1",
+      "mustSupport" : true
     },
     {
       "id" : "Procedure.code",
@@ -162,6 +163,23 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-techniq
         "strength" : "required",
         "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-code-document-imagerie-cisis"
       }
+    },
+    {
+      "id" : "Procedure.code.code",
+      "path" : "Procedure.code.code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Procedure.code.codeSystem",
+      "path" : "Procedure.code.codeSystem",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Procedure.code.displayName",
+      "path" : "Procedure.code.displayName",
+      "mustSupport" : true
     },
     {
       "id" : "Procedure.text",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-vaccin-recommande | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-17 | *Computable Name*:FRCDAVaccinRecommande |
+| Draft as of 2026-04-20 | *Computable Name*:FRCDAVaccinRecommande |
 
  
 Entrée FR-Vaccin-recommande: IHE-PCC - Immunization recommendation. L’entrée ‘Vaccin recommandé’ est une entrée de type ‘substanceAdministration’ qui permet de décrire une vaccination prévue ou proposée. Une vaccination proposée est une proposition qui est utilisée dans la prise de décisions (elle peut apparaître comme une contribution ou un résultat provenant de l’aide à la décision clinique).  Une vaccination prévue dépend d’un plan accepté et à venir. Cette entrée hérite de la structuration, des contraintes et des vocabulaires de l’entrée ‘Immunization’ (1.3.6.1.4.1.19376.1.5.3.1.4.12). 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-vaccin-recomm
   "name" : "FRCDAVaccinRecommande",
   "title" : "CDA - FR Vaccin recommande",
   "status" : "draft",
-  "date" : "2026-04-17T11:35:08+00:00",
+  "date" : "2026-04-20T14:26:58+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -171,7 +171,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-vaccin-recomm
       "short" : "Identifiant de l'entrée",
       "definition" : "Identifiant de l'entrée",
       "min" : 1,
-      "max" : "1"
+      "max" : "1",
+      "mustSupport" : true
     },
     {
       "id" : "SubstanceAdministration.code",
@@ -184,6 +185,23 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-vaccin-recomm
         "strength" : "required",
         "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdministrationImmunizationCode-cisis"
       }
+    },
+    {
+      "id" : "SubstanceAdministration.code.code",
+      "path" : "SubstanceAdministration.code.code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "SubstanceAdministration.code.codeSystem",
+      "path" : "SubstanceAdministration.code.codeSystem",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "SubstanceAdministration.code.displayName",
+      "path" : "SubstanceAdministration.code.displayName",
+      "mustSupport" : true
     },
     {
       "id" : "SubstanceAdministration.text",

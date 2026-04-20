@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-cadres-references | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-17 | *Computable Name*:FRCDADICOMCadresReferences |
+| Draft as of 2026-04-20 | *Computable Name*:FRCDADICOMCadresReferences |
 
  
 Entrée FR-DICOM-Cadres-references: DICOM Part 20 - Une observation d’images référencées contient une liste de valeurs de type entiers pour les images référencées d’une instance SOP d’images. 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-cadres-
   "name" : "FRCDADICOMCadresReferences",
   "title" : "CDA - FR DICOM Cadres de références",
   "status" : "draft",
-  "date" : "2026-04-17T11:35:08+00:00",
+  "date" : "2026-04-20T14:26:58+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -145,12 +145,16 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-cadres-
     {
       "id" : "Observation.code.code",
       "path" : "Observation.code.code",
-      "patternCode" : "121190"
+      "min" : 1,
+      "patternCode" : "121190",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.code.codeSystem",
       "path" : "Observation.code.codeSystem",
-      "patternString" : "1.2.840.10008.2.16.4"
+      "min" : 1,
+      "patternString" : "1.2.840.10008.2.16.4",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.code.codeSystemName",
@@ -160,7 +164,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-cadres-
     {
       "id" : "Observation.code.displayName",
       "path" : "Observation.code.displayName",
-      "patternString" : "cadres référencés"
+      "patternString" : "cadres référencés",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.entryRelationship",
