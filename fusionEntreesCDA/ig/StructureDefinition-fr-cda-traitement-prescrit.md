@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-traitement-prescrit | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-17 | *Computable Name*:FRCDATraitementPrescrit |
+| Draft as of 2026-04-20 | *Computable Name*:FRCDATraitementPrescrit |
 
  
 Entrée FR-Traitement-prescrit: IHE-PRE Prescription Item. Cette entrée de type substanceAdministration permet de décrire un traitement prescrit avec notamment le médicament, le mode d’administration, la quantité, la durée et la fréquence d’administration. 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-traitement-pr
   "name" : "FRCDATraitementPrescrit",
   "title" : "CDA - FR Traitement prescrit",
   "status" : "draft",
-  "date" : "2026-04-17T09:38:40+00:00",
+  "date" : "2026-04-20T06:44:24+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -289,7 +289,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-traitement-pr
       "path" : "SubstanceAdministration.id",
       "short" : "Identifiant de l'entrée",
       "definition" : "Identifiant de l'entrée",
-      "min" : 1
+      "min" : 1,
+      "mustSupport" : true
     },
     {
       "id" : "SubstanceAdministration.code",
@@ -301,12 +302,16 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-traitement-pr
     {
       "id" : "SubstanceAdministration.code.code",
       "path" : "SubstanceAdministration.code.code",
-      "patternCode" : "DRUG"
+      "min" : 1,
+      "patternCode" : "DRUG",
+      "mustSupport" : true
     },
     {
       "id" : "SubstanceAdministration.code.codeSystem",
       "path" : "SubstanceAdministration.code.codeSystem",
-      "patternString" : "2.16.840.1.113883.5.4"
+      "min" : 1,
+      "patternString" : "2.16.840.1.113883.5.4",
+      "mustSupport" : true
     },
     {
       "id" : "SubstanceAdministration.code.codeSystemName",
@@ -316,7 +321,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-traitement-pr
     {
       "id" : "SubstanceAdministration.code.displayName",
       "path" : "SubstanceAdministration.code.displayName",
-      "patternString" : "Médicament"
+      "min" : 1,
+      "patternString" : "Médicament",
+      "mustSupport" : true
     },
     {
       "id" : "SubstanceAdministration.text",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-resultats-examens-de-biologie-medicale | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-17 | *Computable Name*:FRCDAResultatsExamensDeBiologieMedicale |
+| Draft as of 2026-04-20 | *Computable Name*:FRCDAResultatsExamensDeBiologieMedicale |
 
  
 Entrée FR-Resultats-examens-de-biologie-medicale: IHE-PCC - Laboratory Report Data Processing. 
@@ -72,7 +72,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-resultats-exa
   "name" : "FRCDAResultatsExamensDeBiologieMedicale",
   "title" : "CDA - FR Resultats examens de biologie medicale",
   "status" : "draft",
-  "date" : "2026-04-17T09:38:40+00:00",
+  "date" : "2026-04-20T06:44:24+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -165,6 +165,24 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-resultats-exa
       "path" : "Act.code",
       "short" : "Code dont dérive le code de section",
       "definition" : "Code dont dérive le code de section",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Act.code.code",
+      "path" : "Act.code.code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Act.code.codeSystem",
+      "path" : "Act.code.codeSystem",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Act.code.displayName",
+      "path" : "Act.code.displayName",
+      "min" : 1,
       "mustSupport" : true
     },
     {

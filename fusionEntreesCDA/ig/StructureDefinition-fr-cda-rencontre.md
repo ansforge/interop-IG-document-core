@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-rencontre | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-17 | *Computable Name*:FRCDARencontre |
+| Draft as of 2026-04-20 | *Computable Name*:FRCDARencontre |
 
  
 Entrée FR-Rencontre: IHE-PCC - Encounter. 
@@ -68,7 +68,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-rencontre.csv
   "name" : "FRCDARencontre",
   "title" : "CDA - FR Rencontre",
   "status" : "draft",
-  "date" : "2026-04-17T09:38:40+00:00",
+  "date" : "2026-04-20T06:44:24+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -194,13 +194,32 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-rencontre.csv
       "path" : "Encounter.id",
       "short" : "Identifiant de l'entrée",
       "definition" : "Identifiant de l'entrée",
-      "min" : 1
+      "min" : 1,
+      "mustSupport" : true
     },
     {
       "id" : "Encounter.code",
       "path" : "Encounter.code",
       "short" : "Type de rencontre. Valeur généralement issue du JDV_HL7_ActEncounterCode_CISIS (2.16.840.1.113883.1.11.13955) mais un autre JDV peut être utilisé pour certains documents spécifiques (dans ce cas, le JDV est fourni dans le volet concerné).",
       "definition" : "Type de rencontre",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Encounter.code.code",
+      "path" : "Encounter.code.code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Encounter.code.codeSystem",
+      "path" : "Encounter.code.codeSystem",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Encounter.code.displayName",
+      "path" : "Encounter.code.displayName",
       "min" : 1,
       "mustSupport" : true
     },

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-traitement | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-17 | *Computable Name*:FRCDATraitement |
+| Draft as of 2026-04-20 | *Computable Name*:FRCDATraitement |
 
  
 Entrée FR-Traitement: IHE-PCC - Medications. L’entrée ‘Traitement’ est une entrée de type ‘substanceAdministration’ décrivant les modalités d’administration d’un médicament au patient. Elle permet de décrire notamment le médicament, le mode d’administration, la quantité, la durée et la fréquence d’administration. 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-traitement.cs
   "name" : "FRCDATraitement",
   "title" : "CDA - FR Traitement",
   "status" : "draft",
-  "date" : "2026-04-17T09:38:40+00:00",
+  "date" : "2026-04-20T06:44:24+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -305,7 +305,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-traitement.cs
       "path" : "SubstanceAdministration.id",
       "short" : "Identifiant de l'entrée",
       "definition" : "Identifiant de l'entrée",
-      "min" : 1
+      "min" : 1,
+      "mustSupport" : true
     },
     {
       "id" : "SubstanceAdministration.code",
@@ -317,6 +318,24 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-traitement.cs
         "strength" : "required",
         "valueSet" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-valueset-code-traitement"
       }
+    },
+    {
+      "id" : "SubstanceAdministration.code.code",
+      "path" : "SubstanceAdministration.code.code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "SubstanceAdministration.code.codeSystem",
+      "path" : "SubstanceAdministration.code.codeSystem",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "SubstanceAdministration.code.displayName",
+      "path" : "SubstanceAdministration.code.displayName",
+      "min" : 1,
+      "mustSupport" : true
     },
     {
       "id" : "SubstanceAdministration.text",
