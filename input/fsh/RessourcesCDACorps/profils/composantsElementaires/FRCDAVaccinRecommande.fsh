@@ -10,7 +10,7 @@ Une vaccination prévue dépend d'un plan accepté et à venir. Cette entrée h�
 Si la vaccination est proposée :@moodCode='PRP'"
 * moodCode ^definition = "Si la vaccination est prévue : @moodCode='INT' ;
 Si la vaccination est proposée :@moodCode='PRP'"
-* id 1..1
+* id 1..1 MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..3
@@ -36,7 +36,10 @@ and frVaccinRecommande 1..1
 * code 1..1
 * code ^short = "Type d'acte : vaccination"
 * code ^definition = "Type d'acte"
-* code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdministrationImmunizationCode-cisis
+* code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdministrationImmunizationCode-cisis (required)
+* code.code 1..1 MS
+* code.displayName MS
+* code.codeSystem 1..1 MS
 * text MS
 * text 1..1
 * text ^short = "Partie narrative de l’entrée"

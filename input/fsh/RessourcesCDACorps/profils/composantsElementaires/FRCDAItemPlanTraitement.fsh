@@ -6,7 +6,7 @@ Description: "Entrée FR-Item-plan-traitement: IHE-MTP Medication Treatment Plan
 * classCode MS
 * moodCode MS
 * moodCode = #INT
-* id 1..1
+* id 1..1 MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..4
@@ -37,8 +37,11 @@ and frItemPlanTraitement 1..1
 * code ^short = "Code de l'entrée"
 * code ^definition = "Code de l'entrée"
 * code.code = #DRUG
+* code.code 1..1 MS
 * code.displayName = "Médicament"
+* code.displayName MS
 * code.codeSystem = "2.16.840.1.113883.5.4"
+* code.codeSystem 1..1 MS
 * code.codeSystemName = "HL7_ActCode"
 * text MS
 * text 1..1

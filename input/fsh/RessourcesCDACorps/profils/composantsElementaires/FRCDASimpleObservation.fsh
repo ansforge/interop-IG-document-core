@@ -7,7 +7,7 @@ Description: "Entrée FR-Simple-Observation: IHE-PCC - Simple-Observation. Cette
 * classCode = #OBS
 * moodCode MS
 * moodCode = #EVN
-* id 1..1
+* id 1..1 MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..2
@@ -27,6 +27,9 @@ and frSimpleObservation 1..1
 * code MS
 * code ^short = "Code de l'observation"
 * code ^definition = "Code de l'observation"
+* code.code 1..1 MS
+* code.displayName MS
+* code.codeSystem 1..1 MS
 * text MS
 * text 1..1
 * text ^short = "Description narrative de l'observation"

@@ -7,7 +7,7 @@ Description: "Entrée FR-Resultat: Cette entrée permet d'indiquer le résultat 
 * classCode = #OBS
 * moodCode MS
 * moodCode = #EVN
-* id 1..1
+* id 1..1 MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..3
@@ -32,6 +32,9 @@ and frSimpleObservation 1..1
 * code MS
 * code ^short = "Code du résultat"
 * code ^definition = "Code du résultat"
+* code.code 1..1 MS
+* code.displayName MS
+* code.codeSystem 1..1 MS
 * text MS
 * text 1..1
 * text ^short = "Description narrative"

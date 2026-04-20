@@ -7,7 +7,7 @@ Pour les dosages progressifs, fractionnés ou conditionnels, les sous-entrées F
 * classCode MS
 * moodCode MS
 * moodCode = #INT
-* id 1..*
+* id 1..* MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..1

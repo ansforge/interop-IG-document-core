@@ -10,7 +10,7 @@ ou si information rapportée par le patient
 ou si aucun traitement : moodCode='EVN' ;     
 Si le traitement est en attente d'administration : moodCode='INT'"
 * moodCode ^definition = "Si le traitement a déjà été administré ou si information rapportée par le patient ou si aucun traitement; si le traitement est en attente d'administration"
-* id 1..*
+* id 1..* MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..12
@@ -92,6 +92,9 @@ Dans le cas d'un mélange préparé, la description du mélange doit être fourn
 * code ^short = "Acte ou situation"
 * code ^definition = "Acte ou situation"
 * code from FRValueSetCodeTraitement (required)
+* code.code 1..1 MS
+* code.displayName MS
+* code.codeSystem 1..1 MS
 * text MS
 * text 1..1
 * text ^short = "Partie narrative de l’entrée"

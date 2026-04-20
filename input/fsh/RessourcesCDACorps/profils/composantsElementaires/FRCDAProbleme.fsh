@@ -8,7 +8,7 @@ Description: "Entrée FR-Probleme: IHE-PCC - Problem-Entry. Cette entrée permet
 * moodCode MS
 * moodCode = #EVN
 * negationInd ^short = "Les attributs de cet élément prennent les valeurs suivantes : @classCode='OBS' (observation d’un problème) @moodCode='EVN' (observation ayant eu lieu) @negationInd=‘false’ signifie que l’élément observé a eu lieu @negationInd=‘true’ signifie que l’élément observé n’a pas eu lieu (donnant par exemple ‘absence de fièvre’ si l’élément observé est ‘fièvre’). @negationInd absent dans le cas où on ne sait pas."
-* id 1..1
+* id 1..1 MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..4
@@ -38,7 +38,10 @@ and frProbleme 1..1
 * code MS
 * code ^short = "Type d'observation"
 * code ^definition = "Type d'observation"
-* code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-code-probleme-cisis
+* code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-code-probleme-cisis (required)
+* code.code 1..1 MS
+* code.displayName MS
+* code.codeSystem 1..1 MS
 * text MS
 * text 1..1
 * text ^short = "Description narrative du problème : cet élément permet de décrire le problème enregistré, les dates, commentaires, etc."
@@ -95,7 +98,7 @@ frSeverite 0..1
   * typeCode = #REFR
   * externalDocument 1..1
     * classCode = #DOC
-    * id 1..1
+    * id 1..1 MS
     * id ^short = "Identifiant du document"
     * text 1..1
       * reference 0..1

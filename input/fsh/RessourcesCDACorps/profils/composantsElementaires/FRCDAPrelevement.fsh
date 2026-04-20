@@ -23,6 +23,9 @@ and frPrelevement 1..1
 * code MS
 * code ^short = "Acte de prélèvement - Pour un prélèvement en vue d'examen de biologie médicale, le code affiné NABM de l'acte de prélèvement doit être renseigné si connu, sauf dans le cas d'un recueil d'échantillon effectué par le patient lui-même. Un prélèvement cytologique ou de tissu en vue d'un examen d'anatomie ou de cytologie pathologiques est codé à l'aide d'une nomenclature précisée dans les modèles de contenus métiers.Par défaut, utiliser le code suivant : code='33882-2' displayName='Prélèvement' codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'"
 * code ^definition = "Acte de prélèvement"
+* code.code 1..1 MS
+* code.displayName MS
+* code.codeSystem 1..1 MS
 * effectiveTime MS
 * effectiveTime 1..1
 * effectiveTime ^short = "Date du prélèvement: La date et heure de prélèvement doit être renseignée si elle est connue. En cas d'acte ponctuel, c'est la date et heure de fin (élément high) qui horodate le prélèvement. "
@@ -63,7 +66,7 @@ ProduitUtilise 0..* MS
   * typeCode = #PRD
   * participantRole 1..1
     * classCode = #SPEC
-    * id 1..1
+    * id 1..1 MS
     * id ^short = "Identifiant de l'échantillon - L'identifiant de l'échantillon est éventuellement multiple (premier identifiant attribué par le préleveur, puis réidentification par le laboratoire).  L'un des identifiants est visible sur l'échantillon matériel (par exemple en code barre sur le tube ou le bocal). "
     * id ^definition = "Identifiant de l'échantillon"
     * playingEntity 1..1

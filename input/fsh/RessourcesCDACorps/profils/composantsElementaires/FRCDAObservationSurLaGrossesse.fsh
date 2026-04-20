@@ -7,7 +7,7 @@ Description: "Entrée FR-Observation-sur-la-grossesse: IHE-PCC - Pregnancy Obser
 * classCode = #OBS
 * moodCode MS
 * moodCode = #EVN
-* id 1..1
+* id 1..1 MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..3
@@ -33,6 +33,9 @@ and frObservationSurLaGrossesse 1..1
 * code MS
 * code ^short = "Type d'observationCe code peut provenir du JDV_ObservationGrossesse_CISIS (1.2.250.1.213.1.1.5.500).D’autres codes ou JDV peuvent être utilisés."
 * code ^definition = "Type d'observation"
+* code.code 1..1 MS
+* code.displayName MS
+* code.codeSystem 1..1 MS
 * text MS
 * text 1..1
 * statusCode MS

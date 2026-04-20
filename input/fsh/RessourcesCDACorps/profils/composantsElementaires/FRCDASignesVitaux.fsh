@@ -6,7 +6,7 @@ Description: "Entrée FR-Signes-vitaux: IHE-PCC - Vital signs organizer. L'entr�
 * classCode MS
 * classCode = #CLUSTER
 * moodCode MS
-* id 1..1
+* id 1..1 MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..4
@@ -40,6 +40,9 @@ and frSignesVitaux 1..1
 * code.code = #85353-1
 * code.codeSystem = "2.16.840.1.113883.6.1"
 * code.displayName = "Signes vitaux"
+* code.code 1..1 MS
+* code.displayName MS
+* code.codeSystem 1..1 MS
 * statusCode MS
 * statusCode ^short = "Statut de l'entrée"
 * statusCode ^definition = "Statut de l'entrée"

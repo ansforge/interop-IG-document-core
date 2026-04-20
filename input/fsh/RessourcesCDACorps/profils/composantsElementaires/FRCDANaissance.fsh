@@ -7,7 +7,7 @@ Description: "Entrée FR-Naissance: IHE-PCC - Birth event organizer.
 * classCode MS
 * classCode = #CLUSTER
 * moodCode MS
-* id 1..1
+* id 1..1 MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..2
@@ -32,6 +32,9 @@ and frNaissance 1..1
 * code.displayName = "observation sur l'accouchement"
 * code.codeSystem = "2.16.840.1.113883.6.96"
 * code.codeSystemName = "SNOMED_CT"
+* code.code 1..1 MS
+* code.displayName MS
+* code.codeSystem 1..1 MS
 * statusCode MS
 * statusCode 1..1
 * statusCode ^short = "Status de l'observationFixé à la valeur 'completed'"
