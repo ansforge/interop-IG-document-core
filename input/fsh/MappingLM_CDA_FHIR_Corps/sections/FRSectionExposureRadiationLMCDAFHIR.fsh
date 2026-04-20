@@ -39,11 +39,11 @@ Description: "Mapping des éléments du modèle métier FRLMExpositionRadiations
 * group[=].element[=].target[=].equivalence = #equivalent
 // Entrée observation de grossesse
 * group[=].element[+].code = #FRLMExpositionRadiations.entree.observationGrossesse
-* group[=].element[=].target[+].code = #FRCDADICOMExpositionAuxRadiations.entry:frDICOMObservation
+* group[=].element[=].target[+].code = #FRCDADICOMExpositionAuxRadiations.entry:frDicomObservationGrossesse
 * group[=].element[=].target[=].equivalence = #equivalent
 // Entrée observation indication
 * group[=].element[+].code = #FRLMExpositionRadiations.entree.observationIndication
-* group[=].element[=].target[+].code = #FRCDADICOMExpositionAuxRadiations.entry:frDICOMObservation
+* group[=].element[=].target[+].code = #FRCDADICOMExpositionAuxRadiations.entry:frDicomObservationIndication
 * group[=].element[=].target[=].equivalence = #equivalent
 
 // Groupe Mapping 2 : CDA → FHIR
@@ -78,10 +78,10 @@ Description: "Mapping des éléments du modèle métier FRLMExpositionRadiations
 * group[=].element[=].target[+].code = #FRCompositionDocument.section:exposureRadiation.entry:FRObservationRadiationExposureDocument.partOf:medicationAdministrationRef
 * group[=].element[=].target[=].equivalence = #equivalent
 // Entrée observation de grossesse
-* group[=].element[+].code = #FRCDADICOMExpositionAuxRadiations.entry:frDICOMObservation
+* group[=].element[+].code = #FRCDADICOMExpositionAuxRadiations.entry:frDicomObservationGrossesse
 * group[=].element[=].target[+].code = #FRCompositionDocument.section:exposureRadiation.entry:FRObservationRadiationExposureDocument.hasMember:observationGrossesse
 * group[=].element[=].target[=].equivalence = #equivalent
 // Entrée observation indication
-* group[=].element[+].code = #FRCDADICOMExpositionAuxRadiations.entry:frDICOMObservation
+* group[=].element[+].code = #FRCDADICOMExpositionAuxRadiations.entry:frDicomObservationIndication
 * group[=].element[=].target[+].code = #FRCompositionDocument.section:exposureRadiation.entry:FRObservationRadiationExposureDocument.hasMember:observationIndication
 * group[=].element[=].target[=].equivalence = #equivalent
