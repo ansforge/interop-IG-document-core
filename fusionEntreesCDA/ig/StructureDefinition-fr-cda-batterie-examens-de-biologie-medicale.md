@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-batterie-exam
   "name" : "FRCDABatterieExamensDeBiologieMedicale",
   "title" : "CDA - FR Batterie examens de biologie medicale",
   "status" : "draft",
-  "date" : "2026-04-20T06:44:24+00:00",
+  "date" : "2026-04-20T07:29:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -158,13 +158,32 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-batterie-exam
       "path" : "Organizer.id",
       "short" : "Identifiant de l'entrée",
       "definition" : "Identifiant de l'entrée",
-      "max" : "1"
+      "max" : "1",
+      "mustSupport" : true
     },
     {
       "id" : "Organizer.code",
       "path" : "Organizer.code",
       "short" : "Code de la batterie d'examen",
       "definition" : "Code de la batterie d'examen",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Organizer.code.code",
+      "path" : "Organizer.code.code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Organizer.code.codeSystem",
+      "path" : "Organizer.code.codeSystem",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Organizer.code.displayName",
+      "path" : "Organizer.code.displayName",
+      "min" : 1,
       "mustSupport" : true
     },
     {

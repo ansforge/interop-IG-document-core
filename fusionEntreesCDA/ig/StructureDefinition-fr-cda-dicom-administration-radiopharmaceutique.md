@@ -72,7 +72,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-adminis
   "name" : "FRCDADICOMAdministrationRadiopharmaceutique",
   "title" : "CDA - FR DICOM Administration radiopharmaceutique",
   "status" : "draft",
-  "date" : "2026-04-20T06:44:24+00:00",
+  "date" : "2026-04-20T07:29:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -156,12 +156,16 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-adminis
     {
       "id" : "SubstanceAdministration.code.code",
       "path" : "SubstanceAdministration.code.code",
-      "patternCode" : "440252007"
+      "min" : 1,
+      "patternCode" : "440252007",
+      "mustSupport" : true
     },
     {
       "id" : "SubstanceAdministration.code.codeSystem",
       "path" : "SubstanceAdministration.code.codeSystem",
-      "patternString" : "2.16.840.1.113883.6.96"
+      "min" : 1,
+      "patternString" : "2.16.840.1.113883.6.96",
+      "mustSupport" : true
     },
     {
       "id" : "SubstanceAdministration.code.codeSystemName",
@@ -171,7 +175,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-adminis
     {
       "id" : "SubstanceAdministration.code.displayName",
       "path" : "SubstanceAdministration.code.displayName",
-      "patternString" : "administration de produits radiopharmaceutiques"
+      "min" : 1,
+      "patternString" : "administration de produits radiopharmaceutiques",
+      "mustSupport" : true
     },
     {
       "id" : "SubstanceAdministration.routeCode",

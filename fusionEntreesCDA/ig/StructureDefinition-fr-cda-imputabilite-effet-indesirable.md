@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-imputabilite-
   "name" : "FRCDAImputabiliteEffetIndesirable",
   "title" : "CDA - FR Imputabilite effet indesirable",
   "status" : "draft",
-  "date" : "2026-04-20T06:44:24+00:00",
+  "date" : "2026-04-20T07:29:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -145,12 +145,16 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-imputabilite-
     {
       "id" : "Observation.code.code",
       "path" : "Observation.code.code",
-      "patternCode" : "GEN-318"
+      "min" : 1,
+      "patternCode" : "GEN-318",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.code.codeSystem",
       "path" : "Observation.code.codeSystem",
-      "patternString" : "1.2.250.1.213.1.1.4.322"
+      "min" : 1,
+      "patternString" : "1.2.250.1.213.1.1.4.322",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.code.codeSystemName",
@@ -160,7 +164,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-imputabilite-
     {
       "id" : "Observation.code.displayName",
       "path" : "Observation.code.displayName",
-      "patternString" : "Imputabilité"
+      "min" : 1,
+      "patternString" : "Imputabilité",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.text",

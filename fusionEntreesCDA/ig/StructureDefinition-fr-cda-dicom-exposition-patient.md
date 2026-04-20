@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-exposit
   "name" : "FRCDADICOMExpositionPatient",
   "title" : "CDA - FR DICOM Exposition patient",
   "status" : "draft",
-  "date" : "2026-04-20T06:44:24+00:00",
+  "date" : "2026-04-20T07:29:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -149,12 +149,16 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-exposit
     {
       "id" : "Procedure.code.code",
       "path" : "Procedure.code.code",
-      "patternCode" : "121290"
+      "min" : 1,
+      "patternCode" : "121290",
+      "mustSupport" : true
     },
     {
       "id" : "Procedure.code.codeSystem",
       "path" : "Procedure.code.codeSystem",
-      "patternString" : "1.2.840.10008.2.16.4"
+      "min" : 1,
+      "patternString" : "1.2.840.10008.2.16.4",
+      "mustSupport" : true
     },
     {
       "id" : "Procedure.code.codeSystemName",
@@ -164,7 +168,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-exposit
     {
       "id" : "Procedure.code.displayName",
       "path" : "Procedure.code.displayName",
-      "patternString" : "Exposition du patient aux rayonnements ionisants"
+      "min" : 1,
+      "patternString" : "Exposition du patient aux rayonnements ionisants",
+      "mustSupport" : true
     },
     {
       "id" : "Procedure.participant",

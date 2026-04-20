@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dispositif-me
   "name" : "FRCDADispositifMedical",
   "title" : "CDA - FR Dispositif medical",
   "status" : "draft",
-  "date" : "2026-04-20T06:44:24+00:00",
+  "date" : "2026-04-20T07:29:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -159,7 +159,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dispositif-me
       "path" : "Supply.id",
       "short" : "Identifiant de la fourniture du DM -Sous la forme UID (UUID ou OID). Cet identifiant correspond à l'identifiant de la fourniture du dispositf médical (p. ex. procédure d'implant). Si l'identifiant n'est pas connu, utiliser la valeur nullFlavor='UNK'.",
       "definition" : "Identifiant de la fourniture du DM",
-      "min" : 1
+      "min" : 1,
+      "mustSupport" : true
     },
     {
       "id" : "Supply.text",
