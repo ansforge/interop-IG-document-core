@@ -180,7 +180,7 @@ groups:
 
   #Entrées et éléments transversaux
   Modèles logiques métier des composants élémentaires: 
-    name: Modèles logiques métier des composants élémentaires
+    name: Modèles logiques métier des composants communs
     description: Modèles de données métier représentant les concepts élémentaires, modélisés indépendamment de la syntaxe et de façon plus accessible pour le métier que les éléments techniques CDA et FHIR.
     resources:
       - StructureDefinition/fr-lm-acte
@@ -272,7 +272,7 @@ groups:
       - StructureDefinition/fr-lm-echantillon-preleve
   
   Ressources CDA entête:
-    name: Eléments CDA
+    name: Eléments CDA de l'entête
     #description: Profils CDA
     resources:
       - StructureDefinition/fr-cda-clinical-document
