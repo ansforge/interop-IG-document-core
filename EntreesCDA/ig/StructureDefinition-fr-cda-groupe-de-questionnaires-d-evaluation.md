@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-groupe-de-questionnaires-d-evaluation | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-17 | *Computable Name*:FRCDAGroupeDeQuestionnairesDEvaluation |
+| Draft as of 2026-04-20 | *Computable Name*:FRCDAGroupeDeQuestionnairesDEvaluation |
 
  
 Entrée FR-Groupe-de-questionnaires-d-evaluation: IHE-PCC - Survey-pannel 
@@ -68,7 +68,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-groupe-de-que
   "name" : "FRCDAGroupeDeQuestionnairesDEvaluation",
   "title" : "CDA - FR Groupe de questionnaires d evaluation",
   "status" : "draft",
-  "date" : "2026-04-17T13:12:24+00:00",
+  "date" : "2026-04-20T13:35:58+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -200,7 +200,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-groupe-de-que
     {
       "id" : "Organizer.code.displayName",
       "path" : "Organizer.code.displayName",
-      "min" : 1,
       "mustSupport" : true
     },
     {
