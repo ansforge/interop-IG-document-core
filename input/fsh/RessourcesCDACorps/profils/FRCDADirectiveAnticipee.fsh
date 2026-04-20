@@ -7,7 +7,7 @@ Description: "Entrée FR-Directive-anticipee: IHE-PCC - Advance-Directive-Observ
 * classCode = #OBS
 * moodCode MS
 * moodCode = #EVN
-* id 1..1
+* id 1..1 MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..4
@@ -38,6 +38,9 @@ and frDirectiveAnticipee 1..1
 * code ^short = "Type de la directive anticipée - La valeur est issue du jeu de valeurs JDV_TypeDirectiveAnticipee_CISIS (1.2.250.1.213.1.1.5.136)."
 * code ^definition = "Type de la directive anticipée"
 * code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-directive-anticipee-cisis (required)
+* code.code 1..1 MS
+* code.displayName 1..1 MS
+* code.codeSystem 1..1 MS
 * text MS
 * text 1..1
 * text ^short = "Partie narrative de l'observation"

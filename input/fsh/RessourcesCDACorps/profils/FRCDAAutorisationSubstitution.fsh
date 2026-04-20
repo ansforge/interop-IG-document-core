@@ -24,6 +24,9 @@ and frAutorisationSubstitution 1..1
 * code ^short = "Type de substitution autorisé entre le traitement prescrit et le traitement dispensé."
 * code ^definition = "Type de substitution autorisé"
 * code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdminSubstitutionCode-cisis (required)
+* code.code 1..1 MS
+* code.displayName 1..1 MS
+* code.codeSystem 1..1 MS
 * statusCode MS
 * statusCode 1..1
 * statusCode ^short = "Statut de l’entrée. Fixé à la valeur 'completed'"

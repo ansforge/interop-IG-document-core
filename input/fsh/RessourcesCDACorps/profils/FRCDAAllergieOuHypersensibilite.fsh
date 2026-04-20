@@ -7,7 +7,7 @@ Description: "Entrée FR-Allergie-ou-hypersensibilite: IHE-PCC Allergy-And-Intol
 * classCode = #OBS
 * moodCode MS
 * moodCode = #EVN
-* id 1..*
+* id 1..* MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..5
@@ -43,6 +43,9 @@ and frAllergieOuHypersensibilite 1..1
 * code ^short = "Type d'allergie / hypersensibilité non allergique / intolérance / idiosyncrasie"
 * code ^definition = "Type d'allergie / hypersensibilité non allergique / intolérance / idiosyncrasie"
 * code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-evenement-indesirable-previsible-cisis
+* code.code 1..1 MS
+* code.displayName 1..1 MS
+* code.codeSystem 1..1 MS
 * text MS
 * text 1..1
 * text ^short = "Partie narrative de l'entrée"

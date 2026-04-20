@@ -8,7 +8,7 @@ Description: "Entrée FR-DICOM-Quantite: DICOM Part 20 - Quantity Measurement. 
 * moodCode MS
 * moodCode = #EVN
 * negationInd MS
-* id 1..1
+* id 1..1 MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..2
@@ -29,6 +29,9 @@ and frDicomQuantite 1..1
 * code ^short = "Code de l'observation"
 * code ^definition = "Code de l'observation"
 * code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-quantite-exposition-rayonnements-cisis
+* code.code 1..1 MS
+* code.displayName 1..1 MS
+* code.codeSystem 1..1 MS
 * text MS
 * text ^short = "Partie narrative de l'entrée"
 * text ^definition = "Partie narrative de l'entrée"

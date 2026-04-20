@@ -8,7 +8,7 @@ Description: "Entrée FR-DICOM-Observation: DICOM Part 20 - Coded Observation. 
 * moodCode MS
 * negationInd MS
 * negationInd = true
-* id 1..1
+* id 1..1 MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..2
@@ -28,6 +28,9 @@ and dicomCodedObservation 1..1
 * code MS
 * code ^short = "Code de l'observation"
 * code ^definition = "Code de l'observation"
+* code.code 1..1 MS
+* code.displayName 1..1 MS
+* code.codeSystem 1..1 MS
 * text MS
 * text ^short = "Partie narrative de l'observation"
 * text ^definition = "Partie narrative de l'observation"

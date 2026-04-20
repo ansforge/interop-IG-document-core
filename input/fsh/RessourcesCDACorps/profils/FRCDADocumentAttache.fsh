@@ -8,7 +8,7 @@ Description: "Entrée FR-Document-attache: L'entrée Document Attaché est une e
 * classCode MS
 * classCode = #CLUSTER
 * moodCode MS
-* id 1..1
+* id 1..1 MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..1
@@ -23,6 +23,9 @@ Description: "Entrée FR-Document-attache: L'entrée Document Attaché est une e
 * code.displayName = "Document attaché"
 * code.codeSystem = "2.16.840.1.113883.6.1"
 * code.codeSystemName = "LOINC"
+* code.code 1..1 MS
+* code.displayName 1..1 MS
+* code.codeSystem 1..1 MS
 * statusCode MS
 * statusCode 1..1
 * statusCode ^short = "Statut de l'entrée"

@@ -10,7 +10,7 @@ Description: "Entrée FR-Acte: IHE-PCC - Procedure. L'entrée 'Acte' est une ent
  - Si acte réalisé : moodCode='EVN' ; negationInd='true' 
      - si l'acte n'a pas eu lieu : negationInd='false' 
      - si l'acte a eu lieu (valeur par défaut)"""
-* id 1..*
+* id 1..* MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..4
@@ -45,6 +45,9 @@ Terminologie CCAM (1.2.250.1.215.300.1) si possible.
 Si l'acte n'est pas trouvé dans la terminologie CCAM, utiliser le code='C25218' displayName='Intervention' codeSystem='2.16.840.1.113883.3.26.1.1' codeSystemName='NCIT' et décrire l'acte sous forme de texte libre dans la partie narrative avec une référence vers l'entrée correspondante 
 ou jdv-absent-or-unknown-procedure-cisis (1.2.250.1.213.1.1.5.665) pour les actes chirurgicaux"""
 * code ^definition = "Code d'acte"
+* code.code 1..1 MS
+* code.displayName 1..1 MS
+* code.codeSystem 1..1 MS
 * text MS
 * text 1..1
 * text ^short = "Description narrative de l'acte"

@@ -33,6 +33,9 @@ and frCommentaireER 1..1
 * code.displayName = "Commentaire"
 * code.codeSystem = "2.16.840.1.113883.6.1"
 * code.codeSystemName = "LOINC"
+* code.code 1..1 MS
+* code.displayName 1..1 MS
+* code.codeSystem 1..1 MS
 * text MS
 * text 1..1
 * text ^short = "Texte du commentaire"
