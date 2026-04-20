@@ -37,7 +37,7 @@ and frEnRapportAvecAccidentTravail 1..1
 * code.displayName = "En rapport avec un accident du travail ou une maladie professionnelle"
 * code.codeSystemName = "TerminologieCISIS"
 * code.code 1..1 MS
-* code.displayName 1..1 MS
+* code.displayName MS
 * code.codeSystem 1..1 MS
 * text MS
 * text 1..1

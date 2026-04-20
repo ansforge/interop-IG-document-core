@@ -39,7 +39,7 @@ and frEvaluation 1..1
 * code ^definition = "Type d'évaluation"
 * code.translation 0..1
 * code.code 1..1 MS
-* code.displayName 1..1 MS
+* code.displayName MS
 * code.codeSystem 1..1 MS
 * text MS
 * text 1..1

@@ -34,7 +34,7 @@ Description: "Entrée FR-DICOM-Administration-radiopharmaceutique: Cette entrée
 * code.codeSystem = "2.16.840.1.113883.6.96"
 * code.codeSystemName = "SNOMED CT"
 * code.code 1..1 MS
-* code.displayName 1..1 MS
+* code.displayName MS
 * code.codeSystem 1..1 MS
 * routeCode MS
 * routeCode ^short = "Voie d'administration. Terminologie utilisée :  EDQM - Standard terms / classe ROA (Voie d'administration)"

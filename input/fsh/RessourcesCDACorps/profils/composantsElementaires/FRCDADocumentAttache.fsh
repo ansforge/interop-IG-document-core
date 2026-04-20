@@ -24,7 +24,7 @@ Description: "Entrée FR-Document-attache: L'entrée Document Attaché est une e
 * code.codeSystem = "2.16.840.1.113883.6.1"
 * code.codeSystemName = "LOINC"
 * code.code 1..1 MS
-* code.displayName 1..1 MS
+* code.displayName MS
 * code.codeSystem 1..1 MS
 * statusCode MS
 * statusCode 1..1

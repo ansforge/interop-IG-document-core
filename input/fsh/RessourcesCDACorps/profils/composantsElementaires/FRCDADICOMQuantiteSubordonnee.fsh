@@ -28,7 +28,7 @@ and dicomQuantityMeasurement 1..1
 * code ^definition = "Code de l'observation"
 * code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-quantite-exposition-rayonnements-cisis
 * code.code 1..1 MS
-* code.displayName 1..1 MS
+* code.displayName MS
 * code.codeSystem 1..1 MS
 * text MS
 * text ^short = "Partie narrative de l'entrée"

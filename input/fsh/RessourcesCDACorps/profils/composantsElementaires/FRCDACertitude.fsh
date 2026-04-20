@@ -37,7 +37,7 @@ and frCertitude 1..1
 * code.codeSystem = "2.16.840.1.113883.6.1"
 * code.codeSystemName = "LOINC"
 * code.code 1..1 MS
-* code.displayName 1..1 MS
+* code.displayName MS
 * code.codeSystem 1..1 MS
 * text MS
 * text 1..1

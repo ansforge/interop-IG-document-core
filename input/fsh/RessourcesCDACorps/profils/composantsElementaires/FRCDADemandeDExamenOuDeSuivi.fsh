@@ -46,7 +46,7 @@ and frDemandeDexamenOuDeSuivi 1..1
  et décrire le type de la demande sous forme de texte libre dans la partie narrative avec une référence vers l'entrée correspondante. "
 * code ^definition = "Type de la demande"
 * code.code 1..1 MS
-* code.displayName 1..1 MS
+* code.displayName MS
 * code.codeSystem 1..1 MS
 * text MS
 * text 1..1

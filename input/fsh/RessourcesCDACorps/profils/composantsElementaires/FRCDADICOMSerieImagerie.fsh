@@ -25,12 +25,12 @@ and dicomSeriesAct 1..1
 * code MS
 * code ^short = "Code de l'entrée"
 * code ^definition = "Code de l'entrée"
-  * code 1..1
+  * code 1..1 MS
   * code = #113015
-  * codeSystem 1..1
+  * codeSystem 1..1 MS
   * codeSystem = "1.2.840.10008.2.16.4"
   * codeSystemName = "DCM"
-  * displayName 1..1 
+  * displayName MS
   * displayName = "Séries"
   * qualifier 1..1 MS
     * name 1..1

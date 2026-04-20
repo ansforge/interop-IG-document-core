@@ -46,8 +46,8 @@ Si l'acte n'est pas trouvé dans la terminologie CCAM, utiliser le code='C25218'
 ou jdv-absent-or-unknown-procedure-cisis (1.2.250.1.213.1.1.5.665) pour les actes chirurgicaux"""
 * code ^definition = "Code d'acte"
 * code.code 1..1 MS
-* code.displayName 1..1 MS
 * code.codeSystem 1..1 MS
+* code.displayName MS
 * text MS
 * text 1..1
 * text ^short = "Description narrative de l'acte"

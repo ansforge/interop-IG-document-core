@@ -44,7 +44,7 @@ and FRCDAHabitusModeDeVie 1..1
 * code.qualifier ^short = "Précision du code"
 * code.qualifier ^definition = "Précision du code"
 * code.code 1..1 MS
-* code.displayName 1..1 MS
+* code.displayName MS
 * code.codeSystem 1..1 MS
 * text MS
 * text 1..1

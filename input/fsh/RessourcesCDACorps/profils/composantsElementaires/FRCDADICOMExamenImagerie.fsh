@@ -30,7 +30,7 @@ and FRCDADICOMExamenimagerie 1..1
 * code.codeSystemName = "DCM"
 * code.displayName = "Examen"
 * code.code 1..1 MS
-* code.displayName 1..1 MS
+* code.displayName MS
 * code.codeSystem 1..1 MS
 * text MS
 * text ^short = "Partie narrative de l'entrée"

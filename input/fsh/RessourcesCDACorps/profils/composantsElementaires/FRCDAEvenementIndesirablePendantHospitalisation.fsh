@@ -28,7 +28,7 @@ and frEvenementIndesirablePendantHospitalisation 1..1
 * code.codeSystem = "1.2.250.1.213.1.1.4.322"
 * code.codeSystemName = "TerminologieCISIS"
 * code.code 1..1 MS
-* code.displayName 1..1 MS
+* code.displayName MS
 * code.codeSystem 1..1 MS
 * text MS
 * text 1..1

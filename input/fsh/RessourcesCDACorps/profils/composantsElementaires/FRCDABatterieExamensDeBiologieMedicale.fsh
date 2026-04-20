@@ -34,7 +34,7 @@ and frBatterieExamensDeBiologieMedicale 1..1
   * translation ^short = "Code d'identification d'attente national ou code de portée locale"
   * translation ^definition = "Code d'identification d'attente national ou code de portée locale"
 * code.code 1..1 MS
-* code.displayName 1..1 MS
+* code.displayName  MS
 * code.codeSystem 1..1 MS
 * statusCode MS
 * statusCode 1..1

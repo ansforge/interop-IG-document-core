@@ -27,7 +27,7 @@ Description: "Entrée FR-DICOM-Exposition-patient: DICOM Part 20 - inclue dans l
 * code.codeSystemName = "DCM"
 * code.displayName = "Exposition du patient aux rayonnements ionisants"
 * code.code 1..1 MS
-* code.displayName 1..1 MS
+* code.displayName MS
 * code.codeSystem 1..1 MS
 
 * participant 1..1

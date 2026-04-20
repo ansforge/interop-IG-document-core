@@ -29,7 +29,7 @@ and dicomCodedObservation 1..1
 * code ^short = "Code de l'observation"
 * code ^definition = "Code de l'observation"
 * code.code 1..1 MS
-* code.displayName 1..1 MS
+* code.displayName MS
 * code.codeSystem 1..1 MS
 * text MS
 * text ^short = "Partie narrative de l'observation"

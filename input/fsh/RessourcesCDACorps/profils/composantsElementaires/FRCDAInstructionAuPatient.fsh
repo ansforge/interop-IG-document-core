@@ -36,6 +36,7 @@ and frInstructionAuPatient 1..1
 * code.code = #PINSTRUCT
 * code.code 1..1 MS
 * code.codeSystem 1..1 MS
+* code.displayName MS
 * text MS
 * text 1..1
 * text ^short = "Description narrative de l'observation"

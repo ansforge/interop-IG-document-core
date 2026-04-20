@@ -33,9 +33,9 @@ and frEvenement 1..1
 * code 1..1
 * code ^short = "Type d'évènement :Le JDV dépend du volet utilisant cette entrée (les précisions sont alors fournies dans le volet correspondant). Si pas d'information utiliser le code Wolf ‘Aucun’."
 * code ^definition = "Type d'évènement"
-  * code 1..1
-  * codeSystem 1..1
-  * displayName 1..1
+  * code 1..1 MS
+  * codeSystem 1..1 MS
+  * displayName MS
   * originalText 0..1
   * originalText ^short = "Précision sur le type d'évènement au format texte"
   * originalText ^definition = "Précision sur le type d'évènement au format texte"

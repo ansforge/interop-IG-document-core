@@ -44,7 +44,7 @@ and frAllergieOuHypersensibilite 1..1
 * code ^definition = "Type d'allergie / hypersensibilité non allergique / intolérance / idiosyncrasie"
 * code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-evenement-indesirable-previsible-cisis
 * code.code 1..1 MS
-* code.displayName 1..1 MS
+* code.displayName MS
 * code.codeSystem 1..1 MS
 * text MS
 * text 1..1

@@ -39,7 +39,7 @@ and frDirectiveAnticipee 1..1
 * code ^definition = "Type de la directive anticipée"
 * code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-directive-anticipee-cisis (required)
 * code.code 1..1 MS
-* code.displayName 1..1 MS
+* code.displayName MS
 * code.codeSystem 1..1 MS
 * text MS
 * text 1..1

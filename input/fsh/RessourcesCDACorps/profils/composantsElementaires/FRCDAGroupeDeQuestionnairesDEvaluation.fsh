@@ -33,7 +33,7 @@ and frGroupeDeQuestionnairesDevaluation 1..1
 * code ^short = "Code de l'entrée"
 * code ^definition = "Code de l'entrée"
 * code.code 1..1 MS
-* code.displayName 1..1 MS
+* code.displayName MS
 * code.codeSystem 1..1 MS
 * statusCode MS
 * statusCode 1..1

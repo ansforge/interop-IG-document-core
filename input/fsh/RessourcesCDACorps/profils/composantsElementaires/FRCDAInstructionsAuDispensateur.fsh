@@ -36,6 +36,7 @@ and frInstructionsAuDispensateur 1..1
 * code.codeSystemName = "IHEActCode"
 * code.code 1..1 MS
 * code.codeSystem 1..1 MS
+* code.displayName MS
 * text MS
 * text 1..1
 * text ^short = "Instructions au dispensateur sous forme textuelle."
