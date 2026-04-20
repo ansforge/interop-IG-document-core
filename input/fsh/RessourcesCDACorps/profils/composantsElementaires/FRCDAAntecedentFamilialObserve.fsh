@@ -7,7 +7,7 @@ Description: "Entrée FR-Antecedent-familial-observe: IHE-PCC - Family History O
 * classCode = #OBS
 * moodCode MS
 * moodCode = #EVN
-* id 1..1
+* id 1..1 MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..4
@@ -38,11 +38,13 @@ and frAntecedentFamilialObserve 1..1
 * code ^short = "Type de l'observation"
 * code ^definition = "Type de l'observation"
 * code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-code-probleme-cisis (required)
+* code.code 1..1 MS
+* code.displayName MS
+* code.codeSystem 1..1 MS
 * text MS
 * text 1..1
-* text ^short = "Description narrative de la valeur de l'observation
+* text ^short = "Description narrative de la valeur de l'observation"
 * text.reference 1..1 MS
-"
 * statusCode MS
 * statusCode 1..1
 * statusCode ^short = "Statut de l'entrée"

@@ -7,7 +7,7 @@ Description: "Entrée FR-Evenement: FR-EvenementCette entrée est un élément d
 * moodCode MS
 * moodCode ^short = "Si évènement planifié @moodCode ='INT' ; Si évènement réalisé @mooCode = 'EVN'"
 * moodCode ^definition = "Si évènement planifié @moodCode ='INT' ; Si évènement réalisé @mooCode = 'EVN'"
-* id 1..*
+* id 1..* MS
 * id ^short = "Identifiant de l'évènement"
 * id ^definition = "Identifiant de l'évènement"
 * templateId 1..3
@@ -33,6 +33,9 @@ and frEvenement 1..1
 * code 1..1
 * code ^short = "Type d'évènement :Le JDV dépend du volet utilisant cette entrée (les précisions sont alors fournies dans le volet correspondant). Si pas d'information utiliser le code Wolf ‘Aucun’."
 * code ^definition = "Type d'évènement"
+  * code 1..1 MS
+  * codeSystem 1..1 MS
+  * displayName MS
   * originalText 0..1
   * originalText ^short = "Précision sur le type d'évènement au format texte"
   * originalText ^definition = "Précision sur le type d'évènement au format texte"

@@ -5,7 +5,7 @@ Title: "CDA - FR DICOM Serie imagerie"
 Description: "Entrée FR-DICOM-Serie-imagerie: DICOM Part 20 - Series Act. Cette entrée contient les informations de la série générique utilisée pour porter l’entrée FR-DICOM-SOP-instance-observation."
 * classCode MS
 * moodCode MS
-* id 1..*
+* id 1..* MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..2
@@ -25,9 +25,12 @@ and dicomSeriesAct 1..1
 * code MS
 * code ^short = "Code de l'entrée"
 * code ^definition = "Code de l'entrée"
+  * code 1..1 MS
   * code = #113015
+  * codeSystem 1..1 MS
   * codeSystem = "1.2.840.10008.2.16.4"
   * codeSystemName = "DCM"
+  * displayName MS
   * displayName = "Séries"
   * qualifier 1..1 MS
     * name 1..1

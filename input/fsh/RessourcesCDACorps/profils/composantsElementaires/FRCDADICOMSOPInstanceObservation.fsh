@@ -7,7 +7,7 @@ Description: "Entrée FR-DICOM-SOP-instance-observation: DICOM Part 20 - SOP In
 * classCode = #DGIMG
 * moodCode MS
 * moodCode = #EVN
-* id 1..*
+* id 1..* MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..2
@@ -28,6 +28,9 @@ and dicomSOPInstanceObservation 1..1
 * code ^short = "Classe SOP - valeur issue du JDV-SOPClass_CISIS (1.2.250.1.213.1.1.5.689)."
 * code ^definition = "Classe SOP"
 * code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-sop-class-cisis (required)
+* code.code 1..1 MS
+* code.displayName MS
+* code.codeSystem 1..1 MS
 * text MS
 * text ^short = " url permettant d’accéder aux images sur la Drim box source. Cette url, basée sur le profil IHE Invoke Image Display , est construite de la manière suivante :https://<location>/IHEInvokeImageDisplay?requestType=STUDY&amp;studyUID=<StudyInstanceUID>&amp;Accessionnumber=<Accessionnumber>&amp;idCDA=<idCDA> avec les paramètres :<location> : Racine de l’URL par laquelle on accède au PACS qui met à disposition de l’examen (cf volet CI-SIS_SPEC_TECH_Objet ref d'examens d'imagerie)<StudyInstanceUID> : Identifiant de l’examen attribué par le RIS<Accessionnumber> : Identifiant de la demande attribué par le RIS (concaténer root.extension)<idCDA> : Identifiant du document CDA IMG-CR-IMG (élément <id root>)"
 * text ^definition = "Url permettant d’accéder aux images sur la Drim box source"

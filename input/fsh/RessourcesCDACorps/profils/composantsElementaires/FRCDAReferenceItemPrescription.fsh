@@ -6,7 +6,7 @@ Description: "Entrée FR-Reference-item-prescription: IHE-PRE - Reference-Prescr
 * classCode MS
 * moodCode MS
 * moodCode = #INT
-* id 1..1
+* id 1..1 MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..2
@@ -31,6 +31,9 @@ and frReferenceItemPrescription 1..1
 * code.displayName = "Prescription Item"
 * code.codeSystem = "1.3.6.1.4.1.19376.1.9.2.2"
 * code.codeSystemName = "IHE Pharmacy Item Type List"
+* code.code 1..1 MS
+* code.displayName MS
+* code.codeSystem 1..1 MS
 * consumable MS
 * consumable ^short = "Produit de santé"
 * consumable ^definition = "Produit de santé"

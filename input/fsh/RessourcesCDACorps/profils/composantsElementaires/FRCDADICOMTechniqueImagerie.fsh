@@ -5,7 +5,7 @@ Title: "CDA - FR DICOM Technique imagerie"
 Description: "Entrée FR-DICOM-Technique-imagerie: DICOM Part 20 - Procedure Technique Cette entrée permet d’enregistrer les différents paramètres de l’acquisition d’image :  acte d'imagerie  modalité d'acquisition  localisation anatomique / latéralité / topographie d'autres paramètres de l'acte"
 * classCode MS
 * moodCode from http://terminology.hl7.org/ValueSet/v3-xDocumentProcedureMood (required)
-* id 1..1
+* id 1..1 MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..2
@@ -27,6 +27,9 @@ and dicomProcedureTechnique 1..1
 * code ^short = "Code de l'acte d'imagerie :  Valeur provenant du  JDV_CodesDocumentImagerie_CISIS (1.2.250.1.213.1.1.5.687)"
 * code ^definition = "Code de l'acte d'imagerie"
 * code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-code-document-imagerie-cisis (required) 
+* code.code 1..1 MS
+* code.displayName MS
+* code.codeSystem 1..1 MS
 * text MS
 * text ^short = "Partie narrative de l'entrée"
 * text ^definition = "Partie narrative de l'entrée"

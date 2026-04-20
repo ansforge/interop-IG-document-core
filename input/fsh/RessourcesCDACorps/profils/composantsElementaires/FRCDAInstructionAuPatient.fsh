@@ -7,7 +7,7 @@ Description: "Entrée FR-Instruction-au-patient: IHE-PCC - Simple-Observation. C
 * classCode = #OBS
 * moodCode MS
 * moodCode = #EVN
-* id 1..1
+* id 1..1 MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..3
@@ -34,6 +34,9 @@ and frInstructionAuPatient 1..1
 * code ^definition = "Code de l'observation"
 * code.codeSystem = "1.3.6.1.4.1.19376.1.5.3.2"
 * code.code = #PINSTRUCT
+* code.code 1..1 MS
+* code.codeSystem 1..1 MS
+* code.displayName MS
 * text MS
 * text 1..1
 * text ^short = "Description narrative de l'observation"

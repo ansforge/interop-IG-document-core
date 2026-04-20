@@ -7,7 +7,7 @@ Description: "Entrée FR-Effet-indesirable: Cette entrée permet de décrire un 
 * classCode = #OBS
 * moodCode MS
 * moodCode = #EVN
-* id 1..*
+* id 1..* MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..4
@@ -38,6 +38,9 @@ and iheProblemEntry 1..1
 * code ^short = "Code de l'entrée - Type d'effet indésirable"
 * code ^definition = "Code de l'entrée"
 * code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-origine-effet-indesirable-cisis
+* code.code 1..1 MS
+* code.displayName MS
+* code.codeSystem 1..1 MS
 * text MS
 * text 1..1
 * text ^short = "Description narrative"

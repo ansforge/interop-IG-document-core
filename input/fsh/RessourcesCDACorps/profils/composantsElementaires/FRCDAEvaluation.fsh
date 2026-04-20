@@ -7,7 +7,7 @@ Description: "Entrée FR-Evaluation: IHE-PCC - Survey Observation - L'entrée Ev
 * classCode = #OBS
 * moodCode MS
 * moodCode = #EVN
-* id 1..1
+* id 1..1 MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..4
@@ -38,6 +38,9 @@ and frEvaluation 1..1
 * code ^short = "Type d'évaluation :LOINC (2.16.840.1.113883.6.1) ou ICF (2.16.840.1.113883.6.254) ou autreSi le type d'évaluation n'est pas trouvé dans les terminologies proposées, utiliser le code='54522-8' displayName='Statut fonctionnel' codeSystem=' 2.16.840.1.113883.6.1' codeSystemName='LOINC' et décrire le type d'évaluation sous forme de texte libre dans la partie narrative avec une référence vers l'entrée correspondante."
 * code ^definition = "Type d'évaluation"
 * code.translation 0..1
+* code.code 1..1 MS
+* code.displayName MS
+* code.codeSystem 1..1 MS
 * text MS
 * text 1..1
 * text ^short = "Description narrative"

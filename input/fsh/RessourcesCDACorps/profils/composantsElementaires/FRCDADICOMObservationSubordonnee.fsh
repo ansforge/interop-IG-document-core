@@ -6,7 +6,7 @@ Description: "Entrée FR-DICOM-Observation-subordonnee: DICOM PART 20 - Observat
 * classCode MS
 * classCode = #OBS
 * moodCode MS
-* id 1..1
+* id 1..1 MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..2
@@ -26,6 +26,9 @@ and frDicomObservationSubordonnee 1..1
 * code MS
 * code ^short = "Code de l'observation"
 * code ^definition = "Code de l'observation"
+* code.code 1..1 MS
+* code.displayName MS
+* code.codeSystem 1..1 MS
 * text MS
 * text ^short = "Partie narrative de l'observation"
 * text ^definition = "Partie narrative de l'observation"

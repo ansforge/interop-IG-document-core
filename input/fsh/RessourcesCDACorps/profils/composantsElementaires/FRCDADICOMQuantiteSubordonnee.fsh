@@ -6,7 +6,7 @@ Description: "Entrée FR-DICOM-Quantite-subordonnee: Cette entrée permet d’en
 * classCode MS
 * classCode = #OBS
 * moodCode MS
-* id 1..1
+* id 1..1 MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..2
@@ -27,6 +27,9 @@ and dicomQuantityMeasurement 1..1
 * code ^short = "Code de l'observation"
 * code ^definition = "Code de l'observation"
 * code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-quantite-exposition-rayonnements-cisis
+* code.code 1..1 MS
+* code.displayName MS
+* code.codeSystem 1..1 MS
 * text MS
 * text ^short = "Partie narrative de l'entrée"
 * text ^definition = "Partie narrative de l'entrée"

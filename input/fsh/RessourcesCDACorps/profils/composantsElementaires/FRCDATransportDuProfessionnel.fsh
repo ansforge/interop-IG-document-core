@@ -7,7 +7,7 @@ Description: "Entrée FR-Transport-du-professionnel: Cette entrée de type act p
 * classCode = #ACT
 * moodCode MS
 * moodCode ^short = "Si le transport est à faire : moodCode='INT'. Si le transport a déjà été effectué : moodCode='EVN'."
-* id 1..1
+* id 1..1 MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..1
@@ -22,7 +22,7 @@ Description: "Entrée FR-Transport-du-professionnel: Cette entrée de type act p
 * code MS
 * code ^short = "Mode de transport (Ambulance publique, Taxi, VSL, …)"
 * code ^definition = "Mode de transport"
-* code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis
+* code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis (required)
 * code.qualifier 0..1 MS
 * code.qualifier ^short = "Type de motorisation"
 * code.qualifier ^definition = "Type de motorisation"
@@ -37,6 +37,9 @@ Description: "Entrée FR-Transport-du-professionnel: Cette entrée de type act p
 Valeur issue du JDV_TypeMotorisation_CISIS (1.2.250.1.213.1.1.5.801)"
 * code.qualifier.value ^definition = "Type de motorisation"
 * code.qualifier.value.code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-motorisation-cisis (required)
+* code.code 1..1 MS
+* code.displayName MS
+* code.codeSystem 1..1 MS
 * text MS
 * text ^short = "Texte décrivant le transport"
 * text ^definition = "Texte décrivant le transport"

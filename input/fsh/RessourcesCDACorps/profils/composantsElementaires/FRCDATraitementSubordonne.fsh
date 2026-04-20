@@ -9,7 +9,7 @@ Description: "Entrée FR-Traitement-subordonne: Une entrée FR-Traitement de pre
   Si le traitement est en attente d'administration :  - moodCode='INT'"
 * moodCode ^definition = "Si le traitement a déjà été administré ou si information rapportée par le patient ou si aucun traitement : - moodCode='EVN' ;
   Si le traitement est en attente d'administration :  - moodCode='INT'"
-* id 1..*
+* id 1..* MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..2

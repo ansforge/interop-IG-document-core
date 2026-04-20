@@ -24,6 +24,9 @@ Description: "Entrée FR-Gravite-effet-indesirable
 * code.displayName = "Gravité de l'effet indésirable"
 * code.codeSystem = "2.16.840.1.113883.6.1"
 * code.codeSystemName = "LOINC"
+* code.code 1..1 MS
+* code.displayName MS
+* code.codeSystem 1..1 MS
 * text MS
 * text 1..1
 * text ^short = "Partie narrative de l'entrée"

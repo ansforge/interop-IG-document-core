@@ -7,7 +7,7 @@ Description: "Entrée FR-Evenement-indesirable-suite-administration-derives-sang
 * classCode = #OBS
 * moodCode MS
 * moodCode = #EVN
-* id 1..1
+* id 1..1 MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..3
@@ -27,6 +27,9 @@ and frEvenementIndesirableSuiteAdministrationDerivesSang 1..1
 * code.displayName = "Evènements indésirables suite à l'administration de dérivés du sang"
 * code.codeSystem = "1.2.250.1.213.1.1.4.322"
 * code.codeSystemName = "TerminologieCISIS"
+* code.code 1..1 MS
+* code.displayName MS
+* code.codeSystem 1..1 MS
 * text MS
 * text 1..1
   * reference 1..1

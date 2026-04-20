@@ -14,7 +14,7 @@ Description: "Entrée FR-Demande-d-examen-ou-de-suivi: IHE-PCC - Observation Req
  - Si la demande fait partie d'un plan de soins : @moodCode='INT'  
  - Si la demande est une proposition : @moodCode='PRP'  
  - Si la demande est un objectif à atteindre : @moodCode='GO"
-* id 1..1
+* id 1..1 MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..3
@@ -45,6 +45,9 @@ and frDemandeDexamenOuDeSuivi 1..1
  @codeSystemName='TerminologieCISIS'  
  et décrire le type de la demande sous forme de texte libre dans la partie narrative avec une référence vers l'entrée correspondante. "
 * code ^definition = "Type de la demande"
+* code.code 1..1 MS
+* code.displayName MS
+* code.codeSystem 1..1 MS
 * text MS
 * text 1..1
 * text ^short = "Description narrative"

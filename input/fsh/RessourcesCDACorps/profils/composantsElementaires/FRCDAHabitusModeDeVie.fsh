@@ -9,7 +9,7 @@ Description: "Entrée FR-Habitus-Mode-de-vie: IHE-PCC - Social History Observati
 * classCode = #OBS
 * moodCode MS
 * moodCode = #EVN
-* id 1..1
+* id 1..1 MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..4
@@ -43,6 +43,9 @@ and FRCDAHabitusModeDeVie 1..1
 * code.qualifier MS
 * code.qualifier ^short = "Précision du code"
 * code.qualifier ^definition = "Précision du code"
+* code.code 1..1 MS
+* code.displayName MS
+* code.codeSystem 1..1 MS
 * text MS
 * text 1..1
 * text ^short = "Description narrative"

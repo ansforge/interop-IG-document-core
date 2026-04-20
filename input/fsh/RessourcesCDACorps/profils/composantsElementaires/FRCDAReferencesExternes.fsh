@@ -7,7 +7,7 @@ Description: "Entrée FR-References-externes: IHE-PCC - External-References. Cet
 * classCode = #ACT
 * moodCode MS
 * moodCode = #EVN
-* id 1..1
+* id 1..1 MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..2
@@ -37,7 +37,7 @@ and frReferencesExternes 1..1
 * reference 1..* MS
 * reference ^short = "Document référencé"
 * reference ^definition = "Document référencé"
-* reference.typeCode from FRValueSetReferenceExterne
+* reference.typeCode from FRValueSetReferenceExterne (required)
 * reference.externalDocument 1..1 MS
 * reference.externalDocument.classCode = #DOC 
 * reference.externalDocument.id 1..1 MS

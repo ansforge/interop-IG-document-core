@@ -8,7 +8,7 @@ Description: "Entrée FR-Isolat-microbiologique: IHE-PCC - Laboratory isolate or
 * classCode MS
 * classCode = #CLUSTER
 * moodCode MS
-* id 0..1
+* id 0..1 MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..2
@@ -28,6 +28,9 @@ and frIsolatMicrobiologique 1..1
 * code MS
 * code ^short = "Code isolat : le code de l’isolat peut être codé avec les terminologies SNOMED CT et NCBI"
 * code ^definition = "Code isolat"
+* code.code 1..1 MS
+* code.displayName MS
+* code.codeSystem 1..1 MS
 * statusCode MS
 * statusCode 1..1
 * statusCode ^short = "Niveau de complétude‘completed' : Rendu final complet. Tous les résultats attendus pour cet examen sont présents.‘active' : Rendu partiel. Certains résultats sont encore à venir pour cet examen.‘aborted' : L'examen est abandonné. Quelques résultats peuvent apparaître."

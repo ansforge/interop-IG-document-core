@@ -7,7 +7,7 @@ Description: "Entrée FR-Groupe-de-questionnaires-d-evaluation: IHE-PCC - Survey
 * classCode MS
 * classCode = #CLUSTER
 * moodCode MS
-* id 1..*
+* id 1..* MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"
 * templateId 1..3
@@ -32,6 +32,9 @@ and frGroupeDeQuestionnairesDevaluation 1..1
 * code MS
 * code ^short = "Code de l'entrée"
 * code ^definition = "Code de l'entrée"
+* code.code 1..1 MS
+* code.displayName MS
+* code.codeSystem 1..1 MS
 * statusCode MS
 * statusCode 1..1
 * statusCode ^short = "Statut de l'organizer"

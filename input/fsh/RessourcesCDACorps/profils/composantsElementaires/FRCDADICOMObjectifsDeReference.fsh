@@ -30,6 +30,9 @@ Description: "Entrée FR-DICOM-Objectifs-de-reference: DICOM Part 20. Cette entr
 * code.displayName = "Assertion"
 * code.codeSystem = "2.16.840.1.113883.5.4"
 * code.codeSystemName = "actCode"
+* code.code 1..1 MS
+* code.displayName MS
+* code.codeSystem 1..1 MS
 
 * value MS
 * value 1..1

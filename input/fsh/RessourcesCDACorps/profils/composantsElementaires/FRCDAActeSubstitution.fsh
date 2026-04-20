@@ -28,6 +28,8 @@ and iheSubstitutionAct 1..1
 * code.displayName = "Substitution autorisée par un produit générique"
 * code.codeSystem = "2.16.840.1.113883.5.1070"
 * code.codeSystemName = "HL7_SubstanceAdminSubstitution"
+* code.code 1..1 MS
+* code.codeSystem MS
 * statusCode MS
 * statusCode 1..1
 * statusCode ^short = "Statut de l’entrée - Fixé à la valeur 'completed'"

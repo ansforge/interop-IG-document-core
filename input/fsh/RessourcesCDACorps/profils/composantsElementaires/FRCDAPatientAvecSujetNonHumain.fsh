@@ -23,6 +23,9 @@ and frPatientAvecSujetNonHumain 1..1
   * code 1..1
   * code ^short = "Sujet (ex. poulet, poisson, œuf, salade, eau, terre, air, peinture, etc.)."
   * code ^definition = "Sujet (ex. poulet, poisson, œuf, salade, eau, terre, air, peinture, etc.)."
+  * code.code 1..1 MS
+  * code.displayName MS
+  * code.codeSystem 1..1 MS
   * addr MS
   * addr 1..1
   * addr ^short = "Lieu de provenance du sujet non humain"

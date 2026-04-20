@@ -34,6 +34,9 @@ and frInstructionsAuPatient 1..1
 * code.code = #PINSTRUCT
 * code.codeSystem = "1.3.6.1.4.1.19376.1.5.3.2"
 * code.codeSystemName = "IHEActCode"
+* code.code 1..1 MS
+* code.codeSystem 1..1 MS
+* code.displayName MS
 * text MS
 * text 1..1
 * text ^short = "Instructions au patient"
