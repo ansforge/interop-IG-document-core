@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-autorisation-substitution | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-17 | *Computable Name*:FRCDAAutorisationSubstitution |
+| Draft as of 2026-04-20 | *Computable Name*:FRCDAAutorisationSubstitution |
 
  
 Entrée FR-Autorisation-Substitution: IHE-PRE - Substitution-Permission. Cette observation permet d’indiquer si le traitement auquel elle est associée peut être substitué. 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-autorisation-
   "name" : "FRCDAAutorisationSubstitution",
   "title" : "CDA - FR Autorisation Substitution",
   "status" : "draft",
-  "date" : "2026-04-17T09:38:07+00:00",
+  "date" : "2026-04-20T13:30:27+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -163,6 +163,24 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-autorisation-
         "strength" : "required",
         "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdminSubstitutionCode-cisis"
       }
+    },
+    {
+      "id" : "Act.code.code",
+      "path" : "Act.code.code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Act.code.codeSystem",
+      "path" : "Act.code.codeSystem",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Act.code.displayName",
+      "path" : "Act.code.displayName",
+      "min" : 1,
+      "mustSupport" : true
     },
     {
       "id" : "Act.statusCode",

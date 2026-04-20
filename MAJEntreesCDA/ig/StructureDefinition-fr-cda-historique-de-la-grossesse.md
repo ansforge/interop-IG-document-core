@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-historique-de-la-grossesse | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-17 | *Computable Name*:FRCDAHistoriqueDeLaGrossesse |
+| Draft as of 2026-04-20 | *Computable Name*:FRCDAHistoriqueDeLaGrossesse |
 
  
 Entrée FR-Historique-de-la-grossesse: IHE-PCC - Pregnancy History Organizer. 
@@ -68,7 +68,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-historique-de
   "name" : "FRCDAHistoriqueDeLaGrossesse",
   "title" : "CDA - FR Historique de la grossesse",
   "status" : "draft",
-  "date" : "2026-04-17T09:38:07+00:00",
+  "date" : "2026-04-20T13:30:27+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -161,7 +161,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-historique-de
       "short" : "Identifiant de l'entrée",
       "definition" : "Identifiant de l'entrée",
       "min" : 1,
-      "max" : "1"
+      "max" : "1",
+      "mustSupport" : true
     },
     {
       "id" : "Organizer.code",
@@ -174,12 +175,16 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-historique-de
     {
       "id" : "Organizer.code.code",
       "path" : "Organizer.code.code",
-      "patternCode" : "118185001"
+      "min" : 1,
+      "patternCode" : "118185001",
+      "mustSupport" : true
     },
     {
       "id" : "Organizer.code.codeSystem",
       "path" : "Organizer.code.codeSystem",
-      "patternString" : "2.16.840.1.113883.6.96"
+      "min" : 1,
+      "patternString" : "2.16.840.1.113883.6.96",
+      "mustSupport" : true
     },
     {
       "id" : "Organizer.code.codeSystemName",
@@ -189,7 +194,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-historique-de
     {
       "id" : "Organizer.code.displayName",
       "path" : "Organizer.code.displayName",
-      "patternString" : "constatation à propos de la grossesse"
+      "min" : 1,
+      "patternString" : "constatation à propos de la grossesse",
+      "mustSupport" : true
     },
     {
       "id" : "Organizer.statusCode",

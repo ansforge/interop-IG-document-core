@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-naissance | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-17 | *Computable Name*:FRCDANaissance |
+| Draft as of 2026-04-20 | *Computable Name*:FRCDANaissance |
 
  
 Entrée FR-Naissance: IHE-PCC - Birth event organizer. 
@@ -68,7 +68,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-naissance.csv
   "name" : "FRCDANaissance",
   "title" : "CDA - FR Naissance",
   "status" : "draft",
-  "date" : "2026-04-17T09:38:07+00:00",
+  "date" : "2026-04-20T13:30:27+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -190,7 +190,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-naissance.csv
     {
       "id" : "Organizer.code.displayName",
       "path" : "Organizer.code.displayName",
-      "min" : 1,
       "patternString" : "observation sur l'accouchement",
       "mustSupport" : true
     },

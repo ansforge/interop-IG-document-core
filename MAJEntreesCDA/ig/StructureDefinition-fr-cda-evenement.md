@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-evenement | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-17 | *Computable Name*:FRCDAEvenement |
+| Draft as of 2026-04-20 | *Computable Name*:FRCDAEvenement |
 
  
 Entrée FR-Evenement: FR-EvenementCette entrée est un élément de type ‘encounter’ permettant de conserver les données d’activités liées à un patient / usager. Il peut s’agir d’un évènement passé ou à venir. 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-evenement.csv
   "name" : "FRCDAEvenement",
   "title" : "CDA - FR Evenement",
   "status" : "draft",
-  "date" : "2026-04-17T09:38:07+00:00",
+  "date" : "2026-04-20T13:30:27+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -174,7 +174,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-evenement.csv
       "path" : "Encounter.id",
       "short" : "Identifiant de l'évènement",
       "definition" : "Identifiant de l'évènement",
-      "min" : 1
+      "min" : 1,
+      "mustSupport" : true
     },
     {
       "id" : "Encounter.code",
@@ -183,6 +184,21 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-evenement.csv
       "definition" : "Type d'évènement",
       "min" : 1,
       "mustSupport" : true
+    },
+    {
+      "id" : "Encounter.code.code",
+      "path" : "Encounter.code.code",
+      "min" : 1
+    },
+    {
+      "id" : "Encounter.code.codeSystem",
+      "path" : "Encounter.code.codeSystem",
+      "min" : 1
+    },
+    {
+      "id" : "Encounter.code.displayName",
+      "path" : "Encounter.code.displayName",
+      "min" : 1
     },
     {
       "id" : "Encounter.code.originalText",
