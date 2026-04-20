@@ -63,7 +63,7 @@
 ","","The common name of the coding system.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""IHE Pharmacy Item Type List""/>","","","",,,,,"",,,,"CD.codeSystemName",0,1,"",""
 "SubstanceAdministration.code.codeSystemVersion","SubstanceAdministration.code.codeSystemVersion","","","Code System Version",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple]]} {[]}
 ","","If applicable, a version descriptor defined specifically for the given code system.","","","","","","","","","",,,,,"",,,,"CD.codeSystemVersion",0,1,"",""
-"SubstanceAdministration.code.displayName","SubstanceAdministration.code.displayName","","","Display Name",1,1,"Y","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple]]} {[]}
+"SubstanceAdministration.code.displayName","SubstanceAdministration.code.displayName","","","Display Name",0,1,"Y","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple]]} {[]}
 ","","A name or title for the code, under which the sending system shows the code value to its users.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Prescription Item""/>","","","",,,,,"",,,,"CD.displayName",0,1,"",""
 "SubstanceAdministration.code.sdtcValueSet","SubstanceAdministration.code.sdtcValueSet","","","",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/oid]]} {[]}
 ","","The valueSet extension adds an attribute for elements with a CD dataType which indicates the particular value set constraining the coded concept.","","","","","","","","","",,,,,"",,,,"CD.valueSet",0,1,"",""

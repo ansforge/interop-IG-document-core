@@ -69,7 +69,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-instructions-
   "name" : "FRCDAInstructionsAuPatient",
   "title" : "CDA - FR Instructions au patient",
   "status" : "draft",
-  "date" : "2026-04-20T07:29:37+00:00",
+  "date" : "2026-04-20T13:53:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -193,6 +193,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-instructions-
       "id" : "Act.code.codeSystemName",
       "path" : "Act.code.codeSystemName",
       "patternString" : "IHEActCode"
+    },
+    {
+      "id" : "Act.code.displayName",
+      "path" : "Act.code.displayName",
+      "mustSupport" : true
     },
     {
       "id" : "Act.text",

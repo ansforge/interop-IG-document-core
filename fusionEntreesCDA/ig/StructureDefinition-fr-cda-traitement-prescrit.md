@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-traitement-pr
   "name" : "FRCDATraitementPrescrit",
   "title" : "CDA - FR Traitement prescrit",
   "status" : "draft",
-  "date" : "2026-04-20T07:29:37+00:00",
+  "date" : "2026-04-20T13:53:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -321,7 +321,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-traitement-pr
     {
       "id" : "SubstanceAdministration.code.displayName",
       "path" : "SubstanceAdministration.code.displayName",
-      "min" : 1,
       "patternString" : "Médicament",
       "mustSupport" : true
     },

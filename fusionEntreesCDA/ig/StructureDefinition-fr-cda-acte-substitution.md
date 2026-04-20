@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-acte-substitu
   "name" : "FRCDAActeSubstitution",
   "title" : "CDA - FR Acte substitution",
   "status" : "draft",
-  "date" : "2026-04-20T07:29:37+00:00",
+  "date" : "2026-04-20T13:53:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -171,7 +171,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-acte-substitu
     {
       "id" : "Act.code.codeSystem",
       "path" : "Act.code.codeSystem",
-      "min" : 1,
       "patternString" : "2.16.840.1.113883.5.1070",
       "mustSupport" : true
     },
@@ -183,9 +182,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-acte-substitu
     {
       "id" : "Act.code.displayName",
       "path" : "Act.code.displayName",
-      "min" : 1,
-      "patternString" : "Substitution autorisée par un produit générique",
-      "mustSupport" : true
+      "patternString" : "Substitution autorisée par un produit générique"
     },
     {
       "id" : "Act.statusCode",

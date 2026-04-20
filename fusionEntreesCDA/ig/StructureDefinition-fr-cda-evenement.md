@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-evenement.csv
   "name" : "FRCDAEvenement",
   "title" : "CDA - FR Evenement",
   "status" : "draft",
-  "date" : "2026-04-20T07:29:37+00:00",
+  "date" : "2026-04-20T13:53:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -188,17 +188,19 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-evenement.csv
     {
       "id" : "Encounter.code.code",
       "path" : "Encounter.code.code",
-      "min" : 1
+      "min" : 1,
+      "mustSupport" : true
     },
     {
       "id" : "Encounter.code.codeSystem",
       "path" : "Encounter.code.codeSystem",
-      "min" : 1
+      "min" : 1,
+      "mustSupport" : true
     },
     {
       "id" : "Encounter.code.displayName",
       "path" : "Encounter.code.displayName",
-      "min" : 1
+      "mustSupport" : true
     },
     {
       "id" : "Encounter.code.originalText",

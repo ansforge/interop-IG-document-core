@@ -77,7 +77,7 @@
 ","","The common name of the coding system.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""IHEActCode""/>","","","",,,,,"",,,,"CD.codeSystemName",0,1,"",""
 "Act.code.codeSystemVersion","Act.code.codeSystemVersion","","","Code System Version",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple]]} {[]}
 ","","If applicable, a version descriptor defined specifically for the given code system.","","","","","","","","","",,,,,"",,,,"CD.codeSystemVersion",0,1,"",""
-"Act.code.displayName","Act.code.displayName","","","Display Name",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple]]} {[]}
+"Act.code.displayName","Act.code.displayName","","","Display Name",0,1,"Y","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple]]} {[]}
 ","","A name or title for the code, under which the sending system shows the code value to its users.","","","","","","","","","",,,,,"",,,,"CD.displayName",0,1,"",""
 "Act.code.sdtcValueSet","Act.code.sdtcValueSet","","","",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/oid]]} {[]}
 ","","The valueSet extension adds an attribute for elements with a CD dataType which indicates the particular value set constraining the coded concept.","","","","","","","","","",,,,,"",,,,"CD.valueSet",0,1,"",""
