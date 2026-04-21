@@ -43,6 +43,9 @@ This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</
     <display value="Exemple Patient"/>
   </patient>
   <onsetPeriod>
+    <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+      <valueCode value="temp-unknown"/>
+    </extension>
     <start>
       <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
         <valueCode value="temp-unknown"/>

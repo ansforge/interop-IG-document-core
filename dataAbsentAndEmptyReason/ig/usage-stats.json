@@ -577,6 +577,7 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/data-absent-reason": [
       "AllergyIntolerance.code",
+      "AllergyIntolerance.onsetPeriod",
       "AllergyIntolerance.onsetPeriod.start",
       "AllergyIntolerance.reaction.manifestation",
       "DocumentReference.type",

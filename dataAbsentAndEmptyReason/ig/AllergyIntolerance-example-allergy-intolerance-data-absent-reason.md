@@ -68,6 +68,10 @@ Profil: [AllergyIntolerance - FR Allergy and intolerance Document](StructureDefi
     "display" : "Exemple Patient"
   },
   "onsetPeriod" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode" : "temp-unknown"
+    }],
     "_start" : {
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",

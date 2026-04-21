@@ -12,7 +12,7 @@ Profil: [Procedure - FR Procedure Document](StructureDefinition-fr-procedure-doc
 
 **status**: Unknown
 
-**code**: Acte réalisé inconnu
+**code**: Acte réalisé inconnu : utilisation de l'extension data-absent-reason avec code 'unknown'
 
 **subject**: [Exemple Patient](Patient/exemple-patient)
 
@@ -39,7 +39,7 @@ Profil: [Procedure - FR Procedure Document](StructureDefinition-fr-procedure-doc
       "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
       "valueCode" : "unknown"
     }],
-    "text" : "Acte réalisé inconnu"
+    "text" : "Acte réalisé inconnu : utilisation de l'extension data-absent-reason avec code 'unknown'"
   },
   "subject" : {
     "reference" : "Patient/exemple-patient",

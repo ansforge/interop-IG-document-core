@@ -66,6 +66,16 @@
   ] ; # 
   fhir:onset [
      a fhir:Period ;
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/data-absent-reason"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/StructureDefinition/data-absent-reason>
+       ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "temp-unknown"
+       ]
+     ] ) ;
      fhir:start [
        fhir:extension ( [
          fhir:url [
