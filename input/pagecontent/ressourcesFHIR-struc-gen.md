@@ -175,7 +175,6 @@ Lorsqu'aucune donnée n'est disponible pour une section facultative, **le produc
 
 > **En résumé** : *section.emptyReason* s'applique uniquement aux **sections obligatoires vides**. Pour les sections facultatives, l'absence de données se traduit simplement par l'absence de la section dans le document.
 
----
 
 ### Gestion de l'absence de données au niveau des éléments (données manquantes)
 
@@ -264,22 +263,25 @@ Dans les autres cas, utiliser l'extension [**Data Absent Reason**](http://hl7.or
 }
 ```
 
-###### Données codées à partir d'un codeSystem/valueSet (`required`)
+###### Données codées à partir d'un codeSystem/valueSet obligatoire (`required`)
 
-Si l'information n'est pas connue, **utiliser un code d'exception spécifique existant** dans la terminologie ou le ValueSet associé à la donnée. L'extension `data-absent-reason` ne peut pas être utilisée en substitution d'une valeur requise.
+> **Règle** : lorsqu'une donnée est absente, **utiliser le code d'exception du ValueSet ou de la terminologie associée**. C'est la règle de référence pour une liaison `required`.
 
-Si aucun code d'exception spécifique n'est disponible, utiliser l'extension [**Data Absent Reason**](http://hl7.org/fhir/StructureDefinition/data-absent-reason)
+En pratique, de nombreux ValueSets ou terminologies ne prévoient pas de code d'exception. Dans ce cas, faute de code applicable, **utiliser l'extension [Data Absent Reason](http://hl7.org/fhir/StructureDefinition/data-absent-reason)** comme mécanisme de repli.
 
----
+| Situation | Traitement |
+|---|---|
+| Le VS/terminologie contient un code d'exception (ex : `unknown` dans `event-status`) | Utiliser ce code d'exception |
+| Le VS/terminologie ne contient **aucun** code d'exception | Utiliser l'extension `data-absent-reason` |
 
-> **Exemples complets** :
+
+> **Exemples d'instances : Allergies et Procédures** :
 >
 > - L'instance [example-allergy-intolerance-data-absent-reason](AllergyIntolerance-example-allergy-intolerance-data-absent-reason.html) illustre l'usage de l'extension `data-absent-reason` sur les éléments obligatoires du profil [FRAllergyIntoleranceDocument](StructureDefinition-fr-allergie-intolerance-document.html) lorsque la valeur est inconnue ou temporairement indisponible.
 > - L'instance [example-procedure-data-absent-reason](Procedure-example-procedure-data-absent-reason.html) illustre les deux cas de figure sur le profil [FRProcedureDocument](StructureDefinition-fr-procedure-document.html) :
 >   - **extension `data-absent-reason`** pour les données codées à partir d'un codeSystem/valueSet non obligatoire (`example`, `preferred` ou `extensible`) : éléments `code`, `performedDateTime`
 >   - **code d'exception natif** du ValueSet `event-status`(`unknown`) pour les données codées à partir d'un codeSystem/valueSet obligatoire (`required`) : élément `status`
 
----
 
 ### Conformité des documents FHIR
 
