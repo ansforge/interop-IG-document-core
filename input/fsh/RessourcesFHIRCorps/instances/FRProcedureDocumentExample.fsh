@@ -28,7 +28,7 @@ Usage: #example
 // Code de l'acte (liaison extensible)
 // L'acte réalisé est inconnu → extension data-absent-reason avec code "unknown"
 // La liaison extensible autorise l'usage de data-absent-reason en l'absence de code applicable.
-* code.text = "Acte réalisé inconnu"
+* code.text = "Acte réalisé inconnu : utilisation de l'extension data-absent-reason avec code 'unknown'"
 * code.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
 * code.extension.valueCode = #unknown
 

@@ -31,6 +31,8 @@ Usage: #example
 
 // Période d'apparition (onsetPeriod.start obligatoire 1..1)
 // La date de début est temporairement indisponible → extension data-absent-reason avec code "temp-unknown"
+* onsetPeriod.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+* onsetPeriod.extension.valueCode = #temp-unknown
 * onsetPeriod.start.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
 * onsetPeriod.start.extension.valueCode = #temp-unknown
 
