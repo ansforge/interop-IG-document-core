@@ -10,7 +10,7 @@
   <name value="FRDocumentCore"/>
   <title value="ANS IG document core"/>
   <status value="draft"/>
-  <date value="2026-04-21T12:35:07+00:00"/>
+  <date value="2026-04-21T14:23:21+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -3153,7 +3153,7 @@
         <reference value="AllergyIntolerance/example-allergy-intolerance-data-absent-reason"/>
       </reference>
       <name value="Example - AllergyIntolerance avec Data Absent Reason"/>
-      <description value="Exemple illustrant l'usage de l'extension `data-absent-reason` sur les éléments&#xA;obligatoires de la ressource AllergyIntolerance dont la valeur est inconnue ou&#xA;temporairement indisponible.&#xA;&#xA;Cas d'usage illustrés :&#xA;- `code` (1..1) : l'agent allergique est inconnu → code `unknown`&#xA;- `onsetPeriod.start` (1..1) : la date de début est temporairement indisponible → code `temp-unknown`&#xA;- `reaction.manifestation` (1..*) : la manifestation clinique est inconnue → code `unknown`"/>
+      <description value="Exemple illustrant l'usage de l'extension `data-absent-reason` sur les éléments&#xA;obligatoires de la ressource AllergyIntolerance dont la valeur est inconnue ou&#xA;temporairement indisponible.&#xA;&#xA;Cas d'usage illustrés :&#xA;- `code` : l'agent allergique est inconnu → code `unknown`&#xA;- `onsetPeriod.start` : la date de début est temporairement indisponible → code `temp-unknown`&#xA;- `reaction.manifestation` : la manifestation clinique est inconnue → code `unknown`"/>
       <exampleCanonical value="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-allergie-intolerance-document"/>
       <groupingId value="Exemples Data Absent Reason"/>
     </resource>
@@ -3165,7 +3165,7 @@
         <reference value="Procedure/example-procedure-data-absent-reason"/>
       </reference>
       <name value="Example - Procedure avec Data Absent Reason"/>
-      <description value="Exemple illustrant l'usage de l'extension `data-absent-reason` sur les éléments&#xA;obligatoires de la ressource Procedure dont la valeur est inconnue ou temporairement indisponible.&#xA;&#xA;Cas d'usage illustrés :&#xA;- `code` (1..1 MS) : l'acte est inconnu → extension `data-absent-reason` avec code `unknown`&#xA;  (liaison extensible → l'extension peut se substituer au codage)&#xA;- `performedDateTime` (MS) : la date de l'acte est temporairement indisponible → extension `data-absent-reason` avec code `temp-unknown`&#xA;- `status` (1..1 required) : le statut est inconnu → code d'exception `unknown` du ValueSet `event-status`&#xA;  (liaison required → on utilise directement le code d'exception du ValueSet, pas l'extension)"/>
+      <description value="Exemple illustrant l'usage de l'extension `data-absent-reason` sur les éléments&#xA;obligatoires de la ressource Procedure dont la valeur est inconnue ou temporairement indisponible.&#xA;&#xA;Cas d'usage illustrés :&#xA;- `code` : l'acte est inconnu → extension `data-absent-reason` avec code `unknown`&#xA;  (liaison extensible → l'extension peut se substituer au codage)&#xA;- `performedDateTime` : la date de l'acte est temporairement indisponible → extension `data-absent-reason` avec code `temp-unknown`&#xA;- `status` : le statut est inconnu → code d'exception `unknown` du ValueSet `event-status`&#xA;  (liaison required → on utilise directement le code d'exception du ValueSet, pas l'extension)"/>
       <exampleCanonical value="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-procedure-document"/>
       <groupingId value="Exemples Data Absent Reason"/>
     </resource>

@@ -6,26 +6,22 @@
 
 ## Example AllergyIntolerance: Example - AllergyIntolerance avec Data Absent Reason
 
-Profil: [AllergyIntolerance - FR Allergy and intolerance Document](StructureDefinition-fr-allergie-intolerance-document.md)
+**Exemple d'usage de l'extension data-absent-reason sur une AllergyIntolerance**
 
-**identifier**: [Uniform Resource Identifier (URI)](http://terminology.hl7.org/6.3.0/NamingSystem-uri.html)/urn:uuid:7f0e9c1a-3b2d-4e5f-8a6b-1c2d3e4f5a6b
+* Élément: `code`
+  * Cardinalité: 1..1
+  * Valeur: *absente*
+  * Extension data-absent-reason: `unknown`— agent allergique inconnu
+* Élément: `onsetPeriod.start`
+  * Cardinalité: 1..1
+  * Valeur: *absente*
+  * Extension data-absent-reason: `temp-unknown`— date temporairement indisponible
+* Élément: `reaction.manifestation`
+  * Cardinalité: 1..*
+  * Valeur: *absente*
+  * Extension data-absent-reason: `unknown`— manifestation clinique inconnue
 
-**clinicalStatus**: Active
-
-**verificationStatus**: Unconfirmed
-
-**code**: 
-
-**patient**: [Exemple Patient](Patient/exemple-patient)
-
-**onset**: --> (en cours)
-
-### Reactions
-
-| | |
-| :--- | :--- |
-| - | **Manifestation** |
-| * |  |
+> **Règle** : pour un élément obligatoire (cardinalité 1..1 ou 1..*) dont la valeur est indisponible, utiliser l'extension `data-absent-reason` avec le code approprié du ValueSet [data-absent-reason](https://hl7.org/fhir/R4/valueset-data-absent-reason.html).
 
 
 
@@ -60,7 +56,8 @@ Profil: [AllergyIntolerance - FR Allergy and intolerance Document](StructureDefi
     "extension" : [{
       "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
       "valueCode" : "unknown"
-    }]
+    }],
+    "text" : "Agent allergique inconnu"
   },
   "patient" : {
     "reference" : "Patient/exemple-patient",
@@ -79,7 +76,8 @@ Profil: [AllergyIntolerance - FR Allergy and intolerance Document](StructureDefi
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
         "valueCode" : "unknown"
-      }]
+      }],
+      "text" : "Manifestation clinique inconnue"
     }]
   }]
 }
