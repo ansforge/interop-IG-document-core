@@ -12,10 +12,6 @@ Cas d'usage illustrés :
   (liaison required → on utilise directement le code d'exception du ValueSet, pas l'extension)"""
 Usage: #example
 
-// Narratif
-* text.status = #extensions
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Exemple d'usage de l'extension data-absent-reason sur une Procedure</b></p><table class=\"grid\"><tr><th>Élément</th><th>Cardinalité</th><th>Liaison ValueSet</th><th>Traitement</th></tr><tr><td><code>status</code></td><td>1..1</td><td><code>required</code> (event-status)</td><td>Code d'exception natif <code>unknown</code> — la liaison <i>required</i> interdit l'extension</td></tr><tr><td><code>code</code></td><td>1..1 MS</td><td><code>extensible</code></td><td>Extension <code>data-absent-reason</code> : <code>unknown</code> — acte réalisé inconnu</td></tr><tr><td><code>performedDateTime</code></td><td>MS</td><td>—</td><td>Extension <code>data-absent-reason</code> : <code>temp-unknown</code> — date temporairement indisponible</td></tr></table><blockquote><p><b>Règle</b> : pour une liaison <i>required</i>, utiliser un code d'exception du ValueSet. Pour une liaison <i>extensible</i> ou inférieure, utiliser l'extension <code>data-absent-reason</code>.</p></blockquote></div>"
-
 // Identification
 * identifier[+].system = "urn:ietf:rfc:3986"
 * identifier[=].value = "urn:uuid:a1b2c3d4-e5f6-7890-abcd-ef1234567890"

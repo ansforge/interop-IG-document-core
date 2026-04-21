@@ -11,10 +11,6 @@ Cas d'usage illustrés :
 - `reaction.manifestation` : la manifestation clinique est inconnue → code `unknown`"""
 Usage: #example
 
-// Narratif FHIR : contrôle l'affichage dans l'IG Publisher
-* text.status = #extensions
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Exemple d'usage de l'extension data-absent-reason sur une AllergyIntolerance</b></p><table class=\"grid\"><tr><th>Élément</th><th>Cardinalité</th><th>Valeur</th><th>Extension data-absent-reason</th></tr><tr><td><code>code</code></td><td>1..1</td><td><i>absente</i></td><td><code>unknown</code> — agent allergique inconnu</td></tr><tr><td><code>onsetPeriod.start</code></td><td>1..1</td><td><i>absente</i></td><td><code>temp-unknown</code> — date temporairement indisponible</td></tr><tr><td><code>reaction.manifestation</code></td><td>1..*</td><td><i>absente</i></td><td><code>unknown</code> — manifestation clinique inconnue</td></tr></table><blockquote><p><b>Règle</b> : pour un élément obligatoire (cardinalité 1..1 ou 1..*) dont la valeur est indisponible, utiliser l'extension <code>data-absent-reason</code> avec le code approprié du ValueSet <a href=\"https://hl7.org/fhir/R4/valueset-data-absent-reason.html\">data-absent-reason</a>.</p></blockquote></div>"
-
 // L'identifiant de l'entrée
 * identifier[+].system = "urn:ietf:rfc:3986"
 * identifier[=].value = "urn:uuid:7f0e9c1a-3b2d-4e5f-8a6b-1c2d3e4f5a6b"
