@@ -7,7 +7,6 @@ temporairement indisponible.
 
 Cas d'usage illustrés :
 - `code` : l'agent allergique est inconnu → code `unknown`
-- `onsetPeriod.start` : la date de début est temporairement indisponible → code `temp-unknown`
 - `reaction.manifestation` : la manifestation clinique est inconnue → code `unknown`"""
 Usage: #example
 
@@ -29,16 +28,11 @@ Usage: #example
 * patient.reference = "Patient/exemple-patient"
 * patient.display = "Exemple Patient"
 
-// Période d'apparition (onsetPeriod.start obligatoire 1..1)
-// La date de début est temporairement indisponible → extension data-absent-reason avec code "temp-unknown"
-* onsetPeriod.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
-* onsetPeriod.extension.valueCode = #temp-unknown
-* onsetPeriod.start.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
-* onsetPeriod.start.extension.valueCode = #temp-unknown
+// Date de début d'identification de l'allergie ou de l'intolérance
+* onsetPeriod.start = "2021-12-04"
 
 // Réaction (reaction.manifestation obligatoire 1..*)
 // La manifestation clinique est inconnue → extension data-absent-reason avec code "unknown"
-// manifestation.text permet au renderer HTML d'afficher une valeur lisible (pattern IPS)
 * reaction[+].manifestation[+].text = "Manifestation clinique inconnue"
 * reaction[=].manifestation[=].extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
 * reaction[=].manifestation[=].extension.valueCode = #unknown

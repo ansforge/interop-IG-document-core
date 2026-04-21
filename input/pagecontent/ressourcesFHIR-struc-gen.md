@@ -279,8 +279,8 @@ En pratique, de nombreux ValueSets ou terminologies ne prévoient pas de code d'
 >
 > - L'instance [example-allergy-intolerance-data-absent-reason](AllergyIntolerance-example-allergy-intolerance-data-absent-reason.html) illustre l'usage de l'extension `data-absent-reason` sur les éléments obligatoires du profil [FRAllergyIntoleranceDocument](StructureDefinition-fr-allergie-intolerance-document.html) lorsque la valeur est inconnue ou temporairement indisponible.
 > - L'instance [example-procedure-data-absent-reason](Procedure-example-procedure-data-absent-reason.html) illustre les deux cas de figure sur le profil [FRProcedureDocument](StructureDefinition-fr-procedure-document.html) :
->   - **extension `data-absent-reason`** pour les données codées à partir d'un codeSystem/valueSet non obligatoire (`example`, `preferred` ou `extensible`) : éléments `code`, `performedDateTime`
->   - **code d'exception natif** du ValueSet `event-status`(`unknown`) pour les données codées à partir d'un codeSystem/valueSet obligatoire (`required`) : élément `status`
+>   - **`extension data-absent-reason`** pour les données codées à partir d'un codeSystem/valueSet non obligatoire (`example`, `preferred` ou `extensible`) : éléments `code`, `performedDateTime`
+>   - **`code d'exception natif`**  du ValueSet `event-status`(`unknown`) pour les données codées à partir d'un codeSystem/valueSet obligatoire (`required`) : élément `status`
 
 
 ### Conformité des documents FHIR
