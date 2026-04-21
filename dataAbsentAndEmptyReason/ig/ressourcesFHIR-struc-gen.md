@@ -187,23 +187,23 @@ Lorsqu’aucune donnée n’est disponible pour une section facultative, **le pr
 
 > **En résumé** : **section.emptyReason** s’applique uniquement aux **sections obligatoires vides**. Pour les sections facultatives, l’absence de données se traduit simplement par l’absence de la section dans le document.
 
-### Gestion de l’absence de données au niveau des éléments (données manquantes)
+#### Gestion de l’absence de données au niveau des éléments (données manquantes)
 
 En FHIR, l’absence d’une valeur dans un élément doit être gérée de manière explicite lorsque cela est **requis**. Les règles diffèrent selon la cardinalité de l’élément et selon que la donnée est codée ou non.
 
-#### Données optionnelles
+##### Données optionnelles
 
 **(cardinalité `0..1` ou `0..*`)**
 
 Si l’information n’est pas disponible, quelle que soit la raison, **ne pas créer l’élément**. L’absence de l’élément dans la ressource est suffisante pour exprimer l’indisponibilité.
 
-#### Données obligatoires
+##### Données obligatoires
 
 **(cardinalité `1..1` ou `1..*`)**
 
 Si l’information n’est pas disponible, **le motif de l’absence DOIT être précisé** via les mécanismes décrits ci-dessous.
 
-##### Données obligatoires non codées
+###### Données obligatoires non codées
 
 Utiliser l’extension [**Data Absent Reason**](http://hl7.org/fhir/StructureDefinition/data-absent-reason) avec :
 
@@ -249,9 +249,9 @@ Le ValueSet [data-absent-reason](https://hl7.org/fhir/R4/valueset-data-absent-re
 
 ```
 
-##### Données obligatoires codées
+###### Données obligatoires codées
 
-###### Données codées à partir d’un codeSystem/valueSet non obligatoire (example, preferred ou extensible)
+1. **Données codées à partir d’un codeSystem/valueSet non obligatoire**(`example`,`preferred`ou`extensible`)
 
 Si l’information n’est pas connue et qu’il existe dans la terminologie ou le ValueSet associé **un code d’exception spécifique**, utiliser ce code en priorité.
 
@@ -276,7 +276,7 @@ Dans les autres cas, utiliser l’extension [**Data Absent Reason**](http://hl7.
 
 ```
 
-###### Données codées à partir d’un codeSystem/valueSet obligatoire (required)
+1. **Données codées à partir d’un codeSystem/valueSet obligatoire**(`required`)
 
 > **Règle** : lorsqu’une donnée est absente, **utiliser le code d’exception du ValueSet ou de la terminologie associée**. C’est la règle de référence pour une liaison `required`.
 

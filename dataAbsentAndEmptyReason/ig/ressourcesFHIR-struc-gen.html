@@ -268,7 +268,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#standard-fhir" id="markdown-toc-standard-fhir">Standard FHIR&reg;</a></li>
   <li><a href="#structure-dun-document-fhir" id="markdown-toc-structure-dun-document-fhir">Structure d’un document FHIR</a></li>
   <li><a href="#spécifications-françaises-des-documents-fhir" id="markdown-toc-spécifications-françaises-des-documents-fhir">Spécifications françaises des documents FHIR</a></li>
-  <li><a href="#gestion-de-labsence-de-données-au-niveau-des-éléments-données-manquantes" id="markdown-toc-gestion-de-labsence-de-données-au-niveau-des-éléments-données-manquantes">Gestion de l’absence de données au niveau des éléments (données manquantes)</a></li>
   <li><a href="#conformité-des-documents-fhir" id="markdown-toc-conformité-des-documents-fhir">Conformité des documents FHIR</a></li>
   <li><a href="#visualisation-dun-document-fhir" id="markdown-toc-visualisation-dun-document-fhir">Visualisation d’un document FHIR</a></li>
 </ul>
@@ -411,13 +410,13 @@ Pour en savoir plus, voir <a href="https://hl7.org/fhir/R4/index.html">https://h
 
 <ul>
   <li><strong><a href="StructureDefinition-fr-patient-ins-document.html">FRPatientINSDocument</a></strong> ou <strong><a href="StructureDefinition-fr-patient-document.html">FRPatientDocument</a></strong> : profil du patient/usager</li>
-  <li><strong><a name="l904">​</a><a href="StructureDefinition-fr-practitionerrole-document.html">FRPractitionerRoleDocument</a></strong> : profil de la situation d’exercice d’un professionnel de santé</li>
+  <li><strong><a name="l900">​</a><a href="StructureDefinition-fr-practitionerrole-document.html">FRPractitionerRoleDocument</a></strong> : profil de la situation d’exercice d’un professionnel de santé</li>
   <li><strong><a href="StructureDefinition-fr-practitioner-document.html">FRPractitionerDocument</a></strong> : profil du professionnel de santé</li>
   <li><strong><a href="StructureDefinition-fr-organization-document.html">FROrganizationDocument</a></strong> : profil de l’organisation/structure</li>
   <li><strong><a href="StructureDefinition-fr-device-auteur-document.html">FRDeviceAuteurDocument</a></strong> : profil du dispositif auteur (si applicable)</li>
   <li><strong><a href="StructureDefinition-fr-encounter-care-document.html">FREncounterCareDocument</a></strong> : profil de la prise en charge</li>
   <li><strong><a href="StructureDefinition-fr-location-document.html">FRLocationDocument</a></strong> : profil du lieu d’exercice</li>
-  <li><strong><a name="l940">​</a><a href="StructureDefinition-fr-relatedperson-document.html">FRRelatedPersonDocument</a></strong> : profil d’une personne en relation avec le patient (si applicable)</li>
+  <li><strong><a name="l936">​</a><a href="StructureDefinition-fr-relatedperson-document.html">FRRelatedPersonDocument</a></strong> : profil d’une personne en relation avec le patient (si applicable)</li>
 </ul>
 
 <p>Ces profils portent les exigences complémentaires et spécifiques au contexte français, notamment :</p>
@@ -526,23 +525,23 @@ C’est le principe de propagation du contexte et qui part du document vers les 
   <p><strong>En résumé</strong> : <em>section.emptyReason</em> s’applique uniquement aux <strong>sections obligatoires vides</strong>. Pour les sections facultatives, l’absence de données se traduit simplement par l’absence de la section dans le document.</p>
 </blockquote>
 
-<h3 id="gestion-de-labsence-de-données-au-niveau-des-éléments-données-manquantes">Gestion de l’absence de données au niveau des éléments (données manquantes)</h3>
+<h4 id="gestion-de-labsence-de-données-au-niveau-des-éléments-données-manquantes">Gestion de l’absence de données au niveau des éléments (données manquantes)</h4>
 
 <p>En FHIR, l’absence d’une valeur dans un élément doit être gérée de manière explicite lorsque cela est <strong>requis</strong>. Les règles diffèrent selon la cardinalité de l’élément et selon que la donnée est codée ou non.</p>
 
-<h4 id="données-optionnelles">Données optionnelles</h4>
+<h5 id="données-optionnelles">Données optionnelles</h5>
 
 <p><em>(cardinalité <code class="language-plaintext highlighter-rouge">0..1</code> ou <code class="language-plaintext highlighter-rouge">0..*</code>)</em></p>
 
 <p>Si l’information n’est pas disponible, quelle que soit la raison, <strong>ne pas créer l’élément</strong>. L’absence de l’élément dans la ressource est suffisante pour exprimer l’indisponibilité.</p>
 
-<h4 id="données-obligatoires">Données obligatoires</h4>
+<h5 id="données-obligatoires">Données obligatoires</h5>
 
 <p><em>(cardinalité <code class="language-plaintext highlighter-rouge">1..1</code> ou <code class="language-plaintext highlighter-rouge">1..*</code>)</em></p>
 
 <p>Si l’information n’est pas disponible, <strong>le motif de l’absence DOIT être précisé</strong> via les mécanismes décrits ci-dessous.</p>
 
-<h5 id="données-obligatoires-non-codées">Données obligatoires non codées</h5>
+<h6 id="données-obligatoires-non-codées">Données obligatoires non codées</h6>
 
 <p>Utiliser l’extension <a href="http://hl7.org/fhir/StructureDefinition/data-absent-reason"><strong>Data Absent Reason</strong></a> avec :</p>
 
@@ -673,9 +672,11 @@ C’est le principe de propagation du contexte et qui part du document vers les 
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
 
-<h5 id="données-obligatoires-codées">Données obligatoires codées</h5>
+<h6 id="données-obligatoires-codées">Données obligatoires codées</h6>
 
-<h6 id="données-codées-à-partir-dun-codesystemvalueset-non-obligatoire-example-preferred-ou-extensible">Données codées à partir d’un codeSystem/valueSet non obligatoire (<code class="language-plaintext highlighter-rouge">example</code>, <code class="language-plaintext highlighter-rouge">preferred</code> ou <code class="language-plaintext highlighter-rouge">extensible</code>)</h6>
+<ol>
+  <li><strong>Données codées à partir d’un codeSystem/valueSet non obligatoire</strong> (<code class="language-plaintext highlighter-rouge">example</code>, <code class="language-plaintext highlighter-rouge">preferred</code> ou <code class="language-plaintext highlighter-rouge">extensible</code>)</li>
+</ol>
 
 <p>Si l’information n’est pas connue et qu’il existe dans la terminologie ou le ValueSet associé <strong>un code d’exception spécifique</strong>, utiliser ce code en priorité.</p>
 
@@ -700,7 +701,9 @@ C’est le principe de propagation du contexte et qui part du document vers les 
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
 
-<h6 id="données-codées-à-partir-dun-codesystemvalueset-obligatoire-required">Données codées à partir d’un codeSystem/valueSet obligatoire (<code class="language-plaintext highlighter-rouge">required</code>)</h6>
+<ol>
+  <li><strong>Données codées à partir d’un codeSystem/valueSet obligatoire</strong> (<code class="language-plaintext highlighter-rouge">required</code>)</li>
+</ol>
 
 <blockquote>
   <p><strong>Règle</strong> : lorsqu’une donnée est absente, <strong>utiliser le code d’exception du ValueSet ou de la terminologie associée</strong>. C’est la règle de référence pour une liaison <code class="language-plaintext highlighter-rouge">required</code>.</p>
@@ -912,7 +915,7 @@ Voir <a href="https://interop.esante.gouv.fr/ig/documentation/tests.html">https:
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  Package ans.document.fr.core#0.1.0-snapshot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 21, 2026 14:23+0000">2026-04-21</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  Package ans.document.fr.core#0.1.0-snapshot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 21, 2026 15:20+0000">2026-04-21</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
