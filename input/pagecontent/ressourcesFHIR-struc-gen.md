@@ -152,13 +152,13 @@ La norme FHIR permet d’indiquer de façon optionnelle le rattachement d'une se
 Chaque entrée d'un document peut avoir un **subject**. Si l'entrée ne contient pas de subject, l’entrée concerne la personne indiquée dans l'élément **Composition.section.focus** de la section. Si la section ne contient pas d'élément **Composition.section.focus**, la section concerne la personne indiquée dans l'élément **subject** du document.
 C’est le principe de propagation du contexte et qui part du document vers les sections, sous-sections, entrées et sous-entrées emboitées.
 
-#### Gestion des sections vides : section.emptyReason
+#### Gestion des sections vides (pas d'information) : 
 
-En FHIR, l'élément `section.emptyReason` permet d'indiquer la raison pour laquelle une section est vide, c'est-à-dire qu'elle ne contient aucune entrée structurée. Son utilisation est conditionnée par le caractère obligatoire de la section dans le modèle de document.
+En FHIR, l'élément **section.emptyReason** permet d'indiquer la raison pour laquelle une section est vide, c'est-à-dire qu'elle ne contient aucune entrée structurée. Son utilisation est conditionnée par le caractère obligatoire de la section dans le modèle de document.
 
 ##### Sections obligatoires
 
-Pour les sections obligatoires (ex : Allergies et intolérances, Problèmes, Traitements), lorsqu'aucune entrée structurée n'est fournie, l'élément `section.emptyReason` **DOIT** être renseigné avec une valeur issue du JDV [`list-empty-reason`](http://hl7.org/fhir/ValueSet/list-empty-reason).
+Pour les sections obligatoires (ex : Allergies et intolérances, Problèmes, Traitements), lorsqu'aucune entrée structurée n'est fournie, l'élément **section.emptyReason** **DOIT** être renseigné avec une valeur issue du JDV [list-empty-reason](http://hl7.org/fhir/ValueSet/list-empty-reason).
 
 | Code | Libellé | Définition |
 |------|---------|------------|
@@ -171,15 +171,15 @@ Pour les sections obligatoires (ex : Allergies et intolérances, Problèmes, Tra
 
 ##### Sections facultatives
 
-Lorsqu'aucune donnée n'est disponible pour une section facultative, **le producteur ne doit pas créer la section**. L'élément `section.emptyReason` ne s'applique pas aux sections facultatives absentes.
+Lorsqu'aucune donnée n'est disponible pour une section facultative, **le producteur ne doit pas créer la section**. L'élément **section.emptyReason** ne s'applique pas aux sections facultatives absentes.
 
-> **En résumé** : `section.emptyReason` s'applique uniquement aux **sections obligatoires vides**. Pour les sections facultatives, l'absence de données se traduit simplement par l'absence de la section dans le document.
+> **En résumé** : *section.emptyReason* s'applique uniquement aux **sections obligatoires vides**. Pour les sections facultatives, l'absence de données se traduit simplement par l'absence de la section dans le document.
 
 ---
 
-### Gestion de l'absence de données au niveau des éléments
+### Gestion de l'absence de données au niveau des éléments (données manquantes)
 
-En FHIR, l'absence d'une valeur dans un élément structuré doit être gérée de manière explicite lorsque cela est requis. Les règles diffèrent selon la cardinalité de l'élément et selon que la donnée est codée ou non.
+En FHIR, l'absence d'une valeur dans un élément doit être gérée de manière explicite lorsque cela est **requis**. Les règles diffèrent selon la cardinalité de l'élément et selon que la donnée est codée ou non.
 
 #### Données optionnelles
 
@@ -237,18 +237,10 @@ Le ValueSet [data-absent-reason](https://hl7.org/fhir/R4/valueset-data-absent-re
   ...
 }
 ```
----
-
-> **Exemples complets** :
->
-> - L'instance [example-allergy-intolerance-data-absent-reason](AllergyIntolerance-example-allergy-intolerance-data-absent-reason.html) illustre l'usage de l'extension `data-absent-reason` sur les éléments obligatoires du profil [FRAllergyIntoleranceDocument](StructureDefinition-fr-allergie-intolerance-document.html) lorsque la valeur est inconnue ou temporairement indisponible.
-> - L'instance [example-procedure-data-absent-reason](Procedure-example-procedure-data-absent-reason.html) illustre les deux cas de figure sur le profil [FRProcedureDocument](StructureDefinition-fr-procedure-document.html) : extension `data-absent-reason` pour les liaisons non obligatoires (`code`, `performedDateTime`), et code d'exception natif (`unknown`) pour la liaison `required` (`status`).
-
----
 
 ##### Données obligatoires codées
 
-###### Liaison terminologique non obligatoire (`example`, `preferred` ou `extensible`)
+###### Données codées à partir d'un codeSystem/valueSet non obligatoire (`example`, `preferred` ou `extensible`)
 
 Si l'information n'est pas connue et qu'il existe dans la terminologie ou le ValueSet associé **un code d'exception spécifique**, utiliser ce code en priorité.
 
@@ -272,11 +264,22 @@ Dans les autres cas, utiliser l'extension [**Data Absent Reason**](http://hl7.or
 }
 ```
 
-###### Liaison terminologique obligatoire (`required`)
+###### Données codées à partir d'un codeSystem/valueSet (`required`)
 
 Si l'information n'est pas connue, **utiliser un code d'exception spécifique existant** dans la terminologie ou le ValueSet associé à la donnée. L'extension `data-absent-reason` ne peut pas être utilisée en substitution d'une valeur requise.
 
-Dans les autres cas, utiliser l'extension [**Data Absent Reason**](http://hl7.org/fhir/StructureDefinition/data-absent-reason)
+Si aucun code d'exception spécifique n'est disponible, utiliser l'extension [**Data Absent Reason**](http://hl7.org/fhir/StructureDefinition/data-absent-reason)
+
+---
+
+> **Exemples complets** :
+>
+> - L'instance [example-allergy-intolerance-data-absent-reason](AllergyIntolerance-example-allergy-intolerance-data-absent-reason.html) illustre l'usage de l'extension `data-absent-reason` sur les éléments obligatoires du profil [FRAllergyIntoleranceDocument](StructureDefinition-fr-allergie-intolerance-document.html) lorsque la valeur est inconnue ou temporairement indisponible.
+> - L'instance [example-procedure-data-absent-reason](Procedure-example-procedure-data-absent-reason.html) illustre les deux cas de figure sur le profil [FRProcedureDocument](StructureDefinition-fr-procedure-document.html) :
+>   - **extension `data-absent-reason`** pour les données codées à partir d'un codeSystem/valueSet non obligatoire (`example`, `preferred` ou `extensible`) : éléments `code`, `performedDateTime`
+>   - **code d'exception natif** du ValueSet `event-status`(`unknown`) pour les données codées à partir d'un codeSystem/valueSet obligatoire (`required`) : élément `status`
+
+---
 
 ### Conformité des documents FHIR
 
