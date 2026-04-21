@@ -776,7 +776,6 @@ Instances d’exemple illustrant l’usage de l’extension data-absent-reason s
 | | |
 | :--- | :--- |
 | [Example - AllergyIntolerance avec Data Absent Reason](AllergyIntolerance-example-allergy-intolerance-data-absent-reason.md) | Exemple illustrant l’usage de l’extension `data-absent-reason` sur les éléments obligatoires de la ressource AllergyIntolerance dont la valeur est inconnue ou temporairement indisponible.Cas d’usage illustrés :* `code` : l’agent allergique est inconnu → code `unknown`
-* `onsetPeriod.start` : la date de début est temporairement indisponible → code `temp-unknown`
 * `reaction.manifestation` : la manifestation clinique est inconnue → code `unknown`
  |
 | [Example - Procedure avec Data Absent Reason](Procedure-example-procedure-data-absent-reason.md) | Exemple illustrant l’usage de l’extension `data-absent-reason` sur les éléments obligatoires de la ressource Procedure dont la valeur est inconnue ou temporairement indisponible.Cas d’usage illustrés :* `code` : l’acte est inconnu → extension `data-absent-reason` avec code `unknown` (liaison extensible → l’extension peut se substituer au codage)

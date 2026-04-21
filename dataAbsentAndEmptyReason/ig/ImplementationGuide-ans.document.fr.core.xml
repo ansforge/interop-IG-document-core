@@ -10,7 +10,7 @@
   <name value="FRDocumentCore"/>
   <title value="ANS IG document core"/>
   <status value="draft"/>
-  <date value="2026-04-21T17:28:39+00:00"/>
+  <date value="2026-04-21T21:04:33+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -3153,7 +3153,7 @@
         <reference value="AllergyIntolerance/example-allergy-intolerance-data-absent-reason"/>
       </reference>
       <name value="Example - AllergyIntolerance avec Data Absent Reason"/>
-      <description value="Exemple illustrant l'usage de l'extension `data-absent-reason` sur les éléments&#xA;obligatoires de la ressource AllergyIntolerance dont la valeur est inconnue ou&#xA;temporairement indisponible.&#xA;&#xA;Cas d'usage illustrés :&#xA;- `code` : l'agent allergique est inconnu → code `unknown`&#xA;- `onsetPeriod.start` : la date de début est temporairement indisponible → code `temp-unknown`&#xA;- `reaction.manifestation` : la manifestation clinique est inconnue → code `unknown`"/>
+      <description value="Exemple illustrant l'usage de l'extension `data-absent-reason` sur les éléments&#xA;obligatoires de la ressource AllergyIntolerance dont la valeur est inconnue ou&#xA;temporairement indisponible.&#xA;&#xA;Cas d'usage illustrés :&#xA;- `code` : l'agent allergique est inconnu → code `unknown`&#xA;- `reaction.manifestation` : la manifestation clinique est inconnue → code `unknown`"/>
       <exampleCanonical value="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-allergie-intolerance-document"/>
       <groupingId value="Exemples Data Absent Reason"/>
     </resource>

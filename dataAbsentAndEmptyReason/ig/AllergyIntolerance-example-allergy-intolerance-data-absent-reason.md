@@ -18,7 +18,7 @@ Profil: [AllergyIntolerance - FR Allergy and intolerance Document](StructureDefi
 
 **patient**: [Exemple Patient](Patient/exemple-patient)
 
-**onset**: --> (en cours)
+**onset**: 2021-12-04 --> (en cours)
 
 ### Reactions
 
@@ -68,16 +68,7 @@ Profil: [AllergyIntolerance - FR Allergy and intolerance Document](StructureDefi
     "display" : "Exemple Patient"
   },
   "onsetPeriod" : {
-    "extension" : [{
-      "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
-      "valueCode" : "temp-unknown"
-    }],
-    "_start" : {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
-        "valueCode" : "temp-unknown"
-      }]
-    }
+    "start" : "2021-12-04"
   },
   "reaction" : [{
     "manifestation" : [{
