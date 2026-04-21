@@ -268,7 +268,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#standard-fhir" id="markdown-toc-standard-fhir">Standard FHIR&reg;</a></li>
   <li><a href="#structure-dun-document-fhir" id="markdown-toc-structure-dun-document-fhir">Structure d’un document FHIR</a></li>
   <li><a href="#spécifications-françaises-des-documents-fhir" id="markdown-toc-spécifications-françaises-des-documents-fhir">Spécifications françaises des documents FHIR</a></li>
-  <li><a href="#gestion-de-labsence-de-données-au-niveau-des-éléments" id="markdown-toc-gestion-de-labsence-de-données-au-niveau-des-éléments">Gestion de l’absence de données au niveau des éléments</a></li>
+  <li><a href="#gestion-de-labsence-de-données-au-niveau-des-éléments-données-manquantes" id="markdown-toc-gestion-de-labsence-de-données-au-niveau-des-éléments-données-manquantes">Gestion de l’absence de données au niveau des éléments (données manquantes)</a></li>
   <li><a href="#conformité-des-documents-fhir" id="markdown-toc-conformité-des-documents-fhir">Conformité des documents FHIR</a></li>
   <li><a href="#visualisation-dun-document-fhir" id="markdown-toc-visualisation-dun-document-fhir">Visualisation d’un document FHIR</a></li>
 </ul>
@@ -468,13 +468,13 @@ Pour en savoir plus, voir <a href="https://hl7.org/fhir/R4/index.html">https://h
 <p>Chaque entrée d’un document peut avoir un <strong>subject</strong>. Si l’entrée ne contient pas de subject, l’entrée concerne la personne indiquée dans l’élément <strong>Composition.section.focus</strong> de la section. Si la section ne contient pas d’élément <strong>Composition.section.focus</strong>, la section concerne la personne indiquée dans l’élément <strong>subject</strong> du document.
 C’est le principe de propagation du contexte et qui part du document vers les sections, sous-sections, entrées et sous-entrées emboitées.</p>
 
-<h4 id="gestion-des-sections-vides--sectionemptyreason">Gestion des sections vides : section.emptyReason</h4>
+<h4 id="gestion-des-sections-vides-pas-dinformation-">Gestion des sections vides (pas d’information) :</h4>
 
-<p>En FHIR, l’élément <code class="language-plaintext highlighter-rouge">section.emptyReason</code> permet d’indiquer la raison pour laquelle une section est vide, c’est-à-dire qu’elle ne contient aucune entrée structurée. Son utilisation est conditionnée par le caractère obligatoire de la section dans le modèle de document.</p>
+<p>En FHIR, l’élément <strong>section.emptyReason</strong> permet d’indiquer la raison pour laquelle une section est vide, c’est-à-dire qu’elle ne contient aucune entrée structurée. Son utilisation est conditionnée par le caractère obligatoire de la section dans le modèle de document.</p>
 
 <h5 id="sections-obligatoires">Sections obligatoires</h5>
 
-<p>Pour les sections obligatoires (ex : Allergies et intolérances, Problèmes, Traitements), lorsqu’aucune entrée structurée n’est fournie, l’élément <code class="language-plaintext highlighter-rouge">section.emptyReason</code> <strong>DOIT</strong> être renseigné avec une valeur issue du JDV <a href="http://hl7.org/fhir/ValueSet/list-empty-reason"><code class="language-plaintext highlighter-rouge">list-empty-reason</code></a>.</p>
+<p>Pour les sections obligatoires (ex : Allergies et intolérances, Problèmes, Traitements), lorsqu’aucune entrée structurée n’est fournie, l’élément <strong>section.emptyReason</strong> <strong>DOIT</strong> être renseigné avec une valeur issue du JDV <a href="http://hl7.org/fhir/ValueSet/list-empty-reason">list-empty-reason</a>.</p>
 
 <table>
   <thead>
@@ -520,17 +520,17 @@ C’est le principe de propagation du contexte et qui part du document vers les 
 
 <h5 id="sections-facultatives">Sections facultatives</h5>
 
-<p>Lorsqu’aucune donnée n’est disponible pour une section facultative, <strong>le producteur ne doit pas créer la section</strong>. L’élément <code class="language-plaintext highlighter-rouge">section.emptyReason</code> ne s’applique pas aux sections facultatives absentes.</p>
+<p>Lorsqu’aucune donnée n’est disponible pour une section facultative, <strong>le producteur ne doit pas créer la section</strong>. L’élément <strong>section.emptyReason</strong> ne s’applique pas aux sections facultatives absentes.</p>
 
 <blockquote>
-  <p><strong>En résumé</strong> : <code class="language-plaintext highlighter-rouge">section.emptyReason</code> s’applique uniquement aux <strong>sections obligatoires vides</strong>. Pour les sections facultatives, l’absence de données se traduit simplement par l’absence de la section dans le document.</p>
+  <p><strong>En résumé</strong> : <em>section.emptyReason</em> s’applique uniquement aux <strong>sections obligatoires vides</strong>. Pour les sections facultatives, l’absence de données se traduit simplement par l’absence de la section dans le document.</p>
 </blockquote>
 
 <hr/>
 
-<h3 id="gestion-de-labsence-de-données-au-niveau-des-éléments">Gestion de l’absence de données au niveau des éléments</h3>
+<h3 id="gestion-de-labsence-de-données-au-niveau-des-éléments-données-manquantes">Gestion de l’absence de données au niveau des éléments (données manquantes)</h3>
 
-<p>En FHIR, l’absence d’une valeur dans un élément structuré doit être gérée de manière explicite lorsque cela est requis. Les règles diffèrent selon la cardinalité de l’élément et selon que la donnée est codée ou non.</p>
+<p>En FHIR, l’absence d’une valeur dans un élément doit être gérée de manière explicite lorsque cela est <strong>requis</strong>. Les règles diffèrent selon la cardinalité de l’élément et selon que la donnée est codée ou non.</p>
 
 <h4 id="données-optionnelles">Données optionnelles</h4>
 
@@ -674,22 +674,10 @@ C’est le principe de propagation du contexte et qui part du document vers les 
   </span><span class="err">...</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
-<hr/>
-
-<blockquote>
-  <p><strong>Exemples complets</strong> :</p>
-
-  <ul>
-    <li>L’instance <a href="AllergyIntolerance-example-allergy-intolerance-data-absent-reason.html">example-allergy-intolerance-data-absent-reason</a> illustre l’usage de l’extension <code class="language-plaintext highlighter-rouge">data-absent-reason</code> sur les éléments obligatoires du profil <a href="StructureDefinition-fr-allergie-intolerance-document.html">FRAllergyIntoleranceDocument</a> lorsque la valeur est inconnue ou temporairement indisponible.</li>
-    <li>L’instance <a href="Procedure-example-procedure-data-absent-reason.html">example-procedure-data-absent-reason</a> illustre les deux cas de figure sur le profil <a href="StructureDefinition-fr-procedure-document.html">FRProcedureDocument</a> : extension <code class="language-plaintext highlighter-rouge">data-absent-reason</code> pour les liaisons non obligatoires (<code class="language-plaintext highlighter-rouge">code</code>, <code class="language-plaintext highlighter-rouge">performedDateTime</code>), et code d’exception natif (<code class="language-plaintext highlighter-rouge">unknown</code>) pour la liaison <code class="language-plaintext highlighter-rouge">required</code> (<code class="language-plaintext highlighter-rouge">status</code>).</li>
-  </ul>
-</blockquote>
-
-<hr/>
 
 <h5 id="données-obligatoires-codées">Données obligatoires codées</h5>
 
-<h6 id="liaison-terminologique-non-obligatoire-example-preferred-ou-extensible">Liaison terminologique non obligatoire (<code class="language-plaintext highlighter-rouge">example</code>, <code class="language-plaintext highlighter-rouge">preferred</code> ou <code class="language-plaintext highlighter-rouge">extensible</code>)</h6>
+<h6 id="données-codées-à-partir-dun-codesystemvalueset-non-obligatoire-example-preferred-ou-extensible">Données codées à partir d’un codeSystem/valueSet non obligatoire (<code class="language-plaintext highlighter-rouge">example</code>, <code class="language-plaintext highlighter-rouge">preferred</code> ou <code class="language-plaintext highlighter-rouge">extensible</code>)</h6>
 
 <p>Si l’information n’est pas connue et qu’il existe dans la terminologie ou le ValueSet associé <strong>un code d’exception spécifique</strong>, utiliser ce code en priorité.</p>
 
@@ -714,11 +702,29 @@ C’est le principe de propagation du contexte et qui part du document vers les 
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
 
-<h6 id="liaison-terminologique-obligatoire-required">Liaison terminologique obligatoire (<code class="language-plaintext highlighter-rouge">required</code>)</h6>
+<h6 id="données-codées-à-partir-dun-codesystemvalueset-required">Données codées à partir d’un codeSystem/valueSet (<code class="language-plaintext highlighter-rouge">required</code>)</h6>
 
 <p>Si l’information n’est pas connue, <strong>utiliser un code d’exception spécifique existant</strong> dans la terminologie ou le ValueSet associé à la donnée. L’extension <code class="language-plaintext highlighter-rouge">data-absent-reason</code> ne peut pas être utilisée en substitution d’une valeur requise.</p>
 
-<p>Dans les autres cas, utiliser l’extension <a href="http://hl7.org/fhir/StructureDefinition/data-absent-reason"><strong>Data Absent Reason</strong></a></p>
+<p>Si aucun code d’exception spécifique n’est disponible, utiliser l’extension <a href="http://hl7.org/fhir/StructureDefinition/data-absent-reason"><strong>Data Absent Reason</strong></a></p>
+
+<hr/>
+
+<blockquote>
+  <p><strong>Exemples complets</strong> :</p>
+
+  <ul>
+    <li>L’instance <a href="AllergyIntolerance-example-allergy-intolerance-data-absent-reason.html">example-allergy-intolerance-data-absent-reason</a> illustre l’usage de l’extension <code class="language-plaintext highlighter-rouge">data-absent-reason</code> sur les éléments obligatoires du profil <a href="StructureDefinition-fr-allergie-intolerance-document.html">FRAllergyIntoleranceDocument</a> lorsque la valeur est inconnue ou temporairement indisponible.</li>
+    <li>L’instance <a href="Procedure-example-procedure-data-absent-reason.html">example-procedure-data-absent-reason</a> illustre les deux cas de figure sur le profil <a href="StructureDefinition-fr-procedure-document.html">FRProcedureDocument</a> :
+      <ul>
+        <li><strong>extension <code class="language-plaintext highlighter-rouge">data-absent-reason</code></strong> pour les données codées à partir d’un codeSystem/valueSet non obligatoire (<code class="language-plaintext highlighter-rouge">example</code>, <code class="language-plaintext highlighter-rouge">preferred</code> ou <code class="language-plaintext highlighter-rouge">extensible</code>) : éléments <code class="language-plaintext highlighter-rouge">code</code>, <code class="language-plaintext highlighter-rouge">performedDateTime</code></li>
+        <li><strong>code d’exception natif</strong> du ValueSet <code class="language-plaintext highlighter-rouge">event-status</code>(<code class="language-plaintext highlighter-rouge">unknown</code>) pour les données codées à partir d’un codeSystem/valueSet obligatoire (<code class="language-plaintext highlighter-rouge">required</code>) : élément <code class="language-plaintext highlighter-rouge">status</code></li>
+      </ul>
+    </li>
+  </ul>
+</blockquote>
+
+<hr/>
 
 <h3 id="conformité-des-documents-fhir">Conformité des documents FHIR</h3>
 
@@ -891,7 +897,7 @@ Voir <a href="https://interop.esante.gouv.fr/ig/documentation/tests.html">https:
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  Package ans.document.fr.core#0.1.0-snapshot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 21, 2026 10:08+0000">2026-04-21</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  Package ans.document.fr.core#0.1.0-snapshot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 21, 2026 12:35+0000">2026-04-21</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |

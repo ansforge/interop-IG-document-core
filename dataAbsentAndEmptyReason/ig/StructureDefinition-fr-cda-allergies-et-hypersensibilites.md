@@ -68,7 +68,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-allergies-et-
   "name" : "FRCDASectionAllergiesEtHypersensibilites",
   "title" : "CDA - FR Allergies et hypersensibilites",
   "status" : "draft",
-  "date" : "2026-04-21T10:08:45+00:00",
+  "date" : "2026-04-21T12:35:07+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

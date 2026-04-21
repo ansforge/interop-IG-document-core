@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-facteurs-de-ri
   "name" : "FRLMFacteursDeRisqueProfessionnelsNonCode",
   "title" : "Modèle logique métier - FR LM Facteurs de risque professionnels non code",
   "status" : "draft",
-  "date" : "2026-04-21T10:08:45+00:00",
+  "date" : "2026-04-21T12:35:07+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
