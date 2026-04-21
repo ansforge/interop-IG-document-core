@@ -1,0 +1,87 @@
+# Example - AllergyIntolerance avec Data Absent Reason - ANS IG document core v0.1.0-snapshot
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Example - AllergyIntolerance avec Data Absent Reason**
+
+## Example AllergyIntolerance: Example - AllergyIntolerance avec Data Absent Reason
+
+Profil: [AllergyIntolerance - FR Allergy and intolerance Document](StructureDefinition-fr-allergie-intolerance-document.md)
+
+**identifier**: [Uniform Resource Identifier (URI)](http://terminology.hl7.org/6.3.0/NamingSystem-uri.html)/urn:uuid:7f0e9c1a-3b2d-4e5f-8a6b-1c2d3e4f5a6b
+
+**clinicalStatus**: Active
+
+**verificationStatus**: Unconfirmed
+
+**code**: 
+
+**patient**: [Exemple Patient](Patient/exemple-patient)
+
+**onset**: --> (en cours)
+
+### Reactions
+
+| | |
+| :--- | :--- |
+| - | **Manifestation** |
+| * |  |
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "AllergyIntolerance",
+  "id" : "example-allergy-intolerance-data-absent-reason",
+  "meta" : {
+    "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-allergie-intolerance-document"]
+  },
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:uuid:7f0e9c1a-3b2d-4e5f-8a6b-1c2d3e4f5a6b"
+  }],
+  "clinicalStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+      "code" : "active",
+      "display" : "Active"
+    }]
+  },
+  "verificationStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+      "code" : "unconfirmed",
+      "display" : "Unconfirmed"
+    }]
+  },
+  "code" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode" : "unknown"
+    }]
+  },
+  "patient" : {
+    "reference" : "Patient/exemple-patient",
+    "display" : "Exemple Patient"
+  },
+  "onsetPeriod" : {
+    "_start" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+        "valueCode" : "temp-unknown"
+      }]
+    }
+  },
+  "reaction" : [{
+    "manifestation" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+        "valueCode" : "unknown"
+      }]
+    }]
+  }]
+}
+
+```
