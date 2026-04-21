@@ -1,4 +1,5 @@
 // Extensions
+Alias: $data-absent-reason = http://hl7.org/fhir/StructureDefinition/data-absent-reason
 Alias: $ihe-ext-medication-productname = https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-productname
 Alias: $ihe-ext-medication-classification = https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-classification
 Alias: $ihe-ext-medication-characteristic = https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-characteristic
