@@ -13,7 +13,8 @@ Cas d'usage illustrés :
 Usage: #example
 
 // Identification
-* identifier[=].value = "urn:uuid:a1b2c3d4-e5f6-7890-abcd-ef1234567890"
+* identifier.value = "urn:uuid:a1b2c3d4-e5f6-7890-abcd-ef1234567890"
+* identifier.system = "urn:ietf:rfc:3986"
 
 // Statut (liaison required)
 // Le statut est inconnu → code d'exception "unknown" du ValueSet event-status

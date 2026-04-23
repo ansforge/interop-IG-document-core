@@ -12,6 +12,7 @@ Usage: #example
 
 // Identifiant de l'allergie ou de l'intolérance
 * identifier.value = "urn:uuid:7f0e9c1a-3b2d-4e5f-8a6b-1c2d3e4f5a6b"
+* identifier.system = "urn:ietf:rfc:3986"
 
 // Statut clinique et de vérification
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active "Active"
