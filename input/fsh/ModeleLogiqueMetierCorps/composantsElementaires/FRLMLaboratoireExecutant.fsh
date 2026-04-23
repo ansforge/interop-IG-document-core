@@ -5,4 +5,4 @@ Title: "Modèle logique métier - FR LM Laboratoire exécutant"
 Description: "Laboratoire exécutant"
 
 * dateExecution  1..1 dateTime "Date de l’exécution"	
-* executant  1..1 FRLMPersonneStructure "Directeur du laboratoire"	
+* executant[x]  1..1 FRLMHealthProfessional or FRLMOrganisation "Directeur du laboratoire"	

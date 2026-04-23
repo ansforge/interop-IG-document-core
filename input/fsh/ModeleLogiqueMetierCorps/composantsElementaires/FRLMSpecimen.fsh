@@ -4,19 +4,31 @@ Parent: FRLMEntry
 Title: "Logical model - FR LM Specimen"
 Description: """Entrée Prélèvement"""
 Characteristics: #can-be-target
-
-* type 0..1 CodeableConcept "Acte de prélèvement"
-// EHDSSpecimen.collectedPeriod or header.date
-* datePrelevement 1..1 dateTime "Date du prélèvement"
-* bodySite 0..1 CodeableConcept "Localisation du prélèvement"
-  * ^binding.description = "SNOMED CT (2.16.840.1.113883.6.96)"
-* collection 0..* Base "Collection"
-  * perfomer[x] 0..1 FRLMPersonneStructure or FRLMPatientUsager "Organisation prélevante"
-  // EHDSSpecimen.collection.device
-  * device 0..* FRLMDevice "Dispositif utilisé"
-// EHDSSpecimen.container ?
-// à verifier / supprimer ou bien remplacer ?
-//* echantillonPreleve 0..1 FRLMEchantillonPreleve "Échantillon prélevé"
-// EHDSSpecimen.containerDevice
-* containerDevice 0..* FRLMDevice "Produit utilisé"
-* receivedDate 1..1 Base "Date de réception de l'échantillon"
+ 
+* identifier 1..* Identifier "Identifiant unique de l'échantillon, au sein d'un périmètre défini. Exemple : identifiant attribué par le système du préleveur, identifiant attribué par le laboratoire, etc. Plusieurs identifiants peuvent être utilisés."
+* status 0..1 CodeableConcept "Disponibilité du prélèvement"
+  * ^binding.description = "(preferred): HL7 specimen-status"
+* type 0..1 CodeableConcept "Échantillon prélevé"
+  * ^binding.description = "jdv-specimen-type-cisis (1.2.250.1.213.1.1.5.819)"
+  * ^binding.valueSet = "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-specimen-type-cisis"
+* specimenSource[x] 0..1 FRLMPatientUsager or FRLMLocation or FRLMDevice "Origine du prélèvement : il peut provenir d'un patient, d'un lieu ou d'un dispositif"
+* parentSpecimen 0..* FRLMSpecimen "Prélèvement dont provient cet échantillon"
+* request 0..* FRLMServiceRequest "Demande à l'origine du prélèvement"
+* combined 0..1 CodeableConcept "Binding Description: (preferred): HL7 specimen-combined"
+  * ^binding.description = "(preferred): HL7 specimen-combined"
+* collection 0..* Base "Détails de la collecte"
+  * performer[x] 0..1 FRLMHealthProfessional or FRLMOrganisation or FRLMPatientUsager or FRLMRelatedPerson "Organisation prélevante"
+  * collected[x] 1..1 dateTime or Period "Date du prélèvement"
+  * quantity 0..1 Quantity "Quantité"
+  * method 0..1 CodeableConcept "Acte de prélèvement"
+    * ^binding.description = "NABM (1.2.250.1.215.300.2) ou 33882-2 [LOINC] Prélèvement"
+  * device 0..* FRLMDeviceUse "Dispositif utilisé"
+  * additive[x] 0..* CodeableConcept or FRLMDevice "Produit utilisé"
+  * bodySite 0..1 CodeableConcept "Localisation du prélèvement"
+* receivedDate 1..1 dateTime "Date de réception de l'échantillon"
+* container 0..* Base "Contenant du prélèvement"
+  * specimenQuantity 0..1 Quantity "Quantité de prélèvement dans le contenant"
+  * containerDevice 1..1 FRLMDevice "Dispositif utilisé comme contenant"
+* condition 0..* CodeableConcept "État de l'échantillon"
+  * ^binding.description = "(preferred): HL7 specimenCondition"
+* note 0..1 string "Commentaire"

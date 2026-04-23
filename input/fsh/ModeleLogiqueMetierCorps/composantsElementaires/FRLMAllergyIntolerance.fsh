@@ -18,7 +18,7 @@ Characteristics: #can-be-target
 - Agents environnementaux ou physiques : idem CIM-11 Chapitre X Extensions
 - Allergènes pouvant induire une contre-indication vaccinale : jdv-allergie-vaccin-cisis"
 * note 0..1 string "commentaire"
-* status 0..1 CodeableConcept "Statut clinique de l'allergie"
+* clinicalStatus 0..1 CodeableConcept "Statut clinique de l'allergie"
   * ^binding.description = "jdv-hl7-allergyintolerance-clinical-cisis (2.16.840.1.113883.4.642.3.1372)"
   * ^binding.valueSet = "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-allergyintolerance-clinical-cisis"
 * criticality 0..1 CodeableConcept "Criticité"

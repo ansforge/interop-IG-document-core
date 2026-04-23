@@ -1,9 +1,0 @@
-// Modèle logique à supprimer ? dans le modèle métier européen, l'équivalent est : exposureInformation de type string, à confirmer avec APE
-Logical: FRLMAutorisationExposition 
-Id: fr-lm-autorisation-exposition
-Title: "Modèle logique métier - FR LM Autorisation exposition"
-Description: """Entrée Autorisation exposition"""
-Characteristics: #can-be-target
-
-* code 1..1 CodeableConcept "Code de l'entrée"
-* participant 1..1 FRLMParticipantCorps "Participant"

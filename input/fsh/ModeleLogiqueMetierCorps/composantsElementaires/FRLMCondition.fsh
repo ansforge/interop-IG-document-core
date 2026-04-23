@@ -19,7 +19,7 @@ Characteristics: #can-be-target
 * severity 0..1 CodeableConcept "Sévérité de la manifestion"
   * ^binding.description = "(preferred): SNOMED_CT => Valeur issue du jdv-severite-observation-cisis (1.2.250.1.213.1.1.5.675)"
   * ^binding.valueSet = "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-severite-observation-cisis"
-* status 0..1 CodeableConcept "Statut du problème"
+* conditionStatus 0..1 CodeableConcept "Statut du problème"
   * ^binding.description = "Valeur issue du jdv-hl7-condition-clinical-cisis (2.16.840.1.113883.4.642.3.164)"
   * ^binding.valueSet = "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-condition-clinical-cisis"
 * clinicalStatus 0..1 CodeableConcept "Statut clinique du patient" 

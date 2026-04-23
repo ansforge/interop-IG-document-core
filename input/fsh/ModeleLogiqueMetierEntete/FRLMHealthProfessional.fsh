@@ -1,7 +1,7 @@
-Logical: FRLMPersonneStructure		
-Id: fr-lm-personne-structure
-Title: "Modèle logique métier - FR LM Personne et/ou Structure"			
-Description: "Une personne (professionnel ou patient ou autre) et/ou une structure (pour les professionnels)." 
+Logical: FRLMHealthProfessional		
+Id: fr-lm-health-professional
+Title: "Logical model - FR LM Health Professional"			
+Description: "Une personne (professionnel ou patient ou autre)" 
 Characteristics: #can-be-target 			 			 		
 * personne 0..1 Base "Personne"		 		
   * identifiantPersonne 0..1 Identifier "Identifiant de la personne.
@@ -19,9 +19,5 @@ Characteristics: #can-be-target
     * prenomPersonne 0..* string "Prénom de la personne"	
     * civilite 0..1 CodeableConcept "Civilité"
     * titre 0..1 CodeableConcept "Titre"
-* structure 0..1 Base "Structure" 
-  * identifiantStructure 0..1 Identifier "Identifiant de la structure"
-  * nomStructure 0..1 string "Nom de la structure"
-  * adresse 0..* Address "Adresse géopostale"
-  * coordonneesTelecom 0..* ContactPoint "Coordonnées télécom"
-  * cadreExercice 0..1 CodeableConcept "Cadre d'exercice"
+  * structure 0..1 FRLMOrganisation "Structure" 
+  
