@@ -7,7 +7,7 @@ Description: """Résultat d'examens de biologie / élement clinique pertinent"""
 Characteristics: #can-be-target
 
 * codeIdentification 0..1 CodeableConcept "Code d'identification de l'analyse ou de l'observation"
-* statut 1..1 code "Niveau de complétude"
+* header.statut ^short = "Niveau de complétude"
 * valeurResultat[x] 0..1 CodeableConcept or string or Quantity  or Ratio or Range  "Valeur du résultat"
 * interpretation 0..1 CodeableConcept "Code d'interprétation"
 * methode 0..1 CodeableConcept "Méthode ou technique employée"

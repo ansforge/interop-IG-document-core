@@ -7,7 +7,6 @@ Description: """observation"""
 Characteristics: #can-be-target
 
 * code 1..1 CodeableConcept "Code de l'observation"
-* status 1..1 code "Statut de l'observation"
 * observationDate 0..1 dateTime "Date de l'observation"
 //* observationNombreRenouvellements 0..1 Range "Nombre de renouvellements possibles" 
 * result[x] 0..* CodeableConcept or string or Quantity  or Ratio or Range "Valeur de l'observation"

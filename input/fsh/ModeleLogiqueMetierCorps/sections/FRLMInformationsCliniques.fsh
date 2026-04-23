@@ -13,6 +13,6 @@ Characteristics: #can-be-target
   * contreIndications 0..1 FRLMObservation "Observation"
   * probleme 0..* FRLMCondition "Problème"
   * dispositifMedical 0..* FRLMDeviceUse "Dispositif médical"
-  * statutGrossesse 0..1 FRLMObservationPregnancy "Statut grossesse"
+  * statutGrossesse 0..1 FRLMPregnancyObservation "Statut grossesse"
   * administrationProduitDeSante 0..* FRLMDICOMMedicationAdministration "Produits de santé administré avant l'examen d'imagerie"
   * sexeClinique 0..* CodeableConcept "Sexe Clinique"

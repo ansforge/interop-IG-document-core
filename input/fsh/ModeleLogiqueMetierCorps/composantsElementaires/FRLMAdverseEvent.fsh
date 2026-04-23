@@ -7,7 +7,6 @@ Description: """Entrée Effet indésirable"""
 Characteristics: #can-be-target
 
 * typeEffetIndesirable 1..1 CodeableConcept "Code de l'entrée. Type d'effet indésirable"
-* statut 1..1 code "Statut de l'entrée" 
 * valeur 1..1 CodeableConcept "Valeur de l'observation"
 * traitement 1..1 FRLMMedicationAdministration "Médicament, substance incriminée, posologie"
 * probleme 0..* FRLMCondition "Réaction observée"

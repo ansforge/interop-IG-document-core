@@ -121,6 +121,7 @@ groups:
       - FRLMDocumentDeReference
       - FRLMConsentement
       - FRLMPriseEncharge
+      - FRLMLocation
 
   Modèles logiques métier des sections d'un document: 
     name: Modèles logiques métier des sections d'un document
@@ -156,9 +157,8 @@ groups:
       - StructureDefinition/fr-lm-fonctions-physiques
       - StructureDefinition/fr-lm-habitus-mode-de-vie
       - StructureDefinition/fr-lm-historique-des-actes
-      - StructureDefinition/fr-lm-historique-des-grossesses
+      - StructureDefinition/fr-lm-section-pregnancy-history
       - StructureDefinition/fr-lm-plan-soins
-      - StructureDefinition/fr-lm-points-de-vigilances-non-code
       - StructureDefinition/fr-lm-prescription-dispositifs-medicaux
       - StructureDefinition/fr-lm-prescription-medicaments
       - StructureDefinition/fr-lm-problemes-actifs
@@ -176,6 +176,7 @@ groups:
       - StructureDefinition/fr-lm-traitements-administres
       - StructureDefinition/fr-lm-vaccinations
       - StructureDefinition/fr-lm-resultats-examen-imagerie
+      - StructureDefinition/fr-lm-alerts
 
   #Entrées et éléments transversaux
   Modèles logiques métier des composants élémentaires: 
@@ -200,18 +201,19 @@ groups:
       - StructureDefinition/fr-lm-observation-related-to-prevention
       - StructureDefinition/fr-lm-observation-work-related-accident
       - StructureDefinition/fr-lm-observation-long-term-condition
-      - StructureDefinition/fr-lm-assessment
+      - StructureDefinition/fr-lm-observation-assessment
       - StructureDefinition/fr-lm-assessments
       - StructureDefinition/fr-lm-evolution-adverse-event
       - StructureDefinition/fr-lm-severity-adverse-event
       - StructureDefinition/fr-lm-observation-social-history
-      - StructureDefinition/fr-lm-historique-grossesse
       - StructureDefinition/fr-lm-hors-amm
       - StructureDefinition/fr-lm-image-illustrative
       - StructureDefinition/fr-lm-imputabilite-effet-indesirable
       - StructureDefinition/fr-lm-birth-event
       - StructureDefinition/fr-lm-non-remboursable
-      - StructureDefinition/fr-lm-observation-pregnancy
+      - StructureDefinition/fr-lm-pregnancy-observation
+      - StructureDefinition/fr-lm-pregnancy-status
+      - StructureDefinition/fr-lm-pregnancy-history
       - StructureDefinition/fr-lm-medication
       - StructureDefinition/fr-lm-dose-number
       - StructureDefinition/fr-lm-resultats-entree

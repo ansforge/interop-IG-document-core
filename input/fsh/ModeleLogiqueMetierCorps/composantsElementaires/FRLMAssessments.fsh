@@ -6,5 +6,4 @@ Description: """Entrée Groupe de questionnaires d'évalutation"""
 Characteristics: #can-be-target
 
 * code 1..1 CodeableConcept "Code de l'entrée"
-* statut 1..1 code "Statut de l'entrée" 
-* evaluation 1..* FRLMAssessment "Évaluation"
+* evaluation 1..* FRLMObservationAssessment "Évaluation"

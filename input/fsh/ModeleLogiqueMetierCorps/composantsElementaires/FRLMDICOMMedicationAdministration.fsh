@@ -5,7 +5,6 @@ Title: "Logical model - FR LM DICOM Medication Administration"
 Description: """Entrée Administration de produit de santé"""
 Characteristics: #can-be-target
 
-* statut 1..1 code "Statut de l'entrée"
 * voieAdministration 0..1 CodeableConcept "Voie d'administration" 
   * ^binding.description = "EDQM (0.4.0.127.0.16.1.1.2.1)"
 * dose 0..1 Quantity "Dose à administrer"

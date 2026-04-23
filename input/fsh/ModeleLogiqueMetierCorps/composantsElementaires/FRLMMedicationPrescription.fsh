@@ -5,7 +5,6 @@ Title: "Logical model - FR LM Medication Prescription"
 Description: """Entrée Traitement prescrit"""
 Characteristics: #can-be-target
 
-* status 1..1 code "Statut de l'entrée"
 * medication 1..1 FRLMMedication "Produit de santé"
 * indication[x] 0..* CodeableConcept or string "Motif du traitement"
 * intendedUseType 0..1 CodeableConcept "Objet de la prescription - prophylaxie, traitement, anesthésie, etc"

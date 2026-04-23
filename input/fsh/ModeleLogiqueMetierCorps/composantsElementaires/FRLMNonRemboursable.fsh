@@ -6,6 +6,5 @@ Description: """Entrée Non remboursable"""
 Characteristics: #can-be-target
 
 * code 1..1 CodeableConcept "Type de l'entrée"
-* status 1..1 code "Statut de l'entrée" 
 * status = #completed
 * result 1..1 CodeableConcept "Résultat de l'observation"

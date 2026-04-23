@@ -6,6 +6,4 @@ Description: """Entrée Observation en rapport avec la prevention"""
 Characteristics: #can-be-target
 
 * code 1..1 CodeableConcept "Catégorie de l'entrée"
-* statut 1..1 code "Statut de l'entrée" 
-* statut = #completed
 * resultat 1..1 CodeableConcept "Résultat de l'observation"

@@ -8,4 +8,4 @@ Characteristics: #can-be-target
 * sousSection 0..0
 * entree 
   * groupeQuestionnairesEvaluation 0..* FRLMAssessments "Groupe de questionnaires d'évalutation"
-  * evalutation 0..* FRLMAssessment "Entrée Evalutation"
+  * evalutation 0..* FRLMObservationAssessment "Entrée Evalutation"

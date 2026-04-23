@@ -5,7 +5,7 @@ Title: "Logical model - FR LM Device use"
 Description: """Entrée Dispositif médical usage"""
 Characteristics: #can-be-target
 
-* status 1..1 CodeableConcept	"Status de l'utilisation du DM (ex active, completed, etc)."
+* usageStatus 1..1 CodeableConcept	"Status de l'utilisation du DM (ex active, completed, etc)."
   * ^binding.valueSet = "https://hl7.org/fhir/R4/valueset-device-statement-status.html"
 * periodOfUse 1..1 period	"Période d'utilisation ou de présence chez le patient"
   * onsetDate 0..1	dateTime "Date de début"

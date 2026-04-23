@@ -7,7 +7,6 @@ Description: """Isolat microbiologique"""
 Characteristics: #can-be-target
 
 * codeIsolat 0..1 CodeableConcept "Code isolat"
-* statut 1..1 code "Niveau de complétude"
 * header
   * date ^short = "Date et heure des résultats"
 * choice[x] 0..1 FRLMSujetNonHumain or FRLMPatientSujetNonHumain "Sujet non humain ou Patient avec sujet non humain"

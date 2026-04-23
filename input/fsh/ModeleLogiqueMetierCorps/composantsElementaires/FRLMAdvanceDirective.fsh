@@ -2,12 +2,13 @@ Logical: FRLMAdvanceDirective
 Id: fr-lm-advance-directive
 Parent: FRLMEntry
 Title: "Logical model - FR LM Advance Directive"
-Description: """Entrée Directive anticipée"""
+Description: """Entree Directive anticipee"""
 Characteristics: #can-be-target
 
-* code 1..1  CodeableConcept "Type de la directive anticipée"
-* statut 1..1 code "Statut de l'observation"
-* statut = #completed
-* valeurDirectiveIdentifiee 0..1 boolean "Procédure autorisée ou pas"
-* reference 0..1 BackboneElement "Référence à un document externe"
-* documentEncapsule 0..1 FRLMAttachement "Document encapsulé en B64"
+* date 1..1 dateTime "Date de la directive anticipée"
+* category 1..1 CodeableConcept "Type de directive"
+  * ^binding.description = "jdv-type-directive-anticipee-cisis (1.2.250.1.213.1.1.5.136)"
+  * ^binding.valueSet = "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-directive-anticipee-cisis"
+* value 1..1 boolean "Procédure autorisée ou pas"
+* note 0..1 string "Commentaire"
+* attachment 0..1 FRLMAttachement "Piece jointe associee a la directive"
