@@ -6070,6 +6070,42 @@ Inclut LOINC, ICF, et permet d’autres systèmes si aucun code approprié n’e
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="AllergyIntolerance-example-allergy-intolerance-data-absent-reason.html"
+                  title="AllergyIntolerance/example-allergy-intolerance-data-absent-reason">Example - AllergyIntolerance avec Data Absent Reason</a>
+            </td>
+            <td>
+<p>Exemple illustrant l’usage de l’extension <code class="language-plaintext highlighter-rouge">data-absent-reason</code> sur les éléments
+obligatoires de la ressource AllergyIntolerance dont la valeur est inconnue ou
+temporairement indisponible.</p>
+
+<p>Cas d’usage illustrés :</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">code</code> : l’agent allergique est inconnu → code <code class="language-plaintext highlighter-rouge">unknown</code></li>
+  <li><code class="language-plaintext highlighter-rouge">reaction.manifestation</code> : la manifestation clinique est inconnue → code <code class="language-plaintext highlighter-rouge">unknown</code></li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Procedure-example-procedure-data-absent-reason.html"
+                  title="Procedure/example-procedure-data-absent-reason">Example - Procedure avec Data Absent Reason</a>
+            </td>
+            <td>
+<p>Exemple illustrant l’usage de l’extension <code class="language-plaintext highlighter-rouge">data-absent-reason</code> sur les éléments
+obligatoires de la ressource Procedure dont la valeur est inconnue ou temporairement indisponible.</p>
+
+<p>Cas d’usage illustrés :</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">code</code> : l’acte est inconnu → extension <code class="language-plaintext highlighter-rouge">data-absent-reason</code> avec code <code class="language-plaintext highlighter-rouge">unknown</code>
+(liaison extensible → l’extension peut se substituer au codage)</li>
+  <li><code class="language-plaintext highlighter-rouge">performedDateTime</code> : la date de l’acte est temporairement indisponible → extension <code class="language-plaintext highlighter-rouge">data-absent-reason</code> avec code <code class="language-plaintext highlighter-rouge">temp-unknown</code></li>
+  <li><code class="language-plaintext highlighter-rouge">status</code> : le statut est inconnu → code d’exception <code class="language-plaintext highlighter-rouge">unknown</code> du ValueSet <code class="language-plaintext highlighter-rouge">event-status</code>
+(liaison required → on utilise directement le code d’exception du ValueSet, pas l’extension)</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="Binary-IPS-FR-2024.01.html" title="Binary/IPS-FR-2024.01">IPS-FR</a>
             </td>
             <td>
@@ -6166,7 +6202,7 @@ Inclut LOINC, ICF, et permet d’autres systèmes si aucun code approprié n’e
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.document.fr.core#0.1.0-snapshot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Apr 20, 2026 15:11+0000">2026-04-20</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.document.fr.core#0.1.0-snapshot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 23, 2026 15:25+0000">2026-04-23</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |

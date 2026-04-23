@@ -669,3 +669,8 @@
 ### ImplementationGuides
 
 * [ANS IG document core](index.md)
+
+### Examples
+
+* [example-allergy-intolerance-data-absent-reason (AllergyIntolerance)](AllergyIntolerance-example-allergy-intolerance-data-absent-reason.md)
+* [example-procedure-data-absent-reason (Procedure)](Procedure-example-procedure-data-absent-reason.md)

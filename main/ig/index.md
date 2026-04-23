@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ImplementationGuide/ans.document.fr.core | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-20 | *Computable Name*:FRDocumentCore |
+| Draft as of 2026-04-23 | *Computable Name*:FRDocumentCore |
 
  **Guide de mise en œuvre des documents dématérialisés produits en France dans le domaine sanitaire et le domaine médico-social.**
  Implementation guides of dematerialized health and medico-social documents produced in France. 
@@ -107,6 +107,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
 
 * This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: [https://terminology.hl7.org/license.html](https://terminology.hl7.org/license.html)
 
+* [AllergyIntolerance Clinical Status Codes](http://terminology.hl7.org/7.1.0/CodeSystem-allergyintolerance-clinical.html): [AllergyIntolerance/example-allergy-intolerance-data-absent-reason](AllergyIntolerance-example-allergy-intolerance-data-absent-reason.md)
+* [AllergyIntolerance Verification Status](http://terminology.hl7.org/7.1.0/CodeSystem-allergyintolerance-verification.html): [AllergyIntolerance/example-allergy-intolerance-data-absent-reason](AllergyIntolerance-example-allergy-intolerance-data-absent-reason.md)
 * [ConditionVerificationStatus](http://terminology.hl7.org/7.1.0/CodeSystem-condition-ver-status.html): [FRCDACertitude](StructureDefinition-fr-cda-certitude.md)
 * [identifierType](http://terminology.hl7.org/7.1.0/CodeSystem-v2-0203.html): [FRPatientDocument](StructureDefinition-fr-patient-document.md) and [FRPatientINSDocument](StructureDefinition-fr-patient-ins-document.md)
 * [specimenType](http://terminology.hl7.org/7.1.0/CodeSystem-v2-0487.html): [FRCDAPrelevement](StructureDefinition-fr-cda-prelevement.md) and [FRSpecimenDocument](StructureDefinition-fr-specimen-document.md)
@@ -156,7 +158,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
   "name" : "FRDocumentCore",
   "title" : "ANS IG document core",
   "status" : "draft",
-  "date" : "2026-04-20T15:11:12+00:00",
+  "date" : "2026-04-23T15:25:59+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -3689,6 +3691,30 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "eP-MED-DM_2024.01_PosoStruct",
       "description" : "ePrescription de médicaments et/ou de dispositifs médicaux (eP-MED-DM_2024.01)",
       "exampleCanonical" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-core-clinical-document"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "AllergyIntolerance"
+      }],
+      "reference" : {
+        "reference" : "AllergyIntolerance/example-allergy-intolerance-data-absent-reason"
+      },
+      "name" : "Example - AllergyIntolerance avec Data Absent Reason",
+      "description" : "Exemple illustrant l'usage de l'extension `data-absent-reason` sur les éléments\nobligatoires de la ressource AllergyIntolerance dont la valeur est inconnue ou\ntemporairement indisponible.\n\nCas d'usage illustrés :\n- `code` : l'agent allergique est inconnu → code `unknown`\n- `reaction.manifestation` : la manifestation clinique est inconnue → code `unknown`",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-allergie-intolerance-document"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Procedure"
+      }],
+      "reference" : {
+        "reference" : "Procedure/example-procedure-data-absent-reason"
+      },
+      "name" : "Example - Procedure avec Data Absent Reason",
+      "description" : "Exemple illustrant l'usage de l'extension `data-absent-reason` sur les éléments\nobligatoires de la ressource Procedure dont la valeur est inconnue ou temporairement indisponible.\n\nCas d'usage illustrés :\n- `code` : l'acte est inconnu → extension `data-absent-reason` avec code `unknown`\n  (liaison extensible → l'extension peut se substituer au codage)\n- `performedDateTime` : la date de l'acte est temporairement indisponible → extension `data-absent-reason` avec code `temp-unknown`\n- `status` : le statut est inconnu → code d'exception `unknown` du ValueSet `event-status`\n  (liaison required → on utilise directement le code d'exception du ValueSet, pas l'extension)",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-procedure-document"
     },
     {
       "extension" : [{

@@ -842,6 +842,13 @@ These are example instances that show what data produced and consumed by systems
 | | |
 | :--- | :--- |
 | [BIO-CR-BIO_2024.01_Microbiologie_V1](Binary-BIO-CR-BIO-2024.01-Microbiologie-V1.md) | Compte-rendu d’examens de biologie médicale - exemple Microbiologie (BIO-CR-BIO-2024.01) |
+| [Example - AllergyIntolerance avec Data Absent Reason](AllergyIntolerance-example-allergy-intolerance-data-absent-reason.md) | Exemple illustrant l’usage de l’extension `data-absent-reason` sur les éléments obligatoires de la ressource AllergyIntolerance dont la valeur est inconnue ou temporairement indisponible.Cas d’usage illustrés :* `code` : l’agent allergique est inconnu → code `unknown`
+* `reaction.manifestation` : la manifestation clinique est inconnue → code `unknown`
+ |
+| [Example - Procedure avec Data Absent Reason](Procedure-example-procedure-data-absent-reason.md) | Exemple illustrant l’usage de l’extension `data-absent-reason` sur les éléments obligatoires de la ressource Procedure dont la valeur est inconnue ou temporairement indisponible.Cas d’usage illustrés :* `code` : l’acte est inconnu → extension `data-absent-reason` avec code `unknown` (liaison extensible → l’extension peut se substituer au codage)
+* `performedDateTime` : la date de l’acte est temporairement indisponible → extension `data-absent-reason` avec code `temp-unknown`
+* `status` : le statut est inconnu → code d’exception `unknown` du ValueSet `event-status` (liaison required → on utilise directement le code d’exception du ValueSet, pas l’extension)
+ |
 | [IPS-FR](Binary-IPS-FR-2024.01.md) | Volet International Patient Summary - France (IPS-FR_2024.01) |
 | [LDL-SES_2022.01](Binary-LDL-SES-2022.01.md) | Document Lettre de liaison à la sortie d’un établissement de soins (LDL-SES_2022.01) |
 | [eDISP-MED-2024.01](Binary-eDISP-MED-2024.01.md) | eDispensation de médicaments (eDISP-MED-2024.01) |

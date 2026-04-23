@@ -576,8 +576,12 @@
       "MedicationRequest.dispenseRequest"
     ],
     "http://hl7.org/fhir/StructureDefinition/data-absent-reason": [
+      "AllergyIntolerance.code",
+      "AllergyIntolerance.reaction.manifestation",
       "DocumentReference.type",
-      "Immunization.occurrence[x]"
+      "Immunization.occurrence[x]",
+      "Procedure.code",
+      "Procedure.performedDateTime"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"

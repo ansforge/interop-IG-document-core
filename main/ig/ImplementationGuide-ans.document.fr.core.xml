@@ -10,7 +10,7 @@
   <name value="FRDocumentCore"/>
   <title value="ANS IG document core"/>
   <status value="draft"/>
-  <date value="2026-04-20T15:11:12+00:00"/>
+  <date value="2026-04-23T15:25:59+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -3140,6 +3140,28 @@
       <name value="eP-MED-DM_2024.01_PosoStruct"/>
       <description value="ePrescription de médicaments et/ou de dispositifs médicaux (eP-MED-DM_2024.01)"/>
       <exampleCanonical value="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-core-clinical-document"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/example-allergy-intolerance-data-absent-reason"/>
+      </reference>
+      <name value="Example - AllergyIntolerance avec Data Absent Reason"/>
+      <description value="Exemple illustrant l'usage de l'extension `data-absent-reason` sur les éléments&#xA;obligatoires de la ressource AllergyIntolerance dont la valeur est inconnue ou&#xA;temporairement indisponible.&#xA;&#xA;Cas d'usage illustrés :&#xA;- `code` : l'agent allergique est inconnu → code `unknown`&#xA;- `reaction.manifestation` : la manifestation clinique est inconnue → code `unknown`"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-allergie-intolerance-document"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/example-procedure-data-absent-reason"/>
+      </reference>
+      <name value="Example - Procedure avec Data Absent Reason"/>
+      <description value="Exemple illustrant l'usage de l'extension `data-absent-reason` sur les éléments&#xA;obligatoires de la ressource Procedure dont la valeur est inconnue ou temporairement indisponible.&#xA;&#xA;Cas d'usage illustrés :&#xA;- `code` : l'acte est inconnu → extension `data-absent-reason` avec code `unknown`&#xA;  (liaison extensible → l'extension peut se substituer au codage)&#xA;- `performedDateTime` : la date de l'acte est temporairement indisponible → extension `data-absent-reason` avec code `temp-unknown`&#xA;- `status` : le statut est inconnu → code d'exception `unknown` du ValueSet `event-status`&#xA;  (liaison required → on utilise directement le code d'exception du ValueSet, pas l'extension)"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-procedure-document"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
