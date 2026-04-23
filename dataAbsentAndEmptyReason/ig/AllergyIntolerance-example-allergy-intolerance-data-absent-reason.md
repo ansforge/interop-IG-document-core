@@ -8,7 +8,7 @@
 
 Profil: [AllergyIntolerance - FR Allergy and intolerance Document](StructureDefinition-fr-allergie-intolerance-document.md)
 
-**identifier**: urn:uuid:7f0e9c1a-3b2d-4e5f-8a6b-1c2d3e4f5a6b
+**identifier**: [Uniform Resource Identifier (URI)](http://terminology.hl7.org/6.3.0/NamingSystem-uri.html)/urn:uuid:7f0e9c1a-3b2d-4e5f-8a6b-1c2d3e4f5a6b
 
 **clinicalStatus**: Active
 
@@ -39,6 +39,7 @@ Profil: [AllergyIntolerance - FR Allergy and intolerance Document](StructureDefi
     "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-allergie-intolerance-document"]
   },
   "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
     "value" : "urn:uuid:7f0e9c1a-3b2d-4e5f-8a6b-1c2d3e4f5a6b"
   }],
   "clinicalStatus" : {
