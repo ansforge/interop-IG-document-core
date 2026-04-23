@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRObservationSocialHistoryLMCDAFHIR | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-21 | *Computable Name*: |
+| Draft as of 2026-04-23 | *Computable Name*: |
 
  
 Mapping des éléments du modèle métier FRLMHabitusModeDeVieEntree vers le profil CDA FRCDAHabitusModeDeVie, puis vers le profil FHIR FRObservationSocialHistoryDocument. 
@@ -26,7 +26,7 @@ Mapping des éléments du modèle métier FRLMHabitusModeDeVieEntree vers le pro
   "version" : "0.1.0-snapshot",
   "title" : "Mapping Métier/CDA/FHIR : \"Habitus Mode de vie\"",
   "status" : "draft",
-  "date" : "2026-04-21T21:04:33+00:00",
+  "date" : "2026-04-23T08:11:47+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

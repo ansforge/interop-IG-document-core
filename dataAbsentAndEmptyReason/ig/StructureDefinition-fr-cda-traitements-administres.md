@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-traitements-administres | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-21 | *Computable Name*:FRCDASectionTraitementsAdministres |
+| Draft as of 2026-04-23 | *Computable Name*:FRCDASectionTraitementsAdministres |
 
  
 IHE-PCC - Medications-Administered. La section ‘Traitements administrés’ contient une description narrative des médicaments administrés au patient et doit inclure des entrées ‘Traitement’. 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-traitements-a
   "name" : "FRCDASectionTraitementsAdministres",
   "title" : "CDA - FR Traitements administres",
   "status" : "draft",
-  "date" : "2026-04-21T21:04:33+00:00",
+  "date" : "2026-04-23T08:11:47+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

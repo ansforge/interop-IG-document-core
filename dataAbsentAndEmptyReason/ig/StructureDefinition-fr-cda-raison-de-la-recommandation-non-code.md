@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-raison-de-la-recommandation-non-code | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-21 | *Computable Name*:FRCDASectionRaisonDeLaRecommandationNonCode |
+| Draft as of 2026-04-23 | *Computable Name*:FRCDASectionRaisonDeLaRecommandationNonCode |
 
  
 IHE-PCC Reason-For-Referral. Cette section permet d’indiquer, sous forme textuelle uniquement, la raison pour laquelle le patient est adressé à l’hôpital, à une consultation, etc. 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-raison-de-la-
   "name" : "FRCDASectionRaisonDeLaRecommandationNonCode",
   "title" : "CDA - FR Raison de la recommandation non code",
   "status" : "draft",
-  "date" : "2026-04-21T21:04:33+00:00",
+  "date" : "2026-04-23T08:11:47+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

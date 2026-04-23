@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "FRDocumentCore"] ; # 
   fhir:title [ fhir:v "ANS IG document core"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-04-21T21:04:33+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-04-23T08:11:47+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -1476,10 +1476,6 @@
      ] [
        fhir:id [ fhir:v "Mapping ML-CDA-FHIR des composants élémentaires d'un document" ] ;
        fhir:name [ fhir:v "Concept Maps des composants élémentaires d'un Document" ]
-     ] [
-       fhir:id [ fhir:v "Exemples Data Absent Reason" ] ;
-       fhir:name [ fhir:v "Exemples - Gestion de l'absence de données (Data Absent Reason)" ] ;
-       fhir:description [ fhir:v "Instances d'exemple illustrant l'usage de l'extension data-absent-reason sur les éléments obligatoires des profils FHIR corps du document." ]
      ] ) ;
      fhir:resource ( [
        fhir:extension ( [
@@ -6251,8 +6247,7 @@
          a fhir:Canonical ;
          fhir:v "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-allergie-intolerance-document"^^xsd:anyURI ;
          fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-allergie-intolerance-document>
-       ] ;
-       fhir:groupingId [ fhir:v "Exemples Data Absent Reason" ]
+       ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -6274,8 +6269,7 @@
          a fhir:Canonical ;
          fhir:v "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-procedure-document"^^xsd:anyURI ;
          fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-procedure-document>
-       ] ;
-       fhir:groupingId [ fhir:v "Exemples Data Absent Reason" ]
+       ]
      ] [
        fhir:extension ( [
          fhir:url [

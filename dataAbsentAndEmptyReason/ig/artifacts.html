@@ -301,25 +301,22 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#14">Concept Maps des composants élémentaires d'un Document</a>
       </li>
       <li>
-         <a href="#15">Exemples - Gestion de l'absence de données (Data Absent Reason)</a>
+         <a href="#15">Structures: Logical Models</a>
       </li>
       <li>
-         <a href="#16">Structures: Logical Models</a>
+         <a href="#16">Structures: Extension Definitions</a>
       </li>
       <li>
-         <a href="#17">Structures: Extension Definitions</a>
+         <a href="#17">Terminology: Value Sets</a>
       </li>
       <li>
-         <a href="#18">Terminology: Value Sets</a>
+         <a href="#18">Terminology: Concept Maps</a>
       </li>
       <li>
-         <a href="#19">Terminology: Concept Maps</a>
+         <a href="#19">Example: Example Instances</a>
       </li>
       <li>
-         <a href="#20">Example: Example Instances</a>
-      </li>
-      <li>
-         <a href="#21">Other</a>
+         <a href="#20">Other</a>
       </li>
    </ul>
 </div>
@@ -5761,50 +5758,6 @@ profil CDA FRCDADispositifMedical, puis vers le profil FHIR FRDeviceUseStatement
       </tbody>
    </table>
    <a name="15"> </a>
-   <h3>Exemples - Gestion de l'absence de données (Data Absent Reason) </h3>
-    <p>Instances d’exemple illustrant l’usage de l’extension data-absent-reason sur les éléments obligatoires des profils FHIR corps du document.</p>
-<table class="grid">
-      <col style="width:20%"/>
-      <tbody>
-         <tr>
-            <td style="column-width:30%">
-               <a href="AllergyIntolerance-example-allergy-intolerance-data-absent-reason.html"
-                  title="AllergyIntolerance/example-allergy-intolerance-data-absent-reason">Example - AllergyIntolerance avec Data Absent Reason</a>
-            </td>
-            <td>
-<p>Exemple illustrant l’usage de l’extension <code class="language-plaintext highlighter-rouge">data-absent-reason</code> sur les éléments
-obligatoires de la ressource AllergyIntolerance dont la valeur est inconnue ou
-temporairement indisponible.</p>
-
-<p>Cas d’usage illustrés :</p>
-<ul>
-  <li><code class="language-plaintext highlighter-rouge">code</code> : l’agent allergique est inconnu → code <code class="language-plaintext highlighter-rouge">unknown</code></li>
-  <li><code class="language-plaintext highlighter-rouge">reaction.manifestation</code> : la manifestation clinique est inconnue → code <code class="language-plaintext highlighter-rouge">unknown</code></li>
-</ul>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Procedure-example-procedure-data-absent-reason.html"
-                  title="Procedure/example-procedure-data-absent-reason">Example - Procedure avec Data Absent Reason</a>
-            </td>
-            <td>
-<p>Exemple illustrant l’usage de l’extension <code class="language-plaintext highlighter-rouge">data-absent-reason</code> sur les éléments
-obligatoires de la ressource Procedure dont la valeur est inconnue ou temporairement indisponible.</p>
-
-<p>Cas d’usage illustrés :</p>
-<ul>
-  <li><code class="language-plaintext highlighter-rouge">code</code> : l’acte est inconnu → extension <code class="language-plaintext highlighter-rouge">data-absent-reason</code> avec code <code class="language-plaintext highlighter-rouge">unknown</code>
-(liaison extensible → l’extension peut se substituer au codage)</li>
-  <li><code class="language-plaintext highlighter-rouge">performedDateTime</code> : la date de l’acte est temporairement indisponible → extension <code class="language-plaintext highlighter-rouge">data-absent-reason</code> avec code <code class="language-plaintext highlighter-rouge">temp-unknown</code></li>
-  <li><code class="language-plaintext highlighter-rouge">status</code> : le statut est inconnu → code d’exception <code class="language-plaintext highlighter-rouge">unknown</code> du ValueSet <code class="language-plaintext highlighter-rouge">event-status</code>
-(liaison required → on utilise directement le code d’exception du ValueSet, pas l’extension)</li>
-</ul>
-</td>
-         </tr>
-      </tbody>
-   </table>
-   <a name="16"> </a>
    <h3>Structures: Logical Models </h3>
     <p>These define data models that represent the domain covered by this implementation guide in more business-friendly terms than the underlying FHIR resources.</p>
 <table class="grid">
@@ -5866,7 +5819,7 @@ obligatoires de la ressource Procedure dont la valeur est inconnue ou temporaire
          </tr>
       </tbody>
    </table>
-   <a name="17"> </a>
+   <a name="16"> </a>
    <h3>Structures: Extension Definitions </h3>
     <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -5901,7 +5854,7 @@ obligatoires de la ressource Procedure dont la valeur est inconnue ou temporaire
          </tr>
       </tbody>
    </table>
-   <a name="18"> </a>
+   <a name="17"> </a>
    <h3>Terminology: Value Sets </h3>
     <p>These define sets of codes used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -6074,7 +6027,7 @@ Inclut LOINC, ICF, et permet d’autres systèmes si aucun code approprié n’e
          </tr>
       </tbody>
    </table>
-   <a name="19"> </a>
+   <a name="18"> </a>
    <h3>Terminology: Concept Maps </h3>
     <p>These define transformations to convert between codes by systems conforming with this implementation guide.</p>
 <table class="grid">
@@ -6100,7 +6053,7 @@ Inclut LOINC, ICF, et permet d’autres systèmes si aucun code approprié n’e
          </tr>
       </tbody>
    </table>
-   <a name="20"> </a>
+   <a name="19"> </a>
    <h3>Example: Example Instances </h3>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
 <table class="grid">
@@ -6113,6 +6066,42 @@ Inclut LOINC, ICF, et permet d’autres systèmes si aucun code approprié n’e
             </td>
             <td>
 <p>Compte-rendu d’examens de biologie médicale - exemple Microbiologie (BIO-CR-BIO-2024.01)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="AllergyIntolerance-example-allergy-intolerance-data-absent-reason.html"
+                  title="AllergyIntolerance/example-allergy-intolerance-data-absent-reason">Example - AllergyIntolerance avec Data Absent Reason</a>
+            </td>
+            <td>
+<p>Exemple illustrant l’usage de l’extension <code class="language-plaintext highlighter-rouge">data-absent-reason</code> sur les éléments
+obligatoires de la ressource AllergyIntolerance dont la valeur est inconnue ou
+temporairement indisponible.</p>
+
+<p>Cas d’usage illustrés :</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">code</code> : l’agent allergique est inconnu → code <code class="language-plaintext highlighter-rouge">unknown</code></li>
+  <li><code class="language-plaintext highlighter-rouge">reaction.manifestation</code> : la manifestation clinique est inconnue → code <code class="language-plaintext highlighter-rouge">unknown</code></li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Procedure-example-procedure-data-absent-reason.html"
+                  title="Procedure/example-procedure-data-absent-reason">Example - Procedure avec Data Absent Reason</a>
+            </td>
+            <td>
+<p>Exemple illustrant l’usage de l’extension <code class="language-plaintext highlighter-rouge">data-absent-reason</code> sur les éléments
+obligatoires de la ressource Procedure dont la valeur est inconnue ou temporairement indisponible.</p>
+
+<p>Cas d’usage illustrés :</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">code</code> : l’acte est inconnu → extension <code class="language-plaintext highlighter-rouge">data-absent-reason</code> avec code <code class="language-plaintext highlighter-rouge">unknown</code>
+(liaison extensible → l’extension peut se substituer au codage)</li>
+  <li><code class="language-plaintext highlighter-rouge">performedDateTime</code> : la date de l’acte est temporairement indisponible → extension <code class="language-plaintext highlighter-rouge">data-absent-reason</code> avec code <code class="language-plaintext highlighter-rouge">temp-unknown</code></li>
+  <li><code class="language-plaintext highlighter-rouge">status</code> : le statut est inconnu → code d’exception <code class="language-plaintext highlighter-rouge">unknown</code> du ValueSet <code class="language-plaintext highlighter-rouge">event-status</code>
+(liaison required → on utilise directement le code d’exception du ValueSet, pas l’extension)</li>
+</ul>
 </td>
          </tr>
          <tr>
@@ -6159,7 +6148,7 @@ Inclut LOINC, ICF, et permet d’autres systèmes si aucun code approprié n’e
          </tr>
       </tbody>
    </table>
-   <a name="21"> </a>
+   <a name="20"> </a>
    <h3>Other </h3>
     <p>These are resources that are used within this implementation guide that do not fit into one of the other categories.</p>
 <table class="grid">
@@ -6213,7 +6202,7 @@ Inclut LOINC, ICF, et permet d’autres systèmes si aucun code approprié n’e
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.document.fr.core#0.1.0-snapshot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 21, 2026 21:04+0000">2026-04-21</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.document.fr.core#0.1.0-snapshot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 23, 2026 08:11+0000">2026-04-23</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |

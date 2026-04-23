@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-cadres-references | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-21 | *Computable Name*:FRCDADICOMCadresReferences |
+| Draft as of 2026-04-23 | *Computable Name*:FRCDADICOMCadresReferences |
 
  
 Entrée FR-DICOM-Cadres-references: DICOM Part 20 - Une observation d’images référencées contient une liste de valeurs de type entiers pour les images référencées d’une instance SOP d’images. 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-cadres-
   "name" : "FRCDADICOMCadresReferences",
   "title" : "CDA - FR DICOM Cadres de références",
   "status" : "draft",
-  "date" : "2026-04-21T21:04:33+00:00",
+  "date" : "2026-04-23T08:11:47+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

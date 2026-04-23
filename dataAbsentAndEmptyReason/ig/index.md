@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ImplementationGuide/ans.document.fr.core | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-21 | *Computable Name*:FRDocumentCore |
+| Draft as of 2026-04-23 | *Computable Name*:FRDocumentCore |
 
  **Guide de mise en œuvre des documents dématérialisés produits en France dans le domaine sanitaire et le domaine médico-social.**
  Implementation guides of dematerialized health and medico-social documents produced in France. 
@@ -158,7 +158,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
   "name" : "FRDocumentCore",
   "title" : "ANS IG document core",
   "status" : "draft",
-  "date" : "2026-04-21T21:04:33+00:00",
+  "date" : "2026-04-23T08:11:47+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -890,11 +890,6 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
     {
       "id" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document",
       "name" : "Concept Maps des composants élémentaires d'un Document"
-    },
-    {
-      "id" : "Exemples Data Absent Reason",
-      "name" : "Exemples - Gestion de l'absence de données (Data Absent Reason)",
-      "description" : "Instances d'exemple illustrant l'usage de l'extension data-absent-reason sur les éléments obligatoires des profils FHIR corps du document."
     }],
     "resource" : [{
       "extension" : [{
@@ -3707,8 +3702,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       },
       "name" : "Example - AllergyIntolerance avec Data Absent Reason",
       "description" : "Exemple illustrant l'usage de l'extension `data-absent-reason` sur les éléments\nobligatoires de la ressource AllergyIntolerance dont la valeur est inconnue ou\ntemporairement indisponible.\n\nCas d'usage illustrés :\n- `code` : l'agent allergique est inconnu → code `unknown`\n- `reaction.manifestation` : la manifestation clinique est inconnue → code `unknown`",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-allergie-intolerance-document",
-      "groupingId" : "Exemples Data Absent Reason"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-allergie-intolerance-document"
     },
     {
       "extension" : [{
@@ -3720,8 +3714,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       },
       "name" : "Example - Procedure avec Data Absent Reason",
       "description" : "Exemple illustrant l'usage de l'extension `data-absent-reason` sur les éléments\nobligatoires de la ressource Procedure dont la valeur est inconnue ou temporairement indisponible.\n\nCas d'usage illustrés :\n- `code` : l'acte est inconnu → extension `data-absent-reason` avec code `unknown`\n  (liaison extensible → l'extension peut se substituer au codage)\n- `performedDateTime` : la date de l'acte est temporairement indisponible → extension `data-absent-reason` avec code `temp-unknown`\n- `status` : le statut est inconnu → code d'exception `unknown` du ValueSet `event-status`\n  (liaison required → on utilise directement le code d'exception du ValueSet, pas l'extension)",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-procedure-document",
-      "groupingId" : "Exemples Data Absent Reason"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-procedure-document"
     },
     {
       "extension" : [{

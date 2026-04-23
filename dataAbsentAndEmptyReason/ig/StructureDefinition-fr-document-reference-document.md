@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-document-reference-document | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-21 | *Computable Name*:FRDocumentReferenceDocument |
+| Draft as of 2026-04-23 | *Computable Name*:FRDocumentReferenceDocument |
 
  
 FRDocumentReferenceDocument restreint pour les documents PDF. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-document-referenc
   "name" : "FRDocumentReferenceDocument",
   "title" : "DocumentReference - FR Document reference Document",
   "status" : "draft",
-  "date" : "2026-04-21T21:04:33+00:00",
+  "date" : "2026-04-23T08:11:47+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

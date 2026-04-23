@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-pregnancy-history-document | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-21 | *Computable Name*:FRPregnancyHistoryDocument |
+| Draft as of 2026-04-23 | *Computable Name*:FRPregnancyHistoryDocument |
 
  
 FRPregnancyHistoryDocument est une liste contenant soit un événement de naissance, soit une observation sur la grossesse, mais pas les deux. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-pregnancy-history
   "name" : "FRPregnancyHistoryDocument",
   "title" : "List - FR Pregnancy History Document",
   "status" : "draft",
-  "date" : "2026-04-21T21:04:33+00:00",
+  "date" : "2026-04-23T08:11:47+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
