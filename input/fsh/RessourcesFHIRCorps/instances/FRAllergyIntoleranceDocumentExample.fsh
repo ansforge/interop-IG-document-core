@@ -10,9 +10,8 @@ Cas d'usage illustrés :
 - `reaction.manifestation` : la manifestation clinique est inconnue → code `unknown`"""
 Usage: #example
 
-// L'identifiant de l'entrée
-* identifier[+].system = "urn:ietf:rfc:3986"
-* identifier[=].value = "urn:uuid:7f0e9c1a-3b2d-4e5f-8a6b-1c2d3e4f5a6b"
+// Identifiant de l'allergie ou de l'intolérance
+* identifier.value = "urn:uuid:7f0e9c1a-3b2d-4e5f-8a6b-1c2d3e4f5a6b"
 
 // Statut clinique et de vérification
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active "Active"
