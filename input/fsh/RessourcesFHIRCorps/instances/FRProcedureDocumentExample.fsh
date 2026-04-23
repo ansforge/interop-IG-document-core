@@ -13,7 +13,6 @@ Cas d'usage illustrés :
 Usage: #example
 
 // Identification
-* identifier[+].system = "urn:ietf:rfc:3986"
 * identifier[=].value = "urn:uuid:a1b2c3d4-e5f6-7890-abcd-ef1234567890"
 
 // Statut (liaison required)
