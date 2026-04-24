@@ -12,7 +12,7 @@ Characteristics: #can-be-target
   * procedureDatePeriod	0..1	dateTime "Date de fin de l'acte"
 * priority 0..1	CodeableConcept	"Priorité"
   * ^binding.description = "jdv-hl7-v3-ActPriority-cisis (2.16.840.1.113883.1.11.16866) ou autre JDV"
-* bodySite 0..1	CodeableConcept	"localisation anatomique"
+* bodySite 0..1	FRLMBodyStructure	"localisation anatomique"
   * ^binding.description = "SNOMED CT (2.16.840.1.113883.6.96)"
 * approachSiteCode 0..1	CodeableConcept	"Voie d’abord"
   * ^binding.description = "SNOMED CT (2.16.840.1.113883.6.96)"

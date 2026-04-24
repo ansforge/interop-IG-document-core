@@ -257,7 +257,7 @@ groups:
       - StructureDefinition/fr-lm-dosage-instructions
       - StructureDefinition/fr-lm-prescription-entree
       - StructureDefinition/fr-lm-laboratory-observation
-      - StructureDefinition/fr-lm-body-stucture	
+      - StructureDefinition/fr-lm-body-structure
   Ressources CDA entête:
     name: Eléments CDA
     #description: Profils CDA

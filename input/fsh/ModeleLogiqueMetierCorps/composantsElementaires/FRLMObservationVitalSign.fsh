@@ -11,7 +11,7 @@ Characteristics: #can-be-target
   * ^binding.valueSet = "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-signe-vital-cisis"
 * status 1..1 code "Statut de l'entrée"
 * method 0..1 CodeableConcept "Méthode utilisée pour l'observation"
-* bodySite 0..1 CodeableConcept "Site de l'observation"
+* bodySite 0..1 FRLMBodyStructure "Site de l'observation"
 * result 1..1 CodeableConcept "Résultat de l'observation effectuée: unité de la mesure codée à partir de UCUM (2.16.840.1.113883.6.8)"
 * interpretation 0..* CodeableConcept "Interprétation"
   * ^binding.description = "Valeur issue du jdv-hl7-v3-ObservationInterpretation-cisis (2.16.840.1.113883.1.113883.5.1170)"

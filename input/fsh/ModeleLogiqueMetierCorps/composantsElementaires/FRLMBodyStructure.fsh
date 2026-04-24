@@ -1,6 +1,6 @@
-Logical: FRLMBodyStucture
-Id: fr-lm-body-stucture	
-Title: "Logical model - FR LM Body Stucture"
+Logical: FRLMBodyStructure
+Id: fr-lm-body-structure	
+Title: "Logical model - FR LM Body Structure"
 Description: """Localisation anatomique"""
 Characteristics: #can-be-target
 

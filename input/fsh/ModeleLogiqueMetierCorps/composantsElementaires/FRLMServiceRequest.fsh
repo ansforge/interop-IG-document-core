@@ -8,7 +8,7 @@ Characteristics: #can-be-target
 * header.status ^short = "Statut de la demande"
 * code 1..1 CodeableConcept "Type de la demande"
 * quantity 0..1 Quantity "Quantité demandée"
-* bodySite 0..* FRLMBodyStucture "Localisation anatomique"
+* bodySite 0..* FRLMBodyStructure "Localisation anatomique"
 * reason[x] 0..* FRLMObservation or FRLMCondition or FRLMMedication or string "Motif de la demande"
 * priority 0..1 CodeableConcept "Priorité de la demande"
   * ^binding.description = "(preferred): HL7 Request Priority"

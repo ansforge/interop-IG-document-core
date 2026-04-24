@@ -14,7 +14,7 @@ Characteristics: #can-be-target
 * DeviceUsageStatus	1..1 CodeableConcept "Status de l'utilisation du DM (ex active, completed, etc)."
   * ^binding.valueSet = "https://hl7.org/fhir/R4/valueset-device-statement-status.html"
 * device 1..1 FRLMDevice "Dispositif médical"
-* bodySite 0..1	CodeableConcept	"localisation anatomique"
+* bodySite 0..1	FRLMBodyStructure	"localisation anatomique"
   * ^binding.description = "SNOMED CT (2.16.840.1.113883.6.96)"
 * reason[x]	0..* CodeableConcept or FRLMCondition or FRLMObservation or FRLMProcedure  "Motif de l'utilisation du dispositif médical.
  - motif codé (spécifique à un  contexte)

@@ -16,5 +16,5 @@ Characteristics: #can-be-target
     * ^binding.valueSet = "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-health-status-code-cisis"
   * contributedToDeath 0..1 boolean "problème cause du décès (O/N)"
   * onset[x] 0..1 dateTime or Period "Date du problème"
-  * bodySite 0..1 CodeableConcept "Site de l'observation"
+  * bodySite 0..1 FRLMBodyStructure "Site de l'observation"
 * note 0..1 string "Commentaire"

@@ -24,7 +24,7 @@ Characteristics: #can-be-target
     * ^binding.description = "NABM (1.2.250.1.215.300.2) ou 33882-2 [LOINC] Prélèvement"
   * device 0..* FRLMDeviceUse "Dispositif utilisé"
   * additive[x] 0..* CodeableConcept or FRLMDevice "Produit utilisé"
-  * bodySite 0..1 CodeableConcept "Localisation du prélèvement"
+  * bodySite 0..1 FRLMBodyStructure "Localisation du prélèvement"
 * receivedDate 1..1 dateTime "Date de réception de l'échantillon"
 * container 0..* Base "Contenant du prélèvement"
   * specimenQuantity 0..1 Quantity "Quantité de prélèvement dans le contenant"
