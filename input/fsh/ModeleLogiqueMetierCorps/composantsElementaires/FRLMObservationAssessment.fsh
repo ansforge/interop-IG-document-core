@@ -14,4 +14,4 @@ Characteristics: #can-be-target
 * result 1..1 CodeableConcept "Valeur de l’évaluation"
 * interpretation 0..* CodeableConcept "Interprétation"
 * note 0..1	string "Commentaire"
-* component	0..* FRLMAssessment "Composant de l'évaluation"
+* component	0..* FRLMObservationAssessment "Composant de l'évaluation"

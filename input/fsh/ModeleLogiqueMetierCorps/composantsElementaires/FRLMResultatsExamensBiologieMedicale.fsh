@@ -7,7 +7,7 @@ Description: """Resultats d'examens de biologie medicale"""
 Characteristics: #can-be-target
 
 * code 1..1 CodeableConcept "Code dont dérive le code de section"
-* header.statut ^short = "Niveau de complétude"
+* header.status ^short = "Niveau de complétude"
 * choice[x] 0..1 FRLMSujetNonHumain or FRLMPatientSujetNonHumain "Sujet non humain ou Patient avec sujet non humain"
 * laboratoireExecutant 0..* FRLMLaboratoireExecutant "Laboratoire sous-traitant."
 * prelevement 0..* FRLMSpecimen "Prélèvement"

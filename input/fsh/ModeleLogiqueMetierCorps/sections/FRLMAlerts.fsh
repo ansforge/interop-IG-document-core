@@ -7,4 +7,5 @@ Characteristics: #can-be-target
 
 * titreSection 1..1 
 * sousSection 0..0
-* entree 0..* FRLMAlert "Points de vigilance"
+* entree
+  * alert 0..* FRLMAlert "Points de vigilance"

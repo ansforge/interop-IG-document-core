@@ -106,10 +106,9 @@ groups:
     resources:
       - FRLMEnteteDocument	
       - FRLMPatientUsager
-      - FRLMPersonneStructure
-      - FRLMPersonneStructureAuteur
-      - FRLMSystemeStructureAuteur
-      - FRLMInformateur
+      - FRLMHealthProfessional
+      - FRLMOrganisation
+      - FRLMInformant
       - FRLMStructureConservation
       - FRLMDestinatairePrevu
       - FRLMResponsable
@@ -122,6 +121,8 @@ groups:
       - FRLMConsentement
       - FRLMPriseEncharge
       - FRLMLocation
+      - FRLMRelatedPerson
+      - FRLMHumanName
 
   Modèles logiques métier des sections d'un document: 
     name: Modèles logiques métier des sections d'un document
@@ -231,7 +232,6 @@ groups:
       - StructureDefinition/fr-lm-isolat-microbiologique
       - StructureDefinition/fr-lm-resultat-examens-biologie-element-clinique-pertinent
       - StructureDefinition/fr-lm-imaging-study
-      - StructureDefinition/fr-lm-autorisation-exposition
       - StructureDefinition/fr-lm-serie-imagerie
       - StructureDefinition/fr-lm-sop-instance
       - StructureDefinition/fr-lm-technique-imagerie
@@ -250,17 +250,14 @@ groups:
       - StructureDefinition/fr-lm-transfusion-accidents
       - StructureDefinition/fr-lm-patient-transfer
       - StructureDefinition/fr-lm-recherche-de-micro-organismes
-      - StructureDefinition/fr-lm-sujet
-      - StructureDefinition/fr-lm-participant-corps
       - StructureDefinition/fr-lm-sujet-non-humain
       - StructureDefinition/fr-lm-patient-sujet-non-humain
       - StructureDefinition/fr-lm-laboratoire-executant
-      - StructureDefinition/fr-lm-participant-apsr
-      - StructureDefinition/fr-lm-author-apsr
-      - StructureDefinition/fr-lm-informant-apsr
       - StructureDefinition/fr-lm-device
       - StructureDefinition/fr-lm-dosage-instructions
       - StructureDefinition/fr-lm-prescription-entree
+      - StructureDefinition/fr-lm-laboratory-observation
+      - StructureDefinition/fr-lm-body-stucture	
   Ressources CDA entête:
     name: Eléments CDA
     #description: Profils CDA
@@ -300,9 +297,60 @@ groups:
       - StructureDefinition/fr-cda-encompassing-encounter
       - StructureDefinition/fr-cda-encounter-participant
       - StructureDefinition/fr-cda-health-care-facility
-  
-  Ressources CDA corps:
-    name: Eléments CDA du corps
+
+  Ressources CDA corps des sections :
+    name: Eléments CDA du corps des sections
+    resources:
+      - StructureDefinition/fr-cda-allergies-et-hypersensibilites
+      - StructureDefinition/fr-cda-section-antecedents-familiaux
+      - StructureDefinition/fr-cda-antecedents-medicaux
+      - StructureDefinition/fr-cda-code-a-barres
+      - StructureDefinition/fr-cda-commentaire-non-code
+      - StructureDefinition/fr-cda-cr-bio-chapitre
+      - StructureDefinition/fr-cda-cr-bio-sous-chapitre
+      - StructureDefinition/fr-cda-dicom-acte-imagerie
+      - StructureDefinition/fr-cda-dicom-addendum
+      - StructureDefinition/fr-cda-dicom-complications
+      - StructureDefinition/fr-cda-dicom-conclusion
+      - StructureDefinition/fr-cda-dicom-demande-examen
+      - StructureDefinition/fr-cda-dicom-examen-comparatif
+      - StructureDefinition/fr-cda-dicom-exposition-aux-radiations
+      - StructureDefinition/fr-cda-dicom-historique-medical
+      - StructureDefinition/fr-cda-dicom-informations-cliniques
+      - StructureDefinition/fr-cda-dicom-object-catalog
+      - StructureDefinition/fr-cda-dicom-resultats
+      - StructureDefinition/fr-cda-dispensation-medicaments
+      - StructureDefinition/fr-cda-document-pdf-copie
+      - StructureDefinition/fr-cda-documents-ajoutes
+      - StructureDefinition/fr-cda-education-du-patient
+      - StructureDefinition/fr-cda-effets-indesirables
+      - StructureDefinition/fr-cda-facteurs-de-risque-professionnels-non-code
+      - StructureDefinition/fr-cda-fonctions-physiques
+      - StructureDefinition/fr-cda-section-habitus-mode-de-vie
+      - StructureDefinition/fr-cda-historique-des-actes
+      - StructureDefinition/fr-cda-historique-des-grossesses
+      - StructureDefinition/fr-cda-plan-de-soins
+      - StructureDefinition/fr-cda-points-de-vigilances-non-code
+      - StructureDefinition/fr-cda-prescription-dispositifs-medicaux
+      - StructureDefinition/fr-cda-prescription-medicaments
+      - StructureDefinition/fr-cda-problemes-actifs
+      - StructureDefinition/fr-cda-raison-de-la-recommandation
+      - StructureDefinition/fr-cda-raison-de-la-recommandation-non-code
+      - StructureDefinition/fr-cda-section-resultats
+      - StructureDefinition/fr-cda-resultats-de-biologie-de-seconde-intention
+      - StructureDefinition/fr-cda-resultats-evenements
+      - StructureDefinition/fr-cda-resultats-examens
+      - StructureDefinition/fr-cda-resultats-examens-non-code
+      - StructureDefinition/fr-cda-section-signes-vitaux
+      - StructureDefinition/fr-cda-statut-du-document
+      - StructureDefinition/fr-cda-statut-fonctionnel
+      - StructureDefinition/fr-cda-traitements
+      - StructureDefinition/fr-cda-traitements-administres
+      - StructureDefinition/fr-cda-traitements-a-la-sortie
+      - StructureDefinition/fr-cda-vaccinations
+
+  Ressources CDA corps des composants élémentaires :
+    name: Eléments CDA corps des composants élémentaires
     resources:
       - StructureDefinition/cisis-telecom
       - StructureDefinition/cisis-addr

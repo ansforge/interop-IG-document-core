@@ -11,5 +11,7 @@ Characteristics: #can-be-target
   * ^binding.description = "(preferred): BCP 47"
 * data 0..1 base64Binary "Contenu encode en base64"
 * url 0..1 uri "URL de la ressource"
-* size 0..1 integer64 "Taille de la piece jointe avant encodage en base64"
+/*le type integer64 n’existe pas il existe en R5
+* size 0..1 integer64 "Taille de la piece jointe avant encodage en base64"*/
+* size 0..1 unsignedInt "Taille de la piece jointe avant encodage en base64"
 * title 0..1 string "Titre de la piece jointe"
