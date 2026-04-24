@@ -115,7 +115,7 @@ Modèles de données métier représentant les concepts élémentaires, modélis
 | [Logical model - FR LM Assessment](StructureDefinition-fr-lm-observation-assessment.md) | Entrée Evaluation |
 | [Logical model - FR LM Assessments](StructureDefinition-fr-lm-assessments.md) | Entrée Groupe de questionnaires d’évalutation |
 | [Logical model - FR LM Attachement](StructureDefinition-fr-lm-attachement.md) | Entrée Document attaché |
-| [Logical model - FR LM Body Stucture](StructureDefinition-fr-lm-body-stucture.md) | Localisation anatomique |
+| [Logical model - FR LM Body Structure](StructureDefinition-fr-lm-body-structure.md) | Localisation anatomique |
 | [Logical model - FR LM Care Plan](StructureDefinition-fr-lm-care-plan.md) | Entrée Plan de soins |
 | [Logical model - FR LM Condition](StructureDefinition-fr-lm-condition.md) | Entrée Problème |
 | [Logical model - FR LM Device use](StructureDefinition-fr-lm-device-use.md) | Entrée Dispositif médical usage |

@@ -76,7 +76,7 @@ boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[
 ","Statut du problème","Statut du problème","","","","","","","","","",,"","Valeur issue du jdv-hl7-condition-clinical-cisis (2.16.840.1.113883.4.642.3.164)","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-condition-clinical-cisis","",,,,"fr-lm-condition.conditionStatus",0,1,"",""
 "fr-lm-condition.clinicalStatus","fr-lm-condition.clinicalStatus","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Statut clinique du patient","Statut clinique du patient","","","","","","","","","",,,,,"",,,,"fr-lm-condition.clinicalStatus",0,1,"",""
-"fr-lm-condition.bodySite","fr-lm-condition.bodySite","","","",0,*,"","","","CodeableConcept {[]} {[]}
+"fr-lm-condition.bodySite","fr-lm-condition.bodySite","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-body-structure {[]} {[]}
 ","Localisation anatomique","Localisation anatomique","","","","","","","","","",,,,,"",,,,"fr-lm-condition.bodySite",0,*,"",""
 "fr-lm-condition.stage","fr-lm-condition.stage","","","",0,*,"","","","CodeableConcept {[]} {[]}
 ","Stade/Grade. codeSystem spécifique au contexte.

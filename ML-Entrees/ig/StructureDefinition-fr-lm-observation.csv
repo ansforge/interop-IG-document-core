@@ -49,5 +49,5 @@ string {[]} {[]}Quantity {[]} {[]}Ratio {[]} {[]}Range {[]} {[]}","Valeur de l'o
 ","Interprétation","Interprétation","","","","","","","","","",,,,,"",,,,"fr-lm-observation.interpretation",0,1,"",""
 "fr-lm-observation.method","fr-lm-observation.method","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Méthode","Méthode","","","","","","","","","",,,,,"",,,,"fr-lm-observation.method",0,1,"",""
-"fr-lm-observation.location","fr-lm-observation.location","","","",0,1,"","","","CodeableConcept {[]} {[]}
+"fr-lm-observation.location","fr-lm-observation.location","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-body-structure {[]} {[]}
 ","Localisation anatomique","Localisation anatomique","","","","","","","","","",,"","SNOMED CT (2.16.840.1.113883.6.96)","","",,,,"fr-lm-observation.location",0,1,"",""

@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "FRDocumentCore"] ; # 
   fhir:title [ fhir:v "ANS IG document core"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-04-24T08:31:26+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-04-24T12:30:57+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -7508,10 +7508,10 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-body-stucture> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-lm-body-stucture" ]
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-body-structure> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-lm-body-structure" ]
        ] ;
-       fhir:name [ fhir:v "Logical model - FR LM Body Stucture" ] ;
+       fhir:name [ fhir:v "Logical model - FR LM Body Structure" ] ;
        fhir:description [ fhir:v "Localisation anatomique" ] ;
        fhir:example [
          a fhir:Boolean ;

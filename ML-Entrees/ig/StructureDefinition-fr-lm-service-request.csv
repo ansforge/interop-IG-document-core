@@ -43,7 +43,7 @@ La partie en majuscules indique le code pays (ISO-3166)","","","","","","","",""
 ","Type de la demande","Type de la demande","","","","","","","","","",,,,,"",,,,"fr-lm-service-request.code",1,1,"",""
 "fr-lm-service-request.quantity","fr-lm-service-request.quantity","","","",0,1,"","","","Quantity {[]} {[]}
 ","Quantité demandée","Quantité demandée","","","","","","","","","",,,,,"",,,,"fr-lm-service-request.quantity",0,1,"",""
-"fr-lm-service-request.bodySite","fr-lm-service-request.bodySite","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-body-stucture {[]} {[]}
+"fr-lm-service-request.bodySite","fr-lm-service-request.bodySite","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-body-structure {[]} {[]}
 ","Localisation anatomique","Localisation anatomique","","","","","","","","","",,,,,"",,,,"fr-lm-service-request.bodySite",0,*,"",""
 "fr-lm-service-request.reason[x]","fr-lm-service-request.reason[x]","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation {[]} {[]}
 https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-condition {[]} {[]}https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication {[]} {[]}string {[]} {[]}","Motif de la demande","Motif de la demande","","","","","","","","","",,,,,"",,,,"fr-lm-service-request.reason[x]",0,*,"",""

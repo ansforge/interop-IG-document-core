@@ -10,7 +10,7 @@
   <name value="FRDocumentCore"/>
   <title value="ANS IG document core"/>
   <status value="draft"/>
-  <date value="2026-04-24T08:31:26+00:00"/>
+  <date value="2026-04-24T12:30:57+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -3832,9 +3832,9 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/fr-lm-body-stucture"/>
+        <reference value="StructureDefinition/fr-lm-body-structure"/>
       </reference>
-      <name value="Logical model - FR LM Body Stucture"/>
+      <name value="Logical model - FR LM Body Structure"/>
       <description value="Localisation anatomique"/>
       <exampleBoolean value="false"/>
       <groupingId value="Modèles logiques métier des composants élémentaires"/>

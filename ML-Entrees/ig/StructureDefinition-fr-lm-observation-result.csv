@@ -53,7 +53,7 @@ Period {[]} {[]}","Date de l'observation","Date de l'observation","","","","",""
 ","Prélèvement","Prélèvement","","","","","","","","","",,,,,"",,,,"fr-lm-observation-result.specimen",0,1,"",""
 "fr-lm-observation-result.order","fr-lm-observation-result.order","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-service-request {[]} {[]}
 ","Demande d'examen correspondante","Demande d'examen correspondante","","","","","","","","","",,,,,"",,,,"fr-lm-observation-result.order",0,1,"",""
-"fr-lm-observation-result.bodySite","fr-lm-observation-result.bodySite","","","",0,1,"","","","CodeableConcept {[]} {[]}
+"fr-lm-observation-result.bodySite","fr-lm-observation-result.bodySite","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-body-structure {[]} {[]}
 ","Localisation anatomique","Localisation anatomique","","","","","","","","","",,,,,"",,,,"fr-lm-observation-result.bodySite",0,1,"",""
 "fr-lm-observation-result.result","fr-lm-observation-result.result","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Valeur de l'observation","Valeur de l'observation","","","","","","","","","",,,,,"",,,,"fr-lm-observation-result.result",1,1,"",""

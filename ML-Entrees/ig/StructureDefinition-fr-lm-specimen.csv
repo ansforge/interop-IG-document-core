@@ -67,7 +67,7 @@ Period {[]} {[]}","Date du prélèvement","Date du prélèvement","","","","",""
 ","Dispositif utilisé","Dispositif utilisé","","","","","","","","","",,,,,"",,,,"fr-lm-specimen.collection.device",0,*,"",""
 "fr-lm-specimen.collection.additive[x]","fr-lm-specimen.collection.additive[x]","","","",0,*,"","","","CodeableConcept {[]} {[]}
 https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device {[]} {[]}","Produit utilisé","Produit utilisé","","","","","","","","","",,,,,"",,,,"fr-lm-specimen.collection.additive[x]",0,*,"",""
-"fr-lm-specimen.collection.bodySite","fr-lm-specimen.collection.bodySite","","","",0,1,"","","","CodeableConcept {[]} {[]}
+"fr-lm-specimen.collection.bodySite","fr-lm-specimen.collection.bodySite","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-body-structure {[]} {[]}
 ","Localisation du prélèvement","Localisation du prélèvement","","","","","","","","","",,,,,"",,,,"fr-lm-specimen.collection.bodySite",0,1,"",""
 "fr-lm-specimen.receivedDate","fr-lm-specimen.receivedDate","","","",1,1,"","","","dateTime {[]} {[]}
 ","Date de réception de l'échantillon","Date de réception de l'échantillon","","","","","","","","","",,,,,"",,,,"fr-lm-specimen.receivedDate",1,1,"",""

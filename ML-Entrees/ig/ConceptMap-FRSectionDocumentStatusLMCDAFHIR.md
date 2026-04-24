@@ -26,7 +26,7 @@ Mapping des éléments du modèle métier FRLMStatutDocument vers la section CDA
   "version" : "0.1.0-snapshot",
   "title" : "Mapping Métier/CDA/FHIR : \"Statut du document\"",
   "status" : "draft",
-  "date" : "2026-04-24T08:31:26+00:00",
+  "date" : "2026-04-24T12:30:57+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

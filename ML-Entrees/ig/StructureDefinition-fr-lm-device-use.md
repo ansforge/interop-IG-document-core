@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-device-use.csv
   "name" : "FRLMDeviceUse",
   "title" : "Logical model - FR LM Device use",
   "status" : "draft",
-  "date" : "2026-04-24T08:31:26+00:00",
+  "date" : "2026-04-24T12:30:57+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -167,7 +167,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-device-use.csv
       "min" : 0,
       "max" : "1",
       "type" : [{
-        "code" : "CodeableConcept"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-body-structure"
       }],
       "binding" : {
         "description" : "SNOMED CT (2.16.840.1.113883.6.96)"

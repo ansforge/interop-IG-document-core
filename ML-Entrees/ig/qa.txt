@@ -1,9 +1,9 @@
 FRDocumentCore : Validation Results
 =========================================
 
-err = 1838, warn = 6542, info = 1144
+err = 1847, warn = 6542, info = 1144
 IG Publisher Version: 2.1.2 Out of date - current version is 2.2.7
-Generated Fri Apr 24 08:50:12 UTC 2026. FHIR version 4.0.1 for ans.document.fr.core#0.1.0-snapshot (canonical = https://interop.esante.gouv.fr/ig/document/core)
+Generated Fri Apr 24 12:49:23 UTC 2026. FHIR version 4.0.1 for ans.document.fr.core#0.1.0-snapshot (canonical = https://interop.esante.gouv.fr/ig/document/core)
  Build Errors : 13 / 8 / 0
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/AllergyIntolerance-example-allergy-intolerance-data-absent-reason : 2 / 0 / 3
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRActSubstitutionLMCDAFHIR : 1 / 7 / 1
@@ -386,7 +386,7 @@ Generated Fri Apr 24 08:50:12 UTC 2026. FHIR version 4.0.1 for ans.document.fr.c
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-lm-attachement : 6 / 31 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-lm-batterie-examens-biologie-medicale : 2 / 33 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-lm-birth-event : 2 / 26 / 1
- /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-lm-body-stucture : 3 / 10 / 1
+ /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-lm-body-structure : 3 / 10 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-lm-care-plan : 2 / 26 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-lm-codes-a-barres : 1 / 15 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-lm-commentaire-non-code : 1 / 14 / 1
@@ -401,7 +401,7 @@ Generated Fri Apr 24 08:50:12 UTC 2026. FHIR version 4.0.1 for ans.document.fr.c
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-lm-demande-examen-imagerie : 1 / 15 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-lm-destinataire-prevu : 1 / 4 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-lm-device : 1 / 30 / 1
- /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-lm-device-use : 8 / 53 / 5
+ /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-lm-device-use : 11 / 53 / 5
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-lm-dicom-medication-administration : 8 / 41 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-lm-directives-anticipees : 1 / 16 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-lm-dispensation-medicaments : 1 / 17 / 1
@@ -447,7 +447,7 @@ Generated Fri Apr 24 08:50:12 UTC 2026. FHIR version 4.0.1 for ans.document.fr.c
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-lm-modalite-sortie : 4 / 23 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-lm-non-remboursable : 2 / 23 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-lm-object-catalog : 1 / 16 / 1
- /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-lm-observation : 4 / 31 / 1
+ /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-lm-observation : 7 / 31 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-lm-observation-assessment : 2 / 35 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-lm-observation-long-term-condition : 2 / 23 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-lm-observation-related-to-prevention : 2 / 23 / 1
@@ -471,7 +471,7 @@ Generated Fri Apr 24 08:50:12 UTC 2026. FHIR version 4.0.1 for ans.document.fr.c
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-lm-prescription-medicaments : 1 / 16 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-lm-prise-en-charge : 1 / 42 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-lm-problemes-actifs : 1 / 17 / 1
- /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-lm-procedure : 12 / 53 / 1
+ /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-lm-procedure : 15 / 53 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-lm-quantite-exposition : 6 / 39 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-lm-quantity-prescribed : 1 / 6 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-lm-raison-recommandation : 1 / 18 / 1
@@ -5155,20 +5155,20 @@ WARNING: StructureDefinition/fr-lm-birth-event: StructureDefinition.differential
 WARNING: StructureDefinition/fr-lm-birth-event: StructureDefinition.differential.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/fr-lm-birth-event: StructureDefinition.differential.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/fr-lm-birth-event: StructureDefinition.differential.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-== fsh-generated/resources/StructureDefinition-fr-lm-body-stucture.json ==
-ERROR: StructureDefinition/fr-lm-body-stucture: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
-WARNING: StructureDefinition/fr-lm-body-stucture: StructureDefinition.snapshot.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/fr-lm-body-stucture: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/fr-lm-body-stucture: StructureDefinition.snapshot.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-ERROR: StructureDefinition/fr-lm-body-stucture: StructureDefinition.snapshot.element[3].binding: ElementDefinition.binding.strength: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition|4.0.1)
-WARNING: StructureDefinition/fr-lm-body-stucture: StructureDefinition.snapshot.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/fr-lm-body-stucture: StructureDefinition.snapshot.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/fr-lm-body-stucture: StructureDefinition.differential.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/fr-lm-body-stucture: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/fr-lm-body-stucture: StructureDefinition.differential.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-ERROR: StructureDefinition/fr-lm-body-stucture: StructureDefinition.differential.element[3].binding: ElementDefinition.binding.strength: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition|4.0.1)
-WARNING: StructureDefinition/fr-lm-body-stucture: StructureDefinition.differential.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/fr-lm-body-stucture: StructureDefinition.differential.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+== fsh-generated/resources/StructureDefinition-fr-lm-body-structure.json ==
+ERROR: StructureDefinition/fr-lm-body-structure: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
+WARNING: StructureDefinition/fr-lm-body-structure: StructureDefinition.snapshot.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/fr-lm-body-structure: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/fr-lm-body-structure: StructureDefinition.snapshot.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+ERROR: StructureDefinition/fr-lm-body-structure: StructureDefinition.snapshot.element[3].binding: ElementDefinition.binding.strength: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition|4.0.1)
+WARNING: StructureDefinition/fr-lm-body-structure: StructureDefinition.snapshot.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/fr-lm-body-structure: StructureDefinition.snapshot.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/fr-lm-body-structure: StructureDefinition.differential.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/fr-lm-body-structure: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/fr-lm-body-structure: StructureDefinition.differential.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+ERROR: StructureDefinition/fr-lm-body-structure: StructureDefinition.differential.element[3].binding: ElementDefinition.binding.strength: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition|4.0.1)
+WARNING: StructureDefinition/fr-lm-body-structure: StructureDefinition.differential.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/fr-lm-body-structure: StructureDefinition.differential.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 == fsh-generated/resources/StructureDefinition-fr-lm-care-plan.json ==
 ERROR: StructureDefinition/fr-lm-care-plan: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 WARNING: StructureDefinition/fr-lm-care-plan: StructureDefinition.snapshot.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
@@ -5606,8 +5606,11 @@ WARNING: StructureDefinition/fr-lm-device-use: StructureDefinition.differential.
 WARNING: StructureDefinition/fr-lm-device-use: StructureDefinition.differential.element[10]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/fr-lm-device-use: StructureDefinition.differential.element[1].binding: The valueSet reference https://hl7.org/fhir/R4/valueset-device-statement-status.html on element fr-lm-device-use.usageStatus could not be resolved
 WARNING: StructureDefinition/fr-lm-device-use: StructureDefinition.differential.element[6].binding: The valueSet reference https://hl7.org/fhir/R4/valueset-device-statement-status.html on element fr-lm-device-use.DeviceUsageStatus could not be resolved
+ERROR: StructureDefinition/fr-lm-device-use: StructureDefinition.differential.element[8]: This element has a Binding but the types [https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-body-structure] do not make this kind of constraint relevant
 WARNING: StructureDefinition/fr-lm-device-use: StructureDefinition.snapshot.element[18].binding: The valueSet reference https://hl7.org/fhir/R4/valueset-device-statement-status.html on element fr-lm-device-use.usageStatus could not be resolved
 WARNING: StructureDefinition/fr-lm-device-use: StructureDefinition.snapshot.element[27].binding: The valueSet reference https://hl7.org/fhir/R4/valueset-device-statement-status.html on element fr-lm-device-use.DeviceUsageStatus could not be resolved
+ERROR: StructureDefinition/fr-lm-device-use: StructureDefinition.snapshot.element[29]: This element has a Binding but the types [https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-body-structure] do not make this kind of constraint relevant
+ERROR: StructureDefinition/fr-lm-device-use: StructureDefinition.snapshot.element[29].binding: The element fr-lm-device-use.bodySite has a binding, but no bindable types are present [https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-body-structure]
 == fsh-generated/resources/StructureDefinition-fr-lm-dicom-medication-administration.json ==
 ERROR: StructureDefinition/fr-lm-dicom-medication-administration: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 WARNING: StructureDefinition/fr-lm-dicom-medication-administration: StructureDefinition.snapshot.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
@@ -6970,6 +6973,9 @@ WARNING: StructureDefinition/fr-lm-observation: StructureDefinition.differential
 WARNING: StructureDefinition/fr-lm-observation: StructureDefinition.differential.element[5]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 ERROR: StructureDefinition/fr-lm-observation: StructureDefinition.differential.element[6].binding: ElementDefinition.binding.strength: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition|4.0.1)
 WARNING: StructureDefinition/fr-lm-observation: StructureDefinition.differential.element[6]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+ERROR: StructureDefinition/fr-lm-observation: StructureDefinition.differential.element[6]: This element has a Binding but the types [https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-body-structure] do not make this kind of constraint relevant
+ERROR: StructureDefinition/fr-lm-observation: StructureDefinition.snapshot.element[23]: This element has a Binding but the types [https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-body-structure] do not make this kind of constraint relevant
+ERROR: StructureDefinition/fr-lm-observation: StructureDefinition.snapshot.element[23].binding: The element fr-lm-observation.location has a binding, but no bindable types are present [https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-body-structure]
 == fsh-generated/resources/StructureDefinition-fr-lm-observation-assessment.json ==
 ERROR: StructureDefinition/fr-lm-observation-assessment: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 WARNING: StructureDefinition/fr-lm-observation-assessment: StructureDefinition.snapshot.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
@@ -7830,6 +7836,9 @@ WARNING: StructureDefinition/fr-lm-procedure: StructureDefinition.differential.e
 WARNING: StructureDefinition/fr-lm-procedure: StructureDefinition.differential.element[12]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/fr-lm-procedure: StructureDefinition.differential.element[13]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/fr-lm-procedure: StructureDefinition.differential.element[14]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+ERROR: StructureDefinition/fr-lm-procedure: StructureDefinition.differential.element[6]: This element has a Binding but the types [https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-body-structure] do not make this kind of constraint relevant
+ERROR: StructureDefinition/fr-lm-procedure: StructureDefinition.snapshot.element[27]: This element has a Binding but the types [https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-body-structure] do not make this kind of constraint relevant
+ERROR: StructureDefinition/fr-lm-procedure: StructureDefinition.snapshot.element[27].binding: The element fr-lm-procedure.bodySite has a binding, but no bindable types are present [https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-body-structure]
 == fsh-generated/resources/StructureDefinition-fr-lm-quantite-exposition.json ==
 ERROR: StructureDefinition/fr-lm-quantite-exposition: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 WARNING: StructureDefinition/fr-lm-quantite-exposition: StructureDefinition.snapshot.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
@@ -9226,7 +9235,7 @@ ERROR: ValueSet/fr-valueset-status-code: ValueSet.jurisdiction[0].coding[0].disp
 ERROR: ValueSet/fr-valueset-status-code: ValueSet.compose.include[0]: The system 'https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis' is actually a value set, which itself refers to the system 'http://terminology.hl7.org/CodeSystem/v3-ActStatus' so that may be what is intended here
 WARNING: ValueSet/fr-valueset-status-code: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 WARNING: ValueSet.where(id = 'fr-valueset-status-code'): Error from https://smt.esante.gouv.fr/fhir: Error: [5e07d769-f92d-4068-8a26-6ed52bd6e13c]: A usable code system with URL https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis could not be resolved.
-Information: X-Request-Id: 23ddece6-ac41-42ce-a4df-5c31c1b9c89d
+Information: X-Request-Id: 31242aa4-9353-4498-8626-82bb846e8b0c
 == fsh-generated/resources/ValueSet-fr-valueset-statut-du-probleme.json ==
 ERROR: ValueSet/fr-valueset-statut-du-probleme: ValueSet.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 WARNING: ValueSet/fr-valueset-statut-du-probleme: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
@@ -9263,7 +9272,7 @@ ERROR: ValueSet/fr-vs-medication-translation-document: ValueSet.jurisdiction[0].
 WARNING: ValueSet/fr-vs-medication-translation-document: ValueSet.compose.include[1].system: No definition could be found for URL value 'https://smt.esante.gouv.fr/terminologie-cip_ucd'
 WARNING: ValueSet/fr-vs-medication-translation-document: ValueSet.compose.include[3].system: No definition could be found for URL value 'https://smt.esante.gouv.fr/terminologie-medicabase'
 WARNING: ValueSet.where(id = 'fr-vs-medication-translation-document'): Error from https://smt.esante.gouv.fr/fhir: Error: [0980feaf-ca28-4238-b95b-0403eb507e37]: Could not find the code system https://smt.esante.gouv.fr/terminologie-cip_ucd|2026-04
-Information: X-Request-Id: 51b95b2a-a5b4-4f3c-9098-1c51a63ceb9f
+Information: X-Request-Id: d63753b7-2602-4c18-835b-078c7ebeb466
 == fsh-generated/resources/ValueSet-fr-vs-procedure-code.json ==
 ERROR: ValueSet/fr-vs-procedure-code: ValueSet.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 WARNING: ValueSet/fr-vs-procedure-code: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
