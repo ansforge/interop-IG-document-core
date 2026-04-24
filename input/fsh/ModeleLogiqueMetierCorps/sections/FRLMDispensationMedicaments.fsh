@@ -7,6 +7,5 @@ Characteristics: #can-be-target
 
 * titreSection 1..1 
 * sousSection 0..0 
-* auteur 1..1 FRLMAuteur "Auteur"
 * entree 1..*
-  * traitementDispense 1..* FRLMTraitementDispense "Entrée Traitement dispensé"
+  * traitementDispense 1..* FRLMMedicationDispense "Entrée Traitement dispensé"

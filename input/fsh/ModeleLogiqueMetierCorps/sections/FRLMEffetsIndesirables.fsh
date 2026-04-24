@@ -8,4 +8,4 @@ Characteristics: #can-be-target
 * sousSection 0..0
 * titreSection 1..1 
 * entree 1..*  
-  * effetIndesirable  1..* FRLMEffetIndesirable "Entrée Effet indesirable"
+  * effetIndesirable  1..* FRLMAdverseEvent "Entrée Effet indesirable"

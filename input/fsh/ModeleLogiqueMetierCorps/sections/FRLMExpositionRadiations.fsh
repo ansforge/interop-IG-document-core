@@ -8,8 +8,9 @@ Characteristics: #can-be-target
 * titreSection 1..1 
 * sousSection 0..0 
 * entree 
-  * autorisationExposition 1..1 FRLMAutorisationExposition "Entrée autorisation à l'exposition aux rayonnements ionisants"
+  // à supprimer ?
+  //* autorisationExposition 1..1 FRLMAutorisationExposition "Entrée autorisation à l'exposition aux rayonnements ionisants"
   * quantiteExposition 0..* FRLMQuantiteExposition "Entrée Quantité"
-  * administrationRadiopharmaceutique 0..1 FRLMAdministrationProduitDeSante "Entrée administration des produits radiopharmaceutiques"
+  * administrationRadiopharmaceutique 0..1 FRLMDICOMMedicationAdministration "Entrée administration des produits radiopharmaceutiques"
   * observationGrossesse 1..1 FRLMObservation "Entrée observation de grossesse"
   * observationIndication 0..1 FRLMObservation "Entrée observation indication"

@@ -12,5 +12,5 @@ Characteristics: #can-be-target
   * catalogueObjects 1..1 FRLMObjectCatalog "Section Object catalog"
 * entree
   * techniqueImagerie 1..1 FRLMTechniqueImagerie "Entrée technique d'imagerie"
-  * administrationProduits 0..* FRLMAdministrationProduitDeSante "Produits de santé administrés pendant l'acte d'imagerie"
+  * administrationProduits 0..* FRLMDICOMMedicationAdministration "Produits de santé administrés pendant l'acte d'imagerie"
 

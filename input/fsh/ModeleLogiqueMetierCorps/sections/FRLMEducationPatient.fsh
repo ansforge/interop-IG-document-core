@@ -7,6 +7,6 @@ Characteristics: #can-be-target
 
 * sousSection 0..0 
 * entree 
-  * acte  0..* FRLMActe "Entrée Acte"
+  * acte  0..* FRLMProcedure "Entrée Acte"
   * observation  0..* FRLMObservation "Entrée Simple observation"
   * reference 0..* FRLMReferencesExternes "Entrée References externes"
