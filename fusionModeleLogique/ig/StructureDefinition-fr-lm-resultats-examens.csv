@@ -7,11 +7,21 @@
 ","Titre de la section","Titre de la section","","","","","","","","","",,,,,"",,,,"fr-lm-section.titreSection",0,1,"",""
 "fr-lm-resultats-examens.blocNarratif","fr-lm-resultats-examens.blocNarratif","","","",1,1,"","","","Narrative {[]} {[]}
 ","Bloc narratif","Bloc narratif","","","","","","","","","",,,,,"",,,,"fr-lm-section.blocNarratif",1,1,"",""
+"fr-lm-resultats-examens.author[x]","fr-lm-resultats-examens.author[x]","","","",0,*,"","","","Base {[]} {[]}
+","author[x] peut correspondre soit à un professionnel, soit à une organisation, soit à un système.","author[x] peut correspondre soit à un professionnel, soit à une organisation, soit à un système.","","","","","","","","","",,,,,"",,,,"fr-lm-section.author[x]",0,*,"",""
+"fr-lm-resultats-examens.author[x].authorProfessional","fr-lm-resultats-examens.author[x].authorProfessional","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional {[]} {[]}
+","L'auteur est un professionnel de santé","L'auteur est un professionnel de santé","","","","","","","","","",,,,,"",,,,"fr-lm-section.author[x].authorProfessional",0,*,"",""
+"fr-lm-resultats-examens.author[x].authorOrganisation","fr-lm-resultats-examens.author[x].authorOrganisation","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organisation {[]} {[]}
+","L'auteur est une organisation","L'auteur est une organisation","","","","","","","","","",,,,,"",,,,"fr-lm-section.author[x].authorOrganisation",0,*,"",""
+"fr-lm-resultats-examens.author[x].authorDevice","fr-lm-resultats-examens.author[x].authorDevice","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device {[]} {[]}
+","L'auteur est un système","L'auteur est un système","","","","","","","","","",,,,,"",,,,"fr-lm-section.author[x].authorDevice",0,*,"",""
+"fr-lm-resultats-examens.informant","fr-lm-resultats-examens.informant","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-informant {[]} {[]}
+","Informateur","Informateur","","","","","","","","","",,,,,"",,,,"fr-lm-section.informant",0,*,"",""
 "fr-lm-resultats-examens.sousSection","fr-lm-resultats-examens.sousSection","","","",0,0,"","","","Base {[]} {[]}
 ","Sous-sections","Sous-sections","","","","","","","","","",,,,,"",,,,"fr-lm-section.sousSection",0,*,"",""
 "fr-lm-resultats-examens.entree","fr-lm-resultats-examens.entree","","","",0,*,"","","","Base {[]} {[]}
 ","Entrées","Entrées","","","","","","","","","",,,,,"",,,,"fr-lm-section.entree",0,*,"",""
-"fr-lm-resultats-examens.entree.actes","fr-lm-resultats-examens.entree.actes","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-acte {[]} {[]}
+"fr-lm-resultats-examens.entree.actes","fr-lm-resultats-examens.entree.actes","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-procedure {[]} {[]}
 ","Entrée Acte","Entrée Acte","","","","","","","","","",,,,,"",,,,"fr-lm-resultats-examens.entree.actes",1,*,"",""
 "fr-lm-resultats-examens.entree.referencesExternes","fr-lm-resultats-examens.entree.referencesExternes","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-references-externes {[]} {[]}
 ","Entrée Références externes","Entrée Références externes","","","","","","","","","",,,,,"",,,,"fr-lm-resultats-examens.entree.referencesExternes",0,*,"",""

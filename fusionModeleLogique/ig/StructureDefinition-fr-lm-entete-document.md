@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-entete-documen
   "name" : "FRLMEnteteDocument",
   "title" : "Modèle logique métier - FR LM En-tête document",
   "status" : "draft",
-  "date" : "2026-04-24T08:27:00+00:00",
+  "date" : "2026-04-24T08:33:22+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -195,14 +195,20 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-entete-documen
       }]
     },
     {
-      "id" : "fr-lm-entete-document.auteur",
-      "path" : "fr-lm-entete-document.auteur",
+      "id" : "fr-lm-entete-document.auteur[x]",
+      "path" : "fr-lm-entete-document.auteur[x]",
       "short" : "Auteur du document.",
       "definition" : "Auteur du document.",
       "min" : 1,
       "max" : "*",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-auteur"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional"
+      },
+      {
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organisation"
+      },
+      {
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device"
       }]
     },
     {
@@ -224,7 +230,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-entete-documen
       "min" : 0,
       "max" : "*",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-informateur"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-informant"
       }]
     },
     {

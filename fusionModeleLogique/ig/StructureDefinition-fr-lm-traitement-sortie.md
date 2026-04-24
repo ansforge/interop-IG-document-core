@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-traitement-sor
   "name" : "FRLMTraitementSortie",
   "title" : "Modèle logique métier - FR LM Traitements à la sortie",
   "status" : "draft",
-  "date" : "2026-04-24T08:27:00+00:00",
+  "date" : "2026-04-24T08:33:22+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -97,7 +97,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-traitement-sor
       "min" : 1,
       "max" : "*",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-traitement"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication-administration"
       }]
     }]
   }

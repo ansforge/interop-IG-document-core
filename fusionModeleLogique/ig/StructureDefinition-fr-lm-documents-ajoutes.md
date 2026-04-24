@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-documents-ajou
   "name" : "FRLMDocumentsAjoutes",
   "title" : "Modèle logique métier - FR LM Documents ajoutés",
   "status" : "draft",
-  "date" : "2026-04-24T08:27:00+00:00",
+  "date" : "2026-04-24T08:33:22+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -103,7 +103,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-documents-ajou
       "min" : 1,
       "max" : "*",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-document-attache"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-attachement"
       }]
     }]
   }

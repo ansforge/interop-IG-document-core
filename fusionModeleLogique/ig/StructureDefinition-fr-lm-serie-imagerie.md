@@ -1,10 +1,10 @@
-# Modèle logique métier - FR LM Serie imagerie - ANS IG document core v0.1.0-snapshot
+# Logical model - FR LM Serie imagerie - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Modèle logique métier - FR LM Serie imagerie**
+* **Logical model - FR LM Serie imagerie**
 
-## Logical Model: Modèle logique métier - FR LM Serie imagerie 
+## Logical Model: Logical model - FR LM Serie imagerie 
 
 | | |
 | :--- | :--- |
@@ -16,7 +16,7 @@ Serie imagerie
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Examen Imagerie](StructureDefinition-fr-lm-examen-imagerie.md)
+* Utilise ce/t/te Modèle logique: [Logical model - FR LM Imaging Study](StructureDefinition-fr-lm-imaging-study.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-serie-imagerie)
 
@@ -43,9 +43,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-serie-imagerie
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-serie-imagerie",
   "version" : "0.1.0-snapshot",
   "name" : "FRLMSerieImagerie",
-  "title" : "Modèle logique métier - FR LM Serie imagerie",
+  "title" : "Logical model - FR LM Serie imagerie",
   "status" : "draft",
-  "date" : "2026-04-24T08:27:00+00:00",
+  "date" : "2026-04-24T08:33:22+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -66,13 +66,13 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-serie-imagerie
   "kind" : "logical",
   "abstract" : false,
   "type" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-serie-imagerie",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
+  "baseDefinition" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry",
   "derivation" : "specialization",
   "differential" : {
     "element" : [{
       "id" : "fr-lm-serie-imagerie",
       "path" : "fr-lm-serie-imagerie",
-      "short" : "Modèle logique métier - FR LM Serie imagerie",
+      "short" : "Logical model - FR LM Serie imagerie",
       "definition" : "Serie imagerie"
     },
     {
@@ -95,17 +95,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-serie-imagerie
       "max" : "1",
       "type" : [{
         "code" : "CodeableConcept"
-      }]
-    },
-    {
-      "id" : "fr-lm-serie-imagerie.description",
-      "path" : "fr-lm-serie-imagerie.description",
-      "short" : "Partie narrative de l'entrée",
-      "definition" : "Partie narrative de l'entrée",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "Narrative"
       }]
     },
     {

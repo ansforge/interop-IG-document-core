@@ -7,15 +7,23 @@
 ","Titre de la section","Titre de la section","","","","","","","","","",,,,,"",,,,"fr-lm-section.titreSection",0,1,"",""
 "fr-lm-exposition-radiations.blocNarratif","fr-lm-exposition-radiations.blocNarratif","","","",1,1,"","","","Narrative {[]} {[]}
 ","Bloc narratif","Bloc narratif","","","","","","","","","",,,,,"",,,,"fr-lm-section.blocNarratif",1,1,"",""
+"fr-lm-exposition-radiations.author[x]","fr-lm-exposition-radiations.author[x]","","","",0,*,"","","","Base {[]} {[]}
+","author[x] peut correspondre soit à un professionnel, soit à une organisation, soit à un système.","author[x] peut correspondre soit à un professionnel, soit à une organisation, soit à un système.","","","","","","","","","",,,,,"",,,,"fr-lm-section.author[x]",0,*,"",""
+"fr-lm-exposition-radiations.author[x].authorProfessional","fr-lm-exposition-radiations.author[x].authorProfessional","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional {[]} {[]}
+","L'auteur est un professionnel de santé","L'auteur est un professionnel de santé","","","","","","","","","",,,,,"",,,,"fr-lm-section.author[x].authorProfessional",0,*,"",""
+"fr-lm-exposition-radiations.author[x].authorOrganisation","fr-lm-exposition-radiations.author[x].authorOrganisation","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organisation {[]} {[]}
+","L'auteur est une organisation","L'auteur est une organisation","","","","","","","","","",,,,,"",,,,"fr-lm-section.author[x].authorOrganisation",0,*,"",""
+"fr-lm-exposition-radiations.author[x].authorDevice","fr-lm-exposition-radiations.author[x].authorDevice","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device {[]} {[]}
+","L'auteur est un système","L'auteur est un système","","","","","","","","","",,,,,"",,,,"fr-lm-section.author[x].authorDevice",0,*,"",""
+"fr-lm-exposition-radiations.informant","fr-lm-exposition-radiations.informant","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-informant {[]} {[]}
+","Informateur","Informateur","","","","","","","","","",,,,,"",,,,"fr-lm-section.informant",0,*,"",""
 "fr-lm-exposition-radiations.sousSection","fr-lm-exposition-radiations.sousSection","","","",0,0,"","","","Base {[]} {[]}
 ","Sous-sections","Sous-sections","","","","","","","","","",,,,,"",,,,"fr-lm-section.sousSection",0,*,"",""
 "fr-lm-exposition-radiations.entree","fr-lm-exposition-radiations.entree","","","",0,*,"","","","Base {[]} {[]}
 ","Entrées","Entrées","","","","","","","","","",,,,,"",,,,"fr-lm-section.entree",0,*,"",""
-"fr-lm-exposition-radiations.entree.autorisationExposition","fr-lm-exposition-radiations.entree.autorisationExposition","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-autorisation-exposition {[]} {[]}
-","Entrée autorisation à l'exposition aux rayonnements ionisants","Entrée autorisation à l'exposition aux rayonnements ionisants","","","","","","","","","",,,,,"",,,,"fr-lm-exposition-radiations.entree.autorisationExposition",1,1,"",""
 "fr-lm-exposition-radiations.entree.quantiteExposition","fr-lm-exposition-radiations.entree.quantiteExposition","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-quantite-exposition {[]} {[]}
 ","Entrée Quantité","Entrée Quantité","","","","","","","","","",,,,,"",,,,"fr-lm-exposition-radiations.entree.quantiteExposition",0,*,"",""
-"fr-lm-exposition-radiations.entree.administrationRadiopharmaceutique","fr-lm-exposition-radiations.entree.administrationRadiopharmaceutique","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-administration-produit-de-sante {[]} {[]}
+"fr-lm-exposition-radiations.entree.administrationRadiopharmaceutique","fr-lm-exposition-radiations.entree.administrationRadiopharmaceutique","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dicom-medication-administration {[]} {[]}
 ","Entrée administration des produits radiopharmaceutiques","Entrée administration des produits radiopharmaceutiques","","","","","","","","","",,,,,"",,,,"fr-lm-exposition-radiations.entree.administrationRadiopharmaceutique",0,1,"",""
 "fr-lm-exposition-radiations.entree.observationGrossesse","fr-lm-exposition-radiations.entree.observationGrossesse","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation {[]} {[]}
 ","Entrée observation de grossesse","Entrée observation de grossesse","","","","","","","","","",,,,,"",,,,"fr-lm-exposition-radiations.entree.observationGrossesse",1,1,"",""

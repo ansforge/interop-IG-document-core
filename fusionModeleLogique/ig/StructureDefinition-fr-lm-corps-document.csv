@@ -53,12 +53,10 @@
 ","Section Habitus et modes de vie","Section Habitus et modes de vie","","","","","","","","","",,,,,"",,,,"fr-lm-corps-document.habitusModeDeVie",0,*,"",""
 "fr-lm-corps-document.historiqueDesActes","fr-lm-corps-document.historiqueDesActes","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-historique-des-actes {[]} {[]}
 ","Section Historique des actes","Section Historique des actes","","","","","","","","","",,,,,"",,,,"fr-lm-corps-document.historiqueDesActes",0,*,"",""
-"fr-lm-corps-document.historiqueDesGrossesses","fr-lm-corps-document.historiqueDesGrossesses","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-historique-des-grossesses {[]} {[]}
-","Section Historique des grossesses","Section Historique des grossesses","","","","","","","","","",,,,,"",,,,"fr-lm-corps-document.historiqueDesGrossesses",0,*,"",""
+"fr-lm-corps-document.pregnancyHistory","fr-lm-corps-document.pregnancyHistory","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-section-pregnancy-history {[]} {[]}
+","Section Historique des grossesses","Section Historique des grossesses","","","","","","","","","",,,,,"",,,,"fr-lm-corps-document.pregnancyHistory",0,*,"",""
 "fr-lm-corps-document.planSoins","fr-lm-corps-document.planSoins","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-plan-soins {[]} {[]}
 ","Section Plan de Soins","Section Plan de Soins","","","","","","","","","",,,,,"",,,,"fr-lm-corps-document.planSoins",0,*,"",""
-"fr-lm-corps-document.pointsDeVigilancesNonCode","fr-lm-corps-document.pointsDeVigilancesNonCode","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-points-de-vigilances-non-code {[]} {[]}
-","Section Points de Vigilances non code","Section Points de Vigilances non code","","","","","","","","","",,,,,"",,,,"fr-lm-corps-document.pointsDeVigilancesNonCode",0,*,"",""
 "fr-lm-corps-document.prescriptionDispositifsMedicaux","fr-lm-corps-document.prescriptionDispositifsMedicaux","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-prescription-dispositifs-medicaux {[]} {[]}
 ","Section Prescription de dispositifs médicaux","Section Prescription de dispositifs médicaux","","","","","","","","","",,,,,"",,,,"fr-lm-corps-document.prescriptionDispositifsMedicaux",0,*,"",""
 "fr-lm-corps-document.prescriptionMedicaments","fr-lm-corps-document.prescriptionMedicaments","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-prescription-medicaments {[]} {[]}

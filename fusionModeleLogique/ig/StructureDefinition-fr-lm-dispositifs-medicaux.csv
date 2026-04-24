@@ -7,9 +7,19 @@
 ","Titre de la section","Titre de la section","","","","","","","","","",,,,,"",,,,"fr-lm-section.titreSection",0,1,"",""
 "fr-lm-dispositifs-medicaux.blocNarratif","fr-lm-dispositifs-medicaux.blocNarratif","","","",1,1,"","","","Narrative {[]} {[]}
 ","Bloc narratif","Bloc narratif","","","","","","","","","",,,,,"",,,,"fr-lm-section.blocNarratif",1,1,"",""
+"fr-lm-dispositifs-medicaux.author[x]","fr-lm-dispositifs-medicaux.author[x]","","","",0,*,"","","","Base {[]} {[]}
+","author[x] peut correspondre soit à un professionnel, soit à une organisation, soit à un système.","author[x] peut correspondre soit à un professionnel, soit à une organisation, soit à un système.","","","","","","","","","",,,,,"",,,,"fr-lm-section.author[x]",0,*,"",""
+"fr-lm-dispositifs-medicaux.author[x].authorProfessional","fr-lm-dispositifs-medicaux.author[x].authorProfessional","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional {[]} {[]}
+","L'auteur est un professionnel de santé","L'auteur est un professionnel de santé","","","","","","","","","",,,,,"",,,,"fr-lm-section.author[x].authorProfessional",0,*,"",""
+"fr-lm-dispositifs-medicaux.author[x].authorOrganisation","fr-lm-dispositifs-medicaux.author[x].authorOrganisation","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organisation {[]} {[]}
+","L'auteur est une organisation","L'auteur est une organisation","","","","","","","","","",,,,,"",,,,"fr-lm-section.author[x].authorOrganisation",0,*,"",""
+"fr-lm-dispositifs-medicaux.author[x].authorDevice","fr-lm-dispositifs-medicaux.author[x].authorDevice","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device {[]} {[]}
+","L'auteur est un système","L'auteur est un système","","","","","","","","","",,,,,"",,,,"fr-lm-section.author[x].authorDevice",0,*,"",""
+"fr-lm-dispositifs-medicaux.informant","fr-lm-dispositifs-medicaux.informant","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-informant {[]} {[]}
+","Informateur","Informateur","","","","","","","","","",,,,,"",,,,"fr-lm-section.informant",0,*,"",""
 "fr-lm-dispositifs-medicaux.sousSection","fr-lm-dispositifs-medicaux.sousSection","","","",0,0,"","","","Base {[]} {[]}
 ","Sous-sections","Sous-sections","","","","","","","","","",,,,,"",,,,"fr-lm-section.sousSection",0,*,"",""
 "fr-lm-dispositifs-medicaux.entree","fr-lm-dispositifs-medicaux.entree","","","",0,*,"","","","Base {[]} {[]}
 ","Entrées","Entrées","","","","","","","","","",,,,,"",,,,"fr-lm-section.entree",0,*,"",""
-"fr-lm-dispositifs-medicaux.entree.dispositifsMedicaux","fr-lm-dispositifs-medicaux.entree.dispositifsMedicaux","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dispositif-medical-entree {[]} {[]}
+"fr-lm-dispositifs-medicaux.entree.dispositifsMedicaux","fr-lm-dispositifs-medicaux.entree.dispositifsMedicaux","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device-use {[]} {[]}
 ","Entrée Dispositif medical","Entrée Dispositif medical","","","","","","","","","",,,,,"",,,,"fr-lm-dispositifs-medicaux.entree.dispositifsMedicaux",0,*,"",""

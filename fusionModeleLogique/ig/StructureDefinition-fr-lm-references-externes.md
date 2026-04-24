@@ -1,10 +1,10 @@
-# Modèle logique métier - FR LM Références externes - ANS IG document core v0.1.0-snapshot
+# Logical - FR LM Références externes - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Modèle logique métier - FR LM Références externes**
+* **Logical - FR LM Références externes**
 
-## Logical Model: Modèle logique métier - FR LM Références externes 
+## Logical Model: Logical - FR LM Références externes 
 
 | | |
 | :--- | :--- |
@@ -43,9 +43,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-references-ext
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-references-externes",
   "version" : "0.1.0-snapshot",
   "name" : "FRLMReferencesExternes",
-  "title" : "Modèle logique métier - FR LM Références externes",
+  "title" : "Logical - FR LM Références externes",
   "status" : "draft",
-  "date" : "2026-04-24T08:27:00+00:00",
+  "date" : "2026-04-24T08:33:22+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -66,13 +66,13 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-references-ext
   "kind" : "logical",
   "abstract" : false,
   "type" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-references-externes",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
+  "baseDefinition" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry",
   "derivation" : "specialization",
   "differential" : {
     "element" : [{
       "id" : "fr-lm-references-externes",
       "path" : "fr-lm-references-externes",
-      "short" : "Modèle logique métier - FR LM Références externes",
+      "short" : "Logical - FR LM Références externes",
       "definition" : "Références externes"
     },
     {
@@ -84,17 +84,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-references-ext
       "max" : "1",
       "type" : [{
         "code" : "CodeableConcept"
-      }]
-    },
-    {
-      "id" : "fr-lm-references-externes.blocNarratif",
-      "path" : "fr-lm-references-externes.blocNarratif",
-      "short" : "Partie narrative de l’entrée.",
-      "definition" : "Partie narrative de l’entrée.",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "Narrative"
       }]
     },
     {

@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-exposition-rad
   "name" : "FRLMExpositionRadiations",
   "title" : "Modèle logique métier - FR LM Exposition aux radiations",
   "status" : "draft",
-  "date" : "2026-04-24T08:27:00+00:00",
+  "date" : "2026-04-24T08:33:22+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -90,17 +90,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-exposition-rad
       "max" : "0"
     },
     {
-      "id" : "fr-lm-exposition-radiations.entree.autorisationExposition",
-      "path" : "fr-lm-exposition-radiations.entree.autorisationExposition",
-      "short" : "Entrée autorisation à l'exposition aux rayonnements ionisants",
-      "definition" : "Entrée autorisation à l'exposition aux rayonnements ionisants",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-autorisation-exposition"
-      }]
-    },
-    {
       "id" : "fr-lm-exposition-radiations.entree.quantiteExposition",
       "path" : "fr-lm-exposition-radiations.entree.quantiteExposition",
       "short" : "Entrée Quantité",
@@ -119,7 +108,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-exposition-rad
       "min" : 0,
       "max" : "1",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-administration-produit-de-sante"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dicom-medication-administration"
       }]
     },
     {
