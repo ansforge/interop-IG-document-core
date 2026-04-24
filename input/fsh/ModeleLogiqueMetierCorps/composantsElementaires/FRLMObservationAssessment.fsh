@@ -10,7 +10,7 @@ Characteristics: #can-be-target
 - LOINC (2.16.840.1.113883.6.1) ou ICF (2.16.840.1.113883.6.254) ou autre
 - Si le type d'évaluation n'est pas trouvé dans les terminologies proposées, utiliser le code='54522-8' displayName='Statut fonctionnel' codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'"
 * method 0..1 CodeableConcept "Méthode utilisée pour l'observation"
-* bodySite 0..1	CodeableConcept	"Site de l'observation"
+* bodySite 0..1	FRLMBodyStructure	"Site de l'observation"
 * result 1..1 CodeableConcept "Valeur de l’évaluation"
 * interpretation 0..* CodeableConcept "Interprétation"
 * note 0..1	string "Commentaire"

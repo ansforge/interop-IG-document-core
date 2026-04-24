@@ -23,7 +23,7 @@ Characteristics: #can-be-target
   * ^binding.description = "Valeur issue du jdv-hl7-condition-clinical-cisis (2.16.840.1.113883.4.642.3.164)"
   * ^binding.valueSet = "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-condition-clinical-cisis"
 * clinicalStatus 0..1 CodeableConcept "Statut clinique du patient" 
-* bodySite 0..* CodeableConcept "Localisation anatomique"
+* bodySite 0..* FRLMBodyStructure "Localisation anatomique"
 * stage 0..* CodeableConcept "Stade/Grade. codeSystem spécifique au contexte.
 Binding Description: (preferred): e.g. TNM, ICD-O-3, Bi-Rads, Li-Rads, …"
 * diagnosisAssertionStatus 0..1 CodeableConcept "Certitude"

@@ -13,7 +13,7 @@ Characteristics: #can-be-target
 * method 0..1 CodeableConcept "Méthode utilisée pour l'observation"
 * specimen 0..1 FRLMSpecimen "Prélèvement"
 * order 0..1 FRLMServiceRequest "Demande d'examen correspondante"
-* bodySite 0..1 CodeableConcept "Localisation anatomique"
+* bodySite 0..1 FRLMBodyStructure "Localisation anatomique"
 * result 1..1 CodeableConcept "Valeur de l'observation"
 * referenceRange 0..* Base "Intervalle de référence. Plusieurs intervalles de référence, de types différents, peuvent être fournis."
   * low 0..1 Quantity "Limite inférieure de l'intervalle"
