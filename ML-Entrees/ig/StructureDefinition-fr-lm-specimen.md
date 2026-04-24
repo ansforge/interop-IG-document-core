@@ -1,4 +1,4 @@
-# Logical model - FR LM Specimen - ANS IG document core v0.1.0-snapsnot
+# Logical model - FR LM Specimen - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,15 +8,15 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-specimen | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-16 | *Computable Name*:FRLMSpecimen |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-specimen | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-24 | *Computable Name*:FRLMSpecimen |
 
  
 Entrée Prélèvement 
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Batterie d'examens de biologie médicale](StructureDefinition-fr-lm-batterie-examens-biologie-medicale.md), [Modèle logique métier - FR LM Résultat d'examens de biologie / élement clinique pertinent](StructureDefinition-fr-lm-resultat-examens-biologie-element-clinique-pertinent.md) and [Logical model - FR LM Resultats d'examens de biologie medicale](StructureDefinition-fr-lm-resultats-examens-biologie-medicale.md)
+* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Batterie d'examens de biologie médicale](StructureDefinition-fr-lm-batterie-examens-biologie-medicale.md), [Logical model - FR LM Observation Result](StructureDefinition-fr-lm-observation-result.md), [Modèle logique métier - FR LM Résultat d'examens de biologie / élement clinique pertinent](StructureDefinition-fr-lm-resultat-examens-biologie-element-clinique-pertinent.md), [Logical model - FR LM Resultats d'examens de biologie medicale](StructureDefinition-fr-lm-resultats-examens-biologie-medicale.md)... Show 2 more, [Logical model - FR LM Service Request](StructureDefinition-fr-lm-service-request.md) and [Logical model - FR LM Specimen](StructureDefinition-fr-lm-specimen.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-specimen)
 
@@ -41,11 +41,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-specimen.csv),
     "valueCode" : "can-be-target"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-specimen",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRLMSpecimen",
   "title" : "Logical model - FR LM Specimen",
   "status" : "draft",
-  "date" : "2026-04-16T07:11:11+00:00",
+  "date" : "2026-04-24T08:31:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -76,46 +76,103 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-specimen.csv),
       "definition" : "Entrée Prélèvement"
     },
     {
-      "id" : "fr-lm-specimen.type",
-      "path" : "fr-lm-specimen.type",
-      "short" : "Acte de prélèvement",
-      "definition" : "Acte de prélèvement",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "CodeableConcept"
-      }]
-    },
-    {
-      "id" : "fr-lm-specimen.datePrelevement",
-      "path" : "fr-lm-specimen.datePrelevement",
-      "short" : "Date du prélèvement",
-      "definition" : "Date du prélèvement",
+      "id" : "fr-lm-specimen.identifier",
+      "path" : "fr-lm-specimen.identifier",
+      "short" : "Identifiant unique de l'échantillon, au sein d'un périmètre défini. Exemple : identifiant attribué par le système du préleveur, identifiant attribué par le laboratoire, etc. Plusieurs identifiants peuvent être utilisés.",
+      "definition" : "Identifiant unique de l'échantillon, au sein d'un périmètre défini. Exemple : identifiant attribué par le système du préleveur, identifiant attribué par le laboratoire, etc. Plusieurs identifiants peuvent être utilisés.",
       "min" : 1,
-      "max" : "1",
+      "max" : "*",
       "type" : [{
-        "code" : "dateTime"
+        "code" : "Identifier"
       }]
     },
     {
-      "id" : "fr-lm-specimen.bodySite",
-      "path" : "fr-lm-specimen.bodySite",
-      "short" : "Localisation du prélèvement",
-      "definition" : "Localisation du prélèvement",
+      "id" : "fr-lm-specimen.status",
+      "path" : "fr-lm-specimen.status",
+      "short" : "Disponibilité du prélèvement",
+      "definition" : "Disponibilité du prélèvement",
       "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "CodeableConcept"
       }],
       "binding" : {
-        "description" : "SNOMED CT (2.16.840.1.113883.6.96)"
+        "description" : "(preferred): HL7 specimen-status"
+      }
+    },
+    {
+      "id" : "fr-lm-specimen.type",
+      "path" : "fr-lm-specimen.type",
+      "short" : "Échantillon prélevé",
+      "definition" : "Échantillon prélevé",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "description" : "jdv-specimen-type-cisis (1.2.250.1.213.1.1.5.819)",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-specimen-type-cisis"
+      }
+    },
+    {
+      "id" : "fr-lm-specimen.specimenSource[x]",
+      "path" : "fr-lm-specimen.specimenSource[x]",
+      "short" : "Origine du prélèvement : il peut provenir d'un patient, d'un lieu ou d'un dispositif",
+      "definition" : "Origine du prélèvement : il peut provenir d'un patient, d'un lieu ou d'un dispositif",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-usager"
+      },
+      {
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-location"
+      },
+      {
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device"
+      }]
+    },
+    {
+      "id" : "fr-lm-specimen.parentSpecimen",
+      "path" : "fr-lm-specimen.parentSpecimen",
+      "short" : "Prélèvement dont provient cet échantillon",
+      "definition" : "Prélèvement dont provient cet échantillon",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-specimen"
+      }]
+    },
+    {
+      "id" : "fr-lm-specimen.request",
+      "path" : "fr-lm-specimen.request",
+      "short" : "Demande à l'origine du prélèvement",
+      "definition" : "Demande à l'origine du prélèvement",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-service-request"
+      }]
+    },
+    {
+      "id" : "fr-lm-specimen.combined",
+      "path" : "fr-lm-specimen.combined",
+      "short" : "Binding Description: (preferred): HL7 specimen-combined",
+      "definition" : "Binding Description: (preferred): HL7 specimen-combined",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "description" : "(preferred): HL7 specimen-combined"
       }
     },
     {
       "id" : "fr-lm-specimen.collection",
       "path" : "fr-lm-specimen.collection",
-      "short" : "Collection",
-      "definition" : "Collection",
+      "short" : "Détails de la collecte",
+      "definition" : "Détails de la collecte",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -123,18 +180,63 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-specimen.csv),
       }]
     },
     {
-      "id" : "fr-lm-specimen.collection.perfomer[x]",
-      "path" : "fr-lm-specimen.collection.perfomer[x]",
+      "id" : "fr-lm-specimen.collection.performer[x]",
+      "path" : "fr-lm-specimen.collection.performer[x]",
       "short" : "Organisation prélevante",
       "definition" : "Organisation prélevante",
       "min" : 0,
       "max" : "1",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional"
+      },
+      {
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organisation"
       },
       {
         "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-usager"
+      },
+      {
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-related-person"
       }]
+    },
+    {
+      "id" : "fr-lm-specimen.collection.collected[x]",
+      "path" : "fr-lm-specimen.collection.collected[x]",
+      "short" : "Date du prélèvement",
+      "definition" : "Date du prélèvement",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "dateTime"
+      },
+      {
+        "code" : "Period"
+      }]
+    },
+    {
+      "id" : "fr-lm-specimen.collection.quantity",
+      "path" : "fr-lm-specimen.collection.quantity",
+      "short" : "Quantité",
+      "definition" : "Quantité",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Quantity"
+      }]
+    },
+    {
+      "id" : "fr-lm-specimen.collection.method",
+      "path" : "fr-lm-specimen.collection.method",
+      "short" : "Acte de prélèvement",
+      "definition" : "Acte de prélèvement",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "description" : "NABM (1.2.250.1.215.300.2) ou 33882-2 [LOINC] Prélèvement"
+      }
     },
     {
       "id" : "fr-lm-specimen.collection.device",
@@ -144,18 +246,32 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-specimen.csv),
       "min" : 0,
       "max" : "*",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device-use"
       }]
     },
     {
-      "id" : "fr-lm-specimen.containerDevice",
-      "path" : "fr-lm-specimen.containerDevice",
+      "id" : "fr-lm-specimen.collection.additive[x]",
+      "path" : "fr-lm-specimen.collection.additive[x]",
       "short" : "Produit utilisé",
       "definition" : "Produit utilisé",
       "min" : 0,
       "max" : "*",
       "type" : [{
+        "code" : "CodeableConcept"
+      },
+      {
         "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device"
+      }]
+    },
+    {
+      "id" : "fr-lm-specimen.collection.bodySite",
+      "path" : "fr-lm-specimen.collection.bodySite",
+      "short" : "Localisation du prélèvement",
+      "definition" : "Localisation du prélèvement",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
       }]
     },
     {
@@ -166,7 +282,65 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-specimen.csv),
       "min" : 1,
       "max" : "1",
       "type" : [{
+        "code" : "dateTime"
+      }]
+    },
+    {
+      "id" : "fr-lm-specimen.container",
+      "path" : "fr-lm-specimen.container",
+      "short" : "Contenant du prélèvement",
+      "definition" : "Contenant du prélèvement",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
         "code" : "Base"
+      }]
+    },
+    {
+      "id" : "fr-lm-specimen.container.specimenQuantity",
+      "path" : "fr-lm-specimen.container.specimenQuantity",
+      "short" : "Quantité de prélèvement dans le contenant",
+      "definition" : "Quantité de prélèvement dans le contenant",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Quantity"
+      }]
+    },
+    {
+      "id" : "fr-lm-specimen.container.containerDevice",
+      "path" : "fr-lm-specimen.container.containerDevice",
+      "short" : "Dispositif utilisé comme contenant",
+      "definition" : "Dispositif utilisé comme contenant",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device"
+      }]
+    },
+    {
+      "id" : "fr-lm-specimen.condition",
+      "path" : "fr-lm-specimen.condition",
+      "short" : "État de l'échantillon",
+      "definition" : "État de l'échantillon",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "description" : "(preferred): HL7 specimenCondition"
+      }
+    },
+    {
+      "id" : "fr-lm-specimen.note",
+      "path" : "fr-lm-specimen.note",
+      "short" : "Commentaire",
+      "definition" : "Commentaire",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
       }]
     }]
   }

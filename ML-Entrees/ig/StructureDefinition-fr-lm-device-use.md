@@ -1,4 +1,4 @@
-# Logical model - FR LM Device use - ANS IG document core v0.1.0-snapsnot
+# Logical model - FR LM Device use - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,15 +8,15 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device-use | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-16 | *Computable Name*:FRLMDeviceUse |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device-use | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-24 | *Computable Name*:FRLMDeviceUse |
 
  
 Entrée Dispositif médical usage 
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Dispositifs medicaux](StructureDefinition-fr-lm-dispositifs-medicaux.md), [Modèle logique métier - FR LM Informations Cliniques](StructureDefinition-fr-lm-informations-cliniques.md) and [Modèle logique métier - FR LM Prescription de dispositifs médicaux](StructureDefinition-fr-lm-prescription-dispositifs-medicaux.md)
+* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Dispositifs medicaux](StructureDefinition-fr-lm-dispositifs-medicaux.md), [Modèle logique métier - FR LM Informations Cliniques](StructureDefinition-fr-lm-informations-cliniques.md), [Modèle logique métier - FR LM Prescription de dispositifs médicaux](StructureDefinition-fr-lm-prescription-dispositifs-medicaux.md) and [Logical model - FR LM Specimen](StructureDefinition-fr-lm-specimen.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-device-use)
 
@@ -41,11 +41,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-device-use.csv
     "valueCode" : "can-be-target"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device-use",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRLMDeviceUse",
   "title" : "Logical model - FR LM Device use",
   "status" : "draft",
-  "date" : "2026-04-16T07:11:11+00:00",
+  "date" : "2026-04-24T08:31:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -76,8 +76,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-device-use.csv
       "definition" : "Entrée Dispositif médical usage"
     },
     {
-      "id" : "fr-lm-device-use.status",
-      "path" : "fr-lm-device-use.status",
+      "id" : "fr-lm-device-use.usageStatus",
+      "path" : "fr-lm-device-use.usageStatus",
       "short" : "Status de l'utilisation du DM (ex active, completed, etc).",
       "definition" : "Status de l'utilisation du DM (ex active, completed, etc).",
       "min" : 1,

@@ -1,4 +1,4 @@
-# Logical model- FR LM Procedure - ANS IG document core v0.1.0-snapsnot
+# Logical model- FR LM Procedure - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,15 +8,15 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-procedure | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-16 | *Computable Name*:FRLMProcedure |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-procedure | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-24 | *Computable Name*:FRLMProcedure |
 
  
 Entrée Acte 
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Logical model - FR LM Device use](StructureDefinition-fr-lm-device-use.md), [Modèle logique métier - FR LM Education du patient](StructureDefinition-fr-lm-education-patient.md), [Historique des actes](StructureDefinition-fr-lm-historique-des-actes.md), [Logical model- FR LM Procedure](StructureDefinition-fr-lm-procedure.md) and [Modèle logique métier - FR LM Résultats d'examens](StructureDefinition-fr-lm-resultats-examens.md)
+* Utilise ce/t/te Modèle logique: [Logical model - FR LM Device use](StructureDefinition-fr-lm-device-use.md), [Modèle logique métier - FR LM Education du patient](StructureDefinition-fr-lm-education-patient.md), [Historique des actes](StructureDefinition-fr-lm-historique-des-actes.md), [Logical model - FR LM Observation Result](StructureDefinition-fr-lm-observation-result.md)... Show 5 more, [Logical model- FR LM Pregnancy History](StructureDefinition-fr-lm-pregnancy-history.md), [Logical model- FR LM Pregnancy Observation](StructureDefinition-fr-lm-pregnancy-observation.md), [Logical model- FR LM Procedure](StructureDefinition-fr-lm-procedure.md), [Modèle logique métier - FR LM Résultats d'examens](StructureDefinition-fr-lm-resultats-examens.md) and [Logical model - FR LM Service Request](StructureDefinition-fr-lm-service-request.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-procedure)
 
@@ -41,11 +41,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-procedure.csv)
     "valueCode" : "can-be-target"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-procedure",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRLMProcedure",
   "title" : "Logical model- FR LM Procedure",
   "status" : "draft",
-  "date" : "2026-04-16T07:11:11+00:00",
+  "date" : "2026-04-24T08:31:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -74,21 +74,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-procedure.csv)
       "path" : "fr-lm-procedure",
       "short" : "Logical model- FR LM Procedure",
       "definition" : "Entrée Acte"
-    },
-    {
-      "id" : "fr-lm-procedure.status",
-      "path" : "fr-lm-procedure.status",
-      "short" : "Statut de l'acte",
-      "definition" : "Statut de l'acte",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "CodeableConcept"
-      }],
-      "binding" : {
-        "description" : "jdv-hl7-v3-ActStatus-cisis (2.16.840.1.113883.1.11.15933)",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis"
-      }
     },
     {
       "id" : "fr-lm-procedure.code",

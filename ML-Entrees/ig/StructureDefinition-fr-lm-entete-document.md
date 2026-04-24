@@ -1,4 +1,4 @@
-# Modèle logique métier - FR LM En-tête document - ANS IG document core v0.1.0-snapsnot
+# Modèle logique métier - FR LM En-tête document - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entete-document | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-16 | *Computable Name*:FRLMEnteteDocument |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entete-document | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-24 | *Computable Name*:FRLMEnteteDocument |
 
  
 Eléments de l’entête d’un document contenant les informations générales et nécessaires à la gestion du document (identification et type du document, patient/usager, auteur, évènement documenté, etc…). 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-entete-documen
   "resourceType" : "StructureDefinition",
   "id" : "fr-lm-entete-document",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entete-document",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRLMEnteteDocument",
   "title" : "Modèle logique métier - FR LM En-tête document",
   "status" : "draft",
-  "date" : "2026-04-16T07:11:11+00:00",
+  "date" : "2026-04-24T08:31:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -195,14 +195,20 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-entete-documen
       }]
     },
     {
-      "id" : "fr-lm-entete-document.auteur",
-      "path" : "fr-lm-entete-document.auteur",
+      "id" : "fr-lm-entete-document.auteur[x]",
+      "path" : "fr-lm-entete-document.auteur[x]",
       "short" : "Auteur du document.",
       "definition" : "Auteur du document.",
       "min" : 1,
       "max" : "*",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure-auteur"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional"
+      },
+      {
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organisation"
+      },
+      {
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device"
       }]
     },
     {
@@ -224,7 +230,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-entete-documen
       "min" : 0,
       "max" : "*",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-informateur"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-informant"
       }]
     },
     {

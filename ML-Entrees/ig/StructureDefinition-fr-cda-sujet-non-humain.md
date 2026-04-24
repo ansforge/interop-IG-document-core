@@ -1,4 +1,4 @@
-# CDA - FR Sujet non humain - ANS IG document core v0.1.0-snapsnot
+# CDA - FR Sujet non humain - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-sujet-non-humain | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-16 | *Computable Name*:FRCDASujetNonHumain |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-sujet-non-humain | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-24 | *Computable Name*:FRCDASujetNonHumain |
 
  
 Entrée FR-Sujet-non-humain: IHE-PCC - Non-Human Subject 
@@ -64,11 +64,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-sujet-non-hum
     "valueUri" : "cda"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-sujet-non-humain",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRCDASujetNonHumain",
   "title" : "CDA - FR Sujet non humain",
   "status" : "draft",
-  "date" : "2026-04-16T07:11:11+00:00",
+  "date" : "2026-04-24T08:31:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -151,6 +151,23 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-sujet-non-hum
       "short" : "Sujet (ex. poulet, poisson, œuf, salade, eau, terre, air, peinture, etc.).",
       "definition" : "Sujet",
       "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Subject.relatedSubject.code.code",
+      "path" : "Subject.relatedSubject.code.code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Subject.relatedSubject.code.codeSystem",
+      "path" : "Subject.relatedSubject.code.codeSystem",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Subject.relatedSubject.code.displayName",
+      "path" : "Subject.relatedSubject.code.displayName",
       "mustSupport" : true
     },
     {

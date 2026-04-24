@@ -1,4 +1,4 @@
-# CDA - FR Statut clinique du patient - ANS IG document core v0.1.0-snapsnot
+# CDA - FR Statut clinique du patient - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-statut-clinique-du-patient | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-16 | *Computable Name*:FRCDAStatutCliniqueDuPatient |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-statut-clinique-du-patient | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-24 | *Computable Name*:FRCDAStatutCliniqueDuPatient |
 
  
 Entrée FR-Statut-clinique-du-patient: IHE-PCC - Health-Status-Observation. L’entrée Statut clinique du patient permet de donner une évaluation de l’état clinique du patient. L’entrée Statut clinique du patient est un élément observation qui est inséré dans un autre élément à l’aide d’un lien entryRelationship. 
@@ -62,11 +62,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-statut-cliniq
     "valueUri" : "cda"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-statut-clinique-du-patient",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRCDAStatutCliniqueDuPatient",
   "title" : "CDA - FR Statut clinique du patient",
   "status" : "draft",
-  "date" : "2026-04-16T07:11:11+00:00",
+  "date" : "2026-04-24T08:31:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -175,12 +175,16 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-statut-cliniq
     {
       "id" : "Observation.code.code",
       "path" : "Observation.code.code",
-      "patternCode" : "11323-3"
+      "min" : 1,
+      "patternCode" : "11323-3",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.code.codeSystem",
       "path" : "Observation.code.codeSystem",
-      "patternString" : "2.16.840.1.113883.6.1"
+      "min" : 1,
+      "patternString" : "2.16.840.1.113883.6.1",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.code.codeSystemName",
@@ -190,7 +194,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-statut-cliniq
     {
       "id" : "Observation.code.displayName",
       "path" : "Observation.code.displayName",
-      "patternString" : "Statut clinique du patient"
+      "patternString" : "Statut clinique du patient",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.text",

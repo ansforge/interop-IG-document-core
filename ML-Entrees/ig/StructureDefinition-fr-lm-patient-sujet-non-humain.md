@@ -1,4 +1,4 @@
-# Logical model - FR LM Patient avec sujet non humain - ANS IG document core v0.1.0-snapsnot
+# Logical model - FR LM Patient avec sujet non humain - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-sujet-non-humain | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-16 | *Computable Name*:FRLMPatientSujetNonHumain |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-sujet-non-humain | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-24 | *Computable Name*:FRLMPatientSujetNonHumain |
 
  
 Patient avec sujet non humain 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-patient-sujet-
   "resourceType" : "StructureDefinition",
   "id" : "fr-lm-patient-sujet-non-humain",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-sujet-non-humain",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRLMPatientSujetNonHumain",
   "title" : "Logical model - FR LM Patient avec sujet non humain",
   "status" : "draft",
-  "date" : "2026-04-16T07:11:11+00:00",
+  "date" : "2026-04-24T08:31:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -7,6 +7,16 @@
 ","Titre de la section","Titre de la section","","","","","","","","","",,,,,"",,,,"fr-lm-section.titreSection",0,1,"",""
 "fr-lm-informations-cliniques.blocNarratif","fr-lm-informations-cliniques.blocNarratif","","","",1,1,"","","","Narrative {[]} {[]}
 ","Bloc narratif","Bloc narratif","","","","","","","","","",,,,,"",,,,"fr-lm-section.blocNarratif",1,1,"",""
+"fr-lm-informations-cliniques.author[x]","fr-lm-informations-cliniques.author[x]","","","",0,*,"","","","Base {[]} {[]}
+","author[x] peut correspondre soit à un professionnel, soit à une organisation, soit à un système.","author[x] peut correspondre soit à un professionnel, soit à une organisation, soit à un système.","","","","","","","","","",,,,,"",,,,"fr-lm-section.author[x]",0,*,"",""
+"fr-lm-informations-cliniques.author[x].authorProfessional","fr-lm-informations-cliniques.author[x].authorProfessional","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional {[]} {[]}
+","L'auteur est un professionnel de santé","L'auteur est un professionnel de santé","","","","","","","","","",,,,,"",,,,"fr-lm-section.author[x].authorProfessional",0,*,"",""
+"fr-lm-informations-cliniques.author[x].authorOrganisation","fr-lm-informations-cliniques.author[x].authorOrganisation","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organisation {[]} {[]}
+","L'auteur est une organisation","L'auteur est une organisation","","","","","","","","","",,,,,"",,,,"fr-lm-section.author[x].authorOrganisation",0,*,"",""
+"fr-lm-informations-cliniques.author[x].authorDevice","fr-lm-informations-cliniques.author[x].authorDevice","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device {[]} {[]}
+","L'auteur est un système","L'auteur est un système","","","","","","","","","",,,,,"",,,,"fr-lm-section.author[x].authorDevice",0,*,"",""
+"fr-lm-informations-cliniques.informant","fr-lm-informations-cliniques.informant","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-informant {[]} {[]}
+","Informateur","Informateur","","","","","","","","","",,,,,"",,,,"fr-lm-section.informant",0,*,"",""
 "fr-lm-informations-cliniques.sousSection","fr-lm-informations-cliniques.sousSection","","","",0,0,"","","","Base {[]} {[]}
 ","Sous-sections","Sous-sections","","","","","","","","","",,,,,"",,,,"fr-lm-section.sousSection",0,*,"",""
 "fr-lm-informations-cliniques.entree","fr-lm-informations-cliniques.entree","","","",1,*,"","","","Base {[]} {[]}
@@ -21,7 +31,7 @@
 ","Problème","Problème","","","","","","","","","",,,,,"",,,,"fr-lm-informations-cliniques.entree.probleme",0,*,"",""
 "fr-lm-informations-cliniques.entree.dispositifMedical","fr-lm-informations-cliniques.entree.dispositifMedical","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device-use {[]} {[]}
 ","Dispositif médical","Dispositif médical","","","","","","","","","",,,,,"",,,,"fr-lm-informations-cliniques.entree.dispositifMedical",0,*,"",""
-"fr-lm-informations-cliniques.entree.statutGrossesse","fr-lm-informations-cliniques.entree.statutGrossesse","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation-pregnancy {[]} {[]}
+"fr-lm-informations-cliniques.entree.statutGrossesse","fr-lm-informations-cliniques.entree.statutGrossesse","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-pregnancy-observation {[]} {[]}
 ","Statut grossesse","Statut grossesse","","","","","","","","","",,,,,"",,,,"fr-lm-informations-cliniques.entree.statutGrossesse",0,1,"",""
 "fr-lm-informations-cliniques.entree.administrationProduitDeSante","fr-lm-informations-cliniques.entree.administrationProduitDeSante","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dicom-medication-administration {[]} {[]}
 ","Produits de santé administré avant l'examen d'imagerie","Produits de santé administré avant l'examen d'imagerie","","","","","","","","","",,,,,"",,,,"fr-lm-informations-cliniques.entree.administrationProduitDeSante",0,*,"",""

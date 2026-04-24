@@ -1,4 +1,4 @@
-# Modèle logique métier - FR LM Batterie d'examens de biologie médicale - ANS IG document core v0.1.0-snapsnot
+# Modèle logique métier - FR LM Batterie d'examens de biologie médicale - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-batterie-examens-biologie-medicale | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-16 | *Computable Name*:FRLMBatterieExamensBiologieMedicale |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-batterie-examens-biologie-medicale | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-24 | *Computable Name*:FRLMBatterieExamensBiologieMedicale |
 
  
 Entrée Batterie d’examens de biologie médicale 
@@ -41,11 +41,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-batterie-exame
     "valueCode" : "can-be-target"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-batterie-examens-biologie-medicale",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRLMBatterieExamensBiologieMedicale",
   "title" : "Modèle logique métier - FR LM Batterie d'examens de biologie médicale",
   "status" : "draft",
-  "date" : "2026-04-16T07:11:11+00:00",
+  "date" : "2026-04-24T08:31:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-batterie-exame
   "kind" : "logical",
   "abstract" : false,
   "type" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-batterie-examens-biologie-medicale",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
+  "baseDefinition" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry",
   "derivation" : "specialization",
   "differential" : {
     "element" : [{
@@ -74,17 +74,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-batterie-exame
       "path" : "fr-lm-batterie-examens-biologie-medicale",
       "short" : "Modèle logique métier - FR LM Batterie d'examens de biologie médicale",
       "definition" : "Entrée Batterie d'examens de biologie médicale"
-    },
-    {
-      "id" : "fr-lm-batterie-examens-biologie-medicale.identifiant",
-      "path" : "fr-lm-batterie-examens-biologie-medicale.identifiant",
-      "short" : "Identifiant de la batterie d'examen",
-      "definition" : "Identifiant de la batterie d'examen",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "Identifier"
-      }]
     },
     {
       "id" : "fr-lm-batterie-examens-biologie-medicale.codeBatterieExamen",
@@ -95,28 +84,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-batterie-exame
       "max" : "1",
       "type" : [{
         "code" : "CodeableConcept"
-      }]
-    },
-    {
-      "id" : "fr-lm-batterie-examens-biologie-medicale.statut",
-      "path" : "fr-lm-batterie-examens-biologie-medicale.statut",
-      "short" : "Niveau de complétude",
-      "definition" : "Niveau de complétude",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "code"
-      }]
-    },
-    {
-      "id" : "fr-lm-batterie-examens-biologie-medicale.dateExamen",
-      "path" : "fr-lm-batterie-examens-biologie-medicale.dateExamen",
-      "short" : "Date de l'examen",
-      "definition" : "Date de l'examen",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "dateTime"
       }]
     },
     {
@@ -142,28 +109,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-batterie-exame
       "max" : "*",
       "type" : [{
         "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-laboratoire-executant"
-      }]
-    },
-    {
-      "id" : "fr-lm-batterie-examens-biologie-medicale.auteur",
-      "path" : "fr-lm-batterie-examens-biologie-medicale.auteur",
-      "short" : "Auteur",
-      "definition" : "Auteur",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure-auteur"
-      }]
-    },
-    {
-      "id" : "fr-lm-batterie-examens-biologie-medicale.participant",
-      "path" : "fr-lm-batterie-examens-biologie-medicale.participant",
-      "short" : "Participant",
-      "definition" : "Participant",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-participant"
       }]
     },
     {

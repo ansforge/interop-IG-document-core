@@ -1,4 +1,4 @@
-# Modèle logique métier - FR LM Opérateur de saisie - ANS IG document core v0.1.0-snapsnot
+# Modèle logique métier - FR LM Opérateur de saisie - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-operateur-saisie | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-16 | *Computable Name*:FRLMOperateurSaisie |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-operateur-saisie | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-24 | *Computable Name*:FRLMOperateurSaisie |
 
  
 Opérateur de saisie de la totalité ou d’une partie du contenu du document. 
@@ -41,11 +41,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-operateur-sais
     "valueCode" : "can-be-target"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-operateur-saisie",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRLMOperateurSaisie",
   "title" : "Modèle logique métier - FR LM Opérateur de saisie",
   "status" : "draft",
-  "date" : "2026-04-16T07:11:11+00:00",
+  "date" : "2026-04-24T08:31:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -88,14 +88,17 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-operateur-sais
       }]
     },
     {
-      "id" : "fr-lm-operateur-saisie.operateurSaisie",
-      "path" : "fr-lm-operateur-saisie.operateurSaisie",
+      "id" : "fr-lm-operateur-saisie.operateurSaisie[x]",
+      "path" : "fr-lm-operateur-saisie.operateurSaisie[x]",
       "short" : "Opérateur de saisie",
       "definition" : "Opérateur de saisie",
       "min" : 1,
       "max" : "1",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional"
+      },
+      {
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-usager"
       }]
     }]
   }

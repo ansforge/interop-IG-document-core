@@ -1,4 +1,4 @@
-# CDA - FR Rang de la vaccination - ANS IG document core v0.1.0-snapsnot
+# CDA - FR Rang de la vaccination - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-rang-de-la-vaccination | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-16 | *Computable Name*:FRCDARangDeLaVaccination |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-rang-de-la-vaccination | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-24 | *Computable Name*:FRCDARangDeLaVaccination |
 
  
 Entrée FR-Rang-de-la-vaccination: CDA - Medication series number observation. Cette entrée permet de préciser le rang de la vaccination dans une série d’injections vaccinantes. 
@@ -62,11 +62,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-rang-de-la-va
     "valueUri" : "cda"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-rang-de-la-vaccination",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRCDARangDeLaVaccination",
   "title" : "CDA - FR Rang de la vaccination",
   "status" : "draft",
-  "date" : "2026-04-16T07:11:11+00:00",
+  "date" : "2026-04-24T08:31:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -96,10 +96,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-rang-de-la-va
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
-      "id" : "Observation",
-      "path" : "Observation"
-    },
-    {
       "id" : "Observation.templateId",
       "path" : "Observation.templateId",
       "slicing" : {
@@ -171,12 +167,16 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-rang-de-la-va
     {
       "id" : "Observation.code.code",
       "path" : "Observation.code.code",
-      "patternCode" : "30973-2"
+      "min" : 1,
+      "patternCode" : "30973-2",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.code.codeSystem",
       "path" : "Observation.code.codeSystem",
-      "patternString" : "2.16.840.1.113883.6.1"
+      "min" : 1,
+      "patternString" : "2.16.840.1.113883.6.1",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.code.codeSystemName",
@@ -186,7 +186,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-rang-de-la-va
     {
       "id" : "Observation.code.displayName",
       "path" : "Observation.code.displayName",
-      "patternString" : "Rang de la vaccination"
+      "patternString" : "Rang de la vaccination",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.derivationExpr",

@@ -1,4 +1,4 @@
-# Modèle logique métier - FR LM Participant - ANS IG document core v0.1.0-snapsnot
+# Modèle logique métier - FR LM Participant - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,15 +8,15 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-participant | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-16 | *Computable Name*:FRLMParticipant |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-participant | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-24 | *Computable Name*:FRLMParticipant |
 
  
 Personne/Structure impliquée dans les évènements décrits par le document qui n’a pas été mentionné ailleurs. 
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Batterie d'examens de biologie médicale](StructureDefinition-fr-lm-batterie-examens-biologie-medicale.md) and [Modèle logique métier - FR LM En-tête document](StructureDefinition-fr-lm-entete-document.md)
+* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM En-tête document](StructureDefinition-fr-lm-entete-document.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-participant)
 
@@ -41,11 +41,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-participant.cs
     "valueCode" : "can-be-target"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-participant",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRLMParticipant",
   "title" : "Modèle logique métier - FR LM Participant",
   "status" : "draft",
-  "date" : "2026-04-16T07:11:11+00:00",
+  "date" : "2026-04-24T08:31:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -109,6 +109,69 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-participant.cs
       }]
     },
     {
+      "id" : "fr-lm-participant.identifier",
+      "path" : "fr-lm-participant.identifier",
+      "short" : "Identifiants de la personne",
+      "definition" : "Identifiants de la personne",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "fr-lm-participant.name",
+      "path" : "fr-lm-participant.name",
+      "short" : "Nom de la personne",
+      "definition" : "Nom de la personne",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-human-name"
+      }]
+    },
+    {
+      "id" : "fr-lm-participant.type",
+      "path" : "fr-lm-participant.type",
+      "short" : "Type de participation",
+      "definition" : "Type de participation",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "description" : "jdv-hl7-v3-ParticipationType-cisis (2.16.840.1.113883.1.11.10901)",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ParticipationType-cisis"
+      }
+    },
+    {
+      "id" : "fr-lm-participant.role",
+      "path" : "fr-lm-participant.role",
+      "short" : "Rôle fonctionnel",
+      "definition" : "Rôle fonctionnel",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "description" : "JDV_J47_FunctionCode_CISIS (1.2.250.1.213.1.1.5.124)",
+        "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J47-FunctionCode-CISIS/FHIR/JDV-J47-FunctionCode-CISIS"
+      }
+    },
+    {
+      "id" : "fr-lm-participant.period",
+      "path" : "fr-lm-participant.period",
+      "short" : "Période de la participation",
+      "definition" : "Période de la participation",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Period"
+      }]
+    },
+    {
       "id" : "fr-lm-participant.participant",
       "path" : "fr-lm-participant.participant",
       "short" : "Participant",
@@ -116,7 +179,40 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-participant.cs
       "min" : 1,
       "max" : "1",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure"
+        "code" : "Base"
+      }]
+    },
+    {
+      "id" : "fr-lm-participant.participant.participantProfessional",
+      "path" : "fr-lm-participant.participant.participantProfessional",
+      "short" : "Le participant est un professionnel de santé",
+      "definition" : "Le participant est un professionnel de santé",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional"
+      }]
+    },
+    {
+      "id" : "fr-lm-participant.participant.participantOrganisation",
+      "path" : "fr-lm-participant.participant.participantOrganisation",
+      "short" : "Le participant est une organisation",
+      "definition" : "Le participant est une organisation",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organisation"
+      }]
+    },
+    {
+      "id" : "fr-lm-participant.participant.participantDevice",
+      "path" : "fr-lm-participant.participant.participantDevice",
+      "short" : "Le participant est un système",
+      "definition" : "Le participant est un système",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device"
       }]
     }]
   }

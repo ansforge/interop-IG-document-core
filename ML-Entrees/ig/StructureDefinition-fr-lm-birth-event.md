@@ -1,4 +1,4 @@
-# Logical model - FR LM Naissance - ANS IG document core v0.1.0-snapsnot
+# Logical model - FR LM Naissance - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,15 +8,15 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-birth-event | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-16 | *Computable Name*:FRLMBirthEvent |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-birth-event | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-24 | *Computable Name*:FRLMBirthEvent |
 
  
 Entrée Naissance 
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Logical model- FR LM Historique de la grossesse](StructureDefinition-fr-lm-historique-grossesse.md)
+* Ce Modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-birth-event)
 
@@ -41,11 +41,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-birth-event.cs
     "valueCode" : "can-be-target"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-birth-event",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRLMBirthEvent",
   "title" : "Logical model - FR LM Naissance",
   "status" : "draft",
-  "date" : "2026-04-16T07:11:11+00:00",
+  "date" : "2026-04-24T08:31:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -92,17 +92,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-birth-event.cs
       }]
     },
     {
-      "id" : "fr-lm-birth-event.statut",
-      "path" : "fr-lm-birth-event.statut",
-      "short" : "Statut de l'entrée",
-      "definition" : "Statut de l'entrée",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "code"
-      }]
-    },
-    {
       "id" : "fr-lm-birth-event.identificationNouveauNe",
       "path" : "fr-lm-birth-event.identificationNouveauNe",
       "short" : "Identification du nouveau né",
@@ -110,7 +99,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-birth-event.cs
       "min" : 1,
       "max" : "1",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-sujet"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-related-person"
       }]
     },
     {
@@ -121,7 +110,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-birth-event.cs
       "min" : 1,
       "max" : "*",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation-pregnancy"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-pregnancy-observation"
       }]
     }]
   }

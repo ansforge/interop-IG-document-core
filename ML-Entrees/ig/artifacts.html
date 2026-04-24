@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Artifacts Summary - ANS IG document core v0.1.0-snapsnot</title>
+    <title>Artifacts Summary - ANS IG document core v0.1.0-snapshot</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -68,7 +68,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">ANS IG document core</span>
             <br/>
-            <span style="display:inline-block;">0.1.0-snapsnot - ci-build
+            <span style="display:inline-block;">0.1.0-snapshot - ci-build
 
 
 
@@ -225,7 +225,7 @@
 
             <a href="#bottom">bottom</a>
 
-          | <a href="StructureDefinition-fr-lm-consentement.html">next&gt;</a>
+          | <a href="StructureDefinition-fr-lm-health-professional.html">next&gt;</a>
 
           </span>
 
@@ -247,7 +247,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">ANS IG document core - version de développement local (intégration continue v0.1.0-snapsnot) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/document/core/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">ANS IG document core - version de développement local (intégration continue v0.1.0-snapshot) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/document/core/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -271,49 +271,52 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#4">Eléments CDA</a>
       </li>
       <li>
-         <a href="#5">Eléments CDA du corps</a>
+         <a href="#5">Eléments CDA du corps des sections</a>
       </li>
       <li>
-         <a href="#6">Profils FHIR entête</a>
+         <a href="#6">Eléments CDA corps des composants élémentaires</a>
       </li>
       <li>
-         <a href="#7">Profils FHIR corps</a>
+         <a href="#7">Profils FHIR entête</a>
       </li>
       <li>
-         <a href="#8">Data Type Profiles</a>
+         <a href="#8">Profils FHIR corps</a>
       </li>
       <li>
-         <a href="#9">Extensions FHIR entête</a>
+         <a href="#9">Data Type Profiles</a>
       </li>
       <li>
-         <a href="#10">Extensions FHIR corps</a>
+         <a href="#10">Extensions FHIR entête</a>
       </li>
       <li>
-         <a href="#11">Concept Maps de l'entête du document</a>
+         <a href="#11">Extensions FHIR corps</a>
       </li>
       <li>
-         <a href="#12">Concept Maps des sections d'un document</a>
+         <a href="#12">Concept Maps de l'entête du document</a>
       </li>
       <li>
-         <a href="#13">Concept Maps des composants élémentaires d'un Document</a>
+         <a href="#13">Concept Maps des sections d'un document</a>
       </li>
       <li>
-         <a href="#14">Structures: Logical Models</a>
+         <a href="#14">Concept Maps des composants élémentaires d'un Document</a>
       </li>
       <li>
-         <a href="#15">Structures: Extension Definitions</a>
+         <a href="#15">Structures: Logical Models</a>
       </li>
       <li>
-         <a href="#16">Terminology: Value Sets</a>
+         <a href="#16">Structures: Extension Definitions</a>
       </li>
       <li>
-         <a href="#17">Terminology: Concept Maps</a>
+         <a href="#17">Terminology: Value Sets</a>
       </li>
       <li>
-         <a href="#18">Example: Example Instances</a>
+         <a href="#18">Terminology: Concept Maps</a>
       </li>
       <li>
-         <a href="#19">Other</a>
+         <a href="#19">Example: Example Instances</a>
+      </li>
+      <li>
+         <a href="#20">Other</a>
       </li>
    </ul>
 </div>
@@ -327,6 +330,60 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-health-professional.html"
+                  title="StructureDefinition/fr-lm-health-professional">Logical model - FR LM Health Professional</a>
+            </td>
+            <td>
+<p>Une personne (professionnel ou patient ou autre)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-human-name.html"
+                  title="StructureDefinition/fr-lm-human-name">Logical model - FR LM Human Name</a>
+            </td>
+            <td>
+<p>Modele logique metier - FR LM Human Name</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-informant.html"
+                  title="StructureDefinition/fr-lm-informant">Logical model - FR LM Informant</a>
+            </td>
+            <td>
+<p>Informant (personne ayant fourni des informations utiles à la production du document : professionnel, structure, patient/usager, autre), personne de confiance, personne à prévenir en cas d’urgence, aidant, aidé.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-location.html"
+                  title="StructureDefinition/fr-lm-location">Logical model - FR LM Location</a>
+            </td>
+            <td>
+<p>Lieu</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-organisation.html"
+                  title="StructureDefinition/fr-lm-organisation">Logical model - FR LM Organisation</a>
+            </td>
+            <td>
+<p>Une structure (organisation) pour les professionnels de santé.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-related-person.html"
+                  title="StructureDefinition/fr-lm-related-person">Logical model - FR LM Related Person</a>
+            </td>
+            <td>
+<p>Related Person</p>
+</td>
+         </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-fr-lm-consentement.html"
@@ -369,15 +426,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-informateur.html"
-                  title="StructureDefinition/fr-lm-informateur">Modèle logique métier - FR LM Informateur</a>
-            </td>
-            <td>
-<p>Informateur (personne ayant fourni des informations utiles à la production du document : professionnel, structure, patient/usager, autre), personne de confiance, personne à prévenir en cas d’urgence, aidant, aidé.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-fr-lm-operateur-saisie.html"
                   title="StructureDefinition/fr-lm-operateur-saisie">Modèle logique métier - FR LM Opérateur de saisie</a>
             </td>
@@ -401,24 +449,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Patient/Usager concerné par le document.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-personne-structure.html"
-                  title="StructureDefinition/fr-lm-personne-structure">Modèle logique métier - FR LM Personne et/ou Structure</a>
-            </td>
-            <td>
-<p>Une personne (professionnel ou patient ou autre) et/ou une structure (pour les professionnels).</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-personne-structure-auteur.html"
-                  title="StructureDefinition/fr-lm-personne-structure-auteur">Modèle logique métier - FR LM Personne et/ou Structure Auteur</a>
-            </td>
-            <td>
-<p>Une personne (professionnel ou patient ou autre) et/ou une structure (pour les professionnels).</p>
 </td>
          </tr>
          <tr>
@@ -475,15 +505,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-systeme-structure-auteur.html"
-                  title="StructureDefinition/fr-lm-systeme-structure-auteur">Modèle logique métier - FR LM Système / Structure</a>
-            </td>
-            <td>
-<p>Système auteur du document</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-fr-lm-validateur.html"
                   title="StructureDefinition/fr-lm-validateur">Modèle logique métier - FR LM Validateur</a>
             </td>
@@ -515,6 +536,33 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Section Historique des actes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-section-pregnancy-history.html"
+                  title="StructureDefinition/fr-lm-section-pregnancy-history">Logical model  - FR LM Pregnancy History</a>
+            </td>
+            <td>
+<p>Section Historique des grossesses</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-alerts.html"
+                  title="StructureDefinition/fr-lm-alerts">Logical model - FR LM Alerts</a>
+            </td>
+            <td>
+<p>Section Points de vigilance</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-section.html"
+                  title="StructureDefinition/fr-lm-section">Logical model - FR LM Section</a>
+            </td>
+            <td>
+<p>Section</p>
 </td>
          </tr>
          <tr>
@@ -560,15 +608,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Section Antécédents médicaux</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-historique-des-grossesses.html"
-                  title="StructureDefinition/fr-lm-historique-des-grossesses">Modèle logique métier - FR LM Antécédents obstétricaux</a>
-            </td>
-            <td>
-<p>Section Historique des grossesses</p>
 </td>
          </tr>
          <tr>
@@ -771,15 +810,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-points-de-vigilances-non-code.html"
-                  title="StructureDefinition/fr-lm-points-de-vigilances-non-code">Modèle logique métier - FR LM Points de vigilance (non-codés)</a>
-            </td>
-            <td>
-<p>Section Points de vigilance (non-codés)</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-fr-lm-prescription-dispositifs-medicaux.html"
                   title="StructureDefinition/fr-lm-prescription-dispositifs-medicaux">Modèle logique métier - FR LM Prescription de dispositifs médicaux</a>
             </td>
@@ -875,15 +905,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Section Résultats de laboratoire de biologie de seconde intention</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-section.html"
-                  title="StructureDefinition/fr-lm-section">Modèle logique métier - FR LM Section</a>
-            </td>
-            <td>
-<p>Section</p>
 </td>
          </tr>
          <tr>
@@ -1008,7 +1029,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/fr-lm-advance-directive">Logical model - FR LM Advance Directive</a>
             </td>
             <td>
-<p>Entrée Directive anticipée</p>
+<p>Entree Directive anticipee</p>
 </td>
          </tr>
          <tr>
@@ -1049,8 +1070,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-assessment.html"
-                  title="StructureDefinition/fr-lm-assessment">Logical model - FR LM Assessment</a>
+               <a href="StructureDefinition-fr-lm-observation-assessment.html"
+                  title="StructureDefinition/fr-lm-observation-assessment">Logical model - FR LM Assessment</a>
             </td>
             <td>
 <p>Entrée Evaluation</p>
@@ -1076,11 +1097,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-author-apsr.html"
-                  title="StructureDefinition/fr-lm-author-apsr">Logical model - FR LM Author APSR</a>
+               <a href="StructureDefinition-fr-lm-body-stucture.html"
+                  title="StructureDefinition/fr-lm-body-stucture">Logical model - FR LM Body Stucture</a>
             </td>
             <td>
-<p>Auteur APSR (Anatomic Pathology Structured Report), la structure de cet élément est identique à celle de l’élément Auteur</p>
+<p>Localisation anatomique</p>
 </td>
          </tr>
          <tr>
@@ -1292,15 +1313,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-observation-pregnancy.html"
-                  title="StructureDefinition/fr-lm-observation-pregnancy">Logical model - FR LM Observation Pregnancy</a>
-            </td>
-            <td>
-<p>Entrée Observation sur la grossesse</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-fr-lm-observation-related-to-prevention.html"
                   title="StructureDefinition/fr-lm-observation-related-to-prevention">Logical model - FR LM Observation Related to Prevention</a>
             </td>
@@ -1324,15 +1336,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Entrée Observation en rapport avec un accident travail</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-participant-corps.html"
-                  title="StructureDefinition/fr-lm-participant-corps">Logical model - FR LM Participant</a>
-            </td>
-            <td>
-<p>Participant</p>
 </td>
          </tr>
          <tr>
@@ -1481,15 +1484,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-sujet.html"
-                  title="StructureDefinition/fr-lm-sujet">Logical model - FR LM Sujet</a>
-            </td>
-            <td>
-<p>Sujet</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-fr-lm-sujet-non-humain.html"
                   title="StructureDefinition/fr-lm-sujet-non-humain">Logical model - FR LM Sujet non humain</a>
             </td>
@@ -1517,20 +1511,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-laboratory-observation.html"
+                  title="StructureDefinition/fr-lm-laboratory-observation">Logical model - Laboratory Observation</a>
+            </td>
+            <td>
+<p>Entrée Résultat d’examen de laboratoire</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-fr-lm-dosage-instructions.html"
                   title="StructureDefinition/fr-lm-dosage-instructions">Logical model- FR LM Dosage Instructions</a>
             </td>
             <td>
 <p>Entrée Posologie</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-historique-grossesse.html"
-                  title="StructureDefinition/fr-lm-historique-grossesse">Logical model- FR LM Historique de la grossesse</a>
-            </td>
-            <td>
-<p>Entrée Historique de la grossesse</p>
 </td>
          </tr>
          <tr>
@@ -1549,6 +1543,33 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Entrée Habitus Mode de vie</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-pregnancy-history.html"
+                  title="StructureDefinition/fr-lm-pregnancy-history">Logical model- FR LM Pregnancy History</a>
+            </td>
+            <td>
+<p>Entrée Historique de la grossesse</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-pregnancy-observation.html"
+                  title="StructureDefinition/fr-lm-pregnancy-observation">Logical model- FR LM Pregnancy Observation</a>
+            </td>
+            <td>
+<p>Observation sur la grossesse</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-pregnancy-status.html"
+                  title="StructureDefinition/fr-lm-pregnancy-status">Logical model- FR LM Pregnancy Status</a>
+            </td>
+            <td>
+<p>Statut de grossesse</p>
 </td>
          </tr>
          <tr>
@@ -1589,29 +1610,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-autorisation-exposition.html"
-                  title="StructureDefinition/fr-lm-autorisation-exposition">Modèle logique métier - FR LM Autorisation exposition</a>
-            </td>
-            <td>
-<p>Entrée Autorisation exposition</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-fr-lm-batterie-examens-biologie-medicale.html"
                   title="StructureDefinition/fr-lm-batterie-examens-biologie-medicale">Modèle logique métier - FR LM Batterie d'examens de biologie médicale</a>
             </td>
             <td>
 <p>Entrée Batterie d’examens de biologie médicale</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-informant-apsr.html"
-                  title="StructureDefinition/fr-lm-informant-apsr">Modèle logique métier - FR LM Informant APSR</a>
-            </td>
-            <td>
-<p>Informant APSR(Anatomic Pathology Structured Report), la structure de cet élément est identique à celle de l’élément Informateur</p>
 </td>
          </tr>
          <tr>
@@ -1648,15 +1651,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Résultat d’examens de biologie / élement clinique pertinent</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-participant-apsr.html"
-                  title="StructureDefinition/fr-lm-participant-apsr">Mogical model - FR LM Participant APSR</a>
-            </td>
-            <td>
-<p>Participant APSR(Anatomic Pathology Structured Report)</p>
 </td>
          </tr>
       </tbody>
@@ -1986,7 +1980,500 @@ L’occurrence de documentationOf/serviceEvent contenant les données de l’év
       </tbody>
    </table>
    <a name="5"> </a>
-   <h3>Eléments CDA du corps </h3>
+   <h3>Eléments CDA du corps des sections </h3>
+    
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-allergies-et-hypersensibilites.html"
+                  title="StructureDefinition/fr-cda-allergies-et-hypersensibilites">CDA - FR Allergies et hypersensibilites</a>
+            </td>
+            <td>
+<p>IHE-PCC - Allergies-And-Other-Adverse-Reactions</p>
+<ul>
+  <li>La section ‘Allergies et hypersensibilités’ permet de décrire la liste codée des allergies et hypersensibilités (médicaments, environnements, aliments,..) précisant notamment l’agent et les réactions observées.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-section-antecedents-familiaux.html"
+                  title="StructureDefinition/fr-cda-section-antecedents-familiaux">CDA - FR Antecedents familiaux</a>
+            </td>
+            <td>
+<p>IHE-PCC Coded-Family-Medical-History</p>
+<ul>
+  <li>Liste codée des antécédents familiaux</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-antecedents-medicaux.html"
+                  title="StructureDefinition/fr-cda-antecedents-medicaux">CDA - FR Antecedents medicaux</a>
+            </td>
+            <td>
+<p>IHE-PCC - History-Of-Past-Illness</p>
+<ul>
+  <li>La section ‘Antécédents médicaux’ doit contenir une liste codée des antécédents médicaux du patient. Il s’agit d’épisodes résolus, c’est à dire de maladies que l’on considère comme guéries. Si une maladies est susceptible de présenter des épisodes de rechute, elle sera classée dans des problèmes actifs, même si ces épisodes dont résolus.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-code-a-barres.html"
+                  title="StructureDefinition/fr-cda-code-a-barres">CDA - FR Code a barres</a>
+            </td>
+            <td>
+<p>Cette section permet d’enregistrer des codes à barres</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-commentaire-non-code.html"
+                  title="StructureDefinition/fr-cda-commentaire-non-code">CDA - FR Commentaire non code</a>
+            </td>
+            <td>
+<p>IHE-PCC - Document-Summary</p>
+<ul>
+  <li>Cette section permet d’indiquer un commentaire sous forme textuelle.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-cr-bio-chapitre.html"
+                  title="StructureDefinition/fr-cda-cr-bio-chapitre">CDA - FR CR BIO Chapitre</a>
+            </td>
+            <td>
+<p>IHE-PaLM - Laboratory Specialty Section</p>
+<ul>
+  <li>Une section de premier niveau est appelée ‘Chapitre’ et correspond à une sous-discipline de la biologie médicale (par exemple « biochimie »). Elle contient :</li>
+  <li>soit directement la présentation des résultats d’examens de biologie médicale obtenus pour ce chapitre : dans ce cas, il y a un unique élément &lt;text&gt; (présentation du contenu pour le lecteur) et un unique élément &lt;entry&gt; (données codées pour les SIS dont procède le contenu de l’élément &lt;text&gt;)</li>
+  <li>soit une liste de sections de second niveau, appelés sous-chapitres (par exemple « Gaz du sang ») : dans ce cas, il y a une liste d’éléments &lt;component&gt; dont chacun introduit une &lt;section&gt; de second niveau présentant un sous-ensemble de un ou plusieurs résultats d’examens de biologie médicale.Remarque : L’arborescence du corps du compte rendu d’examens de biologie médicale est choisie par le LPS producteur du document selon la logique de présentation définie par le laboratoire.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-cr-bio-sous-chapitre.html"
+                  title="StructureDefinition/fr-cda-cr-bio-sous-chapitre">CDA - FR CR BIO Sous Chapitre</a>
+            </td>
+            <td>
+<p>IHE-PaLM - Laboratory Report Item Section</p>
+<ul>
+  <li>Section de second niveau, appelée sous-chapitre (par exemple « Gaz du sang ») qui présente un sous-ensemble de un ou plusieurs résultats d’examens de biologie médicale. Elle est comporte un élément ‘text’ qui porte les résultats présentés et interprétés pour le lecteur et d’une entrée contenant les données codées dont procède le contenu de l’élément ‘text’.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dicom-acte-imagerie.html"
+                  title="StructureDefinition/fr-cda-dicom-acte-imagerie">CDA - FR DICOM Acte imagerie</a>
+            </td>
+            <td>
+<p>DICOM Part 20 - Imaging Procedure Description Section</p>
+<ul>
+  <li>Cette section permet d’enregistrer les informations sur les détails techniques de l’acte d’imagerie et peut inclure des informations sur le protocole, le dispositif d’imagerie, le contraste, la dose de rayonnement, les médicaments administrés.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dicom-addendum.html"
+                  title="StructureDefinition/fr-cda-dicom-addendum">CDA - FR DICOM Addendum</a>
+            </td>
+            <td>
+<p>DICOM Part 20 - Addendum Section</p>
+<ul>
+  <li>La section Addendum permet d’enregistrer, dans une nouvelle version du compte-rendu, des informations correctives ou complémentaires par rapport au compte-rendu initial.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dicom-complications.html"
+                  title="StructureDefinition/fr-cda-dicom-complications">CDA - FR DICOM Complications</a>
+            </td>
+            <td>
+<p>DICOM Part 20 - Complications</p>
+<ul>
+  <li>Cette sous-section permet d’enregistrer les complications survenues au cours de l’acte sous forme textuelle.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dicom-conclusion.html"
+                  title="StructureDefinition/fr-cda-dicom-conclusion">CDA - FR DICOM Conclusion</a>
+            </td>
+            <td>
+<p>DICOM Part 20 - Impression Section</p>
+<ul>
+  <li>Cette section permet d’enregistrer les informations sur les diagnostics les plus importantes ou d’autres conclusions cliniques qui peuvent être faites à partir des observations d’imagerie et d’autres informations cliniques. Elle peut inclure des recommandations pour des tests d’imagerie supplémentaires ou d’autres actions, ainsi que des évaluations globales.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dicom-demande-examen.html"
+                  title="StructureDefinition/fr-cda-dicom-demande-examen">CDA - FR DICOM Demande examen</a>
+            </td>
+            <td>
+<p>DICOM Part 20 - Request Section</p>
+<ul>
+  <li>Justification de la demande d’examen / Finalité de l’examen.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dicom-examen-comparatif.html"
+                  title="StructureDefinition/fr-cda-dicom-examen-comparatif">CDA - FR DICOM Examen comparatif</a>
+            </td>
+            <td>
+<p>DICOM Part 20 - Comparison Study Section</p>
+<ul>
+  <li>Cette section textuelle permet d’enregistrer une comparaison de l’acte actuel avec un acte antérieur.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dicom-exposition-aux-radiations.html"
+                  title="StructureDefinition/fr-cda-dicom-exposition-aux-radiations">CDA - FR DICOM Exposition aux radiations</a>
+            </td>
+            <td>
+<p>DICOM Part 20 - Radiation Exposure and Protection Information </p>
+<ul>
+  <li>Cette sous-section permet d’enregistrer les informations relatives à l’exposition du patient aux rayonnements et les informations de radioprotection.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dicom-historique-medical.html"
+                  title="StructureDefinition/fr-cda-dicom-historique-medical">CDA - FR DICOM Historique medical</a>
+            </td>
+            <td>
+<p>DICOM Part 20 - Medical (General) History Section</p>
+<ul>
+  <li>Cette sous-section permet d’enregistrer les antécédents médicaux, les antécédents chirurgicaux et les contre-indications.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dicom-informations-cliniques.html"
+                  title="StructureDefinition/fr-cda-dicom-informations-cliniques">CDA - FR DICOM Informations cliniques</a>
+            </td>
+            <td>
+<p>DICOM Part 20 - Clinical Information Section. Cette section permet d’enregistrer les détails cliniques liés au patient, tels que :</p>
+<ul>
+  <li>Justification de la demande dans la sous-section FR-DICOM-demande-examen [1..1]</li>
+  <li>Finalité de l’examen dans la même sous-section FR-DICOM-demande-examen [0..1]</li>
+  <li>Antécédents médicaux significatifs et pertinents pour cet examen dans la sous-section FR-Historique-medical [0..1]</li>
+  <li>Antécédents chirurgicaux pertinents pour cet examen dans la sous-section FR-Historique-medical [0..1]</li>
+  <li>Contre-indications et facteurs de risques connus au moment de la demande et dépendant de la modalité dans la sous-section FR-Historique-medical [0..1]</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dicom-object-catalog.html"
+                  title="StructureDefinition/fr-cda-dicom-object-catalog">CDA - FR DICOM Object Catalog</a>
+            </td>
+            <td>
+<p>DICOM Part 20 - DICOM Object Catalog Section. Le catalogue d’objets DICOM répertorie tous les objets référencés selon l’organisation suivante :</p>
+<ul>
+  <li>[0..*] Examen</li>
+  <li>[1..*] Série (avec la modalité d’acquisition)</li>
+  <li>[1..*] Objet référencé (avec la classe d’objet)</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dicom-resultats.html"
+                  title="StructureDefinition/fr-cda-dicom-resultats">CDA - FR DICOM Resultats</a>
+            </td>
+            <td>
+<p>DICOM Part 20 - Findings</p>
+<ul>
+  <li>Cette section permet d’enregistrer, sous forme textuelle, les observations cliniquement significatives confirmées ou découvertes au cours de l’intervention d’imagerie (description des résultats).</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dispensation-medicaments.html"
+                  title="StructureDefinition/fr-cda-dispensation-medicaments">CDA - FR Dispensation medicaments</a>
+            </td>
+            <td>
+<p>IHE PHARM DIS - Dispense SectionDescription d’un médicament administré au patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-document-pdf-copie.html"
+                  title="StructureDefinition/fr-cda-document-pdf-copie">CDA - FR Document PDF copie</a>
+            </td>
+            <td>
+<p>Cette section ne contient qu’une et une seule entrée FR-Document-attache qui contiendra la copie PDF encodée en B64 du document CDA.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-documents-ajoutes.html"
+                  title="StructureDefinition/fr-cda-documents-ajoutes">CDA - FR Documents ajoutes</a>
+            </td>
+            <td>
+<p>Liste de documents ajoutés</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-education-du-patient.html"
+                  title="StructureDefinition/fr-cda-education-du-patient">CDA - FR Education du patient</a>
+            </td>
+            <td>
+<p>IHE-PCC - Patient Education Section</p>
+<ul>
+  <li>Liste des éléments se rapportant à l’éducation du patient vis-à-vis de sa maladie ou par rapport à un acte prévu.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-effets-indesirables.html"
+                  title="StructureDefinition/fr-cda-effets-indesirables">CDA - FR Effets indesirables</a>
+            </td>
+            <td>
+<p>Liste des effets indésirables prévisibles liés aux médicaments.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-facteurs-de-risque-professionnels-non-code.html"
+                  title="StructureDefinition/fr-cda-facteurs-de-risque-professionnels-non-code">CDA - FR Facteurs de risque professionnels non code</a>
+            </td>
+            <td>
+<p>IHE-PCC - Hazardous-Working-Conditions-SectionFacteurs de risques professionnels sous forme narrative (section non codÃ©e).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-fonctions-physiques.html"
+                  title="StructureDefinition/fr-cda-fonctions-physiques">CDA - FR Fonctions physiques</a>
+            </td>
+            <td>
+<p>IHE-PCC - Physical Function Section. Cette section permet d’enregistrer les problÃ¨mes physiques fonctionnels et structurels qui concernent le patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-section-habitus-mode-de-vie.html"
+                  title="StructureDefinition/fr-cda-section-habitus-mode-de-vie">CDA - FR Habitus mode de vie</a>
+            </td>
+            <td>
+<p>IHE-PCC - Coded Social History Section. Liste codÃ©e des informations relatives aux habitus et au mode de vie du patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-historique-des-actes.html"
+                  title="StructureDefinition/fr-cda-historique-des-actes">CDA - FR Historique des actes</a>
+            </td>
+            <td>
+<p>IHE-PCC - Coded-List-Of-Surgeries. Liste codée des actes chirurgicaux, diagnostiques invasifs (ex : cathétérisme cardiaque), thérapeutiques (ex : dialyse). Cette liste contient des entrées codées FR-Acte et éventuellement des entrées FR-References-externes à des documents faisant mention de ces actes.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-historique-des-grossesses.html"
+                  title="StructureDefinition/fr-cda-historique-des-grossesses">CDA - FR Historique des grossesses</a>
+            </td>
+            <td>
+<p>IHE-PCC - Pregnancy-History-Section. Cette section permet de décrire l’historique des grossesses de la patiente.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-plan-de-soins.html"
+                  title="StructureDefinition/fr-cda-plan-de-soins">CDA - FR Plan de soins</a>
+            </td>
+            <td>
+<p>IHE-PCC - Coded Care Plan. La section Plan de soins doit contenir une description narrative des attentes en matière de soins, y compris des propositions, des objectifs et des demandes pour le suivi ou l’amélioration de l’état du patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-points-de-vigilances-non-code.html"
+                  title="StructureDefinition/fr-cda-points-de-vigilances-non-code">CDA - FR Points de vigilances non code</a>
+            </td>
+            <td>
+<p>Section FR-Points-de-vigilances-non-code. Points de vigilance sous forme narrative (section non codée).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-prescription-dispositifs-medicaux.html"
+                  title="StructureDefinition/fr-cda-prescription-dispositifs-medicaux">CDA - FR Prescription dispositifs medicaux</a>
+            </td>
+            <td>
+<p>IHE-PRE - Prescription. Cette section regroupe les lignes de prescriptions des dispositifs médicaux.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-prescription-medicaments.html"
+                  title="StructureDefinition/fr-cda-prescription-medicaments">CDA - FR Prescription medicaments</a>
+            </td>
+            <td>
+<p>IHE-PRE - Prescription. Cette section regroupe les lignes de prescriptions médicamenteuses.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-problemes-actifs.html"
+                  title="StructureDefinition/fr-cda-problemes-actifs">CDA - FR Problemes actifs</a>
+            </td>
+            <td>
+<p>IHE-PCC - Active-Problems-Section. Liste des problèmes actifs du patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-raison-de-la-recommandation.html"
+                  title="StructureDefinition/fr-cda-raison-de-la-recommandation">CDA - FR Raison de la recommandation</a>
+            </td>
+            <td>
+<p>IHE-PCC - Coded Reason for Referral Section. Cette section permet d’indiquer la raison pour laquelle le patient est adressé à l’hôpital, à une consultation, etc. et de donner des informations complémentaires, sous forme codées, à l’aide d’une entrée Simple observation et d’une entrée Problème.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-raison-de-la-recommandation-non-code.html"
+                  title="StructureDefinition/fr-cda-raison-de-la-recommandation-non-code">CDA - FR Raison de la recommandation non code</a>
+            </td>
+            <td>
+<p>IHE-PCC Reason-For-Referral. Cette section permet d’indiquer, sous forme textuelle uniquement, la raison pour laquelle le patient est adressé à l’hôpital, à une consultation, etc.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-section-resultats.html"
+                  title="StructureDefinition/fr-cda-section-resultats">CDA - FR Resultats</a>
+            </td>
+            <td>
+<p>Cette section regroupe les rÃ©sultats d’examens (biologie polyvalente, imagerie, cytologie, pathologie, gÃ©nÃ©tique humaine…)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-resultats-de-biologie-de-seconde-intention.html"
+                  title="StructureDefinition/fr-cda-resultats-de-biologie-de-seconde-intention">CDA - FR Resultats de biologie de seconde intention</a>
+            </td>
+            <td>
+<p>Cette section, optionnelle, est utilisée uniquement dans le cas d’usage particulier des résultats d’examen de laboratoire de biologie de seconde intention, lorsqu’ils ne peuvent être fournis dans un format structuré mais uniquement au format PDF.Cette solution permet d’encapsuler un fichier au format (PDF) et encodé en base 64 dans une section spécifique ‘Résultats de laboratoire de biologie de seconde intention’.Attention : cette solution n’est pas conseillée et reste temporaire, car à terme, tous les résultats émanant des laboratoires de biologie devront être fournis dans un format structuré et codé.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-resultats-evenements.html"
+                  title="StructureDefinition/fr-cda-resultats-evenements">CDA - FR Resultats evenements</a>
+            </td>
+            <td>
+<p>IHE-PCC - Coded-Event-Outcomes. Evenements observés au décours d’un acte ou d’un problème.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-resultats-examens.html"
+                  title="StructureDefinition/fr-cda-resultats-examens">CDA - FR Resultats examens</a>
+            </td>
+            <td>
+<p>IHE-PCC - Coded Results Section. Résultats d’examens réalisés par le patient et éventuellement références à d’autres documents du dossier du patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-resultats-examens-non-code.html"
+                  title="StructureDefinition/fr-cda-resultats-examens-non-code">CDA - FR Resultats examens non code</a>
+            </td>
+            <td>
+<p>IHE-PCC - Results. Résultats d’examens sous forme narrative non codée.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-section-signes-vitaux.html"
+                  title="StructureDefinition/fr-cda-section-signes-vitaux">CDA - FR Signes vitaux</a>
+            </td>
+            <td>
+<p>IHE-PCC - Coded Vital Signs. Section Liste codée des résultats mesurés des signes vitaux.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-statut-du-document.html"
+                  title="StructureDefinition/fr-cda-statut-du-document">CDA - FR Statut du document</a>
+            </td>
+            <td>
+<p>Cette section permet d’indiquer le statut du document (son état d’avancement dans le cycle de vie du document, depuis sa création jusqu’à sa validation définitive par son responsable légal.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-statut-fonctionnel.html"
+                  title="StructureDefinition/fr-cda-statut-fonctionnel">CDA - FR Statut fonctionnel</a>
+            </td>
+            <td>
+<p>Section FR-Statut-fonctionnel. Cette section permet de décrire des résultats d’évaluation du statut fonctionnel du patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-traitements.html"
+                  title="StructureDefinition/fr-cda-traitements">CDA - FR Traitements</a>
+            </td>
+            <td>
+<p>IHE-PCC - Medications. Liste des principales prises médicamenteuses.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-traitements-administres.html"
+                  title="StructureDefinition/fr-cda-traitements-administres">CDA - FR Traitements administres</a>
+            </td>
+            <td>
+<p>IHE-PCC - Medications-Administered. La section ‘Traitements administrés’ contient une description narrative des médicaments administrés au patient et doit inclure des entrées ‘Traitement’.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-traitements-a-la-sortie.html"
+                  title="StructureDefinition/fr-cda-traitements-a-la-sortie">CDA - FR Traitements à la sortie</a>
+            </td>
+            <td>
+<p>IHE-PCC - Hospital-Discharge-Medications. La section ‘Traitements à la sortie’ contient une description narrative des médicaments à administrer au patient après sa sortie de l’hospitalisation et doit inclure des entrées ‘Traitement’.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-vaccinations.html"
+                  title="StructureDefinition/fr-cda-vaccinations">CDA - FR Vaccinations</a>
+            </td>
+            <td>
+<p>IHE-PCC - Immunizations Section. Liste des vaccinations effectuées.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="6"> </a>
+   <h3>Eléments CDA corps des composants élémentaires </h3>
     
 <table class="grid">
       <col style="width:20%"/>
@@ -3103,7 +3590,7 @@ Une vaccination prévue dépend d’un plan accepté et à venir. Cette entrée 
          </tr>
       </tbody>
    </table>
-   <a name="6"> </a>
+   <a name="7"> </a>
    <h3>Profils FHIR entête </h3>
     
 <table class="grid">
@@ -3210,7 +3697,7 @@ Une vaccination prévue dépend d’un plan accepté et à venir. Cette entrée 
          </tr>
       </tbody>
    </table>
-   <a name="7"> </a>
+   <a name="8"> </a>
    <h3>Profils FHIR corps </h3>
     
 <table class="grid">
@@ -3671,11 +4158,11 @@ L’examen est composé d’une ou de plusieurs séries d’images médicales.</
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-procedure-act-document.html"
-                  title="StructureDefinition/fr-procedure-act-document">Procedure - FR Procedure Act Document</a>
+               <a href="StructureDefinition-fr-procedure-document.html"
+                  title="StructureDefinition/fr-procedure-document">Procedure - FR Procedure Document</a>
             </td>
             <td>
-<p>FRProcedureActDocument est un profil utilisé pour décrire un acte planifié ou réalisé.</p>
+<p>FRProcedureDocument est un profil utilisé pour décrire un acte planifié ou réalisé.</p>
 </td>
          </tr>
          <tr>
@@ -3717,7 +4204,7 @@ acte d’imagerie, localisation anatomique / latéralité / topographie, d’aut
          </tr>
       </tbody>
    </table>
-   <a name="8"> </a>
+   <a name="9"> </a>
    <h3>Data Type Profiles </h3>
     
 <table class="grid">
@@ -3752,7 +4239,7 @@ acte d’imagerie, localisation anatomique / latéralité / topographie, d’aut
          </tr>
       </tbody>
    </table>
-   <a name="9"> </a>
+   <a name="10"> </a>
    <h3>Extensions FHIR entête </h3>
     
 <table class="grid">
@@ -3778,7 +4265,7 @@ acte d’imagerie, localisation anatomique / latéralité / topographie, d’aut
          </tr>
       </tbody>
    </table>
-   <a name="10"> </a>
+   <a name="11"> </a>
    <h3>Extensions FHIR corps </h3>
     
 <table class="grid">
@@ -3894,7 +4381,7 @@ acte d’imagerie, localisation anatomique / latéralité / topographie, d’aut
          </tr>
       </tbody>
    </table>
-   <a name="11"> </a>
+   <a name="12"> </a>
    <h3>Concept Maps de l'entête du document </h3>
     
 <table class="grid">
@@ -4151,7 +4638,7 @@ acte d’imagerie, localisation anatomique / latéralité / topographie, d’aut
          </tr>
       </tbody>
    </table>
-   <a name="12"> </a>
+   <a name="13"> </a>
    <h3>Concept Maps des sections d'un document </h3>
     
 <table class="grid">
@@ -4582,7 +5069,7 @@ acte d’imagerie, localisation anatomique / latéralité / topographie, d’aut
          </tr>
       </tbody>
    </table>
-   <a name="13"> </a>
+   <a name="14"> </a>
    <h3>Concept Maps des composants élémentaires d'un Document </h3>
     
 <table class="grid">
@@ -4599,10 +5086,11 @@ acte d’imagerie, localisation anatomique / latéralité / topographie, d’aut
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ConceptMap-FRActLMCDAFHIR.html" title="ConceptMap/FRActLMCDAFHIR">Mapping FRLMActe → FRCDAActe → FRProcedureActDocument</a>
+               <a href="ConceptMap-FRProcedureLMCDAFHIR.html"
+                  title="ConceptMap/FRProcedureLMCDAFHIR">Mapping FRLMActe → FRCDAActe → FRProcedureDocument</a>
             </td>
             <td>
-<p>Mapping des éléments du modèle métier FRLMActe vers le profil CDA FRCDAActe, puis vers le profil FHIR FRProcedureActDocument.</p>
+<p>Mapping des éléments du modèle métier FRLMActe vers le profil CDA FRCDAActe, puis vers le profil FHIR FRProcedureDocument.</p>
 </td>
          </tr>
          <tr>
@@ -5158,7 +5646,7 @@ profil CDA FRCDADispositifMedical, puis vers le profil FHIR FRDeviceUseStatement
          </tr>
       </tbody>
    </table>
-   <a name="14"> </a>
+   <a name="15"> </a>
    <h3>Structures: Logical Models </h3>
     <p>These define data models that represent the domain covered by this implementation guide in more business-friendly terms than the underlying FHIR resources.</p>
 <table class="grid">
@@ -5166,11 +5654,38 @@ profil CDA FRCDADispositifMedical, puis vers le profil FHIR FRDeviceUseStatement
       <tbody>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-fr-dispositifs-medicaux.html"
+                  title="StructureDefinition/fr-dispositifs-medicaux">CDA - FR Dispositifs medicaux</a>
+            </td>
+            <td>
+<p>IHE-PCC - Medical Devices SectionCette section ‘Dispositifs médicaux’ contient une description des dispositifs médicaux implantés (EES, DF, prothèses) chez le malade sous forme codée.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-fr-cda-traitement-subordonne.html"
                   title="StructureDefinition/fr-cda-traitement-subordonne">CDA - FR Traitement subordonne</a>
             </td>
             <td>
 <p>Entrée FR-Traitement-subordonne: Une entrée FR-Traitement de premier niveau peut contenir une ou plusieurs sous-entrées FR-Traitement-subordonne pour les cas spécifiques des dosages progressifs, fractionnés ou conditionnels, ou pour gérer la combinaison de médicaments. L’utilisation de sous-entrées FR-Traitement-subordonne pour traiter ces cas est facultative. Dans le cas où l’entrée FR-Traitement-subordonne n’est pas utilisée, l’information doit être fournie dans la partie narrative de l’entrée FR-Traitement de premier niveau sous forme de texte libre.Pour les dosages progressifs, fractionnés ou conditionnels, les sous-entrées FR-Traitement-subordonne ne doivent spécifier que la fréquence et / ou le dosage modifiés.Pour le dosage conditionnel, chaque sous-entrée FR-Traitement-subordonne doit avoir un élément ‘precondition’ pour indiquer les conditions préalables à l’utilisation du médicament.Pour la combinaison de médicaments, chaque sous-entrée FR-Traitement-subordonne précisera le produit entrant dans la combinaison.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-resultats.html"
+                  title="StructureDefinition/fr-cda-resultats">CDA - FR resultats</a>
+            </td>
+            <td>
+<p>Entrée FR-resultats: L’entrée ‘FR-Resultats’ est une entrée de type ‘organizer’ regroupant les types des résultats classés par type d’examens (BIO, IMG, etc…).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-alert.html"
+                  title="StructureDefinition/fr-lm-alert">Logical model - FR LM Alert</a>
+            </td>
+            <td>
+<p>Entrée points de vigilances</p>
 </td>
          </tr>
          <tr>
@@ -5184,7 +5699,7 @@ profil CDA FRCDADispositifMedical, puis vers le profil FHIR FRDeviceUseStatement
          </tr>
       </tbody>
    </table>
-   <a name="15"> </a>
+   <a name="16"> </a>
    <h3>Structures: Extension Definitions </h3>
     <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -5219,7 +5734,7 @@ profil CDA FRCDADispositifMedical, puis vers le profil FHIR FRDeviceUseStatement
          </tr>
       </tbody>
    </table>
-   <a name="16"> </a>
+   <a name="17"> </a>
    <h3>Terminology: Value Sets </h3>
     <p>These define sets of codes used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -5392,7 +5907,7 @@ Inclut LOINC, ICF, et permet d’autres systèmes si aucun code approprié n’e
          </tr>
       </tbody>
    </table>
-   <a name="17"> </a>
+   <a name="18"> </a>
    <h3>Terminology: Concept Maps </h3>
     <p>These define transformations to convert between codes by systems conforming with this implementation guide.</p>
 <table class="grid">
@@ -5418,7 +5933,7 @@ Inclut LOINC, ICF, et permet d’autres systèmes si aucun code approprié n’e
          </tr>
       </tbody>
    </table>
-   <a name="18"> </a>
+   <a name="19"> </a>
    <h3>Example: Example Instances </h3>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
 <table class="grid">
@@ -5431,6 +5946,42 @@ Inclut LOINC, ICF, et permet d’autres systèmes si aucun code approprié n’e
             </td>
             <td>
 <p>Compte-rendu d’examens de biologie médicale - exemple Microbiologie (BIO-CR-BIO-2024.01)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="AllergyIntolerance-example-allergy-intolerance-data-absent-reason.html"
+                  title="AllergyIntolerance/example-allergy-intolerance-data-absent-reason">Example - AllergyIntolerance avec Data Absent Reason</a>
+            </td>
+            <td>
+<p>Exemple illustrant l’usage de l’extension <code class="language-plaintext highlighter-rouge">data-absent-reason</code> sur les éléments
+obligatoires de la ressource AllergyIntolerance dont la valeur est inconnue ou
+temporairement indisponible.</p>
+
+<p>Cas d’usage illustrés :</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">code</code> : l’agent allergique est inconnu → code <code class="language-plaintext highlighter-rouge">unknown</code></li>
+  <li><code class="language-plaintext highlighter-rouge">reaction.manifestation</code> : la manifestation clinique est inconnue → code <code class="language-plaintext highlighter-rouge">unknown</code></li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Procedure-example-procedure-data-absent-reason.html"
+                  title="Procedure/example-procedure-data-absent-reason">Example - Procedure avec Data Absent Reason</a>
+            </td>
+            <td>
+<p>Exemple illustrant l’usage de l’extension <code class="language-plaintext highlighter-rouge">data-absent-reason</code> sur les éléments
+obligatoires de la ressource Procedure dont la valeur est inconnue ou temporairement indisponible.</p>
+
+<p>Cas d’usage illustrés :</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">code</code> : l’acte est inconnu → extension <code class="language-plaintext highlighter-rouge">data-absent-reason</code> avec code <code class="language-plaintext highlighter-rouge">unknown</code>
+(liaison extensible → l’extension peut se substituer au codage)</li>
+  <li><code class="language-plaintext highlighter-rouge">performedDateTime</code> : la date de l’acte est temporairement indisponible → extension <code class="language-plaintext highlighter-rouge">data-absent-reason</code> avec code <code class="language-plaintext highlighter-rouge">temp-unknown</code></li>
+  <li><code class="language-plaintext highlighter-rouge">status</code> : le statut est inconnu → code d’exception <code class="language-plaintext highlighter-rouge">unknown</code> du ValueSet <code class="language-plaintext highlighter-rouge">event-status</code>
+(liaison required → on utilise directement le code d’exception du ValueSet, pas l’extension)</li>
+</ul>
 </td>
          </tr>
          <tr>
@@ -5477,7 +6028,7 @@ Inclut LOINC, ICF, et permet d’autres systèmes si aucun code approprié n’e
          </tr>
       </tbody>
    </table>
-   <a name="19"> </a>
+   <a name="20"> </a>
    <h3>Other </h3>
     <p>These are resources that are used within this implementation guide that do not fit into one of the other categories.</p>
 <table class="grid">
@@ -5521,7 +6072,7 @@ Inclut LOINC, ICF, et permet d’autres systèmes si aucun code approprié n’e
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="StructureDefinition-fr-lm-consentement.html">next&gt;</a>
+                <a href="StructureDefinition-fr-lm-health-professional.html">next&gt;</a>
 
               </td>
             </tr>
@@ -5531,7 +6082,7 @@ Inclut LOINC, ICF, et permet d’autres systèmes si aucun code approprié n’e
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.document.fr.core#0.1.0-snapsnot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 16, 2026 07:11+0000">2026-04-16</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.document.fr.core#0.1.0-snapshot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 24, 2026 08:31+0000">2026-04-24</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |

@@ -1,4 +1,4 @@
-# Endpoint - FR Endpoint Wado Document - ANS IG document core v0.1.0-snapsnot
+# Endpoint - FR Endpoint Wado Document - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-endpoint-wado-document | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-16 | *Computable Name*:FREndpointWadoDocument |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-endpoint-wado-document | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-24 | *Computable Name*:FREndpointWadoDocument |
 
  
 FREndpointWadoDocument permet d’enregistrer les références Wado, les types de média et le type de connection IHE IID 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-endpoint-wado-doc
   "resourceType" : "StructureDefinition",
   "id" : "fr-endpoint-wado-document",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-endpoint-wado-document",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FREndpointWadoDocument",
   "title" : "Endpoint - FR Endpoint Wado Document",
   "status" : "draft",
-  "date" : "2026-04-16T07:11:11+00:00",
+  "date" : "2026-04-24T08:31:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

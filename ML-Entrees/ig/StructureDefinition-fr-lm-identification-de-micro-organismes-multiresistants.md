@@ -1,4 +1,4 @@
-# Logical model - FR LM Identification de micro-organismes multirésistants - ANS IG document core v0.1.0-snapsnot
+# Logical model - FR LM Identification de micro-organismes multirésistants - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-identification-de-micro-organismes-multiresistants | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-16 | *Computable Name*:FRLMIdentificationDeMicroOrganismesMultiresistants |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-identification-de-micro-organismes-multiresistants | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-24 | *Computable Name*:FRLMIdentificationDeMicroOrganismesMultiresistants |
 
  
 Entrée Identification de micro-organismes multirésistants 
@@ -41,11 +41,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-identification
     "valueCode" : "can-be-target"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-identification-de-micro-organismes-multiresistants",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRLMIdentificationDeMicroOrganismesMultiresistants",
   "title" : "Logical model - FR LM Identification de micro-organismes multirésistants",
   "status" : "draft",
-  "date" : "2026-04-16T07:11:11+00:00",
+  "date" : "2026-04-24T08:31:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -85,20 +85,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-identification
       "type" : [{
         "code" : "CodeableConcept"
       }]
-    },
-    {
-      "id" : "fr-lm-identification-de-micro-organismes-multiresistants.statut",
-      "path" : "fr-lm-identification-de-micro-organismes-multiresistants.statut",
-      "short" : "Statut de l’observation",
-      "definition" : "Statut de l’observation",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "code"
-      }],
-      "binding" : {
-        "description" : "jdv-hl7-v3-ActStatus-cisis (2.16.840.1.113883.1.11.15933)"
-      }
     },
     {
       "id" : "fr-lm-identification-de-micro-organismes-multiresistants.valeur",

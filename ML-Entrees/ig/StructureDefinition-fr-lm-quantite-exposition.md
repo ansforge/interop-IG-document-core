@@ -1,4 +1,4 @@
-# Logical model - FR LM Quantité exposition - ANS IG document core v0.1.0-snapsnot
+# Logical model - FR LM Quantité exposition - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-quantite-exposition | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-16 | *Computable Name*:FRLMQuantiteExposition |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-quantite-exposition | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-24 | *Computable Name*:FRLMQuantiteExposition |
 
  
 Quantité exposition 
@@ -41,11 +41,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-quantite-expos
     "valueCode" : "can-be-target"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-quantite-exposition",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRLMQuantiteExposition",
   "title" : "Logical model - FR LM Quantité exposition",
   "status" : "draft",
-  "date" : "2026-04-16T07:11:11+00:00",
+  "date" : "2026-04-24T08:31:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -84,17 +84,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-quantite-expos
       "max" : "1",
       "type" : [{
         "code" : "CodeableConcept"
-      }]
-    },
-    {
-      "id" : "fr-lm-quantite-exposition.statut",
-      "path" : "fr-lm-quantite-exposition.statut",
-      "short" : "status de l'observation",
-      "definition" : "status de l'observation",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "code"
       }]
     },
     {

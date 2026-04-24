@@ -1,4 +1,4 @@
-# Logical model - FR LM Prescription - ANS IG document core v0.1.0-snapsnot
+# Logical model - FR LM Prescription - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-prescription-entree | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-16 | *Computable Name*:FRLMPrescriptionEntree |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-prescription-entree | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-24 | *Computable Name*:FRLMPrescriptionEntree |
 
  
 Prescription 
@@ -41,11 +41,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-prescription-e
     "valueCode" : "can-be-target"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-prescription-entree",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRLMPrescriptionEntree",
   "title" : "Logical model - FR LM Prescription",
   "status" : "draft",
-  "date" : "2026-04-16T07:11:11+00:00",
+  "date" : "2026-04-24T08:31:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-prescription-e
   "kind" : "logical",
   "abstract" : false,
   "type" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-prescription-entree",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
+  "baseDefinition" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry",
   "derivation" : "specialization",
   "differential" : {
     "element" : [{
@@ -106,28 +106,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-prescription-e
       "max" : "1",
       "type" : [{
         "code" : "Quantity"
-      }]
-    },
-    {
-      "id" : "fr-lm-prescription-entree.auteurPrescription",
-      "path" : "fr-lm-prescription-entree.auteurPrescription",
-      "short" : "Prescripteur",
-      "definition" : "Prescripteur",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure-auteur"
-      }]
-    },
-    {
-      "id" : "fr-lm-prescription-entree.dispensateurPrescription",
-      "path" : "fr-lm-prescription-entree.dispensateurPrescription",
-      "short" : "Dispensateur",
-      "definition" : "Dispensateur",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure"
       }]
     },
     {

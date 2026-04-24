@@ -460,9 +460,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "MedicationRequest.dispenseRequest.extension:dispenserInstructionR5","MedicationRequest.dispenseRequest.extension","dispenserInstructionR5","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.dispenseRequest.dispenserInstruction]]} {[]}
-","Optional Extensions Element","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","R5: Additional information for the dispenser (new)","R5: `MedicationRequest.dispenseRequest.dispenserInstruction` (new:Annotation)","Element `MedicationRequest.dispenseRequest.dispenserInstruction` has a context of MedicationRequest.dispenseRequest based on following the parent source element upwards and mapping to `MedicationRequest`.
+Element `MedicationRequest.dispenseRequest.dispenserInstruction` has no mapping targets in FHIR R4. Typically, this is because the element has been added (is a new element).","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "MedicationRequest.dispenseRequest.extension:dispenserInstructionR5.id","MedicationRequest.dispenseRequest.extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "MedicationRequest.dispenseRequest.extension:dispenserInstructionR5.extension","MedicationRequest.dispenseRequest.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
@@ -472,7 +473,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "MedicationRequest.dispenseRequest.extension:dispenserInstructionR5.url","MedicationRequest.dispenseRequest.extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.dispenseRequest.dispenserInstruction""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
 "MedicationRequest.dispenseRequest.extension:dispenserInstructionR5.value[x]","MedicationRequest.dispenseRequest.extension.value[x]","","","",1,1,"","","","Annotation {[]} {[]}
-","instructions au dispensateur","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","instructions au dispensateur","Provides additional information to the dispenser, for example, counselling to be provided to the patient.","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
 "MedicationRequest.dispenseRequest.modifierExtension","MedicationRequest.dispenseRequest.modifierExtension","","extensions
 user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}

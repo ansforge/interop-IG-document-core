@@ -1,4 +1,4 @@
-# Modèle logique métier - FR LM Prescription de dispositifs médicaux - ANS IG document core v0.1.0-snapsnot
+# Modèle logique métier - FR LM Prescription de dispositifs médicaux - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-prescription-dispositifs-medicaux | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-16 | *Computable Name*:FRLMPrescriptionDispositifsMedicaux |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-prescription-dispositifs-medicaux | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-24 | *Computable Name*:FRLMPrescriptionDispositifsMedicaux |
 
  
 Section Prescription de dispositifs médicaux 
@@ -45,11 +45,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-prescription-d
     "valueCode" : "can-be-target"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-prescription-dispositifs-medicaux",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRLMPrescriptionDispositifsMedicaux",
   "title" : "Modèle logique métier - FR LM Prescription de dispositifs médicaux",
   "status" : "draft",
-  "date" : "2026-04-16T07:11:11+00:00",
+  "date" : "2026-04-24T08:31:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -98,17 +98,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-prescription-d
       "max" : "*",
       "type" : [{
         "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device-use"
-      }]
-    },
-    {
-      "id" : "fr-lm-prescription-dispositifs-medicaux.auteur",
-      "path" : "fr-lm-prescription-dispositifs-medicaux.auteur",
-      "short" : "Auteur de la prescription",
-      "definition" : "Auteur de la prescription",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure-auteur"
       }]
     }]
   }

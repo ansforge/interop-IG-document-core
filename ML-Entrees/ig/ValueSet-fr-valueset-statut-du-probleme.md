@@ -1,4 +1,4 @@
-# ValueSet - FR ValueSet Statut du problème - ANS IG document core v0.1.0-snapsnot
+# ValueSet - FR ValueSet Statut du problème - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-valueset-statut-du-probleme | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-16 | *Computable Name*:FRValueSetStatutDuProbleme |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-valueset-statut-du-probleme | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-24 | *Computable Name*:FRValueSetStatutDuProbleme |
 
  
 Jeu de valeurs regroupant les codes de statut du problème et des allergies/intolérances 
@@ -46,11 +46,11 @@ Jeu de valeurs regroupant les codes de statut du problème et des allergies/into
   "resourceType" : "ValueSet",
   "id" : "fr-valueset-statut-du-probleme",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-valueset-statut-du-probleme",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRValueSetStatutDuProbleme",
   "title" : "ValueSet - FR ValueSet Statut du problème",
   "status" : "draft",
-  "date" : "2026-04-16T07:11:11+00:00",
+  "date" : "2026-04-24T08:31:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

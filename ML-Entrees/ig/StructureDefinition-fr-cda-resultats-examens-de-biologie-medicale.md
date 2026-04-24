@@ -1,4 +1,4 @@
-# CDA - FR Resultats examens de biologie medicale - ANS IG document core v0.1.0-snapsnot
+# CDA - FR Resultats examens de biologie medicale - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-resultats-examens-de-biologie-medicale | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-16 | *Computable Name*:FRCDAResultatsExamensDeBiologieMedicale |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-resultats-examens-de-biologie-medicale | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-24 | *Computable Name*:FRCDAResultatsExamensDeBiologieMedicale |
 
  
 Entrée FR-Resultats-examens-de-biologie-medicale: IHE-PCC - Laboratory Report Data Processing. 
@@ -22,7 +22,7 @@ Entrée FR-Resultats-examens-de-biologie-medicale: IHE-PCC - Laboratory Report D
 
 **Utilisations:**
 
-* Ce Profil de modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
+* Utilise ce/t/te Profil de modèle logique: [CDA - FR CR BIO Chapitre](StructureDefinition-fr-cda-cr-bio-chapitre.md) and [CDA - FR CR BIO Sous Chapitre](StructureDefinition-fr-cda-cr-bio-sous-chapitre.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-resultats-examens-de-biologie-medicale)
 
@@ -68,11 +68,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-resultats-exa
     "valueUri" : "cda"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-resultats-examens-de-biologie-medicale",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRCDAResultatsExamensDeBiologieMedicale",
   "title" : "CDA - FR Resultats examens de biologie medicale",
   "status" : "draft",
-  "date" : "2026-04-16T07:11:11+00:00",
+  "date" : "2026-04-24T08:31:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -102,10 +102,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-resultats-exa
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
-      "id" : "Act",
-      "path" : "Act"
-    },
-    {
       "id" : "Act.templateId",
       "path" : "Act.templateId",
       "slicing" : {
@@ -165,6 +161,23 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-resultats-exa
       "path" : "Act.code",
       "short" : "Code dont dérive le code de section",
       "definition" : "Code dont dérive le code de section",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Act.code.code",
+      "path" : "Act.code.code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Act.code.codeSystem",
+      "path" : "Act.code.codeSystem",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Act.code.displayName",
+      "path" : "Act.code.displayName",
       "mustSupport" : true
     },
     {

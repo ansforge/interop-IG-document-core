@@ -1,6 +1,6 @@
 {
   "package": "ans.document.fr.core",
-  "version": "0.1.0-snapsnot",
+  "version": "0.1.0-snapshot",
   "fhirVersion": "4.0.1",
   "jurisdiction": "FR",
   "extensions": [
@@ -526,8 +526,8 @@
     ],
     "Procedure": [
       {
-        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-procedure-act-document",
-        "title": "Procedure - FR Procedure Act Document"
+        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-procedure-document",
+        "title": "Procedure - FR Procedure Document"
       },
       {
         "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-procedure-imaging-document",
@@ -569,15 +569,19 @@
     "http://hl7.org/fhir/5.0/StructureDefinition/extension-Immunization.basedOn": [
       "Immunization"
     ],
-    "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationAdministration.occurence%5Bx%5D": [
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationAdministration.occurence": [
       "MedicationAdministration"
     ],
     "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.dispenseRequest.dispenserInstruction": [
       "MedicationRequest.dispenseRequest"
     ],
     "http://hl7.org/fhir/StructureDefinition/data-absent-reason": [
+      "AllergyIntolerance.code",
+      "AllergyIntolerance.reaction.manifestation",
       "DocumentReference.type",
-      "Immunization.occurrence[x]"
+      "Immunization.occurrence[x]",
+      "Procedure.code",
+      "Procedure.performedDateTime"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"

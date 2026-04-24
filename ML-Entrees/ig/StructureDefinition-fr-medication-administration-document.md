@@ -1,4 +1,4 @@
-# MedicationAdministration - FR Medication Administration Document - ANS IG document core v0.1.0-snapsnot
+# MedicationAdministration - FR Medication Administration Document - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-administration-document | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-16 | *Computable Name*:FRMedicationAdministrationDocument |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-administration-document | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-24 | *Computable Name*:FRMedicationAdministrationDocument |
 
  
 * FRMedicationAdministrationDocument permert de décrire les modalités d’administration d’un médicament au patient.
@@ -40,11 +40,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-medication-admini
   "resourceType" : "StructureDefinition",
   "id" : "fr-medication-administration-document",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-administration-document",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRMedicationAdministrationDocument",
   "title" : "MedicationAdministration - FR Medication Administration Document",
   "status" : "draft",
-  "date" : "2026-04-16T07:11:11+00:00",
+  "date" : "2026-04-24T08:31:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -118,31 +118,13 @@ Other representations of profile: [CSV](StructureDefinition-fr-medication-admini
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationAdministration.occurence%5Bx%5D"]
+        "profile" : ["http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationAdministration.occurence"]
       }]
     },
     {
-      "id" : "MedicationAdministration.extension:occurenceR5.value[x]",
-      "path" : "MedicationAdministration.extension.value[x]",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "type",
-          "path" : "$this"
-        }],
-        "ordered" : false,
-        "rules" : "open"
-      },
-      "min" : 1
-    },
-    {
-      "id" : "MedicationAdministration.extension:occurenceR5.value[x]:valueTiming",
-      "path" : "MedicationAdministration.extension.value[x]",
-      "sliceName" : "valueTiming",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "Timing"
-      }]
+      "id" : "MedicationAdministration.extension:occurenceR5.extension",
+      "path" : "MedicationAdministration.extension.extension",
+      "max" : "0"
     },
     {
       "id" : "MedicationAdministration.identifier",

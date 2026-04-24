@@ -59,7 +59,9 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Composition.extension:R5-Composition-version","Composition.extension","R5-Composition-version","","clinical document version number",1,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/5.0/StructureDefinition/extension-Composition.version]]} {[]}
-","Version du document","An Extension","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Version du document","R5: `Composition.version` (new:string)","Element `Composition.version` has a context of Composition based on following the parent source element upwards and mapping to `Composition`.
+Element `Composition.version` has no mapping targets in FHIR R4. Typically, this is because the element has been added (is a new element).
+While each resource, including the composition itself, has its own version identifier, this is a formal identifier for the logical version of the Composition as a whole. It would remain constant if the resources were moved to a new server, and all got new individual resource versions, for example.","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}comp-1:La valeur de l'extension versionNumber doit être un entier. {value.matches('^[0-9]+$')}"
 "Composition.extension:data-enterer","Composition.extension","data-enterer","","date enterer",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/uv/fhir-clinical-document/StructureDefinition/data-enterer-extension]]} {[]}

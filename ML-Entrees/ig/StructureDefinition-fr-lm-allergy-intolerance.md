@@ -1,4 +1,4 @@
-# Logical model - FR LM Allergy Intolerance - ANS IG document core v0.1.0-snapsnot
+# Logical model - FR LM Allergy Intolerance - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-allergy-intolerance | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-16 | *Computable Name*:FRLMAllergyIntolerance |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-allergy-intolerance | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-24 | *Computable Name*:FRLMAllergyIntolerance |
 
  
 Entrée Allergie ou Hypersensibilité 
@@ -41,11 +41,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-allergy-intole
     "valueCode" : "can-be-target"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-allergy-intolerance",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRLMAllergyIntolerance",
   "title" : "Logical model - FR LM Allergy Intolerance",
   "status" : "draft",
-  "date" : "2026-04-16T07:11:11+00:00",
+  "date" : "2026-04-24T08:31:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -127,8 +127,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-allergy-intole
       }]
     },
     {
-      "id" : "fr-lm-allergy-intolerance.status",
-      "path" : "fr-lm-allergy-intolerance.status",
+      "id" : "fr-lm-allergy-intolerance.clinicalStatus",
+      "path" : "fr-lm-allergy-intolerance.clinicalStatus",
       "short" : "Statut clinique de l'allergie",
       "definition" : "Statut clinique de l'allergie",
       "min" : 0,

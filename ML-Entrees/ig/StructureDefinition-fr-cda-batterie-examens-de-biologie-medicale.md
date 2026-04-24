@@ -1,4 +1,4 @@
-# CDA - FR Batterie examens de biologie medicale - ANS IG document core v0.1.0-snapsnot
+# CDA - FR Batterie examens de biologie medicale - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-batterie-examens-de-biologie-medicale | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-16 | *Computable Name*:FRCDABatterieExamensDeBiologieMedicale |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-batterie-examens-de-biologie-medicale | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-24 | *Computable Name*:FRCDABatterieExamensDeBiologieMedicale |
 
  
 Entrée FR-Batterie-examens-de-biologie-medicale: IHE-PCC - Laboratory Battery Organizer. L’entrée Batterie d’examens de biologie médicale est une entrée de type ‘organizer’ qui permet de décrire des examens de biologie médicale comprenant un ou plusieurs éléments porteurs de résultats et d’éventuels commentaires interprétant cet ensemble de résultats. L’examen de biologie médicale peut préciser des participants qui lui sont propres (validateur, auteur, responsable, laboratoire sous-traitant, automate …) et peut aussi décrire son échantillon biologique. 
@@ -62,11 +62,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-batterie-exam
     "valueUri" : "cda"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-batterie-examens-de-biologie-medicale",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRCDABatterieExamensDeBiologieMedicale",
   "title" : "CDA - FR Batterie examens de biologie medicale",
   "status" : "draft",
-  "date" : "2026-04-16T07:11:11+00:00",
+  "date" : "2026-04-24T08:31:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -158,13 +158,31 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-batterie-exam
       "path" : "Organizer.id",
       "short" : "Identifiant de l'entrée",
       "definition" : "Identifiant de l'entrée",
-      "max" : "1"
+      "max" : "1",
+      "mustSupport" : true
     },
     {
       "id" : "Organizer.code",
       "path" : "Organizer.code",
       "short" : "Code de la batterie d'examen",
       "definition" : "Code de la batterie d'examen",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Organizer.code.code",
+      "path" : "Organizer.code.code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Organizer.code.codeSystem",
+      "path" : "Organizer.code.codeSystem",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Organizer.code.displayName",
+      "path" : "Organizer.code.displayName",
       "mustSupport" : true
     },
     {

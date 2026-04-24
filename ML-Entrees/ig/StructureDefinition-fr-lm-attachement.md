@@ -1,4 +1,4 @@
-# Logical model - FR LM Attachement - ANS IG document core v0.1.0-snapsnot
+# Logical model - FR LM Attachement - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-attachement | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-16 | *Computable Name*:FRLMAttachement |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-attachement | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-24 | *Computable Name*:FRLMAttachement |
 
  
 Entrée Document attaché 
@@ -41,11 +41,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-attachement.cs
     "valueCode" : "can-be-target"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-attachement",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRLMAttachement",
   "title" : "Logical model - FR LM Attachement",
   "status" : "draft",
-  "date" : "2026-04-16T07:11:11+00:00",
+  "date" : "2026-04-24T08:31:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -76,91 +76,75 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-attachement.cs
       "definition" : "Entrée Document attaché"
     },
     {
-      "id" : "fr-lm-attachement.code",
-      "path" : "fr-lm-attachement.code",
-      "short" : "Code de l'entrée",
-      "definition" : "Code de l'entrée",
-      "min" : 1,
+      "id" : "fr-lm-attachement.contentType",
+      "path" : "fr-lm-attachement.contentType",
+      "short" : "Type MIME de la piece jointe, avec encodage de caracteres, etc.",
+      "definition" : "Type MIME de la piece jointe, avec encodage de caracteres, etc.",
+      "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "CodeableConcept"
-      }]
+      }],
+      "binding" : {
+        "description" : "(preferred): BCP-13"
+      }
     },
     {
-      "id" : "fr-lm-attachement.statut",
-      "path" : "fr-lm-attachement.statut",
-      "short" : "Statut de l'entrée",
-      "definition" : "Statut de l'entrée",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "code"
-      }]
-    },
-    {
-      "id" : "fr-lm-attachement.typeDocumentAttache",
-      "path" : "fr-lm-attachement.typeDocumentAttache",
-      "short" : "Type de document attaché",
-      "definition" : "Type de document attaché",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "Base"
-      }]
-    },
-    {
-      "id" : "fr-lm-attachement.typeDocumentAttache.natureDocument",
-      "path" : "fr-lm-attachement.typeDocumentAttache.natureDocument",
-      "short" : "Nature du document",
-      "definition" : "Nature du document",
-      "min" : 1,
+      "id" : "fr-lm-attachement.language",
+      "path" : "fr-lm-attachement.language",
+      "short" : "Langue du contenu",
+      "definition" : "Langue du contenu",
+      "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "CodeableConcept"
-      }]
+      }],
+      "binding" : {
+        "description" : "(preferred): BCP 47"
+      }
     },
     {
-      "id" : "fr-lm-attachement.documentAttache",
-      "path" : "fr-lm-attachement.documentAttache",
-      "short" : "Bloc document attaché",
-      "definition" : "Bloc document attaché",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "Base"
-      }]
-    },
-    {
-      "id" : "fr-lm-attachement.documentAttache.observationMedia",
-      "path" : "fr-lm-attachement.documentAttache.observationMedia",
-      "short" : "Observation média",
-      "definition" : "Observation média",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "Base"
-      }]
-    },
-    {
-      "id" : "fr-lm-attachement.documentAttache.observationMedia.identifiant",
-      "path" : "fr-lm-attachement.documentAttache.observationMedia.identifiant",
-      "short" : "Identifiant de l’observationMedia",
-      "definition" : "Identifiant de l’observationMedia",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "Identifier"
-      }]
-    },
-    {
-      "id" : "fr-lm-attachement.documentAttache.observationMedia.documentAttacheEncode",
-      "path" : "fr-lm-attachement.documentAttache.observationMedia.documentAttacheEncode",
-      "short" : "Document attaché encodé en Base64",
-      "definition" : "Document attaché encodé en Base64",
-      "min" : 1,
+      "id" : "fr-lm-attachement.data",
+      "path" : "fr-lm-attachement.data",
+      "short" : "Contenu encode en base64",
+      "definition" : "Contenu encode en base64",
+      "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "base64Binary"
+      }]
+    },
+    {
+      "id" : "fr-lm-attachement.url",
+      "path" : "fr-lm-attachement.url",
+      "short" : "URL de la ressource",
+      "definition" : "URL de la ressource",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "uri"
+      }]
+    },
+    {
+      "id" : "fr-lm-attachement.size",
+      "path" : "fr-lm-attachement.size",
+      "short" : "Taille de la piece jointe avant encodage en base64",
+      "definition" : "Taille de la piece jointe avant encodage en base64",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "unsignedInt"
+      }]
+    },
+    {
+      "id" : "fr-lm-attachement.title",
+      "path" : "fr-lm-attachement.title",
+      "short" : "Titre de la piece jointe",
+      "definition" : "Titre de la piece jointe",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
       }]
     }]
   }

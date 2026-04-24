@@ -1,4 +1,4 @@
-# CDA - FR Sujet - ANS IG document core v0.1.0-snapsnot
+# CDA - FR Sujet - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-sujet | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-16 | *Computable Name*:FRCDASujet |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-sujet | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-24 | *Computable Name*:FRCDASujet |
 
  
 Entrée FR-Sujet: IHE-PCC - Subject participation. Cet élément peut être utilisé lorsqu’il est nécessaire de distinguer qu’une section ou une entrée s’applique à une personne autre que le patient concerné par le document. Par exemple, cet élément est utilisé pour identifier les membres de la famille dans les antécédents familiaux, les nouveaux-nés dans l’historique d’une grossesse. 
@@ -62,11 +62,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-sujet.csv), [
     "valueUri" : "cda"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-sujet",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRCDASujet",
   "title" : "CDA - FR Sujet",
   "status" : "draft",
-  "date" : "2026-04-16T07:11:11+00:00",
+  "date" : "2026-04-24T08:31:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -161,9 +161,22 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-sujet.csv), [
       }
     },
     {
+      "id" : "Subject.relatedSubject.code.code",
+      "path" : "Subject.relatedSubject.code.code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
       "id" : "Subject.relatedSubject.code.codeSystem",
       "path" : "Subject.relatedSubject.code.codeSystem",
-      "patternString" : "2.16.840.1.113883.5.111"
+      "min" : 1,
+      "patternString" : "2.16.840.1.113883.5.111",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Subject.relatedSubject.code.displayName",
+      "path" : "Subject.relatedSubject.code.displayName",
+      "mustSupport" : true
     },
     {
       "id" : "Subject.relatedSubject.addr",

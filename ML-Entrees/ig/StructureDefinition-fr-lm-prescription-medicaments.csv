@@ -7,11 +7,19 @@
 ","Titre de la section","Titre de la section","","","","","","","","","",,,,,"",,,,"fr-lm-section.titreSection",0,1,"",""
 "fr-lm-prescription-medicaments.blocNarratif","fr-lm-prescription-medicaments.blocNarratif","","","",1,1,"","","","Narrative {[]} {[]}
 ","Bloc narratif","Bloc narratif","","","","","","","","","",,,,,"",,,,"fr-lm-section.blocNarratif",1,1,"",""
+"fr-lm-prescription-medicaments.author[x]","fr-lm-prescription-medicaments.author[x]","","","",0,*,"","","","Base {[]} {[]}
+","author[x] peut correspondre soit à un professionnel, soit à une organisation, soit à un système.","author[x] peut correspondre soit à un professionnel, soit à une organisation, soit à un système.","","","","","","","","","",,,,,"",,,,"fr-lm-section.author[x]",0,*,"",""
+"fr-lm-prescription-medicaments.author[x].authorProfessional","fr-lm-prescription-medicaments.author[x].authorProfessional","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional {[]} {[]}
+","L'auteur est un professionnel de santé","L'auteur est un professionnel de santé","","","","","","","","","",,,,,"",,,,"fr-lm-section.author[x].authorProfessional",0,*,"",""
+"fr-lm-prescription-medicaments.author[x].authorOrganisation","fr-lm-prescription-medicaments.author[x].authorOrganisation","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organisation {[]} {[]}
+","L'auteur est une organisation","L'auteur est une organisation","","","","","","","","","",,,,,"",,,,"fr-lm-section.author[x].authorOrganisation",0,*,"",""
+"fr-lm-prescription-medicaments.author[x].authorDevice","fr-lm-prescription-medicaments.author[x].authorDevice","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device {[]} {[]}
+","L'auteur est un système","L'auteur est un système","","","","","","","","","",,,,,"",,,,"fr-lm-section.author[x].authorDevice",0,*,"",""
+"fr-lm-prescription-medicaments.informant","fr-lm-prescription-medicaments.informant","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-informant {[]} {[]}
+","Informateur","Informateur","","","","","","","","","",,,,,"",,,,"fr-lm-section.informant",0,*,"",""
 "fr-lm-prescription-medicaments.sousSection","fr-lm-prescription-medicaments.sousSection","","","",0,0,"","","","Base {[]} {[]}
 ","Sous-sections","Sous-sections","","","","","","","","","",,,,,"",,,,"fr-lm-section.sousSection",0,*,"",""
 "fr-lm-prescription-medicaments.entree","fr-lm-prescription-medicaments.entree","","","",1,*,"","","","Base {[]} {[]}
 ","Entrées","Entrées","","","","","","","","","",,,,,"",,,,"fr-lm-section.entree",0,*,"",""
 "fr-lm-prescription-medicaments.entree.traitementPrescrit","fr-lm-prescription-medicaments.entree.traitementPrescrit","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication-prescription {[]} {[]}
 ","Entrée Traitement prescrit","Entrée Traitement prescrit","","","","","","","","","",,,,,"",,,,"fr-lm-prescription-medicaments.entree.traitementPrescrit",1,*,"",""
-"fr-lm-prescription-medicaments.auteur","fr-lm-prescription-medicaments.auteur","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure-auteur {[]} {[]}
-","Auteur de la prescription","Auteur de la prescription","","","","","","","","","",,,,,"",,,,"fr-lm-prescription-medicaments.auteur",0,1,"",""

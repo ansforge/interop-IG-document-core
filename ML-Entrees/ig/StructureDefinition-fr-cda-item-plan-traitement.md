@@ -1,4 +1,4 @@
-# CDA - FR Item plan traitement - ANS IG document core v0.1.0-snapsnot
+# CDA - FR Item plan traitement - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-item-plan-traitement | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-16 | *Computable Name*:FRCDAItemPlanTraitement |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-item-plan-traitement | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-24 | *Computable Name*:FRCDAItemPlanTraitement |
 
  
 Entrée FR-Item-plan-traitement: IHE-MTP Medication Treatment Plan Item. Cette entrée permet de fournir une copie du plan de traitement médicamenteux. 
@@ -62,11 +62,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-item-plan-tra
     "valueUri" : "cda"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-item-plan-traitement",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRCDAItemPlanTraitement",
   "title" : "CDA - FR Item plan traitement",
   "status" : "draft",
-  "date" : "2026-04-16T07:11:11+00:00",
+  "date" : "2026-04-24T08:31:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -96,10 +96,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-item-plan-tra
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
-      "id" : "SubstanceAdministration",
-      "path" : "SubstanceAdministration"
-    },
-    {
       "id" : "SubstanceAdministration.templateId",
       "path" : "SubstanceAdministration.templateId",
       "slicing" : {
@@ -189,7 +185,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-item-plan-tra
       "short" : "Identifiant de l'entrée",
       "definition" : "Identifiant de l'entrée",
       "min" : 1,
-      "max" : "1"
+      "max" : "1",
+      "mustSupport" : true
     },
     {
       "id" : "SubstanceAdministration.code",
@@ -201,12 +198,16 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-item-plan-tra
     {
       "id" : "SubstanceAdministration.code.code",
       "path" : "SubstanceAdministration.code.code",
-      "patternCode" : "DRUG"
+      "min" : 1,
+      "patternCode" : "DRUG",
+      "mustSupport" : true
     },
     {
       "id" : "SubstanceAdministration.code.codeSystem",
       "path" : "SubstanceAdministration.code.codeSystem",
-      "patternString" : "2.16.840.1.113883.5.4"
+      "min" : 1,
+      "patternString" : "2.16.840.1.113883.5.4",
+      "mustSupport" : true
     },
     {
       "id" : "SubstanceAdministration.code.codeSystemName",
@@ -216,7 +217,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-item-plan-tra
     {
       "id" : "SubstanceAdministration.code.displayName",
       "path" : "SubstanceAdministration.code.displayName",
-      "patternString" : "Médicament"
+      "patternString" : "Médicament",
+      "mustSupport" : true
     },
     {
       "id" : "SubstanceAdministration.text",

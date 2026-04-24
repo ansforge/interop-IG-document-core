@@ -1,4 +1,4 @@
-# Modèle logique métier - FR LM Corps document - ANS IG document core v0.1.0-snapsnot
+# Modèle logique métier - FR LM Corps document - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-corps-document | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-16 | *Computable Name*:FRLMCorpsDocument |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-corps-document | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-24 | *Computable Name*:FRLMCorpsDocument |
 
  
 Eléments métier du corps d’un document contenant les sections du document. 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-corps-document
   "resourceType" : "StructureDefinition",
   "id" : "fr-lm-corps-document",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-corps-document",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRLMCorpsDocument",
   "title" : "Modèle logique métier - FR LM Corps document",
   "status" : "draft",
-  "date" : "2026-04-16T07:11:11+00:00",
+  "date" : "2026-04-24T08:31:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -358,14 +358,14 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-corps-document
       }]
     },
     {
-      "id" : "fr-lm-corps-document.historiqueDesGrossesses",
-      "path" : "fr-lm-corps-document.historiqueDesGrossesses",
+      "id" : "fr-lm-corps-document.pregnancyHistory",
+      "path" : "fr-lm-corps-document.pregnancyHistory",
       "short" : "Section Historique des grossesses",
       "definition" : "Section Historique des grossesses",
       "min" : 0,
       "max" : "*",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-historique-des-grossesses"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-section-pregnancy-history"
       }]
     },
     {
@@ -377,17 +377,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-corps-document
       "max" : "*",
       "type" : [{
         "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-plan-soins"
-      }]
-    },
-    {
-      "id" : "fr-lm-corps-document.pointsDeVigilancesNonCode",
-      "path" : "fr-lm-corps-document.pointsDeVigilancesNonCode",
-      "short" : "Section Points de Vigilances non code",
-      "definition" : "Section Points de Vigilances non code",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-points-de-vigilances-non-code"
       }]
     },
     {

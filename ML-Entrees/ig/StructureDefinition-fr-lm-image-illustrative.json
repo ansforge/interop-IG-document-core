@@ -10,11 +10,11 @@
     "valueCode" : "can-be-target"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-image-illustrative",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRLMImageIllustrative",
   "title" : "Logical model - FR LM Image illustrative",
   "status" : "draft",
-  "date" : "2026-04-16T07:11:11+00:00",
+  "date" : "2026-04-24T08:31:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -40,7 +40,7 @@
   "snapshot" : {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
-      "valueString" : "0.1.0-snapsnot"
+      "valueString" : "0.1.0-snapshot"
     }],
     "element" : [{
       "id" : "fr-lm-image-illustrative",
@@ -133,7 +133,7 @@
         "max" : "*"
       },
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure-auteur"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional"
       }]
     },
     {
@@ -149,7 +149,7 @@
         "max" : "*"
       },
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure-auteur"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organisation"
       }]
     },
     {
@@ -165,39 +165,90 @@
         "max" : "*"
       },
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-systeme-structure-auteur"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device"
       }]
     },
     {
-      "id" : "fr-lm-image-illustrative.header.performer",
-      "path" : "fr-lm-image-illustrative.header.performer",
+      "id" : "fr-lm-image-illustrative.header.performer[x]",
+      "path" : "fr-lm-image-illustrative.header.performer[x]",
       "short" : "Exécutant (performer)",
       "definition" : "Exécutant (performer)",
       "min" : 0,
       "max" : "*",
       "base" : {
-        "path" : "fr-lm-entry.header.performer",
+        "path" : "fr-lm-entry.header.performer[x]",
         "min" : 0,
         "max" : "*"
       },
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional"
+      },
+      {
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organisation"
       }]
     },
     {
-      "id" : "fr-lm-image-illustrative.header.participant",
-      "path" : "fr-lm-image-illustrative.header.participant",
+      "id" : "fr-lm-image-illustrative.header.participant[x]",
+      "path" : "fr-lm-image-illustrative.header.participant[x]",
       "short" : "Participant",
       "definition" : "Participant",
       "min" : 0,
       "max" : "*",
       "base" : {
-        "path" : "fr-lm-entry.header.participant",
+        "path" : "fr-lm-entry.header.participant[x]",
         "min" : 0,
         "max" : "*"
       },
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-participant-corps"
+        "code" : "Base"
+      }]
+    },
+    {
+      "id" : "fr-lm-image-illustrative.header.participant[x].participantProfessional",
+      "path" : "fr-lm-image-illustrative.header.participant[x].participantProfessional",
+      "short" : "Le participant est un professionnel de santé",
+      "definition" : "Le participant est un professionnel de santé",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "fr-lm-entry.header.participant[x].participantProfessional",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional"
+      }]
+    },
+    {
+      "id" : "fr-lm-image-illustrative.header.participant[x].participantOrganisation",
+      "path" : "fr-lm-image-illustrative.header.participant[x].participantOrganisation",
+      "short" : "Le participant est une organisation",
+      "definition" : "Le participant est une organisation",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "fr-lm-entry.header.participant[x].participantOrganisation",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organisation"
+      }]
+    },
+    {
+      "id" : "fr-lm-image-illustrative.header.participant[x].participantDevice",
+      "path" : "fr-lm-image-illustrative.header.participant[x].participantDevice",
+      "short" : "Le participant est un système",
+      "definition" : "Le participant est un système",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "fr-lm-entry.header.participant[x].participantDevice",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device"
       }]
     },
     {
@@ -213,7 +264,7 @@
         "max" : "*"
       },
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-informateur"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-informant"
       }]
     },
     {
@@ -231,6 +282,26 @@
       "type" : [{
         "code" : "dateTime"
       }]
+    },
+    {
+      "id" : "fr-lm-image-illustrative.header.status",
+      "path" : "fr-lm-image-illustrative.header.status",
+      "short" : "Statut de l'acte",
+      "definition" : "Statut de l'acte",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "fr-lm-entry.header.status",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "description" : "jdv-hl7-v3-ActStatus-cisis (2.16.840.1.113883.1.11.15933)",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis"
+      }
     },
     {
       "id" : "fr-lm-image-illustrative.header.source",

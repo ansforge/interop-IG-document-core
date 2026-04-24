@@ -9,20 +9,28 @@
 ","Identifiant de l’entrée","Identifiant de l’entrée","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.identifier",0,*,"",""
 "fr-lm-condition.header.author[x]","fr-lm-condition.header.author[x]","","","",0,*,"","","","Base {[]} {[]}
 ","author[x] peut correspondre soit à un professionnel, soit à une organisation, soit à un système.","author[x] peut correspondre soit à un professionnel, soit à une organisation, soit à un système.","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.author[x]",0,*,"",""
-"fr-lm-condition.header.author[x].authorProfessional","fr-lm-condition.header.author[x].authorProfessional","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure-auteur {[]} {[]}
+"fr-lm-condition.header.author[x].authorProfessional","fr-lm-condition.header.author[x].authorProfessional","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional {[]} {[]}
 ","L'auteur est un professionnel de santé","L'auteur est un professionnel de santé","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.author[x].authorProfessional",0,*,"",""
-"fr-lm-condition.header.author[x].authorOrganisation","fr-lm-condition.header.author[x].authorOrganisation","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure-auteur {[]} {[]}
+"fr-lm-condition.header.author[x].authorOrganisation","fr-lm-condition.header.author[x].authorOrganisation","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organisation {[]} {[]}
 ","L'auteur est une organisation","L'auteur est une organisation","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.author[x].authorOrganisation",0,*,"",""
-"fr-lm-condition.header.author[x].authorDevice","fr-lm-condition.header.author[x].authorDevice","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-systeme-structure-auteur {[]} {[]}
+"fr-lm-condition.header.author[x].authorDevice","fr-lm-condition.header.author[x].authorDevice","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device {[]} {[]}
 ","L'auteur est un système","L'auteur est un système","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.author[x].authorDevice",0,*,"",""
-"fr-lm-condition.header.performer","fr-lm-condition.header.performer","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure {[]} {[]}
-","Exécutant (performer)","Exécutant (performer)","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.performer",0,*,"",""
-"fr-lm-condition.header.participant","fr-lm-condition.header.participant","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-participant-corps {[]} {[]}
-","Participant","Participant","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.participant",0,*,"",""
-"fr-lm-condition.header.informant","fr-lm-condition.header.informant","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-informateur {[]} {[]}
+"fr-lm-condition.header.performer[x]","fr-lm-condition.header.performer[x]","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional {[]} {[]}
+https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organisation {[]} {[]}","Exécutant (performer)","Exécutant (performer)","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.performer[x]",0,*,"",""
+"fr-lm-condition.header.participant[x]","fr-lm-condition.header.participant[x]","","","",0,*,"","","","Base {[]} {[]}
+","Participant","Participant","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.participant[x]",0,*,"",""
+"fr-lm-condition.header.participant[x].participantProfessional","fr-lm-condition.header.participant[x].participantProfessional","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional {[]} {[]}
+","Le participant est un professionnel de santé","Le participant est un professionnel de santé","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.participant[x].participantProfessional",0,*,"",""
+"fr-lm-condition.header.participant[x].participantOrganisation","fr-lm-condition.header.participant[x].participantOrganisation","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organisation {[]} {[]}
+","Le participant est une organisation","Le participant est une organisation","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.participant[x].participantOrganisation",0,*,"",""
+"fr-lm-condition.header.participant[x].participantDevice","fr-lm-condition.header.participant[x].participantDevice","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device {[]} {[]}
+","Le participant est un système","Le participant est un système","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.participant[x].participantDevice",0,*,"",""
+"fr-lm-condition.header.informant","fr-lm-condition.header.informant","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-informant {[]} {[]}
 ","Informateur","Informateur","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.informant",0,*,"",""
 "fr-lm-condition.header.date","fr-lm-condition.header.date","","","",0,1,"","","","dateTime {[]} {[]}
 ","Date/Heure de création par l'auteur","Date/Heure de création par l'auteur","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.date",0,1,"",""
+"fr-lm-condition.header.status","fr-lm-condition.header.status","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Statut de l'acte","Statut de l'acte","","","","","","","","","",,"","jdv-hl7-v3-ActStatus-cisis (2.16.840.1.113883.1.11.15933)","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis","",,,,"fr-lm-entry.header.status",1,1,"",""
 "fr-lm-condition.header.source","fr-lm-condition.header.source","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Source","Source","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.source",0,1,"",""
 "fr-lm-condition.header.langue","fr-lm-condition.header.langue","","","",0,1,"","","","CodeableConcept {[]} {[]}
@@ -64,8 +72,8 @@ boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[
 ","Date de fin","Date de fin","","","","","","","","","",,,,,"",,,,"fr-lm-condition.period.endDate",0,1,"",""
 "fr-lm-condition.severity","fr-lm-condition.severity","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Sévérité de la manifestion","Sévérité de la manifestion","","","","","","","","","",,"","(preferred): SNOMED_CT => Valeur issue du jdv-severite-observation-cisis (1.2.250.1.213.1.1.5.675)","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-severite-observation-cisis","",,,,"fr-lm-condition.severity",0,1,"",""
-"fr-lm-condition.status","fr-lm-condition.status","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Statut du problème","Statut du problème","","","","","","","","","",,"","Valeur issue du jdv-hl7-condition-clinical-cisis (2.16.840.1.113883.4.642.3.164)","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-condition-clinical-cisis","",,,,"fr-lm-condition.status",0,1,"",""
+"fr-lm-condition.conditionStatus","fr-lm-condition.conditionStatus","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Statut du problème","Statut du problème","","","","","","","","","",,"","Valeur issue du jdv-hl7-condition-clinical-cisis (2.16.840.1.113883.4.642.3.164)","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-condition-clinical-cisis","",,,,"fr-lm-condition.conditionStatus",0,1,"",""
 "fr-lm-condition.clinicalStatus","fr-lm-condition.clinicalStatus","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Statut clinique du patient","Statut clinique du patient","","","","","","","","","",,,,,"",,,,"fr-lm-condition.clinicalStatus",0,1,"",""
 "fr-lm-condition.bodySite","fr-lm-condition.bodySite","","","",0,*,"","","","CodeableConcept {[]} {[]}

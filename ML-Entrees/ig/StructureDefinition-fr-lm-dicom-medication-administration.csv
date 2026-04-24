@@ -9,20 +9,28 @@
 ","Identifiant de l’entrée","Identifiant de l’entrée","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.identifier",0,*,"",""
 "fr-lm-dicom-medication-administration.header.author[x]","fr-lm-dicom-medication-administration.header.author[x]","","","",0,*,"","","","Base {[]} {[]}
 ","author[x] peut correspondre soit à un professionnel, soit à une organisation, soit à un système.","author[x] peut correspondre soit à un professionnel, soit à une organisation, soit à un système.","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.author[x]",0,*,"",""
-"fr-lm-dicom-medication-administration.header.author[x].authorProfessional","fr-lm-dicom-medication-administration.header.author[x].authorProfessional","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure-auteur {[]} {[]}
+"fr-lm-dicom-medication-administration.header.author[x].authorProfessional","fr-lm-dicom-medication-administration.header.author[x].authorProfessional","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional {[]} {[]}
 ","L'auteur est un professionnel de santé","L'auteur est un professionnel de santé","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.author[x].authorProfessional",0,*,"",""
-"fr-lm-dicom-medication-administration.header.author[x].authorOrganisation","fr-lm-dicom-medication-administration.header.author[x].authorOrganisation","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure-auteur {[]} {[]}
+"fr-lm-dicom-medication-administration.header.author[x].authorOrganisation","fr-lm-dicom-medication-administration.header.author[x].authorOrganisation","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organisation {[]} {[]}
 ","L'auteur est une organisation","L'auteur est une organisation","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.author[x].authorOrganisation",0,*,"",""
-"fr-lm-dicom-medication-administration.header.author[x].authorDevice","fr-lm-dicom-medication-administration.header.author[x].authorDevice","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-systeme-structure-auteur {[]} {[]}
+"fr-lm-dicom-medication-administration.header.author[x].authorDevice","fr-lm-dicom-medication-administration.header.author[x].authorDevice","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device {[]} {[]}
 ","L'auteur est un système","L'auteur est un système","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.author[x].authorDevice",0,*,"",""
-"fr-lm-dicom-medication-administration.header.performer","fr-lm-dicom-medication-administration.header.performer","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure {[]} {[]}
-","Exécutant (performer)","Exécutant (performer)","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.performer",0,*,"",""
-"fr-lm-dicom-medication-administration.header.participant","fr-lm-dicom-medication-administration.header.participant","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-participant-corps {[]} {[]}
-","Participant","Participant","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.participant",0,*,"",""
-"fr-lm-dicom-medication-administration.header.informant","fr-lm-dicom-medication-administration.header.informant","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-informateur {[]} {[]}
+"fr-lm-dicom-medication-administration.header.performer[x]","fr-lm-dicom-medication-administration.header.performer[x]","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional {[]} {[]}
+https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organisation {[]} {[]}","Exécutant (performer)","Exécutant (performer)","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.performer[x]",0,*,"",""
+"fr-lm-dicom-medication-administration.header.participant[x]","fr-lm-dicom-medication-administration.header.participant[x]","","","",0,*,"","","","Base {[]} {[]}
+","Participant","Participant","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.participant[x]",0,*,"",""
+"fr-lm-dicom-medication-administration.header.participant[x].participantProfessional","fr-lm-dicom-medication-administration.header.participant[x].participantProfessional","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional {[]} {[]}
+","Le participant est un professionnel de santé","Le participant est un professionnel de santé","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.participant[x].participantProfessional",0,*,"",""
+"fr-lm-dicom-medication-administration.header.participant[x].participantOrganisation","fr-lm-dicom-medication-administration.header.participant[x].participantOrganisation","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organisation {[]} {[]}
+","Le participant est une organisation","Le participant est une organisation","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.participant[x].participantOrganisation",0,*,"",""
+"fr-lm-dicom-medication-administration.header.participant[x].participantDevice","fr-lm-dicom-medication-administration.header.participant[x].participantDevice","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device {[]} {[]}
+","Le participant est un système","Le participant est un système","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.participant[x].participantDevice",0,*,"",""
+"fr-lm-dicom-medication-administration.header.informant","fr-lm-dicom-medication-administration.header.informant","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-informant {[]} {[]}
 ","Informateur","Informateur","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.informant",0,*,"",""
 "fr-lm-dicom-medication-administration.header.date","fr-lm-dicom-medication-administration.header.date","","","",0,1,"","","","dateTime {[]} {[]}
 ","Date/Heure de création par l'auteur","Date/Heure de création par l'auteur","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.date",0,1,"",""
+"fr-lm-dicom-medication-administration.header.status","fr-lm-dicom-medication-administration.header.status","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Statut de l'acte","Statut de l'acte","","","","","","","","","",,"","jdv-hl7-v3-ActStatus-cisis (2.16.840.1.113883.1.11.15933)","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis","",,,,"fr-lm-entry.header.status",1,1,"",""
 "fr-lm-dicom-medication-administration.header.source","fr-lm-dicom-medication-administration.header.source","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Source","Source","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.source",0,1,"",""
 "fr-lm-dicom-medication-administration.header.langue","fr-lm-dicom-medication-administration.header.langue","","","",0,1,"","","","CodeableConcept {[]} {[]}
@@ -31,8 +39,6 @@ La partie en minuscules indique le code de la langue utilisée (ISO-639-1)
 La partie en majuscules indique le code pays (ISO-3166)","'fr-FR' pour français métropolitain (la casse des caractères doit être respectée)
 La partie en minuscules indique le code de la langue utilisée (ISO-639-1)
 La partie en majuscules indique le code pays (ISO-3166)","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.langue",0,1,"",""
-"fr-lm-dicom-medication-administration.statut","fr-lm-dicom-medication-administration.statut","","","",1,1,"","","","code {[]} {[]}
-","Statut de l'entrée","Statut de l'entrée","","","","","","","","","",,,,,"",,,,"fr-lm-dicom-medication-administration.statut",1,1,"",""
 "fr-lm-dicom-medication-administration.voieAdministration","fr-lm-dicom-medication-administration.voieAdministration","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Voie d'administration","Voie d'administration","","","","","","","","","",,"","EDQM (0.4.0.127.0.16.1.1.2.1)","","",,,,"fr-lm-dicom-medication-administration.voieAdministration",0,1,"",""
 "fr-lm-dicom-medication-administration.dose","fr-lm-dicom-medication-administration.dose","","","",0,1,"","","","Quantity {[]} {[]}

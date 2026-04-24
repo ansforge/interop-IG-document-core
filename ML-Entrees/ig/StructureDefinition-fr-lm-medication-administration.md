@@ -1,4 +1,4 @@
-# Logical model- FR LM Medication Administration - ANS IG document core v0.1.0-snapsnot
+# Logical model- FR LM Medication Administration - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,15 +8,15 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication-administration | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-16 | *Computable Name*:FRLMMedicationAdministration |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication-administration | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-24 | *Computable Name*:FRLMMedicationAdministration |
 
  
 Entrée Traitement 
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Logical model - FR LM Adverse Event](StructureDefinition-fr-lm-adverse-event.md), [Modèle logique métier - FR LM Traitements à la sortie](StructureDefinition-fr-lm-traitement-sortie.md), [Modèle logique métier - FR LM Traitements administrés](StructureDefinition-fr-lm-traitements-administres.md) and [Modèle logique métier - FR LM Traitements](StructureDefinition-fr-lm-traitements.md)
+* Utilise ce/t/te Modèle logique: [Logical model - FR LM Adverse Event](StructureDefinition-fr-lm-adverse-event.md), [Logical model - FR LM Service Request](StructureDefinition-fr-lm-service-request.md), [Modèle logique métier - FR LM Traitements à la sortie](StructureDefinition-fr-lm-traitement-sortie.md), [Modèle logique métier - FR LM Traitements administrés](StructureDefinition-fr-lm-traitements-administres.md) and [Modèle logique métier - FR LM Traitements](StructureDefinition-fr-lm-traitements.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-medication-administration)
 
@@ -41,11 +41,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-medication-adm
     "valueCode" : "can-be-target"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication-administration",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRLMMedicationAdministration",
   "title" : "Logical model- FR LM Medication Administration\t",
   "status" : "draft",
-  "date" : "2026-04-16T07:11:11+00:00",
+  "date" : "2026-04-24T08:31:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -74,17 +74,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-medication-adm
       "path" : "fr-lm-medication-administration",
       "short" : "Logical model- FR LM Medication Administration\t",
       "definition" : "Entrée Traitement"
-    },
-    {
-      "id" : "fr-lm-medication-administration.status",
-      "path" : "fr-lm-medication-administration.status",
-      "short" : "Statut, completed",
-      "definition" : "Statut, completed",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "code"
-      }]
     },
     {
       "id" : "fr-lm-medication-administration.dureeTraitement",

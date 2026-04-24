@@ -1,4 +1,4 @@
-# Modèle logique métier - FR LM Dispensation médicaments - ANS IG document core v0.1.0-snapsnot
+# Modèle logique métier - FR LM Dispensation médicaments - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dispensation-medicaments | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-16 | *Computable Name*:FRLMDispensationMedicaments |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dispensation-medicaments | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-24 | *Computable Name*:FRLMDispensationMedicaments |
 
  
 Section Dispensation médicaments 
@@ -45,11 +45,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-dispensation-m
     "valueCode" : "can-be-target"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dispensation-medicaments",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRLMDispensationMedicaments",
   "title" : "Modèle logique métier - FR LM Dispensation médicaments",
   "status" : "draft",
-  "date" : "2026-04-16T07:11:11+00:00",
+  "date" : "2026-04-24T08:31:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -103,17 +103,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-dispensation-m
       "max" : "*",
       "type" : [{
         "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication-dispense"
-      }]
-    },
-    {
-      "id" : "fr-lm-dispensation-medicaments.auteur",
-      "path" : "fr-lm-dispensation-medicaments.auteur",
-      "short" : "Auteur",
-      "definition" : "Auteur",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure-auteur"
       }]
     }]
   }

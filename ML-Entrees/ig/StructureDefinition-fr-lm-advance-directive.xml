@@ -3,23 +3,23 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="fr-lm-advance-directive"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : DéfinitionStructure fr-lm-advance-directive</b></p><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Le nom logique de l'élément">Nom</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations sur l'utilisation de l'élément">Drapeaux</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Nombre minimum et maximum de fois que l'élément peut apparaître dans l'instance">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Référence au type de l'élément">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations supplémentaires sur l'élément">Description et contraintes</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-fr-lm-advance-directive-definitions.html#fr-lm-advance-directive" title="Entrée Directive anticipée">fr-lm-advance-directive</a><a name="fr-lm-advance-directive"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-fr-lm-entry.html">FRLMEntry</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Logical model - FR LM Advance Directive<br/><br/>Éléments définis dans les ancêtres :<a href="StructureDefinition-fr-lm-entry.html" title="Métadonnées de base">header</a><br/><span style="font-weight:bold">Les instances de ce modèle logique peuvent être la cible d'une référence</span></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a href="StructureDefinition-fr-lm-advance-directive-definitions.html#fr-lm-advance-directive.code" title="Type de la directive anticipée">code</a><a name="fr-lm-advance-directive.code"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Type de la directive anticipée</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a href="StructureDefinition-fr-lm-advance-directive-definitions.html#fr-lm-advance-directive.statut" title="Statut de l'observation">statut</a><a name="fr-lm-advance-directive.statut"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Statut de l'observation<br/><span style="font-weight:bold">Motif requis: </span><span style="color: darkgreen">completed</span></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a href="StructureDefinition-fr-lm-advance-directive-definitions.html#fr-lm-advance-directive.valeurDirectiveIdentifiee" title="Procédure autorisée ou pas">valeurDirectiveIdentifiee</a><a name="fr-lm-advance-directive.valeurDirectiveIdentifiee"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Procédure autorisée ou pas</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a href="StructureDefinition-fr-lm-advance-directive-definitions.html#fr-lm-advance-directive.reference" title="Référence à un document externe">reference</a><a name="fr-lm-advance-directive.reference"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Référence à un document externe</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Ressource" class="hierarchy"/> <a href="StructureDefinition-fr-lm-advance-directive-definitions.html#fr-lm-advance-directive.documentEncapsule" title="Document encapsulé en B64">documentEncapsule</a><a name="fr-lm-advance-directive.documentEncapsule"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-fr-lm-attachement.html">fr-lm-attachement</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Document encapsulé en B64</td></tr>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : DéfinitionStructure fr-lm-advance-directive</b></p><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Le nom logique de l'élément">Nom</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations sur l'utilisation de l'élément">Drapeaux</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Nombre minimum et maximum de fois que l'élément peut apparaître dans l'instance">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Référence au type de l'élément">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations supplémentaires sur l'élément">Description et contraintes</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-fr-lm-advance-directive-definitions.html#fr-lm-advance-directive" title="Entree Directive anticipee">fr-lm-advance-directive</a><a name="fr-lm-advance-directive"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-fr-lm-entry.html">FRLMEntry</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Logical model - FR LM Advance Directive<br/><br/>Éléments définis dans les ancêtres :<a href="StructureDefinition-fr-lm-entry.html" title="Métadonnées de base">header</a><br/><span style="font-weight:bold">Les instances de ce modèle logique peuvent être la cible d'une référence</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a href="StructureDefinition-fr-lm-advance-directive-definitions.html#fr-lm-advance-directive.date" title="Date de la directive anticipée">date</a><a name="fr-lm-advance-directive.date"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Date de la directive anticipée</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a href="StructureDefinition-fr-lm-advance-directive-definitions.html#fr-lm-advance-directive.category" title="Type de directive">category</a><a name="fr-lm-advance-directive.category"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Type de directive<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-jdv-type-directive-anticipee-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-directive-anticipee-cisis" class="binding">JDV Type Directive Anticipee CISIS</a><span title="null" class="binding">: </span><span title="null" class="binding">jdv-type-directive-anticipee-cisis (1.2.250.1.213.1.1.5.136)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a href="StructureDefinition-fr-lm-advance-directive-definitions.html#fr-lm-advance-directive.value" title="Procédure autorisée ou pas">value</a><a name="fr-lm-advance-directive.value"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Procédure autorisée ou pas</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a href="StructureDefinition-fr-lm-advance-directive-definitions.html#fr-lm-advance-directive.note" title="Commentaire">note</a><a name="fr-lm-advance-directive.note"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Commentaire</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Ressource" class="hierarchy"/> <a href="StructureDefinition-fr-lm-advance-directive-definitions.html#fr-lm-advance-directive.attachment" title="Piece jointe associee a la directive">attachment</a><a name="fr-lm-advance-directive.attachment"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-fr-lm-attachement.html">fr-lm-attachement</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Piece jointe associee a la directive</td></tr>
 <tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr></table></div>
   </text>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics">
     <valueCode value="can-be-target"/>
   </extension>
   <url value="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-advance-directive"/>
-  <version value="0.1.0-snapsnot"/>
+  <version value="0.1.0-snapshot"/>
   <name value="FRLMAdvanceDirective"/>
   <title value="Logical model - FR LM Advance Directive"/>
   <status value="draft"/>
-  <date value="2026-04-16T07:11:11+00:00"/>
+  <date value="2026-04-24T08:31:26+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -28,7 +28,7 @@
       <value value="https://esante.gouv.fr"/>
     </telecom>
   </contact>
-  <description value="Entrée Directive anticipée"/>
+  <description value="Entree Directive anticipee"/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
@@ -44,12 +44,12 @@
   <derivation value="specialization"/>
   <snapshot>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
-      <valueString value="0.1.0-snapsnot"/>
+      <valueString value="0.1.0-snapshot"/>
     </extension>
     <element id="fr-lm-advance-directive">
       <path value="fr-lm-advance-directive"/>
       <short value="Logical model - FR LM Advance Directive"/>
-      <definition value="Entrée Directive anticipée"/>
+      <definition value="Entree Directive anticipee"/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -131,7 +131,7 @@
         <max value="*"/>
       </base>
       <type>
-        <code value="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure-auteur"/>
+        <code value="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional"/>
       </type>
     </element>
     <element id="fr-lm-advance-directive.header.author[x].authorOrganisation">
@@ -146,7 +146,7 @@
         <max value="*"/>
       </base>
       <type>
-        <code value="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure-auteur"/>
+        <code value="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organisation"/>
       </type>
     </element>
     <element id="fr-lm-advance-directive.header.author[x].authorDevice">
@@ -161,37 +161,85 @@
         <max value="*"/>
       </base>
       <type>
-        <code value="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-systeme-structure-auteur"/>
+        <code value="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device"/>
       </type>
     </element>
-    <element id="fr-lm-advance-directive.header.performer">
-      <path value="fr-lm-advance-directive.header.performer"/>
+    <element id="fr-lm-advance-directive.header.performer[x]">
+      <path value="fr-lm-advance-directive.header.performer[x]"/>
       <short value="Exécutant (performer)"/>
       <definition value="Exécutant (performer)"/>
       <min value="0"/>
       <max value="*"/>
       <base>
-        <path value="fr-lm-entry.header.performer"/>
+        <path value="fr-lm-entry.header.performer[x]"/>
         <min value="0"/>
         <max value="*"/>
       </base>
       <type>
-        <code value="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure"/>
+        <code value="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional"/>
+      </type>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organisation"/>
       </type>
     </element>
-    <element id="fr-lm-advance-directive.header.participant">
-      <path value="fr-lm-advance-directive.header.participant"/>
+    <element id="fr-lm-advance-directive.header.participant[x]">
+      <path value="fr-lm-advance-directive.header.participant[x]"/>
       <short value="Participant"/>
       <definition value="Participant"/>
       <min value="0"/>
       <max value="*"/>
       <base>
-        <path value="fr-lm-entry.header.participant"/>
+        <path value="fr-lm-entry.header.participant[x]"/>
         <min value="0"/>
         <max value="*"/>
       </base>
       <type>
-        <code value="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-participant-corps"/>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="fr-lm-advance-directive.header.participant[x].participantProfessional">
+      <path value="fr-lm-advance-directive.header.participant[x].participantProfessional"/>
+      <short value="Le participant est un professionnel de santé"/>
+      <definition value="Le participant est un professionnel de santé"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="fr-lm-entry.header.participant[x].participantProfessional"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional"/>
+      </type>
+    </element>
+    <element id="fr-lm-advance-directive.header.participant[x].participantOrganisation">
+      <path value="fr-lm-advance-directive.header.participant[x].participantOrganisation"/>
+      <short value="Le participant est une organisation"/>
+      <definition value="Le participant est une organisation"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="fr-lm-entry.header.participant[x].participantOrganisation"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organisation"/>
+      </type>
+    </element>
+    <element id="fr-lm-advance-directive.header.participant[x].participantDevice">
+      <path value="fr-lm-advance-directive.header.participant[x].participantDevice"/>
+      <short value="Le participant est un système"/>
+      <definition value="Le participant est un système"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="fr-lm-entry.header.participant[x].participantDevice"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device"/>
       </type>
     </element>
     <element id="fr-lm-advance-directive.header.informant">
@@ -206,7 +254,7 @@
         <max value="*"/>
       </base>
       <type>
-        <code value="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-informateur"/>
+        <code value="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-informant"/>
       </type>
     </element>
     <element id="fr-lm-advance-directive.header.date">
@@ -223,6 +271,25 @@
       <type>
         <code value="dateTime"/>
       </type>
+    </element>
+    <element id="fr-lm-advance-directive.header.status">
+      <path value="fr-lm-advance-directive.header.status"/>
+      <short value="Statut de l'acte"/>
+      <definition value="Statut de l'acte"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="fr-lm-entry.header.status"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <description value="jdv-hl7-v3-ActStatus-cisis (2.16.840.1.113883.1.11.15933)"/>
+        <valueSet value="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis"/>
+      </binding>
     </element>
     <element id="fr-lm-advance-directive.header.source">
       <path value="fr-lm-advance-directive.header.source"/>
@@ -254,75 +321,78 @@
         <code value="CodeableConcept"/>
       </type>
     </element>
-    <element id="fr-lm-advance-directive.code">
-      <path value="fr-lm-advance-directive.code"/>
-      <short value="Type de la directive anticipée"/>
-      <definition value="Type de la directive anticipée"/>
+    <element id="fr-lm-advance-directive.date">
+      <path value="fr-lm-advance-directive.date"/>
+      <short value="Date de la directive anticipée"/>
+      <definition value="Date de la directive anticipée"/>
       <min value="1"/>
       <max value="1"/>
       <base>
-        <path value="fr-lm-advance-directive.code"/>
+        <path value="fr-lm-advance-directive.date"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="fr-lm-advance-directive.category">
+      <path value="fr-lm-advance-directive.category"/>
+      <short value="Type de directive"/>
+      <definition value="Type de directive"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="fr-lm-advance-directive.category"/>
         <min value="1"/>
         <max value="1"/>
       </base>
       <type>
         <code value="CodeableConcept"/>
       </type>
+      <binding>
+        <description value="jdv-type-directive-anticipee-cisis (1.2.250.1.213.1.1.5.136)"/>
+        <valueSet value="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-directive-anticipee-cisis"/>
+      </binding>
     </element>
-    <element id="fr-lm-advance-directive.statut">
-      <path value="fr-lm-advance-directive.statut"/>
-      <short value="Statut de l'observation"/>
-      <definition value="Statut de l'observation"/>
+    <element id="fr-lm-advance-directive.value">
+      <path value="fr-lm-advance-directive.value"/>
+      <short value="Procédure autorisée ou pas"/>
+      <definition value="Procédure autorisée ou pas"/>
       <min value="1"/>
       <max value="1"/>
       <base>
-        <path value="fr-lm-advance-directive.statut"/>
+        <path value="fr-lm-advance-directive.value"/>
         <min value="1"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <patternCode value="completed"/>
-    </element>
-    <element id="fr-lm-advance-directive.valeurDirectiveIdentifiee">
-      <path value="fr-lm-advance-directive.valeurDirectiveIdentifiee"/>
-      <short value="Procédure autorisée ou pas"/>
-      <definition value="Procédure autorisée ou pas"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="fr-lm-advance-directive.valeurDirectiveIdentifiee"/>
-        <min value="0"/>
         <max value="1"/>
       </base>
       <type>
         <code value="boolean"/>
       </type>
     </element>
-    <element id="fr-lm-advance-directive.reference">
-      <path value="fr-lm-advance-directive.reference"/>
-      <short value="Référence à un document externe"/>
-      <definition value="Référence à un document externe"/>
+    <element id="fr-lm-advance-directive.note">
+      <path value="fr-lm-advance-directive.note"/>
+      <short value="Commentaire"/>
+      <definition value="Commentaire"/>
       <min value="0"/>
       <max value="1"/>
       <base>
-        <path value="fr-lm-advance-directive.reference"/>
+        <path value="fr-lm-advance-directive.note"/>
         <min value="0"/>
         <max value="1"/>
       </base>
       <type>
-        <code value="BackboneElement"/>
+        <code value="string"/>
       </type>
     </element>
-    <element id="fr-lm-advance-directive.documentEncapsule">
-      <path value="fr-lm-advance-directive.documentEncapsule"/>
-      <short value="Document encapsulé en B64"/>
-      <definition value="Document encapsulé en B64"/>
+    <element id="fr-lm-advance-directive.attachment">
+      <path value="fr-lm-advance-directive.attachment"/>
+      <short value="Piece jointe associee a la directive"/>
+      <definition value="Piece jointe associee a la directive"/>
       <min value="0"/>
       <max value="1"/>
       <base>
-        <path value="fr-lm-advance-directive.documentEncapsule"/>
+        <path value="fr-lm-advance-directive.attachment"/>
         <min value="0"/>
         <max value="1"/>
       </base>
@@ -335,53 +405,56 @@
     <element id="fr-lm-advance-directive">
       <path value="fr-lm-advance-directive"/>
       <short value="Logical model - FR LM Advance Directive"/>
-      <definition value="Entrée Directive anticipée"/>
+      <definition value="Entree Directive anticipee"/>
     </element>
-    <element id="fr-lm-advance-directive.code">
-      <path value="fr-lm-advance-directive.code"/>
-      <short value="Type de la directive anticipée"/>
-      <definition value="Type de la directive anticipée"/>
+    <element id="fr-lm-advance-directive.date">
+      <path value="fr-lm-advance-directive.date"/>
+      <short value="Date de la directive anticipée"/>
+      <definition value="Date de la directive anticipée"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="fr-lm-advance-directive.category">
+      <path value="fr-lm-advance-directive.category"/>
+      <short value="Type de directive"/>
+      <definition value="Type de directive"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="CodeableConcept"/>
       </type>
+      <binding>
+        <description value="jdv-type-directive-anticipee-cisis (1.2.250.1.213.1.1.5.136)"/>
+        <valueSet value="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-directive-anticipee-cisis"/>
+      </binding>
     </element>
-    <element id="fr-lm-advance-directive.statut">
-      <path value="fr-lm-advance-directive.statut"/>
-      <short value="Statut de l'observation"/>
-      <definition value="Statut de l'observation"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-      </type>
-      <patternCode value="completed"/>
-    </element>
-    <element id="fr-lm-advance-directive.valeurDirectiveIdentifiee">
-      <path value="fr-lm-advance-directive.valeurDirectiveIdentifiee"/>
+    <element id="fr-lm-advance-directive.value">
+      <path value="fr-lm-advance-directive.value"/>
       <short value="Procédure autorisée ou pas"/>
       <definition value="Procédure autorisée ou pas"/>
-      <min value="0"/>
+      <min value="1"/>
       <max value="1"/>
       <type>
         <code value="boolean"/>
       </type>
     </element>
-    <element id="fr-lm-advance-directive.reference">
-      <path value="fr-lm-advance-directive.reference"/>
-      <short value="Référence à un document externe"/>
-      <definition value="Référence à un document externe"/>
+    <element id="fr-lm-advance-directive.note">
+      <path value="fr-lm-advance-directive.note"/>
+      <short value="Commentaire"/>
+      <definition value="Commentaire"/>
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="BackboneElement"/>
+        <code value="string"/>
       </type>
     </element>
-    <element id="fr-lm-advance-directive.documentEncapsule">
-      <path value="fr-lm-advance-directive.documentEncapsule"/>
-      <short value="Document encapsulé en B64"/>
-      <definition value="Document encapsulé en B64"/>
+    <element id="fr-lm-advance-directive.attachment">
+      <path value="fr-lm-advance-directive.attachment"/>
+      <short value="Piece jointe associee a la directive"/>
+      <definition value="Piece jointe associee a la directive"/>
       <min value="0"/>
       <max value="1"/>
       <type>

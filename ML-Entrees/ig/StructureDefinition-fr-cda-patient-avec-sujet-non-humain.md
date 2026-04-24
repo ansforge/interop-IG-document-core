@@ -1,4 +1,4 @@
-# CDA - FR Patient avec sujet non humain - ANS IG document core v0.1.0-snapsnot
+# CDA - FR Patient avec sujet non humain - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-patient-avec-sujet-non-humain | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-16 | *Computable Name*:FRCDAPatientAvecSujetNonHumain |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-patient-avec-sujet-non-humain | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-24 | *Computable Name*:FRCDAPatientAvecSujetNonHumain |
 
  
 Entrée FR-Patient-avec-sujet-non-humain: Cet élément doit être présent lorsque le sujet des observations de cette partie du compte rendu est un échantillon provenant d’un sujet non humain (animal ou autre élément environnemental), tandis que les autres parties du rapport sont liés au patient humain. Le sujet non humain doit aussi être décrit dans l’en-tête du document. 
@@ -62,11 +62,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-patient-avec-
     "valueUri" : "cda"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-patient-avec-sujet-non-humain",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRCDAPatientAvecSujetNonHumain",
   "title" : "CDA - FR Patient avec sujet non humain",
   "status" : "draft",
-  "date" : "2026-04-16T07:11:11+00:00",
+  "date" : "2026-04-24T08:31:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -149,6 +149,23 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-patient-avec-
       "short" : "Sujet (ex. poulet, poisson, œuf, salade, eau, terre, air, peinture, etc.).",
       "definition" : "Sujet (ex. poulet, poisson, œuf, salade, eau, terre, air, peinture, etc.).",
       "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Subject.relatedSubject.code.code",
+      "path" : "Subject.relatedSubject.code.code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Subject.relatedSubject.code.codeSystem",
+      "path" : "Subject.relatedSubject.code.codeSystem",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Subject.relatedSubject.code.displayName",
+      "path" : "Subject.relatedSubject.code.displayName",
       "mustSupport" : true
     },
     {

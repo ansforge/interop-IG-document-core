@@ -3,7 +3,5 @@
 ","Logical model - FR LM Evolution Adverse Event","Entrée Evolution effet indesirable","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "fr-lm-evolution-adverse-event.code","fr-lm-evolution-adverse-event.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Code de l'entrée","Code de l'entrée","","","","","","","","","",,,,,"",,,,"fr-lm-evolution-adverse-event.code",1,1,"",""
-"fr-lm-evolution-adverse-event.statut","fr-lm-evolution-adverse-event.statut","","","",1,1,"","","","code {[]} {[]}
-","Statut de l'entrée","Statut de l'entrée","","","","","","","","","",,,,,"",,,,"fr-lm-evolution-adverse-event.statut",1,1,"",""
 "fr-lm-evolution-adverse-event.evolution","fr-lm-evolution-adverse-event.evolution","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Evolution","Evolution","","","","","","","","","",,,,,"",,,,"fr-lm-evolution-adverse-event.evolution",1,1,"",""

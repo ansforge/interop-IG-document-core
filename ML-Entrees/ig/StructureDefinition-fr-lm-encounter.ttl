@@ -27,11 +27,11 @@
      fhir:v "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-encounter"^^xsd:anyURI ;
      fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-encounter>
   ] ; # 
-  fhir:version [ fhir:v "0.1.0-snapsnot"] ; # 
+  fhir:version [ fhir:v "0.1.0-snapshot"] ; # 
   fhir:name [ fhir:v "FRLMEncounter"] ; # 
   fhir:title [ fhir:v "Modèle logique métier - FR LM Rencontre"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-04-16T07:11:11+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-04-24T08:31:26+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -71,7 +71,7 @@
        ] ;
        fhir:value [
          a fhir:String ;
-         fhir:v "0.1.0-snapsnot"
+         fhir:v "0.1.0-snapshot"
        ]
      ] ) ;
      fhir:element ( [
@@ -173,8 +173,8 @@
        ] ;
        fhir:type ( [
          fhir:code [
-           fhir:v "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure-auteur"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure-auteur>
+           fhir:v "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional"^^xsd:anyURI ;
+           fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional>
          ]
        ] )
      ] [
@@ -191,8 +191,8 @@
        ] ;
        fhir:type ( [
          fhir:code [
-           fhir:v "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure-auteur"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure-auteur>
+           fhir:v "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organisation"^^xsd:anyURI ;
+           fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organisation>
          ]
        ] )
      ] [
@@ -209,44 +209,103 @@
        ] ;
        fhir:type ( [
          fhir:code [
-           fhir:v "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-systeme-structure-auteur"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-systeme-structure-auteur>
+           fhir:v "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device"^^xsd:anyURI ;
+           fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device>
          ]
        ] )
      ] [
-       fhir:id [ fhir:v "fr-lm-encounter.header.performer" ] ;
-       fhir:path [ fhir:v "fr-lm-encounter.header.performer" ] ;
+       fhir:id [ fhir:v "fr-lm-encounter.header.performer[x]" ] ;
+       fhir:path [ fhir:v "fr-lm-encounter.header.performer[x]" ] ;
        fhir:short [ fhir:v "Exécutant (performer)" ] ;
        fhir:definition [ fhir:v "Exécutant (performer)" ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "*" ] ;
        fhir:base [
-         fhir:path [ fhir:v "fr-lm-entry.header.performer" ] ;
+         fhir:path [ fhir:v "fr-lm-entry.header.performer[x]" ] ;
          fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
          fhir:code [
-           fhir:v "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure>
+           fhir:v "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional"^^xsd:anyURI ;
+           fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional>
+         ]
+       ] [
+         fhir:code [
+           fhir:v "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organisation"^^xsd:anyURI ;
+           fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organisation>
          ]
        ] )
      ] [
-       fhir:id [ fhir:v "fr-lm-encounter.header.participant" ] ;
-       fhir:path [ fhir:v "fr-lm-encounter.header.participant" ] ;
+       fhir:id [ fhir:v "fr-lm-encounter.header.participant[x]" ] ;
+       fhir:path [ fhir:v "fr-lm-encounter.header.participant[x]" ] ;
        fhir:short [ fhir:v "Participant" ] ;
        fhir:definition [ fhir:v "Participant" ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "*" ] ;
        fhir:base [
-         fhir:path [ fhir:v "fr-lm-entry.header.participant" ] ;
+         fhir:path [ fhir:v "fr-lm-entry.header.participant[x]" ] ;
          fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
          fhir:code [
-           fhir:v "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-participant-corps"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-participant-corps>
+           fhir:v "Base"^^xsd:anyURI ;
+           fhir:l fhir:Base
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "fr-lm-encounter.header.participant[x].participantProfessional" ] ;
+       fhir:path [ fhir:v "fr-lm-encounter.header.participant[x].participantProfessional" ] ;
+       fhir:short [ fhir:v "Le participant est un professionnel de santé" ] ;
+       fhir:definition [ fhir:v "Le participant est un professionnel de santé" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "fr-lm-entry.header.participant[x].participantProfessional" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional"^^xsd:anyURI ;
+           fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional>
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "fr-lm-encounter.header.participant[x].participantOrganisation" ] ;
+       fhir:path [ fhir:v "fr-lm-encounter.header.participant[x].participantOrganisation" ] ;
+       fhir:short [ fhir:v "Le participant est une organisation" ] ;
+       fhir:definition [ fhir:v "Le participant est une organisation" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "fr-lm-entry.header.participant[x].participantOrganisation" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organisation"^^xsd:anyURI ;
+           fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organisation>
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "fr-lm-encounter.header.participant[x].participantDevice" ] ;
+       fhir:path [ fhir:v "fr-lm-encounter.header.participant[x].participantDevice" ] ;
+       fhir:short [ fhir:v "Le participant est un système" ] ;
+       fhir:definition [ fhir:v "Le participant est un système" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "fr-lm-entry.header.participant[x].participantDevice" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device"^^xsd:anyURI ;
+           fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device>
          ]
        ] )
      ] [
@@ -263,8 +322,8 @@
        ] ;
        fhir:type ( [
          fhir:code [
-           fhir:v "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-informateur"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-informateur>
+           fhir:v "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-informant"^^xsd:anyURI ;
+           fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-informant>
          ]
        ] )
      ] [
@@ -285,6 +344,31 @@
            fhir:l fhir:dateTime
          ]
        ] )
+     ] [
+       fhir:id [ fhir:v "fr-lm-encounter.header.status" ] ;
+       fhir:path [ fhir:v "fr-lm-encounter.header.status" ] ;
+       fhir:short [ fhir:v "Statut de l'acte" ] ;
+       fhir:definition [ fhir:v "Statut de l'acte" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "fr-lm-entry.header.status" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "CodeableConcept"^^xsd:anyURI ;
+           fhir:l fhir:CodeableConcept
+         ]
+       ] ) ;
+       fhir:binding [
+         fhir:description [ fhir:v "jdv-hl7-v3-ActStatus-cisis (2.16.840.1.113883.1.11.15933)" ] ;
+         fhir:valueSet [
+           fhir:v "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis"^^xsd:anyURI ;
+           fhir:l <https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis>
+         ]
+       ]
      ] [
        fhir:id [ fhir:v "fr-lm-encounter.header.source" ] ;
        fhir:path [ fhir:v "fr-lm-encounter.header.source" ] ;

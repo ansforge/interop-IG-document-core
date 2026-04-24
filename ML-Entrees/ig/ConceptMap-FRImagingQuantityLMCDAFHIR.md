@@ -1,4 +1,4 @@
-# Mapping Métier/CDA/FHIR : Quantité d'exposition aux radiations - ANS IG document core v0.1.0-snapsnot
+# Mapping Métier/CDA/FHIR : Quantité d'exposition aux radiations - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRImagingQuantityLMCDAFHIR | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-16 | *Computable Name*: |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRImagingQuantityLMCDAFHIR | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-24 | *Computable Name*: |
 
  
 Mapping des éléments du modèle métier FRLMQuantiteExposition vers l’entrée CDA FRCDADICOMQuantite puis vers le composant FHIR FRObservationRadiationExposureDocument.component. 
@@ -23,10 +23,10 @@ Mapping des éléments du modèle métier FRLMQuantiteExposition vers l’entré
   "resourceType" : "ConceptMap",
   "id" : "FRImagingQuantityLMCDAFHIR",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRImagingQuantityLMCDAFHIR",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "title" : "Mapping Métier/CDA/FHIR : Quantité d'exposition aux radiations",
   "status" : "draft",
-  "date" : "2026-04-16T07:11:11+00:00",
+  "date" : "2026-04-24T08:31:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

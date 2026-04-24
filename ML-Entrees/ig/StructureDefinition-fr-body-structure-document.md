@@ -1,4 +1,4 @@
-# BodyStructure - FR Body Structure Document - ANS IG document core v0.1.0-snapsnot
+# BodyStructure - FR Body Structure Document - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-body-structure-document | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-16 | *Computable Name*:FRBodyStructureDocument |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-body-structure-document | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-24 | *Computable Name*:FRBodyStructureDocument |
 
  
 FRBodyStructureDocument permet de préciser les modificateurs topographiques associés à une localisation anatomique. 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-body-structure-do
   "resourceType" : "StructureDefinition",
   "id" : "fr-body-structure-document",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-body-structure-document",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRBodyStructureDocument",
   "title" : "BodyStructure - FR Body Structure Document",
   "status" : "draft",
-  "date" : "2026-04-16T07:11:11+00:00",
+  "date" : "2026-04-24T08:31:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -1,4 +1,4 @@
-# CDA - FR Organisme assurance maladie - ANS IG document core v0.1.0-snapsnot
+# CDA - FR Organisme assurance maladie - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-organisme-assurance-maladie | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-16 | *Computable Name*:FRCDAOrganismeAssuranceMaladie |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-organisme-assurance-maladie | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-24 | *Computable Name*:FRCDAOrganismeAssuranceMaladie |
 
  
 Entrée FR-Organisme-assurance-maladie: IHE-PCC - Payers-entry. L’entrée Organisme d’assurance maladie est une entrée permettant de décrire un organisme d’assurance maladie. 
@@ -62,11 +62,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-organisme-ass
     "valueUri" : "cda"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-organisme-assurance-maladie",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRCDAOrganismeAssuranceMaladie",
   "title" : "CDA - FR Organisme assurance maladie",
   "status" : "draft",
-  "date" : "2026-04-16T07:11:11+00:00",
+  "date" : "2026-04-24T08:31:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -174,7 +174,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-organisme-ass
       "path" : "Act.id",
       "short" : "Identifiant de l'entrée",
       "definition" : "Identifiant de l'entrée",
-      "min" : 1
+      "min" : 1,
+      "mustSupport" : true
     },
     {
       "id" : "Act.code",
@@ -186,6 +187,23 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-organisme-ass
         "strength" : "required",
         "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-couverture-sociale-cisis"
       }
+    },
+    {
+      "id" : "Act.code.code",
+      "path" : "Act.code.code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Act.code.codeSystem",
+      "path" : "Act.code.codeSystem",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Act.code.displayName",
+      "path" : "Act.code.displayName",
+      "mustSupport" : true
     },
     {
       "id" : "Act.statusCode",
@@ -374,7 +392,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-organisme-ass
       "path" : "Act.participant.participantRole.id",
       "short" : "Identifiant de l'assuré",
       "definition" : "Identifiant de l'assuré",
-      "min" : 1
+      "min" : 1,
+      "mustSupport" : true
     },
     {
       "id" : "Act.participant:frParticipantAssure.participantRole.addr",
@@ -426,7 +445,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-organisme-ass
       "path" : "Act.entryRelationship.act.id",
       "short" : "Identifiant du plan de soins",
       "definition" : "Identifiant du plan de soins",
-      "min" : 1
+      "min" : 1,
+      "mustSupport" : true
     },
     {
       "id" : "Act.entryRelationship.act.text",

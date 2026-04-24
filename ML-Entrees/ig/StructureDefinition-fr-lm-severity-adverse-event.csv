@@ -3,7 +3,5 @@
 ","Logical model - FR LM Severity Adverse Event","Entrée Gravité effet indésirable","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "fr-lm-severity-adverse-event.code","fr-lm-severity-adverse-event.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Code de l'entrée","Code de l'entrée","","","","","","","","","",,,,,"",,,,"fr-lm-severity-adverse-event.code",1,1,"",""
-"fr-lm-severity-adverse-event.statut","fr-lm-severity-adverse-event.statut","","","",1,1,"","","","code {[]} {[]}
-","Statut de l'entrée","Statut de l'entrée","","","","","","","","","",,,,,"",,,,"fr-lm-severity-adverse-event.statut",1,1,"",""
 "fr-lm-severity-adverse-event.niveauGravite","fr-lm-severity-adverse-event.niveauGravite","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Niveau de gravité","Niveau de gravité","","","","","","","","","",,,,,"",,,,"fr-lm-severity-adverse-event.niveauGravite",1,1,"",""

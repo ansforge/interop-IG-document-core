@@ -9,20 +9,28 @@
 ","Identifiant de l’entrée","Identifiant de l’entrée","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.identifier",0,*,"",""
 "fr-lm-attachement.header.author[x]","fr-lm-attachement.header.author[x]","","","",0,*,"","","","Base {[]} {[]}
 ","author[x] peut correspondre soit à un professionnel, soit à une organisation, soit à un système.","author[x] peut correspondre soit à un professionnel, soit à une organisation, soit à un système.","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.author[x]",0,*,"",""
-"fr-lm-attachement.header.author[x].authorProfessional","fr-lm-attachement.header.author[x].authorProfessional","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure-auteur {[]} {[]}
+"fr-lm-attachement.header.author[x].authorProfessional","fr-lm-attachement.header.author[x].authorProfessional","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional {[]} {[]}
 ","L'auteur est un professionnel de santé","L'auteur est un professionnel de santé","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.author[x].authorProfessional",0,*,"",""
-"fr-lm-attachement.header.author[x].authorOrganisation","fr-lm-attachement.header.author[x].authorOrganisation","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure-auteur {[]} {[]}
+"fr-lm-attachement.header.author[x].authorOrganisation","fr-lm-attachement.header.author[x].authorOrganisation","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organisation {[]} {[]}
 ","L'auteur est une organisation","L'auteur est une organisation","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.author[x].authorOrganisation",0,*,"",""
-"fr-lm-attachement.header.author[x].authorDevice","fr-lm-attachement.header.author[x].authorDevice","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-systeme-structure-auteur {[]} {[]}
+"fr-lm-attachement.header.author[x].authorDevice","fr-lm-attachement.header.author[x].authorDevice","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device {[]} {[]}
 ","L'auteur est un système","L'auteur est un système","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.author[x].authorDevice",0,*,"",""
-"fr-lm-attachement.header.performer","fr-lm-attachement.header.performer","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure {[]} {[]}
-","Exécutant (performer)","Exécutant (performer)","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.performer",0,*,"",""
-"fr-lm-attachement.header.participant","fr-lm-attachement.header.participant","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-participant-corps {[]} {[]}
-","Participant","Participant","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.participant",0,*,"",""
-"fr-lm-attachement.header.informant","fr-lm-attachement.header.informant","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-informateur {[]} {[]}
+"fr-lm-attachement.header.performer[x]","fr-lm-attachement.header.performer[x]","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional {[]} {[]}
+https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organisation {[]} {[]}","Exécutant (performer)","Exécutant (performer)","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.performer[x]",0,*,"",""
+"fr-lm-attachement.header.participant[x]","fr-lm-attachement.header.participant[x]","","","",0,*,"","","","Base {[]} {[]}
+","Participant","Participant","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.participant[x]",0,*,"",""
+"fr-lm-attachement.header.participant[x].participantProfessional","fr-lm-attachement.header.participant[x].participantProfessional","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional {[]} {[]}
+","Le participant est un professionnel de santé","Le participant est un professionnel de santé","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.participant[x].participantProfessional",0,*,"",""
+"fr-lm-attachement.header.participant[x].participantOrganisation","fr-lm-attachement.header.participant[x].participantOrganisation","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organisation {[]} {[]}
+","Le participant est une organisation","Le participant est une organisation","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.participant[x].participantOrganisation",0,*,"",""
+"fr-lm-attachement.header.participant[x].participantDevice","fr-lm-attachement.header.participant[x].participantDevice","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device {[]} {[]}
+","Le participant est un système","Le participant est un système","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.participant[x].participantDevice",0,*,"",""
+"fr-lm-attachement.header.informant","fr-lm-attachement.header.informant","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-informant {[]} {[]}
 ","Informateur","Informateur","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.informant",0,*,"",""
 "fr-lm-attachement.header.date","fr-lm-attachement.header.date","","","",0,1,"","","","dateTime {[]} {[]}
 ","Date/Heure de création par l'auteur","Date/Heure de création par l'auteur","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.date",0,1,"",""
+"fr-lm-attachement.header.status","fr-lm-attachement.header.status","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Statut de l'acte","Statut de l'acte","","","","","","","","","",,"","jdv-hl7-v3-ActStatus-cisis (2.16.840.1.113883.1.11.15933)","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis","",,,,"fr-lm-entry.header.status",1,1,"",""
 "fr-lm-attachement.header.source","fr-lm-attachement.header.source","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Source","Source","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.source",0,1,"",""
 "fr-lm-attachement.header.langue","fr-lm-attachement.header.langue","","","",0,1,"","","","CodeableConcept {[]} {[]}
@@ -31,19 +39,15 @@ La partie en minuscules indique le code de la langue utilisée (ISO-639-1)
 La partie en majuscules indique le code pays (ISO-3166)","'fr-FR' pour français métropolitain (la casse des caractères doit être respectée)
 La partie en minuscules indique le code de la langue utilisée (ISO-639-1)
 La partie en majuscules indique le code pays (ISO-3166)","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.langue",0,1,"",""
-"fr-lm-attachement.code","fr-lm-attachement.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
-","Code de l'entrée","Code de l'entrée","","","","","","","","","",,,,,"",,,,"fr-lm-attachement.code",1,1,"",""
-"fr-lm-attachement.statut","fr-lm-attachement.statut","","","",1,1,"","","","code {[]} {[]}
-","Statut de l'entrée","Statut de l'entrée","","","","","","","","","",,,,,"",,,,"fr-lm-attachement.statut",1,1,"",""
-"fr-lm-attachement.typeDocumentAttache","fr-lm-attachement.typeDocumentAttache","","","",1,1,"","","","Base {[]} {[]}
-","Type de document attaché","Type de document attaché","","","","","","","","","",,,,,"",,,,"fr-lm-attachement.typeDocumentAttache",1,1,"",""
-"fr-lm-attachement.typeDocumentAttache.natureDocument","fr-lm-attachement.typeDocumentAttache.natureDocument","","","",1,1,"","","","CodeableConcept {[]} {[]}
-","Nature du document","Nature du document","","","","","","","","","",,,,,"",,,,"fr-lm-attachement.typeDocumentAttache.natureDocument",1,1,"",""
-"fr-lm-attachement.documentAttache","fr-lm-attachement.documentAttache","","","",1,1,"","","","Base {[]} {[]}
-","Bloc document attaché","Bloc document attaché","","","","","","","","","",,,,,"",,,,"fr-lm-attachement.documentAttache",1,1,"",""
-"fr-lm-attachement.documentAttache.observationMedia","fr-lm-attachement.documentAttache.observationMedia","","","",1,1,"","","","Base {[]} {[]}
-","Observation média","Observation média","","","","","","","","","",,,,,"",,,,"fr-lm-attachement.documentAttache.observationMedia",1,1,"",""
-"fr-lm-attachement.documentAttache.observationMedia.identifiant","fr-lm-attachement.documentAttache.observationMedia.identifiant","","","",1,1,"","","","Identifier {[]} {[]}
-","Identifiant de l’observationMedia","Identifiant de l’observationMedia","","","","","","","","","",,,,,"",,,,"fr-lm-attachement.documentAttache.observationMedia.identifiant",1,1,"",""
-"fr-lm-attachement.documentAttache.observationMedia.documentAttacheEncode","fr-lm-attachement.documentAttache.observationMedia.documentAttacheEncode","","","",1,1,"","","","base64Binary {[]} {[]}
-","Document attaché encodé en Base64","Document attaché encodé en Base64","","","","","","","","","",,,,,"",,,,"fr-lm-attachement.documentAttache.observationMedia.documentAttacheEncode",1,1,"",""
+"fr-lm-attachement.contentType","fr-lm-attachement.contentType","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Type MIME de la piece jointe, avec encodage de caracteres, etc.","Type MIME de la piece jointe, avec encodage de caracteres, etc.","","","","","","","","","",,"","(preferred): BCP-13","","",,,,"fr-lm-attachement.contentType",0,1,"",""
+"fr-lm-attachement.language","fr-lm-attachement.language","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Langue du contenu","Langue du contenu","","","","","","","","","",,"","(preferred): BCP 47","","",,,,"fr-lm-attachement.language",0,1,"",""
+"fr-lm-attachement.data","fr-lm-attachement.data","","","",0,1,"","","","base64Binary {[]} {[]}
+","Contenu encode en base64","Contenu encode en base64","","","","","","","","","",,,,,"",,,,"fr-lm-attachement.data",0,1,"",""
+"fr-lm-attachement.url","fr-lm-attachement.url","","","",0,1,"","","","uri {[]} {[]}
+","URL de la ressource","URL de la ressource","","","","","","","","","",,,,,"",,,,"fr-lm-attachement.url",0,1,"",""
+"fr-lm-attachement.size","fr-lm-attachement.size","","","",0,1,"","","","unsignedInt {[]} {[]}
+","Taille de la piece jointe avant encodage en base64","Taille de la piece jointe avant encodage en base64","","","","","","","","","",,,,,"",,,,"fr-lm-attachement.size",0,1,"",""
+"fr-lm-attachement.title","fr-lm-attachement.title","","","",0,1,"","","","string {[]} {[]}
+","Titre de la piece jointe","Titre de la piece jointe","","","","","","","","","",,,,,"",,,,"fr-lm-attachement.title",0,1,"",""

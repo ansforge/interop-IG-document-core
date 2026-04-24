@@ -1,4 +1,4 @@
-# Logical model- FR LM Observation Social History - ANS IG document core v0.1.0-snapsnot
+# Logical model- FR LM Observation Social History - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation-social-history | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-16 | *Computable Name*:FRLMObservationSocialHistory |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation-social-history | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-24 | *Computable Name*:FRLMObservationSocialHistory |
 
  
 Entrée Habitus Mode de vie 
@@ -41,11 +41,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-observation-so
     "valueCode" : "can-be-target"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation-social-history",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRLMObservationSocialHistory",
   "title" : "Logical model- FR LM Observation Social History",
   "status" : "draft",
-  "date" : "2026-04-16T07:11:11+00:00",
+  "date" : "2026-04-24T08:31:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -74,17 +74,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-observation-so
       "path" : "fr-lm-observation-social-history",
       "short" : "Logical model- FR LM Observation Social History",
       "definition" : "Entrée Habitus Mode de vie"
-    },
-    {
-      "id" : "fr-lm-observation-social-history.status",
-      "path" : "fr-lm-observation-social-history.status",
-      "short" : "Statut de l'entrée",
-      "definition" : "Statut de l'entrée",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "code"
-      }]
     },
     {
       "id" : "fr-lm-observation-social-history.observationDate[x]",

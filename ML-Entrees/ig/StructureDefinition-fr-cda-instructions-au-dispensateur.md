@@ -1,4 +1,4 @@
-# CDA - FR Instructions au dispensateur - ANS IG document core v0.1.0-snapsnot
+# CDA - FR Instructions au dispensateur - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-instructions-au-dispensateur | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-16 | *Computable Name*:FRCDAInstructionsAuDispensateur |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-instructions-au-dispensateur | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-24 | *Computable Name*:FRCDAInstructionsAuDispensateur |
 
  
 Entrée FR-Instructions-au-dispensateur: IHE-PCC - Medication Fulfillment Instructions. 
@@ -65,11 +65,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-instructions-
     "valueUri" : "cda"
   }],
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-instructions-au-dispensateur",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "name" : "FRCDAInstructionsAuDispensateur",
   "title" : "CDA - FR Instructions au dispensateur",
   "status" : "draft",
-  "date" : "2026-04-16T07:11:11+00:00",
+  "date" : "2026-04-24T08:31:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -173,6 +173,30 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-instructions-
       "path" : "Act.code",
       "short" : "Code de l'entrée",
       "definition" : "Code de l'entrée",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Act.code.code",
+      "path" : "Act.code.code",
+      "min" : 1,
+      "patternCode" : "FINSTRUCT",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Act.code.codeSystem",
+      "path" : "Act.code.codeSystem",
+      "min" : 1,
+      "patternString" : "1.3.6.1.4.1.19376.1.5.3.2",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Act.code.codeSystemName",
+      "path" : "Act.code.codeSystemName",
+      "patternString" : "IHEActCode"
+    },
+    {
+      "id" : "Act.code.displayName",
+      "path" : "Act.code.displayName",
       "mustSupport" : true
     },
     {

@@ -1,4 +1,4 @@
-# Mapping FRLMEvenementIndesirable → FRCDAEvenementIndesirable → FRAdverseEventDocument - ANS IG document core v0.1.0-snapsnot
+# Mapping FRLMEvenementIndesirable → FRCDAEvenementIndesirable → FRAdverseEventDocument - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRAdverseEventLMCDAFHIR | *Version*:0.1.0-snapsnot |
-| Draft as of 2026-04-16 | *Computable Name*: |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRAdverseEventLMCDAFHIR | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-24 | *Computable Name*: |
 
  
 Mapping des éléments du modèle métier FRLMEvenementIndesirable vers le profil CDA FRCDAEvenementIndesirable, puis vers le profil FHIR FRAdverseEvent. 
@@ -23,10 +23,10 @@ Mapping des éléments du modèle métier FRLMEvenementIndesirable vers le profi
   "resourceType" : "ConceptMap",
   "id" : "FRAdverseEventLMCDAFHIR",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRAdverseEventLMCDAFHIR",
-  "version" : "0.1.0-snapsnot",
+  "version" : "0.1.0-snapshot",
   "title" : "Mapping Métier/CDA/FHIR : \"Effet Indésirable\"",
   "status" : "draft",
-  "date" : "2026-04-16T07:11:11+00:00",
+  "date" : "2026-04-24T08:31:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
