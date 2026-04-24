@@ -2540,11 +2540,11 @@
   "name" : "FRLMBirthEvent"
 },
 {
-  "id" : "fr-lm-body-stucture",
+  "id" : "fr-lm-body-structure",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-body-stucture",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-body-structure",
   "version" : "0.1.0-snapshot",
-  "name" : "FRLMBodyStucture"
+  "name" : "FRLMBodyStructure"
 },
 {
   "id" : "fr-lm-care-plan",

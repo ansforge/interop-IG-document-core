@@ -49,7 +49,7 @@ Period {[]} {[]}","date de l'évaluation","date de l'évaluation","","","","",""
 - Si le type d'évaluation n'est pas trouvé dans les terminologies proposées, utiliser le code='54522-8' displayName='Statut fonctionnel' codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'","","","","","","","","","",,,,,"",,,,"fr-lm-observation-assessment.type",1,1,"",""
 "fr-lm-observation-assessment.method","fr-lm-observation-assessment.method","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Méthode utilisée pour l'observation","Méthode utilisée pour l'observation","","","","","","","","","",,,,,"",,,,"fr-lm-observation-assessment.method",0,1,"",""
-"fr-lm-observation-assessment.bodySite","fr-lm-observation-assessment.bodySite","","","",0,1,"","","","CodeableConcept {[]} {[]}
+"fr-lm-observation-assessment.bodySite","fr-lm-observation-assessment.bodySite","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-body-structure {[]} {[]}
 ","Site de l'observation","Site de l'observation","","","","","","","","","",,,,,"",,,,"fr-lm-observation-assessment.bodySite",0,1,"",""
 "fr-lm-observation-assessment.result","fr-lm-observation-assessment.result","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Valeur de l’évaluation","Valeur de l’évaluation","","","","","","","","","",,,,,"",,,,"fr-lm-observation-assessment.result",1,1,"",""

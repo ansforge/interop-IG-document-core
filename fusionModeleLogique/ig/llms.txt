@@ -97,7 +97,7 @@
 * [Logical model - FR LM Attachement](StructureDefinition-fr-lm-attachement.md)
 * [Modèle logique métier - FR LM Batterie d'examens de biologie médicale](StructureDefinition-fr-lm-batterie-examens-biologie-medicale.md)
 * [Logical model - FR LM Naissance](StructureDefinition-fr-lm-birth-event.md)
-* [Logical model - FR LM Body Stucture](StructureDefinition-fr-lm-body-stucture.md)
+* [Logical model - FR LM Body Structure](StructureDefinition-fr-lm-body-structure.md)
 * [Logical model - FR LM Care Plan](StructureDefinition-fr-lm-care-plan.md)
 * [Modèle logique métier - FR LM Codes à barres](StructureDefinition-fr-lm-codes-a-barres.md)
 * [Modèle logique métier - FR LM Commentaire (non-codé)](StructureDefinition-fr-lm-commentaire-non-code.md)

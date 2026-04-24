@@ -1,24 +1,24 @@
-# Logical model - FR LM Body Stucture - ANS IG document core v0.1.0-snapshot
+# Logical model - FR LM Body Structure - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Logical model - FR LM Body Stucture**
+* **Logical model - FR LM Body Structure**
 
-## Logical Model: Logical model - FR LM Body Stucture 
+## Logical Model: Logical model - FR LM Body Structure 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-body-stucture | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-24 | *Computable Name*:FRLMBodyStucture |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-body-structure | *Version*:0.1.0-snapshot |
+| Draft as of 2026-04-24 | *Computable Name*:FRLMBodyStructure |
 
  
 Localisation anatomique 
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Logical model - FR LM Service Request](StructureDefinition-fr-lm-service-request.md)
+* Utilise ce/t/te Modèle logique: [Logical model - FR LM Condition](StructureDefinition-fr-lm-condition.md), [Logical model - FR LM Device use](StructureDefinition-fr-lm-device-use.md), [Logical model - FR LM Family Member History](StructureDefinition-fr-lm-family-member-history.md), [Logical model - FR LM Assessment](StructureDefinition-fr-lm-observation-assessment.md)... Show 6 more, [Logical model - FR LM Observation Result](StructureDefinition-fr-lm-observation-result.md), [Logical model - FR LM Observation Vital Sign](StructureDefinition-fr-lm-observation-vital-sign.md), [Logical model - FR LM Observation](StructureDefinition-fr-lm-observation.md), [Logical model- FR LM Procedure](StructureDefinition-fr-lm-procedure.md), [Logical model - FR LM Service Request](StructureDefinition-fr-lm-service-request.md) and [Logical model - FR LM Specimen](StructureDefinition-fr-lm-specimen.md)
 
-Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-body-stucture)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-body-structure)
 
 ### Formal Views of Profile Content
 
@@ -26,7 +26,7 @@ Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https:/
 
  
 
-Other representations of profile: [CSV](StructureDefinition-fr-lm-body-stucture.csv), [Excel](StructureDefinition-fr-lm-body-stucture.xlsx) 
+Other representations of profile: [CSV](StructureDefinition-fr-lm-body-structure.csv), [Excel](StructureDefinition-fr-lm-body-structure.xlsx) 
 
 
 
@@ -35,17 +35,17 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-body-stucture.
 ```json
 {
   "resourceType" : "StructureDefinition",
-  "id" : "fr-lm-body-stucture",
+  "id" : "fr-lm-body-structure",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics",
     "valueCode" : "can-be-target"
   }],
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-body-stucture",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-body-structure",
   "version" : "0.1.0-snapshot",
-  "name" : "FRLMBodyStucture",
-  "title" : "Logical model - FR LM Body Stucture",
+  "name" : "FRLMBodyStructure",
+  "title" : "Logical model - FR LM Body Structure",
   "status" : "draft",
-  "date" : "2026-04-24T08:33:22+00:00",
+  "date" : "2026-04-24T13:15:59+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -65,19 +65,19 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-body-stucture.
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
-  "type" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-body-stucture",
+  "type" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-body-structure",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
   "derivation" : "specialization",
   "differential" : {
     "element" : [{
-      "id" : "fr-lm-body-stucture",
-      "path" : "fr-lm-body-stucture",
-      "short" : "Logical model - FR LM Body Stucture",
+      "id" : "fr-lm-body-structure",
+      "path" : "fr-lm-body-structure",
+      "short" : "Logical model - FR LM Body Structure",
       "definition" : "Localisation anatomique"
     },
     {
-      "id" : "fr-lm-body-stucture.morphology",
-      "path" : "fr-lm-body-stucture.morphology",
+      "id" : "fr-lm-body-structure.morphology",
+      "path" : "fr-lm-body-structure.morphology",
       "short" : "Type de structure représentée par la localisation anatomique. Peut décrire une morphologie normale ou anormale.",
       "definition" : "Type de structure représentée par la localisation anatomique. Peut décrire une morphologie normale ou anormale.",
       "min" : 0,
@@ -87,8 +87,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-body-stucture.
       }]
     },
     {
-      "id" : "fr-lm-body-stucture.location",
-      "path" : "fr-lm-body-stucture.location",
+      "id" : "fr-lm-body-structure.location",
+      "path" : "fr-lm-body-structure.location",
       "short" : "Site anatomique",
       "definition" : "Site anatomique",
       "min" : 0,
@@ -102,8 +102,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-body-stucture.
       }
     },
     {
-      "id" : "fr-lm-body-stucture.locationQualifier",
-      "path" : "fr-lm-body-stucture.locationQualifier",
+      "id" : "fr-lm-body-structure.locationQualifier",
+      "path" : "fr-lm-body-structure.locationQualifier",
       "short" : "Qualificatif complémentaire de la localisation anatomique (par exemple : supérieur, inférieur, distal, proximal).",
       "definition" : "Qualificatif complémentaire de la localisation anatomique (par exemple : supérieur, inférieur, distal, proximal).",
       "min" : 0,
@@ -117,8 +117,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-body-stucture.
       }
     },
     {
-      "id" : "fr-lm-body-stucture.description",
-      "path" : "fr-lm-body-stucture.description",
+      "id" : "fr-lm-body-structure.description",
+      "path" : "fr-lm-body-structure.description",
       "short" : "Description textuelle de la localisation anatomique",
       "definition" : "Description textuelle de la localisation anatomique",
       "min" : 0,

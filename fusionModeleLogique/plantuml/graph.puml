@@ -5697,13 +5697,13 @@ package IG #DDDDDD{
              fr-lm-birth-event.observationNaissance => [1..*]
         } 
 
-        class FRLMBodyStucture{
+        class FRLMBodyStructure{
 
-             fr-lm-body-stucture => [None..None]
-             fr-lm-body-stucture.morphology => [0..1]
-             fr-lm-body-stucture.location => [0..1]
-             fr-lm-body-stucture.locationQualifier => [0..*]
-             fr-lm-body-stucture.description => [0..1]
+             fr-lm-body-structure => [None..None]
+             fr-lm-body-structure.morphology => [0..1]
+             fr-lm-body-structure.location => [0..1]
+             fr-lm-body-structure.locationQualifier => [0..*]
+             fr-lm-body-structure.description => [0..1]
         } 
 
         class FRLMCarePlan{
@@ -9318,7 +9318,7 @@ package "Ressources de base" #palegreen {
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
-    class095a1b43effec73955e31e790438de49 --> FRLMBodyStucture
+    class095a1b43effec73955e31e790438de49 --> FRLMBodyStructure
 
  class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry" as  classeb8bc4d6baa061f547965c0670265381 
 

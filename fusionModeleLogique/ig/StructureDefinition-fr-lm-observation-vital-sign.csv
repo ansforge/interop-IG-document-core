@@ -47,7 +47,7 @@ Period {[]} {[]}","date de l'observation","date de l'observation","","","","",""
 ","Statut de l'entrée","Statut de l'entrée","","","","","","","","","",,,,,"",,,,"fr-lm-observation-vital-sign.status",1,1,"",""
 "fr-lm-observation-vital-sign.method","fr-lm-observation-vital-sign.method","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Méthode utilisée pour l'observation","Méthode utilisée pour l'observation","","","","","","","","","",,,,,"",,,,"fr-lm-observation-vital-sign.method",0,1,"",""
-"fr-lm-observation-vital-sign.bodySite","fr-lm-observation-vital-sign.bodySite","","","",0,1,"","","","CodeableConcept {[]} {[]}
+"fr-lm-observation-vital-sign.bodySite","fr-lm-observation-vital-sign.bodySite","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-body-structure {[]} {[]}
 ","Site de l'observation","Site de l'observation","","","","","","","","","",,,,,"",,,,"fr-lm-observation-vital-sign.bodySite",0,1,"",""
 "fr-lm-observation-vital-sign.result","fr-lm-observation-vital-sign.result","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Résultat de l'observation effectuée: unité de la mesure codée à partir de UCUM (2.16.840.1.113883.6.8)","Résultat de l'observation effectuée: unité de la mesure codée à partir de UCUM (2.16.840.1.113883.6.8)","","","","","","","","","",,,,,"",,,,"fr-lm-observation-vital-sign.result",1,1,"",""
