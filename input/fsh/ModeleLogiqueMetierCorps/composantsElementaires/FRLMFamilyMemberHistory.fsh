@@ -5,7 +5,7 @@ Title: "Logical model - FR LM Family Member History"
 Description: "Entrée Antécédent familial"
 Characteristics: #can-be-target
 
-* status 1..1 code "Statut de l'entrée"
+* header.status 1..1 
   * ^binding.description = "Statut de l'entrée provenant du jdv FHIR https://hl7.org/fhir/R4/valueset-history-status"
   * ^binding.valueSet = "https://hl7.org/fhir/R4/valueset-history-status.html"
 * relatedPerson 1..1 FRLMRelatedPerson "Membre de la famille"

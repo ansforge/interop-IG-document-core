@@ -5,6 +5,8 @@ Title: "Logical model - FR LM Observation Result"
 Description: """Résultat d'une observation médicale (résultat d'examen de laboratoire, d'imagerie, etc.)"""
 Characteristics: #can-be-target
 
+* header.status 1..1
+  * ^short = "Statut de l'observation"
 * directSubject[x] 0..1 FRLMPatientUsager or FRLMDevice or FRLMHealthProfessional or FRLMOrganisation or FRLMProcedure "Sujet direct de l'observation si différent du patient, par exemple dans le cas d’une observation portant sur un dispositif implanté. D’autres types de sujets peuvent être autorisés selon les implémentations."
 * observationDate[x] 1..1 dateTime or Period "Date de l'observation"
 * type 1..1 CodeableConcept "Type d'observation"

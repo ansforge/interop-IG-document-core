@@ -5,6 +5,8 @@ Title: "Logical model - FR LM Advance Directive"
 Description: """Entree Directive anticipee"""
 Characteristics: #can-be-target
 
+* header.status 1..1
+  * ^short = "Statut de la directive anticipée"
 * date 1..1 dateTime "Date de la directive anticipée"
 * category 1..1 CodeableConcept "Type de directive"
   * ^binding.description = "jdv-type-directive-anticipee-cisis (1.2.250.1.213.1.1.5.136)"

@@ -17,9 +17,7 @@ Description: "Modèle logique représentant l'entrée"
     * participantDevice 0..* FRLMDevice "Le participant est un système"
   * informant 0..* FRLMInformant "Informateur"
   * date 0..1 dateTime "Date/Heure de création par l'auteur"
-  * status 1..1	CodeableConcept	"Statut de l'acte"
-    * ^binding.description = "jdv-hl7-v3-ActStatus-cisis (2.16.840.1.113883.1.11.15933)"
-    * ^binding.valueSet = "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis"
+  * status 0..1 CodeableConcept "Statut"
   * source 0..1 CodeableConcept "Source"
   * langue 0..1 CodeableConcept "'fr-FR' pour français métropolitain (la casse des caractères doit être respectée)
 La partie en minuscules indique le code de la langue utilisée (ISO-639-1)

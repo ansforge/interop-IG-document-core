@@ -5,7 +5,8 @@ Title: "Logical model - FR LM Service Request"
 Description: """Entrée Demande d'examen ou de suivi / Objectif à atteindre"""
 Characteristics: #can-be-target
 
-* header.status ^short = "Statut de la demande"
+* header.status 1..1
+  * ^short = "Statut de la demande"
 * code 1..1 CodeableConcept "Type de la demande"
 * quantity 0..1 Quantity "Quantité demandée"
 * bodySite 0..* FRLMBodyStructure "Localisation anatomique"

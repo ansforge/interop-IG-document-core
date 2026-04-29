@@ -17,10 +17,11 @@ Characteristics: #can-be-target
 - Aliments : CIM-11 Chapitre X Extensions – Allergènes ou substances non médicinales
 - Agents environnementaux ou physiques : idem CIM-11 Chapitre X Extensions
 - Allergènes pouvant induire une contre-indication vaccinale : jdv-allergie-vaccin-cisis"
-* note 0..1 string "commentaire"
-* clinicalStatus 0..1 CodeableConcept "Statut clinique de l'allergie"
+* header.status
+  * ^short = "Statut clinique de l'allergie"
   * ^binding.description = "jdv-hl7-allergyintolerance-clinical-cisis (2.16.840.1.113883.4.642.3.1372)"
   * ^binding.valueSet = "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-allergyintolerance-clinical-cisis"
+* note 0..1 string "commentaire"
 * criticality 0..1 CodeableConcept "Criticité"
   * ^binding.description = "jdv-hl7-allergy-intolerance-criticality-cisis (2.16.840.1.113883.4.642.3.129"
   * ^binding.valueSet = "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-allergy-intolerance-criticality-cisis"

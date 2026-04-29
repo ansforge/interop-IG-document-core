@@ -5,6 +5,8 @@ Title: "Logical model - FR LM Alert"
 Description: """Entrée points de vigilances"""
 Characteristics: #can-be-target
 
+* header.status 1..1
+  * ^short = "Statut de l'alerte"
 * code 0..1 CodeableConcept "Code de l'alerte"
 * description 0..1 string "Description narrative de l'alerte"
 * priority 0..1 CodeableConcept "Priorite"

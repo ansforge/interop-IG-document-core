@@ -5,6 +5,7 @@ Title: "Logical model- FR LM Observation Social History"
 Description: """Entrée Habitus Mode de vie"""
 Characteristics: #can-be-target
 
+* header.status 1..1
 * observationDate[x] 1..1 dateTime	or Period	"date de l'observation"
 * type 1..1 CodeableConcept "Type d'observation"
   * ^binding.description = "jdv-social-history-code-cisis (1.2.250.1.213.1.1.4.2.283.4)"

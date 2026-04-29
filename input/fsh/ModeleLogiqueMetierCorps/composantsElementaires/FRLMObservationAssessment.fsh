@@ -5,6 +5,8 @@ Title: "Logical model - FR LM Assessment"
 Description: """Entrée Evaluation"""
 Characteristics: #can-be-target
 
+* header.status 1..1
+  * ^short = "Statut de l'évaluation"
 * observationDate[x] 1..1 dateTime	or Period "date de l'évaluation"
 * type 1..1 CodeableConcept	"Type d'observation. 
 - LOINC (2.16.840.1.113883.6.1) ou ICF (2.16.840.1.113883.6.254) ou autre

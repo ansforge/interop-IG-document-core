@@ -5,6 +5,7 @@ Title: "Logical model- FR LM Pregnancy Status"
 Description: """Statut de grossesse"""
 Characteristics: #can-be-target
 
+* header.status 1..1 
 * observationDate[x] 1..1 dateTime or Period "Date ou periode de l'observation"
 * type 1..1 CodeableConcept "Type d'observation"
   * ^short = "LOINC 11449-6 'Pregnancy status'"

@@ -5,14 +5,14 @@ Title: "Logical model - FR LM Device use"
 Description: """Entrée Dispositif médical usage"""
 Characteristics: #can-be-target
 
-* usageStatus 1..1 CodeableConcept	"Status de l'utilisation du DM (ex active, completed, etc)."
+* header.status 1..1
+  * ^short = "Status de l'utilisation du DM (ex active, completed, etc)."
+  * ^binding.description = "Valeur issue du http://hl7.org/fhir/ValueSet/device-statement-status"
   * ^binding.valueSet = "https://hl7.org/fhir/R4/valueset-device-statement-status.html"
 * periodOfUse 1..1 period	"Période d'utilisation ou de présence chez le patient"
   * onsetDate 0..1	dateTime "Date de début"
   * endDate 0..1 dateTime "Date de fin"
   * duration 0..1 dateTime "Durée d'utilisation"
-* DeviceUsageStatus	1..1 CodeableConcept "Status de l'utilisation du DM (ex active, completed, etc)."
-  * ^binding.valueSet = "https://hl7.org/fhir/R4/valueset-device-statement-status.html"
 * device 1..1 FRLMDevice "Dispositif médical"
 * bodySite 0..1	FRLMBodyStructure	"localisation anatomique"
   * ^binding.description = "SNOMED CT (2.16.840.1.113883.6.96)"

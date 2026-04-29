@@ -7,6 +7,10 @@ Characteristics: #can-be-target
 
 * code 1..1 CodeableConcept "Code de l'acte"
   * ^binding.description = "CCAM (1.2.250.1.215.300.1)"
+* header.status 1..1
+  * ^short = "Statut de l'acte"
+  * ^binding.description = "jdv-hl7-v3-ActStatus-cisis (2.16.840.1.113883.1.11.15933)"
+  * ^binding.valueSet = "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis"
 * procedureDate[x] 1..1	period "Période de l'acte"
   * procedureDateDateTime 0..1	dateTime "Date de début de l'acte"
   * procedureDatePeriod	0..1	dateTime "Date de fin de l'acte"

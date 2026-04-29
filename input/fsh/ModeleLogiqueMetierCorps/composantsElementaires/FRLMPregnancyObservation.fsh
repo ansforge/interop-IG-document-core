@@ -5,6 +5,8 @@ Title: "Logical model- FR LM Pregnancy Observation"
 Description: """Observation sur la grossesse"""
 Characteristics: #can-be-target
 
+* header.status 1..1
+  * ^short = "Statut de l'observation"
 * directSubject[x] 0..1 FRLMPatientUsager or FRLMDevice or FRLMHealthProfessional or FRLMOrganisation or FRLMProcedure "Sujet de l'observation (si different du patient)"
 * observationDate[x] 1..1 dateTime or Period "Date de l'observation"
 * type 1..1 CodeableConcept "Type d'observation"
