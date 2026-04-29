@@ -4,7 +4,7 @@ Title: "FR LM Entry"
 Description: "Modèle logique représentant l'entrée"
 
 * header 1..1 Base "Métadonnées de base"
-  * subject 1..1 FRLMPatientUsager "Patient/subject information"
+  * subject 1..1 FRLMPatient "Patient / Usager"
   * identifier 0..* Identifier "Identifiant de l’entrée"
   * author[x] 0..* Base	"author[x] peut correspondre soit à un professionnel, soit à une organisation, soit à un système."
     * authorProfessional 0..* FRLMHealthProfessional "L'auteur est un professionnel de santé"
@@ -21,6 +21,6 @@ Description: "Modèle logique représentant l'entrée"
     * ^binding.description = "jdv-hl7-v3-ActStatus-cisis (2.16.840.1.113883.1.11.15933)"
     * ^binding.valueSet = "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis"
   * source 0..1 CodeableConcept "Source"
-  * langue 0..1 CodeableConcept "'fr-FR' pour français métropolitain (la casse des caractères doit être respectée)
+  * language 0..1 CodeableConcept "'fr-FR' pour français métropolitain (la casse des caractères doit être respectée)
 La partie en minuscules indique le code de la langue utilisée (ISO-639-1)
 La partie en majuscules indique le code pays (ISO-3166)"

@@ -10,10 +10,7 @@ Characteristics: #can-be-target
   * ^short = "LOINC 11449-6 'Pregnancy status'"
 * result 1..1 Base "Resultat de l'observation"
   * value[x] 0..1 string or Quantity or Range or Ratio or CodeableConcept "Valeur du resultat"
-  * valueCodeableConcept only CodeableConcept
-    * ^short = "Statut de grossesse de la patiente"
-    * ^definition = "Statut de grossesse de la patiente (enceinte, pas enceinte, etc.)."
-    * ^binding.description = "jdv-statut-grossesse-cisis (1.2.250.1.213.1.1.5.671)"
+    * ^binding.description = "Statut de grossesse de la patiente (enceinte, pas enceinte, etc.)"
     * ^binding.valueSet = "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-statut-grossesse-cisis"
   * uncertainty 0..1 Base "Incertitude associée au resultat"
     * value 1..1 decimal "Niveau d'incertitude du resultat"
