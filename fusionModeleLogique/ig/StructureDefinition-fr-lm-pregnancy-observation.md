@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-pregnancy-observation | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-24 | *Computable Name*:FRLMPregnancyObservation |
+| Draft as of 2026-04-29 | *Computable Name*:FRLMPregnancyObservation |
 
  
 Observation sur la grossesse 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-pregnancy-obse
   "name" : "FRLMPregnancyObservation",
   "title" : "Logical model- FR LM Pregnancy Observation",
   "status" : "draft",
-  "date" : "2026-04-24T13:15:59+00:00",
+  "date" : "2026-04-29T08:17:29+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -83,7 +83,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-pregnancy-obse
       "min" : 0,
       "max" : "1",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-usager"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient"
       },
       {
         "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device"

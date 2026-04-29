@@ -1,7 +1,0 @@
-"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
-"fr-lm-quantity-prescribed","fr-lm-quantity-prescribed","","","",0,*,"","","","null {[]} {[]}
-","Logical model- FR LM Quantity Prescribed","Entrée Quantité de produit","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
-"fr-lm-quantity-prescribed.independant","fr-lm-quantity-prescribed.independant","","","",1,1,"","","","boolean {[]} {[]}
-","Booléen. Valeur fixée à 'false'","Booléen. Valeur fixée à 'false'","","","","","","","","","",,,,,"",,,,"fr-lm-quantity-prescribed.independant",1,1,"",""
-"fr-lm-quantity-prescribed.quantiteProduit","fr-lm-quantity-prescribed.quantiteProduit","","","",1,1,"","","","Quantity {[]} {[]}
-","Quantité de produit","Quantité de produit","","","","","","","","","",,,,,"",,,,"fr-lm-quantity-prescribed.quantiteProduit",1,1,"",""

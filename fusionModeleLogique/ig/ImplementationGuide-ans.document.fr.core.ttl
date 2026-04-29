@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "FRDocumentCore"] ; # 
   fhir:title [ fhir:v "ANS IG document core"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-04-24T13:15:59+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-04-29T08:17:29+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -7684,6 +7684,28 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication-prescription> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-lm-medication-prescription" ]
+       ] ;
+       fhir:name [ fhir:v "Logical model - FR LM FR LM Medication Prescription" ] ;
+       fhir:description [ fhir:v "Section Prescription de médicaments" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Modèles logiques métier des sections d'un document" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional> ;
          fhir:reference [ fhir:v "StructureDefinition/fr-lm-health-professional" ]
        ] ;
@@ -7970,8 +7992,8 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication-prescription> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-lm-medication-prescription" ]
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-prescription-item> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-lm-prescription-item" ]
        ] ;
        fhir:name [ fhir:v "Logical model - FR LM Medication Prescription" ] ;
        fhir:description [ fhir:v "Entrée Traitement prescrit" ] ;
@@ -8216,6 +8238,28 @@
        ] ;
        fhir:name [ fhir:v "Logical model - FR LM Organisation" ] ;
        fhir:description [ fhir:v "Une structure (organisation) pour les professionnels de santé." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Modèles logiques métier de l'entête d'un document" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-lm-patient" ]
+       ] ;
+       fhir:name [ fhir:v "Logical model - FR LM Patient" ] ;
+       fhir:description [ fhir:v "Patient/Usager concerné par le document." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -8717,11 +8761,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dosage-instructions> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-lm-dosage-instructions" ]
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dosageInstructions> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-lm-dosageInstructions" ]
        ] ;
        fhir:name [ fhir:v "Logical model- FR LM Dosage Instructions" ] ;
-       fhir:description [ fhir:v "Entrée Posologie" ] ;
+       fhir:description [ fhir:v "Posologie" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -8854,28 +8898,6 @@
        ] ;
        fhir:name [ fhir:v "Logical model- FR LM Procedure" ] ;
        fhir:description [ fhir:v "Entrée Acte" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métier des composants élémentaires" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-quantity-prescribed> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-lm-quantity-prescribed" ]
-       ] ;
-       fhir:name [ fhir:v "Logical model- FR LM Quantity Prescribed" ] ;
-       fhir:description [ fhir:v "Entrée Quantité de produit" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -12741,28 +12763,6 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-usager> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-lm-patient-usager" ]
-       ] ;
-       fhir:name [ fhir:v "Modèle logique métier - FR LM Patient Usager" ] ;
-       fhir:description [ fhir:v "Patient/Usager concerné par le document." ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métier de l'entête d'un document" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-plan-soins> ;
          fhir:reference [ fhir:v "StructureDefinition/fr-lm-plan-soins" ]
        ] ;
@@ -12812,28 +12812,6 @@
        ] ;
        fhir:name [ fhir:v "Modèle logique métier - FR LM Prescription de dispositifs médicaux" ] ;
        fhir:description [ fhir:v "Section Prescription de dispositifs médicaux" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Modèles logiques métier des sections d'un document" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-prescription-medicaments> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-lm-prescription-medicaments" ]
-       ] ;
-       fhir:name [ fhir:v "Modèle logique métier - FR LM Prescription de médicaments" ] ;
-       fhir:description [ fhir:v "Section Prescription de médicaments" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

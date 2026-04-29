@@ -3,8 +3,8 @@
 ","Logical model - FR LM Specimen","Entrée Prélèvement","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "fr-lm-specimen.header","fr-lm-specimen.header","","","",1,1,"","","","Base {[]} {[]}
 ","Métadonnées de base","Métadonnées de base","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header",1,1,"",""
-"fr-lm-specimen.header.subject","fr-lm-specimen.header.subject","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-usager {[]} {[]}
-","Patient/subject information","Patient/subject information","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.subject",1,1,"",""
+"fr-lm-specimen.header.subject","fr-lm-specimen.header.subject","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient {[]} {[]}
+","Patient / Usager","Patient / Usager","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.subject",1,1,"",""
 "fr-lm-specimen.header.identifier","fr-lm-specimen.header.identifier","","","",0,*,"","","","Identifier {[]} {[]}
 ","Identifiant de l’entrée","Identifiant de l’entrée","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.identifier",0,*,"",""
 "fr-lm-specimen.header.author[x]","fr-lm-specimen.header.author[x]","","","",0,*,"","","","Base {[]} {[]}
@@ -33,19 +33,19 @@ https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organi
 ","Statut de l'acte","Statut de l'acte","","","","","","","","","",,"","jdv-hl7-v3-ActStatus-cisis (2.16.840.1.113883.1.11.15933)","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis","",,,,"fr-lm-entry.header.status",1,1,"",""
 "fr-lm-specimen.header.source","fr-lm-specimen.header.source","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Source","Source","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.source",0,1,"",""
-"fr-lm-specimen.header.langue","fr-lm-specimen.header.langue","","","",0,1,"","","","CodeableConcept {[]} {[]}
+"fr-lm-specimen.header.language","fr-lm-specimen.header.language","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","'fr-FR' pour français métropolitain (la casse des caractères doit être respectée)
 La partie en minuscules indique le code de la langue utilisée (ISO-639-1)
 La partie en majuscules indique le code pays (ISO-3166)","'fr-FR' pour français métropolitain (la casse des caractères doit être respectée)
 La partie en minuscules indique le code de la langue utilisée (ISO-639-1)
-La partie en majuscules indique le code pays (ISO-3166)","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.langue",0,1,"",""
+La partie en majuscules indique le code pays (ISO-3166)","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.language",0,1,"",""
 "fr-lm-specimen.identifier","fr-lm-specimen.identifier","","","",1,*,"","","","Identifier {[]} {[]}
 ","Identifiant unique de l'échantillon, au sein d'un périmètre défini. Exemple : identifiant attribué par le système du préleveur, identifiant attribué par le laboratoire, etc. Plusieurs identifiants peuvent être utilisés.","Identifiant unique de l'échantillon, au sein d'un périmètre défini. Exemple : identifiant attribué par le système du préleveur, identifiant attribué par le laboratoire, etc. Plusieurs identifiants peuvent être utilisés.","","","","","","","","","",,,,,"",,,,"fr-lm-specimen.identifier",1,*,"",""
 "fr-lm-specimen.status","fr-lm-specimen.status","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Disponibilité du prélèvement","Disponibilité du prélèvement","","","","","","","","","",,"","(preferred): HL7 specimen-status","","",,,,"fr-lm-specimen.status",0,1,"",""
 "fr-lm-specimen.type","fr-lm-specimen.type","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Échantillon prélevé","Échantillon prélevé","","","","","","","","","",,"","jdv-specimen-type-cisis (1.2.250.1.213.1.1.5.819)","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-specimen-type-cisis","",,,,"fr-lm-specimen.type",0,1,"",""
-"fr-lm-specimen.specimenSource[x]","fr-lm-specimen.specimenSource[x]","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-usager {[]} {[]}
+"fr-lm-specimen.specimenSource[x]","fr-lm-specimen.specimenSource[x]","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient {[]} {[]}
 https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-location {[]} {[]}https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device {[]} {[]}","Origine du prélèvement : il peut provenir d'un patient, d'un lieu ou d'un dispositif","Origine du prélèvement : il peut provenir d'un patient, d'un lieu ou d'un dispositif","","","","","","","","","",,,,,"",,,,"fr-lm-specimen.specimenSource[x]",0,1,"",""
 "fr-lm-specimen.parentSpecimen","fr-lm-specimen.parentSpecimen","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-specimen {[]} {[]}
 ","Prélèvement dont provient cet échantillon","Prélèvement dont provient cet échantillon","","","","","","","","","",,,,,"",,,,"fr-lm-specimen.parentSpecimen",0,*,"",""
@@ -56,7 +56,7 @@ https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-locati
 "fr-lm-specimen.collection","fr-lm-specimen.collection","","","",0,*,"","","","Base {[]} {[]}
 ","Détails de la collecte","Détails de la collecte","","","","","","","","","",,,,,"",,,,"fr-lm-specimen.collection",0,*,"",""
 "fr-lm-specimen.collection.performer[x]","fr-lm-specimen.collection.performer[x]","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional {[]} {[]}
-https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organisation {[]} {[]}https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-usager {[]} {[]}https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-related-person {[]} {[]}","Organisation prélevante","Organisation prélevante","","","","","","","","","",,,,,"",,,,"fr-lm-specimen.collection.performer[x]",0,1,"",""
+https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organisation {[]} {[]}https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient {[]} {[]}https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-related-person {[]} {[]}","Organisation prélevante","Organisation prélevante","","","","","","","","","",,,,,"",,,,"fr-lm-specimen.collection.performer[x]",0,1,"",""
 "fr-lm-specimen.collection.collected[x]","fr-lm-specimen.collection.collected[x]","","","",1,1,"","","","dateTime {[]} {[]}
 Period {[]} {[]}","Date du prélèvement","Date du prélèvement","","","","","","","","","",,,,,"",,,,"fr-lm-specimen.collection.collected[x]",1,1,"",""
 "fr-lm-specimen.collection.quantity","fr-lm-specimen.collection.quantity","","","",0,1,"","","","Quantity {[]} {[]}

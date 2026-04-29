@@ -59,7 +59,7 @@
 ","Section Plan de Soins","Section Plan de Soins","","","","","","","","","",,,,,"",,,,"fr-lm-corps-document.planSoins",0,*,"",""
 "fr-lm-corps-document.prescriptionDispositifsMedicaux","fr-lm-corps-document.prescriptionDispositifsMedicaux","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-prescription-dispositifs-medicaux {[]} {[]}
 ","Section Prescription de dispositifs médicaux","Section Prescription de dispositifs médicaux","","","","","","","","","",,,,,"",,,,"fr-lm-corps-document.prescriptionDispositifsMedicaux",0,*,"",""
-"fr-lm-corps-document.prescriptionMedicaments","fr-lm-corps-document.prescriptionMedicaments","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-prescription-medicaments {[]} {[]}
+"fr-lm-corps-document.prescriptionMedicaments","fr-lm-corps-document.prescriptionMedicaments","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication-prescription {[]} {[]}
 ","Section Prescription médicaments","Section Prescription médicaments","","","","","","","","","",,,,,"",,,,"fr-lm-corps-document.prescriptionMedicaments",0,*,"",""
 "fr-lm-corps-document.problemesActifs","fr-lm-corps-document.problemesActifs","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-problemes-actifs {[]} {[]}
 ","Section Problemès Actifs","Section Problemès Actifs","","","","","","","","","",,,,,"",,,,"fr-lm-corps-document.problemesActifs",0,*,"",""

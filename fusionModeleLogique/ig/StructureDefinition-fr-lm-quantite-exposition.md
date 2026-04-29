@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-quantite-exposition | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-24 | *Computable Name*:FRLMQuantiteExposition |
+| Draft as of 2026-04-29 | *Computable Name*:FRLMQuantiteExposition |
 
  
 Quantité exposition 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-quantite-expos
   "name" : "FRLMQuantiteExposition",
   "title" : "Logical model - FR LM Quantité exposition",
   "status" : "draft",
-  "date" : "2026-04-24T13:15:59+00:00",
+  "date" : "2026-04-29T08:17:29+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

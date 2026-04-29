@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-operateur-saisie | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-24 | *Computable Name*:FRLMOperateurSaisie |
+| Draft as of 2026-04-29 | *Computable Name*:FRLMOperateurSaisie |
 
  
 Opérateur de saisie de la totalité ou d’une partie du contenu du document. 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-operateur-sais
   "name" : "FRLMOperateurSaisie",
   "title" : "Modèle logique métier - FR LM Opérateur de saisie",
   "status" : "draft",
-  "date" : "2026-04-24T13:15:59+00:00",
+  "date" : "2026-04-29T08:17:29+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -98,7 +98,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-operateur-sais
         "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional"
       },
       {
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-usager"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient"
       }]
     }]
   }

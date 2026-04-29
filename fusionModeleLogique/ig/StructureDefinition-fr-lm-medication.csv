@@ -20,7 +20,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "fr-lm-medication.identifyingCode[x].identifyingCodeCodeableConcept","fr-lm-medication.identifyingCode[x].identifyingCodeCodeableConcept","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Codes du médicament dans une termino spécifique","Codes du médicament dans une termino spécifique","","","","","","","","","",,,,,"",,,,"fr-lm-medication.identifyingCode[x].identifyingCodeCodeableConcept",0,1,"",""
 "fr-lm-medication.identifyingCode[x].identifyingCodeIdentifier","fr-lm-medication.identifyingCode[x].identifyingCodeIdentifier","","","",0,*,"","","","Identifier {[]} {[]}
-","identifiant du medication définition","identifiant du medication définition","","","","","","","","","",,,,,"",,,,"fr-lm-medication.identifyingCode[x].identifyingCodeIdentifier",0,*,"",""
+","identifiant du medication","identifiant du medication","","","","","","","","","",,,,,"",,,,"fr-lm-medication.identifyingCode[x].identifyingCodeIdentifier",0,*,"",""
 "fr-lm-medication.classification","fr-lm-medication.classification","","","",0,*,"","","","CodeableConcept {[]} {[]}
 ","Classification ATC","Classification ATC","","","","","","","","","",,,,,"",,,,"fr-lm-medication.classification",0,*,"",""
 "fr-lm-medication.productName","fr-lm-medication.productName","","","",0,1,"","","","string {[]} {[]}
@@ -38,27 +38,33 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "fr-lm-medication.item.doseForm","fr-lm-medication.item.doseForm","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Forme galénique du produit de santé. EDQM Standard Terms (0.4.0.127.0.16.1.1.2.1) / classe PDF (forme galénique).","Forme galénique du produit de santé. EDQM Standard Terms (0.4.0.127.0.16.1.1.2.1) / classe PDF (forme galénique).","","","","","","","","","",,"","EDQM Standard Terms","","",,,,"fr-lm-medication.item.doseForm",0,1,"",""
 "fr-lm-medication.item.ingredient","fr-lm-medication.item.ingredient","","","",1,*,"","","","Base {[]} {[]}
-","Substance active","Substance active","","","","","","","","","",,,,,"",,,,"fr-lm-medication.item.ingredient",1,*,"",""
+","Ingrédient","Ingrédient","","","","","","","","","",,,,,"",,,,"fr-lm-medication.item.ingredient",1,*,"",""
 "fr-lm-medication.item.ingredient.isActive","fr-lm-medication.item.ingredient.isActive","","","",0,1,"","","","boolean {[]} {[]}
 ","Indique si l'ingrédient est considéré comme un ingrédient actif. Les excipients ne sont généralement pas nécessaires et, par défaut, seuls les ingrédients actifs sont attendus.","Indique si l'ingrédient est considéré comme un ingrédient actif. Les excipients ne sont généralement pas nécessaires et, par défaut, seuls les ingrédients actifs sont attendus.","","","","","","","","","",,,,,"",,,,"fr-lm-medication.item.ingredient.isActive",0,1,"",""
 "fr-lm-medication.item.ingredient.substance","fr-lm-medication.item.ingredient.substance","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Substance. Code SMS (2.16.840.1.113883.3.6905.2) de la substance active de l’European Medicines Agency (EMA)","Substance. Code SMS (2.16.840.1.113883.3.6905.2) de la substance active de l’European Medicines Agency (EMA)","","","","","","","","","",,"","SMS (2.16.840.1.113883.3.6905.2)","","",,,,"fr-lm-medication.item.ingredient.substance",1,1,"",""
-"fr-lm-medication.item.ingredient.strength","fr-lm-medication.item.ingredient.strength","","","",0,1,"","","","Base {[]} {[]}
-","concentration par unité","concentration par unité","","","","","","","","","",,,,,"",,,,"fr-lm-medication.item.ingredient.strength",0,1,"",""
-"fr-lm-medication.item.ingredient.strength.strength","fr-lm-medication.item.ingredient.strength.strength","","","",1,1,"","","","Ratio {[]} {[]}
-","numérateur/dénominateur. Ex 100 mg/1 ml ou 500 mg / comprimé.","numérateur/dénominateur. Ex 100 mg/1 ml ou 500 mg / comprimé.","","","","","","","","","",,,,,"",,,,"fr-lm-medication.item.ingredient.strength.strength",1,1,"",""
-"fr-lm-medication.item.ingredient.strength.basisOfStrengthSubstance","fr-lm-medication.item.ingredient.strength.basisOfStrengthSubstance","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Concentration de référence d’une substance","Concentration de référence d’une substance","","","","","","","","","",,,,,"",,,,"fr-lm-medication.item.ingredient.strength.basisOfStrengthSubstance",0,1,"",""
-"fr-lm-medication.item.containedQuantity","fr-lm-medication.item.containedQuantity","","","",0,1,"","","","Quantity {[]} {[]}
-","quantité pour 1 item","quantité pour 1 item","","","","","","","","","",,,,,"",,,,"fr-lm-medication.item.containedQuantity",0,1,"",""
-"fr-lm-medication.item.packageType","fr-lm-medication.item.packageType","","","",0,1,"","","","Base {[]} {[]}
-","Conditionnement primaire (ampoule, bouteille,…) EDQM Standard Terms (0.4.0.127.0.16.1.1.2.1) / classe CON (Récipient) => ampoule, blister.","Conditionnement primaire (ampoule, bouteille,…) EDQM Standard Terms (0.4.0.127.0.16.1.1.2.1) / classe CON (Récipient) => ampoule, blister.","","","","","","","","","",,,,,"",,,,"fr-lm-medication.item.packageType",0,1,"",""
+"fr-lm-medication.item.ingredient.strengthInfo","fr-lm-medication.item.ingredient.strengthInfo","","","",0,1,"","","","Base {[]} {[]}
+","Concentration de l'ingrédient par unité","Concentration de l'ingrédient par unité","","","","","","","","","",,,,,"",,,,"fr-lm-medication.item.ingredient.strengthInfo",0,1,"",""
+"fr-lm-medication.item.ingredient.strengthInfo.strength","fr-lm-medication.item.ingredient.strengthInfo.strength","","","",1,1,"","","","Ratio {[]} {[]}
+","numérateur/dénominateur. Ex 100 mg/1 ml ou 500 mg / comprimé.","numérateur/dénominateur. Ex 100 mg/1 ml ou 500 mg / comprimé.","","","","","","","","","",,,,,"",,,,"fr-lm-medication.item.ingredient.strengthInfo.strength",1,1,"",""
+"fr-lm-medication.item.ingredient.strengthInfo.basisOfStrengthSubstance","fr-lm-medication.item.ingredient.strengthInfo.basisOfStrengthSubstance","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Substance concernée. code SMS (2.16.840.1.113883.3.6905.2) de la substance active de l’European Medicines Agency (EMA)","Substance concernée. code SMS (2.16.840.1.113883.3.6905.2) de la substance active de l’European Medicines Agency (EMA)","","","","","","","","","",,,,,"",,,,"fr-lm-medication.item.ingredient.strengthInfo.basisOfStrengthSubstance",0,1,"",""
+"fr-lm-medication.item.unitOfPresentation","fr-lm-medication.item.unitOfPresentation","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Unité de présentation du produit de santé (comprimé, ampoule, tube). En général, le plus petit objet dénombrable du package.
+EDQM Standard Terms (0.4.0.127.0.16.1.1.2.1) / classe UOP (Unit of Presentation).","Unité de présentation du produit de santé (comprimé, ampoule, tube). En général, le plus petit objet dénombrable du package.
+EDQM Standard Terms (0.4.0.127.0.16.1.1.2.1) / classe UOP (Unit of Presentation).","","","","","","","","","",,,,,"",,,,"fr-lm-medication.item.unitOfPresentation",0,1,"",""
+"fr-lm-medication.item.containedQuantity","fr-lm-medication.item.containedQuantity","","","",0,1,"","","","Ratio {[]} {[]}
+","Quantité de produit par unité (ex : 3 ml / 1 flacon)","Quantité de produit par unité (ex : 3 ml / 1 flacon)","","","","","","","","","",,,,,"",,,,"fr-lm-medication.item.containedQuantity",0,1,"",""
+"fr-lm-medication.item.amount","fr-lm-medication.item.amount","","","",0,1,"","","","Quantity {[]} {[]}
+","Nombre d'unités dans un package (ex : 5 ampoules)","Nombre d'unités dans un package (ex : 5 ampoules)","","","","","","","","","",,,,,"",,,,"fr-lm-medication.item.amount",0,1,"",""
+"fr-lm-medication.item.packageType","fr-lm-medication.item.packageType","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Conditionnement primaire (ampoule, plaquette,…) EDQM Standard Terms (0.4.0.127.0.16.1.1.2.1) / classe CON (Récipient).","Conditionnement primaire (ampoule, plaquette,…) EDQM Standard Terms (0.4.0.127.0.16.1.1.2.1) / classe CON (Récipient).","","","","","","","","","",,,,,"",,,,"fr-lm-medication.item.packageType",0,1,"",""
 "fr-lm-medication.device","fr-lm-medication.device","","","",0,*,"","","","Base {[]} {[]}
 ","Dispositif d'administration inclus dans le produit. Les dispositifs qui ne sont pas contenus dans le conditionnement du médicament ne sont pas pris en compte.","Dispositif d'administration inclus dans le produit. Les dispositifs qui ne sont pas contenus dans le conditionnement du médicament ne sont pas pris en compte.","","","","","","","","","",,,,,"",,,,"fr-lm-medication.device",0,*,"",""
 "fr-lm-medication.device.deviceQuantity","fr-lm-medication.device.deviceQuantity","","","",1,1,"","","","Quantity {[]} {[]}
 ","Nombre de dispositifs.","Nombre de dispositifs.","","","","","","","","","",,,,,"",,,,"fr-lm-medication.device.deviceQuantity",1,1,"",""
 "fr-lm-medication.device.device[x]","fr-lm-medication.device.device[x]","","","",1,1,"","","","CodeableConcept {[]} {[]}
-https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device {[]} {[]}","Dispositif codé.","Dispositif codé.","","","","","","","","","",,,,,"",,,,"fr-lm-medication.device.device[x]",1,1,"",""
+https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device {[]} {[]}","Code du dispositif","Code du dispositif","","","","","","","","","",,,,,"",,,,"fr-lm-medication.device.device[x]",1,1,"",""
 "fr-lm-medication.characteristic","fr-lm-medication.characteristic","","","",0,*,"","","","Base {[]} {[]}
 ","Caractéristiques supplémentaires du produit (par ex. sans sucre, bouchon facile à ouvrir, dosage gradué). Il est prévu que les implémenteurs définissent un ensemble de valeurs (ValueSet) adapté à leurs cas d’usage.","Caractéristiques supplémentaires du produit (par ex. sans sucre, bouchon facile à ouvrir, dosage gradué). Il est prévu que les implémenteurs définissent un ensemble de valeurs (ValueSet) adapté à leurs cas d’usage.","","","","","","","","","",,,,,"",,,,"fr-lm-medication.characteristic",0,*,"",""
 "fr-lm-medication.characteristic.type","fr-lm-medication.characteristic.type","","","",1,1,"","","","CodeableConcept {[]} {[]}

@@ -3,8 +3,8 @@
 ","Logical model - FR LM Care Plan","Entrée Plan de soins","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "fr-lm-care-plan.header","fr-lm-care-plan.header","","","",1,1,"","","","Base {[]} {[]}
 ","Métadonnées de base","Métadonnées de base","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header",1,1,"",""
-"fr-lm-care-plan.header.subject","fr-lm-care-plan.header.subject","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-usager {[]} {[]}
-","Patient/subject information","Patient/subject information","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.subject",1,1,"",""
+"fr-lm-care-plan.header.subject","fr-lm-care-plan.header.subject","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient {[]} {[]}
+","Patient / Usager","Patient / Usager","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.subject",1,1,"",""
 "fr-lm-care-plan.header.identifier","fr-lm-care-plan.header.identifier","","","",0,*,"","","","Identifier {[]} {[]}
 ","Identifiant de l’entrée","Identifiant de l’entrée","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.identifier",0,*,"",""
 "fr-lm-care-plan.header.author[x]","fr-lm-care-plan.header.author[x]","","","",0,*,"","","","Base {[]} {[]}
@@ -33,12 +33,12 @@ https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organi
 ","Statut du plan de soin (projet, actif, suspendu, annulé, terminé, erreur, inconnu)","Statut de l'acte","","","","","","","","","",,"","jdv-hl7-v3-ActStatus-cisis (2.16.840.1.113883.1.11.15933)","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis","",,,,"fr-lm-entry.header.status",1,1,"",""
 "fr-lm-care-plan.header.source","fr-lm-care-plan.header.source","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Source","Source","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.source",0,1,"",""
-"fr-lm-care-plan.header.langue","fr-lm-care-plan.header.langue","","","",0,1,"","","","CodeableConcept {[]} {[]}
+"fr-lm-care-plan.header.language","fr-lm-care-plan.header.language","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","'fr-FR' pour français métropolitain (la casse des caractères doit être respectée)
 La partie en minuscules indique le code de la langue utilisée (ISO-639-1)
 La partie en majuscules indique le code pays (ISO-3166)","'fr-FR' pour français métropolitain (la casse des caractères doit être respectée)
 La partie en minuscules indique le code de la langue utilisée (ISO-639-1)
-La partie en majuscules indique le code pays (ISO-3166)","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.langue",0,1,"",""
+La partie en majuscules indique le code pays (ISO-3166)","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.language",0,1,"",""
 "fr-lm-care-plan.addresses","fr-lm-care-plan.addresses","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-condition {[]} {[]}
 ","Problèmes de santé traités par ce plan","Problèmes de santé traités par ce plan","","","","","","","","","",,,,,"",,,,"fr-lm-care-plan.addresses",0,*,"",""
 "fr-lm-care-plan.goal","fr-lm-care-plan.goal","","","",0,*,"","","","CodeableConcept {[]} {[]}

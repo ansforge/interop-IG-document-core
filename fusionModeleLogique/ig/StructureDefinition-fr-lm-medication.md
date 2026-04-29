@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-24 | *Computable Name*:FRLMMedication |
+| Draft as of 2026-04-29 | *Computable Name*:FRLMMedication |
 
  
 Entrée Produit de santé 
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Logical model - FR LM Immunisation](StructureDefinition-fr-lm-immunisation.md), [Logical model - FR LM Immunization Recommendation](StructureDefinition-fr-lm-immunization-recommendation.md), [Logical model- FR LM Medication Administration ](StructureDefinition-fr-lm-medication-administration.md), [Logical model - FR LM Medication Dispense](StructureDefinition-fr-lm-medication-dispense.md)... Show 3 more, [Logical model - FR LM Medication Prescription](StructureDefinition-fr-lm-medication-prescription.md), [Logical model - FR LM Référence item prescription](StructureDefinition-fr-lm-reference-item-prescription.md) and [Logical model - FR LM Service Request](StructureDefinition-fr-lm-service-request.md)
+* Utilise ce/t/te Modèle logique: [Logical model - FR LM Immunisation](StructureDefinition-fr-lm-immunisation.md), [Logical model - FR LM Immunization Recommendation](StructureDefinition-fr-lm-immunization-recommendation.md), [Logical model- FR LM Medication Administration ](StructureDefinition-fr-lm-medication-administration.md), [Logical model - FR LM Medication Dispense](StructureDefinition-fr-lm-medication-dispense.md)... Show 3 more, [Logical model - FR LM Medication Prescription](StructureDefinition-fr-lm-prescription-item.md), [Logical model - FR LM Référence item prescription](StructureDefinition-fr-lm-reference-item-prescription.md) and [Logical model - FR LM Service Request](StructureDefinition-fr-lm-service-request.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-medication)
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-medication.csv
   "name" : "FRLMMedication",
   "title" : "Logical model - FR LM Medication",
   "status" : "draft",
-  "date" : "2026-04-24T13:15:59+00:00",
+  "date" : "2026-04-29T08:17:29+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -100,8 +100,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-medication.csv
     {
       "id" : "fr-lm-medication.identifyingCode[x].identifyingCodeIdentifier",
       "path" : "fr-lm-medication.identifyingCode[x].identifyingCodeIdentifier",
-      "short" : "identifiant du medication définition",
-      "definition" : "identifiant du medication définition",
+      "short" : "identifiant du medication",
+      "definition" : "identifiant du medication",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -191,8 +191,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-medication.csv
     {
       "id" : "fr-lm-medication.item.ingredient",
       "path" : "fr-lm-medication.item.ingredient",
-      "short" : "Substance active",
-      "definition" : "Substance active",
+      "short" : "Ingrédient",
+      "definition" : "Ingrédient",
       "min" : 1,
       "max" : "*",
       "type" : [{
@@ -225,10 +225,10 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-medication.csv
       }
     },
     {
-      "id" : "fr-lm-medication.item.ingredient.strength",
-      "path" : "fr-lm-medication.item.ingredient.strength",
-      "short" : "concentration par unité",
-      "definition" : "concentration par unité",
+      "id" : "fr-lm-medication.item.ingredient.strengthInfo",
+      "path" : "fr-lm-medication.item.ingredient.strengthInfo",
+      "short" : "Concentration de l'ingrédient par unité",
+      "definition" : "Concentration de l'ingrédient par unité",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -236,8 +236,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-medication.csv
       }]
     },
     {
-      "id" : "fr-lm-medication.item.ingredient.strength.strength",
-      "path" : "fr-lm-medication.item.ingredient.strength.strength",
+      "id" : "fr-lm-medication.item.ingredient.strengthInfo.strength",
+      "path" : "fr-lm-medication.item.ingredient.strengthInfo.strength",
       "short" : "numérateur/dénominateur. Ex 100 mg/1 ml ou 500 mg / comprimé.",
       "definition" : "numérateur/dénominateur. Ex 100 mg/1 ml ou 500 mg / comprimé.",
       "min" : 1,
@@ -247,10 +247,21 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-medication.csv
       }]
     },
     {
-      "id" : "fr-lm-medication.item.ingredient.strength.basisOfStrengthSubstance",
-      "path" : "fr-lm-medication.item.ingredient.strength.basisOfStrengthSubstance",
-      "short" : "Concentration de référence d’une substance",
-      "definition" : "Concentration de référence d’une substance",
+      "id" : "fr-lm-medication.item.ingredient.strengthInfo.basisOfStrengthSubstance",
+      "path" : "fr-lm-medication.item.ingredient.strengthInfo.basisOfStrengthSubstance",
+      "short" : "Substance concernée. code SMS (2.16.840.1.113883.3.6905.2) de la substance active de l’European Medicines Agency (EMA)",
+      "definition" : "Substance concernée. code SMS (2.16.840.1.113883.3.6905.2) de la substance active de l’European Medicines Agency (EMA)",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }]
+    },
+    {
+      "id" : "fr-lm-medication.item.unitOfPresentation",
+      "path" : "fr-lm-medication.item.unitOfPresentation",
+      "short" : "Unité de présentation du produit de santé (comprimé, ampoule, tube). En général, le plus petit objet dénombrable du package.\nEDQM Standard Terms (0.4.0.127.0.16.1.1.2.1) / classe UOP (Unit of Presentation).",
+      "definition" : "Unité de présentation du produit de santé (comprimé, ampoule, tube). En général, le plus petit objet dénombrable du package.\nEDQM Standard Terms (0.4.0.127.0.16.1.1.2.1) / classe UOP (Unit of Presentation).",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -260,8 +271,19 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-medication.csv
     {
       "id" : "fr-lm-medication.item.containedQuantity",
       "path" : "fr-lm-medication.item.containedQuantity",
-      "short" : "quantité pour 1 item",
-      "definition" : "quantité pour 1 item",
+      "short" : "Quantité de produit par unité (ex : 3 ml / 1 flacon)",
+      "definition" : "Quantité de produit par unité (ex : 3 ml / 1 flacon)",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Ratio"
+      }]
+    },
+    {
+      "id" : "fr-lm-medication.item.amount",
+      "path" : "fr-lm-medication.item.amount",
+      "short" : "Nombre d'unités dans un package (ex : 5 ampoules)",
+      "definition" : "Nombre d'unités dans un package (ex : 5 ampoules)",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -271,12 +293,12 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-medication.csv
     {
       "id" : "fr-lm-medication.item.packageType",
       "path" : "fr-lm-medication.item.packageType",
-      "short" : "Conditionnement primaire (ampoule, bouteille,…) EDQM Standard Terms (0.4.0.127.0.16.1.1.2.1) / classe CON (Récipient) => ampoule, blister.",
-      "definition" : "Conditionnement primaire (ampoule, bouteille,…) EDQM Standard Terms (0.4.0.127.0.16.1.1.2.1) / classe CON (Récipient) => ampoule, blister.",
+      "short" : "Conditionnement primaire (ampoule, plaquette,…) EDQM Standard Terms (0.4.0.127.0.16.1.1.2.1) / classe CON (Récipient).",
+      "definition" : "Conditionnement primaire (ampoule, plaquette,…) EDQM Standard Terms (0.4.0.127.0.16.1.1.2.1) / classe CON (Récipient).",
       "min" : 0,
       "max" : "1",
       "type" : [{
-        "code" : "Base"
+        "code" : "CodeableConcept"
       }]
     },
     {
@@ -304,8 +326,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-medication.csv
     {
       "id" : "fr-lm-medication.device.device[x]",
       "path" : "fr-lm-medication.device.device[x]",
-      "short" : "Dispositif codé.",
-      "definition" : "Dispositif codé.",
+      "short" : "Code du dispositif",
+      "definition" : "Code du dispositif",
       "min" : 1,
       "max" : "1",
       "type" : [{

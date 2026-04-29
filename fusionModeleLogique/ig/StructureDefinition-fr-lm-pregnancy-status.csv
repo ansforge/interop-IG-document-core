@@ -3,8 +3,8 @@
 ","Logical model- FR LM Pregnancy Status","Statut de grossesse","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "fr-lm-pregnancy-status.header","fr-lm-pregnancy-status.header","","","",1,1,"","","","Base {[]} {[]}
 ","Métadonnées de base","Métadonnées de base","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header",1,1,"",""
-"fr-lm-pregnancy-status.header.subject","fr-lm-pregnancy-status.header.subject","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-usager {[]} {[]}
-","Patient/subject information","Patient/subject information","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.subject",1,1,"",""
+"fr-lm-pregnancy-status.header.subject","fr-lm-pregnancy-status.header.subject","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient {[]} {[]}
+","Patient / Usager","Patient / Usager","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.subject",1,1,"",""
 "fr-lm-pregnancy-status.header.identifier","fr-lm-pregnancy-status.header.identifier","","","",0,*,"","","","Identifier {[]} {[]}
 ","Identifiant de l’entrée","Identifiant de l’entrée","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.identifier",0,*,"",""
 "fr-lm-pregnancy-status.header.author[x]","fr-lm-pregnancy-status.header.author[x]","","","",0,*,"","","","Base {[]} {[]}
@@ -33,21 +33,20 @@ https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organi
 ","Statut de l'acte","Statut de l'acte","","","","","","","","","",,"","jdv-hl7-v3-ActStatus-cisis (2.16.840.1.113883.1.11.15933)","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis","",,,,"fr-lm-entry.header.status",1,1,"",""
 "fr-lm-pregnancy-status.header.source","fr-lm-pregnancy-status.header.source","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Source","Source","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.source",0,1,"",""
-"fr-lm-pregnancy-status.header.langue","fr-lm-pregnancy-status.header.langue","","","",0,1,"","","","CodeableConcept {[]} {[]}
+"fr-lm-pregnancy-status.header.language","fr-lm-pregnancy-status.header.language","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","'fr-FR' pour français métropolitain (la casse des caractères doit être respectée)
 La partie en minuscules indique le code de la langue utilisée (ISO-639-1)
 La partie en majuscules indique le code pays (ISO-3166)","'fr-FR' pour français métropolitain (la casse des caractères doit être respectée)
 La partie en minuscules indique le code de la langue utilisée (ISO-639-1)
-La partie en majuscules indique le code pays (ISO-3166)","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.langue",0,1,"",""
+La partie en majuscules indique le code pays (ISO-3166)","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.language",0,1,"",""
 "fr-lm-pregnancy-status.observationDate[x]","fr-lm-pregnancy-status.observationDate[x]","","","",1,1,"","","","dateTime {[]} {[]}
 Period {[]} {[]}","Date ou periode de l'observation","Date ou periode de l'observation","","","","","","","","","",,,,,"",,,,"fr-lm-pregnancy-status.observationDate[x]",1,1,"",""
 "fr-lm-pregnancy-status.type","fr-lm-pregnancy-status.type","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","LOINC 11449-6 'Pregnancy status'","Type d'observation","","","","","","","","","",,,,,"",,,,"fr-lm-pregnancy-status.type",1,1,"",""
 "fr-lm-pregnancy-status.result","fr-lm-pregnancy-status.result","","","",1,1,"","","","Base {[]} {[]}
 ","Resultat de l'observation","Resultat de l'observation","","","","","","","","","",,,,,"",,,,"fr-lm-pregnancy-status.result",1,1,"",""
-"fr-lm-pregnancy-status.result.value[x]:valueCodeableConcept","fr-lm-pregnancy-status.result.value[x]","valueCodeableConcept","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Statut de grossesse de la patiente","Statut de grossesse de la patiente (enceinte, pas enceinte, etc.).","","","","","","","","","",,"","jdv-statut-grossesse-cisis (1.2.250.1.213.1.1.5.671)","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-statut-grossesse-cisis","","type:$this}
-","",,"open","fr-lm-pregnancy-status.result.value[x]",0,1,"",""
+"fr-lm-pregnancy-status.result.value[x]","fr-lm-pregnancy-status.result.value[x]","","","",0,1,"","","","string {[]} {[]}
+Quantity {[]} {[]}Range {[]} {[]}Ratio {[]} {[]}CodeableConcept {[]} {[]}","Valeur du resultat","Valeur du resultat","","","","","","","","","",,"","Statut de grossesse de la patiente (enceinte, pas enceinte, etc.)","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-statut-grossesse-cisis","",,,,"fr-lm-pregnancy-status.result.value[x]",0,1,"",""
 "fr-lm-pregnancy-status.result.uncertainty","fr-lm-pregnancy-status.result.uncertainty","","","",0,1,"","","","Base {[]} {[]}
 ","Incertitude associée au resultat","Incertitude associée au resultat","","","","","","","","","",,,,,"",,,,"fr-lm-pregnancy-status.result.uncertainty",0,1,"",""
 "fr-lm-pregnancy-status.result.uncertainty.value","fr-lm-pregnancy-status.result.uncertainty.value","","","",1,1,"","","","decimal {[]} {[]}

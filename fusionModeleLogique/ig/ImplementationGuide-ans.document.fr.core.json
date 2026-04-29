@@ -10,7 +10,7 @@
   "name" : "FRDocumentCore",
   "title" : "ANS IG document core",
   "status" : "draft",
-  "date" : "2026-04-24T13:15:59+00:00",
+  "date" : "2026-04-29T08:17:29+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -4398,6 +4398,19 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/fr-lm-medication-prescription"
+      },
+      "name" : "Logical model - FR LM FR LM Medication Prescription",
+      "description" : "Section Prescription de médicaments",
+      "exampleBoolean" : false,
+      "groupingId" : "Modèles logiques métier des sections d'un document"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/fr-lm-health-professional"
       },
       "name" : "Logical model - FR LM Health Professional",
@@ -4567,7 +4580,7 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/fr-lm-medication-prescription"
+        "reference" : "StructureDefinition/fr-lm-prescription-item"
       },
       "name" : "Logical model - FR LM Medication Prescription",
       "description" : "Entrée Traitement prescrit",
@@ -4713,6 +4726,19 @@
       },
       "name" : "Logical model - FR LM Organisation",
       "description" : "Une structure (organisation) pour les professionnels de santé.",
+      "exampleBoolean" : false,
+      "groupingId" : "Modèles logiques métier de l'entête d'un document"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-lm-patient"
+      },
+      "name" : "Logical model - FR LM Patient",
+      "description" : "Patient/Usager concerné par le document.",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier de l'entête d'un document"
     },
@@ -5008,10 +5034,10 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/fr-lm-dosage-instructions"
+        "reference" : "StructureDefinition/fr-lm-dosageInstructions"
       },
       "name" : "Logical model- FR LM Dosage Instructions",
-      "description" : "Entrée Posologie",
+      "description" : "Posologie",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier des composants élémentaires"
     },
@@ -5090,19 +5116,6 @@
       },
       "name" : "Logical model- FR LM Procedure",
       "description" : "Entrée Acte",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-lm-quantity-prescribed"
-      },
-      "name" : "Logical model- FR LM Quantity Prescribed",
-      "description" : "Entrée Quantité de produit",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier des composants élémentaires"
     },
@@ -7385,19 +7398,6 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/fr-lm-patient-usager"
-      },
-      "name" : "Modèle logique métier - FR LM Patient Usager",
-      "description" : "Patient/Usager concerné par le document.",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier de l'entête d'un document"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/fr-lm-plan-soins"
       },
       "name" : "Modèle logique métier - FR LM Plan de soins",
@@ -7428,19 +7428,6 @@
       },
       "name" : "Modèle logique métier - FR LM Prescription de dispositifs médicaux",
       "description" : "Section Prescription de dispositifs médicaux",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des sections d'un document"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-lm-prescription-medicaments"
-      },
-      "name" : "Modèle logique métier - FR LM Prescription de médicaments",
-      "description" : "Section Prescription de médicaments",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier des sections d'un document"
     },

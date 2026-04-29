@@ -21,7 +21,7 @@
 ","Numéro de version du document.","Numéro de version du document.","","","","","","","","","",,,,,"",,,,"fr-lm-entete-document.versionDocument",1,1,"",""
 "fr-lm-entete-document.statutDocument","fr-lm-entete-document.statutDocument","","","",1,1,"","","","code {[]} {[]}
 ","Statut du document.","Statut du document.","","","","","","","","","",,,,,"",,,,"fr-lm-entete-document.statutDocument",1,1,"",""
-"fr-lm-entete-document.patient","fr-lm-entete-document.patient","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-usager {[]} {[]}
+"fr-lm-entete-document.patient","fr-lm-entete-document.patient","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient {[]} {[]}
 ","Patient / Usager.","Patient / Usager.","","","","","","","","","",,,,,"",,,,"fr-lm-entete-document.patient",1,1,"",""
 "fr-lm-entete-document.auteur[x]","fr-lm-entete-document.auteur[x]","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional {[]} {[]}
 https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organisation {[]} {[]}https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device {[]} {[]}","Auteur du document.","Auteur du document.","","","","","","","","","",,,,,"",,,,"fr-lm-entete-document.auteur[x]",1,*,"",""

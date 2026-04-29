@@ -2701,9 +2701,9 @@
   "name" : "FRLMDocumentsAjoutes"
 },
 {
-  "id" : "fr-lm-dosage-instructions",
+  "id" : "fr-lm-dosageInstructions",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dosage-instructions",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dosageInstructions",
   "version" : "0.1.0-snapshot",
   "name" : "FRLMDosageInstructions"
 },
@@ -3044,6 +3044,13 @@
   "name" : "FRLMParticipant"
 },
 {
+  "id" : "fr-lm-patient",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRLMPatient"
+},
+{
   "id" : "fr-lm-patient-sujet-non-humain",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-sujet-non-humain",
@@ -3056,13 +3063,6 @@
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-transfer",
   "version" : "0.1.0-snapshot",
   "name" : "FRLMPatientTransfer"
-},
-{
-  "id" : "fr-lm-patient-usager",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-usager",
-  "version" : "0.1.0-snapshot",
-  "name" : "FRLMPatientUsager"
 },
 {
   "id" : "fr-lm-plan-soins",
@@ -3114,11 +3114,11 @@
   "name" : "FRLMPrescriptionEntree"
 },
 {
-  "id" : "fr-lm-prescription-medicaments",
+  "id" : "fr-lm-prescription-item",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-prescription-medicaments",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-prescription-item",
   "version" : "0.1.0-snapshot",
-  "name" : "FRLMPrescriptionMedicaments"
+  "name" : "FRLMPrescriptionItem"
 },
 {
   "id" : "fr-lm-prise-en-charge",
@@ -3147,13 +3147,6 @@
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-quantite-exposition",
   "version" : "0.1.0-snapshot",
   "name" : "FRLMQuantiteExposition"
-},
-{
-  "id" : "fr-lm-quantity-prescribed",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-quantity-prescribed",
-  "version" : "0.1.0-snapshot",
-  "name" : "FRLMQuantityPrescribed"
 },
 {
   "id" : "fr-lm-raison-recommandation",

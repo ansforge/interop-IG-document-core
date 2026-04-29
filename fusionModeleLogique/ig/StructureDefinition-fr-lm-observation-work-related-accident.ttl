@@ -31,7 +31,7 @@
   fhir:name [ fhir:v "FRLMObservationWorkRelatedAccident"] ; # 
   fhir:title [ fhir:v "Logical model - FR LM Observation Work Related Accident"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-04-24T13:15:59+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-04-29T08:17:29+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -108,8 +108,8 @@
      ] [
        fhir:id [ fhir:v "fr-lm-observation-work-related-accident.header.subject" ] ;
        fhir:path [ fhir:v "fr-lm-observation-work-related-accident.header.subject" ] ;
-       fhir:short [ fhir:v "Patient/subject information" ] ;
-       fhir:definition [ fhir:v "Patient/subject information" ] ;
+       fhir:short [ fhir:v "Patient / Usager" ] ;
+       fhir:definition [ fhir:v "Patient / Usager" ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
@@ -119,8 +119,8 @@
        ] ;
        fhir:type ( [
          fhir:code [
-           fhir:v "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-usager"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-usager>
+           fhir:v "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient"^^xsd:anyURI ;
+           fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient>
          ]
        ] )
      ] [
@@ -388,14 +388,14 @@
          ]
        ] )
      ] [
-       fhir:id [ fhir:v "fr-lm-observation-work-related-accident.header.langue" ] ;
-       fhir:path [ fhir:v "fr-lm-observation-work-related-accident.header.langue" ] ;
+       fhir:id [ fhir:v "fr-lm-observation-work-related-accident.header.language" ] ;
+       fhir:path [ fhir:v "fr-lm-observation-work-related-accident.header.language" ] ;
        fhir:short [ fhir:v "'fr-FR' pour français métropolitain (la casse des caractères doit être respectée)\nLa partie en minuscules indique le code de la langue utilisée (ISO-639-1)\nLa partie en majuscules indique le code pays (ISO-3166)" ] ;
        fhir:definition [ fhir:v "'fr-FR' pour français métropolitain (la casse des caractères doit être respectée)\nLa partie en minuscules indique le code de la langue utilisée (ISO-639-1)\nLa partie en majuscules indique le code pays (ISO-3166)" ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
-         fhir:path [ fhir:v "fr-lm-entry.header.langue" ] ;
+         fhir:path [ fhir:v "fr-lm-entry.header.language" ] ;
          fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
          fhir:max [ fhir:v "1" ]
        ] ;

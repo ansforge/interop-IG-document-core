@@ -16,6 +16,7 @@ This page provides a list of the FHIR artifacts defined as part of this implemen
 | [Logical model - FR LM Informant](StructureDefinition-fr-lm-informant.md) | Informant (personne ayant fourni des informations utiles à la production du document : professionnel, structure, patient/usager, autre), personne de confiance, personne à prévenir en cas d’urgence, aidant, aidé. |
 | [Logical model - FR LM Location](StructureDefinition-fr-lm-location.md) | Lieu |
 | [Logical model - FR LM Organisation](StructureDefinition-fr-lm-organisation.md) | Une structure (organisation) pour les professionnels de santé. |
+| [Logical model - FR LM Patient](StructureDefinition-fr-lm-patient.md) | Patient/Usager concerné par le document. |
 | [Logical model - FR LM Related Person](StructureDefinition-fr-lm-related-person.md) | Related Person |
 | [Modèle logique métier - FR LM Consentement](StructureDefinition-fr-lm-consentement.md) | Permet de documenter qu’un consentement éclairé a été obtenu et d’indiquer quel type de consentement a été fourni. |
 | [Modèle logique métier - FR LM Destinataire prévu](StructureDefinition-fr-lm-destinataire-prevu.md) | Personne déclarée comme destinataire prévu du document.* Attention : Cet élément ne contient que le(s) destinataire(s) initialement prévu(s) à la création du document. Rien ne permet par la suite, de certifier que le document a réellement été envoyé à ce(s) destinataire(s). Par ailleurs, il ne faut pas créer de nouvelle version du document si on souhaite l’envoyer à d’autres destinataires.
@@ -24,7 +25,6 @@ This page provides a list of the FHIR artifacts defined as part of this implemen
 | [Modèle logique métier - FR LM En-tête document](StructureDefinition-fr-lm-entete-document.md) | Eléments de l’entête d’un document contenant les informations générales et nécessaires à la gestion du document (identification et type du document, patient/usager, auteur, évènement documenté, etc…). |
 | [Modèle logique métier - FR LM Opérateur de saisie](StructureDefinition-fr-lm-operateur-saisie.md) | Opérateur de saisie de la totalité ou d’une partie du contenu du document. |
 | [Modèle logique métier - FR LM Participant](StructureDefinition-fr-lm-participant.md) | Personne/Structure impliquée dans les évènements décrits par le document qui n’a pas été mentionné ailleurs. |
-| [Modèle logique métier - FR LM Patient Usager](StructureDefinition-fr-lm-patient-usager.md) | Patient/Usager concerné par le document. |
 | [Modèle logique métier - FR LM Prescription](StructureDefinition-fr-lm-prescription.md) | Association à une prescription à l’origine de l’acte dont résulte le document. |
 | [Modèle logique métier - FR LM Prise en charge](StructureDefinition-fr-lm-prise-en-charge.md) | Association du document à une prise en charge du patient/usager par un professionnel ou par une structure.* Exemples : 
 * Dans une structure hospitalière, cette prise en charge est une hospitalisation complète ou partielle, des actes et soins externes, une consultation, etc.
@@ -49,6 +49,7 @@ This page provides a list of the FHIR artifacts defined as part of this implemen
 | [Historique des actes](StructureDefinition-fr-lm-historique-des-actes.md) | Section Historique des actes |
 | [Logical model - FR LM Pregnancy History](StructureDefinition-fr-lm-section-pregnancy-history.md) | Section Historique des grossesses |
 | [Logical model - FR LM Alerts](StructureDefinition-fr-lm-alerts.md) | Section Points de vigilance |
+| [Logical model - FR LM FR LM Medication Prescription](StructureDefinition-fr-lm-medication-prescription.md) | Section Prescription de médicaments |
 | [Logical model - FR LM Section](StructureDefinition-fr-lm-section.md) | Section |
 | [Modèle logique métier - FR LM Acte d'imagerie](StructureDefinition-fr-lm-acte-imagerie.md) | Section Acte d’imagerie |
 | [Modèle logique métier - FR LM Addendum](StructureDefinition-fr-lm-addendum.md) | Section Addendum |
@@ -78,7 +79,6 @@ This page provides a list of the FHIR artifacts defined as part of this implemen
 | [Modèle logique métier - FR LM Object Catalog](StructureDefinition-fr-lm-object-catalog.md) | Section Object Catalog |
 | [Modèle logique métier - FR LM Plan de soins](StructureDefinition-fr-lm-plan-soins.md) | Section Plan de soins |
 | [Modèle logique métier - FR LM Prescription de dispositifs médicaux](StructureDefinition-fr-lm-prescription-dispositifs-medicaux.md) | Section Prescription de dispositifs médicaux |
-| [Modèle logique métier - FR LM Prescription de médicaments](StructureDefinition-fr-lm-prescription-medicaments.md) | Section Prescription de médicaments |
 | [Modèle logique métier - FR LM Problèmes actifs](StructureDefinition-fr-lm-problemes-actifs.md) | Section Problèmes actifs |
 | [Modèle logique métier - FR LM Raison de la recommandation](StructureDefinition-fr-lm-raison-recommandation.md) | Section Raison de la recommandation |
 | [Modèle logique métier - FR LM Raison de la recommandation (non codée)](StructureDefinition-fr-lm-raison-recommandation-non-code.md) | Section Raison de la recommandation (non codée) |
@@ -132,7 +132,7 @@ Modèles de données métier représentant les concepts élémentaires, modélis
 | [logical model - FR LM Imputabilite effet indesirable](StructureDefinition-fr-lm-imputabilite-effet-indesirable.md) | Entrée Imputabilite effet indesirable |
 | [Logical model - FR LM Medication](StructureDefinition-fr-lm-medication.md) | Entrée Produit de santé |
 | [Logical model - FR LM Medication Dispense](StructureDefinition-fr-lm-medication-dispense.md) | Entrée Traitement dispense |
-| [Logical model - FR LM Medication Prescription](StructureDefinition-fr-lm-medication-prescription.md) | Entrée Traitement prescrit |
+| [Logical model - FR LM Medication Prescription](StructureDefinition-fr-lm-prescription-item.md) | Entrée Traitement prescrit |
 | [logical model - FR LM Modalité d'entrée](StructureDefinition-fr-lm-modalite-entree.md) | Entrée Modalité d’entrée |
 | [Logical model - FR LM Modalité de sortie](StructureDefinition-fr-lm-modalite-sortie.md) | Entrée Modalité de sortie |
 | [Logical model - FR LM Naissance](StructureDefinition-fr-lm-birth-event.md) | Entrée Naissance |
@@ -162,14 +162,13 @@ Modèles de données métier représentant les concepts élémentaires, modélis
 | [Logical model - FR LM Transfusion accidents](StructureDefinition-fr-lm-transfusion-accidents.md) | Entrée Accidents transfusionnels |
 | [Logical model - FR LM Transfusion de produits sanguins](StructureDefinition-fr-lm-transfusion-de-produits-sanguins.md) | Transfusion de produits sanguins |
 | [Logical model - Laboratory Observation](StructureDefinition-fr-lm-laboratory-observation.md) | Entrée Résultat d’examen de laboratoire |
-| [Logical model- FR LM Dosage Instructions](StructureDefinition-fr-lm-dosage-instructions.md) | Entrée Posologie |
+| [Logical model- FR LM Dosage Instructions](StructureDefinition-fr-lm-dosageInstructions.md) | Posologie |
 | [Logical model- FR LM Medication Administration ](StructureDefinition-fr-lm-medication-administration.md) | Entrée Traitement |
 | [Logical model- FR LM Observation Social History](StructureDefinition-fr-lm-observation-social-history.md) | Entrée Habitus Mode de vie |
 | [Logical model- FR LM Pregnancy History](StructureDefinition-fr-lm-pregnancy-history.md) | Entrée Historique de la grossesse |
 | [Logical model- FR LM Pregnancy Observation](StructureDefinition-fr-lm-pregnancy-observation.md) | Observation sur la grossesse |
 | [Logical model- FR LM Pregnancy Status](StructureDefinition-fr-lm-pregnancy-status.md) | Statut de grossesse |
 | [Logical model- FR LM Procedure](StructureDefinition-fr-lm-procedure.md) | Entrée Acte |
-| [Logical model- FR LM Quantity Prescribed](StructureDefinition-fr-lm-quantity-prescribed.md) | Entrée Quantité de produit |
 | [Logical model- FR LM Synthese medicale sejour](StructureDefinition-fr-lm-synthese-medicale-sejour.md) | Synthese medicale sejour |
 | [Logical model- FR LM Technique imagerie](StructureDefinition-fr-lm-technique-imagerie.md) | Entrée Technique imagerie |
 | [Modèle logique métier - FR LM Batterie d'examens de biologie médicale](StructureDefinition-fr-lm-batterie-examens-biologie-medicale.md) | Entrée Batterie d’examens de biologie médicale |

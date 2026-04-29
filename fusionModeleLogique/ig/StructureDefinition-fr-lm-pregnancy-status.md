@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-pregnancy-status | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-24 | *Computable Name*:FRLMPregnancyStatus |
+| Draft as of 2026-04-29 | *Computable Name*:FRLMPregnancyStatus |
 
  
 Statut de grossesse 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-pregnancy-stat
   "name" : "FRLMPregnancyStatus",
   "title" : "Logical model- FR LM Pregnancy Status",
   "status" : "draft",
-  "date" : "2026-04-24T13:15:59+00:00",
+  "date" : "2026-04-29T08:17:29+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -114,14 +114,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-pregnancy-stat
     {
       "id" : "fr-lm-pregnancy-status.result.value[x]",
       "path" : "fr-lm-pregnancy-status.result.value[x]",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "type",
-          "path" : "$this"
-        }],
-        "ordered" : false,
-        "rules" : "open"
-      },
       "short" : "Valeur du resultat",
       "definition" : "Valeur du resultat",
       "min" : 0,
@@ -140,21 +132,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-pregnancy-stat
       },
       {
         "code" : "CodeableConcept"
-      }]
-    },
-    {
-      "id" : "fr-lm-pregnancy-status.result.value[x]:valueCodeableConcept",
-      "path" : "fr-lm-pregnancy-status.result.value[x]",
-      "sliceName" : "valueCodeableConcept",
-      "short" : "Statut de grossesse de la patiente",
-      "definition" : "Statut de grossesse de la patiente (enceinte, pas enceinte, etc.).",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "CodeableConcept"
       }],
       "binding" : {
-        "description" : "jdv-statut-grossesse-cisis (1.2.250.1.213.1.1.5.671)",
+        "description" : "Statut de grossesse de la patiente (enceinte, pas enceinte, etc.)",
         "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-statut-grossesse-cisis"
       }
     },

@@ -17,7 +17,7 @@
   <name value="FRLMSOPInstance"/>
   <title value="Logical model - FR LM SOP Instance"/>
   <status value="draft"/>
-  <date value="2026-04-24T13:15:59+00:00"/>
+  <date value="2026-04-29T08:17:29+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -74,8 +74,8 @@
     </element>
     <element id="fr-lm-sop-instance.header.subject">
       <path value="fr-lm-sop-instance.header.subject"/>
-      <short value="Patient/subject information"/>
-      <definition value="Patient/subject information"/>
+      <short value="Patient / Usager"/>
+      <definition value="Patient / Usager"/>
       <min value="1"/>
       <max value="1"/>
       <base>
@@ -84,7 +84,7 @@
         <max value="1"/>
       </base>
       <type>
-        <code value="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-usager"/>
+        <code value="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient"/>
       </type>
     </element>
     <element id="fr-lm-sop-instance.header.identifier">
@@ -304,14 +304,14 @@
         <code value="CodeableConcept"/>
       </type>
     </element>
-    <element id="fr-lm-sop-instance.header.langue">
-      <path value="fr-lm-sop-instance.header.langue"/>
+    <element id="fr-lm-sop-instance.header.language">
+      <path value="fr-lm-sop-instance.header.language"/>
       <short value="'fr-FR' pour français métropolitain (la casse des caractères doit être respectée)&#xA;La partie en minuscules indique le code de la langue utilisée (ISO-639-1)&#xA;La partie en majuscules indique le code pays (ISO-3166)"/>
       <definition value="'fr-FR' pour français métropolitain (la casse des caractères doit être respectée)&#xA;La partie en minuscules indique le code de la langue utilisée (ISO-639-1)&#xA;La partie en majuscules indique le code pays (ISO-3166)"/>
       <min value="0"/>
       <max value="1"/>
       <base>
-        <path value="fr-lm-entry.header.langue"/>
+        <path value="fr-lm-entry.header.language"/>
         <min value="0"/>
         <max value="1"/>
       </base>

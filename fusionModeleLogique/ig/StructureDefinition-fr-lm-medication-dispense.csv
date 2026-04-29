@@ -3,8 +3,8 @@
 ","Logical model - FR LM Medication Dispense","Entrée Traitement dispense","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "fr-lm-medication-dispense.header","fr-lm-medication-dispense.header","","","",1,1,"","","","Base {[]} {[]}
 ","Métadonnées de base","Métadonnées de base","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header",1,1,"",""
-"fr-lm-medication-dispense.header.subject","fr-lm-medication-dispense.header.subject","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-usager {[]} {[]}
-","Patient/subject information","Patient/subject information","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.subject",1,1,"",""
+"fr-lm-medication-dispense.header.subject","fr-lm-medication-dispense.header.subject","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient {[]} {[]}
+","Patient / Usager","Patient / Usager","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.subject",1,1,"",""
 "fr-lm-medication-dispense.header.identifier","fr-lm-medication-dispense.header.identifier","","","",0,*,"","","","Identifier {[]} {[]}
 ","Identifiant de l’entrée","Identifiant de l’entrée","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.identifier",0,*,"",""
 "fr-lm-medication-dispense.header.author[x]","fr-lm-medication-dispense.header.author[x]","","","",0,*,"","","","Base {[]} {[]}
@@ -33,12 +33,12 @@ https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organi
 ","Statut de l'acte","Statut de l'acte","","","","","","","","","",,"","jdv-hl7-v3-ActStatus-cisis (2.16.840.1.113883.1.11.15933)","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis","",,,,"fr-lm-entry.header.status",1,1,"",""
 "fr-lm-medication-dispense.header.source","fr-lm-medication-dispense.header.source","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Source","Source","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.source",0,1,"",""
-"fr-lm-medication-dispense.header.langue","fr-lm-medication-dispense.header.langue","","","",0,1,"","","","CodeableConcept {[]} {[]}
+"fr-lm-medication-dispense.header.language","fr-lm-medication-dispense.header.language","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","'fr-FR' pour français métropolitain (la casse des caractères doit être respectée)
 La partie en minuscules indique le code de la langue utilisée (ISO-639-1)
 La partie en majuscules indique le code pays (ISO-3166)","'fr-FR' pour français métropolitain (la casse des caractères doit être respectée)
 La partie en minuscules indique le code de la langue utilisée (ISO-639-1)
-La partie en majuscules indique le code pays (ISO-3166)","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.langue",0,1,"",""
+La partie en majuscules indique le code pays (ISO-3166)","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.language",0,1,"",""
 "fr-lm-medication-dispense.completude","fr-lm-medication-dispense.completude","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Complétude de la dispensation","Complétude de la dispensation","","","","","","","","","",,"","Valeur issue du JDV_CompletudeDispensation_CISIS (1.2.250.1.213.1.1.5.765)","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-completude-dispensation-cisis","",,,,"fr-lm-medication-dispense.completude",0,1,"",""
 "fr-lm-medication-dispense.quantite","fr-lm-medication-dispense.quantite","","","",1,1,"","","","Quantity {[]} {[]}
@@ -47,7 +47,7 @@ La partie en majuscules indique le code pays (ISO-3166)","","","","","","","",""
 ","Médicament délivré","Médicament délivré","","","","","","","","","",,,,,"",,,,"fr-lm-medication-dispense.medicamentDelivre",1,1,"",""
 "fr-lm-medication-dispense.referencePrescription","fr-lm-medication-dispense.referencePrescription","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-reference-item-prescription {[]} {[]}
 ","Référence de la prescription","Référence de la prescription","","","","","","","","","",,,,,"",,,,"fr-lm-medication-dispense.referencePrescription",0,1,"",""
-"fr-lm-medication-dispense.posologie","fr-lm-medication-dispense.posologie","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dosage-instructions {[]} {[]}
+"fr-lm-medication-dispense.posologie","fr-lm-medication-dispense.posologie","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dosageInstructions {[]} {[]}
 ","Posologie","Posologie","","","","","","","","","",,,,,"",,,,"fr-lm-medication-dispense.posologie",0,1,"",""
 "fr-lm-medication-dispense.notesDispensateur","fr-lm-medication-dispense.notesDispensateur","","","",0,1,"","","","string {[]} {[]}
 ","Notes du dispensateur","Notes du dispensateur","","","","","","","","","",,,,,"",,,,"fr-lm-medication-dispense.notesDispensateur",0,1,"",""

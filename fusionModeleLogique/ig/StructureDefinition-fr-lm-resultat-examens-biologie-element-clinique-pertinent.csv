@@ -3,8 +3,8 @@
 ","Modèle logique métier - FR LM Résultat d'examens de biologie / élement clinique pertinent","Résultat d'examens de biologie / élement clinique pertinent","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "fr-lm-resultat-examens-biologie-element-clinique-pertinent.header","fr-lm-resultat-examens-biologie-element-clinique-pertinent.header","","","",1,1,"","","","Base {[]} {[]}
 ","Métadonnées de base","Métadonnées de base","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header",1,1,"",""
-"fr-lm-resultat-examens-biologie-element-clinique-pertinent.header.subject","fr-lm-resultat-examens-biologie-element-clinique-pertinent.header.subject","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-usager {[]} {[]}
-","Patient/subject information","Patient/subject information","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.subject",1,1,"",""
+"fr-lm-resultat-examens-biologie-element-clinique-pertinent.header.subject","fr-lm-resultat-examens-biologie-element-clinique-pertinent.header.subject","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient {[]} {[]}
+","Patient / Usager","Patient / Usager","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.subject",1,1,"",""
 "fr-lm-resultat-examens-biologie-element-clinique-pertinent.header.identifier","fr-lm-resultat-examens-biologie-element-clinique-pertinent.header.identifier","","","",0,*,"","","","Identifier {[]} {[]}
 ","Identifiant de l’entrée","Identifiant de l’entrée","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.identifier",0,*,"",""
 "fr-lm-resultat-examens-biologie-element-clinique-pertinent.header.author[x]","fr-lm-resultat-examens-biologie-element-clinique-pertinent.header.author[x]","","","",0,*,"","","","Base {[]} {[]}
@@ -33,12 +33,12 @@ https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organi
 ","Niveau de complétude","Statut de l'acte","","","","","","","","","",,"","jdv-hl7-v3-ActStatus-cisis (2.16.840.1.113883.1.11.15933)","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis","",,,,"fr-lm-entry.header.status",1,1,"",""
 "fr-lm-resultat-examens-biologie-element-clinique-pertinent.header.source","fr-lm-resultat-examens-biologie-element-clinique-pertinent.header.source","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Source","Source","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.source",0,1,"",""
-"fr-lm-resultat-examens-biologie-element-clinique-pertinent.header.langue","fr-lm-resultat-examens-biologie-element-clinique-pertinent.header.langue","","","",0,1,"","","","CodeableConcept {[]} {[]}
+"fr-lm-resultat-examens-biologie-element-clinique-pertinent.header.language","fr-lm-resultat-examens-biologie-element-clinique-pertinent.header.language","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","'fr-FR' pour français métropolitain (la casse des caractères doit être respectée)
 La partie en minuscules indique le code de la langue utilisée (ISO-639-1)
 La partie en majuscules indique le code pays (ISO-3166)","'fr-FR' pour français métropolitain (la casse des caractères doit être respectée)
 La partie en minuscules indique le code de la langue utilisée (ISO-639-1)
-La partie en majuscules indique le code pays (ISO-3166)","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.langue",0,1,"",""
+La partie en majuscules indique le code pays (ISO-3166)","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.language",0,1,"",""
 "fr-lm-resultat-examens-biologie-element-clinique-pertinent.codeIdentification","fr-lm-resultat-examens-biologie-element-clinique-pertinent.codeIdentification","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Code d'identification de l'analyse ou de l'observation","Code d'identification de l'analyse ou de l'observation","","","","","","","","","",,,,,"",,,,"fr-lm-resultat-examens-biologie-element-clinique-pertinent.codeIdentification",0,1,"",""
 "fr-lm-resultat-examens-biologie-element-clinique-pertinent.valeurResultat[x]","fr-lm-resultat-examens-biologie-element-clinique-pertinent.valeurResultat[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}

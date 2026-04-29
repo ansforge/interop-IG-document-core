@@ -5,7 +5,7 @@
 ","Identifiants de la personne","Identifiants de la personne","","","","","","","","","",,,,,"",,,,"fr-lm-related-person.identifier",0,*,"",""
 "fr-lm-related-person.name","fr-lm-related-person.name","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-human-name {[]} {[]}
 ","Nom de la personne","Nom de la personne","","","","","","","","","",,,,,"",,,,"fr-lm-related-person.name",0,*,"",""
-"fr-lm-related-person.subject","fr-lm-related-person.subject","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-usager {[]} {[]}
+"fr-lm-related-person.subject","fr-lm-related-person.subject","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient {[]} {[]}
 ","Patient / Usager avec la personne","Patient / Usager avec la personne","","","","","","","","","",,,,,"",,,,"fr-lm-related-person.subject",1,1,"",""
 "fr-lm-related-person.relationship","fr-lm-related-person.relationship","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Lien avec le patient","Lien avec le patient","","","","","","","","","",,"","jdv-hl7-v3-PersonalRelationshipRoleType-cisis","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-PersonalRelationshipRoleType-cisis","",,,,"fr-lm-related-person.relationship",1,1,"",""

@@ -3,8 +3,8 @@
 ","Logical model - FR LM Recherche de micro organismes","Recherche de micro organismes","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "fr-lm-recherche-de-micro-organismes.header","fr-lm-recherche-de-micro-organismes.header","","","",1,1,"","","","Base {[]} {[]}
 ","Métadonnées de base","Métadonnées de base","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header",1,1,"",""
-"fr-lm-recherche-de-micro-organismes.header.subject","fr-lm-recherche-de-micro-organismes.header.subject","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-usager {[]} {[]}
-","Patient/subject information","Patient/subject information","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.subject",1,1,"",""
+"fr-lm-recherche-de-micro-organismes.header.subject","fr-lm-recherche-de-micro-organismes.header.subject","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient {[]} {[]}
+","Patient / Usager","Patient / Usager","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.subject",1,1,"",""
 "fr-lm-recherche-de-micro-organismes.header.identifier","fr-lm-recherche-de-micro-organismes.header.identifier","","","",0,*,"","","","Identifier {[]} {[]}
 ","Identifiant de l’entrée","Identifiant de l’entrée","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.identifier",0,*,"",""
 "fr-lm-recherche-de-micro-organismes.header.author[x]","fr-lm-recherche-de-micro-organismes.header.author[x]","","","",0,*,"","","","Base {[]} {[]}
@@ -33,12 +33,12 @@ https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organi
 ","Statut de l'acte","Statut de l'acte","","","","","","","","","",,"","jdv-hl7-v3-ActStatus-cisis (2.16.840.1.113883.1.11.15933)","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis","",,,,"fr-lm-entry.header.status",1,1,"",""
 "fr-lm-recherche-de-micro-organismes.header.source","fr-lm-recherche-de-micro-organismes.header.source","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Source","Source","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.source",0,1,"",""
-"fr-lm-recherche-de-micro-organismes.header.langue","fr-lm-recherche-de-micro-organismes.header.langue","","","",0,1,"","","","CodeableConcept {[]} {[]}
+"fr-lm-recherche-de-micro-organismes.header.language","fr-lm-recherche-de-micro-organismes.header.language","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","'fr-FR' pour français métropolitain (la casse des caractères doit être respectée)
 La partie en minuscules indique le code de la langue utilisée (ISO-639-1)
 La partie en majuscules indique le code pays (ISO-3166)","'fr-FR' pour français métropolitain (la casse des caractères doit être respectée)
 La partie en minuscules indique le code de la langue utilisée (ISO-639-1)
-La partie en majuscules indique le code pays (ISO-3166)","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.langue",0,1,"",""
+La partie en majuscules indique le code pays (ISO-3166)","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.language",0,1,"",""
 "fr-lm-recherche-de-micro-organismes.code","fr-lm-recherche-de-micro-organismes.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Code de l’observation","Code de l’observation","","","","","","","","","",,,,,"",,,,"fr-lm-recherche-de-micro-organismes.code",1,1,"",""
 "fr-lm-recherche-de-micro-organismes.valeur","fr-lm-recherche-de-micro-organismes.valeur","","","",1,1,"","","","boolean {[]} {[]}

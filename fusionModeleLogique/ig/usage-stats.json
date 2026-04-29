@@ -627,7 +627,6 @@
       "fr-lm-condition",
       "fr-lm-device-use",
       "fr-lm-immunisation",
-      "fr-lm-medication-prescription",
       "fr-lm-procedure"
     ],
     "http://hl7.org/fhir/StructureDefinition/patient-birthPlace": [
