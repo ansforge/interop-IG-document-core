@@ -6,7 +6,7 @@ Description: "Related Person"
 
 * identifier 0..* Identifier "Identifiants de la personne"
 * name 0..* FRLMHumanName "Nom de la personne"
-* subject 1..1 FRLMPatientUsager "Patient / Usager avec la personne"
+* subject 1..1 FRLMPatient "Patient / Usager avec la personne"
 * relationship 1..1 CodeableConcept "Lien avec le patient"
   * ^binding.description = "jdv-hl7-v3-PersonalRelationshipRoleType-cisis"
   * ^binding.valueSet = "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-PersonalRelationshipRoleType-cisis"

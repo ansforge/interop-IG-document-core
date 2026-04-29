@@ -10,4 +10,4 @@ Description: "Représente le responsable du document, qui est :
 Characteristics: #can-be-target
 * . 1..1 
 * dateHeurePriseResponsabilite 1..1 dateTime "Date/Heure de la prise de responsabilité."		 			 			 		
-* responsable[x] 1..1 FRLMHealthProfessional or FRLMPatientUsager or FRLMDevice or FRLMOrganisation "Responsable du document."		 		
+* responsable[x] 1..1 FRLMHealthProfessional or FRLMPatient or FRLMDevice or FRLMOrganisation "Responsable du document."		 		

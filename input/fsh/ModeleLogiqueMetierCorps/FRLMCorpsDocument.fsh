@@ -32,7 +32,7 @@ Description: "Eléments métier du corps d'un document contenant les sections du
 * pregnancyHistory 0..* FRLMSectionPregnancyHistory "Section Historique des grossesses"
 * planSoins 0..* FRLMPlanSoins "Section Plan de Soins"
 * prescriptionDispositifsMedicaux 0..* FRLMPrescriptionDispositifsMedicaux "Section Prescription de dispositifs médicaux"
-* prescriptionMedicaments 0..* FRLMPrescriptionMedicaments "Section Prescription médicaments"
+* prescriptionMedicaments 0..* FRLMMedicationPrescription "Section Prescription médicaments"
 * problemesActifs 0..* FRLMProblemesActifs "Section Problemès Actifs"
 * raisonRecommandationNonCode  0..* FRLMRaisonRecommandationNonCode "Section Raison de la recommandation (non Codé)"
 * raisonRecommandation 0..* FRLMRaisonRecommandation "Section Raison de la recommandation"

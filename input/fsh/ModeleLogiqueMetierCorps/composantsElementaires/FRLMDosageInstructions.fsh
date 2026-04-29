@@ -1,7 +1,7 @@
 Logical: FRLMDosageInstructions
-Id: fr-lm-dosage-instructions
+Id: fr-lm-dosageInstructions
 Title: "Logical model- FR LM Dosage Instructions"
-Description: """Entrée Posologie"""
+Description: """Posologie"""
 Characteristics: #can-be-target
 
 * renderedDosageInstruction 0..1 string "Posologie sous forme textuelle"
@@ -42,4 +42,4 @@ Exemple - Administration pendant 10 minutes: {}"
     * duration 0..1 Quantity "Durée pour laquelle il y a une dose maximale administrable
 Exemple - Par jour, par semaine, par mois, ...: {}"
   * maxDosePerAdministration 0..1 Quantity "Dose maximale pour une administration"
-  * MaxLifetimeDose 0..1 Quantity "Dose maximale sur une vie"
+  * maxLifetimeDose 0..1 Quantity "Dose maximale sur une vie"
