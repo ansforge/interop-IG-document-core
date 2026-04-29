@@ -29,8 +29,8 @@ https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organi
 ","Informateur","Informateur","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.informant",0,*,"",""
 "fr-lm-allergy-intolerance.header.date","fr-lm-allergy-intolerance.header.date","","","",0,1,"","","","dateTime {[]} {[]}
 ","Date/Heure de création par l'auteur","Date/Heure de création par l'auteur","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.date",0,1,"",""
-"fr-lm-allergy-intolerance.header.status","fr-lm-allergy-intolerance.header.status","","","",1,1,"","","","CodeableConcept {[]} {[]}
-","Statut de l'acte","Statut de l'acte","","","","","","","","","",,"","jdv-hl7-v3-ActStatus-cisis (2.16.840.1.113883.1.11.15933)","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis","",,,,"fr-lm-entry.header.status",1,1,"",""
+"fr-lm-allergy-intolerance.header.status","fr-lm-allergy-intolerance.header.status","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Statut clinique de l'allergie","Statut","","","","","","","","","",,"","jdv-hl7-allergyintolerance-clinical-cisis (2.16.840.1.113883.4.642.3.1372)","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-allergyintolerance-clinical-cisis","",,,,"fr-lm-entry.header.status",0,1,"",""
 "fr-lm-allergy-intolerance.header.source","fr-lm-allergy-intolerance.header.source","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Source","Source","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.source",0,1,"",""
 "fr-lm-allergy-intolerance.header.language","fr-lm-allergy-intolerance.header.language","","","",0,1,"","","","CodeableConcept {[]} {[]}
@@ -57,8 +57,6 @@ La partie en majuscules indique le code pays (ISO-3166)","","","","","","","",""
 - Allergènes pouvant induire une contre-indication vaccinale : jdv-allergie-vaccin-cisis","","","","","","","","","",,,,,"",,,,"fr-lm-allergy-intolerance.agentOrAllergen",1,1,"",""
 "fr-lm-allergy-intolerance.note","fr-lm-allergy-intolerance.note","","","",0,1,"","","","string {[]} {[]}
 ","commentaire","commentaire","","","","","","","","","",,,,,"",,,,"fr-lm-allergy-intolerance.note",0,1,"",""
-"fr-lm-allergy-intolerance.clinicalStatus","fr-lm-allergy-intolerance.clinicalStatus","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Statut clinique de l'allergie","Statut clinique de l'allergie","","","","","","","","","",,"","jdv-hl7-allergyintolerance-clinical-cisis (2.16.840.1.113883.4.642.3.1372)","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-allergyintolerance-clinical-cisis","",,,,"fr-lm-allergy-intolerance.clinicalStatus",0,1,"",""
 "fr-lm-allergy-intolerance.criticality","fr-lm-allergy-intolerance.criticality","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Criticité","Criticité","","","","","","","","","",,"","jdv-hl7-allergy-intolerance-criticality-cisis (2.16.840.1.113883.4.642.3.129","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-allergy-intolerance-criticality-cisis","",,,,"fr-lm-allergy-intolerance.criticality",0,1,"",""
 "fr-lm-allergy-intolerance.certainty","fr-lm-allergy-intolerance.certainty","","","",0,1,"","","","CodeableConcept {[]} {[]}

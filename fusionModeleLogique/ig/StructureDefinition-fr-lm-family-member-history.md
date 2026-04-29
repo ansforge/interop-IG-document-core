@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-family-member-
   "name" : "FRLMFamilyMemberHistory",
   "title" : "Logical model - FR LM Family Member History",
   "status" : "draft",
-  "date" : "2026-04-29T08:17:29+00:00",
+  "date" : "2026-04-29T08:41:15+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -76,15 +76,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-family-member-
       "definition" : "Entrée Antécédent familial"
     },
     {
-      "id" : "fr-lm-family-member-history.status",
-      "path" : "fr-lm-family-member-history.status",
-      "short" : "Statut de l'entrée",
-      "definition" : "Statut de l'entrée",
+      "id" : "fr-lm-family-member-history.header.status",
+      "path" : "fr-lm-family-member-history.header.status",
       "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "code"
-      }],
       "binding" : {
         "description" : "Statut de l'entrée provenant du jdv FHIR https://hl7.org/fhir/R4/valueset-history-status",
         "valueSet" : "https://hl7.org/fhir/R4/valueset-history-status.html"

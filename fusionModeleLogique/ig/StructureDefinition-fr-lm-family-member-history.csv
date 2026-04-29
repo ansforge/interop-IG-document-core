@@ -30,7 +30,7 @@ https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organi
 "fr-lm-family-member-history.header.date","fr-lm-family-member-history.header.date","","","",0,1,"","","","dateTime {[]} {[]}
 ","Date/Heure de création par l'auteur","Date/Heure de création par l'auteur","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.date",0,1,"",""
 "fr-lm-family-member-history.header.status","fr-lm-family-member-history.header.status","","","",1,1,"","","","CodeableConcept {[]} {[]}
-","Statut de l'acte","Statut de l'acte","","","","","","","","","",,"","jdv-hl7-v3-ActStatus-cisis (2.16.840.1.113883.1.11.15933)","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis","",,,,"fr-lm-entry.header.status",1,1,"",""
+","Statut","Statut","","","","","","","","","",,"","Statut de l'entrée provenant du jdv FHIR https://hl7.org/fhir/R4/valueset-history-status","https://hl7.org/fhir/R4/valueset-history-status.html","",,,,"fr-lm-entry.header.status",0,1,"",""
 "fr-lm-family-member-history.header.source","fr-lm-family-member-history.header.source","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Source","Source","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.source",0,1,"",""
 "fr-lm-family-member-history.header.language","fr-lm-family-member-history.header.language","","","",0,1,"","","","CodeableConcept {[]} {[]}
@@ -39,8 +39,6 @@ La partie en minuscules indique le code de la langue utilisée (ISO-639-1)
 La partie en majuscules indique le code pays (ISO-3166)","'fr-FR' pour français métropolitain (la casse des caractères doit être respectée)
 La partie en minuscules indique le code de la langue utilisée (ISO-639-1)
 La partie en majuscules indique le code pays (ISO-3166)","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.language",0,1,"",""
-"fr-lm-family-member-history.status","fr-lm-family-member-history.status","","","",1,1,"","","","code {[]} {[]}
-","Statut de l'entrée","Statut de l'entrée","","","","","","","","","",,"","Statut de l'entrée provenant du jdv FHIR https://hl7.org/fhir/R4/valueset-history-status","https://hl7.org/fhir/R4/valueset-history-status.html","",,,,"fr-lm-family-member-history.status",1,1,"",""
 "fr-lm-family-member-history.relatedPerson","fr-lm-family-member-history.relatedPerson","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-related-person {[]} {[]}
 ","Membre de la famille","Membre de la famille","","","","","","","","","",,,,,"",,,,"fr-lm-family-member-history.relatedPerson",1,1,"",""
 "fr-lm-family-member-history.condition","fr-lm-family-member-history.condition","","","",0,*,"","","","BackboneElement {[]} {[]}

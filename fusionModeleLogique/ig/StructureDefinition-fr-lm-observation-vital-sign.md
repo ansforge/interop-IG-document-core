@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-observation-vi
   "name" : "FRLMObservationVitalSign",
   "title" : "Logical model - FR LM Observation Vital Sign",
   "status" : "draft",
-  "date" : "2026-04-29T08:17:29+00:00",
+  "date" : "2026-04-29T08:41:15+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -76,6 +76,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-observation-vi
       "definition" : "Signe vital observé"
     },
     {
+      "id" : "fr-lm-observation-vital-sign.header.status",
+      "path" : "fr-lm-observation-vital-sign.header.status",
+      "min" : 1
+    },
+    {
       "id" : "fr-lm-observation-vital-sign.observationDate[x]",
       "path" : "fr-lm-observation-vital-sign.observationDate[x]",
       "short" : "date de l'observation",
@@ -103,17 +108,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-observation-vi
         "description" : "Valeur issue du jdv-signe-vital-cisis (1.2.250.1.213.1.1.5.171)",
         "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-signe-vital-cisis"
       }
-    },
-    {
-      "id" : "fr-lm-observation-vital-sign.status",
-      "path" : "fr-lm-observation-vital-sign.status",
-      "short" : "Statut de l'entrée",
-      "definition" : "Statut de l'entrée",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "code"
-      }]
     },
     {
       "id" : "fr-lm-observation-vital-sign.method",

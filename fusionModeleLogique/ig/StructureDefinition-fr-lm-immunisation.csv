@@ -30,7 +30,7 @@ https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organi
 "fr-lm-immunisation.header.date","fr-lm-immunisation.header.date","","","",0,1,"","","","dateTime {[]} {[]}
 ","Date/Heure de création par l'auteur","Date/Heure de création par l'auteur","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.date",0,1,"",""
 "fr-lm-immunisation.header.status","fr-lm-immunisation.header.status","","","",1,1,"","","","CodeableConcept {[]} {[]}
-","Statut de la vaccination (réalisé, non fait, ...).","Statut de l'acte","","","","","","","","","",,"","jdv-hl7-v3-ActStatus-cisis (2.16.840.1.113883.1.11.15933)","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis","",,,,"fr-lm-entry.header.status",1,1,"",""
+","Statut de la vaccination (réalisé, non fait, ...).","Statut","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.status",0,1,"",""
 "fr-lm-immunisation.header.source","fr-lm-immunisation.header.source","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Source","Source","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.source",0,1,"",""
 "fr-lm-immunisation.header.language","fr-lm-immunisation.header.language","","","",0,1,"","","","CodeableConcept {[]} {[]}

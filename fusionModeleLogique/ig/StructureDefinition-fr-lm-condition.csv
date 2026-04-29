@@ -29,8 +29,8 @@ https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organi
 ","Informateur","Informateur","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.informant",0,*,"",""
 "fr-lm-condition.header.date","fr-lm-condition.header.date","","","",0,1,"","","","dateTime {[]} {[]}
 ","Date/Heure de création par l'auteur","Date/Heure de création par l'auteur","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.date",0,1,"",""
-"fr-lm-condition.header.status","fr-lm-condition.header.status","","","",1,1,"","","","CodeableConcept {[]} {[]}
-","Statut de l'acte","Statut de l'acte","","","","","","","","","",,"","jdv-hl7-v3-ActStatus-cisis (2.16.840.1.113883.1.11.15933)","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis","",,,,"fr-lm-entry.header.status",1,1,"",""
+"fr-lm-condition.header.status","fr-lm-condition.header.status","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Statut du problème","Statut","","","","","","","","","",,"","Valeur issue du jdv-hl7-condition-clinical-cisis (2.16.840.1.113883.4.642.3.164)","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-condition-clinical-cisis","",,,,"fr-lm-entry.header.status",0,1,"",""
 "fr-lm-condition.header.source","fr-lm-condition.header.source","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Source","Source","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.source",0,1,"",""
 "fr-lm-condition.header.language","fr-lm-condition.header.language","","","",0,1,"","","","CodeableConcept {[]} {[]}
@@ -72,8 +72,6 @@ boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[
 ","Date de fin","Date de fin","","","","","","","","","",,,,,"",,,,"fr-lm-condition.period.endDate",0,1,"",""
 "fr-lm-condition.severity","fr-lm-condition.severity","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Sévérité de la manifestion","Sévérité de la manifestion","","","","","","","","","",,"","(preferred): SNOMED_CT => Valeur issue du jdv-severite-observation-cisis (1.2.250.1.213.1.1.5.675)","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-severite-observation-cisis","",,,,"fr-lm-condition.severity",0,1,"",""
-"fr-lm-condition.conditionStatus","fr-lm-condition.conditionStatus","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Statut du problème","Statut du problème","","","","","","","","","",,"","Valeur issue du jdv-hl7-condition-clinical-cisis (2.16.840.1.113883.4.642.3.164)","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-condition-clinical-cisis","",,,,"fr-lm-condition.conditionStatus",0,1,"",""
 "fr-lm-condition.clinicalStatus","fr-lm-condition.clinicalStatus","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Statut clinique du patient","Statut clinique du patient","","","","","","","","","",,,,,"",,,,"fr-lm-condition.clinicalStatus",0,1,"",""
 "fr-lm-condition.bodySite","fr-lm-condition.bodySite","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-body-structure {[]} {[]}

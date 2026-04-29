@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-pregnancy-hist
   "name" : "FRLMPregnancyHistory",
   "title" : "Logical model- FR LM Pregnancy History",
   "status" : "draft",
-  "date" : "2026-04-29T08:17:29+00:00",
+  "date" : "2026-04-29T08:41:15+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -74,6 +74,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-pregnancy-hist
       "path" : "fr-lm-pregnancy-history",
       "short" : "Logical model- FR LM Pregnancy History",
       "definition" : "Entrée Historique de la grossesse"
+    },
+    {
+      "id" : "fr-lm-pregnancy-history.header.status",
+      "path" : "fr-lm-pregnancy-history.header.status",
+      "min" : 1
     },
     {
       "id" : "fr-lm-pregnancy-history.directSubject[x]",

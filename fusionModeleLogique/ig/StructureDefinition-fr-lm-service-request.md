@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-service-reques
   "name" : "FRLMServiceRequest",
   "title" : "Logical model - FR LM Service Request",
   "status" : "draft",
-  "date" : "2026-04-29T08:17:29+00:00",
+  "date" : "2026-04-29T08:41:15+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -78,7 +78,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-service-reques
     {
       "id" : "fr-lm-service-request.header.status",
       "path" : "fr-lm-service-request.header.status",
-      "short" : "Statut de la demande"
+      "short" : "Statut de la demande",
+      "min" : 1
     },
     {
       "id" : "fr-lm-service-request.code",

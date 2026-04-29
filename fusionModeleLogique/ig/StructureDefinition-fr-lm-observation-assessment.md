@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-observation-as
   "name" : "FRLMObservationAssessment",
   "title" : "Logical model - FR LM Assessment",
   "status" : "draft",
-  "date" : "2026-04-29T08:17:29+00:00",
+  "date" : "2026-04-29T08:41:15+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -74,6 +74,12 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-observation-as
       "path" : "fr-lm-observation-assessment",
       "short" : "Logical model - FR LM Assessment",
       "definition" : "Entrée Evaluation"
+    },
+    {
+      "id" : "fr-lm-observation-assessment.header.status",
+      "path" : "fr-lm-observation-assessment.header.status",
+      "short" : "Statut de l'évaluation",
+      "min" : 1
     },
     {
       "id" : "fr-lm-observation-assessment.observationDate[x]",

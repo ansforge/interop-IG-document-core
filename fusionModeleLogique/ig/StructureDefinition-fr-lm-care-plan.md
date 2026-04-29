@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-care-plan.csv)
   "name" : "FRLMCarePlan",
   "title" : "Logical model - FR LM Care Plan",
   "status" : "draft",
-  "date" : "2026-04-29T08:17:29+00:00",
+  "date" : "2026-04-29T08:41:15+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -78,7 +78,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-care-plan.csv)
     {
       "id" : "fr-lm-care-plan.header.status",
       "path" : "fr-lm-care-plan.header.status",
-      "short" : "Statut du plan de soin (projet, actif, suspendu, annulé, terminé, erreur, inconnu)"
+      "short" : "Statut du plan de soin (projet, actif, suspendu, annulé, terminé, erreur, inconnu)",
+      "min" : 1
     },
     {
       "id" : "fr-lm-care-plan.addresses",

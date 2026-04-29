@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-specimen.csv),
   "name" : "FRLMSpecimen",
   "title" : "Logical model - FR LM Specimen",
   "status" : "draft",
-  "date" : "2026-04-29T08:17:29+00:00",
+  "date" : "2026-04-29T08:41:15+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -76,6 +76,14 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-specimen.csv),
       "definition" : "Entrée Prélèvement"
     },
     {
+      "id" : "fr-lm-specimen.header.status",
+      "path" : "fr-lm-specimen.header.status",
+      "short" : "Disponibilité du prélèvement",
+      "binding" : {
+        "description" : "(preferred): HL7 specimen-status"
+      }
+    },
+    {
       "id" : "fr-lm-specimen.identifier",
       "path" : "fr-lm-specimen.identifier",
       "short" : "Identifiant unique de l'échantillon, au sein d'un périmètre défini. Exemple : identifiant attribué par le système du préleveur, identifiant attribué par le laboratoire, etc. Plusieurs identifiants peuvent être utilisés.",
@@ -85,20 +93,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-specimen.csv),
       "type" : [{
         "code" : "Identifier"
       }]
-    },
-    {
-      "id" : "fr-lm-specimen.status",
-      "path" : "fr-lm-specimen.status",
-      "short" : "Disponibilité du prélèvement",
-      "definition" : "Disponibilité du prélèvement",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "CodeableConcept"
-      }],
-      "binding" : {
-        "description" : "(preferred): HL7 specimen-status"
-      }
     },
     {
       "id" : "fr-lm-specimen.type",

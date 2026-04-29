@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-observation-so
   "name" : "FRLMObservationSocialHistory",
   "title" : "Logical model- FR LM Observation Social History",
   "status" : "draft",
-  "date" : "2026-04-29T08:17:29+00:00",
+  "date" : "2026-04-29T08:41:15+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -74,6 +74,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-observation-so
       "path" : "fr-lm-observation-social-history",
       "short" : "Logical model- FR LM Observation Social History",
       "definition" : "Entrée Habitus Mode de vie"
+    },
+    {
+      "id" : "fr-lm-observation-social-history.header.status",
+      "path" : "fr-lm-observation-social-history.header.status",
+      "min" : 1
     },
     {
       "id" : "fr-lm-observation-social-history.observationDate[x]",

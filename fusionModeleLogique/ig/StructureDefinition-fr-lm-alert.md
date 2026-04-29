@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-alert.csv), [E
   "name" : "FRLMAlert",
   "title" : "Logical model - FR LM Alert",
   "status" : "draft",
-  "date" : "2026-04-29T08:17:29+00:00",
+  "date" : "2026-04-29T08:41:15+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -74,6 +74,12 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-alert.csv), [E
       "path" : "fr-lm-alert",
       "short" : "Logical model - FR LM Alert",
       "definition" : "Entrée points de vigilances"
+    },
+    {
+      "id" : "fr-lm-alert.header.status",
+      "path" : "fr-lm-alert.header.status",
+      "short" : "Statut de l'alerte",
+      "min" : 1
     },
     {
       "id" : "fr-lm-alert.code",

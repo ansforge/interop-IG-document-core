@@ -31,7 +31,7 @@
   fhir:name [ fhir:v "FRLMStatusDocumentEntry"] ; # 
   fhir:title [ fhir:v "Logical model - FR LM Statut du document"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-04-29T08:17:29+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-04-29T08:41:15+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -347,13 +347,13 @@
      ] [
        fhir:id [ fhir:v "fr-lm-status-document-entry.header.status" ] ;
        fhir:path [ fhir:v "fr-lm-status-document-entry.header.status" ] ;
-       fhir:short [ fhir:v "Statut de l'acte" ] ;
-       fhir:definition [ fhir:v "Statut de l'acte" ] ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:short [ fhir:v "Statut" ] ;
+       fhir:definition [ fhir:v "Statut" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
          fhir:path [ fhir:v "fr-lm-entry.header.status" ] ;
-         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
@@ -361,14 +361,7 @@
            fhir:v "CodeableConcept"^^xsd:anyURI ;
            fhir:l fhir:CodeableConcept
          ]
-       ] ) ;
-       fhir:binding [
-         fhir:description [ fhir:v "jdv-hl7-v3-ActStatus-cisis (2.16.840.1.113883.1.11.15933)" ] ;
-         fhir:valueSet [
-           fhir:v "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis"^^xsd:anyURI ;
-           fhir:l <https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis>
-         ]
-       ]
+       ] )
      ] [
        fhir:id [ fhir:v "fr-lm-status-document-entry.header.source" ] ;
        fhir:path [ fhir:v "fr-lm-status-document-entry.header.source" ] ;

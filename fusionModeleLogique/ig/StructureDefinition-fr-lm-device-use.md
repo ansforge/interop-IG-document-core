@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-device-use.csv
   "name" : "FRLMDeviceUse",
   "title" : "Logical model - FR LM Device use",
   "status" : "draft",
-  "date" : "2026-04-29T08:17:29+00:00",
+  "date" : "2026-04-29T08:41:15+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -76,16 +76,12 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-device-use.csv
       "definition" : "Entrée Dispositif médical usage"
     },
     {
-      "id" : "fr-lm-device-use.usageStatus",
-      "path" : "fr-lm-device-use.usageStatus",
+      "id" : "fr-lm-device-use.header.status",
+      "path" : "fr-lm-device-use.header.status",
       "short" : "Status de l'utilisation du DM (ex active, completed, etc).",
-      "definition" : "Status de l'utilisation du DM (ex active, completed, etc).",
       "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "CodeableConcept"
-      }],
       "binding" : {
+        "description" : "Valeur issue du http://hl7.org/fhir/ValueSet/device-statement-status",
         "valueSet" : "https://hl7.org/fhir/R4/valueset-device-statement-status.html"
       }
     },
@@ -133,20 +129,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-device-use.csv
       "type" : [{
         "code" : "dateTime"
       }]
-    },
-    {
-      "id" : "fr-lm-device-use.DeviceUsageStatus",
-      "path" : "fr-lm-device-use.DeviceUsageStatus",
-      "short" : "Status de l'utilisation du DM (ex active, completed, etc).",
-      "definition" : "Status de l'utilisation du DM (ex active, completed, etc).",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "CodeableConcept"
-      }],
-      "binding" : {
-        "valueSet" : "https://hl7.org/fhir/R4/valueset-device-statement-status.html"
-      }
     },
     {
       "id" : "fr-lm-device-use.device",

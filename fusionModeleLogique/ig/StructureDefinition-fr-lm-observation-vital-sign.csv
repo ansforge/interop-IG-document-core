@@ -30,7 +30,7 @@ https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organi
 "fr-lm-observation-vital-sign.header.date","fr-lm-observation-vital-sign.header.date","","","",0,1,"","","","dateTime {[]} {[]}
 ","Date/Heure de création par l'auteur","Date/Heure de création par l'auteur","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.date",0,1,"",""
 "fr-lm-observation-vital-sign.header.status","fr-lm-observation-vital-sign.header.status","","","",1,1,"","","","CodeableConcept {[]} {[]}
-","Statut de l'acte","Statut de l'acte","","","","","","","","","",,"","jdv-hl7-v3-ActStatus-cisis (2.16.840.1.113883.1.11.15933)","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis","",,,,"fr-lm-entry.header.status",1,1,"",""
+","Statut","Statut","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.status",0,1,"",""
 "fr-lm-observation-vital-sign.header.source","fr-lm-observation-vital-sign.header.source","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Source","Source","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.source",0,1,"",""
 "fr-lm-observation-vital-sign.header.language","fr-lm-observation-vital-sign.header.language","","","",0,1,"","","","CodeableConcept {[]} {[]}
@@ -43,8 +43,6 @@ La partie en majuscules indique le code pays (ISO-3166)","","","","","","","",""
 Period {[]} {[]}","date de l'observation","date de l'observation","","","","","","","","","",,,,,"",,,,"fr-lm-observation-vital-sign.observationDate[x]",1,1,"",""
 "fr-lm-observation-vital-sign.type","fr-lm-observation-vital-sign.type","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Type d'observation","Type d'observation","","","","","","","","","",,"","Valeur issue du jdv-signe-vital-cisis (1.2.250.1.213.1.1.5.171)","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-signe-vital-cisis","",,,,"fr-lm-observation-vital-sign.type",1,1,"",""
-"fr-lm-observation-vital-sign.status","fr-lm-observation-vital-sign.status","","","",1,1,"","","","code {[]} {[]}
-","Statut de l'entrée","Statut de l'entrée","","","","","","","","","",,,,,"",,,,"fr-lm-observation-vital-sign.status",1,1,"",""
 "fr-lm-observation-vital-sign.method","fr-lm-observation-vital-sign.method","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Méthode utilisée pour l'observation","Méthode utilisée pour l'observation","","","","","","","","","",,,,,"",,,,"fr-lm-observation-vital-sign.method",0,1,"",""
 "fr-lm-observation-vital-sign.bodySite","fr-lm-observation-vital-sign.bodySite","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-body-structure {[]} {[]}

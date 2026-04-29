@@ -24,7 +24,7 @@ The reference class contains the attribute reference.seperatableInd, which indic
   <name value="FRLMMedicationAdministration"/>
   <title value="Logical model- FR LM Medication Administration&#x9;"/>
   <status value="draft"/>
-  <date value="2026-04-29T08:17:29+00:00"/>
+  <date value="2026-04-29T08:41:15+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -279,22 +279,18 @@ The reference class contains the attribute reference.seperatableInd, which indic
     </element>
     <element id="fr-lm-medication-administration.header.status">
       <path value="fr-lm-medication-administration.header.status"/>
-      <short value="Statut de l'acte"/>
-      <definition value="Statut de l'acte"/>
-      <min value="1"/>
+      <short value="Statut"/>
+      <definition value="Statut"/>
+      <min value="0"/>
       <max value="1"/>
       <base>
         <path value="fr-lm-entry.header.status"/>
-        <min value="1"/>
+        <min value="0"/>
         <max value="1"/>
       </base>
       <type>
         <code value="CodeableConcept"/>
       </type>
-      <binding>
-        <description value="jdv-hl7-v3-ActStatus-cisis (2.16.840.1.113883.1.11.15933)"/>
-        <valueSet value="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis"/>
-      </binding>
     </element>
     <element id="fr-lm-medication-administration.header.source">
       <path value="fr-lm-medication-administration.header.source"/>

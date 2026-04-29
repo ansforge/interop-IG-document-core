@@ -30,7 +30,7 @@ https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organi
 "fr-lm-device-use.header.date","fr-lm-device-use.header.date","","","",0,1,"","","","dateTime {[]} {[]}
 ","Date/Heure de création par l'auteur","Date/Heure de création par l'auteur","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.date",0,1,"",""
 "fr-lm-device-use.header.status","fr-lm-device-use.header.status","","","",1,1,"","","","CodeableConcept {[]} {[]}
-","Statut de l'acte","Statut de l'acte","","","","","","","","","",,"","jdv-hl7-v3-ActStatus-cisis (2.16.840.1.113883.1.11.15933)","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis","",,,,"fr-lm-entry.header.status",1,1,"",""
+","Status de l'utilisation du DM (ex active, completed, etc).","Statut","","","","","","","","","",,"","Valeur issue du http://hl7.org/fhir/ValueSet/device-statement-status","https://hl7.org/fhir/R4/valueset-device-statement-status.html","",,,,"fr-lm-entry.header.status",0,1,"",""
 "fr-lm-device-use.header.source","fr-lm-device-use.header.source","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Source","Source","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.source",0,1,"",""
 "fr-lm-device-use.header.language","fr-lm-device-use.header.language","","","",0,1,"","","","CodeableConcept {[]} {[]}
@@ -39,8 +39,6 @@ La partie en minuscules indique le code de la langue utilisée (ISO-639-1)
 La partie en majuscules indique le code pays (ISO-3166)","'fr-FR' pour français métropolitain (la casse des caractères doit être respectée)
 La partie en minuscules indique le code de la langue utilisée (ISO-639-1)
 La partie en majuscules indique le code pays (ISO-3166)","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.language",0,1,"",""
-"fr-lm-device-use.usageStatus","fr-lm-device-use.usageStatus","","","",1,1,"","","","CodeableConcept {[]} {[]}
-","Status de l'utilisation du DM (ex active, completed, etc).","Status de l'utilisation du DM (ex active, completed, etc).","","","","","","","","","",,"","","https://hl7.org/fhir/R4/valueset-device-statement-status.html","",,,,"fr-lm-device-use.usageStatus",1,1,"",""
 "fr-lm-device-use.periodOfUse","fr-lm-device-use.periodOfUse","","","",1,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/organization-period]]} {[]}
 ","Période d'utilisation ou de présence chez le patient","Période d'utilisation ou de présence chez le patient","","","","","","","","","",,,,,"",,,,"fr-lm-device-use.periodOfUse",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -62,8 +60,6 @@ boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[
 ","Date de fin","Date de fin","","","","","","","","","",,,,,"",,,,"fr-lm-device-use.periodOfUse.endDate",0,1,"",""
 "fr-lm-device-use.periodOfUse.duration","fr-lm-device-use.periodOfUse.duration","","","",0,1,"","","","dateTime {[]} {[]}
 ","Durée d'utilisation","Durée d'utilisation","","","","","","","","","",,,,,"",,,,"fr-lm-device-use.periodOfUse.duration",0,1,"",""
-"fr-lm-device-use.DeviceUsageStatus","fr-lm-device-use.DeviceUsageStatus","","","",1,1,"","","","CodeableConcept {[]} {[]}
-","Status de l'utilisation du DM (ex active, completed, etc).","Status de l'utilisation du DM (ex active, completed, etc).","","","","","","","","","",,"","","https://hl7.org/fhir/R4/valueset-device-statement-status.html","",,,,"fr-lm-device-use.DeviceUsageStatus",1,1,"",""
 "fr-lm-device-use.device","fr-lm-device-use.device","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device {[]} {[]}
 ","Dispositif médical","Dispositif médical","","","","","","","","","",,,,,"",,,,"fr-lm-device-use.device",1,1,"",""
 "fr-lm-device-use.bodySite","fr-lm-device-use.bodySite","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-body-structure {[]} {[]}

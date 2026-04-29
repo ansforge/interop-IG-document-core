@@ -7,7 +7,7 @@
 ","Patient / Usager","Patient / Usager","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.subject",1,1,"",""
 "fr-lm-prescription-item.header.identifier","fr-lm-prescription-item.header.identifier","","","",1,*,"","","","Identifier {[]} {[]}
 ","Identifiant de l’entrée","Identifiant de l’entrée","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.identifier",0,*,"",""
-"fr-lm-prescription-item.header.author[x]","fr-lm-prescription-item.header.author[x]","","","",0,*,"","","","Base {[]} {[]}
+"fr-lm-prescription-item.header.author[x]","fr-lm-prescription-item.header.author[x]","","","",0,1,"","","","Base {[]} {[]}
 ","Auteur de la prescription","author[x] peut correspondre soit à un professionnel, soit à une organisation, soit à un système.","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.author[x]",0,*,"",""
 "fr-lm-prescription-item.header.author[x].authorProfessional","fr-lm-prescription-item.header.author[x].authorProfessional","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional {[]} {[]}
 ","L'auteur est un professionnel de santé","L'auteur est un professionnel de santé","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.author[x].authorProfessional",0,*,"",""
@@ -30,7 +30,7 @@ https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organi
 "fr-lm-prescription-item.header.date","fr-lm-prescription-item.header.date","","","",0,1,"","","","dateTime {[]} {[]}
 ","Date/Heure de création par l'auteur","Date/Heure de création par l'auteur","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.date",0,1,"",""
 "fr-lm-prescription-item.header.status","fr-lm-prescription-item.header.status","","","",1,1,"","","","CodeableConcept {[]} {[]}
-","Statut de la ligne de prescription","Statut de l'acte","","","","","","","","","",,"","jdv-hl7-v3-ActStatus-cisis (2.16.840.1.113883.1.11.15933)","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis","",,,,"fr-lm-entry.header.status",1,1,"",""
+","Statut de la ligne de prescription","Statut","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.status",0,1,"",""
 "fr-lm-prescription-item.header.source","fr-lm-prescription-item.header.source","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Source","Source","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.source",0,1,"",""
 "fr-lm-prescription-item.header.language","fr-lm-prescription-item.header.language","","","",0,1,"","","","CodeableConcept {[]} {[]}

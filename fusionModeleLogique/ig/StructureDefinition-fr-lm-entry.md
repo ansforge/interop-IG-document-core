@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-entry.csv), [E
   "name" : "FRLMEntry",
   "title" : "FR LM Entry",
   "status" : "draft",
-  "date" : "2026-04-29T08:17:29+00:00",
+  "date" : "2026-04-29T08:41:15+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -231,17 +231,13 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-entry.csv), [E
     {
       "id" : "fr-lm-entry.header.status",
       "path" : "fr-lm-entry.header.status",
-      "short" : "Statut de l'acte",
-      "definition" : "Statut de l'acte",
-      "min" : 1,
+      "short" : "Statut",
+      "definition" : "Statut",
+      "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "CodeableConcept"
-      }],
-      "binding" : {
-        "description" : "jdv-hl7-v3-ActStatus-cisis (2.16.840.1.113883.1.11.15933)",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis"
-      }
+      }]
     },
     {
       "id" : "fr-lm-entry.header.source",

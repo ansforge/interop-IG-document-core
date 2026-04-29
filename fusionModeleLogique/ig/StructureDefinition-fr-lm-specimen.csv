@@ -29,8 +29,8 @@ https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organi
 ","Informateur","Informateur","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.informant",0,*,"",""
 "fr-lm-specimen.header.date","fr-lm-specimen.header.date","","","",0,1,"","","","dateTime {[]} {[]}
 ","Date/Heure de création par l'auteur","Date/Heure de création par l'auteur","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.date",0,1,"",""
-"fr-lm-specimen.header.status","fr-lm-specimen.header.status","","","",1,1,"","","","CodeableConcept {[]} {[]}
-","Statut de l'acte","Statut de l'acte","","","","","","","","","",,"","jdv-hl7-v3-ActStatus-cisis (2.16.840.1.113883.1.11.15933)","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis","",,,,"fr-lm-entry.header.status",1,1,"",""
+"fr-lm-specimen.header.status","fr-lm-specimen.header.status","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Disponibilité du prélèvement","Statut","","","","","","","","","",,"","(preferred): HL7 specimen-status","","",,,,"fr-lm-entry.header.status",0,1,"",""
 "fr-lm-specimen.header.source","fr-lm-specimen.header.source","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Source","Source","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.source",0,1,"",""
 "fr-lm-specimen.header.language","fr-lm-specimen.header.language","","","",0,1,"","","","CodeableConcept {[]} {[]}
@@ -41,8 +41,6 @@ La partie en minuscules indique le code de la langue utilisée (ISO-639-1)
 La partie en majuscules indique le code pays (ISO-3166)","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.language",0,1,"",""
 "fr-lm-specimen.identifier","fr-lm-specimen.identifier","","","",1,*,"","","","Identifier {[]} {[]}
 ","Identifiant unique de l'échantillon, au sein d'un périmètre défini. Exemple : identifiant attribué par le système du préleveur, identifiant attribué par le laboratoire, etc. Plusieurs identifiants peuvent être utilisés.","Identifiant unique de l'échantillon, au sein d'un périmètre défini. Exemple : identifiant attribué par le système du préleveur, identifiant attribué par le laboratoire, etc. Plusieurs identifiants peuvent être utilisés.","","","","","","","","","",,,,,"",,,,"fr-lm-specimen.identifier",1,*,"",""
-"fr-lm-specimen.status","fr-lm-specimen.status","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Disponibilité du prélèvement","Disponibilité du prélèvement","","","","","","","","","",,"","(preferred): HL7 specimen-status","","",,,,"fr-lm-specimen.status",0,1,"",""
 "fr-lm-specimen.type","fr-lm-specimen.type","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Échantillon prélevé","Échantillon prélevé","","","","","","","","","",,"","jdv-specimen-type-cisis (1.2.250.1.213.1.1.5.819)","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-specimen-type-cisis","",,,,"fr-lm-specimen.type",0,1,"",""
 "fr-lm-specimen.specimenSource[x]","fr-lm-specimen.specimenSource[x]","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient {[]} {[]}

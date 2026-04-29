@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-condition.csv)
   "name" : "FRLMCondition",
   "title" : "Logical model - FR LM Condition",
   "status" : "draft",
-  "date" : "2026-04-29T08:17:29+00:00",
+  "date" : "2026-04-29T08:41:15+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -74,6 +74,15 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-condition.csv)
       "path" : "fr-lm-condition",
       "short" : "Logical model - FR LM Condition",
       "definition" : "Entrée Problème"
+    },
+    {
+      "id" : "fr-lm-condition.header.status",
+      "path" : "fr-lm-condition.header.status",
+      "short" : "Statut du problème",
+      "binding" : {
+        "description" : "Valeur issue du jdv-hl7-condition-clinical-cisis (2.16.840.1.113883.4.642.3.164)",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-condition-clinical-cisis"
+      }
     },
     {
       "id" : "fr-lm-condition.type",
@@ -148,21 +157,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-condition.csv)
       "binding" : {
         "description" : "(preferred): SNOMED_CT => Valeur issue du jdv-severite-observation-cisis (1.2.250.1.213.1.1.5.675)",
         "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-severite-observation-cisis"
-      }
-    },
-    {
-      "id" : "fr-lm-condition.conditionStatus",
-      "path" : "fr-lm-condition.conditionStatus",
-      "short" : "Statut du problème",
-      "definition" : "Statut du problème",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "CodeableConcept"
-      }],
-      "binding" : {
-        "description" : "Valeur issue du jdv-hl7-condition-clinical-cisis (2.16.840.1.113883.4.642.3.164)",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-condition-clinical-cisis"
       }
     },
     {

@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-pregnancy-obse
   "name" : "FRLMPregnancyObservation",
   "title" : "Logical model- FR LM Pregnancy Observation",
   "status" : "draft",
-  "date" : "2026-04-29T08:17:29+00:00",
+  "date" : "2026-04-29T08:41:15+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -74,6 +74,12 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-pregnancy-obse
       "path" : "fr-lm-pregnancy-observation",
       "short" : "Logical model- FR LM Pregnancy Observation",
       "definition" : "Observation sur la grossesse"
+    },
+    {
+      "id" : "fr-lm-pregnancy-observation.header.status",
+      "path" : "fr-lm-pregnancy-observation.header.status",
+      "short" : "Statut de l'observation",
+      "min" : 1
     },
     {
       "id" : "fr-lm-pregnancy-observation.directSubject[x]",

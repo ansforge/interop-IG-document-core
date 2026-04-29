@@ -29,8 +29,8 @@ https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organi
 ","Informateur","Informateur","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.informant",0,*,"",""
 "fr-lm-batterie-examens-biologie-medicale.header.date","fr-lm-batterie-examens-biologie-medicale.header.date","","","",0,1,"","","","dateTime {[]} {[]}
 ","Date/Heure de création par l'auteur","Date/Heure de création par l'auteur","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.date",0,1,"",""
-"fr-lm-batterie-examens-biologie-medicale.header.status","fr-lm-batterie-examens-biologie-medicale.header.status","","","",1,1,"","","","CodeableConcept {[]} {[]}
-","Statut de l'acte","Statut de l'acte","","","","","","","","","",,"","jdv-hl7-v3-ActStatus-cisis (2.16.840.1.113883.1.11.15933)","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis","",,,,"fr-lm-entry.header.status",1,1,"",""
+"fr-lm-batterie-examens-biologie-medicale.header.status","fr-lm-batterie-examens-biologie-medicale.header.status","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Statut","Statut","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.status",0,1,"",""
 "fr-lm-batterie-examens-biologie-medicale.header.source","fr-lm-batterie-examens-biologie-medicale.header.source","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Source","Source","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.source",0,1,"",""
 "fr-lm-batterie-examens-biologie-medicale.header.language","fr-lm-batterie-examens-biologie-medicale.header.language","","","",0,1,"","","","CodeableConcept {[]} {[]}

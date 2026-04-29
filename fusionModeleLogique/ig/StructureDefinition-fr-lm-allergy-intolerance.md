@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-allergy-intole
   "name" : "FRLMAllergyIntolerance",
   "title" : "Logical model - FR LM Allergy Intolerance",
   "status" : "draft",
-  "date" : "2026-04-29T08:17:29+00:00",
+  "date" : "2026-04-29T08:41:15+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -74,6 +74,15 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-allergy-intole
       "path" : "fr-lm-allergy-intolerance",
       "short" : "Logical model - FR LM Allergy Intolerance",
       "definition" : "Entrée Allergie ou Hypersensibilité"
+    },
+    {
+      "id" : "fr-lm-allergy-intolerance.header.status",
+      "path" : "fr-lm-allergy-intolerance.header.status",
+      "short" : "Statut clinique de l'allergie",
+      "binding" : {
+        "description" : "jdv-hl7-allergyintolerance-clinical-cisis (2.16.840.1.113883.4.642.3.1372)",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-allergyintolerance-clinical-cisis"
+      }
     },
     {
       "id" : "fr-lm-allergy-intolerance.type",
@@ -125,21 +134,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-allergy-intole
       "type" : [{
         "code" : "string"
       }]
-    },
-    {
-      "id" : "fr-lm-allergy-intolerance.clinicalStatus",
-      "path" : "fr-lm-allergy-intolerance.clinicalStatus",
-      "short" : "Statut clinique de l'allergie",
-      "definition" : "Statut clinique de l'allergie",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "CodeableConcept"
-      }],
-      "binding" : {
-        "description" : "jdv-hl7-allergyintolerance-clinical-cisis (2.16.840.1.113883.4.642.3.1372)",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-allergyintolerance-clinical-cisis"
-      }
     },
     {
       "id" : "fr-lm-allergy-intolerance.criticality",

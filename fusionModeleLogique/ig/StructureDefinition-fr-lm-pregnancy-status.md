@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-pregnancy-stat
   "name" : "FRLMPregnancyStatus",
   "title" : "Logical model- FR LM Pregnancy Status",
   "status" : "draft",
-  "date" : "2026-04-29T08:17:29+00:00",
+  "date" : "2026-04-29T08:41:15+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -74,6 +74,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-pregnancy-stat
       "path" : "fr-lm-pregnancy-status",
       "short" : "Logical model- FR LM Pregnancy Status",
       "definition" : "Statut de grossesse"
+    },
+    {
+      "id" : "fr-lm-pregnancy-status.header.status",
+      "path" : "fr-lm-pregnancy-status.header.status",
+      "min" : 1
     },
     {
       "id" : "fr-lm-pregnancy-status.observationDate[x]",
