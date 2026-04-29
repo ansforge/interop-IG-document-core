@@ -1,0 +1,29 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"fr-lm-education-patient","fr-lm-education-patient","","","",0,*,"","","","null {[]} {[]}
+","Modèle logique métier - FR LM Education du patient","Section Education du patient","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"fr-lm-education-patient.codeSection","fr-lm-education-patient.codeSection","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Code de la section","Code de la section","","","","","","","","","",,,,,"",,,,"fr-lm-section.codeSection",1,1,"",""
+"fr-lm-education-patient.titreSection","fr-lm-education-patient.titreSection","","","",0,1,"","","","string {[]} {[]}
+","Titre de la section","Titre de la section","","","","","","","","","",,,,,"",,,,"fr-lm-section.titreSection",0,1,"",""
+"fr-lm-education-patient.blocNarratif","fr-lm-education-patient.blocNarratif","","","",1,1,"","","","Narrative {[]} {[]}
+","Bloc narratif","Bloc narratif","","","","","","","","","",,,,,"",,,,"fr-lm-section.blocNarratif",1,1,"",""
+"fr-lm-education-patient.author[x]","fr-lm-education-patient.author[x]","","","",0,*,"","","","Base {[]} {[]}
+","author[x] peut correspondre soit à un professionnel, soit à une organisation, soit à un système.","author[x] peut correspondre soit à un professionnel, soit à une organisation, soit à un système.","","","","","","","","","",,,,,"",,,,"fr-lm-section.author[x]",0,*,"",""
+"fr-lm-education-patient.author[x].authorProfessional","fr-lm-education-patient.author[x].authorProfessional","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional {[]} {[]}
+","L'auteur est un professionnel de santé","L'auteur est un professionnel de santé","","","","","","","","","",,,,,"",,,,"fr-lm-section.author[x].authorProfessional",0,*,"",""
+"fr-lm-education-patient.author[x].authorOrganisation","fr-lm-education-patient.author[x].authorOrganisation","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organisation {[]} {[]}
+","L'auteur est une organisation","L'auteur est une organisation","","","","","","","","","",,,,,"",,,,"fr-lm-section.author[x].authorOrganisation",0,*,"",""
+"fr-lm-education-patient.author[x].authorDevice","fr-lm-education-patient.author[x].authorDevice","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device {[]} {[]}
+","L'auteur est un système","L'auteur est un système","","","","","","","","","",,,,,"",,,,"fr-lm-section.author[x].authorDevice",0,*,"",""
+"fr-lm-education-patient.informant","fr-lm-education-patient.informant","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-informant {[]} {[]}
+","Informateur","Informateur","","","","","","","","","",,,,,"",,,,"fr-lm-section.informant",0,*,"",""
+"fr-lm-education-patient.sousSection","fr-lm-education-patient.sousSection","","","",0,0,"","","","Base {[]} {[]}
+","Sous-sections","Sous-sections","","","","","","","","","",,,,,"",,,,"fr-lm-section.sousSection",0,*,"",""
+"fr-lm-education-patient.entree","fr-lm-education-patient.entree","","","",0,*,"","","","Base {[]} {[]}
+","Entrées","Entrées","","","","","","","","","",,,,,"",,,,"fr-lm-section.entree",0,*,"",""
+"fr-lm-education-patient.entree.acte","fr-lm-education-patient.entree.acte","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-procedure {[]} {[]}
+","Entrée Acte","Entrée Acte","","","","","","","","","",,,,,"",,,,"fr-lm-education-patient.entree.acte",0,*,"",""
+"fr-lm-education-patient.entree.observation","fr-lm-education-patient.entree.observation","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation {[]} {[]}
+","Entrée Simple observation","Entrée Simple observation","","","","","","","","","",,,,,"",,,,"fr-lm-education-patient.entree.observation",0,*,"",""
+"fr-lm-education-patient.entree.reference","fr-lm-education-patient.entree.reference","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-references-externes {[]} {[]}
+","Entrée References externes","Entrée References externes","","","","","","","","","",,,,,"",,,,"fr-lm-education-patient.entree.reference",0,*,"",""

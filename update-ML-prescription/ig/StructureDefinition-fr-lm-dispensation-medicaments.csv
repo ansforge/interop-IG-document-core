@@ -1,0 +1,25 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"fr-lm-dispensation-medicaments","fr-lm-dispensation-medicaments","","","",0,*,"","","","null {[]} {[]}
+","Modèle logique métier - FR LM Dispensation médicaments","Section Dispensation médicaments","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"fr-lm-dispensation-medicaments.codeSection","fr-lm-dispensation-medicaments.codeSection","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Code de la section","Code de la section","","","","","","","","","",,,,,"",,,,"fr-lm-section.codeSection",1,1,"",""
+"fr-lm-dispensation-medicaments.titreSection","fr-lm-dispensation-medicaments.titreSection","","","",1,1,"","","","string {[]} {[]}
+","Titre de la section","Titre de la section","","","","","","","","","",,,,,"",,,,"fr-lm-section.titreSection",0,1,"",""
+"fr-lm-dispensation-medicaments.blocNarratif","fr-lm-dispensation-medicaments.blocNarratif","","","",1,1,"","","","Narrative {[]} {[]}
+","Bloc narratif","Bloc narratif","","","","","","","","","",,,,,"",,,,"fr-lm-section.blocNarratif",1,1,"",""
+"fr-lm-dispensation-medicaments.author[x]","fr-lm-dispensation-medicaments.author[x]","","","",0,*,"","","","Base {[]} {[]}
+","author[x] peut correspondre soit à un professionnel, soit à une organisation, soit à un système.","author[x] peut correspondre soit à un professionnel, soit à une organisation, soit à un système.","","","","","","","","","",,,,,"",,,,"fr-lm-section.author[x]",0,*,"",""
+"fr-lm-dispensation-medicaments.author[x].authorProfessional","fr-lm-dispensation-medicaments.author[x].authorProfessional","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional {[]} {[]}
+","L'auteur est un professionnel de santé","L'auteur est un professionnel de santé","","","","","","","","","",,,,,"",,,,"fr-lm-section.author[x].authorProfessional",0,*,"",""
+"fr-lm-dispensation-medicaments.author[x].authorOrganisation","fr-lm-dispensation-medicaments.author[x].authorOrganisation","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organisation {[]} {[]}
+","L'auteur est une organisation","L'auteur est une organisation","","","","","","","","","",,,,,"",,,,"fr-lm-section.author[x].authorOrganisation",0,*,"",""
+"fr-lm-dispensation-medicaments.author[x].authorDevice","fr-lm-dispensation-medicaments.author[x].authorDevice","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device {[]} {[]}
+","L'auteur est un système","L'auteur est un système","","","","","","","","","",,,,,"",,,,"fr-lm-section.author[x].authorDevice",0,*,"",""
+"fr-lm-dispensation-medicaments.informant","fr-lm-dispensation-medicaments.informant","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-informant {[]} {[]}
+","Informateur","Informateur","","","","","","","","","",,,,,"",,,,"fr-lm-section.informant",0,*,"",""
+"fr-lm-dispensation-medicaments.sousSection","fr-lm-dispensation-medicaments.sousSection","","","",0,0,"","","","Base {[]} {[]}
+","Sous-sections","Sous-sections","","","","","","","","","",,,,,"",,,,"fr-lm-section.sousSection",0,*,"",""
+"fr-lm-dispensation-medicaments.entree","fr-lm-dispensation-medicaments.entree","","","",1,*,"","","","Base {[]} {[]}
+","Entrées","Entrées","","","","","","","","","",,,,,"",,,,"fr-lm-section.entree",0,*,"",""
+"fr-lm-dispensation-medicaments.entree.traitementDispense","fr-lm-dispensation-medicaments.entree.traitementDispense","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication-dispense {[]} {[]}
+","Entrée Traitement dispensé","Entrée Traitement dispensé","","","","","","","","","",,,,,"",,,,"fr-lm-dispensation-medicaments.entree.traitementDispense",1,*,"",""
