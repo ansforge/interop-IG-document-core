@@ -1,6 +1,6 @@
-Logical: FRLMPatientUsager
-Id: fr-lm-patient-usager			
-Title: "Modèle logique métier - FR LM Patient Usager"				
+Logical: FRLMPatient
+Id: fr-lm-patient		
+Title: "Logical model - FR LM Patient"				
 Description:  """Patient/Usager concerné par le document."""
 Characteristics: #can-be-target	
 * . 1..1						

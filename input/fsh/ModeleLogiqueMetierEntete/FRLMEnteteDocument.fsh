@@ -13,7 +13,7 @@ Description: "Eléments de l'entête d'un document contenant les informations g�
 * identifiantLotDeVersionsDocument  1..1 Identifier  "Identifiant du lot de versions du même document."		
 * versionDocument 1..1 string "Numéro de version du document."
 * statutDocument 1..1 code "Statut du document."
-* patient 1..1 FRLMPatientUsager "Patient / Usager."
+* patient 1..1 FRLMPatient "Patient / Usager."
 * auteur[x] 1..* FRLMHealthProfessional or FRLMOrganisation or FRLMDevice "Auteur du document."
 * operateurSaisie 0..1 FRLMOperateurSaisie "Opérateur de saisie."	
 * informateur 0..* FRLMInformant "Informateur ayant fourni des informations utiles à la production du document."	

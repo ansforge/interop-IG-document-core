@@ -6,7 +6,7 @@ Description: """Entrée Historique de la grossesse"""
 Characteristics: #can-be-target
 
 * header.status 1..1 
-* directSubject[x] 0..1	FRLMPatientUsager or FRLMDevice or FRLMHealthProfessional or FRLMOrganisation	or FRLMProcedure "Sujet de l'observation (si différent du patient)"
+* directSubject[x] 0..1	FRLMPatient or FRLMDevice or FRLMHealthProfessional or FRLMOrganisation	or FRLMProcedure "Sujet de l'observation (si différent du patient)"
 * observationDate[x] 1..1	dateTime or Period "Période de la grossesse"
 * type 1..1 CodeableConcept	"Type d'observation"
   * ^binding.description = "jdv-historique-grossesses-cisis (1.2.250.1.213.1.1.5.852)"

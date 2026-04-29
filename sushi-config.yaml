@@ -105,7 +105,7 @@ groups:
     name: Modèles logiques métier de l'entête d'un document
     resources:
       - FRLMEnteteDocument	
-      - FRLMPatientUsager
+      - FRLMPatient
       - FRLMHealthProfessional
       - FRLMOrganisation
       - FRLMInformant
@@ -161,7 +161,7 @@ groups:
       - StructureDefinition/fr-lm-section-pregnancy-history
       - StructureDefinition/fr-lm-plan-soins
       - StructureDefinition/fr-lm-prescription-dispositifs-medicaux
-      - StructureDefinition/fr-lm-prescription-medicaments
+      - StructureDefinition/fr-lm-medication-prescription
       - StructureDefinition/fr-lm-problemes-actifs
       - StructureDefinition/fr-lm-raison-recommandation-non-code
       - StructureDefinition/fr-lm-raison-recommandation
@@ -235,9 +235,8 @@ groups:
       - StructureDefinition/fr-lm-serie-imagerie
       - StructureDefinition/fr-lm-sop-instance
       - StructureDefinition/fr-lm-technique-imagerie
-      - StructureDefinition/fr-lm-medication-prescription
+      - StructureDefinition/fr-lm-prescription-item
       - StructureDefinition/fr-lm-quantite-exposition
-      - StructureDefinition/fr-lm-quantity-prescribed
       - StructureDefinition/fr-lm-status-document-entry
       - StructureDefinition/fr-lm-transfusion-de-produits-sanguins
       - StructureDefinition/fr-lm-synthese-medicale-sejour
@@ -254,7 +253,7 @@ groups:
       - StructureDefinition/fr-lm-patient-sujet-non-humain
       - StructureDefinition/fr-lm-laboratoire-executant
       - StructureDefinition/fr-lm-device
-      - StructureDefinition/fr-lm-dosage-instructions
+      - StructureDefinition/fr-lm-dosageInstructions
       - StructureDefinition/fr-lm-prescription-entree
       - StructureDefinition/fr-lm-laboratory-observation
       - StructureDefinition/fr-lm-body-structure

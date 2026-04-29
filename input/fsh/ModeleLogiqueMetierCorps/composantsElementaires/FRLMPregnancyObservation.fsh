@@ -7,7 +7,7 @@ Characteristics: #can-be-target
 
 * header.status 1..1
   * ^short = "Statut de l'observation"
-* directSubject[x] 0..1 FRLMPatientUsager or FRLMDevice or FRLMHealthProfessional or FRLMOrganisation or FRLMProcedure "Sujet de l'observation (si different du patient)"
+* directSubject[x] 0..1 FRLMPatient or FRLMDevice or FRLMHealthProfessional or FRLMOrganisation or FRLMProcedure "Sujet de l'observation (si different du patient)"
 * observationDate[x] 1..1 dateTime or Period "Date de l'observation"
 * type 1..1 CodeableConcept "Type d'observation"
   * ^binding.description = "jdv-issue-grossesse-cisis (1.2.250.1.213.1.1.5.731)"
