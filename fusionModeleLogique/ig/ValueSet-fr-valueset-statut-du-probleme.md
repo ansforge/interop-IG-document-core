@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-valueset-statut-du-probleme | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-29 | *Computable Name*:FRValueSetStatutDuProbleme |
+| Draft as of 2026-04-30 | *Computable Name*:FRValueSetStatutDuProbleme |
 
  
 Jeu de valeurs regroupant les codes de statut du problème et des allergies/intolérances 
@@ -50,7 +50,7 @@ Jeu de valeurs regroupant les codes de statut du problème et des allergies/into
   "name" : "FRValueSetStatutDuProbleme",
   "title" : "ValueSet - FR ValueSet Statut du problème",
   "status" : "draft",
-  "date" : "2026-04-29T08:41:15+00:00",
+  "date" : "2026-04-30T08:29:18+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

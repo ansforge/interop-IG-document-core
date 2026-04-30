@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-29 | *Computable Name*:FRLMHealthProfessional |
+| Draft as of 2026-04-30 | *Computable Name*:FRLMHealthProfessional |
 
  
 Une personne (professionnel ou patient ou autre) 
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Destinataire prévu](StructureDefinition-fr-lm-destinataire-prevu.md), [Modèle logique métier - FR LM En-tête document](StructureDefinition-fr-lm-entete-document.md), [FR LM Entry](StructureDefinition-fr-lm-entry.md), [Modèle logique métier - FR LM Évènement](StructureDefinition-fr-lm-evenement.md)... Show 12 more, [Logical model - FR LM Informant](StructureDefinition-fr-lm-informant.md), [Modèle logique métier - FR LM Laboratoire exécutant](StructureDefinition-fr-lm-laboratoire-executant.md), [Logical model - FR LM Observation Result](StructureDefinition-fr-lm-observation-result.md), [Modèle logique métier - FR LM Opérateur de saisie](StructureDefinition-fr-lm-operateur-saisie.md), [Modèle logique métier - FR LM Participant](StructureDefinition-fr-lm-participant.md), [Logical model- FR LM Pregnancy History](StructureDefinition-fr-lm-pregnancy-history.md), [Logical model- FR LM Pregnancy Observation](StructureDefinition-fr-lm-pregnancy-observation.md), [Modèle logique métier - FR LM Prise en charge](StructureDefinition-fr-lm-prise-en-charge.md), [Modèle logique métier - FR LM Responsable](StructureDefinition-fr-lm-responsable.md), [Logical model - FR LM Section](StructureDefinition-fr-lm-section.md), [Logical model - FR LM Specimen](StructureDefinition-fr-lm-specimen.md) and [Modèle logique métier - FR LM Validateur](StructureDefinition-fr-lm-validateur.md)
+* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Destinataire prévu](StructureDefinition-fr-lm-destinataire-prevu.md), [Modèle logique métier - FR LM En-tête document](StructureDefinition-fr-lm-entete-document.md), [FR LM Entry](StructureDefinition-fr-lm-entry.md), [Modèle logique métier - FR LM Évènement](StructureDefinition-fr-lm-evenement.md)... Show 13 more, [Logical model - FR LM Informant](StructureDefinition-fr-lm-informant.md), [Modèle logique métier - FR LM Laboratoire exécutant](StructureDefinition-fr-lm-laboratoire-executant.md), [Logical model - FR LM Medication Dispense](StructureDefinition-fr-lm-medication-dispense.md), [Logical model - FR LM Observation Result](StructureDefinition-fr-lm-observation-result.md), [Modèle logique métier - FR LM Opérateur de saisie](StructureDefinition-fr-lm-operateur-saisie.md), [Modèle logique métier - FR LM Participant](StructureDefinition-fr-lm-participant.md), [Logical model- FR LM Pregnancy History](StructureDefinition-fr-lm-pregnancy-history.md), [Logical model- FR LM Pregnancy Observation](StructureDefinition-fr-lm-pregnancy-observation.md), [Modèle logique métier - FR LM Prise en charge](StructureDefinition-fr-lm-prise-en-charge.md), [Modèle logique métier - FR LM Responsable](StructureDefinition-fr-lm-responsable.md), [Logical model - FR LM Section](StructureDefinition-fr-lm-section.md), [Logical model - FR LM Specimen](StructureDefinition-fr-lm-specimen.md) and [Modèle logique métier - FR LM Validateur](StructureDefinition-fr-lm-validateur.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-health-professional)
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-health-profess
   "name" : "FRLMHealthProfessional",
   "title" : "Logical model - FR LM Health Professional",
   "status" : "draft",
-  "date" : "2026-04-29T08:41:15+00:00",
+  "date" : "2026-04-30T08:29:18+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

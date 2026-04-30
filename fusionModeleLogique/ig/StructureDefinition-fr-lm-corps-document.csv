@@ -33,8 +33,8 @@
 ","Section  Object catalog","Section  Object catalog","","","","","","","","","",,,,,"",,,,"fr-lm-corps-document.objectCatalog",0,*,"",""
 "fr-lm-corps-document.directivesAnticipees","fr-lm-corps-document.directivesAnticipees","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-directives-anticipees {[]} {[]}
 ","Section Directives anticipées","Section Directives anticipées","","","","","","","","","",,,,,"",,,,"fr-lm-corps-document.directivesAnticipees",0,*,"",""
-"fr-lm-corps-document.dispensationMedicaments","fr-lm-corps-document.dispensationMedicaments","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dispensation-medicaments {[]} {[]}
-","Section Dispensation médicaments","Section Dispensation médicaments","","","","","","","","","",,,,,"",,,,"fr-lm-corps-document.dispensationMedicaments",0,*,"",""
+"fr-lm-corps-document.medicationsDispensation","fr-lm-corps-document.medicationsDispensation","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medications-dispensation {[]} {[]}
+","Section Dispensation médicaments","Section Dispensation médicaments","","","","","","","","","",,,,,"",,,,"fr-lm-corps-document.medicationsDispensation",0,*,"",""
 "fr-lm-corps-document.dispositifsMedicaux","fr-lm-corps-document.dispositifsMedicaux","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dispositifs-medicaux {[]} {[]}
 ","Section Dispositifs medicaux","Section Dispositifs medicaux","","","","","","","","","",,,,,"",,,,"fr-lm-corps-document.dispositifsMedicaux",0,*,"",""
 "fr-lm-corps-document.documentPDFCopie","fr-lm-corps-document.documentPDFCopie","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-document-pdf-copie {[]} {[]}

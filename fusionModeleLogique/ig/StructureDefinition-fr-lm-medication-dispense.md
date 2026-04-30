@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication-dispense | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-29 | *Computable Name*:FRLMMedicationDispense |
+| Draft as of 2026-04-30 | *Computable Name*:FRLMMedicationDispense |
 
  
 Entrée Traitement dispense 
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Dispensation médicaments](StructureDefinition-fr-lm-dispensation-medicaments.md)
+* Utilise ce/t/te Modèle logique: [Logical model - FR LM Medications Dispensation](StructureDefinition-fr-lm-medications-dispensation.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-medication-dispense)
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-medication-dis
   "name" : "FRLMMedicationDispense",
   "title" : "Logical model - FR LM Medication Dispense",
   "status" : "draft",
-  "date" : "2026-04-29T08:41:15+00:00",
+  "date" : "2026-04-30T08:29:18+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -76,34 +76,53 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-medication-dis
       "definition" : "Entrée Traitement dispense"
     },
     {
-      "id" : "fr-lm-medication-dispense.completude",
-      "path" : "fr-lm-medication-dispense.completude",
-      "short" : "Complétude de la dispensation",
-      "definition" : "Complétude de la dispensation",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "CodeableConcept"
-      }],
+      "id" : "fr-lm-medication-dispense.header.author[x]",
+      "path" : "fr-lm-medication-dispense.header.author[x]",
+      "short" : "Auteur de la Auteur de la dispensation",
+      "min" : 1
+    },
+    {
+      "id" : "fr-lm-medication-dispense.header.status",
+      "path" : "fr-lm-medication-dispense.header.status",
+      "short" : "Statut de la ligne de prescription",
+      "min" : 1,
       "binding" : {
         "description" : "Valeur issue du JDV_CompletudeDispensation_CISIS (1.2.250.1.213.1.1.5.765)",
         "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-completude-dispensation-cisis"
       }
     },
     {
-      "id" : "fr-lm-medication-dispense.quantite",
-      "path" : "fr-lm-medication-dispense.quantite",
-      "short" : "Quantité : Unité issue de EDQM Packaging",
-      "definition" : "Quantité : Unité issue de EDQM Packaging",
-      "min" : 1,
+      "id" : "fr-lm-medication-dispense.receiver[x]",
+      "path" : "fr-lm-medication-dispense.receiver[x]",
+      "short" : "Identification de la personne ayant reçu le médicament délivré, notamment lorsqu'il ne s'agit pas du patient. Si non présent, le patient est considéré comme le destinataire.",
+      "definition" : "Identification de la personne ayant reçu le médicament délivré, notamment lorsqu'il ne s'agit pas du patient. Si non présent, le patient est considéré comme le destinataire.",
+      "min" : 0,
       "max" : "1",
       "type" : [{
-        "code" : "Quantity"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient"
+      },
+      {
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional"
+      },
+      {
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-related-person"
       }]
     },
     {
-      "id" : "fr-lm-medication-dispense.medicamentDelivre",
-      "path" : "fr-lm-medication-dispense.medicamentDelivre",
+      "id" : "fr-lm-medication-dispense.relatedRequest",
+      "path" : "fr-lm-medication-dispense.relatedRequest",
+      "short" : "Référence de la prescription",
+      "definition" : "Référence de la prescription",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier"]
+      }]
+    },
+    {
+      "id" : "fr-lm-medication-dispense.medicament",
+      "path" : "fr-lm-medication-dispense.medicament",
       "short" : "Médicament délivré",
       "definition" : "Médicament délivré",
       "min" : 1,
@@ -113,19 +132,41 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-medication-dis
       }]
     },
     {
-      "id" : "fr-lm-medication-dispense.referencePrescription",
-      "path" : "fr-lm-medication-dispense.referencePrescription",
-      "short" : "Référence de la prescription",
-      "definition" : "Référence de la prescription",
-      "min" : 0,
+      "id" : "fr-lm-medication-dispense.dispensedQuantity",
+      "path" : "fr-lm-medication-dispense.dispensedQuantity",
+      "short" : "Quantite de produit. \nNombre d'emballages distribués si leur format est connu, ou nombre d'articles/unités plus petits, selon le médicament distribué. Une unité est attendue.",
+      "definition" : "Quantite de produit. \nNombre d'emballages distribués si leur format est connu, ou nombre d'articles/unités plus petits, selon le médicament distribué. Une unité est attendue.",
+      "min" : 1,
       "max" : "1",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-reference-item-prescription"
+        "code" : "Quantity"
       }]
     },
     {
-      "id" : "fr-lm-medication-dispense.posologie",
-      "path" : "fr-lm-medication-dispense.posologie",
+      "id" : "fr-lm-medication-dispense.timeOfDispensation",
+      "path" : "fr-lm-medication-dispense.timeOfDispensation",
+      "short" : "Date et heure de dispense du médicament. Si non présent, la date de dispensation est celle du header.",
+      "definition" : "Date et heure de dispense du médicament. Si non présent, la date de dispensation est celle du header.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "dateTime"
+      }]
+    },
+    {
+      "id" : "fr-lm-medication-dispense.substitutionOccurred",
+      "path" : "fr-lm-medication-dispense.substitutionOccurred",
+      "short" : "Autorisation de substitution",
+      "definition" : "Autorisation de substitution",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "fr-lm-medication-dispense.dosageInstructions",
+      "path" : "fr-lm-medication-dispense.dosageInstructions",
       "short" : "Posologie",
       "definition" : "Posologie",
       "min" : 0,
@@ -135,8 +176,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-medication-dis
       }]
     },
     {
-      "id" : "fr-lm-medication-dispense.notesDispensateur",
-      "path" : "fr-lm-medication-dispense.notesDispensateur",
+      "id" : "fr-lm-medication-dispense.note",
+      "path" : "fr-lm-medication-dispense.note",
       "short" : "Notes du dispensateur",
       "definition" : "Notes du dispensateur",
       "min" : 0,
@@ -144,32 +185,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-medication-dis
       "type" : [{
         "code" : "string"
       }]
-    },
-    {
-      "id" : "fr-lm-medication-dispense.autorisationSubstitution",
-      "path" : "fr-lm-medication-dispense.autorisationSubstitution",
-      "short" : "Autorisation de substitution",
-      "definition" : "Autorisation de substitution",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "Base"
-      }]
-    },
-    {
-      "id" : "fr-lm-medication-dispense.autorisationSubstitution.type",
-      "path" : "fr-lm-medication-dispense.autorisationSubstitution.type",
-      "short" : "Type de substitution jdv-hl7-v3-ActSubstanceAdminSubstitutionCode-cisis (2.16.840.1.113883.1.11.16621)",
-      "definition" : "Type de substitution jdv-hl7-v3-ActSubstanceAdminSubstitutionCode-cisis (2.16.840.1.113883.1.11.16621)",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "CodeableConcept"
-      }],
-      "binding" : {
-        "description" : "HL7_SubstanceAdminSubstitution",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdminSubstitutionCode-cisis"
-      }
     }]
   }
 }

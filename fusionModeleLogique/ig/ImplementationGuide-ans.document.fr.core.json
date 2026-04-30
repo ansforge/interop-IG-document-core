@@ -10,7 +10,7 @@
   "name" : "FRDocumentCore",
   "title" : "ANS IG document core",
   "status" : "draft",
-  "date" : "2026-04-29T08:41:15+00:00",
+  "date" : "2026-04-30T08:29:18+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -4593,6 +4593,19 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/fr-lm-medications-dispensation"
+      },
+      "name" : "Logical model - FR LM Medications Dispensation",
+      "description" : "Section Dispensation médicaments",
+      "exampleBoolean" : false,
+      "groupingId" : "Modèles logiques métier des sections d'un document"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/fr-lm-modalite-entree"
       },
       "name" : "logical model - FR LM Modalité d'entrée",
@@ -7155,19 +7168,6 @@
       },
       "name" : "Modèle logique métier - FR LM Directives-anticipées",
       "description" : "Section Directives anticipées",
-      "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des sections d'un document"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-lm-dispensation-medicaments"
-      },
-      "name" : "Modèle logique métier - FR LM Dispensation médicaments",
-      "description" : "Section Dispensation médicaments",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier des sections d'un document"
     },

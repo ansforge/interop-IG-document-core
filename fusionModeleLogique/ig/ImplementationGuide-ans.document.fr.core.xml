@@ -10,7 +10,7 @@
   <name value="FRDocumentCore"/>
   <title value="ANS IG document core"/>
   <status value="draft"/>
-  <date value="2026-04-29T08:41:15+00:00"/>
+  <date value="2026-04-30T08:29:18+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -4108,6 +4108,18 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/fr-lm-medications-dispensation"/>
+      </reference>
+      <name value="Logical model - FR LM Medications Dispensation"/>
+      <description value="Section Dispensation médicaments"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Modèles logiques métier des sections d'un document"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/fr-lm-modalite-entree"/>
       </reference>
       <name value="logical model - FR LM Modalité d'entrée"/>
@@ -6473,18 +6485,6 @@
       </reference>
       <name value="Modèle logique métier - FR LM Directives-anticipées"/>
       <description value="Section Directives anticipées"/>
-      <exampleBoolean value="false"/>
-      <groupingId value="Modèles logiques métier des sections d'un document"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/fr-lm-dispensation-medicaments"/>
-      </reference>
-      <name value="Modèle logique métier - FR LM Dispensation médicaments"/>
-      <description value="Section Dispensation médicaments"/>
       <exampleBoolean value="false"/>
       <groupingId value="Modèles logiques métier des sections d'un document"/>
     </resource>

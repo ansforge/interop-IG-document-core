@@ -50,6 +50,7 @@ This page provides a list of the FHIR artifacts defined as part of this implemen
 | [Logical model - FR LM Pregnancy History](StructureDefinition-fr-lm-section-pregnancy-history.md) | Section Historique des grossesses |
 | [Logical model - FR LM Alerts](StructureDefinition-fr-lm-alerts.md) | Section Points de vigilance |
 | [Logical model - FR LM FR LM Medication Prescription](StructureDefinition-fr-lm-medication-prescription.md) | Section Prescription de médicaments |
+| [Logical model - FR LM Medications Dispensation](StructureDefinition-fr-lm-medications-dispensation.md) | Section Dispensation médicaments |
 | [Logical model - FR LM Section](StructureDefinition-fr-lm-section.md) | Section |
 | [Modèle logique métier - FR LM Acte d'imagerie](StructureDefinition-fr-lm-acte-imagerie.md) | Section Acte d’imagerie |
 | [Modèle logique métier - FR LM Addendum](StructureDefinition-fr-lm-addendum.md) | Section Addendum |
@@ -65,7 +66,6 @@ This page provides a list of the FHIR artifacts defined as part of this implemen
 | [Modèle logique métier - FR LM Corps document](StructureDefinition-fr-lm-corps-document.md) | Eléments métier du corps d’un document contenant les sections du document. |
 | [Modèle logique métier - FR LM Demande d'examen d'imagerie](StructureDefinition-fr-lm-demande-examen-imagerie.md) | Section Demande d’examen d’imagerie |
 | [Modèle logique métier - FR LM Directives-anticipées](StructureDefinition-fr-lm-directives-anticipees.md) | Section Directives anticipées |
-| [Modèle logique métier - FR LM Dispensation médicaments](StructureDefinition-fr-lm-dispensation-medicaments.md) | Section Dispensation médicaments |
 | [Modèle logique métier - FR LM Dispositifs medicaux](StructureDefinition-fr-lm-dispositifs-medicaux.md) | Section Dispositifs medicaux |
 | [Modèle logique métier - FR LM Document PDF copie](StructureDefinition-fr-lm-document-pdf-copie.md) | Section Document PDF-copie |
 | [Modèle logique métier - FR LM Documents ajoutés](StructureDefinition-fr-lm-documents-ajoutes.md) | Section Documents ajoutés |

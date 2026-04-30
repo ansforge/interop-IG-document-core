@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-modalite-entree | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-29 | *Computable Name*:FRLMModaliteEntree |
+| Draft as of 2026-04-30 | *Computable Name*:FRLMModaliteEntree |
 
  
 Entrée Modalité d’entrée 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-modalite-entre
   "name" : "FRLMModaliteEntree",
   "title" : "logical model - FR LM Modalité d'entrée",
   "status" : "draft",
-  "date" : "2026-04-29T08:41:15+00:00",
+  "date" : "2026-04-30T08:29:18+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

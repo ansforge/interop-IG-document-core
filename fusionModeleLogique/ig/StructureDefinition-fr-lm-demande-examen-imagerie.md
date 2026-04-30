@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-demande-examen-imagerie | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-29 | *Computable Name*:FRLMDemandeExamenImagerie |
+| Draft as of 2026-04-30 | *Computable Name*:FRLMDemandeExamenImagerie |
 
  
 Section Demande d’examen d’imagerie 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-demande-examen
   "name" : "FRLMDemandeExamenImagerie",
   "title" : "Modèle logique métier - FR LM Demande d'examen d'imagerie",
   "status" : "draft",
-  "date" : "2026-04-29T08:41:15+00:00",
+  "date" : "2026-04-30T08:29:18+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-effets-indesirables | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-29 | *Computable Name*:FRCDASectionEffetsIndesirables |
+| Draft as of 2026-04-30 | *Computable Name*:FRCDASectionEffetsIndesirables |
 
  
 Liste des effets indésirables prévisibles liés aux médicaments. 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-effets-indesi
   "name" : "FRCDASectionEffetsIndesirables",
   "title" : "CDA - FR Effets indesirables",
   "status" : "draft",
-  "date" : "2026-04-29T08:41:15+00:00",
+  "date" : "2026-04-30T08:29:18+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

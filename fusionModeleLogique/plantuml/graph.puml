@@ -5800,7 +5800,7 @@ package IG #DDDDDD{
              fr-lm-corps-document.informationsCliniques => [0..*]
              fr-lm-corps-document.objectCatalog => [0..*]
              fr-lm-corps-document.directivesAnticipees => [0..*]
-             fr-lm-corps-document.dispensationMedicaments => [0..*]
+             fr-lm-corps-document.medicationsDispensation => [0..*]
              fr-lm-corps-document.dispositifsMedicaux => [0..*]
              fr-lm-corps-document.documentPDFCopie => [0..*]
              fr-lm-corps-document.documentsAjoutes => [0..*]
@@ -5915,15 +5915,6 @@ package IG #DDDDDD{
              fr-lm-directives-anticipees.titreSection => [1..None]
              fr-lm-directives-anticipees.sousSection => [None..0]
              fr-lm-directives-anticipees.entree.directiveAnticipee => [0..*]
-        } 
-
-        class FRLMDispensationMedicaments{
-
-             fr-lm-dispensation-medicaments => [None..None]
-             fr-lm-dispensation-medicaments.titreSection => [1..None]
-             fr-lm-dispensation-medicaments.sousSection => [None..0]
-             fr-lm-dispensation-medicaments.entree => [1..None]
-             fr-lm-dispensation-medicaments.entree.traitementDispense => [1..*]
         } 
 
         class FRLMDispositifsMedicaux{
@@ -6353,14 +6344,16 @@ package IG #DDDDDD{
         class FRLMMedicationDispense{
 
              fr-lm-medication-dispense => [None..None]
-             fr-lm-medication-dispense.completude => [0..1]
-             fr-lm-medication-dispense.quantite => [1..1]
-             fr-lm-medication-dispense.medicamentDelivre => [1..1]
-             fr-lm-medication-dispense.referencePrescription => [0..1]
-             fr-lm-medication-dispense.posologie => [0..1]
-             fr-lm-medication-dispense.notesDispensateur => [0..1]
-             fr-lm-medication-dispense.autorisationSubstitution => [1..1]
-             fr-lm-medication-dispense.autorisationSubstitution.type => [0..1]
+             fr-lm-medication-dispense.header.author[x] => [1..None]
+             fr-lm-medication-dispense.header.status => [1..None]
+             fr-lm-medication-dispense.receiver[x] => [0..1]
+             fr-lm-medication-dispense.relatedRequest => [0..*]
+             fr-lm-medication-dispense.medicament => [1..1]
+             fr-lm-medication-dispense.dispensedQuantity => [1..1]
+             fr-lm-medication-dispense.timeOfDispensation => [0..1]
+             fr-lm-medication-dispense.substitutionOccurred => [1..1]
+             fr-lm-medication-dispense.dosageInstructions => [0..1]
+             fr-lm-medication-dispense.note => [0..1]
         } 
 
         class FRLMMedicationPrescription{
@@ -6403,6 +6396,15 @@ package IG #DDDDDD{
              fr-lm-medication.batch => [0..1]
              fr-lm-medication.batch.lotNumber => [0..1]
              fr-lm-medication.batch.expirationDate => [0..1]
+        } 
+
+        class FRLMMdicationsDispensation{
+
+             fr-lm-medications-dispensation => [None..None]
+             fr-lm-medications-dispensation.titreSection => [1..None]
+             fr-lm-medications-dispensation.sousSection => [None..0]
+             fr-lm-medications-dispensation.entree => [1..None]
+             fr-lm-medications-dispensation.entree.traitementDispense => [1..*]
         } 
 
         class FRLMModaliteEntree{
@@ -9396,10 +9398,6 @@ package "Ressources de base" #palegreen {
 
  class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-section" as  class5dabea989fe22a905d8f89cc210527f2 
 
-    class5dabea989fe22a905d8f89cc210527f2 --> FRLMDispensationMedicaments
-
- class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-section" as  class5dabea989fe22a905d8f89cc210527f2 
-
     class5dabea989fe22a905d8f89cc210527f2 --> FRLMDispositifsMedicaux
 
  class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-section" as  class5dabea989fe22a905d8f89cc210527f2 
@@ -9549,6 +9547,10 @@ package "Ressources de base" #palegreen {
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
     class095a1b43effec73955e31e790438de49 --> FRLMMedication
+
+ class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-section" as  class5dabea989fe22a905d8f89cc210527f2 
+
+    class5dabea989fe22a905d8f89cc210527f2 --> FRLMMdicationsDispensation
 
  class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry" as  classeb8bc4d6baa061f547965c0670265381 
 

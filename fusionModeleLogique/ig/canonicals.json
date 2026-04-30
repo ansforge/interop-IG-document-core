@@ -2666,13 +2666,6 @@
   "name" : "FRLMDirectivesAnticipees"
 },
 {
-  "id" : "fr-lm-dispensation-medicaments",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dispensation-medicaments",
-  "version" : "0.1.0-snapshot",
-  "name" : "FRLMDispensationMedicaments"
-},
-{
   "id" : "fr-lm-dispositifs-medicaux",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dispositifs-medicaux",
@@ -2937,6 +2930,13 @@
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication-prescription",
   "version" : "0.1.0-snapshot",
   "name" : "FRLMMedicationPrescription"
+},
+{
+  "id" : "fr-lm-medications-dispensation",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medications-dispensation",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRLMMdicationsDispensation"
 },
 {
   "id" : "fr-lm-modalite-entree",

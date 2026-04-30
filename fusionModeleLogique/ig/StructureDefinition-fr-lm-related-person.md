@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-related-person | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-29 | *Computable Name*:FRLMRelatedPerson |
+| Draft as of 2026-04-30 | *Computable Name*:FRLMRelatedPerson |
 
  
 Related Person 
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Logical model - FR LM Naissance](StructureDefinition-fr-lm-birth-event.md), [Modèle logique métier - FR LM Destinataire prévu](StructureDefinition-fr-lm-destinataire-prevu.md), [Logical model - FR LM Family Member History](StructureDefinition-fr-lm-family-member-history.md), [Logical model - FR LM Informant](StructureDefinition-fr-lm-informant.md) and [Logical model - FR LM Specimen](StructureDefinition-fr-lm-specimen.md)
+* Utilise ce/t/te Modèle logique: [Logical model - FR LM Naissance](StructureDefinition-fr-lm-birth-event.md), [Modèle logique métier - FR LM Destinataire prévu](StructureDefinition-fr-lm-destinataire-prevu.md), [Logical model - FR LM Family Member History](StructureDefinition-fr-lm-family-member-history.md), [Logical model - FR LM Informant](StructureDefinition-fr-lm-informant.md)... Show 2 more, [Logical model - FR LM Medication Dispense](StructureDefinition-fr-lm-medication-dispense.md) and [Logical model - FR LM Specimen](StructureDefinition-fr-lm-specimen.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-related-person)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-related-person
   "name" : "FRLMRelatedPerson",
   "title" : "Logical model - FR LM Related Person",
   "status" : "draft",
-  "date" : "2026-04-29T08:41:15+00:00",
+  "date" : "2026-04-30T08:29:18+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
