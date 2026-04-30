@@ -1,7 +1,7 @@
-Logical: FRLMDispensationMedicaments
-Id: fr-lm-dispensation-medicaments
+Logical: FRLMMdicationsDispensation
+Id: fr-lm-medications-dispensation
 Parent: FRLMSection
-Title: "Modèle logique métier - FR LM Dispensation médicaments"
+Title: "Logical model - FR LM Medications Dispensation"
 Description: """Section Dispensation médicaments"""
 Characteristics: #can-be-target
 

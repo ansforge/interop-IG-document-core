@@ -148,7 +148,7 @@ groups:
       - StructureDefinition/fr-lm-object-catalog
       - StructureDefinition/fr-lm-complications-acte
       - StructureDefinition/fr-lm-directives-anticipees
-      - StructureDefinition/fr-lm-dispensation-medicaments
+      - StructureDefinition/fr-lm-medications-dispensation
       - StructureDefinition/fr-lm-dispositifs-medicaux
       - StructureDefinition/fr-lm-document-pdf-copie
       - StructureDefinition/fr-lm-documents-ajoutes

@@ -19,7 +19,7 @@ Description: "Eléments métier du corps d'un document contenant les sections du
 * informationsCliniques 0..* FRLMInformationsCliniques "Section Informations cliniques"
 * objectCatalog 0..* FRLMObjectCatalog "Section  Object catalog"
 * directivesAnticipees 0..* FRLMDirectivesAnticipees "Section Directives anticipées"
-* dispensationMedicaments 0..* FRLMDispensationMedicaments "Section Dispensation médicaments"
+* medicationsDispensation 0..* FRLMMdicationsDispensation "Section Dispensation médicaments"
 * dispositifsMedicaux  0..* FRLMDispositifsMedicaux "Section Dispositifs medicaux"
 * documentPDFCopie 0..* FRLMDocumentPDFCopie "Section Document PDF Copie"
 * documentsAjoutes 0..* FRLMDocumentsAjoutes "Section Documents ajoutés" 
