@@ -48,7 +48,7 @@ Description: "
 
 // Médicament
 * medication[x] MS
-* medication[x] only Reference(FRMedicationDocument or FRMedicationsCombinaisonDocument)
+* medication[x] only Reference(FRMedicationDocument)
 
 // Instruction au patient
 * dosage.text MS
