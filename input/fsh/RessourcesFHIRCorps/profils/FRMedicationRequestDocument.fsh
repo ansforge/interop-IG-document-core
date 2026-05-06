@@ -52,7 +52,7 @@ Description: "FRMedicationRequestDocument permet de décrire un traitement presc
 * dispenseRequest.numberOfRepeatsAllowed MS
   * ^short = "Nombre de renouvellement(s) possible(s)"
 * medication[x] MS
-* medication[x] only CodeableConcept or Reference(FRMedicationDocument or FRMedicationsCombinaisonDocument)
+* medication[x] only CodeableConcept or Reference(FRMedicationDocument)
   * ^short = "Produit de santé"
 
 // --- Prescripteur ---
