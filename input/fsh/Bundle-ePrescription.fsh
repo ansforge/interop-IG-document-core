@@ -7,79 +7,79 @@ Description: "Exemple Bundle : Prescriptions de médicaments-paracétamol-prépa
 * identifier.value = "1.2.250.1.213.1.1.1.39.2024.2.1"
 * timestamp = "2026-04-28T09:30:00+02:00"
 
-* entry[+].fullUrl = "urn:uuid:4d4f5b7c-7b14-4d4d-9ad0-4d979f6f1001"
-* entry[=].resource = ExampleCompositionPrescription
+* entry[+].fullUrl = "urn:uuid:composition-Prescription"
+* entry[=].resource = compositionPrescription
 
 * entry[+].fullUrl = "urn:uuid:patient-Prescription-001"
-* entry[=].resource = ExamplePatientPrescription
+* entry[=].resource = patientPrescription
 
 * entry[+].fullUrl = "urn:uuid:practitionerrole-Prescription-001"
-* entry[=].resource = ExamplePractitionerRolePrescription-01
+* entry[=].resource = practitionerRolePrescription-01
 
 * entry[+].fullUrl = "urn:uuid:practitioner-Prescription-001"
-* entry[=].resource = ExamplePractitionerPrescription-01
+* entry[=].resource = practitionerPrescription-01
 
 * entry[+].fullUrl = "urn:uuid:practitioner-Prescription-002"
-* entry[=].resource = ExamplePractitionerPrescription-02
+* entry[=].resource = practitionerPrescription-02
 
 * entry[+].fullUrl = "urn:uuid:organization-Prescription-001"
-* entry[=].resource = ExampleOrganizationPrescription
+* entry[=].resource = organizationPrescription
 
 * entry[+].fullUrl = "urn:uuid:organization-Prescription-002"
-* entry[=].resource = ExampleOrganizationPrescription-02
+* entry[=].resource = organizationPrescription-02
 
 * entry[+].fullUrl = "urn:uuid:practitionerrole-Prescription-002"
-* entry[=].resource = ExamplePractitionerRolePrescription-02
+* entry[=].resource = practitionerRolePrescription-02
 
 * entry[+].fullUrl = "urn:uuid:encounter-Prescription-001"
-* entry[=].resource = ExampleEncounterPrescription
+* entry[=].resource = encounterPrescription
 
 * entry[+].fullUrl = "urn:uuid:location-Prescription-001"
-* entry[=].resource = ExampleLocationPrescription
+* entry[=].resource = locationPrescription
 
 * entry[+].fullUrl = "urn:uuid:medication-Prescription-001"
-* entry[=].resource = ExampleMedicationPrescription
+* entry[=].resource = medicationPrescription-01
 
 * entry[+].fullUrl = "urn:uuid:medicationrequest-Prescription-001"
-* entry[=].resource = ExampleMedicationRequest
+* entry[=].resource = medicationRequest-01
 
 * entry[+].fullUrl = "urn:uuid:medication-Prescription-002"
-* entry[=].resource = ExampleMedicationPrescription-02
+* entry[=].resource = medicationPrescription-02
 
 * entry[+].fullUrl = "urn:uuid:medicationrequest-Prescription-002"
-* entry[=].resource = ExampleMedicationRequest-02
+* entry[=].resource = medicationRequest-02
 
 * entry[+].fullUrl = "urn:uuid:vitalsigns-panel-Prescription-001"
-* entry[=].resource = ExampleVitalSignsPanelPrescription
+* entry[=].resource = vitalSignsPanelPrescription
 
 * entry[+].fullUrl = "urn:uuid:vitalsigns-weight-Prescription-001"
-* entry[=].resource = ExampleVitalSignWeightPrescription
+* entry[=].resource = vitalSignWeightPrescription
 
 * entry[+].fullUrl = "urn:uuid:vitalsigns-height-Prescription-001"
-* entry[=].resource = ExampleVitalSignHeightPrescription
+* entry[=].resource = vitalSignHeightPrescription
 
 * entry[+].fullUrl = "urn:uuid:pregnancy-Prescription-001"
-* entry[=].resource = ExamplePregnancyObservationPrescription
+* entry[=].resource = pregnancyObservationPrescription
 
 * entry[+].fullUrl = "urn:uuid:pdfcopy-Prescription-001"
-* entry[=].resource = ExamplePdfCopyDocumentReferencePrescription
+* entry[=].resource = pdfCopyDocumentReferencePrescription
 
 * entry[+].fullUrl = "urn:uuid:barcode-Prescription-001"
-* entry[=].resource = ExampleBarcodeMediaPrescription
+* entry[=].resource = barcodeMediaPrescription
 
 * entry[+].fullUrl = "urn:uuid:practitionerRole-remplacant-Prescription"
-* entry[=].resource = ExamplePractitionerRoleRemplacant
+* entry[=].resource = practitionerRoleRemplacant
 
 * entry[+].fullUrl = "urn:uuid:practitioner-remplacant-Prescription"
-* entry[=].resource = ExamplePractitionerRemplacant
+* entry[=].resource = practitionerRemplacant
 
 * entry[+].fullUrl = "urn:uuid:practitionerRole-pharmacien-Prescription"
-* entry[=].resource = ExamplePractitionerRolePharmacien
+* entry[=].resource = practitionerRolePharmacien
 
 * entry[+].fullUrl = "urn:uuid:organization-Prescription-03"
-* entry[=].resource = ExampleOrganizationPrescription-03
+* entry[=].resource = organizationPrescription-03
 
-Instance: ExampleCompositionPrescription
+Instance: compositionPrescription
 InstanceOf: FRCompositionDocument
 Usage: #example
 Description: "Composition d'exemple pour une Prescription, pour l'entête et le corps du document"
@@ -90,27 +90,27 @@ Description: "Composition d'exemple pour une Prescription, pour l'entête et le 
 * status = #final
 * type = $LNC#57833-6 "Prescription de produits de sante"
 * title = "Prescription de médicaments et/ou de dispositifs médicaux"
-* subject = Reference(ExamplePatientPrescription)
+* subject = Reference(patientPrescription)
 * date = "2026-04-28T09:30:00+02:00"
 * confidentiality = #N
-* author[0] = Reference(ExamplePractitionerRolePrescription-02)
+* author[0] = Reference(practitionerRolePrescription-02)
 * author[0].extension[time].valueDateTime = "2026-04-28T09:25:00+02:00"
 * attester[legal_attester].time = "2026-04-28T09:30:00+02:00"
-* attester[legal_attester].party = Reference(ExamplePractitionerRolePrescription-01)
+* attester[legal_attester].party = Reference(practitionerRolePrescription-01)
 * attester[professional_attester].time = "2026-04-28T09:30:00+02:00"
-* attester[professional_attester].party = Reference(ExamplePractitionerRolePrescription-01)
+* attester[professional_attester].party = Reference(practitionerRolePrescription-01)
 
 // Participant : PS remplacé (obligatoire si prescription faite par un PS remplaçant)
 * extension[participant][0].extension[type].valueCodeableConcept.coding.code = #REF
 * extension[participant][0].extension[time].valuePeriod.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
 * extension[participant][0].extension[time].valuePeriod.extension.valueCode = #unknown
 
-* extension[participant][0].extension[party].valueReference = Reference(ExamplePractitionerRoleRemplacant)
+* extension[participant][0].extension[party].valueReference = Reference(practitionerRoleRemplacant)
 
 // Exécutant et/ou Date d'exécution souhaitée 
 * extension[participant][1].extension[type].valueCodeableConcept.coding.code = #PRF
 * extension[participant][1].extension[time].valuePeriod.end = "2023-12-02T09:30:00+01:00"
-* extension[participant][1].extension[party].valueReference = Reference(ExamplePractitionerRolePharmacien)
+* extension[participant][1].extension[party].valueReference = Reference(practitionerRolePharmacien)
 
 * event[0].code.coding.system = "urn:oid:1.2.250.1.213.1.1.4.322"
 * event[0].code.coding.code = #MED-1096
@@ -146,7 +146,7 @@ Description: "Composition d'exemple pour une Prescription, pour l'entête et le 
 * event[principalEvent].code.coding.display = "Prescription de produits de sante"
 * event[principalEvent].period.start = "2026-04-28T09:00:00+02:00"
 * event[principalEvent].period.end = "2026-04-28T09:30:00+02:00"
-* event[principalEvent].extension[performer].valueReference = Reference(ExamplePractitionerRolePrescription-01)
+* event[principalEvent].extension[performer].valueReference = Reference(practitionerRolePrescription-01)
 
 * relatesTo[appended_document].code = #appends
 * relatesTo[appended_document].targetIdentifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#PLAC "Placer Identifier"
@@ -161,43 +161,35 @@ Description: "Composition d'exemple pour une Prescription, pour l'entête et le 
 * section[0].title = "Prescription de medicaments"
 * section[0].text.status = #generated
 * section[0].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Prescription de medicaments</p><ul><li>Paracetamol Mylan 500 mg comprime : du 01/12/2023 au 06/12/2023, voie orale, renouvelable 3 fois.</li><li>Preparation magistrale : Diprosone 30 g et Cerat Frais de Galien 70 g, du 01/12/2023 au 06/12/2023, voie cutanee, sans renouvellement.</li></ul></div>"
-* section[0].entry[0] = Reference(ExampleMedicationRequest)
-* section[0].entry[1] = Reference(ExampleMedicationRequest-02)
+* section[0].entry[0] = Reference(medicationRequest-01)
+* section[0].entry[1] = Reference(medicationRequest-02)
 * section[1].id = "362B214A-8414-4547-8B56-EABDCAB587AA"
 * section[1].code = $LNC#8716-3 "Signes vitaux"
 * section[1].title = "Signes vitaux"
 * section[1].text.status = #generated
 * section[1].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Date</th><th>Signe vital</th><th>Valeur</th></tr></thead><tbody><tr><td>01/12/2023</td><td>Poids</td><td>55 kg</td></tr><tr><td>01/12/2023</td><td>Taille</td><td>1,70 m</td></tr></tbody></table></div>"
-* section[1].entry[0] = Reference(ExampleVitalSignWeightPrescription)
-* section[1].entry[1] = Reference(ExampleVitalSignHeightPrescription)
+* section[1].entry[0] = Reference(vitalSignWeightPrescription)
+* section[1].entry[1] = Reference(vitalSignHeightPrescription)
 * section[2].id = "573B13F5-2C78-47E0-BE1F-55C02B6F40B2"
 * section[2].code = $LNC#10162-6 "Historique des grossesses"
 * section[2].title = "Historique des grossesses"
 * section[2].text.status = #generated
 * section[2].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Statut</th></tr></thead><tbody><tr><td>Enceinte</td></tr></tbody></table></div>"
-* section[2].entry[0] = Reference(ExamplePregnancyObservationPrescription)
+* section[2].entry[0] = Reference(pregnancyObservationPrescription)
 * section[3].id = "770B0DC2-A6B8-468E-8432-632B18D35F68"
 * section[3].code = $LNC#55108-5 "Copie du document"
 * section[3].title = "Copie du document"
 * section[3].text.status = #generated
 * section[3].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tbody><tr><td>Copie PDF du document</td></tr><tr><td>Document PDF joint</td></tr></tbody></table></div>"
-* section[3].entry[0] = Reference(ExamplePdfCopyDocumentReferencePrescription)
+* section[3].entry[0] = Reference(pdfCopyDocumentReferencePrescription)
 * section[4].id = "F28128CA-1D38-11EC-9621-0242AC130002"
 * section[4].code = $LNC#57723-9 "Numero de code a barres unique"
 * section[4].title = "Code 2D de la prescription"
 * section[4].text.status = #generated
 * section[4].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Code 2D de la prescription</p><img src=\"data:image/jpeg;base64,iVBORw0KGgoAAAANSUh\" alt=\"Code 2D\"/></div>"
-* section[4].entry[0] = Reference(ExampleBarcodeMediaPrescription)
+* section[4].entry[0] = Reference(barcodeMediaPrescription)
 
-/* // Section FR-Code-a-barres
-* section[CodeAbarres].title = "Code 2D de la prescription"
-* section[0].code = #57723-9 "Numéro de code à barres unique"
-* section[0].text.status = #generated
-* section[0].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Exemple minimal de composition Prescription avec une entete complete et une section de demonstration.</div>"
- */
-
-//***************Patient*********************//
-Instance: ExamplePatientPrescription
+Instance: patientPrescription
 InstanceOf: FRPatientINSDocument
 Title: "Patient"
 Usage: #inline
@@ -306,17 +298,17 @@ Description: "Patient"
 * contact[2].address.city = "Paris"
 * generalPractitioner = Reference(urn:uuid:practitioner-Prescription-001) "DR Stéphane MEDIONI"
 
-Instance: ExamplePractitionerRolePrescription-01
+Instance: practitionerRolePrescription-01
 InstanceOf: FRPractitionerRoleDocument
 Description: "Role du professionnel dans l'exemple Prescription"
 Usage: #inline
-* meta.lastUpdated = "2013-05-05T16:13:03Z"
+* meta.lastUpdated = "2026-05-05T16:13:03Z"
 * meta.profile = "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document"
 * practitioner = Reference(urn:uuid:practitioner-Prescription-001)
 * organization = Reference(urn:uuid:organization-Prescription-001)
 * code.text = "Medecin traitant"
 
-Instance: ExamplePractitionerPrescription-01
+Instance: practitionerPrescription-01
 InstanceOf: FRPractitionerDocument
 Usage: #inline
 * meta.profile = "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitioner-document"
@@ -340,7 +332,7 @@ Usage: #inline
 * qualification[savoirFaire].code.coding[savoirFaire].system = "https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale"
 * qualification[savoirFaire].code.coding[savoirFaire].display = "Qualifié en Médecine générale (SM)"
 
-Instance: ExampleOrganizationPrescription
+Instance: organizationPrescription
 InstanceOf: FROrganizationDocument
 Usage: #inline
 * meta.profile = "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-organization-document"
@@ -352,17 +344,17 @@ Usage: #inline
 * address.city = "PARIS"
 * address.postalCode = "75005"
 
-Instance: ExamplePractitionerRolePrescription-02
+Instance: practitionerRolePrescription-02
 InstanceOf: FRPractitionerRoleDocument
 Description: "Role du professionnel dans l'exemple Prescription"
 Usage: #inline
 * meta.lastUpdated = "2013-05-05T16:13:03Z"
 * meta.profile = "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document"
-* practitioner = Reference(ExamplePractitionerPrescription-02)
-* organization = Reference(ExampleOrganizationPrescription-02)
+* practitioner = Reference(practitionerPrescription-02)
+* organization = Reference(organizationPrescription-02)
 * code.text = "Medecin traitant"
 
-Instance: ExamplePractitionerPrescription-02
+Instance: practitionerPrescription-02
 InstanceOf: FRPractitionerDocument
 Usage: #inline
 * meta.profile = "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitioner-document"
@@ -383,7 +375,7 @@ Usage: #inline
 * qualification[savoirFaire].code.coding[savoirFaire].system = "https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale"
 * qualification[savoirFaire].code.coding[savoirFaire].display = "Qualifié en Médecine générale (SM)"
 
-Instance: ExampleOrganizationPrescription-02
+Instance: organizationPrescription-02
 InstanceOf: FROrganizationDocument
 Usage: #inline
 * meta.profile = "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-organization-document"
@@ -399,17 +391,17 @@ Usage: #inline
 
 
 // PS remplaçant
-Instance: ExamplePractitionerRoleRemplacant
+Instance: practitionerRoleRemplacant
 InstanceOf: FRPractitionerRoleDocument
 Usage: #example
 
-* practitioner = Reference(ExamplePractitionerRemplacant)
-* organization = Reference(ExampleOrganizationPrescription-02)
+* practitioner = Reference(practitionerRemplacant)
+* organization = Reference(organizationPrescription-02)
 * code.coding.system = "http://terminology.hl7.org/CodeSystem/practitioner-role"
-* code.coding.code = #doctor
+* code[classCode].coding.code = #PROV
 * code[functionCode].coding = #CORRE
 
-Instance: ExamplePractitionerRemplacant
+Instance: practitionerRemplacant
 InstanceOf: FRPractitionerDocument
 Usage: #inline
 
@@ -437,14 +429,15 @@ Usage: #inline
 * qualification[savoirFaire].code.coding[savoirFaire].display = "Qualifié en Médecine générale (SM)"
 
 // Exécutant et/ou Date d'exécution souhaitée 
-Instance: ExamplePractitionerRolePharmacien
+Instance: practitionerRolePharmacien
 InstanceOf: FRPractitionerRoleDocument
 Usage: #inline
 
 * practitioner = Reference(ExamplePractitionerPharmacien)
-* organization = Reference(ExampleOrganizationPrescription-03)
+* organization = Reference(organizationPrescription-03)
 * code.coding.system = "http://terminology.hl7.org/CodeSystem/practitioner-role"
 * code.coding.code = #pharmacist
+* code[classCode].coding.code = #PROV
 
 // Exécutant et/ou Date d'exécution souhaitée
 Instance: ExamplePractitionerPharmacien
@@ -475,7 +468,7 @@ Usage: #inline
 * qualification[savoirFaire].code.coding[savoirFaire].display = "Pharmacien titulaire d'officine"
 
 // Pharmacie SAMPAIX
-Instance: ExampleOrganizationPrescription-03
+Instance: organizationPrescription-03
 InstanceOf: FROrganizationDocument
 Usage: #example
 
@@ -492,7 +485,7 @@ Usage: #example
 * address.postalCode = "75005"
 * address.city = "PARIS"
 
-Instance: ExampleEncounterPrescription
+Instance: encounterPrescription
 InstanceOf: FREncounterCareDocument
 Description: "Contexte de la prise en charge"
 Usage: #inline
@@ -507,7 +500,7 @@ Usage: #inline
 * period.extension.valueCode = #not-applicable
 * location.location = Reference(urn:uuid:location-Prescription-001)
 
-Instance: ExampleLocationPrescription
+Instance: locationPrescription
 InstanceOf: FRLocationDocument
 Usage: #inline
 * id = "example-location-Prescription"
@@ -515,7 +508,7 @@ Usage: #inline
 * type.coding[secteurActivite].code = #SA07 "Cabinet individuel"
 
 // Paracetamol 500 mg
-Instance: ExampleMedicationPrescription
+Instance: medicationPrescription-01
 InstanceOf: FRMedicationDocument
 Usage: #inline
 Description: "Paracetamol 500 mg"
@@ -524,26 +517,28 @@ Description: "Paracetamol 500 mg"
 * code.coding[0].display = "PARACETAMOL MYLAN 500 mg, comprime"
 * code.coding[1].system = "urn:oid:1.2.250.1.213.2.59"
 * code.coding[1].code = #MV00002306
-* code.coding[1].display = "Paracetamol 500 mg comprime"
+* code.coding[1].display = "Paracetamol 500 mg comprimé"
 * code.coding[2].system = "urn:oid:1.2.250.1.213.2.3.2"
 * code.coding[2].code = #3400933516390
-* code.coding[2].display = "PARACETAMOL MYLAN 500 mg, comprime, plaquette de 16 comprimes"
-* code.text = "PARACETAMOL MYLAN 500 mg, comprime"
-* extension[productName].valueString = "Paracetamol Mylan 500 mg comprime"
-* form.text = "comprime"
+* code.coding[2].display = "PARACETAMOL MYLAN 500 mg, comprimé, plaquette de 16 comprimes"
+* code.text = "PARACETAMOL MYLAN 500 mg, comprimé"
+* extension[productName].valueString = "Paracetamol Mylan 500 mg comprimé"
+* form.coding[0].code = #50015000 "Comprimé"
+* form.text = "comprimé"
 * ingredient[0].itemCodeableConcept = $SMS#100000090498 "Paracetamol"
 * ingredient[0].strength.numerator.value = 500
 * ingredient[0].strength.numerator.unit = "mg"
 * ingredient[0].strength.denominator.value = 1
-* ingredient[0].strength.denominator.unit = "comprime"
+* ingredient[0].strength.denominator.unit = "comprimé"
 
 // Preparation magistrale
-Instance: ExampleMedicationPrescription-02
+Instance: medicationPrescription-02
 InstanceOf: FRMedicationDocument
 Usage: #inline
 Description: "Preparation magistrale"
 * code.text = "Preparation magistrale : Diprosone 30 g et Cerat Frais de Galien 70 g"
 * extension[productName].valueString = "Preparation magistrale"
+* form.coding[0].code = #50015000 "Pommade pour application cutanee et nasale"
 * form.text = "pommade pour application cutanee et nasale"
 * ingredient[0].itemCodeableConcept.text = "Diprosone"
 * ingredient[0].strength.numerator.value = 30
@@ -556,23 +551,23 @@ Description: "Preparation magistrale"
 * ingredient[1].strength.denominator.value = 100
 * ingredient[1].strength.denominator.unit = "g"
 
-Instance: ExampleMedicationRequest
+Instance: medicationRequest-01
 InstanceOf: FRMedicationRequestDocument
 Usage: #inline
 Description: "Paracetamol Mylan 500 mg comprime"
 * identifier.system = "urn:oid:1.2.250.1.213.1.1.1.39.2024.2.1"
 * identifier.value = "AADC9C14-F1CA-4177-B2C8-A5178D5B3CA0"
-* subject = Reference(ExamplePatientPrescription)
-* medicationReference = Reference(ExampleMedicationPrescription)
-* requester = Reference(ExamplePractitionerRolePrescription-02)
+* subject = Reference(patientPrescription)
+* medicationReference = Reference(medicationPrescription-01)
+* requester = Reference(practitionerRolePrescription-02)
 * authoredOn = "2023-12-01T09:30:00+01:00"
 * extension[author].extension[type].valueCode = #AUT
-* extension[author].extension[actor].valueReference = Reference(ExamplePractitionerRolePrescription-02)
+* extension[author].extension[actor].valueReference = Reference(practitionerRolePrescription-02)
 * extension[horsAMM].valueBoolean = false
 * extension[notCovered].valueBoolean = false
 * dosageInstruction[0].sequence = 1
-* dosageInstruction[0].timing.repeat.boundsPeriod.start = "2023-12-01"
-* dosageInstruction[0].timing.repeat.boundsPeriod.end = "2023-12-02"
+* dosageInstruction[0].timing.repeat.boundsPeriod.start = "2026-05-01"
+* dosageInstruction[0].timing.repeat.boundsPeriod.end = "2026-05-02"
 * dosageInstruction[0].timing.repeat.frequency = 3
 * dosageInstruction[0].timing.repeat.period = 1
 * dosageInstruction[0].timing.repeat.periodUnit = #d
@@ -589,13 +584,13 @@ Description: "Paracetamol Mylan 500 mg comprime"
 * dosageInstruction[0].maxDosePerPeriod.numerator.unit = "comprime"
 * dosageInstruction[0].maxDosePerPeriod.denominator.value = 1
 * dosageInstruction[0].maxDosePerPeriod.denominator.unit = "jour"
-* dosageInstruction[0].text = "Du 01/12/2023 au 02/12/2023 : 1 a 2 comprimes, 3 fois par jour"
+* dosageInstruction[0].text = "Du 01/05/2026 au 04/05/2026 : 1 a 2 comprimes, 3 fois par jour"
 * dosageInstruction[0].additionalInstruction[instructionsPatient].coding.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
 * dosageInstruction[0].additionalInstruction[instructionsPatient].coding.code = #PINSTRUCT
 * dosageInstruction[0].additionalInstruction[instructionsPatient].text = "A prendre de preference apres les repas"
 * dosageInstruction[1].sequence = 2
-* dosageInstruction[1].timing.repeat.boundsPeriod.start = "2023-12-03"
-* dosageInstruction[1].timing.repeat.boundsPeriod.end = "2023-12-06"
+* dosageInstruction[1].timing.repeat.boundsPeriod.start = "2026-05-01"
+* dosageInstruction[1].timing.repeat.boundsPeriod.end = "2026-05-04"
 * dosageInstruction[1].timing.repeat.frequency = 2
 * dosageInstruction[1].timing.repeat.period = 1
 * dosageInstruction[1].timing.repeat.periodUnit = #d
@@ -608,99 +603,99 @@ Description: "Paracetamol Mylan 500 mg comprime"
 * dosageInstruction[1].doseAndRate[1].rateRange.high.value = 2000
 * dosageInstruction[1].doseAndRate[1].rateRange.high.unit = "mg/j"
 * dosageInstruction[1].route.text = "Voie orale"
-* dosageInstruction[1].text = "Du 03/12/2023 au 06/12/2023 : 1 a 2 comprimes, 2 fois par jour"
+* dosageInstruction[1].text = "Du 06/05/2026 au 08/05/2026 : 1 a 2 comprimes, 2 fois par jour"
 * dispenseRequest.quantity.value = 2
 * dispenseRequest.quantity.unit = "boite"
 * dispenseRequest.numberOfRepeatsAllowed = 3
-* dispenseRequest.validityPeriod.start = "2023-12-01"
-* dispenseRequest.validityPeriod.end = "2023-12-06"
+* dispenseRequest.validityPeriod.start = "2026-05-06"
+* dispenseRequest.validityPeriod.end = "2026-05-08"
 * substitution.allowedCodeableConcept.text = "Aucune substitution permise"
 * instantiatesUri = "urn:oid:AADC9C14-F1CA-4177-B2C8-A5178D5B3CA0"
 
 // Preparation magistrale Diprosone et Cerat Frais de Galien
-Instance: ExampleMedicationRequest-02
+Instance: medicationRequest-02
 InstanceOf: FRMedicationRequestDocument
 Usage: #inline
 Description: "Preparation magistrale Diprosone et Cerat Frais de Galien"
 * identifier.system = "urn:oid:1.2.250.1.213.1.1.1.39.2024.2.1"
 * identifier.value = "AADC9C14-F1CA-4177-B2C8-A5178D5B3CA0-PM"
-* subject = Reference(ExamplePatientPrescription)
-* medicationReference = Reference(ExampleMedicationPrescription-02)
-* requester = Reference(ExamplePractitionerRolePrescription-02)
+* subject = Reference(patientPrescription)
+* medicationReference = Reference(medicationPrescription-02)
+* requester = Reference(practitionerRolePrescription-02)
 * authoredOn = "2023-12-01T09:30:00+01:00"
 * extension[author].extension[type].valueCode = #AUT
-* extension[author].extension[actor].valueReference = Reference(ExamplePractitionerRolePrescription-02)
+* extension[author].extension[actor].valueReference = Reference(practitionerRolePrescription-02)
 * extension[horsAMM].valueBoolean = false
 * extension[notCovered].valueBoolean = false
 * dosageInstruction[0].sequence = 1
-* dosageInstruction[0].timing.repeat.boundsPeriod.start = "2023-12-01"
-* dosageInstruction[0].timing.repeat.boundsPeriod.end = "2023-12-06"
+* dosageInstruction[0].timing.repeat.boundsPeriod.start = "2026-05-01"
+* dosageInstruction[0].timing.repeat.boundsPeriod.end = "2026-05-08"
 * dosageInstruction[0].timing.repeat.frequency = 2
 * dosageInstruction[0].timing.repeat.period = 1
 * dosageInstruction[0].timing.repeat.periodUnit = #d
 * dosageInstruction[0].route.text = "Voie cutanee"
 * dosageInstruction[0].site.text = "visage"
-* dosageInstruction[0].text = "2 applications par jour du 01/12/2023 au 06/12/2023"
+* dosageInstruction[0].text = "2 applications par jour du 01/05/2026 au 08/05/2026"
 * dosageInstruction[0].additionalInstruction[instructionsPatient].coding.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
 * dosageInstruction[0].additionalInstruction[instructionsPatient].coding.code = #PINSTRUCT
 * dosageInstruction[0].additionalInstruction[instructionsPatient].text = "Diminuer la posologie progressivement une fois la poussee traitee. Par exemple en appliquant la preparation une fois par jour pendant 5 jours, puis 1 jour sur 2 pendant 5 jours environ avant d'arreter."
 * dispenseRequest.quantity.value = 1
 * dispenseRequest.quantity.unit = "tube"
 * dispenseRequest.numberOfRepeatsAllowed = 0
-* dispenseRequest.validityPeriod.start = "2023-12-01"
-* dispenseRequest.validityPeriod.end = "2023-12-06"
+* dispenseRequest.validityPeriod.start = "2026-05-01"
+* dispenseRequest.validityPeriod.end = "2026-05-08"
 * substitution.allowedCodeableConcept.text = "Aucune substitution permise"
 
-Instance: ExampleVitalSignsPanelPrescription
+Instance: vitalSignsPanelPrescription
 InstanceOf: FRObservationVitalSignsPanelDocument
 Usage: #inline
 Description: "Panel de signes vitaux"
 * identifier.system = "urn:uuid"
 * identifier.value = "0B9FE5D6-8A5E-46D6-87BF-D9E19F73B956"
 * code = $LNC#85353-1 "Signes vitaux"
-* subject = Reference(ExamplePatientPrescription)
-* effectiveDateTime = "2023-12-01"
-* performer = Reference(ExamplePractitionerRolePrescription-02)
+* subject = Reference(patientPrescription)
+* effectiveDateTime = "2026-05-01"
+* performer = Reference(practitionerRolePrescription-02)
 * performer.extension[author].extension[type].valueCode = #AUT
-* performer.extension[author].extension[actor].valueReference = Reference(ExamplePractitionerRolePrescription-02)
-* hasMember[0] = Reference(ExampleVitalSignWeightPrescription)
-* hasMember[+] = Reference(ExampleVitalSignHeightPrescription)
+* performer.extension[author].extension[actor].valueReference = Reference(practitionerRolePrescription-02)
+* hasMember[0] = Reference(vitalSignWeightPrescription)
+* hasMember[+] = Reference(vitalSignHeightPrescription)
 
-Instance: ExampleVitalSignWeightPrescription
+Instance: vitalSignWeightPrescription
 InstanceOf: FRObservationVitalSignsDocument
 Usage: #inline
 Description: "Poids observe"
 * identifier.system = "urn:uuid"
 * identifier.value = "C4815527-3DBA-4907-B3B1-EC6F9F8D1224"
 * code = $LNC#29463-7 "Poids (mesure)"
-* subject = Reference(ExamplePatientPrescription)
-* effectiveDateTime = "2023-12-01"
-* performer = Reference(ExamplePractitionerRolePrescription-02)
+* subject = Reference(patientPrescription)
+* effectiveDateTime = "2026-05-01"
+* performer = Reference(practitionerRolePrescription-02)
 * performer.extension[author].extension[type].valueCode = #AUT
-* performer.extension[author].extension[actor].valueReference = Reference(ExamplePractitionerRolePrescription-02)
+* performer.extension[author].extension[actor].valueReference = Reference(practitionerRolePrescription-02)
 * valueQuantity.value = 55
 * valueQuantity.unit = "kg"
 * valueQuantity.system = "http://unitsofmeasure.org"
 * valueQuantity.code = #kg
 
-Instance: ExampleVitalSignHeightPrescription
+Instance: vitalSignHeightPrescription
 InstanceOf: FRObservationVitalSignsDocument
 Usage: #inline
 Description: "Taille observee"
 * identifier.system = "urn:uuid"
 * identifier.value = "80E7B7B1-353A-4870-B8F4-F1176A23F1DB"
 * code = $LNC#8302-2 "Taille"
-* subject = Reference(ExamplePatientPrescription)
-* effectiveDateTime = "2023-12-01"
-* performer = Reference(ExamplePractitionerRolePrescription-02)
+* subject = Reference(patientPrescription)
+* effectiveDateTime = "2026-05-01"
+* performer = Reference(practitionerRolePrescription-02)
 * performer.extension[author].extension[type].valueCode = #AUT
-* performer.extension[author].extension[actor].valueReference = Reference(ExamplePractitionerRolePrescription-02)
+* performer.extension[author].extension[actor].valueReference = Reference(practitionerRolePrescription-02)
 * valueQuantity.value = 170
 * valueQuantity.unit = "cm"
 * valueQuantity.system = "http://unitsofmeasure.org"
 * valueQuantity.code = #cm
 
-Instance: ExamplePregnancyObservationPrescription
+Instance: pregnancyObservationPrescription
 InstanceOf: FRObservationPregnancyDocument
 Usage: #inline
 Description: "Statut de grossesse"
@@ -708,13 +703,13 @@ Description: "Statut de grossesse"
 * identifier.value = "889E8A7C-ABE9-426B-873C-BDF23B505006"
 * code = $LNC#11449-6 "Statut de grossesse"
 * status = #final
-* subject = Reference(ExamplePatientPrescription)
+* subject = Reference(patientPrescription)
 * effectiveDateTime = "2023-12-01"
 * valueCodeableConcept.coding.system = "http://snomed.info/sct"
 * valueCodeableConcept.coding.code = #77386006
 * valueCodeableConcept.coding.display = "grossesse en cours"
 
-Instance: ExamplePdfCopyDocumentReferencePrescription
+Instance: pdfCopyDocumentReferencePrescription
 InstanceOf: FRDocumentReferenceDocument
 Usage: #inline
 Description: "Copie PDF du document"
@@ -723,20 +718,20 @@ Description: "Copie PDF du document"
 * status = #current
 * docStatus = #final
 * type = $LNC#55108-5 "Copie du document"
-* subject = Reference(ExamplePatientPrescription)
+* subject = Reference(patientPrescription)
 * date = "2023-12-01T09:30:00+01:00"
 * content[0].attachment.contentType = #application/pdf
 * content[0].attachment.title = "Copie PDF du document"
 * content[0].attachment.data = ""
 
-Instance: ExampleBarcodeMediaPrescription
+Instance: barcodeMediaPrescription
 InstanceOf: FRMediaDocument
 Usage: #inline
 Description: "Code 2D de la prescription"
 * status = #completed
-* subject = Reference(ExamplePatientPrescription)
-* operator = Reference(ExamplePractitionerRolePrescription-02)
+* subject = Reference(patientPrescription)
+* operator = Reference(practitionerRolePrescription-02)
 * operator.extension[author].extension[type].valueCode = #AUT
-* operator.extension[author].extension[actor].valueReference = Reference(ExamplePractitionerRolePrescription-02)
+* operator.extension[author].extension[actor].valueReference = Reference(practitionerRolePrescription-02)
 * content.contentType = #image/jpeg
 * content.data = "ZmFrZS1qcGVn"
