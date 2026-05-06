@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-informateur | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-23 | *Computable Name*:FRLMInformateur |
+| Draft as of 2026-05-06 | *Computable Name*:FRLMInformateur |
 
  
 Informateur (personne ayant fourni des informations utiles à la production du document : professionnel, structure, patient/usager, autre), personne de confiance, personne à prévenir en cas d’urgence, aidant, aidé. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-informateur.cs
   "name" : "FRLMInformateur",
   "title" : "Modèle logique métier - FR LM Informateur",
   "status" : "draft",
-  "date" : "2026-04-23T15:25:59+00:00",
+  "date" : "2026-05-06T07:44:21+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

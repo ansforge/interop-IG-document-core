@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-informant | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-23 | *Computable Name*:FRCDAInformant |
+| Draft as of 2026-05-06 | *Computable Name*:FRCDAInformant |
 
  
 L’élément de l’en-tête du CDA informant permet d’identifier un informateur, une personne de confiance, une personne à prévenir en cas d’urgence, un aidant ou une personne aidée. 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-informant.csv
   "name" : "FRCDAInformant",
   "title" : "CDA - informant",
   "status" : "draft",
-  "date" : "2026-04-23T15:25:59+00:00",
+  "date" : "2026-05-06T07:44:21+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

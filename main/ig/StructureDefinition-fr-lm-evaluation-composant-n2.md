@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-evaluation-composant-n2 | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-23 | *Computable Name*:FRLMEvaluationComposantN2 |
+| Draft as of 2026-05-06 | *Computable Name*:FRLMEvaluationComposantN2 |
 
  
 Evaluation Composant N2 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-evaluation-com
   "name" : "FRLMEvaluationComposantN2",
   "title" : "Modèle logique métier - FR LM Evaluation Composant N2",
   "status" : "draft",
-  "date" : "2026-04-23T15:25:59+00:00",
+  "date" : "2026-05-06T07:44:21+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

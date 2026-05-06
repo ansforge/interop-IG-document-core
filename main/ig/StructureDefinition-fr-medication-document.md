@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-document | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-23 | *Computable Name*:FRMedicationDocument |
+| Draft as of 2026-05-06 | *Computable Name*:FRMedicationDocument |
 
  
 FRMedicationDocument permet de décrire un médicament ou un vaccin. 
 
 **Utilisations:**
 
-* Référence ce Profil: [CarePlan - FR Care Plan Document](StructureDefinition-fr-care-plan-document.md), [MedicationAdministration - FR Medication Administration Document](StructureDefinition-fr-medication-administration-document.md), [MedicationDispense - FR Medication Dispense Document](StructureDefinition-fr-medication-dispense-document.md), [MedicationRequest - FR Medication Request Document](StructureDefinition-fr-medication-request-document.md)... Show 2 more, [MedicationStatement - FR Medication Statement Document](StructureDefinition-fr-medication-statement-document.md) and [Medication - FR Medications Combinaison Document](StructureDefinition-fr-medications-combinaison-document.md)
+* Référence ce Profil: [CarePlan - FR Care Plan Document](StructureDefinition-fr-care-plan-document.md), [MedicationAdministration - FR Medication Administration Document](StructureDefinition-fr-medication-administration-document.md), [MedicationDispense - FR Medication Dispense Document](StructureDefinition-fr-medication-dispense-document.md), [MedicationRequest - FR Medication Request Document](StructureDefinition-fr-medication-request-document.md) and [MedicationStatement - FR Medication Statement Document](StructureDefinition-fr-medication-statement-document.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-medication-document)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-medication-docume
   "name" : "FRMedicationDocument",
   "title" : "Medication - FR Medication Document",
   "status" : "draft",
-  "date" : "2026-04-23T15:25:59+00:00",
+  "date" : "2026-05-06T07:44:21+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

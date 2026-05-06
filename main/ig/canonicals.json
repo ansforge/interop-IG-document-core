@@ -825,13 +825,6 @@
   "name" : "CISISTelecom"
 },
 {
-  "id" : "fr-Observation-vital-signs-panel-document",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-Observation-vital-signs-panel-document",
-  "version" : "0.1.0-snapshot",
-  "name" : "FRObservationVitalSignsPanelDocument"
-},
-{
   "id" : "fr-accession-number-identifier-document",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-accession-number-identifier-document",
@@ -3590,13 +3583,6 @@
   "name" : "FRMedicationStatementDocument"
 },
 {
-  "id" : "fr-medications-combinaison-document",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medications-combinaison-document",
-  "version" : "0.1.0-snapshot",
-  "name" : "FRMedicationsCombinaisonDocument"
-},
-{
   "id" : "fr-method-extension",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-method-extension",
@@ -3749,6 +3735,13 @@
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-vital-signs-document",
   "version" : "0.1.0-snapshot",
   "name" : "FRObservationVitalSignsDocument"
+},
+{
+  "id" : "fr-observation-vital-signs-panel-document",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-vital-signs-panel-document",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRObservationVitalSignsPanelDocument"
 },
 {
   "id" : "fr-observation-work-related-accident-document",

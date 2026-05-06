@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "FRDocumentCore"] ; # 
   fhir:title [ fhir:v "ANS IG document core"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-04-23T15:25:59+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-05-06T07:44:21+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -10103,28 +10103,6 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medications-combinaison-document> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-medications-combinaison-document" ]
-       ] ;
-       fhir:name [ fhir:v "Medication - FR Medications Combinaison Document" ] ;
-       fhir:description [ fhir:v "FRMedicationsCombinaisonDocument permet de décrire une combinaison de médicaments ou de vaccins." ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Ressources FHIR corps" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-administration-document> ;
          fhir:reference [ fhir:v "StructureDefinition/fr-medication-administration-document" ]
        ] ;
@@ -14082,8 +14060,8 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-Observation-vital-signs-panel-document> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-Observation-vital-signs-panel-document" ]
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-vital-signs-panel-document> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-observation-vital-signs-panel-document" ]
        ] ;
        fhir:name [ fhir:v "Observation - FR Observation Vital Signs Panel Document" ] ;
        fhir:description [ fhir:v "FRObservationVitalSignsPanelDocument permet de regrouper des informations relatives aux mesures cliniques du patient." ] ;

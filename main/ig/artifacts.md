@@ -513,7 +513,6 @@ Modèles de données métier représentant les concepts élémentaires, modélis
 | [List - FR Pregnancy History Document](StructureDefinition-fr-pregnancy-history-document.md) | FRPregnancyHistoryDocument est une liste contenant soit un événement de naissance, soit une observation sur la grossesse, mais pas les deux. |
 | [Media - FR Media Document](StructureDefinition-fr-media-document.md) | FRMediaDocument permet de positionner une image de type gif, jpeg, png ou bm. Elle est encodée en base 64 |
 | [Medication - FR Medication Document](StructureDefinition-fr-medication-document.md) | FRMedicationDocument permet de décrire un médicament ou un vaccin. |
-| [Medication - FR Medications Combinaison Document](StructureDefinition-fr-medications-combinaison-document.md) | FRMedicationsCombinaisonDocument permet de décrire une combinaison de médicaments ou de vaccins. |
 | [MedicationAdministration - FR Medication Administration Document](StructureDefinition-fr-medication-administration-document.md) | * FRMedicationAdministrationDocument permert de décrire les modalités d’administration d’un médicament au patient.
 * Il permet de décrire notamment le médicament, le mode d’administration, la quantité, la durée et la fréquence d’administration.
 * Si le traitement est en attente d’administration c’est-à dire qu’il a été prescrit.
@@ -545,7 +544,7 @@ Modèles de données métier représentant les concepts élémentaires, modélis
 | [Observation - FR Observation Vital Signs Document](StructureDefinition-fr-observation-vital-signs-document.md) | * FRObservationVitalSignsDocument permet d’indiquer les informations détaillées relatives à une mesure clinique spécifique.
 * Il est basée sur la ressource Observation qu’elle spécialise en portant des contraintes sur les vocabulaires des éléments ‘code’ et ‘value’.
  |
-| [Observation - FR Observation Vital Signs Panel Document](StructureDefinition-fr-Observation-vital-signs-panel-document.md) | FRObservationVitalSignsPanelDocument permet de regrouper des informations relatives aux mesures cliniques du patient. |
+| [Observation - FR Observation Vital Signs Panel Document](StructureDefinition-fr-observation-vital-signs-panel-document.md) | FRObservationVitalSignsPanelDocument permet de regrouper des informations relatives aux mesures cliniques du patient. |
 | [Observation - FR Observation Work Related Accident Document](StructureDefinition-fr-observation-work-related-accident-document.md) | FRObservationWorkRelatedAccidentDocument permet d’indiquer si l’élément auquel elle est associée est en rapport avec un accident du travail / une maladie professionnelle. |
 | [Procedure - FR Procedure Document](StructureDefinition-fr-procedure-document.md) | FRProcedureDocument est un profil utilisé pour décrire un acte planifié ou réalisé. |
 | [Procedure - FR Procedure Imaging Document](StructureDefinition-fr-procedure-imaging-document.md) | FRProcedureImagingDocument permet d’enregistrer les différents paramètres de l’acquisition d’image : acte d’imagerie, localisation anatomique / latéralité / topographie, d’autres paramètres de l’acte |

@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-Observation-vital-signs-panel-document | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-23 | *Computable Name*:FRObservationVitalSignsPanelDocument |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-vital-signs-panel-document | *Version*:0.1.0-snapshot |
+| Draft as of 2026-05-06 | *Computable Name*:FRObservationVitalSignsPanelDocument |
 
  
 FRObservationVitalSignsPanelDocument permet de regrouper des informations relatives aux mesures cliniques du patient. 
@@ -18,7 +18,7 @@ FRObservationVitalSignsPanelDocument permet de regrouper des informations relati
 
 * Ce Profil n'est utilisé par aucun autre profil dans ce guide d'implémentation
 
-Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-Observation-vital-signs-panel-document)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-observation-vital-signs-panel-document)
 
 ### Formal Views of Profile Content
 
@@ -26,7 +26,7 @@ Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https:/
 
  
 
-Other representations of profile: [CSV](StructureDefinition-fr-Observation-vital-signs-panel-document.csv), [Excel](StructureDefinition-fr-Observation-vital-signs-panel-document.xlsx), [Schematron](StructureDefinition-fr-Observation-vital-signs-panel-document.sch) 
+Other representations of profile: [CSV](StructureDefinition-fr-observation-vital-signs-panel-document.csv), [Excel](StructureDefinition-fr-observation-vital-signs-panel-document.xlsx), [Schematron](StructureDefinition-fr-observation-vital-signs-panel-document.sch) 
 
 
 
@@ -35,13 +35,13 @@ Other representations of profile: [CSV](StructureDefinition-fr-Observation-vital
 ```json
 {
   "resourceType" : "StructureDefinition",
-  "id" : "fr-Observation-vital-signs-panel-document",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-Observation-vital-signs-panel-document",
+  "id" : "fr-observation-vital-signs-panel-document",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-vital-signs-panel-document",
   "version" : "0.1.0-snapshot",
   "name" : "FRObservationVitalSignsPanelDocument",
   "title" : "Observation - FR Observation Vital Signs Panel Document",
   "status" : "draft",
-  "date" : "2026-04-23T15:25:59+00:00",
+  "date" : "2026-05-06T07:44:21+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

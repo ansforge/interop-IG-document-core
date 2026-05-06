@@ -37,21 +37,6 @@ package IG #DDDDDD{
              TEL.use => [None..1]
         } 
 
-        class FRObservationVitalSignsPanelDocument{
-
-             Observation => [None..None]
-             Observation.identifier => [1..1]
-             Observation.status => [None..None]
-             Observation.effective[x] => [None..None]
-             Observation.performer => [None..1]
-             Observation.performer.extension:author => <&plus>[0..*]
-             Observation.performer.extension:author.extension:type => <&plus>[None..None]
-             Observation.performer.extension:author.extension:type.value[x] => <&plus>[None..None]
-             Observation.performer.extension:author.extension:actor => <&plus>[None..None]
-             Observation.performer.extension:author.extension:actor.value[x] => <&plus>[None..None]
-             Observation.hasMember => [None..None]
-        } 
-
         class FRAccessionNumberIdentifierDocument{
 
              Identifier.type => [1..None]
@@ -7663,13 +7648,6 @@ package IG #DDDDDD{
              MedicationStatement.dosage.maxDosePerPeriod => [None..None]
         } 
 
-        class FRMedicationsCombinaisonDocument{
-
-             Medication.ingredient => [None..None]
-             Medication.ingredient.item[x] => [None..None]
-             Medication.ingredient.item[x]:itemReference => [0..1]
-        } 
-
         class FRObservationAdministrationBloodDerivativesDocument{
 
              Observation.identifier => [1..1]
@@ -8107,6 +8085,21 @@ package IG #DDDDDD{
              Observation.component.value[x].system => [None..None]
         } 
 
+        class FRObservationVitalSignsPanelDocument{
+
+             Observation => [None..None]
+             Observation.identifier => [1..1]
+             Observation.status => [None..None]
+             Observation.effective[x] => [None..None]
+             Observation.performer => [None..1]
+             Observation.performer.extension:author => <&plus>[0..*]
+             Observation.performer.extension:author.extension:type => <&plus>[None..None]
+             Observation.performer.extension:author.extension:type.value[x] => <&plus>[None..None]
+             Observation.performer.extension:author.extension:actor => <&plus>[None..None]
+             Observation.performer.extension:author.extension:actor.value[x] => <&plus>[None..None]
+             Observation.hasMember => [None..None]
+        } 
+
         class FRObservationWorkRelatedAccidentDocument{
 
              Observation.identifier => [1..1]
@@ -8341,7 +8334,6 @@ package IG #DDDDDD{
      }
      package extension #paleturquoise {
 
-     FRObservationVitalSignsPanelDocument -[#black,dashed,thickness=2]-> FRActorExtension
      FRCompositionDocument -[#black,dashed,thickness=2]-> FRAuthorTimeExtension
      FRCompositionDocument -[#black,dashed,thickness=2]-> FRPerformerEventExtension
      FRCompositionDocument -[#black,dashed,thickness=2]-> FRPerformerEventExtension
@@ -8393,6 +8385,7 @@ package IG #DDDDDD{
      FRObservationSurveyDocument -[#black,dashed,thickness=2]-> FRActorExtension
      FRObservationTransfusionAccidentsDocument -[#black,dashed,thickness=2]-> FRActorExtension
      FRObservationVitalSignsDocument -[#black,dashed,thickness=2]-> FRActorExtension
+     FRObservationVitalSignsPanelDocument -[#black,dashed,thickness=2]-> FRActorExtension
      FRObservationWorkRelatedAccidentDocument -[#black,dashed,thickness=2]-> FRActorExtension
      FRProcedureDocument -[#black,dashed,thickness=2]-> FRProcedurePriorityExtension
      FRProcedureDocument -[#black,dashed,thickness=2]-> FRProcedureDifficultyExtension
@@ -8627,10 +8620,6 @@ package "Ressources de base" #palegreen {
  class "http://hl7.org/cda/stds/core/StructureDefinition/TEL" as  class3ce7c1f18d683e945dff5b14e1dc367c 
 
     class3ce7c1f18d683e945dff5b14e1dc367c --> CISISTelecom
-
- class "vitalspanel" as  class48cc96dc575369fad67347d24c304310 
-
-    class48cc96dc575369fad67347d24c304310 --> FRObservationVitalSignsPanelDocument
 
  class "Identifier" as  class29ee5d1ebcc033234938a5234f1f2075 
 
@@ -10172,10 +10161,6 @@ package "Ressources de base" #palegreen {
 
     class8934c1aef5d0ec0c826ed7fe19f4e1a3 --> FRMedicationStatementDocument
 
- class "Medication" as  class353bd6f65060d17097c3b03141e79cce 
-
-    class353bd6f65060d17097c3b03141e79cce --> FRMedicationsCombinaisonDocument
-
  class "Observation" as  classc680d437163cc6bab4f9bdb35c3073d0 
 
     classc680d437163cc6bab4f9bdb35c3073d0 --> FRObservationAdministrationBloodDerivativesDocument
@@ -10251,6 +10236,10 @@ package "Ressources de base" #palegreen {
  class "vitalsigns" as  classbc3e6f566d4b627eb1169a15f6c63afa 
 
     classbc3e6f566d4b627eb1169a15f6c63afa --> FRObservationVitalSignsDocument
+
+ class "vitalspanel" as  class48cc96dc575369fad67347d24c304310 
+
+    class48cc96dc575369fad67347d24c304310 --> FRObservationVitalSignsPanelDocument
 
  class "Observation" as  classc680d437163cc6bab4f9bdb35c3073d0 
 

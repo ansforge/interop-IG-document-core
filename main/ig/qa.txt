@@ -1,9 +1,9 @@
 FRDocumentCore : Validation Results
 =========================================
 
-err = 1691, warn = 5603, info = 1138
-IG Publisher Version: 2.1.2 Out of date - current version is 2.2.6
-Generated Thu Apr 23 15:42:56 UTC 2026. FHIR version 4.0.1 for ans.document.fr.core#0.1.0-snapshot (canonical = https://interop.esante.gouv.fr/ig/document/core)
+err = 1689, warn = 5603, info = 1138
+IG Publisher Version: 2.1.2 Out of date - current version is 2.2.7
+Generated Wed May 06 08:01:51 UTC 2026. FHIR version 4.0.1 for ans.document.fr.core#0.1.0-snapshot (canonical = https://interop.esante.gouv.fr/ig/document/core)
  Build Errors : 15 / 8 / 0
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/AllergyIntolerance-example-allergy-intolerance-data-absent-reason : 2 / 0 / 3
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRActSubstitutionLMCDAFHIR : 1 / 6 / 1
@@ -40,8 +40,8 @@ Generated Thu Apr 23 15:42:56 UTC 2026. FHIR version 4.0.1 for ans.document.fr.c
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRMedicationLMCDAFHIR : 1 / 6 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRMedicationRequestLMCDAFHIR : 1 / 6 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRMedicationStatementLMCDAFHIR : 1 / 6 / 1
- /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRMedicationsCombinaisonLMCDAFHIR : 1 / 7 / 1
- /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRMedicationsCombinaisonRequestLMCDAFHIR : 1 / 7 / 1
+ /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRMedicationsCombinaisonLMCDAFHIR : 1 / 8 / 1
+ /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRMedicationsCombinaisonRequestLMCDAFHIR : 1 / 8 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRNonHumanSubjectLMCDAFHIR : 1 / 9 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRNoteLMCDAFHIR : 1 / 6 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRObservationAdministrationBloodDerivativesLMCDAFHIR : 1 / 6 / 1
@@ -61,7 +61,7 @@ Generated Thu Apr 23 15:42:56 UTC 2026. FHIR version 4.0.1 for ans.document.fr.c
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRObservationSurveyPannelLMCDAFHIR : 1 / 6 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRObservationTransfusionAccidentsLMCDAFHIR : 1 / 6 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRObservationVitalSignsLMCDAFHIR : 1 / 6 / 1
- /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRObservationVitalSignsPanelLMCDAFHIR : 1 / 8 / 1
+ /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRObservationVitalSignsPanelLMCDAFHIR : 1 / 7 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRObservationWorkRelatedAccidentLMCDAFHIR : 1 / 6 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRParticipantCorpsLMCDAFHIR : 1 / 8 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRPatientWithNonHumanSubjectLMCDAFHIR : 1 / 11 / 1
@@ -137,14 +137,13 @@ Generated Thu Apr 23 15:42:56 UTC 2026. FHIR version 4.0.1 for ans.document.fr.c
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-mappingSystemeFHIR : 1 / 7 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-mappingValidateurCDAFHIR : 1 / 5 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-mappingmodelemetierCDAFHIR : 1 / 8 / 1
- /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ImplementationGuide-ans.document.fr.core : 567 / 13 / 3
+ /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ImplementationGuide-ans.document.fr.core : 566 / 13 / 3
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/Procedure-example-procedure-data-absent-reason : 2 / 0 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-cisis-addr : 2 / 2 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-cisis-telecom : 2 / 1 / 1
- /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-Observation-vital-signs-panel-document : 1 / 1 / 2
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-accession-number-identifier-document : 1 / 1 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-actor-extension : 1 / 1 / 1
- /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-advance-directive-document : 1 / 2 / 3
+ /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-advance-directive-document : 1 / 2 / 4
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-adverse-event-document : 2 / 1 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-allergie-intolerance-document : 2 / 0 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-author-time-extension : 1 / 1 / 1
@@ -536,7 +535,6 @@ Generated Thu Apr 23 15:42:56 UTC 2026. FHIR version 4.0.1 for ans.document.fr.c
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-medication-request-document : 1 / 7 / 5
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-medication-request-out-of-nomenclature-extension : 1 / 1 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-medication-statement-document : 1 / 1 / 1
- /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-medications-combinaison-document : 1 / 1 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-method-extension : 1 / 1 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-not-covered-extension : 1 / 1 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-number-of-frames-extension : 1 / 1 / 1
@@ -559,6 +557,7 @@ Generated Thu Apr 23 15:42:56 UTC 2026. FHIR version 4.0.1 for ans.document.fr.c
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-observation-survey-pannel-document : 1 / 1 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-observation-transfusion-accidents-document : 1 / 1 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-observation-vital-signs-document : 1 / 1 / 1
+ /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-observation-vital-signs-panel-document : 1 / 1 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-observation-work-related-accident-document : 1 / 1 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-organization-document : 1 / 17 / 4
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-patient-document : 1 / 2 / 3
@@ -915,6 +914,7 @@ WARNING: ConceptMap/FRMedicationStatementLMCDAFHIR: ConceptMap: Published concep
 == fsh-generated/resources/ConceptMap-FRMedicationsCombinaisonLMCDAFHIR.json ==
 ERROR: ConceptMap/FRMedicationsCombinaisonLMCDAFHIR: ConceptMap.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 WARNING: ConceptMap/FRMedicationsCombinaisonLMCDAFHIR: ConceptMap.group[0].source: No definition could be found for URL value 'https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-traitement-subordonne'
+WARNING: ConceptMap/FRMedicationsCombinaisonLMCDAFHIR: ConceptMap.group[1].target: No definition could be found for URL value 'https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medications-combinaison-document'
 WARNING: ConceptMap/FRMedicationsCombinaisonLMCDAFHIR: ConceptMap.group[0].source: The Source Code System https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-traitement-subordonne is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
 WARNING: ConceptMap/FRMedicationsCombinaisonLMCDAFHIR: ConceptMap.group[0].target: The Target Code System https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-traitement-subordonne is not fully defined and populated, and no targetScope is specified, so the target code checking will not be performed
 WARNING: ConceptMap/FRMedicationsCombinaisonLMCDAFHIR: ConceptMap.group[1].source: The Source Code System https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-traitement-subordonne is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
@@ -924,6 +924,7 @@ WARNING: ConceptMap/FRMedicationsCombinaisonLMCDAFHIR: ConceptMap: Published con
 == fsh-generated/resources/ConceptMap-FRMedicationsCombinaisonRequestLMCDAFHIR.json ==
 ERROR: ConceptMap/FRMedicationsCombinaisonRequestLMCDAFHIR: ConceptMap.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 WARNING: ConceptMap/FRMedicationsCombinaisonRequestLMCDAFHIR: ConceptMap.group[0].source: No definition could be found for URL value 'https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-traitement-prescrit-subordonne'
+WARNING: ConceptMap/FRMedicationsCombinaisonRequestLMCDAFHIR: ConceptMap.group[1].target: No definition could be found for URL value 'https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medications-combinaison-document'
 WARNING: ConceptMap/FRMedicationsCombinaisonRequestLMCDAFHIR: ConceptMap.group[0].source: The Source Code System https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-traitement-prescrit-subordonne is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
 WARNING: ConceptMap/FRMedicationsCombinaisonRequestLMCDAFHIR: ConceptMap.group[0].target: The Target Code System https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-traitement-prescrit-subordonne is not fully defined and populated, and no targetScope is specified, so the target code checking will not be performed
 WARNING: ConceptMap/FRMedicationsCombinaisonRequestLMCDAFHIR: ConceptMap.group[1].source: The Source Code System https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-traitement-prescrit-subordonne is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
@@ -1088,7 +1089,6 @@ WARNING: ConceptMap/FRObservationVitalSignsLMCDAFHIR: ConceptMap: Published conc
 == fsh-generated/resources/ConceptMap-FRObservationVitalSignsPanelLMCDAFHIR.json ==
 ERROR: ConceptMap/FRObservationVitalSignsPanelLMCDAFHIR: ConceptMap.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 WARNING: ConceptMap/FRObservationVitalSignsPanelLMCDAFHIR: ConceptMap.group[0].source: No definition could be found for URL value 'https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-signe-vital'
-WARNING: ConceptMap/FRObservationVitalSignsPanelLMCDAFHIR: ConceptMap.group[1].target: No definition could be found for URL value 'https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-vital-signs-panel-document'
 WARNING: ConceptMap/FRObservationVitalSignsPanelLMCDAFHIR: ConceptMap.group[0].source: The Source Code System https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-signe-vital is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
 WARNING: ConceptMap/FRObservationVitalSignsPanelLMCDAFHIR: ConceptMap.group[0].target: The Target Code System https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-signes-vitaux is not fully defined and populated, and no targetScope is specified, so the target code checking will not be performed
 WARNING: ConceptMap/FRObservationVitalSignsPanelLMCDAFHIR: ConceptMap.group[1].source: The Source Code System https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-signes-vitaux is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
@@ -2118,167 +2118,167 @@ ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[389].groupingId: id value 'Mapping ML-CDA-FHIR des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[390].groupingId: id value 'Ressources FHIR corps' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[391].groupingId: id value 'Ressources FHIR corps' is not valid
+WARNING: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[392].description: value should not start or finish with whitespace '\n - FRMedicationAdministrationDocument permert de décrire les modalités d'administration d'un médicament au patient.\n - Il permet de décrire notamment le médicament, le mode d'administration, la quantité, la durée et la fréquence d'administration.\n - Si le traitement est en attente d’administration c’est-à dire qu’il a été prescrit.'
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[392].groupingId: id value 'Ressources FHIR corps' is not valid
-WARNING: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[393].description: value should not start or finish with whitespace '\n - FRMedicationAdministrationDocument permert de décrire les modalités d'administration d'un médicament au patient.\n - Il permet de décrire notamment le médicament, le mode d'administration, la quantité, la durée et la fréquence d'administration.\n - Si le traitement est en attente d’administration c’est-à dire qu’il a été prescrit.'
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[393].groupingId: id value 'Ressources FHIR corps' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[394].groupingId: id value 'Ressources FHIR corps' is not valid
+WARNING: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[395].description: value should not start or finish with whitespace '\n - FRMedicationStatementDocument permet de décrire les modalités d'administration d'un médicament au patient.\n - Il permet de décrire notamment le médicament, le mode d'administration, la quantité, la durée et la fréquence d'administration.\n - Si le traitement a déjà été administré ou si information rapporté par le patient ou si aucun traitement.'
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[395].groupingId: id value 'Ressources FHIR corps' is not valid
-WARNING: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[396].description: value should not start or finish with whitespace '\n - FRMedicationStatementDocument permet de décrire les modalités d'administration d'un médicament au patient.\n - Il permet de décrire notamment le médicament, le mode d'administration, la quantité, la durée et la fréquence d'administration.\n - Si le traitement a déjà été administré ou si information rapporté par le patient ou si aucun traitement.'
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[396].groupingId: id value 'Ressources FHIR corps' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[396].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[397].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[398].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[399].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[400].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[401].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[402].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[399].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[400].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[401].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[402].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[403].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[404].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[405].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[406].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[407].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[405].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[406].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[407].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[408].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[409].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[410].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[411].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[410].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[411].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[412].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[413].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[414].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[415].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[416].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[417].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[418].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[416].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[417].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[418].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[419].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[420].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[421].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[422].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[423].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[424].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[425].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[426].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[427].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[428].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[429].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[430].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[423].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[424].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[425].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[426].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[427].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[428].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[429].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[430].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[431].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[432].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[433].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[434].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[435].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[436].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[432].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[433].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[434].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[435].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[436].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[437].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[438].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[439].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[440].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[441].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[442].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[438].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[439].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[440].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[441].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[442].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[443].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[444].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[445].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[446].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[445].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[446].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[447].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[448].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[449].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[450].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[451].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[452].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[453].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[453].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[454].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[455].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[456].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[456].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[457].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[458].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[459].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[458].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[459].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[460].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[461].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[462].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[463].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[464].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[465].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[466].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[467].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[468].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[466].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[467].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[468].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[469].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[470].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[471].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[472].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[473].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[474].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[476].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[477].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[479].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[480].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[481].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[482].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[475].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[476].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[478].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[479].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[480].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[481].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[482].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[483].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[484].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[485].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[486].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[484].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[485].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[486].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[487].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[488].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[488].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[489].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[490].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[492].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[493].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[491].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[492].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[493].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[494].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[495].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[496].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[497].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[498].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[495].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[496].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[497].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[498].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[499].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[500].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[501].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[502].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[502].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[503].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[504].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[504].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[505].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[506].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[507].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[508].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[507].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[508].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[509].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[510].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[511].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[512].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[513].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[514].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[514].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[515].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[516].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[517].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[518].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[519].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[520].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[521].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[521].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[522].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[523].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[524].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[525].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[526].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[523].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[524].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[525].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[526].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[527].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[528].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[529].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[530].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[531].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[532].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[533].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[529].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[530].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[531].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[532].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[533].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[534].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[535].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[536].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[537].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[536].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[537].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[538].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[539].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[540].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[541].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[542].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[542].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[543].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[544].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[545].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[545].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[546].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[547].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[548].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[549].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[550].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[551].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[552].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[553].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[549].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[550].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[551].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[552].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[553].groupingId: id value 'Ressources FHIR corps' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[554].groupingId: id value 'Ressources FHIR corps' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[555].groupingId: id value 'Ressources FHIR corps' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[556].groupingId: id value 'Ressources FHIR corps' is not valid
@@ -2296,8 +2296,8 @@ ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[568].groupingId: id value 'Ressources FHIR corps' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[569].groupingId: id value 'Ressources FHIR corps' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[570].groupingId: id value 'Ressources FHIR corps' is not valid
+WARNING: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[571].description: value should not start or finish with whitespace '\n - FRObservationVitalSignsDocument permet d'indiquer les informations détaillées relatives à une mesure clinique spécifique.\n - Il est basée sur la ressource Observation qu'elle spécialise en portant des contraintes sur les vocabulaires des éléments 'code' et 'value'.'
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[571].groupingId: id value 'Ressources FHIR corps' is not valid
-WARNING: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[572].description: value should not start or finish with whitespace '\n - FRObservationVitalSignsDocument permet d'indiquer les informations détaillées relatives à une mesure clinique spécifique.\n - Il est basée sur la ressource Observation qu'elle spécialise en portant des contraintes sur les vocabulaires des éléments 'code' et 'value'.'
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[572].groupingId: id value 'Ressources FHIR corps' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[573].groupingId: id value 'Ressources FHIR corps' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[574].groupingId: id value 'Ressources FHIR corps' is not valid
@@ -2305,8 +2305,7 @@ ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[576].groupingId: id value 'Ressources FHIR corps' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[577].groupingId: id value 'Ressources FHIR corps' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[578].groupingId: id value 'Ressources FHIR corps' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[579].groupingId: id value 'Ressources FHIR corps' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[594].reference: Unable to resolve resource with reference 'Binary/BIO-CR-BIO-2024.01-glycemie-mole'
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[593].reference: Unable to resolve resource with reference 'Binary/BIO-CR-BIO-2024.01-glycemie-mole'
 WARNING: ImplementationGuide/ans.document.fr.core: ImplementationGuide.dependsOn[1]: The ImplementationGuide is based on FHIR version 4.0.1 but package hl7.cda.uv.core#2.0.1-sd is based on FHIR version 5.0.0. In general, this version mismatch should be avoided - some tools will try to make this work with variable degrees of success, but others will not even try
 WARNING: ImplementationGuide/ans.document.fr.core: ImplementationGuide.dependsOn[3]: The ImplementationGuide uses package hl7.fhir.fr.core#2.1.0 released on 2024-09-04, but the most recent appropriate version is 2.2.0. This reference is getting old and the more recent version should be considered
 WARNING: ImplementationGuide/ans.document.fr.core: ImplementationGuide.dependsOn[8]: The ImplementationGuide is based on FHIR version 4.0.1 but package ihe.pharm.mpd#1.0.0-comment-2 is based on FHIR version 5.0.0. In general, this version mismatch should be avoided - some tools will try to make this work with variable degrees of success, but others will not even try
@@ -2322,10 +2321,6 @@ WARNING: StructureDefinition/cisis-addr: StructureDefinition.snapshot: The slice
 WARNING: StructureDefinition/cisis-telecom: StructureDefinition.description: The markdown contains content that appears to be an embedded HTML tag starting at '<t'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
 ERROR: StructureDefinition/cisis-telecom: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 ERROR: StructureDefinition/cisis-telecom: StructureDefinition.snapshot: Constraint failed: sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities (element.all(definition.exists() and min.exists() and max.exists()))'
-== fsh-generated/resources/StructureDefinition-fr-Observation-vital-signs-panel-document.json ==
-ERROR: StructureDefinition/fr-Observation-vital-signs-panel-document: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
-INFORMATION: StructureDefinition/fr-Observation-vital-signs-panel-document: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-Observation-vital-signs-panel-document'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-fr-accession-number-identifier-document.json ==
 ERROR: StructureDefinition/fr-accession-number-identifier-document: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-accession-number-identifier-document'): The Implementation Guide contains no examples for this data type profile
@@ -2334,6 +2329,7 @@ ERROR: StructureDefinition/fr-actor-extension: StructureDefinition.jurisdiction[
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-fr-advance-directive-document.json ==
 ERROR: StructureDefinition/fr-advance-directive-document: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
+INFORMATION: StructureDefinition/fr-advance-directive-document: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
 WARNING: StructureDefinition/fr-advance-directive-document: StructureDefinition.snapshot.element[70].binding.valueSet: There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-PurposeOfUse'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '3.1.0', found versions: 2.0.0 (from hl7.terminology#5.2.0), 3.0.0 (from hl7.terminology.r4#5.5.0), 3.1.0 (from hl7.terminology.r4#7.1.0). Suggested fix: change the canonical reference from 'http://terminology.hl7.org/ValueSet/v3-PurposeOfUse' to 'http://terminology.hl7.org/ValueSet/v3-PurposeOfUse|3.1.0'
 INFORMATION: StructureDefinition/fr-advance-directive-document: StructureDefinition.differential.element[1].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/fr-advance-directive-document: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
@@ -7897,9 +7893,6 @@ WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/docu
 == fsh-generated/resources/StructureDefinition-fr-medication-statement-document.json ==
 ERROR: StructureDefinition/fr-medication-statement-document: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-statement-document'): The Implementation Guide contains no examples for this profile
-== fsh-generated/resources/StructureDefinition-fr-medications-combinaison-document.json ==
-ERROR: StructureDefinition/fr-medications-combinaison-document: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medications-combinaison-document'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-fr-method-extension.json ==
 ERROR: StructureDefinition/fr-method-extension: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-method-extension'): The Implementation Guide contains no examples for this extension
@@ -7987,6 +7980,9 @@ WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/docu
 == fsh-generated/resources/StructureDefinition-fr-observation-vital-signs-document.json ==
 ERROR: StructureDefinition/fr-observation-vital-signs-document: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-vital-signs-document'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-fr-observation-vital-signs-panel-document.json ==
+ERROR: StructureDefinition/fr-observation-vital-signs-panel-document: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-vital-signs-panel-document'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-fr-observation-work-related-accident-document.json ==
 ERROR: StructureDefinition/fr-observation-work-related-accident-document: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-work-related-accident-document'): The Implementation Guide contains no examples for this profile
@@ -8161,8 +8157,8 @@ WARNING: ValueSet/fr-valueset-reference-externe: ValueSet: Published value sets 
 ERROR: ValueSet/fr-valueset-status-code: ValueSet.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 ERROR: ValueSet/fr-valueset-status-code: ValueSet.compose.include[0]: The system 'https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis' is actually a value set, which itself refers to the system 'http://terminology.hl7.org/CodeSystem/v3-ActStatus' so that may be what is intended here
 WARNING: ValueSet/fr-valueset-status-code: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: ValueSet.where(id = 'fr-valueset-status-code'): Error from https://smt.esante.gouv.fr/fhir: Error: [5e07d769-f92d-4068-8a26-6ed52bd6e13c]: A usable code system with URL https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis could not be resolved.
-Information: X-Request-Id: 5813d5a7-39bc-4c17-ba1c-d395f1b5566c
+WARNING: ValueSet.where(id = 'fr-valueset-status-code'): Error from https://smt.esante.gouv.fr/fhir: Error: [fdcdc20d-04a7-48c7-ae8c-3c0fe56924f5]: A usable code system with URL https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis could not be resolved.
+Information: X-Request-Id: 27b3e425-9210-41e3-85d5-7a42a30b031a
 == fsh-generated/resources/ValueSet-fr-valueset-statut-du-probleme.json ==
 ERROR: ValueSet/fr-valueset-statut-du-probleme: ValueSet.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 WARNING: ValueSet/fr-valueset-statut-du-probleme: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
@@ -8198,8 +8194,8 @@ WARNING: ValueSet/fr-vs-evaluation-type: ValueSet: Published value sets SHOULD c
 ERROR: ValueSet/fr-vs-medication-translation-document: ValueSet.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 WARNING: ValueSet/fr-vs-medication-translation-document: ValueSet.compose.include[1].system: No definition could be found for URL value 'https://smt.esante.gouv.fr/terminologie-cip_ucd'
 WARNING: ValueSet/fr-vs-medication-translation-document: ValueSet.compose.include[3].system: No definition could be found for URL value 'https://smt.esante.gouv.fr/terminologie-medicabase'
-WARNING: ValueSet.where(id = 'fr-vs-medication-translation-document'): Error from https://smt.esante.gouv.fr/fhir: Error: [0980feaf-ca28-4238-b95b-0403eb507e37]: Could not find the code system https://smt.esante.gouv.fr/terminologie-cip_ucd|2026-04
-Information: X-Request-Id: 4bfc5738-7816-4535-a3ed-3f155d7a5aed
+WARNING: ValueSet.where(id = 'fr-vs-medication-translation-document'): Error from https://smt.esante.gouv.fr/fhir: Error: [12553336-2b97-4a00-b7d7-30753ac7b6b9]: Could not find the code system https://smt.esante.gouv.fr/terminologie-cip_ucd|2026-05
+Information: X-Request-Id: 6ca33bf0-a648-48bf-99a2-a15d994c34e1
 == fsh-generated/resources/ValueSet-fr-vs-procedure-code.json ==
 ERROR: ValueSet/fr-vs-procedure-code: ValueSet.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 WARNING: ValueSet/fr-vs-procedure-code: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
