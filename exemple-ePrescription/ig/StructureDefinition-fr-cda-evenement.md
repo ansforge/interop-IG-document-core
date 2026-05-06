@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-evenement.csv
   "name" : "FRCDAEvenement",
   "title" : "CDA - FR Evenement",
   "status" : "draft",
-  "date" : "2026-05-06T08:51:06+00:00",
+  "date" : "2026-05-06T11:50:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -174,7 +174,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-evenement.csv
       "path" : "Encounter.id",
       "short" : "Identifiant de l'évènement",
       "definition" : "Identifiant de l'évènement",
-      "min" : 1
+      "min" : 1,
+      "mustSupport" : true
     },
     {
       "id" : "Encounter.code",
@@ -182,6 +183,23 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-evenement.csv
       "short" : "Type d'évènement :Le JDV dépend du volet utilisant cette entrée (les précisions sont alors fournies dans le volet correspondant). Si pas d'information utiliser le code Wolf ‘Aucun’.",
       "definition" : "Type d'évènement",
       "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Encounter.code.code",
+      "path" : "Encounter.code.code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Encounter.code.codeSystem",
+      "path" : "Encounter.code.codeSystem",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Encounter.code.displayName",
+      "path" : "Encounter.code.displayName",
       "mustSupport" : true
     },
     {

@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-en-rapport-av
   "name" : "FRCDAEnRapportAvecALD",
   "title" : "CDA - FR En rapport avec ALD",
   "status" : "draft",
-  "date" : "2026-05-06T08:51:06+00:00",
+  "date" : "2026-05-06T11:50:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -171,7 +171,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-en-rapport-av
       "short" : "Identifiant de l'entrée",
       "definition" : "Identifiant de l'entrée",
       "min" : 1,
-      "max" : "1"
+      "max" : "1",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.code",
@@ -183,12 +184,16 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-en-rapport-av
     {
       "id" : "Observation.code.code",
       "path" : "Observation.code.code",
-      "patternCode" : "MED-574"
+      "min" : 1,
+      "patternCode" : "MED-574",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.code.codeSystem",
       "path" : "Observation.code.codeSystem",
-      "patternString" : "1.2.250.1.213.1.1.4.322"
+      "min" : 1,
+      "patternString" : "1.2.250.1.213.1.1.4.322",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.code.codeSystemName",
@@ -198,7 +203,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-en-rapport-av
     {
       "id" : "Observation.code.displayName",
       "path" : "Observation.code.displayName",
-      "patternString" : "En rapport avec une ALD"
+      "patternString" : "En rapport avec une ALD",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.text",

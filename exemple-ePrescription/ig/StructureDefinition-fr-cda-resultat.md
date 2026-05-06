@@ -16,7 +16,7 @@ Entrée FR-Resultat: Cette entrée permet d’indiquer le résultat observé.
 
 **Utilisations:**
 
-* Ce Profil de modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
+* Utilise ce/t/te Profil de modèle logique: [CDA - FR resultats](StructureDefinition-fr-cda-resultats.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-resultat)
 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-resultat.csv)
   "name" : "FRCDAResultat",
   "title" : "CDA - FR Resultat",
   "status" : "draft",
-  "date" : "2026-05-06T08:51:06+00:00",
+  "date" : "2026-05-06T11:50:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -175,13 +175,31 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-resultat.csv)
       "short" : "Identifiant de l'entrée",
       "definition" : "Identifiant de l'entrée",
       "min" : 1,
-      "max" : "1"
+      "max" : "1",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.code",
       "path" : "Observation.code",
       "short" : "Code du résultat",
       "definition" : "Code du résultat",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.code",
+      "path" : "Observation.code.code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.codeSystem",
+      "path" : "Observation.code.codeSystem",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.displayName",
+      "path" : "Observation.code.displayName",
       "mustSupport" : true
     },
     {

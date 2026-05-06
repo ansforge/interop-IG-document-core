@@ -11,17 +11,17 @@
   "type" : "document",
   "timestamp" : "2026-04-28T09:30:00+02:00",
   "entry" : [{
-    "fullUrl" : "urn:uuid:4d4f5b7c-7b14-4d4d-9ad0-4d979f6f1001",
+    "fullUrl" : "urn:uuid:composition-Prescription",
     "resource" : {
       "resourceType" : "Composition",
-      "id" : "ExampleCompositionPrescription",
+      "id" : "compositionPrescription",
       "meta" : {
         "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-composition-document"]
       },
       "language" : "fr-FR",
       "text" : {
         "status" : "extensions",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"fr-FR\" lang=\"fr-FR\"><a name=\"Composition_ExampleCompositionPrescription\"> </a><p class=\"res-header-id\"><b>Narratif généré : Composition ExampleCompositionPrescription</b></p><a name=\"ExampleCompositionPrescription\"> </a><a name=\"hcExampleCompositionPrescription\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Langue : fr-FR</p><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-composition-document.html\">FR Composition Document</a></p></div><p><b>R5: An explicitly assigned identifer of a variation of the content in the Composition (new)</b>: 1</p><blockquote><p><b>Participant Extension</b></p><ul><li>type: <span title=\"Codes :\">REF</span></li><li>time: ?? --&gt; (en cours)</li><li>party: <a href=\"PractitionerRole-ExamplePractitionerRoleRemplacant.html\">PractitionerRole Doctor</a></li></ul></blockquote><blockquote><p><b>Participant Extension</b></p><ul><li>type: <span title=\"Codes :\">PRF</span></li><li>time: ?? --&gt; 2023-12-02 09:30:00+0100</li><li>party: <a href=\"Bundle-example-bundle-Prescription.html#PractitionerRole_ExamplePractitionerRolePharmacien\">PractitionerRole Pharmacist</a></li></ul></blockquote><p><b>identifier</b>: <code>urn:oid:1.2.250.1.213.1.1.1.39.2024.2</code>/urn:uuid:4d4f5b7c-7b14-4d4d-9ad0-4d979f6f1001</p><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes :{http://loinc.org 57833-6}\">Prescription de produits de sante</span></p><p><b>category</b>: <span title=\"Codes :{http://loinc.org 107903-7}\">Clinical note</span></p><p><b>encounter</b>: <a href=\"Bundle-example-bundle-Prescription.html#urn-uuid-encounter-Prescription-001\">Encounter : identifier = Visit Number:\u00a0801234534765; status = finished; class = ambulatoire (hors établissement) (ActCode#AMB); period = (?) --&gt; (en cours)</a></p><p><b>date</b>: 2026-04-28 09:30:00+0200</p><p><b>author</b>: <a href=\"Bundle-example-bundle-Prescription.html#PractitionerRole_ExamplePractitionerRolePrescription-02\">PractitionerRole </a></p><p><b>title</b>: Prescription de médicaments et/ou de dispositifs médicaux</p><p><b>confidentiality</b>: normal</p><blockquote><p><b>attester</b></p><p><b>mode</b>: Legal</p><p><b>time</b>: 2026-04-28 09:30:00+0200</p><p><b>party</b>: <a href=\"Bundle-example-bundle-Prescription.html#PractitionerRole_ExamplePractitionerRolePrescription-01\">PractitionerRole </a></p></blockquote><blockquote><p><b>attester</b></p><p><b>mode</b>: Professional</p><p><b>time</b>: 2026-04-28 09:30:00+0200</p><p><b>party</b>: <a href=\"Bundle-example-bundle-Prescription.html#PractitionerRole_ExamplePractitionerRolePrescription-01\">PractitionerRole </a></p></blockquote><p><b>custodian</b>: <a href=\"Bundle-example-bundle-Prescription.html#urn-uuid-organization-Prescription-001\">Organization Centre de soins le Belvédère</a></p><h3>RelatesTos</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Target[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>Appends</td><td>Placer Identifier/123456789</td></tr></table><blockquote><p><b>event</b></p><p><b>FR Performer Event Extension</b>: <a href=\"Bundle-example-bundle-Prescription.html#PractitionerRole_ExamplePractitionerRolePrescription-01\">PractitionerRole </a></p><p><b>code</b>: <span title=\"Codes :{http://loinc.org 57833-6}\">Prescription de produits de sante</span></p><p><b>period</b>: 2026-04-28 09:00:00+0200 --&gt; 2026-04-28 09:30:00+0200</p></blockquote><blockquote><p><b>event</b></p><p><b>code</b>: <span title=\"Codes :{urn:oid:1.2.250.1.213.1.1.4.322 MED-1097}\">Prescription médicaments d'exception</span></p></blockquote><blockquote><p><b>event</b></p><p><b>code</b>: <span title=\"Codes :{urn:oid:1.2.250.1.213.1.1.4.322 MED-1098}\">Ordonnance sécurisée</span></p></blockquote><blockquote><p><b>event</b></p><p><b>code</b>: <span title=\"Codes :{urn:oid:1.2.250.1.213.1.1.4.322 MED-1132}\">Prescription grand appareillage</span></p></blockquote><blockquote><p><b>event</b></p><p><b>code</b>: <span title=\"Codes :{urn:oid:1.2.250.1.213.1.1.4.322 MED-1094}\">Exécution à domicile</span></p></blockquote><blockquote><p><b>event</b></p><p><b>code</b>: <span title=\"Codes :{urn:oid:1.2.250.1.213.1.1.4.322 MED-1095}\">Exécution en urgence</span></p></blockquote><blockquote><p><b>event</b></p><p><b>code</b>: <span title=\"Codes :{urn:oid:1.2.250.1.213.1.1.4.322 MED-1159}\">Affection militaire</span></p></blockquote></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"fr-FR\" lang=\"fr-FR\"><a name=\"Composition_compositionPrescription\"> </a><p class=\"res-header-id\"><b>Narratif généré : Composition compositionPrescription</b></p><a name=\"compositionPrescription\"> </a><a name=\"hccompositionPrescription\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Langue : fr-FR</p><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-composition-document.html\">FR Composition Document</a></p></div><p><b>R5: An explicitly assigned identifer of a variation of the content in the Composition (new)</b>: 1</p><blockquote><p><b>Participant Extension</b></p><ul><li>type: <span title=\"Codes :\">REF</span></li><li>time: ?? --&gt; (en cours)</li><li>party: <a href=\"PractitionerRole-practitionerRoleRemplacant.html\">PractitionerRole null</a></li></ul></blockquote><blockquote><p><b>Participant Extension</b></p><ul><li>type: <span title=\"Codes :\">PRF</span></li><li>time: ?? --&gt; 2023-12-02 09:30:00+0100</li><li>party: <a href=\"Bundle-example-bundle-Prescription.html#PractitionerRole_practitionerRolePharmacien\">PractitionerRole Pharmacist</a></li></ul></blockquote><p><b>identifier</b>: <code>urn:oid:1.2.250.1.213.1.1.1.39.2024.2</code>/urn:uuid:4d4f5b7c-7b14-4d4d-9ad0-4d979f6f1001</p><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes :{http://loinc.org 57833-6}\">Prescription de produits de sante</span></p><p><b>category</b>: <span title=\"Codes :{http://loinc.org 107903-7}\">Clinical note</span></p><p><b>encounter</b>: <a href=\"Bundle-example-bundle-Prescription.html#urn-uuid-encounter-Prescription-001\">Encounter : identifier = Visit Number:\u00a0801234534765; status = finished; class = ambulatoire (hors établissement) (ActCode#AMB); period = (?) --&gt; (en cours)</a></p><p><b>date</b>: 2026-04-28 09:30:00+0200</p><p><b>author</b>: <a href=\"Bundle-example-bundle-Prescription.html#PractitionerRole_practitionerRolePrescription-02\">PractitionerRole </a></p><p><b>title</b>: Prescription de médicaments et/ou de dispositifs médicaux</p><p><b>confidentiality</b>: normal</p><blockquote><p><b>attester</b></p><p><b>mode</b>: Legal</p><p><b>time</b>: 2026-04-28 09:30:00+0200</p><p><b>party</b>: <a href=\"Bundle-example-bundle-Prescription.html#PractitionerRole_practitionerRolePrescription-01\">PractitionerRole </a></p></blockquote><blockquote><p><b>attester</b></p><p><b>mode</b>: Professional</p><p><b>time</b>: 2026-04-28 09:30:00+0200</p><p><b>party</b>: <a href=\"Bundle-example-bundle-Prescription.html#PractitionerRole_practitionerRolePrescription-01\">PractitionerRole </a></p></blockquote><p><b>custodian</b>: <a href=\"Bundle-example-bundle-Prescription.html#urn-uuid-organization-Prescription-001\">Organization Centre de soins le Belvédère</a></p><h3>RelatesTos</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Target[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>Appends</td><td>Placer Identifier/123456789</td></tr></table><blockquote><p><b>event</b></p><p><b>FR Performer Event Extension</b>: <a href=\"Bundle-example-bundle-Prescription.html#PractitionerRole_practitionerRolePrescription-01\">PractitionerRole </a></p><p><b>code</b>: <span title=\"Codes :{http://loinc.org 57833-6}\">Prescription de produits de sante</span></p><p><b>period</b>: 2026-04-28 09:00:00+0200 --&gt; 2026-04-28 09:30:00+0200</p></blockquote><blockquote><p><b>event</b></p><p><b>code</b>: <span title=\"Codes :{urn:oid:1.2.250.1.213.1.1.4.322 MED-1097}\">Prescription médicaments d'exception</span></p></blockquote><blockquote><p><b>event</b></p><p><b>code</b>: <span title=\"Codes :{urn:oid:1.2.250.1.213.1.1.4.322 MED-1098}\">Ordonnance sécurisée</span></p></blockquote><blockquote><p><b>event</b></p><p><b>code</b>: <span title=\"Codes :{urn:oid:1.2.250.1.213.1.1.4.322 MED-1132}\">Prescription grand appareillage</span></p></blockquote><blockquote><p><b>event</b></p><p><b>code</b>: <span title=\"Codes :{urn:oid:1.2.250.1.213.1.1.4.322 MED-1094}\">Exécution à domicile</span></p></blockquote><blockquote><p><b>event</b></p><p><b>code</b>: <span title=\"Codes :{urn:oid:1.2.250.1.213.1.1.4.322 MED-1095}\">Exécution en urgence</span></p></blockquote><blockquote><p><b>event</b></p><p><b>code</b>: <span title=\"Codes :{urn:oid:1.2.250.1.213.1.1.4.322 MED-1159}\">Affection militaire</span></p></blockquote></div>"
       },
       "extension" : [{
         "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Composition.version",
@@ -48,7 +48,7 @@
         {
           "url" : "party",
           "valueReference" : {
-            "reference" : "PractitionerRole/ExamplePractitionerRoleRemplacant"
+            "reference" : "PractitionerRole/practitionerRoleRemplacant"
           }
         }],
         "url" : "http://hl7.org/fhir/uv/fhir-clinical-document/StructureDefinition/ParticipantExtension"
@@ -71,7 +71,7 @@
         {
           "url" : "party",
           "valueReference" : {
-            "reference" : "PractitionerRole/ExamplePractitionerRolePharmacien"
+            "reference" : "PractitionerRole/practitionerRolePharmacien"
           }
         }],
         "url" : "http://hl7.org/fhir/uv/fhir-clinical-document/StructureDefinition/ParticipantExtension"
@@ -107,7 +107,7 @@
           "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-author-time-extension",
           "valueDateTime" : "2026-04-28T09:25:00+02:00"
         }],
-        "reference" : "PractitionerRole/ExamplePractitionerRolePrescription-02"
+        "reference" : "PractitionerRole/practitionerRolePrescription-02"
       }],
       "title" : "Prescription de médicaments et/ou de dispositifs médicaux",
       "confidentiality" : "N",
@@ -115,14 +115,14 @@
         "mode" : "legal",
         "time" : "2026-04-28T09:30:00+02:00",
         "party" : {
-          "reference" : "PractitionerRole/ExamplePractitionerRolePrescription-01"
+          "reference" : "PractitionerRole/practitionerRolePrescription-01"
         }
       },
       {
         "mode" : "professional",
         "time" : "2026-04-28T09:30:00+02:00",
         "party" : {
-          "reference" : "PractitionerRole/ExamplePractitionerRolePrescription-01"
+          "reference" : "PractitionerRole/practitionerRolePrescription-01"
         }
       }],
       "custodian" : {
@@ -146,7 +146,7 @@
         "extension" : [{
           "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-performer-event-extension",
           "valueReference" : {
-            "reference" : "PractitionerRole/ExamplePractitionerRolePrescription-01"
+            "reference" : "PractitionerRole/practitionerRolePrescription-01"
           }
         }],
         "code" : [{
@@ -230,10 +230,10 @@
           "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Prescription de medicaments</p><ul><li>Paracetamol Mylan 500 mg comprime : du 01/12/2023 au 06/12/2023, voie orale, renouvelable 3 fois.</li><li>Preparation magistrale : Diprosone 30 g et Cerat Frais de Galien 70 g, du 01/12/2023 au 06/12/2023, voie cutanee, sans renouvellement.</li></ul></div>"
         },
         "entry" : [{
-          "reference" : "MedicationRequest/ExampleMedicationRequest"
+          "reference" : "MedicationRequest/medicationRequest-01"
         },
         {
-          "reference" : "MedicationRequest/ExampleMedicationRequest-02"
+          "reference" : "MedicationRequest/medicationRequest-02"
         }]
       },
       {
@@ -251,10 +251,10 @@
           "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Date</th><th>Signe vital</th><th>Valeur</th></tr></thead><tbody><tr><td>01/12/2023</td><td>Poids</td><td>55 kg</td></tr><tr><td>01/12/2023</td><td>Taille</td><td>1,70 m</td></tr></tbody></table></div>"
         },
         "entry" : [{
-          "reference" : "Observation/ExampleVitalSignWeightPrescription"
+          "reference" : "Observation/vitalSignWeightPrescription"
         },
         {
-          "reference" : "Observation/ExampleVitalSignHeightPrescription"
+          "reference" : "Observation/vitalSignHeightPrescription"
         }]
       },
       {
@@ -272,7 +272,7 @@
           "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Statut</th></tr></thead><tbody><tr><td>Enceinte</td></tr></tbody></table></div>"
         },
         "entry" : [{
-          "reference" : "Observation/ExamplePregnancyObservationPrescription"
+          "reference" : "Observation/pregnancyObservationPrescription"
         }]
       },
       {
@@ -290,7 +290,7 @@
           "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tbody><tr><td>Copie PDF du document</td></tr><tr><td>Document PDF joint</td></tr></tbody></table></div>"
         },
         "entry" : [{
-          "reference" : "DocumentReference/ExamplePdfCopyDocumentReferencePrescription"
+          "reference" : "DocumentReference/pdfCopyDocumentReferencePrescription"
         }]
       },
       {
@@ -308,7 +308,7 @@
           "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Code 2D de la prescription</p><img src=\"data:image/jpeg;base64,iVBORw0KGgoAAAANSUh\" alt=\"Code 2D\"/></div>"
         },
         "entry" : [{
-          "reference" : "Media/ExampleBarcodeMediaPrescription"
+          "reference" : "Media/barcodeMediaPrescription"
         }]
       }]
     }
@@ -478,14 +478,14 @@
     "fullUrl" : "urn:uuid:practitionerrole-Prescription-001",
     "resource" : {
       "resourceType" : "PractitionerRole",
-      "id" : "ExamplePractitionerRolePrescription-01",
+      "id" : "practitionerRolePrescription-01",
       "meta" : {
-        "lastUpdated" : "2013-05-05T16:13:03Z",
+        "lastUpdated" : "2026-05-05T16:13:03Z",
         "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document"]
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PractitionerRole_ExamplePractitionerRolePrescription-01\"> </a><p class=\"res-header-id\"><b>Narratif généré : PractitionerRole ExamplePractitionerRolePrescription-01</b></p><a name=\"ExamplePractitionerRolePrescription-01\"> </a><a name=\"hcExamplePractitionerRolePrescription-01\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Dernière mise à jour : 2013-05-05 16:13:03+0000</p><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-practitionerRole-document.html\">FR PractitionerRole Document</a></p></div><p><b>practitioner</b>: <a href=\"Bundle-example-bundle-Prescription.html#urn-uuid-practitioner-Prescription-001\">Practitioner Stéphane MEDIONI </a></p><p><b>organization</b>: <a href=\"Bundle-example-bundle-Prescription.html#urn-uuid-organization-Prescription-001\">Organization Centre de soins le Belvédère</a></p><p><b>code</b>: <span title=\"Codes :\">Medecin traitant</span></p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PractitionerRole_practitionerRolePrescription-01\"> </a><p class=\"res-header-id\"><b>Narratif généré : PractitionerRole practitionerRolePrescription-01</b></p><a name=\"practitionerRolePrescription-01\"> </a><a name=\"hcpractitionerRolePrescription-01\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Dernière mise à jour : 2026-05-05 16:13:03+0000</p><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-practitionerRole-document.html\">FR PractitionerRole Document</a></p></div><p><b>practitioner</b>: <a href=\"Bundle-example-bundle-Prescription.html#urn-uuid-practitioner-Prescription-001\">Practitioner Stéphane MEDIONI </a></p><p><b>organization</b>: <a href=\"Bundle-example-bundle-Prescription.html#urn-uuid-organization-Prescription-001\">Organization Centre de soins le Belvédère</a></p><p><b>code</b>: <span title=\"Codes :\">Medecin traitant</span></p></div>"
       },
       "practitioner" : {
         "reference" : "urn:uuid:practitioner-Prescription-001"
@@ -502,13 +502,13 @@
     "fullUrl" : "urn:uuid:practitioner-Prescription-001",
     "resource" : {
       "resourceType" : "Practitioner",
-      "id" : "ExamplePractitionerPrescription-01",
+      "id" : "practitionerPrescription-01",
       "meta" : {
         "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitioner-document"]
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_ExamplePractitionerPrescription-01\"> </a><p class=\"res-header-id\"><b>Narratif généré : Praticien ExamplePractitionerPrescription-01</b></p><a name=\"ExamplePractitionerPrescription-01\"> </a><a name=\"hcExamplePractitionerPrescription-01\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-practitioner-document.html\">FR Practitioner Document</a></p></div><p><b>identifier</b>: Numéro du professionnel de santé/801234567897</p><p><b>name</b>: Stéphane MEDIONI </p><p><b>telecom</b>: ph: 0147150000(Work), <a href=\"mailto:mailto:stephane.medioni@mssante.fr\">mailto:stephane.medioni@mssante.fr</a></p><p><b>address</b>: 8 Rue Petit Pont Paris 75005</p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes :{https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale SM26}\">Qualifié en Médecine générale (SM)</span></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_practitionerPrescription-01\"> </a><p class=\"res-header-id\"><b>Narratif généré : Praticien practitionerPrescription-01</b></p><a name=\"practitionerPrescription-01\"> </a><a name=\"hcpractitionerPrescription-01\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-practitioner-document.html\">FR Practitioner Document</a></p></div><p><b>identifier</b>: Numéro du professionnel de santé/801234567897</p><p><b>name</b>: Stéphane MEDIONI </p><p><b>telecom</b>: ph: 0147150000(Work), <a href=\"mailto:mailto:stephane.medioni@mssante.fr\">mailto:stephane.medioni@mssante.fr</a></p><p><b>address</b>: 8 Rue Petit Pont Paris 75005</p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes :{https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale SM26}\">Qualifié en Médecine générale (SM)</span></td></tr></table></div>"
       },
       "identifier" : [{
         "type" : {
@@ -555,13 +555,13 @@
     "fullUrl" : "urn:uuid:practitioner-Prescription-002",
     "resource" : {
       "resourceType" : "Practitioner",
-      "id" : "ExamplePractitionerPrescription-02",
+      "id" : "practitionerPrescription-02",
       "meta" : {
         "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitioner-document"]
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_ExamplePractitionerPrescription-02\"> </a><p class=\"res-header-id\"><b>Narratif généré : Praticien ExamplePractitionerPrescription-02</b></p><a name=\"ExamplePractitionerPrescription-02\"> </a><a name=\"hcExamplePractitionerPrescription-02\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-practitioner-document.html\">FR Practitioner Document</a></p></div><p><b>identifier</b>: Numéro du professionnel de santé/801234567897</p><p><b>name</b>: Romain PIROU </p><p><b>telecom</b>: ph: 0158432300(Work)</p><p><b>address</b>: 25 Rue Berthollet 75005</p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes :{https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale SM26}\">Qualifié en Médecine générale (SM)</span></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_practitionerPrescription-02\"> </a><p class=\"res-header-id\"><b>Narratif généré : Praticien practitionerPrescription-02</b></p><a name=\"practitionerPrescription-02\"> </a><a name=\"hcpractitionerPrescription-02\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-practitioner-document.html\">FR Practitioner Document</a></p></div><p><b>identifier</b>: Numéro du professionnel de santé/801234567897</p><p><b>name</b>: Romain PIROU </p><p><b>telecom</b>: ph: 0158432300(Work)</p><p><b>address</b>: 25 Rue Berthollet 75005</p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes :{https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale SM26}\">Qualifié en Médecine générale (SM)</span></td></tr></table></div>"
       },
       "identifier" : [{
         "type" : {
@@ -603,13 +603,13 @@
     "fullUrl" : "urn:uuid:organization-Prescription-001",
     "resource" : {
       "resourceType" : "Organization",
-      "id" : "ExampleOrganizationPrescription",
+      "id" : "organizationPrescription",
       "meta" : {
         "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-organization-document"]
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_ExampleOrganizationPrescription\"> </a><p class=\"res-header-id\"><b>Narratif généré : Organisation ExampleOrganizationPrescription</b></p><a name=\"ExampleOrganizationPrescription\"> </a><a name=\"hcExampleOrganizationPrescription\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-organization-document.html\">FR Organization Document</a></p></div><p><b>identifier</b>: <code>urn:oid:1.2.250.1.71.4.2.2</code>/2801234567</p><p><b>type</b>: <span title=\"Codes :\">Etablissement de sante</span></p><p><b>name</b>: Centre de soins le Belvédère</p><p><b>address</b>: 3 Rue Petit Pont PARIS 75005 </p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_organizationPrescription\"> </a><p class=\"res-header-id\"><b>Narratif généré : Organisation organizationPrescription</b></p><a name=\"organizationPrescription\"> </a><a name=\"hcorganizationPrescription\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-organization-document.html\">FR Organization Document</a></p></div><p><b>identifier</b>: <code>urn:oid:1.2.250.1.71.4.2.2</code>/2801234567</p><p><b>type</b>: <span title=\"Codes :\">Etablissement de sante</span></p><p><b>name</b>: Centre de soins le Belvédère</p><p><b>address</b>: 3 Rue Petit Pont PARIS 75005 </p></div>"
       },
       "identifier" : [{
         "system" : "urn:oid:1.2.250.1.71.4.2.2",
@@ -630,13 +630,13 @@
     "fullUrl" : "urn:uuid:organization-Prescription-002",
     "resource" : {
       "resourceType" : "Organization",
-      "id" : "ExampleOrganizationPrescription-02",
+      "id" : "organizationPrescription-02",
       "meta" : {
         "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-organization-document"]
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_ExampleOrganizationPrescription-02\"> </a><p class=\"res-header-id\"><b>Narratif généré : Organisation ExampleOrganizationPrescription-02</b></p><a name=\"ExampleOrganizationPrescription-02\"> </a><a name=\"hcExampleOrganizationPrescription-02\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-organization-document.html\">FR Organization Document</a></p></div><p><b>identifier</b>: <code>urn:oid:1.2.250.1.71.4.2.2</code>/1750512345</p><p><b>name</b>: Cabinet du DR Pierre JOLI</p><p><b>telecom</b>: ph: 0158432300(Work)</p><p><b>address</b>: 25 Rue Berthollet PARIS 75005 </p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_organizationPrescription-02\"> </a><p class=\"res-header-id\"><b>Narratif généré : Organisation organizationPrescription-02</b></p><a name=\"organizationPrescription-02\"> </a><a name=\"hcorganizationPrescription-02\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-organization-document.html\">FR Organization Document</a></p></div><p><b>identifier</b>: <code>urn:oid:1.2.250.1.71.4.2.2</code>/1750512345</p><p><b>name</b>: Cabinet du DR Pierre JOLI</p><p><b>telecom</b>: ph: 0158432300(Work)</p><p><b>address</b>: 25 Rue Berthollet PARIS 75005 </p></div>"
       },
       "identifier" : [{
         "system" : "urn:oid:1.2.250.1.71.4.2.2",
@@ -659,20 +659,20 @@
     "fullUrl" : "urn:uuid:practitionerrole-Prescription-002",
     "resource" : {
       "resourceType" : "PractitionerRole",
-      "id" : "ExamplePractitionerRolePrescription-02",
+      "id" : "practitionerRolePrescription-02",
       "meta" : {
         "lastUpdated" : "2013-05-05T16:13:03Z",
         "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document"]
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PractitionerRole_ExamplePractitionerRolePrescription-02\"> </a><p class=\"res-header-id\"><b>Narratif généré : PractitionerRole ExamplePractitionerRolePrescription-02</b></p><a name=\"ExamplePractitionerRolePrescription-02\"> </a><a name=\"hcExamplePractitionerRolePrescription-02\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Dernière mise à jour : 2013-05-05 16:13:03+0000</p><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-practitionerRole-document.html\">FR PractitionerRole Document</a></p></div><p><b>practitioner</b>: <a href=\"Bundle-example-bundle-Prescription.html#Practitioner_ExamplePractitionerPrescription-02\">Practitioner Romain PIROU </a></p><p><b>organization</b>: <a href=\"Bundle-example-bundle-Prescription.html#Organization_ExampleOrganizationPrescription-02\">Organization Cabinet du DR Pierre JOLI</a></p><p><b>code</b>: <span title=\"Codes :\">Medecin traitant</span></p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PractitionerRole_practitionerRolePrescription-02\"> </a><p class=\"res-header-id\"><b>Narratif généré : PractitionerRole practitionerRolePrescription-02</b></p><a name=\"practitionerRolePrescription-02\"> </a><a name=\"hcpractitionerRolePrescription-02\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Dernière mise à jour : 2013-05-05 16:13:03+0000</p><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-practitionerRole-document.html\">FR PractitionerRole Document</a></p></div><p><b>practitioner</b>: <a href=\"Bundle-example-bundle-Prescription.html#Practitioner_practitionerPrescription-02\">Practitioner Romain PIROU </a></p><p><b>organization</b>: <a href=\"Bundle-example-bundle-Prescription.html#Organization_organizationPrescription-02\">Organization Cabinet du DR Pierre JOLI</a></p><p><b>code</b>: <span title=\"Codes :\">Medecin traitant</span></p></div>"
       },
       "practitioner" : {
-        "reference" : "Practitioner/ExamplePractitionerPrescription-02"
+        "reference" : "Practitioner/practitionerPrescription-02"
       },
       "organization" : {
-        "reference" : "Organization/ExampleOrganizationPrescription-02"
+        "reference" : "Organization/organizationPrescription-02"
       },
       "code" : [{
         "text" : "Medecin traitant"
@@ -683,7 +683,7 @@
     "fullUrl" : "urn:uuid:encounter-Prescription-001",
     "resource" : {
       "resourceType" : "Encounter",
-      "id" : "ExampleEncounterPrescription",
+      "id" : "encounterPrescription",
       "meta" : {
         "lastUpdated" : "2024-05-07T11:28:17.000+00:00",
         "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-encounter-care-document",
@@ -691,7 +691,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_ExampleEncounterPrescription\"> </a><p class=\"res-header-id\"><b>Narratif généré : Venue ExampleEncounterPrescription</b></p><a name=\"ExampleEncounterPrescription\"> </a><a name=\"hcExampleEncounterPrescription\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Dernière mise à jour : 2024-05-07 11:28:17+0000</p><p style=\"margin-bottom: 0px\">Profils: <a href=\"StructureDefinition-fr-encounter-care-document.html\">FR Encounter Care Document</a>, <a href=\"StructureDefinition-fr-encounter-document.html\">Encounter - FR Encounter Document</a></p></div><p><b>identifier</b>: Visit Number/801234534765</p><p><b>status</b>: finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB\">ActCode: AMB</a> (ambulatoire (hors établissement))</p><p><b>period</b>: ?? --&gt; (en cours)</p><h3>Locations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Location</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Bundle-example-bundle-Prescription.html#urn-uuid-location-Prescription-001\">Location : type = SA07</a></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_encounterPrescription\"> </a><p class=\"res-header-id\"><b>Narratif généré : Venue encounterPrescription</b></p><a name=\"encounterPrescription\"> </a><a name=\"hcencounterPrescription\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Dernière mise à jour : 2024-05-07 11:28:17+0000</p><p style=\"margin-bottom: 0px\">Profils: <a href=\"StructureDefinition-fr-encounter-care-document.html\">FR Encounter Care Document</a>, <a href=\"StructureDefinition-fr-encounter-document.html\">Encounter - FR Encounter Document</a></p></div><p><b>identifier</b>: Visit Number/801234534765</p><p><b>status</b>: finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB\">ActCode: AMB</a> (ambulatoire (hors établissement))</p><p><b>period</b>: ?? --&gt; (en cours)</p><h3>Locations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Location</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Bundle-example-bundle-Prescription.html#urn-uuid-location-Prescription-001\">Location : type = SA07</a></td></tr></table></div>"
       },
       "identifier" : [{
         "type" : {
@@ -743,17 +743,17 @@
     "fullUrl" : "urn:uuid:medication-Prescription-001",
     "resource" : {
       "resourceType" : "Medication",
-      "id" : "ExampleMedicationPrescription",
+      "id" : "medicationPrescription-01",
       "meta" : {
         "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-document"]
       },
       "text" : {
         "status" : "extensions",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Medication_ExampleMedicationPrescription\"> </a><p class=\"res-header-id\"><b>Narratif généré : Médication ExampleMedicationPrescription</b></p><a name=\"ExampleMedicationPrescription\"> </a><a name=\"hcExampleMedicationPrescription\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-medication-document.html\">Medication - FR Medication Document</a></p></div><p><b>Medication - Product Name</b>: Paracetamol Mylan 500 mg comprime</p><p><b>code</b>: <span title=\"Codes :{urn:oid:1.2.250.1.213.2.3.1 63107752}, {urn:oid:1.2.250.1.213.2.59 MV00002306}, {urn:oid:1.2.250.1.213.2.3.2 3400933516390}\">PARACETAMOL MYLAN 500 mg, comprime</span></p><p><b>form</b>: <span title=\"Codes :\">comprime</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes :{https://smt.esante.gouv.fr/terminologie-sms 100000090498}\">Paracetamol</span></td><td>500 mg/1 comprime</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Medication_medicationPrescription-01\"> </a><p class=\"res-header-id\"><b>Narratif généré : Médication medicationPrescription-01</b></p><a name=\"medicationPrescription-01\"> </a><a name=\"hcmedicationPrescription-01\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-medication-document.html\">Medication - FR Medication Document</a></p></div><p><b>Medication - Product Name</b>: Paracetamol Mylan 500 mg comprimé</p><p><b>code</b>: <span title=\"Codes :{urn:oid:1.2.250.1.213.2.3.1 63107752}, {urn:oid:1.2.250.1.213.2.59 MV00002306}, {urn:oid:1.2.250.1.213.2.3.2 3400933516390}\">PARACETAMOL MYLAN 500 mg, comprimé</span></p><p><b>form</b>: <span title=\"Codes :\">comprimé</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes :{https://smt.esante.gouv.fr/terminologie-sms 100000090498}\">Paracetamol</span></td><td>500 mg/1 comprimé</td></tr></table></div>"
       },
       "extension" : [{
         "url" : "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-productname",
-        "valueString" : "Paracetamol Mylan 500 mg comprime"
+        "valueString" : "Paracetamol Mylan 500 mg comprimé"
       }],
       "code" : {
         "coding" : [{
@@ -764,17 +764,20 @@
         {
           "system" : "urn:oid:1.2.250.1.213.2.59",
           "code" : "MV00002306",
-          "display" : "Paracetamol 500 mg comprime"
+          "display" : "Paracetamol 500 mg comprimé"
         },
         {
           "system" : "urn:oid:1.2.250.1.213.2.3.2",
           "code" : "3400933516390",
-          "display" : "PARACETAMOL MYLAN 500 mg, comprime, plaquette de 16 comprimes"
+          "display" : "PARACETAMOL MYLAN 500 mg, comprimé, plaquette de 16 comprimes"
         }],
-        "text" : "PARACETAMOL MYLAN 500 mg, comprime"
+        "text" : "PARACETAMOL MYLAN 500 mg, comprimé"
       },
       "form" : {
-        "text" : "comprime"
+        "coding" : [{
+          "code" : "50015000"
+        }],
+        "text" : "comprimé"
       },
       "ingredient" : [{
         "itemCodeableConcept" : {
@@ -791,7 +794,7 @@
           },
           "denominator" : {
             "value" : 1,
-            "unit" : "comprime"
+            "unit" : "comprimé"
           }
         }
       }]
@@ -801,13 +804,13 @@
     "fullUrl" : "urn:uuid:medicationrequest-Prescription-001",
     "resource" : {
       "resourceType" : "MedicationRequest",
-      "id" : "ExampleMedicationRequest",
+      "id" : "medicationRequest-01",
       "meta" : {
         "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-request-document"]
       },
       "text" : {
         "status" : "extensions",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_ExampleMedicationRequest\"> </a><p class=\"res-header-id\"><b>Narratif généré : PrescriptionMédicamenteuseTODO ExampleMedicationRequest</b></p><a name=\"ExampleMedicationRequest\"> </a><a name=\"hcExampleMedicationRequest\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-medication-request-document.html\">MedicationRequest - FR Medication Request Document</a></p></div><p><b>FR Medication Request Out Of Nomenclature Extension</b>: false</p><blockquote><p><b>FR Actor Extension</b></p><ul><li>type: AUT</li><li>actor: <a href=\"Bundle-example-bundle-Prescription.html#PractitionerRole_ExamplePractitionerRolePrescription-02\">PractitionerRole </a></li></ul></blockquote><p><b>FR Not Covered Extension</b>: false</p><p><b>identifier</b>: <code>urn:oid:1.2.250.1.213.1.1.1.39.2024.2.1</code>/AADC9C14-F1CA-4177-B2C8-A5178D5B3CA0</p><p><b>status</b>: Completed</p><p><b>intent</b>: Order</p><p><b>medication</b>: <a href=\"Bundle-example-bundle-Prescription.html#Medication_ExampleMedicationPrescription\">Medication PARACETAMOL MYLAN 500 mg, comprime</a></p><p><b>subject</b>: <a href=\"Bundle-example-bundle-Prescription.html#Patient_ba499de3-aeae-43c3-82cb-0ba2718cfa41\">DOMINIQUE MARIE-LOUISE PAT-TROIS  Female, Date de Naissance :1979-03-28 ( NIR définitif\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>authoredOn</b>: 2023-12-01 09:30:00+0100</p><p><b>requester</b>: <a href=\"Bundle-example-bundle-Prescription.html#PractitionerRole_ExamplePractitionerRolePrescription-02\">PractitionerRole </a></p><p><b>instantiatesUri</b>: urn:oid:AADC9C14-F1CA-4177-B2C8-A5178D5B3CA0</p><blockquote><p><b>dosageInstruction</b></p><p><b>sequence</b>: 1</p><p><b>text</b>: Du 01/12/2023 au 02/12/2023 : 1 a 2 comprimes, 3 fois par jour</p><p><b>additionalInstruction</b>: <span title=\"Codes :{http://terminology.hl7.org/CodeSystem/v3-ActCode PINSTRUCT}\">A prendre de preference apres les repas</span></p><p><b>timing</b>: 3 par 1 day</p><p><b>route</b>: <span title=\"Codes :\">Voie orale</span></p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td><td><b>Rate[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>1-2 comprime</td><td> </td></tr><tr><td style=\"display: none\">*</td><td> </td><td>1500-3000 mg/j</td></tr></table><p><b>maxDosePerPeriod</b>: 4 comprime/1 jour</p></blockquote><blockquote><p><b>dosageInstruction</b></p><p><b>sequence</b>: 2</p><p><b>text</b>: Du 03/12/2023 au 06/12/2023 : 1 a 2 comprimes, 2 fois par jour</p><p><b>timing</b>: 2 par 1 day</p><p><b>route</b>: <span title=\"Codes :\">Voie orale</span></p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td><td><b>Rate[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>1-2 comprime</td><td> </td></tr><tr><td style=\"display: none\">*</td><td> </td><td>1000-2000 mg/j</td></tr></table></blockquote><h3>DispenseRequests</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ValidityPeriod</b></td><td><b>NumberOfRepeatsAllowed</b></td><td><b>Quantity</b></td></tr><tr><td style=\"display: none\">*</td><td>2023-12-01 --&gt; 2023-12-06</td><td>3</td><td>2 boite</td></tr></table><h3>Substitutions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Allowed[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes :\">Aucune substitution permise</span></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_medicationRequest-01\"> </a><p class=\"res-header-id\"><b>Narratif généré : PrescriptionMédicamenteuseTODO medicationRequest-01</b></p><a name=\"medicationRequest-01\"> </a><a name=\"hcmedicationRequest-01\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-medication-request-document.html\">MedicationRequest - FR Medication Request Document</a></p></div><p><b>FR Medication Request Out Of Nomenclature Extension</b>: false</p><blockquote><p><b>FR Actor Extension</b></p><ul><li>type: AUT</li><li>actor: <a href=\"Bundle-example-bundle-Prescription.html#PractitionerRole_practitionerRolePrescription-02\">PractitionerRole </a></li></ul></blockquote><p><b>FR Not Covered Extension</b>: false</p><p><b>identifier</b>: <code>urn:oid:1.2.250.1.213.1.1.1.39.2024.2.1</code>/AADC9C14-F1CA-4177-B2C8-A5178D5B3CA0</p><p><b>status</b>: Completed</p><p><b>intent</b>: Order</p><p><b>medication</b>: <a href=\"Bundle-example-bundle-Prescription.html#Medication_medicationPrescription-01\">Medication PARACETAMOL MYLAN 500 mg, comprime</a></p><p><b>subject</b>: <a href=\"Bundle-example-bundle-Prescription.html#Patient_ba499de3-aeae-43c3-82cb-0ba2718cfa41\">DOMINIQUE MARIE-LOUISE PAT-TROIS  Female, Date de Naissance :1979-03-28 ( NIR définitif\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>authoredOn</b>: 2023-12-01 09:30:00+0100</p><p><b>requester</b>: <a href=\"Bundle-example-bundle-Prescription.html#PractitionerRole_practitionerRolePrescription-02\">PractitionerRole </a></p><p><b>instantiatesUri</b>: urn:oid:AADC9C14-F1CA-4177-B2C8-A5178D5B3CA0</p><blockquote><p><b>dosageInstruction</b></p><p><b>sequence</b>: 1</p><p><b>text</b>: Du 01/05/2026 au 04/05/2026 : 1 a 2 comprimes, 3 fois par jour</p><p><b>additionalInstruction</b>: <span title=\"Codes :{http://terminology.hl7.org/CodeSystem/v3-ActCode PINSTRUCT}\">A prendre de preference apres les repas</span></p><p><b>timing</b>: 3 par 1 day</p><p><b>route</b>: <span title=\"Codes :\">Voie orale</span></p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td><td><b>Rate[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>1-2 comprime</td><td> </td></tr><tr><td style=\"display: none\">*</td><td> </td><td>1500-3000 mg/j</td></tr></table><p><b>maxDosePerPeriod</b>: 4 comprime/1 jour</p></blockquote><blockquote><p><b>dosageInstruction</b></p><p><b>sequence</b>: 2</p><p><b>text</b>: Du 06/05/2026 au 08/05/2026 : 1 a 2 comprimes, 2 fois par jour</p><p><b>timing</b>: 2 par 1 day</p><p><b>route</b>: <span title=\"Codes :\">Voie orale</span></p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td><td><b>Rate[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>1-2 comprime</td><td> </td></tr><tr><td style=\"display: none\">*</td><td> </td><td>1000-2000 mg/j</td></tr></table></blockquote><h3>DispenseRequests</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ValidityPeriod</b></td><td><b>NumberOfRepeatsAllowed</b></td><td><b>Quantity</b></td></tr><tr><td style=\"display: none\">*</td><td>2026-05-06 --&gt; 2026-05-08</td><td>3</td><td>2 boite</td></tr></table><h3>Substitutions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Allowed[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes :\">Aucune substitution permise</span></td></tr></table></div>"
       },
       "extension" : [{
         "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-request-out-of-nomenclature-extension",
@@ -821,7 +824,7 @@
         {
           "url" : "actor",
           "valueReference" : {
-            "reference" : "PractitionerRole/ExamplePractitionerRolePrescription-02"
+            "reference" : "PractitionerRole/practitionerRolePrescription-02"
           }
         }],
         "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"
@@ -837,19 +840,19 @@
       "status" : "completed",
       "intent" : "order",
       "medicationReference" : {
-        "reference" : "Medication/ExampleMedicationPrescription"
+        "reference" : "Medication/medicationPrescription-01"
       },
       "subject" : {
         "reference" : "Patient/ba499de3-aeae-43c3-82cb-0ba2718cfa41"
       },
       "authoredOn" : "2023-12-01T09:30:00+01:00",
       "requester" : {
-        "reference" : "PractitionerRole/ExamplePractitionerRolePrescription-02"
+        "reference" : "PractitionerRole/practitionerRolePrescription-02"
       },
       "instantiatesUri" : ["urn:oid:AADC9C14-F1CA-4177-B2C8-A5178D5B3CA0"],
       "dosageInstruction" : [{
         "sequence" : 1,
-        "text" : "Du 01/12/2023 au 02/12/2023 : 1 a 2 comprimes, 3 fois par jour",
+        "text" : "Du 01/05/2026 au 04/05/2026 : 1 a 2 comprimes, 3 fois par jour",
         "additionalInstruction" : [{
           "coding" : [{
             "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
@@ -860,8 +863,8 @@
         "timing" : {
           "repeat" : {
             "boundsPeriod" : {
-              "start" : "2023-12-01",
-              "end" : "2023-12-02"
+              "start" : "2026-05-01",
+              "end" : "2026-05-02"
             },
             "frequency" : 3,
             "period" : 1,
@@ -908,12 +911,12 @@
       },
       {
         "sequence" : 2,
-        "text" : "Du 03/12/2023 au 06/12/2023 : 1 a 2 comprimes, 2 fois par jour",
+        "text" : "Du 06/05/2026 au 08/05/2026 : 1 a 2 comprimes, 2 fois par jour",
         "timing" : {
           "repeat" : {
             "boundsPeriod" : {
-              "start" : "2023-12-03",
-              "end" : "2023-12-06"
+              "start" : "2026-05-01",
+              "end" : "2026-05-04"
             },
             "frequency" : 2,
             "period" : 1,
@@ -950,8 +953,8 @@
       }],
       "dispenseRequest" : {
         "validityPeriod" : {
-          "start" : "2023-12-01",
-          "end" : "2023-12-06"
+          "start" : "2026-05-06",
+          "end" : "2026-05-08"
         },
         "numberOfRepeatsAllowed" : 3,
         "quantity" : {
@@ -970,13 +973,13 @@
     "fullUrl" : "urn:uuid:medication-Prescription-002",
     "resource" : {
       "resourceType" : "Medication",
-      "id" : "ExampleMedicationPrescription-02",
+      "id" : "medicationPrescription-02",
       "meta" : {
         "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-document"]
       },
       "text" : {
         "status" : "extensions",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Medication_ExampleMedicationPrescription-02\"> </a><p class=\"res-header-id\"><b>Narratif généré : Médication ExampleMedicationPrescription-02</b></p><a name=\"ExampleMedicationPrescription-02\"> </a><a name=\"hcExampleMedicationPrescription-02\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-medication-document.html\">Medication - FR Medication Document</a></p></div><p><b>Medication - Product Name</b>: Preparation magistrale</p><p><b>code</b>: <span title=\"Codes :\">Preparation magistrale : Diprosone 30 g et Cerat Frais de Galien 70 g</span></p><p><b>form</b>: <span title=\"Codes :\">pommade pour application cutanee et nasale</span></p><blockquote><p><b>ingredient</b></p><p><b>item</b>: <span title=\"Codes :\">Diprosone</span></p><p><b>strength</b>: 30 g/100 g</p></blockquote><blockquote><p><b>ingredient</b></p><p><b>item</b>: <span title=\"Codes :\">Cerat Frais de Galien</span></p><p><b>strength</b>: 70 g/100 g</p></blockquote></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Medication_medicationPrescription-02\"> </a><p class=\"res-header-id\"><b>Narratif généré : Médication medicationPrescription-02</b></p><a name=\"medicationPrescription-02\"> </a><a name=\"hcmedicationPrescription-02\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-medication-document.html\">Medication - FR Medication Document</a></p></div><p><b>Medication - Product Name</b>: Preparation magistrale</p><p><b>code</b>: <span title=\"Codes :\">Preparation magistrale : Diprosone 30 g et Cerat Frais de Galien 70 g</span></p><p><b>form</b>: <span title=\"Codes :\">pommade pour application cutanee et nasale</span></p><blockquote><p><b>ingredient</b></p><p><b>item</b>: <span title=\"Codes :\">Diprosone</span></p><p><b>strength</b>: 30 g/100 g</p></blockquote><blockquote><p><b>ingredient</b></p><p><b>item</b>: <span title=\"Codes :\">Cerat Frais de Galien</span></p><p><b>strength</b>: 70 g/100 g</p></blockquote></div>"
       },
       "extension" : [{
         "url" : "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-productname",
@@ -986,6 +989,9 @@
         "text" : "Preparation magistrale : Diprosone 30 g et Cerat Frais de Galien 70 g"
       },
       "form" : {
+        "coding" : [{
+          "code" : "50015000"
+        }],
         "text" : "pommade pour application cutanee et nasale"
       },
       "ingredient" : [{
@@ -1024,13 +1030,13 @@
     "fullUrl" : "urn:uuid:medicationrequest-Prescription-002",
     "resource" : {
       "resourceType" : "MedicationRequest",
-      "id" : "ExampleMedicationRequest-02",
+      "id" : "medicationRequest-02",
       "meta" : {
         "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-request-document"]
       },
       "text" : {
         "status" : "extensions",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_ExampleMedicationRequest-02\"> </a><p class=\"res-header-id\"><b>Narratif généré : PrescriptionMédicamenteuseTODO ExampleMedicationRequest-02</b></p><a name=\"ExampleMedicationRequest-02\"> </a><a name=\"hcExampleMedicationRequest-02\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-medication-request-document.html\">MedicationRequest - FR Medication Request Document</a></p></div><p><b>FR Medication Request Out Of Nomenclature Extension</b>: false</p><blockquote><p><b>FR Actor Extension</b></p><ul><li>type: AUT</li><li>actor: <a href=\"Bundle-example-bundle-Prescription.html#PractitionerRole_ExamplePractitionerRolePrescription-02\">PractitionerRole </a></li></ul></blockquote><p><b>FR Not Covered Extension</b>: false</p><p><b>identifier</b>: <code>urn:oid:1.2.250.1.213.1.1.1.39.2024.2.1</code>/AADC9C14-F1CA-4177-B2C8-A5178D5B3CA0-PM</p><p><b>status</b>: Completed</p><p><b>intent</b>: Order</p><p><b>medication</b>: <a href=\"Bundle-example-bundle-Prescription.html#Medication_ExampleMedicationPrescription-02\">Medication </a></p><p><b>subject</b>: <a href=\"Bundle-example-bundle-Prescription.html#Patient_ba499de3-aeae-43c3-82cb-0ba2718cfa41\">DOMINIQUE MARIE-LOUISE PAT-TROIS  Female, Date de Naissance :1979-03-28 ( NIR définitif\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>authoredOn</b>: 2023-12-01 09:30:00+0100</p><p><b>requester</b>: <a href=\"Bundle-example-bundle-Prescription.html#PractitionerRole_ExamplePractitionerRolePrescription-02\">PractitionerRole </a></p><h3>DosageInstructions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Sequence</b></td><td><b>Text</b></td><td><b>AdditionalInstruction</b></td><td><b>Timing</b></td><td><b>Site</b></td><td><b>Route</b></td></tr><tr><td style=\"display: none\">*</td><td>1</td><td>2 applications par jour du 01/12/2023 au 06/12/2023</td><td><span title=\"Codes :{http://terminology.hl7.org/CodeSystem/v3-ActCode PINSTRUCT}\">Diminuer la posologie progressivement une fois la poussee traitee. Par exemple en appliquant la preparation une fois par jour pendant 5 jours, puis 1 jour sur 2 pendant 5 jours environ avant d'arreter.</span></td><td>2 par 1 day</td><td><span title=\"Codes :\">visage</span></td><td><span title=\"Codes :\">Voie cutanee</span></td></tr></table><h3>DispenseRequests</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ValidityPeriod</b></td><td><b>NumberOfRepeatsAllowed</b></td><td><b>Quantity</b></td></tr><tr><td style=\"display: none\">*</td><td>2023-12-01 --&gt; 2023-12-06</td><td>0</td><td>1 tube</td></tr></table><h3>Substitutions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Allowed[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes :\">Aucune substitution permise</span></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_medicationRequest-02\"> </a><p class=\"res-header-id\"><b>Narratif généré : PrescriptionMédicamenteuseTODO medicationRequest-02</b></p><a name=\"medicationRequest-02\"> </a><a name=\"hcmedicationRequest-02\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-medication-request-document.html\">MedicationRequest - FR Medication Request Document</a></p></div><p><b>FR Medication Request Out Of Nomenclature Extension</b>: false</p><blockquote><p><b>FR Actor Extension</b></p><ul><li>type: AUT</li><li>actor: <a href=\"Bundle-example-bundle-Prescription.html#PractitionerRole_practitionerRolePrescription-02\">PractitionerRole </a></li></ul></blockquote><p><b>FR Not Covered Extension</b>: false</p><p><b>identifier</b>: <code>urn:oid:1.2.250.1.213.1.1.1.39.2024.2.1</code>/AADC9C14-F1CA-4177-B2C8-A5178D5B3CA0-PM</p><p><b>status</b>: Completed</p><p><b>intent</b>: Order</p><p><b>medication</b>: <a href=\"Bundle-example-bundle-Prescription.html#Medication_medicationPrescription-02\">Medication </a></p><p><b>subject</b>: <a href=\"Bundle-example-bundle-Prescription.html#Patient_ba499de3-aeae-43c3-82cb-0ba2718cfa41\">DOMINIQUE MARIE-LOUISE PAT-TROIS  Female, Date de Naissance :1979-03-28 ( NIR définitif\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>authoredOn</b>: 2023-12-01 09:30:00+0100</p><p><b>requester</b>: <a href=\"Bundle-example-bundle-Prescription.html#PractitionerRole_practitionerRolePrescription-02\">PractitionerRole </a></p><h3>DosageInstructions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Sequence</b></td><td><b>Text</b></td><td><b>AdditionalInstruction</b></td><td><b>Timing</b></td><td><b>Site</b></td><td><b>Route</b></td></tr><tr><td style=\"display: none\">*</td><td>1</td><td>2 applications par jour du 01/05/2026 au 08/05/2026</td><td><span title=\"Codes :{http://terminology.hl7.org/CodeSystem/v3-ActCode PINSTRUCT}\">Diminuer la posologie progressivement une fois la poussee traitee. Par exemple en appliquant la preparation une fois par jour pendant 5 jours, puis 1 jour sur 2 pendant 5 jours environ avant d'arreter.</span></td><td>2 par 1 day</td><td><span title=\"Codes :\">visage</span></td><td><span title=\"Codes :\">Voie cutanee</span></td></tr></table><h3>DispenseRequests</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ValidityPeriod</b></td><td><b>NumberOfRepeatsAllowed</b></td><td><b>Quantity</b></td></tr><tr><td style=\"display: none\">*</td><td>2026-05-01 --&gt; 2026-05-08</td><td>0</td><td>1 tube</td></tr></table><h3>Substitutions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Allowed[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes :\">Aucune substitution permise</span></td></tr></table></div>"
       },
       "extension" : [{
         "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-request-out-of-nomenclature-extension",
@@ -1044,7 +1050,7 @@
         {
           "url" : "actor",
           "valueReference" : {
-            "reference" : "PractitionerRole/ExamplePractitionerRolePrescription-02"
+            "reference" : "PractitionerRole/practitionerRolePrescription-02"
           }
         }],
         "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"
@@ -1060,18 +1066,18 @@
       "status" : "completed",
       "intent" : "order",
       "medicationReference" : {
-        "reference" : "Medication/ExampleMedicationPrescription-02"
+        "reference" : "Medication/medicationPrescription-02"
       },
       "subject" : {
         "reference" : "Patient/ba499de3-aeae-43c3-82cb-0ba2718cfa41"
       },
       "authoredOn" : "2023-12-01T09:30:00+01:00",
       "requester" : {
-        "reference" : "PractitionerRole/ExamplePractitionerRolePrescription-02"
+        "reference" : "PractitionerRole/practitionerRolePrescription-02"
       },
       "dosageInstruction" : [{
         "sequence" : 1,
-        "text" : "2 applications par jour du 01/12/2023 au 06/12/2023",
+        "text" : "2 applications par jour du 01/05/2026 au 08/05/2026",
         "additionalInstruction" : [{
           "coding" : [{
             "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
@@ -1082,8 +1088,8 @@
         "timing" : {
           "repeat" : {
             "boundsPeriod" : {
-              "start" : "2023-12-01",
-              "end" : "2023-12-06"
+              "start" : "2026-05-01",
+              "end" : "2026-05-08"
             },
             "frequency" : 2,
             "period" : 1,
@@ -1099,8 +1105,8 @@
       }],
       "dispenseRequest" : {
         "validityPeriod" : {
-          "start" : "2023-12-01",
-          "end" : "2023-12-06"
+          "start" : "2026-05-01",
+          "end" : "2026-05-08"
         },
         "numberOfRepeatsAllowed" : 0,
         "quantity" : {
@@ -1119,13 +1125,13 @@
     "fullUrl" : "urn:uuid:vitalsigns-panel-Prescription-001",
     "resource" : {
       "resourceType" : "Observation",
-      "id" : "ExampleVitalSignsPanelPrescription",
+      "id" : "vitalSignsPanelPrescription",
       "meta" : {
-        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-Observation-vital-signs-panel-document"]
+        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-vital-signs-panel-document"]
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_ExampleVitalSignsPanelPrescription\"> </a><p class=\"res-header-id\"><b>Narratif généré : Observation ExampleVitalSignsPanelPrescription</b></p><a name=\"ExampleVitalSignsPanelPrescription\"> </a><a name=\"hcExampleVitalSignsPanelPrescription\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-Observation-vital-signs-panel-document.html\">Observation - FR Observation Vital Signs Panel Document</a></p></div><p><b>identifier</b>: <code>urn:uuid</code>/0B9FE5D6-8A5E-46D6-87BF-D9E19F73B956</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes :{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes :{http://loinc.org 85353-1}\">Signes vitaux</span></p><p><b>subject</b>: <a href=\"Bundle-example-bundle-Prescription.html#Patient_ba499de3-aeae-43c3-82cb-0ba2718cfa41\">DOMINIQUE MARIE-LOUISE PAT-TROIS  Female, Date de Naissance :1979-03-28 ( NIR définitif\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>effective</b>: 2023-12-01</p><p><b>performer</b>: <a href=\"Bundle-example-bundle-Prescription.html#PractitionerRole_ExamplePractitionerRolePrescription-02\">PractitionerRole </a></p><p><b>hasMember</b>: </p><ul><li><a href=\"Bundle-example-bundle-Prescription.html#Observation_ExampleVitalSignWeightPrescription\">Observation Poids (mesure)</a></li><li><a href=\"Bundle-example-bundle-Prescription.html#Observation_ExampleVitalSignHeightPrescription\">Observation Taille</a></li></ul></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_vitalSignsPanelPrescription\"> </a><p class=\"res-header-id\"><b>Narratif généré : Observation vitalSignsPanelPrescription</b></p><a name=\"vitalSignsPanelPrescription\"> </a><a name=\"hcvitalSignsPanelPrescription\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-observation-vital-signs-panel-document.html\">Observation - FR Observation Vital Signs Panel Document</a></p></div><p><b>identifier</b>: <code>urn:uuid</code>/0B9FE5D6-8A5E-46D6-87BF-D9E19F73B956</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes :{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes :{http://loinc.org 85353-1}\">Signes vitaux</span></p><p><b>subject</b>: <a href=\"Bundle-example-bundle-Prescription.html#Patient_ba499de3-aeae-43c3-82cb-0ba2718cfa41\">DOMINIQUE MARIE-LOUISE PAT-TROIS  Female, Date de Naissance :1979-03-28 ( NIR définitif\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>effective</b>: 2026-05-01</p><p><b>performer</b>: <a href=\"Bundle-example-bundle-Prescription.html#PractitionerRole_practitionerRolePrescription-02\">PractitionerRole </a></p><p><b>hasMember</b>: </p><ul><li><a href=\"Bundle-example-bundle-Prescription.html#Observation_vitalSignWeightPrescription\">Observation Poids (mesure)</a></li><li><a href=\"Bundle-example-bundle-Prescription.html#Observation_vitalSignHeightPrescription\">Observation Taille</a></li></ul></div>"
       },
       "identifier" : [{
         "system" : "urn:uuid",
@@ -1148,7 +1154,7 @@
       "subject" : {
         "reference" : "Patient/ba499de3-aeae-43c3-82cb-0ba2718cfa41"
       },
-      "effectiveDateTime" : "2023-12-01",
+      "effectiveDateTime" : "2026-05-01",
       "performer" : [{
         "extension" : [{
           "extension" : [{
@@ -1158,18 +1164,18 @@
           {
             "url" : "actor",
             "valueReference" : {
-              "reference" : "PractitionerRole/ExamplePractitionerRolePrescription-02"
+              "reference" : "PractitionerRole/practitionerRolePrescription-02"
             }
           }],
           "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"
         }],
-        "reference" : "PractitionerRole/ExamplePractitionerRolePrescription-02"
+        "reference" : "PractitionerRole/practitionerRolePrescription-02"
       }],
       "hasMember" : [{
-        "reference" : "Observation/ExampleVitalSignWeightPrescription"
+        "reference" : "Observation/vitalSignWeightPrescription"
       },
       {
-        "reference" : "Observation/ExampleVitalSignHeightPrescription"
+        "reference" : "Observation/vitalSignHeightPrescription"
       }]
     }
   },
@@ -1177,13 +1183,13 @@
     "fullUrl" : "urn:uuid:vitalsigns-weight-Prescription-001",
     "resource" : {
       "resourceType" : "Observation",
-      "id" : "ExampleVitalSignWeightPrescription",
+      "id" : "vitalSignWeightPrescription",
       "meta" : {
         "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-vital-signs-document"]
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_ExampleVitalSignWeightPrescription\"> </a><p class=\"res-header-id\"><b>Narratif généré : Observation ExampleVitalSignWeightPrescription</b></p><a name=\"ExampleVitalSignWeightPrescription\"> </a><a name=\"hcExampleVitalSignWeightPrescription\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-observation-vital-signs-document.html\">Observation - FR Observation Vital Signs Document</a></p></div><p><b>identifier</b>: <code>urn:uuid</code>/C4815527-3DBA-4907-B3B1-EC6F9F8D1224</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes :{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes :{http://loinc.org 29463-7}\">Poids (mesure)</span></p><p><b>subject</b>: <a href=\"Bundle-example-bundle-Prescription.html#Patient_ba499de3-aeae-43c3-82cb-0ba2718cfa41\">DOMINIQUE MARIE-LOUISE PAT-TROIS  Female, Date de Naissance :1979-03-28 ( NIR définitif\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>effective</b>: 2023-12-01</p><p><b>performer</b>: <a href=\"Bundle-example-bundle-Prescription.html#PractitionerRole_ExamplePractitionerRolePrescription-02\">PractitionerRole </a></p><p><b>value</b>: 55 kg<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMkg = 'kg')</span></p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_vitalSignWeightPrescription\"> </a><p class=\"res-header-id\"><b>Narratif généré : Observation vitalSignWeightPrescription</b></p><a name=\"vitalSignWeightPrescription\"> </a><a name=\"hcvitalSignWeightPrescription\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-observation-vital-signs-document.html\">Observation - FR Observation Vital Signs Document</a></p></div><p><b>identifier</b>: <code>urn:uuid</code>/C4815527-3DBA-4907-B3B1-EC6F9F8D1224</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes :{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes :{http://loinc.org 29463-7}\">Poids (mesure)</span></p><p><b>subject</b>: <a href=\"Bundle-example-bundle-Prescription.html#Patient_ba499de3-aeae-43c3-82cb-0ba2718cfa41\">DOMINIQUE MARIE-LOUISE PAT-TROIS  Female, Date de Naissance :1979-03-28 ( NIR définitif\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>effective</b>: 2026-05-01</p><p><b>performer</b>: <a href=\"Bundle-example-bundle-Prescription.html#PractitionerRole_practitionerRolePrescription-02\">PractitionerRole </a></p><p><b>value</b>: 55 kg<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMkg = 'kg')</span></p></div>"
       },
       "identifier" : [{
         "system" : "urn:uuid",
@@ -1206,7 +1212,7 @@
       "subject" : {
         "reference" : "Patient/ba499de3-aeae-43c3-82cb-0ba2718cfa41"
       },
-      "effectiveDateTime" : "2023-12-01",
+      "effectiveDateTime" : "2026-05-01",
       "performer" : [{
         "extension" : [{
           "extension" : [{
@@ -1216,12 +1222,12 @@
           {
             "url" : "actor",
             "valueReference" : {
-              "reference" : "PractitionerRole/ExamplePractitionerRolePrescription-02"
+              "reference" : "PractitionerRole/practitionerRolePrescription-02"
             }
           }],
           "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"
         }],
-        "reference" : "PractitionerRole/ExamplePractitionerRolePrescription-02"
+        "reference" : "PractitionerRole/practitionerRolePrescription-02"
       }],
       "valueQuantity" : {
         "value" : 55,
@@ -1235,13 +1241,13 @@
     "fullUrl" : "urn:uuid:vitalsigns-height-Prescription-001",
     "resource" : {
       "resourceType" : "Observation",
-      "id" : "ExampleVitalSignHeightPrescription",
+      "id" : "vitalSignHeightPrescription",
       "meta" : {
         "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-vital-signs-document"]
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_ExampleVitalSignHeightPrescription\"> </a><p class=\"res-header-id\"><b>Narratif généré : Observation ExampleVitalSignHeightPrescription</b></p><a name=\"ExampleVitalSignHeightPrescription\"> </a><a name=\"hcExampleVitalSignHeightPrescription\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-observation-vital-signs-document.html\">Observation - FR Observation Vital Signs Document</a></p></div><p><b>identifier</b>: <code>urn:uuid</code>/80E7B7B1-353A-4870-B8F4-F1176A23F1DB</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes :{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes :{http://loinc.org 8302-2}\">Taille</span></p><p><b>subject</b>: <a href=\"Bundle-example-bundle-Prescription.html#Patient_ba499de3-aeae-43c3-82cb-0ba2718cfa41\">DOMINIQUE MARIE-LOUISE PAT-TROIS  Female, Date de Naissance :1979-03-28 ( NIR définitif\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>effective</b>: 2023-12-01</p><p><b>performer</b>: <a href=\"Bundle-example-bundle-Prescription.html#PractitionerRole_ExamplePractitionerRolePrescription-02\">PractitionerRole </a></p><p><b>value</b>: 170 cm<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMcm = 'cm')</span></p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_vitalSignHeightPrescription\"> </a><p class=\"res-header-id\"><b>Narratif généré : Observation vitalSignHeightPrescription</b></p><a name=\"vitalSignHeightPrescription\"> </a><a name=\"hcvitalSignHeightPrescription\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-observation-vital-signs-document.html\">Observation - FR Observation Vital Signs Document</a></p></div><p><b>identifier</b>: <code>urn:uuid</code>/80E7B7B1-353A-4870-B8F4-F1176A23F1DB</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes :{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes :{http://loinc.org 8302-2}\">Taille</span></p><p><b>subject</b>: <a href=\"Bundle-example-bundle-Prescription.html#Patient_ba499de3-aeae-43c3-82cb-0ba2718cfa41\">DOMINIQUE MARIE-LOUISE PAT-TROIS  Female, Date de Naissance :1979-03-28 ( NIR définitif\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>effective</b>: 2026-05-01</p><p><b>performer</b>: <a href=\"Bundle-example-bundle-Prescription.html#PractitionerRole_practitionerRolePrescription-02\">PractitionerRole </a></p><p><b>value</b>: 170 cm<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMcm = 'cm')</span></p></div>"
       },
       "identifier" : [{
         "system" : "urn:uuid",
@@ -1264,7 +1270,7 @@
       "subject" : {
         "reference" : "Patient/ba499de3-aeae-43c3-82cb-0ba2718cfa41"
       },
-      "effectiveDateTime" : "2023-12-01",
+      "effectiveDateTime" : "2026-05-01",
       "performer" : [{
         "extension" : [{
           "extension" : [{
@@ -1274,12 +1280,12 @@
           {
             "url" : "actor",
             "valueReference" : {
-              "reference" : "PractitionerRole/ExamplePractitionerRolePrescription-02"
+              "reference" : "PractitionerRole/practitionerRolePrescription-02"
             }
           }],
           "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"
         }],
-        "reference" : "PractitionerRole/ExamplePractitionerRolePrescription-02"
+        "reference" : "PractitionerRole/practitionerRolePrescription-02"
       }],
       "valueQuantity" : {
         "value" : 170,
@@ -1293,13 +1299,13 @@
     "fullUrl" : "urn:uuid:pregnancy-Prescription-001",
     "resource" : {
       "resourceType" : "Observation",
-      "id" : "ExamplePregnancyObservationPrescription",
+      "id" : "pregnancyObservationPrescription",
       "meta" : {
         "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-pregnancy-document"]
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_ExamplePregnancyObservationPrescription\"> </a><p class=\"res-header-id\"><b>Narratif généré : Observation ExamplePregnancyObservationPrescription</b></p><a name=\"ExamplePregnancyObservationPrescription\"> </a><a name=\"hcExamplePregnancyObservationPrescription\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-observation-pregnancy-document.html\">Observation - FR Observation Pregnancy Document</a></p></div><p><b>identifier</b>: <code>urn:uuid</code>/889E8A7C-ABE9-426B-873C-BDF23B505006</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes :{http://loinc.org 11449-6}\">Statut de grossesse</span></p><p><b>subject</b>: <a href=\"Bundle-example-bundle-Prescription.html#Patient_ba499de3-aeae-43c3-82cb-0ba2718cfa41\">DOMINIQUE MARIE-LOUISE PAT-TROIS  Female, Date de Naissance :1979-03-28 ( NIR définitif\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>effective</b>: 2023-12-01</p><p><b>value</b>: <span title=\"Codes :{http://snomed.info/sct 77386006}\">grossesse en cours</span></p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_pregnancyObservationPrescription\"> </a><p class=\"res-header-id\"><b>Narratif généré : Observation pregnancyObservationPrescription</b></p><a name=\"pregnancyObservationPrescription\"> </a><a name=\"hcpregnancyObservationPrescription\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-observation-pregnancy-document.html\">Observation - FR Observation Pregnancy Document</a></p></div><p><b>identifier</b>: <code>urn:uuid</code>/889E8A7C-ABE9-426B-873C-BDF23B505006</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes :{http://loinc.org 11449-6}\">Statut de grossesse</span></p><p><b>subject</b>: <a href=\"Bundle-example-bundle-Prescription.html#Patient_ba499de3-aeae-43c3-82cb-0ba2718cfa41\">DOMINIQUE MARIE-LOUISE PAT-TROIS  Female, Date de Naissance :1979-03-28 ( NIR définitif\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>effective</b>: 2023-12-01</p><p><b>value</b>: <span title=\"Codes :{http://snomed.info/sct 77386006}\">grossesse en cours</span></p></div>"
       },
       "identifier" : [{
         "system" : "urn:uuid",
@@ -1330,13 +1336,13 @@
     "fullUrl" : "urn:uuid:pdfcopy-Prescription-001",
     "resource" : {
       "resourceType" : "DocumentReference",
-      "id" : "ExamplePdfCopyDocumentReferencePrescription",
+      "id" : "pdfCopyDocumentReferencePrescription",
       "meta" : {
         "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-document-reference-document"]
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DocumentReference_ExamplePdfCopyDocumentReferencePrescription\"> </a><p class=\"res-header-id\"><b>Narratif généré : RéférenceDocument ExamplePdfCopyDocumentReferencePrescription</b></p><a name=\"ExamplePdfCopyDocumentReferencePrescription\"> </a><a name=\"hcExamplePdfCopyDocumentReferencePrescription\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-document-reference-document.html\">DocumentReference - FR Document reference Document</a></p></div><p><b>identifier</b>: <code>urn:uuid</code>/88BEB395-3B4C-37F5-9A31-03BEA73A8D8B</p><p><b>status</b>: Current</p><p><b>docStatus</b>: Final</p><p><b>type</b>: <span title=\"Codes :{http://loinc.org 55108-5}\">Copie du document</span></p><p><b>subject</b>: <a href=\"Bundle-example-bundle-Prescription.html#Patient_ba499de3-aeae-43c3-82cb-0ba2718cfa41\">DOMINIQUE MARIE-LOUISE PAT-TROIS  Female, Date de Naissance :1979-03-28 ( NIR définitif\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>date</b>: 2023-12-01 09:30:00+0100</p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Data</b></td><td><b>Title</b></td></tr><tr><td style=\"display: none\">*</td><td>application/pdf</td><td><code></code></td><td>Copie PDF du document</td></tr></table></blockquote></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DocumentReference_pdfCopyDocumentReferencePrescription\"> </a><p class=\"res-header-id\"><b>Narratif généré : RéférenceDocument pdfCopyDocumentReferencePrescription</b></p><a name=\"pdfCopyDocumentReferencePrescription\"> </a><a name=\"hcpdfCopyDocumentReferencePrescription\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-document-reference-document.html\">DocumentReference - FR Document reference Document</a></p></div><p><b>identifier</b>: <code>urn:uuid</code>/88BEB395-3B4C-37F5-9A31-03BEA73A8D8B</p><p><b>status</b>: Current</p><p><b>docStatus</b>: Final</p><p><b>type</b>: <span title=\"Codes :{http://loinc.org 55108-5}\">Copie du document</span></p><p><b>subject</b>: <a href=\"Bundle-example-bundle-Prescription.html#Patient_ba499de3-aeae-43c3-82cb-0ba2718cfa41\">DOMINIQUE MARIE-LOUISE PAT-TROIS  Female, Date de Naissance :1979-03-28 ( NIR définitif\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>date</b>: 2023-12-01 09:30:00+0100</p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Data</b></td><td><b>Title</b></td></tr><tr><td style=\"display: none\">*</td><td>application/pdf</td><td><code></code></td><td>Copie PDF du document</td></tr></table></blockquote></div>"
       },
       "identifier" : [{
         "system" : "urn:uuid",
@@ -1368,13 +1374,13 @@
     "fullUrl" : "urn:uuid:barcode-Prescription-001",
     "resource" : {
       "resourceType" : "Media",
-      "id" : "ExampleBarcodeMediaPrescription",
+      "id" : "barcodeMediaPrescription",
       "meta" : {
         "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-media-document"]
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Media_ExampleBarcodeMediaPrescription\"> </a><p class=\"res-header-id\"><b>Narratif généré : Média ExampleBarcodeMediaPrescription</b></p><a name=\"ExampleBarcodeMediaPrescription\"> </a><a name=\"hcExampleBarcodeMediaPrescription\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-media-document.html\">Media - FR Media Document</a></p></div><p><b>status</b>: Completed</p><p><b>subject</b>: <a href=\"Bundle-example-bundle-Prescription.html#Patient_ba499de3-aeae-43c3-82cb-0ba2718cfa41\">DOMINIQUE MARIE-LOUISE PAT-TROIS  Female, Date de Naissance :1979-03-28 ( NIR définitif\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>operator</b>: <a href=\"Bundle-example-bundle-Prescription.html#PractitionerRole_ExamplePractitionerRolePrescription-02\">PractitionerRole </a></p><h3>Contents</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Data</b></td></tr><tr><td style=\"display: none\">*</td><td>image/jpeg</td><td><code>ZmFrZS1qcGVn</code></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Media_barcodeMediaPrescription\"> </a><p class=\"res-header-id\"><b>Narratif généré : Média barcodeMediaPrescription</b></p><a name=\"barcodeMediaPrescription\"> </a><a name=\"hcbarcodeMediaPrescription\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-media-document.html\">Media - FR Media Document</a></p></div><p><b>status</b>: Completed</p><p><b>subject</b>: <a href=\"Bundle-example-bundle-Prescription.html#Patient_ba499de3-aeae-43c3-82cb-0ba2718cfa41\">DOMINIQUE MARIE-LOUISE PAT-TROIS  Female, Date de Naissance :1979-03-28 ( NIR définitif\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>operator</b>: <a href=\"Bundle-example-bundle-Prescription.html#PractitionerRole_practitionerRolePrescription-02\">PractitionerRole </a></p><h3>Contents</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Data</b></td></tr><tr><td style=\"display: none\">*</td><td>image/jpeg</td><td><code>ZmFrZS1qcGVn</code></td></tr></table></div>"
       },
       "status" : "completed",
       "subject" : {
@@ -1389,12 +1395,12 @@
           {
             "url" : "actor",
             "valueReference" : {
-              "reference" : "PractitionerRole/ExamplePractitionerRolePrescription-02"
+              "reference" : "PractitionerRole/practitionerRolePrescription-02"
             }
           }],
           "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"
         }],
-        "reference" : "PractitionerRole/ExamplePractitionerRolePrescription-02"
+        "reference" : "PractitionerRole/practitionerRolePrescription-02"
       },
       "content" : {
         "contentType" : "image/jpeg",
@@ -1406,24 +1412,28 @@
     "fullUrl" : "urn:uuid:practitionerRole-remplacant-Prescription",
     "resource" : {
       "resourceType" : "PractitionerRole",
-      "id" : "ExamplePractitionerRoleRemplacant",
+      "id" : "practitionerRoleRemplacant",
       "meta" : {
         "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document"]
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PractitionerRole_ExamplePractitionerRoleRemplacant\"> </a><p class=\"res-header-id\"><b>Narratif généré : PractitionerRole ExamplePractitionerRoleRemplacant</b></p><a name=\"ExamplePractitionerRoleRemplacant\"> </a><a name=\"hcExamplePractitionerRoleRemplacant\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-practitionerRole-document.html\">FR PractitionerRole Document</a></p></div><p><b>practitioner</b>: <a href=\"Bundle-example-bundle-Prescription.html#Practitioner_ExamplePractitionerRemplacant\">Practitioner Pierre JOLI </a></p><p><b>organization</b>: <a href=\"Bundle-example-bundle-Prescription.html#Organization_ExampleOrganizationPrescription-02\">Organization Cabinet du DR Pierre JOLI</a></p><p><b>code</b>: <span title=\"Codes :{http://terminology.hl7.org/CodeSystem/practitioner-role doctor}\">Doctor</span>, <span title=\"Codes :\">CORRE</span></p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PractitionerRole_practitionerRoleRemplacant\"> </a><p class=\"res-header-id\"><b>Narratif généré : PractitionerRole practitionerRoleRemplacant</b></p><a name=\"practitionerRoleRemplacant\"> </a><a name=\"hcpractitionerRoleRemplacant\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-practitionerRole-document.html\">FR PractitionerRole Document</a></p></div><p><b>practitioner</b>: <a href=\"Bundle-example-bundle-Prescription.html#Practitioner_practitionerRemplacant\">Practitioner Pierre JOLI </a></p><p><b>organization</b>: <a href=\"Bundle-example-bundle-Prescription.html#Organization_organizationPrescription-02\">Organization Cabinet du DR Pierre JOLI</a></p><p><b>code</b>: <span title=\"Codes :\"/>, <span title=\"Codes :\">PROV</span>, <span title=\"Codes :\">CORRE</span></p></div>"
       },
       "practitioner" : {
-        "reference" : "Practitioner/ExamplePractitionerRemplacant"
+        "reference" : "Practitioner/practitionerRemplacant"
       },
       "organization" : {
-        "reference" : "Organization/ExampleOrganizationPrescription-02"
+        "reference" : "Organization/organizationPrescription-02"
       },
       "code" : [{
         "coding" : [{
-          "system" : "http://terminology.hl7.org/CodeSystem/practitioner-role",
-          "code" : "doctor"
+          "system" : "http://terminology.hl7.org/CodeSystem/practitioner-role"
+        }]
+      },
+      {
+        "coding" : [{
+          "code" : "PROV"
         }]
       },
       {
@@ -1437,13 +1447,13 @@
     "fullUrl" : "urn:uuid:practitioner-remplacant-Prescription",
     "resource" : {
       "resourceType" : "Practitioner",
-      "id" : "ExamplePractitionerRemplacant",
+      "id" : "practitionerRemplacant",
       "meta" : {
         "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitioner-document"]
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_ExamplePractitionerRemplacant\"> </a><p class=\"res-header-id\"><b>Narratif généré : Praticien ExamplePractitionerRemplacant</b></p><a name=\"ExamplePractitionerRemplacant\"> </a><a name=\"hcExamplePractitionerRemplacant\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-practitioner-document.html\">FR Practitioner Document</a></p></div><p><b>identifier</b>: Numéro du professionnel de santé/801234567897</p><p><b>name</b>: Pierre JOLI </p><p><b>telecom</b>: ph: 0158432300(Work)</p><p><b>address</b>: 25 Rue Berthollet PARIS 75005 </p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes :{https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale SM26}\">Qualifié en Médecine générale (SM)</span></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_practitionerRemplacant\"> </a><p class=\"res-header-id\"><b>Narratif généré : Praticien practitionerRemplacant</b></p><a name=\"practitionerRemplacant\"> </a><a name=\"hcpractitionerRemplacant\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-practitioner-document.html\">FR Practitioner Document</a></p></div><p><b>identifier</b>: Numéro du professionnel de santé/801234567897</p><p><b>name</b>: Pierre JOLI </p><p><b>telecom</b>: ph: 0158432300(Work)</p><p><b>address</b>: 25 Rue Berthollet PARIS 75005 </p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes :{https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale SM26}\">Qualifié en Médecine générale (SM)</span></td></tr></table></div>"
       },
       "identifier" : [{
         "type" : {
@@ -1487,24 +1497,29 @@
     "fullUrl" : "urn:uuid:practitionerRole-pharmacien-Prescription",
     "resource" : {
       "resourceType" : "PractitionerRole",
-      "id" : "ExamplePractitionerRolePharmacien",
+      "id" : "practitionerRolePharmacien",
       "meta" : {
         "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document"]
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PractitionerRole_ExamplePractitionerRolePharmacien\"> </a><p class=\"res-header-id\"><b>Narratif généré : PractitionerRole ExamplePractitionerRolePharmacien</b></p><a name=\"ExamplePractitionerRolePharmacien\"> </a><a name=\"hcExamplePractitionerRolePharmacien\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-practitionerRole-document.html\">FR PractitionerRole Document</a></p></div><p><b>practitioner</b>: <a href=\"Practitioner/ExamplePractitionerPharmacien\">Practitioner/ExamplePractitionerPharmacien</a></p><p><b>organization</b>: <a href=\"Organization-ExampleOrganizationPrescription-03.html\">Organization Pharmacie SAMPAIX</a></p><p><b>code</b>: <span title=\"Codes :{http://terminology.hl7.org/CodeSystem/practitioner-role pharmacist}\">Pharmacist</span></p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PractitionerRole_practitionerRolePharmacien\"> </a><p class=\"res-header-id\"><b>Narratif généré : PractitionerRole practitionerRolePharmacien</b></p><a name=\"practitionerRolePharmacien\"> </a><a name=\"hcpractitionerRolePharmacien\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-practitionerRole-document.html\">FR PractitionerRole Document</a></p></div><p><b>practitioner</b>: <a href=\"Practitioner/ExamplePractitionerPharmacien\">Practitioner/ExamplePractitionerPharmacien</a></p><p><b>organization</b>: <a href=\"Organization-organizationPrescription-03.html\">Organization Pharmacie SAMPAIX</a></p><p><b>code</b>: <span title=\"Codes :{http://terminology.hl7.org/CodeSystem/practitioner-role pharmacist}\">Pharmacist</span>, <span title=\"Codes :\">PROV</span></p></div>"
       },
       "practitioner" : {
         "reference" : "Practitioner/ExamplePractitionerPharmacien"
       },
       "organization" : {
-        "reference" : "Organization/ExampleOrganizationPrescription-03"
+        "reference" : "Organization/organizationPrescription-03"
       },
       "code" : [{
         "coding" : [{
           "system" : "http://terminology.hl7.org/CodeSystem/practitioner-role",
           "code" : "pharmacist"
+        }]
+      },
+      {
+        "coding" : [{
+          "code" : "PROV"
         }]
       }]
     }
@@ -1513,13 +1528,13 @@
     "fullUrl" : "urn:uuid:organization-Prescription-03",
     "resource" : {
       "resourceType" : "Organization",
-      "id" : "ExampleOrganizationPrescription-03",
+      "id" : "organizationPrescription-03",
       "meta" : {
         "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-organization-document"]
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_ExampleOrganizationPrescription-03\"> </a><p class=\"res-header-id\"><b>Narratif généré : Organisation ExampleOrganizationPrescription-03</b></p><a name=\"ExampleOrganizationPrescription-03\"> </a><a name=\"hcExampleOrganizationPrescription-03\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-organization-document.html\">FR Organization Document</a></p></div><p><b>identifier</b>: <code>urn:oid:1.2.250.1.71.4.2.2</code>/1750512302</p><p><b>name</b>: Pharmacie SAMPAIX</p><p><b>telecom</b>: ph: 0158410697(Work)</p><p><b>address</b>: 12 Rue des produits de santé PARIS 75005 </p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_organizationPrescription-03\"> </a><p class=\"res-header-id\"><b>Narratif généré : Organisation organizationPrescription-03</b></p><a name=\"organizationPrescription-03\"> </a><a name=\"hcorganizationPrescription-03\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-organization-document.html\">FR Organization Document</a></p></div><p><b>identifier</b>: <code>urn:oid:1.2.250.1.71.4.2.2</code>/1750512302</p><p><b>name</b>: Pharmacie SAMPAIX</p><p><b>telecom</b>: ph: 0158410697(Work)</p><p><b>address</b>: 12 Rue des produits de santé PARIS 75005 </p></div>"
       },
       "identifier" : [{
         "system" : "urn:oid:1.2.250.1.71.4.2.2",

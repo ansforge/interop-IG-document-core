@@ -16,7 +16,7 @@ Entrée FR-Vaccin-recommande: IHE-PCC - Immunization recommendation. L’entrée
 
 **Utilisations:**
 
-* Ce Profil de modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
+* Utilise ce/t/te Profil de modèle logique: [CDA - FR Plan de soins](StructureDefinition-fr-cda-plan-de-soins.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-vaccin-recommande)
 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-vaccin-recomm
   "name" : "FRCDAVaccinRecommande",
   "title" : "CDA - FR Vaccin recommande",
   "status" : "draft",
-  "date" : "2026-05-06T08:51:06+00:00",
+  "date" : "2026-05-06T11:50:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -96,10 +96,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-vaccin-recomm
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
-      "id" : "SubstanceAdministration",
-      "path" : "SubstanceAdministration"
-    },
-    {
       "id" : "SubstanceAdministration.templateId",
       "path" : "SubstanceAdministration.templateId",
       "slicing" : {
@@ -175,7 +171,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-vaccin-recomm
       "short" : "Identifiant de l'entrée",
       "definition" : "Identifiant de l'entrée",
       "min" : 1,
-      "max" : "1"
+      "max" : "1",
+      "mustSupport" : true
     },
     {
       "id" : "SubstanceAdministration.code",
@@ -188,6 +185,23 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-vaccin-recomm
         "strength" : "required",
         "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdministrationImmunizationCode-cisis"
       }
+    },
+    {
+      "id" : "SubstanceAdministration.code.code",
+      "path" : "SubstanceAdministration.code.code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "SubstanceAdministration.code.codeSystem",
+      "path" : "SubstanceAdministration.code.codeSystem",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "SubstanceAdministration.code.displayName",
+      "path" : "SubstanceAdministration.code.displayName",
+      "mustSupport" : true
     },
     {
       "id" : "SubstanceAdministration.text",

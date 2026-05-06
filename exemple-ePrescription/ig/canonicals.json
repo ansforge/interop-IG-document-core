@@ -825,13 +825,6 @@
   "name" : "CISISTelecom"
 },
 {
-  "id" : "fr-Observation-vital-signs-panel-document",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-Observation-vital-signs-panel-document",
-  "version" : "0.1.0-snapshot",
-  "name" : "FRObservationVitalSignsPanelDocument"
-},
-{
   "id" : "fr-accession-number-identifier-document",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-accession-number-identifier-document",
@@ -930,6 +923,13 @@
   "name" : "FRCDAAllergieOuHypersensibilite"
 },
 {
+  "id" : "fr-cda-allergies-et-hypersensibilites",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-allergies-et-hypersensibilites",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRCDASectionAllergiesEtHypersensibilites"
+},
+{
   "id" : "fr-cda-antecedent-familial-observe",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-antecedent-familial-observe",
@@ -942,6 +942,13 @@
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-antecedents-familiaux",
   "version" : "0.1.0-snapshot",
   "name" : "FRCDAAntecedentsFamiliaux"
+},
+{
+  "id" : "fr-cda-antecedents-medicaux",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-antecedents-medicaux",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRCDASectionAntecedentsMedicaux"
 },
 {
   "id" : "fr-cda-assigned-author",
@@ -1035,6 +1042,13 @@
   "name" : "FRCDAClinicalDocument"
 },
 {
+  "id" : "fr-cda-code-a-barres",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-code-a-barres",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRCDASectionCodeABarres"
+},
+{
   "id" : "fr-cda-commentaire-er",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-commentaire-er",
@@ -1042,11 +1056,32 @@
   "name" : "FRCDACommentaireER"
 },
 {
+  "id" : "fr-cda-commentaire-non-code",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-commentaire-non-code",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRCDASectionCommentaireNonCode"
+},
+{
   "id" : "fr-cda-component-of",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-component-of",
   "version" : "0.1.0-snapshot",
   "name" : "FRCDAComponentOf"
+},
+{
+  "id" : "fr-cda-cr-bio-chapitre",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-cr-bio-chapitre",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRCDASectionCRBIOChapitre"
+},
+{
+  "id" : "fr-cda-cr-bio-sous-chapitre",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-cr-bio-sous-chapitre",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRCDASectionCRBIOSousChapitre"
 },
 {
   "id" : "fr-cda-criticite",
@@ -1077,6 +1112,20 @@
   "name" : "FRCDADemandeDExamenOuDeSuivi"
 },
 {
+  "id" : "fr-cda-dicom-acte-imagerie",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-acte-imagerie",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRCDASectionDICOMActeImagerie"
+},
+{
+  "id" : "fr-cda-dicom-addendum",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-addendum",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRCDASectionDICOMAddendum"
+},
+{
   "id" : "fr-cda-dicom-administration-produit-de-sante",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-administration-produit-de-sante",
@@ -1105,6 +1154,34 @@
   "name" : "FRCDADICOMCadresReferences"
 },
 {
+  "id" : "fr-cda-dicom-complications",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-complications",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRCDASectionDICOMComplications"
+},
+{
+  "id" : "fr-cda-dicom-conclusion",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-conclusion",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRCDASectionDICOMConclusion"
+},
+{
+  "id" : "fr-cda-dicom-demande-examen",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-demande-examen",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRCDASectionDICOMDemandeExamen"
+},
+{
+  "id" : "fr-cda-dicom-examen-comparatif",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-examen-comparatif",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRCDASectionDICOMExamenComparatif"
+},
+{
   "id" : "fr-cda-dicom-examen-imagerie",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-examen-imagerie",
@@ -1112,11 +1189,39 @@
   "name" : "FRCDADICOMExamenImagerie"
 },
 {
+  "id" : "fr-cda-dicom-exposition-aux-radiations",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-exposition-aux-radiations",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRCDASectionDICOMExpositionAuxRadiations"
+},
+{
   "id" : "fr-cda-dicom-exposition-patient",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-exposition-patient",
   "version" : "0.1.0-snapshot",
   "name" : "FRCDADICOMExpositionPatient"
+},
+{
+  "id" : "fr-cda-dicom-historique-medical",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-historique-medical",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRCDASectionDICOMHistoriqueMedical"
+},
+{
+  "id" : "fr-cda-dicom-informations-cliniques",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-informations-cliniques",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRCDASectionDICOMInformationsCliniques"
+},
+{
+  "id" : "fr-cda-dicom-object-catalog",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-object-catalog",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRCDASectionDICOMObjectCatalog"
 },
 {
   "id" : "fr-cda-dicom-objectifs-de-reference",
@@ -1154,6 +1259,13 @@
   "name" : "FRCDADICOMQuantiteSubordonnee"
 },
 {
+  "id" : "fr-cda-dicom-resultats",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-resultats",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRCDASectionDICOMResultats"
+},
+{
   "id" : "fr-cda-dicom-serie-imagerie",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-serie-imagerie",
@@ -1189,6 +1301,13 @@
   "name" : "FRCDADirectiveAnticipee"
 },
 {
+  "id" : "fr-cda-dispensation-medicaments",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dispensation-medicaments",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRCDASectionDispensationMedicaments"
+},
+{
   "id" : "fr-cda-dispositif-medical",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dispositif-medical",
@@ -1203,11 +1322,25 @@
   "name" : "FRCDADocumentAttache"
 },
 {
+  "id" : "fr-cda-document-pdf-copie",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-document-pdf-copie",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRCDASectionDocumentPDFCopie"
+},
+{
   "id" : "fr-cda-documentation-of",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-documentation-of",
   "version" : "0.1.0-snapshot",
   "name" : "FRCDADocumentationOf"
+},
+{
+  "id" : "fr-cda-documents-ajoutes",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-documents-ajoutes",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRCDASectionDocumentsAjoutes"
 },
 {
   "id" : "fr-cda-dose-antigene",
@@ -1217,11 +1350,25 @@
   "name" : "FRCDADoseAntigene"
 },
 {
+  "id" : "fr-cda-education-du-patient",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-education-du-patient",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRCDASectionEducationDuPatient"
+},
+{
   "id" : "fr-cda-effet-indesirable",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-effet-indesirable",
   "version" : "0.1.0-snapshot",
   "name" : "FRCDAEffetIndesirable"
+},
+{
+  "id" : "fr-cda-effets-indesirables",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-effets-indesirables",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRCDASectionEffetsIndesirables"
 },
 {
   "id" : "fr-cda-en-rapport-avec-accident-travail",
@@ -1308,6 +1455,20 @@
   "name" : "FRCDAEvolutionEffetIndesirable"
 },
 {
+  "id" : "fr-cda-facteurs-de-risque-professionnels-non-code",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-facteurs-de-risque-professionnels-non-code",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRCDASectionFacteursDeRisqueProfessionnelsNonCode"
+},
+{
+  "id" : "fr-cda-fonctions-physiques",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-fonctions-physiques",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRCDASectionFonctionsPhysiques"
+},
+{
   "id" : "fr-cda-gravite-effet-indesirable",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-gravite-effet-indesirable",
@@ -1341,6 +1502,20 @@
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-historique-de-la-grossesse",
   "version" : "0.1.0-snapshot",
   "name" : "FRCDAHistoriqueDeLaGrossesse"
+},
+{
+  "id" : "fr-cda-historique-des-actes",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-historique-des-actes",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRCDASectionHistoriqueDesActes"
+},
+{
+  "id" : "fr-cda-historique-des-grossesses",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-historique-des-grossesses",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRCDASectionHistoriqueDesGrossesses"
 },
 {
   "id" : "fr-cda-hors-amm",
@@ -1616,6 +1791,20 @@
   "name" : "FRCDAPeriodeDeRenouvellement"
 },
 {
+  "id" : "fr-cda-plan-de-soins",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-plan-de-soins",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRCDASectionPlanDeSoins"
+},
+{
+  "id" : "fr-cda-points-de-vigilances-non-code",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-points-de-vigilances-non-code",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRCDASectionPointsDeVigilancesNonCode"
+},
+{
   "id" : "fr-cda-prelevement",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-prelevement",
@@ -1630,11 +1819,32 @@
   "name" : "FRCDAPrescription"
 },
 {
+  "id" : "fr-cda-prescription-dispositifs-medicaux",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-prescription-dispositifs-medicaux",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRCDASectionPrescriptionDispositifsMedicaux"
+},
+{
+  "id" : "fr-cda-prescription-medicaments",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-prescription-medicaments",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRCDASectionPrescriptionMedicaments"
+},
+{
   "id" : "fr-cda-probleme",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-probleme",
   "version" : "0.1.0-snapshot",
   "name" : "FRCDAProbleme"
+},
+{
+  "id" : "fr-cda-problemes-actifs",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-problemes-actifs",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRCDASectionProblemesActifs"
 },
 {
   "id" : "fr-cda-produit-de-sante",
@@ -1649,6 +1859,20 @@
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-quantite-de-produit",
   "version" : "0.1.0-snapshot",
   "name" : "FRCDAQuantiteDeProduit"
+},
+{
+  "id" : "fr-cda-raison-de-la-recommandation",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-raison-de-la-recommandation",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRCDASectionRaisonDeLaRecommandation"
+},
+{
+  "id" : "fr-cda-raison-de-la-recommandation-non-code",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-raison-de-la-recommandation-non-code",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRCDASectionRaisonDeLaRecommandationNonCode"
 },
 {
   "id" : "fr-cda-rang-de-la-vaccination",
@@ -1749,11 +1973,74 @@
   "name" : "FRCDAResultatExamensDeBiologieElementCliniquePertinent"
 },
 {
+  "id" : "fr-cda-resultats",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-resultats",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRCDAResultats"
+},
+{
+  "id" : "fr-cda-resultats-de-biologie-de-seconde-intention",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-resultats-de-biologie-de-seconde-intention",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRCDASectionResultatsDeBiologieDeSecondeIntention"
+},
+{
+  "id" : "fr-cda-resultats-evenements",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-resultats-evenements",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRCDASectionResultatsEvenements"
+},
+{
+  "id" : "fr-cda-resultats-examens",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-resultats-examens",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRCDASectionResultatsExamens"
+},
+{
   "id" : "fr-cda-resultats-examens-de-biologie-medicale",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-resultats-examens-de-biologie-medicale",
   "version" : "0.1.0-snapshot",
   "name" : "FRCDAResultatsExamensDeBiologieMedicale"
+},
+{
+  "id" : "fr-cda-resultats-examens-non-code",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-resultats-examens-non-code",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRCDASectionResultatsExamensNonCode"
+},
+{
+  "id" : "fr-cda-section-antecedents-familiaux",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-section-antecedents-familiaux",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRCDASectionAntecedentsFamiliaux"
+},
+{
+  "id" : "fr-cda-section-habitus-mode-de-vie",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-section-habitus-mode-de-vie",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRCDASectionHabitusModeDeVie"
+},
+{
+  "id" : "fr-cda-section-resultats",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-section-resultats",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRCDASectionResultats"
+},
+{
+  "id" : "fr-cda-section-signes-vitaux",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-section-signes-vitaux",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRCDASectionSignesVitaux"
 },
 {
   "id" : "fr-cda-service-event",
@@ -1812,11 +2099,25 @@
   "name" : "FRCDAStatutDocument"
 },
 {
+  "id" : "fr-cda-statut-du-document",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-statut-du-document",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRCDASectionStatutDuDocument"
+},
+{
   "id" : "fr-cda-statut-du-probleme",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-statut-du-probleme",
   "version" : "0.1.0-snapshot",
   "name" : "FRCDAStatutDuProbleme"
+},
+{
+  "id" : "fr-cda-statut-fonctionnel",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-statut-fonctionnel",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRCDASectionStatutFonctionnel"
 },
 {
   "id" : "fr-cda-sujet",
@@ -1882,6 +2183,27 @@
   "name" : "FRCDATraitementSubordonne"
 },
 {
+  "id" : "fr-cda-traitements",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-traitements",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRCDASectionTraitements"
+},
+{
+  "id" : "fr-cda-traitements-a-la-sortie",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-traitements-a-la-sortie",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRCDASectionTraitementsALaSortie"
+},
+{
+  "id" : "fr-cda-traitements-administres",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-traitements-administres",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRCDASectionTraitementsAdministres"
+},
+{
   "id" : "fr-cda-transfusion-de-produits-sanguins",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-transfusion-de-produits-sanguins",
@@ -1922,6 +2244,13 @@
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-vaccination",
   "version" : "0.1.0-snapshot",
   "name" : "FRCDAVaccination"
+},
+{
+  "id" : "fr-cda-vaccinations",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-vaccinations",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRCDASectionVaccinations"
 },
 {
   "id" : "fr-comparison-studies-extension",
@@ -1985,6 +2314,13 @@
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-diagnostic-report-imaging-document",
   "version" : "0.1.0-snapshot",
   "name" : "FRDiagnosticReportImagingDocument"
+},
+{
+  "id" : "fr-dispositifs-medicaux",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-dispositifs-medicaux",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRCDASectionDispositifsMedicaux"
 },
 {
   "id" : "fr-document-reference-document",
@@ -3247,13 +3583,6 @@
   "name" : "FRMedicationStatementDocument"
 },
 {
-  "id" : "fr-medications-combinaison-document",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medications-combinaison-document",
-  "version" : "0.1.0-snapshot",
-  "name" : "FRMedicationsCombinaisonDocument"
-},
-{
   "id" : "fr-method-extension",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-method-extension",
@@ -3406,6 +3735,13 @@
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-vital-signs-document",
   "version" : "0.1.0-snapshot",
   "name" : "FRObservationVitalSignsDocument"
+},
+{
+  "id" : "fr-observation-vital-signs-panel-document",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-vital-signs-panel-document",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRObservationVitalSignsPanelDocument"
 },
 {
   "id" : "fr-observation-work-related-accident-document",

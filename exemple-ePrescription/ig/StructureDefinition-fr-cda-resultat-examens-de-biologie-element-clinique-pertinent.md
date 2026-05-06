@@ -68,7 +68,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-resultat-exam
   "name" : "FRCDAResultatExamensDeBiologieElementCliniquePertinent",
   "title" : "CDA - FR Resultat examens de biologie element clinique pertinent",
   "status" : "draft",
-  "date" : "2026-05-06T08:51:06+00:00",
+  "date" : "2026-05-06T11:50:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -157,7 +157,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-resultat-exam
       "path" : "Observation.id",
       "short" : "Identifiant de l'entrée",
       "definition" : "Identifiant de l'entrée",
-      "max" : "1"
+      "max" : "1",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.code",
@@ -167,14 +168,23 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-resultat-exam
       "mustSupport" : true
     },
     {
+      "id" : "Observation.code.code",
+      "path" : "Observation.code.code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.code.codeSystem",
       "path" : "Observation.code.codeSystem",
-      "patternString" : "2.16.840.1.113883.6.1"
+      "min" : 1,
+      "patternString" : "2.16.840.1.113883.6.1",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.code.displayName",
       "path" : "Observation.code.displayName",
-      "min" : 1
+      "min" : 1,
+      "mustSupport" : true
     },
     {
       "id" : "Observation.code.originalText",

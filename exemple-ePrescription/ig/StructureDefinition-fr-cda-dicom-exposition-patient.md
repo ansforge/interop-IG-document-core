@@ -16,7 +16,7 @@ Entrée FR-DICOM-Exposition-patient: DICOM Part 20 - inclue dans l’entrée FR
 
 **Utilisations:**
 
-* Ce Profil de modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
+* Utilise ce/t/te Profil de modèle logique: [CDA - FR DICOM Exposition aux radiations](StructureDefinition-fr-cda-dicom-exposition-aux-radiations.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-dicom-exposition-patient)
 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-exposit
   "name" : "FRCDADICOMExpositionPatient",
   "title" : "CDA - FR DICOM Exposition patient",
   "status" : "draft",
-  "date" : "2026-05-06T08:51:06+00:00",
+  "date" : "2026-05-06T11:50:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -96,10 +96,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-exposit
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
-      "id" : "Procedure",
-      "path" : "Procedure"
-    },
-    {
       "id" : "Procedure.templateId",
       "path" : "Procedure.templateId",
       "slicing" : {
@@ -149,12 +145,16 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-exposit
     {
       "id" : "Procedure.code.code",
       "path" : "Procedure.code.code",
-      "patternCode" : "121290"
+      "min" : 1,
+      "patternCode" : "121290",
+      "mustSupport" : true
     },
     {
       "id" : "Procedure.code.codeSystem",
       "path" : "Procedure.code.codeSystem",
-      "patternString" : "1.2.840.10008.2.16.4"
+      "min" : 1,
+      "patternString" : "1.2.840.10008.2.16.4",
+      "mustSupport" : true
     },
     {
       "id" : "Procedure.code.codeSystemName",
@@ -164,7 +164,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-exposit
     {
       "id" : "Procedure.code.displayName",
       "path" : "Procedure.code.displayName",
-      "patternString" : "Exposition du patient aux rayonnements ionisants"
+      "patternString" : "Exposition du patient aux rayonnements ionisants",
+      "mustSupport" : true
     },
     {
       "id" : "Procedure.participant",

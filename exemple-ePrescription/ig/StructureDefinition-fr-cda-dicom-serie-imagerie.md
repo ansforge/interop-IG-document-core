@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-serie-i
   "name" : "FRCDADICOMSerieImagerie",
   "title" : "CDA - FR DICOM Serie imagerie",
   "status" : "draft",
-  "date" : "2026-05-06T08:51:06+00:00",
+  "date" : "2026-05-06T11:50:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -153,7 +153,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-serie-i
       "path" : "Act.id",
       "short" : "Identifiant de l'entrée",
       "definition" : "Identifiant de l'entrée",
-      "min" : 1
+      "min" : 1,
+      "mustSupport" : true
     },
     {
       "id" : "Act.code",
@@ -165,12 +166,16 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-serie-i
     {
       "id" : "Act.code.code",
       "path" : "Act.code.code",
-      "patternCode" : "113015"
+      "min" : 1,
+      "patternCode" : "113015",
+      "mustSupport" : true
     },
     {
       "id" : "Act.code.codeSystem",
       "path" : "Act.code.codeSystem",
-      "patternString" : "1.2.840.10008.2.16.4"
+      "min" : 1,
+      "patternString" : "1.2.840.10008.2.16.4",
+      "mustSupport" : true
     },
     {
       "id" : "Act.code.codeSystemName",
@@ -180,7 +185,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-serie-i
     {
       "id" : "Act.code.displayName",
       "path" : "Act.code.displayName",
-      "patternString" : "Séries"
+      "patternString" : "Séries",
+      "mustSupport" : true
     },
     {
       "id" : "Act.code.qualifier",

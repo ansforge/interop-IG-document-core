@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-commentaire-e
   "name" : "FRCDACommentaireER",
   "title" : "CDA - FR Commentaire ER",
   "status" : "draft",
-  "date" : "2026-05-06T08:51:06+00:00",
+  "date" : "2026-05-06T11:50:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -175,12 +175,16 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-commentaire-e
     {
       "id" : "Act.code.code",
       "path" : "Act.code.code",
-      "patternCode" : "48767-8"
+      "min" : 1,
+      "patternCode" : "48767-8",
+      "mustSupport" : true
     },
     {
       "id" : "Act.code.codeSystem",
       "path" : "Act.code.codeSystem",
-      "patternString" : "2.16.840.1.113883.6.1"
+      "min" : 1,
+      "patternString" : "2.16.840.1.113883.6.1",
+      "mustSupport" : true
     },
     {
       "id" : "Act.code.codeSystemName",
@@ -190,7 +194,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-commentaire-e
     {
       "id" : "Act.code.displayName",
       "path" : "Act.code.displayName",
-      "patternString" : "Commentaire"
+      "patternString" : "Commentaire",
+      "mustSupport" : true
     },
     {
       "id" : "Act.text",

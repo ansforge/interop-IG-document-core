@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-cadres-
   "name" : "FRCDADICOMCadresReferences",
   "title" : "CDA - FR DICOM Cadres de références",
   "status" : "draft",
-  "date" : "2026-05-06T08:51:06+00:00",
+  "date" : "2026-05-06T11:50:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -96,10 +96,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-cadres-
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
-      "id" : "Observation",
-      "path" : "Observation"
-    },
-    {
       "id" : "Observation.templateId",
       "path" : "Observation.templateId",
       "slicing" : {
@@ -149,12 +145,16 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-cadres-
     {
       "id" : "Observation.code.code",
       "path" : "Observation.code.code",
-      "patternCode" : "121190"
+      "min" : 1,
+      "patternCode" : "121190",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.code.codeSystem",
       "path" : "Observation.code.codeSystem",
-      "patternString" : "1.2.840.10008.2.16.4"
+      "min" : 1,
+      "patternString" : "1.2.840.10008.2.16.4",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.code.codeSystemName",
@@ -164,7 +164,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-cadres-
     {
       "id" : "Observation.code.displayName",
       "path" : "Observation.code.displayName",
-      "patternString" : "cadres référencés"
+      "patternString" : "cadres référencés",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.entryRelationship",

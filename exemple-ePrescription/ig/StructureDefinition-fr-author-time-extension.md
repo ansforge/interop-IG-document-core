@@ -20,7 +20,7 @@ Extension permettant d’ajouter un horodatage (TS) à l’élément author d’
 **Utilisations:**
 
 * Utilise ce/t/te Extension: [FR Composition Document](StructureDefinition-fr-composition-document.md)
-* Exemples pour ce/t/te Extension: [Bundle/example-bundle-Prescription](Bundle-example-bundle-Prescription.md) and [Composition/ExampleCompositionPrescription](Composition-ExampleCompositionPrescription.md)
+* Exemples pour ce/t/te Extension: [Bundle/example-bundle-Prescription](Bundle-example-bundle-Prescription.md) and [Composition/compositionPrescription](Composition-compositionPrescription.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-author-time-extension)
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-author-time-exten
   "name" : "FRAuthorTimeExtension",
   "title" : "FR Author Time Extension",
   "status" : "draft",
-  "date" : "2026-05-06T08:51:06+00:00",
+  "date" : "2026-05-06T11:50:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

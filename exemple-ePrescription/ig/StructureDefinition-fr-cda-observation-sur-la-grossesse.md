@@ -16,7 +16,7 @@ Entrée FR-Observation-sur-la-grossesse: IHE-PCC - Pregnancy Observation. Cette 
 
 **Utilisations:**
 
-* Utilise ce/t/te Profil de modèle logique: [CDA - FR Historique de la grossesse](StructureDefinition-fr-cda-historique-de-la-grossesse.md) and [CDA - FR Naissance](StructureDefinition-fr-cda-naissance.md)
+* Utilise ce/t/te Profil de modèle logique: [CDA - FR Historique de la grossesse](StructureDefinition-fr-cda-historique-de-la-grossesse.md), [CDA - FR Historique des grossesses](StructureDefinition-fr-cda-historique-des-grossesses.md) and [CDA - FR Naissance](StructureDefinition-fr-cda-naissance.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-observation-sur-la-grossesse)
 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-observation-s
   "name" : "FRCDAObservationSurLaGrossesse",
   "title" : "CDA - FR Observation sur la grossesse",
   "status" : "draft",
-  "date" : "2026-05-06T08:51:06+00:00",
+  "date" : "2026-05-06T11:50:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -171,13 +171,31 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-observation-s
       "short" : "Identifiant de l'entrée",
       "definition" : "Identifiant de l'entrée",
       "min" : 1,
-      "max" : "1"
+      "max" : "1",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.code",
       "path" : "Observation.code",
       "short" : "Type d'observationCe code peut provenir du JDV_ObservationGrossesse_CISIS (1.2.250.1.213.1.1.5.500).D’autres codes ou JDV peuvent être utilisés.",
       "definition" : "Type d'observation",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.code",
+      "path" : "Observation.code.code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.codeSystem",
+      "path" : "Observation.code.codeSystem",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.displayName",
+      "path" : "Observation.code.displayName",
       "mustSupport" : true
     },
     {

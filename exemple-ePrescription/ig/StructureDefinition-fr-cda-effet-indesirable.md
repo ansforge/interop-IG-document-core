@@ -16,7 +16,7 @@ Entrée FR-Effet-indesirable: Cette entrée permet de décrire un effet indésir
 
 **Utilisations:**
 
-* Ce Profil de modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
+* Utilise ce/t/te Profil de modèle logique: [CDA - FR Effets indesirables](StructureDefinition-fr-cda-effets-indesirables.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-effet-indesirable)
 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-effet-indesir
   "name" : "FRCDAEffetIndesirable",
   "title" : "CDA - FR Effet indesirable",
   "status" : "draft",
-  "date" : "2026-05-06T08:51:06+00:00",
+  "date" : "2026-05-06T11:50:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -189,7 +189,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-effet-indesir
       "path" : "Observation.id",
       "short" : "Identifiant de l'entrée",
       "definition" : "Identifiant de l'entrée",
-      "min" : 1
+      "min" : 1,
+      "mustSupport" : true
     },
     {
       "id" : "Observation.code",
@@ -201,6 +202,23 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-effet-indesir
         "strength" : "required",
         "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-origine-effet-indesirable-cisis"
       }
+    },
+    {
+      "id" : "Observation.code.code",
+      "path" : "Observation.code.code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.codeSystem",
+      "path" : "Observation.code.codeSystem",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.displayName",
+      "path" : "Observation.code.displayName",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.text",

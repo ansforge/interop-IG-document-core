@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-signe-vital-o
   "name" : "FRCDASigneVitalObserve",
   "title" : "CDA - FR Signe vital observe",
   "status" : "draft",
-  "date" : "2026-05-06T08:51:06+00:00",
+  "date" : "2026-05-06T11:50:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -96,10 +96,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-signe-vital-o
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
-      "id" : "Observation",
-      "path" : "Observation"
-    },
-    {
       "id" : "Observation.templateId",
       "path" : "Observation.templateId",
       "slicing" : {
@@ -178,7 +174,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-signe-vital-o
       "short" : "Identifiant de l'entrée",
       "definition" : "Identifiant de l'entrée",
       "min" : 1,
-      "max" : "1"
+      "max" : "1",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.code",
@@ -190,6 +187,23 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-signe-vital-o
         "strength" : "required",
         "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-signe-vital-cisis"
       }
+    },
+    {
+      "id" : "Observation.code.code",
+      "path" : "Observation.code.code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.codeSystem",
+      "path" : "Observation.code.codeSystem",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.displayName",
+      "path" : "Observation.code.displayName",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.text",

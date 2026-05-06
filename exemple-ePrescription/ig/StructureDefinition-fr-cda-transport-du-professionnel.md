@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-transport-du-
   "name" : "FRCDATransportDuProfessionnel",
   "title" : "CDA - FR Transport du professionnel",
   "status" : "draft",
-  "date" : "2026-05-06T08:51:06+00:00",
+  "date" : "2026-05-06T11:50:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -141,7 +141,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-transport-du-
       "short" : "Identifiant de l'entrée",
       "definition" : "Identifiant de l'entrée",
       "min" : 1,
-      "max" : "1"
+      "max" : "1",
+      "mustSupport" : true
     },
     {
       "id" : "Act.code",
@@ -153,6 +154,23 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-transport-du-
         "strength" : "required",
         "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis"
       }
+    },
+    {
+      "id" : "Act.code.code",
+      "path" : "Act.code.code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Act.code.codeSystem",
+      "path" : "Act.code.codeSystem",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Act.code.displayName",
+      "path" : "Act.code.displayName",
+      "mustSupport" : true
     },
     {
       "id" : "Act.code.qualifier",

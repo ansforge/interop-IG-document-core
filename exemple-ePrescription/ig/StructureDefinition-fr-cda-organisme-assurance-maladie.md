@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-organisme-ass
   "name" : "FRCDAOrganismeAssuranceMaladie",
   "title" : "CDA - FR Organisme assurance maladie",
   "status" : "draft",
-  "date" : "2026-05-06T08:51:06+00:00",
+  "date" : "2026-05-06T11:50:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -174,7 +174,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-organisme-ass
       "path" : "Act.id",
       "short" : "Identifiant de l'entrée",
       "definition" : "Identifiant de l'entrée",
-      "min" : 1
+      "min" : 1,
+      "mustSupport" : true
     },
     {
       "id" : "Act.code",
@@ -186,6 +187,23 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-organisme-ass
         "strength" : "required",
         "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-couverture-sociale-cisis"
       }
+    },
+    {
+      "id" : "Act.code.code",
+      "path" : "Act.code.code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Act.code.codeSystem",
+      "path" : "Act.code.codeSystem",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Act.code.displayName",
+      "path" : "Act.code.displayName",
+      "mustSupport" : true
     },
     {
       "id" : "Act.statusCode",
@@ -374,7 +392,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-organisme-ass
       "path" : "Act.participant.participantRole.id",
       "short" : "Identifiant de l'assuré",
       "definition" : "Identifiant de l'assuré",
-      "min" : 1
+      "min" : 1,
+      "mustSupport" : true
     },
     {
       "id" : "Act.participant:frParticipantAssure.participantRole.addr",
@@ -426,7 +445,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-organisme-ass
       "path" : "Act.entryRelationship.act.id",
       "short" : "Identifiant du plan de soins",
       "definition" : "Identifiant du plan de soins",
-      "min" : 1
+      "min" : 1,
+      "mustSupport" : true
     },
     {
       "id" : "Act.entryRelationship.act.text",

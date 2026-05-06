@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-rang-de-la-va
   "name" : "FRCDARangDeLaVaccination",
   "title" : "CDA - FR Rang de la vaccination",
   "status" : "draft",
-  "date" : "2026-05-06T08:51:06+00:00",
+  "date" : "2026-05-06T11:50:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -96,10 +96,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-rang-de-la-va
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
-      "id" : "Observation",
-      "path" : "Observation"
-    },
-    {
       "id" : "Observation.templateId",
       "path" : "Observation.templateId",
       "slicing" : {
@@ -171,12 +167,16 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-rang-de-la-va
     {
       "id" : "Observation.code.code",
       "path" : "Observation.code.code",
-      "patternCode" : "30973-2"
+      "min" : 1,
+      "patternCode" : "30973-2",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.code.codeSystem",
       "path" : "Observation.code.codeSystem",
-      "patternString" : "2.16.840.1.113883.6.1"
+      "min" : 1,
+      "patternString" : "2.16.840.1.113883.6.1",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.code.codeSystemName",
@@ -186,7 +186,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-rang-de-la-va
     {
       "id" : "Observation.code.displayName",
       "path" : "Observation.code.displayName",
-      "patternString" : "Rang de la vaccination"
+      "patternString" : "Rang de la vaccination",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.derivationExpr",

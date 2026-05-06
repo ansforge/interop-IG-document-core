@@ -26,7 +26,7 @@ Mapping des éléments du modèle métier FRLMExpositionRadiations vers la secti
   "version" : "0.1.0-snapshot",
   "title" : "Mapping Métier/CDA/FHIR : \"Exposition aux radiations\"",
   "status" : "draft",
-  "date" : "2026-05-06T08:51:06+00:00",
+  "date" : "2026-05-06T11:50:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -98,14 +98,14 @@ Mapping des éléments du modèle métier FRLMExpositionRadiations vers la secti
     {
       "code" : "FRLMExpositionRadiations.entree.observationGrossesse",
       "target" : [{
-        "code" : "FRCDADICOMExpositionAuxRadiations.entry:frDICOMObservation",
+        "code" : "FRCDADICOMExpositionAuxRadiations.entry:frDicomObservationGrossesse",
         "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "FRLMExpositionRadiations.entree.observationIndication",
       "target" : [{
-        "code" : "FRCDADICOMExpositionAuxRadiations.entry:frDICOMObservation",
+        "code" : "FRCDADICOMExpositionAuxRadiations.entry:frDicomObservationIndication",
         "equivalence" : "equivalent"
       }]
     }]
@@ -163,14 +163,14 @@ Mapping des éléments du modèle métier FRLMExpositionRadiations vers la secti
       }]
     },
     {
-      "code" : "FRCDADICOMExpositionAuxRadiations.entry:frDICOMObservation",
+      "code" : "FRCDADICOMExpositionAuxRadiations.entry:frDicomObservationGrossesse",
       "target" : [{
         "code" : "FRCompositionDocument.section:exposureRadiation.entry:FRObservationRadiationExposureDocument.hasMember:observationGrossesse",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "FRCDADICOMExpositionAuxRadiations.entry:frDICOMObservation",
+      "code" : "FRCDADICOMExpositionAuxRadiations.entry:frDicomObservationIndication",
       "target" : [{
         "code" : "FRCompositionDocument.section:exposureRadiation.entry:FRObservationRadiationExposureDocument.hasMember:observationIndication",
         "equivalence" : "equivalent"

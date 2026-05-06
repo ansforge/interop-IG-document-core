@@ -16,7 +16,7 @@ Entrée FR-Demande-d-examen-ou-de-suivi: IHE-PCC - Observation Request L’entr�
 
 **Utilisations:**
 
-* Ce Profil de modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
+* Utilise ce/t/te Profil de modèle logique: [CDA - FR Plan de soins](StructureDefinition-fr-cda-plan-de-soins.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-demande-d-examen-ou-de-suivi)
 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-demande-d-exa
   "name" : "FRCDADemandeDExamenOuDeSuivi",
   "title" : "CDA - FR Demande d examen ou de suivi",
   "status" : "draft",
-  "date" : "2026-05-06T08:51:06+00:00",
+  "date" : "2026-05-06T11:50:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -176,13 +176,31 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-demande-d-exa
       "short" : "Identifiant de l'entrée",
       "definition" : "Identifiant de l'entrée",
       "min" : 1,
-      "max" : "1"
+      "max" : "1",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.code",
       "path" : "Observation.code",
       "short" : "Type de la demande.\n -  Si aucun code n'est trouvé dans des terminologies existantes, utiliser le code : \n @code='GEN-092.04.20'\n @displayName='Autre demande d’examen ou de suivi'\n @codeSystem='1.2.250.1.213.1.1.4.322' \n @codeSystemName='TerminologieCISIS'  \n et décrire le type de la demande sous forme de texte libre dans la partie narrative avec une référence vers l'entrée correspondante. ",
       "definition" : "Type de la demande",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.code",
+      "path" : "Observation.code.code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.codeSystem",
+      "path" : "Observation.code.codeSystem",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.displayName",
+      "path" : "Observation.code.displayName",
       "mustSupport" : true
     },
     {
