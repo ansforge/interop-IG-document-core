@@ -1,0 +1,19 @@
+{
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/ImplementationGuide/ans.document.fr.core",
+  "name" : "FRDocumentCore",
+  "title" : "ANS IG document core",
+  "description" : "",
+  "status" : "draft",
+  "package-id" : "ans.document.fr.core",
+  "ig-ver" : "0.1.0-snapshot",
+  "date" : "Wed, 06 May, 2026 08:51:06 +0000",
+  "dateISO8601" : "2026-05-06T08:51:06+00:00",
+  "errs" : 1729,
+  "warnings" : 5526,
+  "hints" : 1221,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 7410827184
+}

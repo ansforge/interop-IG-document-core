@@ -1,0 +1,28 @@
+{
+  "resourceType" : "PractitionerRole",
+  "id" : "ExamplePractitionerRoleRemplacant",
+  "meta" : {
+    "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : PractitionerRole ExamplePractitionerRoleRemplacant</b></p><a name=\"ExamplePractitionerRoleRemplacant\"> </a><a name=\"hcExamplePractitionerRoleRemplacant\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-practitionerRole-document.html\">FR PractitionerRole Document</a></p></div><p><b>practitioner</b>: <a href=\"Bundle-example-bundle-Prescription.html#Practitioner_ExamplePractitionerRemplacant\">Practitioner Pierre JOLI </a></p><p><b>organization</b>: <a href=\"Bundle-example-bundle-Prescription.html#Organization_ExampleOrganizationPrescription-02\">Organization Cabinet du DR Pierre JOLI</a></p><p><b>code</b>: <span title=\"Codes :{http://terminology.hl7.org/CodeSystem/practitioner-role doctor}\">Doctor</span>, <span title=\"Codes :\">CORRE</span></p></div>"
+  },
+  "practitioner" : {
+    "reference" : "Practitioner/ExamplePractitionerRemplacant"
+  },
+  "organization" : {
+    "reference" : "Organization/ExampleOrganizationPrescription-02"
+  },
+  "code" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/practitioner-role",
+      "code" : "doctor"
+    }]
+  },
+  {
+    "coding" : [{
+      "code" : "CORRE"
+    }]
+  }]
+}
