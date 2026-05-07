@@ -1,13 +1,14 @@
-Logical: FRLMInformationsCliniques
-Id: fr-lm-informations-cliniques
+Logical: FRLMSupportingInformation
+Id: fr-lm-supporting-information
 Parent: FRLMSection
-Title: "Modèle logique métier - FR LM Informations Cliniques"
+Title: "Modèle logique métier - FR LM Supporting Information"
 Description: """Section Informations Cliniques"""
 Characteristics: #can-be-target
 
-* sousSection 0..0 
-* titreSection 1..1 
-* entree 1..*
+* subSection 0..0 
+* titleSection 1..1 
+* entry 1..*
+  * previousResultsInformation 0..* FRLMObservation "Résultats d'examens antérieurs pertinents"
   * antecedentsMedicaux 1..1 FRLMObservation "Observation"
   * antecedentsChirurgicaux 1..1 FRLMObservation "Observation"
   * contreIndications 0..1 FRLMObservation "Observation"

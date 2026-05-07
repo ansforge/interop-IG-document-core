@@ -5,6 +5,6 @@ Title: "Modèle logique métier - FR LM Addendum"
 Description: """Section Addendum"""
 Characteristics: #can-be-target
 
-* sousSection 0..0 
-* entree 0..0
-* titreSection 1..1 
+* subSection 0..0 
+* entry 0..0
+* titleSection 1..1 

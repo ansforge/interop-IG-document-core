@@ -135,27 +135,23 @@ groups:
       - StructureDefinition/fr-lm-antecedents-medicaux
       - StructureDefinition/fr-lm-codes-a-barres
       - StructureDefinition/fr-lm-commentaire-non-code
-      - StructureDefinition/fr-lm-cr-bio-chapitre
-      - StructureDefinition/fr-lm-cr-bio-sous-chapitre
-      - StructureDefinition/fr-lm-acte-imagerie
+      - StructureDefinition/fr-lm-result-data
+      - StructureDefinition/fr-lm-examination-report
       - StructureDefinition/fr-lm-addendum
-      - StructureDefinition/fr-lm-conclusion-examen-imagerie
-      - StructureDefinition/fr-lm-demande-examen-imagerie
-      - StructureDefinition/fr-lm-comparaison-examens-imagerie
+      - StructureDefinition/fr-lm-order-information
+      - StructureDefinition/fr-lm-comparison-study
       - StructureDefinition/fr-lm-resultats
-      - StructureDefinition/fr-lm-exposition-radiations
-      - StructureDefinition/fr-lm-informations-cliniques
-      - StructureDefinition/fr-lm-object-catalog
-      - StructureDefinition/fr-lm-complications-acte
+      - StructureDefinition/fr-lm-exposure-information
+      - StructureDefinition/fr-lm-supporting-information
+      - StructureDefinition/fr-lm-dicom-study-metadata
       - StructureDefinition/fr-lm-directives-anticipees
-      - StructureDefinition/fr-lm-medications-dispensation
+      - StructureDefinition/fr-lm-medication-dispensations
       - StructureDefinition/fr-lm-dispositifs-medicaux
       - StructureDefinition/fr-lm-document-pdf-copie
       - StructureDefinition/fr-lm-documents-ajoutes
-      - StructureDefinition/fr-lm-education-patient
+      - StructureDefinition/fr-lm-patient-education
       - StructureDefinition/fr-lm-effets-indesirables
       - StructureDefinition/fr-lm-facteurs-de-risque-professionnels-non-code
-      - StructureDefinition/fr-lm-fonctions-physiques
       - StructureDefinition/fr-lm-habitus-mode-de-vie
       - StructureDefinition/fr-lm-historique-des-actes
       - StructureDefinition/fr-lm-section-pregnancy-history
@@ -163,20 +159,15 @@ groups:
       - StructureDefinition/fr-lm-prescription-dispositifs-medicaux
       - StructureDefinition/fr-lm-medication-prescription
       - StructureDefinition/fr-lm-problemes-actifs
-      - StructureDefinition/fr-lm-raison-recommandation-non-code
-      - StructureDefinition/fr-lm-raison-recommandation
-      - StructureDefinition/fr-lm-resultats-laboratoire-biologie-seconde-intention
-      - StructureDefinition/fr-lm-resultats-evenements
-      - StructureDefinition/fr-lm-resultats-examens-non-code
-      - StructureDefinition/fr-lm-resultats-examens
+      - StructureDefinition/fr-lm-reason-for-referral
+      - StructureDefinition/fr-lm-course-of-encounter
       - StructureDefinition/fr-lm-signes-vitaux
-      - StructureDefinition/fr-lm-statut-document
+      - StructureDefinition/fr-lm-status-document
       - StructureDefinition/fr-lm-statut-fonctionnel
       - StructureDefinition/fr-lm-traitements
-      - StructureDefinition/fr-lm-traitement-sortie 
+      - StructureDefinition/fr-lm-hospital-discharge-medications
       - StructureDefinition/fr-lm-traitements-administres
       - StructureDefinition/fr-lm-vaccinations
-      - StructureDefinition/fr-lm-resultats-examen-imagerie
       - StructureDefinition/fr-lm-alerts
 
   #Entrées et éléments transversaux
