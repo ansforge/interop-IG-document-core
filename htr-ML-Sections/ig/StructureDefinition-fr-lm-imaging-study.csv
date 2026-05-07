@@ -1,0 +1,13 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"fr-lm-imaging-study","fr-lm-imaging-study","","","",0,*,"","","","null {[]} {[]}
+","Logical model - FR LM Imaging Study","Entrée DICOM Examen Imagerie","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"fr-lm-imaging-study.uuidInstanceExamen","fr-lm-imaging-study.uuidInstanceExamen","","","",1,*,"","","","Identifier {[]} {[]}
+","UUID instance examen","UUID instance examen","","","","","","","","","",,,,,"",,,,"fr-lm-imaging-study.uuidInstanceExamen",1,*,"",""
+"fr-lm-imaging-study.codeActe","fr-lm-imaging-study.codeActe","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Code de l'acte","Code de l'acte","","","","","","","","","",,,,,"",,,,"fr-lm-imaging-study.codeActe",1,1,"",""
+"fr-lm-imaging-study.dateActe","fr-lm-imaging-study.dateActe","","","",0,1,"","","","dateTime {[]} {[]}
+","Date de l'acte","Date de l'acte","","","","","","","","","",,,,,"",,,,"fr-lm-imaging-study.dateActe",0,1,"",""
+"fr-lm-imaging-study.serieImagerie","fr-lm-imaging-study.serieImagerie","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-serie-imagerie {[]} {[]}
+","Serie-imagerie","Serie-imagerie","","","","","","","","","",,,,,"",,,,"fr-lm-imaging-study.serieImagerie",1,1,"",""
+"fr-lm-imaging-study.objectifsReferences","fr-lm-imaging-study.objectifsReferences","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","Objectifs de reference","Objectifs de reference","","","","","","","","","",,"","jdv-imagerie-objectif-reference-cisis (1.2.250.1.213.1.1.5.672)","","",,,,"fr-lm-imaging-study.objectifsReferences",0,*,"",""
