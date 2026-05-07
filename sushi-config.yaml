@@ -499,7 +499,6 @@ groups:
         - StructureDefinition/fr-service-request-document
         - StructureDefinition/fr-medication-dispense-document
         - StructureDefinition/fr-medication-request-document
-        - StructureDefinition/fr-medications-combinaison-document
         - StructureDefinition/fr-observation-administration-blood-derivatives-document
         - StructureDefinition/fr-observation-antenatal-testing-surveillance-battery-document
         - StructureDefinition/fr-observation-birth-event-document
@@ -523,7 +522,7 @@ groups:
         - StructureDefinition/fr-pregnancy-history-document
         - StructureDefinition/fr-observation-result-document
         - StructureDefinition/fr-task-patient-transport-document
-        - StructureDefinition/fr-Observation-vital-signs-panel-document
+        - StructureDefinition/fr-observation-vital-signs-panel-document
         - StructureDefinition/fr-observation-vital-signs-document
         - StructureDefinition/fr-body-structure-document
         - StructureDefinition/fr-observation-multiresistant-microorganism-document
