@@ -1,6 +1,6 @@
 Profile: FRObservationVitalSignsPanelDocument
 Parent: http://hl7.org/fhir/StructureDefinition/vitalspanel
-Id: fr-Observation-vital-signs-panel-document
+Id: fr-observation-vital-signs-panel-document
 Title: "Observation - FR Observation Vital Signs Panel Document"
 Description: "FRObservationVitalSignsPanelDocument permet de regrouper des informations relatives aux mesures cliniques du patient."
 

@@ -55,7 +55,7 @@ Description: "
   * ^short = "Instruction au patient"
 // Médicament
 * medication[x] MS
-* medication[x] only CodeableConcept or Reference(FRMedicationDocument or FRMedicationsCombinaisonDocument)
+* medication[x] only CodeableConcept or Reference(FRMedicationDocument)
 
 // Motif du traitement
 * reasonReference MS

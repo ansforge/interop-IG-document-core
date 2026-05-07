@@ -7,7 +7,7 @@ Characteristics: #can-be-target
 * codeSection 1..1 CodeableConcept "Code de la section"
 * titleSection 0..1 string "Titre de la section"
 * description 1..1 Narrative "Bloc narratif"
-* author[x] 0..* Base "author[x] peut correspondre soit à un professionnel, soit à une organisation, soit à un système."
+* author[x] 0..* Base	"author[x] peut correspondre soit à un professionnel, soit à une organisation, soit à un système."
   * authorProfessional 0..* FRLMHealthProfessional "L'auteur est un professionnel de santé"
   * authorOrganisation 0..* FRLMOrganisation "L'auteur est une organisation"
   * authorDevice 0..* FRLMDevice "L'auteur est un système"

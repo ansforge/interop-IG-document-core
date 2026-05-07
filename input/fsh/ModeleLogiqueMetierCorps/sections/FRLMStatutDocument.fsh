@@ -1,11 +1,11 @@
-Logical: FRLMStatutDocument
-Id: fr-lm-statut-document
+Logical: FRLMStatusDocument
+Id: fr-lm-status-document
 Parent: FRLMSection
-Title: "Modèle logique métier - FR LM Statut du document"
-Description: """Section Statut du document"""
+Title: "Modèle logique métier - FR LM Status Document"
+Description: """Section Statut du Document"""
 Characteristics: #can-be-target
 
-* titreSection 1..1 
-* sousSection 0..0
-* entree 1..1
+* titleSection 1..1 
+* subSection 0..0
+* entry 1..1
   * statutDocument 1..1 FRLMStatusDocumentEntry "Entrée Statut du document"
