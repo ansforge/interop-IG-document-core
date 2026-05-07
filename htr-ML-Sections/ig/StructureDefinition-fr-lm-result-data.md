@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-result-data.cs
   "name" : "FRLMResultData",
   "title" : "Modèle logique métier - FR LM Compte rendu de biologie de 1er niveau",
   "status" : "draft",
-  "date" : "2026-05-07T12:47:35+00:00",
+  "date" : "2026-05-07T13:30:39+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

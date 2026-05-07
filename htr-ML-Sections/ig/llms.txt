@@ -82,6 +82,7 @@
 
 * [Modèle logique métier - FR LM Addendum](StructureDefinition-fr-lm-addendum.md)
 * [Logical model - FR LM Administration of Blood Derivatives](StructureDefinition-fr-lm-administration-blood-derivatives.md)
+* [Modèle logique métier - FR LM Admission Evaluation](StructureDefinition-fr-lm-admission-evaluation.md)
 * [Logical model - FR LM Advance Directive](StructureDefinition-fr-lm-advance-directive.md)
 * [Logical model - FR LM Advance Directives](StructureDefinition-fr-lm-advance-directives.md)
 * [Logical model - FR LM Adverse Events During Hospitalization](StructureDefinition-fr-lm-adverse-event-during-hospitalization.md)
@@ -112,6 +113,7 @@
 * [Modèle logique métier - FR LM Document de référence](StructureDefinition-fr-lm-document-reference.md)
 * [Logical model- FR LM Dosage Instructions](StructureDefinition-fr-lm-dosageInstructions.md)
 * [Logical model - FR LM Dose Number](StructureDefinition-fr-lm-dose-number.md)
+* [Modèle logique métier - FR LM Encounter Information](StructureDefinition-fr-lm-encounter-information.md)
 * [Modèle logique métier - FR LM Rencontre](StructureDefinition-fr-lm-encounter.md)
 * [Modèle logique métier - FR LM En-tête document](StructureDefinition-fr-lm-entete-document.md)
 * [FR LM Entry](StructureDefinition-fr-lm-entry.md)

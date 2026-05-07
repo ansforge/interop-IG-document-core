@@ -5530,6 +5530,17 @@ package IG #DDDDDD{
              fr-lm-administration-blood-derivatives.valeur => [1..1]
         } 
 
+        class FRLMAdmissionEvaluation{
+
+             fr-lm-admission-evaluation => [None..None]
+             fr-lm-admission-evaluation.titleSection => [1..None]
+             fr-lm-admission-evaluation.subSection => [None..0]
+             fr-lm-admission-evaluation.entry.encounterInformation => [0..1]
+             fr-lm-admission-evaluation.entry.objectiveFindings => [0..*]
+             fr-lm-admission-evaluation.entry.functionalStatus[x] => [0..*]
+             fr-lm-admission-evaluation.note => [0..1]
+        } 
+
         class FRLMAdvanceDirective{
 
              fr-lm-advance-directive => [None..None]
@@ -5904,6 +5915,15 @@ package IG #DDDDDD{
              fr-lm-dose-number.nombreRenouvellements => [0..1]
              fr-lm-dose-number.languageRangVaccination => [0..1]
              fr-lm-dose-number.rangVaccination => [1..1]
+        } 
+
+        class FRLMEncounterInformation{
+
+             fr-lm-encounter-information => [None..None]
+             fr-lm-encounter-information.titleSection => [1..None]
+             fr-lm-encounter-information.subSection => [None..0]
+             fr-lm-encounter-information.entry.encounterInformation => [0..1]
+             fr-lm-encounter-information.note => [0..1]
         } 
 
         class FRLMEncounter{
@@ -9218,6 +9238,10 @@ package "Ressources de base" #palegreen {
 
     classeb8bc4d6baa061f547965c0670265381 --> FRLMAdministrationBloodDerivatives
 
+ class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-section" as  class5dabea989fe22a905d8f89cc210527f2 
+
+    class5dabea989fe22a905d8f89cc210527f2 --> FRLMAdmissionEvaluation
+
  class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry" as  classeb8bc4d6baa061f547965c0670265381 
 
     classeb8bc4d6baa061f547965c0670265381 --> FRLMAdvanceDirective
@@ -9337,6 +9361,10 @@ package "Ressources de base" #palegreen {
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
     class095a1b43effec73955e31e790438de49 --> FRLMDoseNumber
+
+ class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-section" as  class5dabea989fe22a905d8f89cc210527f2 
+
+    class5dabea989fe22a905d8f89cc210527f2 --> FRLMEncounterInformation
 
  class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry" as  classeb8bc4d6baa061f547965c0670265381 
 

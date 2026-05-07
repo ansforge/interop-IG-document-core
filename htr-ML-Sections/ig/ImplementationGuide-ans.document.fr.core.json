@@ -10,7 +10,7 @@
   "name" : "FRDocumentCore",
   "title" : "ANS IG document core",
   "status" : "draft",
-  "date" : "2026-05-07T12:47:35+00:00",
+  "date" : "2026-05-07T13:30:39+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -7200,6 +7200,19 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/fr-lm-admission-evaluation"
+      },
+      "name" : "Modèle logique métier - FR LM Admission Evaluation",
+      "description" : "Section Évaluation à l'admission",
+      "exampleBoolean" : false,
+      "groupingId" : "Modèles logiques métier des sections d'un document"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/fr-lm-attachments"
       },
       "name" : "Modèle logique métier - FR LM Attachments",
@@ -7336,6 +7349,19 @@
       "description" : "Eléments de l'entête d'un document contenant les informations générales et nécessaires à la gestion du document (identification et type du document, patient/usager, auteur, évènement documenté, etc...).",
       "exampleBoolean" : false,
       "groupingId" : "Modèles logiques métier de l'entête d'un document"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-lm-encounter-information"
+      },
+      "name" : "Modèle logique métier - FR LM Encounter Information",
+      "description" : "Section Informations sur la rencontre",
+      "exampleBoolean" : false,
+      "groupingId" : "Modèles logiques métier des sections d'un document"
     },
     {
       "extension" : [{

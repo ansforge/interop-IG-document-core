@@ -68,12 +68,14 @@ This page provides a list of the FHIR artifacts defined as part of this implemen
 | [Logical model - FR LM Vital Signs](StructureDefinition-fr-lm-vital-signs.md) | Section Signes vitaux |
 | [logical model- FR LM Functional Status](StructureDefinition-fr-lm-functional-status.md) | Section Statut fonctionnel |
 | [Modèle logique métier - FR LM Addendum](StructureDefinition-fr-lm-addendum.md) | Section Addendum |
+| [Modèle logique métier - FR LM Admission Evaluation](StructureDefinition-fr-lm-admission-evaluation.md) | Section Évaluation à l’admission |
 | [Modèle logique métier - FR LM Attachments](StructureDefinition-fr-lm-attachments.md) | Section Documents ajoutés |
 | [Modèle logique métier - FR LM Comparison Study](StructureDefinition-fr-lm-comparison-study.md) | Section Comparaison d’examens d’imagerie |
 | [Modèle logique métier - FR LM Compte rendu de biologie de 1er niveau](StructureDefinition-fr-lm-result-data.md) | Section Compte rendu de biologie de 1er niveau |
 | [Modèle logique métier - FR LM Corps document](StructureDefinition-fr-lm-corps-document.md) | Eléments métier du corps d’un document contenant les sections du document. |
 | [Modèle logique métier - FR LM Course of encounter](StructureDefinition-fr-lm-course-of-encounter.md) | Section Résultats d’événements |
 | [Modèle logique métier - FR LM DICOM Study Metadata](StructureDefinition-fr-lm-dicom-study-metadata.md) | Section Object Catalog |
+| [Modèle logique métier - FR LM Encounter Information](StructureDefinition-fr-lm-encounter-information.md) | Section Informations sur la rencontre |
 | [Modèle logique métier - FR LM Examination Report](StructureDefinition-fr-lm-examination-report.md) | Section Acte d’imagerie |
 | [Modèle logique métier - FR LM Exposure Information](StructureDefinition-fr-lm-exposure-information.md) | Section Exposition aux radiations |
 | [Modèle logique métier - FR LM Hospital Discharge Medications](StructureDefinition-fr-lm-hospital-discharge-medications.md) | Section Traitements à la sortie |

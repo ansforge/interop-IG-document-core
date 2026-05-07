@@ -16,7 +16,7 @@ Entrée Problème
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Logical model - FR LM Adverse Event](StructureDefinition-fr-lm-adverse-event.md), [Logical model - FR LM Care Plan](StructureDefinition-fr-lm-care-plan.md), [Modèle logique métier - FR LM Course of encounter](StructureDefinition-fr-lm-course-of-encounter.md), [Logical model - FR LM Device use](StructureDefinition-fr-lm-device-use.md)... Show 8 more, [Modèle logique métier - FR LM Examination Report](StructureDefinition-fr-lm-examination-report.md), [Logical model - FR LM FRLM History Of Past Illness](StructureDefinition-fr-lm-history-of-past-illness.md), [Logical model - FR LM Immunisation](StructureDefinition-fr-lm-immunisation.md), [Logical model - FR LM Problems](StructureDefinition-fr-lm-problems.md), [Logical model- FR LM Procedure](StructureDefinition-fr-lm-procedure.md), [Modèle logique métier - FR LM Reason for referral](StructureDefinition-fr-lm-reason-for-referral.md), [Logical model - FR LM Service Request](StructureDefinition-fr-lm-service-request.md) and [Modèle logique métier - FR LM Supporting Information](StructureDefinition-fr-lm-supporting-information.md)
+* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Admission Evaluation](StructureDefinition-fr-lm-admission-evaluation.md), [Logical model - FR LM Adverse Event](StructureDefinition-fr-lm-adverse-event.md), [Logical model - FR LM Care Plan](StructureDefinition-fr-lm-care-plan.md), [Modèle logique métier - FR LM Course of encounter](StructureDefinition-fr-lm-course-of-encounter.md)... Show 9 more, [Logical model - FR LM Device use](StructureDefinition-fr-lm-device-use.md), [Modèle logique métier - FR LM Examination Report](StructureDefinition-fr-lm-examination-report.md), [Logical model - FR LM FRLM History Of Past Illness](StructureDefinition-fr-lm-history-of-past-illness.md), [Logical model - FR LM Immunisation](StructureDefinition-fr-lm-immunisation.md), [Logical model - FR LM Problems](StructureDefinition-fr-lm-problems.md), [Logical model- FR LM Procedure](StructureDefinition-fr-lm-procedure.md), [Modèle logique métier - FR LM Reason for referral](StructureDefinition-fr-lm-reason-for-referral.md), [Logical model - FR LM Service Request](StructureDefinition-fr-lm-service-request.md) and [Modèle logique métier - FR LM Supporting Information](StructureDefinition-fr-lm-supporting-information.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-condition)
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-condition.csv)
   "name" : "FRLMCondition",
   "title" : "Logical model - FR LM Condition",
   "status" : "draft",
-  "date" : "2026-05-07T12:47:35+00:00",
+  "date" : "2026-05-07T13:30:39+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

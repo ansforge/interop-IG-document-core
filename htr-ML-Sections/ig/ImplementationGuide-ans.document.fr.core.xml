@@ -10,7 +10,7 @@
   <name value="FRDocumentCore"/>
   <title value="ANS IG document core"/>
   <status value="draft"/>
-  <date value="2026-05-07T12:47:35+00:00"/>
+  <date value="2026-05-07T13:30:39+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -6514,6 +6514,18 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/fr-lm-admission-evaluation"/>
+      </reference>
+      <name value="Modèle logique métier - FR LM Admission Evaluation"/>
+      <description value="Section Évaluation à l'admission"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Modèles logiques métier des sections d'un document"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/fr-lm-attachments"/>
       </reference>
       <name value="Modèle logique métier - FR LM Attachments"/>
@@ -6640,6 +6652,18 @@
       <description value="Eléments de l'entête d'un document contenant les informations générales et nécessaires à la gestion du document (identification et type du document, patient/usager, auteur, évènement documenté, etc...)."/>
       <exampleBoolean value="false"/>
       <groupingId value="Modèles logiques métier de l'entête d'un document"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-lm-encounter-information"/>
+      </reference>
+      <name value="Modèle logique métier - FR LM Encounter Information"/>
+      <description value="Section Informations sur la rencontre"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Modèles logiques métier des sections d'un document"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

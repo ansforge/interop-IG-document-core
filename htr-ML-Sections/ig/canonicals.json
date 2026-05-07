@@ -2428,6 +2428,13 @@
   "name" : "FRLMAdministrationBloodDerivatives"
 },
 {
+  "id" : "fr-lm-admission-evaluation",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-admission-evaluation",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRLMAdmissionEvaluation"
+},
+{
   "id" : "fr-lm-advance-directive",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-advance-directive",
@@ -2643,6 +2650,13 @@
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-encounter",
   "version" : "0.1.0-snapshot",
   "name" : "FRLMEncounter"
+},
+{
+  "id" : "fr-lm-encounter-information",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-encounter-information",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRLMEncounterInformation"
 },
 {
   "id" : "fr-lm-entete-document",
