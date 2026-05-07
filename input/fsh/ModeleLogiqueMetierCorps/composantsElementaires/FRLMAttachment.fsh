@@ -1,7 +1,7 @@
-Logical: FRLMAttachement
-Id: fr-lm-attachement
+Logical: FRLMAttachment
+Id: fr-lm-attachment
 Parent: FRLMEntry
-Title: "Logical model - FR LM Attachement"
+Title: "Logical model - FR LM Attachment"
 Description: """Entrée Document attaché"""
 Characteristics: #can-be-target
 

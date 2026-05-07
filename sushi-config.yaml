@@ -130,11 +130,11 @@ groups:
       - StructureDefinition/fr-lm-corps-document
       #Sections
       - StructureDefinition/fr-lm-section
-      - StructureDefinition/fr-lm-allergies-et-hypersensibilites
-      - StructureDefinition/fr-lm-antecedents-familiaux
-      - StructureDefinition/fr-lm-antecedents-medicaux
-      - StructureDefinition/fr-lm-codes-a-barres
-      - StructureDefinition/fr-lm-commentaire-non-code
+      - StructureDefinition/fr-lm-allergies-and-intolerances
+      - StructureDefinition/fr-lm-family-medical-history
+      - StructureDefinition/fr-lm-history-of-past-illness
+      - StructureDefinition/fr-lm-qr-code
+      - StructureDefinition/fr-lm-note
       - StructureDefinition/fr-lm-cr-bio-chapitre
       - StructureDefinition/fr-lm-cr-bio-sous-chapitre
       - StructureDefinition/fr-lm-acte-imagerie
@@ -142,40 +142,38 @@ groups:
       - StructureDefinition/fr-lm-conclusion-examen-imagerie
       - StructureDefinition/fr-lm-demande-examen-imagerie
       - StructureDefinition/fr-lm-comparaison-examens-imagerie
-      - StructureDefinition/fr-lm-resultats
+      - StructureDefinition/fr-lm-observation-results
       - StructureDefinition/fr-lm-exposition-radiations
       - StructureDefinition/fr-lm-informations-cliniques
       - StructureDefinition/fr-lm-object-catalog
       - StructureDefinition/fr-lm-complications-acte
-      - StructureDefinition/fr-lm-directives-anticipees
+      - StructureDefinition/fr-lm-advance-directives
       - StructureDefinition/fr-lm-medications-dispensation
-      - StructureDefinition/fr-lm-dispositifs-medicaux
-      - StructureDefinition/fr-lm-document-pdf-copie
-      - StructureDefinition/fr-lm-documents-ajoutes
+      - StructureDefinition/fr-lm-medical-devices-and-implants
+      - StructureDefinition/fr-lm-presented-form
+      - StructureDefinition/fr-lm-attachments
       - StructureDefinition/fr-lm-education-patient
-      - StructureDefinition/fr-lm-effets-indesirables
-      - StructureDefinition/fr-lm-facteurs-de-risque-professionnels-non-code
-      - StructureDefinition/fr-lm-fonctions-physiques
-      - StructureDefinition/fr-lm-habitus-mode-de-vie
-      - StructureDefinition/fr-lm-historique-des-actes
+      - StructureDefinition/fr-lm-predictable-adverse-drug-reaction
+      - StructureDefinition/fr-lm-hazardous-working-conditions
+      - StructureDefinition/fr-lm-social-history
+      - StructureDefinition/fr-lm-procedures
       - StructureDefinition/fr-lm-section-pregnancy-history
-      - StructureDefinition/fr-lm-plan-soins
-      - StructureDefinition/fr-lm-prescription-dispositifs-medicaux
+      - StructureDefinition/fr-lm-care-plans
+      - StructureDefinition/fr-lm-medical-device-prescriptions
       - StructureDefinition/fr-lm-medication-prescription
-      - StructureDefinition/fr-lm-problemes-actifs
+      - StructureDefinition/fr-lm-problems
       - StructureDefinition/fr-lm-raison-recommandation-non-code
       - StructureDefinition/fr-lm-raison-recommandation
       - StructureDefinition/fr-lm-resultats-laboratoire-biologie-seconde-intention
       - StructureDefinition/fr-lm-resultats-evenements
       - StructureDefinition/fr-lm-resultats-examens-non-code
-      - StructureDefinition/fr-lm-resultats-examens
-      - StructureDefinition/fr-lm-signes-vitaux
+      - StructureDefinition/fr-lm-vital-signs
       - StructureDefinition/fr-lm-statut-document
-      - StructureDefinition/fr-lm-statut-fonctionnel
-      - StructureDefinition/fr-lm-traitements
+      - StructureDefinition/fr-lm-functional-status
+      - StructureDefinition/fr-lm-medication-summary
       - StructureDefinition/fr-lm-traitement-sortie 
       - StructureDefinition/fr-lm-traitements-administres
-      - StructureDefinition/fr-lm-vaccinations
+      - StructureDefinition/fr-lm-immunisations
       - StructureDefinition/fr-lm-resultats-examen-imagerie
       - StructureDefinition/fr-lm-alerts
 
@@ -197,7 +195,7 @@ groups:
       - StructureDefinition/fr-lm-allergy-intolerance	
       - StructureDefinition/fr-lm-advance-directive
       - StructureDefinition/fr-lm-device-use
-      - StructureDefinition/fr-lm-attachement
+      - StructureDefinition/fr-lm-attachment
       - StructureDefinition/fr-lm-adverse-event
       - StructureDefinition/fr-lm-observation-related-to-prevention
       - StructureDefinition/fr-lm-observation-work-related-accident
@@ -208,7 +206,7 @@ groups:
       - StructureDefinition/fr-lm-severity-adverse-event
       - StructureDefinition/fr-lm-observation-social-history
       - StructureDefinition/fr-lm-hors-amm
-      - StructureDefinition/fr-lm-image-illustrative
+      - StructureDefinition/fr-lm-observation-media
       - StructureDefinition/fr-lm-imputabilite-effet-indesirable
       - StructureDefinition/fr-lm-birth-event
       - StructureDefinition/fr-lm-non-remboursable

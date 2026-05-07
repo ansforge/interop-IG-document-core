@@ -5,7 +5,7 @@ Title: "Logical model - FR LM Alerts"
 Description: """Section Points de vigilance """
 Characteristics: #can-be-target
 
-* titreSection 1..1 
-* sousSection 0..0
-* entree
+* titleSection 1..1 
+* subSection 0..0
+* entry
   * alert 0..* FRLMAlert "Points de vigilance"

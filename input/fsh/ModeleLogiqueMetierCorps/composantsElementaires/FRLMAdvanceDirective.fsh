@@ -13,4 +13,4 @@ Characteristics: #can-be-target
   * ^binding.valueSet = "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-directive-anticipee-cisis"
 * value 1..1 boolean "Procédure autorisée ou pas"
 * note 0..1 string "Commentaire"
-* attachment 0..1 FRLMAttachement "Piece jointe associee a la directive"
+* attachment 0..1 FRLMAttachment "Piece jointe associee a la directive"

@@ -14,5 +14,5 @@ Characteristics: #can-be-target
 * batterieExamensDeBiologieMedicale 0..* FRLMBatterieExamensBiologieMedicale "Batterie d'examens de biologie médicale"
 * isolatMicrobiologique 0..* FRLMIsolatMicrobiologique "Isolat microbiologique"
 * resultatElementCliniquePertinent 0..* FRLMResultatExamensBiologieElementCliniquePertinent "Résultat d'examen de biologie / élément clinique pertinent"
-* imageIllustrative 0..* FRLMImageIllustrative "Image ou graphe"
+* observationMedia 0..* FRLMObservationMedia "Image ou graphe"
 * commentaire 0..* string "Commentaire"
