@@ -169,6 +169,8 @@ groups:
       - StructureDefinition/fr-lm-hospital-discharge-medications
       - StructureDefinition/fr-lm-traitements-administres
       - StructureDefinition/fr-lm-alerts
+      - StructureDefinition/fr-lm-admission-evaluation
+      - StructureDefinition/fr-lm-encounter-information
 
   #Entrées et éléments transversaux
   Modèles logiques métier des composants élémentaires: 
