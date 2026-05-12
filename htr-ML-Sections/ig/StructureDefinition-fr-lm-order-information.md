@@ -1,15 +1,15 @@
-# Modèle logique métier - FR LM Order Information - ANS IG document core v0.1.0-snapshot
+# Logical model - FR LM Order Information - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Modèle logique métier - FR LM Order Information**
+* **Logical model - FR LM Order Information**
 
-## Logical Model: Modèle logique métier - FR LM Order Information 
+## Logical Model: Logical model - FR LM Order Information 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-order-information | *Version*:0.1.0-snapshot |
-| Draft as of 2026-05-07 | *Computable Name*:FRLMOrderInformation |
+| Draft as of 2026-05-12 | *Computable Name*:FRLMOrderInformation |
 
  
 Section Demande d’examen d’imagerie 
@@ -47,9 +47,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-order-informat
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-order-information",
   "version" : "0.1.0-snapshot",
   "name" : "FRLMOrderInformation",
-  "title" : "Modèle logique métier - FR LM Order Information",
+  "title" : "Logical model - FR LM Order Information",
   "status" : "draft",
-  "date" : "2026-05-07T13:30:39+00:00",
+  "date" : "2026-05-12T13:21:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -76,7 +76,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-order-informat
     "element" : [{
       "id" : "fr-lm-order-information",
       "path" : "fr-lm-order-information",
-      "short" : "Modèle logique métier - FR LM Order Information",
+      "short" : "Logical model - FR LM Order Information",
       "definition" : "Section Demande d'examen d'imagerie"
     },
     {
@@ -90,9 +90,15 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-order-informat
       "max" : "0"
     },
     {
-      "id" : "fr-lm-order-information.entry",
-      "path" : "fr-lm-order-information.entry",
-      "max" : "0"
+      "id" : "fr-lm-order-information.entry.orderInformation",
+      "path" : "fr-lm-order-information.entry.orderInformation",
+      "short" : "Entrée Demande d'examen d'imagerie",
+      "definition" : "Entrée Demande d'examen d'imagerie",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-service-request"
+      }]
     }]
   }
 }

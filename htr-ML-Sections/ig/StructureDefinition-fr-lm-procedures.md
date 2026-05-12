@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-procedures | *Version*:0.1.0-snapshot |
-| Draft as of 2026-05-07 | *Computable Name*:FRLMProcedures |
+| Draft as of 2026-05-12 | *Computable Name*:FRLMProcedures |
 
  
 Section Historique des actes 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-procedures.csv
   "name" : "FRLMProcedures",
   "title" : "logical model - FR LM Procedures",
   "status" : "draft",
-  "date" : "2026-05-07T13:30:39+00:00",
+  "date" : "2026-05-12T13:21:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -98,17 +98,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-procedures.csv
       "max" : "*",
       "type" : [{
         "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-procedure"
-      }]
-    },
-    {
-      "id" : "fr-lm-procedures.entry.reference",
-      "path" : "fr-lm-procedures.entry.reference",
-      "short" : "Entrée Références externes",
-      "definition" : "Entrée Références externes",
-      "min" : 1,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-references-externes"
       }]
     }]
   }

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-observation-subordonnee | *Version*:0.1.0-snapshot |
-| Draft as of 2026-05-07 | *Computable Name*:FRCDADICOMObservationSubordonnee |
+| Draft as of 2026-05-12 | *Computable Name*:FRCDADICOMObservationSubordonnee |
 
  
 Entrée FR-DICOM-Observation-subordonnee: DICOM PART 20 - Observation codée 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-observa
   "name" : "FRCDADICOMObservationSubordonnee",
   "title" : "CDA - FR DICOM Observation subordonnee",
   "status" : "draft",
-  "date" : "2026-05-07T13:30:39+00:00",
+  "date" : "2026-05-12T13:21:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

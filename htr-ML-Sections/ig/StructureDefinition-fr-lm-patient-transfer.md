@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-transfer | *Version*:0.1.0-snapshot |
-| Draft as of 2026-05-07 | *Computable Name*:FRLMPatientTransfer |
+| Draft as of 2026-05-12 | *Computable Name*:FRLMPatientTransfer |
 
  
 Entrée Transfert du patient 
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Course of encounter](StructureDefinition-fr-lm-course-of-encounter.md)
+* Utilise ce/t/te Modèle logique: [Logical model - FR LM Course of encounter](StructureDefinition-fr-lm-course-of-encounter.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-patient-transfer)
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-patient-transf
   "name" : "FRLMPatientTransfer",
   "title" : "Logical model - FR LM Patient Transfer.",
   "status" : "draft",
-  "date" : "2026-05-07T13:30:39+00:00",
+  "date" : "2026-05-12T13:21:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

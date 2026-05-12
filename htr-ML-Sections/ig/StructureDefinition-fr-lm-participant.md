@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-participant | *Version*:0.1.0-snapshot |
-| Draft as of 2026-05-07 | *Computable Name*:FRLMParticipant |
+| Draft as of 2026-05-12 | *Computable Name*:FRLMParticipant |
 
  
 Personne/Structure impliquée dans les évènements décrits par le document qui n’a pas été mentionné ailleurs. 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-participant.cs
   "name" : "FRLMParticipant",
   "title" : "Modèle logique métier - FR LM Participant",
   "status" : "draft",
-  "date" : "2026-05-07T13:30:39+00:00",
+  "date" : "2026-05-12T13:21:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -74,39 +74,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-participant.cs
       "path" : "fr-lm-participant",
       "short" : "Modèle logique métier - FR LM Participant",
       "definition" : "Personne/Structure impliquée dans les évènements décrits par le document qui n'a pas été mentionné ailleurs."
-    },
-    {
-      "id" : "fr-lm-participant.typeParticipation",
-      "path" : "fr-lm-participant.typeParticipation",
-      "short" : "Type de participation.",
-      "definition" : "Type de participation.",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "CodeableConcept"
-      }]
-    },
-    {
-      "id" : "fr-lm-participant.roleFonctionnel",
-      "path" : "fr-lm-participant.roleFonctionnel",
-      "short" : "Rôle fonctionnel.",
-      "definition" : "Rôle fonctionnel.",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "CodeableConcept"
-      }]
-    },
-    {
-      "id" : "fr-lm-participant.dateDebutEtOuFinParticipation",
-      "path" : "fr-lm-participant.dateDebutEtOuFinParticipation",
-      "short" : "Date de début et/ou de fin de la participation.",
-      "definition" : "Date de début et/ou de fin de la participation.",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "dateTime"
-      }]
     },
     {
       "id" : "fr-lm-participant.identifier",

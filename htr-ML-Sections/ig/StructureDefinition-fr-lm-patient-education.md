@@ -1,15 +1,15 @@
-# Modèle logique métier - FR LM Patient Education - ANS IG document core v0.1.0-snapshot
+# Logical model - FR LM Patient Education - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Modèle logique métier - FR LM Patient Education**
+* **Logical model - FR LM Patient Education**
 
-## Logical Model: Modèle logique métier - FR LM Patient Education 
+## Logical Model: Logical model - FR LM Patient Education 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-education | *Version*:0.1.0-snapshot |
-| Draft as of 2026-05-07 | *Computable Name*:FRLMPatientEducation |
+| Draft as of 2026-05-12 | *Computable Name*:FRLMPatientEducation |
 
  
 Section Education du patient 
@@ -47,9 +47,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-patient-educat
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-education",
   "version" : "0.1.0-snapshot",
   "name" : "FRLMPatientEducation",
-  "title" : "Modèle logique métier - FR LM Patient Education",
+  "title" : "Logical model - FR LM Patient Education",
   "status" : "draft",
-  "date" : "2026-05-07T13:30:39+00:00",
+  "date" : "2026-05-12T13:21:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -76,7 +76,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-patient-educat
     "element" : [{
       "id" : "fr-lm-patient-education",
       "path" : "fr-lm-patient-education",
-      "short" : "Modèle logique métier - FR LM Patient Education",
+      "short" : "Logical model - FR LM Patient Education",
       "definition" : "Section Education du patient"
     },
     {
@@ -85,8 +85,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-patient-educat
       "max" : "0"
     },
     {
-      "id" : "fr-lm-patient-education.entry.acte",
-      "path" : "fr-lm-patient-education.entry.acte",
+      "id" : "fr-lm-patient-education.entry.procedure",
+      "path" : "fr-lm-patient-education.entry.procedure",
       "short" : "Entrée Acte",
       "definition" : "Entrée Acte",
       "min" : 0,
@@ -109,12 +109,12 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-patient-educat
     {
       "id" : "fr-lm-patient-education.entry.reference",
       "path" : "fr-lm-patient-education.entry.reference",
-      "short" : "Entrée References externes",
-      "definition" : "Entrée References externes",
+      "short" : "Entrée Références externes",
+      "definition" : "Entrée Références externes",
       "min" : 0,
       "max" : "*",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-references-externes"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-attachment"
       }]
     }]
   }

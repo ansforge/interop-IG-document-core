@@ -69,6 +69,8 @@
 ","Section Informations cliniques","Section Informations cliniques","","","","","","","","","",,,,,"",,,,"fr-lm-corps-document.supportingInformation",0,*,"",""
 "fr-lm-corps-document.dicomStudyMetadata","fr-lm-corps-document.dicomStudyMetadata","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dicom-study-metadata {[]} {[]}
 ","Section object catalog","Section object catalog","","","","","","","","","",,,,,"",,,,"fr-lm-corps-document.dicomStudyMetadata",0,*,"",""
+"fr-lm-corps-document.recommendation","fr-lm-corps-document.recommendation","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-recommendation {[]} {[]}
+","Section Recommandation","Section Recommandation","","","","","","","","","",,,,,"",,,,"fr-lm-corps-document.recommendation",0,*,"",""
 "fr-lm-corps-document.medicationDispensations","fr-lm-corps-document.medicationDispensations","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication-dispensations {[]} {[]}
 ","Section Dispensation médicaments","Section Dispensation médicaments","","","","","","","","","",,,,,"",,,,"fr-lm-corps-document.medicationDispensations",0,*,"",""
 "fr-lm-corps-document.patientEducation","fr-lm-corps-document.patientEducation","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-education {[]} {[]}

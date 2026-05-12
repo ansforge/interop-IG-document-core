@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-allergy-intolerance | *Version*:0.1.0-snapshot |
-| Draft as of 2026-05-07 | *Computable Name*:FRLMAllergyIntolerance |
+| Draft as of 2026-05-12 | *Computable Name*:FRLMAllergyIntolerance |
 
  
 Entrée Allergie ou Hypersensibilité 
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Logical model - FR LM Allergies And Intolerances](StructureDefinition-fr-lm-allergies-and-intolerances.md) and [Modèle logique métier - FR LM Examination Report](StructureDefinition-fr-lm-examination-report.md)
+* Utilise ce/t/te Modèle logique: [Logical model - FR LM Allergies And Intolerances](StructureDefinition-fr-lm-allergies-and-intolerances.md) and [Logical model - FR LM Examination Report](StructureDefinition-fr-lm-examination-report.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-allergy-intolerance)
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-allergy-intole
   "name" : "FRLMAllergyIntolerance",
   "title" : "Logical model - FR LM Allergy Intolerance",
   "status" : "draft",
-  "date" : "2026-05-07T13:30:39+00:00",
+  "date" : "2026-05-12T13:21:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

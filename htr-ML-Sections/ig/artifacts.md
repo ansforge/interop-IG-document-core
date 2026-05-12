@@ -51,6 +51,10 @@ This page provides a list of the FHIR artifacts defined as part of this implemen
 | [Logical model - FR LM Alerts](StructureDefinition-fr-lm-alerts.md) | Section Points de vigilance |
 | [Logical model - FR LM Allergies And Intolerances](StructureDefinition-fr-lm-allergies-and-intolerances.md) | Section Allergies et hypersensibilités |
 | [Logical model - FR LM CarePlans](StructureDefinition-fr-lm-care-plans.md) | Section Plan de soins |
+| [Logical model - FR LM Course of encounter](StructureDefinition-fr-lm-course-of-encounter.md) | Section Résultats d’événements |
+| [Logical model - FR LM DICOM Study Metadata](StructureDefinition-fr-lm-dicom-study-metadata.md) | Section Object Catalog |
+| [Logical model - FR LM Examination Report](StructureDefinition-fr-lm-examination-report.md) | Section Acte d’imagerie |
+| [Logical model - FR LM Exposure Information](StructureDefinition-fr-lm-exposure-information.md) | Section Exposition aux radiations |
 | [Logical model - FR LM Family Medical History](StructureDefinition-fr-lm-family-medical-history.md) | Section Antécédents familiaux |
 | [Logical model - FR LM FR LM Medication Prescription](StructureDefinition-fr-lm-medication-prescription.md) | Section Prescription de médicaments |
 | [Logical model - FR LM FRLM History Of Past Illness](StructureDefinition-fr-lm-history-of-past-illness.md) | Section Antécédents médicaux |
@@ -59,12 +63,15 @@ This page provides a list of the FHIR artifacts defined as part of this implemen
 | [Logical Model - FR LM Medical Devices and Implants](StructureDefinition-fr-lm-medical-devices-and-implants.md) | Section Dispositifs Medicaux |
 | [Logical model - FR LM Medication Dispensations](StructureDefinition-fr-lm-medication-dispensations.md) | Section Dispensation médicaments |
 | [Logical model - FR LM ObservationResults](StructureDefinition-fr-lm-observation-results.md) | Section Résultats |
+| [Logical model - FR LM Order Information](StructureDefinition-fr-lm-order-information.md) | Section Demande d’examen d’imagerie |
+| [Logical model - FR LM Patient Education](StructureDefinition-fr-lm-patient-education.md) | Section Education du patient |
 | [Logical model - FR LM Predictable Adverse Drug Reaction](StructureDefinition-fr-lm-predictable-adverse-drug-reaction.md) | Section Effets indesirables |
 | [Logical model - FR LM Presented Form](StructureDefinition-fr-lm-presented-form.md) | Section Document PDF-copie |
 | [Logical model - FR LM Problems](StructureDefinition-fr-lm-problems.md) | Section Problems |
 | [logical model - FR LM Procedures](StructureDefinition-fr-lm-procedures.md) | Section Historique des actes |
 | [Logical model - FR LM Section](StructureDefinition-fr-lm-section.md) | Section |
 | [Logical model - FR LM SocialHistory](StructureDefinition-fr-lm-social-history.md) | Section Habitus et modes de vie |
+| [Logical model - FR LM Supporting Information](StructureDefinition-fr-lm-supporting-information.md) | Section Informations Cliniques |
 | [Logical model - FR LM Vital Signs](StructureDefinition-fr-lm-vital-signs.md) | Section Signes vitaux |
 | [logical model- FR LM Functional Status](StructureDefinition-fr-lm-functional-status.md) | Section Statut fonctionnel |
 | [Modèle logique métier - FR LM Addendum](StructureDefinition-fr-lm-addendum.md) | Section Addendum |
@@ -73,21 +80,15 @@ This page provides a list of the FHIR artifacts defined as part of this implemen
 | [Modèle logique métier - FR LM Comparison Study](StructureDefinition-fr-lm-comparison-study.md) | Section Comparaison d’examens d’imagerie |
 | [Modèle logique métier - FR LM Compte rendu de biologie de 1er niveau](StructureDefinition-fr-lm-result-data.md) | Section Compte rendu de biologie de 1er niveau |
 | [Modèle logique métier - FR LM Corps document](StructureDefinition-fr-lm-corps-document.md) | Eléments métier du corps d’un document contenant les sections du document. |
-| [Modèle logique métier - FR LM Course of encounter](StructureDefinition-fr-lm-course-of-encounter.md) | Section Résultats d’événements |
-| [Modèle logique métier - FR LM DICOM Study Metadata](StructureDefinition-fr-lm-dicom-study-metadata.md) | Section Object Catalog |
 | [Modèle logique métier - FR LM Encounter Information](StructureDefinition-fr-lm-encounter-information.md) | Section Informations sur la rencontre |
-| [Modèle logique métier - FR LM Examination Report](StructureDefinition-fr-lm-examination-report.md) | Section Acte d’imagerie |
-| [Modèle logique métier - FR LM Exposure Information](StructureDefinition-fr-lm-exposure-information.md) | Section Exposition aux radiations |
 | [Modèle logique métier - FR LM Hospital Discharge Medications](StructureDefinition-fr-lm-hospital-discharge-medications.md) | Section Traitements à la sortie |
 | [Modèle logique métier - FR LM Immunisations](StructureDefinition-fr-lm-immunisations.md) | Section Vaccinations |
 | [Modèle logique métier - FR LM Medication Summary](StructureDefinition-fr-lm-medication-summary.md) | Section Traitements |
 | [Modèle logique métier - FR LM Note](StructureDefinition-fr-lm-note.md) | Section Commentaire (non-codé) |
-| [Modèle logique métier - FR LM Order Information](StructureDefinition-fr-lm-order-information.md) | Section Demande d’examen d’imagerie |
-| [Modèle logique métier - FR LM Patient Education](StructureDefinition-fr-lm-patient-education.md) | Section Education du patient |
 | [Modèle logique métier - FR LM QR Code](StructureDefinition-fr-lm-qr-code.md) | Section Codes à barres |
 | [Modèle logique métier - FR LM Reason for referral](StructureDefinition-fr-lm-reason-for-referral.md) | Section Raison de la recommandation |
+| [Modèle logique métier - FR LM Recommendation](StructureDefinition-fr-lm-recommendation.md) | Section Recommandation |
 | [Modèle logique métier - FR LM Status Document](StructureDefinition-fr-lm-status-document.md) | Section Statut du Document |
-| [Modèle logique métier - FR LM Supporting Information](StructureDefinition-fr-lm-supporting-information.md) | Section Informations Cliniques |
 | [Modèle logique métier - FR LM Traitements administrés](StructureDefinition-fr-lm-traitements-administres.md) | Section Traitements administrés |
 
 ### Modèles logiques métier des composants élémentaires 
@@ -97,7 +98,6 @@ Modèles de données métier représentant les concepts élémentaires, modélis
 | | |
 | :--- | :--- |
 | [FR LM Entry](StructureDefinition-fr-lm-entry.md) | Modèle logique représentant l’entrée |
-| [Logical - FR LM Références externes](StructureDefinition-fr-lm-references-externes.md) | Références externes |
 | [Logical model - Device](StructureDefinition-fr-lm-device.md) | Entrée Dispositif médical |
 | [Logical model - FR LM Administration of Blood Derivatives](StructureDefinition-fr-lm-administration-blood-derivatives.md) | Entrée Administration de dérivés du sang |
 | [Logical model - FR LM Advance Directive](StructureDefinition-fr-lm-advance-directive.md) | Entree Directive anticipee |
@@ -138,13 +138,12 @@ Modèles de données métier représentant les concepts élémentaires, modélis
 | [Logical model - FR LM Patient avec sujet non humain](StructureDefinition-fr-lm-patient-sujet-non-humain.md) | Patient avec sujet non humain |
 | [Logical model - FR LM Patient Transfer.](StructureDefinition-fr-lm-patient-transfer.md) | Entrée Transfert du patient |
 | [Logical model - FR LM Prescription](StructureDefinition-fr-lm-prescription-entree.md) | Prescription |
-| [Logical model - FR LM Quantité exposition](StructureDefinition-fr-lm-quantite-exposition.md) | Quantité exposition |
+| [Logical model - FR LM Quantity Exposure](StructureDefinition-fr-lm-quantity-exposure.md) | Quantité exposition |
 | [Logical model - FR LM Recherche de micro organismes](StructureDefinition-fr-lm-recherche-de-micro-organismes.md) | Recherche de micro organismes |
 | [Logical model - FR LM Resultats](StructureDefinition-fr-lm-resultats-entree.md) | Resultats |
 | [Logical model - FR LM Resultats d'examens de biologie medicale](StructureDefinition-fr-lm-resultats-examens-biologie-medicale.md) | Resultats d’examens de biologie medicale |
-| [Logical model - FR LM Référence interne](StructureDefinition-fr-lm-reference-interne.md) | Entrée Référence interne |
 | [Logical model - FR LM Référence item prescription](StructureDefinition-fr-lm-reference-item-prescription.md) | Référence item prescription |
-| [Logical model - FR LM Serie imagerie](StructureDefinition-fr-lm-serie-imagerie.md) | Serie imagerie |
+| [Logical model - FR LM Series](StructureDefinition-fr-lm-series.md) | Séries d’actes d’imagerie |
 | [Logical model - FR LM Service Request](StructureDefinition-fr-lm-service-request.md) | Entrée Demande d’examen ou de suivi / Objectif à atteindre |
 | [Logical model - FR LM Severity Adverse Event](StructureDefinition-fr-lm-severity-adverse-event.md) | Entrée Gravité effet indésirable |
 | [Logical model - FR LM SOP Instance](StructureDefinition-fr-lm-sop-instance.md) | SOP Instance |
@@ -760,9 +759,9 @@ These define data models that represent the domain covered by this implementatio
 | [Logical model - FR LM Patient History](StructureDefinition-fr-lm-patient-history.md) | Section Historique du patient |
 | [Logical model - FR LM Travel History](StructureDefinition-fr-lm-section-travel-history.md) | Section Historique des voyages |
 | [Logical model - FR LM Alert](StructureDefinition-fr-lm-alert.md) | Entrée points de vigilances |
+| [Logical model - FR LM Endpoint](StructureDefinition-fr-lm-endpoint.md) | Référence Wado d’un objet DICOM (SOP Instance) |
 | [Logical model - FR LM Observation Result](StructureDefinition-fr-lm-observation-result.md) | Résultat d’une observation médicale (résultat d’examen de laboratoire, d’imagerie, etc.) |
 | [Logical model - FR LM Patient Story](StructureDefinition-fr-lm-patient-story.md) | Récit du patient |
-| [Modèle logique métier - FR LM Recommendation](StructureDefinition-fr-lm-recommendation.md) | Section Recommandation |
 
 ### Structures: Extension Definitions 
 

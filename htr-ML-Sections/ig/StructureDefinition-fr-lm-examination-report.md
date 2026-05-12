@@ -1,15 +1,15 @@
-# Modèle logique métier - FR LM Examination Report - ANS IG document core v0.1.0-snapshot
+# Logical model - FR LM Examination Report - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Modèle logique métier - FR LM Examination Report**
+* **Logical model - FR LM Examination Report**
 
-## Logical Model: Modèle logique métier - FR LM Examination Report 
+## Logical Model: Logical model - FR LM Examination Report 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-examination-report | *Version*:0.1.0-snapshot |
-| Draft as of 2026-05-07 | *Computable Name*:FRLMExaminationReport |
+| Draft as of 2026-05-12 | *Computable Name*:FRLMExaminationReport |
 
  
 Section Acte d’imagerie 
@@ -47,9 +47,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-examination-re
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-examination-report",
   "version" : "0.1.0-snapshot",
   "name" : "FRLMExaminationReport",
-  "title" : "Modèle logique métier - FR LM Examination Report",
+  "title" : "Logical model - FR LM Examination Report",
   "status" : "draft",
-  "date" : "2026-05-07T13:30:39+00:00",
+  "date" : "2026-05-12T13:21:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -76,7 +76,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-examination-re
     "element" : [{
       "id" : "fr-lm-examination-report",
       "path" : "fr-lm-examination-report",
-      "short" : "Modèle logique métier - FR LM Examination Report",
+      "short" : "Logical model - FR LM Examination Report",
       "definition" : "Section Acte d'imagerie"
     },
     {
@@ -118,17 +118,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-examination-re
       },
       {
         "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation"
-      }]
-    },
-    {
-      "id" : "fr-lm-examination-report.subSection.recommendation",
-      "path" : "fr-lm-examination-report.subSection.recommendation",
-      "short" : "Recommandations",
-      "definition" : "Recommandations",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-recommendation"
       }]
     },
     {
@@ -176,32 +165,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-examination-re
       },
       {
         "code" : "string"
-      }]
-    },
-    {
-      "id" : "fr-lm-examination-report.modality",
-      "path" : "fr-lm-examination-report.modality",
-      "short" : "Modalités d'imagerie utilisées lors de l'examen (DICOM CID029)",
-      "definition" : "Modalités d'imagerie utilisées lors de l'examen (DICOM CID029)",
-      "min" : 1,
-      "max" : "*",
-      "type" : [{
-        "code" : "CodeableConcept"
-      }],
-      "binding" : {
-        "description" : "jdv-modalite-acquisition-cisis : Modalité d'imagerie",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-acquisition-cisis"
-      }
-    },
-    {
-      "id" : "fr-lm-examination-report.bodySite",
-      "path" : "fr-lm-examination-report.bodySite",
-      "short" : "Localisations anatomiques",
-      "definition" : "Localisations anatomiques",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-body-structure"
       }]
     }]
   }

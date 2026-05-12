@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-sop-instance | *Version*:0.1.0-snapshot |
-| Draft as of 2026-05-07 | *Computable Name*:FRLMSOPInstance |
+| Draft as of 2026-05-12 | *Computable Name*:FRLMSOPInstance |
 
  
 SOP Instance 
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Logical model - FR LM Serie imagerie](StructureDefinition-fr-lm-serie-imagerie.md)
+* Utilise ce/t/te Modèle logique: [Logical model - FR LM Series](StructureDefinition-fr-lm-series.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-sop-instance)
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-sop-instance.c
   "name" : "FRLMSOPInstance",
   "title" : "Logical model - FR LM SOP Instance",
   "status" : "draft",
-  "date" : "2026-05-07T13:30:39+00:00",
+  "date" : "2026-05-12T13:21:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -76,19 +76,14 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-sop-instance.c
       "definition" : "SOP Instance"
     },
     {
-      "id" : "fr-lm-sop-instance.uuidSOPInstance",
-      "path" : "fr-lm-sop-instance.uuidSOPInstance",
+      "id" : "fr-lm-sop-instance.header.identifier",
+      "path" : "fr-lm-sop-instance.header.identifier",
       "short" : "UUID SOP instance",
-      "definition" : "UUID SOP instance",
-      "min" : 1,
-      "max" : "*",
-      "type" : [{
-        "code" : "Identifier"
-      }]
+      "min" : 1
     },
     {
-      "id" : "fr-lm-sop-instance.classeSOP",
-      "path" : "fr-lm-sop-instance.classeSOP",
+      "id" : "fr-lm-sop-instance.sopClass",
+      "path" : "fr-lm-sop-instance.sopClass",
       "short" : "Classe SOP",
       "definition" : "Classe SOP",
       "min" : 1,
@@ -97,14 +92,26 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-sop-instance.c
         "code" : "CodeableConcept"
       }],
       "binding" : {
-        "description" : "JDV-SOPClass_CISIS (1.2.250.1.213.1.1.5.689)"
+        "description" : "JDV-SOPClass_CISIS (1.2.250.1.213.1.1.5.689)",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-sop-class-cisis"
       }
     },
     {
-      "id" : "fr-lm-sop-instance.nombreCadresReferences",
-      "path" : "fr-lm-sop-instance.nombreCadresReferences",
-      "short" : "Nombres de cadres référencés",
-      "definition" : "Nombres de cadres référencés",
+      "id" : "fr-lm-sop-instance.instanceNumber",
+      "path" : "fr-lm-sop-instance.instanceNumber",
+      "short" : "Numéro de l'instance dans la série",
+      "definition" : "Numéro de l'instance dans la série",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "integer"
+      }]
+    },
+    {
+      "id" : "fr-lm-sop-instance.numberOfFrames",
+      "path" : "fr-lm-sop-instance.numberOfFrames",
+      "short" : "Nombre de cadres composant l'instance",
+      "definition" : "Nombre de cadres composant l'instance",
       "min" : 0,
       "max" : "1",
       "type" : [{

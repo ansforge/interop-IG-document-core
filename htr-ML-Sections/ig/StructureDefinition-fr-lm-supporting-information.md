@@ -1,15 +1,15 @@
-# Modèle logique métier - FR LM Supporting Information - ANS IG document core v0.1.0-snapshot
+# Logical model - FR LM Supporting Information - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Modèle logique métier - FR LM Supporting Information**
+* **Logical model - FR LM Supporting Information**
 
-## Logical Model: Modèle logique métier - FR LM Supporting Information 
+## Logical Model: Logical model - FR LM Supporting Information 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-supporting-information | *Version*:0.1.0-snapshot |
-| Draft as of 2026-05-07 | *Computable Name*:FRLMSupportingInformation |
+| Draft as of 2026-05-12 | *Computable Name*:FRLMSupportingInformation |
 
  
 Section Informations Cliniques 
@@ -47,9 +47,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-supporting-inf
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-supporting-information",
   "version" : "0.1.0-snapshot",
   "name" : "FRLMSupportingInformation",
-  "title" : "Modèle logique métier - FR LM Supporting Information",
+  "title" : "Logical model - FR LM Supporting Information",
   "status" : "draft",
-  "date" : "2026-05-07T13:30:39+00:00",
+  "date" : "2026-05-12T13:21:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -76,7 +76,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-supporting-inf
     "element" : [{
       "id" : "fr-lm-supporting-information",
       "path" : "fr-lm-supporting-information",
-      "short" : "Modèle logique métier - FR LM Supporting Information",
+      "short" : "Logical model - FR LM Supporting Information",
       "definition" : "Section Informations Cliniques"
     },
     {
@@ -106,8 +106,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-supporting-inf
       }]
     },
     {
-      "id" : "fr-lm-supporting-information.entry.antecedentsMedicaux",
-      "path" : "fr-lm-supporting-information.entry.antecedentsMedicaux",
+      "id" : "fr-lm-supporting-information.entry.historyOfPastIllness",
+      "path" : "fr-lm-supporting-information.entry.historyOfPastIllness",
       "short" : "Observation",
       "definition" : "Observation",
       "min" : 1,
@@ -117,8 +117,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-supporting-inf
       }]
     },
     {
-      "id" : "fr-lm-supporting-information.entry.antecedentsChirurgicaux",
-      "path" : "fr-lm-supporting-information.entry.antecedentsChirurgicaux",
+      "id" : "fr-lm-supporting-information.entry.historyOfPastProcedures",
+      "path" : "fr-lm-supporting-information.entry.historyOfPastProcedures",
       "short" : "Observation",
       "definition" : "Observation",
       "min" : 1,
@@ -128,8 +128,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-supporting-inf
       }]
     },
     {
-      "id" : "fr-lm-supporting-information.entry.contreIndications",
-      "path" : "fr-lm-supporting-information.entry.contreIndications",
+      "id" : "fr-lm-supporting-information.entry.contraIndication",
+      "path" : "fr-lm-supporting-information.entry.contraIndication",
       "short" : "Observation",
       "definition" : "Observation",
       "min" : 0,
@@ -139,8 +139,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-supporting-inf
       }]
     },
     {
-      "id" : "fr-lm-supporting-information.entry.probleme",
-      "path" : "fr-lm-supporting-information.entry.probleme",
+      "id" : "fr-lm-supporting-information.entry.condition",
+      "path" : "fr-lm-supporting-information.entry.condition",
       "short" : "Problème",
       "definition" : "Problème",
       "min" : 0,
@@ -150,8 +150,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-supporting-inf
       }]
     },
     {
-      "id" : "fr-lm-supporting-information.entry.dispositifMedical",
-      "path" : "fr-lm-supporting-information.entry.dispositifMedical",
+      "id" : "fr-lm-supporting-information.entry.device",
+      "path" : "fr-lm-supporting-information.entry.device",
       "short" : "Dispositif médical",
       "definition" : "Dispositif médical",
       "min" : 0,
@@ -161,8 +161,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-supporting-inf
       }]
     },
     {
-      "id" : "fr-lm-supporting-information.entry.statutGrossesse",
-      "path" : "fr-lm-supporting-information.entry.statutGrossesse",
+      "id" : "fr-lm-supporting-information.entry.pregnancyStatus",
+      "path" : "fr-lm-supporting-information.entry.pregnancyStatus",
       "short" : "Statut grossesse",
       "definition" : "Statut grossesse",
       "min" : 0,
@@ -172,8 +172,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-supporting-inf
       }]
     },
     {
-      "id" : "fr-lm-supporting-information.entry.administrationProduitDeSante",
-      "path" : "fr-lm-supporting-information.entry.administrationProduitDeSante",
+      "id" : "fr-lm-supporting-information.entry.priorMedicationAdministration",
+      "path" : "fr-lm-supporting-information.entry.priorMedicationAdministration",
       "short" : "Produits de santé administré avant l'examen d'imagerie",
       "definition" : "Produits de santé administré avant l'examen d'imagerie",
       "min" : 0,
@@ -183,12 +183,12 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-supporting-inf
       }]
     },
     {
-      "id" : "fr-lm-supporting-information.entry.sexeClinique",
-      "path" : "fr-lm-supporting-information.entry.sexeClinique",
+      "id" : "fr-lm-supporting-information.entry.sexForClinicalUse",
+      "path" : "fr-lm-supporting-information.entry.sexForClinicalUse",
       "short" : "Sexe Clinique",
       "definition" : "Sexe Clinique",
       "min" : 0,
-      "max" : "*",
+      "max" : "1",
       "type" : [{
         "code" : "CodeableConcept"
       }]

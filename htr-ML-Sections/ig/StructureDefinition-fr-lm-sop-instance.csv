@@ -5,8 +5,8 @@
 ","Métadonnées de base","Métadonnées de base","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header",1,1,"",""
 "fr-lm-sop-instance.header.subject","fr-lm-sop-instance.header.subject","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient {[]} {[]}
 ","Patient / Usager","Patient / Usager","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.subject",1,1,"",""
-"fr-lm-sop-instance.header.identifier","fr-lm-sop-instance.header.identifier","","","",0,*,"","","","Identifier {[]} {[]}
-","Identifiant de l’entrée","Identifiant de l’entrée","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.identifier",0,*,"",""
+"fr-lm-sop-instance.header.identifier","fr-lm-sop-instance.header.identifier","","","",1,*,"","","","Identifier {[]} {[]}
+","UUID SOP instance","Identifiant de l’entrée","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.identifier",0,*,"",""
 "fr-lm-sop-instance.header.author[x]","fr-lm-sop-instance.header.author[x]","","","",0,*,"","","","Base {[]} {[]}
 ","author[x] peut correspondre soit à un professionnel, soit à une organisation, soit à un système.","author[x] peut correspondre soit à un professionnel, soit à une organisation, soit à un système.","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.author[x]",0,*,"",""
 "fr-lm-sop-instance.header.author[x].authorProfessional","fr-lm-sop-instance.header.author[x].authorProfessional","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional {[]} {[]}
@@ -39,9 +39,9 @@ La partie en minuscules indique le code de la langue utilisée (ISO-639-1)
 La partie en majuscules indique le code pays (ISO-3166)","'fr-FR' pour français métropolitain (la casse des caractères doit être respectée)
 La partie en minuscules indique le code de la langue utilisée (ISO-639-1)
 La partie en majuscules indique le code pays (ISO-3166)","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.language",0,1,"",""
-"fr-lm-sop-instance.uuidSOPInstance","fr-lm-sop-instance.uuidSOPInstance","","","",1,*,"","","","Identifier {[]} {[]}
-","UUID SOP instance","UUID SOP instance","","","","","","","","","",,,,,"",,,,"fr-lm-sop-instance.uuidSOPInstance",1,*,"",""
-"fr-lm-sop-instance.classeSOP","fr-lm-sop-instance.classeSOP","","","",1,1,"","","","CodeableConcept {[]} {[]}
-","Classe SOP","Classe SOP","","","","","","","","","",,"","JDV-SOPClass_CISIS (1.2.250.1.213.1.1.5.689)","","",,,,"fr-lm-sop-instance.classeSOP",1,1,"",""
-"fr-lm-sop-instance.nombreCadresReferences","fr-lm-sop-instance.nombreCadresReferences","","","",0,1,"","","","integer {[]} {[]}
-","Nombres de cadres référencés","Nombres de cadres référencés","","","","","","","","","",,,,,"",,,,"fr-lm-sop-instance.nombreCadresReferences",0,1,"",""
+"fr-lm-sop-instance.sopClass","fr-lm-sop-instance.sopClass","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Classe SOP","Classe SOP","","","","","","","","","",,"","JDV-SOPClass_CISIS (1.2.250.1.213.1.1.5.689)","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-sop-class-cisis","",,,,"fr-lm-sop-instance.sopClass",1,1,"",""
+"fr-lm-sop-instance.instanceNumber","fr-lm-sop-instance.instanceNumber","","","",0,1,"","","","integer {[]} {[]}
+","Numéro de l'instance dans la série","Numéro de l'instance dans la série","","","","","","","","","",,,,,"",,,,"fr-lm-sop-instance.instanceNumber",0,1,"",""
+"fr-lm-sop-instance.numberOfFrames","fr-lm-sop-instance.numberOfFrames","","","",0,1,"","","","integer {[]} {[]}
+","Nombre de cadres composant l'instance","Nombre de cadres composant l'instance","","","","","","","","","",,,,,"",,,,"fr-lm-sop-instance.numberOfFrames",0,1,"",""

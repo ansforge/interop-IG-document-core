@@ -1,15 +1,15 @@
-# Modèle logique métier - FR LM Exposure Information - ANS IG document core v0.1.0-snapshot
+# Logical model - FR LM Exposure Information - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Modèle logique métier - FR LM Exposure Information**
+* **Logical model - FR LM Exposure Information**
 
-## Logical Model: Modèle logique métier - FR LM Exposure Information 
+## Logical Model: Logical model - FR LM Exposure Information 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-exposure-information | *Version*:0.1.0-snapshot |
-| Draft as of 2026-05-07 | *Computable Name*:FRLMExposureInformation |
+| Draft as of 2026-05-12 | *Computable Name*:FRLMExposureInformation |
 
  
 Section Exposition aux radiations 
@@ -47,9 +47,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-exposure-infor
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-exposure-information",
   "version" : "0.1.0-snapshot",
   "name" : "FRLMExposureInformation",
-  "title" : "Modèle logique métier - FR LM Exposure Information",
+  "title" : "Logical model - FR LM Exposure Information",
   "status" : "draft",
-  "date" : "2026-05-07T13:30:39+00:00",
+  "date" : "2026-05-12T13:21:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -76,7 +76,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-exposure-infor
     "element" : [{
       "id" : "fr-lm-exposure-information",
       "path" : "fr-lm-exposure-information",
-      "short" : "Modèle logique métier - FR LM Exposure Information",
+      "short" : "Logical model - FR LM Exposure Information",
       "definition" : "Section Exposition aux radiations"
     },
     {
@@ -90,47 +90,25 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-exposure-infor
       "max" : "0"
     },
     {
-      "id" : "fr-lm-exposure-information.entry.quantiteExposition",
-      "path" : "fr-lm-exposure-information.entry.quantiteExposition",
+      "id" : "fr-lm-exposure-information.subSection.quantityExposure",
+      "path" : "fr-lm-exposure-information.subSection.quantityExposure",
       "short" : "Entrée Quantité",
       "definition" : "Entrée Quantité",
       "min" : 0,
       "max" : "*",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-quantite-exposition"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-quantity-exposure"
       }]
     },
     {
-      "id" : "fr-lm-exposure-information.entry.administrationRadiopharmaceutique",
-      "path" : "fr-lm-exposure-information.entry.administrationRadiopharmaceutique",
+      "id" : "fr-lm-exposure-information.subSection.radiopharmaceuticalAdministration",
+      "path" : "fr-lm-exposure-information.subSection.radiopharmaceuticalAdministration",
       "short" : "Entrée administration des produits radiopharmaceutiques",
       "definition" : "Entrée administration des produits radiopharmaceutiques",
       "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication-administration"
-      }]
-    },
-    {
-      "id" : "fr-lm-exposure-information.entry.observationGrossesse",
-      "path" : "fr-lm-exposure-information.entry.observationGrossesse",
-      "short" : "Entrée observation de grossesse",
-      "definition" : "Entrée observation de grossesse",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation"
-      }]
-    },
-    {
-      "id" : "fr-lm-exposure-information.entry.observationIndication",
-      "path" : "fr-lm-exposure-information.entry.observationIndication",
-      "short" : "Entrée observation indication",
-      "definition" : "Entrée observation indication",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation"
       }]
     }]
   }

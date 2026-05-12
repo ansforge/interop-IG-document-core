@@ -23,5 +23,3 @@
 ","Entrées","Entrées","","","","","","","","","",,,,,"",,,,"fr-lm-section.entry",0,*,"",""
 "fr-lm-procedures.entry.procedure","fr-lm-procedures.entry.procedure","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-procedure {[]} {[]}
 ","Entrée Acte","Entrée Acte","","","","","","","","","",,,,,"",,,,"fr-lm-procedures.entry.procedure",1,*,"",""
-"fr-lm-procedures.entry.reference","fr-lm-procedures.entry.reference","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-references-externes {[]} {[]}
-","Entrée Références externes","Entrée Références externes","","","","","","","","","",,,,,"",,,,"fr-lm-procedures.entry.reference",1,*,"",""

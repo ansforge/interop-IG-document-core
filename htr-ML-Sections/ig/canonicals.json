@@ -2659,6 +2659,13 @@
   "name" : "FRLMEncounterInformation"
 },
 {
+  "id" : "fr-lm-endpoint",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-endpoint",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRLMEndpoint"
+},
+{
   "id" : "fr-lm-entete-document",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entete-document",
@@ -3156,11 +3163,11 @@
   "name" : "FRLMQRCode"
 },
 {
-  "id" : "fr-lm-quantite-exposition",
+  "id" : "fr-lm-quantity-exposure",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-quantite-exposition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-quantity-exposure",
   "version" : "0.1.0-snapshot",
-  "name" : "FRLMQuantiteExposition"
+  "name" : "FRLMQuantityExposure"
 },
 {
   "id" : "fr-lm-reason-for-referral",
@@ -3184,25 +3191,11 @@
   "name" : "FRLMRecommendation"
 },
 {
-  "id" : "fr-lm-reference-interne",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-reference-interne",
-  "version" : "0.1.0-snapshot",
-  "name" : "FRLMReferenceInterne"
-},
-{
   "id" : "fr-lm-reference-item-prescription",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-reference-item-prescription",
   "version" : "0.1.0-snapshot",
   "name" : "FRLMReferenceItemPrescription"
-},
-{
-  "id" : "fr-lm-references-externes",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-references-externes",
-  "version" : "0.1.0-snapshot",
-  "name" : "FRLMReferencesExternes"
 },
 {
   "id" : "fr-lm-related-person",
@@ -3268,11 +3261,11 @@
   "name" : "FRLMSectionTravelHistory"
 },
 {
-  "id" : "fr-lm-serie-imagerie",
+  "id" : "fr-lm-series",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-serie-imagerie",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-series",
   "version" : "0.1.0-snapshot",
-  "name" : "FRLMSerieImagerie"
+  "name" : "FRLMSeries"
 },
 {
   "id" : "fr-lm-service-request",

@@ -1,15 +1,15 @@
-# Modèle logique métier - FR LM Course of encounter - ANS IG document core v0.1.0-snapshot
+# Logical model - FR LM Course of encounter - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Modèle logique métier - FR LM Course of encounter**
+* **Logical model - FR LM Course of encounter**
 
-## Logical Model: Modèle logique métier - FR LM Course of encounter 
+## Logical Model: Logical model - FR LM Course of encounter 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-course-of-encounter | *Version*:0.1.0-snapshot |
-| Draft as of 2026-05-07 | *Computable Name*:FRLMCourseOfEncounter |
+| Draft as of 2026-05-12 | *Computable Name*:FRLMCourseOfEncounter |
 
  
 Section Résultats d’événements 
@@ -47,9 +47,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-course-of-enco
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-course-of-encounter",
   "version" : "0.1.0-snapshot",
   "name" : "FRLMCourseOfEncounter",
-  "title" : "Modèle logique métier - FR LM Course of encounter",
+  "title" : "Logical model - FR LM Course of encounter",
   "status" : "draft",
-  "date" : "2026-05-07T13:30:39+00:00",
+  "date" : "2026-05-12T13:21:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -76,7 +76,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-course-of-enco
     "element" : [{
       "id" : "fr-lm-course-of-encounter",
       "path" : "fr-lm-course-of-encounter",
-      "short" : "Modèle logique métier - FR LM Course of encounter",
+      "short" : "Logical model - FR LM Course of encounter",
       "definition" : "Section Résultats d'événements"
     },
     {
@@ -85,8 +85,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-course-of-enco
       "max" : "0"
     },
     {
-      "id" : "fr-lm-course-of-encounter.entry.observation",
-      "path" : "fr-lm-course-of-encounter.entry.observation",
+      "id" : "fr-lm-course-of-encounter.entry.testResults",
+      "path" : "fr-lm-course-of-encounter.entry.testResults",
       "short" : "Entrée Simple observation",
       "definition" : "Entrée Simple observation",
       "min" : 1,
@@ -96,8 +96,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-course-of-enco
       }]
     },
     {
-      "id" : "fr-lm-course-of-encounter.entry.transfertPatient",
-      "path" : "fr-lm-course-of-encounter.entry.transfertPatient",
+      "id" : "fr-lm-course-of-encounter.entry.patientTransfer",
+      "path" : "fr-lm-course-of-encounter.entry.patientTransfer",
       "short" : "Entrée Transfert du patient",
       "definition" : "Entrée Transfert du patient",
       "min" : 0,
@@ -107,14 +107,58 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-course-of-enco
       }]
     },
     {
-      "id" : "fr-lm-course-of-encounter.entry.probleme",
-      "path" : "fr-lm-course-of-encounter.entry.probleme",
+      "id" : "fr-lm-course-of-encounter.entry.diagnosticSummary",
+      "path" : "fr-lm-course-of-encounter.entry.diagnosticSummary",
       "short" : "Entrée Problème",
       "definition" : "Entrée Problème",
       "min" : 0,
       "max" : "*",
       "type" : [{
         "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-condition"
+      }]
+    },
+    {
+      "id" : "fr-lm-course-of-encounter.entry.procedures",
+      "path" : "fr-lm-course-of-encounter.entry.procedures",
+      "short" : "Entrée Acte",
+      "definition" : "Entrée Acte",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-procedure"
+      }]
+    },
+    {
+      "id" : "fr-lm-course-of-encounter.entry.medicalDevicesAndImplants",
+      "path" : "fr-lm-course-of-encounter.entry.medicalDevicesAndImplants",
+      "short" : "Entrée Dispositif médical et implant",
+      "definition" : "Entrée Dispositif médical et implant",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device-use"
+      }]
+    },
+    {
+      "id" : "fr-lm-course-of-encounter.entry.medications",
+      "path" : "fr-lm-course-of-encounter.entry.medications",
+      "short" : "Entrée Traitement administré pendant le séjour",
+      "definition" : "Entrée Traitement administré pendant le séjour",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication-administration"
+      }]
+    },
+    {
+      "id" : "fr-lm-course-of-encounter.entry.notes",
+      "path" : "fr-lm-course-of-encounter.entry.notes",
+      "short" : "Entrée Note",
+      "definition" : "Entrée Note",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
       }]
     }]
   }

@@ -1,15 +1,15 @@
-# Modèle logique métier - FR LM DICOM Study Metadata - ANS IG document core v0.1.0-snapshot
+# Logical model - FR LM DICOM Study Metadata - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Modèle logique métier - FR LM DICOM Study Metadata**
+* **Logical model - FR LM DICOM Study Metadata**
 
-## Logical Model: Modèle logique métier - FR LM DICOM Study Metadata 
+## Logical Model: Logical model - FR LM DICOM Study Metadata 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dicom-study-metadata | *Version*:0.1.0-snapshot |
-| Draft as of 2026-05-07 | *Computable Name*:FRLMDicomStudyMetadata |
+| Draft as of 2026-05-12 | *Computable Name*:FRLMDicomStudyMetadata |
 
  
 Section Object Catalog 
@@ -47,9 +47,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-dicom-study-me
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dicom-study-metadata",
   "version" : "0.1.0-snapshot",
   "name" : "FRLMDicomStudyMetadata",
-  "title" : "Modèle logique métier - FR LM DICOM Study Metadata",
+  "title" : "Logical model - FR LM DICOM Study Metadata",
   "status" : "draft",
-  "date" : "2026-05-07T13:30:39+00:00",
+  "date" : "2026-05-12T13:21:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -76,7 +76,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-dicom-study-me
     "element" : [{
       "id" : "fr-lm-dicom-study-metadata",
       "path" : "fr-lm-dicom-study-metadata",
-      "short" : "Modèle logique métier - FR LM DICOM Study Metadata",
+      "short" : "Logical model - FR LM DICOM Study Metadata",
       "definition" : "Section Object Catalog"
     },
     {
@@ -90,8 +90,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-dicom-study-me
       "max" : "0"
     },
     {
-      "id" : "fr-lm-dicom-study-metadata.entry.examenImagerie",
-      "path" : "fr-lm-dicom-study-metadata.entry.examenImagerie",
+      "id" : "fr-lm-dicom-study-metadata.entry.imagingStudy",
+      "path" : "fr-lm-dicom-study-metadata.entry.imagingStudy",
       "short" : "Entrée Examen imagerie",
       "definition" : "Entrée Examen imagerie",
       "min" : 0,

@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication-administration | *Version*:0.1.0-snapshot |
-| Draft as of 2026-05-07 | *Computable Name*:FRLMMedicationAdministration |
+| Draft as of 2026-05-12 | *Computable Name*:FRLMMedicationAdministration |
 
  
 Entrée Traitement 
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Logical model - FR LM Adverse Event](StructureDefinition-fr-lm-adverse-event.md), [Modèle logique métier - FR LM Examination Report](StructureDefinition-fr-lm-examination-report.md), [Modèle logique métier - FR LM Exposure Information](StructureDefinition-fr-lm-exposure-information.md), [Modèle logique métier - FR LM Hospital Discharge Medications](StructureDefinition-fr-lm-hospital-discharge-medications.md)... Show 3 more, [Modèle logique métier - FR LM Medication Summary](StructureDefinition-fr-lm-medication-summary.md), [Logical model - FR LM Service Request](StructureDefinition-fr-lm-service-request.md) and [Modèle logique métier - FR LM Traitements administrés](StructureDefinition-fr-lm-traitements-administres.md)
+* Utilise ce/t/te Modèle logique: [Logical model - FR LM Adverse Event](StructureDefinition-fr-lm-adverse-event.md), [Logical model - FR LM Course of encounter](StructureDefinition-fr-lm-course-of-encounter.md), [Logical model - FR LM Examination Report](StructureDefinition-fr-lm-examination-report.md), [Logical model - FR LM Exposure Information](StructureDefinition-fr-lm-exposure-information.md)... Show 4 more, [Modèle logique métier - FR LM Hospital Discharge Medications](StructureDefinition-fr-lm-hospital-discharge-medications.md), [Modèle logique métier - FR LM Medication Summary](StructureDefinition-fr-lm-medication-summary.md), [Logical model - FR LM Service Request](StructureDefinition-fr-lm-service-request.md) and [Modèle logique métier - FR LM Traitements administrés](StructureDefinition-fr-lm-traitements-administres.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-medication-administration)
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-medication-adm
   "name" : "FRLMMedicationAdministration",
   "title" : "Logical model- FR LM Medication Administration\t",
   "status" : "draft",
-  "date" : "2026-05-07T13:30:39+00:00",
+  "date" : "2026-05-12T13:21:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

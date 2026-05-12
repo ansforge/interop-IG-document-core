@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dicom-medication-administration | *Version*:0.1.0-snapshot |
-| Draft as of 2026-05-07 | *Computable Name*:FRLMDICOMMedicationAdministration |
+| Draft as of 2026-05-12 | *Computable Name*:FRLMDICOMMedicationAdministration |
 
  
 Entrée Administration de produit de santé 
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Supporting Information](StructureDefinition-fr-lm-supporting-information.md)
+* Utilise ce/t/te Modèle logique: [Logical model - FR LM Supporting Information](StructureDefinition-fr-lm-supporting-information.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-dicom-medication-administration)
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-dicom-medicati
   "name" : "FRLMDICOMMedicationAdministration",
   "title" : "Logical model - FR LM DICOM Medication Administration",
   "status" : "draft",
-  "date" : "2026-05-07T13:30:39+00:00",
+  "date" : "2026-05-12T13:21:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
