@@ -37,6 +37,7 @@ Description: "Eléments métier du corps d'un document contenant les sections du
 * exposureInformation 0..* FRLMExposureInformation "Section Exposition aux radiations"
 * supportingInformation 0..* FRLMSupportingInformation "Section Informations cliniques"
 * dicomStudyMetadata 0..* FRLMDicomStudyMetadata "Section object catalog"
+* recommendation 0..* FRLMRecommendation "Section Recommandation"
 * medicationDispensations 0..* FRLMMedicationDispensations "Section Dispensation médicaments"
 * patientEducation 0..* FRLMPatientEducation "Section Education du patient"
 * patientHistory  0..* FRLMPatientHistory "Section Historique du patient"

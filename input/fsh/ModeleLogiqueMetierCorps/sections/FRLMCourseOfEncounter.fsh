@@ -1,12 +1,17 @@
 Logical: FRLMCourseOfEncounter
 Id: fr-lm-course-of-encounter
 Parent: FRLMSection
-Title: "Modèle logique métier - FR LM Course of encounter"
+Title: "Logical model - FR LM Course of encounter"
 Description: """Section Résultats d'événements"""
 Characteristics: #can-be-target
 
 * subSection 0..0
 * entry
-  * observation 1..* FRLMObservation "Entrée Simple observation"
-  * transfertPatient 0..* FRLMPatientTransfer "Entrée Transfert du patient"
-  * probleme  0..* FRLMCondition "Entrée Problème"
+  * testResults 1..* FRLMObservation "Entrée Simple observation"
+  * patientTransfer 0..* FRLMPatientTransfer "Entrée Transfert du patient"
+  * diagnosticSummary  0..* FRLMCondition "Entrée Problème"
+  * procedures 0..* FRLMProcedure "Entrée Acte"
+  * medicalDevicesAndImplants 0..* FRLMDeviceUse "Entrée Dispositif médical et implant"
+  // à voir si on va suivre la meme logique que l'Europe et créer un profil spécifique MedicationUse
+  * medications 0..* FRLMMedicationAdministration "Entrée Traitement administré pendant le séjour"
+  * notes 0..1 string "Entrée Note"

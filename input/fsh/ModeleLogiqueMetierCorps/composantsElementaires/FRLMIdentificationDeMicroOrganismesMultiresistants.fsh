@@ -1,4 +1,4 @@
-// Rntrée utilisée dans le volet LDL-SES, LM à supprimé ?
+// Entrée utilisée dans le volet LDL-SES, LM à supprimé ?
 Logical: FRLMIdentificationDeMicroOrganismesMultiresistants
 Id: fr-lm-identification-de-micro-organismes-multiresistants
 Parent : FRLMEntry

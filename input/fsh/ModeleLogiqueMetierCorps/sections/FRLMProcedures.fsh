@@ -9,4 +9,3 @@ Characteristics: #can-be-target
 * subSection 0..0
 * entry
   * procedure 1..* FRLMProcedure "Entrée Acte"
-  * reference 1..* FRLMReferencesExternes "Entrée Références externes"
