@@ -5,6 +5,6 @@ Title: "Modèle logique métier - FR LM Traitements administrés"
 Description: """Section Traitements administrés"""
 Characteristics: #can-be-target
 
-* sousSection 0..0
-* entree 1..*
-  * traitementAdministre 1..* FRLMTraitement "Entrée Traitement"
+* subSection 0..0
+* entry 1..*
+  * medicationAdministration 1..* FRLMMedicationAdministration "Entrée Traitement"
