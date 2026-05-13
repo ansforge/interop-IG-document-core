@@ -10,7 +10,7 @@
   <name value="FRDocumentCore"/>
   <title value="ANS IG document core"/>
   <status value="draft"/>
-  <date value="2026-05-06T07:44:21+00:00"/>
+  <date value="2026-05-13T14:53:03+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -3350,18 +3350,6 @@
       </reference>
       <name value="FR Medication Administration Sequence Extension"/>
       <description value="Extension permettant d'indiquer l’ordre d’une prise dans le cadre d’un schéma de traitement comportant des dosages progressifs ou fractionnés dans le contexte de MedicationAdministration. La valeur est un entier (integer) représentant le numéro de séquence de l’administration."/>
-      <exampleBoolean value="false"/>
-      <groupingId value="Extensions FHIR corps"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/fr-medication-request-out-of-nomenclature-extension"/>
-      </reference>
-      <name value="FR Medication Request Out Of Nomenclature Extension"/>
-      <description value="Extension permettant d'indiquer si le traitement prescrit est hors autorisation de mise sur le marché (AMM)"/>
       <exampleBoolean value="false"/>
       <groupingId value="Extensions FHIR corps"/>
     </resource>
@@ -7524,7 +7512,7 @@
         <reference value="ValueSet/fr-vs-edqm-document"/>
       </reference>
       <name value="ValueSet - FR ValueSet EDQM Document"/>
-      <description value="ValueSet basé sur le CodeSystem EDQM fourni par SMT"/>
+      <description value="ValueSet basé sur le CodeSystem EDQM fourni par SMT. classe PDF (forme galénique)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

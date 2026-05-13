@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-raison-recommandation-non-code | *Version*:0.1.0-snapshot |
-| Draft as of 2026-05-06 | *Computable Name*:FRLMRaisonRecommandationNonCode |
+| Draft as of 2026-05-13 | *Computable Name*:FRLMRaisonRecommandationNonCode |
 
  
 Section Raison de la recommandation (non codée) 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-raison-recomma
   "name" : "FRLMRaisonRecommandationNonCode",
   "title" : "Modèle logique métier - FR LM Raison de la recommandation (non codée)",
   "status" : "draft",
-  "date" : "2026-05-06T07:44:21+00:00",
+  "date" : "2026-05-13T14:53:03+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

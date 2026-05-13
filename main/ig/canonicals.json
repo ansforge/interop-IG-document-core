@@ -3569,13 +3569,6 @@
   "name" : "FRMedicationRequestDocument"
 },
 {
-  "id" : "fr-medication-request-out-of-nomenclature-extension",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-request-out-of-nomenclature-extension",
-  "version" : "0.1.0-snapshot",
-  "name" : "FRMedicationRequestOutOfNomenclatureExtension"
-},
-{
   "id" : "fr-medication-statement-document",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-statement-document",

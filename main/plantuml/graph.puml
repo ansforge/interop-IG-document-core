@@ -7540,33 +7540,28 @@ package IG #DDDDDD{
              Medication.code => [1..None]
              Medication.code.coding => [None..None]
              Medication.form => [None..None]
-             Medication.ingredient => [1..None]
-             Medication.ingredient:doseAntigene => [0..*]
-             Medication.ingredient:doseAntigene.strength => [None..None]
-             Medication.ingredient:substanceActive => [1..1]
-             Medication.ingredient:substanceActive.item[x] => [None..None]
-             Medication.ingredient:substanceActive.item[x].text => [None..None]
-             Medication.ingredient:substanceActive.strength => [None..None]
-             Medication.ingredient:substanceActive.strength.numerator => [1..None]
-             Medication.ingredient:substanceActive.strength.denominator => [1..None]
+             Medication.ingredient.item[x] => [None..None]
+             Medication.ingredient.item[x]:itemCodeableConcept => [0..1]
+             Medication.ingredient.item[x]:itemCodeableConcept.text => [None..None]
+             Medication.ingredient.item[x]:itemReference => [0..1]
+             Medication.ingredient.strength => [None..None]
+             Medication.ingredient.strength.numerator => [1..None]
+             Medication.ingredient.strength.denominator => [1..None]
              Medication.batch.lotNumber => [None..None]
              Medication.batch.expirationDate => [None..None]
         } 
 
         class FRMedicationRequestDocument{
 
-             MedicationRequest.extension => [1..None]
-             MedicationRequest.extension:author => <&plus>[0..1]
-             MedicationRequest.extension:author.extension:type => <&plus>[None..None]
-             MedicationRequest.extension:author.extension:type.value[x] => <&plus>[None..None]
-             MedicationRequest.extension:author.extension:actor => <&plus>[None..None]
-             MedicationRequest.extension:author.extension:actor.value[x] => <&plus>[None..None]
-             MedicationRequest.extension:horsAMM => <&plus>[1..1]
+             MedicationRequest.extension => [None..None]
+             MedicationRequest.extension:horsAMM => <&plus>[0..*]
              MedicationRequest.extension:notCovered => <&plus>[0..1]
              MedicationRequest.identifier => [1..None]
              MedicationRequest.status => [None..None]
              MedicationRequest.intent => [None..None]
              MedicationRequest.medication[x] => [None..None]
+             MedicationRequest.subject => [None..None]
+             MedicationRequest.encounter => [None..None]
              MedicationRequest.authoredOn => [None..None]
              MedicationRequest.requester => [None..None]
              MedicationRequest.reasonReference => [None..None]
@@ -7619,6 +7614,8 @@ package IG #DDDDDD{
              MedicationRequest.substitution => [1..None]
              MedicationRequest.substitution.allowed[x] => [None..None]
              MedicationRequest.substitution.allowed[x]:allowedCodeableConcept => [0..1]
+             MedicationRequest.substitution.reason => [None..None]
+             MedicationRequest.substitution.reason.text => [None..None]
         } 
 
         class FRMedicationStatementDocument{
@@ -8362,8 +8359,6 @@ package IG #DDDDDD{
      FRMediaDocument -[#black,dashed,thickness=2]-> FRActorExtension
      FRMediaDocument -[#black,dashed,thickness=2]-> FRActorExtension
      FRMedicationAdministrationDocument -[#black,dashed,thickness=2]-> FRMedicationAdministrationSequenceExtension
-     FRMedicationRequestDocument -[#black,dashed,thickness=2]-> FRActorExtension
-     FRMedicationRequestDocument -[#black,dashed,thickness=2]-> FRMedicationRequestOutOfNomenclatureExtension
      FRMedicationRequestDocument -[#black,dashed,thickness=2]-> FRNotCoveredExtension
      FRObservationAdministrationBloodDerivativesDocument -[#black,dashed,thickness=2]-> FRActorExtension
      FRObservationAntenatalTestingAndSurveillanceBatteryDocument -[#black,dashed,thickness=2]-> FRActorExtension
@@ -8457,13 +8452,6 @@ package IG #DDDDDD{
           Extension.extension => [None..0]
           Extension.url => [None..None]
           Extension.value[x] => [None..None]
-        } 
-        class FRMedicationRequestOutOfNomenclatureExtension{
-
-          Extension.extension => [None..0]
-          Extension.url => [None..None]
-          Extension.value[x] => [1..None]
-          Extension.value[x]:valueBoolean => [1..1]
         } 
         class FRMethodExtension{
 

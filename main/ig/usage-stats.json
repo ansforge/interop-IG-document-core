@@ -124,14 +124,6 @@
       ]
     },
     {
-      "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-request-out-of-nomenclature-extension",
-      "title": "FR Medication Request Out Of Nomenclature Extension",
-      "types": [
-        "boolean",
-        "boolean"
-      ]
-    },
-    {
       "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-method-extension",
       "title": "FR Method Extension",
       "types": [
@@ -786,7 +778,6 @@
       "FamilyMemberHistory.condition",
       "Immunization.performer.actor",
       "Media.operator",
-      "MedicationRequest",
       "Observation.performer",
       "Procedure.performer.actor",
       "Procedure.recorder",
@@ -810,9 +801,6 @@
     ],
     "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-administration-sequence-extension": [
       "MedicationAdministration.dosage"
-    ],
-    "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-request-out-of-nomenclature-extension": [
-      "MedicationRequest"
     ],
     "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-method-extension": [
       "FamilyMemberHistory.condition",
@@ -898,6 +886,9 @@
     "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-productname": [
       "Immunization",
       "Medication"
+    ],
+    "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-offLabel": [
+      "MedicationRequest"
     ]
   }
 }

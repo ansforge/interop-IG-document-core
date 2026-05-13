@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "FRDocumentCore"] ; # 
   fhir:title [ fhir:v "ANS IG document core"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-05-06T07:44:21+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-05-13T14:53:03+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -6615,28 +6615,6 @@
        ] ;
        fhir:name [ fhir:v "FR Medication Administration Sequence Extension" ] ;
        fhir:description [ fhir:v "Extension permettant d'indiquer l’ordre d’une prise dans le cadre d’un schéma de traitement comportant des dosages progressifs ou fractionnés dans le contexte de MedicationAdministration. La valeur est un entier (integer) représentant le numéro de séquence de l’administration." ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Extensions FHIR corps" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:extension"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-request-out-of-nomenclature-extension> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-medication-request-out-of-nomenclature-extension" ]
-       ] ;
-       fhir:name [ fhir:v "FR Medication Request Out Of Nomenclature Extension" ] ;
-       fhir:description [ fhir:v "Extension permettant d'indiquer si le traitement prescrit est hors autorisation de mise sur le marché (AMM)" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -14281,7 +14259,7 @@
          fhir:reference [ fhir:v "ValueSet/fr-vs-edqm-document" ]
        ] ;
        fhir:name [ fhir:v "ValueSet - FR ValueSet EDQM Document" ] ;
-       fhir:description [ fhir:v "ValueSet basé sur le CodeSystem EDQM fourni par SMT" ] ;
+       fhir:description [ fhir:v "ValueSet basé sur le CodeSystem EDQM fourni par SMT. classe PDF (forme galénique)." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

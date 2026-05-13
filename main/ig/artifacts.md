@@ -576,7 +576,6 @@ Modèles de données métier représentant les concepts élémentaires, modélis
 | [FR Immunization Type Extension](StructureDefinition-fr-immunization-type-extension.md) | Extension permettant de représenter le type de vaccination (ex: INITIMMUNIZ, BOOSTER, IMMUNIZ). |
 | [FR Interpretation Extension](StructureDefinition-fr-interpretation-extension.md) | Extension permettant de spécifier une interprétation. |
 | [FR Medication Administration Sequence Extension](StructureDefinition-fr-medication-administration-sequence-extension.md) | Extension permettant d’indiquer l’ordre d’une prise dans le cadre d’un schéma de traitement comportant des dosages progressifs ou fractionnés dans le contexte de MedicationAdministration. La valeur est un entier (integer) représentant le numéro de séquence de l’administration. |
-| [FR Medication Request Out Of Nomenclature Extension](StructureDefinition-fr-medication-request-out-of-nomenclature-extension.md) | Extension permettant d’indiquer si le traitement prescrit est hors autorisation de mise sur le marché (AMM) |
 | [FR Method Extension](StructureDefinition-fr-method-extension.md) | Extension permettant d’indiquer la méthode utilisée : techniques biologiques (ex. : titration, agglutination…), techniques d’imagerie dans les demandes d’examen (ultrasound, tomographie, IRM…), des méthodes de mesure spécifiques, etc. |
 | [FR Not Covered Extension](StructureDefinition-fr-not-covered-extension.md) | Extension permettant d’indiquer si le traitement est non remboursable. |
 | [FR Number of Frames Extension](StructureDefinition-fr-number-of-frames-extension.md) | Extension permettant d’indiquer le nombre de cadres référencés dans une instance ImagingStudy, conforme aux exigences du modèle logique Xt-EHR. |
@@ -802,7 +801,7 @@ These define sets of codes used by systems conforming to this implementation gui
 | [ValueSet - FR ValueSet Actor Type Document](ValueSet-fr-vs-actor-type-document.md) | Jeu de valeurs pour les types d’acteurs. |
 | [ValueSet - FR ValueSet Allergy Intolerance Type Document](ValueSet-fr-vs-allergy-intolerance-type-document.md) | ValueSet contenant les codes SNOMED CT autorisés pour les types d’allergies et d’intolérances |
 | [ValueSet - FR ValueSet Code Traitement](ValueSet-fr-valueset-code-traitement.md) | Jeu de valeurs regroupant les codes de traitement |
-| [ValueSet - FR ValueSet EDQM Document](ValueSet-fr-vs-edqm-document.md) | ValueSet basé sur le CodeSystem EDQM fourni par SMT |
+| [ValueSet - FR ValueSet EDQM Document](ValueSet-fr-vs-edqm-document.md) | ValueSet basé sur le CodeSystem EDQM fourni par SMT. classe PDF (forme galénique). |
 | [ValueSet - FR ValueSet Medication Translation Document](ValueSet-fr-vs-medication-translation-document.md) | Systèmes autorisés pour les autres codifications. |
 | [ValueSet - FR ValueSet Reference externe](ValueSet-fr-valueset-reference-externe.md) | Jeu de valeurs regroupant les typeCode du document référencé |
 | [ValueSet - FR ValueSet Result Type Document](ValueSet-fr-vs-result-type-document.md) | ValueSet contenant les codes LOINC autorisés pour les types de résultats |

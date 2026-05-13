@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-immunization-type-extension | *Version*:0.1.0-snapshot |
-| Draft as of 2026-05-06 | *Computable Name*:FRImmunizationTypeExtension |
+| Draft as of 2026-05-13 | *Computable Name*:FRImmunizationTypeExtension |
 
 Extension permettant de représenter le type de vaccination (ex: INITIMMUNIZ, BOOSTER, IMMUNIZ).
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-immunization-type
   "name" : "FRImmunizationTypeExtension",
   "title" : "FR Immunization Type Extension",
   "status" : "draft",
-  "date" : "2026-05-06T07:44:21+00:00",
+  "date" : "2026-05-13T14:53:03+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
