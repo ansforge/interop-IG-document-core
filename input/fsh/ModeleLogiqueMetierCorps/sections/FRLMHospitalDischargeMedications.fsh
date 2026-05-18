@@ -1,7 +1,7 @@
 Logical: FRLMHospitalDischargeMedications
 Id: fr-lm-hospital-discharge-medications
 Parent: FRLMSection
-Title: "Modèle logique métier - FR LM Hospital Discharge Medications"
+Title: "Logical model - FR LM Hospital Discharge Medications"
 Description: """Section Traitements à la sortie"""
 Characteristics: #can-be-target
 

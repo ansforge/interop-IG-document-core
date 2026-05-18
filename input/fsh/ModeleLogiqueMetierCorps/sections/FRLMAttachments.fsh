@@ -1,7 +1,7 @@
 Logical: FRLMAttachments 
 Id: fr-lm-attachments
 Parent: FRLMSection
-Title: "Modèle logique métier - FR LM Attachments"
+Title: "Logical model - FR LM Attachments"
 Description: """Section Documents ajoutés"""
 Characteristics: #can-be-target
 

@@ -1,7 +1,7 @@
 Logical: FRLMRecommendation
 Id: fr-lm-recommendation
 Parent: FRLMSection
-Title: "Modèle logique métier - FR LM Recommendation"
+Title: "Logical model - FR LM Recommendation"
 Description: """Section Recommandation"""
 Characteristics: #can-be-target
 

@@ -1,7 +1,7 @@
 Logical: FRLMMedicationSummary
 Id: fr-lm-medication-summary
 Parent : FRLMSection 
-Title: "Modèle logique métier - FR LM Medication Summary"
+Title: "Logical model - FR LM Medication Summary"
 Description: """Section Traitements"""
 Characteristics: #can-be-target
 

@@ -153,6 +153,7 @@ groups:
       - StructureDefinition/fr-lm-supporting-information
       - StructureDefinition/fr-lm-dicom-study-metadata
       - StructureDefinition/fr-lm-recommendation
+      - StructureDefinition/fr-lm-conclusion
       - StructureDefinition/fr-lm-medication-dispensations
       - StructureDefinition/fr-lm-patient-education
       - StructureDefinition/fr-lm-section-pregnancy-history
@@ -202,7 +203,6 @@ groups:
       - StructureDefinition/fr-lm-hors-amm
       - StructureDefinition/fr-lm-observation-media
       - StructureDefinition/fr-lm-imputabilite-effet-indesirable
-      - StructureDefinition/fr-lm-birth-event
       - StructureDefinition/fr-lm-non-remboursable
       - StructureDefinition/fr-lm-pregnancy-observation
       - StructureDefinition/fr-lm-pregnancy-status
@@ -631,6 +631,7 @@ groups:
       - FRSectionMedicationAdministrationLMCDAFHIR
       - FRSectionHospitalDischargeMedicationsLMCDAFHIR
       - FRSectionImmunizationsLMCDAFHIR
+      - FRSectionMedicationDispenseLMCDAFHIR
 
   Mapping ML-CDA-FHIR des composants élémentaires d'un document:
     name: Concept Maps des composants élémentaires d'un Document
@@ -698,6 +699,7 @@ groups:
       - FRObservationLMCDAFHIR
       - FRPatientWithNonHumanSubjectLMCDAFHIR
       - FRNonHumanSubjectLMCDAFHIR
+      - FRImagingSeriesLMCDAFHIR
 
 resources: 
   Binary/BIO-CR-BIO-2024.01-Microbiologie-V1:

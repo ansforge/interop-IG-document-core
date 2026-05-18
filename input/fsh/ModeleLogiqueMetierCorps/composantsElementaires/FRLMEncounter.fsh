@@ -1,7 +1,7 @@
 Logical: FRLMEncounter
 Id: fr-lm-encounter
 Parent : FRLMEntry
-Title: "Modèle logique métier - FR LM Rencontre"
+Title: "Logical model - FR LM Encounter"
 Description: """Entrée Rencontre"""
 Characteristics: #can-be-target
 

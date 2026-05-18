@@ -1,7 +1,7 @@
 Logical: FRLMReasonForReferral
 Id: fr-lm-reason-for-referral
 Parent: FRLMSection
-Title: "Modèle logique métier - FR LM Reason for referral"
+Title: "Logical model - FR LM Reason for referral"
 Description: """Section Raison de la recommandation"""
 Characteristics: #can-be-target
 

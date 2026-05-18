@@ -9,4 +9,4 @@ Characteristics: #can-be-target
 * subSection 0..0
 * entry
   * travelHistory 0..* FRLMTravelHistory "Historique des voyages"
-* note 0..1 string "Commentaire"	
+  * note 0..1 string "Commentaire"	

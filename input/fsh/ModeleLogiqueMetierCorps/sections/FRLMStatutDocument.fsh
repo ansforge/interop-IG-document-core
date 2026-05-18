@@ -1,7 +1,7 @@
 Logical: FRLMStatusDocument
 Id: fr-lm-status-document
 Parent: FRLMSection
-Title: "Modèle logique métier - FR LM Status Document"
+Title: "Logical model - FR LM Status Document"
 Description: """Section Statut du Document"""
 Characteristics: #can-be-target
 

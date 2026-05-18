@@ -1,7 +1,7 @@
 Logical: FRLMEncounterInformation
 Id: fr-lm-encounter-information
 Parent: FRLMSection
-Title: "Modèle logique métier - FR LM Encounter Information"
+Title: "Logical model - FR LM Encounter Information"
 Description: """Section Informations sur la rencontre"""
 Characteristics: #can-be-target
 
@@ -9,4 +9,4 @@ Characteristics: #can-be-target
 * subSection 0..0
 * entry
   * encounterInformation 0..1 FRLMEncounter "Entrée Informations sur la rencontre"
-* note 0..1 string "Commentaire"
+  * note 0..1 string "Commentaire"

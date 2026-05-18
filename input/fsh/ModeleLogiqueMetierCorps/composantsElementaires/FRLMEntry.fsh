@@ -1,6 +1,6 @@
 Logical: FRLMEntry
 Id: fr-lm-entry
-Title: "FR LM Entry"
+Title: "Logical model - FR LM Entry"
 Description: "Modèle logique représentant l'entrée"
 
 * header 1..1 Base "Métadonnées de base"

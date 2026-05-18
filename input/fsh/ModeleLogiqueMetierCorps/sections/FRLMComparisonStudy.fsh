@@ -1,7 +1,7 @@
 Logical: FRLMComparisonStudy
 Id: fr-lm-comparison-study
 Parent: FRLMSection
-Title: "Modèle logique métier - FR LM Comparison Study"
+Title: "Logical model - FR LM Comparison Study"
 Description: """Section Comparaison d'examens d'imagerie"""
 Characteristics: #can-be-target
 

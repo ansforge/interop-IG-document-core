@@ -1,7 +1,7 @@
 Logical: FRLMImmunisations
 Id: fr-lm-immunisations
 Parent : FRLMSection
-Title: "Modèle logique métier - FR LM Immunisations"
+Title: "Logical model - FR LM Immunisations"
 Description: """Section Vaccinations"""
 Characteristics: #can-be-target
 

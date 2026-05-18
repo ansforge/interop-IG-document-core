@@ -7,9 +7,7 @@ Characteristics: #can-be-target
 
 * titleSection 1..1 
 * subSection
-  * conclusion 0..1	Base "Conclusion de l'examen"
-    * impression 1..1	string "Conclusions"
-    * conditionOrFinding[x]	0..* FRLMCondition or FRLMObservation "Conditions ou observations associées aux conclusions"
+  * conclusion 0..1	FRLMConclusion "Conclusion de l'examen"
 * entry
   * imagingProcedures 1..1 FRLMProcedure "Entrée Techniques d'imagerie"
   * medicationAdministrations 0..* FRLMMedicationAdministration "Entrée Produits de santé administrés pendant l'acte d'imagerie"

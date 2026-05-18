@@ -1,7 +1,7 @@
 Logical: FRLMResultData
 Id: fr-lm-result-data
 Parent: FRLMSection
-Title: "Modèle logique métier - FR LM Compte rendu de biologie de 1er niveau"
+Title: "Logical model - FR LM Compte rendu de biologie de 1er niveau"
 Description: """Section Compte rendu de biologie de 1er niveau"""
 Characteristics: #can-be-target
 

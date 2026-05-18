@@ -1,6 +1,6 @@
 Logical: FRLMCorpsDocument		
 Id: fr-lm-corps-document					
-Title: "Modèle logique métier - FR LM Corps document"				
+Title: "Logical model - FR LM Corps document"				
 Description: "Eléments métier du corps d'un document contenant les sections du document."	
 
 * alerts 0..* FRLMAlerts "Section Points de vigilance"
@@ -38,6 +38,7 @@ Description: "Eléments métier du corps d'un document contenant les sections du
 * supportingInformation 0..* FRLMSupportingInformation "Section Informations cliniques"
 * dicomStudyMetadata 0..* FRLMDicomStudyMetadata "Section object catalog"
 * recommendation 0..* FRLMRecommendation "Section Recommandation"
+* conclusion 0..* FRLMConclusion "Section Conclusion"
 * medicationDispensations 0..* FRLMMedicationDispensations "Section Dispensation médicaments"
 * patientEducation 0..* FRLMPatientEducation "Section Education du patient"
 * patientHistory  0..* FRLMPatientHistory "Section Historique du patient"

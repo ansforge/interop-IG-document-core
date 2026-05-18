@@ -1,7 +1,7 @@
 Logical: FRLMNote 
 Id: fr-lm-note
 Parent: FRLMSection
-Title: "Modèle logique métier - FR LM Note"
+Title: "Logical model - FR LM Note"
 Description: """Section Commentaire (non-codé)"""
 Characteristics: #can-be-target
 
