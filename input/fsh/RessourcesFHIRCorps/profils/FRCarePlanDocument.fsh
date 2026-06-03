@@ -11,9 +11,7 @@ Description: "FRCarePlanDocument est un profil permettant d’enregistrer une r�
 * category 1..1 MS
   * ^short = "Code indiquant que la référence est une ligne de traitement dans un plan de traitement."
 * category.coding 1..1
-* category.coding.system = "urn:1.3.6.1.4.1.19376.1.9.2.2"
-* category.coding.code = #IHEPharmacyItemTypeList
-* category.coding.display = "Ligne dans un plan de traitement"
+* category.coding = #IHEPharmacyItemTypeList "Ligne dans un plan de traitement"
 * activity.detail.product[x] MS
 * activity.detail.product[x] only CodeableConcept or Reference(FRMedicationDocument)
   * ^short = "Produit de santé"

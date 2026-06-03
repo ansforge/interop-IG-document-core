@@ -9,9 +9,7 @@ Description: "DataType définissant l'Accession Number d'une demande d'examen. I
 
 * type 1..1 MS
 * type.coding 1..1 MS
-* type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
-* type.coding.code = #ACSN
-* type.coding.display = "Accession ID"
+* type.coding = http://terminology.hl7.org/CodeSystem/v2-0203#ACSN "Accession ID"
 
 * system 0..1 MS
 * system ^short = "L'espace de nommage pour l'identifiant"
