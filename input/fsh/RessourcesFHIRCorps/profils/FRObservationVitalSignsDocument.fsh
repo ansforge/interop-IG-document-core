@@ -41,5 +41,5 @@ Description: "
     
 * component.value[x] only Quantity
 * component.valueQuantity 1..1 MS
-* component.valueQuantity from FRValueSetUCUMDocument (required)
+* component.valueQuantity from  http://terminology.hl7.org/ValueSet/ucum-units (required)
   * ^short = "Valeur quantitative du signe vital"
