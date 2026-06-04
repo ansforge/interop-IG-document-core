@@ -11,8 +11,8 @@ Description: "FREncounterDocument est un profil permettant de conserver les moda
 * identifier ^short = "Identifiant de la rencontre"
 
 * class MS
-* class ^short = "Type de rencontre (JDV_HL7_ActEncounterCode_CISIS ou JDV spécifique au volet)"
-* class from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActEncounterCode-cisis (extensible)
+* class ^short = "Type de rencontre (codes HL7 ActEncounterCode ou codes spécifiques au volet)"
+* class from FRValueSetEncounterClass (extensible)
 
 * status MS
 * status ^short = "Statut de la rencontre (finished | planned | proposed)"

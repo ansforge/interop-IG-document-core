@@ -10,7 +10,7 @@ Description: "FRObservationSurveyDocument permet de rapporter un résultat (scor
 * category 1..1 MS
 * category ^short = "Catégorie"
 * category.coding 1..1
-* category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey "Survey"
+* category = $observation-category#survey "Survey"
 
 * status ^short = "Statut métier de l’évaluation"
 * status.extension contains FRStatusReasonExtension   

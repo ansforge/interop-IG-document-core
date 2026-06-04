@@ -4,7 +4,7 @@ Id: fr-related-person-document
 Title: "FR RelatedPerson Document"
 Description: "Ce profil représente l'informateur non professionnel."
 
-* relationship[Role].coding = https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass#CON "Informateur"
+* relationship[Role].coding from FRValueSetRelationshipRole (required)
 * relationship[RelationType] 0..1
 * relationship[RelationType] ^short = "Lien de la personne avec le patient/usager"
 * relationship[RelationType] from $JDV_J11_RelationPatient_CISIS (required)
