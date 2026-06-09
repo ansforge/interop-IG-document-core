@@ -104,22 +104,18 @@ groups:
   Modèles logiques métier de l'entête d'un document:
     name: Modèles logiques métier de l'entête d'un document
     resources:
-      - FRLMEnteteDocument	
+      - FRLMHeaderDocument	
       - FRLMPatient
       - FRLMHealthProfessional
       - FRLMOrganisation
       - FRLMInformant
-      - FRLMStructureConservation
       - FRLMIntendedRecipient
-      - FRLMResponsable
-      - FRLMValidateur
-      - FRLMOperateurSaisie
+      - FRLMLegalAuthentication
+      - FRLMAttester
+      - FRLMDataEnterer
       - FRLMParticipant
-      - FRLMPrescription
-      - FRLMEvenement
-      - FRLMDocumentDeReference
+      - FRLMOrder
       - FRLMConsent
-      - FRLMPriseEncharge
       - FRLMLocation
       - FRLMRelatedPerson
       - FRLMHumanName
