@@ -110,7 +110,7 @@ groups:
       - FRLMOrganisation
       - FRLMInformant
       - FRLMStructureConservation
-      - FRLMDestinatairePrevu
+      - FRLMIntendedRecipient
       - FRLMResponsable
       - FRLMValidateur
       - FRLMOperateurSaisie
@@ -118,7 +118,7 @@ groups:
       - FRLMPrescription
       - FRLMEvenement
       - FRLMDocumentDeReference
-      - FRLMConsentement
+      - FRLMConsent
       - FRLMPriseEncharge
       - FRLMLocation
       - FRLMRelatedPerson
