@@ -59,7 +59,7 @@ pages:
             title: CDA
         ressourcesFHIR-corps.md:
             title: FHIR
-        mappingCDA-FHIR-corps.md:
+        mappingCDA-FHIR-corps.xml:
             title: Mapping Métier/CDA/FHIR
     autres_ressources.md:
         title: Autres Ressources
