@@ -147,7 +147,7 @@ ORDER BY
   group_index,
   elem_index
 ",
-"class" : "lines",
+"class" : "codes",
 "columns" : [
   { "title": "Modèle métier", "type": "markdown", "source": "Metier" },
   { "title": "CDA", "type": "markdown", "source": "CDA" },
@@ -302,7 +302,7 @@ ORDER BY
   group_index,
   elem_index
 ",
-"class" : "lines",
+"class" : "codes",
 "columns" : [
   { "title": "Modèle métier", "type": "markdown", "source": "Metier" },
   { "title": "CDA", "type": "markdown", "source": "CDA" },
