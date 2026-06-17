@@ -1,13 +1,6 @@
-<div xmlns="http://www.w3.org/1999/xhtml">
+Liste des ConceptMap détaillant le mapping entre les éléments du modèle métier, du CDA et de FHIR.
  
-<p>
-Liste des ConceptMap détaillant le mapping entre les éléments du modèle métier,
-du CDA et de FHIR.
-</p>
- 
-<h3>Mapping des sections entre : Modèle métier / CDA / FHIR</h3>
- 
-<div class="table-wrap">
+### Mapping des sections entre : Modèle métier / CDA / FHIR
 {% sql {
 "query": "
 WITH AllGroups AS (
@@ -154,7 +147,7 @@ ORDER BY
   group_index,
   elem_index
 ",
-"class" : "codes",
+"class" : "table-query",
 "columns" : [
   { "title": "Modèle métier", "type": "markdown", "source": "Metier" },
   { "title": "CDA", "type": "markdown", "source": "CDA" },
@@ -162,11 +155,8 @@ ORDER BY
 ]
 } %}
  
-</div>
  
-<h3>Mapping des entrées entre : Modèle métier / CDA / FHIR</h3>
- 
-<div class="table-wrap">
+### Mapping des entrées entre : Modèle métier / CDA / FHIR
 {% sql {
 "query": "
 WITH AllGroups AS (
@@ -312,12 +302,10 @@ ORDER BY
   group_index,
   elem_index
 ",
-"class" : "codes",
+"class" : "table-query",
 "columns" : [
   { "title": "Modèle métier", "type": "markdown", "source": "Metier" },
   { "title": "CDA", "type": "markdown", "source": "CDA" },
   { "title": "FHIR", "type": "markdown", "source": "FHIR" }
 ]
 } %}
-</div>
-</div>
