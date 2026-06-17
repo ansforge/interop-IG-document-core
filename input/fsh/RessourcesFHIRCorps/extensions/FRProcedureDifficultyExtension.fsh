@@ -5,5 +5,5 @@ Description: "Extension permettant d'indiquer la difficulté perçue ou mesurée
 
 * ^context[+].type = #element
 * ^context[=].expression = "Procedure"
-* value[x] only CodeableConcept
+* value[x] only Reference(Observation)
 * value[x] ^short = "Difficulté de l'acte"
