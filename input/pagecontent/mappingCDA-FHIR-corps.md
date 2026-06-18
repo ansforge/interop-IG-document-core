@@ -99,40 +99,12 @@ SELECT
   CASE
     WHEN Metier NOT LIKE '%.%' THEN
       '**' || Metier || '**'
- 
-    WHEN (LENGTH(Metier) - LENGTH(REPLACE(Metier, '.', ''))) > 2 THEN
-      -- position du 1er point
-      substr(Metier, 1,
-        instr(Metier, '.')
-        + instr(substr(Metier, instr(Metier, '.') + 1), '.')
-      )
-      || '\n' ||
-      -- texte après le 2ème point
-      substr(
-        Metier,
-        instr(Metier, '.')
-        + instr(substr(Metier, instr(Metier, '.') + 1), '.') + 1
-      )
     ELSE Metier
 END AS Metier,
   CASE
     WHEN CDA NOT LIKE '%@%'
      AND CDA NOT LIKE '%.%' THEN
       '**' || CDA || '**'
- 
-    WHEN (LENGTH(CDA) - LENGTH(REPLACE(CDA, '.', ''))) > 2 THEN
-      -- position du 1er point
-      substr(CDA, 1,
-        instr(CDA, '.')
-        + instr(substr(CDA, instr(CDA, '.') + 1), '.')
-      )
-      || '\n' ||
-      -- texte après le 2ème point
-      substr(
-        CDA,
-        instr(CDA, '.')
-        + instr(substr(CDA, instr(CDA, '.') + 1), '.') + 1
-      )
     ELSE CDA
   END AS CDA,
   CASE
@@ -254,40 +226,12 @@ SELECT
   CASE
     WHEN Metier NOT LIKE '%.%' THEN
       '**' || Metier || '**'
- 
-    WHEN (LENGTH(Metier) - LENGTH(REPLACE(Metier, '.', ''))) > 2 THEN
-      -- position du 1er point
-      substr(Metier, 1,
-        instr(Metier, '.')
-        + instr(substr(Metier, instr(Metier, '.') + 1), '.')
-      )
-      || '\n' ||
-      -- texte après le 2ème point
-      substr(
-        Metier,
-        instr(Metier, '.')
-        + instr(substr(Metier, instr(Metier, '.') + 1), '.') + 1
-      )
     ELSE Metier
 END AS Metier,
   CASE
     WHEN CDA NOT LIKE '%@%'
      AND CDA NOT LIKE '%.%' THEN
       '**' || CDA || '**'
- 
-    WHEN (LENGTH(CDA) - LENGTH(REPLACE(CDA, '.', ''))) > 2 THEN
-      -- position du 1er point
-      substr(CDA, 1,
-        instr(CDA, '.')
-        + instr(substr(CDA, instr(CDA, '.') + 1), '.')
-      )
-      || '\n' ||
-      -- texte après le 2ème point
-      substr(
-        CDA,
-        instr(CDA, '.')
-        + instr(substr(CDA, instr(CDA, '.') + 1), '.') + 1
-      )
     ELSE CDA
   END AS CDA,
   CASE
