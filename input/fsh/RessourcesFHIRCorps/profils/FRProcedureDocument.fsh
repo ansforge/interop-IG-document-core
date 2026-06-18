@@ -11,9 +11,8 @@ Description: "FRProcedureDocument est un profil utilisé pour décrire un acte p
 * identifier ^short = "Identifiant"
 
 * partOf MS
-* partOf ^short = "Observation de score ou administration de médicament associée à l'acte (ex. : produit administré lors d'un acte d'imagerie)."
-* partOf only Reference(Observation or FRMedicationAdministrationDocument)
-
+* partOf ^short = "Événement associé : score (Cormack ou ASA), administration de médicament ou procédure associée à l’acte (ex. produit administré lors d’un acte d’imagerie)."
+* partOf only Reference(Observation or FRMedicationAdministrationDocument or FRProcedureDocument)
 * status MS
 * status ^short = "Statut de l'acte"
 
