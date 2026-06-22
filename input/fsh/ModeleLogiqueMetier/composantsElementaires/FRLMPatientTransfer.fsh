@@ -2,7 +2,7 @@ Logical: FRLMPatientTransfer
 Id: fr-lm-patient-transfer
 Parent: FRLMEntry
 Title: "Logical model - FR LM Patient Transfer."
-Description: """Entrée Transfert du patient"""
+Description: """Transfert du patient"""
 Characteristics: #can-be-target
 
 * code 1..1 CodeableConcept "Code de l’entrée"

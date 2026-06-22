@@ -2,7 +2,7 @@ Logical: FRLMObservationAssessment
 Id: fr-lm-observation-assessment
 Parent: FRLMEntry
 Title: "Logical model - FR LM Assessment"
-Description: """Entrée Evaluation"""
+Description: """Evaluation"""
 Characteristics: #can-be-target
 
 * header.status 1..1

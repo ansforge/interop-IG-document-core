@@ -2,7 +2,7 @@ Logical: FRLMImagingStudy
 Id: fr-lm-imaging-study
 Parent: FRLMEntry
 Title: "Logical model - FR LM Imaging Study"
-Description: """Entrée DICOM Examen Imagerie"""
+Description: """DICOM Examen Imagerie"""
 Characteristics: #can-be-target
 
 * header.identifier 1..*

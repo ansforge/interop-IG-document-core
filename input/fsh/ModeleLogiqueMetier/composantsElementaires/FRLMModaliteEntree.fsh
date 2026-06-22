@@ -2,7 +2,7 @@ Logical: FRLMModaliteEntree
 Id: fr-lm-modalite-entree
 Parent: FRLMEntry
 Title: "logical model - FR LM Modalité d'entrée"
-Description: """Entrée Modalité d'entrée"""
+Description: """Modalité d'entrée"""
 Characteristics: #can-be-target
 
 * code 1..1 CodeableConcept "Code de l’observation"

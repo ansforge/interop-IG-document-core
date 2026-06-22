@@ -194,7 +194,6 @@ groups:
       - StructureDefinition/fr-lm-observation-work-related-accident
       - StructureDefinition/fr-lm-observation-long-term-condition
       - StructureDefinition/fr-lm-observation-assessment
-      - StructureDefinition/fr-lm-assessments
       - StructureDefinition/fr-lm-observation-social-history
       - StructureDefinition/fr-lm-hors-amm
       - StructureDefinition/fr-lm-observation-media

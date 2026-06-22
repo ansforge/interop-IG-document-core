@@ -1,7 +1,7 @@
 Logical: FRLMDevice
 Id: fr-lm-device
 Title: "Logical model - Device"
-Description: """Entrée Dispositif médical"""
+Description: """Dispositif médical"""
 Characteristics: #can-be-target
 
 * identifier 0..* Identifier "Identifiant du DM"

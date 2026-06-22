@@ -1,7 +1,7 @@
 Logical: FRLMMedication
 Id: fr-lm-medication
 Title: "Logical model - FR LM Medication"
-Description: """Entrée Produit de santé"""
+Description: """Produit de santé"""
 Characteristics: #can-be-target
 
 * identifyingCode[x] 0..* CodeableConcept "Code du produit de santé. Non présent pour les préparations magistrales."

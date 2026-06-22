@@ -2,7 +2,7 @@ Logical: FRLMEncounter
 Id: fr-lm-encounter
 Parent : FRLMEntry
 Title: "Logical model - FR LM Encounter"
-Description: """Entrée Rencontre"""
+Description: """Rencontre"""
 Characteristics: #can-be-target
 
 * typeRencontre 1..1 CodeableConcept "Type de rencontre"

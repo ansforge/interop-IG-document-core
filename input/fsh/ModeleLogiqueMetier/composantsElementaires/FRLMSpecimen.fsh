@@ -2,7 +2,7 @@ Logical: FRLMSpecimen
 Id: fr-lm-specimen
 Parent: FRLMEntry
 Title: "Logical model - FR LM Specimen"
-Description: """Entrée Prélèvement"""
+Description: """Prélèvement"""
 Characteristics: #can-be-target
 
 * identifier 1..* Identifier "Identifiant unique de l'échantillon, au sein d'un périmètre défini. Exemple : identifiant attribué par le système du préleveur, identifiant attribué par le laboratoire, etc. Plusieurs identifiants peuvent être utilisés."

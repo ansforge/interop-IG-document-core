@@ -2,7 +2,7 @@ Logical: FRLMPregnancyHistory
 Id: fr-lm-pregnancy-history
 Parent: FRLMEntry
 Title: "Logical model- FR LM Pregnancy History"
-Description: """Entrée Historique de la grossesse"""
+Description: """Historique de la grossesse"""
 Characteristics: #can-be-target
 
 * header.status 1..1 

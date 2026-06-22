@@ -2,7 +2,7 @@ Logical: FRLMTechniqueImagerie
 Id: fr-lm-technique-imagerie
 Parent: FRLMEntry
 Title: "Logical model- FR LM Technique imagerie"
-Description: """Entrée Technique imagerie"""
+Description: """Technique imagerie"""
 Characteristics: #can-be-target
 
 * codeActe 1..1 CodeableConcept "Code de l'acte d'imagerie"

@@ -3,7 +3,7 @@ Logical: FRLMObservationMedia
 Id: fr-lm-observation-media
 Parent : FRLMEntry
 Title: "Logical model - FR LM ObservationMedia"
-Description: """Entrée Image illustrative."""
+Description: """Image illustrative."""
 Characteristics: #can-be-target
 
 * content 1..1 FRLMAttachment "Image encodée en Base64"
