@@ -5,7 +5,7 @@ Liste des ConceptMap détaillant le mapping entre les éléments du modèle mét
 <!-- Solution 1 -->
 <!-- {% sql {
   "query" : "SELECT name AS Name, Description, Web FROM Resources WHERE Type = 'ConceptMap' AND Description LIKE 'Ce ConceptMap%'",
-  "class" : "table-query",
+  "class" : "lines",
   "columns" :
  [
     { "title" : "Titre du profil", "type" : "link", "source" : "Name", "target" : "Web" },
@@ -17,7 +17,7 @@ Liste des ConceptMap détaillant le mapping entre les éléments du modèle mét
  
 {% sql {
   "query": "SELECT name AS Name, Description, Web FROM Resources WHERE Type = 'ConceptMap' AND Description LIKE 'Ce ConceptMap de l''élément%'",
-  "class": "table-query",
+  "class": "lines",
   "columns":
 [
     { "title": "Titre du profil", "type": "link", "source": "Name", "target": "Web" },
@@ -144,7 +144,7 @@ ORDER BY
   group_index,
   elem_index
 ",
-"class" : "table-query",
+"class" : "lines",
 "columns" : [
   { "title": "Modèle métier", "type": "markdown", "source": "Metier" },
   { "title": "CDA", "type": "markdown", "source": "CDA" },
