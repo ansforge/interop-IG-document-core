@@ -77,7 +77,7 @@ menu:
         FHIR: ressourcesFHIR-struc-gen.html
         Mapping CDA / FHIR: mappingCDA-FHIR-struc-gen.html
     Entête document:
-        Modèle logique métier: StructureDefinition-fr-lm-entete-document.html
+        Modèle logique métier: StructureDefinition-fr-lm-header-document.html
         CDA: ressourcesCDA-entete.html
         FHIR: ressourcesFHIR-entete.html
         Mapping Métier/CDA/FHIR: mappingCDA-FHIR-entete.html
@@ -104,22 +104,18 @@ groups:
   Modèles logiques métier de l'entête d'un document:
     name: Modèles logiques métier de l'entête d'un document
     resources:
-      - FRLMEnteteDocument	
+      - FRLMHeaderDocument	
       - FRLMPatient
       - FRLMHealthProfessional
       - FRLMOrganisation
       - FRLMInformant
-      - FRLMStructureConservation
-      - FRLMDestinatairePrevu
-      - FRLMResponsable
-      - FRLMValidateur
-      - FRLMOperateurSaisie
+      - FRLMIntendedRecipient
+      - FRLMLegalAuthentication
+      - FRLMAttester
+      - FRLMDataEnterer
       - FRLMParticipant
-      - FRLMPrescription
-      - FRLMEvenement
-      - FRLMDocumentDeReference
-      - FRLMConsentement
-      - FRLMPriseEncharge
+      - FRLMOrder
+      - FRLMConsent
       - FRLMLocation
       - FRLMRelatedPerson
       - FRLMHumanName
@@ -190,14 +186,9 @@ groups:
       - StructureDefinition/fr-lm-device-use
       - StructureDefinition/fr-lm-attachment
       - StructureDefinition/fr-lm-adverse-drug-reaction
-      - StructureDefinition/fr-lm-observation-related-to-prevention
-      - StructureDefinition/fr-lm-observation-work-related-accident
-      - StructureDefinition/fr-lm-observation-long-term-condition
       - StructureDefinition/fr-lm-observation-assessment
       - StructureDefinition/fr-lm-observation-social-history
-      - StructureDefinition/fr-lm-hors-amm
       - StructureDefinition/fr-lm-observation-media
-      - StructureDefinition/fr-lm-non-remboursable
       - StructureDefinition/fr-lm-pregnancy-observation
       - StructureDefinition/fr-lm-pregnancy-status
       - StructureDefinition/fr-lm-pregnancy-history
@@ -205,13 +196,10 @@ groups:
       - StructureDefinition/fr-lm-dose-number
       - StructureDefinition/fr-lm-resultats-examens-biologie-medicale
       - StructureDefinition/fr-lm-observation-vital-sign
-      - StructureDefinition/fr-lm-status
       - StructureDefinition/fr-lm-medication-administration
       - StructureDefinition/fr-lm-dicom-medication-administration
-      - StructureDefinition/fr-lm-immunization-recommendation
       - StructureDefinition/fr-lm-immunisation
       - StructureDefinition/fr-lm-medication-dispense
-      - StructureDefinition/fr-lm-reference-item-prescription
       - StructureDefinition/fr-lm-specimen
       - StructureDefinition/fr-lm-batterie-examens-biologie-medicale
       - StructureDefinition/fr-lm-isolat-microbiologique
@@ -219,19 +207,13 @@ groups:
       - StructureDefinition/fr-lm-imaging-study
       - StructureDefinition/fr-lm-series
       - StructureDefinition/fr-lm-sop-instance
-      - StructureDefinition/fr-lm-technique-imagerie
       - StructureDefinition/fr-lm-prescription-item
       - StructureDefinition/fr-lm-quantity-exposure
       - StructureDefinition/fr-lm-transfusion-de-produits-sanguins
-      - StructureDefinition/fr-lm-synthese-medicale-sejour
-      - StructureDefinition/fr-lm-identification-de-micro-organismes-multiresistants
-      - StructureDefinition/fr-lm-modalite-sortie
-      - StructureDefinition/fr-lm-modalite-entree
+      - StructureDefinition/fr-lm-multidrug-resistant-microorganism-identification
       - StructureDefinition/fr-lm-transfusion-accidents
       - StructureDefinition/fr-lm-patient-transfer
       - StructureDefinition/fr-lm-recherche-de-micro-organismes
-      - StructureDefinition/fr-lm-sujet-non-humain
-      - StructureDefinition/fr-lm-patient-sujet-non-humain
       - StructureDefinition/fr-lm-laboratoire-executant
       - StructureDefinition/fr-lm-device
       - StructureDefinition/fr-lm-dosageInstructions
