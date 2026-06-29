@@ -6,8 +6,8 @@ on:
 jobs:
   run-sushi-tests_gitHubPages:
     runs-on: ubuntu-latest
-    container:
-      image: ghcr.io/ansforge/fhir-ig-builder:latest
+#    container:
+#      image: ghcr.io/ansforge/fhir-ig-builder:latest
     steps:
       - uses: actions/checkout@v3
         with:
