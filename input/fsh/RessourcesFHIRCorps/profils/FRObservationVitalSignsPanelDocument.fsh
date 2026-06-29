@@ -13,13 +13,11 @@ Description: "FRObservationVitalSignsPanelDocument permet de regrouper des infor
 * effective[x] only dateTime
 * effectiveDateTime MS
   * ^short = "Date"
-* performer MS
-  * ^short = "Auteur"
-* performer 0..1 MS
-* performer.extension contains FRActorExtension named author 0..*
-* performer.extension[author] ^short = "Auteur de l’observation"
-* performer.extension[author].extension[type].valueCode = #AUT
-* performer.extension[author].extension[actor].valueReference only Reference(
+
+* extension contains FRActorExtension named author 0..1
+* extension[author] ^short = "Auteur de l’observation"
+* extension[author].extension[type].valueCode = #AUT
+* extension[author].extension[actor].valueReference only Reference(
     FRPractitionerRoleDocument
     or FROrganizationDocument
     or FRPractitionerRoleDocument

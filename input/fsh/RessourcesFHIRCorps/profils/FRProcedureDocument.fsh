@@ -47,39 +47,24 @@ Pour les actes chirurgicaux inconnus, utiliser jdv-absent-or-unknown-procedure-c
 * bodySite ^short = "Localisation anatomique"
 * bodySite from http://hl7.org/fhir/ValueSet/body-site (extensible)
 
-* performer MS
-* performer.actor.extension contains
-    FRActorExtension named Intervenant 0..* and
-    FRActorExtension named Informateur 0..* and
-    FRActorExtension named Participant 0..* and
-    FRActorExtension named Dispositif 0..*
+* performer 0..* MS
+* performer ^short = "Performer"
+* performer.actor only Reference(FRPractitionerRoleDocument or Device)
 
-//performer
-* performer.actor.extension[Intervenant] MS 
-* performer.actor.extension[Intervenant] ^short = "Intervenant"
-* performer.actor.extension[Intervenant].extension[type].valueCode = #PRF
-* performer.actor.extension[Intervenant].extension[actor].valueReference only Reference(FRPractitionerRoleDocument)
 //informant
-* performer.actor.extension[Informateur] MS
-* performer.actor.extension[Informateur] ^short = "Informateur"
-* performer.actor.extension[Informateur].extension[type].valueCode = #INF
-* performer.actor.extension[Informateur].extension[actor].valueReference only Reference(FRPractitionerRoleDocument or FRRelatedPersonDocument or FRPatientINSDocument or FRPatientDocument)
-//participant
-* performer.actor.extension[Participant] MS
-* performer.actor.extension[Participant] ^short = "Participant"
-* performer.actor.extension[Participant].extension[type].valueCode = #PART
-* performer.actor.extension[Participant].extension[actor].valueReference only Reference(FRPractitionerRoleDocument)
-//dispositif médical
-* performer.actor.extension[Dispositif] MS
-* performer.actor.extension[Dispositif] ^short = "Dispositif automatique utilisé lors de l'acte"
-* performer.actor.extension[Dispositif].extension[type].valueCode = #PART
-* performer.actor.extension[Dispositif].extension[actor].valueReference only Reference(Device)
+* asserter ^short = "Informateur"
+* asserter only Reference(FRPractitionerRoleDocument or FRRelatedPersonDocument or FRPatientINSDocument or FRPatientDocument)
 
-* recorder MS
-* recorder.extension contains FRActorExtension named author 0..1
+// Auteur de l'acte
+* recorder 0..1 MS
 * recorder ^short = "Auteur"
-* recorder.extension[author].extension[type].valueCode = #AUT
-* recorder.extension[author].extension[actor].valueReference only Reference(FRPractitionerRoleDocument)
+* recorder only Reference(FRPractitionerRoleDocument)
+
+//participant
+* extension contains FRActorExtension named participant 0..* MS
+* extension[participant] ^short = "Participant à l'acte"
+* extension[participant].extension[type].valueCode = #PART
+* extension[participant].extension[actor].valueReference only Reference(FRPractitionerRoleDocument)
 
 //Réference à un DM
 * usedReference MS

@@ -17,6 +17,7 @@ Description: "FRDiagnosticReportDocument est un profil permettant de regrouper l
 * effective[x] 1..1 MS
 * effective[x] only dateTime
   * ^short = "Date"
+  
 * performer MS 
   * ^short = "Exécutant"
 * performer only Reference (FRPractitionerDocument or FRPractitionerRoleDocument or FROrganizationDocument)

@@ -27,17 +27,15 @@ Description: "
   * ^short = "Méthode utilisée pour l'observation"
 * bodySite ^short = "Site de l'observation"
 * bodySite from http://hl7.org/fhir/ValueSet/body-site (extensible)
-* performer 0..1 MS
-* performer.extension contains FRActorExtension named author 0..*
-* performer.extension[author] ^short = "Auteur de l’observation"
-* performer.extension[author].extension[type].valueCode = #AUT
-* performer.extension[author].extension[actor].valueReference only Reference(
+* extension contains FRActorExtension named author 0..*
+* extension[author] ^short = "Auteur de l’observation"
+* extension[author].extension[type].valueCode = #AUT
+* extension[author].extension[actor].valueReference only Reference(
     FRPractitionerRoleDocument
     or FROrganizationDocument
     or FRPractitionerRoleDocument
     or FRPatientINSDocument
     )
-    
 * component.value[x] only Quantity
 * component.valueQuantity 1..1 MS
 * component.valueQuantity from  http://terminology.hl7.org/ValueSet/ucum-units (required)

@@ -30,8 +30,7 @@ Description: "FRDeviceRequestDocument représente une demande de dispositif méd
 // Prescripteur
 * requester MS
 * requester ^short = "Prescripteur"
-* requester.extension contains FRActorExtension named prescripteur 0..1
-* requester.extension[prescripteur].extension[actor].valueReference only Reference(FRPractitionerRoleDocument)
+* requester only Reference(FRPractitionerRoleDocument)
 
 // Dispositif médical
 * codeReference MS

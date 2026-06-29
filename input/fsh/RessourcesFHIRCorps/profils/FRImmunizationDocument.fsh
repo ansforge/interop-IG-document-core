@@ -45,21 +45,14 @@ Description: "FRImmunizationDocument permet de décrire l'administration d'un va
 * expirationDate MS 
   * ^short = "Date d'expiration du produit"
 
-* performer ^slicing.discriminator.type = #pattern
-* performer ^slicing.discriminator.path = "function"
-* performer ^slicing.rules = #open
+* performer ^short = "Exécutant"
+* performer.function = $v2-0443#AP
+* performer.actor only Reference(FRPractitionerRoleDocument)
 
-* performer contains
-    executant 0..1 MS and
-    author 1..1 MS
-
-* performer[executant] ^short = "Exécutant"
-* performer[executant].function = $v2-0443#AP
-* performer[executant].actor only Reference(FRPractitionerRoleDocument)
-
-* performer[author] ^short = "Auteur de la vaccination (personne ayant validé médicalement que la vaccination a été réalisée)"
-* performer[author].function = $v3-ParticipationType#AUT
-* performer[author].actor only Reference(FRPractitionerRoleDocument)
+* extension contains FRActorExtension named author 1..1
+* extension[author] ^short = "Auteur de la vaccination (personne ayant validé médicalement que la vaccination a été réalisée)"
+* extension[author].extension[type].valueCode = #AUT
+* extension[author].extension[actor].valueReference only Reference(FRPractitionerRoleDocument or FRPatientINSDocument or FRDeviceAuteurDocument or FRPatientDocument)
 
 //Prescription
 * extension contains $immunization-basedOn-r5 named basedOnRequestR5 0..1

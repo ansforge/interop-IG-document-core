@@ -22,26 +22,29 @@ Description: "FRMediaDocument permet de positionner une image de type gif, jpeg,
 * subject only Reference(FRPatientINSDocument or FRSpecimenDocument)
 * subject ^short = "Patient ou specimen concerné par l'image"
 
-// actor (performer, informant, author, participant)
 * operator MS
 * operator.extension contains
-    FRActorExtension named performer 0..* and
-    FRActorExtension named author 0..* and
-    FRActorExtension named informant 0..* and
-    FRActorExtension named participant 0..*
+    FRActorExtension named performer 0..*
 
 * operator.extension[performer] ^short = "Performer : Personne ayant réalisé l’acte"
 * operator.extension[performer].extension[type].valueCode = #PRF
+* operator.extension[performer].extension[actor].valueReference only Reference(FRPractitionerRoleDocument or FROrganizationDocument or FRDeviceAuteurDocument)
 
-* operator.extension[author] ^short = "Auteur du média"
-* operator.extension[author].extension[type].valueCode = #AUT
-* operator.extension[author].extension[actor].valueReference only Reference(FRDeviceAuteurDocument or FRPractitionerRoleDocument)
+* extension contains FRActorExtension named author 0..*
+and FRActorExtension named informant 0..*
+and FRActorExtension named participant 0..*
 
-* operator.extension[informant] ^short = "Informateur"
-* operator.extension[informant].extension[type].valueCode = #INF
+* extension[author] ^short = "Auteur du média"
+* extension[author].extension[type].valueCode = #AUT
+* extension[author].extension[actor].valueReference only Reference(FRDeviceAuteurDocument or FRPractitionerRoleDocument)
 
-* operator.extension[participant] ^short = "Participant : Personne ayant participé à l’acte"
-* operator.extension[participant].extension[type].valueCode = #PART
+* extension[informant] ^short = "Informateur"
+* extension[informant].extension[type].valueCode = #INF
+* extension[informant].extension[actor].valueReference only Reference(FRPractitionerRoleDocument or FRRelatedPersonDocument or FRPatientINSDocument or FRPatientDocument)
+
+* extension[participant] ^short = "Participant : Personne ayant participé à l’acte"
+* extension[participant].extension[type].valueCode = #PART
+* extension[participant].extension[actor].valueReference only Reference(FRPractitionerRoleDocument or FRRelatedPersonDocument or FRPatientINSDocument or FRPatientDocument or FRDeviceAuteurDocument or FROrganizationDocument)
 
 // EntryRelationship
 * basedOn MS
