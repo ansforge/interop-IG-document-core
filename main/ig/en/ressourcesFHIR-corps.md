@@ -2,6 +2,9 @@
 
 ## FHIR
 
+ 
+There is no translation page available for the current page, so it has been rendered in the default language 
+
 ### Liste des profils
 
 Cette page contient la liste des profils FHIR définis dans le guide **ANS IG Document Core**, utilisés pour l'implémentation de la partie corps des documents médicaux et médico-sociaux.

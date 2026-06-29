@@ -2,6 +2,9 @@
 
 ## Mapping CDA / FHIR
 
+ 
+There is no translation page available for the current page, so it has been rendered in the default language 
+
 ### Principe général
 
 Le mapping CDA / FHIR présenté ici s'appuie sur l'IG [FHIR Clinical Documents](https://hl7.org/fhir/uv/fhir-clinical-document/2024Sep/mapping.html) réalisé par HL7.

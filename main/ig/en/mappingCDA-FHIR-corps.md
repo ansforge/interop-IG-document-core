@@ -2,6 +2,9 @@
 
 ## Mapping Métier/CDA/FHIR
 
+ 
+There is no translation page available for the current page, so it has been rendered in the default language 
+
 Liste des ConceptMap détaillant le mapping entre les éléments du modèle métier, du CDA et de FHIR.
 
 ### Mapping des sections entre : Modèle métier / CDA / FHIR

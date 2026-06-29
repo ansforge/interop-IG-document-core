@@ -120,7 +120,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Immunization.occurrence[x].extension:dataAbsentReason","Immunization.occurrence[x].extension","dataAbsentReason","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/data-absent-reason]]} {[]}
-","unknown | asked | temp | notasked | masked | unsupported | astext | error","Provides a reason why the expected value or elements in the element that is extended are missing.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","unknown | asked | temp | notasked | masked | unsupported | astext | error","Provides a reason why the expected value or elements in the element that is extended are missing.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","ANY.nullFlavor"
 "Immunization.occurrence[x].value","Immunization.occurrence[x].value","","","",0,1,"","","","dateTime {[]} {[]}
 ","Primitive value for dateTime","The actual value","","","","","","","","","",,,,,"",,,,"dateTime.value",0,1,"",""

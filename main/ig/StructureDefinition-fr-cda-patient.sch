@@ -39,7 +39,6 @@
     <sch:title>f:Patient/f:name</sch:title>
     <sch:rule context="f:Patient/f:name">
       <sch:assert test="count(f:nullFlavor) &lt;= 0">nullFlavor: maximum cardinality of 'nullFlavor' is 0</sch:assert>
-      <sch:assert test="count(f:item) &gt;= 1">item: minimum cardinality of 'item' is 1</sch:assert>
       <sch:assert test="count(f:validTime) &lt;= 1">validTime: maximum cardinality of 'validTime' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>

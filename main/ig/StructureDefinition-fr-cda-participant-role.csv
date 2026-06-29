@@ -29,6 +29,8 @@
 ","","","","","","","","","","","",,,,,"",,,,"ParticipantRole.sdtcIdentifiedBy",0,*,"",""
 "ParticipantRole.code","ParticipantRole.code","","","",0,1,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/CE {[]} {[]}
 ","Type du participant","","","","","","","","","","",,"example","","http://hl7.org/cda/stds/core/ValueSet/CDARoleCode","",,,,"ParticipantRole.code",0,1,"",""
+"ParticipantRole.sdtcSpecialty","ParticipantRole.sdtcSpecialty","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CE {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ParticipantRole.sdtcSpecialty",0,*,"",""
 "ParticipantRole.addr","ParticipantRole.addr","","","",0,*,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/AD {[CanonicalType[https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/cisis-addr]]} {[]}
 ","Adresses du participant","","","","","","","","","","",,,,,"",,,,"ParticipantRole.addr",0,*,"",""
 "ParticipantRole.telecom","ParticipantRole.telecom","","","",0,*,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/TEL {[CanonicalType[https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/cisis-telecom]]} {[]}

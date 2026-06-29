@@ -2,6 +2,9 @@
 
 ## Introduction
 
+ 
+There is no translation page available for the current page, so it has been rendered in the default language 
+
 Ce guide constitue les spécifications françaises des documents médicaux et médico-sociaux.
 
 Il s'appuie sur les standards internationaux CDA et FHIR. Selon le cas d'usage un document se conformera à l'un ou l'autre de ces deux standards.

@@ -2,6 +2,9 @@
 
 ## CDA
 
+ 
+There is no translation page available for the current page, so it has been rendered in the default language 
+
 Ce guide présente les spécifications de l'entête CDA applicables à l'ensemble des documents de santé persistants partagés ou échangés au format CDA dans le contexte français.
 
 ### Structure générale de l'entête CDA

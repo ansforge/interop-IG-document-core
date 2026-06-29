@@ -140,7 +140,8 @@ http://hl7.org/cda/stds/core/StructureDefinition/EIVL-TS {[]} {[]}http://hl7.org
 "Procedure.targetSiteCode.originalText.reference.use","Procedure.targetSiteCode.originalText.reference.use","","","Use Code",0,*,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple]]} {[]}
 ","","One or more codes advising a system or user which telecommunication address in a set of like addresses to select for a given telecommunication need.","","","","","","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-TelecommunicationAddressUse|2.0.0","",,,,"TEL.use",0,*,"",""
 "Procedure.targetSiteCode.originalText.thumbnail","Procedure.targetSiteCode.originalText.thumbnail","","","Thumbnail",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ED {[]} {[]}
-","","An abbreviated rendition of the full data. A thumbnail requires significantly fewer resources than the full data, while still maintaining some distinctive similarity with the full data. A thumbnail is typically used with by-reference encapsulated data. It allows a user to select data more efficiently before actually downloading through the reference.","","","","","","","","","",,,,,"",,,,"ED.thumbnail",0,1,"",""
+","","An abbreviated rendition of the full data. A thumbnail requires significantly fewer resources than the full data, while still maintaining some distinctive similarity with the full data. A thumbnail is typically used with by-reference encapsulated data. It allows a user to select data more efficiently before actually downloading through the reference.","","","","","","","","","",,,,,"",,,,"ED.thumbnail",0,1,"","ED-1:Thumbnails cannot contain their own thumbnails {thumbnail.empty()}
+"
 "Procedure.targetSiteCode.qualifier","Procedure.targetSiteCode.qualifier","","","Qualifier",0,*,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/CR {[]} {[]}
 ","Précision topographique","Précision topographique","","","","","","","","","",,,,,"",,,,"CD.qualifier",0,*,"",""
 "Procedure.targetSiteCode.qualifier.nullFlavor","Procedure.targetSiteCode.qualifier.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple]]} {[]}
@@ -248,6 +249,8 @@ http://hl7.org/cda/stds/core/StructureDefinition/EIVL-TS {[]} {[]}http://hl7.org
 ","","","","","","","","","","","",,,,,"",,,,"ParticipantRole.sdtcIdentifiedBy",0,*,"",""
 "Procedure.participant:EchantillonPreleve.participantRole.code","Procedure.participant.participantRole.code","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CE {[]} {[]}
 ","","","","","","","","","","","",,"example","","http://hl7.org/cda/stds/core/ValueSet/CDARoleCode","",,,,"ParticipantRole.code",0,1,"",""
+"Procedure.participant:EchantillonPreleve.participantRole.sdtcSpecialty","Procedure.participant.participantRole.sdtcSpecialty","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CE {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ParticipantRole.sdtcSpecialty",0,*,"",""
 "Procedure.participant:EchantillonPreleve.participantRole.addr","Procedure.participant.participantRole.addr","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/AD {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"ParticipantRole.addr",0,*,"",""
 "Procedure.participant:EchantillonPreleve.participantRole.telecom","Procedure.participant.participantRole.telecom","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/TEL {[]} {[]}
@@ -351,6 +354,8 @@ http://hl7.org/cda/stds/core/StructureDefinition/EIVL-TS {[]} {[]}http://hl7.org
 ","","","","","","","","","","","",,,,,"",,,,"ParticipantRole.sdtcIdentifiedBy",0,*,"",""
 "Procedure.participant:DispositifUtilise.participantRole.code","Procedure.participant.participantRole.code","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CE {[]} {[]}
 ","","","","","","","","","","","",,"example","","http://hl7.org/cda/stds/core/ValueSet/CDARoleCode","",,,,"ParticipantRole.code",0,1,"",""
+"Procedure.participant:DispositifUtilise.participantRole.sdtcSpecialty","Procedure.participant.participantRole.sdtcSpecialty","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CE {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ParticipantRole.sdtcSpecialty",0,*,"",""
 "Procedure.participant:DispositifUtilise.participantRole.addr","Procedure.participant.participantRole.addr","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/AD {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"ParticipantRole.addr",0,*,"",""
 "Procedure.participant:DispositifUtilise.participantRole.telecom","Procedure.participant.participantRole.telecom","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/TEL {[]} {[]}
@@ -450,6 +455,8 @@ http://hl7.org/cda/stds/core/StructureDefinition/EIVL-TS {[]} {[]}http://hl7.org
 ","","","","","","","","","","","",,,,,"",,,,"ParticipantRole.sdtcIdentifiedBy",0,*,"",""
 "Procedure.participant:ProduitUtilise.participantRole.code","Procedure.participant.participantRole.code","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CE {[]} {[]}
 ","","","","","","","","","","","",,"example","","http://hl7.org/cda/stds/core/ValueSet/CDARoleCode","",,,,"ParticipantRole.code",0,1,"",""
+"Procedure.participant:ProduitUtilise.participantRole.sdtcSpecialty","Procedure.participant.participantRole.sdtcSpecialty","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CE {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ParticipantRole.sdtcSpecialty",0,*,"",""
 "Procedure.participant:ProduitUtilise.participantRole.addr","Procedure.participant.participantRole.addr","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/AD {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"ParticipantRole.addr",0,*,"",""
 "Procedure.participant:ProduitUtilise.participantRole.telecom","Procedure.participant.participantRole.telecom","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/TEL {[]} {[]}

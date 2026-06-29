@@ -2,6 +2,9 @@
 
 ## Accueil
 
+ 
+There is no translation page available for the current page, so it has been rendered in the default language 
+
  **Guide de mise en œuvre des documents dématérialisés produits en France dans le domaine sanitaire et le domaine médico-social.**
  Implementation guides of dematerialized health and medico-social documents produced in France. 
 
@@ -43,7 +46,7 @@ Les principales ressources syntaxiques utilisées dans le CI-SIS sont :
 
 **Pour les ressources sémantiques :**
 
-This publication includes IP covered under the following statements.
+Certaines ressources sémantiques de ce guide sont protégées par des droits de propriété intellectuelle couverte par les déclarations ci-dessous. L’utilisation de ces ressources est soumise à l’acceptation et au respect des conditions précisées dans la licence d’utilisation de chacune d’entre elle.
 
 * [CC BY-ND 3.0 IGO](https://creativecommons.org/licenses/by-nd/3.0/igo/legalcode) 
 

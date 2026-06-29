@@ -78,7 +78,7 @@
 
 
 
-  <img src="../assets/images/fra.svg" alt="France flag" title="France" height="16"/>
+  FRANCE
 
 
             </span>
@@ -217,6 +217,21 @@
 
               
 
+
+<div style="float: var(--ig-right);padding: 8px 0px;" id="language">
+  <div style="background-image: url(assets/images/icon_arrow_down.png);background-position: 133px 3px;" id="select_flg" class="flaglist">
+    <div><img src="assets/images/lang-en.png" alt="flag en" class="flag"/>English</div>
+  </div>
+  <div style="float: var(--ig-right); margin: 2px 0px; padding: 1px 0;color: var(--btn-text-color);font-size:12px">Language:</div>
+ 	<div style="display: none;position: absolute;right: 0;z-index: 100;background-image: url(assets/images/icon_arrow_up.png);background-position: 133px 3px;" id="flaglist" class="flaglist">
+    <div><img src="assets/images/lang-en.png" alt="flag en" class="flag"/>English</div>
+
+    <div><a href="../fr/downloads.html"><img src="assets/images/lang-fr.png" alt="flag fr" class="flag"/>Français</a></div>
+
+  </div>
+</div>
+
+
           </div>    <!-- /.container -->
         </nav>    <!-- /.navbar -->
         <!-- /HEADER CONTENT -->
@@ -235,7 +250,7 @@
 
             <a href="#bottom">bottom</a>
 
-          | <a href="artifacts.html">next &gt;</a>
+          | <a href="translationinfo.html">next &gt;</a>
 
           </span>
 
@@ -264,6 +279,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
+<p style="border:var(--translation-box-border);background-color:var(--translation-background-color);padding: 5px 5px 5px 5px;">
+
+<p>There is no translation page available for the current page, so it has been rendered in the default language</p>
+
+
+</p>
+
 
 
 
@@ -281,33 +303,33 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </ul>
 
 </div>
-<p><a name="l483">​</a>L'implementation guide contient un package <a href="package.tgz">téléchargeable ici</a> permettant de valider les instances par rapport aux profils qu'il contient.</p>
+<p>L'implementation guide contient un package <a href="../package.tgz">téléchargeable ici</a> permettant de valider les instances par rapport aux profils qu'il contient.</p>
 
-<p><a name="l489">​</a>Pour cela, il suffit de télécharger le <a href="package.tgz">package.tgz</a> et l'importer dans un serveur, par exemple sur hapi en suivant ce <a href="https://github.com/nmdp-bioinformatics/igloader">script python</a> open source.</p>
+<p>Pour cela, il suffit de télécharger le <a href="../package.tgz">package.tgz</a> et l'importer dans un serveur, par exemple sur hapi en suivant ce <a href="https://github.com/nmdp-bioinformatics/igloader">script python</a> open source.</p>
 
 <p>Vous pourrez ensuite utiliser l'opération <a href="https://www.hl7.org/fhir/resource-operation-validate.html">$validate</a> pour valider les instances de ressource contre un profil issu de cette spécification.</p>
 
 <p>Ensemble des ressources téléchargeables :</p>
 
 <ul>
-  <li><a href="full-ig.zip">L'ensemble de la specification (zip)</a></li>
-  <li><a name="l513">​</a><a href="package.tgz">Package (tgz)</a></li>
+  <li><a href="../full-ig.zip">L'ensemble de la specification (zip)</a></li>
+  <li><a href="../package.tgz">Package (tgz)</a></li>
 </ul>
 
 <h3 id="définitions">Définitions</h3>
 
 <ul>
-  <li><a name="l523">​</a><a href="definitions.json.zip">Définitions JSON (zip)</a></li>
-  <li><a name="l527">​</a><a href="definitions.xml.zip">Définitions XML (zip)</a></li>
-  <li><a name="l531">​</a><a href="definitions.ttl.zip">Définitions Turtle (zip)</a></li>
+  <li><a href="../definitions.json.zip">Définitions JSON (zip)</a></li>
+  <li><a href="../definitions.xml.zip">Définitions XML (zip)</a></li>
+  <li><a name="l560">​</a><a href="../definitions.ttl.zip">Définitions Turtle (zip)</a></li>
 </ul>
 
 <h3 id="exemples">Exemples</h3>
 
 <ul>
-  <li><a name="l541">​</a><a href="examples.xml.zip">Exemples XML (zip)</a></li>
-  <li><a name="l545">​</a><a href="examples.json.zip">Exemples JSON (zip)</a></li>
-  <li><a name="l549">​</a><a href="examples.ttl.zip">Exemples Turtle (zip)</a></li>
+  <li><a href="../examples.xml.zip">Exemples XML (zip)</a></li>
+  <li><a href="../examples.json.zip">Exemples JSON (zip)</a></li>
+  <li><a name="l578">​</a><a href="../examples.ttl.zip">Exemples Turtle (zip)</a></li>
 </ul>
 
 
@@ -343,7 +365,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
               </td>
               <td style="text-align:var(--ig-right);">&nbsp;
 
-                <a href="artifacts.html">next &gt;</a>
+                <a href="translationinfo.html">next &gt;</a>
 
               </td>
             </tr>
@@ -359,7 +381,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
           IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  
           Package ans.document.fr.core#0.1.0-snapshot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-06-29 12:53:00 +0000">
+  <span title="2026-06-29 14:20:00 +0000">
     2026-06-29
   </span>
 

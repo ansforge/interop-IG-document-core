@@ -2,6 +2,9 @@
 
 ## Sécurité
 
+ 
+There is no translation page available for the current page, so it has been rendered in the default language 
+
 ### Sécurité
 
 Les données véhiculées à travers ces flux sont des données à caractère personnel contenant notamment des données médicales sensibles qu'il convient de protéger.

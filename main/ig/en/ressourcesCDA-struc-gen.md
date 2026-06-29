@@ -2,6 +2,9 @@
 
 ## CDA
 
+ 
+There is no translation page available for the current page, so it has been rendered in the default language 
+
 ### Standard CDA® R2.0
 
 CDA® R2.0 est un standard de dématérialisation des documents médicaux électroniques exploitant la syntaxe XML.

@@ -51,6 +51,7 @@
       <sch:assert test="count(f:name) &gt;= 1">name: minimum cardinality of 'name' is 1</sch:assert>
       <sch:assert test="count(f:name) &lt;= 1">name: maximum cardinality of 'name' is 1</sch:assert>
       <sch:assert test="count(f:lotNumberText) &lt;= 1">lotNumberText: maximum cardinality of 'lotNumberText' is 1</sch:assert>
+      <sch:assert test="count(f:sdtcExpirationTime) &lt;= 1">sdtcExpirationTime: maximum cardinality of 'sdtcExpirationTime' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

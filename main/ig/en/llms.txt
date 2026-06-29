@@ -5,6 +5,7 @@
 * [Accueil](index.md)
 * [Téléchargements et usages](downloads.md)
 * [FHIR](ressourcesFHIR-entete.md)
+* [Informations sur la traduction](translationinfo.md)
 * [Mapping Métier/CDA/FHIR](mappingCDA-FHIR-entete.md)
 * [Mapping CDA / FHIR](mappingCDA-FHIR-struc-gen.md)
 * [CDA](ressourcesCDA-struc-gen.md)

@@ -92,7 +92,8 @@
 "Organizer.code.originalText.reference","Organizer.code.originalText.reference","","","Reference",1,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/TEL {[]} {[]}
 ","Référence à l'expression verbale dans la partie visualisable du compte-rendu","Référence à l'expression verbale dans la partie visualisable du compte-rendu","","","","","","","","","",,,,,"",,,,"ED.reference",0,1,"",""
 "Organizer.code.originalText.thumbnail","Organizer.code.originalText.thumbnail","","","Thumbnail",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ED {[]} {[]}
-","","An abbreviated rendition of the full data. A thumbnail requires significantly fewer resources than the full data, while still maintaining some distinctive similarity with the full data. A thumbnail is typically used with by-reference encapsulated data. It allows a user to select data more efficiently before actually downloading through the reference.","","","","","","","","","",,,,,"",,,,"ED.thumbnail",0,1,"",""
+","","An abbreviated rendition of the full data. A thumbnail requires significantly fewer resources than the full data, while still maintaining some distinctive similarity with the full data. A thumbnail is typically used with by-reference encapsulated data. It allows a user to select data more efficiently before actually downloading through the reference.","","","","","","","","","",,,,,"",,,,"ED.thumbnail",0,1,"","ED-1:Thumbnails cannot contain their own thumbnails {thumbnail.empty()}
+"
 "Organizer.code.qualifier","Organizer.code.qualifier","","","Qualifier",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CR {[]} {[]}
 ","","Specifies additional codes that increase the specificity of the the primary code.","","","","","","","","","",,,,,"",,,,"CD.qualifier",0,*,"",""
 "Organizer.code.translation","Organizer.code.translation","","","Translation",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CD {[]} {[]}

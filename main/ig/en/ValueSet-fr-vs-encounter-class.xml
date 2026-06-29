@@ -4,7 +4,7 @@
   <id value="fr-vs-encounter-class"/>
   <language value="en"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet fr-vs-encounter-class</b></p><a name="fr-vs-encounter-class"> </a><a name="hcfr-vs-encounter-class"> </a><ul><li>Include all codes defined in <code>http://terminology.hl7.org/ValueSet/v3-ActEncounterCode</code><span title="Version is explicitly stated to be 3.0.0"> version &#x1F4CD;3.0.0</span></li></ul></div>
+    <status value="generated"/><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ValueSet fr-vs-encounter-class</b></p><a name="en-fr-vs-encounter-class"> </a><a name="en-hcfr-vs-encounter-class"> </a><ul><li>Include all codes defined in <code>http://terminology.hl7.org/ValueSet/v3-ActEncounterCode</code><span title="Version is explicitly stated to be 3.0.0"> version &#x1F4CD;3.0.0</span></li></ul></div>
   </text>
   <url value="https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-encounter-class"/>
   <version value="0.1.0-snapshot"/>
@@ -12,7 +12,7 @@
   <title value="FR ValueSet Encounter Class"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2026-06-29T12:53:00+00:00"/>
+  <date value="2026-06-29T14:20:03+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
