@@ -19,9 +19,9 @@
 ","Informateur","Informateur","","","","","","","","","",,,,,"",,,,"fr-lm-section.informant",0,*,"",""
 "fr-lm-exposure-information.subSection","fr-lm-exposure-information.subSection","","","",0,0,"","","","Base {[]} {[]}
 ","Sous-sections","Sous-sections","","","","","","","","","",,,,,"",,,,"fr-lm-section.subSection",0,*,"",""
-"fr-lm-exposure-information.entry","fr-lm-exposure-information.entry","","","",0,*,"","","","Base {[]} {[]}
-","Entrées","Entrées","","","","","","","","","",,,,,"",,,,"fr-lm-section.entry",0,*,"",""
 "fr-lm-exposure-information.subSection.quantityExposure","fr-lm-exposure-information.subSection.quantityExposure","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-quantity-exposure {[]} {[]}
 ","Entrée Quantité","Entrée Quantité","","","","","","","","","",,,,,"",,,,"fr-lm-exposure-information.subSection.quantityExposure",0,*,"",""
 "fr-lm-exposure-information.subSection.radiopharmaceuticalAdministration","fr-lm-exposure-information.subSection.radiopharmaceuticalAdministration","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication-administration {[]} {[]}
 ","Entrée administration des produits radiopharmaceutiques","Entrée administration des produits radiopharmaceutiques","","","","","","","","","",,,,,"",,,,"fr-lm-exposure-information.subSection.radiopharmaceuticalAdministration",0,1,"",""
+"fr-lm-exposure-information.entry","fr-lm-exposure-information.entry","","","",0,*,"","","","Base {[]} {[]}
+","Entrées","Entrées","","","","","","","","","",,,,,"",,,,"fr-lm-section.entry",0,*,"",""
