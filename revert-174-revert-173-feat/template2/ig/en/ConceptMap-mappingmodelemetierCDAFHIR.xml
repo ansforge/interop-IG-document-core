@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="mappingmodelemetierCDAFHIR"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ConceptMap mappingmodelemetierCDAFHIR</b></p><a name="en-mappingmodelemetierCDAFHIR"> </a><a name="en-hcmappingmodelemetierCDAFHIR"> </a><p>This mapping does not specify any particular context of use.</p><br/><p><b>Group 1 </b>Mapping from <code>https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entete-document</code> to <a href="StructureDefinition-fr-cda-clinical-document.html">CDA - clinicalDocument</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>FRLMEnteteDocument</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>ClinicalDocument (Base for all types and resources)</td></tr><tr><td>FRLMEnteteDocument.identifiantUniqueDocument</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>ClinicalDocument.id (Identifiant unique du document.)</td></tr><tr><td>FRLMEnteteDocument.modeleDocument</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>ClinicalDocument.templateId (Déclarations de conformité.)</td></tr><tr><td>FRLMEnteteDocument.typeDocument</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>ClinicalDocument.code (Type de document.)</td></tr><tr><td>FRLMEnteteDocument.titreDocument</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>ClinicalDocument.title (Titre du document.)</td></tr><tr><td>FRLMEnteteDocument.dateDeCreationDocument</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>ClinicalDocument.effectiveTime (Date et heure de création du document.)</td></tr><tr><td>FRLMEnteteDocument.niveauConfidentialiteDocument</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>ClinicalDocument.confidentialityCode (Niveau de confidentialité du document.)</td></tr><tr><td>FRLMEnteteDocument.languePrincipaleDocument</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>ClinicalDocument.languageCode (Langue principale du document.)</td></tr><tr><td>FRLMEnteteDocument.identifiantLotDeVersionsDocument</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>ClinicalDocument.setId (Identifiant du lot de versions du même document.)</td></tr><tr><td>FRLMEnteteDocument.versionDocument</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>ClinicalDocument.versionNumber (Numéro de version du document.)</td></tr><tr><td>FRLMEnteteDocument.StatutDocument</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>ClinicalDocument.documentationOf.serviceEvent.lab:statusCode</td></tr><tr><td>FRLMEnteteDocument.patient</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>ClinicalDocument.recordTarget (Patient/Usager concerné par le document.)</td></tr><tr><td>FRLMEnteteDocument.auteur</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>ClinicalDocument.author (Professionnel ou patient/usager ou système, auteur du document incluant la structure de rattachement de l'auteur.)</td></tr><tr><td>FRLMEnteteDocument.operateurSaisie</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>ClinicalDocument.dataEnterer (Opérateur de saisie.)</td></tr><tr><td>FRLMEnteteDocument.informateur</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>ClinicalDocument.informant (Informateur (informant), ayant fourni des informations utiles aux actes en rapport avec la production du document.)</td></tr><tr><td>FRLMEnteteDocument.structureConservation</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>ClinicalDocument.custodian (Structure conservant le document et garantissant son cycle de vie.)</td></tr><tr><td>FRLMEnteteDocument.destinataire</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>ClinicalDocument.informationRecipient (Destinataire prévu du document.)</td></tr><tr><td>FRLMEnteteDocument.responsable</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>ClinicalDocument.legalAuthenticator (Professionnel ou patient/usager ou système responsable du document.)</td></tr><tr><td>FRLMEnteteDocument.validateur</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>ClinicalDocument.authenticator (Professionnel attestant la validité du document)</td></tr><tr><td>FRLMEnteteDocument.participant</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>ClinicalDocument.participant (Participant, différent de l'auteur, du responsable, de l'opérateur de saisie, de l'informateur ou du destinataire.)</td></tr><tr><td>FRLMEnteteDocument.prescription</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>ClinicalDocument.inFulfillmentOf (Prescription)</td></tr><tr><td>FRLMEnteteDocument.evenement</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>ClinicalDocument.documentationOf (Evènement documenté et notamment le cadre d'exercice.)</td></tr><tr><td>FRLMEnteteDocument.documentDeReference</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>ClinicalDocument.relatedDocument (Document de référence (à remplacer, transformé, …).)</td></tr><tr><td>FRLMEnteteDocument.consentementAssocie</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>ClinicalDocument.authorization (Consentement associé au document.)</td></tr><tr><td>FRLMEnteteDocument.priseEncharge</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>ClinicalDocument.componentOf (Prise en charge du patient/usager et notamment la date et le secteur d'activité.)</td></tr></table><hr/><p><b>Group 2 </b>Mapping from <a href="StructureDefinition-fr-cda-clinical-document.html">CDA - clinicalDocument</a> to <a href="StructureDefinition-fr-bundle-document.html">FR Bundle Document</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Card.</b></td><td><b>Type</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Card.</b></td><td><b>Type</b></td></tr><tr><td><a href="StructureDefinition-fr-cda-clinical-document.html#s-ClinicalDocument.id">ClinicalDocument.id</a></td><td>1..1</td><td>todo</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="StructureDefinition-fr-bundle-document.html#s-Bundle.identifier">Bundle.identifier</a></td><td>1..1</td><td>todo</td></tr></table><hr/><p><b>Group 3 </b>Mapping from <a href="StructureDefinition-fr-cda-clinical-document.html">CDA - clinicalDocument</a> to <a href="StructureDefinition-fr-composition-document.html">FR Composition Document</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Card.</b></td><td><b>Type</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Card.</b></td><td><b>Type</b></td><td><b>Comment</b></td></tr><tr><td><a href="StructureDefinition-fr-cda-clinical-document.html#s-ClinicalDocument.templateId">ClinicalDocument.templateId</a></td><td>3..*</td><td>todo</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="StructureDefinition-fr-composition-document.html#s-Composition.meta.profile">Composition.meta.profile</a></td><td>0..*</td><td>todo</td><td/></tr><tr><td><a href="StructureDefinition-fr-cda-clinical-document.html#s-ClinicalDocument.code">ClinicalDocument.code</a></td><td>1..1</td><td>todo</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="StructureDefinition-fr-composition-document.html#s-Composition.type">Composition.type</a></td><td>1..1</td><td>todo</td><td/></tr><tr><td><a href="StructureDefinition-fr-cda-clinical-document.html#s-ClinicalDocument.title">ClinicalDocument.title</a></td><td>1..1</td><td>todo</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="StructureDefinition-fr-composition-document.html#s-Composition.title">Composition.title</a></td><td>1..1</td><td>todo</td><td/></tr><tr><td><a href="StructureDefinition-fr-cda-clinical-document.html#s-ClinicalDocument.effectiveTime">ClinicalDocument.effectiveTime</a></td><td>1..1</td><td>todo</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="StructureDefinition-fr-composition-document.html#s-Composition.date">Composition.date</a></td><td>1..1</td><td>todo</td><td/></tr><tr><td><a href="StructureDefinition-fr-cda-clinical-document.html#s-ClinicalDocument.confidentialityCode">ClinicalDocument.confidentialityCode</a></td><td>1..1</td><td>todo</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="StructureDefinition-fr-composition-document.html#s-Composition.confidentiality">Composition.confidentiality</a></td><td>1..1</td><td>todo</td><td/></tr><tr><td><a href="StructureDefinition-fr-cda-clinical-document.html#s-ClinicalDocument.languageCode">ClinicalDocument.languageCode</a></td><td>1..1</td><td>todo</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="StructureDefinition-fr-composition-document.html#s-Composition.language">Composition.language</a></td><td>1..1</td><td>todo</td><td/></tr><tr><td><a href="StructureDefinition-fr-cda-clinical-document.html#s-ClinicalDocument.setId">ClinicalDocument.setId</a></td><td>1..1</td><td>todo</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="StructureDefinition-fr-composition-document.html#s-Composition.identifier">Composition.identifier</a></td><td>1..1</td><td>todo</td><td/></tr><tr><td><a href="StructureDefinition-fr-cda-clinical-document.html#s-ClinicalDocument.versionNumber">ClinicalDocument.versionNumber</a></td><td>1..1</td><td>todo</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="StructureDefinition-fr-composition-document.html#s-Composition.extension:R5-Composition-version">Composition.extension:R5-Composition-version</a></td><td>1..1</td><td>todo</td><td> http://hl7.org/fhir/5.0/StructureDefinition/extension-Composition.version</td></tr><tr><td colspan="3">ClinicalDocument.documentationOf.serviceEvent.lab:statusCode</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="StructureDefinition-fr-composition-document.html#s-Composition.status">Composition.status</a></td><td>1..1</td><td>todo</td><td/></tr><tr><td><a href="StructureDefinition-fr-cda-clinical-document.html#s-ClinicalDocument.recordTarget">ClinicalDocument.recordTarget</a></td><td>1..1</td><td>todo</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="StructureDefinition-fr-composition-document.html#s-Composition.subject">Composition.subject</a></td><td>1..1</td><td>todo</td><td/></tr><tr><td><a href="StructureDefinition-fr-cda-clinical-document.html#s-ClinicalDocument.author">ClinicalDocument.author</a></td><td>1..*</td><td>todo</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="StructureDefinition-fr-composition-document.html#s-Composition.author">Composition.author</a></td><td>1..*</td><td>todo</td><td>Composition.author.resolve().ofType(PractitionerRole)</td></tr><tr><td><a href="StructureDefinition-fr-cda-clinical-document.html#s-ClinicalDocument.dataEnterer">ClinicalDocument.dataEnterer</a></td><td>0..1</td><td>todo</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="StructureDefinition-fr-composition-document.html#s-Composition.extension:data-enterer">Composition.extension:data-enterer</a></td><td>0..1</td><td>todo</td><td>http://hl7.org/fhir/uv/fhir-clinical-document/StructureDefinition/data-enterer-extension</td></tr><tr><td><a href="StructureDefinition-fr-cda-clinical-document.html#s-ClinicalDocument.informant">ClinicalDocument.informant</a></td><td>0..*</td><td>todo</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="StructureDefinition-fr-composition-document.html#s-Composition.extension:informant">Composition.extension:informant</a></td><td>0..*</td><td>todo</td><td>http://hl7.org/fhir/uv/fhir-clinical-document/StructureDefinition/informant-extension</td></tr><tr><td><a href="StructureDefinition-fr-cda-clinical-document.html#s-ClinicalDocument.custodian">ClinicalDocument.custodian</a></td><td>1..1</td><td>todo</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="StructureDefinition-fr-composition-document.html#s-Composition.custodian">Composition.custodian</a></td><td>1..1</td><td>todo</td><td>Composition.custodian.resolve().ofType(Organization)</td></tr><tr><td><a href="StructureDefinition-fr-cda-clinical-document.html#s-ClinicalDocument.informationRecipient">ClinicalDocument.informationRecipient</a></td><td>0..*</td><td>todo</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td colspan="3">Composition.extension:informationRecipient</td><td>http://hl7.org/fhir/uv/fhir-clinical-document/StructureDefinition/information-recipient-extension</td></tr><tr><td><a href="StructureDefinition-fr-cda-clinical-document.html#s-ClinicalDocument.legalAuthenticator">ClinicalDocument.legalAuthenticator</a></td><td>1..1</td><td>todo</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="StructureDefinition-fr-composition-document.html#s-Composition.attester">Composition.attester</a></td><td>1..*</td><td>todo</td><td>attester.mode = 'legal'</td></tr><tr><td><a href="StructureDefinition-fr-cda-clinical-document.html#s-ClinicalDocument.authenticator">ClinicalDocument.authenticator</a></td><td>0..*</td><td>todo</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="StructureDefinition-fr-composition-document.html#s-Composition.attester">Composition.attester</a></td><td>1..*</td><td>todo</td><td>attester.mode = 'professional'</td></tr><tr><td><a href="StructureDefinition-fr-cda-clinical-document.html#s-ClinicalDocument.participant">ClinicalDocument.participant</a></td><td>0..*</td><td>todo</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="StructureDefinition-fr-composition-document.html#s-Composition.extension:participant">Composition.extension:participant</a></td><td>0..*</td><td>todo</td><td>http://hl7.org/fhir/uv/fhir-clinical-document/StructureDefinition/ParticipantExtension</td></tr><tr><td><a href="StructureDefinition-fr-cda-clinical-document.html#s-ClinicalDocument.inFulfillmentOf">ClinicalDocument.inFulfillmentOf</a></td><td>0..*</td><td>todo</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td colspan="3">Composition.extension:order</td><td>http://hl7.org/fhir/uv/fhir-clinical-document/StructureDefinition/OrderExtension</td></tr><tr><td><a href="StructureDefinition-fr-cda-clinical-document.html#s-ClinicalDocument.documentationOf">ClinicalDocument.documentationOf</a></td><td>1..*</td><td>todo</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="StructureDefinition-fr-composition-document.html#s-Composition.event">Composition.event</a></td><td>1..*</td><td>todo</td><td/></tr><tr><td><a href="StructureDefinition-fr-cda-clinical-document.html#s-ClinicalDocument.relatedDocument">ClinicalDocument.relatedDocument</a></td><td>0..1</td><td>todo</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="StructureDefinition-fr-composition-document.html#s-Composition.relatesTo">Composition.relatesTo</a></td><td>1..*</td><td>todo</td><td/></tr><tr><td><a href="StructureDefinition-fr-cda-clinical-document.html#s-ClinicalDocument.authorization">ClinicalDocument.authorization</a></td><td>0..*</td><td>todo</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="StructureDefinition-fr-composition-document.html#s-Composition.extension:consent">Composition.extension:consent</a></td><td>0..*</td><td>todo</td><td>http://hl7.org/fhir/uv/fhir-clinical-document/StructureDefinition/consent-extension</td></tr><tr><td><a href="StructureDefinition-fr-cda-clinical-document.html#s-ClinicalDocument.componentOf">ClinicalDocument.componentOf</a></td><td>1..1</td><td>todo</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="StructureDefinition-fr-composition-document.html#s-Composition.encounter">Composition.encounter</a></td><td>1..1</td><td>todo</td><td>https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-encounter-document</td></tr></table></div>
+  </text>
+  <url value="https://interop.esante.gouv.fr/ig/document/core/ConceptMap/mappingmodelemetierCDAFHIR"/>
+  <version value="0.1.0-snapshot"/>
+  <name value="Mapping Métier/CDA/FHIR  : Entête d'un document"/>
+  <title value="Mapping Métier/CDA/FHIR  : Entête d'un document"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-06-29T13:32:23+00:00"/>
+  <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+  <contact>
+    <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <description value="Ce ConceptMap présente trois groupes de mapping :&#xA; - Mapping 1 : entre le modèle métier \&quot;EnteteDocument\&quot; et l'élément CDA \&quot;clinicalDocument\&quot;&#xA; - Mapping 2 : entre l'élément CDA \&quot;clinicalDocument\&quot; et le profil FHIR \&quot;FrBundleDocument\&quot;&#xA; - Mapping 3 : entre l'élément CDA \&quot;clinicalDocument\&quot; et le profil FHIR \&quot;FrCompositionDocument\&quot; "/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="FRANCE"/>
+    </coding>
+  </jurisdiction>
+  <group>
+    <source value="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entete-document"/>
+    <target value="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-clinical-document"/>
+    <element>
+      <code value="FRLMEnteteDocument"/>
+      <target>
+        <code value="ClinicalDocument"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="FRLMEnteteDocument.identifiantUniqueDocument"/>
+      <target>
+        <code value="ClinicalDocument.id"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="FRLMEnteteDocument.modeleDocument"/>
+      <target>
+        <code value="ClinicalDocument.templateId"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="FRLMEnteteDocument.typeDocument"/>
+      <target>
+        <code value="ClinicalDocument.code"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="FRLMEnteteDocument.titreDocument"/>
+      <target>
+        <code value="ClinicalDocument.title"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="FRLMEnteteDocument.dateDeCreationDocument"/>
+      <target>
+        <code value="ClinicalDocument.effectiveTime"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="FRLMEnteteDocument.niveauConfidentialiteDocument"/>
+      <target>
+        <code value="ClinicalDocument.confidentialityCode"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="FRLMEnteteDocument.languePrincipaleDocument"/>
+      <target>
+        <code value="ClinicalDocument.languageCode"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="FRLMEnteteDocument.identifiantLotDeVersionsDocument"/>
+      <target>
+        <code value="ClinicalDocument.setId"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="FRLMEnteteDocument.versionDocument"/>
+      <target>
+        <code value="ClinicalDocument.versionNumber"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="FRLMEnteteDocument.StatutDocument"/>
+      <target>
+        <code value="ClinicalDocument.documentationOf.serviceEvent.lab:statusCode"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="FRLMEnteteDocument.patient"/>
+      <target>
+        <code value="ClinicalDocument.recordTarget"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="FRLMEnteteDocument.auteur"/>
+      <target>
+        <code value="ClinicalDocument.author"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="FRLMEnteteDocument.operateurSaisie"/>
+      <target>
+        <code value="ClinicalDocument.dataEnterer"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="FRLMEnteteDocument.informateur"/>
+      <target>
+        <code value="ClinicalDocument.informant"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="FRLMEnteteDocument.structureConservation"/>
+      <target>
+        <code value="ClinicalDocument.custodian"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="FRLMEnteteDocument.destinataire"/>
+      <target>
+        <code value="ClinicalDocument.informationRecipient"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="FRLMEnteteDocument.responsable"/>
+      <target>
+        <code value="ClinicalDocument.legalAuthenticator"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="FRLMEnteteDocument.validateur"/>
+      <target>
+        <code value="ClinicalDocument.authenticator"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="FRLMEnteteDocument.participant"/>
+      <target>
+        <code value="ClinicalDocument.participant"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="FRLMEnteteDocument.prescription"/>
+      <target>
+        <code value="ClinicalDocument.inFulfillmentOf"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="FRLMEnteteDocument.evenement"/>
+      <target>
+        <code value="ClinicalDocument.documentationOf"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="FRLMEnteteDocument.documentDeReference"/>
+      <target>
+        <code value="ClinicalDocument.relatedDocument"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="FRLMEnteteDocument.consentementAssocie"/>
+      <target>
+        <code value="ClinicalDocument.authorization"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="FRLMEnteteDocument.priseEncharge"/>
+      <target>
+        <code value="ClinicalDocument.componentOf"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+  <group>
+    <source value="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-clinical-document"/>
+    <target value="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-bundle-document"/>
+    <element>
+      <code value="ClinicalDocument.id"/>
+      <target>
+        <code value="Bundle.identifier"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+  <group>
+    <source value="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-clinical-document"/>
+    <target value="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-composition-document"/>
+    <element>
+      <code value="ClinicalDocument.templateId"/>
+      <target>
+        <code value="Composition.meta.profile"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="ClinicalDocument.code"/>
+      <target>
+        <code value="Composition.type"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="ClinicalDocument.title"/>
+      <target>
+        <code value="Composition.title"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="ClinicalDocument.effectiveTime"/>
+      <target>
+        <code value="Composition.date"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="ClinicalDocument.confidentialityCode"/>
+      <target>
+        <code value="Composition.confidentiality"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="ClinicalDocument.languageCode"/>
+      <target>
+        <code value="Composition.language"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="ClinicalDocument.setId"/>
+      <target>
+        <code value="Composition.identifier"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="ClinicalDocument.versionNumber"/>
+      <target>
+        <code value="Composition.extension:R5-Composition-version"/>
+        <equivalence value="equivalent"/>
+        <comment value=" http://hl7.org/fhir/5.0/StructureDefinition/extension-Composition.version"/>
+      </target>
+    </element>
+    <element>
+      <code value="ClinicalDocument.documentationOf.serviceEvent.lab:statusCode"/>
+      <target>
+        <code value="Composition.status"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="ClinicalDocument.recordTarget"/>
+      <target>
+        <code value="Composition.subject"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="ClinicalDocument.author"/>
+      <target>
+        <code value="Composition.author"/>
+        <equivalence value="equivalent"/>
+        <comment value="Composition.author.resolve().ofType(PractitionerRole)"/>
+      </target>
+    </element>
+    <element>
+      <code value="ClinicalDocument.dataEnterer"/>
+      <target>
+        <code value="Composition.extension:data-enterer"/>
+        <equivalence value="equivalent"/>
+        <comment value="http://hl7.org/fhir/uv/fhir-clinical-document/StructureDefinition/data-enterer-extension"/>
+      </target>
+    </element>
+    <element>
+      <code value="ClinicalDocument.informant"/>
+      <target>
+        <code value="Composition.extension:informant"/>
+        <equivalence value="equivalent"/>
+        <comment value="http://hl7.org/fhir/uv/fhir-clinical-document/StructureDefinition/informant-extension"/>
+      </target>
+    </element>
+    <element>
+      <code value="ClinicalDocument.custodian"/>
+      <target>
+        <code value="Composition.custodian"/>
+        <equivalence value="equivalent"/>
+        <comment value="Composition.custodian.resolve().ofType(Organization)"/>
+      </target>
+    </element>
+    <element>
+      <code value="ClinicalDocument.informationRecipient"/>
+      <target>
+        <code value="Composition.extension:informationRecipient"/>
+        <equivalence value="equivalent"/>
+        <comment value="http://hl7.org/fhir/uv/fhir-clinical-document/StructureDefinition/information-recipient-extension"/>
+      </target>
+    </element>
+    <element>
+      <code value="ClinicalDocument.legalAuthenticator"/>
+      <target>
+        <code value="Composition.attester"/>
+        <equivalence value="equivalent"/>
+        <comment value="attester.mode = 'legal'"/>
+      </target>
+    </element>
+    <element>
+      <code value="ClinicalDocument.authenticator"/>
+      <target>
+        <code value="Composition.attester"/>
+        <equivalence value="equivalent"/>
+        <comment value="attester.mode = 'professional'"/>
+      </target>
+    </element>
+    <element>
+      <code value="ClinicalDocument.participant"/>
+      <target>
+        <code value="Composition.extension:participant"/>
+        <equivalence value="equivalent"/>
+        <comment value="http://hl7.org/fhir/uv/fhir-clinical-document/StructureDefinition/ParticipantExtension"/>
+      </target>
+    </element>
+    <element>
+      <code value="ClinicalDocument.inFulfillmentOf"/>
+      <target>
+        <code value="Composition.extension:order"/>
+        <equivalence value="equivalent"/>
+        <comment value="http://hl7.org/fhir/uv/fhir-clinical-document/StructureDefinition/OrderExtension"/>
+      </target>
+    </element>
+    <element>
+      <code value="ClinicalDocument.documentationOf"/>
+      <target>
+        <code value="Composition.event"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="ClinicalDocument.relatedDocument"/>
+      <target>
+        <code value="Composition.relatesTo"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="ClinicalDocument.authorization"/>
+      <target>
+        <code value="Composition.extension:consent"/>
+        <equivalence value="equivalent"/>
+        <comment value="http://hl7.org/fhir/uv/fhir-clinical-document/StructureDefinition/consent-extension"/>
+      </target>
+    </element>
+    <element>
+      <code value="ClinicalDocument.componentOf"/>
+      <target>
+        <code value="Composition.encounter"/>
+        <equivalence value="equivalent"/>
+        <comment value="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-encounter-document"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>
