@@ -5,7 +5,6 @@ Title: "Observation - FR Observation Vital Signs Panel Document"
 Description: "FRObservationVitalSignsPanelDocument permet de regrouper des informations relatives aux mesures cliniques du patient."
 
 //* ^extension[$imposeProfile].valueCanonical = Canonical()
-* identifier 1..1  MS
 * identifier ^short = "Identifiant"
 * code MS 
 * status MS

@@ -22,6 +22,8 @@ Alias: $terminologie-cisis = https://smt.esante.gouv.fr/fhir/CodeSystem/terminol
 Alias: $DCM = http://dicom.nema.org/resources/ontology/DCM
 Alias: $consentscope = http://terminology.hl7.org/CodeSystem/consentscope
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $v2-0443 = http://terminology.hl7.org/CodeSystem/v2-0443
+Alias: $v3-ParticipationType = http://terminology.hl7.org/CodeSystem/v3-ParticipationType
 
 // JDVs
 Alias: $jdv-hl7-v3-ActSubstanceAdministrationImmunizationCode-cisis = https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdministrationImmunizationCode-cisis

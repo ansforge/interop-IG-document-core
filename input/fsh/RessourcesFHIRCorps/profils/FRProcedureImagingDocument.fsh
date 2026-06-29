@@ -8,8 +8,6 @@ acte d'imagerie, localisation anatomique / latéralité / topographie, d'autres 
 // mettre le bon canonical à partir de HL7 Europe Base and Core FHIR IG
 //* ^extension[$imposeProfile].valueCanonical = Canonical()
 
-* identifier 1..1
-
 // référence à la demande d'examen d'imagerie contenant l'Accession Number comme identifiant
 * basedOn  0..* MS
 * basedOn ^slicing.discriminator.type = #pattern  

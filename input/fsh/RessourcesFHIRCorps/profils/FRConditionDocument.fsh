@@ -7,7 +7,6 @@ Description: "FRConditionDocument est un profil utilisé pour décrire un probl�
 // mettre le bon canonical à partir de HL7 Europe Base and Core FHIR IG
 //* ^extension[$imposeProfile].valueCanonical = Canonical()
 
-* identifier 1..1 MS
 * identifier ^short = "Identifiant"
 
 * clinicalStatus 1..1 MS

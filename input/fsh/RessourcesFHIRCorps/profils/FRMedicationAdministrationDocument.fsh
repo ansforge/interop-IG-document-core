@@ -8,8 +8,7 @@ Description: "
  - Si le traitement est en attente d’administration c’est-à dire qu’il a été prescrit."
 
 //* ^extension[$imposeProfile].valueCanonical = Canonical()
-* identifier 1..* MS
-  * ^short = "Identifiant. L'entrée Traitement doit être identifiée de manière unique."
+* identifier ^short = "Identifiant de l'administration du médicament"
 * category MS
   * ^short = "Acte ou situation"
 * status 1..1 MS

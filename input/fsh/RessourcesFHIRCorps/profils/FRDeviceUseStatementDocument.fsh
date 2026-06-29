@@ -8,9 +8,7 @@ Description: "FRDeviceUseStatementDocument représente les informations sur un d
 //* ^extension[$imposeProfile].valueCanonical = Canonical()
 
 // Identifiant
-* identifier 1..* MS
-* identifier ^short = "Identifiant de la fourniture du DM
-Sous la forme UID (UUID ou OID)."
+* identifier ^short = "Identifiant de la fourniture du DM."
 
 // Date/heure de l'utilisation
 * timing[x] only Timing or Period

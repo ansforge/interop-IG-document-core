@@ -5,7 +5,6 @@ Title: "DiagnosticReport - FR Diagnostic Report Document"
 Description: "FRDiagnosticReportDocument est un profil permettant de regrouper les types des résultats classés par type d’examens (BIO, IMG, etc…)."
 
 //* ^extension[$imposeProfile].valueCanonical = Canonical()
-* identifier MS
 * identifier ^short = "Identifiant"
 * category 1.. MS
   * ^short = "Type de résultat"

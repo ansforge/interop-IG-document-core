@@ -7,7 +7,6 @@ Description: "FRObservationTransfusionAccidentsDocument est un profil utilisé p
 // mettre le bon canonical à partir de HL7 Europe Base and Core FHIR IG
 //* ^extension[$imposeProfile].valueCanonical = Canonical()
 
-* identifier 1..1 MS
 * code MS
 * code = https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis#MED-146 "Accidents transfusionnels"
 * value[x] only string

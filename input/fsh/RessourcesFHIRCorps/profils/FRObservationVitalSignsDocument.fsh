@@ -10,7 +10,6 @@ Description: "
  - Il est basée sur la ressource Observation qu'elle spécialise en portant des contraintes sur les vocabulaires des éléments 'code' et 'value'."
 
 //* ^extension[$imposeProfile].valueCanonical = Canonical()
-* identifier 1..1  MS
 * identifier ^short = "Identifiant"
 * code MS 
 * code ^short = "Signe vital observé"

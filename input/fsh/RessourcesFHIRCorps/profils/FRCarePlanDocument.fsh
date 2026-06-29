@@ -6,8 +6,7 @@ Description: "FRCarePlanDocument est un profil permettant d’enregistrer une r�
 
 //* ^extension[$imposeProfile].valueCanonical = Canonical()
 
-* identifier 1..* MS
-  * ^short = "Identifiant de la ligne de traitement dans un plan de traitement."
+* identifier ^short = "Identifiant de la ligne de traitement dans un plan de traitement."
 * category 1..1 MS
   * ^short = "Code indiquant que la référence est une ligne de traitement dans un plan de traitement."
 // Utilisation de l'OID IHE (urn:oid:1.3.6.1.4.1.19376.1.9.2.2) car aucune URL canonique FHIR n'a été publiée pour le CodeSystem IHE correspondant (IHE Pharmacy Item Type List). L'OID est l'identifiant standardisé pour ce CodeSystem.

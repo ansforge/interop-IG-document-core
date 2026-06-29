@@ -8,7 +8,6 @@ Description: "FRDeviceRequestDocument représente une demande de dispositif méd
 //* ^extension[$imposeProfile].valueCanonical = Canonical()
 
 // Identifiant de la fourniture du DM
-* identifier 1..* MS
 * identifier ^short = "Identifiant de la fourniture du DM - Sous la forme UID (UUID ou OID)"
 
 // Date d'utilisation ou de présence chez le patient

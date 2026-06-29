@@ -3,7 +3,6 @@ RuleSet: FRRuleSetSimpleObservation
 
 //* ^extension[$imposeProfile].valueCanonical = Canonical(FrSimpleObservation)
 
-* identifier 1..1 MS
 * identifier ^short = "Identifiant de l'observation"
 
 * status MS

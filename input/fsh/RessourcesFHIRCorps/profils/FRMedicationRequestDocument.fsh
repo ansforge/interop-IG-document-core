@@ -7,7 +7,6 @@ Description: "FRMedicationRequestDocument permet de décrire un traitement presc
 
 //* ^extension[$imposeProfile].valueCanonical = Canonical()
 * intent = #order
-* identifier 1..* MS
 * identifier ^short = "Identifiant prescription"
 * status 1..1 MS
 * status ^short = "Statut"

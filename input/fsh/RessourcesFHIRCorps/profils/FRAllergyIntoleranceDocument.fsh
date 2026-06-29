@@ -7,7 +7,6 @@ Description: "FRAllergyIntoleranceDocument est un profil utilisé pourdécrire u
 // mettre le bon canonical à partir de HL7 Europe Base and Core FHIR IG
 //* ^extension[$imposeProfile].valueCanonical = Canonical()
 
-* identifier 1..* MS
 * identifier ^short = "Identifiant"
 * type MS
 * type ^short = "Type d'allergie ou d'intolérance"

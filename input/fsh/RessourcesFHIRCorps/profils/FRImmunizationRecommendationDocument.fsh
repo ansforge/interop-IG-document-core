@@ -8,7 +8,6 @@ Description: "FRImmunizationRecommendationDocument permet de décrire une vaccin
  - Ce profil hérite de la structuration, des contraintes et des vocabulaires définis dans le profil FRVaccinationDocument."
 
 //* ^extension[$imposeProfile].valueCanonical = Canonical()
-* identifier 1..1 MS
 * identifier ^short = "Identifiant"
 
 * recommendation 1..1

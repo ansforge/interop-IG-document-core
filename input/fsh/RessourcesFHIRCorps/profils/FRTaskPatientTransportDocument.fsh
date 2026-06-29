@@ -5,8 +5,7 @@ Id: fr-task-patient-transport-document
 Title: "Task - FR Task Patient Transport Document"
 Description: "FRTaskPatientTransportDocument permet de décrire le transport d'un patient/usager lors d'un déplacement (entrée ou sortie d'hôpital, ...)."
 
-* identifier 1..1 MS
-  * ^short = "Identifiant du transport"
+* identifier ^short = "Identifiant"
 
 * code 1..1 MS
 * code ^short = "Mode de transport (Ambulance publique, Taxi, VSL, …)"

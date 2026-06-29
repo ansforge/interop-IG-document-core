@@ -5,8 +5,7 @@ Id: fr-pregnancy-history-document
 Title: "List - FR Pregnancy History Document"
 Description: "FRPregnancyHistoryDocument  est une liste contenant soit un événement de naissance, soit une observation sur la grossesse, mais pas les deux."
 
-* identifier 1..1 MS 
-  * ^short = "Identifiant"
+* identifier ^short = "Identifiant"
 * code 1..1 MS
 * code = $SCT#118185001 "constatation à propos de la grossesse"
 * status MS
