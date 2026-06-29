@@ -47,7 +47,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for FRDocumentCore</h1>
- <p>Generated Mon Jun 29 15:00:18 UTC 2026, FHIR version 4.0.1 for ans.document.fr.core#0.1.0-snapshot (canonical = <a href="https://interop.esante.gouv.fr/ig/document/core">https://interop.esante.gouv.fr/ig/document/core</a> (<a href="https://interop.esante.gouv.fr/ig/document/core/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a> &amp; <a href="qa-ipreview.html">IP</a></p>
+ <p>Generated Mon Jun 29 16:10:27 UTC 2026, FHIR version 4.0.1 for ans.document.fr.core#0.1.0-snapshot (canonical = <a href="https://interop.esante.gouv.fr/ig/document/core">https://interop.esante.gouv.fr/ig/document/core</a> (<a href="https://interop.esante.gouv.fr/ig/document/core/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a> &amp; <a href="qa-ipreview.html">IP</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v2.2.10</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ans.document.fr.core, Canonical = https://interop.esante.gouv.fr/ig/document/core</td></tr>
@@ -17502,15 +17502,15 @@ hl7.terminology.r4#7.2.0:     <a href="http://terminology.hl7.org/7.2.0/ValueSet
 0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Parameters: disp-lang=fr-FR, generate-narrative, default-to-latest
 0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/11000315107
 0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Prepare include[0]: "(urn:iso:std:iso:3166)"
-0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: "urn:iso:std:iso:3166|2018"
-0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Prepare include[1]: "(urn:iso:std:iso:3166:-2)"
-0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: "urn:iso:std:iso:3166:-2|2021"
-0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Prepare include[2]: "(http://unstats.un.org/unsd/methods/m49/m49.htm)(class=region)"
-0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: "http://unstats.un.org/unsd/methods/m49/m49.htm|null"
-0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Validate "[urn:iso:std:iso:3166#FR ("FRANCE")]"
-0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Check "urn:iso:std:iso:3166#FR"
-0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: urn:iso:std:iso:3166|2018 for urn:iso:std:iso:3166
-0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: check code in (urn:iso:std:iso:3166) at CodeableConcept.coding[0]
+1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: "urn:iso:std:iso:3166|2018"
+1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Prepare include[1]: "(urn:iso:std:iso:3166:-2)"
+1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: "urn:iso:std:iso:3166:-2|2021"
+1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Prepare include[2]: "(http://unstats.un.org/unsd/methods/m49/m49.htm)(class=region)"
+1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: "http://unstats.un.org/unsd/methods/m49/m49.htm|null"
+1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Validate "[urn:iso:std:iso:3166#FR ("FRANCE")]"
+1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Check "urn:iso:std:iso:3166#FR"
+1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: urn:iso:std:iso:3166|2018 for urn:iso:std:iso:3166
+1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: check code in (urn:iso:std:iso:3166) at CodeableConcept.coding[0]
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Code "FR" found in urn:iso:std:iso:3166|2018</pre></div></td><td><a href="http://hl7.org/fhir/R4/implementationguide.html">ImplementationGuide</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -29701,19 +29701,19 @@ hl7.terminology.r4#7.2.0:     <a href="http://terminology.hl7.org/7.2.0/ValueSet
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[12]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.display (l1&#8203;/c106280)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'Biologie polyvalente' for http://loinc.org#26436-6. Valid display is 'Biologie polyvalente [Autre] - ; Patient ; Statut' (fr-FR) (for the language(s) 'fr-FR')</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l2407">log</a>, or see <a href="#vmi6395" onClick="document.getElementById('vmi6395').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Display_Name_for__should_be_one_of__instead_of</span><div id="vmi6395" style="display:none"><br/><pre>0ms tx-op
-1ms http://loinc.org/vs|2.82: Validate "[http://loinc.org#26436-6 ("Biologie polyvalente")]"
-2ms http://loinc.org/vs|2.82: Check "http://loinc.org#26436-6"
-3ms http://loinc.org/vs|2.82: CodeSystem found: http://loinc.org|2.82 for http://loinc.org|2.82
-3ms http://loinc.org/vs|2.82: check code in (http://loinc.org) at CodeableConcept.coding[0]
-3ms http://loinc.org/vs|2.82: Code "26436-6" found in http://loinc.org|2.82</pre></div></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+2ms http://loinc.org/vs|2.82: Validate "[http://loinc.org#26436-6 ("Biologie polyvalente")]"
+3ms http://loinc.org/vs|2.82: Check "http://loinc.org#26436-6"
+4ms http://loinc.org/vs|2.82: CodeSystem found: http://loinc.org|2.82 for http://loinc.org|2.82
+4ms http://loinc.org/vs|2.82: check code in (http://loinc.org) at CodeableConcept.coding[0]
+4ms http://loinc.org/vs|2.82: Code "26436-6" found in http://loinc.org|2.82</pre></div></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>StructureDefinition&#8203;.differential&#8203;.element[2]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.display (l1&#8203;/c162613)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'Biologie polyvalente' for http://loinc.org#26436-6. Valid display is 'Biologie polyvalente [Autre] - ; Patient ; Statut' (fr-FR) (for the language(s) 'fr-FR')</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l2407">log</a>, or see <a href="#vmi6396" onClick="document.getElementById('vmi6396').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Display_Name_for__should_be_one_of__instead_of</span><div id="vmi6396" style="display:none"><br/><pre>0ms tx-op
-1ms http://loinc.org/vs|2.82: Validate "[http://loinc.org#26436-6 ("Biologie polyvalente")]"
-2ms http://loinc.org/vs|2.82: Check "http://loinc.org#26436-6"
-3ms http://loinc.org/vs|2.82: CodeSystem found: http://loinc.org|2.82 for http://loinc.org|2.82
-3ms http://loinc.org/vs|2.82: check code in (http://loinc.org) at CodeableConcept.coding[0]
-3ms http://loinc.org/vs|2.82: Code "26436-6" found in http://loinc.org|2.82</pre></div></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+2ms http://loinc.org/vs|2.82: Validate "[http://loinc.org#26436-6 ("Biologie polyvalente")]"
+3ms http://loinc.org/vs|2.82: Check "http://loinc.org#26436-6"
+4ms http://loinc.org/vs|2.82: CodeSystem found: http://loinc.org|2.82 for http://loinc.org|2.82
+4ms http://loinc.org/vs|2.82: check code in (http://loinc.org) at CodeableConcept.coding[0]
+4ms http://loinc.org/vs|2.82: Code "26436-6" found in http://loinc.org|2.82</pre></div></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>StructureDefinition&#8203;.differential&#8203;.element[8]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c164001)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td><td>--</td>
@@ -29792,19 +29792,19 @@ hl7.terminology.r4#7.2.0:     <a href="http://terminology.hl7.org/7.2.0/ValueSet
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[16]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.display (l1&#8203;/c154024)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'Imagerie' for http://loinc.org#18748-4. There are no valid display names found for language(s) 'fr-FR'. Default display is 'Diagnostic imaging study'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l2408">log</a>, or see <a href="#vmi6406" onClick="document.getElementById('vmi6406').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_ERR</span><div id="vmi6406" style="display:none"><br/><pre>0ms tx-op
-2ms http://loinc.org/vs|2.82: Validate "[http://loinc.org#18748-4 ("Imagerie")]"
+1ms http://loinc.org/vs|2.82: Validate "[http://loinc.org#18748-4 ("Imagerie")]"
 2ms http://loinc.org/vs|2.82: Check "http://loinc.org#18748-4"
-4ms http://loinc.org/vs|2.82: CodeSystem found: http://loinc.org|2.82 for http://loinc.org|2.82
-4ms http://loinc.org/vs|2.82: check code in (http://loinc.org) at CodeableConcept.coding[0]
-4ms http://loinc.org/vs|2.82: Code "18748-4" found in http://loinc.org|2.82</pre></div></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+3ms http://loinc.org/vs|2.82: CodeSystem found: http://loinc.org|2.82 for http://loinc.org|2.82
+3ms http://loinc.org/vs|2.82: check code in (http://loinc.org) at CodeableConcept.coding[0]
+3ms http://loinc.org/vs|2.82: Code "18748-4" found in http://loinc.org|2.82</pre></div></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>StructureDefinition&#8203;.differential&#8203;.element[9]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.display (l1&#8203;/c213216)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'Imagerie' for http://loinc.org#18748-4. There are no valid display names found for language(s) 'fr-FR'. Default display is 'Diagnostic imaging study'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l2408">log</a>, or see <a href="#vmi6407" onClick="document.getElementById('vmi6407').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_ERR</span><div id="vmi6407" style="display:none"><br/><pre>0ms tx-op
-2ms http://loinc.org/vs|2.82: Validate "[http://loinc.org#18748-4 ("Imagerie")]"
+1ms http://loinc.org/vs|2.82: Validate "[http://loinc.org#18748-4 ("Imagerie")]"
 2ms http://loinc.org/vs|2.82: Check "http://loinc.org#18748-4"
-4ms http://loinc.org/vs|2.82: CodeSystem found: http://loinc.org|2.82 for http://loinc.org|2.82
-4ms http://loinc.org/vs|2.82: check code in (http://loinc.org) at CodeableConcept.coding[0]
-4ms http://loinc.org/vs|2.82: Code "18748-4" found in http://loinc.org|2.82</pre></div></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+3ms http://loinc.org/vs|2.82: CodeSystem found: http://loinc.org|2.82 for http://loinc.org|2.82
+3ms http://loinc.org/vs|2.82: check code in (http://loinc.org) at CodeableConcept.coding[0]
+3ms http://loinc.org/vs|2.82: Code "18748-4" found in http://loinc.org|2.82</pre></div></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>StructureDefinition&#8203;.differential&#8203;.element[6]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c212517)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td><td>--</td>
@@ -46391,17 +46391,17 @@ hl7.terminology.r4#7.2.0:     <a href="http://terminology.hl7.org/7.2.0/ValueSet
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[14]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.code (l1&#8203;/c113807)</b></td><td><b>error</b></td><td><b>Unknown code 'XX-ANTENATALTESTINGBATTERY' in the CodeSystem 'http://loinc.org' version '2.82'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l2413">log</a>, or see <a href="#vmi10623" onClick="document.getElementById('vmi10623').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi10623" style="display:none"><br/><pre>0ms tx-op
 1ms http://loinc.org/vs|2.82: Validate "[http://loinc.org#XX-ANTENATALTESTINGBATTERY ("ANTENATAL TESTING AND SURVEILLANCE BATTERY")]"
 2ms http://loinc.org/vs|2.82: Check "http://loinc.org#XX-ANTENATALTESTINGBATTERY"
-4ms http://loinc.org/vs|2.82: CodeSystem found: http://loinc.org|2.82 for http://loinc.org|2.82
-4ms http://loinc.org/vs|2.82: check code in (http://loinc.org) at CodeableConcept.coding[0]
-4ms http://loinc.org/vs|2.82: Code "XX-ANTENATALTESTINGBATTERY" not found in http://loinc.org|2.82: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+3ms http://loinc.org/vs|2.82: CodeSystem found: http://loinc.org|2.82 for http://loinc.org|2.82
+3ms http://loinc.org/vs|2.82: check code in (http://loinc.org) at CodeableConcept.coding[0]
+3ms http://loinc.org/vs|2.82: Code "XX-ANTENATALTESTINGBATTERY" not found in http://loinc.org|2.82: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.code (l1&#8203;/c196082)</b></td><td><b>error</b></td><td><b>Unknown code 'XX-ANTENATALTESTINGBATTERY' in the CodeSystem 'http://loinc.org' version '2.82'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l2413">log</a>, or see <a href="#vmi10624" onClick="document.getElementById('vmi10624').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi10624" style="display:none"><br/><pre>0ms tx-op
 1ms http://loinc.org/vs|2.82: Validate "[http://loinc.org#XX-ANTENATALTESTINGBATTERY ("ANTENATAL TESTING AND SURVEILLANCE BATTERY")]"
 2ms http://loinc.org/vs|2.82: Check "http://loinc.org#XX-ANTENATALTESTINGBATTERY"
-4ms http://loinc.org/vs|2.82: CodeSystem found: http://loinc.org|2.82 for http://loinc.org|2.82
-4ms http://loinc.org/vs|2.82: check code in (http://loinc.org) at CodeableConcept.coding[0]
-4ms http://loinc.org/vs|2.82: Code "XX-ANTENATALTESTINGBATTERY" not found in http://loinc.org|2.82: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+3ms http://loinc.org/vs|2.82: CodeSystem found: http://loinc.org|2.82 for http://loinc.org|2.82
+3ms http://loinc.org/vs|2.82: check code in (http://loinc.org) at CodeableConcept.coding[0]
+3ms http://loinc.org/vs|2.82: Code "XX-ANTENATALTESTINGBATTERY" not found in http://loinc.org|2.82: undefined</pre></div></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Resource</b></td><td><b>information</b></td><td><b>The resource StructureDefinition/fr-observation-antenatal-testing-surveillance-battery-document could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td><td>--</td>
@@ -46789,22 +46789,22 @@ hl7.terminology.r4#7.2.0:     <a href="http://terminology.hl7.org/7.2.0/ValueSet
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[37]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.display (l1&#8203;/c200714)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'Exposition aux rayonnements et informations de radioprotection' for http://loinc.org#73569-6. There are no valid display names found for language(s) 'fr-FR'. Default display is 'Radiation exposure and protection information [Description] Document Diagnostic imaging'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l2415">log</a>, or see <a href="#vmi10665" onClick="document.getElementById('vmi10665').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_ERR</span><div id="vmi10665" style="display:none"><br/><pre>0ms tx-op
-1ms http://loinc.org/vs|2.82: Validate "[http://loinc.org#73569-6 ("Exposition aux rayonnements et informations de radioprotection")]"
-1ms http://loinc.org/vs|2.82: Check "http://loinc.org#73569-6"
-2ms http://loinc.org/vs|2.82: CodeSystem found: http://loinc.org|2.82 for http://loinc.org|2.82
-2ms http://loinc.org/vs|2.82: check code in (http://loinc.org) at CodeableConcept.coding[0]
-2ms http://loinc.org/vs|2.82: Code "73569-6" found in http://loinc.org|2.82</pre></div></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+2ms http://loinc.org/vs|2.82: Validate "[http://loinc.org#73569-6 ("Exposition aux rayonnements et informations de radioprotection")]"
+2ms http://loinc.org/vs|2.82: Check "http://loinc.org#73569-6"
+4ms http://loinc.org/vs|2.82: CodeSystem found: http://loinc.org|2.82 for http://loinc.org|2.82
+4ms http://loinc.org/vs|2.82: check code in (http://loinc.org) at CodeableConcept.coding[0]
+4ms http://loinc.org/vs|2.82: Code "73569-6" found in http://loinc.org|2.82</pre></div></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[52]&#8203;.type[0]&#8203;.profile[0] (l1&#8203;/c223417)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/procedure-targetBodyStructure'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.3.0', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.1.0 (from hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (from hl7.fhir.uv.extensions.r4#5.2.0), 5.3.0 (from hl7.fhir.uv.extensions.r4#5.3.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/procedure-targetBodyStructure' to 'http://hl7.org/fhir/StructureDefinition/procedure-targetBodyStructure|5.3.0'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>StructureDefinition&#8203;.differential&#8203;.element[11]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.display (l1&#8203;/c267895)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'Exposition aux rayonnements et informations de radioprotection' for http://loinc.org#73569-6. There are no valid display names found for language(s) 'fr-FR'. Default display is 'Radiation exposure and protection information [Description] Document Diagnostic imaging'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l2415">log</a>, or see <a href="#vmi10667" onClick="document.getElementById('vmi10667').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_ERR</span><div id="vmi10667" style="display:none"><br/><pre>0ms tx-op
-1ms http://loinc.org/vs|2.82: Validate "[http://loinc.org#73569-6 ("Exposition aux rayonnements et informations de radioprotection")]"
-1ms http://loinc.org/vs|2.82: Check "http://loinc.org#73569-6"
-2ms http://loinc.org/vs|2.82: CodeSystem found: http://loinc.org|2.82 for http://loinc.org|2.82
-2ms http://loinc.org/vs|2.82: check code in (http://loinc.org) at CodeableConcept.coding[0]
-2ms http://loinc.org/vs|2.82: Code "73569-6" found in http://loinc.org|2.82</pre></div></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+2ms http://loinc.org/vs|2.82: Validate "[http://loinc.org#73569-6 ("Exposition aux rayonnements et informations de radioprotection")]"
+2ms http://loinc.org/vs|2.82: Check "http://loinc.org#73569-6"
+4ms http://loinc.org/vs|2.82: CodeSystem found: http://loinc.org|2.82 for http://loinc.org|2.82
+4ms http://loinc.org/vs|2.82: check code in (http://loinc.org) at CodeableConcept.coding[0]
+4ms http://loinc.org/vs|2.82: Code "73569-6" found in http://loinc.org|2.82</pre></div></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition&#8203;.differential&#8203;.element[17]&#8203;.type[0]&#8203;.profile[0] (l1&#8203;/c269517)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/procedure-targetBodyStructure'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.3.0', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.1.0 (from hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (from hl7.fhir.uv.extensions.r4#5.2.0), 5.3.0 (from hl7.fhir.uv.extensions.r4#5.3.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/procedure-targetBodyStructure' to 'http://hl7.org/fhir/StructureDefinition/procedure-targetBodyStructure|5.3.0'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
@@ -48149,7 +48149,7 @@ hl7.terminology.r4#7.2.0:     <a href="http://terminology.hl7.org/7.2.0/ValueSet
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>ValueSet&#8203;.where(id = 'fr-valueset-status-code')</b></td><td><b>warning</b></td><td><b>Error from https://smt.esante.gouv.fr/fhir: Error: [791994cb-de66-45df-846b-de22fb7146d7]: A usable code system with URL https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis could not be resolved.
-Information: X-Request-Id: 9552224a-b7b9-4077-a5b1-28579264579e</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l5916">log</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td><td>--</td>
+Information: X-Request-Id: 5a7f0d56-b8dc-41a1-b0c4-12ed6a490a8b</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l5916">log</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td><td>--</td>
    </tr>
 </table>
 <hr/>
@@ -48291,7 +48291,7 @@ Information: X-Request-Id: 9552224a-b7b9-4077-a5b1-28579264579e</b> (from <a hre
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>ValueSet&#8203;.where(id = 'fr-vs-allergy-code')</b></td><td><b>warning</b></td><td><b>Error from https://smt.esante.gouv.fr/fhir: Error: [deb8ed8f-e178-4fae-b7ac-0bab8b8c37f0]: Could not find the code system https://smt.esante.gouv.fr/terminologie-cip_ucd|2026-06
-Information: X-Request-Id: 7ff11209-913a-414e-993d-2c21e0460c03</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l5943">log</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td><td>--</td>
+Information: X-Request-Id: c43a52bf-8458-446a-bd58-4f10f425eac0</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l5943">log</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td><td>--</td>
    </tr>
 </table>
 <hr/>
@@ -48553,7 +48553,7 @@ Information: X-Request-Id: 7ff11209-913a-414e-993d-2c21e0460c03</b> (from <a hre
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>ValueSet&#8203;.where(id = 'fr-vs-medication-translation-document')</b></td><td><b>warning</b></td><td><b>Error from https://smt.esante.gouv.fr/fhir: Error: [deb8ed8f-e178-4fae-b7ac-0bab8b8c37f0]: Could not find the code system https://smt.esante.gouv.fr/terminologie-cip_ucd|2026-06
-Information: X-Request-Id: 7ff11209-913a-414e-993d-2c21e0460c03</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l5943">log</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td><td>--</td>
+Information: X-Request-Id: c43a52bf-8458-446a-bd58-4f10f425eac0</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l5943">log</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td><td>--</td>
    </tr>
 </table>
 <hr/>

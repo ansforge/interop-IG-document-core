@@ -3,7 +3,7 @@ FRDocumentCore : Validation Results
 
 err = 4679, warn = 5588, info = 626
 IG Publisher Version: 2.2.10
-Generated Mon Jun 29 15:00:18 UTC 2026. FHIR version 4.0.1 for ans.document.fr.core#0.1.0-snapshot (canonical = https://interop.esante.gouv.fr/ig/document/core)
+Generated Mon Jun 29 16:10:27 UTC 2026. FHIR version 4.0.1 for ans.document.fr.core#0.1.0-snapshot (canonical = https://interop.esante.gouv.fr/ig/document/core)
  Build Errors : 34 / 49 / 0
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/AllergyIntolerance-example-allergy-intolerance-data-absent-reason : 3 / 0 / 1
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRActSubstitutionLMCDAFHIR : 10 / 4 / 2
@@ -11997,7 +11997,7 @@ ERROR: ValueSet/fr-valueset-status-code: ValueSet.compose.include[0]: The system
 WARNING: ValueSet/fr-valueset-status-code: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 WARNING: Resource: The resource ValueSet/fr-valueset-status-code should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 WARNING: ValueSet.where(id = 'fr-valueset-status-code'): Error from https://smt.esante.gouv.fr/fhir: Error: [791994cb-de66-45df-846b-de22fb7146d7]: A usable code system with URL https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis could not be resolved.
-Information: X-Request-Id: 9552224a-b7b9-4077-a5b1-28579264579e
+Information: X-Request-Id: 5a7f0d56-b8dc-41a1-b0c4-12ed6a490a8b
 == fsh-generated/resources/ValueSet-fr-valueset-statut-du-probleme.json ==
 ERROR: ValueSet/fr-valueset-statut-du-probleme: ValueSet.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 WARNING: ValueSet/fr-valueset-statut-du-probleme: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
@@ -12017,7 +12017,7 @@ WARNING: ValueSet/fr-vs-allergy-code: ValueSet.compose.include[1].system: No def
 WARNING: ValueSet/fr-vs-allergy-code: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 WARNING: Resource: The resource ValueSet/fr-vs-allergy-code should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 WARNING: ValueSet.where(id = 'fr-vs-allergy-code'): Error from https://smt.esante.gouv.fr/fhir: Error: [deb8ed8f-e178-4fae-b7ac-0bab8b8c37f0]: Could not find the code system https://smt.esante.gouv.fr/terminologie-cip_ucd|2026-06
-Information: X-Request-Id: 7ff11209-913a-414e-993d-2c21e0460c03
+Information: X-Request-Id: c43a52bf-8458-446a-bd58-4f10f425eac0
 == fsh-generated/resources/ValueSet-fr-vs-allergy-intolerance-type-document.json ==
 INFORMATION: ValueSet.compose.include[0]: Pinned the version of http://hl7.org/fhir/allergy-intolerance-type to 4.0.1 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.0.0 (hl7.fhir.uv.xver-r5.r4#0.1.0)
 ERROR: ValueSet/fr-vs-allergy-intolerance-type-document: ValueSet.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
@@ -12056,7 +12056,7 @@ WARNING: ValueSet/fr-vs-medication-translation-document: ValueSet.compose.includ
 WARNING: ValueSet/fr-vs-medication-translation-document: ValueSet.compose.include[4].system: No definition could be found for URL value 'https://smt.esante.gouv.fr/terminologie-nuva/'
 WARNING: Resource: The resource ValueSet/fr-vs-medication-translation-document should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 WARNING: ValueSet.where(id = 'fr-vs-medication-translation-document'): Error from https://smt.esante.gouv.fr/fhir: Error: [deb8ed8f-e178-4fae-b7ac-0bab8b8c37f0]: Could not find the code system https://smt.esante.gouv.fr/terminologie-cip_ucd|2026-06
-Information: X-Request-Id: 7ff11209-913a-414e-993d-2c21e0460c03
+Information: X-Request-Id: c43a52bf-8458-446a-bd58-4f10f425eac0
 == fsh-generated/resources/ValueSet-fr-vs-procedure-code.json ==
 ERROR: ValueSet/fr-vs-procedure-code: ValueSet.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 WARNING: ValueSet/fr-vs-procedure-code: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
