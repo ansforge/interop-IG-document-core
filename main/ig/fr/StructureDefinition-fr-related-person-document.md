@@ -8,7 +8,7 @@ Ce profil représente l'informateur non professionnel.
 **Utilisations:**
 
 * Utilise ce/t/te Profil: [FR Bundle Document](StructureDefinition-fr-bundle-document.md)
-* Référence ce Profil: [FR Actor Extension](StructureDefinition-fr-actor-extension.md), [FR Composition Document](StructureDefinition-fr-composition-document.md) and [Procedure - FR Procedure Document](StructureDefinition-fr-procedure-document.md)
+* Référence ce Profil: [FR Actor Extension](StructureDefinition-fr-actor-extension.md), [FR Composition Document](StructureDefinition-fr-composition-document.md), [Media - FR Media Document](StructureDefinition-fr-media-document.md) and [Procedure - FR Procedure Document](StructureDefinition-fr-procedure-document.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-related-person-document)
 
@@ -93,7 +93,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-related-pers
   "name" : "FRRelatedPersonDocument",
   "title" : "FR RelatedPerson Document",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

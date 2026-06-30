@@ -3,7 +3,7 @@
 ## Logical Model: Logical model - FR LM Immunisation 
 
  
-Entrée Vaccination 
+Vaccination 
 
 **Usages:**
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-immunisatio
   "name" : "FRLMImmunisation",
   "title" : "Logical model - FR LM Immunisation",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-immunisatio
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Entrée Vaccination",
+  "description" : "Vaccination",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -64,7 +64,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-immunisatio
       "id" : "fr-lm-immunisation",
       "path" : "fr-lm-immunisation",
       "short" : "Logical model - FR LM Immunisation",
-      "definition" : "Entrée Vaccination"
+      "definition" : "Vaccination"
     },
     {
       "id" : "fr-lm-immunisation.header.status",

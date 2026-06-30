@@ -7,7 +7,7 @@ Patient/Usager concerné par le document.
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Logical model - FR LM Data Enterer](StructureDefinition-fr-lm-data-enterer.md), [Logical model - FR LM Entry](StructureDefinition-fr-lm-entry.md), [Logical model - FR LM Header Document](StructureDefinition-fr-lm-header-document.md), [Logical model - FR LM Informant](StructureDefinition-fr-lm-informant.md)... Show 9 more, [Logical model - FR LM Intended Recipient](StructureDefinition-fr-lm-intended-recipient.md), [Logical model - FR LM Legal Authentication](StructureDefinition-fr-lm-legal-authentication.md), [Logical model - FR LM Medication Dispense](StructureDefinition-fr-lm-medication-dispense.md), [Logical model - FR LM Observation Result](StructureDefinition-fr-lm-observation-result.md), [Logical model - FR LM Order](StructureDefinition-fr-lm-order.md), [Logical model- FR LM Pregnancy History](StructureDefinition-fr-lm-pregnancy-history.md), [Logical model- FR LM Pregnancy Observation](StructureDefinition-fr-lm-pregnancy-observation.md), [Logical model - FR LM Related Person](StructureDefinition-fr-lm-related-person.md) and [Logical model - FR LM Specimen](StructureDefinition-fr-lm-specimen.md)
+* Utilise ce/t/te Modèle logique: [Logical model - FR LM Data Enterer](StructureDefinition-fr-lm-data-enterer.md), [Logical model - FR LM Entry](StructureDefinition-fr-lm-entry.md), [Logical model - FR LM Header Document](StructureDefinition-fr-lm-header-document.md), [Logical model - FR LM Informant](StructureDefinition-fr-lm-informant.md)... Show 9 more, [Logical model - FR LM Intended Recipient](StructureDefinition-fr-lm-intended-recipient.md), [Logical model - FR LM Legal Authentication](StructureDefinition-fr-lm-legal-authentication.md), [Logical model - FR LM Medication Dispense](StructureDefinition-fr-lm-medication-dispense.md), [Logical model - FR LM Observation](StructureDefinition-fr-lm-observation.md), [Logical model - FR LM Order](StructureDefinition-fr-lm-order.md), [Logical model- FR LM Pregnancy History](StructureDefinition-fr-lm-pregnancy-history.md), [Logical model- FR LM Pregnancy Observation](StructureDefinition-fr-lm-pregnancy-observation.md), [Logical model - FR LM Related Person](StructureDefinition-fr-lm-related-person.md) and [Logical model - FR LM Specimen](StructureDefinition-fr-lm-specimen.md)
 * Référence ce Modèle logique: [Logical model - FR LM ObservationMedia](StructureDefinition-fr-lm-observation-media.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-patient)
@@ -62,7 +62,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-patient.c
   "name" : "FRLMPatient",
   "title" : "Logical model - FR LM Patient",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

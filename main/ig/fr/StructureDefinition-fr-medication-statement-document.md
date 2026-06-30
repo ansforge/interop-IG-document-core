@@ -40,8 +40,7 @@ Cette structure est dérivée de [MedicationStatement](http://hl7.org/fhir/R4/me
 
 ** Résumé **
 
-Obligatoire : 1 élément
- Must-Support : 19 éléments
+Must-Support : 18 éléments
 
 **Structures**
 
@@ -82,8 +81,7 @@ Cette structure est dérivée de [MedicationStatement](http://hl7.org/fhir/R4/me
 
 ** Résumé **
 
-Obligatoire : 1 élément
- Must-Support : 19 éléments
+Must-Support : 18 éléments
 
 **Structures**
 
@@ -119,7 +117,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-medication-s
   "name" : "FRMedicationStatementDocument",
   "title" : "MedicationStatement - FR Medication Statement Document",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -170,9 +168,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-medication-s
     {
       "id" : "MedicationStatement.identifier",
       "path" : "MedicationStatement.identifier",
-      "short" : "Identifiant. L'entrée Traitement doit être identifiée de manière unique.",
-      "min" : 1,
-      "mustSupport" : true
+      "short" : "Identifiant. L'entrée Traitement doit être identifiée de manière unique."
     },
     {
       "id" : "MedicationStatement.basedOn",

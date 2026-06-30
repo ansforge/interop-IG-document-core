@@ -34,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-procedure-docu
   "name" : "FRProcedureDocument",
   "title" : "Procedure - FR Procedure Document",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -128,6 +128,42 @@ Other representations of profile: [CSV](../StructureDefinition-fr-procedure-docu
       }]
     },
     {
+      "id" : "Procedure.extension:participant",
+      "path" : "Procedure.extension",
+      "sliceName" : "participant",
+      "short" : "Participant à l'acte",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"]
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "Procedure.extension:participant.extension:type",
+      "path" : "Procedure.extension.extension",
+      "sliceName" : "type"
+    },
+    {
+      "id" : "Procedure.extension:participant.extension:type.value[x]",
+      "path" : "Procedure.extension.extension.value[x]",
+      "patternCode" : "PART"
+    },
+    {
+      "id" : "Procedure.extension:participant.extension:actor",
+      "path" : "Procedure.extension.extension",
+      "sliceName" : "actor"
+    },
+    {
+      "id" : "Procedure.extension:participant.extension:actor.value[x]",
+      "path" : "Procedure.extension.extension.value[x]",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document"]
+      }]
+    },
+    {
       "id" : "Procedure.extension:difficulte",
       "path" : "Procedure.extension",
       "sliceName" : "difficulte",
@@ -143,9 +179,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-procedure-docu
     {
       "id" : "Procedure.identifier",
       "path" : "Procedure.identifier",
-      "short" : "Identifiant",
-      "min" : 1,
-      "mustSupport" : true
+      "short" : "Identifiant"
     },
     {
       "id" : "Procedure.partOf",
@@ -208,114 +242,16 @@ Other representations of profile: [CSV](../StructureDefinition-fr-procedure-docu
       "id" : "Procedure.recorder",
       "path" : "Procedure.recorder",
       "short" : "Auteur",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Procedure.recorder.extension:author",
-      "path" : "Procedure.recorder.extension",
-      "sliceName" : "author",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"]
-      }]
-    },
-    {
-      "id" : "Procedure.recorder.extension:author.extension:type",
-      "path" : "Procedure.recorder.extension.extension",
-      "sliceName" : "type"
-    },
-    {
-      "id" : "Procedure.recorder.extension:author.extension:type.value[x]",
-      "path" : "Procedure.recorder.extension.extension.value[x]",
-      "patternCode" : "AUT"
-    },
-    {
-      "id" : "Procedure.recorder.extension:author.extension:actor",
-      "path" : "Procedure.recorder.extension.extension",
-      "sliceName" : "actor"
-    },
-    {
-      "id" : "Procedure.recorder.extension:author.extension:actor.value[x]",
-      "path" : "Procedure.recorder.extension.extension.value[x]",
       "type" : [{
         "code" : "Reference",
         "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document"]
-      }]
-    },
-    {
-      "id" : "Procedure.performer",
-      "path" : "Procedure.performer",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Procedure.performer.actor.extension:Intervenant",
-      "path" : "Procedure.performer.actor.extension",
-      "sliceName" : "Intervenant",
-      "short" : "Intervenant",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"]
       }],
       "mustSupport" : true
     },
     {
-      "id" : "Procedure.performer.actor.extension:Intervenant.extension:type",
-      "path" : "Procedure.performer.actor.extension.extension",
-      "sliceName" : "type"
-    },
-    {
-      "id" : "Procedure.performer.actor.extension:Intervenant.extension:type.value[x]",
-      "path" : "Procedure.performer.actor.extension.extension.value[x]",
-      "patternCode" : "PRF"
-    },
-    {
-      "id" : "Procedure.performer.actor.extension:Intervenant.extension:actor",
-      "path" : "Procedure.performer.actor.extension.extension",
-      "sliceName" : "actor"
-    },
-    {
-      "id" : "Procedure.performer.actor.extension:Intervenant.extension:actor.value[x]",
-      "path" : "Procedure.performer.actor.extension.extension.value[x]",
-      "type" : [{
-        "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document"]
-      }]
-    },
-    {
-      "id" : "Procedure.performer.actor.extension:Informateur",
-      "path" : "Procedure.performer.actor.extension",
-      "sliceName" : "Informateur",
+      "id" : "Procedure.asserter",
+      "path" : "Procedure.asserter",
       "short" : "Informateur",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"]
-      }],
-      "mustSupport" : true
-    },
-    {
-      "id" : "Procedure.performer.actor.extension:Informateur.extension:type",
-      "path" : "Procedure.performer.actor.extension.extension",
-      "sliceName" : "type"
-    },
-    {
-      "id" : "Procedure.performer.actor.extension:Informateur.extension:type.value[x]",
-      "path" : "Procedure.performer.actor.extension.extension.value[x]",
-      "patternCode" : "INF"
-    },
-    {
-      "id" : "Procedure.performer.actor.extension:Informateur.extension:actor",
-      "path" : "Procedure.performer.actor.extension.extension",
-      "sliceName" : "actor"
-    },
-    {
-      "id" : "Procedure.performer.actor.extension:Informateur.extension:actor.value[x]",
-      "path" : "Procedure.performer.actor.extension.extension.value[x]",
       "type" : [{
         "code" : "Reference",
         "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document",
@@ -325,75 +261,18 @@ Other representations of profile: [CSV](../StructureDefinition-fr-procedure-docu
       }]
     },
     {
-      "id" : "Procedure.performer.actor.extension:Participant",
-      "path" : "Procedure.performer.actor.extension",
-      "sliceName" : "Participant",
-      "short" : "Participant",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"]
-      }],
+      "id" : "Procedure.performer",
+      "path" : "Procedure.performer",
+      "short" : "Performer",
       "mustSupport" : true
     },
     {
-      "id" : "Procedure.performer.actor.extension:Participant.extension:type",
-      "path" : "Procedure.performer.actor.extension.extension",
-      "sliceName" : "type"
-    },
-    {
-      "id" : "Procedure.performer.actor.extension:Participant.extension:type.value[x]",
-      "path" : "Procedure.performer.actor.extension.extension.value[x]",
-      "patternCode" : "PART"
-    },
-    {
-      "id" : "Procedure.performer.actor.extension:Participant.extension:actor",
-      "path" : "Procedure.performer.actor.extension.extension",
-      "sliceName" : "actor"
-    },
-    {
-      "id" : "Procedure.performer.actor.extension:Participant.extension:actor.value[x]",
-      "path" : "Procedure.performer.actor.extension.extension.value[x]",
+      "id" : "Procedure.performer.actor",
+      "path" : "Procedure.performer.actor",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document"]
-      }]
-    },
-    {
-      "id" : "Procedure.performer.actor.extension:Dispositif",
-      "path" : "Procedure.performer.actor.extension",
-      "sliceName" : "Dispositif",
-      "short" : "Dispositif automatique utilisé lors de l'acte",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"]
-      }],
-      "mustSupport" : true
-    },
-    {
-      "id" : "Procedure.performer.actor.extension:Dispositif.extension:type",
-      "path" : "Procedure.performer.actor.extension.extension",
-      "sliceName" : "type"
-    },
-    {
-      "id" : "Procedure.performer.actor.extension:Dispositif.extension:type.value[x]",
-      "path" : "Procedure.performer.actor.extension.extension.value[x]",
-      "patternCode" : "PART"
-    },
-    {
-      "id" : "Procedure.performer.actor.extension:Dispositif.extension:actor",
-      "path" : "Procedure.performer.actor.extension.extension",
-      "sliceName" : "actor"
-    },
-    {
-      "id" : "Procedure.performer.actor.extension:Dispositif.extension:actor.value[x]",
-      "path" : "Procedure.performer.actor.extension.extension.value[x]",
-      "type" : [{
-        "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Device"]
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document",
+        "http://hl7.org/fhir/StructureDefinition/Device"]
       }]
     },
     {

@@ -3,7 +3,7 @@
 ## Logical Model: Logical model - FR LM Allergy Intolerance 
 
  
-Entrée Allergie ou Hypersensibilité 
+Allergie ou Hypersensibilité 
 
 **Usages:**
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-allergy-int
   "name" : "FRLMAllergyIntolerance",
   "title" : "Logical model - FR LM Allergy Intolerance",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-allergy-int
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Entrée Allergie ou Hypersensibilité",
+  "description" : "Allergie ou Hypersensibilité",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -64,7 +64,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-allergy-int
       "id" : "fr-lm-allergy-intolerance",
       "path" : "fr-lm-allergy-intolerance",
       "short" : "Logical model - FR LM Allergy Intolerance",
-      "definition" : "Entrée Allergie ou Hypersensibilité"
+      "definition" : "Allergie ou Hypersensibilité"
     },
     {
       "id" : "fr-lm-allergy-intolerance.header.status",

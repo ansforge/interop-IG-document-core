@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-condition-docu
   "name" : "FRConditionDocument",
   "title" : "Condition - FR Condition Document",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -91,12 +91,56 @@ Other representations of profile: [CSV](../StructureDefinition-fr-condition-docu
       "path" : "Condition"
     },
     {
+      "id" : "Condition.extension",
+      "path" : "Condition.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "Condition.extension:author",
+      "path" : "Condition.extension",
+      "sliceName" : "author",
+      "short" : "Auteur du problème",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"]
+      }]
+    },
+    {
+      "id" : "Condition.extension:author.extension:type",
+      "path" : "Condition.extension.extension",
+      "sliceName" : "type"
+    },
+    {
+      "id" : "Condition.extension:author.extension:type.value[x]",
+      "path" : "Condition.extension.extension.value[x]",
+      "patternCode" : "AUT"
+    },
+    {
+      "id" : "Condition.extension:author.extension:actor",
+      "path" : "Condition.extension.extension",
+      "sliceName" : "actor"
+    },
+    {
+      "id" : "Condition.extension:author.extension:actor.value[x]",
+      "path" : "Condition.extension.extension.value[x]",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document"]
+      }]
+    },
+    {
       "id" : "Condition.identifier",
       "path" : "Condition.identifier",
-      "short" : "Identifiant",
-      "min" : 1,
-      "max" : "1",
-      "mustSupport" : true
+      "short" : "Identifiant"
     },
     {
       "id" : "Condition.clinicalStatus",
@@ -210,46 +254,6 @@ Other representations of profile: [CSV](../StructureDefinition-fr-condition-docu
         "code" : "dateTime"
       }],
       "mustSupport" : true
-    },
-    {
-      "id" : "Condition.recorder",
-      "path" : "Condition.recorder",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Condition.recorder.extension:author",
-      "path" : "Condition.recorder.extension",
-      "sliceName" : "author",
-      "short" : "Auteur du problème",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"]
-      }]
-    },
-    {
-      "id" : "Condition.recorder.extension:author.extension:type",
-      "path" : "Condition.recorder.extension.extension",
-      "sliceName" : "type"
-    },
-    {
-      "id" : "Condition.recorder.extension:author.extension:type.value[x]",
-      "path" : "Condition.recorder.extension.extension.value[x]",
-      "patternCode" : "AUT"
-    },
-    {
-      "id" : "Condition.recorder.extension:author.extension:actor",
-      "path" : "Condition.recorder.extension.extension",
-      "sliceName" : "actor"
-    },
-    {
-      "id" : "Condition.recorder.extension:author.extension:actor.value[x]",
-      "path" : "Condition.recorder.extension.extension.value[x]",
-      "type" : [{
-        "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document"]
-      }]
     },
     {
       "id" : "Condition.stage.summary",

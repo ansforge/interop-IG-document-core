@@ -37,8 +37,8 @@ Cette structure est dérivée de [Observation](http://hl7.org/fhir/R4/observatio
 
 ** Résumé **
 
-Obligatoire : 4 éléments
- Must-Support : 8 éléments
+Obligatoire : 3 éléments
+ Must-Support : 7 éléments
 
 **Slices**
 
@@ -68,8 +68,8 @@ Cette structure est dérivée de [Observation](http://hl7.org/fhir/R4/observatio
 
 ** Résumé **
 
-Obligatoire : 4 éléments
- Must-Support : 8 éléments
+Obligatoire : 3 éléments
+ Must-Support : 7 éléments
 
 **Slices**
 
@@ -94,7 +94,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-observation-
   "name" : "FRObservationPainScoreDocument",
   "title" : "Observation - FR Observation Pain Score Document",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -155,10 +155,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-observation-
     {
       "id" : "Observation.identifier",
       "path" : "Observation.identifier",
-      "short" : "Identifiant de l'observation",
-      "min" : 1,
-      "max" : "1",
-      "mustSupport" : true
+      "short" : "Identifiant de l'observation"
     },
     {
       "id" : "Observation.status",

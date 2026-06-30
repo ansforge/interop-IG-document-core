@@ -3,7 +3,7 @@
 ## Logical Model: Logical model- FR LM Pregnancy History 
 
  
-Entrée Historique de la grossesse 
+Historique de la grossesse 
 
 **Usages:**
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-pregnancy-h
   "name" : "FRLMPregnancyHistory",
   "title" : "Logical model- FR LM Pregnancy History",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-pregnancy-h
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Entrée Historique de la grossesse",
+  "description" : "Historique de la grossesse",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -64,7 +64,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-pregnancy-h
       "id" : "fr-lm-pregnancy-history",
       "path" : "fr-lm-pregnancy-history",
       "short" : "Logical model- FR LM Pregnancy History",
-      "definition" : "Entrée Historique de la grossesse"
+      "definition" : "Historique de la grossesse"
     },
     {
       "id" : "fr-lm-pregnancy-history.header.status",

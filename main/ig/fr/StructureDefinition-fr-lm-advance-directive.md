@@ -3,7 +3,7 @@
 ## Modèle logique: Logical model - FR LM Advance Directive 
 
  
-Entree Directive anticipee 
+Directive anticipée 
 
 **Utilisations:**
 
@@ -69,7 +69,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-advance-d
   "name" : "FRLMAdvanceDirective",
   "title" : "Logical model - FR LM Advance Directive",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -78,7 +78,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-advance-d
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Entree Directive anticipee",
+  "description" : "Directive anticipée",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -97,7 +97,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-advance-d
       "id" : "fr-lm-advance-directive",
       "path" : "fr-lm-advance-directive",
       "short" : "Logical model - FR LM Advance Directive",
-      "definition" : "Entree Directive anticipee"
+      "definition" : "Directive anticipée"
     },
     {
       "id" : "fr-lm-advance-directive.header.status",

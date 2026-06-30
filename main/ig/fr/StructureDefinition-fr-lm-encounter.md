@@ -3,7 +3,7 @@
 ## Modèle logique: Logical model - FR LM Encounter 
 
  
-Entrée Rencontre 
+Rencontre 
 
 **Utilisations:**
 
@@ -22,6 +22,10 @@ Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https:/
 
 Cette structure est dérivée de [FRLMEntry](StructureDefinition-fr-lm-entry.md) 
 
+#### Bindings terminologiques (différentiel)
+
+#### Bindings terminologiques
+
 Cette structure est dérivée de [FRLMEntry](StructureDefinition-fr-lm-entry.md) 
 
 ** Résumé **
@@ -33,7 +37,11 @@ Obligatoire : 0 élément(3 éléments obligatoire(s) imbriqué(s))
 
 Cette structure est dérivée de [FRLMEntry](StructureDefinition-fr-lm-entry.md) 
 
+#### Bindings terminologiques (différentiel)
+
  **Vue d'ensembleView** 
+
+#### Bindings terminologiques
 
 Cette structure est dérivée de [FRLMEntry](StructureDefinition-fr-lm-entry.md) 
 
@@ -63,7 +71,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-encounter
   "name" : "FRLMEncounter",
   "title" : "Logical model - FR LM Encounter",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -72,7 +80,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-encounter
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Entrée Rencontre",
+  "description" : "Rencontre",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -91,7 +99,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-encounter
       "id" : "fr-lm-encounter",
       "path" : "fr-lm-encounter",
       "short" : "Logical model - FR LM Encounter",
-      "definition" : "Entrée Rencontre"
+      "definition" : "Rencontre"
     },
     {
       "id" : "fr-lm-encounter.header.author[x]",
@@ -231,13 +239,17 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-encounter
     {
       "id" : "fr-lm-encounter.admission.admitSource",
       "path" : "fr-lm-encounter.admission.admitSource",
-      "short" : "Source de l'admission (ex : référence d'un médecin, transfert).",
-      "definition" : "Source de l'admission (ex : référence d'un médecin, transfert).",
+      "short" : "Modalité d'entrée d'un patient en ES (urgence, programmée, etc...).",
+      "definition" : "Modalité d'entrée d'un patient en ES (urgence, programmée, etc...).",
       "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "CodeableConcept"
-      }]
+      }],
+      "binding" : {
+        "description" : "jdv-modalite-entree : Modalité d'entrée en établissement de santé",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-entree-cisis"
+      }
     },
     {
       "id" : "fr-lm-encounter.dischargeDiagnosis[x]",
@@ -256,8 +268,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-encounter
     {
       "id" : "fr-lm-encounter.dischargeDestination",
       "path" : "fr-lm-encounter.dischargeDestination",
-      "short" : "Type et lieu de sortie",
-      "definition" : "Type et lieu de sortie",
+      "short" : "modalité de sortie du patient d'un ES (retour à domicile, EHPAD, HAD, etc...)",
+      "definition" : "modalité de sortie du patient d'un ES (retour à domicile, EHPAD, HAD, etc...)",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -273,7 +285,10 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-encounter
       "max" : "1",
       "type" : [{
         "code" : "CodeableConcept"
-      }]
+      }],
+      "binding" : {
+        "description" : "JDV_ModaliteSortie_CISIS (1.2.250.1.213.1.1.5.74) ou autre JDV spécifique à un volet"
+      }
     },
     {
       "id" : "fr-lm-encounter.dischargeDestination.location[x]",

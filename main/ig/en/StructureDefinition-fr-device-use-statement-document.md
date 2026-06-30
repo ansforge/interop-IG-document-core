@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-device-use-sta
   "name" : "FRDeviceUseStatementDocument",
   "title" : "DeviceUseStatement - FR Device Use Statement Document",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -98,6 +98,42 @@ Other representations of profile: [CSV](../StructureDefinition-fr-device-use-sta
       }
     },
     {
+      "id" : "DeviceUseStatement.extension:performer",
+      "path" : "DeviceUseStatement.extension",
+      "sliceName" : "performer",
+      "short" : "Dispensateur: référence au professionnel de santé ou à l'organisation ayant initié ou dispensé le dispositif",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"]
+      }]
+    },
+    {
+      "id" : "DeviceUseStatement.extension:performer.extension:type",
+      "path" : "DeviceUseStatement.extension.extension",
+      "sliceName" : "type"
+    },
+    {
+      "id" : "DeviceUseStatement.extension:performer.extension:type.value[x]",
+      "path" : "DeviceUseStatement.extension.extension.value[x]",
+      "patternCode" : "PRF"
+    },
+    {
+      "id" : "DeviceUseStatement.extension:performer.extension:actor",
+      "path" : "DeviceUseStatement.extension.extension",
+      "sliceName" : "actor"
+    },
+    {
+      "id" : "DeviceUseStatement.extension:performer.extension:actor.value[x]",
+      "path" : "DeviceUseStatement.extension.extension.value[x]",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document",
+        "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-organization-document"]
+      }]
+    },
+    {
       "id" : "DeviceUseStatement.extension:notCovered",
       "path" : "DeviceUseStatement.extension",
       "sliceName" : "notCovered",
@@ -112,9 +148,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-device-use-sta
     {
       "id" : "DeviceUseStatement.identifier",
       "path" : "DeviceUseStatement.identifier",
-      "short" : "Identifiant de la fourniture du DM\nSous la forme UID (UUID ou OID).",
-      "min" : 1,
-      "mustSupport" : true
+      "short" : "Identifiant de la fourniture du DM."
     },
     {
       "id" : "DeviceUseStatement.timing[x]",
@@ -124,48 +158,6 @@ Other representations of profile: [CSV](../StructureDefinition-fr-device-use-sta
       },
       {
         "code" : "Period"
-      }]
-    },
-    {
-      "id" : "DeviceUseStatement.source",
-      "path" : "DeviceUseStatement.source",
-      "short" : "Dispensateur",
-      "mustSupport" : true
-    },
-    {
-      "id" : "DeviceUseStatement.source.extension:performer",
-      "path" : "DeviceUseStatement.source.extension",
-      "sliceName" : "performer",
-      "short" : "Dispensateur: référence au professionnel de santé ou à l'organisation ayant initié ou dispensé le dispositif",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"]
-      }]
-    },
-    {
-      "id" : "DeviceUseStatement.source.extension:performer.extension:type",
-      "path" : "DeviceUseStatement.source.extension.extension",
-      "sliceName" : "type"
-    },
-    {
-      "id" : "DeviceUseStatement.source.extension:performer.extension:type.value[x]",
-      "path" : "DeviceUseStatement.source.extension.extension.value[x]",
-      "patternCode" : "PRF"
-    },
-    {
-      "id" : "DeviceUseStatement.source.extension:performer.extension:actor",
-      "path" : "DeviceUseStatement.source.extension.extension",
-      "sliceName" : "actor"
-    },
-    {
-      "id" : "DeviceUseStatement.source.extension:performer.extension:actor.value[x]",
-      "path" : "DeviceUseStatement.source.extension.extension.value[x]",
-      "type" : [{
-        "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document",
-        "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-organization-document"]
       }]
     },
     {

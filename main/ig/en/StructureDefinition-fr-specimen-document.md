@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-specimen-docum
   "name" : "FRSpecimenDocument",
   "title" : "Specimen - FR Specimen Document",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -78,10 +78,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-specimen-docum
     {
       "id" : "Specimen.identifier",
       "path" : "Specimen.identifier",
-      "short" : "Identifiant de l'échantillon : L'identifiant de l'échantillon est éventuellement multiple (premier identifiant attribué par le préleveur, puis réidentification par le laboratoire).\nL'un des identifiants est visible sur l'échantillon matériel (par exemple en code barre sur le tube ou le bocal).",
-      "min" : 1,
-      "max" : "1",
-      "mustSupport" : true
+      "short" : "Identifiant de l'échantillon : L'identifiant de l'échantillon est éventuellement multiple (premier identifiant attribué par le préleveur, puis réidentification par le laboratoire).\nL'un des identifiants est visible sur l'échantillon matériel (par exemple en code barre sur le tube ou le bocal)."
     },
     {
       "id" : "Specimen.status",
@@ -126,6 +123,11 @@ Other representations of profile: [CSV](../StructureDefinition-fr-specimen-docum
       }]
     },
     {
+      "id" : "Specimen.collection",
+      "path" : "Specimen.collection",
+      "mustSupport" : true
+    },
+    {
       "id" : "Specimen.collection.collector",
       "path" : "Specimen.collection.collector",
       "short" : "Organisation prélevante",
@@ -142,6 +144,11 @@ Other representations of profile: [CSV](../StructureDefinition-fr-specimen-docum
       "mustSupport" : true
     },
     {
+      "id" : "Specimen.collection.method",
+      "path" : "Specimen.collection.method",
+      "short" : "Actes de prélèvement"
+    },
+    {
       "id" : "Specimen.collection.bodySite",
       "path" : "Specimen.collection.bodySite",
       "short" : "Localisation anatomique",
@@ -150,18 +157,6 @@ Other representations of profile: [CSV](../StructureDefinition-fr-specimen-docum
         "strength" : "extensible",
         "valueSet" : "http://hl7.org/fhir/ValueSet/body-site"
       }
-    },
-    {
-      "id" : "Specimen.processing.description",
-      "path" : "Specimen.processing.description",
-      "short" : "Acte de prélèvement :\n\nPour un prélèvement en vue d'examen de biologie médicale, le code affiné NABM de l'acte de prélèvement doit être renseigné si connu, sauf dans le cas d'un recueil d'échantillon effectué par le patient lui-même.\nUn prélèvement cytologique ou de tissu en vue d'un examen d'anatomie ou de cytologie pathologiques est codé à l'aide d'une nomenclature précisée dans les modèles de contenus métiers.\nPar défaut, utiliser le code suivant :\ncode='33882-2'\ndisplayName='Prélèvement'\ncodeSystem='2.16.840.1.113883.6.1'\ncodeSystemName='LOINC'"
-    },
-    {
-      "id" : "Specimen.processing.procedure.coding.code",
-      "path" : "Specimen.processing.procedure.coding.code",
-      "short" : "Acte de prélèvement",
-      "min" : 1,
-      "mustSupport" : true
     },
     {
       "id" : "Specimen.processing.additive",

@@ -3,7 +3,7 @@
 ## Logical Model: Logical model - FR LM Encounter 
 
  
-Entrée Rencontre 
+Rencontre 
 
 **Usages:**
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-encounter.c
   "name" : "FRLMEncounter",
   "title" : "Logical model - FR LM Encounter",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-encounter.c
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Entrée Rencontre",
+  "description" : "Rencontre",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -64,7 +64,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-encounter.c
       "id" : "fr-lm-encounter",
       "path" : "fr-lm-encounter",
       "short" : "Logical model - FR LM Encounter",
-      "definition" : "Entrée Rencontre"
+      "definition" : "Rencontre"
     },
     {
       "id" : "fr-lm-encounter.header.author[x]",
@@ -204,13 +204,17 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-encounter.c
     {
       "id" : "fr-lm-encounter.admission.admitSource",
       "path" : "fr-lm-encounter.admission.admitSource",
-      "short" : "Source de l'admission (ex : référence d'un médecin, transfert).",
-      "definition" : "Source de l'admission (ex : référence d'un médecin, transfert).",
+      "short" : "Modalité d'entrée d'un patient en ES (urgence, programmée, etc...).",
+      "definition" : "Modalité d'entrée d'un patient en ES (urgence, programmée, etc...).",
       "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "CodeableConcept"
-      }]
+      }],
+      "binding" : {
+        "description" : "jdv-modalite-entree : Modalité d'entrée en établissement de santé",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-entree-cisis"
+      }
     },
     {
       "id" : "fr-lm-encounter.dischargeDiagnosis[x]",
@@ -229,8 +233,8 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-encounter.c
     {
       "id" : "fr-lm-encounter.dischargeDestination",
       "path" : "fr-lm-encounter.dischargeDestination",
-      "short" : "Type et lieu de sortie",
-      "definition" : "Type et lieu de sortie",
+      "short" : "modalité de sortie du patient d'un ES (retour à domicile, EHPAD, HAD, etc...)",
+      "definition" : "modalité de sortie du patient d'un ES (retour à domicile, EHPAD, HAD, etc...)",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -246,7 +250,10 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-encounter.c
       "max" : "1",
       "type" : [{
         "code" : "CodeableConcept"
-      }]
+      }],
+      "binding" : {
+        "description" : "JDV_ModaliteSortie_CISIS (1.2.250.1.213.1.1.5.74) ou autre JDV spécifique à un volet"
+      }
     },
     {
       "id" : "fr-lm-encounter.dischargeDestination.location[x]",

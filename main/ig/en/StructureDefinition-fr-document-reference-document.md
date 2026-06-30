@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-document-refer
   "name" : "FRDocumentReferenceDocument",
   "title" : "DocumentReference - FR Document reference Document",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -98,10 +98,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-document-refer
     {
       "id" : "DocumentReference.identifier",
       "path" : "DocumentReference.identifier",
-      "short" : "Identifiant principal unique du document",
-      "min" : 1,
-      "max" : "1",
-      "mustSupport" : true
+      "short" : "Identifiant principal unique du document"
     },
     {
       "id" : "DocumentReference.docStatus",
@@ -116,18 +113,6 @@ Other representations of profile: [CSV](../StructureDefinition-fr-document-refer
       "short" : "type du document",
       "min" : 1,
       "mustSupport" : true
-    },
-    {
-      "id" : "DocumentReference.type.extension:dataAbsentReason",
-      "path" : "DocumentReference.type.extension",
-      "sliceName" : "dataAbsentReason",
-      "short" : "Type absent pour les documents référencés externes et internes",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/data-absent-reason"]
-      }]
     },
     {
       "id" : "DocumentReference.date",

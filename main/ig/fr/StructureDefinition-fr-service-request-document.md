@@ -128,7 +128,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-service-requ
   "name" : "FRServiceRequestDocument",
   "title" : "ServiceRequest - FR Service Request Document",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -227,6 +227,28 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-service-requ
       "mustSupport" : true
     },
     {
+      "id" : "ServiceRequest.extension:author",
+      "path" : "ServiceRequest.extension",
+      "sliceName" : "author",
+      "short" : "Auteur de la demande",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"]
+      }]
+    },
+    {
+      "id" : "ServiceRequest.extension:author.extension:type",
+      "path" : "ServiceRequest.extension.extension",
+      "sliceName" : "type"
+    },
+    {
+      "id" : "ServiceRequest.extension:author.extension:type.value[x]",
+      "path" : "ServiceRequest.extension.extension.value[x]",
+      "patternCode" : "AUT"
+    },
+    {
       "id" : "ServiceRequest.identifier",
       "path" : "ServiceRequest.identifier",
       "slicing" : {
@@ -290,29 +312,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-service-requ
     {
       "id" : "ServiceRequest.requester",
       "path" : "ServiceRequest.requester",
+      "short" : "Prescripteur",
       "mustSupport" : true
-    },
-    {
-      "id" : "ServiceRequest.requester.extension:author",
-      "path" : "ServiceRequest.requester.extension",
-      "sliceName" : "author",
-      "short" : "Auteur de la demande",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"]
-      }]
-    },
-    {
-      "id" : "ServiceRequest.requester.extension:author.extension:type",
-      "path" : "ServiceRequest.requester.extension.extension",
-      "sliceName" : "type"
-    },
-    {
-      "id" : "ServiceRequest.requester.extension:author.extension:type.value[x]",
-      "path" : "ServiceRequest.requester.extension.extension.value[x]",
-      "patternCode" : "AUT"
     },
     {
       "id" : "ServiceRequest.bodySite",

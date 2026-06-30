@@ -7,7 +7,7 @@ Localisation anatomique
 
 **Usages:**
 
-* Use this Logical Model: [Logical model - FR LM Condition](StructureDefinition-fr-lm-condition.md), [Logical model - FR LM Device use](StructureDefinition-fr-lm-device-use.md), [Logical model - FR LM Family Member History](StructureDefinition-fr-lm-family-member-history.md), [Logical model - FR LM Imaging Study](StructureDefinition-fr-lm-imaging-study.md)... Show 9 more, [Logical model - FR LM Assessment](StructureDefinition-fr-lm-observation-assessment.md), [Logical model - FR LM Observation Result](StructureDefinition-fr-lm-observation-result.md), [Logical model - FR LM Observation Vital Sign](StructureDefinition-fr-lm-observation-vital-sign.md), [Logical model - FR LM Observation](StructureDefinition-fr-lm-observation.md), [Logical model- FR LM Procedure](StructureDefinition-fr-lm-procedure.md), [Logical model - FR LM Quantity Exposure](StructureDefinition-fr-lm-quantity-exposure.md), [Logical model - FR LM Series](StructureDefinition-fr-lm-series.md), [Logical model - FR LM Service Request](StructureDefinition-fr-lm-service-request.md) and [Logical model - FR LM Specimen](StructureDefinition-fr-lm-specimen.md)
+* Use this Logical Model: [Logical model - FR LM Condition](StructureDefinition-fr-lm-condition.md), [Logical model - FR LM Device use](StructureDefinition-fr-lm-device-use.md), [Logical model - FR LM Family Member History](StructureDefinition-fr-lm-family-member-history.md), [Logical model - FR LM Imaging Study](StructureDefinition-fr-lm-imaging-study.md)... Show 8 more, [Logical model - FR LM Assessment](StructureDefinition-fr-lm-observation-assessment.md), [Logical model - FR LM Observation Vital Sign](StructureDefinition-fr-lm-observation-vital-sign.md), [Logical model - FR LM Observation](StructureDefinition-fr-lm-observation.md), [Logical model- FR LM Procedure](StructureDefinition-fr-lm-procedure.md), [Logical model - FR LM Quantity Exposure](StructureDefinition-fr-lm-quantity-exposure.md), [Logical model - FR LM Series](StructureDefinition-fr-lm-series.md), [Logical model - FR LM Service Request](StructureDefinition-fr-lm-service-request.md) and [Logical model - FR LM Specimen](StructureDefinition-fr-lm-specimen.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ans.document.fr.core|current/StructureDefinition/StructureDefinition-fr-lm-body-structure.json)
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-body-struct
   "name" : "FRLMBodyStructure",
   "title" : "Logical model - FR LM Body Structure",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -95,8 +95,8 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-body-struct
     {
       "id" : "fr-lm-body-structure.locationQualifier",
       "path" : "fr-lm-body-structure.locationQualifier",
-      "short" : "Qualificatif complémentaire de la localisation anatomique (par exemple : supérieur, inférieur, distal, proximal).",
-      "definition" : "Qualificatif complémentaire de la localisation anatomique (par exemple : supérieur, inférieur, distal, proximal).",
+      "short" : "Précision topographique (par exemple : supérieur, inférieur, distal, proximal).",
+      "definition" : "Précision topographique (par exemple : supérieur, inférieur, distal, proximal).",
       "min" : 0,
       "max" : "*",
       "type" : [{

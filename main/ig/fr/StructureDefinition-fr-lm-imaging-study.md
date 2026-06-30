@@ -3,11 +3,11 @@
 ## Modèle logique: Logical model - FR LM Imaging Study 
 
  
-Entrée DICOM Examen Imagerie 
+DICOM Examen Imagerie 
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Logical model - FR LM DICOM Study Metadata](StructureDefinition-fr-lm-dicom-study-metadata.md), [Logical model - FR LM Observation Result](StructureDefinition-fr-lm-observation-result.md), [Logical model- FR LM Pregnancy History](StructureDefinition-fr-lm-pregnancy-history.md) and [Logical model- FR LM Pregnancy Observation](StructureDefinition-fr-lm-pregnancy-observation.md)
+* Utilise ce/t/te Modèle logique: [Logical model - FR LM DICOM Study Metadata](StructureDefinition-fr-lm-dicom-study-metadata.md), [Logical model - FR LM Observation](StructureDefinition-fr-lm-observation.md), [Logical model- FR LM Pregnancy History](StructureDefinition-fr-lm-pregnancy-history.md) and [Logical model- FR LM Pregnancy Observation](StructureDefinition-fr-lm-pregnancy-observation.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-imaging-study)
 
@@ -69,7 +69,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-imaging-s
   "name" : "FRLMImagingStudy",
   "title" : "Logical model - FR LM Imaging Study",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -78,7 +78,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-imaging-s
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Entrée DICOM Examen Imagerie",
+  "description" : "DICOM Examen Imagerie",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -97,7 +97,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-imaging-s
       "id" : "fr-lm-imaging-study",
       "path" : "fr-lm-imaging-study",
       "short" : "Logical model - FR LM Imaging Study",
-      "definition" : "Entrée DICOM Examen Imagerie"
+      "definition" : "DICOM Examen Imagerie"
     },
     {
       "id" : "fr-lm-imaging-study.header.identifier",
@@ -187,8 +187,19 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-imaging-s
       }]
     },
     {
-      "id" : "fr-lm-imaging-study.seriesEndpoint",
-      "path" : "fr-lm-imaging-study.seriesEndpoint",
+      "id" : "fr-lm-imaging-study.studyCustodian",
+      "path" : "fr-lm-imaging-study.studyCustodian",
+      "short" : "Organisation responsable de l'examen",
+      "definition" : "Organisation responsable de l'examen",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organisation"
+      }]
+    },
+    {
+      "id" : "fr-lm-imaging-study.studyEndpoint",
+      "path" : "fr-lm-imaging-study.studyEndpoint",
       "short" : "Endpoint de l'examen d'imagerie",
       "definition" : "Endpoint de l'examen d'imagerie",
       "min" : 0,

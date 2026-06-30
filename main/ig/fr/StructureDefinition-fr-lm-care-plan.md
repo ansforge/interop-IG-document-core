@@ -3,7 +3,7 @@
 ## Modèle logique: Logical model - FR LM Care Plan 
 
  
-Entrée Plan de soins 
+Plan de soins 
 
 **Utilisations:**
 
@@ -61,7 +61,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-care-plan
   "name" : "FRLMCarePlan",
   "title" : "Logical model - FR LM Care Plan",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -70,7 +70,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-care-plan
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Entrée Plan de soins",
+  "description" : "Plan de soins",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -89,7 +89,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-care-plan
       "id" : "fr-lm-care-plan",
       "path" : "fr-lm-care-plan",
       "short" : "Logical model - FR LM Care Plan",
-      "definition" : "Entrée Plan de soins"
+      "definition" : "Plan de soins"
     },
     {
       "id" : "fr-lm-care-plan.header.status",

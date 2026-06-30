@@ -12,7 +12,6 @@
   <sch:pattern>
     <sch:title>f:MedicationStatement</sch:title>
     <sch:rule context="f:MedicationStatement">
-      <sch:assert test="count(f:identifier) &gt;= 1">identifier: minimum cardinality of 'identifier' is 1</sch:assert>
       <sch:assert test="count(f:note) &lt;= 1">note: maximum cardinality of 'note' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>

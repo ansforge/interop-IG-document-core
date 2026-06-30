@@ -37,8 +37,7 @@ Cette structure est dérivée de [FRDiagnosticReportDocument](StructureDefinitio
 
 ** Résumé **
 
-Obligatoire : 1 élément
- Must-Support : 4 éléments
+Must-Support : 4 éléments
 
 **Structures**
 
@@ -88,8 +87,7 @@ Cette structure est dérivée de [FRDiagnosticReportDocument](StructureDefinitio
 
 ** Résumé **
 
-Obligatoire : 1 élément
- Must-Support : 4 éléments
+Must-Support : 4 éléments
 
 **Structures**
 
@@ -134,7 +132,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-diagnostic-r
   "name" : "FRDiagnosticReportImagingDocument",
   "title" : "DiagnosticReport - FR Diagnostic Report Imaging Document",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -236,8 +234,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-diagnostic-r
     {
       "id" : "DiagnosticReport.identifier",
       "path" : "DiagnosticReport.identifier",
-      "short" : "identifiant du compte-rendu d'imagerie",
-      "min" : 1
+      "short" : "Identifiant du compte-rendu d'imagerie"
     },
     {
       "id" : "DiagnosticReport.basedOn",

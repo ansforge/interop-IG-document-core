@@ -3,7 +3,7 @@
 ## Logical Model: Logical model - FR LM Attachment 
 
  
-Entrée Document attaché 
+Document attaché 
 
 **Usages:**
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-attachment.
   "name" : "FRLMAttachment",
   "title" : "Logical model - FR LM Attachment",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-attachment.
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Entrée Document attaché",
+  "description" : "Document attaché",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -64,7 +64,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-attachment.
       "id" : "fr-lm-attachment",
       "path" : "fr-lm-attachment",
       "short" : "Logical model - FR LM Attachment",
-      "definition" : "Entrée Document attaché"
+      "definition" : "Document attaché"
     },
     {
       "id" : "fr-lm-attachment.contentType",

@@ -41,10 +41,13 @@ Must-Support : 9 éléments
 
 Cette structure fait référence à ces autres structures:
 
-* [FR Patient INS Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-patient-ins-document)](StructureDefinition-fr-patient-ins-document.md)
-* [Specimen - FR Specimen Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-specimen-document)](StructureDefinition-fr-specimen-document.md)
 * [FR Device Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-device-auteur-document)](StructureDefinition-fr-device-auteur-document.md)
 * [FR PractitionerRole Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document)](StructureDefinition-fr-practitionerRole-document.md)
+* [FR RelatedPerson Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-related-person-document)](StructureDefinition-fr-related-person-document.md)
+* [FR Patient INS Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-patient-ins-document)](StructureDefinition-fr-patient-ins-document.md)
+* [FR Patient Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-patient-document)](StructureDefinition-fr-patient-document.md)
+* [FR Organization Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-organization-document)](StructureDefinition-fr-organization-document.md)
+* [Specimen - FR Specimen Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-specimen-document)](StructureDefinition-fr-specimen-document.md)
 
 **Extensions**
 
@@ -78,10 +81,13 @@ Must-Support : 9 éléments
 
 Cette structure fait référence à ces autres structures:
 
-* [FR Patient INS Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-patient-ins-document)](StructureDefinition-fr-patient-ins-document.md)
-* [Specimen - FR Specimen Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-specimen-document)](StructureDefinition-fr-specimen-document.md)
 * [FR Device Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-device-auteur-document)](StructureDefinition-fr-device-auteur-document.md)
 * [FR PractitionerRole Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document)](StructureDefinition-fr-practitionerRole-document.md)
+* [FR RelatedPerson Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-related-person-document)](StructureDefinition-fr-related-person-document.md)
+* [FR Patient INS Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-patient-ins-document)](StructureDefinition-fr-patient-ins-document.md)
+* [FR Patient Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-patient-document)](StructureDefinition-fr-patient-document.md)
+* [FR Organization Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-organization-document)](StructureDefinition-fr-organization-document.md)
+* [Specimen - FR Specimen Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-specimen-document)](StructureDefinition-fr-specimen-document.md)
 
 **Extensions**
 
@@ -106,7 +112,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-media-docume
   "name" : "FRMediaDocument",
   "title" : "Media - FR Media Document",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -170,6 +176,132 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-media-docume
       "path" : "Media"
     },
     {
+      "id" : "Media.extension",
+      "path" : "Media.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "Media.extension:author",
+      "path" : "Media.extension",
+      "sliceName" : "author",
+      "short" : "Auteur du média",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"]
+      }]
+    },
+    {
+      "id" : "Media.extension:author.extension:type",
+      "path" : "Media.extension.extension",
+      "sliceName" : "type"
+    },
+    {
+      "id" : "Media.extension:author.extension:type.value[x]",
+      "path" : "Media.extension.extension.value[x]",
+      "patternCode" : "AUT"
+    },
+    {
+      "id" : "Media.extension:author.extension:actor",
+      "path" : "Media.extension.extension",
+      "sliceName" : "actor"
+    },
+    {
+      "id" : "Media.extension:author.extension:actor.value[x]",
+      "path" : "Media.extension.extension.value[x]",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-device-auteur-document",
+        "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document"]
+      }]
+    },
+    {
+      "id" : "Media.extension:informant",
+      "path" : "Media.extension",
+      "sliceName" : "informant",
+      "short" : "Informateur",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"]
+      }]
+    },
+    {
+      "id" : "Media.extension:informant.extension:type",
+      "path" : "Media.extension.extension",
+      "sliceName" : "type"
+    },
+    {
+      "id" : "Media.extension:informant.extension:type.value[x]",
+      "path" : "Media.extension.extension.value[x]",
+      "patternCode" : "INF"
+    },
+    {
+      "id" : "Media.extension:informant.extension:actor",
+      "path" : "Media.extension.extension",
+      "sliceName" : "actor"
+    },
+    {
+      "id" : "Media.extension:informant.extension:actor.value[x]",
+      "path" : "Media.extension.extension.value[x]",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document",
+        "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-related-person-document",
+        "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-patient-ins-document",
+        "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-patient-document"]
+      }]
+    },
+    {
+      "id" : "Media.extension:participant",
+      "path" : "Media.extension",
+      "sliceName" : "participant",
+      "short" : "Participant : Personne ayant participé à l’acte",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"]
+      }]
+    },
+    {
+      "id" : "Media.extension:participant.extension:type",
+      "path" : "Media.extension.extension",
+      "sliceName" : "type"
+    },
+    {
+      "id" : "Media.extension:participant.extension:type.value[x]",
+      "path" : "Media.extension.extension.value[x]",
+      "patternCode" : "PART"
+    },
+    {
+      "id" : "Media.extension:participant.extension:actor",
+      "path" : "Media.extension.extension",
+      "sliceName" : "actor"
+    },
+    {
+      "id" : "Media.extension:participant.extension:actor.value[x]",
+      "path" : "Media.extension.extension.value[x]",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document",
+        "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-related-person-document",
+        "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-patient-ins-document",
+        "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-patient-document",
+        "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-device-auteur-document",
+        "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-organization-document"]
+      }]
+    },
+    {
       "id" : "Media.basedOn",
       "path" : "Media.basedOn",
       "short" : "Acte ou plan de soins à l'origine de l'image",
@@ -226,84 +358,19 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-media-docume
       "patternCode" : "PRF"
     },
     {
-      "id" : "Media.operator.extension:author",
-      "path" : "Media.operator.extension",
-      "sliceName" : "author",
-      "short" : "Auteur du média",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"]
-      }]
-    },
-    {
-      "id" : "Media.operator.extension:author.extension:type",
-      "path" : "Media.operator.extension.extension",
-      "sliceName" : "type"
-    },
-    {
-      "id" : "Media.operator.extension:author.extension:type.value[x]",
-      "path" : "Media.operator.extension.extension.value[x]",
-      "patternCode" : "AUT"
-    },
-    {
-      "id" : "Media.operator.extension:author.extension:actor",
+      "id" : "Media.operator.extension:performer.extension:actor",
       "path" : "Media.operator.extension.extension",
       "sliceName" : "actor"
     },
     {
-      "id" : "Media.operator.extension:author.extension:actor.value[x]",
+      "id" : "Media.operator.extension:performer.extension:actor.value[x]",
       "path" : "Media.operator.extension.extension.value[x]",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-device-auteur-document",
-        "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document"]
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document",
+        "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-organization-document",
+        "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-device-auteur-document"]
       }]
-    },
-    {
-      "id" : "Media.operator.extension:informant",
-      "path" : "Media.operator.extension",
-      "sliceName" : "informant",
-      "short" : "Informateur",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"]
-      }]
-    },
-    {
-      "id" : "Media.operator.extension:informant.extension:type",
-      "path" : "Media.operator.extension.extension",
-      "sliceName" : "type"
-    },
-    {
-      "id" : "Media.operator.extension:informant.extension:type.value[x]",
-      "path" : "Media.operator.extension.extension.value[x]",
-      "patternCode" : "INF"
-    },
-    {
-      "id" : "Media.operator.extension:participant",
-      "path" : "Media.operator.extension",
-      "sliceName" : "participant",
-      "short" : "Participant : Personne ayant participé à l’acte",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"]
-      }]
-    },
-    {
-      "id" : "Media.operator.extension:participant.extension:type",
-      "path" : "Media.operator.extension.extension",
-      "sliceName" : "type"
-    },
-    {
-      "id" : "Media.operator.extension:participant.extension:type.value[x]",
-      "path" : "Media.operator.extension.extension.value[x]",
-      "patternCode" : "PART"
     },
     {
       "id" : "Media.reasonCode",

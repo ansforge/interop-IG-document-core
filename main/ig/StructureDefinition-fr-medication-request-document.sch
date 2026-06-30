@@ -13,7 +13,6 @@
     <sch:title>f:MedicationRequest</sch:title>
     <sch:rule context="f:MedicationRequest">
       <sch:assert test="count(f:extension[@url = 'https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-not-covered-extension']) &lt;= 1">extension with URL = 'https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-not-covered-extension': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:identifier) &gt;= 1">identifier: minimum cardinality of 'identifier' is 1</sch:assert>
       <sch:assert test="count(f:basedOn) &lt;= 1">basedOn: maximum cardinality of 'basedOn' is 1</sch:assert>
       <sch:assert test="count(f:substitution) &gt;= 1">substitution: minimum cardinality of 'substitution' is 1</sch:assert>
     </sch:rule>

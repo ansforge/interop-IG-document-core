@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-device-request
   "name" : "FRDeviceRequestDocument",
   "title" : "DeviceRequest - FR Device request Document",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -112,9 +112,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-device-request
     {
       "id" : "DeviceRequest.identifier",
       "path" : "DeviceRequest.identifier",
-      "short" : "Identifiant de la fourniture du DM - Sous la forme UID (UUID ou OID)",
-      "min" : 1,
-      "mustSupport" : true
+      "short" : "Identifiant de la fourniture du DM - Sous la forme UID (UUID ou OID)"
     },
     {
       "id" : "DeviceRequest.code[x]",
@@ -218,31 +216,11 @@ Other representations of profile: [CSV](../StructureDefinition-fr-device-request
       "id" : "DeviceRequest.requester",
       "path" : "DeviceRequest.requester",
       "short" : "Prescripteur",
-      "mustSupport" : true
-    },
-    {
-      "id" : "DeviceRequest.requester.extension:prescripteur",
-      "path" : "DeviceRequest.requester.extension",
-      "sliceName" : "prescripteur",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"]
-      }]
-    },
-    {
-      "id" : "DeviceRequest.requester.extension:prescripteur.extension:actor",
-      "path" : "DeviceRequest.requester.extension.extension",
-      "sliceName" : "actor"
-    },
-    {
-      "id" : "DeviceRequest.requester.extension:prescripteur.extension:actor.value[x]",
-      "path" : "DeviceRequest.requester.extension.extension.value[x]",
       "type" : [{
         "code" : "Reference",
         "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document"]
-      }]
+      }],
+      "mustSupport" : true
     },
     {
       "id" : "DeviceRequest.reasonReference",

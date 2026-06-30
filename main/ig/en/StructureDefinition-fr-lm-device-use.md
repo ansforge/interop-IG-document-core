@@ -3,7 +3,7 @@
 ## Logical Model: Logical model - FR LM Device use 
 
  
-Entrée Dispositif médical usage 
+Dispositif médical usage 
 
 **Usages:**
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-device-use.
   "name" : "FRLMDeviceUse",
   "title" : "Logical model - FR LM Device use",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-device-use.
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Entrée Dispositif médical usage",
+  "description" : "Dispositif médical usage",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -64,7 +64,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-device-use.
       "id" : "fr-lm-device-use",
       "path" : "fr-lm-device-use",
       "short" : "Logical model - FR LM Device use",
-      "definition" : "Entrée Dispositif médical usage"
+      "definition" : "Dispositif médical usage"
     },
     {
       "id" : "fr-lm-device-use.header.status",

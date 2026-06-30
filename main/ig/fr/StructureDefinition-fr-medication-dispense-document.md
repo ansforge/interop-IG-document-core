@@ -37,8 +37,8 @@ Cette structure est dérivée de [MedicationDispense](http://hl7.org/fhir/R4/med
 
 ** Résumé **
 
-Obligatoire : 3 éléments(1 élément obligatoire(s) imbriqué(s))
- Must-Support : 11 éléments
+Obligatoire : 2 éléments(1 élément obligatoire(s) imbriqué(s))
+ Must-Support : 10 éléments
 
 **Structures**
 
@@ -70,8 +70,8 @@ Cette structure est dérivée de [MedicationDispense](http://hl7.org/fhir/R4/med
 
 ** Résumé **
 
-Obligatoire : 3 éléments(1 élément obligatoire(s) imbriqué(s))
- Must-Support : 11 éléments
+Obligatoire : 2 éléments(1 élément obligatoire(s) imbriqué(s))
+ Must-Support : 10 éléments
 
 **Structures**
 
@@ -98,7 +98,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-medication-d
   "name" : "FRMedicationDispenseDocument",
   "title" : "MedicationDispense - FR Medication Dispense Document",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -154,10 +154,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-medication-d
     {
       "id" : "MedicationDispense.identifier",
       "path" : "MedicationDispense.identifier",
-      "short" : "Identifiant",
-      "min" : 1,
-      "max" : "1",
-      "mustSupport" : true
+      "short" : "Identifiant"
     },
     {
       "id" : "MedicationDispense.medication[x]",

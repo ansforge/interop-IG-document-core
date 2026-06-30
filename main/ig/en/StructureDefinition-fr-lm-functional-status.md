@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-functional-
   "name" : "FRLMFunctionalStatus",
   "title" : "logical model- FR LM Functional Status",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -81,14 +81,14 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-functional-
       "max" : "0"
     },
     {
-      "id" : "fr-lm-functional-status.entry.assessments",
-      "path" : "fr-lm-functional-status.entry.assessments",
-      "short" : "Groupe de questionnaires d'évalutation",
-      "definition" : "Groupe de questionnaires d'évalutation",
+      "id" : "fr-lm-functional-status.entry.assessment",
+      "path" : "fr-lm-functional-status.entry.assessment",
+      "short" : "résultat d'une évaluation du statut fonctionnel",
+      "definition" : "résultat d'une évaluation du statut fonctionnel",
       "min" : 0,
       "max" : "*",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-assessments"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation-assessment"
       }]
     }]
   }

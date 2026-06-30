@@ -7,7 +7,7 @@ Prescription
 
 **Usages:**
 
-* Use this Logical Model: [Logical model - FR LM Immunisation](StructureDefinition-fr-lm-immunisation.md) and [Logical model - FR LM Immunization Recommendation](StructureDefinition-fr-lm-immunization-recommendation.md)
+* Use this Logical Model: [Logical model - FR LM Immunisation](StructureDefinition-fr-lm-immunisation.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ans.document.fr.core|current/StructureDefinition/StructureDefinition-fr-lm-prescription-entree.json)
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-prescriptio
   "name" : "FRLMPrescriptionEntree",
   "title" : "Logical model - FR LM Prescription",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

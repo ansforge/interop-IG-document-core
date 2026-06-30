@@ -10,12 +10,6 @@
     single schematron that validates contained resources (if you have any) 
   -->
   <sch:pattern>
-    <sch:title>f:DiagnosticReport</sch:title>
-    <sch:rule context="f:DiagnosticReport">
-      <sch:assert test="count(f:identifier) &gt;= 1">identifier: minimum cardinality of 'identifier' is 1</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
     <sch:title>f:DiagnosticReport/f:resultsInterpreter/f:extension</sch:title>
     <sch:rule context="f:DiagnosticReport/f:resultsInterpreter/f:extension">
       <sch:assert test="count(f:extension[@url = 'type']) &gt;= 1">extension with URL = 'type': minimum cardinality of 'extension' is 1</sch:assert>

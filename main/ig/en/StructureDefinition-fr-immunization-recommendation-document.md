@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-immunization-r
   "name" : "FRImmunizationRecommendationDocument",
   "title" : "ImmunizationRecommendation - FR Immunization Recommendation Document",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -87,10 +87,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-immunization-r
     {
       "id" : "ImmunizationRecommendation.identifier",
       "path" : "ImmunizationRecommendation.identifier",
-      "short" : "Identifiant",
-      "min" : 1,
-      "max" : "1",
-      "mustSupport" : true
+      "short" : "Identifiant"
     },
     {
       "id" : "ImmunizationRecommendation.recommendation",

@@ -35,14 +35,8 @@ Cette structure est dérivée de [DocumentReference](http://hl7.org/fhir/R4/docu
 
 ** Résumé **
 
-Obligatoire : 2 éléments
- Must-Support : 7 éléments
-
-**Extensions**
-
-Cette structure fait référence à ces extensions:
-
-* [http://hl7.org/fhir/StructureDefinition/data-absent-reason](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-data-absent-reason.html)
+Obligatoire : 1 élément
+ Must-Support : 6 éléments
 
  **Vue des éléments clés** 
 
@@ -64,14 +58,8 @@ Cette structure est dérivée de [DocumentReference](http://hl7.org/fhir/R4/docu
 
 ** Résumé **
 
-Obligatoire : 2 éléments
- Must-Support : 7 éléments
-
-**Extensions**
-
-Cette structure fait référence à ces extensions:
-
-* [http://hl7.org/fhir/StructureDefinition/data-absent-reason](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-data-absent-reason.html)
+Obligatoire : 1 élément
+ Must-Support : 6 éléments
 
  
 
@@ -90,7 +78,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-document-ref
   "name" : "FRDocumentReferenceDocument",
   "title" : "DocumentReference - FR Document reference Document",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -156,10 +144,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-document-ref
     {
       "id" : "DocumentReference.identifier",
       "path" : "DocumentReference.identifier",
-      "short" : "Identifiant principal unique du document",
-      "min" : 1,
-      "max" : "1",
-      "mustSupport" : true
+      "short" : "Identifiant principal unique du document"
     },
     {
       "id" : "DocumentReference.docStatus",
@@ -174,18 +159,6 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-document-ref
       "short" : "type du document",
       "min" : 1,
       "mustSupport" : true
-    },
-    {
-      "id" : "DocumentReference.type.extension:dataAbsentReason",
-      "path" : "DocumentReference.type.extension",
-      "sliceName" : "dataAbsentReason",
-      "short" : "Type absent pour les documents référencés externes et internes",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/data-absent-reason"]
-      }]
     },
     {
       "id" : "DocumentReference.date",

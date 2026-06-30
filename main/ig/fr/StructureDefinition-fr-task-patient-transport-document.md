@@ -37,8 +37,8 @@ Cette structure est dérivée de [Task](http://hl7.org/fhir/R4/task.html)
 
 ** Résumé **
 
-Obligatoire : 7 éléments
- Must-Support : 3 éléments
+Obligatoire : 6 éléments
+ Must-Support : 2 éléments
 
 **Structures**
 
@@ -75,8 +75,8 @@ Cette structure est dérivée de [Task](http://hl7.org/fhir/R4/task.html)
 
 ** Résumé **
 
-Obligatoire : 7 éléments
- Must-Support : 3 éléments
+Obligatoire : 6 éléments
+ Must-Support : 2 éléments
 
 **Structures**
 
@@ -108,7 +108,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-task-patient
   "name" : "FRTaskPatientTransportDocument",
   "title" : "Task - FR Task Patient Transport Document",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -159,10 +159,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-task-patient
     {
       "id" : "Task.identifier",
       "path" : "Task.identifier",
-      "short" : "Identifiant du transport",
-      "min" : 1,
-      "max" : "1",
-      "mustSupport" : true
+      "short" : "Identifiant"
     },
     {
       "id" : "Task.code",

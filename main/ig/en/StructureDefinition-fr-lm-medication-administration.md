@@ -3,11 +3,11 @@
 ## Logical Model: Logical model- FR LM Medication Administration 
 
  
-Entrée Traitement 
+Traitement 
 
 **Usages:**
 
-* Use this Logical Model: [Logical model - FR LM Adverse Event](StructureDefinition-fr-lm-adverse-event.md), [Logical model - FR LM Course of encounter](StructureDefinition-fr-lm-course-of-encounter.md), [Logical model - FR LM Examination Report](StructureDefinition-fr-lm-examination-report.md), [Logical model - FR LM Exposure Information](StructureDefinition-fr-lm-exposure-information.md)... Show 4 more, [Logical model - FR LM Hospital Discharge Medications](StructureDefinition-fr-lm-hospital-discharge-medications.md), [Logical model - FR LM Medication Summary](StructureDefinition-fr-lm-medication-summary.md), [Logical model - FR LM Service Request](StructureDefinition-fr-lm-service-request.md) and [Logical model - FR LM Traitements administrés](StructureDefinition-fr-lm-traitements-administres.md)
+* Use this Logical Model: [Modèle logique métier - FR LM Adverse Drug Reaction](StructureDefinition-fr-lm-adverse-drug-reaction.md), [Logical model - FR LM Course of encounter](StructureDefinition-fr-lm-course-of-encounter.md), [Logical model - FR LM Examination Report](StructureDefinition-fr-lm-examination-report.md), [Logical model - FR LM Exposure Information](StructureDefinition-fr-lm-exposure-information.md)... Show 3 more, [Logical model - FR LM Hospital Discharge Medications](StructureDefinition-fr-lm-hospital-discharge-medications.md), [Logical model - FR LM Medication Summary](StructureDefinition-fr-lm-medication-summary.md) and [Logical model - FR LM Service Request](StructureDefinition-fr-lm-service-request.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ans.document.fr.core|current/StructureDefinition/StructureDefinition-fr-lm-medication-administration.json)
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-medication-
   "name" : "FRLMMedicationAdministration",
   "title" : "Logical model- FR LM Medication Administration\t",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-medication-
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Entrée Traitement",
+  "description" : "Traitement",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -64,17 +64,48 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-medication-
       "id" : "fr-lm-medication-administration",
       "path" : "fr-lm-medication-administration",
       "short" : "Logical model- FR LM Medication Administration\t",
-      "definition" : "Entrée Traitement"
+      "definition" : "Traitement"
     },
     {
-      "id" : "fr-lm-medication-administration.dureeTraitement",
-      "path" : "fr-lm-medication-administration.dureeTraitement",
-      "short" : "Durée du traitement",
-      "definition" : "Durée du traitement",
-      "min" : 0,
+      "id" : "fr-lm-medication-administration.medication",
+      "path" : "fr-lm-medication-administration.medication",
+      "short" : "Médicament",
+      "definition" : "Médicament",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication"
+      }]
+    },
+    {
+      "id" : "fr-lm-medication-administration.occurrence[x]",
+      "path" : "fr-lm-medication-administration.occurrence[x]",
+      "short" : "date/ durée du traitement",
+      "definition" : "date/ durée du traitement",
+      "min" : 1,
       "max" : "1",
       "type" : [{
         "code" : "dateTime"
+      },
+      {
+        "code" : "Period"
+      }]
+    },
+    {
+      "id" : "fr-lm-medication-administration.reason[x]",
+      "path" : "fr-lm-medication-administration.reason[x]",
+      "short" : "Motif du traitement",
+      "definition" : "Motif du traitement",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "CodeableConcept"
+      },
+      {
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-condition"
+      },
+      {
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation"
       }]
     },
     {
@@ -89,28 +120,14 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-medication-
       }]
     },
     {
-      "id" : "fr-lm-medication-administration.medicament",
-      "path" : "fr-lm-medication-administration.medicament",
-      "short" : "Médicament",
-      "definition" : "Médicament",
-      "min" : 1,
+      "id" : "fr-lm-medication-administration.note",
+      "path" : "fr-lm-medication-administration.note",
+      "short" : "Note",
+      "definition" : "Note",
+      "min" : 0,
       "max" : "1",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication"
-      }]
-    },
-    {
-      "id" : "fr-lm-medication-administration.reason[x]",
-      "path" : "fr-lm-medication-administration.reason[x]",
-      "short" : "Motif du traitement",
-      "definition" : "Motif du traitement",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "CodeableConcept"
-      },
-      {
-        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Reference"
+        "code" : "string"
       }]
     }]
   }

@@ -67,7 +67,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-course-of
   "name" : "FRLMCourseOfEncounter",
   "title" : "Logical model - FR LM Course of encounter",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -105,19 +105,19 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-course-of
     {
       "id" : "fr-lm-course-of-encounter.entry.testResults",
       "path" : "fr-lm-course-of-encounter.entry.testResults",
-      "short" : "Entrée Simple observation",
-      "definition" : "Entrée Simple observation",
+      "short" : "Résultats",
+      "definition" : "Résultats",
       "min" : 1,
       "max" : "*",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation-result"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation"
       }]
     },
     {
       "id" : "fr-lm-course-of-encounter.entry.patientTransfer",
       "path" : "fr-lm-course-of-encounter.entry.patientTransfer",
-      "short" : "Entrée Transfert du patient",
-      "definition" : "Entrée Transfert du patient",
+      "short" : "Transfert du patient",
+      "definition" : "Transfert du patient",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -127,8 +127,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-course-of
     {
       "id" : "fr-lm-course-of-encounter.entry.diagnosticSummary",
       "path" : "fr-lm-course-of-encounter.entry.diagnosticSummary",
-      "short" : "Entrée Problème",
-      "definition" : "Entrée Problème",
+      "short" : "Problème",
+      "definition" : "Problème",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -138,8 +138,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-course-of
     {
       "id" : "fr-lm-course-of-encounter.entry.procedures",
       "path" : "fr-lm-course-of-encounter.entry.procedures",
-      "short" : "Entrée Acte",
-      "definition" : "Entrée Acte",
+      "short" : "Acte",
+      "definition" : "Acte",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -149,8 +149,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-course-of
     {
       "id" : "fr-lm-course-of-encounter.entry.medicalDevicesAndImplants",
       "path" : "fr-lm-course-of-encounter.entry.medicalDevicesAndImplants",
-      "short" : "Entrée Dispositif médical et implant",
-      "definition" : "Entrée Dispositif médical et implant",
+      "short" : "Dispositif médical et implant",
+      "definition" : "Dispositif médical et implant",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -160,8 +160,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-course-of
     {
       "id" : "fr-lm-course-of-encounter.entry.medications",
       "path" : "fr-lm-course-of-encounter.entry.medications",
-      "short" : "Entrée Traitement administré pendant le séjour",
-      "definition" : "Entrée Traitement administré pendant le séjour",
+      "short" : "Traitement administré pendant le séjour",
+      "definition" : "Traitement administré pendant le séjour",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -169,10 +169,43 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-course-of
       }]
     },
     {
+      "id" : "fr-lm-course-of-encounter.entry.reactions",
+      "path" : "fr-lm-course-of-encounter.entry.reactions",
+      "short" : "événement indésirable",
+      "definition" : "événement indésirable",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Base"
+      }]
+    },
+    {
+      "id" : "fr-lm-course-of-encounter.entry.reactions.reactionDuringEncounter",
+      "path" : "fr-lm-course-of-encounter.entry.reactions.reactionDuringEncounter",
+      "short" : "Description sous forme textuelle des évènements indésirables survenus pendant l'hospitalisation",
+      "definition" : "Description sous forme textuelle des évènements indésirables survenus pendant l'hospitalisation",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "fr-lm-course-of-encounter.entry.reactions.reactionFollowingAdministrationBloodDerivatives",
+      "path" : "fr-lm-course-of-encounter.entry.reactions.reactionFollowingAdministrationBloodDerivatives",
+      "short" : "Description sous forme textuelle des réactions indésirables survenues après l'administration de dérivés sanguins",
+      "definition" : "Description sous forme textuelle des réactions indésirables survenues après l'administration de dérivés sanguins",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
       "id" : "fr-lm-course-of-encounter.entry.notes",
       "path" : "fr-lm-course-of-encounter.entry.notes",
-      "short" : "Entrée Note",
-      "definition" : "Entrée Note",
+      "short" : "Note",
+      "definition" : "Note",
       "min" : 0,
       "max" : "1",
       "type" : [{

@@ -25,7 +25,6 @@ Cette page contient la liste des profils FHIR définis dans le guide **ANS IG Do
 | [FamilyMemberHistory - FR Family Member History Document](StructureDefinition-fr-family-member-history-document.md) | FRFamilyMemberHistoryDocument est un profil utilisé pour apporter des informations complémentaires relatives aux membres de la famille du patient (pathologies, etc…). |
 | [ImagingStudy - FR Imaging study Document](StructureDefinition-fr-imaging-study-document.md) | FRImagingStudyDocument (DICOM Part 20 - Study Act) contient les informations DICOM d’un examen d’imagerie réalisé sur un patient. L’examen est composé d'une ou de plusieurs séries d’images médicales. |
 | [Immunization - FR Immunization Document](StructureDefinition-fr-immunization-document.md) | FRImmunizationDocument permet de décrire l'administration d'un vaccin.* Il permet également de décrire pourquoi un vaccin n'a pas été réalisé.
-* Ce profil hérite de la structuration, des contraintes et des vocabulaires définis dans le profil FRMedicationAdministrationDocument sauf mentions précisées ci-après.
  |
 | [ImmunizationRecommendation - FR Immunization Recommendation Document](StructureDefinition-fr-immunization-recommendation-document.md) | FRImmunizationRecommendationDocument permet de décrire une vaccination prévue ou proposée.* Une vaccination proposée est une proposition qui est utilisée dans la prise de décisions (elle peut apparaître comme une contribution ou un résultat provenant de l'aide à la décision clinique).
 * Une vaccination prévue dépend d'un plan accepté et à venir.
@@ -44,7 +43,6 @@ Cette page contient la liste des profils FHIR définis dans le guide **ANS IG Do
 * Si le traitement a déjà été administré ou si information rapporté par le patient ou si aucun traitement.
  |
 | [Observation - FR Observation Administration Blood Derivatives Document](StructureDefinition-fr-observation-administration-blood-derivatives-document.md) | FRObservationAdministrationBloodDerivativesDocument est un profil utilisé pour indiquer s'il y a eu ou pas une administration de dérivés du sang. |
-| [Observation - FR Observation Antenatal Testing And Surveillance Battery Document](StructureDefinition-fr-observation-antenatal-testing-surveillance-battery-document.md) | FRObservationAntenatalTestingAndSurveillanceBattery permet de lister les examens et surveillances prénataux. |
 | [Observation - FR Observation Birth Event Document](StructureDefinition-fr-observation-birth-event-document.md) | FRObservationBirthEventDocument est un profil qui permet de rassembler les observations relatives à une naissance. |
 | [Observation - FR Blood Product Transfusion Document](StructureDefinition-fr-observation-blood-product-transfusion-document.md) | FRObservationBloodProductTransfusionDocument permet d'indiquer s'il a eu ou pas transfusion de produit sanguin. |
 | [Observation - FR Observation Contra Indications Document](StructureDefinition-fr-observation-contra-indications-document.md) | FRObservationContraIndicationsDocument permet d'apporter des informations relatives aux contre-indications médicales du patient dans le cadre d'un examen d'imagerie. |

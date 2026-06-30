@@ -35,8 +35,7 @@ Cette structure est dérivée de [DeviceRequest](http://hl7.org/fhir/R4/devicere
 
 ** Résumé **
 
-Obligatoire : 1 élément
- Must-Support : 13 éléments
+Must-Support : 12 éléments
 
 **Structures**
 
@@ -51,7 +50,6 @@ Cette structure fait référence à ces autres structures:
 Cette structure fait référence à ces extensions:
 
 * [https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-not-covered-extension](StructureDefinition-fr-not-covered-extension.md)
-* [https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension](StructureDefinition-fr-actor-extension.md)
 
 **Slices**
 
@@ -82,8 +80,7 @@ Cette structure est dérivée de [DeviceRequest](http://hl7.org/fhir/R4/devicere
 
 ** Résumé **
 
-Obligatoire : 1 élément
- Must-Support : 13 éléments
+Must-Support : 12 éléments
 
 **Structures**
 
@@ -98,7 +95,6 @@ Cette structure fait référence à ces autres structures:
 Cette structure fait référence à ces extensions:
 
 * [https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-not-covered-extension](StructureDefinition-fr-not-covered-extension.md)
-* [https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension](StructureDefinition-fr-actor-extension.md)
 
 **Slices**
 
@@ -126,7 +122,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-device-reque
   "name" : "FRDeviceRequestDocument",
   "title" : "DeviceRequest - FR Device request Document",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -206,9 +202,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-device-reque
     {
       "id" : "DeviceRequest.identifier",
       "path" : "DeviceRequest.identifier",
-      "short" : "Identifiant de la fourniture du DM - Sous la forme UID (UUID ou OID)",
-      "min" : 1,
-      "mustSupport" : true
+      "short" : "Identifiant de la fourniture du DM - Sous la forme UID (UUID ou OID)"
     },
     {
       "id" : "DeviceRequest.code[x]",
@@ -312,31 +306,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-device-reque
       "id" : "DeviceRequest.requester",
       "path" : "DeviceRequest.requester",
       "short" : "Prescripteur",
-      "mustSupport" : true
-    },
-    {
-      "id" : "DeviceRequest.requester.extension:prescripteur",
-      "path" : "DeviceRequest.requester.extension",
-      "sliceName" : "prescripteur",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"]
-      }]
-    },
-    {
-      "id" : "DeviceRequest.requester.extension:prescripteur.extension:actor",
-      "path" : "DeviceRequest.requester.extension.extension",
-      "sliceName" : "actor"
-    },
-    {
-      "id" : "DeviceRequest.requester.extension:prescripteur.extension:actor.value[x]",
-      "path" : "DeviceRequest.requester.extension.extension.value[x]",
       "type" : [{
         "code" : "Reference",
         "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document"]
-      }]
+      }],
+      "mustSupport" : true
     },
     {
       "id" : "DeviceRequest.reasonReference",

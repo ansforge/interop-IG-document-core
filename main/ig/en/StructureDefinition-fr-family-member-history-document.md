@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-family-member-
   "name" : "FRFamilyMemberHistoryDocument",
   "title" : "FamilyMemberHistory - FR Family Member History Document",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -79,6 +79,56 @@ Other representations of profile: [CSV](../StructureDefinition-fr-family-member-
     "element" : [{
       "id" : "FamilyMemberHistory",
       "path" : "FamilyMemberHistory"
+    },
+    {
+      "id" : "FamilyMemberHistory.extension",
+      "path" : "FamilyMemberHistory.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "FamilyMemberHistory.extension:author",
+      "path" : "FamilyMemberHistory.extension",
+      "sliceName" : "author",
+      "short" : "Auteur",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"]
+      }]
+    },
+    {
+      "id" : "FamilyMemberHistory.extension:author.extension:type",
+      "path" : "FamilyMemberHistory.extension.extension",
+      "sliceName" : "type"
+    },
+    {
+      "id" : "FamilyMemberHistory.extension:author.extension:type.value[x]",
+      "path" : "FamilyMemberHistory.extension.extension.value[x]",
+      "patternCode" : "AUT"
+    },
+    {
+      "id" : "FamilyMemberHistory.extension:author.extension:actor",
+      "path" : "FamilyMemberHistory.extension.extension",
+      "sliceName" : "actor"
+    },
+    {
+      "id" : "FamilyMemberHistory.extension:author.extension:actor.value[x]",
+      "path" : "FamilyMemberHistory.extension.extension.value[x]",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document",
+        "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-patient-ins-document",
+        "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-device-auteur-document",
+        "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-patient-document"]
+      }]
     },
     {
       "id" : "FamilyMemberHistory.status",
@@ -168,45 +218,6 @@ Other representations of profile: [CSV](../StructureDefinition-fr-family-member-
         "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-method-extension"]
       }],
       "mustSupport" : true
-    },
-    {
-      "id" : "FamilyMemberHistory.condition.extension:author",
-      "path" : "FamilyMemberHistory.condition.extension",
-      "sliceName" : "author",
-      "short" : "Auteur",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"]
-      }],
-      "mustSupport" : true
-    },
-    {
-      "id" : "FamilyMemberHistory.condition.extension:author.extension:type",
-      "path" : "FamilyMemberHistory.condition.extension.extension",
-      "sliceName" : "type"
-    },
-    {
-      "id" : "FamilyMemberHistory.condition.extension:author.extension:type.value[x]",
-      "path" : "FamilyMemberHistory.condition.extension.extension.value[x]",
-      "patternCode" : "AUT"
-    },
-    {
-      "id" : "FamilyMemberHistory.condition.extension:author.extension:actor",
-      "path" : "FamilyMemberHistory.condition.extension.extension",
-      "sliceName" : "actor"
-    },
-    {
-      "id" : "FamilyMemberHistory.condition.extension:author.extension:actor.value[x]",
-      "path" : "FamilyMemberHistory.condition.extension.extension.value[x]",
-      "type" : [{
-        "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document",
-        "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-patient-ins-document",
-        "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-device-auteur-document",
-        "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-patient-document"]
-      }]
     },
     {
       "id" : "FamilyMemberHistory.condition.code",

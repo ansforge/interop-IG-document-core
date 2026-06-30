@@ -96,7 +96,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-adverse-even
   "name" : "FRAdverseEventDocument",
   "title" : "AdverseEvent - FR adverse event Document",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -171,8 +171,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-adverse-even
       "mustSupport" : true
     },
     {
-      "id" : "AdverseEvent.seriousness",
-      "path" : "AdverseEvent.seriousness",
+      "id" : "AdverseEvent.severity",
+      "path" : "AdverseEvent.severity",
       "short" : "Gravité de l'effet indésirable",
       "min" : 1,
       "mustSupport" : true,

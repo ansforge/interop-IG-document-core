@@ -39,7 +39,7 @@ Cette structure est dérivée de [DiagnosticReport](http://hl7.org/fhir/R4/diagn
 ** Résumé **
 
 Obligatoire : 4 éléments(2 éléments obligatoire(s) imbriqué(s))
- Must-Support : 11 éléments
+ Must-Support : 10 éléments
 
 **Structures**
 
@@ -81,7 +81,7 @@ Cette structure est dérivée de [DiagnosticReport](http://hl7.org/fhir/R4/diagn
 ** Résumé **
 
 Obligatoire : 4 éléments(2 éléments obligatoire(s) imbriqué(s))
- Must-Support : 11 éléments
+ Must-Support : 10 éléments
 
 **Structures**
 
@@ -117,7 +117,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-diagnostic-r
   "name" : "FRDiagnosticReportDocument",
   "title" : "DiagnosticReport - FR Diagnostic Report Document",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -168,8 +168,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-diagnostic-r
     {
       "id" : "DiagnosticReport.identifier",
       "path" : "DiagnosticReport.identifier",
-      "short" : "Identifiant",
-      "mustSupport" : true
+      "short" : "Identifiant"
     },
     {
       "id" : "DiagnosticReport.status",

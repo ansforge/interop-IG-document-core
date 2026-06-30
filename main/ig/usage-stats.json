@@ -395,10 +395,6 @@
         "title": "Observation - FR Observation Administration Blood Derivatives Document"
       },
       {
-        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-antenatal-testing-surveillance-battery-document",
-        "title": "Observation - FR Observation Antenatal Testing And Surveillance Battery Document"
-      },
-      {
         "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-birth-event-document",
         "title": "Observation - FR Observation Birth Event Document"
       },
@@ -563,8 +559,6 @@
     "http://hl7.org/fhir/StructureDefinition/data-absent-reason": [
       "AllergyIntolerance.code",
       "AllergyIntolerance.reaction.manifestation",
-      "DocumentReference.type",
-      "Immunization.occurrence[x]",
       "Procedure.code",
       "Procedure.performedDateTime"
     ],
@@ -581,8 +575,7 @@
       "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier": [
-      "fr-lm-medication-dispense",
-      "fr-lm-reference-item-prescription.reference.externalDocument"
+      "fr-lm-medication-dispense"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
@@ -760,18 +753,17 @@
       "Location"
     ],
     "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension": [
-      "Condition.recorder",
-      "DeviceRequest.requester",
-      "DeviceUseStatement.source",
+      "Condition",
+      "DeviceUseStatement",
       "DiagnosticReport.resultsInterpreter",
       "Encounter.participant.individual",
-      "FamilyMemberHistory.condition",
-      "Immunization.performer.actor",
+      "FamilyMemberHistory",
+      "Immunization",
+      "Media",
       "Media.operator",
-      "Observation.performer",
-      "Procedure.performer.actor",
-      "Procedure.recorder",
-      "ServiceRequest.requester"
+      "Observation",
+      "Procedure",
+      "ServiceRequest"
     ],
     "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-author-time-extension": [
       "Composition.author"
@@ -874,7 +866,6 @@
       "Medication"
     ],
     "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-productname": [
-      "Immunization",
       "Medication"
     ],
     "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-offLabel": [

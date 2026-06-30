@@ -7,7 +7,7 @@ Section Prescription de médicaments
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Logical model - FR LM Corps document](StructureDefinition-fr-lm-corps-document.md) and [Logical model - FR LM Référence item prescription](StructureDefinition-fr-lm-reference-item-prescription.md)
+* Utilise ce/t/te Modèle logique: [Logical model - FR LM Corps document](StructureDefinition-fr-lm-corps-document.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-medication-prescription)
 
@@ -67,7 +67,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-medicatio
   "name" : "FRLMMedicationPrescription",
   "title" : "Logical model - FR LM FR LM Medication Prescription",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

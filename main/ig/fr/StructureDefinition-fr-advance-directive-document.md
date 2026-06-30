@@ -37,8 +37,7 @@ Cette structure est dérivée de [Consent](http://hl7.org/fhir/R4/consent.html)
 
 ** Résumé **
 
-Obligatoire : 2 éléments
- Must-Support : 8 éléments
+Must-Support : 6 éléments
 
 **Structures**
 
@@ -50,7 +49,6 @@ Cette structure fait référence à ces autres structures:
 
 Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slices) suivantes:
 
-* The element 1 is sliced based on the value of Consent.identifier
 * The element 1 is sliced based on the value of Consent.source[x]
 
  **Vue des éléments clés** 
@@ -75,8 +73,7 @@ Cette structure est dérivée de [Consent](http://hl7.org/fhir/R4/consent.html)
 
 ** Résumé **
 
-Obligatoire : 2 éléments
- Must-Support : 8 éléments
+Must-Support : 6 éléments
 
 **Structures**
 
@@ -88,7 +85,6 @@ Cette structure fait référence à ces autres structures:
 
 Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slices) suivantes:
 
-* The element 1 is sliced based on the value of Consent.identifier
 * The element 1 is sliced based on the value of Consent.source[x]
 
  
@@ -108,7 +104,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-advance-dire
   "name" : "FRAdvanceDirectiveDocument",
   "title" : "Consent - FR Advance directive Document",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -155,28 +151,6 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-advance-dire
     "element" : [{
       "id" : "Consent",
       "path" : "Consent"
-    },
-    {
-      "id" : "Consent.identifier",
-      "path" : "Consent.identifier",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "pattern",
-          "path" : "system"
-        }],
-        "rules" : "open"
-      },
-      "min" : 1,
-      "mustSupport" : true
-    },
-    {
-      "id" : "Consent.identifier:mainIdentifier",
-      "path" : "Consent.identifier",
-      "sliceName" : "mainIdentifier",
-      "short" : "Identifiant de la directive anticipée",
-      "min" : 1,
-      "max" : "1",
-      "mustSupport" : true
     },
     {
       "id" : "Consent.status",

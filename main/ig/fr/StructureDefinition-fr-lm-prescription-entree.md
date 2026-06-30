@@ -7,7 +7,7 @@ Prescription
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Logical model - FR LM Immunisation](StructureDefinition-fr-lm-immunisation.md) and [Logical model - FR LM Immunization Recommendation](StructureDefinition-fr-lm-immunization-recommendation.md)
+* Utilise ce/t/te Modèle logique: [Logical model - FR LM Immunisation](StructureDefinition-fr-lm-immunisation.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-prescription-entree)
 
@@ -61,7 +61,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-prescript
   "name" : "FRLMPrescriptionEntree",
   "title" : "Logical model - FR LM Prescription",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

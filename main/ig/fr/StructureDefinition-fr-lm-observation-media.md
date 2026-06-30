@@ -3,7 +3,7 @@
 ## Modèle logique: Logical model - FR LM ObservationMedia 
 
  
-Entrée Image illustrative. 
+Image illustrative. 
 
 **Utilisations:**
 
@@ -79,7 +79,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-observati
   "name" : "FRLMObservationMedia",
   "title" : "Logical model - FR LM ObservationMedia",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -88,7 +88,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-observati
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Entrée Image illustrative.",
+  "description" : "Image illustrative.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -107,7 +107,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-observati
       "id" : "fr-lm-observation-media",
       "path" : "fr-lm-observation-media",
       "short" : "Logical model - FR LM ObservationMedia",
-      "definition" : "Entrée Image illustrative."
+      "definition" : "Image illustrative."
     },
     {
       "id" : "fr-lm-observation-media.content",

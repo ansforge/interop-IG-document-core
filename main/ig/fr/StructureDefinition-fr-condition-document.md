@@ -37,16 +37,16 @@ Cette structure est dérivée de [Condition](http://hl7.org/fhir/R4/condition.ht
 
 ** Résumé **
 
-Obligatoire : 5 éléments
- Must-Support : 14 éléments
+Obligatoire : 4 éléments
+ Must-Support : 12 éléments
 
 **Structures**
 
 Cette structure fait référence à ces autres structures:
 
+* [FR PractitionerRole Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document)](StructureDefinition-fr-practitionerRole-document.md)
 * [FR Patient INS Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-patient-ins-document)](StructureDefinition-fr-patient-ins-document.md)
 * [FR Patient Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-patient-document)](StructureDefinition-fr-patient-document.md)
-* [FR PractitionerRole Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document)](StructureDefinition-fr-practitionerRole-document.md)
 * [DocumentReference - FR Document reference Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-document-reference-document)](StructureDefinition-fr-document-reference-document.md)
 
 **Extensions**
@@ -84,16 +84,16 @@ Cette structure est dérivée de [Condition](http://hl7.org/fhir/R4/condition.ht
 
 ** Résumé **
 
-Obligatoire : 5 éléments
- Must-Support : 14 éléments
+Obligatoire : 4 éléments
+ Must-Support : 12 éléments
 
 **Structures**
 
 Cette structure fait référence à ces autres structures:
 
+* [FR PractitionerRole Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document)](StructureDefinition-fr-practitionerRole-document.md)
 * [FR Patient INS Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-patient-ins-document)](StructureDefinition-fr-patient-ins-document.md)
 * [FR Patient Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-patient-document)](StructureDefinition-fr-patient-document.md)
-* [FR PractitionerRole Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document)](StructureDefinition-fr-practitionerRole-document.md)
 * [DocumentReference - FR Document reference Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-document-reference-document)](StructureDefinition-fr-document-reference-document.md)
 
 **Extensions**
@@ -126,7 +126,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-condition-do
   "name" : "FRConditionDocument",
   "title" : "Condition - FR Condition Document",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -185,12 +185,56 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-condition-do
       "path" : "Condition"
     },
     {
+      "id" : "Condition.extension",
+      "path" : "Condition.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "Condition.extension:author",
+      "path" : "Condition.extension",
+      "sliceName" : "author",
+      "short" : "Auteur du problème",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"]
+      }]
+    },
+    {
+      "id" : "Condition.extension:author.extension:type",
+      "path" : "Condition.extension.extension",
+      "sliceName" : "type"
+    },
+    {
+      "id" : "Condition.extension:author.extension:type.value[x]",
+      "path" : "Condition.extension.extension.value[x]",
+      "patternCode" : "AUT"
+    },
+    {
+      "id" : "Condition.extension:author.extension:actor",
+      "path" : "Condition.extension.extension",
+      "sliceName" : "actor"
+    },
+    {
+      "id" : "Condition.extension:author.extension:actor.value[x]",
+      "path" : "Condition.extension.extension.value[x]",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document"]
+      }]
+    },
+    {
       "id" : "Condition.identifier",
       "path" : "Condition.identifier",
-      "short" : "Identifiant",
-      "min" : 1,
-      "max" : "1",
-      "mustSupport" : true
+      "short" : "Identifiant"
     },
     {
       "id" : "Condition.clinicalStatus",
@@ -304,46 +348,6 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-condition-do
         "code" : "dateTime"
       }],
       "mustSupport" : true
-    },
-    {
-      "id" : "Condition.recorder",
-      "path" : "Condition.recorder",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Condition.recorder.extension:author",
-      "path" : "Condition.recorder.extension",
-      "sliceName" : "author",
-      "short" : "Auteur du problème",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"]
-      }]
-    },
-    {
-      "id" : "Condition.recorder.extension:author.extension:type",
-      "path" : "Condition.recorder.extension.extension",
-      "sliceName" : "type"
-    },
-    {
-      "id" : "Condition.recorder.extension:author.extension:type.value[x]",
-      "path" : "Condition.recorder.extension.extension.value[x]",
-      "patternCode" : "AUT"
-    },
-    {
-      "id" : "Condition.recorder.extension:author.extension:actor",
-      "path" : "Condition.recorder.extension.extension",
-      "sliceName" : "actor"
-    },
-    {
-      "id" : "Condition.recorder.extension:author.extension:actor.value[x]",
-      "path" : "Condition.recorder.extension.extension.value[x]",
-      "type" : [{
-        "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document"]
-      }]
     },
     {
       "id" : "Condition.stage.summary",

@@ -3,11 +3,11 @@
 ## Modèle logique: Logical model - FR LM Dose Number 
 
  
-Entrée Rang de la vaccination 
+Rang de la vaccination 
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Logical model - FR LM Immunisation](StructureDefinition-fr-lm-immunisation.md) and [Logical model - FR LM Immunization Recommendation](StructureDefinition-fr-lm-immunization-recommendation.md)
+* Utilise ce/t/te Modèle logique: [Logical model - FR LM Immunisation](StructureDefinition-fr-lm-immunisation.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-dose-number)
 
@@ -26,7 +26,7 @@ Cette structure est dérivée de [Base](http://build.fhir.org/types.html#Base)
 
 ** Résumé **
 
-Obligatoire : 0 élément(3 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 0 élément(2 éléments obligatoire(s) imbriqué(s))
 
  **Vue différentielle** 
 
@@ -38,7 +38,7 @@ Cette structure est dérivée de [Base](http://build.fhir.org/types.html#Base)
 
 ** Résumé **
 
-Obligatoire : 0 élément(3 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 0 élément(2 éléments obligatoire(s) imbriqué(s))
 
  
 
@@ -61,7 +61,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-dose-numb
   "name" : "FRLMDoseNumber",
   "title" : "Logical model - FR LM Dose Number",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -70,7 +70,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-dose-numb
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Entrée Rang de la vaccination",
+  "description" : "Rang de la vaccination",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -89,13 +89,13 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-dose-numb
       "id" : "fr-lm-dose-number",
       "path" : "fr-lm-dose-number",
       "short" : "Logical model - FR LM Dose Number",
-      "definition" : "Entrée Rang de la vaccination"
+      "definition" : "Rang de la vaccination"
     },
     {
-      "id" : "fr-lm-dose-number.identifiantRangVaccination",
-      "path" : "fr-lm-dose-number.identifiantRangVaccination",
-      "short" : "Identifiant de l’entrée",
-      "definition" : "Identifiant de l’entrée",
+      "id" : "fr-lm-dose-number.identifier",
+      "path" : "fr-lm-dose-number.identifier",
+      "short" : "Identifiant de la dose de vaccin",
+      "definition" : "Identifiant de la dose de vaccin",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -103,43 +103,10 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-dose-numb
       }]
     },
     {
-      "id" : "fr-lm-dose-number.codeRangVaccination",
-      "path" : "fr-lm-dose-number.codeRangVaccination",
-      "short" : "Code de l'entrée",
-      "definition" : "Code de l'entrée",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "CodeableConcept"
-      }]
-    },
-    {
-      "id" : "fr-lm-dose-number.derivationRangVaccination",
-      "path" : "fr-lm-dose-number.derivationRangVaccination",
-      "short" : "derivation.",
-      "definition" : "derivation.",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "string"
-      }]
-    },
-    {
-      "id" : "fr-lm-dose-number.descriptionRangVaccination",
-      "path" : "fr-lm-dose-number.descriptionRangVaccination",
-      "short" : "Partie narrative de l’entrée",
-      "definition" : "Partie narrative de l’entrée",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "Narrative"
-      }]
-    },
-    {
-      "id" : "fr-lm-dose-number.statutRangVaccination",
-      "path" : "fr-lm-dose-number.statutRangVaccination",
-      "short" : "Statut de l’entrée",
-      "definition" : "Statut de l’entrée",
+      "id" : "fr-lm-dose-number.status",
+      "path" : "fr-lm-dose-number.status",
+      "short" : "Statut de la dose de vaccin",
+      "definition" : "Statut de la dose de vaccin",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -147,10 +114,10 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-dose-numb
       }]
     },
     {
-      "id" : "fr-lm-dose-number.dateRangVaccination",
-      "path" : "fr-lm-dose-number.dateRangVaccination",
-      "short" : "Date de l’observation",
-      "definition" : "Date de l’observation",
+      "id" : "fr-lm-dose-number.date",
+      "path" : "fr-lm-dose-number.date",
+      "short" : "Date de la dose de vaccin",
+      "definition" : "Date de la dose de vaccin",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -158,8 +125,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-dose-numb
       }]
     },
     {
-      "id" : "fr-lm-dose-number.prioriteRangVaccination",
-      "path" : "fr-lm-dose-number.prioriteRangVaccination",
+      "id" : "fr-lm-dose-number.priority",
+      "path" : "fr-lm-dose-number.priority",
       "short" : "Priorité",
       "definition" : "Priorité",
       "min" : 0,
@@ -169,8 +136,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-dose-numb
       }]
     },
     {
-      "id" : "fr-lm-dose-number.nombreRenouvellements",
-      "path" : "fr-lm-dose-number.nombreRenouvellements",
+      "id" : "fr-lm-dose-number.renewal",
+      "path" : "fr-lm-dose-number.renewal",
       "short" : "Nombre de renouvellements possibles",
       "definition" : "Nombre de renouvellements possibles",
       "min" : 0,
@@ -180,8 +147,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-dose-numb
       }]
     },
     {
-      "id" : "fr-lm-dose-number.languageRangVaccination",
-      "path" : "fr-lm-dose-number.languageRangVaccination",
+      "id" : "fr-lm-dose-number.language",
+      "path" : "fr-lm-dose-number.language",
       "short" : "Language",
       "definition" : "Language",
       "min" : 0,
@@ -191,8 +158,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-dose-numb
       }]
     },
     {
-      "id" : "fr-lm-dose-number.rangVaccination",
-      "path" : "fr-lm-dose-number.rangVaccination",
+      "id" : "fr-lm-dose-number.doseNumber",
+      "path" : "fr-lm-dose-number.doseNumber",
       "short" : "Rang de la vaccination",
       "definition" : "Rang de la vaccination",
       "min" : 1,

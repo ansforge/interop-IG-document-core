@@ -3,11 +3,11 @@
 ## Modèle logique: Logical model - FR LM Medication 
 
  
-Entrée Produit de santé 
+Produit de santé 
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Logical model - FR LM Immunisation](StructureDefinition-fr-lm-immunisation.md), [Logical model - FR LM Immunization Recommendation](StructureDefinition-fr-lm-immunization-recommendation.md), [Logical model- FR LM Medication Administration ](StructureDefinition-fr-lm-medication-administration.md), [Logical model - FR LM Medication Dispense](StructureDefinition-fr-lm-medication-dispense.md)... Show 3 more, [Logical model - FR LM Medication Prescription](StructureDefinition-fr-lm-prescription-item.md), [Logical model - FR LM Référence item prescription](StructureDefinition-fr-lm-reference-item-prescription.md) and [Logical model - FR LM Service Request](StructureDefinition-fr-lm-service-request.md)
+* Utilise ce/t/te Modèle logique: [Logical model - FR LM Immunisation](StructureDefinition-fr-lm-immunisation.md), [Logical model- FR LM Medication Administration ](StructureDefinition-fr-lm-medication-administration.md), [Logical model - FR LM Medication Dispense](StructureDefinition-fr-lm-medication-dispense.md), [Logical model - FR LM Medication Prescription](StructureDefinition-fr-lm-prescription-item.md) and [Logical model - FR LM Service Request](StructureDefinition-fr-lm-service-request.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-medication)
 
@@ -73,7 +73,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-medicatio
   "name" : "FRLMMedication",
   "title" : "Logical model - FR LM Medication",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -82,7 +82,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-medicatio
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Entrée Produit de santé",
+  "description" : "Produit de santé",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -101,7 +101,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-medicatio
       "id" : "fr-lm-medication",
       "path" : "fr-lm-medication",
       "short" : "Logical model - FR LM Medication",
-      "definition" : "Entrée Produit de santé"
+      "definition" : "Produit de santé"
     },
     {
       "id" : "fr-lm-medication.identifyingCode[x]",

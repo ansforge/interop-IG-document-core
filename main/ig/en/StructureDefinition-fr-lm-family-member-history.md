@@ -3,7 +3,7 @@
 ## Logical Model: Logical model - FR LM Family Member History 
 
  
-Entrée Antécédent familial 
+Antécédent familial 
 
 **Usages:**
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-family-memb
   "name" : "FRLMFamilyMemberHistory",
   "title" : "Logical model - FR LM Family Member History",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-family-memb
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Entrée Antécédent familial",
+  "description" : "Antécédent familial",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -64,7 +64,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-family-memb
       "id" : "fr-lm-family-member-history",
       "path" : "fr-lm-family-member-history",
       "short" : "Logical model - FR LM Family Member History",
-      "definition" : "Entrée Antécédent familial"
+      "definition" : "Antécédent familial"
     },
     {
       "id" : "fr-lm-family-member-history.header.status",

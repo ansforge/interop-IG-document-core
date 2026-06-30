@@ -3,11 +3,11 @@
 ## Modèle logique: Logical model - FR LM Assessment 
 
  
-Entrée Evaluation 
+Evaluation 
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Logical model - FR LM Assessments](StructureDefinition-fr-lm-assessments.md) and [Logical model - FR LM Assessment](StructureDefinition-fr-lm-observation-assessment.md)
+* Utilise ce/t/te Modèle logique: [logical model- FR LM Functional Status](StructureDefinition-fr-lm-functional-status.md) and [Logical model - FR LM Assessment](StructureDefinition-fr-lm-observation-assessment.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-observation-assessment)
 
@@ -61,7 +61,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-observati
   "name" : "FRLMObservationAssessment",
   "title" : "Logical model - FR LM Assessment",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -70,7 +70,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-observati
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Entrée Evaluation",
+  "description" : "Evaluation",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -89,7 +89,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-observati
       "id" : "fr-lm-observation-assessment",
       "path" : "fr-lm-observation-assessment",
       "short" : "Logical model - FR LM Assessment",
-      "definition" : "Entrée Evaluation"
+      "definition" : "Evaluation"
     },
     {
       "id" : "fr-lm-observation-assessment.header.status",

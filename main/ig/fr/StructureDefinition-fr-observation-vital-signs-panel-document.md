@@ -35,9 +35,6 @@ Cette structure est dérivée de [observation-vitalspanel](http://hl7.org/fhir/R
 
 ** Résumé **
 
-Obligatoire : 1 élément
- Must-Support : 2 éléments
-
 **Structures**
 
 Cette structure fait référence à ces autres structures:
@@ -73,9 +70,6 @@ Cette structure est dérivée de [observation-vitalspanel](http://hl7.org/fhir/R
 
 ** Résumé **
 
-Obligatoire : 1 élément
- Must-Support : 2 éléments
-
 **Structures**
 
 Cette structure fait référence à ces autres structures:
@@ -108,7 +102,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-observation-
   "name" : "FRObservationVitalSignsPanelDocument",
   "title" : "Observation - FR Observation Vital Signs Panel Document",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -167,12 +161,58 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-observation-
       "path" : "Observation"
     },
     {
+      "id" : "Observation.extension",
+      "path" : "Observation.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "Observation.extension:author",
+      "path" : "Observation.extension",
+      "sliceName" : "author",
+      "short" : "Auteur de l’observation",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"]
+      }]
+    },
+    {
+      "id" : "Observation.extension:author.extension:type",
+      "path" : "Observation.extension.extension",
+      "sliceName" : "type"
+    },
+    {
+      "id" : "Observation.extension:author.extension:type.value[x]",
+      "path" : "Observation.extension.extension.value[x]",
+      "patternCode" : "AUT"
+    },
+    {
+      "id" : "Observation.extension:author.extension:actor",
+      "path" : "Observation.extension.extension",
+      "sliceName" : "actor"
+    },
+    {
+      "id" : "Observation.extension:author.extension:actor.value[x]",
+      "path" : "Observation.extension.extension.value[x]",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document",
+        "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-organization-document",
+        "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-patient-ins-document"]
+      }]
+    },
+    {
       "id" : "Observation.identifier",
       "path" : "Observation.identifier",
-      "short" : "Identifiant",
-      "min" : 1,
-      "max" : "1",
-      "mustSupport" : true
+      "short" : "Identifiant"
     },
     {
       "id" : "Observation.status",
@@ -186,50 +226,6 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-observation-
       "short" : "Date",
       "type" : [{
         "code" : "dateTime"
-      }]
-    },
-    {
-      "id" : "Observation.performer",
-      "path" : "Observation.performer",
-      "short" : "Auteur",
-      "max" : "1",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.performer.extension:author",
-      "path" : "Observation.performer.extension",
-      "sliceName" : "author",
-      "short" : "Auteur de l’observation",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"]
-      }]
-    },
-    {
-      "id" : "Observation.performer.extension:author.extension:type",
-      "path" : "Observation.performer.extension.extension",
-      "sliceName" : "type"
-    },
-    {
-      "id" : "Observation.performer.extension:author.extension:type.value[x]",
-      "path" : "Observation.performer.extension.extension.value[x]",
-      "patternCode" : "AUT"
-    },
-    {
-      "id" : "Observation.performer.extension:author.extension:actor",
-      "path" : "Observation.performer.extension.extension",
-      "sliceName" : "actor"
-    },
-    {
-      "id" : "Observation.performer.extension:author.extension:actor.value[x]",
-      "path" : "Observation.performer.extension.extension.value[x]",
-      "type" : [{
-        "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document",
-        "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-organization-document",
-        "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-patient-ins-document"]
       }]
     },
     {

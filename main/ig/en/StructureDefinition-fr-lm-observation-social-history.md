@@ -3,7 +3,7 @@
 ## Logical Model: Logical model- FR LM Observation Social History 
 
  
-Entrée Habitus Mode de vie 
+Habitus Mode de vie 
 
 **Usages:**
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-observation
   "name" : "FRLMObservationSocialHistory",
   "title" : "Logical model- FR LM Observation Social History",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-observation
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Entrée Habitus Mode de vie",
+  "description" : "Habitus Mode de vie",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -64,7 +64,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-observation
       "id" : "fr-lm-observation-social-history",
       "path" : "fr-lm-observation-social-history",
       "short" : "Logical model- FR LM Observation Social History",
-      "definition" : "Entrée Habitus Mode de vie"
+      "definition" : "Habitus Mode de vie"
     },
     {
       "id" : "fr-lm-observation-social-history.header.status",

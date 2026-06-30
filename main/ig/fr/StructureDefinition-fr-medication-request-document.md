@@ -37,8 +37,8 @@ Cette structure est dérivée de [MedicationRequest](http://hl7.org/fhir/R4/medi
 
 ** Résumé **
 
-Obligatoire : 2 éléments(8 éléments obligatoire(s) imbriqué(s))
- Must-Support : 36 éléments
+Obligatoire : 1 élément(8 éléments obligatoire(s) imbriqué(s))
+ Must-Support : 35 éléments
  Interdit : 1 élément
 
 **Structures**
@@ -96,8 +96,8 @@ Cette structure est dérivée de [MedicationRequest](http://hl7.org/fhir/R4/medi
 
 ** Résumé **
 
-Obligatoire : 2 éléments(8 éléments obligatoire(s) imbriqué(s))
- Must-Support : 36 éléments
+Obligatoire : 1 élément(8 éléments obligatoire(s) imbriqué(s))
+ Must-Support : 35 éléments
  Interdit : 1 élément
 
 **Structures**
@@ -150,7 +150,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-medication-r
   "name" : "FRMedicationRequestDocument",
   "title" : "MedicationRequest - FR Medication Request Document",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -243,9 +243,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-medication-r
     {
       "id" : "MedicationRequest.identifier",
       "path" : "MedicationRequest.identifier",
-      "short" : "Identifiant prescription",
-      "min" : 1,
-      "mustSupport" : true
+      "short" : "Identifiant prescription"
     },
     {
       "id" : "MedicationRequest.status",

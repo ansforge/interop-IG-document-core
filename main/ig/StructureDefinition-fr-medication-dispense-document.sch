@@ -12,8 +12,6 @@
   <sch:pattern>
     <sch:title>f:MedicationDispense</sch:title>
     <sch:rule context="f:MedicationDispense">
-      <sch:assert test="count(f:identifier) &gt;= 1">identifier: minimum cardinality of 'identifier' is 1</sch:assert>
-      <sch:assert test="count(f:identifier) &lt;= 1">identifier: maximum cardinality of 'identifier' is 1</sch:assert>
       <sch:assert test="count(f:supportingInformation) &lt;= 1">supportingInformation: maximum cardinality of 'supportingInformation' is 1</sch:assert>
       <sch:assert test="count(f:authorizingPrescription) &lt;= 1">authorizingPrescription: maximum cardinality of 'authorizingPrescription' is 1</sch:assert>
       <sch:assert test="count(f:type) &gt;= 1">type: minimum cardinality of 'type' is 1</sch:assert>

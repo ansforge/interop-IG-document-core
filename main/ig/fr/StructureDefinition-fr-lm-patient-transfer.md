@@ -3,7 +3,7 @@
 ## Modèle logique: Logical model - FR LM Patient Transfer. 
 
  
-Entrée Transfert du patient 
+Transfert du patient 
 
 **Utilisations:**
 
@@ -61,7 +61,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-patient-t
   "name" : "FRLMPatientTransfer",
   "title" : "Logical model - FR LM Patient Transfer.",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -70,7 +70,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-patient-t
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Entrée Transfert du patient",
+  "description" : "Transfert du patient",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -89,7 +89,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-patient-t
       "id" : "fr-lm-patient-transfer",
       "path" : "fr-lm-patient-transfer",
       "short" : "Logical model - FR LM Patient Transfer.",
-      "definition" : "Entrée Transfert du patient"
+      "definition" : "Transfert du patient"
     },
     {
       "id" : "fr-lm-patient-transfer.header.participant[x].participantOrganisation",
@@ -104,8 +104,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-patient-t
     {
       "id" : "fr-lm-patient-transfer.code",
       "path" : "fr-lm-patient-transfer.code",
-      "short" : "Code de l’entrée",
-      "definition" : "Code de l’entrée",
+      "short" : "Code du transfert",
+      "definition" : "Code du transfert",
       "min" : 1,
       "max" : "1",
       "type" : [{

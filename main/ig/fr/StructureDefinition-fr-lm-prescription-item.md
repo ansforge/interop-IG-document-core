@@ -3,7 +3,7 @@
 ## Modèle logique: Logical model - FR LM Medication Prescription 
 
  
-Entrée Traitement prescrit 
+Traitement prescrit 
 
 **Utilisations:**
 
@@ -69,7 +69,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-prescript
   "name" : "FRLMPrescriptionItem",
   "title" : "Logical model - FR LM Medication Prescription",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -78,7 +78,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-prescript
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Entrée Traitement prescrit",
+  "description" : "Traitement prescrit",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -97,7 +97,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-prescript
       "id" : "fr-lm-prescription-item",
       "path" : "fr-lm-prescription-item",
       "short" : "Logical model - FR LM Medication Prescription",
-      "definition" : "Entrée Traitement prescrit",
+      "definition" : "Traitement prescrit",
       "min" : 1
     },
     {

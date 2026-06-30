@@ -3,11 +3,11 @@
 ## Logical Model: Logical model - FR LM Service Request 
 
  
-Entrée Demande d'examen ou de suivi / Objectif à atteindre 
+Demande d'examen ou de suivi / Objectif à atteindre 
 
 **Usages:**
 
-* Use this Logical Model: [Logical model - FR LM Encounter](StructureDefinition-fr-lm-encounter.md), [Logical model - FR LM Imaging Study](StructureDefinition-fr-lm-imaging-study.md), [Logical model - FR LM Observation Result](StructureDefinition-fr-lm-observation-result.md), [Logical model - FR LM Order Information](StructureDefinition-fr-lm-order-information.md) and [Logical model - FR LM Specimen](StructureDefinition-fr-lm-specimen.md)
+* Use this Logical Model: [Logical model - FR LM Encounter](StructureDefinition-fr-lm-encounter.md), [Logical model - FR LM Imaging Study](StructureDefinition-fr-lm-imaging-study.md), [Logical model - FR LM Observation](StructureDefinition-fr-lm-observation.md), [Logical model - FR LM Order Information](StructureDefinition-fr-lm-order-information.md) and [Logical model - FR LM Specimen](StructureDefinition-fr-lm-specimen.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ans.document.fr.core|current/StructureDefinition/StructureDefinition-fr-lm-service-request.json)
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-service-req
   "name" : "FRLMServiceRequest",
   "title" : "Logical model - FR LM Service Request",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-service-req
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Entrée Demande d'examen ou de suivi / Objectif à atteindre",
+  "description" : "Demande d'examen ou de suivi / Objectif à atteindre",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -64,7 +64,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-service-req
       "id" : "fr-lm-service-request",
       "path" : "fr-lm-service-request",
       "short" : "Logical model - FR LM Service Request",
-      "definition" : "Entrée Demande d'examen ou de suivi / Objectif à atteindre"
+      "definition" : "Demande d'examen ou de suivi / Objectif à atteindre"
     },
     {
       "id" : "fr-lm-service-request.header.status",

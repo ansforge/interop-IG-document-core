@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-corps-docum
   "name" : "FRLMCorpsDocument",
   "title" : "Logical model - FR LM Corps document",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -522,17 +522,6 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-corps-docum
       "max" : "*",
       "type" : [{
         "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-hospital-discharge-medications"
-      }]
-    },
-    {
-      "id" : "fr-lm-corps-document.traitementsAdministres",
-      "path" : "fr-lm-corps-document.traitementsAdministres",
-      "short" : "Section Traitements administrés",
-      "definition" : "Section Traitements administrés",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-traitements-administres"
       }]
     }]
   }

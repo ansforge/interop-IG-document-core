@@ -45,6 +45,7 @@ Cette structure fait référence à ces autres structures:
 
 * [ServiceRequest - FR Service Request Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-service-request-document)](StructureDefinition-fr-service-request-document.md)
 * [MedicationAdministration - FR Medication Administration Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-administration-document)](StructureDefinition-fr-medication-administration-document.md)
+* [FR PractitionerRole Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document)](StructureDefinition-fr-practitionerRole-document.md)
 * [DiagnosticReport - FR Diagnostic Report Imaging Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-diagnostic-report-imaging-document)](StructureDefinition-fr-diagnostic-report-imaging-document.md)
 * [BodyStructure - FR Body Structure Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-body-structure-document)](StructureDefinition-fr-body-structure-document.md)
 
@@ -59,6 +60,7 @@ Cette structure fait référence à ces extensions:
 Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of Procedure.basedOn
+* The element 1 is sliced based on the value of Procedure.performer
 
  **Vue des éléments clés** 
 
@@ -90,6 +92,7 @@ Cette structure fait référence à ces autres structures:
 
 * [ServiceRequest - FR Service Request Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-service-request-document)](StructureDefinition-fr-service-request-document.md)
 * [MedicationAdministration - FR Medication Administration Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-administration-document)](StructureDefinition-fr-medication-administration-document.md)
+* [FR PractitionerRole Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document)](StructureDefinition-fr-practitionerRole-document.md)
 * [DiagnosticReport - FR Diagnostic Report Imaging Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-diagnostic-report-imaging-document)](StructureDefinition-fr-diagnostic-report-imaging-document.md)
 * [BodyStructure - FR Body Structure Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-body-structure-document)](StructureDefinition-fr-body-structure-document.md)
 
@@ -104,6 +107,7 @@ Cette structure fait référence à ces extensions:
 Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of Procedure.basedOn
+* The element 1 is sliced based on the value of Procedure.performer
 
  
 
@@ -122,7 +126,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-procedure-im
   "name" : "FRProcedureImagingDocument",
   "title" : "Procedure - FR Procedure Imaging Document",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -171,11 +175,6 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-procedure-im
       "path" : "Procedure"
     },
     {
-      "id" : "Procedure.identifier",
-      "path" : "Procedure.identifier",
-      "max" : "1"
-    },
-    {
       "id" : "Procedure.basedOn",
       "path" : "Procedure.basedOn",
       "slicing" : {
@@ -218,16 +217,48 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-procedure-im
       }
     },
     {
-      "id" : "Procedure.performer.actor.extension:Participant",
-      "path" : "Procedure.performer.actor.extension",
-      "sliceName" : "Participant",
-      "short" : "Participant à l'acte d'imagerie"
+      "id" : "Procedure.performer",
+      "path" : "Procedure.performer",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "actor"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      }
     },
     {
-      "id" : "Procedure.performer.actor.extension:Dispositif",
-      "path" : "Procedure.performer.actor.extension",
-      "sliceName" : "Dispositif",
-      "short" : "Dispositif médical utilisé lors de l'acte d'imagerie"
+      "id" : "Procedure.performer:intervenant",
+      "path" : "Procedure.performer",
+      "sliceName" : "intervenant",
+      "short" : "Intervenant",
+      "min" : 0,
+      "max" : "*"
+    },
+    {
+      "id" : "Procedure.performer:intervenant.actor",
+      "path" : "Procedure.performer.actor",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document"]
+      }]
+    },
+    {
+      "id" : "Procedure.performer:dispositifMedical",
+      "path" : "Procedure.performer",
+      "sliceName" : "dispositifMedical",
+      "short" : "Dispositif médical utilisé lors de l'acte d'imagerie",
+      "min" : 0,
+      "max" : "*"
+    },
+    {
+      "id" : "Procedure.performer:dispositifMedical.actor",
+      "path" : "Procedure.performer.actor",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Device"]
+      }]
     },
     {
       "id" : "Procedure.reasonReference",

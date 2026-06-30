@@ -12,7 +12,6 @@
   <sch:pattern>
     <sch:title>f:AllergyIntolerance</sch:title>
     <sch:rule context="f:AllergyIntolerance">
-      <sch:assert test="count(f:identifier) &gt;= 1">identifier: minimum cardinality of 'identifier' is 1</sch:assert>
       <sch:assert test="count(f:code) &gt;= 1">code: minimum cardinality of 'code' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>

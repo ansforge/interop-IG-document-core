@@ -61,7 +61,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-resultats
   "name" : "FRLMResultatsExamensBiologieMedicale",
   "title" : "Logical model - FR LM Resultats d'examens de biologie medicale",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -105,20 +105,6 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-resultats
       "max" : "1",
       "type" : [{
         "code" : "CodeableConcept"
-      }]
-    },
-    {
-      "id" : "fr-lm-resultats-examens-biologie-medicale.choice[x]",
-      "path" : "fr-lm-resultats-examens-biologie-medicale.choice[x]",
-      "short" : "Sujet non humain ou Patient avec sujet non humain",
-      "definition" : "Sujet non humain ou Patient avec sujet non humain",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-sujet-non-humain"
-      },
-      {
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-sujet-non-humain"
       }]
     },
     {

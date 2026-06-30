@@ -14,6 +14,7 @@
     <sch:rule context="f:ServiceRequest">
       <sch:assert test="count(f:extension[@url = 'https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-interpretation-extension']) &lt;= 1">extension with URL = 'https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-interpretation-extension': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-method-extension']) &lt;= 1">extension with URL = 'https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-method-extension': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension']) &lt;= 1">extension with URL = 'https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:category) &gt;= 1">category: minimum cardinality of 'category' is 1</sch:assert>
       <sch:assert test="count(f:code) &gt;= 1">code: minimum cardinality of 'code' is 1</sch:assert>
       <sch:assert test="count(f:orderDetail) &lt;= 1">orderDetail: maximum cardinality of 'orderDetail' is 1</sch:assert>
@@ -21,26 +22,8 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>f:ServiceRequest/f:orderDetail</sch:title>
-    <sch:rule context="f:ServiceRequest/f:orderDetail">
-      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
-      <sch:assert test="count(f:text) &lt;= 1">text: maximum cardinality of 'text' is 1</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>f:ServiceRequest/f:requester</sch:title>
-    <sch:rule context="f:ServiceRequest/f:requester">
-      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension']) &lt;= 1">extension with URL = 'https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:reference) &lt;= 1">reference: maximum cardinality of 'reference' is 1</sch:assert>
-      <sch:assert test="count(f:type) &lt;= 1">type: maximum cardinality of 'type' is 1</sch:assert>
-      <sch:assert test="count(f:identifier) &lt;= 1">identifier: maximum cardinality of 'identifier' is 1</sch:assert>
-      <sch:assert test="count(f:display) &lt;= 1">display: maximum cardinality of 'display' is 1</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>f:ServiceRequest/f:requester/f:extension</sch:title>
-    <sch:rule context="f:ServiceRequest/f:requester/f:extension">
+    <sch:title>f:ServiceRequest/f:extension</sch:title>
+    <sch:rule context="f:ServiceRequest/f:extension">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'type']) &gt;= 1">extension with URL = 'type': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'type']) &lt;= 1">extension with URL = 'type': maximum cardinality of 'extension' is 1</sch:assert>
@@ -53,8 +36,8 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>f:ServiceRequest/f:requester/f:extension/f:extension</sch:title>
-    <sch:rule context="f:ServiceRequest/f:requester/f:extension/f:extension">
+    <sch:title>f:ServiceRequest/f:extension/f:extension</sch:title>
+    <sch:rule context="f:ServiceRequest/f:extension/f:extension">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
       <sch:assert test="count(f:url) &gt;= 1">url: minimum cardinality of 'url' is 1</sch:assert>
       <sch:assert test="count(f:url) &lt;= 1">url: maximum cardinality of 'url' is 1</sch:assert>
@@ -67,6 +50,13 @@
       <sch:assert test="count(f:url) &gt;= 1">url: minimum cardinality of 'url' is 1</sch:assert>
       <sch:assert test="count(f:url) &lt;= 1">url: maximum cardinality of 'url' is 1</sch:assert>
       <sch:assert test="count(f:value[x]) &lt;= 1">value[x]: maximum cardinality of 'value[x]' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:ServiceRequest/f:orderDetail</sch:title>
+    <sch:rule context="f:ServiceRequest/f:orderDetail">
+      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
+      <sch:assert test="count(f:text) &lt;= 1">text: maximum cardinality of 'text' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

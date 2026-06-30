@@ -3,7 +3,7 @@
 ## Modèle logique: Logical model - FR LM Transfusion accidents 
 
  
-Entrée Accidents transfusionnels 
+Accidents transfusionnels 
 
 **Utilisations:**
 
@@ -61,7 +61,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-transfusi
   "name" : "FRLMTransfusionAccidents",
   "title" : "Logical model - FR LM Transfusion accidents",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -70,7 +70,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-transfusi
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Entrée Accidents transfusionnels",
+  "description" : "Accidents transfusionnels",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -89,7 +89,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-transfusi
       "id" : "fr-lm-transfusion-accidents",
       "path" : "fr-lm-transfusion-accidents",
       "short" : "Logical model - FR LM Transfusion accidents",
-      "definition" : "Entrée Accidents transfusionnels"
+      "definition" : "Accidents transfusionnels"
     },
     {
       "id" : "fr-lm-transfusion-accidents.code",

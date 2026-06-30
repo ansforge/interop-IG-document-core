@@ -38,15 +38,15 @@ Cette structure est dérivée de [Observation](http://hl7.org/fhir/R4/observatio
 ** Résumé **
 
 Obligatoire : 1 élément
- Must-Support : 22 éléments
+ Must-Support : 17 éléments
 
 **Structures**
 
 Cette structure fait référence à ces autres structures:
 
+* [FR PractitionerRole Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document)](StructureDefinition-fr-practitionerRole-document.md)
 * [FR Patient INS Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-patient-ins-document)](StructureDefinition-fr-patient-ins-document.md)
 * [FR Organization Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-organization-document)](StructureDefinition-fr-organization-document.md)
-* [FR PractitionerRole Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document)](StructureDefinition-fr-practitionerRole-document.md)
 * [Specimen - FR Specimen Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-specimen-document)](StructureDefinition-fr-specimen-document.md)
 * [Observation - FR Observation Laboratory Report Results Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-laboratory-report-results-document)](StructureDefinition-fr-observation-laboratory-report-results-document.md)
 * [Media - FR Media Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-media-document)](StructureDefinition-fr-media-document.md)
@@ -55,8 +55,8 @@ Cette structure fait référence à ces autres structures:
 
 Cette structure fait référence à ces extensions:
 
-* [http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-workflow-supportingInfo.html)
 * [https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension](StructureDefinition-fr-actor-extension.md)
+* [http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-workflow-supportingInfo.html)
 
 **Slices**
 
@@ -88,15 +88,15 @@ Cette structure est dérivée de [Observation](http://hl7.org/fhir/R4/observatio
 ** Résumé **
 
 Obligatoire : 1 élément
- Must-Support : 22 éléments
+ Must-Support : 17 éléments
 
 **Structures**
 
 Cette structure fait référence à ces autres structures:
 
+* [FR PractitionerRole Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document)](StructureDefinition-fr-practitionerRole-document.md)
 * [FR Patient INS Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-patient-ins-document)](StructureDefinition-fr-patient-ins-document.md)
 * [FR Organization Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-organization-document)](StructureDefinition-fr-organization-document.md)
-* [FR PractitionerRole Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document)](StructureDefinition-fr-practitionerRole-document.md)
 * [Specimen - FR Specimen Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-specimen-document)](StructureDefinition-fr-specimen-document.md)
 * [Observation - FR Observation Laboratory Report Results Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-laboratory-report-results-document)](StructureDefinition-fr-observation-laboratory-report-results-document.md)
 * [Media - FR Media Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-media-document)](StructureDefinition-fr-media-document.md)
@@ -105,8 +105,8 @@ Cette structure fait référence à ces autres structures:
 
 Cette structure fait référence à ces extensions:
 
-* [http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-workflow-supportingInfo.html)
 * [https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension](StructureDefinition-fr-actor-extension.md)
+* [http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-workflow-supportingInfo.html)
 
 **Slices**
 
@@ -132,7 +132,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-observation-
   "name" : "FRObservationLaboratoryReportResultsDocument",
   "title" : "Observation - FR Observation Laboratory Report Results Document",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -203,6 +203,192 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-observation-
       }
     },
     {
+      "id" : "Observation.extension:author",
+      "path" : "Observation.extension",
+      "sliceName" : "author",
+      "short" : "Auteur",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"]
+      }]
+    },
+    {
+      "id" : "Observation.extension:author.extension:type",
+      "path" : "Observation.extension.extension",
+      "sliceName" : "type"
+    },
+    {
+      "id" : "Observation.extension:author.extension:type.value[x]",
+      "path" : "Observation.extension.extension.value[x]",
+      "patternCode" : "AUT"
+    },
+    {
+      "id" : "Observation.extension:author.extension:actor",
+      "path" : "Observation.extension.extension",
+      "sliceName" : "actor"
+    },
+    {
+      "id" : "Observation.extension:author.extension:actor.value[x]",
+      "path" : "Observation.extension.extension.value[x]",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document"]
+      }]
+    },
+    {
+      "id" : "Observation.extension:validateurResultat",
+      "path" : "Observation.extension",
+      "sliceName" : "validateurResultat",
+      "short" : "Validateur de résultats",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"]
+      }]
+    },
+    {
+      "id" : "Observation.extension:validateurResultat.extension:type",
+      "path" : "Observation.extension.extension",
+      "sliceName" : "type"
+    },
+    {
+      "id" : "Observation.extension:validateurResultat.extension:type.value[x]",
+      "path" : "Observation.extension.extension.value[x]",
+      "patternCode" : "PART"
+    },
+    {
+      "id" : "Observation.extension:validateurResultat.extension:typeCode",
+      "path" : "Observation.extension.extension",
+      "sliceName" : "typeCode"
+    },
+    {
+      "id" : "Observation.extension:validateurResultat.extension:typeCode.value[x]",
+      "path" : "Observation.extension.extension.value[x]",
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-participant-additionnel-resultat-cisis"
+      }
+    },
+    {
+      "id" : "Observation.extension:validateurResultat.extension:typeCode.value[x].coding.code",
+      "path" : "Observation.extension.extension.value[x].coding.code",
+      "patternCode" : "AUTHEN"
+    },
+    {
+      "id" : "Observation.extension:validateurResultat.extension:actor",
+      "path" : "Observation.extension.extension",
+      "sliceName" : "actor"
+    },
+    {
+      "id" : "Observation.extension:validateurResultat.extension:actor.value[x]",
+      "path" : "Observation.extension.extension.value[x]",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document"]
+      }]
+    },
+    {
+      "id" : "Observation.extension:responsableExamen",
+      "path" : "Observation.extension",
+      "sliceName" : "responsableExamen",
+      "short" : "Responsable de l'évaluation",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"]
+      }]
+    },
+    {
+      "id" : "Observation.extension:responsableExamen.extension:type",
+      "path" : "Observation.extension.extension",
+      "sliceName" : "type"
+    },
+    {
+      "id" : "Observation.extension:responsableExamen.extension:type.value[x]",
+      "path" : "Observation.extension.extension.value[x]",
+      "patternCode" : "PART"
+    },
+    {
+      "id" : "Observation.extension:responsableExamen.extension:typeCode",
+      "path" : "Observation.extension.extension",
+      "sliceName" : "typeCode"
+    },
+    {
+      "id" : "Observation.extension:responsableExamen.extension:typeCode.value[x].coding.code",
+      "path" : "Observation.extension.extension.value[x].coding.code",
+      "patternCode" : "RESP"
+    },
+    {
+      "id" : "Observation.extension:responsableExamen.extension:actor",
+      "path" : "Observation.extension.extension",
+      "sliceName" : "actor"
+    },
+    {
+      "id" : "Observation.extension:responsableExamen.extension:actor.value[x]",
+      "path" : "Observation.extension.extension.value[x]",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document"]
+      }]
+    },
+    {
+      "id" : "Observation.extension:dispositifAuto",
+      "path" : "Observation.extension",
+      "sliceName" : "dispositifAuto",
+      "short" : "Dispositif automatique",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"]
+      }]
+    },
+    {
+      "id" : "Observation.extension:dispositifAuto.extension:type",
+      "path" : "Observation.extension.extension",
+      "sliceName" : "type"
+    },
+    {
+      "id" : "Observation.extension:dispositifAuto.extension:type.value[x]",
+      "path" : "Observation.extension.extension.value[x]",
+      "patternCode" : "PART"
+    },
+    {
+      "id" : "Observation.extension:dispositifAuto.extension:typeCode",
+      "path" : "Observation.extension.extension",
+      "sliceName" : "typeCode"
+    },
+    {
+      "id" : "Observation.extension:dispositifAuto.extension:typeCode.value[x]",
+      "path" : "Observation.extension.extension.value[x]",
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-participant-additionnel-resultat-cisis"
+      }
+    },
+    {
+      "id" : "Observation.extension:dispositifAuto.extension:typeCode.value[x].coding.code",
+      "path" : "Observation.extension.extension.value[x].coding.code",
+      "patternCode" : "DEV"
+    },
+    {
+      "id" : "Observation.extension:dispositifAuto.extension:actor",
+      "path" : "Observation.extension.extension",
+      "sliceName" : "actor"
+    },
+    {
+      "id" : "Observation.extension:dispositifAuto.extension:actor.value[x]",
+      "path" : "Observation.extension.extension.value[x]",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Device"]
+      }]
+    },
+    {
       "id" : "Observation.extension:supportingInfo",
       "path" : "Observation.extension",
       "sliceName" : "supportingInfo",
@@ -218,7 +404,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-observation-
     {
       "id" : "Observation.status",
       "path" : "Observation.status",
-      "short" : "Niveau de complétude :\n- 'final' si le résultat est présent\n- 'cancelled' dans le cas où l'élément d'examen n’a pu être et ne sera pas réalisé",
+      "short" : "Niveau de complétude :\n- 'final' si le résultat est présent\n- 'cancelled' dans le cas où l'élément d'examen n’a pu être et ne sera pas réalisé\n- 'registered' le résultat n'est pas encore disponible et est attendu",
       "mustSupport" : true
     },
     {
@@ -297,246 +483,13 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-observation-
     {
       "id" : "Observation.performer",
       "path" : "Observation.performer",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.performer.extension:laboratoireExecutant",
-      "path" : "Observation.performer.extension",
-      "sliceName" : "laboratoireExecutant",
       "short" : "Laboratoire exécutant",
-      "min" : 0,
       "max" : "1",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"]
-      }],
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.performer.extension:laboratoireExecutant.extension:type",
-      "path" : "Observation.performer.extension.extension",
-      "sliceName" : "type"
-    },
-    {
-      "id" : "Observation.performer.extension:laboratoireExecutant.extension:type.value[x]",
-      "path" : "Observation.performer.extension.extension.value[x]",
-      "patternCode" : "PRF"
-    },
-    {
-      "id" : "Observation.performer.extension:laboratoireExecutant.extension:typeCode",
-      "path" : "Observation.performer.extension.extension",
-      "sliceName" : "typeCode"
-    },
-    {
-      "id" : "Observation.performer.extension:laboratoireExecutant.extension:typeCode.value[x]",
-      "path" : "Observation.performer.extension.extension.value[x]",
-      "binding" : {
-        "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-participant-additionnel-resultat-cisis"
-      }
-    },
-    {
-      "id" : "Observation.performer.extension:laboratoireExecutant.extension:actor",
-      "path" : "Observation.performer.extension.extension",
-      "sliceName" : "actor"
-    },
-    {
-      "id" : "Observation.performer.extension:laboratoireExecutant.extension:actor.value[x]",
-      "path" : "Observation.performer.extension.extension.value[x]",
       "type" : [{
         "code" : "Reference",
         "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-organization-document"]
-      }]
-    },
-    {
-      "id" : "Observation.performer.extension:auteur",
-      "path" : "Observation.performer.extension",
-      "sliceName" : "auteur",
-      "short" : "Auteur",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"]
       }],
       "mustSupport" : true
-    },
-    {
-      "id" : "Observation.performer.extension:auteur.extension:type",
-      "path" : "Observation.performer.extension.extension",
-      "sliceName" : "type"
-    },
-    {
-      "id" : "Observation.performer.extension:auteur.extension:type.value[x]",
-      "path" : "Observation.performer.extension.extension.value[x]",
-      "patternCode" : "AUT"
-    },
-    {
-      "id" : "Observation.performer.extension:auteur.extension:actor",
-      "path" : "Observation.performer.extension.extension",
-      "sliceName" : "actor"
-    },
-    {
-      "id" : "Observation.performer.extension:auteur.extension:actor.value[x]",
-      "path" : "Observation.performer.extension.extension.value[x]",
-      "type" : [{
-        "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document"]
-      }]
-    },
-    {
-      "id" : "Observation.performer.extension:validateurResultat",
-      "path" : "Observation.performer.extension",
-      "sliceName" : "validateurResultat",
-      "short" : "Validateur de résultats",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"]
-      }],
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.performer.extension:validateurResultat.extension:type",
-      "path" : "Observation.performer.extension.extension",
-      "sliceName" : "type"
-    },
-    {
-      "id" : "Observation.performer.extension:validateurResultat.extension:type.value[x]",
-      "path" : "Observation.performer.extension.extension.value[x]",
-      "patternCode" : "PART"
-    },
-    {
-      "id" : "Observation.performer.extension:validateurResultat.extension:typeCode",
-      "path" : "Observation.performer.extension.extension",
-      "sliceName" : "typeCode"
-    },
-    {
-      "id" : "Observation.performer.extension:validateurResultat.extension:typeCode.value[x]",
-      "path" : "Observation.performer.extension.extension.value[x]",
-      "binding" : {
-        "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-participant-additionnel-resultat-cisis"
-      }
-    },
-    {
-      "id" : "Observation.performer.extension:validateurResultat.extension:typeCode.value[x].coding.code",
-      "path" : "Observation.performer.extension.extension.value[x].coding.code",
-      "patternCode" : "AUTHEN"
-    },
-    {
-      "id" : "Observation.performer.extension:validateurResultat.extension:actor",
-      "path" : "Observation.performer.extension.extension",
-      "sliceName" : "actor"
-    },
-    {
-      "id" : "Observation.performer.extension:validateurResultat.extension:actor.value[x]",
-      "path" : "Observation.performer.extension.extension.value[x]",
-      "type" : [{
-        "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document"]
-      }]
-    },
-    {
-      "id" : "Observation.performer.extension:responsableExamen",
-      "path" : "Observation.performer.extension",
-      "sliceName" : "responsableExamen",
-      "short" : "Responsable de l'évaluation",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"]
-      }],
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.performer.extension:responsableExamen.extension:type",
-      "path" : "Observation.performer.extension.extension",
-      "sliceName" : "type"
-    },
-    {
-      "id" : "Observation.performer.extension:responsableExamen.extension:type.value[x]",
-      "path" : "Observation.performer.extension.extension.value[x]",
-      "patternCode" : "PART"
-    },
-    {
-      "id" : "Observation.performer.extension:responsableExamen.extension:typeCode",
-      "path" : "Observation.performer.extension.extension",
-      "sliceName" : "typeCode"
-    },
-    {
-      "id" : "Observation.performer.extension:responsableExamen.extension:typeCode.value[x].coding.code",
-      "path" : "Observation.performer.extension.extension.value[x].coding.code",
-      "patternCode" : "RESP"
-    },
-    {
-      "id" : "Observation.performer.extension:responsableExamen.extension:actor",
-      "path" : "Observation.performer.extension.extension",
-      "sliceName" : "actor"
-    },
-    {
-      "id" : "Observation.performer.extension:responsableExamen.extension:actor.value[x]",
-      "path" : "Observation.performer.extension.extension.value[x]",
-      "type" : [{
-        "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document"]
-      }]
-    },
-    {
-      "id" : "Observation.performer.extension:dispositifAuto",
-      "path" : "Observation.performer.extension",
-      "sliceName" : "dispositifAuto",
-      "short" : "Dispositif automatique",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"]
-      }],
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.performer.extension:dispositifAuto.extension:type",
-      "path" : "Observation.performer.extension.extension",
-      "sliceName" : "type"
-    },
-    {
-      "id" : "Observation.performer.extension:dispositifAuto.extension:type.value[x]",
-      "path" : "Observation.performer.extension.extension.value[x]",
-      "patternCode" : "PART"
-    },
-    {
-      "id" : "Observation.performer.extension:dispositifAuto.extension:typeCode",
-      "path" : "Observation.performer.extension.extension",
-      "sliceName" : "typeCode"
-    },
-    {
-      "id" : "Observation.performer.extension:dispositifAuto.extension:typeCode.value[x]",
-      "path" : "Observation.performer.extension.extension.value[x]",
-      "binding" : {
-        "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-participant-additionnel-resultat-cisis"
-      }
-    },
-    {
-      "id" : "Observation.performer.extension:dispositifAuto.extension:typeCode.value[x].coding.code",
-      "path" : "Observation.performer.extension.extension.value[x].coding.code",
-      "patternCode" : "DEV"
-    },
-    {
-      "id" : "Observation.performer.extension:dispositifAuto.extension:actor",
-      "path" : "Observation.performer.extension.extension",
-      "sliceName" : "actor"
-    },
-    {
-      "id" : "Observation.performer.extension:dispositifAuto.extension:actor.value[x]",
-      "path" : "Observation.performer.extension.extension.value[x]",
-      "type" : [{
-        "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Device"]
-      }]
     },
     {
       "id" : "Observation.value[x]",

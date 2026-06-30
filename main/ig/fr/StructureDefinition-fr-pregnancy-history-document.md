@@ -35,8 +35,8 @@ Cette structure est dérivée de [List](http://hl7.org/fhir/R4/list.html)
 
 ** Résumé **
 
-Obligatoire : 4 éléments
- Must-Support : 4 éléments
+Obligatoire : 3 éléments
+ Must-Support : 3 éléments
 
 **Structures**
 
@@ -65,8 +65,8 @@ Cette structure est dérivée de [List](http://hl7.org/fhir/R4/list.html)
 
 ** Résumé **
 
-Obligatoire : 4 éléments
- Must-Support : 4 éléments
+Obligatoire : 3 éléments
+ Must-Support : 3 éléments
 
 **Structures**
 
@@ -92,7 +92,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-pregnancy-hi
   "name" : "FRPregnancyHistoryDocument",
   "title" : "List - FR Pregnancy History Document",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -133,10 +133,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-pregnancy-hi
     {
       "id" : "List.identifier",
       "path" : "List.identifier",
-      "short" : "Identifiant",
-      "min" : 1,
-      "max" : "1",
-      "mustSupport" : true
+      "short" : "Identifiant"
     },
     {
       "id" : "List.status",

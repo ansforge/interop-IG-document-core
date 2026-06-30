@@ -65,11 +65,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "AdverseEvent.location","AdverseEvent.location","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Location|4.0.1]]}
 ","Location where adverse event occurred","The information about where the adverse event occurred.","","","","","","","","","",,,,,"",,,,"AdverseEvent.location",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"AdverseEvent.seriousness","AdverseEvent.seriousness","","","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
-","Gravité de l'effet indésirable","Assessment whether this event was of real importance.","","","","","","","","","",,"required","","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-gravite-cisis","",,,,"AdverseEvent.seriousness",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"AdverseEvent.seriousness","AdverseEvent.seriousness","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
+","Seriousness of the event","Assessment whether this event was of real importance.","","","","","","","","","",,"example","Overall seriousness of this event for the patient.","http://hl7.org/fhir/ValueSet/adverse-event-seriousness|4.0.1","",,,,"AdverseEvent.seriousness",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"AdverseEvent.severity","AdverseEvent.severity","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
-","mild | moderate | severe","Describes the severity of the adverse event, in relation to the subject. Contrast to AdverseEvent.seriousness - a severe rash might not be serious, but a mild heart problem is.","","","","","","","","","",,"required","The severity of the adverse event itself, in direct relation to the subject.","http://hl7.org/fhir/ValueSet/adverse-event-severity|4.0.1","",,,,"AdverseEvent.severity",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"AdverseEvent.severity","AdverseEvent.severity","","","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
+","Gravité de l'effet indésirable","Describes the severity of the adverse event, in relation to the subject. Contrast to AdverseEvent.seriousness - a severe rash might not be serious, but a mild heart problem is.","","","","","","","","","",,"required","","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-gravite-cisis","",,,,"AdverseEvent.severity",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "AdverseEvent.outcome","AdverseEvent.outcome","","","",0,1,"Y","","Y","CodeableConcept {[]} {[]}
 ","Évolution de l'effet indésirable","Describes the type of outcome from the adverse event.","","","","","","","","","",,"required","","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-evolution-cisis","",,,,"AdverseEvent.outcome",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

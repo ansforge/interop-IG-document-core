@@ -37,30 +37,24 @@ Cette structure est dérivée de [Observation](http://hl7.org/fhir/R4/observatio
 
 ** Résumé **
 
-Obligatoire : 4 éléments
- Must-Support : 11 éléments
+Obligatoire : 3 éléments
+ Must-Support : 9 éléments
 
 **Structures**
 
 Cette structure fait référence à ces autres structures:
 
+* [FR PractitionerRole Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document)](StructureDefinition-fr-practitionerRole-document.md)
+* [FR Organization Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-organization-document)](StructureDefinition-fr-organization-document.md)
 * [FR Patient INS Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-patient-ins-document)](StructureDefinition-fr-patient-ins-document.md)
 * [FR Patient Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-patient-document)](StructureDefinition-fr-patient-document.md)
 * [Encounter - FR Encounter Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-encounter-document)](StructureDefinition-fr-encounter-document.md)
-* [FR PractitionerRole Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document)](StructureDefinition-fr-practitionerRole-document.md)
-* [FR Organization Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-organization-document)](StructureDefinition-fr-organization-document.md)
 
 **Extensions**
 
 Cette structure fait référence à ces extensions:
 
 * [https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension](StructureDefinition-fr-actor-extension.md)
-
-**Slices**
-
-Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slices) suivantes:
-
-* The element 1 is sliced based on the value of Observation.performer
 
  **Vue des éléments clés** 
 
@@ -84,30 +78,24 @@ Cette structure est dérivée de [Observation](http://hl7.org/fhir/R4/observatio
 
 ** Résumé **
 
-Obligatoire : 4 éléments
- Must-Support : 11 éléments
+Obligatoire : 3 éléments
+ Must-Support : 9 éléments
 
 **Structures**
 
 Cette structure fait référence à ces autres structures:
 
+* [FR PractitionerRole Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document)](StructureDefinition-fr-practitionerRole-document.md)
+* [FR Organization Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-organization-document)](StructureDefinition-fr-organization-document.md)
 * [FR Patient INS Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-patient-ins-document)](StructureDefinition-fr-patient-ins-document.md)
 * [FR Patient Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-patient-document)](StructureDefinition-fr-patient-document.md)
 * [Encounter - FR Encounter Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-encounter-document)](StructureDefinition-fr-encounter-document.md)
-* [FR PractitionerRole Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document)](StructureDefinition-fr-practitionerRole-document.md)
-* [FR Organization Document (https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-organization-document)](StructureDefinition-fr-organization-document.md)
 
 **Extensions**
 
 Cette structure fait référence à ces extensions:
 
 * [https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension](StructureDefinition-fr-actor-extension.md)
-
-**Slices**
-
-Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slices) suivantes:
-
-* The element 1 is sliced based on the value of Observation.performer
 
  
 
@@ -126,7 +114,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-observation-
   "name" : "FRObservationMedicalSummaryDocument",
   "title" : "Observation - FR Observation Medical Summary Document",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -185,12 +173,58 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-observation-
       "path" : "Observation"
     },
     {
+      "id" : "Observation.extension",
+      "path" : "Observation.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "Observation.extension:author",
+      "path" : "Observation.extension",
+      "sliceName" : "author",
+      "short" : "Auteur de l’observation",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"]
+      }]
+    },
+    {
+      "id" : "Observation.extension:author.extension:type",
+      "path" : "Observation.extension.extension",
+      "sliceName" : "type"
+    },
+    {
+      "id" : "Observation.extension:author.extension:type.value[x]",
+      "path" : "Observation.extension.extension.value[x]",
+      "patternCode" : "AUT"
+    },
+    {
+      "id" : "Observation.extension:author.extension:actor",
+      "path" : "Observation.extension.extension",
+      "sliceName" : "actor"
+    },
+    {
+      "id" : "Observation.extension:author.extension:actor.value[x]",
+      "path" : "Observation.extension.extension.value[x]",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document",
+        "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-organization-document",
+        "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-patient-ins-document"]
+      }]
+    },
+    {
       "id" : "Observation.identifier",
       "path" : "Observation.identifier",
-      "short" : "Identifiant de l'observation",
-      "min" : 1,
-      "max" : "1",
-      "mustSupport" : true
+      "short" : "Identifiant de l'observation"
     },
     {
       "id" : "Observation.status",
@@ -239,55 +273,6 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-observation-
       "short" : "Date de l'observation",
       "min" : 1,
       "mustSupport" : true
-    },
-    {
-      "id" : "Observation.performer",
-      "path" : "Observation.performer",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "value",
-          "path" : "extension.url"
-        }],
-        "rules" : "open"
-      },
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.performer.extension:author",
-      "path" : "Observation.performer.extension",
-      "sliceName" : "author",
-      "short" : "Auteur de l’observation",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"]
-      }]
-    },
-    {
-      "id" : "Observation.performer.extension:author.extension:type",
-      "path" : "Observation.performer.extension.extension",
-      "sliceName" : "type"
-    },
-    {
-      "id" : "Observation.performer.extension:author.extension:type.value[x]",
-      "path" : "Observation.performer.extension.extension.value[x]",
-      "patternCode" : "AUT"
-    },
-    {
-      "id" : "Observation.performer.extension:author.extension:actor",
-      "path" : "Observation.performer.extension.extension",
-      "sliceName" : "actor"
-    },
-    {
-      "id" : "Observation.performer.extension:author.extension:actor.value[x]",
-      "path" : "Observation.performer.extension.extension.value[x]",
-      "type" : [{
-        "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document",
-        "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-organization-document",
-        "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-patient-ins-document"]
-      }]
     },
     {
       "id" : "Observation.value[x]",

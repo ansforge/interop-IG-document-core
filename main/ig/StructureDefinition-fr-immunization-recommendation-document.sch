@@ -12,8 +12,6 @@
   <sch:pattern>
     <sch:title>f:ImmunizationRecommendation</sch:title>
     <sch:rule context="f:ImmunizationRecommendation">
-      <sch:assert test="count(f:identifier) &gt;= 1">identifier: minimum cardinality of 'identifier' is 1</sch:assert>
-      <sch:assert test="count(f:identifier) &lt;= 1">identifier: maximum cardinality of 'identifier' is 1</sch:assert>
       <sch:assert test="count(f:recommendation) &lt;= 1">recommendation: maximum cardinality of 'recommendation' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>

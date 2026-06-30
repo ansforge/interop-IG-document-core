@@ -35,8 +35,8 @@ Cette structure est dérivée de [CarePlan](http://hl7.org/fhir/R4/careplan.html
 
 ** Résumé **
 
-Obligatoire : 3 éléments
- Must-Support : 5 éléments
+Obligatoire : 2 éléments
+ Must-Support : 4 éléments
 
 **Structures**
 
@@ -65,8 +65,8 @@ Cette structure est dérivée de [CarePlan](http://hl7.org/fhir/R4/careplan.html
 
 ** Résumé **
 
-Obligatoire : 3 éléments
- Must-Support : 5 éléments
+Obligatoire : 2 éléments
+ Must-Support : 4 éléments
 
 **Structures**
 
@@ -92,7 +92,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-care-plan-do
   "name" : "FRCarePlanDocument",
   "title" : "CarePlan - FR Care Plan Document",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -143,9 +143,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-care-plan-do
     {
       "id" : "CarePlan.identifier",
       "path" : "CarePlan.identifier",
-      "short" : "Identifiant de la ligne de traitement dans un plan de traitement.",
-      "min" : 1,
-      "mustSupport" : true
+      "short" : "Identifiant de la ligne de traitement dans un plan de traitement."
     },
     {
       "id" : "CarePlan.category",

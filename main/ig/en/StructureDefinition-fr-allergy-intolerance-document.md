@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-allergy-intole
   "name" : "FRAllergyIntoleranceDocument",
   "title" : "AllergyIntolerance - FR Allergy and intolerance Document",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -78,9 +78,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-allergy-intole
     {
       "id" : "AllergyIntolerance.identifier",
       "path" : "AllergyIntolerance.identifier",
-      "short" : "Identifiant",
-      "min" : 1,
-      "mustSupport" : true
+      "short" : "Identifiant"
     },
     {
       "id" : "AllergyIntolerance.clinicalStatus",

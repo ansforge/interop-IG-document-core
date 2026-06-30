@@ -57,7 +57,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-quantite-d
   "name" : "FRCDAQuantiteDeProduit",
   "title" : "CDA - FR Quantite de produit",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

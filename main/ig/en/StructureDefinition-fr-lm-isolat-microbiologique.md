@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-isolat-micr
   "name" : "FRLMIsolatMicrobiologique",
   "title" : "Modèle logique métier - FR LM Isolat microbiologique",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -80,20 +80,6 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-isolat-micr
       "max" : "1",
       "type" : [{
         "code" : "CodeableConcept"
-      }]
-    },
-    {
-      "id" : "fr-lm-isolat-microbiologique.choice[x]",
-      "path" : "fr-lm-isolat-microbiologique.choice[x]",
-      "short" : "Sujet non humain ou Patient avec sujet non humain",
-      "definition" : "Sujet non humain ou Patient avec sujet non humain",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-sujet-non-humain"
-      },
-      {
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-sujet-non-humain"
       }]
     },
     {

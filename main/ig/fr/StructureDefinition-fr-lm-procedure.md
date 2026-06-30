@@ -3,11 +3,11 @@
 ## Modèle logique: Logical model- FR LM Procedure 
 
  
-Entrée Acte 
+Acte 
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Logical model - FR LM Course of encounter](StructureDefinition-fr-lm-course-of-encounter.md), [Logical model - FR LM Device use](StructureDefinition-fr-lm-device-use.md), [Logical model - FR LM Encounter](StructureDefinition-fr-lm-encounter.md), [Logical model - FR LM Examination Report](StructureDefinition-fr-lm-examination-report.md)... Show 7 more, [Logical model - FR LM Observation Result](StructureDefinition-fr-lm-observation-result.md), [Logical model - FR LM Patient Education](StructureDefinition-fr-lm-patient-education.md), [Logical model- FR LM Pregnancy History](StructureDefinition-fr-lm-pregnancy-history.md), [Logical model- FR LM Pregnancy Observation](StructureDefinition-fr-lm-pregnancy-observation.md), [Logical model- FR LM Procedure](StructureDefinition-fr-lm-procedure.md), [logical model - FR LM Procedures](StructureDefinition-fr-lm-procedures.md) and [Logical model - FR LM Service Request](StructureDefinition-fr-lm-service-request.md)
+* Utilise ce/t/te Modèle logique: [Logical model - FR LM Course of encounter](StructureDefinition-fr-lm-course-of-encounter.md), [Logical model - FR LM Device use](StructureDefinition-fr-lm-device-use.md), [Logical model - FR LM Encounter](StructureDefinition-fr-lm-encounter.md), [Logical model - FR LM Examination Report](StructureDefinition-fr-lm-examination-report.md)... Show 7 more, [Logical model - FR LM Observation](StructureDefinition-fr-lm-observation.md), [Logical model - FR LM Patient Education](StructureDefinition-fr-lm-patient-education.md), [Logical model- FR LM Pregnancy History](StructureDefinition-fr-lm-pregnancy-history.md), [Logical model- FR LM Pregnancy Observation](StructureDefinition-fr-lm-pregnancy-observation.md), [Logical model- FR LM Procedure](StructureDefinition-fr-lm-procedure.md), [logical model - FR LM Procedures](StructureDefinition-fr-lm-procedures.md) and [Logical model - FR LM Service Request](StructureDefinition-fr-lm-service-request.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-procedure)
 
@@ -85,7 +85,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-procedure
   "name" : "FRLMProcedure",
   "title" : "Logical model- FR LM Procedure",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -94,7 +94,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-procedure
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Entrée Acte",
+  "description" : "Acte",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -113,7 +113,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-procedure
       "id" : "fr-lm-procedure",
       "path" : "fr-lm-procedure",
       "short" : "Logical model- FR LM Procedure",
-      "definition" : "Entrée Acte"
+      "definition" : "Acte"
     },
     {
       "id" : "fr-lm-procedure.header.status",

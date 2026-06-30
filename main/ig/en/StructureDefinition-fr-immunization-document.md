@@ -5,7 +5,6 @@
  
 FRImmunizationDocument permet de décrire l'administration d'un vaccin. 
 * Il permet également de décrire pourquoi un vaccin n'a pas été réalisé.
-* Ce profil hérite de la structuration, des contraintes et des vocabulaires définis dans le profil FRMedicationAdministrationDocument sauf mentions précisées ci-après.
  
 
 **Usages:**
@@ -35,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-immunization-d
   "name" : "FRImmunizationDocument",
   "title" : "Immunization - FR Immunization Document",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -44,7 +43,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-immunization-d
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "FRImmunizationDocument permet de décrire l'administration d'un vaccin. \n - Il permet également de décrire pourquoi un vaccin n'a pas été réalisé.\n - Ce profil hérite de la structuration, des contraintes et des vocabulaires définis dans le profil FRMedicationAdministrationDocument sauf mentions précisées ci-après.",
+  "description" : "FRImmunizationDocument permet de décrire l'administration d'un vaccin. \n - Il permet également de décrire pourquoi un vaccin n'a pas été réalisé.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -102,17 +101,42 @@ Other representations of profile: [CSV](../StructureDefinition-fr-immunization-d
       "min" : 1
     },
     {
-      "id" : "Immunization.extension:productName",
+      "id" : "Immunization.extension:author",
       "path" : "Immunization.extension",
-      "sliceName" : "productName",
-      "short" : "Nom de marque du produit.",
+      "sliceName" : "author",
+      "short" : "Auteur de la vaccination (personne ayant validé médicalement que la vaccination a été réalisée)",
       "min" : 1,
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-productname"]
-      }],
-      "mustSupport" : true
+        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"]
+      }]
+    },
+    {
+      "id" : "Immunization.extension:author.extension:type",
+      "path" : "Immunization.extension.extension",
+      "sliceName" : "type"
+    },
+    {
+      "id" : "Immunization.extension:author.extension:type.value[x]",
+      "path" : "Immunization.extension.extension.value[x]",
+      "patternCode" : "AUT"
+    },
+    {
+      "id" : "Immunization.extension:author.extension:actor",
+      "path" : "Immunization.extension.extension",
+      "sliceName" : "actor"
+    },
+    {
+      "id" : "Immunization.extension:author.extension:actor.value[x]",
+      "path" : "Immunization.extension.extension.value[x]",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document",
+        "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-patient-ins-document",
+        "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-device-auteur-document",
+        "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-patient-document"]
+      }]
     },
     {
       "id" : "Immunization.extension:basedOnRequestR5",
@@ -143,10 +167,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-immunization-d
     {
       "id" : "Immunization.identifier",
       "path" : "Immunization.identifier",
-      "short" : "Identifiant",
-      "min" : 1,
-      "max" : "1",
-      "mustSupport" : true
+      "short" : "Identifiant"
     },
     {
       "id" : "Immunization.status",
@@ -211,29 +232,6 @@ Other representations of profile: [CSV](../StructureDefinition-fr-immunization-d
       "mustSupport" : true
     },
     {
-      "id" : "Immunization.occurrence[x].extension",
-      "path" : "Immunization.occurrence[x].extension",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "value",
-          "path" : "url"
-        }],
-        "ordered" : false,
-        "rules" : "open"
-      }
-    },
-    {
-      "id" : "Immunization.occurrence[x].extension:dataAbsentReason",
-      "path" : "Immunization.occurrence[x].extension",
-      "sliceName" : "dataAbsentReason",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/data-absent-reason"]
-      }]
-    },
-    {
       "id" : "Immunization.lotNumber",
       "path" : "Immunization.lotNumber",
       "short" : "Numéro de lot.",
@@ -274,78 +272,21 @@ Other representations of profile: [CSV](../StructureDefinition-fr-immunization-d
     {
       "id" : "Immunization.performer",
       "path" : "Immunization.performer",
-      "mustSupport" : true
+      "short" : "Exécutant"
     },
     {
-      "id" : "Immunization.performer.actor.extension",
-      "path" : "Immunization.performer.actor.extension",
-      "min" : 1
+      "id" : "Immunization.performer.function",
+      "path" : "Immunization.performer.function",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0443",
+          "code" : "AP"
+        }]
+      }
     },
     {
-      "id" : "Immunization.performer.actor.extension:author",
-      "path" : "Immunization.performer.actor.extension",
-      "sliceName" : "author",
-      "short" : "Auteur de la vaccination (personne ayant validé médicalement que la vaccination a été réalisée)",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"]
-      }]
-    },
-    {
-      "id" : "Immunization.performer.actor.extension:author.extension:type",
-      "path" : "Immunization.performer.actor.extension.extension",
-      "sliceName" : "type"
-    },
-    {
-      "id" : "Immunization.performer.actor.extension:author.extension:type.value[x]",
-      "path" : "Immunization.performer.actor.extension.extension.value[x]",
-      "patternCode" : "AUT"
-    },
-    {
-      "id" : "Immunization.performer.actor.extension:author.extension:actor",
-      "path" : "Immunization.performer.actor.extension.extension",
-      "sliceName" : "actor"
-    },
-    {
-      "id" : "Immunization.performer.actor.extension:author.extension:actor.value[x]",
-      "path" : "Immunization.performer.actor.extension.extension.value[x]",
-      "type" : [{
-        "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document"]
-      }]
-    },
-    {
-      "id" : "Immunization.performer.actor.extension:executant",
-      "path" : "Immunization.performer.actor.extension",
-      "sliceName" : "executant",
-      "short" : "Exécutant",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"]
-      }]
-    },
-    {
-      "id" : "Immunization.performer.actor.extension:executant.extension:type",
-      "path" : "Immunization.performer.actor.extension.extension",
-      "sliceName" : "type"
-    },
-    {
-      "id" : "Immunization.performer.actor.extension:executant.extension:type.value[x]",
-      "path" : "Immunization.performer.actor.extension.extension.value[x]",
-      "patternCode" : "PRF"
-    },
-    {
-      "id" : "Immunization.performer.actor.extension:executant.extension:actor",
-      "path" : "Immunization.performer.actor.extension.extension",
-      "sliceName" : "actor"
-    },
-    {
-      "id" : "Immunization.performer.actor.extension:executant.extension:actor.value[x]",
-      "path" : "Immunization.performer.actor.extension.extension.value[x]",
+      "id" : "Immunization.performer.actor",
+      "path" : "Immunization.performer.actor",
       "type" : [{
         "code" : "Reference",
         "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document"]
@@ -376,6 +317,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-immunization-d
     {
       "id" : "Immunization.protocolApplied.series",
       "path" : "Immunization.protocolApplied.series",
+      "short" : "BOOSTER / IMMUNIZ / INITIMMUNIZ",
       "binding" : {
         "strength" : "required",
         "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdministrationImmunizationCode-cisis"

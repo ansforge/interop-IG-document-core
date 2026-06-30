@@ -39,7 +39,7 @@ Cette structure est dérivée de [FRCoreEncounterProfile](https://hl7.fr/ig/fhir
 
 ** Résumé **
 
-Must-Support : 8 éléments
+Must-Support : 7 éléments
 
 **Structures**
 
@@ -79,7 +79,7 @@ Cette structure est dérivée de [FRCoreEncounterProfile](https://hl7.fr/ig/fhir
 
 ** Résumé **
 
-Must-Support : 8 éléments
+Must-Support : 7 éléments
 
 **Structures**
 
@@ -112,7 +112,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-encounter-do
   "name" : "FREncounterDocument",
   "title" : "Encounter - FR Encounter Document",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -170,8 +170,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-encounter-do
     {
       "id" : "Encounter.identifier",
       "path" : "Encounter.identifier",
-      "short" : "Identifiant de la rencontre",
-      "mustSupport" : true
+      "short" : "Identifiant de la rencontre"
     },
     {
       "id" : "Encounter.status",

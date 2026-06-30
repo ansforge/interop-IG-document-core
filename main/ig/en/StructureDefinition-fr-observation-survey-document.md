@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-observation-su
   "name" : "FRObservationSurveyDocument",
   "title" : "Observation - FR Observation Survey Document",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -89,6 +89,98 @@ Other representations of profile: [CSV](../StructureDefinition-fr-observation-su
     "element" : [{
       "id" : "Observation",
       "path" : "Observation"
+    },
+    {
+      "id" : "Observation.extension",
+      "path" : "Observation.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "Observation.extension:author",
+      "path" : "Observation.extension",
+      "sliceName" : "author",
+      "short" : "Auteur de l'évaluation",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"]
+      }]
+    },
+    {
+      "id" : "Observation.extension:author.extension:type",
+      "path" : "Observation.extension.extension",
+      "sliceName" : "type"
+    },
+    {
+      "id" : "Observation.extension:author.extension:type.value[x]",
+      "path" : "Observation.extension.extension.value[x]",
+      "patternCode" : "AUT"
+    },
+    {
+      "id" : "Observation.extension:author.extension:actor",
+      "path" : "Observation.extension.extension",
+      "sliceName" : "actor"
+    },
+    {
+      "id" : "Observation.extension:author.extension:actor.value[x]",
+      "path" : "Observation.extension.extension.value[x]",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document"]
+      }]
+    },
+    {
+      "id" : "Observation.extension:participant",
+      "path" : "Observation.extension",
+      "sliceName" : "participant",
+      "short" : "Responsable de l'évaluation",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"]
+      }]
+    },
+    {
+      "id" : "Observation.extension:participant.extension:type",
+      "path" : "Observation.extension.extension",
+      "sliceName" : "type"
+    },
+    {
+      "id" : "Observation.extension:participant.extension:type.value[x]",
+      "path" : "Observation.extension.extension.value[x]",
+      "patternCode" : "PART"
+    },
+    {
+      "id" : "Observation.extension:participant.extension:typeCode",
+      "path" : "Observation.extension.extension",
+      "sliceName" : "typeCode"
+    },
+    {
+      "id" : "Observation.extension:participant.extension:typeCode.value[x].coding.code",
+      "path" : "Observation.extension.extension.value[x].coding.code",
+      "patternCode" : "RESP"
+    },
+    {
+      "id" : "Observation.extension:participant.extension:actor",
+      "path" : "Observation.extension.extension",
+      "sliceName" : "actor"
+    },
+    {
+      "id" : "Observation.extension:participant.extension:actor.value[x]",
+      "path" : "Observation.extension.extension.value[x]",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document"]
+      }]
     },
     {
       "id" : "Observation.status",
@@ -154,138 +246,13 @@ Other representations of profile: [CSV](../StructureDefinition-fr-observation-su
     {
       "id" : "Observation.performer",
       "path" : "Observation.performer",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.performer.extension:Evaluateur",
-      "path" : "Observation.performer.extension",
-      "sliceName" : "Evaluateur",
       "short" : "Evaluateur",
-      "min" : 0,
       "max" : "1",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"]
-      }],
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.performer.extension:Evaluateur.extension:type",
-      "path" : "Observation.performer.extension.extension",
-      "sliceName" : "type"
-    },
-    {
-      "id" : "Observation.performer.extension:Evaluateur.extension:type.value[x]",
-      "path" : "Observation.performer.extension.extension.value[x]",
-      "patternCode" : "PRF"
-    },
-    {
-      "id" : "Observation.performer.extension:Evaluateur.extension:typeCode",
-      "path" : "Observation.performer.extension.extension",
-      "sliceName" : "typeCode"
-    },
-    {
-      "id" : "Observation.performer.extension:Evaluateur.extension:typeCode.value[x]",
-      "path" : "Observation.performer.extension.extension.value[x]",
-      "binding" : {
-        "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-participant-additionnel-resultat-cisis"
-      }
-    },
-    {
-      "id" : "Observation.performer.extension:Evaluateur.extension:actor",
-      "path" : "Observation.performer.extension.extension",
-      "sliceName" : "actor"
-    },
-    {
-      "id" : "Observation.performer.extension:Evaluateur.extension:actor.value[x]",
-      "path" : "Observation.performer.extension.extension.value[x]",
       "type" : [{
         "code" : "Reference",
         "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-organization-document"]
-      }]
-    },
-    {
-      "id" : "Observation.performer.extension:Auteur",
-      "path" : "Observation.performer.extension",
-      "sliceName" : "Auteur",
-      "short" : "Auteur de l'évaluation",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"]
       }],
       "mustSupport" : true
-    },
-    {
-      "id" : "Observation.performer.extension:Auteur.extension:type",
-      "path" : "Observation.performer.extension.extension",
-      "sliceName" : "type"
-    },
-    {
-      "id" : "Observation.performer.extension:Auteur.extension:type.value[x]",
-      "path" : "Observation.performer.extension.extension.value[x]",
-      "patternCode" : "AUT"
-    },
-    {
-      "id" : "Observation.performer.extension:Auteur.extension:actor",
-      "path" : "Observation.performer.extension.extension",
-      "sliceName" : "actor"
-    },
-    {
-      "id" : "Observation.performer.extension:Auteur.extension:actor.value[x]",
-      "path" : "Observation.performer.extension.extension.value[x]",
-      "type" : [{
-        "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document"]
-      }]
-    },
-    {
-      "id" : "Observation.performer.extension:Participant",
-      "path" : "Observation.performer.extension",
-      "sliceName" : "Participant",
-      "short" : "Responsable de l'évaluation",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"]
-      }],
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.performer.extension:Participant.extension:type",
-      "path" : "Observation.performer.extension.extension",
-      "sliceName" : "type"
-    },
-    {
-      "id" : "Observation.performer.extension:Participant.extension:type.value[x]",
-      "path" : "Observation.performer.extension.extension.value[x]",
-      "patternCode" : "PART"
-    },
-    {
-      "id" : "Observation.performer.extension:Participant.extension:typeCode",
-      "path" : "Observation.performer.extension.extension",
-      "sliceName" : "typeCode"
-    },
-    {
-      "id" : "Observation.performer.extension:Participant.extension:typeCode.value[x].coding.code",
-      "path" : "Observation.performer.extension.extension.value[x].coding.code",
-      "patternCode" : "RESP"
-    },
-    {
-      "id" : "Observation.performer.extension:Participant.extension:actor",
-      "path" : "Observation.performer.extension.extension",
-      "sliceName" : "actor"
-    },
-    {
-      "id" : "Observation.performer.extension:Participant.extension:actor.value[x]",
-      "path" : "Observation.performer.extension.extension.value[x]",
-      "type" : [{
-        "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document"]
-      }]
     },
     {
       "id" : "Observation.value[x]",

@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-care-plan-docu
   "name" : "FRCarePlanDocument",
   "title" : "CarePlan - FR Care Plan Document",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -83,9 +83,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-care-plan-docu
     {
       "id" : "CarePlan.identifier",
       "path" : "CarePlan.identifier",
-      "short" : "Identifiant de la ligne de traitement dans un plan de traitement.",
-      "min" : 1,
-      "mustSupport" : true
+      "short" : "Identifiant de la ligne de traitement dans un plan de traitement."
     },
     {
       "id" : "CarePlan.category",

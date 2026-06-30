@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-procedure-imag
   "name" : "FRProcedureImagingDocument",
   "title" : "Procedure - FR Procedure Imaging Document",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -81,11 +81,6 @@ Other representations of profile: [CSV](../StructureDefinition-fr-procedure-imag
       "path" : "Procedure"
     },
     {
-      "id" : "Procedure.identifier",
-      "path" : "Procedure.identifier",
-      "max" : "1"
-    },
-    {
       "id" : "Procedure.basedOn",
       "path" : "Procedure.basedOn",
       "slicing" : {
@@ -128,16 +123,48 @@ Other representations of profile: [CSV](../StructureDefinition-fr-procedure-imag
       }
     },
     {
-      "id" : "Procedure.performer.actor.extension:Participant",
-      "path" : "Procedure.performer.actor.extension",
-      "sliceName" : "Participant",
-      "short" : "Participant à l'acte d'imagerie"
+      "id" : "Procedure.performer",
+      "path" : "Procedure.performer",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "actor"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      }
     },
     {
-      "id" : "Procedure.performer.actor.extension:Dispositif",
-      "path" : "Procedure.performer.actor.extension",
-      "sliceName" : "Dispositif",
-      "short" : "Dispositif médical utilisé lors de l'acte d'imagerie"
+      "id" : "Procedure.performer:intervenant",
+      "path" : "Procedure.performer",
+      "sliceName" : "intervenant",
+      "short" : "Intervenant",
+      "min" : 0,
+      "max" : "*"
+    },
+    {
+      "id" : "Procedure.performer:intervenant.actor",
+      "path" : "Procedure.performer.actor",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document"]
+      }]
+    },
+    {
+      "id" : "Procedure.performer:dispositifMedical",
+      "path" : "Procedure.performer",
+      "sliceName" : "dispositifMedical",
+      "short" : "Dispositif médical utilisé lors de l'acte d'imagerie",
+      "min" : 0,
+      "max" : "*"
+    },
+    {
+      "id" : "Procedure.performer:dispositifMedical.actor",
+      "path" : "Procedure.performer.actor",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Device"]
+      }]
     },
     {
       "id" : "Procedure.reasonReference",

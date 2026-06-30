@@ -37,8 +37,8 @@ Cette structure est dérivée de [AllergyIntolerance](http://hl7.org/fhir/R4/all
 
 ** Résumé **
 
-Obligatoire : 2 éléments(1 élément obligatoire(s) imbriqué(s))
- Must-Support : 15 éléments
+Obligatoire : 1 élément(1 élément obligatoire(s) imbriqué(s))
+ Must-Support : 14 éléments
 
 **Structures**
 
@@ -75,8 +75,8 @@ Cette structure est dérivée de [AllergyIntolerance](http://hl7.org/fhir/R4/all
 
 ** Résumé **
 
-Obligatoire : 2 éléments(1 élément obligatoire(s) imbriqué(s))
- Must-Support : 15 éléments
+Obligatoire : 1 élément(1 élément obligatoire(s) imbriqué(s))
+ Must-Support : 14 éléments
 
 **Structures**
 
@@ -108,7 +108,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-allergy-into
   "name" : "FRAllergyIntoleranceDocument",
   "title" : "AllergyIntolerance - FR Allergy and intolerance Document",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -154,9 +154,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-allergy-into
     {
       "id" : "AllergyIntolerance.identifier",
       "path" : "AllergyIntolerance.identifier",
-      "short" : "Identifiant",
-      "min" : 1,
-      "mustSupport" : true
+      "short" : "Identifiant"
     },
     {
       "id" : "AllergyIntolerance.clinicalStatus",

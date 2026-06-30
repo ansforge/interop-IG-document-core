@@ -85,5 +85,3 @@
 ","Section Résultats d'événements","Section Résultats d'événements","","","","","","","","","",,,,,"",,,,"fr-lm-corps-document.courseOfEncounter",0,*,"",""
 "fr-lm-corps-document.hospitalDischargeMedications","fr-lm-corps-document.hospitalDischargeMedications","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-hospital-discharge-medications {[]} {[]}
 ","Section Traitement à la sortie","Section Traitement à la sortie","","","","","","","","","",,,,,"",,,,"fr-lm-corps-document.hospitalDischargeMedications",0,*,"",""
-"fr-lm-corps-document.traitementsAdministres","fr-lm-corps-document.traitementsAdministres","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-traitements-administres {[]} {[]}
-","Section Traitements administrés","Section Traitements administrés","","","","","","","","","",,,,,"",,,,"fr-lm-corps-document.traitementsAdministres",0,*,"",""

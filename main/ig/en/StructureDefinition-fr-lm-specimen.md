@@ -3,11 +3,11 @@
 ## Logical Model: Logical model - FR LM Specimen 
 
  
-Entrée Prélèvement 
+Prélèvement 
 
 **Usages:**
 
-* Use this Logical Model: [Modèle logique métier - FR LM Batterie d'examens de biologie médicale](StructureDefinition-fr-lm-batterie-examens-biologie-medicale.md), [Logical model - FR LM Observation Result](StructureDefinition-fr-lm-observation-result.md), [Modèle logique métier - FR LM Résultat d'examens de biologie / élement clinique pertinent](StructureDefinition-fr-lm-resultat-examens-biologie-element-clinique-pertinent.md), [Logical model - FR LM Resultats d'examens de biologie medicale](StructureDefinition-fr-lm-resultats-examens-biologie-medicale.md)... Show 3 more, [Logical model - FR LM Series](StructureDefinition-fr-lm-series.md), [Logical model - FR LM Service Request](StructureDefinition-fr-lm-service-request.md) and [Logical model - FR LM Specimen](StructureDefinition-fr-lm-specimen.md)
+* Use this Logical Model: [Modèle logique métier - FR LM Batterie d'examens de biologie médicale](StructureDefinition-fr-lm-batterie-examens-biologie-medicale.md), [Logical model - FR LM Observation](StructureDefinition-fr-lm-observation.md), [Modèle logique métier - FR LM Résultat d'examens de biologie / élement clinique pertinent](StructureDefinition-fr-lm-resultat-examens-biologie-element-clinique-pertinent.md), [Logical model - FR LM Resultats d'examens de biologie medicale](StructureDefinition-fr-lm-resultats-examens-biologie-medicale.md)... Show 3 more, [Logical model - FR LM Series](StructureDefinition-fr-lm-series.md), [Logical model - FR LM Service Request](StructureDefinition-fr-lm-service-request.md) and [Logical model - FR LM Specimen](StructureDefinition-fr-lm-specimen.md)
 * Refer to this Logical Model: [Logical model - FR LM ObservationMedia](StructureDefinition-fr-lm-observation-media.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ans.document.fr.core|current/StructureDefinition/StructureDefinition-fr-lm-specimen.json)
@@ -37,7 +37,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-specimen.cs
   "name" : "FRLMSpecimen",
   "title" : "Logical model - FR LM Specimen",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-specimen.cs
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Entrée Prélèvement",
+  "description" : "Prélèvement",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -65,7 +65,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-specimen.cs
       "id" : "fr-lm-specimen",
       "path" : "fr-lm-specimen",
       "short" : "Logical model - FR LM Specimen",
-      "definition" : "Entrée Prélèvement"
+      "definition" : "Prélèvement"
     },
     {
       "id" : "fr-lm-specimen.header.status",

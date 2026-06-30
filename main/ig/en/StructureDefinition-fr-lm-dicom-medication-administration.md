@@ -3,7 +3,7 @@
 ## Logical Model: Logical model - FR LM DICOM Medication Administration 
 
  
-Entrée Administration de produit de santé 
+Administration de produit de santé dans le contexte de l'imagerie médicale 
 
 **Usages:**
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-dicom-medic
   "name" : "FRLMDICOMMedicationAdministration",
   "title" : "Logical model - FR LM DICOM Medication Administration",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-dicom-medic
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Entrée Administration de produit de santé",
+  "description" : "Administration de produit de santé dans le contexte de l'imagerie médicale",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -64,7 +64,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-dicom-medic
       "id" : "fr-lm-dicom-medication-administration",
       "path" : "fr-lm-dicom-medication-administration",
       "short" : "Logical model - FR LM DICOM Medication Administration",
-      "definition" : "Entrée Administration de produit de santé"
+      "definition" : "Administration de produit de santé dans le contexte de l'imagerie médicale"
     },
     {
       "id" : "fr-lm-dicom-medication-administration.voieAdministration",

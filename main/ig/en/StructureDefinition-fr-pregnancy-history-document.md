@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-pregnancy-hist
   "name" : "FRPregnancyHistoryDocument",
   "title" : "List - FR Pregnancy History Document",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -73,10 +73,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-pregnancy-hist
     {
       "id" : "List.identifier",
       "path" : "List.identifier",
-      "short" : "Identifiant",
-      "min" : 1,
-      "max" : "1",
-      "mustSupport" : true
+      "short" : "Identifiant"
     },
     {
       "id" : "List.status",

@@ -40,8 +40,7 @@ Cette structure est dérivée de [MedicationAdministration](http://hl7.org/fhir/
 
 ** Résumé **
 
-Obligatoire : 1 élément
- Must-Support : 14 éléments
+Must-Support : 13 éléments
  Interdit : 1 élément
 
 **Structures**
@@ -88,8 +87,7 @@ Cette structure est dérivée de [MedicationAdministration](http://hl7.org/fhir/
 
 ** Résumé **
 
-Obligatoire : 1 élément
- Must-Support : 14 éléments
+Must-Support : 13 éléments
  Interdit : 1 élément
 
 **Structures**
@@ -131,7 +129,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-medication-a
   "name" : "FRMedicationAdministrationDocument",
   "title" : "MedicationAdministration - FR Medication Administration Document",
   "status" : "draft",
-  "date" : "2026-06-30T08:01:58+00:00",
+  "date" : "2026-06-30T09:01:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -216,9 +214,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-medication-a
     {
       "id" : "MedicationAdministration.identifier",
       "path" : "MedicationAdministration.identifier",
-      "short" : "Identifiant. L'entrée Traitement doit être identifiée de manière unique.",
-      "min" : 1,
-      "mustSupport" : true
+      "short" : "Identifiant de l'administration du médicament"
     },
     {
       "id" : "MedicationAdministration.status",
