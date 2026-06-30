@@ -165,6 +165,8 @@
 ","","","","","","","","","","","",,,,,"",,,,"ParticipantRole.sdtcIdentifiedBy",0,*,"",""
 "Organizer.participant.participantRole.code","Organizer.participant.participantRole.code","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CE {[]} {[]}
 ","","","","","","","","","","","",,"required","","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-PersonalRelationshipRoleType-cisis","",,,,"ParticipantRole.code",0,1,"",""
+"Organizer.participant.participantRole.sdtcSpecialty","Organizer.participant.participantRole.sdtcSpecialty","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CE {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ParticipantRole.sdtcSpecialty",0,*,"",""
 "Organizer.participant.participantRole.addr","Organizer.participant.participantRole.addr","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/AD {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"ParticipantRole.addr",0,*,"",""
 "Organizer.participant.participantRole.telecom","Organizer.participant.participantRole.telecom","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/TEL {[]} {[]}

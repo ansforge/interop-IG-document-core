@@ -2421,13 +2421,6 @@
   "name" : "FRLMAddendum"
 },
 {
-  "id" : "fr-lm-administration-blood-derivatives",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-administration-blood-derivatives",
-  "version" : "0.1.0-snapshot",
-  "name" : "FRLMAdministrationBloodDerivatives"
-},
-{
   "id" : "fr-lm-admission-evaluation",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-admission-evaluation",
@@ -2449,25 +2442,11 @@
   "name" : "FRLMAdvanceDirectives"
 },
 {
-  "id" : "fr-lm-adverse-event",
+  "id" : "fr-lm-adverse-drug-reaction",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-adverse-event",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-adverse-drug-reaction",
   "version" : "0.1.0-snapshot",
-  "name" : "FRLMAdverseEvent"
-},
-{
-  "id" : "fr-lm-adverse-event-during-hospitalization",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-adverse-event-during-hospitalization",
-  "version" : "0.1.0-snapshot",
-  "name" : "FRLMAdverseEventDuringHospitalization"
-},
-{
-  "id" : "fr-lm-adverse-event-following-administration-blood-derivatives",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-adverse-event-following-administration-blood-derivatives",
-  "version" : "0.1.0-snapshot",
-  "name" : "FRLMAdverseEventFollowingAdministrationBloodDerivatives"
+  "name" : "FRLMAdverseDrugReaction"
 },
 {
   "id" : "fr-lm-alert",
@@ -2498,13 +2477,6 @@
   "name" : "FRLMAllergyIntolerance"
 },
 {
-  "id" : "fr-lm-assessments",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-assessments",
-  "version" : "0.1.0-snapshot",
-  "name" : "FRLMAssessments"
-},
-{
   "id" : "fr-lm-attachment",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-attachment",
@@ -2517,6 +2489,13 @@
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-attachments",
   "version" : "0.1.0-snapshot",
   "name" : "FRLMAttachments"
+},
+{
+  "id" : "fr-lm-attester",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-attester",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRLMAttester"
 },
 {
   "id" : "fr-lm-batterie-examens-biologie-medicale",
@@ -2568,11 +2547,11 @@
   "name" : "FRLMCondition"
 },
 {
-  "id" : "fr-lm-consentement",
+  "id" : "fr-lm-consent",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-consentement",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-consent",
   "version" : "0.1.0-snapshot",
-  "name" : "FRLMConsentement"
+  "name" : "FRLMConsent"
 },
 {
   "id" : "fr-lm-corps-document",
@@ -2589,11 +2568,11 @@
   "name" : "FRLMCourseOfEncounter"
 },
 {
-  "id" : "fr-lm-destinataire-prevu",
+  "id" : "fr-lm-data-enterer",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-destinataire-prevu",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-data-enterer",
   "version" : "0.1.0-snapshot",
-  "name" : "FRLMDestinatairePrevu"
+  "name" : "FRLMDataEnterer"
 },
 {
   "id" : "fr-lm-device",
@@ -2622,13 +2601,6 @@
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dicom-study-metadata",
   "version" : "0.1.0-snapshot",
   "name" : "FRLMDicomStudyMetadata"
-},
-{
-  "id" : "fr-lm-document-reference",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-document-reference",
-  "version" : "0.1.0-snapshot",
-  "name" : "FRLMDocumentDeReference"
 },
 {
   "id" : "fr-lm-dosageInstructions",
@@ -2666,32 +2638,11 @@
   "name" : "FRLMEndpoint"
 },
 {
-  "id" : "fr-lm-entete-document",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entete-document",
-  "version" : "0.1.0-snapshot",
-  "name" : "FRLMEnteteDocument"
-},
-{
   "id" : "fr-lm-entry",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry",
   "version" : "0.1.0-snapshot",
   "name" : "FRLMEntry"
-},
-{
-  "id" : "fr-lm-evenement",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-evenement",
-  "version" : "0.1.0-snapshot",
-  "name" : "FRLMEvenement"
-},
-{
-  "id" : "fr-lm-evolution-adverse-event",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-evolution-adverse-event",
-  "version" : "0.1.0-snapshot",
-  "name" : "FRLMEvolutionAdverseEvent"
 },
 {
   "id" : "fr-lm-examination-report",
@@ -2736,6 +2687,13 @@
   "name" : "FRLMHazardousWorkingConditions"
 },
 {
+  "id" : "fr-lm-header-document",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-header-document",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRLMHeaderDocument"
+},
+{
   "id" : "fr-lm-health-professional",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional",
@@ -2750,13 +2708,6 @@
   "name" : "FRLMHistoryOfPastIllness"
 },
 {
-  "id" : "fr-lm-hors-amm",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-hors-amm",
-  "version" : "0.1.0-snapshot",
-  "name" : "FRLMHorsAMM"
-},
-{
   "id" : "fr-lm-hospital-discharge-medications",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-hospital-discharge-medications",
@@ -2769,13 +2720,6 @@
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-human-name",
   "version" : "0.1.0-snapshot",
   "name" : "FRLMHumanName"
-},
-{
-  "id" : "fr-lm-identification-de-micro-organismes-multiresistants",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-identification-de-micro-organismes-multiresistants",
-  "version" : "0.1.0-snapshot",
-  "name" : "FRLMIdentificationDeMicroOrganismesMultiresistants"
 },
 {
   "id" : "fr-lm-imaging-study",
@@ -2799,25 +2743,18 @@
   "name" : "FRLMImmunisations"
 },
 {
-  "id" : "fr-lm-immunization-recommendation",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-immunization-recommendation",
-  "version" : "0.1.0-snapshot",
-  "name" : "FRLMImmunizationRecommendation"
-},
-{
-  "id" : "fr-lm-imputabilite-effet-indesirable",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-imputabilite-effet-indesirable",
-  "version" : "0.1.0-snapshot",
-  "name" : "FRLMImputabiliteEffetIndesirable"
-},
-{
   "id" : "fr-lm-informant",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-informant",
   "version" : "0.1.0-snapshot",
   "name" : "FRLMInformant"
+},
+{
+  "id" : "fr-lm-intended-recipient",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-intended-recipient",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRLMIntendedRecipient"
 },
 {
   "id" : "fr-lm-isolat-microbiologique",
@@ -2839,6 +2776,13 @@
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-laboratory-observation",
   "version" : "0.1.0-snapshot",
   "name" : "FRLMLaboratoryObservation"
+},
+{
+  "id" : "fr-lm-legal-authentication",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-legal-authentication",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRLMLegalAuthentication"
 },
 {
   "id" : "fr-lm-location",
@@ -2904,25 +2848,18 @@
   "name" : "FRLMMedicationSummary"
 },
 {
-  "id" : "fr-lm-modalite-entree",
+  "id" : "fr-lm-micro-organism-search",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-modalite-entree",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-micro-organism-search",
   "version" : "0.1.0-snapshot",
-  "name" : "FRLMModaliteEntree"
+  "name" : "FRLMMicroOrganismSearch"
 },
 {
-  "id" : "fr-lm-modalite-sortie",
+  "id" : "fr-lm-multidrug-resistant-microorganism-identification",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-modalite-sortie",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-multidrug-resistant-microorganism-identification",
   "version" : "0.1.0-snapshot",
-  "name" : "FRLMModaliteSortie"
-},
-{
-  "id" : "fr-lm-non-remboursable",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-non-remboursable",
-  "version" : "0.1.0-snapshot",
-  "name" : "FRLMNonRemboursable"
+  "name" : "FRLMMultidrugResistantMicroorganismIdentification"
 },
 {
   "id" : "fr-lm-note",
@@ -2946,32 +2883,11 @@
   "name" : "FRLMObservationAssessment"
 },
 {
-  "id" : "fr-lm-observation-long-term-condition",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation-long-term-condition",
-  "version" : "0.1.0-snapshot",
-  "name" : "FRLMObservationLongTermCondition"
-},
-{
   "id" : "fr-lm-observation-media",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation-media",
   "version" : "0.1.0-snapshot",
   "name" : "FRLMObservationMedia"
-},
-{
-  "id" : "fr-lm-observation-related-to-prevention",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation-related-to-prevention",
-  "version" : "0.1.0-snapshot",
-  "name" : "FRLMObservationRelatedToPrevention"
-},
-{
-  "id" : "fr-lm-observation-result",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation-result",
-  "version" : "0.1.0-snapshot",
-  "name" : "FRLMObservationResult"
 },
 {
   "id" : "fr-lm-observation-results",
@@ -2995,18 +2911,11 @@
   "name" : "FRLMObservationVitalSign"
 },
 {
-  "id" : "fr-lm-observation-work-related-accident",
+  "id" : "fr-lm-order",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation-work-related-accident",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-order",
   "version" : "0.1.0-snapshot",
-  "name" : "FRLMObservationWorkRelatedAccident"
-},
-{
-  "id" : "fr-lm-operateur-saisie",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-operateur-saisie",
-  "version" : "0.1.0-snapshot",
-  "name" : "FRLMOperateurSaisie"
+  "name" : "FRLMOrder"
 },
 {
   "id" : "fr-lm-order-information",
@@ -3058,13 +2967,6 @@
   "name" : "FRLMPatientStory"
 },
 {
-  "id" : "fr-lm-patient-sujet-non-humain",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-sujet-non-humain",
-  "version" : "0.1.0-snapshot",
-  "name" : "FRLMPatientSujetNonHumain"
-},
-{
   "id" : "fr-lm-patient-transfer",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-transfer",
@@ -3100,13 +3002,6 @@
   "name" : "FRLMPregnancyStatus"
 },
 {
-  "id" : "fr-lm-prescription",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-prescription",
-  "version" : "0.1.0-snapshot",
-  "name" : "FRLMPrescription"
-},
-{
   "id" : "fr-lm-prescription-entree",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-prescription-entree",
@@ -3126,13 +3021,6 @@
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-presented-form",
   "version" : "0.1.0-snapshot",
   "name" : "FRLMPresentedForm"
-},
-{
-  "id" : "fr-lm-prise-en-charge",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-prise-en-charge",
-  "version" : "0.1.0-snapshot",
-  "name" : "FRLMPriseEncharge"
 },
 {
   "id" : "fr-lm-problems",
@@ -3177,13 +3065,6 @@
   "name" : "FRLMReasonForReferral"
 },
 {
-  "id" : "fr-lm-recherche-de-micro-organismes",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-recherche-de-micro-organismes",
-  "version" : "0.1.0-snapshot",
-  "name" : "FRLMRechercheDeMicroOrganismes"
-},
-{
   "id" : "fr-lm-recommendation",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-recommendation",
@@ -3191,25 +3072,11 @@
   "name" : "FRLMRecommendation"
 },
 {
-  "id" : "fr-lm-reference-item-prescription",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-reference-item-prescription",
-  "version" : "0.1.0-snapshot",
-  "name" : "FRLMReferenceItemPrescription"
-},
-{
   "id" : "fr-lm-related-person",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-related-person",
   "version" : "0.1.0-snapshot",
   "name" : "FRLMRelatedPerson"
-},
-{
-  "id" : "fr-lm-responsable",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-responsable",
-  "version" : "0.1.0-snapshot",
-  "name" : "FRLMResponsable"
 },
 {
   "id" : "fr-lm-result-data",
@@ -3224,13 +3091,6 @@
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-resultat-examens-biologie-element-clinique-pertinent",
   "version" : "0.1.0-snapshot",
   "name" : "FRLMResultatExamensBiologieElementCliniquePertinent"
-},
-{
-  "id" : "fr-lm-resultats-entree",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-resultats-entree",
-  "version" : "0.1.0-snapshot",
-  "name" : "FRLMResultatsEntry"
 },
 {
   "id" : "fr-lm-resultats-examens-biologie-medicale",
@@ -3275,13 +3135,6 @@
   "name" : "FRLMServiceRequest"
 },
 {
-  "id" : "fr-lm-severity-adverse-event",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-severity-adverse-event",
-  "version" : "0.1.0-snapshot",
-  "name" : "FRLMSeverityAdverseEvent"
-},
-{
   "id" : "fr-lm-social-history",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-social-history",
@@ -3303,39 +3156,11 @@
   "name" : "FRLMSpecimen"
 },
 {
-  "id" : "fr-lm-status",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-status",
-  "version" : "0.1.0-snapshot",
-  "name" : "FRLMStatus"
-},
-{
-  "id" : "fr-lm-structure-conservation",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-structure-conservation",
-  "version" : "0.1.0-snapshot",
-  "name" : "FRLMStructureConservation"
-},
-{
-  "id" : "fr-lm-sujet-non-humain",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-sujet-non-humain",
-  "version" : "0.1.0-snapshot",
-  "name" : "FRLMSujetNonHumain"
-},
-{
   "id" : "fr-lm-supporting-information",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-supporting-information",
   "version" : "0.1.0-snapshot",
   "name" : "FRLMSupportingInformation"
-},
-{
-  "id" : "fr-lm-synthese-medicale-sejour",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-synthese-medicale-sejour",
-  "version" : "0.1.0-snapshot",
-  "name" : "FRLMSyntheseMedicaleSejour"
 },
 {
   "id" : "fr-lm-technique-imagerie",
@@ -3364,13 +3189,6 @@
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-travel-history",
   "version" : "0.1.0-snapshot",
   "name" : "FRLMTravelHistory"
-},
-{
-  "id" : "fr-lm-validateur",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-validateur",
-  "version" : "0.1.0-snapshot",
-  "name" : "FRLMValidateur"
 },
 {
   "id" : "fr-lm-vital-signs",

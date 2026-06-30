@@ -90,7 +90,8 @@
 "Observation.text.reference","Observation.text.reference","","","Reference",1,1,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/TEL {[]} {[]}
 ","Référence à la partie narrative de la section qui contiend la modalité d'entrée sous forme textuelle si la réponse est 'autre'.","Référence à la partie narrative de la section","","","","","","","","","",,,,,"",,,,"ED.reference",0,1,"",""
 "Observation.text.thumbnail","Observation.text.thumbnail","","","Thumbnail",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ED {[]} {[]}
-","","An abbreviated rendition of the full data. A thumbnail requires significantly fewer resources than the full data, while still maintaining some distinctive similarity with the full data. A thumbnail is typically used with by-reference encapsulated data. It allows a user to select data more efficiently before actually downloading through the reference.","","","","","","","","","",,,,,"",,,,"ED.thumbnail",0,1,"",""
+","","An abbreviated rendition of the full data. A thumbnail requires significantly fewer resources than the full data, while still maintaining some distinctive similarity with the full data. A thumbnail is typically used with by-reference encapsulated data. It allows a user to select data more efficiently before actually downloading through the reference.","","","","","","","","","",,,,,"",,,,"ED.thumbnail",0,1,"","ED-1:Thumbnails cannot contain their own thumbnails {thumbnail.empty()}
+"
 "Observation.statusCode","Observation.statusCode","","","",1,1,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/CS {[]} {[]}
 "," Statut de l'entrée","Statut de l'entrée","","","","","","","","","",,"required","","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis","",,,,"Observation.statusCode",0,1,"",""
 "Observation.effectiveTime","Observation.effectiveTime","","","",1,1,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS {[]} {[]}

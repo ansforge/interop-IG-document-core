@@ -66,6 +66,8 @@
 ","","Specifies additional codes that increase the specificity of the the primary code.","","","","","","","","","",,,,,"",,,,"CD.qualifier",0,*,"",""
 "AssignedEntity.code.translation","AssignedEntity.code.translation","","","Translation",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CD {[]} {[]}
 ","","A set of other concept descriptors that translate this concept descriptor into other code systems.","","","","","","","","","",,,,,"",,,,"CD.translation",0,*,"",""
+"AssignedEntity.sdtcSpecialty","AssignedEntity.sdtcSpecialty","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CE {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"AssignedEntity.sdtcSpecialty",0,*,"",""
 "AssignedEntity.addr","AssignedEntity.addr","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/AD {[]} {[]}
 ","Adresse géopostale","","","","","","","","","","",,,,,"",,,,"AssignedEntity.addr",0,*,"",""
 "AssignedEntity.telecom","AssignedEntity.telecom","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/TEL {[]} {[]}

@@ -41,8 +41,6 @@ La partie en minuscules indique le code de la langue utilisée (ISO-639-1)
 La partie en majuscules indique le code pays (ISO-3166)","","","","","","","","","",,,,,"",,,,"fr-lm-entry.header.language",0,1,"",""
 "fr-lm-resultats-examens-biologie-medicale.code","fr-lm-resultats-examens-biologie-medicale.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Code dont dérive le code de section","Code dont dérive le code de section","","","","","","","","","",,,,,"",,,,"fr-lm-resultats-examens-biologie-medicale.code",1,1,"",""
-"fr-lm-resultats-examens-biologie-medicale.choice[x]","fr-lm-resultats-examens-biologie-medicale.choice[x]","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-sujet-non-humain {[]} {[]}
-https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-sujet-non-humain {[]} {[]}","Sujet non humain ou Patient avec sujet non humain","Sujet non humain ou Patient avec sujet non humain","","","","","","","","","",,,,,"",,,,"fr-lm-resultats-examens-biologie-medicale.choice[x]",0,1,"",""
 "fr-lm-resultats-examens-biologie-medicale.laboratoireExecutant","fr-lm-resultats-examens-biologie-medicale.laboratoireExecutant","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-laboratoire-executant {[]} {[]}
 ","Laboratoire sous-traitant.","Laboratoire sous-traitant.","","","","","","","","","",,,,,"",,,,"fr-lm-resultats-examens-biologie-medicale.laboratoireExecutant",0,*,"",""
 "fr-lm-resultats-examens-biologie-medicale.prelevement","fr-lm-resultats-examens-biologie-medicale.prelevement","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-specimen {[]} {[]}

@@ -22,16 +22,22 @@
 "fr-lm-course-of-encounter.entry","fr-lm-course-of-encounter.entry","","","",0,*,"","","","Base {[]} {[]}
 ","Entrées","Entrées","","","","","","","","","",,,,,"",,,,"fr-lm-section.entry",0,*,"",""
 "fr-lm-course-of-encounter.entry.testResults","fr-lm-course-of-encounter.entry.testResults","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation {[]} {[]}
-","Entrée Simple observation","Entrée Simple observation","","","","","","","","","",,,,,"",,,,"fr-lm-course-of-encounter.entry.testResults",1,*,"",""
+","Résultats","Résultats","","","","","","","","","",,,,,"",,,,"fr-lm-course-of-encounter.entry.testResults",1,*,"",""
 "fr-lm-course-of-encounter.entry.patientTransfer","fr-lm-course-of-encounter.entry.patientTransfer","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-transfer {[]} {[]}
-","Entrée Transfert du patient","Entrée Transfert du patient","","","","","","","","","",,,,,"",,,,"fr-lm-course-of-encounter.entry.patientTransfer",0,*,"",""
+","Transfert du patient","Transfert du patient","","","","","","","","","",,,,,"",,,,"fr-lm-course-of-encounter.entry.patientTransfer",0,*,"",""
 "fr-lm-course-of-encounter.entry.diagnosticSummary","fr-lm-course-of-encounter.entry.diagnosticSummary","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-condition {[]} {[]}
-","Entrée Problème","Entrée Problème","","","","","","","","","",,,,,"",,,,"fr-lm-course-of-encounter.entry.diagnosticSummary",0,*,"",""
+","Problème","Problème","","","","","","","","","",,,,,"",,,,"fr-lm-course-of-encounter.entry.diagnosticSummary",0,*,"",""
 "fr-lm-course-of-encounter.entry.procedures","fr-lm-course-of-encounter.entry.procedures","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-procedure {[]} {[]}
-","Entrée Acte","Entrée Acte","","","","","","","","","",,,,,"",,,,"fr-lm-course-of-encounter.entry.procedures",0,*,"",""
+","Acte","Acte","","","","","","","","","",,,,,"",,,,"fr-lm-course-of-encounter.entry.procedures",0,*,"",""
 "fr-lm-course-of-encounter.entry.medicalDevicesAndImplants","fr-lm-course-of-encounter.entry.medicalDevicesAndImplants","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device-use {[]} {[]}
-","Entrée Dispositif médical et implant","Entrée Dispositif médical et implant","","","","","","","","","",,,,,"",,,,"fr-lm-course-of-encounter.entry.medicalDevicesAndImplants",0,*,"",""
+","Dispositif médical et implant","Dispositif médical et implant","","","","","","","","","",,,,,"",,,,"fr-lm-course-of-encounter.entry.medicalDevicesAndImplants",0,*,"",""
 "fr-lm-course-of-encounter.entry.medications","fr-lm-course-of-encounter.entry.medications","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication-administration {[]} {[]}
-","Entrée Traitement administré pendant le séjour","Entrée Traitement administré pendant le séjour","","","","","","","","","",,,,,"",,,,"fr-lm-course-of-encounter.entry.medications",0,*,"",""
+","Traitement administré pendant le séjour","Traitement administré pendant le séjour","","","","","","","","","",,,,,"",,,,"fr-lm-course-of-encounter.entry.medications",0,*,"",""
+"fr-lm-course-of-encounter.entry.reactions","fr-lm-course-of-encounter.entry.reactions","","","",0,*,"","","","Base {[]} {[]}
+","événement indésirable","événement indésirable","","","","","","","","","",,,,,"",,,,"fr-lm-course-of-encounter.entry.reactions",0,*,"",""
+"fr-lm-course-of-encounter.entry.reactions.reactionDuringEncounter","fr-lm-course-of-encounter.entry.reactions.reactionDuringEncounter","","","",0,1,"","","","string {[]} {[]}
+","Description sous forme textuelle des évènements indésirables survenus pendant l'hospitalisation","Description sous forme textuelle des évènements indésirables survenus pendant l'hospitalisation","","","","","","","","","",,,,,"",,,,"fr-lm-course-of-encounter.entry.reactions.reactionDuringEncounter",0,1,"",""
+"fr-lm-course-of-encounter.entry.reactions.reactionFollowingAdministrationBloodDerivatives","fr-lm-course-of-encounter.entry.reactions.reactionFollowingAdministrationBloodDerivatives","","","",0,1,"","","","string {[]} {[]}
+","Description sous forme textuelle des réactions indésirables survenues après l'administration de dérivés sanguins","Description sous forme textuelle des réactions indésirables survenues après l'administration de dérivés sanguins","","","","","","","","","",,,,,"",,,,"fr-lm-course-of-encounter.entry.reactions.reactionFollowingAdministrationBloodDerivatives",0,1,"",""
 "fr-lm-course-of-encounter.entry.notes","fr-lm-course-of-encounter.entry.notes","","","",0,1,"","","","string {[]} {[]}
-","Entrée Note","Entrée Note","","","","","","","","","",,,,,"",,,,"fr-lm-course-of-encounter.entry.notes",0,1,"",""
+","Note","Note","","","","","","","","","",,,,,"",,,,"fr-lm-course-of-encounter.entry.notes",0,1,"",""

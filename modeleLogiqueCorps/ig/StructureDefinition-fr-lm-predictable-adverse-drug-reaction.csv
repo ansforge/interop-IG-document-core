@@ -21,5 +21,5 @@
 ","Sous-sections","Sous-sections","","","","","","","","","",,,,,"",,,,"fr-lm-section.subSection",0,*,"",""
 "fr-lm-predictable-adverse-drug-reaction.entry","fr-lm-predictable-adverse-drug-reaction.entry","","","",1,*,"","","","Base {[]} {[]}
 ","Entrées","Entrées","","","","","","","","","",,,,,"",,,,"fr-lm-section.entry",0,*,"",""
-"fr-lm-predictable-adverse-drug-reaction.entry.adverseEvent","fr-lm-predictable-adverse-drug-reaction.entry.adverseEvent","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-adverse-event {[]} {[]}
+"fr-lm-predictable-adverse-drug-reaction.entry.adverseEvent","fr-lm-predictable-adverse-drug-reaction.entry.adverseEvent","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-adverse-drug-reaction {[]} {[]}
 ","Entrée Effet indesirable","Entrée Effet indesirable","","","","","","","","","",,,,,"",,,,"fr-lm-predictable-adverse-drug-reaction.entry.adverseEvent",1,*,"",""

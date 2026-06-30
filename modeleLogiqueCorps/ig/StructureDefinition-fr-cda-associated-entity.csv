@@ -42,6 +42,8 @@
 ","Profession / savoir-faire ou rôle : 
 - Facultatif pour les PS, non PS et systèmes 
 - Facultatif pour patient/usager","","","","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J01-XdsAuthorSpecialty-CISIS/FHIR/JDV-J01-XdsAuthorSpecialty-CISIS","",,,,"AssociatedEntity.code",0,1,"",""
+"AssociatedEntity.sdtcSpecialty","AssociatedEntity.sdtcSpecialty","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CE {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"AssociatedEntity.sdtcSpecialty",0,*,"",""
 "AssociatedEntity.addr","AssociatedEntity.addr","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/AD {[]} {[]}
 ","Adresse géopostale du participant","","","","","","","","","","",,,,,"",,,,"AssociatedEntity.addr",0,*,"",""
 "AssociatedEntity.telecom","AssociatedEntity.telecom","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/TEL {[]} {[]}

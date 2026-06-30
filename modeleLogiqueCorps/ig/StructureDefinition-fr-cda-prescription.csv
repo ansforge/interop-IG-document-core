@@ -182,6 +182,8 @@ http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS {[]} {[]}http://hl7.org/
 ","","","","","","","","","","","",,,,,"",,,,"AssignedEntity.sdtcIdentifiedBy",0,*,"",""
 "Supply.performer.assignedEntity.code","Supply.performer.assignedEntity.code","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CE {[]} {[]}
 ","","","","","","","","","","","",,"example","","http://hl7.org/cda/stds/core/ValueSet/CDARoleCode","",,,,"AssignedEntity.code",0,1,"",""
+"Supply.performer.assignedEntity.sdtcSpecialty","Supply.performer.assignedEntity.sdtcSpecialty","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CE {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"AssignedEntity.sdtcSpecialty",0,*,"",""
 "Supply.performer.assignedEntity.addr","Supply.performer.assignedEntity.addr","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/AD {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"AssignedEntity.addr",0,*,"",""
 "Supply.performer.assignedEntity.telecom","Supply.performer.assignedEntity.telecom","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/TEL {[]} {[]}

@@ -21,5 +21,5 @@
 ","Sous-sections","Sous-sections","","","","","","","","","",,,,,"",,,,"fr-lm-section.subSection",0,*,"",""
 "fr-lm-functional-status.entry","fr-lm-functional-status.entry","","","",0,*,"","","","Base {[]} {[]}
 ","Entrées","Entrées","","","","","","","","","",,,,,"",,,,"fr-lm-section.entry",0,*,"",""
-"fr-lm-functional-status.entry.assessments","fr-lm-functional-status.entry.assessments","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-assessments {[]} {[]}
-","Groupe de questionnaires d'évalutation","Groupe de questionnaires d'évalutation","","","","","","","","","",,,,,"",,,,"fr-lm-functional-status.entry.assessments",0,*,"",""
+"fr-lm-functional-status.entry.assessment","fr-lm-functional-status.entry.assessment","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation-assessment {[]} {[]}
+","résultat d'une évaluation du statut fonctionnel","résultat d'une évaluation du statut fonctionnel","","","","","","","","","",,,,,"",,,,"fr-lm-functional-status.entry.assessment",0,*,"",""

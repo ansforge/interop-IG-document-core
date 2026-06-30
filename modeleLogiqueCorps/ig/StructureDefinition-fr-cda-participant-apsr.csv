@@ -103,6 +103,8 @@ ENT : transcripteur.","Rôle du participant","","","","","","","","","",,"requir
 ","","","","","","","","","","","",,,,,"",,,,"ParticipantRole.sdtcIdentifiedBy",0,*,"",""
 "Participant2.participantRole.code","Participant2.participantRole.code","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CE {[]} {[]}
 ","","","","","","","","","","","",,"example","","http://hl7.org/cda/stds/core/ValueSet/CDARoleCode","",,,,"ParticipantRole.code",0,1,"",""
+"Participant2.participantRole.sdtcSpecialty","Participant2.participantRole.sdtcSpecialty","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CE {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ParticipantRole.sdtcSpecialty",0,*,"",""
 "Participant2.participantRole.addr","Participant2.participantRole.addr","","","",0,*,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/AD {[CanonicalType[https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/cisis-addr]]} {[]}
 ","Adresses du participant","","","","","","","","","","",,,,,"",,,,"ParticipantRole.addr",0,*,"",""
 "Participant2.participantRole.telecom","Participant2.participantRole.telecom","","","",0,*,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/TEL {[CanonicalType[https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/cisis-telecom]]} {[]}

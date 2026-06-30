@@ -19,10 +19,10 @@
 ","Informateur","Informateur","","","","","","","","","",,,,,"",,,,"fr-lm-section.informant",0,*,"",""
 "fr-lm-examination-report.subSection","fr-lm-examination-report.subSection","","","",0,*,"","","","Base {[]} {[]}
 ","Sous-sections","Sous-sections","","","","","","","","","",,,,,"",,,,"fr-lm-section.subSection",0,*,"",""
-"fr-lm-examination-report.entry","fr-lm-examination-report.entry","","","",0,*,"","","","Base {[]} {[]}
-","Entrées","Entrées","","","","","","","","","",,,,,"",,,,"fr-lm-section.entry",0,*,"",""
 "fr-lm-examination-report.subSection.conclusion","fr-lm-examination-report.subSection.conclusion","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-conclusion {[]} {[]}
 ","Conclusion de l'examen","Conclusion de l'examen","","","","","","","","","",,,,,"",,,,"fr-lm-examination-report.subSection.conclusion",0,1,"",""
+"fr-lm-examination-report.entry","fr-lm-examination-report.entry","","","",0,*,"","","","Base {[]} {[]}
+","Entrées","Entrées","","","","","","","","","",,,,,"",,,,"fr-lm-section.entry",0,*,"",""
 "fr-lm-examination-report.entry.imagingProcedures","fr-lm-examination-report.entry.imagingProcedures","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-procedure {[]} {[]}
 ","Entrée Techniques d'imagerie","Entrée Techniques d'imagerie","","","","","","","","","",,,,,"",,,,"fr-lm-examination-report.entry.imagingProcedures",1,1,"",""
 "fr-lm-examination-report.entry.medicationAdministrations","fr-lm-examination-report.entry.medicationAdministrations","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication-administration {[]} {[]}
