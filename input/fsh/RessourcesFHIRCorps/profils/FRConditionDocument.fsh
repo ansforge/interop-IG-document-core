@@ -6,8 +6,11 @@ Description: "FRConditionDocument est un profil utilisé pour décrire un probl�
 
 // mettre le bon canonical à partir de HL7 Europe Base and Core FHIR IG
 //* ^extension[$imposeProfile].valueCanonical = Canonical()
+* extension contains FRActorExtension named author 0..1
+* extension[author] ^short = "Auteur du problème"
+* extension[author].extension[type].valueCode = #AUT
+* extension[author].extension[actor].valueReference only Reference(FRPractitionerRoleDocument)
 
-* identifier 1..1 MS
 * identifier ^short = "Identifiant"
 
 * clinicalStatus 1..1 MS
@@ -36,12 +39,6 @@ Si pas de problème ou pas d'information : https://smt.esante.gouv.fr/fhir/Value
 * abatement[x] MS
 * abatementDateTime MS
 * abatementDateTime ^short = "Date de fin du problème (si applicable)"
-
-* recorder MS
-* recorder.extension contains FRActorExtension named author 0..1
-* recorder.extension[author] ^short = "Auteur du problème"
-* recorder.extension[author].extension[type].valueCode = #AUT
-* recorder.extension[author].extension[actor].valueReference only Reference(FRPractitionerRoleDocument)
 
 * bodySite MS
 * bodySite ^short = "Localisation anatomique"

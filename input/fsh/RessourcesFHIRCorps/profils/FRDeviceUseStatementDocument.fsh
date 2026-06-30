@@ -8,20 +8,16 @@ Description: "FRDeviceUseStatementDocument représente les informations sur un d
 //* ^extension[$imposeProfile].valueCanonical = Canonical()
 
 // Identifiant
-* identifier 1..* MS
-* identifier ^short = "Identifiant de la fourniture du DM
-Sous la forme UID (UUID ou OID)."
+* identifier ^short = "Identifiant de la fourniture du DM."
 
 // Date/heure de l'utilisation
 * timing[x] only Timing or Period
 
 // Dispensateur  
-* source MS
-* source ^short = "Dispensateur"
-* source.extension contains FRActorExtension named performer 0..1
-* source.extension[performer] ^short = "Dispensateur: référence au professionnel de santé ou à l'organisation ayant initié ou dispensé le dispositif"
-* source.extension[performer].extension[type].valueCode = #PRF
-* source.extension[performer].extension[actor].valueReference only Reference(FRPractitionerRoleDocument or FROrganizationDocument)
+* extension contains FRActorExtension named performer 0..1
+* extension[performer] ^short = "Dispensateur: référence au professionnel de santé ou à l'organisation ayant initié ou dispensé le dispositif"
+* extension[performer].extension[type].valueCode = #PRF
+* extension[performer].extension[actor].valueReference only Reference(FRPractitionerRoleDocument or FROrganizationDocument)
 
 // Élément device
 * device MS

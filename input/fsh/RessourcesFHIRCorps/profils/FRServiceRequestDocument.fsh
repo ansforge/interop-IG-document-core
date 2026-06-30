@@ -44,10 +44,12 @@ Description: "FRServiceRequestDocument profil permet de porter des demandes d'ex
 * extension[method] ^short = "Méthode"
 
 * requester MS
-* requester.extension contains FRActorExtension named author 0..1
-* requester.extension[author] ^short = "Auteur de la demande"
-* requester.extension[author].extension[type].valueCode = #AUT
-* requester.extension[author].extension[actor].valueReference only Reference(FRPractitionerRoleDocument or Device or FRDeviceAuteurDocument or FROrganizationDocument or FRRelatedPersonDocument or FRPatientINSDocument or FRPatientDocument)
+* requester ^short = "Prescripteur"
+
+* extension contains FRActorExtension named author 0..1
+* extension[author] ^short = "Auteur de la demande"
+* extension[author].extension[type].valueCode = #AUT
+* extension[author].extension[actor].valueReference only Reference(FRPractitionerRoleDocument or Device or FRDeviceAuteurDocument or FROrganizationDocument or FRRelatedPersonDocument or FRPatientINSDocument or FRPatientDocument)
 
 * note ^slicing.discriminator.type = #value
 * note ^slicing.discriminator.path = "text"

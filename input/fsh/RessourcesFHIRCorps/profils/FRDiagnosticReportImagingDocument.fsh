@@ -7,8 +7,7 @@ Le profil FRDiagnosticReportImagingDocument est dédié aux comptes rendus d’i
 Ce document représente le rapport d’un examen d’imagerie. Il constitue la ressource principale qui fait référence à l’ensemble des données produites lors de l’examen d’imagerie.
 """
 
-* identifier 1..
-  * ^short = "identifiant du compte-rendu d'imagerie"
+* identifier ^short = "Identifiant du compte-rendu d'imagerie"
 
 * status
   * ^short = "Statut du compte-rendu d'imagerie"

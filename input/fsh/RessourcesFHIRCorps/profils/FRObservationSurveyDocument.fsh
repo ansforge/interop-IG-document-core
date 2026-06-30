@@ -32,31 +32,26 @@ et préciser le type d’évaluation exact dans un texte libre.
 * interpretation 0..1 MS
 * interpretation ^short = "Interprétation"
 
-* performer MS
-* performer.extension contains
-    FRActorExtension named Evaluateur 0..1 and
-    FRActorExtension named Auteur 0..1 and
-    FRActorExtension named Participant 0..1
-
 // Evaluateur
-* performer.extension[Evaluateur] MS
-* performer.extension[Evaluateur] ^short = "Evaluateur"
-* performer.extension[Evaluateur].extension[type].valueCode = #PRF
-* performer.extension[Evaluateur].extension[actor].valueReference only Reference(FROrganizationDocument)
-* performer.extension[Evaluateur].extension[typeCode].valueCodeableConcept from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-participant-additionnel-resultat-cisis (required)
+* performer 0..1 MS
+* performer ^short = "Evaluateur"
+* performer only Reference(FROrganizationDocument)
+
+
+* extension contains
+    FRActorExtension named author 0..1 and
+    FRActorExtension named participant 0..1
 
 // auteur
-* performer.extension[Auteur] MS
-* performer.extension[Auteur] ^short = "Auteur de l'évaluation"
-* performer.extension[Auteur].extension[type].valueCode = #AUT
-* performer.extension[Auteur].extension[actor].valueReference only Reference(FRPractitionerRoleDocument)
+* extension[author] ^short = "Auteur de l'évaluation"
+* extension[author].extension[type].valueCode = #AUT
+* extension[author].extension[actor].valueReference only Reference(FRPractitionerRoleDocument)
 
 // Participant
-* performer.extension[Participant] MS
-* performer.extension[Participant] ^short = "Responsable de l'évaluation"
-* performer.extension[Participant].extension[type].valueCode = #PART
-* performer.extension[Participant].extension[actor].valueReference only Reference(FRPractitionerRoleDocument)
-* performer.extension[Participant].extension[typeCode].valueCodeableConcept.coding.code = #RESP
+* extension[participant] ^short = "Responsable de l'évaluation"
+* extension[participant].extension[type].valueCode = #PART
+* extension[participant].extension[actor].valueReference only Reference(FRPractitionerRoleDocument)
+* extension[participant].extension[typeCode].valueCodeableConcept.coding.code = #RESP
 
 // ----------------------
 // Slicing component (N1 vs N2)

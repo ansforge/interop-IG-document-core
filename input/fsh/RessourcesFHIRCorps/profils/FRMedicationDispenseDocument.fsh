@@ -6,8 +6,7 @@ Title: "MedicationDispense - FR Medication Dispense Document"
 Description: "FRMedicationDispenseDocument permet de décrire un traitement dispensé avec notamment le médicament dispensé, la quantité et la référence de la prescription."
 
 //* ^extension[$imposeProfile].valueCanonical = Canonical()
-* identifier 1..1 MS
-  * ^short = "Identifiant"
+* identifier ^short = "Identifiant"
 * type 1..1 MS
   * ^short = "Complétude de la dispensation" 
   * coding from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-completude-dispensation-cisis

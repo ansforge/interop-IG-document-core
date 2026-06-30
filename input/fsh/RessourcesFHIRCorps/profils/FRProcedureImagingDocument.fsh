@@ -8,8 +8,6 @@ acte d'imagerie, localisation anatomique / latéralité / topographie, d'autres 
 // mettre le bon canonical à partir de HL7 Europe Base and Core FHIR IG
 //* ^extension[$imposeProfile].valueCanonical = Canonical()
 
-* identifier 1..1
-
 // référence à la demande d'examen d'imagerie contenant l'Accession Number comme identifiant
 * basedOn  0..* MS
 * basedOn ^slicing.discriminator.type = #pattern  
@@ -34,7 +32,18 @@ acte d'imagerie, localisation anatomique / latéralité / topographie, d'autres 
 * bodySite.extension[precisionTopographique] ^short = "Modificateurs topographiques"
 * bodySite.extension[precisionTopographique].valueReference only Reference(FRBodyStructureDocument) 
 
-* performer.actor.extension[Participant] ^short = "Participant à l'acte d'imagerie"
-* performer.actor.extension[Dispositif] ^short = "Dispositif médical utilisé lors de l'acte d'imagerie"
+* performer ^slicing.discriminator.type = #value
+* performer ^slicing.discriminator.path = "actor"
+* performer ^slicing.rules = #open
+* performer ^slicing.ordered = false
+
+* performer contains
+    intervenant 0..* and
+    dispositifMedical 0..*
+
+* performer[intervenant] ^short = "Intervenant"
+* performer[intervenant].actor only Reference(FRPractitionerRoleDocument)
+* performer[dispositifMedical] ^short = "Dispositif médical utilisé lors de l'acte d'imagerie"
+* performer[dispositifMedical].actor only Reference(Device)
 
 * complication.text ^short = "Complications survenues au cours de l'acte d'imagerie"

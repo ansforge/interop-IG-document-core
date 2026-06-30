@@ -21,6 +21,11 @@ Description: "FRFamilyMemberHistoryDocument est un profil utilisé pour apporter
 * date MS
 * date ^short = "Date de la mise à jour de l'historique"
 
+* extension contains FRActorExtension named author 0..1
+* extension[author] ^short = "Auteur"
+* extension[author].extension[type].valueCode = #AUT
+* extension[author].extension[actor].valueReference only Reference(FRPractitionerRoleDocument or FRPatientINSDocument or FRDeviceAuteurDocument or FRPatientDocument)
+
 * condition MS
 * condition ^short = "Problème"
 * condition.code MS
@@ -33,11 +38,7 @@ Description: "FRFamilyMemberHistoryDocument est un profil utilisé pour apporter
 * condition.extension contains
     FRFamilyMemberHistoryBodySiteExtension named bodySite 0..1 MS and
     FRInterpretationExtension named interpretation 0..1 MS and
-    FRMethodExtension named method 0..1 MS and
-    FRActorExtension named author 0..1 MS
+    FRMethodExtension named method 0..1 MS
 
 * condition.extension[bodySite] ^short = "Localisation anatomique"
 
-* condition.extension[author] ^short = "Auteur"
-* condition.extension[author].extension[type].valueCode = #AUT
-* condition.extension[author].extension[actor].valueReference only Reference(FRPractitionerRoleDocument or FRPatientINSDocument or FRDeviceAuteurDocument or FRPatientDocument)

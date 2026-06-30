@@ -3,7 +3,6 @@ RuleSet: FRRuleSetSimpleObservation
 
 //* ^extension[$imposeProfile].valueCanonical = Canonical(FrSimpleObservation)
 
-* identifier 1..1 MS
 * identifier ^short = "Identifiant de l'observation"
 
 * status MS
@@ -23,16 +22,10 @@ RuleSet: FRRuleSetSimpleObservation
 * value[x] 1..1 MS
 * value[x] ^short = "Valeur de l'observation"
 
-// Slicing sur performer
-* performer ^slicing.discriminator.type = #value
-* performer ^slicing.discriminator.path = "extension.url"
-* performer ^slicing.rules = #open
-
-* performer MS
-* performer.extension contains FRActorExtension named author 0..*
-* performer.extension[author] ^short = "Auteur de l’observation"
-* performer.extension[author].extension[type].valueCode = #AUT
-* performer.extension[author].extension[actor].valueReference only Reference(
+* extension contains FRActorExtension named author 0..*
+* extension[author] ^short = "Auteur de l’observation"
+* extension[author].extension[type].valueCode = #AUT
+* extension[author].extension[actor].valueReference only Reference(
     FRPractitionerRoleDocument
     or FROrganizationDocument
     or FRPractitionerRoleDocument

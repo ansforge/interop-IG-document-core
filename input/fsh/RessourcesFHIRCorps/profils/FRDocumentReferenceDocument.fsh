@@ -7,9 +7,7 @@ Description: "FRDocumentReferenceDocument restreint pour les documents PDF."
 // mettre le bon canonical à partir de HL7 Europe Base and Core FHIR IG
 //* ^extension[$imposeProfile].valueCanonical = Canonical()
 
-* identifier 1..1 MS
 * identifier ^short = "Identifiant principal unique du document"
-//* MasterIdentifier ^short = "Identifiant de la version du document"
 
 // Statut du document //
 * docStatus MS
@@ -19,8 +17,6 @@ Description: "FRDocumentReferenceDocument restreint pour les documents PDF."
 // Type de document attaché //
 * type 1..1 MS
 * type  ^short = "type du document"
-* type.extension contains http://hl7.org/fhir/StructureDefinition/data-absent-reason named dataAbsentReason 0..1
-* type.extension[dataAbsentReason] ^short = "Type absent pour les documents référencés externes et internes"
 
 * date MS
 * date ^short = "Quand cette référence a été créée"
