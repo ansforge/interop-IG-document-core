@@ -2,7 +2,7 @@ Logical: FRLMServiceRequest
 Id: fr-lm-service-request
 Parent: FRLMEntry
 Title: "Logical model - FR LM Service Request"
-Description: """Entrée Demande d'examen ou de suivi / Objectif à atteindre"""
+Description: """Demande d'examen ou de suivi / Objectif à atteindre"""
 Characteristics: #can-be-target
 
 * header.status 1..1

@@ -11,7 +11,7 @@ Characteristics: #can-be-target
 * valeurResultat[x] 0..1 CodeableConcept or string or Quantity  or Ratio or Range  "Valeur du résultat"
 * interpretation 0..1 CodeableConcept "Code d'interprétation"
 * methode 0..1 CodeableConcept "Méthode ou technique employée"
-* choice[x] 0..1 FRLMSujetNonHumain or FRLMPatientSujetNonHumain "Sujet non humain ou Patient avec sujet non humain"
+//* choice[x] 0..1 FRLMSujetNonHumain or FRLMPatientSujetNonHumain "Sujet non humain ou Patient avec sujet non humain"
 * laboratoireExecutant 0..* FRLMLaboratoireExecutant "Laboratoire sous-traitant. Apparaît à ce niveau si et et seulement si ce résultat a été produit par un laboratoire exécutant distinct du laboratoire exécutant déclaré aux niveaux supérieurs."
 * commentaire 0..* string "Commentaire d'interprétation des résultats"
 * prelevement 0..* FRLMSpecimen "Prélèvement"

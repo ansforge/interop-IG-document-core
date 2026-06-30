@@ -2,7 +2,7 @@ Logical: FRLMImagingStudy
 Id: fr-lm-imaging-study
 Parent: FRLMEntry
 Title: "Logical model - FR LM Imaging Study"
-Description: """Entrée DICOM Examen Imagerie"""
+Description: """DICOM Examen Imagerie"""
 Characteristics: #can-be-target
 
 * header.identifier 1..*
@@ -16,5 +16,6 @@ Characteristics: #can-be-target
 * basedOn 0..* FRLMServiceRequest "Demande d'examen"
 * numberOfSeries 0..1 integer "Nombre de séries d'actes d'imagerie composant l'examen"
 * numberOfInstances	0..1 integer "Nombre d'instances d'imagerie composant l'examen"
-* seriesEndpoint 0..* FRLMEndpoint "Endpoint de l'examen d'imagerie"
+* studyCustodian 0..1 FRLMOrganisation "Organisation responsable de l'examen"
+* studyEndpoint 0..* FRLMEndpoint "Endpoint de l'examen d'imagerie"
 * series 1..1 FRLMSeries "Séries d'actes d'imagerie composant l'examen"

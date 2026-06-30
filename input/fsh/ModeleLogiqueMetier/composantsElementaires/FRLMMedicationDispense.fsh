@@ -2,7 +2,7 @@ Logical: FRLMMedicationDispense
 Id: fr-lm-medication-dispense
 Parent: FRLMEntry
 Title: "Logical model - FR LM Medication Dispense"
-Description: """Entrée Traitement dispense"""
+Description: """Traitement dispense"""
 Characteristics: #can-be-target
 
 * header.author[x] 1..*

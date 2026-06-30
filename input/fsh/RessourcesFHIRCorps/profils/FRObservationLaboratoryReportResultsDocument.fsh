@@ -10,7 +10,8 @@ Description: "FRObservationLaboratoryReportResultsDocument décrit un résultat 
 * status MS
 * status ^short = "Niveau de complétude :
 - 'final' si le résultat est présent
-- 'cancelled' dans le cas où l'élément d'examen n’a pu être et ne sera pas réalisé"
+- 'cancelled' dans le cas où l'élément d'examen n’a pu être et ne sera pas réalisé
+- 'registered' le résultat n'est pas encore disponible et est attendu"
 
 * category MS
 * category ^short = "Code du chapitre"

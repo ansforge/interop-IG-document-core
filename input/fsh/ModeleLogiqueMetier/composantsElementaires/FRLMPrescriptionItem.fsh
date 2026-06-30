@@ -2,7 +2,7 @@ Logical: FRLMPrescriptionItem
 Id: fr-lm-prescription-item
 Parent: FRLMEntry
 Title: "Logical model - FR LM Medication Prescription"
-Description: """Entrée Traitement prescrit"""
+Description: """Traitement prescrit"""
 Characteristics: #can-be-target
 
 * . 1..*	

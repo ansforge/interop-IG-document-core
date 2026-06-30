@@ -2,7 +2,7 @@ Logical: FRLMCondition
 Id: fr-lm-condition
 Parent: FRLMEntry
 Title: "Logical model - FR LM Condition"
-Description: """Entrée Problème"""
+Description: """Problème"""
 Characteristics: #can-be-target
 
 * type 1..1  CodeableConcept "Type d'observation"

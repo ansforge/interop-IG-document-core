@@ -2,7 +2,7 @@ Logical: FRLMCarePlan
 Id: fr-lm-care-plan
 Parent: FRLMEntry
 Title: "Logical model - FR LM Care Plan"
-Description: """Entrée Plan de soins"""
+Description: """Plan de soins"""
 Characteristics: #can-be-target
 
 * header.status 1..1

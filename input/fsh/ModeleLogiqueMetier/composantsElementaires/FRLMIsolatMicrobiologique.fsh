@@ -9,7 +9,7 @@ Characteristics: #can-be-target
 * codeIsolat 0..1 CodeableConcept "Code isolat"
 * header
   * date ^short = "Date et heure des résultats"
-* choice[x] 0..1 FRLMSujetNonHumain or FRLMPatientSujetNonHumain "Sujet non humain ou Patient avec sujet non humain"
+//* choice[x] 0..1 FRLMSujetNonHumain or FRLMPatientSujetNonHumain "Sujet non humain ou Patient avec sujet non humain"
 * isolatMicrobiologique 1..1 Base "Isolat microbiologique"
   * isolat 1..1 Base "Isolat microbiologique"
     * identifiant 1..1 Identifier "Identifiant de l'isolat"

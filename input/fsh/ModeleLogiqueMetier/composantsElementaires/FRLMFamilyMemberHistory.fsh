@@ -2,7 +2,7 @@ Logical: FRLMFamilyMemberHistory
 Id: fr-lm-family-member-history
 Parent: FRLMEntry
 Title: "Logical model - FR LM Family Member History"
-Description: "Entrée Antécédent familial"
+Description: "Antécédent familial"
 Characteristics: #can-be-target
 
 * header.status 1..1 

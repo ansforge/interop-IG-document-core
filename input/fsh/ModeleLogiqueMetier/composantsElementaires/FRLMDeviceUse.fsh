@@ -2,7 +2,7 @@ Logical: FRLMDeviceUse
 Id: fr-lm-device-use
 Parent: FRLMEntry
 Title: "Logical model - FR LM Device use"
-Description: """Entrée Dispositif médical usage"""
+Description: """Dispositif médical usage"""
 Characteristics: #can-be-target
 
 * header.status 1..1
