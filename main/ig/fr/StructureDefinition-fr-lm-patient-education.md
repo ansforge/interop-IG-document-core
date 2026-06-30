@@ -65,7 +65,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-lm-patient-e
   "name" : "FRLMPatientEducation",
   "title" : "Logical model - FR LM Patient Education",
   "status" : "draft",
-  "date" : "2026-06-30T09:01:37+00:00",
+  "date" : "2026-06-30T09:56:22+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
