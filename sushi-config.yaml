@@ -34,7 +34,7 @@ dependencies:
   ans.fhir.fr.annuaire: 1.1.0
   hl7.fhir.uv.fhir-clinical-document: latest
   ihe.pharm.mpd: 1.0.0-comment-2 
-  # ihe.pharm.mpd est un IG R4 alors qu'IG-document-core est un IG R5, une attention particulière doit être faite sur l'évolution de cette dépendance.
+  # ihe.pharm.mpd est un IG R5 alors qu'IG-document-core est un IG R4, une attention particulière doit être faite sur l'évolution de cette dépendance.
   # Le seul objet utilisé de ihe pharm est une extension (offLabel), raison pour laquelle c'est fonctionnel malgré le mélange R4/R5.
   # En cas de sortie d'un IG R4 de IHE MPD, il sera nécessaire de rétablir l'héritage.
 
