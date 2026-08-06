@@ -542,7 +542,7 @@
   },
   "usage": {
     "http://hl7.org/fhir/5.0/StructureDefinition/extension-Composition.status": [
-      "Composition"
+      "Composition.status"
     ],
     "http://hl7.org/fhir/5.0/StructureDefinition/extension-Composition.version": [
       "Composition"
@@ -583,7 +583,7 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
       "StructureDefinition.snapshot.element"
     ],
-    "http://hl7.org/fhir/StructureDefinition/event-basedOn|5.2.0": [
+    "http://hl7.org/fhir/StructureDefinition/event-basedOn|5.3.0": [
       "Composition"
     ],
     "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order": [

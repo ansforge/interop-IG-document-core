@@ -32,7 +32,7 @@ Jeu de valeurs pour les types d'acteurs.
   "name" : "FRValueSetActorTypeDocument",
   "title" : "ValueSet - FR ValueSet Actor Type Document",
   "status" : "draft",
-  "date" : "2026-06-30T09:56:22+00:00",
+  "date" : "2026-08-06T11:33:52+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -52,7 +52,7 @@ Jeu de valeurs pour les types d'acteurs.
   "compose" : {
     "include" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
-      "version" : "6.0.0",
+      "version" : "7.0.0",
       "concept" : [{
         "code" : "AUT"
       },

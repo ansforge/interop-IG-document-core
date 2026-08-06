@@ -17,7 +17,7 @@ Systèmes autorisés pour les autres codifications.
 
 ### Expansion
 
-No Expansion for this valueset (Unknown Code System)
+No Expansion for this valueset (Unsupported Code System Version)
 
 -------
 
@@ -37,7 +37,7 @@ No Expansion for this valueset (Unknown Code System)
   "title" : "ValueSet - FR ValueSet Medication Translation Document",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-06-30T09:56:22+00:00",
+  "date" : "2026-08-06T11:33:52+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
