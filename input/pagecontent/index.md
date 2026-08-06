@@ -1,3 +1,11 @@
+<div style="width: 65%; background-color: #fff9e6; border-left: 4px solid #ff9800; padding: 8px 12px; margin-bottom: 16px;">
+    <b>⚠️ Guide obsolète</b><br>
+    Ce guide d'implémentation consolidé n'est plus maintenu. Son contenu a été scindé dans trois guides dédiés :
+    <a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig">FR Document Core (FHIR)</a>,
+    <a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig">FR Document Core (CDA)</a>,
+    <a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig">FR Document Core (Modèle métier)</a>.
+</div>
+
 <p style="padding: 5px; border-radius: 5px; border: 2px solid maroon; background: #ffffe6; width: 65%">
 <b>Guide de mise en œuvre des documents dématérialisés produits en France dans le domaine sanitaire et le domaine médico-social.</b><br>
 Implementation guides of dematerialized health and medico-social documents produced in France.
