@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="FRObservationBloodProductTransfusionLMCDAFHIR"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ConceptMap FRObservationBloodProductTransfusionLMCDAFHIR</b></p><a name="en-FRObservationBloodProductTransfusionLMCDAFHIR"> </a><a name="en-hcFRObservationBloodProductTransfusionLMCDAFHIR"> </a><p>This mapping does not specify any particular context of use.</p><br/><p><b>Group 1 </b>Mapping from <a href="StructureDefinition-fr-lm-transfusion-de-produits-sanguins.html">Logical model - FR LM Transfusion de produits sanguins</a> to <a href="StructureDefinition-fr-cda-transfusion-de-produits-sanguins.html">CDA - FR Transfusion de produits sanguins</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Card.</b></td><td><b>Type</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Card.</b></td><td><b>Type</b></td></tr><tr><td colspan="3">FRLMTransfusionDeProduitsSanguins</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td colspan="3">FRCDATransfusionDeProduitsSanguins</td></tr><tr><td colspan="3">FRLMTransfusionDeProduitsSanguins.identifiant</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td colspan="3">FRCDATransfusionDeProduitsSanguins.id</td></tr><tr><td colspan="3">FRLMTransfusionDeProduitsSanguins.code</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td colspan="3">FRCDATransfusionDeProduitsSanguins.code</td></tr><tr><td colspan="3">FRLMTransfusionDeProduitsSanguins.description</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td colspan="3">FRCDATransfusionDeProduitsSanguins.text</td></tr><tr><td colspan="3">FRLMTransfusionDeProduitsSanguins.statut</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td colspan="3">FRCDATransfusionDeProduitsSanguins.statusCode</td></tr><tr><td colspan="3">FRLMTransfusionDeProduitsSanguins.date</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td colspan="3">FRCDATransfusionDeProduitsSanguins.effectiveTime</td></tr><tr><td colspan="3">FRLMTransfusionDeProduitsSanguins.transfusionProduitSanguin</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td colspan="3">FRCDATransfusionDeProduitsSanguins.value</td></tr><tr><td colspan="3">FRLMTransfusionDeProduitsSanguins.auteur</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td colspan="3">FRCDATransfusionDeProduitsSanguins.author</td></tr></table><hr/><p><b>Group 2 </b>Mapping from <a href="StructureDefinition-fr-cda-transfusion-de-produits-sanguins.html">CDA - FR Transfusion de produits sanguins</a> to <a href="StructureDefinition-fr-observation-blood-product-transfusion-document.html">Observation - FR Blood Product Transfusion Document</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Card.</b></td><td><b>Type</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Card.</b></td><td><b>Type</b></td></tr><tr><td colspan="3">FRCDATransfusionDeProduitsSanguins</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td colspan="3">FRObservationBloodProductTransfusionDocument</td></tr><tr><td colspan="3">FRCDATransfusionDeProduitsSanguins.id</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td colspan="3">FRObservationBloodProductTransfusionDocument.identifier</td></tr><tr><td colspan="3">FRCDATransfusionDeProduitsSanguins.code</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td colspan="3">FRObservationBloodProductTransfusionDocument.code</td></tr><tr><td colspan="3">FRCDATransfusionDeProduitsSanguins.text</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td colspan="3">FRObservationBloodProductTransfusionDocument.note.text</td></tr><tr><td colspan="3">FRCDATransfusionDeProduitsSanguins.statusCode</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td colspan="3">FRObservationBloodProductTransfusionDocument.status</td></tr><tr><td colspan="3">FRCDATransfusionDeProduitsSanguins.effectiveTime</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td colspan="3">FRObservationBloodProductTransfusionDocument.effectiveDateTime</td></tr><tr><td colspan="3">FRCDATransfusionDeProduitsSanguins.value</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td colspan="3">FRObservationBloodProductTransfusionDocument.valueBoolean</td></tr><tr><td colspan="3">FRCDATransfusionDeProduitsSanguins.author</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td colspan="3">FRObservationBloodProductTransfusionDocument.performer.extension:author</td></tr></table></div>
+  </text>
+  <url value="https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRObservationBloodProductTransfusionLMCDAFHIR"/>
+  <version value="0.1.0-snapshot"/>
+  <title value="Mapping Métier/CDA/FHIR : Transfusion de produits sanguins"/>
+  <status value="draft"/>
+  <date value="2026-08-06T09:53:16+00:00"/>
+  <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+  <contact>
+    <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <description value="Mapping des éléments du modèle métier FRLMTransfusionDeProduitsSanguins vers la sous-entrée CDA FRCDATransfusionDeProduitsSanguins puis vers le profil FHIR FRObservationBloodProductTransfusionDocument."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="FRANCE"/>
+    </coding>
+  </jurisdiction>
+  <group>
+    <source value="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-transfusion-de-produits-sanguins"/>
+    <target value="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-transfusion-de-produits-sanguins"/>
+    <element>
+      <code value="FRLMTransfusionDeProduitsSanguins"/>
+      <target>
+        <code value="FRCDATransfusionDeProduitsSanguins"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="FRLMTransfusionDeProduitsSanguins.identifiant"/>
+      <target>
+        <code value="FRCDATransfusionDeProduitsSanguins.id"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="FRLMTransfusionDeProduitsSanguins.code"/>
+      <target>
+        <code value="FRCDATransfusionDeProduitsSanguins.code"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="FRLMTransfusionDeProduitsSanguins.description"/>
+      <target>
+        <code value="FRCDATransfusionDeProduitsSanguins.text"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="FRLMTransfusionDeProduitsSanguins.statut"/>
+      <target>
+        <code value="FRCDATransfusionDeProduitsSanguins.statusCode"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="FRLMTransfusionDeProduitsSanguins.date"/>
+      <target>
+        <code value="FRCDATransfusionDeProduitsSanguins.effectiveTime"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="FRLMTransfusionDeProduitsSanguins.transfusionProduitSanguin"/>
+      <target>
+        <code value="FRCDATransfusionDeProduitsSanguins.value"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="FRLMTransfusionDeProduitsSanguins.auteur"/>
+      <target>
+        <code value="FRCDATransfusionDeProduitsSanguins.author"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+  <group>
+    <source value="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-transfusion-de-produits-sanguins"/>
+    <target value="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-blood-product-transfusion-document"/>
+    <element>
+      <code value="FRCDATransfusionDeProduitsSanguins"/>
+      <target>
+        <code value="FRObservationBloodProductTransfusionDocument"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="FRCDATransfusionDeProduitsSanguins.id"/>
+      <target>
+        <code value="FRObservationBloodProductTransfusionDocument.identifier"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="FRCDATransfusionDeProduitsSanguins.code"/>
+      <target>
+        <code value="FRObservationBloodProductTransfusionDocument.code"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="FRCDATransfusionDeProduitsSanguins.text"/>
+      <target>
+        <code value="FRObservationBloodProductTransfusionDocument.note.text"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="FRCDATransfusionDeProduitsSanguins.statusCode"/>
+      <target>
+        <code value="FRObservationBloodProductTransfusionDocument.status"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="FRCDATransfusionDeProduitsSanguins.effectiveTime"/>
+      <target>
+        <code value="FRObservationBloodProductTransfusionDocument.effectiveDateTime"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="FRCDATransfusionDeProduitsSanguins.value"/>
+      <target>
+        <code value="FRObservationBloodProductTransfusionDocument.valueBoolean"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="FRCDATransfusionDeProduitsSanguins.author"/>
+      <target>
+        <code value="FRObservationBloodProductTransfusionDocument.performer.extension:author"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>
